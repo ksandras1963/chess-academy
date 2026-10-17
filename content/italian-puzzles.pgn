@@ -6,25 +6,25 @@
 [Hint "The knight on a5 attacks your bishop. Make the bishop count before it is taken."]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 h6?! 5. b4 Bb6 6. b5 Na5 7. Bxf7+! {[%cal Gc4f7] The bishop takes f7 with check before the knight can take it.}
-(7. Nxe5? {Wins a pawn, but after 7...Nxc4 8.Nxc4 d5 Black has the bishop pair and an equal game.} 7... Nxc4 8. Nxc4 d5)
-(7. Be2?! {Saves the bishop, but the moment is gone.})
+(7. Nxe5? {Wins a pawn, but after 7...Nxc4 8.Nxc4 d5 Black has the bishop pair and an equal game.} 7... Nxc4 8. Nxc4 d5 {Stockfish: +0.1, equal.})
+(7. Be2?! {Saves the bishop, but the moment is gone. Stockfish: −0.3, slightly better for Black.})
 7... Kf8 {Black's best. Taking the bishop loses even faster: after the puzzle, play 7...Kxf7 through under Other lines.}
 (7... Kxf7 {Takes the bishop, but the king comes out into the open.} 8. Nxe5+ {Takes the e5 pawn with check, and the knight eyes g6.}
 8... Kf8 {Back to f8, but this walks into a fork.}
-(8... Ke6 {Black's best try, but the king is stuck in the middle of the board.} 9. Qh5 Qf6 10. d4 g6 11. Qg4+ {Stockfish rates White about four pawns better.})
+(8... Ke6 {Black's best try, but the king is stuck in the middle of the board.} 9. Qh5 Qf6 10. d4 g6 11. Qg4+ {Stockfish: +4.3, winning for White.})
 (8... Ke8 {Runs into mate.} 9. Qh5+ Ke7 10. Ba3+ d6 11. Qf7#)
 9. Ng6+ {[%cal Gg6h8,Gg6f8] A fork: check, and the knight attacks the rook on h8. No pawn guards g6: the f-pawn is gone and the h-pawn is on h6. 8...Ke7 runs into the same fork.}
-9... Ke8 10. Nxh8 {White wins the rook and has a rook and two pawns for the bishop. Stockfish rates White nearly six pawns better.})
+9... Ke8 10. Nxh8 {White wins the rook and has a rook and two pawns for the bishop. Stockfish: +5.9, winning for White.})
 8. Nxe5 {[%hint Win a pawn, and give the bishop on f7 a guard.] [%cal Ge5f7] Wins the e5 pawn and guards the bishop on f7. Now the knight eyes g6, next to Black's king.}
 8... Qf6 {[%cal Rf6f2,Rb6f2] Hits the knight and lines up with the bishop on b6 against f2.}
 9. d4! {[%hint Look at f2. What is Black threatening?] [%csl Gd4] Stops ...Qxf2, which would be mate. The pawn blocks the bishop on b6 and also guards the knight on e5.}
-(9. Ng6+! {Also good: the fork one move early.} Kxf7 10. Nxh8+ {White wins the rook here too. Next White must still deal with ...Qxf2 mate, with d4, Qh5, or castling.})
+(9. Ng6+! {Also good: the fork one move early.} Kxf7 10. Nxh8+ {White wins the rook here too, but still has to meet the threat of ...Qxf2 mate, with d4, Qh5 or castling. Stockfish: +2.3, winning for White.})
 9... d6 {Attacks the knight. If it moves away, the bishop on f7 loses its guard.}
 10. Ng6+! {[%hint The knight is attacked. Move it with check.] [%cal Gg6h8,Gg6f8] A fork: check, and the knight attacks the rook on h8.}
-(10. Bxg8? {Saves the bishop, but after 10...dxe5 White is only about a pawn better. The fork wins far more.} 10... dxe5)
+(10. Bxg8? {Saves the bishop, but after 10...dxe5 Stockfish gives White only +1.4, a clear edge. The fork wins far more.} 10... dxe5)
 10... Kxf7
 11. Nxh8+ {[%cal Gg6h8] White wins the rook. The knight on h8 is trapped and will be lost, but Black's king has no shelter.}
-11... Kf8 12. O-O g6 13. Qd3 Qxh8 {Black wins the knight back. White has a rook and two pawns for two minor pieces, and Stockfish rates White about three pawns better.}
+11... Kf8 12. O-O g6 13. Qd3 Qxh8 {Black wins the knight back. White has a rook and two pawns for two minor pieces. Stockfish: +3.2, winning for White.}
 *
 
 [Puzzle "Refute the fork trick"]
@@ -35,9 +35,9 @@
 [Hint "The pawn on d4 forks your bishop and knight. Can one of them capture something first?"]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. Nxe5? Nxe5 6. d4 Nxc4! {[%cal Ge5c4] Take the bishop first. Now only your bishop on c5 is attacked, and after White takes it you are still a piece for a pawn up.}
-(6... Bd6? {Saves the bishop, but the fork trick works: after 7.dxe5 Bxe5 White has won the piece back, and the game is equal.} 7. dxe5 Bxe5)
-(6... Nxe4?! {Equalizes, but misses the win. Take on c4 first.} 7. Nxe4 Bb4+ 8. Bd2 Nxc4 9. Bxb4 d5 {Material is level, and so is the game.})
-7. dxc5 d5 {Guards the knight on c4 and frees the bishop on c8. Black is a piece for a pawn up, and Stockfish rates Black nearly four pawns better.}
+(6... Bd6? {Saves the bishop, but the fork trick works: after 7.dxe5 Bxe5 White has won the piece back, and the game is equal.} 7. dxe5 Bxe5 {Stockfish: +0.2, equal.})
+(6... Nxe4?! {Equalizes, but misses the win. Take on c4 first.} 7. Nxe4 Bb4+ 8. Bd2 Nxc4 9. Bxb4 d5 {Material is level. Stockfish: +0.1, equal.})
+7. dxc5 d5 {Guards the knight on c4 and frees the bishop on c8. Black is a knight for a pawn up, and White's pawn on e4 is attacked twice. Stockfish: −3.9, winning for Black.}
 *
 
 [Puzzle "Escape the Blackburne trap"]
@@ -48,14 +48,14 @@
 [Hint "Your knight on e5 and the pawn on g2 are both attacked. Don't grab more material."]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4 4. Nxe5? Qg5 5. O-O! {Castling protects g2 and brings the rook toward the center. Black wins the knight on e5, but White gains time against Black's queen and wins the piece back later.}
-(5. Bxf7+!? {Playable, but castling is better. White gets two pawns for the knight and stops Black from castling, but Black keeps the extra piece.} 5... Kd8 6. O-O Qxe5 7. c3 Ne6 8. d3 {White has two pawns for the knight. Stockfish rates Black about 0.8 pawns better here, against 0.5 after 5.O-O.})
-(5. Nxf7? {Forks queen and rook, but walks into the trap.} 5... Qxg2 {Ignores the fork and hits the rook on h1.} 6. Rf1 (6. Ng5 {Avoids the mate, but after 6...Qxh1+ 7.Bf1 Black has won the rook.} 6... Qxh1+ 7. Bf1) 6... Qxe4+ 7. Be2 Nf3# {White's own pieces take every square the king could use.})
+(5. Bxf7+!? {Playable, but castling is better. Here White gets only two pawns for the knight, while after 5.O-O White wins the piece back. Stockfish: −0.8, against −0.5 for 5.O-O; slightly better for Black either way.} 5... Kd8 6. O-O Qxe5 7. c3 Ne6 8. d3 {White has two pawns for the knight, and Black's king can no longer castle. But Black still has the extra piece.})
+(5. Nxf7? {Forks queen and rook, but walks into the trap.} 5... Qxg2 {Ignores the fork and hits the rook on h1.} 6. Rf1 (6. Ng5 {Avoids the mate, but after 6...Qxh1+ 7.Bf1 Black has won the rook.} 6... Qxh1+ 7. Bf1 {Stockfish: −8.7, winning for Black.}) 6... Qxe4+ 7. Be2 Nf3# {White's own pieces take every square the king could use.})
 5... Qxe5 {Black wins the knight.}
 6. c3 {Kicks the knight away from d4.}
 6... Ne6 7. d4 {Gains more time on the queen.}
 7... Qxe4 {Takes a second pawn, but the queen is now on the open e-file.}
 8. Re1 Qh4 9. g3 {Kicks the queen again.}
-9... Qd8 10. d5 {[%cal Re1e8] The knight on e6 is pinned against Black's king, and the pawn attacks it. White wins the piece back, and Stockfish rates Black only slightly better (about half a pawn).}
+9... Qd8 10. d5 {[%cal Re1e8] The knight on e6 is pinned against Black's king, and the pawn attacks it. White wins the piece back. Stockfish: −0.5, slightly better for Black.}
 *
 
 [Puzzle "Don't take the queen"]
@@ -66,12 +66,12 @@
 [Hint "Taking the queen looks free. Count White's checks first."]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Bg4 5. h3 Bh5? 6. Nxe5! Nxe5! {Leave the queen alone. Taking the knight costs you only a pawn.}
-(6... dxe5! {Also limits the damage: after 7.Qxh5 White is a pawn up.} 7. Qxh5)
+(6... dxe5! {Also limits the damage: after 7.Qxh5 White is a pawn up.} 7. Qxh5 {Stockfish: +2.7, winning for White.})
 (6... Bxd1?? {Légal's mate: 7.Bxf7+ Ke7 8.Nd5#.} 7. Bxf7+ Ke7 8. Nd5#)
 7. Qxh5 {White takes the bishop.}
 7... Nxc4 {Takes a bishop back.}
 8. Qb5+ {Check, and the queen also attacks the knight on c4.}
-8... c6 9. Qxc4 {White is a pawn up, and Stockfish rates White about two pawns better. That hurts, but it is far better than being mated.}
+8... c6 9. Qxc4 {White is a pawn up. Stockfish: +2.4, winning for White. That hurts, but it is far better than being mated.}
 *
 
 [Puzzle "Sidestep Légal's trap"]
@@ -82,11 +82,11 @@
 [Hint "If your bishop stays on the h5–d1 diagonal, what can White's knight on f3 take?"]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Bg4 5. h3 Bxf3! {Take the knight before it can jump to e5. White gets the bishop pair, but Black's position is solid.}
-(5... Be6! {Also good: it offers to trade off White's strong bishop on c4.} 6. Bxe6 fxe6 {The doubled pawn on e6 covers d5 and f5, and the f-file opens for Black's rook.})
-(5... Bd7! {Also fine. The bishop is a little passive on d7, but safe.})
-(5... Bc8?! {Safe, but it undoes your development. White gets a free move to build a big center with d4.})
-(5... Bh5? {Keeps the pin, but the knight is pinned only to the queen, so it can still move. 6.Nxe5! wins a pawn, and 6...Bxd1?? 7.Bxf7+ Ke7 8.Nd5# is Légal's mate.} 6. Nxe5! Bxd1?? (6... Nxe5 {Black's best. After 7.Qxh5 White is a pawn up.} 7. Qxh5) 7. Bxf7+ Ke7 8. Nd5#)
-6. Qxf3 Nf6 {Black has a normal game. Stockfish rates White only about half a pawn better, the usual edge for the side that moves first.}
+(5... Be6! {Also good: it offers to trade off White's strong bishop on c4.} 6. Bxe6 fxe6 {The doubled pawn on e6 covers d5 and f5, and the f-file opens for Black's rook. Stockfish: +0.5, slightly better for White.})
+(5... Bd7!? {Safe, but passive. Stockfish: +1.0, a clear edge for White, against +0.7 after 5...Bxf3.})
+(5... Bc8?! {Safe, but it undoes your development. White gets a free move to build a big center with d4. Stockfish: +1.5, clearly better for White.})
+(5... Bh5? {Keeps the pin, but the knight is pinned only to the queen, so it can still move. 6.Nxe5! wins a pawn, and 6...Bxd1?? 7.Bxf7+ Ke7 8.Nd5# is Légal's mate.} 6. Nxe5! Bxd1?? (6... Nxe5 {Black's best. After 7.Qxh5 White is a pawn up.} 7. Qxh5 {Stockfish: +2.5, winning for White.}) 7. Bxf7+ Ke7 8. Nd5#)
+6. Qxf3 Nf6 {Black has a normal game. Stockfish: +0.7, slightly better for White, the usual small edge for the side that moves first.}
 *
 
 [Puzzle "Escape the Møller trap"]
@@ -98,12 +98,12 @@
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3?! 9. bxc3 d5! {[%cal Gd5c4] Hits the bishop on c4 and leaves your own bishop where it is.}
 (9... Bxc3? {Grabs a second pawn, but 10.Ba3! stops you from castling, and White's attack wins.} 10. Ba3! {[%cal Ga3f8] The bishop covers f8, so Black can't castle kingside. White doesn't mind losing the rook on a1.}
 10... d5 {Hits the bishop on c4.}
-(10... Bb4 11. Bxb4 Nxb4 12. Re1+ Kf8 13. Qb3 {Attacks the knight on b4 and lines up behind the bishop against f7. Stockfish rates White almost five pawns better.})
-(10... d6 11. Rc1 Ba5 12. Qa4 Bd7 13. d5 {Attacks the knight on c6. It is the only guard of the bishop on a5, so White wins a piece. Stockfish rates White about five pawns better.})
+(10... Bb4 11. Bxb4 Nxb4 12. Re1+ Kf8 13. Qb3 {Attacks the knight on b4 and lines up behind the bishop against f7. Stockfish: +5.1, winning for White.})
+(10... d6 11. Rc1 Ba5 12. Qa4 Bd7 13. d5 {Attacks the knight on c6. It is the only guard of the bishop on a5, so White wins a piece. Stockfish: +4.6, winning for White.})
 11. Bb5 {Pins the knight on c6 against Black's king.}
 11... Bxa1 {Black takes the rook and is now a rook and two pawns up.}
-12. Re1+ Be6 13. Qc2 {White threatens Ne5, hitting the pinned knight a third time, and Black's king is stuck in the center. Even a rook down, White is more than three pawns better by Stockfish.})
-10. cxb4 dxc4 {Takes back the piece. Black is a pawn up, but White's lead in development makes up for it: Stockfish rates the game equal.}
+12. Re1+ Be6 13. Qc2 {White threatens Ne5, hitting the pinned knight a third time, and Black's king is stuck in the center. Stockfish: +3.1, winning for White, even a rook down.})
+10. cxb4 dxc4 {Takes back the piece. Black is a pawn up, but White's lead in development makes up for it. Stockfish: 0.0, equal.}
 *
 
 [Puzzle "Fried Liver in the Paris"]
@@ -114,5 +114,5 @@
 [Hint "f7 is defended only by Black's king."]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Nf6 5. Ng5 d5 6. exd5 Nxd5? 7. Nxf7! {[%cal Gg5f7] The knight sacrifice drags the king out.} Kxf7 8. Bxd5+ {Takes the knight back with check. White is a pawn up, and Black's king is in the open.}
-8... Ke8 9. Bxc6+ bxc6 10. Qh5+ Kd7 11. Qf5+ Ke8 12. Qxe5+ {White wins a second pawn, and Black's king is stuck in the center. Stockfish rates White more than five pawns better.}
+8... Ke8 9. Bxc6+ bxc6 10. Qh5+ Kd7 11. Qf5+ Ke8 12. Qxe5+ {White wins a second pawn, and Black's king is stuck in the center. Stockfish: +5.4, winning for White.}
 *

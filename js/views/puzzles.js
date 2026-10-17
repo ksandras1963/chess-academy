@@ -53,7 +53,9 @@ export async function puzzlesView(root, ctx, openingId) {
         h("header", { class: "course-head" },
             h("h1", {}, `${op.name} puzzles`),
             h("p", { class: "course-summary" },
-                `${set.items.length} positions from the ${op.name} courses. Find the best move: some punish a trap, some escape one, and a few finish the game.`)),
+                `${set.items.length} positions from the ${op.name} courses. Find the best move: some punish a trap, some escape one, and a few finish the game.`),
+            h("p", { class: "muted" },
+                "Stockfish scores read + for White and − for Black. They measure winning chances, not material: about ±1 is a clear edge, and ±2 or more usually wins.")),
         h("div", { class: "course-actions" },
             h("a", { class: "btn btn-primary btn-big", href: `#/puzzle/${op.id}/${next.number}` },
                 st.solved || st.missed ? "Continue" : "Start", h("span", { class: "btn-detail" }, `${st.solved} of ${st.total} solved`)),
@@ -100,6 +102,8 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
     // is played on screen). `view` is what the board and score sheet show. While solving it is
     // `played`, and the learner can step back through it. After the puzzle it is the whole line
     // with the follow-up, and the other lines (wrong tries, other answers) can be opened.
+    // `view.explore` is set while a side line is shown: after the puzzle, or while solving when
+    // a known wrong try plays out its refutation (then `explore.why` is that wrong move).
     const played = pz.setup.slice(0, -1)
     const view = { nodes: played, idx: played.length, explore: null }
     const missedPlies = new Set()
@@ -127,7 +131,7 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
         // Notes (and their arrows) on the setup moves stay hidden until the puzzle is over.
         const note = node && (done || view.idx > pz.setup.length) ? mergedNote(node) : null
         const marks = boardMarks(node, note)
-        if (turn?.answer && view.idx === played.length) marks.arrows.push({ color: "answer", ...turn.answer })
+        if (turn?.answer && atLatest()) marks.arrows.push({ color: "answer", ...turn.answer })
         const shown = board.show(node ? node.fen : pz.chapter.root.fen, { animate, ...marks })
 
         renderSheet(L.sheet, view.nodes, {
@@ -149,15 +153,16 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
 
         L.extra.replaceChildren()
         if (resultBox) L.extra.append(resultBox)
-        if (!done && view.idx < played.length) {
+        if (!done && !view.explore && view.idx < played.length) {
             L.extra.append(h("div", { class: "banner" },
                 h("p", {}, "You are looking at an earlier move."),
                 h("button", { class: "btn btn-small", type: "button", onclick: () => goLatest() }, "Back to the puzzle")))
         }
         if (view.explore) {
+            const why = view.explore.why
             L.extra.append(h("div", { class: "banner" },
-                h("p", {}, "Side line."),
-                h("button", { class: "btn btn-small", type: "button", onclick: leaveExplore }, "Back to the puzzle line")))
+                h("p", {}, why ? `Why not ${label(why)}${why.symbol || ""}` : "Side line."),
+                h("button", { class: "btn btn-small", type: "button", onclick: leaveExplore }, why ? "Back to the puzzle" : "Back to the puzzle line")))
         }
         if (done) L.extra.append(otherLines() || "")
 
@@ -180,7 +185,7 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
 
     function go(i, animate = true) {
         view.idx = Math.max(0, Math.min(i, view.nodes.length))
-        if (!done) {
+        if (!done && !view.explore) {
             if (view.idx >= played.length) return goLatest()
             board.disableInput()
         }
@@ -216,29 +221,41 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
     function leaveExplore() {
         stopPlay()
         Object.assign(view, { nodes: view.explore.nodes, idx: view.explore.idx, explore: null })
+        if (done) return render(false)
+        goLatest()
+        turn?.afterRefutation?.()
+    }
+
+    /** While solving: a known wrong try plays out on the board, then the learner tries again. */
+    function showRefutation(alt) {
+        view.explore = { nodes: view.nodes, idx: view.idx, why: alt }
+        view.nodes = [...played, alt, ...mainPath(alt)]
+        view.idx = played.length + 1
         render(false)
+        startPlay(readTime(alt))
     }
 
     // ▶ plays the moves ahead on the board by itself, staying longer on moves with a note.
     let playing = null
     const readTime = node => 900 + Math.min(3600, (node?.note?.text?.length || 0) * 30)
-    function togglePlay() {
-        if (playing) return stopPlay()
+    function startPlay(delay = 250) {
+        clearTimeout(playing)
         const tick = () => {
             go(view.idx + 1)
             playing = view.idx < view.nodes.length ? setTimeout(tick, readTime(view.nodes[view.idx - 1])) : null
             updatePlay()
         }
-        playing = setTimeout(tick, 250)
+        playing = setTimeout(tick, delay)
         updatePlay()
     }
+    const togglePlay = () => (playing ? stopPlay() : startPlay())
     function stopPlay() {
         clearTimeout(playing)
         playing = null
         updatePlay()
     }
     function updatePlay() {
-        play.hidden = !done
+        play.hidden = !done && !view.explore
         play.disabled = !playing && view.idx >= view.nodes.length
         play.textContent = playing ? "❚❚" : "▶︎"
         const aria = playing ? "Pause" : "Play the moves"
@@ -323,8 +340,10 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
             let tries = 0
             let shown = false
             const reveal = () => {
-                if (view.idx < played.length) goLatest()
+                if (shown) return
                 revealed = shown = true
+                if (view.explore) leaveExplore()
+                else if (view.idx < played.length) goLatest()
                 turn.answer = { from: main.from, to: main.to }
                 board.unarrow("answer")
                 board.arrow("answer", main.from, main.to)
@@ -353,7 +372,7 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
                     turn = null
                     setTimeout(async () => {
                         played.push(match)
-                        const who = shown ? "Now you have it" : match === main ? "Correct" : "Also good"
+                        const who = shown ? "Now you have it" : match === main ? "Correct" : match.symbol === "!?" ? "Playable" : "Also good"
                         feed.push({ kind: "you", title: label(match) + (match.symbol || ""), who, text: match.note.text })
                         view.idx = played.length
                         await render(true)
@@ -364,20 +383,27 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
                 misses++
                 tries++
                 missedPlies.add(played.length)
-                board.shake()
-                board.unmark("wrong")
-                board.mark("wrong", to)
-                setTimeout(() => board.unmark("wrong"), 900)
                 say({
                     kind: "wrong",
                     title: match ? `${label(match)}${match.symbol || ""} is a mistake` : `${fig(mv.san)} isn't the best move`,
                     text: (match && match.note.text) || (tries === 1 ? "Try again." : "")
                 })
                 if (tries === 1 && hint && !shown) say({ kind: "hint", title: "Hint", text: hint })
-                if (tries >= 2 && !shown) reveal()
+                // A wrong try written with its refutation plays out on the board first.
+                if (match && match.children.length) {
+                    board.disableInput()
+                    setTimeout(() => showRefutation(match), 0)
+                    return true
+                }
+                board.shake()
+                board.unmark("wrong")
+                board.mark("wrong", to)
+                setTimeout(() => board.unmark("wrong"), 900)
+                if (tries >= 2) reveal()
                 return false
             }
-            turn = { onMove, answer: null }
+            // After a refutation, back at the puzzle: a second miss shows the answer.
+            turn = { onMove, answer: null, afterRefutation: () => { if (tries >= 2) reveal() } }
             if (view.idx === played.length) board.enableInput(learner, onMove)
         })
     }
@@ -401,9 +427,9 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
             h("p", {}, pz.title + "."),
             clean ? null : h("p", { class: "muted" }, "Marked to retry. It appears under Retry missed until you solve it cleanly."),
             h("p", { class: "muted" }, [
-                followUp.length ? "Tap ▶︎ to watch how the game goes on, or tap any move to see that position."
+                followUp.length ? "The game goes on by itself on the board: ❚❚ pauses it, and you can tap any move to see that position."
                     : "Tap any move to see that position.",
-                altsOf([...played, ...followUp]).length ? "Open a line under Other lines to watch the other tries." : ""
+                altsOf([...played, ...followUp]).length ? "Open a line under Other lines, then tap ▶︎ to watch it." : ""
             ].filter(Boolean).join(" ")))
         view.nodes = [...played, ...followUp]
         view.idx = played.length
@@ -412,5 +438,7 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
             h("button", { class: "btn", type: "button", onclick: () => window.dispatchEvent(new HashChangeEvent("hashchange")) }, "Try again"),
             nextPz ? h("a", { class: "btn", href: `#/puzzles/${op.id}` }, "All puzzles") : null))
         render(false)
+        // Play the follow-up, after time to read the last move's note.
+        if (followUp.length) startPlay(readTime(played[played.length - 1]) + 400)
     }
 }
