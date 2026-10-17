@@ -33,6 +33,16 @@ export function figText(text) {
     return text.replace(/(^|[\s(.…])([KQRBN])(?=[a-h]?[1-8]?x?[a-h][1-8]\b)/g, (_, pre, p) => pre + FIG[p] + VS15)
 }
 
+/**
+ * The back buttons at the top of every page except the main menu.
+ * `parent` adds a second button, e.g. back to the course from a lesson: { href, text }.
+ */
+export function backBar(parent = null) {
+    return h("nav", { class: "backbar", "aria-label": "Back" },
+        h("a", { class: "btn btn-small btn-back", href: "#/" }, h("span", { "aria-hidden": "true" }, "‹"), "Main menu"),
+        parent ? h("a", { class: "btn btn-small btn-back", href: parent.href }, h("span", { "aria-hidden": "true" }, "‹"), parent.text) : null)
+}
+
 /** A note as paragraphs (a blank line in the PGN comment starts a new one), with figurines. */
 export function paras(text, attrs = {}) {
     return String(text || "").split(/\n\n+/).filter(Boolean).map(p => h("p", attrs, figText(p)))

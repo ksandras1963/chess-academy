@@ -1,6 +1,6 @@
 // Course page: progress, today's drill, key ideas, and the list of lines by chapter.
 
-import { h, figText, paras, plural } from "../ui.js"
+import { h, figText, paras, plural, backBar } from "../ui.js"
 import { course as loadCourse } from "../content.js"
 import { status, progress, buildQueue, practiceQueue, newRemainingToday, daysUntil } from "../srs.js"
 import { furtherStudy } from "./layout.js"
@@ -44,7 +44,7 @@ export async function courseView(root, ctx, id) {
     const chapters = c.chapters.filter(ch => ch.type !== "ideas")
 
     root.append(h("section", { class: "course" },
-        h("nav", { class: "crumbs" }, h("a", { href: "#/" }, "All openings")),
+        backBar(),
         h("header", { class: "course-head" },
             h("h1", {}, c.opening.name),
             h("p", { class: "course-side" }, `As ${c.side === "white" ? "White" : "Black"}: ${c.repertoire}`),

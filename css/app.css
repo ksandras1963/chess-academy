@@ -229,9 +229,11 @@ a.course-link:hover { border-color: var(--brass); }
 /* ---------- course ---------- */
 
 .course, .settings { max-width: 860px; margin: 0 auto; }
-.crumbs { margin-bottom: 16px; font-size: 0.9375rem; }
-.crumbs a, .crumb { color: var(--ink-dim); text-decoration: none; }
-.crumbs a:hover, .crumb:hover { color: var(--ink); text-decoration: underline; }
+.backbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.btn-back { gap: 6px; padding-left: 10px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+.btn-back > span { font-family: var(--serif); font-size: 1.375rem; line-height: 1; margin-top: -3px; }
+.tp-head .backbar { margin-bottom: 12px; }
+.empty .backbar { margin-bottom: 0; }
 .course-head h1 { font-size: clamp(2rem, 1.4rem + 2.4vw, 2.75rem); }
 .course-side { margin-top: 6px; font-size: 1.0625rem; }
 .course-summary { margin-top: 10px; max-width: 40rem; font-family: var(--serif); font-size: 1.125rem; line-height: 1.6; color: var(--ink-dim); }
@@ -302,7 +304,6 @@ a.course-link:hover { border-color: var(--brass); }
 .scoresheet { grid-area: sheet; }
 
 .trainer-board .board-frame { margin: 0 auto; max-width: 640px; }
-.crumb { font-size: 0.875rem; }
 .tp-title { margin-top: 4px; font-size: 1.5rem; }
 .tp-sub { margin-top: 2px; font-family: var(--serif); color: var(--ink-dim); font-size: 1.0625rem; }
 
@@ -369,9 +370,13 @@ button.sheet-move:hover { background: var(--felt-high); }
         display: flex; flex-direction: column; gap: 16px;
         max-height: calc(100dvh - var(--topbar) - 32px);
         position: sticky; top: calc(var(--topbar) + 16px);
+        overflow-y: auto; overscroll-behavior: contain;
     }
+    /* Long notes scroll inside the panel instead of being squeezed; the buttons stay in view. */
+    .trainer-panel > * { flex-shrink: 0; }
     .tp-head, .controls, .commentary, .extra, .scoresheet { grid-area: auto; }
-    .scoresheet { order: 1; max-height: none; min-height: 6rem; flex: 1 1 auto; }
+    .scoresheet { order: 1; max-height: min(16rem, 34vh); }
+    .controls { position: sticky; bottom: 0; z-index: 1; padding: 10px 0 2px; background: var(--felt); }
     .tp-head { order: 0; }
     .commentary { order: 2; }
     .extra { order: 3; }

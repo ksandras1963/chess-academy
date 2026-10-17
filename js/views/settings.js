@@ -1,6 +1,6 @@
 // Settings, backup and restore, and credits.
 
-import { h } from "../ui.js"
+import { h, backBar } from "../ui.js"
 import { settings, updateSettings, exportCode, exportJson, importBackup, resetProgress } from "../storage.js"
 import { applyTheme } from "../theme.js"
 
@@ -34,7 +34,7 @@ export function settingsView(root) {
     })
 
     root.append(h("section", { class: "settings" },
-        h("nav", { class: "crumbs" }, h("a", { href: "#/" }, "All openings")),
+        backBar(),
         h("h1", {}, "Settings"),
         h("section", { class: "settings-group" },
             h("h2", {}, "Display"),

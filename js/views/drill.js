@@ -1,7 +1,7 @@
 // Drill mode: the learner plays their side, the app plays the other. Results feed the review schedule.
 
 import { Chess } from "../../vendor/chess.js/chess.js"
-import { h, figText, paras, label, sideName, plural, sleep } from "../ui.js"
+import { h, figText, paras, label, sideName, plural, sleep, backBar } from "../ui.js"
 import { course as loadCourse, availableCourses } from "../content.js"
 import { sideNotes } from "../course-model.js"
 import { status, buildQueue, practiceQueue, recordResult, daysUntil } from "../srs.js"
@@ -35,6 +35,7 @@ export async function reviewView(root, ctx) {
         .sort((a, b) => status(a.line.id).rec.due - status(b.line.id).rec.due)
     if (!items.length) {
         root.append(h("section", { class: "empty" },
+            backBar(),
             h("h1", {}, "Nothing to review"),
             h("p", {}, "Lines you have drilled come back here when they are due. To learn new lines, open a course."),
             h("a", { class: "btn btn-primary", href: "#/" }, "Choose a course")))
@@ -46,6 +47,7 @@ export async function reviewView(root, ctx) {
 async function runSession(root, ctx, items, { backHref, backText }) {
     if (!items.length) {
         root.append(h("section", { class: "empty" },
+            backBar(backHref !== "#/" ? { href: backHref, text: backText } : null),
             h("h1", {}, "No lines to drill"),
             h("p", {}, "This course has no lines yet."),
             h("a", { class: "btn btn-primary", href: backHref }, "Back")))

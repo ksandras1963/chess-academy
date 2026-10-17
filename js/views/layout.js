@@ -1,10 +1,10 @@
 // Shared trainer layout (board + panel) and the scoresheet.
 
-import { h, fig } from "../ui.js"
+import { h, fig, backBar } from "../ui.js"
 
 export function trainerLayout(root, { backHref, backText }) {
     const boardEl = h("div", { class: "board-frame" })
-    const crumb = h("a", { class: "crumb", href: backHref }, backText)
+    const back = backBar(backHref && backHref !== "#/" ? { href: backHref, text: backText } : null)
     const title = h("h1", { class: "tp-title" })
     const sub = h("p", { class: "tp-sub" })
     const sheet = h("div", { class: "scoresheet" })
@@ -14,7 +14,7 @@ export function trainerLayout(root, { backHref, backText }) {
     root.append(h("section", { class: "trainer" },
         h("div", { class: "trainer-board" }, boardEl),
         h("aside", { class: "trainer-panel" },
-            h("header", { class: "tp-head" }, crumb, title, sub),
+            h("header", { class: "tp-head" }, back, title, sub),
             sheet, commentary, extra, controls)))
     return {
         boardEl, sheet, commentary, extra, controls,

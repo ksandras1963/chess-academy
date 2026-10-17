@@ -1,6 +1,6 @@
 // App entry: hash router, the review badge, and error display.
 
-import { h } from "./ui.js"
+import { h, backBar } from "./ui.js"
 import { applyTheme } from "./theme.js"
 import { availableCourses } from "./content.js"
 import { buildQueue } from "./srs.js"
@@ -45,6 +45,7 @@ async function route() {
         if (!ctx.alive()) return
         console.error(e)
         view.replaceChildren(h("section", { class: "empty" },
+            backBar(),
             h("h1", {}, "Something went wrong"),
             h("p", {}, e.message || String(e)),
             h("a", { class: "btn btn-primary", href: "#/" }, "Back to all openings")))
