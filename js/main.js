@@ -72,3 +72,8 @@ async function updateBadge() {
 applyTheme()
 window.addEventListener("hashchange", route)
 route()
+
+// Offline support on the website (sw.js). Not for the double-click file, which needs no network.
+if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+    navigator.serviceWorker.register("sw.js").catch(() => { /* the app still works online */ })
+}

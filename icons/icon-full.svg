@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Square, edge-to-edge version of icon.svg for phone home screens, which round the corners themselves.
+       The squares sit inside the central "safe zone" that Android may crop to a circle.
+       The PNGs next to it are made from this file by tools/build-icons.mjs. -->
+  <rect width="64" height="64" fill="#0f1c17"/>
+  <rect x="16" y="16" width="16" height="16" fill="#c9a34e"/>
+  <rect x="32" y="32" width="16" height="16" fill="#c9a34e"/>
+  <rect x="32" y="16" width="16" height="16" fill="#c9a34e" opacity=".3"/>
+  <rect x="16" y="32" width="16" height="16" fill="#c9a34e" opacity=".3"/>
+</svg>

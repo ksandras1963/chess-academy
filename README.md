@@ -12,7 +12,14 @@ Version 1 covers the Italian Game, Sicilian, French, Caro-Kann and Queen's Gambi
 
 ## Open it
 
-**Double-click `Opening Trainer.html`.** It is the whole app in one file and needs no server or internet (only the further-study links go online). It is generated, so don't edit it. The content checker rebuilds it after every passing check, or you can rebuild it directly:
+**On the web:** https://USERNAME.github.io/chess-academy/ (GitHub Pages, published from the `main` branch).
+
+- **On an iPhone or iPad,** open the link in Safari, tap **Share**, then **Add to Home Screen**. It opens full screen, like an app, and works offline after the first visit.
+- **On Android,** open the link in Chrome, then choose **Install app** (or **Add to Home screen**) from the menu.
+
+Progress stays on each device. Use **Settings → Back up your progress** to move it to another one.
+
+**On this computer, without internet:** double-click `Opening Trainer.html`. It is the whole app in one file and needs no server or internet (only the further-study links go online). It is generated, so don't edit it. The content checker rebuilds it after every passing check, or you can rebuild it directly:
 
 ```bash
 node tools/build-standalone.mjs
@@ -24,6 +31,8 @@ For development, run the local server and open http://127.0.0.1:8765/:
 node tools/serve.mjs
 ```
 
+Phones can't run the double-click file: an iPhone only previews it, without running the app. Use the website there.
+
 Progress is stored separately by each browser on each computer. The double-click file and the local server count as two different sites, so each keeps its own progress. Use **Settings → Back up your progress** to move it between them.
 
 ## Edit or add lessons
@@ -34,6 +43,8 @@ See [CONTENT-GUIDE.md](CONTENT-GUIDE.md). After any change, run:
 node tools/validate.mjs
 ```
 
+When the check passes, it also rebuilds `Opening Trainer.html` and `sw.js` (the website's offline copy list). Commit `sw.js` with your changes and push, and the website updates within a few minutes.
+
 The checker needs Node.js. For engine checks it also needs Stockfish at `%LOCALAPPDATA%\OpeningTrainer\stockfish\stockfish\stockfish-windows-x86-64-universal.exe`, or wherever the `STOCKFISH_PATH` environment variable points. Stockfish is not part of the app.
 
 ## Folder layout
@@ -41,13 +52,15 @@ The checker needs Node.js. For engine checks it also needs Stockfish at `%LOCALA
 | Path | What it holds |
 |---|---|
 | `index.html`, `css/`, `js/` | The app |
+| `manifest.webmanifest`, `sw.js`, `icons/` | Home-screen install and offline use on the website (`sw.js` is generated) |
 | `content/` | `courses.json` (the catalog) and one PGN file per course |
 | `vendor/` | chess.js and cm-chessboard, with their licenses |
 | `tools/` | Local server, content checker, engine helper, Lichess opening names |
 
 ## Credits and licenses
 
-- App code: MIT (see `LICENSE`). The lesson text in `content/` is © Kumar Sandrasegaran; its sharing license is still to be decided.
+- App code: MIT (see `LICENSE`).
+- Lesson text in `content/`: © Kumar Sandrasegaran, [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) (see `content/LICENSE.md`).
 - [chess.js](https://github.com/jhlywa/chess.js): BSD 2-Clause.
 - [cm-chessboard](https://github.com/shaack/cm-chessboard): MIT.
 - Chess pieces: Colin M. L. Burnett, via Wikimedia Commons, CC BY-SA 3.0.

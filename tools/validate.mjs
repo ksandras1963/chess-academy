@@ -15,6 +15,7 @@ import { buildCourse, buildPuzzleSet, mainPath, moveLabel } from "../js/course-m
 const diagramLabel = ch => (ch.diagram && ch.diagram.node ? moveLabel(ch.diagram.node) : "—")
 import { Engine, DEFAULT_EXE, engineAvailable } from "./engine.mjs"
 import { buildStandalone } from "./build-standalone.mjs"
+import { buildServiceWorker } from "./build-sw.mjs"
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const args = process.argv.slice(2)
@@ -275,5 +276,7 @@ console.log(`\n${errors.length ? errors.join("\n") : "No errors."}\nReport: tool
 if (!errors.length && !onlyCourse) {
     const b = await buildStandalone()
     console.log(`Rebuilt ${b.file} (${(b.bytes / 1024).toFixed(0)} KB).`)
+    const sw = await buildServiceWorker()
+    console.log(`Rebuilt ${sw.file} (offline copy of ${sw.files} files, version ${sw.version}).`)
 }
 process.exit(errors.length ? 1 : 0)

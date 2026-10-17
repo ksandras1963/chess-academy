@@ -110,6 +110,10 @@ export async function buildStandalone() {
     html = html.replace(/<link rel="icon"[^>]*>/, () =>
         `<link rel="icon" href="data:image/svg+xml,${encodeURIComponent(icon.trim())}">`)
     html = html.replace(/<script type="module" src="js\/main\.js"><\/script>\n?/, "")
+    // Home-screen install needs a website, so the file version leaves those tags out.
+    html = html.replace(/<!-- Installing to a phone's home screen[^>]*-->\n?/, "")
+    html = html.replace(/<link rel="(?:manifest|apple-touch-icon)"[^>]*>\n?/g, "")
+    html = html.replace(/<meta name="apple-mobile-web-app-[^"]+"[^>]*>\n?/g, "")
 
     const sprites = [
         await spriteDiv("cm-chessboard-sprite", "vendor/cm-chessboard/assets/pieces/standard.svg"),
