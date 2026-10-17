@@ -10,13 +10,21 @@ Version 1 covers the Italian Game, Sicilian, French, Caro-Kann and Queen's Gambi
 - **Drill:** you play your side and the app plays the other. A wrong move shows the right one with its reason.
 - **Review:** spaced repetition. Lines you know come back less often, and lines you miss come back the next day.
 
-## Run it on this computer
+## Open it
+
+**Double-click `Opening Trainer.html`.** It is the whole app in one file and needs no server or internet (only the further-study links go online). It is generated, so don't edit it. The content checker rebuilds it after every passing check, or you can rebuild it directly:
+
+```bash
+node tools/build-standalone.mjs
+```
+
+For development, run the local server and open http://127.0.0.1:8765/:
 
 ```bash
 node tools/serve.mjs
 ```
 
-Then open http://127.0.0.1:8765/. The app is static files only, so any web server works.
+Progress is stored separately by each browser on each computer. The double-click file and the local server count as two different sites, so each keeps its own progress. Use **Settings → Back up your progress** to move it between them.
 
 ## Edit or add lessons
 

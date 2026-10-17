@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "node tools/serve.mjs 8765",
+    "build": "node tools/build-standalone.mjs",
     "validate": "node tools/validate.mjs"
   }
 }

@@ -58,6 +58,7 @@ node tools/validate.mjs
 This checks every line for legal moves and checks opening names and ECO codes against the Lichess database. It also asks Stockfish whether each of your side's moves is sound, then writes the results to `tools/report.md`.
 
 - **Errors** (for example, an illegal move): fix them before sharing, or the course won't load.
+- **No errors:** the checker also rebuilds `Opening Trainer.html`, the double-click version of the app, so it always has your latest lessons.
 - **Flagged moves:** your-side moves that Stockfish rates more than 0.6 pawns worse than its choice. Change the move, or keep it on purpose by adding `[%engine ok]` inside that move's explanation. It moves to an "accepted" list and isn't shown in the app.
 - **Opponent moves that lose material** without a `?` mark are listed, so you can mark real mistakes in trap lines.
 

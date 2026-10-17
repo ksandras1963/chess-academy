@@ -6,13 +6,20 @@ import { buildCourse } from "./course-model.js"
 let catalogPromise = null
 const courses = new Map()
 
+// The single-file build ("Opening Trainer.html") embeds the content files here, so it needs no server.
+const embedded = globalThis.__OT_CONTENT__ || null
+
+async function readText(path, failMessage) {
+    if (embedded && path in embedded) return embedded[path]
+    const r = await fetch(path)
+    if (!r.ok) throw new Error(failMessage)
+    return r.text()
+}
+
 export function catalog() {
     if (!catalogPromise) {
-        catalogPromise = fetch("content/courses.json")
-            .then(r => {
-                if (!r.ok) throw new Error("The course list could not be loaded. Check your connection and reload.")
-                return r.json()
-            })
+        catalogPromise = readText("content/courses.json", "The course list could not be loaded. Check your connection and reload.")
+            .then(text => JSON.parse(text))
             .then(cat => {
                 cat.courseById = new Map()
                 for (const op of cat.openings) {
@@ -38,9 +45,7 @@ export async function course(id) {
     const meta = cat.courseById.get(id)
     if (!meta) throw new Error("There is no course with that name. Go back to the openings list.")
     if (!meta.available) throw new Error(`${meta.opening.name} as ${meta.side === "white" ? "White" : "Black"} is coming soon.`)
-    const r = await fetch(meta.file)
-    if (!r.ok) throw new Error(`The file ${meta.file} could not be loaded.`)
-    const built = buildCourse(meta, await r.text())
+    const built = buildCourse(meta, await readText(meta.file, `The file ${meta.file} could not be loaded.`))
     courses.set(id, built)
     return built
 }

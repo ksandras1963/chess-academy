@@ -13,6 +13,7 @@ import { fileURLToPath } from "node:url"
 import { Chess } from "../vendor/chess.js/chess.js"
 import { buildCourse, mainPath, moveLabel } from "../js/course-model.js"
 import { Engine, DEFAULT_EXE, engineAvailable } from "./engine.mjs"
+import { buildStandalone } from "./build-standalone.mjs"
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const args = process.argv.slice(2)
@@ -204,4 +205,8 @@ const header = [
 ]
 await writeFile(path.join(root, "tools", "report.md"), header.concat(report).join("\n"))
 console.log(`\n${errors.length ? errors.join("\n") : "No errors."}\nReport: tools/report.md`)
+if (!errors.length && !onlyCourse) {
+    const b = await buildStandalone()
+    console.log(`Rebuilt ${b.file} (${(b.bytes / 1024).toFixed(0)} KB).`)
+}
 process.exit(errors.length ? 1 : 0)
