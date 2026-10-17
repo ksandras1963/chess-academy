@@ -8,7 +8,7 @@
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 h6?! 5. b4 Bb6 6. b5 Na5 7. Bxf7+! {[%cal Gc4f7] The bishop takes f7 with check before the knight can take it.}
 (7. Nxe5? {Wins a pawn, but after 7...Nxc4 8.Nxc4 d5 Black has the bishop pair and an equal game.} 7... Nxc4 8. Nxc4 d5 {Stockfish: +0.1, equal.})
 (7. Be2?! {Saves the bishop, but the moment is gone: Black develops and castles in peace.} 7... Nf6 8. d3 O-O 9. O-O {Black's pieces come out easily, and White's chance has gone. Stockfish: −0.2, equal.})
-7... Kf8 {Black's best. Taking the bishop loses even faster: after the puzzle, play 7...Kxf7 through under Other lines.}
+7... Kf8 {Black's best. 7...Kxf7 is worse: 8.Nxe5+ takes the pawn with check, and Black's king is left exposed in the middle of the board, a poor position for Black. Stockfish: +5.4 after 7...Kxf7, winning for White, against +4.4 after 7...Kf8. After the puzzle you can play 7...Kxf7 through under Other lines.}
 (7... Kxf7 {Takes the bishop, but the king comes out into the open.} 8. Nxe5+ {Takes the e5 pawn with check, and the knight eyes g6.}
 8... Kf8 {Back to f8, but this walks into a fork.}
 (8... Ke6 {Black's best try, but the king is stuck in the middle of the board.} 9. Qh5 Qf6 10. d4 g6 11. Qg4+ {Stockfish: +4.3, winning for White.})
