@@ -12,7 +12,7 @@ Version 1 covers the Italian Game, Sicilian, French, Caro-Kann and Queen's Gambi
 
 ## Open it
 
-**On the web:** https://USERNAME.github.io/chess-academy/ (GitHub Pages, published from the `main` branch).
+**On the web:** https://ksandras1963.github.io/chess-academy/ (GitHub Pages, published from the `main` branch).
 
 - **On an iPhone or iPad,** open the link in Safari, tap **Share**, then **Add to Home Screen**. It opens full screen, like an app, and works offline after the first visit.
 - **On Android,** open the link in Chrome, then choose **Install app** (or **Add to Home screen**) from the menu.
