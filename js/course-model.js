@@ -4,7 +4,7 @@
 import { Chess, DEFAULT_POSITION } from "../vendor/chess.js/chess.js"
 import { parsePgn, parseComment } from "./pgn.js"
 
-export const CHAPTER_TYPES = ["line", "trap", "ideas"]
+export const CHAPTER_TYPES = ["line", "trap", "ideas", "puzzle"]
 
 export class ContentError extends Error {}
 
@@ -57,6 +57,7 @@ function replay(node, chess, where) {
         child.note = joinComments(child.comments)
         child.pre = joinComments(child.preComments)
         child.isMistake = child.nags.some(n => n === 2 || n === 4 || n === 6)
+        child.isGood = child.nags.some(n => n === 1 || n === 3 || n === 5)
         child.symbol = nagSymbol(child.nags)
         replay(child, chess, where)
     }
@@ -91,7 +92,7 @@ function buildChapter(game, index, course) {
         headers: h,
         root
     }
-    chapter.diagram = type === "ideas" ? null : chapterDiagram(chapter)
+    chapter.diagram = type === "ideas" || type === "puzzle" ? null : chapterDiagram(chapter)
     return chapter
 }
 
@@ -116,12 +117,57 @@ const MOVE_LABEL = "(\\d+)(\\.\\.\\.|…|\\.)\\s?([KQRBN]?[a-h]?[1-8]?x?[a-h][1-
 export function chapterDiagram(chapter) {
     const wanted = chapter.headers.Diagram || [...chapter.title.matchAll(new RegExp(MOVE_LABEL, "g"))].map(m => m[0]).pop()
     if (!wanted) return null
+    return findMainMove(chapter.root, wanted, "diagram move")
+}
+
+/** The main-line node for a label like "6...Bb4+". Returns { node } or { error }. */
+function findMainMove(root, wanted, what) {
     const m = new RegExp(`^${MOVE_LABEL}$`).exec(wanted.trim().replace(/[?!+#]+$/, ""))
-    if (!m) return { error: `can't read the diagram move "${wanted}"` }
+    if (!m) return { error: `can't read the ${what} "${wanted}"` }
     const color = m[2] === "." ? "w" : "b"
-    const node = mainPath(chapter.root).find(n =>
+    const node = mainPath(root).find(n =>
         n.moveNumber === Number(m[1]) && n.color === color && n.san.replace(/[+#]$/, "") === m[3])
-    return node ? { node } : { error: `diagram move "${wanted}" is not on the chapter's main line` }
+    return node ? { node } : { error: `${what} "${wanted}" is not on the main line` }
+}
+
+/**
+ * Builds a puzzle set from its PGN. Each game is one puzzle: the moves from the start, with
+ * [Solve "6...Bb4+"] marking the first move the solver must find. From there the main line is
+ * the solution (the solver's moves and the opponent's best replies). At a solver's move, a
+ * variation marked ! or !? is also accepted; one marked ?, ?? or ?! is a known wrong try
+ * whose comment explains the refutation.
+ */
+export function buildPuzzleSet(meta, pgnText) {
+    let games
+    try {
+        games = parsePgn(pgnText)
+    } catch (e) {
+        throw new ContentError(`${meta.id} puzzles: ${e.message}`)
+    }
+    return games.map((g, i) => {
+        const ch = buildChapter(g, i, { id: `${meta.id} puzzles` })
+        const title = g.headers.Puzzle || ch.title
+        if (!g.headers.Solve) throw new ContentError(`${meta.id} puzzles / ${title}: missing [Solve "..."] header`)
+        const found = findMainMove(ch.root, g.headers.Solve, "Solve move")
+        if (found.error) throw new ContentError(`${meta.id} puzzles / ${title}: ${found.error}`)
+        const path = mainPath(ch.root)
+        const start = path.indexOf(found.node)
+        return {
+            id: hash(`${meta.id}|puzzle|${path.slice(0, start + 1).map(n => n.san).join(" ")}`),
+            index: i,
+            number: i + 1,
+            title,
+            theme: g.headers.Theme || "",
+            hint: g.headers.Hint || "",
+            opening: ch.opening,
+            eco: ch.eco,
+            chapter: ch,
+            learner: found.node.color,
+            setup: path.slice(0, start),
+            solution: path.slice(start),
+            first: found.node
+        }
+    })
 }
 
 function extractLines(chapter, course) {

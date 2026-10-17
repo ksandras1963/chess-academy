@@ -96,6 +96,7 @@ export async function buildStandalone() {
         for (const c of op.courses) {
             if (c.file) content[c.file] = await readFile(path.join(root, c.file), "utf8")
         }
+        if (op.puzzles) content[op.puzzles] = await readFile(path.join(root, op.puzzles), "utf8")
     }
 
     let html = await readFile(path.join(root, "index.html"), "utf8")
@@ -121,10 +122,10 @@ export async function buildStandalone() {
         `<!doctype html>\n<!-- Built ${new Date().toISOString().slice(0, 10)} by tools/build-standalone.mjs. Don't edit this file: edit the sources and rebuild. -->`)
 
     await writeFile(path.join(root, OUTPUT), html)
-    return { file: OUTPUT, modules: modules.length, courses: Object.keys(content).length - 1, bytes: Buffer.byteLength(html) }
+    return { file: OUTPUT, modules: modules.length, contentFiles: Object.keys(content).length - 1, bytes: Buffer.byteLength(html) }
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
     const r = await buildStandalone()
-    console.log(`Built ${r.file}: ${r.modules} modules, ${r.courses} courses, ${(r.bytes / 1024).toFixed(0)} KB`)
+    console.log(`Built ${r.file}: ${r.modules} modules, ${r.contentFiles} content files, ${(r.bytes / 1024).toFixed(0)} KB`)
 }

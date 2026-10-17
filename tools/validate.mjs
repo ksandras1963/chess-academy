@@ -11,7 +11,7 @@ import { readFile, writeFile, readdir, access } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import { Chess } from "../vendor/chess.js/chess.js"
-import { buildCourse, mainPath, moveLabel } from "../js/course-model.js"
+import { buildCourse, buildPuzzleSet, mainPath, moveLabel } from "../js/course-model.js"
 const diagramLabel = ch => (ch.diagram && ch.diagram.node ? moveLabel(ch.diagram.node) : "—")
 import { Engine, DEFAULT_EXE, engineAvailable } from "./engine.mjs"
 import { buildStandalone } from "./build-standalone.mjs"
@@ -30,6 +30,8 @@ const onlyCourse = opt("--course", null)
 const LEARNER_LOSS = 60 // learner move this much worse than best -> flag
 const OPPONENT_LOSS = 150 // opponent move this much worse than best and not marked ?/??/?! -> note
 const LINE_END_BAD = -100 // line ends with the learner this far behind -> flag
+const PUZZLE_MARGIN = 70 // a puzzle move must beat every non-accepted move by this much
+const PUZZLE_DEFENSE = 50 // the opponent's reply in a puzzle may be at most this much worse than best
 
 const epd = fen => fen.split(" ").slice(0, 4).join(" ")
 const pawns = cp => (cp / 100).toFixed(2)
@@ -203,6 +205,60 @@ for (const meta of courses) {
     }
     report.push(section.join("\n"))
 }
+
+// ---------- Puzzles ----------
+async function topLines(fen) {
+    const key = `${depth}|multipv3|${fen}`
+    if (!cache[key]) cache[key] = await engine.analyse(fen, depth, 3)
+    return cache[key]
+}
+
+for (const op of catalog.openings.filter(o => o.puzzles && !onlyCourse)) {
+    const section = [`## Puzzles: ${op.name} (\`${op.puzzles}\`)`, ""]
+    let set
+    try {
+        set = buildPuzzleSet({ id: op.id }, await readFile(path.join(root, op.puzzles), "utf8"))
+    } catch (e) {
+        errors.push(e.message)
+        report.push([...section, `**ERROR:** ${e.message}`, ""].join("\n"))
+        continue
+    }
+    const rows = []
+    for (const pz of set) {
+        const problems = []
+        if (engine) {
+            for (const node of pz.solution) {
+                const label = moveLabel(node)
+                if (node.color === pz.learner) {
+                    const accepted = new Set([node.uci, ...node.parent.children.filter(c => c !== node && c.isGood).map(c => c.uci)])
+                    const lines = await topLines(node.fenBefore)
+                    const best = lines[0]
+                    const solution = lines.find(l => l.pv[0] === node.uci) || { score: (await evalCached(node.fenBefore, node.uci)).score }
+                    if (!accepted.has(best.pv[0])) {
+                        problems.push(`${label}: Stockfish prefers ${uciToSan(node.fenBefore, best.pv[0])} by ${pawns(best.score - solution.score)}`)
+                    }
+                    const rival = lines.find(l => !accepted.has(l.pv[0]))
+                    if (rival && solution.score - rival.score < PUZZLE_MARGIN) {
+                        problems.push(`${label}: not unique, ${uciToSan(node.fenBefore, rival.pv[0])} is only ${pawns(solution.score - rival.score)} worse`)
+                    }
+                } else {
+                    const r = await moveLoss(node.fenBefore, node.uci)
+                    if (r.loss > PUZZLE_DEFENSE) {
+                        problems.push(`${label} is not the best defense (Stockfish prefers ${uciToSan(node.fenBefore, r.best)})`)
+                    }
+                }
+                process.stdout.write(".")
+            }
+        }
+        for (const p of problems) errors.push(`${op.id} puzzle ${pz.number} (${pz.title}): ${p}`)
+        const moves = pz.solution.filter(n => n.color === pz.learner).length
+        rows.push(`| ${pz.number} | ${pz.title} | ${pz.learner === "w" ? "White" : "Black"} | ${moveLabel(pz.first)} | ${moves} | ${engine ? (problems.length ? `**${problems.join("; ")}**` : "ok") : "not checked"} |`)
+    }
+    section.push(`${set.length} puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least ${pawns(PUZZLE_MARGIN)} pawns (depth ${depth}).`, "",
+        "| # | Puzzle | To move | First move | Solver moves | Check |", "|---|---|---|---|---|---|", ...rows, "")
+    report.push(section.join("\n"))
+}
+if (engine) await writeFile(cachePath, JSON.stringify(cache))
 engine?.quit()
 
 const header = [

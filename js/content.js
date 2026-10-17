@@ -1,18 +1,19 @@
 // Loads the course catalog and course PGNs (cached for the session).
 
 import { Chess } from "../vendor/chess.js/chess.js"
-import { buildCourse } from "./course-model.js"
+import { buildCourse, buildPuzzleSet } from "./course-model.js"
 
 let catalogPromise = null
 const courses = new Map()
+const puzzleSets = new Map()
 
 // The single-file build ("Opening Trainer.html") embeds the content files here, so it needs no server.
 const embedded = globalThis.__OT_CONTENT__ || null
 
 async function readText(path, failMessage) {
     if (embedded && path in embedded) return embedded[path]
-    const r = await fetch(path)
-    if (!r.ok) throw new Error(failMessage)
+    const r = await fetch(path).catch(() => null)
+    if (!r || !r.ok) throw new Error(failMessage)
     return r.text()
 }
 
@@ -48,6 +49,18 @@ export async function course(id) {
     const built = buildCourse(meta, await readText(meta.file, `The file ${meta.file} could not be loaded.`))
     courses.set(id, built)
     return built
+}
+
+/** An opening's puzzle set (opening.puzzles in courses.json), or null when it has none yet. */
+export async function puzzles(openingId) {
+    if (puzzleSets.has(openingId)) return puzzleSets.get(openingId)
+    const cat = await catalog()
+    const op = cat.openings.find(o => o.id === openingId)
+    if (!op) throw new Error("There is no opening with that name. Go back to the main menu.")
+    if (!op.puzzles) return null
+    const set = { opening: op, items: buildPuzzleSet({ id: op.id }, await readText(op.puzzles, `The file ${op.puzzles} could not be loaded.`)) }
+    puzzleSets.set(openingId, set)
+    return set
 }
 
 /** Every course that has content, built. */

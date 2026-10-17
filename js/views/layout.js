@@ -30,7 +30,7 @@ export function trainerLayout(root, { backHref, backText }) {
  * Scoresheet: one row per move number, White then Black, like a tournament score sheet.
  * nodes: the moves; upto: how many are shown; current: index of the highlighted move.
  */
-export function renderSheet(el, nodes, { upto = nodes.length, current = -1, onPick = null, mistakes = new Set() } = {}) {
+export function renderSheet(el, nodes, { upto = nodes.length, current = -1, onPick = null, mistakes = new Set(), symbols = true } = {}) {
     const rows = []
     let row = null
     nodes.slice(0, upto).forEach((n, i) => {
@@ -42,7 +42,7 @@ export function renderSheet(el, nodes, { upto = nodes.length, current = -1, onPi
     })
     const cell = (c) => {
         if (!c) return h("span", { class: "sheet-move is-empty" }, "")
-        const text = fig(c.n.san) + (c.n.symbol || "")
+        const text = fig(c.n.san) + (symbols ? c.n.symbol || "" : "")
         const cls = "sheet-move" + (c.i === current ? " is-current" : "") + (mistakes.has(c.i) ? " is-missed" : "")
         return onPick
             ? h("button", { class: cls, type: "button", onclick: () => onPick(c.i + 1), "aria-current": c.i === current ? "true" : null }, text)

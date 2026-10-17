@@ -1,6 +1,6 @@
 # Content validation report
 
-Generated 2026-10-17 16:15 · engine Stockfish, depth 18
+Generated 2026-10-17 18:29 · engine Stockfish, depth 18
 
 **No errors.**
 
@@ -124,3 +124,20 @@ None.
 | Trap: 5.Ng5 and f7 (6.Nc3) | 0.20 | C50 Italian Game: Giuoco Pianissimo, Normal |
 | Trap: a fork trick that fails (Main line) | 4.53 | C50 Four Knights Game: Italian Variation |
 | Trap: a fork trick that fails (7.Qd3) | 6.57 | C50 Four Knights Game: Italian Variation |
+
+## Puzzles: Italian Game (`content/italian-puzzles.pgn`)
+
+10 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+| # | Puzzle | To move | First move | Solver moves | Check |
+|---|---|---|---|---|---|
+| 1 | Gain time with check | Black | 6...Bb4+ | 1 | ok |
+| 2 | Punish the early ...d5 | White | 8.Qb5+ | 1 | ok |
+| 3 | Counterattack, don't retreat | Black | 6...d5 | 1 | ok |
+| 4 | The b-pawn push pays off | White | 7.Bxf7+ | 1 | ok |
+| 5 | Refute the fork trick | Black | 6...Nxc4 | 1 | ok |
+| 6 | Escape the Blackburne trap | White | 5.O-O | 1 | ok |
+| 7 | Don't take the queen | Black | 6...Nxe5 | 1 | ok |
+| 8 | Légal's mate | White | 7.Bxf7+ | 2 | ok |
+| 9 | Escape the Møller trap | Black | 9...d5 | 2 | ok |
+| 10 | Fried Liver in the Paris | White | 7.Nxf7 | 2 | ok |

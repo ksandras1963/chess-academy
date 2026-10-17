@@ -1,0 +1,104 @@
+[Puzzle "Gain time with check"]
+[Type "puzzle"]
+[Theme "Opening play"]
+[Solve "6...Bb4+"]
+[Hint "White's king is still on e1. Use that before White can castle."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ {Check first. White has to block with a bishop or knight, and your bishop leaves the reach of the d-pawn with gain of time.}
+(6... Bb6? {Too slow. 7.d5 and 8.e5 drive your knights back while White's center rolls forward.})
+(6... d5? {Opens the center too early: 7.exd5 hits the knight on c6, and White's pieces are better placed.})
+*
+
+[Puzzle "Punish the early ...d5"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "8.Qb5+"]
+[Hint "Look for a check that also attacks a piece Black can't defend."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d5?! 6. exd5 Nxd5 7. Qb3 {Queen and bishop hit d5 together, with f7 behind it.} Nce7? {Guards d5, but the bishop on c5 has lost its defender.} 8. Qb5+! {[%cal Gb5c5] Check, and the queen also attacks the bishop on c5. After 8...c6 9.Qxc5 White wins a piece. It all began with Black's early ...d5, which 7.Qb3 punished.}
+(8. Nxe5?! {Wins a pawn, but the check wins a whole piece.})
+*
+
+[Puzzle "Counterattack, don't retreat"]
+[Type "puzzle"]
+[Theme "Opening play"]
+[Solve "6...d5"]
+[Hint "Your knight is attacked. Is there something stronger than moving it?"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. e5 d5! {[%cal Gd5c4] Hits the bishop on c4 instead of moving the knight. After 7.Bb5 Ne4 your knight is strong in the center, and after 7.exf6 dxc4 you win the piece back with a good game.}
+(6... Ng4? {7.cxd4 leaves the knight offside and White with a big center.})
+(6... Ne4? {7.Bd5 attacks the knight again, and Black's pieces end up loose.})
+*
+
+[Puzzle "The b-pawn push pays off"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "7.Bxf7+"]
+[Hint "The knight on a5 attacks your bishop. Make the bishop count before it is taken."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 h6?! 5. b4 Bb6 6. b5 Na5 7. Bxf7+! {[%cal Gc4f7] The bishop takes f7 with check before the knight can take it. After 7...Kf8 8.Nxe5 White is a pawn up with a crushing attack, and 7...Kxf7 8.Nxe5+ is even worse for Black.}
+(7. Nxe5? {Wins a pawn, but after 7...Nxc4 8.Nxc4 d5 Black has the bishop pair and an equal game.})
+(7. Be2?! {Saves the bishop, but the moment is gone.})
+*
+
+[Puzzle "Refute the fork trick"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "6...Nxc4"]
+[Hint "The pawn on d4 forks your bishop and knight. Can one of them capture something first?"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. Nxe5? Nxe5 6. d4 Nxc4! {[%cal Ge5c4] Take the bishop first. Now only your bishop on c5 is attacked, and after 7.dxc5 d5 you are a piece for a pawn up.}
+(6... Bd6? {Saves the bishop, but the fork trick works: 7.dxe5 Bxe5 8.f4 and White wins the piece back.})
+(6... Nxe4?! {Equalizes, but misses the win. Take on c4 first.})
+*
+
+[Puzzle "Escape the Blackburne trap"]
+[Type "puzzle"]
+[Theme "Escape the trap"]
+[Solve "5.O-O"]
+[Hint "Your knight on e5 and the pawn on g2 are both attacked. Don't grab more material."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4 4. Nxe5? Qg5 5. O-O! {Castling protects g2 and brings the rook toward the center. Black wins the knight on e5, but White's quick development keeps the game close: Stockfish rates it only slightly better for Black.}
+(5. Bxf7+! {Also good: 5...Kd8 6.O-O Qxe5, and White has two pawns for the knight and a safe king.})
+(5. Nxf7? {Forks queen and rook, but walks into the trap.} Qxg2 6. Rf1 Qxe4+ 7. Be2 Nf3#)
+*
+
+[Puzzle "Don't take the queen"]
+[Type "puzzle"]
+[Theme "Escape the trap"]
+[Solve "6...Nxe5"]
+[Hint "Taking the queen looks free. Count White's checks first."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Bg4 5. h3 Bh5? 6. Nxe5! Nxe5! {Leave the queen alone. After 7.Qxh5 Nxc4 8.Qb5+ c6 9.Qxc4 White is only a pawn up.}
+(6... dxe5! {Also limits the damage: 7.Qxh5, and White is a pawn up.})
+(6... Bxd1?? {Legal's mate: 7.Bxf7+ Ke7 8.Nd5#.} 7. Bxf7+ Ke7 8. Nd5#)
+*
+
+[Puzzle "Légal's mate"]
+[Type "puzzle"]
+[Theme "Checkmate in 2"]
+[Solve "7.Bxf7+"]
+[Hint "Black has just taken your queen. Use the bishop and both knights."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Bg4 5. h3 Bh5? 6. Nxe5! Bxd1?? 7. Bxf7+! {[%cal Gc4f7] Check. The king's only square is e7.} Ke7 8. Nd5# {Mate with three minor pieces, a queen down.}
+*
+
+[Puzzle "Escape the Møller trap"]
+[Type "puzzle"]
+[Theme "Escape the trap"]
+[Solve "9...d5"]
+[Hint "Your bishop on b4 is attacked. Counterattack instead of grabbing on c3."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3?! 9. bxc3 d5! {[%cal Gd5c4] Hits the bishop on c4 and leaves your own bishop where it is.}
+(9... Bxc3? {Grabs a second pawn, but 10.Ba3! keeps your king in the center, and White's attack wins.})
+10. cxb4 dxc4 {Takes back the piece. Material is level and Black is fine.}
+*
+
+[Puzzle "Fried Liver in the Paris"]
+[Type "puzzle"]
+[Theme "Tactics"]
+[Solve "7.Nxf7"]
+[Hint "f7 is defended only by Black's king."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Nf6 5. Ng5 d5 6. exd5 Nxd5? 7. Nxf7! {[%cal Gg5f7] The knight sacrifice drags the king out.} Kxf7 8. Bxd5+ {Takes the knight back with check. After 8...Ke8 9.Bxc6+ bxc6 10.Qh5+ White is two pawns up, and Black's king is stuck in the center.}
+*

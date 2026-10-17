@@ -1,13 +1,15 @@
 // Home: the openings index beside a preview board.
 
 import { h, figMoves, plural } from "../ui.js"
-import { catalog, availableCourses } from "../content.js"
+import { catalog, availableCourses, puzzles as loadPuzzles } from "../content.js"
 import { progress, buildQueue } from "../srs.js"
 import { Board } from "../board.js"
+import { puzzleStats } from "./puzzles.js"
 
 export async function homeView(root, ctx) {
     const cat = await catalog()
     const built = await availableCourses()
+    const puzzleSets = new Map(await Promise.all(cat.openings.map(async op => [op.id, await loadPuzzles(op.id)])))
     if (!ctx.alive()) return
     const byId = new Map(built.map(c => [c.id, c]))
     const due = built.reduce((n, c) => n + buildQueue(c.lines, { includeNew: false }).length, 0)
@@ -30,11 +32,20 @@ export async function homeView(root, ctx) {
                 h("span", { class: "meter", "aria-hidden": "true" }, h("span", { style: { width: p.pct + "%" } })),
                 h("span", { class: "course-meta" }, p.due ? `${p.due} due` : plural(c.lines.length, "line")))
         })
+        const set = puzzleSets.get(op.id)
+        const st = set && puzzleStats(set)
+        const puzzleLink = set
+            ? h("a", { class: "course-link puzzles-link", href: `#/puzzles/${op.id}` },
+                h("span", { class: "puzzle-chip", "aria-hidden": "true" }, "?"), "Puzzles",
+                h("span", { class: "course-meta" }, `${st.solved} of ${st.total} solved`))
+            : h("span", { class: "course-link puzzles-link is-soon" },
+                h("span", { class: "puzzle-chip", "aria-hidden": "true" }, "?"), "Puzzles",
+                h("span", { class: "course-meta" }, "Coming soon"))
         const li = h("li", { class: "opening", tabindex: "-1" },
             h("div", { class: "op-head" }, h("h2", {}, op.name), h("span", { class: "eco", title: "ECO code" }, op.eco)),
             h("p", { class: "op-moves" }, figMoves(op.moves)),
             h("p", { class: "op-summary" }, op.summary),
-            h("div", { class: "op-courses" }, courses))
+            h("div", { class: "op-courses" }, courses, puzzleLink))
         const preview = () => {
             list.querySelectorAll(".opening.is-shown").forEach(e => e.classList.remove("is-shown"))
             li.classList.add("is-shown")

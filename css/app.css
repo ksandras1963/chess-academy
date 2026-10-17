@@ -230,6 +230,13 @@ a.course-link:hover { border-color: var(--brass); }
 .course-link.is-soon { color: var(--ink-dim); background: transparent; border-style: dashed; }
 .course-meta { font-size: 0.8125rem; color: var(--ink-dim); }
 .side-chip { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--ink-dim); flex: none; }
+.puzzle-chip {
+    width: 16px; height: 16px; border-radius: 4px; flex: none;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--brass); color: var(--brass-ink);
+    font-family: var(--serif); font-size: 0.75rem; font-weight: 700; line-height: 1;
+}
+.course-link.is-soon .puzzle-chip { background: transparent; color: var(--ink-dim); border: 1.5px solid var(--ink-dim); }
 .side-chip.white { background: #f4efe2; border-color: #f4efe2; }
 .side-chip.black { background: #1b1b1b; border-color: #8a8a8a; }
 
@@ -266,6 +273,32 @@ a.course-link:hover { border-color: var(--brass); }
 .ideas-list ol { margin: 12px 0 0; padding-left: 1.5rem; display: grid; gap: 6px; font-family: var(--serif); font-size: 1.125rem; }
 .ideas-list a { text-decoration-color: color-mix(in srgb, var(--brass) 60%, transparent); text-underline-offset: 3px; }
 .ideas-list a:hover { color: var(--brass); }
+
+/* Puzzle list: a grid of position cards */
+.puzzles { max-width: 1000px; margin: 0 auto; }
+.puzzle-grid {
+    list-style: none; margin: 28px 0 0; padding: 0;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px;
+}
+.puzzle-card {
+    display: grid; gap: 4px; padding: 10px; height: 100%;
+    border: 1px solid var(--rule); border-radius: 8px; background: var(--felt-raised);
+    text-decoration: none; color: inherit;
+}
+.puzzle-card .board-frame { touch-action: auto; margin-bottom: 6px; }
+.puzzle-card:hover, .puzzle-card:focus-visible { border-color: var(--brass); }
+.puzzle-num { font-family: var(--serif); font-size: 1.0625rem; font-weight: 600; }
+.puzzle-meta { font-size: 0.8125rem; color: var(--ink-dim); }
+.puzzle-status { font-size: 0.8125rem; font-weight: 600; color: var(--ink-dim); }
+.puzzle-card.is-solved { border-color: color-mix(in srgb, var(--sage) 70%, transparent); }
+.puzzle-card.is-solved .puzzle-status { color: var(--sage); }
+.puzzle-card.is-missed { border-color: color-mix(in srgb, var(--flag) 70%, transparent); }
+.puzzle-card.is-missed .puzzle-status { color: var(--flag); }
+.cm-entry.is-hint .cm-move { color: var(--brass); }
+@media (max-width: 420px) {
+    .puzzle-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .puzzle-card { padding: 8px; }
+}
 
 .further { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule); }
 .extra .further { margin-top: 16px; }

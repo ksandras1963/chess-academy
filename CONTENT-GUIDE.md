@@ -24,7 +24,7 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 | Header | Meaning |
 |---|---|
 | `Chapter` | The title shown in the app. |
-| `Type` | `line` (normal lines), `trap`, or `ideas` (the Key ideas page, which is never drilled). |
+| `Type` | `line` (normal lines), `trap`, or `ideas` (the Key ideas page, which is never drilled). Puzzle files use `puzzle` (see Puzzles below). |
 | `Opening`, `ECO` | The Lichess opening name and code. The checker verifies both. |
 | `FEN` | Optional. Starts the chapter from a set position (used for Key ideas). |
 | `Diagram` | The move whose position is shown beside the chapter on the course page, e.g. `[Diagram "3...Nd4"]`. Without it, the last move named in the title is used (`Main line: 3...Bc5`). The checker reports an error if neither is found on the main line. |
@@ -49,6 +49,36 @@ These go inside an explanation, in the same format Lichess uses:
 
 - **Key ideas pages:** chapters with `[Type "ideas"]`. They appear in order under "Key ideas" on the course page, and their moves are never drilled. A page can be a single position (`[FEN "..."]` with no moves) or a short move sequence.
 - **Further study:** in `content/courses.json`, each opening can have a `furtherStudy` list (title, by, kind, url). It is shown on the course page and on every Key ideas page. Credit every source you draw on there, and always write the notes in your own words.
+
+## Puzzles
+
+Each opening can have one puzzle file, named in `content/courses.json` as `"puzzles": "content/italian-puzzles.pgn"`. The Puzzles link on the main menu shows "Coming soon" until an opening has one. Each puzzle is one chapter:
+
+```
+[Puzzle "Gain time with check"]
+[Type "puzzle"]
+[Theme "Opening play"]
+[Solve "6...Bb4+"]
+[Hint "White's king is still on e1. Use that before White can castle."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ {Why it works.}
+(6... Bb6? {Why this try fails.})
+*
+```
+
+| Header | Meaning |
+|---|---|
+| `Puzzle` | The title, shown after the puzzle is solved (it can give the answer away). |
+| `Theme` | A short label shown before solving, such as `Escape the trap` or `Checkmate in 2`. |
+| `Solve` | The first move the learner must find. Moves before it are the setup and play out automatically. The side that plays it is the side the learner plays. |
+| `Hint` | Shown after the first wrong try. |
+
+- **Longer answers:** the main line after the `Solve` move is the rest of the answer. The opponent's replies play automatically, and the learner must find each of their own moves.
+- **Wrong tries:** a branch marked `?`, `??` or `?!` shows its explanation when the learner plays it. Any other wrong move gets "isn't the best move".
+- **Other good answers:** a branch marked `!`, `!!` or `!?` is accepted as correct too.
+- **Marks are hidden** on the setup moves, so a `?` on the opponent's last move doesn't give the answer away.
+- **The checker is strict about puzzles.** For each move the learner must find, Stockfish's first choice has to be that move or an accepted `!` branch, and the move has to be at least 0.7 pawns better than every move that isn't accepted. Each opponent reply must be within 0.5 pawns of Stockfish's choice. If a puzzle fails, start it a move earlier or later, or pick another position.
+- A learner who solves a puzzle with no wrong tries and without "Show answer" gets **Solved**. Otherwise it is marked **To retry**, and the puzzle list offers "Retry missed". Puzzle progress is separate from Review.
 
 ## After editing: run the checker
 
