@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "openings": [
+    {
+      "id": "italian",
+      "name": "Italian Game",
+      "eco": "C50",
+      "moves": "1. e4 e5 2. Nf3 Nc6 3. Bc4",
+      "summary": "White's bishop eyes f7 while both sides build in the center. Slow, strategic, and played at every level.",
+      "courses": [
+        {
+          "id": "italian-white",
+          "side": "white",
+          "file": "content/italian-white.pgn",
+          "repertoire": "Giuoco Pianissimo: c3, d3, and a slow build-up",
+          "summary": "Build with c3 and d3, castle, bring the queen's knight to g3, and break with d4 when ready."
+        },
+        {
+          "id": "italian-black",
+          "side": "black",
+          "file": "content/italian-black.pgn",
+          "repertoire": "3...Bc5 with ...Nf6, ...d6, ...a6, ...h6",
+          "summary": "Mirror White's slow setup, keep the bishop with ...a6 and ...Ba7, and know how to meet d4 and the Evans Gambit."
+        }
+      ]
+    },
+    {
+      "id": "sicilian",
+      "name": "Sicilian Defense",
+      "eco": "B20",
+      "moves": "1. e4 c5",
+      "summary": "Black fights for d4 from the side, accepting an unbalanced game in return for winning chances.",
+      "courses": [
+        { "id": "sicilian-white", "side": "white", "repertoire": "Alapin (2.c3)" },
+        { "id": "sicilian-black", "side": "black", "repertoire": "Accelerated Dragon" }
+      ]
+    },
+    {
+      "id": "french",
+      "name": "French Defense",
+      "eco": "C00",
+      "moves": "1. e4 e6 2. d4 d5",
+      "summary": "Black builds a solid pawn chain and counterattacks White's center with ...c5 and ...f6.",
+      "courses": [
+        { "id": "french-white", "side": "white", "repertoire": "Advance Variation (3.e5)" },
+        { "id": "french-black", "side": "black", "repertoire": "Rubinstein (3...dxe4)" }
+      ]
+    },
+    {
+      "id": "caro-kann",
+      "name": "Caro-Kann Defense",
+      "eco": "B12",
+      "moves": "1. e4 c6 2. d4 d5",
+      "summary": "Black supports ...d5 with the c-pawn, keeping a sound structure and an active light-squared bishop.",
+      "courses": [
+        { "id": "caro-kann-white", "side": "white", "repertoire": "Advance, Short system" },
+        { "id": "caro-kann-black", "side": "black", "repertoire": "Classical (4...Bf5)" }
+      ]
+    },
+    {
+      "id": "queens-gambit",
+      "name": "Queen's Gambit",
+      "eco": "D06",
+      "moves": "1. d4 d5 2. c4",
+      "summary": "White offers the c-pawn to pull Black's d-pawn away from the center. Rich in plans, light on early tactics.",
+      "courses": [
+        { "id": "queens-gambit-white", "side": "white", "repertoire": "Exchange QGD and the minority attack" },
+        { "id": "queens-gambit-black", "side": "black", "repertoire": "Queen's Gambit Declined (2...e6)" }
+      ]
+    }
+  ]
+}

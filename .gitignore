@@ -1,0 +1,5 @@
+node_modules/
+tools/.eval-cache.json
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,11 @@
+{
+  "name": "opening-trainer",
+  "private": true,
+  "type": "module",
+  "description": "Learn and drill chess openings from both sides.",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node tools/serve.mjs 8765",
+    "validate": "node tools/validate.mjs"
+  }
+}

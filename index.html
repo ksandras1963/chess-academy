@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Opening Trainer</title>
+<meta name="description" content="Learn and drill five essential chess openings from both sides, for club players rated about 1500 to 2000.">
+<meta name="theme-color" content="#0f1c17">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/cm-chessboard/assets/chessboard.css">
+<link rel="stylesheet" href="vendor/cm-chessboard/assets/extensions/markers/markers.css">
+<link rel="stylesheet" href="vendor/cm-chessboard/assets/extensions/arrows/arrows.css">
+<link rel="stylesheet" href="css/app.css">
+<script>
+// Apply the saved theme before first paint.
+try {
+    var s = JSON.parse(localStorage.getItem("openingTrainer.v1") || "null")
+    var t = (s && s.settings && s.settings.theme) || "dark"
+    if (t === "system") t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
+    document.documentElement.dataset.theme = t
+} catch (e) {}
+</script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="topbar">
+    <a class="brand" href="#/"><svg class="brand-mark" viewBox="0 0 16 16" aria-hidden="true"><rect width="8" height="8" fill="currentColor"/><rect x="8" y="8" width="8" height="8" fill="currentColor"/><rect x="8" width="8" height="8" fill="currentColor" opacity=".25"/><rect y="8" width="8" height="8" fill="currentColor" opacity=".25"/></svg>Opening Trainer</a>
+    <nav class="topnav" aria-label="Main">
+        <a href="#/review">Review<span class="badge" id="due-count" hidden></span></a>
+        <a href="#/settings">Settings</a>
+    </nav>
+</header>
+<main id="app" tabindex="-1"></main>
+<noscript><p class="noscript">Opening Trainer needs JavaScript turned on.</p></noscript>
+</body>
+</html>

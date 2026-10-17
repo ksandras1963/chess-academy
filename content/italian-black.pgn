@@ -1,0 +1,91 @@
+[Chapter "Key ideas"]
+[Type "ideas"]
+[FEN "r1bq1rk1/bpp2pp1/p1np1n1p/4p3/P1B1P3/2PP1N1P/1P3PP1/RNBQR1K1 w - - 0 10"]
+
+{[%cal Ga7f2,Gd6d5] [%csl Yg5] Match White's patience. Develop with ...Nf6 and ...d6, then castle. ...a6 and ...Ba7 keep the bishop safe from d4 and b4 while it still aims at f2. ...h6 takes g5 from White's bishop and knight. Then ...Re8 and ...Be6 to trade White's Italian bishop, and ...d5 when the center allows it. Against an early d4, take, check on b4, and free your game with ...d5. Against the Evans Gambit, take the pawn and give it back with ...d5 at the right moment.} *
+
+[Chapter "Main line: 4.c3 Nf6 5.d3"]
+[Type "line"]
+[Opening "Italian Game: Classical Variation, Giuoco Pianissimo"]
+[ECO "C54"]
+
+{The most common setup at club level. Both sides build slowly, and small details decide who gets the useful pawn breaks.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 {[%cal Gc5f2] Develops and aims at f2.}
+4. c3 {White prepares d4.} Nf6 {Hits e4 before White can play d4.}
+5. d3 d6 {Supports e5 and opens the way for the light-squared bishop.}
+6. O-O
+(6. Nbd2 a6 7. O-O Ba7 8. Re1 O-O 9. Nf1 h6 {Takes g5 away from White's pieces.} 10. h3 Re8)
+(6. b4 {Gains space and chases the bishop.} Bb6 7. a4 a5! {Stops White's queenside pawns from rolling on.} 8. b5 Ne7 {The knight reroutes toward g6 and the kingside.} 9. O-O O-O)
+(6. Bb3 a6 7. Nbd2 Ba7 8. Nf1 O-O 9. Ng3 h6)
+6... a6 {Makes room for ...Ba7 so the bishop survives d4 and b4.}
+7. a4 Ba7 8. Re1 O-O 9. h3 h6 {[%csl Yg5] Takes g5 away from White's bishop and knight.}
+10. Nbd2 Re8 11. Nf1 Be6 {Challenges White's best bishop.}
+12. Bxe6 Rxe6 {The rook can now swing along the sixth rank.}
+13. Ng3 {Balanced. Black plans ...d5, or ...Qd7 and ...Rae8.} *
+
+[Chapter "Center attack: 5.d4"]
+[Type "line"]
+[Opening "Italian Game: Classical Variation, Center Attack"]
+[ECO "C54"]
+
+{White opens the center at once. Take on d4, check on b4, and free your game with ...d5.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 {Take, so White doesn't get a big center for free.}
+6. cxd4
+(6. e5 {Kicks the knight.} d5! {[%cal Gd5c4] Counterattacks the bishop instead of retreating.} 7. Bb5 Ne4 {A strong central knight.} 8. cxd4 Bb4+ 9. Bd2 Nxd2 10. Nbxd2 O-O {Black has castled and stands well.})
+6... Bb4+ {Gains time before White can castle.}
+7. Bd2
+(7. Nc3 Nxe4 {Take the center pawn.} 8. O-O Bxc3 9. d5 {The Møller Attack: sharp, but harmless if you know it.} (9. bxc3 d5 {Hits the bishop on c4 and supports the knight. Black keeps the extra pawn.} 10. Bd3 O-O 11. Qc2 Re8 12. Re1 Bf5) 9... Bf6 10. Re1 Ne7 11. Rxe4 d6 {Black keeps the extra pawn; White has active pieces in return. Castle next.})
+7... Bxd2+ 8. Nbxd2 d5! {[%cal Gd7d5] The key freeing move.}
+9. exd5 Nxd5 10. Qb3 Nce7 {Defends d5 with a second knight.}
+11. O-O O-O 12. Rfe1 c6 {Rock solid. White's d4 pawn is isolated and can become a target.} *
+
+[Chapter "Quiet fourth moves"]
+[Type "line"]
+[Opening "Italian Game: Giuoco Piano"]
+[ECO "C50"]
+
+{When White castles or plays d3 first, use the same setup. Most lines transpose to the main line.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O
+(4. d3 Nf6 5. O-O (5. c3 d6 {Back in the main line.}) (5. Nc3 d6 6. h3 a6 {Prepares ...Ba7 as usual.} 7. a3 Ba7 8. O-O O-O) 5... d6 6. c3 a6 {The main line by a different move order.})
+(4. Nc3 Nf6 5. d3 d6 6. Bg5 h6 7. Bxf6 Qxf6 {Black gets the bishop pair.} 8. Nd5 Qd8 {The queen steps back; ...c6 will kick the knight later.} 9. c3 a6)
+4... Nf6 5. d3 d6 6. c3 a6 {Transposes to the main line.} *
+
+[Chapter "Evans Gambit: 4.b4"]
+[Type "line"]
+[Opening "Italian Game: Evans Gambit"]
+[ECO "C51"]
+
+{White gives a pawn for fast development and a big center. Take it, retreat to a5, and give the pawn back with ...d5 at the right moment.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 {Accept: the pawn is free for now.}
+5. c3 Ba5 {The bishop stays active and out of reach of White's d-pawn.}
+6. d4
+(6. O-O d6 {Solid and simple.} 7. d4 Bb6 8. dxe5 dxe5 9. Qxd8+ Nxd8 {The queens are off, and with them White's attack.} 10. Nxe5 Be6 {White has the pawn back, but Black has an easy game.})
+6... exd4 7. O-O Nge7 {Develops and prepares ...d5.}
+8. cxd4 d5! {[%cal Gd7d5] Gives the pawn back to free the position.}
+9. exd5 Nxd5 {Black's pieces are active. Castle next.} *
+
+[Chapter "Trap: 5.Ng5 and f7"]
+[Type "trap"]
+[Opening "Italian Game: Giuoco Pianissimo"]
+[ECO "C50"]
+
+{An early Ng5 looks scary, but once you castle, f7 is defended twice.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. Ng5 {[%cal Rg5f7,Rc4f7] Aims at f7 with knight and bishop.} O-O! {Castling adds the rook to f7's defenders.}
+6. Nxf7? {This sacrifice doesn't work.}
+(6. Nc3 h6 {Kicks the knight back.} 7. Nf3 d6 {White has spent two moves with the knight for nothing.})
+6... Rxf7 7. Bxf7+ Kxf7 {Two minor pieces for a rook and pawn. Black is clearly better.} *
+
+[Chapter "Trap: a fork trick that fails"]
+[Type "trap"]
+[Opening "Four Knights Game: Italian Variation"]
+[ECO "C50"]
+
+{After 4.Nc3 Nf6, White may try the fork trick 5.Nxe5. Here it fails, because Black's knight can take on c4 first.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6
+5. Nxe5? {Hopes for 5...Nxe5 6.d4, forking bishop and knight.} Nxe5
+6. d4 Nxc4! {[%cal Ge5c4] Grab the bishop first. Now only one Black piece is attacked.}
+7. dxc5
+(7. Qd3? {Attacks the knight.} Bb4 8. Qxc4 Bxc3+ 9. bxc3 d5 {A piece up for a pawn, and ...d5 gains time on the queen.})
+7... d5! {Opens lines while White's king is still in the center.}
+8. exd5 Qe7+ {Forces the queens off or the king to move.}
+9. Qe2 Qxe2+ 10. Kxe2 Bf5 {Black has a piece for two pawns and much the better game.} *
