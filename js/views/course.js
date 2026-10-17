@@ -62,9 +62,11 @@ export async function courseView(root, ctx, id) {
                 h("span", { style: { width: p.pct + "%" } })),
             h("p", {}, `${plural(p.total, "line")}: ${p.fresh} new, ${p.learning} learning, ${p.review + p.known} reviewing or known.` +
                 (newRemainingToday() < 1 && p.fresh ? " Today's new lines are used up; any line can still be drilled from the list." : ""))),
-        chapters.map(ch => {
+        chapters.map((ch, i) => {
             const lines = c.lines.filter(l => l.chapter === ch)
-            return h("section", { class: `chapter chapter-${ch.type}` },
+            // A red heading marks where the traps begin.
+            const trapsStart = ch.type === "trap" && chapters[i - 1]?.type !== "trap"
+            return [trapsStart ? h("h2", { class: "section-title is-trap" }, "Traps") : null, h("section", { class: `chapter chapter-${ch.type}` },
                 chapterBoard(c, ch, lines, diagrams),
                 h("div", { class: "chapter-head" },
                     h("h2", {}, ch.title, TYPE_LABEL[ch.type] ? h("span", { class: "tag" }, TYPE_LABEL[ch.type]) : null),
@@ -78,7 +80,7 @@ export async function courseView(root, ctx, id) {
                         h("div", { class: "line-actions" },
                             h("a", { class: "btn btn-small", href: `#/learn/${c.id}/${l.id}` }, "Learn"),
                             h("a", { class: "btn btn-small", href: `#/drill/${c.id}/${l.id}` }, "Drill")))
-                })))
+                })))]
         }),
         furtherStudy(c.opening.furtherStudy)))
 

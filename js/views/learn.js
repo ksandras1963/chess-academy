@@ -23,7 +23,16 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
         base = { nodes: line.nodes, start: line.chapter.root, title: line.chapter.title, sub: figText(line.variation), line }
     }
 
-    const L = trainerLayout(root, { backHref: `#/course/${c.id}`, backText: sideLabel(c) })
+    // Key ideas pages link to the previous and next idea, so they can be read in order.
+    const steps = {}
+    if (!base.line) {
+        const ideas = c.chapters.filter(ch => ch.type === "ideas")
+        const at = ideas.findIndex(ch => ch.index === Number(lineKey.slice(6)))
+        const link = ch => (ch ? { href: `#/learn/${c.id}/ideas-${ch.index}`, text: ch.title.replace(/^Key ideas:\s*/i, "") } : null)
+        steps.prev = link(ideas[at - 1])
+        steps.next = link(ideas[at + 1])
+    }
+    const L = trainerLayout(root, { backHref: `#/course/${c.id}`, backText: sideLabel(c), ...steps })
     L.setTitle(base.title, base.sub)
     const state = { nodes: base.nodes, idx: Math.min(Number(startAt) || 0, base.nodes.length), explore: null }
     const board = new Board(L.boardEl, { fen: base.start.fen, orientation: learner })

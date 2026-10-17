@@ -92,7 +92,12 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
     const learner = pz.learner
     const check = () => { if (!ctx.alive()) throw ABORT }
 
-    const L = trainerLayout(root, { backHref: `#/puzzles/${op.id}`, backText: `${op.name} puzzles` })
+    // Previous / next puzzle links at the top, usable at any time (in Retry missed: the next missed one).
+    const later = set.items.slice(pz.index + 1).concat(set.items.slice(0, pz.index))
+    const nextUp = retryMode ? later.find(isMissed) : set.items[pz.index + 1]
+    const prevUp = retryMode ? null : set.items[pz.index - 1]
+    const linkTo = p => (p ? { href: `#/puzzle/${op.id}/${p.number}${retryMode ? "/retry" : ""}`, text: `Puzzle ${p.number}` } : null)
+    const L = trainerLayout(root, { backHref: `#/puzzles/${op.id}`, backText: `${op.name} puzzles`, prev: linkTo(prevUp), next: linkTo(nextUp) })
     L.setTitle(`Puzzle ${pz.number} of ${set.items.length}`, `${sideName(learner)} to move. ${pz.theme}.`)
     const last = lastSetup(pz)
     const board = new Board(L.boardEl, { fen: last ? last.fenBefore : pz.first.fenBefore, orientation: learner })
@@ -114,6 +119,12 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
     let resultBox = null
     let misses = 0
     let revealed = false
+    // Leaving an unsolved puzzle after a wrong move or Show answer marks it to retry.
+    ctx.onLeave(() => {
+        if (done || (!misses && !revealed)) return
+        const before = puzzleRecord(pz.id)
+        setPuzzleRecord(pz.id, { status: "missed", tries: (before?.tries || 0) + 1, last: Date.now() })
+    })
 
     const atLatest = () => !view.explore && view.idx === played.length
     const showFeed = () => L.commentary.replaceChildren(...feed.slice(-2).map(e => h("div", { class: `cm-entry is-${e.kind}` },
@@ -175,12 +186,26 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
     /** Wrong tries, other answers and the opponent's other replies along a line. */
     const altsOf = nodes => nodes.slice(pz.setup.length).flatMap(n => n.parent.children.filter(c => c !== n))
 
+    /** After the puzzle: the other moves, grouped. Tapping one plays its line on the board. */
     function otherLines() {
-        const alts = altsOf(view.nodes)
-        if (!alts.length) return null
-        return h("div", { class: "alts" },
-            h("h3", {}, "Other lines"),
-            h("div", { class: "alt-row" }, alts.map(a => h("button", { class: "alt-move", type: "button", onclick: () => explore(a) }, label(a) + (a.symbol || "")))))
+        // The puzzle's own moves are reached with "Back to the puzzle line", not listed here.
+        const home = view.explore?.nodes || []
+        const alts = altsOf(view.nodes).filter(a => !home.includes(a))
+        const groups = [
+            ["Why not…", alts.filter(a => a.isMistake)],
+            ["Also good", alts.filter(a => a.isGood)],
+            ["Other lines", alts.filter(a => !a.isMistake && !a.isGood)]
+        ].filter(([, list]) => list.length)
+        if (!groups.length) return null
+        return h("div", { class: "alts" }, groups.map(([title, list]) => [
+            h("h3", {}, title),
+            h("div", { class: "alt-row" }, list.map(a => h("button", { class: "alt-move", type: "button", onclick: () => watch(a) },
+                label(a) + (a.symbol || ""))))
+        ]))
+    }
+
+    const watch = alt => {
+        if (explore(alt)) startPlay(readTime(alt))
     }
 
     function go(i, animate = true) {
@@ -209,13 +234,15 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
         const home = view.explore?.nodes
         if (home && home.includes(alt)) {
             leaveExplore()
-            return go(home.indexOf(alt) + 1, false)
+            go(home.indexOf(alt) + 1, false)
+            return false
         }
         if (!view.explore) view.explore = { nodes: view.nodes, idx: view.idx }
         const prefix = view.nodes.slice(0, view.nodes.indexOf(alt.parent) + 1)
         view.nodes = [...prefix, alt, ...mainPath(alt)]
         view.idx = prefix.length + 1
         render(false)
+        return true
     }
 
     function leaveExplore() {
@@ -429,7 +456,7 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
             h("p", { class: "muted" }, [
                 followUp.length ? "The game goes on by itself on the board: ❚❚ pauses it, and you can tap any move to see that position."
                     : "Tap any move to see that position.",
-                altsOf([...played, ...followUp]).length ? "Open a line under Other lines, then tap ▶︎ to watch it." : ""
+                altsOf([...played, ...followUp]).some(a => a.isMistake) ? "Tap a move under Why not… to watch what goes wrong." : ""
             ].filter(Boolean).join(" ")))
         view.nodes = [...played, ...followUp]
         view.idx = played.length

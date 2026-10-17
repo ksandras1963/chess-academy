@@ -2,9 +2,15 @@
 
 import { h, fig, backBar } from "../ui.js"
 
-export function trainerLayout(root, { backHref, backText }) {
+/** prev / next: optional { href, text } links shown under the back buttons (next idea, next puzzle). */
+export function trainerLayout(root, { backHref, backText, prev = null, next = null }) {
     const boardEl = h("div", { class: "board-frame" })
     const back = backBar(backHref && backHref !== "#/" ? { href: backHref, text: backText } : null)
+    const steps = prev || next ? h("nav", { class: "stepbar", "aria-label": "Previous and next" },
+        prev ? h("a", { class: "btn btn-small btn-step", href: prev.href, "aria-label": `Previous: ${prev.text}` },
+            h("span", { "aria-hidden": "true" }, "‹"), h("span", { class: "step-text" }, prev.text)) : h("span"),
+        next ? h("a", { class: "btn btn-small btn-step", href: next.href, "aria-label": `Next: ${next.text}` },
+            h("span", { class: "step-text" }, next.text), h("span", { "aria-hidden": "true" }, "›")) : null) : null
     const title = h("h1", { class: "tp-title" })
     const sub = h("p", { class: "tp-sub" })
     const sheet = h("div", { class: "scoresheet" })
@@ -14,7 +20,7 @@ export function trainerLayout(root, { backHref, backText }) {
     root.append(h("section", { class: "trainer" },
         h("div", { class: "trainer-board" }, boardEl),
         h("aside", { class: "trainer-panel" },
-            h("header", { class: "tp-head" }, back, title, sub),
+            h("header", { class: "tp-head" }, back, steps, title, sub),
             sheet, commentary, extra, controls)))
     return {
         boardEl, sheet, commentary, extra, controls,
