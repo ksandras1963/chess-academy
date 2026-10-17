@@ -1,8 +1,9 @@
 // Course page: progress, today's drill, key ideas, and the list of lines by chapter.
 
-import { h, figText, plural } from "../ui.js"
+import { h, figText, paras, plural } from "../ui.js"
 import { course as loadCourse } from "../content.js"
 import { status, progress, buildQueue, practiceQueue, newRemainingToday, daysUntil } from "../srs.js"
+import { furtherStudy } from "./layout.js"
 
 const TYPE_LABEL = { line: "", trap: "Trap", ideas: "Key ideas" }
 
@@ -48,9 +49,12 @@ export async function courseView(root, ctx, id) {
             h("h1", {}, c.opening.name),
             h("p", { class: "course-side" }, `As ${c.side === "white" ? "White" : "Black"}: ${c.repertoire}`),
             h("p", { class: "course-summary" }, figText(c.summary || ""))),
-        h("div", { class: "course-actions" },
-            action,
-            ideas.map(ch => h("a", { class: "btn", href: `#/learn/${c.id}/ideas-${ch.index}` }, ch.title))),
+        h("div", { class: "course-actions" }, action),
+        ideas.length ? h("section", { class: "ideas-list" },
+            h("h2", {}, "Key ideas"),
+            h("p", { class: "muted" }, "Read these first: the reasons behind the moves you will drill."),
+            h("ol", {}, ideas.map(ch => h("li", {},
+                h("a", { href: `#/learn/${c.id}/ideas-${ch.index}` }, ch.title.replace(/^Key ideas:\s*/i, "")))))) : null,
         h("div", { class: "course-stats" },
             h("div", { class: "meter meter-wide", role: "progressbar", "aria-valuenow": p.pct, "aria-valuemin": 0, "aria-valuemax": 100, "aria-label": "Course progress" },
                 h("span", { style: { width: p.pct + "%" } })),
@@ -60,7 +64,7 @@ export async function courseView(root, ctx, id) {
             const lines = c.lines.filter(l => l.chapter === ch)
             return h("section", { class: `chapter chapter-${ch.type}` },
                 h("h2", {}, ch.title, TYPE_LABEL[ch.type] ? h("span", { class: "tag" }, TYPE_LABEL[ch.type]) : null),
-                ch.root.note.text ? h("p", { class: "chapter-intro" }, figText(ch.root.note.text)) : null,
+                ...paras(ch.root.note.text, { class: "chapter-intro" }),
                 h("ul", { class: "lines" }, lines.map(l => {
                     const s = status(l.id)
                     return h("li", { class: `line-row is-${s.kind}${s.due ? " is-due" : ""}` },
@@ -71,5 +75,6 @@ export async function courseView(root, ctx, id) {
                             h("a", { class: "btn btn-small", href: `#/learn/${c.id}/${l.id}` }, "Learn"),
                             h("a", { class: "btn btn-small", href: `#/drill/${c.id}/${l.id}` }, "Drill")))
                 })))
-        })))
+        }),
+        furtherStudy(c.opening.furtherStudy)))
 }

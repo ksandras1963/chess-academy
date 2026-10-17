@@ -1,7 +1,7 @@
 // Drill mode: the learner plays their side, the app plays the other. Results feed the review schedule.
 
 import { Chess } from "../../vendor/chess.js/chess.js"
-import { h, figText, label, sideName, plural, sleep } from "../ui.js"
+import { h, figText, paras, label, sideName, plural, sleep } from "../ui.js"
 import { course as loadCourse, availableCourses } from "../content.js"
 import { sideNotes } from "../course-model.js"
 import { status, buildQueue, practiceQueue, recordResult, daysUntil } from "../srs.js"
@@ -94,7 +94,7 @@ async function runSession(root, ctx, items, { backHref, backText }) {
             feed.push(entry)
             L.commentary.replaceChildren(...feed.slice(-2).map(e => h("div", { class: `cm-entry is-${e.kind}` },
                 h("h2", { class: "cm-move" }, e.title, e.who ? h("span", { class: "cm-who" }, e.who) : null),
-                e.text ? h("p", {}, figText(e.text)) : null)))
+                ...paras(e.text))))
         }
         const sheet = (upto) => renderSheet(L.sheet, nodes, { upto, mistakes: missed })
         sheet(0)

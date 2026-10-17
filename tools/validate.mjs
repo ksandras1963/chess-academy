@@ -154,21 +154,26 @@ for (const meta of courses) {
         const notes = []
         const ends = []
         const done = new Set()
-        for (const line of course.lines) {
-            for (const node of line.nodes) {
-                const key = node.fenBefore + node.uci
-                if (done.has(key)) continue
-                done.add(key)
-                const r = await moveLoss(node.fenBefore, node.uci)
-                if (node.color === learner && r.loss > LEARNER_LOSS) {
-                    const row = `| ${line.title} | ${moveLabel(node)} | ${uciToSan(node.fenBefore, r.best)} | ${pawns(r.loss)} |`
-                    if (node.comments.some(c => /\[%engine ok\]/.test(c))) accepted.push(row)
-                    else flags.push(row)
-                } else if (node.color !== learner && r.loss > OPPONENT_LOSS && !node.isMistake) {
-                    notes.push(`| ${line.title} | ${moveLabel(node)} | ${uciToSan(node.fenBefore, r.best)} | ${pawns(r.loss)} |`)
-                }
-                process.stdout.write(".")
+        const checkMove = async (node, title) => {
+            const key = node.fenBefore + node.uci
+            if (done.has(key)) return
+            done.add(key)
+            const r = await moveLoss(node.fenBefore, node.uci)
+            const row = `| ${title} | ${moveLabel(node)} | ${uciToSan(node.fenBefore, r.best)} | ${pawns(r.loss)} |`
+            if (node.color === learner && r.loss > LEARNER_LOSS && !node.isMistake) {
+                if (node.comments.some(c => /\[%engine ok\]/.test(c))) accepted.push(row)
+                else flags.push(row)
+            } else if (node.color !== learner && r.loss > OPPONENT_LOSS && !node.isMistake) {
+                notes.push(row)
             }
+            process.stdout.write(".")
+        }
+        // Moves shown on Key ideas pages are checked too, though they are never drilled.
+        for (const ch of chapters.filter(c => c.type === "ideas")) {
+            for (const node of mainPath(ch.root)) await checkMove(node, ch.title)
+        }
+        for (const line of course.lines) {
+            for (const node of line.nodes) await checkMove(node, line.title)
             const last = line.nodes[line.nodes.length - 1]
             const e = await evalCached(last.fen)
             const learnerView = (last.color === learner ? -1 : 1) * e.score

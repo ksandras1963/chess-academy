@@ -30,7 +30,7 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 
 ### Moves, branches and explanations
 
-- **Explanations** go in `{curly braces}` right after the move they explain. Keep each one to one or two sentences, no more than 30 words, and say what the move is for.
+- **Explanations** go in `{curly braces}` right after the move they explain. Say what the move is for, and why it beats the obvious alternative. There is no length limit. Leave a blank line inside the braces to start a new paragraph.
 - **Branches** go in `(round brackets)` right after the move they replace. `5. d3 d6 (5... O-O ...)` means "instead of 5...d6, Black can play 5...O-O".
 - **Opponent branches become extra drill lines.** In a White course, a Black alternative in brackets becomes its own line that learners drill.
 - **Your-side branches are side notes.** In a White course, an alternative White move in brackets is shown in Learn mode as "not in this repertoire" and is never drilled. Use this for tempting moves to avoid, such as `(4. Nxe5? Qg5! ...)`.
@@ -43,6 +43,11 @@ These go inside an explanation, in the same format Lichess uses:
 
 - `[%cal Gc4f7]` draws a green arrow from c4 to f7. Colors: `G` green, `R` red, `Y` yellow, `B` blue. List several with commas: `[%cal Gd3d4,Gf1g3]`.
 - `[%csl Yg4]` puts a ring on g4.
+
+### Key ideas pages and further study
+
+- **Key ideas pages:** chapters with `[Type "ideas"]`. They appear in order under "Key ideas" on the course page, and their moves are never drilled. A page can be a single position (`[FEN "..."]` with no moves) or a short move sequence.
+- **Further study:** in `content/courses.json`, each opening can have a `furtherStudy` list (title, by, kind, url). It is shown on the course page and on every Key ideas page. Credit every source you draw on there, and always write the notes in your own words.
 
 ## After editing: run the checker
 

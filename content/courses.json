@@ -7,6 +7,17 @@
       "eco": "C50",
       "moves": "1. e4 e5 2. Nf3 Nc6 3. Bc4",
       "summary": "White's bishop eyes f7 while both sides build in the center. Slow, strategic, and played at every level.",
+      "furtherStudy": [
+        { "title": "Italian Game Chess Opening Explained in 20 Minutes [Crash Course]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=qUews8fEGkc" },
+        { "title": "Italian Game Every Single Line Explained [Opening Crash Course]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ALwL52J8IV4" },
+        { "title": "Learn The Italian Game, ALL Variations Explained [Traps, Ideas, And Plans]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=6ACqk117Q7U" },
+        { "title": "Master The Italian Game: Chess Strategy Explained", "by": "Coach Kestony", "kind": "Video", "url": "https://www.youtube.com/watch?v=8YP1iVMG_Rg" },
+        { "title": "Italian Game", "by": "365Chess", "kind": "Opening guide", "url": "https://www.365chess.com/chess-openings/Italian-Game" },
+        { "title": "Italian Game", "by": "Chess.com", "kind": "Opening page", "url": "https://www.chess.com/openings/Italian-Game" },
+        { "title": "Italian Game", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/Italian_Game" },
+        { "title": "Giuoco Piano", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/Giuoco_Piano" },
+        { "title": "Légal Trap", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/L%C3%A9gal_Trap" }
+      ],
       "courses": [
         {
           "id": "italian-white",

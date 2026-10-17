@@ -1,10 +1,10 @@
 // Learn mode: step through a line (or a key-ideas chapter) with the explanation for each move.
 
-import { h, figText, label, sideName } from "../ui.js"
+import { h, figText, paras, label, sideName } from "../ui.js"
 import { course as loadCourse } from "../content.js"
 import { mainPath, sideNotes, siblingBranches } from "../course-model.js"
 import { Board } from "../board.js"
-import { trainerLayout, renderSheet, mergedNote } from "./layout.js"
+import { trainerLayout, renderSheet, mergedNote, furtherStudy } from "./layout.js"
 import { sideLabel } from "./course.js"
 
 export async function learnView(root, ctx, courseId, lineKey, startAt) {
@@ -60,16 +60,18 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
 
         if (!node) {
             L.commentary.replaceChildren(
-                h("h2", { class: "cm-move" }, base.line ? "Starting position" : base.title),
-                h("p", {}, figText(note.text || "Step through the line with the arrows below, or tap any move on the score sheet.")))
+                ...(base.line ? [h("h2", { class: "cm-move" }, "Starting position")] : []),
+                ...paras(note.text || (state.nodes.length
+                    ? "Step through the line with the arrows below, or tap any move on the score sheet." : "")))
         } else {
             const who = node.color === learner ? `${sideName(node.color)}, your side` : sideName(node.color)
             L.commentary.replaceChildren(
                 h("h2", { class: "cm-move" }, label(node) + (node.symbol || ""), h("span", { class: "cm-who" }, who)),
-                note.text ? h("p", {}, figText(note.text)) : null)
+                ...paras(note.text))
         }
 
         L.extra.replaceChildren()
+        if (!base.line) L.extra.append(furtherStudy(c.opening.furtherStudy) || "")
         if (state.explore) {
             L.extra.append(h("div", { class: "banner" },
                 h("p", {}, "Side line. It isn't part of this repertoire and isn't drilled."),
@@ -83,7 +85,7 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
                     h("h3", {}, "Other moves here, not in this repertoire"),
                     h("ul", {}, notes.map(n => h("li", {},
                         h("button", { class: "alt-move", type: "button", onclick: () => explore(n) }, label(n) + (n.symbol || "")),
-                        n.note.text ? h("span", { class: "alt-note" }, figText(n.note.text)) : null)))))
+                        n.note.text ? h("span", { class: "alt-note" }, figText(n.note.text.replace(/\n\n/g, " "))) : null)))))
             }
             if (branches.length) {
                 L.extra.append(h("div", { class: "alts" },
@@ -94,7 +96,7 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
                             ? () => { location.hash = `#/learn/${c.id}/${target.id}/${state.idx}` }
                             : () => explore(b)
                         return h("li", {}, h("button", { class: "alt-move", type: "button", onclick: go }, label(b) + (b.symbol || "")),
-                            b.note.text ? h("span", { class: "alt-note" }, figText(b.note.text)) : null)
+                            b.note.text ? h("span", { class: "alt-note" }, figText(b.note.text.replace(/\n\n/g, " "))) : null)
                     }))))
             }
         }
@@ -114,6 +116,10 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
     function updateControls() {
         first.disabled = prev.disabled = state.idx === 0
         next.disabled = last.disabled = state.idx >= state.nodes.length
+        // A key-ideas page made of a single position has nothing to step through.
+        const still = state.nodes.length === 0
+        L.sheet.hidden = still
+        first.parentElement.hidden = still
     }
 
     const onKey = e => {

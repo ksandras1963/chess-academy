@@ -1,12 +1,12 @@
 # Content validation report
 
-Generated 2026-10-17 02:20 · engine Stockfish, depth 18
+Generated 2026-10-17 02:55 · engine Stockfish, depth 18
 
 **No errors.**
 
 ## Italian Game — as White (`italian-white`)
 
-6 chapters, 15 drillable lines, 137 learner moves.
+13 chapters, 24 drillable lines, 218 learner moves.
 
 ### Opening names
 
@@ -14,19 +14,17 @@ Generated 2026-10-17 02:20 · engine Stockfish, depth 18
 |---|---|---|---|
 | Main line: 3...Bc5 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Two Knights: 3...Nf6 | Italian Game: Two Knights Defense, Modern Bishop's Opening | C55 | ok |
+| Paris Defense: 3...d6 | Italian Game: Paris Defense | C50 | ok |
 | Other third moves | Italian Game: Hungarian Defense | C50 | ok |
+| Rousseau Gambit: 3...f5 | Italian Game: Rousseau Gambit | C50 | ok |
 | Trap: the Blackburne Shilling Gambit | Italian Game: Blackburne-Kostić Gambit | C50 | ok |
 | Trap: the early ...Ng4 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
+| Trap: the Fishing Pole | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
+| Trap: Légal's mate | Italian Game: Paris Defense | C50 | ok |
 
 ### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
 
 None.
-
-### Learner moves flagged but accepted with `[%engine ok]`
-
-| Line | Move | Engine prefers | Loss |
-|---|---|---|---|
-| Other third moves (3...d6) | 5.d3 | Ng5 | 0.68 |
 
 ### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
 
@@ -43,18 +41,27 @@ None.
 | Two Knights: 3...Nf6 (Main line) | 0.00 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
 | Two Knights: 3...Nf6 (4...Bc5) | 0.12 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Two Knights: 3...Nf6 (4...h6) | -0.07 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
+| Paris Defense: 3...d6 (Main line) | 1.30 | C50 Italian Game: Paris Defense |
+| Paris Defense: 3...d6 (6...Nxd5) | 5.57 | C50 Italian Game: Paris Defense |
+| Paris Defense: 3...d6 (4...Be7) | 0.46 | C50 Italian Game: Paris Defense |
 | Other third moves (Main line) | 0.09 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
 | Other third moves (3...h6) | -0.07 | C50 Italian Game: Anti-Fried Liver Defense |
-| Other third moves (3...d6) | 0.00 | C50 Italian Game: Paris Defense |
+| Rousseau Gambit: 3...f5 (Main line) | 1.16 | C50 Italian Game: Rousseau Gambit |
+| Rousseau Gambit: 3...f5 (4...fxe4) | 2.93 | C50 Italian Game: Rousseau Gambit |
 | Trap: the Blackburne Shilling Gambit (Main line) | 6.08 | C50 Italian Game: Blackburne-Kostić Gambit |
 | Trap: the Blackburne Shilling Gambit (7...Kf8) | 6.16 | C50 Italian Game: Blackburne-Kostić Gambit |
 | Trap: the Blackburne Shilling Gambit (5...Nf6) | 1.37 | C50 Italian Game: Blackburne-Kostić Gambit |
 | Trap: the early ...Ng4 (Main line) | 3.28 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Trap: the early ...Ng4 (6...Bd6) | 2.67 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
+| Trap: the Fishing Pole (Main line) | 2.69 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
+| Trap: Légal's mate (Main line) | 100.00 | C50 Italian Game: Paris Defense |
+| Trap: Légal's mate (6...Nxe5) | 2.43 | C50 Italian Game: Paris Defense |
+| Trap: Légal's mate (6...dxe5) | 2.87 | C50 Italian Game: Paris Defense |
+| Trap: Légal's mate (5...Bxf3) | 0.67 | C50 Italian Game: Paris Defense |
 
 ## Italian Game — as Black (`italian-black`)
 
-7 chapters, 19 drillable lines, 171 learner moves.
+10 chapters, 19 drillable lines, 171 learner moves.
 
 ### Opening names
 

@@ -187,6 +187,10 @@ export function parseComment(raw) {
             }
         }
         return ""
-    }).replace(/\s+/g, " ").trim()
+    })
+        .replace(/[ \t]*\r?\n[ \t]*(\r?\n\s*)+/g, " ¶ ") // a blank line starts a new paragraph
+        .replace(/\s+/g, " ")
+        .replace(/ ?¶ ?/g, "\n\n")
+        .trim()
     return { text, arrows, squares }
 }

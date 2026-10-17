@@ -238,6 +238,24 @@ a.course-link:hover { border-color: var(--brass); }
 .course-actions { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: stretch; gap: 12px; }
 .course-stats { margin-top: 20px; display: grid; gap: 8px; color: var(--ink-dim); font-size: 0.9375rem; }
 
+.ideas-list { margin-top: 32px; }
+.ideas-list h2 { font-size: 1.3125rem; }
+.ideas-list p { margin-top: 4px; font-size: 0.9375rem; }
+.ideas-list ol { margin: 12px 0 0; padding-left: 1.5rem; display: grid; gap: 6px; font-family: var(--serif); font-size: 1.125rem; }
+.ideas-list a { text-decoration-color: color-mix(in srgb, var(--brass) 60%, transparent); text-underline-offset: 3px; }
+.ideas-list a:hover { color: var(--brass); }
+
+.further { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule); }
+.extra .further { margin-top: 16px; }
+.further h3 { font-family: var(--serif); font-size: 1.125rem; }
+.further p { margin-top: 4px; font-size: 0.875rem; }
+.further ul { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
+.further li { display: grid; gap: 1px; }
+.further a { font-family: var(--serif); font-size: 1rem; text-underline-offset: 3px; }
+.further a:hover { color: var(--brass); }
+.further-by { font-size: 0.8125rem; color: var(--ink-dim); }
+.commentary p + p { margin-top: 10px; }
+
 .chapter { margin-top: 40px; }
 .chapter h2 { font-size: 1.3125rem; display: flex; align-items: baseline; gap: 10px; }
 .tag {

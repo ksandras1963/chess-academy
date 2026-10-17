@@ -33,6 +33,11 @@ export function figText(text) {
     return text.replace(/(^|[\s(.…])([KQRBN])(?=[a-h]?[1-8]?x?[a-h][1-8]\b)/g, (_, pre, p) => pre + FIG[p] + VS15)
 }
 
+/** A note as paragraphs (a blank line in the PGN comment starts a new one), with figurines. */
+export function paras(text, attrs = {}) {
+    return String(text || "").split(/\n\n+/).filter(Boolean).map(p => h("p", attrs, figText(p)))
+}
+
 export function label(node) {
     return node.color === "w" ? `${node.moveNumber}.${fig(node.san)}` : `${node.moveNumber}…${fig(node.san)}`
 }

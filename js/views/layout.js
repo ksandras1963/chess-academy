@@ -62,6 +62,17 @@ export function renderSheet(el, nodes, { upto = nodes.length, current = -1, onPi
     }
 }
 
+/** "Further study" links from courses.json (opening.furtherStudy). Opens in a new tab. */
+export function furtherStudy(items, heading = "Further study") {
+    if (!items || !items.length) return null
+    return h("section", { class: "further" },
+        h("h3", {}, heading),
+        h("p", { class: "muted" }, "These notes draw on the resources below and on Stockfish analysis. The wording is our own."),
+        h("ul", {}, items.map(it => h("li", {},
+            h("a", { href: it.url, target: "_blank", rel: "noopener noreferrer" }, it.title),
+            h("span", { class: "further-by" }, `${it.kind}, ${it.by}`)))))
+}
+
 export function mergedNote(node) {
     return {
         text: [node.pre?.text, node.note?.text].filter(Boolean).join(" "),
