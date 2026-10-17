@@ -27,6 +27,7 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 | `Type` | `line` (normal lines), `trap`, or `ideas` (the Key ideas page, which is never drilled). |
 | `Opening`, `ECO` | The Lichess opening name and code. The checker verifies both. |
 | `FEN` | Optional. Starts the chapter from a set position (used for Key ideas). |
+| `Diagram` | The move whose position is shown beside the chapter on the course page, e.g. `[Diagram "3...Nd4"]`. Without it, the last move named in the title is used (`Main line: 3...Bc5`). The checker reports an error if neither is found on the main line. |
 
 ### Moves, branches and explanations
 

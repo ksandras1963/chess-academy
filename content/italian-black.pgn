@@ -92,6 +92,7 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 11. O-O O-O 12. Rfe1 c6 {Rock solid. White's d4 pawn is isolated and can become a target.} *
 
 [Chapter "Quiet fourth moves"]
+[Diagram "4.O-O"]
 [Type "line"]
 [Opening "Italian Game: Giuoco Piano"]
 [ECO "C50"]
@@ -128,6 +129,7 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 6... Rxf7 7. Bxf7+ Kxf7 {Two minor pieces for a rook and pawn. Black is clearly better.} *
 
 [Chapter "Trap: a fork trick that fails"]
+[Diagram "5.Nxe5"]
 [Type "trap"]
 [Opening "Four Knights Game: Italian Variation"]
 [ECO "C50"]

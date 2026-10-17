@@ -113,6 +113,7 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 10. Nf3 {White is a pawn up. Black has some activity in return, so finish developing with castling and d3.} Bd6 11. O-O O-O 12. d3 *
 
 [Chapter "Other third moves"]
+[Diagram "3...Be7"]
 [Type "line"]
 [Opening "Italian Game: Hungarian Defense"]
 [ECO "C50"]
@@ -135,6 +136,7 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 7. Bg5 {[%cal Gg5f6,Gc4g8] Pins the knight. Note that Black can't castle kingside: with Black's f-pawn no longer on f7, our bishop on c4 covers g8. White is clearly better.} *
 
 [Chapter "Trap: the Blackburne Shilling Gambit"]
+[Diagram "3...Nd4"]
 [Type "trap"]
 [Opening "Italian Game: Blackburne-Kostić Gambit"]
 [ECO "C50"]
@@ -151,6 +153,7 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 8. Qxc5 d5 9. Qxd4 {Two pawns up with the safer king.} *
 
 [Chapter "Trap: the early ...Ng4"]
+[Diagram "5...Ng4"]
 [Type "trap"]
 [Opening "Italian Game: Classical Variation, Giuoco Pianissimo"]
 [ECO "C54"]
@@ -164,6 +167,7 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 7. cxd4 Bb4+ 8. Nc3 O-O 9. O-O {Our pawns rule the center, and the knight on g4 has no good squares.} *
 
 [Chapter "Trap: the Fishing Pole"]
+[Diagram "7...h5"]
 [Type "trap"]
 [Opening "Italian Game: Classical Variation, Giuoco Pianissimo"]
 [ECO "C54"]
@@ -178,6 +182,7 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 11. Bg5 {Black has lost time with the knight and weakened the kingside with ...h5. White is clearly better.} *
 
 [Chapter "Trap: Légal's mate"]
+[Diagram "5...Bh5"]
 [Type "trap"]
 [Opening "Italian Game: Paris Defense"]
 [ECO "C50"]

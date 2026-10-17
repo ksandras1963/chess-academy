@@ -12,6 +12,7 @@ import path from "node:path"
 import { fileURLToPath } from "node:url"
 import { Chess } from "../vendor/chess.js/chess.js"
 import { buildCourse, mainPath, moveLabel } from "../js/course-model.js"
+const diagramLabel = ch => (ch.diagram && ch.diagram.node ? moveLabel(ch.diagram.node) : "—")
 import { Engine, DEFAULT_EXE, engineAvailable } from "./engine.mjs"
 import { buildStandalone } from "./build-standalone.mjs"
 
@@ -125,17 +126,23 @@ for (const meta of courses) {
     section.push(`${chapters.length} chapters, ${course.lines.length} drillable lines, ` +
         `${course.lines.reduce((s, l) => s + l.learnerMoves, 0)} learner moves.`, "")
 
+    // Course-page diagrams: every lesson chapter must point at a position on its main line
+    for (const ch of chapters.filter(c => c.type !== "ideas")) {
+        if (!ch.diagram) errors.push(`${meta.id} / ${ch.title}: no diagram. Name a move in the title (e.g. "3...Bc5") or add a [Diagram "3...Nd4"] header`)
+        else if (ch.diagram.error) errors.push(`${meta.id} / ${ch.title}: ${ch.diagram.error}`)
+    }
+
     // Opening names and ECO codes
     const nameRows = []
     for (const ch of chapters) {
         if (!ch.opening) {
-            if (ch.type !== "ideas") nameRows.push(`| ${ch.title} | — | — | no Opening header |`)
+            if (ch.type !== "ideas") nameRows.push(`| ${ch.title} | ${diagramLabel(ch)} | — | — | no Opening header |`)
             continue
         }
         const entries = openings.byName.get(ch.opening)
         if (!entries) {
             errors.push(`${meta.id} / ${ch.title}: "${ch.opening}" is not a Lichess opening name`)
-            nameRows.push(`| ${ch.title} | ${ch.opening} | ${ch.eco} | **not in dataset** |`)
+            nameRows.push(`| ${ch.title} | ${diagramLabel(ch)} | ${ch.opening} | ${ch.eco} | **not in dataset** |`)
             continue
         }
         if (ch.eco && !entries.some(e => e.eco === ch.eco)) {
@@ -144,9 +151,9 @@ for (const meta of courses) {
         const reached = new Set([epd(ch.root.fen), ...mainPath(ch.root).map(n => epd(n.fen))])
         const ok = entries.some(e => reached.has(e.epd))
         if (!ok) errors.push(`${meta.id} / ${ch.title}: main line never reaches the "${ch.opening}" position`)
-        nameRows.push(`| ${ch.title} | ${ch.opening} | ${ch.eco || "—"} | ${ok ? "ok" : "**position not reached**"} |`)
+        nameRows.push(`| ${ch.title} | ${diagramLabel(ch)} | ${ch.opening} | ${ch.eco || "—"} | ${ok ? "ok" : "**position not reached**"} |`)
     }
-    section.push("### Opening names", "", "| Chapter | Opening header | ECO | Check |", "|---|---|---|---|", ...nameRows, "")
+    section.push("### Opening names and course-page diagrams", "", "| Chapter | Diagram | Opening header | ECO | Check |", "|---|---|---|---|---|", ...nameRows, "")
 
     // Engine checks
     if (engine) {

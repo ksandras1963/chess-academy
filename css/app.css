@@ -184,6 +184,7 @@ main { outline: none; }
     padding: 12px 16px; border: 1px solid var(--brass); border-radius: 8px;
 }
 .home-board { grid-area: board; width: min(100%, 280px); justify-self: center; }
+.home-board .board-frame { touch-action: auto; } /* display only: let the page scroll over it */
 .board-caption { margin-top: 10px; font-family: var(--serif); font-size: 0.9375rem; color: var(--ink-dim); text-align: center; }
 .home-index { grid-area: index; }
 
@@ -228,7 +229,8 @@ a.course-link:hover { border-color: var(--brass); }
 
 /* ---------- course ---------- */
 
-.course, .settings { max-width: 860px; margin: 0 auto; }
+.course { max-width: 1000px; margin: 0 auto; }
+.settings { max-width: 860px; margin: 0 auto; }
 .backbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .btn-back { gap: 6px; padding-left: 10px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
 .btn-back > span { font-family: var(--serif); font-size: 1.375rem; line-height: 1; margin-top: -3px; }
@@ -258,7 +260,32 @@ a.course-link:hover { border-color: var(--brass); }
 .further-by { font-size: 0.8125rem; color: var(--ink-dim); }
 .commentary p + p { margin-top: 10px; }
 
-.chapter { margin-top: 40px; }
+/* Each chapter: board on the left, heading and lines on the right. */
+.chapter {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 112px minmax(0, 1fr);
+    grid-template-areas: "board head" "lines lines";
+    column-gap: 16px;
+    align-items: start;
+}
+.chapter-board { grid-area: board; display: block; text-decoration: none; color: inherit; }
+.chapter-board .board-frame { touch-action: auto; }
+a.chapter-board:hover .board-frame, a.chapter-board:focus-visible .board-frame { outline: 2px solid var(--brass); outline-offset: 3px; }
+a.chapter-board:focus-visible { outline: none; }
+.chapter-board-caption { display: block; margin-top: 6px; font-family: var(--serif); font-size: 0.875rem; color: var(--ink-dim); text-align: center; }
+.chapter-head { grid-area: head; }
+.chapter .lines { grid-area: lines; }
+
+@media (min-width: 760px) {
+    .chapter {
+        grid-template-columns: 240px minmax(0, 1fr);
+        grid-template-areas: "board head" "board lines";
+        column-gap: 32px;
+    }
+    .chapter-board { position: sticky; top: calc(var(--topbar) + 16px); }
+    .chapter-board-caption { font-size: 0.9375rem; }
+}
 .chapter h2 { font-size: 1.3125rem; display: flex; align-items: baseline; gap: 10px; }
 .tag {
     font-family: var(--sans); font-size: 0.75rem; font-weight: 600;

@@ -82,7 +82,7 @@ function buildChapter(game, index, course) {
         throw new ContentError(`${course.id} / ${title}: bad FEN header`)
     }
     replay(root, chess, `${course.id} / ${title}`)
-    return {
+    const chapter = {
         index,
         title,
         type,
@@ -91,6 +91,8 @@ function buildChapter(game, index, course) {
         headers: h,
         root
     }
+    chapter.diagram = type === "ideas" ? null : chapterDiagram(chapter)
+    return chapter
 }
 
 /** Main-line path of a chapter (first child at every node). */
@@ -102,6 +104,24 @@ export function mainPath(root) {
         path.push(node)
     }
     return path
+}
+
+const MOVE_LABEL = "(\\d+)(\\.\\.\\.|…|\\.)\\s?([KQRBN]?[a-h]?[1-8]?x?[a-h][1-8](?:=[QRBN])?|O-O-O|O-O)"
+
+/**
+ * The position a chapter is about, shown beside it on the course page: the move in its
+ * [Diagram "3...Nd4"] header, or else the last move named in its title ("Main line: 3...Bc5").
+ * Returns { node } or { error }, or null when the chapter names no move.
+ */
+export function chapterDiagram(chapter) {
+    const wanted = chapter.headers.Diagram || [...chapter.title.matchAll(new RegExp(MOVE_LABEL, "g"))].map(m => m[0]).pop()
+    if (!wanted) return null
+    const m = new RegExp(`^${MOVE_LABEL}$`).exec(wanted.trim().replace(/[?!+#]+$/, ""))
+    if (!m) return { error: `can't read the diagram move "${wanted}"` }
+    const color = m[2] === "." ? "w" : "b"
+    const node = mainPath(chapter.root).find(n =>
+        n.moveNumber === Number(m[1]) && n.color === color && n.san.replace(/[+#]$/, "") === m[3])
+    return node ? { node } : { error: `diagram move "${wanted}" is not on the chapter's main line` }
 }
 
 function extractLines(chapter, course) {
