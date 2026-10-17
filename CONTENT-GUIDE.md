@@ -55,14 +55,16 @@ These go inside an explanation, in the same format Lichess uses:
 Each opening can have one puzzle file, named in `content/courses.json` as `"puzzles": "content/italian-puzzles.pgn"`. The Puzzles link on the main menu shows "Coming soon" until an opening has one. Each puzzle is one chapter:
 
 ```
-[Puzzle "Gain time with check"]
+[Puzzle "Don't take the queen"]
 [Type "puzzle"]
-[Theme "Opening play"]
-[Solve "6...Bb4+"]
-[Hint "White's king is still on e1. Use that before White can castle."]
+[Theme "Escape the trap"]
+[Solve "6...Nxe5"]
+[End "6...Nxe5"]
+[Hint "Taking the queen looks free. Count White's checks first."]
 
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ {Why it works.}
-(6... Bb6? {Why this try fails.})
+1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Bg4 5. h3 Bh5? 6. Nxe5! Nxe5! {Why it works.}
+(6... Bxd1?? {Why this try fails.} 7. Bxf7+ Ke7 8. Nd5#)
+7. Qxh5 Nxc4 8. Qb5+ c6 9. Qxc4 {How the game goes on.}
 *
 ```
 
@@ -71,13 +73,16 @@ Each opening can have one puzzle file, named in `content/courses.json` as `"puzz
 | `Puzzle` | The title, shown after the puzzle is solved (it can give the answer away). |
 | `Theme` | A short label shown before solving, such as `Escape the trap` or `Checkmate in 2`. |
 | `Solve` | The first move the learner must find. Moves before it are the setup and play out automatically. The side that plays it is the side the learner plays. |
-| `Hint` | Shown after the first wrong try. |
+| `End` | Optional. The last move of the answer. Moves after it are the **follow-up**: the learner doesn't have to find them, and steps through them after solving. Without `End`, the answer runs to the end of the main line. |
+| `Hint` | Shown after the first wrong try at the `Solve` move. |
 
-- **Longer answers:** the main line after the `Solve` move is the rest of the answer. The opponent's replies play automatically, and the learner must find each of their own moves.
+- **Longer answers:** the main line from the `Solve` move to the `End` move is the answer. The opponent's replies play automatically, and the learner must find each of their own moves.
+- **Follow-up and side lines:** after solving, the learner can tap any move on the score sheet, or use ‹ and ›, to see that position, from move 1 to the end of the follow-up. Every branch you write (wrong tries, other answers, other replies) is listed under "Other lines" and can be played through the same way. So give a wrong try a few moves of refutation in the branch itself, as in `(6... Bxd1?? {...} 7. Bxf7+ Ke7 8. Nd5#)`, not only in its explanation. The move just played always has a green arrow.
+- **Hints for later moves:** put `[%hint ...]` inside that move's explanation, e.g. `9. d4! {[%hint Look at f2. What is Black threatening?] Stops ...Qxf2 mate.}`. The hint shows after the first wrong try at that move and is never shown as part of the explanation. After two wrong tries at any move, the answer is shown.
 - **Wrong tries:** a branch marked `?`, `??` or `?!` shows its explanation when the learner plays it. Any other wrong move gets "isn't the best move".
-- **Other good answers:** a branch marked `!`, `!!` or `!?` is accepted as correct too.
+- **Other good answers:** a branch marked `!`, `!!` or `!?` is accepted as correct too. The answer ends at the same move number as on the main line, so in a branch the moves after that point are its follow-up.
 - **Marks are hidden** on the setup moves, so a `?` on the opponent's last move doesn't give the answer away.
-- **The checker is strict about puzzles.** For each move the learner must find, Stockfish's first choice has to be that move or an accepted `!` branch, and the move has to be at least 0.7 pawns better than every move that isn't accepted. Each opponent reply must be within 0.5 pawns of Stockfish's choice. If a puzzle fails, start it a move earlier or later, or pick another position.
+- **The checker is strict about puzzles.** For each move the learner must find, Stockfish's first choice has to be that move or an accepted `!` branch, and the move has to be at least 0.7 pawns better than every move that isn't accepted. Each opponent reply up to the `End` move must be within 0.5 pawns of Stockfish's choice. The follow-up and the branches are not checked, so check those lines yourself with `tools/pv.mjs` (see below). If a puzzle fails, start it a move earlier or later, or pick another position.
 - A learner who solves a puzzle with no wrong tries and without "Show answer" gets **Solved**. Otherwise it is marked **To retry**, and the puzzle list offers "Retry missed". Puzzle progress is separate from Review.
 
 ## After editing: run the checker

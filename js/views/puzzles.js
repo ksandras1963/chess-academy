@@ -1,11 +1,12 @@
 // Puzzles: the list for an opening, and the solving screen.
 
 import { Chess } from "../../vendor/chess.js/chess.js"
-import { h, fig, paras, sideName, plural, sleep, backBar } from "../ui.js"
+import { h, fig, label, paras, sideName, plural, sleep, backBar } from "../ui.js"
 import { puzzles as loadPuzzles } from "../content.js"
+import { mainPath } from "../course-model.js"
 import { puzzleRecord, setPuzzleRecord } from "../storage.js"
 import { Board } from "../board.js"
-import { trainerLayout, renderSheet } from "./layout.js"
+import { trainerLayout, renderSheet, mergedNote } from "./layout.js"
 
 const STATUS_TEXT = { solved: "Solved", missed: "To retry" }
 const ABORT = Symbol("abort")
@@ -22,8 +23,15 @@ export function puzzleStats(set) {
 
 const isMissed = pz => puzzleRecord(pz.id)?.status === "missed"
 const lastSetup = pz => pz.setup[pz.setup.length - 1] || null
-/** Setup moves are shown without ! and ? marks, which would give the game away. */
-const plainLabel = node => (node.color === "w" ? `${node.moveNumber}.${fig(node.san)}` : `${node.moveNumber}…${fig(node.san)}`)
+
+/** The move that led to a position as a green arrow, plus the note's own arrows and rings. */
+function boardMarks(node, note) {
+    const arrows = note ? [...note.arrows] : []
+    const squares = note ? note.squares : []
+    if (!node) return { lastMove: null, arrows, squares }
+    if (!arrows.some(a => a.from === node.from && a.to === node.to)) arrows.unshift({ color: "green", from: node.from, to: node.to })
+    return { lastMove: { from: node.from, to: node.to }, arrows, squares }
+}
 
 async function needSet(openingId) {
     const set = await loadPuzzles(openingId)
@@ -66,7 +74,7 @@ export async function puzzlesView(root, ctx, openingId) {
     const boards = frames.map(({ el, pz }) => {
         const b = new Board(el, { fen: pz.first.fenBefore, orientation: pz.learner })
         const m = lastSetup(pz)
-        if (m) b.annotate({ lastMove: { from: m.from, to: m.to } })
+        if (m) b.annotate(boardMarks(m, null))
         return b
     })
     ctx.onLeave(() => boards.forEach(b => b.destroy()))
@@ -88,53 +96,181 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
     const board = new Board(L.boardEl, { fen: last ? last.fenBefore : pz.first.fenBefore, orientation: learner })
     ctx.onLeave(() => board.destroy())
 
-    const played = [...pz.setup]
+    // `played` is the game so far: the setup, then each move as it is made (the last setup move
+    // is played on screen). `view` is what the board and score sheet show. While solving it is
+    // `played`, and the learner can step back through it. After the puzzle it is the whole line
+    // with the follow-up, and the other lines (wrong tries, other answers) can be opened.
+    const played = pz.setup.slice(0, -1)
+    const view = { nodes: played, idx: played.length, explore: null }
     const missedPlies = new Set()
-    const sheet = () => renderSheet(L.sheet, played, { mistakes: missedPlies, symbols: false })
     const feed = []
-    const say = entry => {
-        feed.push(entry)
-        L.commentary.replaceChildren(...feed.slice(-2).map(e => h("div", { class: `cm-entry is-${e.kind}` },
-            h("h2", { class: "cm-move" }, e.title, e.who ? h("span", { class: "cm-who" }, e.who) : null),
-            ...paras(e.text))))
-    }
-
+    let done = false
+    let turn = null // the learner's move being waited for: { onMove, answer }
+    let waiters = []
+    let resultBox = null
     let misses = 0
     let revealed = false
 
+    const atLatest = () => !view.explore && view.idx === played.length
+    const showFeed = () => L.commentary.replaceChildren(...feed.slice(-2).map(e => h("div", { class: `cm-entry is-${e.kind}` },
+        h("h2", { class: "cm-move" }, e.title, e.who ? h("span", { class: "cm-who" }, e.who) : null),
+        ...paras(e.text))))
+    const say = entry => {
+        feed.push(entry)
+        if (atLatest()) showFeed()
+    }
+
+    // ---------- Board, score sheet and panel ----------
+
+    function render(animate = false) {
+        const node = view.idx ? view.nodes[view.idx - 1] : null
+        // Notes (and their arrows) on the setup moves stay hidden until the puzzle is over.
+        const note = node && (done || view.idx > pz.setup.length) ? mergedNote(node) : null
+        const marks = boardMarks(node, note)
+        if (turn?.answer && view.idx === played.length) marks.arrows.push({ color: "answer", ...turn.answer })
+        const shown = board.show(node ? node.fen : pz.chapter.root.fen, { animate, ...marks })
+
+        renderSheet(L.sheet, view.nodes, {
+            current: view.idx - 1,
+            onPick: i => go(i, false),
+            mistakes: view.explore ? new Set() : missedPlies,
+            symbols: done,
+            followFrom: done && !view.explore ? played.length : -1
+        })
+
+        if (atLatest()) showFeed()
+        else if (!node) L.commentary.replaceChildren(h("h2", { class: "cm-move" }, "Starting position"))
+        else {
+            L.commentary.replaceChildren(
+                h("h2", { class: "cm-move" }, label(node) + (done ? node.symbol || "" : ""),
+                    h("span", { class: "cm-who" }, node.color === learner ? `${sideName(node.color)}, your side` : sideName(node.color))),
+                ...paras(note ? note.text : ""))
+        }
+
+        L.extra.replaceChildren()
+        if (resultBox) L.extra.append(resultBox)
+        if (!done && view.idx < played.length) {
+            L.extra.append(h("div", { class: "banner" },
+                h("p", {}, "You are looking at an earlier move."),
+                h("button", { class: "btn btn-small", type: "button", onclick: () => goLatest() }, "Back to the puzzle")))
+        }
+        if (view.explore) {
+            L.extra.append(h("div", { class: "banner" },
+                h("p", {}, "Side line."),
+                h("button", { class: "btn btn-small", type: "button", onclick: leaveExplore }, "Back to the puzzle line")))
+        }
+        if (done) L.extra.append(otherLines() || "")
+
+        first.disabled = prev.disabled = view.idx === 0
+        next.disabled = end.disabled = view.idx >= view.nodes.length
+        return shown
+    }
+
+    /** Wrong tries, other answers and the opponent's other replies along the line on the board. */
+    function otherLines() {
+        const alts = view.nodes.slice(pz.setup.length).flatMap(n => n.parent.children.filter(c => c !== n))
+        if (!alts.length) return null
+        return h("div", { class: "alts" },
+            h("h3", {}, "Other lines"),
+            h("div", { class: "alt-row" }, alts.map(a => h("button", { class: "alt-move", type: "button", onclick: () => explore(a) }, label(a) + (a.symbol || "")))))
+    }
+
+    function go(i, animate = true) {
+        view.idx = Math.max(0, Math.min(i, view.nodes.length))
+        if (!done) {
+            if (view.idx >= played.length) return goLatest()
+            board.disableInput()
+        }
+        render(animate)
+    }
+
+    /** Back to the position the puzzle is waiting on. */
+    function goLatest() {
+        view.idx = played.length
+        render(false)
+        if (turn) board.enableInput(learner, turn.onMove)
+        const w = waiters
+        waiters = []
+        w.forEach(f => f())
+    }
+    const whenLatest = () => (view.idx < played.length ? new Promise(r => waiters.push(r)) : Promise.resolve())
+
+    function explore(alt) {
+        // From a side line, the puzzle's own move just takes you back to the puzzle line.
+        const home = view.explore?.nodes
+        if (home && home.includes(alt)) {
+            leaveExplore()
+            return go(home.indexOf(alt) + 1, false)
+        }
+        if (!view.explore) view.explore = { nodes: view.nodes, idx: view.idx }
+        const prefix = view.nodes.slice(0, view.nodes.indexOf(alt.parent) + 1)
+        view.nodes = [...prefix, alt, ...mainPath(alt)]
+        view.idx = prefix.length + 1
+        render(false)
+    }
+
+    function leaveExplore() {
+        Object.assign(view, { nodes: view.explore.nodes, idx: view.explore.idx, explore: null })
+        render(false)
+    }
+
+    const btn = (text, aria, onclick) => h("button", { class: "btn btn-icon", type: "button", "aria-label": aria, title: aria, onclick }, text)
+    const first = btn("«", "First move", () => go(0, false))
+    const prev = btn("‹", "Previous move", () => go(view.idx - 1))
+    const next = btn("›", "Next move", () => go(view.idx + 1))
+    const end = btn("»", "Last move", () => go(view.nodes.length, false))
+    const action = h("div", { class: "puzzle-action" })
+    const setAction = (...kids) => action.replaceChildren(...kids)
+    L.controls.append(h("div", { class: "nav-buttons" }, first, prev, next, end), action)
+
+    const onKey = e => {
+        if (e.target.closest("input, textarea, select")) return
+        if (e.key === "ArrowRight") { go(view.idx + 1); e.preventDefault() }
+        else if (e.key === "ArrowLeft") { go(view.idx - 1); e.preventDefault() }
+        else if (e.key === "Home") { go(0, false); e.preventDefault() }
+        else if (e.key === "End") { go(view.nodes.length, false); e.preventDefault() }
+    }
+    document.addEventListener("keydown", onKey)
+    ctx.onLeave(() => document.removeEventListener("keydown", onKey))
+
+    // ---------- Solving ----------
+
     try {
-        sheet()
-        L.commentary.replaceChildren(h("h2", { class: "cm-move" }, "Find the best move"),
-            h("p", {}, last ? `${sideName(last.color)} has just played ${plainLabel(last)}. ${sideName(learner)} to move.` : `${sideName(learner)} to move.`))
+        say({ kind: "intro", title: "Find the best move",
+            text: last ? `${sideName(last.color)} has just played ${label(last)}. ${sideName(learner)} to move.` : `${sideName(learner)} to move.` })
+        render(false)
         if (last) {
             await sleep(400)
             check()
-            await board.show(last.fen, { lastMove: { from: last.from, to: last.to } })
+            await whenLatest()
+            check()
+            played.push(last)
+            view.idx = played.length
+            await render(true)
             check()
         }
 
         let cur = last || pz.chapter.root
-        while (cur.children.length) {
+        while (cur.children.length && cur.ply < pz.endPly) {
             const main = cur.children[0]
             if (main.color !== learner) {
-                L.controls.replaceChildren(h("p", { class: "muted" }, `${sideName(main.color)} is moving…`))
+                setAction(h("p", { class: "muted" }, `${sideName(main.color)} is moving…`))
                 await sleep(450)
                 check()
-                await board.show(main.fen, { lastMove: { from: main.from, to: main.to } })
+                await whenLatest()
                 check()
                 played.push(main)
-                sheet()
-                say({ kind: "them", title: plainLabel(main), who: sideName(main.color), text: main.note.text })
+                feed.push({ kind: "them", title: label(main), who: sideName(main.color), text: main.note.text })
+                view.idx = played.length
+                await render(true)
+                check()
                 cur = main
                 continue
             }
             cur = await learnerTurn(cur)
-            played.push(cur)
-            sheet()
             await sleep(150)
             check()
         }
-        board.disableInput()
         finish()
     } catch (e) {
         if (e !== ABORT) throw e
@@ -144,22 +280,28 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
         return new Promise((resolve, reject) => {
             const main = at.children[0]
             const accepted = at.children.filter((c, i) => i === 0 || c.isGood)
+            // The [Hint] header is for the first move; later moves can carry their own [%hint ...].
+            const hint = main.note.hint || (main === pz.first ? pz.hint : "")
+            let tries = 0
+            let shown = false
             const reveal = () => {
-                revealed = true
+                if (view.idx < played.length) goLatest()
+                revealed = shown = true
+                turn.answer = { from: main.from, to: main.to }
                 board.unarrow("answer")
                 board.arrow("answer", main.from, main.to)
                 giveUp.disabled = true
-                say({ kind: "wrong", title: `The move is ${plainLabel(main)}`, text: "Play it on the board to see why." })
+                say({ kind: "wrong", title: `The move is ${label(main)}`, text: "Play it on the board to see why." })
             }
             const giveUp = h("button", { class: "btn btn-small", type: "button", onclick: reveal }, "Show answer")
-            L.controls.replaceChildren(h("p", { class: "prompt" }, `Your move as ${sideName(learner)}.`), h("div", { class: "more-buttons" }, giveUp))
+            setAction(h("p", { class: "prompt" }, `Your move as ${sideName(learner)}.`), h("div", { class: "more-buttons" }, giveUp))
             const timer = setInterval(() => {
                 if (ctx.alive()) return
                 clearInterval(timer)
                 reject(ABORT)
             }, 500)
 
-            board.enableInput(learner, (from, to) => {
+            const onMove = (from, to) => {
                 let mv
                 try {
                     mv = new Chess(at.fen).move({ from, to, promotion: "q" })
@@ -170,14 +312,19 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
                 if (match && accepted.includes(match)) {
                     clearInterval(timer)
                     board.disableInput()
+                    turn = null
                     setTimeout(async () => {
-                        await board.show(match.fen, { lastMove: { from: match.from, to: match.to }, arrows: match.note.arrows, squares: match.note.squares })
-                        say({ kind: "you", title: plainLabel(match) + (match.symbol || ""), who: revealed ? "Now you have it" : "Correct", text: match.note.text })
+                        played.push(match)
+                        const who = shown ? "Now you have it" : match === main ? "Correct" : "Also good"
+                        feed.push({ kind: "you", title: label(match) + (match.symbol || ""), who, text: match.note.text })
+                        view.idx = played.length
+                        await render(true)
                         resolve(match)
                     }, 0)
                     return true
                 }
                 misses++
+                tries++
                 missedPlies.add(played.length)
                 board.shake()
                 board.unmark("wrong")
@@ -185,17 +332,22 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
                 setTimeout(() => board.unmark("wrong"), 900)
                 say({
                     kind: "wrong",
-                    title: match ? `${plainLabel(match)}${match.symbol || ""} is a mistake` : `${fig(mv.san)} isn't the best move`,
-                    text: (match && match.note.text) || (misses === 1 ? "Try again." : "")
+                    title: match ? `${label(match)}${match.symbol || ""} is a mistake` : `${fig(mv.san)} isn't the best move`,
+                    text: (match && match.note.text) || (tries === 1 ? "Try again." : "")
                 })
-                if (misses === 1 && pz.hint && !revealed) say({ kind: "hint", title: "Hint", text: pz.hint })
-                if (misses >= 2 && !revealed) reveal()
+                if (tries === 1 && hint && !shown) say({ kind: "hint", title: "Hint", text: hint })
+                if (tries >= 2 && !shown) reveal()
                 return false
-            })
+            }
+            turn = { onMove, answer: null }
+            if (view.idx === played.length) board.enableInput(learner, onMove)
         })
     }
 
     function finish() {
+        done = true
+        turn = null
+        board.disableInput()
         const clean = misses === 0 && !revealed
         const before = puzzleRecord(pz.id)
         setPuzzleRecord(pz.id, { status: clean ? "solved" : "missed", tries: (before?.tries || 0) + 1, last: Date.now() })
@@ -204,13 +356,21 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
         const nextPz = retryMode ? after.find(isMissed) : set.items[pz.index + 1]
         const nextHref = nextPz ? `#/puzzle/${op.id}/${nextPz.number}${retryMode ? "/retry" : ""}` : `#/puzzles/${op.id}`
 
-        L.extra.replaceChildren(h("div", { class: `result is-${clean ? "clean" : "failed"}` },
+        // The follow-up: how the line goes on after the last move the learner had to find.
+        const followUp = mainPath(played[played.length - 1])
+        resultBox = h("div", { class: `result is-${clean ? "clean" : "failed"}` },
             h("h2", {}, clean ? "Solved" : "Solved with help"),
             h("p", {}, pz.title + "."),
-            clean ? null : h("p", { class: "muted" }, "Marked to retry. It appears under Retry missed until you solve it cleanly.")))
-        L.controls.replaceChildren(h("div", { class: "more-buttons" },
+            clean ? null : h("p", { class: "muted" }, "Marked to retry. It appears under Retry missed until you solve it cleanly."),
+            h("p", { class: "muted" }, followUp.length
+                ? "Tap › to see how the game goes on, or tap any move to see that position."
+                : "Tap any move to see that position."))
+        view.nodes = [...played, ...followUp]
+        view.idx = played.length
+        setAction(h("div", { class: "more-buttons" },
             h("a", { class: "btn btn-primary", href: nextHref }, nextPz ? "Next puzzle" : "All puzzles"),
             h("button", { class: "btn", type: "button", onclick: () => window.dispatchEvent(new HashChangeEvent("hashchange")) }, "Try again"),
             nextPz ? h("a", { class: "btn", href: `#/puzzles/${op.id}` }, "All puzzles") : null))
+        render(false)
     }
 }

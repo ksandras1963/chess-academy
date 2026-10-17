@@ -169,11 +169,16 @@ export function parsePgn(text) {
 
 const ARROW_COLORS = { G: "green", R: "red", Y: "yellow", B: "blue" }
 
-/** Splits a raw comment into display text plus [%cal]/[%csl] annotations. */
+/** Splits a raw comment into display text plus [%cal]/[%csl] annotations and a [%hint ...] for puzzles. */
 export function parseComment(raw) {
     const arrows = []
     const squares = []
+    let hint = ""
     const text = raw.replace(/\[%(\w+)\s+([^\]]*)\]/g, (_, cmd, args) => {
+        if (cmd === "hint") {
+            hint = args.replace(/\s+/g, " ").trim()
+            return ""
+        }
         const items = args.split(",").map(s => s.trim()).filter(Boolean)
         if (cmd === "cal") {
             for (const it of items) {
@@ -192,5 +197,5 @@ export function parseComment(raw) {
         .replace(/\s+/g, " ")
         .replace(/ ?¶ ?/g, "\n\n")
         .trim()
-    return { text, arrows, squares }
+    return { text, arrows, squares, hint }
 }

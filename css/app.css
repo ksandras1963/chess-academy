@@ -410,6 +410,9 @@ a.chapter-board:focus-visible { outline: none; }
 }
 .alt-move:hover { border-color: var(--brass); }
 .alt-note { font-size: 0.875rem; color: var(--ink-dim); }
+.alt-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.puzzle-action { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.extra .banner + .banner, .extra .result + .banner { margin-top: 10px; }
 
 .result { padding: 12px 14px; border: 1px solid var(--rule); border-radius: 8px; background: var(--felt-raised); }
 .result h2 { font-size: 1.25rem; }
@@ -433,6 +436,8 @@ button.sheet-move { cursor: pointer; }
 button.sheet-move:hover { background: var(--felt-high); }
 .sheet-move.is-current { background: var(--brass); color: var(--brass-ink); }
 .sheet-move.is-missed { text-decoration: underline wavy var(--flag); text-underline-offset: 4px; }
+/* Puzzle follow-up: moves after the last one the solver had to find. */
+.sheet-move.is-after:not(.is-current) { color: var(--ink-dim); font-style: italic; }
 .sheet-empty { padding: 6px 12px; color: var(--ink-dim); }
 
 @media (min-width: 900px) and (min-aspect-ratio: 1/1) {

@@ -23,7 +23,8 @@ function joinComments(raws) {
     return {
         text: parts.map(p => p.text).filter(Boolean).join(" "),
         arrows: parts.flatMap(p => p.arrows),
-        squares: parts.flatMap(p => p.squares)
+        squares: parts.flatMap(p => p.squares),
+        hint: parts.map(p => p.hint).filter(Boolean).join(" ")
     }
 }
 
@@ -133,9 +134,10 @@ function findMainMove(root, wanted, what) {
 /**
  * Builds a puzzle set from its PGN. Each game is one puzzle: the moves from the start, with
  * [Solve "6...Bb4+"] marking the first move the solver must find. From there the main line is
- * the solution (the solver's moves and the opponent's best replies). At a solver's move, a
- * variation marked ! or !? is also accepted; one marked ?, ?? or ?! is a known wrong try
- * whose comment explains the refutation.
+ * the solution (the solver's moves and the opponent's best replies), up to the move in the
+ * optional [End "8.Qb5+"] header. Moves after it are a follow-up the solver can step through
+ * once the puzzle is solved. At a solver's move, a variation marked ! or !? is also accepted;
+ * one marked ?, ?? or ?! is a known wrong try whose comment explains the refutation.
  */
 export function buildPuzzleSet(meta, pgnText) {
     let games
@@ -152,6 +154,10 @@ export function buildPuzzleSet(meta, pgnText) {
         if (found.error) throw new ContentError(`${meta.id} puzzles / ${title}: ${found.error}`)
         const path = mainPath(ch.root)
         const start = path.indexOf(found.node)
+        const endFound = g.headers.End ? findMainMove(ch.root, g.headers.End, "End move") : { node: path[path.length - 1] }
+        if (endFound.error) throw new ContentError(`${meta.id} puzzles / ${title}: ${endFound.error}`)
+        const end = path.indexOf(endFound.node)
+        if (end < start) throw new ContentError(`${meta.id} puzzles / ${title}: the End move comes before the Solve move`)
         return {
             id: hash(`${meta.id}|puzzle|${path.slice(0, start + 1).map(n => n.san).join(" ")}`),
             index: i,
@@ -164,8 +170,11 @@ export function buildPuzzleSet(meta, pgnText) {
             chapter: ch,
             learner: found.node.color,
             setup: path.slice(0, start),
-            solution: path.slice(start),
-            first: found.node
+            solution: path.slice(start, end + 1),
+            followUp: path.slice(end + 1),
+            first: found.node,
+            // In any line (main or an accepted branch), moves past this ply are follow-up.
+            endPly: endFound.node.ply
         }
     })
 }

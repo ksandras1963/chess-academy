@@ -207,9 +207,11 @@ for (const meta of courses) {
 }
 
 // ---------- Puzzles ----------
-async function topLines(fen) {
-    const key = `${depth}|multipv3|${fen}`
-    if (!cache[key]) cache[key] = await engine.analyse(fen, depth, 3)
+/** Stockfish's top lines; at least 3, and always one more than the number of accepted moves. */
+async function topLines(fen, n = 3) {
+    const lines = Math.max(3, n)
+    const key = lines === 3 ? `${depth}|multipv3|${fen}` : `${depth}|multipv${lines}|${fen}`
+    if (!cache[key]) cache[key] = await engine.analyse(fen, depth, lines)
     return cache[key]
 }
 
@@ -231,7 +233,7 @@ for (const op of catalog.openings.filter(o => o.puzzles && !onlyCourse)) {
                 const label = moveLabel(node)
                 if (node.color === pz.learner) {
                     const accepted = new Set([node.uci, ...node.parent.children.filter(c => c !== node && c.isGood).map(c => c.uci)])
-                    const lines = await topLines(node.fenBefore)
+                    const lines = await topLines(node.fenBefore, accepted.size + 1)
                     const best = lines[0]
                     const solution = lines.find(l => l.pv[0] === node.uci) || { score: (await evalCached(node.fenBefore, node.uci)).score }
                     if (!accepted.has(best.pv[0])) {
@@ -252,10 +254,12 @@ for (const op of catalog.openings.filter(o => o.puzzles && !onlyCourse)) {
         }
         for (const p of problems) errors.push(`${op.id} puzzle ${pz.number} (${pz.title}): ${p}`)
         const moves = pz.solution.filter(n => n.color === pz.learner).length
-        rows.push(`| ${pz.number} | ${pz.title} | ${pz.learner === "w" ? "White" : "Black"} | ${moveLabel(pz.first)} | ${moves} | ${engine ? (problems.length ? `**${problems.join("; ")}**` : "ok") : "not checked"} |`)
+        const follow = pz.followUp.length ? `${moveLabel(pz.followUp[0])} (${pz.followUp.length} ${pz.followUp.length === 1 ? "half-move" : "half-moves"})` : "none"
+        rows.push(`| ${pz.number} | ${pz.title} | ${pz.learner === "w" ? "White" : "Black"} | ${moveLabel(pz.first)} | ${moves} | ${follow} | ${engine ? (problems.length ? `**${problems.join("; ")}**` : "ok") : "not checked"} |`)
     }
     section.push(`${set.length} puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least ${pawns(PUZZLE_MARGIN)} pawns (depth ${depth}).`, "",
-        "| # | Puzzle | To move | First move | Solver moves | Check |", "|---|---|---|---|---|---|", ...rows, "")
+        "Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.", "",
+        "| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |", "|---|---|---|---|---|---|---|", ...rows, "")
     report.push(section.join("\n"))
 }
 if (engine) await writeFile(cachePath, JSON.stringify(cache))
