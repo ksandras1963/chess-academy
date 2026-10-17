@@ -1,5 +1,14 @@
 /* Opening Trainer. Club-room palette: baize green, brass, ivory. */
 
+/* Dancing Script, SIL Open Font License 1.1 (fonts/OFL.txt). Used only for the academy name. */
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/dancing-script-600.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --felt: #0f1c17;
     --felt-raised: #15271f;
@@ -177,6 +186,15 @@ main { outline: none; }
     gap: 24px;
 }
 .home-intro { grid-area: intro; max-width: 34rem; }
+.home-brand { margin: 0 0 18px; display: grid; gap: 0; }
+.home-app { font-family: var(--serif); font-size: 1.125rem; color: var(--ink-dim); }
+.academy {
+    font-family: "Dancing Script", "Segoe Script", cursive;
+    font-weight: 600;
+    font-size: clamp(1.875rem, 1.4rem + 1.9vw, 2.625rem);
+    line-height: 1.15;
+    color: var(--brass);
+}
 .home-intro h1 { font-size: clamp(1.75rem, 1.1rem + 2.6vw, 2.75rem); letter-spacing: -0.01em; }
 .lede { margin-top: 12px; font-family: var(--serif); font-size: 1.1875rem; line-height: 1.55; color: var(--ink-dim); }
 .review-strip {

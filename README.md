@@ -52,4 +52,5 @@ The checker needs Node.js. For engine checks it also needs Stockfish at `%LOCALA
 - [cm-chessboard](https://github.com/shaack/cm-chessboard): MIT.
 - Chess pieces: Colin M. L. Burnett, via Wikimedia Commons, CC BY-SA 3.0.
 - Opening names: [lichess-org/chess-openings](https://github.com/lichess-org/chess-openings), CC0.
+- Script font: [Dancing Script](https://github.com/googlefonts/DancingScript), SIL Open Font License 1.1 (`fonts/OFL.txt`).
 - Stockfish (GPL-3.0) is used only to check lessons and is not included in the app.

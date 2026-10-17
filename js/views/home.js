@@ -47,6 +47,9 @@ export async function homeView(root, ctx) {
     }))
 
     const intro = h("div", { class: "home-intro" },
+        h("p", { class: "home-brand" },
+            h("span", { class: "home-app" }, "Opening Trainer"),
+            h("span", { class: "academy" }, "Sandrasegaran Chess Academy")),
         h("h1", {}, "Five openings, from both sides of the board"),
         h("p", { class: "lede" }, "Short explanations, then drills that make the moves stick. Written for club players rated about 1500 to 2000."),
         due ? h("p", { class: "review-strip" },

@@ -67,6 +67,19 @@ function wrap({ file, lines }) {
 
 const noScriptEnd = s => s.replace(/<\/(script)/gi, "<\\/$1")
 
+const FONT_TYPES = { ".woff2": "font/woff2", ".woff": "font/woff" }
+
+/** Replaces relative font url(...) references in a stylesheet with data: URLs. */
+async function inlineFonts(css, cssDir) {
+    const refs = [...css.matchAll(/url\(\s*["']?([^"')]+\.(woff2?))["']?\s*\)/g)]
+    for (const [whole, ref] of refs) {
+        const file = path.resolve(cssDir, ref)
+        const data = (await readFile(file)).toString("base64")
+        css = css.replace(whole, () => `url("data:${FONT_TYPES[path.extname(file)]};base64,${data}")`)
+    }
+    return css
+}
+
 async function spriteDiv(id, file) {
     const svg = (await readFile(path.join(root, file), "utf8")).replace(/<\?xml[^>]*\?>/, "").trim()
     // Same wrapper cm-chessboard would create itself; it skips loading the sprite when the id exists.
@@ -88,7 +101,8 @@ export async function buildStandalone() {
     let html = await readFile(path.join(root, "index.html"), "utf8")
     const links = [...html.matchAll(/<link rel="stylesheet" href="([^"]+)">/g)]
     for (const [tag, href] of links) {
-        const css = await readFile(path.join(root, href), "utf8")
+        const cssPath = path.join(root, href)
+        const css = await inlineFonts(await readFile(cssPath, "utf8"), path.dirname(cssPath))
         html = html.replace(tag, () => `<style>\n${css.replace(/\/\*# sourceMappingURL=[^*]*\*\//g, "")}\n</style>`)
     }
     const icon = await readFile(path.join(root, "icons", "icon.svg"), "utf8")
