@@ -8,8 +8,13 @@
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 h6?! 5. b4 Bb6 6. b5 Na5 7. Bxf7+! {[%cal Gc4f7] The bishop takes f7 with check before the knight can take it.}
 (7. Nxe5? {Wins a pawn, but after 7...Nxc4 8.Nxc4 d5 Black has the bishop pair and an equal game.} 7... Nxc4 8. Nxc4 d5)
 (7. Be2?! {Saves the bishop, but the moment is gone.})
-7... Kf8 {Black's best. 7...Kxf7 8.Nxe5+ is worse: the king is dragged into the open, and 8...Ke8 9.Qh5+ Ke7 10.Ba3+ d6 11.Qf7 is mate.}
-(7... Kxf7 8. Nxe5+ Ke6 {Black's best try, but the king is stuck in the middle of the board.} (8... Ke8 9. Qh5+ Ke7 10. Ba3+ d6 11. Qf7#) 9. Qh5 Qf6 10. d4 g6 11. Qg4+ {Stockfish rates White about four pawns better.})
+7... Kf8 {Black's best. Taking the bishop loses even faster: after the puzzle, play 7...Kxf7 through under Other lines.}
+(7... Kxf7 {Takes the bishop, but the king comes out into the open.} 8. Nxe5+ {Takes the e5 pawn with check, and the knight eyes g6.}
+8... Kf8 {Back to f8, but this walks into a fork.}
+(8... Ke6 {Black's best try, but the king is stuck in the middle of the board.} 9. Qh5 Qf6 10. d4 g6 11. Qg4+ {Stockfish rates White about four pawns better.})
+(8... Ke8 {Runs into mate.} 9. Qh5+ Ke7 10. Ba3+ d6 11. Qf7#)
+9. Ng6+ {[%cal Gg6h8,Gg6f8] A fork: check, and the knight attacks the rook on h8. No pawn guards g6: the f-pawn is gone and the h-pawn is on h6. 8...Ke7 runs into the same fork.}
+9... Ke8 10. Nxh8 {White wins the rook and has a rook and two pawns for the bishop. Stockfish rates White nearly six pawns better.})
 8. Nxe5 {[%hint Win a pawn, and give the bishop on f7 a guard.] [%cal Ge5f7] Wins the e5 pawn and guards the bishop on f7. Now the knight eyes g6, next to Black's king.}
 8... Qf6 {[%cal Rf6f2,Rb6f2] Hits the knight and lines up with the bishop on b6 against f2.}
 9. d4! {[%hint Look at f2. What is Black threatening?] [%csl Gd4] Stops ...Qxf2, which would be mate. The pawn blocks the bishop on b6 and also guards the knight on e5.}

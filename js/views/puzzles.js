@@ -132,7 +132,7 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
 
         renderSheet(L.sheet, view.nodes, {
             current: view.idx - 1,
-            onPick: i => go(i, false),
+            onPick: i => { stopPlay(); go(i, false) },
             mistakes: view.explore ? new Set() : missedPlies,
             symbols: done,
             followFrom: done && !view.explore ? played.length : -1
@@ -163,12 +163,15 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
 
         first.disabled = prev.disabled = view.idx === 0
         next.disabled = end.disabled = view.idx >= view.nodes.length
+        updatePlay()
         return shown
     }
 
-    /** Wrong tries, other answers and the opponent's other replies along the line on the board. */
+    /** Wrong tries, other answers and the opponent's other replies along a line. */
+    const altsOf = nodes => nodes.slice(pz.setup.length).flatMap(n => n.parent.children.filter(c => c !== n))
+
     function otherLines() {
-        const alts = view.nodes.slice(pz.setup.length).flatMap(n => n.parent.children.filter(c => c !== n))
+        const alts = altsOf(view.nodes)
         if (!alts.length) return null
         return h("div", { class: "alts" },
             h("h3", {}, "Other lines"),
@@ -196,6 +199,7 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
     const whenLatest = () => (view.idx < played.length ? new Promise(r => waiters.push(r)) : Promise.resolve())
 
     function explore(alt) {
+        stopPlay()
         // From a side line, the puzzle's own move just takes you back to the puzzle line.
         const home = view.explore?.nodes
         if (home && home.includes(alt)) {
@@ -210,25 +214,59 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
     }
 
     function leaveExplore() {
+        stopPlay()
         Object.assign(view, { nodes: view.explore.nodes, idx: view.explore.idx, explore: null })
         render(false)
     }
 
+    // ▶ plays the moves ahead on the board by itself, staying longer on moves with a note.
+    let playing = null
+    const readTime = node => 900 + Math.min(3600, (node?.note?.text?.length || 0) * 30)
+    function togglePlay() {
+        if (playing) return stopPlay()
+        const tick = () => {
+            go(view.idx + 1)
+            playing = view.idx < view.nodes.length ? setTimeout(tick, readTime(view.nodes[view.idx - 1])) : null
+            updatePlay()
+        }
+        playing = setTimeout(tick, 250)
+        updatePlay()
+    }
+    function stopPlay() {
+        clearTimeout(playing)
+        playing = null
+        updatePlay()
+    }
+    function updatePlay() {
+        play.hidden = !done
+        play.disabled = !playing && view.idx >= view.nodes.length
+        play.textContent = playing ? "❚❚" : "▶︎"
+        const aria = playing ? "Pause" : "Play the moves"
+        play.setAttribute("aria-label", aria)
+        play.title = aria
+    }
+    ctx.onLeave(() => clearTimeout(playing))
+
     const btn = (text, aria, onclick) => h("button", { class: "btn btn-icon", type: "button", "aria-label": aria, title: aria, onclick }, text)
-    const first = btn("«", "First move", () => go(0, false))
-    const prev = btn("‹", "Previous move", () => go(view.idx - 1))
-    const next = btn("›", "Next move", () => go(view.idx + 1))
-    const end = btn("»", "Last move", () => go(view.nodes.length, false))
+    const step = to => () => { stopPlay(); to() }
+    const first = btn("«", "First move", step(() => go(0, false)))
+    const prev = btn("‹", "Previous move", step(() => go(view.idx - 1)))
+    const play = btn("▶︎", "Play the moves", togglePlay)
+    const next = btn("›", "Next move", step(() => go(view.idx + 1)))
+    const end = btn("»", "Last move", step(() => go(view.nodes.length, false)))
     const action = h("div", { class: "puzzle-action" })
     const setAction = (...kids) => action.replaceChildren(...kids)
-    L.controls.append(h("div", { class: "nav-buttons" }, first, prev, next, end), action)
+    L.controls.append(h("div", { class: "nav-buttons" }, first, prev, play, next, end), action)
 
     const onKey = e => {
         if (e.target.closest("input, textarea, select")) return
-        if (e.key === "ArrowRight") { go(view.idx + 1); e.preventDefault() }
-        else if (e.key === "ArrowLeft") { go(view.idx - 1); e.preventDefault() }
-        else if (e.key === "Home") { go(0, false); e.preventDefault() }
-        else if (e.key === "End") { go(view.nodes.length, false); e.preventDefault() }
+        if (!["ArrowRight", "ArrowLeft", "Home", "End"].includes(e.key)) return
+        stopPlay()
+        if (e.key === "ArrowRight") go(view.idx + 1)
+        else if (e.key === "ArrowLeft") go(view.idx - 1)
+        else if (e.key === "Home") go(0, false)
+        else go(view.nodes.length, false)
+        e.preventDefault()
     }
     document.addEventListener("keydown", onKey)
     ctx.onLeave(() => document.removeEventListener("keydown", onKey))
@@ -362,9 +400,11 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
             h("h2", {}, clean ? "Solved" : "Solved with help"),
             h("p", {}, pz.title + "."),
             clean ? null : h("p", { class: "muted" }, "Marked to retry. It appears under Retry missed until you solve it cleanly."),
-            h("p", { class: "muted" }, followUp.length
-                ? "Tap › to see how the game goes on, or tap any move to see that position."
-                : "Tap any move to see that position."))
+            h("p", { class: "muted" }, [
+                followUp.length ? "Tap ▶︎ to watch how the game goes on, or tap any move to see that position."
+                    : "Tap any move to see that position.",
+                altsOf([...played, ...followUp]).length ? "Open a line under Other lines to watch the other tries." : ""
+            ].filter(Boolean).join(" ")))
         view.nodes = [...played, ...followUp]
         view.idx = played.length
         setAction(h("div", { class: "more-buttons" },
