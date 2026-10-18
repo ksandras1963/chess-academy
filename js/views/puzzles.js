@@ -183,8 +183,8 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
         return shown
     }
 
-    /** Wrong tries, other answers and the opponent's other replies along a line. */
-    const altsOf = nodes => nodes.slice(pz.setup.length).flatMap(n => n.parent.children.filter(c => c !== n))
+    /** Wrong tries, other answers and other replies along a line, setup moves included (shown after solving). */
+    const altsOf = nodes => nodes.flatMap(n => n.parent.children.filter(c => c !== n))
 
     /** After the puzzle: the other moves, grouped. Tapping one plays its line on the board. */
     function otherLines() {

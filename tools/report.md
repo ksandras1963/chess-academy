@@ -1,6 +1,6 @@
 # Content validation report
 
-Generated 2026-10-17 22:01 · engine Stockfish, depth 18
+Generated 2026-10-18 04:15 · engine Stockfish, depth 18
 
 **No errors.**
 
@@ -127,16 +127,17 @@ None.
 
 ## Puzzles: Italian Game (`content/italian-puzzles.pgn`)
 
-7 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+8 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
 
 Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
 
 | # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
 |---|---|---|---|---|---|---|
 | 1 | The b-pawn push pays off | White | 7.Bxf7+ | 5 | 11...Kf8 (5 half-moves) | ok |
-| 2 | Refute the fork trick | Black | 6...Nxc4 | 1 | 7.dxc5 (2 half-moves) | ok |
-| 3 | Escape the Blackburne trap | White | 5.O-O | 1 | 5...Qxe5 (10 half-moves) | ok |
-| 4 | Don't take the queen | Black | 6...Nxe5 | 1 | 7.Qxh5 (5 half-moves) | ok |
-| 5 | Sidestep Légal's trap | Black | 5...Bxf3 | 1 | 6.Qxf3 (2 half-moves) | ok |
-| 6 | Escape the Møller trap | Black | 9...d5 | 2 | none | ok |
-| 7 | Fried Liver in the Paris | White | 7.Nxf7 | 2 | 8...Ke8 (8 half-moves) | ok |
+| 2 | Same sacrifice, no fork | Black | 7...Kxf7 | 2 | 9.d4 (4 half-moves) | ok |
+| 3 | Refute the fork trick | Black | 6...Nxc4 | 1 | 7.dxc5 (2 half-moves) | ok |
+| 4 | Escape the Blackburne trap | White | 5.O-O | 1 | 5...Qxe5 (10 half-moves) | ok |
+| 5 | Don't take the queen | Black | 6...Nxe5 | 1 | 7.Qxh5 (5 half-moves) | ok |
+| 6 | Sidestep Légal's trap | Black | 5...Bxf3 | 1 | 6.Qxf3 (2 half-moves) | ok |
+| 7 | Escape the Møller trap | Black | 9...d5 | 2 | none | ok |
+| 8 | Fried Liver in the Paris | White | 7.Nxf7 | 2 | 8...Ke8 (8 half-moves) | ok |

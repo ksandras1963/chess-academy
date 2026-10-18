@@ -27,6 +27,32 @@
 11... Kf8 12. O-O g6 13. Qd3 Qxh8 {Black wins the knight back. White has a rook and two pawns for two minor pieces. Stockfish: +3.2, winning for White.}
 *
 
+[Puzzle "Same sacrifice, no fork"]
+[Type "puzzle"]
+[Theme "Defend the king"]
+[Solve "7...Kxf7"]
+[End "8...Kf8"]
+[Hint "In puzzle 1 Black's h-pawn was on h6. Here it is still on h7. What does that change?"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 a6?! {Gives the bishop on c5 a retreat on a7 and covers b5, so b4-b5 can be met by ...axb5. But it develops nothing. Stockfish: +1.2 after 5.d4, against +0.1 after 4...Nf6.}
+5. b4 {Gains space, but with ...a6 played the bishop can drop back to a7. Stockfish: +0.2, so 5.d4 was stronger.}
+(5. d4! {White's best: the center pawns advance while Black is a move behind.} 5... exd4 6. cxd4 Ba7 7. O-O d6 8. h3 {White has a big center and easy development. Stockfish: +1.4, clearly better for White.})
+5... Bb6 {Fine, though 5...Ba7 is a touch better.}
+6. b5? {Chases the knight, but the pawn on a6 can take on b5.}
+6... Na5 {Saves the knight and hits the bishop on c4.}
+(6... axb5! {The point of ...a6.} 7. Bxb5 Nf6 8. d3 O-O 9. O-O {Black has the open a-file and is ahead in development. Stockfish: −0.5, slightly better for Black.})
+7. Bxf7+? {The trick from puzzle 1. Here it doesn't work.}
+(7. Nxe5! {White's best, though the game stays balanced. Stockfish: +0.2, equal.})
+7... Kxf7! {Take it. With the h-pawn still on h7, the square g6 is covered, so there is no knight fork against your king and rook.}
+(7... Kf8? {Declining lets White keep the extra pawn, and your king has already lost the right to castle.} 8. Bb3 axb5 9. d4 Nxb3 10. Qxb3 {White has won back the pawn, keeps the f7 pawn, and Black's king is stuck on f8. Stockfish: +1.8, clearly better for White.})
+8. Nxe5+ {Takes the pawn with check, as in puzzle 1.}
+8... Kf8! {[%hint Find the square where the king is safe from checks and from Ng6+.] The safest square. The queen has no check, and Ng6+ is impossible because the pawn on h7 guards g6. White has only two pawns for the bishop.}
+(8... Ke8? {Back to e8 lets the queen in.} 9. Qh5+ g6 10. Nxg6 Nf6 11. Qe5+ Kf7 12. Nxh8+ {White gets play against your king and takes the rook. Stockfish: −0.5, only slightly better for Black, far less than after 8...Kf8.})
+(8... Ke7!? {Also good. Stockfish rates it close to 8...Kf8, though the king is a little more exposed on e7.} 9. d4 d6 10. Nd3 Nf6 11. O-O {Stockfish: −3.1, winning for Black.})
+9. d4 d6 {Kicks the knight away from e5.}
+10. Nf3 axb5 {Black also takes the b5 pawn and is a piece for a pawn up. Stockfish: −3.5, winning for Black.}
+*
+
 [Puzzle "Refute the fork trick"]
 [Type "puzzle"]
 [Theme "Punish the mistake"]
