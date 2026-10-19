@@ -1,6 +1,6 @@
 # Content validation report
 
-Generated 2026-10-18 22:28 · engine Stockfish, depth 18
+Generated 2026-10-19 02:52 · engine Stockfish, depth 18
 
 **No errors.**
 
@@ -127,7 +127,7 @@ None.
 
 ## Puzzles: Italian Game (`content/italian-puzzles.pgn`)
 
-10 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+15 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
 
 Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
 
@@ -135,11 +135,16 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 |---|---|---|---|---|---|---|
 | 1 | The b-pawn push pays off | White | 7.Bxf7+ | 5 | 11...Kf8 (5 half-moves) | ok |
 | 2 | Same sacrifice, no fork | Black | 7...Kxf7 | 2 | 9.d4 (4 half-moves) | ok |
-| 3 | Refute the fork trick | Black | 6...Nxc4 | 1 | 7.dxc5 (2 half-moves) | ok |
-| 4 | Escape the Blackburne trap | White | 5.O-O | 1 | 5...Qxe5 (10 half-moves) | ok |
-| 5 | Sidestep Légal's trap | Black | 5...Bxf3 | 1 | 6.Qxf3 (2 half-moves) | ok |
-| 6 | Légal's knight jump | White | 6.Nxe5 | 3 | 8...c6 (4 half-moves) | ok |
-| 7 | Don't take the queen | Black | 6...Nxe5 | 1 | 7.Qxh5 (5 half-moves) | ok |
-| 8 | Escape the Møller trap | Black | 9...d5 | 2 | none | ok |
-| 9 | Ng5 punishes 4...Nf6 | White | 5.Ng5 | 3 | 7...c6 (4 half-moves) | ok |
-| 10 | Fried Liver in the Paris | White | 7.Nxf7 | 2 | 8...Ke8 (8 half-moves) | ok |
+| 3 | Escape the Møller trap | Black | 9...d5 | 2 | none | ok |
+| 4 | Refute the fork trick | Black | 6...Nxc4 | 1 | 7.dxc5 (2 half-moves) | ok |
+| 5 | Refute the h4 gambit | Black | 9...d5 | 1 | 10.Nxd5 (12 half-moves) | ok |
+| 6 | The h4 trap springs | White | 10.Nxe5 | 4 | 13...Qh4+ (8 half-moves) | ok |
+| 7 | Escape the Blackburne trap | White | 5.O-O | 1 | 5...Qxe5 (10 half-moves) | ok |
+| 8 | Punish ...exd4 with e5 | White | 7.e5 | 3 | 9...Qd6 (4 half-moves) | ok |
+| 9 | Rousseau: where does the knight go? | White | 5.Nd4 | 1 | 5...Nf6 (6 half-moves) | ok |
+| 10 | Promote with a discovered check | White | 8.g7+ | 2 | 9...Qf6 (4 half-moves) | ok |
+| 11 | Sidestep Légal's trap | Black | 5...Bxf3 | 1 | 6.Qxf3 (2 half-moves) | ok |
+| 12 | Légal's knight jump | White | 6.Nxe5 | 3 | 8...c6 (4 half-moves) | ok |
+| 13 | Don't take the queen | Black | 6...Nxe5 | 1 | 7.Qxh5 (5 half-moves) | ok |
+| 14 | Ng5 punishes 4...Nf6 | White | 5.Ng5 | 3 | 7...c6 (4 half-moves) | ok |
+| 15 | Fried Liver in the Paris | White | 7.Nxf7 | 2 | 8...Ke8 (8 half-moves) | ok |

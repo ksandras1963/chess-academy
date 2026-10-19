@@ -451,7 +451,7 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
         const followUp = mainPath(played[played.length - 1])
         resultBox = h("div", { class: `result is-${clean ? "clean" : "failed"}` },
             h("h2", {}, clean ? "Solved" : "Solved with help"),
-            h("p", {}, pz.title + "."),
+            h("p", {}, /[.!?]$/.test(pz.title) ? pz.title : pz.title + "."),
             clean ? null : h("p", { class: "muted" }, "Marked to retry. It appears under Retry missed until you solve it cleanly."),
             h("p", { class: "muted" }, [
                 followUp.length ? "The game goes on by itself on the board: ❚❚ pauses it, and you can tap any move to see that position."
