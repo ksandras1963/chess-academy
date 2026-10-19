@@ -1,9 +1,8 @@
 // Home: the openings index beside a preview board.
 
 import { h, figMoves, plural } from "../ui.js"
-import { catalog, availableCourses, puzzles as loadPuzzles, openingStats } from "../content.js"
+import { catalog, availableCourses, puzzles as loadPuzzles } from "../content.js"
 import { progress, buildQueue } from "../srs.js"
-import { positionShare, pct } from "../stats.js"
 import { Board } from "../board.js"
 import { puzzleStats } from "./puzzles.js"
 
@@ -11,7 +10,6 @@ export async function homeView(root, ctx) {
     const cat = await catalog()
     const built = await availableCourses()
     const puzzleSets = new Map(await Promise.all(cat.openings.map(async op => [op.id, await loadPuzzles(op.id)])))
-    const stats = await openingStats()
     if (!ctx.alive()) return
     const byId = new Map(built.map(c => [c.id, c]))
     const due = built.reduce((n, c) => n + buildQueue(c.lines, { includeNew: false }).length, 0)
@@ -43,11 +41,9 @@ export async function homeView(root, ctx) {
             : h("span", { class: "course-link puzzles-link is-soon" },
                 h("span", { class: "puzzle-chip", "aria-hidden": "true" }, "?"), "Puzzles",
                 h("span", { class: "course-meta" }, "Coming soon"))
-        const share = positionShare(stats, op.fen)
         const li = h("li", { class: "opening", tabindex: "-1" },
             h("div", { class: "op-head" }, h("h2", {}, op.name), h("span", { class: "eco", title: "ECO code" }, op.eco)),
             h("p", { class: "op-moves" }, figMoves(op.moves)),
-            share != null ? h("p", { class: "op-share" }, `Reached in ${pct(share)} of all games`) : null,
             h("p", { class: "op-summary" }, op.summary),
             h("div", { class: "op-courses" }, courses, puzzleLink))
         const preview = () => {
@@ -74,8 +70,7 @@ export async function homeView(root, ctx) {
     root.append(h("section", { class: "home" },
         intro,
         h("div", { class: "home-board" }, boardEl, caption),
-        h("div", { class: "home-index" }, list,
-            stats ? h("p", { class: "stats-note" }, `How often each opening comes up: ${stats.label}.`) : null)))
+        h("div", { class: "home-index" }, list)))
 
     const first = cat.openings[0]
     const board = new Board(boardEl, { fen: first.fen })

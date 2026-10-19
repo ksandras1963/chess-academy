@@ -4,21 +4,12 @@
 
 const key = fen => fen.split(" ").slice(0, 4).join(" ")
 
-const START = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -"
-
 /** Share of the games in a position in which `uci` was played (0 when it isn't among the listed moves). */
 export function moveShare(stats, fen, uci) {
     const p = stats && stats.positions[key(fen)]
     if (!p) return null
     const listed = Object.values(p.moves).reduce((a, b) => a + b, 0)
     return (p.moves[uci] || 0) / Math.max(p.games, listed)
-}
-
-/** Share of all games that reach a position, by any move order. */
-export function positionShare(stats, fen) {
-    const p = stats && stats.positions[key(fen)]
-    const all = stats && stats.positions[START]
-    return p && all ? p.games / all.games : null
 }
 
 /**

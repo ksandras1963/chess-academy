@@ -1,16 +1,14 @@
 // Learn mode: step through a line (or a key-ideas chapter) with the explanation for each move.
 
 import { h, figText, paras, label, sideName } from "../ui.js"
-import { course as loadCourse, openingStats } from "../content.js"
+import { course as loadCourse } from "../content.js"
 import { mainPath, sideNotes, siblingBranches } from "../course-model.js"
-import { moveShare, pct } from "../stats.js"
 import { Board } from "../board.js"
 import { trainerLayout, renderSheet, mergedNote, furtherStudy } from "./layout.js"
 import { sideLabel } from "./course.js"
 
 export async function learnView(root, ctx, courseId, lineKey, startAt) {
     const c = await loadCourse(courseId)
-    const stats = await openingStats()
     if (!ctx.alive()) return
     const learner = c.side === "white" ? "w" : "b"
 
@@ -99,20 +97,14 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
                         n.note.text ? h("span", { class: "alt-note" }, figText(n.note.text.replace(/\n\n/g, " "))) : null)))))
             }
             if (branches.length) {
-                // How often each choice is played here, when the statistics cover this position.
-                const share = n => moveShare(stats, n.fenBefore, n.uci)
                 L.extra.append(h("div", { class: "alts" },
                     h("h3", {}, `${sideName(node.color)} can also play`),
-                    share(node) == null ? null : h("p", { class: "alts-share" },
-                        `${label(node)}, the move in this line, is played in ${pct(share(node))} of games here. ` +
-                        `Figures from ${stats.label}.`),
                     h("ul", {}, branches.map(b => {
                         const target = c.lines.find(l => l.nodes[state.idx - 1] === b)
                         const go = target
                             ? () => { location.hash = `#/learn/${c.id}/${target.id}/${state.idx}` }
                             : () => explore(b)
                         return h("li", {}, h("button", { class: "alt-move", type: "button", onclick: go }, label(b) + (b.symbol || "")),
-                            share(b) == null ? null : h("span", { class: "alt-share" }, pct(share(b))),
                             b.note.text ? h("span", { class: "alt-note" }, figText(b.note.text.replace(/\n\n/g, " "))) : null)
                     }))))
             }

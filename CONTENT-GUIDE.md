@@ -106,15 +106,11 @@ To see Stockfish's top three lines after any position while you write:
 node tools/pv.mjs "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4"
 ```
 
-## How often openings and lines are played
+## How often each chapter comes up
 
-`content/opening-stats.json` holds move counts from the Lichess opening explorer: rated rapid and classical games between players averaging 1800 to 2199, read in October 2026. The app works out three things from it:
+`content/opening-stats.json` holds move counts from the Lichess opening explorer: rated rapid and classical games between players averaging 1800 to 2199, read in October 2026. The course page shows, under each chapter, the share of your games in that opening that reach the chapter's position, if you play the course's moves. Only the opponent's choices count, so "Main line: 3...Bc5" comes up in 40% of Italian games for White. Openings and individual lines show no percentages.
 
-- **Main menu:** the share of all games that reach each opening's position (the Italian Game: 5%).
-- **Course page, under each chapter:** the share of your games in that opening that reach the chapter's position, if you play the course's moves. Only the opponent's choices count, so "Main line: 3...Bc5" comes up in 40% of Italian games for White.
-- **Side lines (course page and Learn):** how often the opponent picks that move at that point.
-
-The file covers the positions in the current courses. After adding a chapter or a branch for the opponent, ask Claude to read the new positions from the Lichess explorer (it needs a signed-in Lichess account) and add them; until then those figures are simply not shown.
+The file covers the chapters in the current courses. After adding a chapter, ask Claude to read its positions from the Lichess explorer (it needs a signed-in Lichess account) and add them; until then that chapter shows no bar.
 
 ## Progress when lines change
 

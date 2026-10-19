@@ -1,9 +1,9 @@
 // Course page: progress, today's drill, key ideas, and the list of lines by chapter.
 
-import { h, figText, paras, plural, backBar, label, sideName } from "../ui.js"
+import { h, figText, paras, plural, backBar, label } from "../ui.js"
 import { course as loadCourse, openingStats } from "../content.js"
 import { status, progress, buildQueue, practiceQueue, newRemainingToday, daysUntil } from "../srs.js"
-import { chapterShare, moveShare, shareFrom, pct, shortName } from "../stats.js"
+import { chapterShare, pct, shortName } from "../stats.js"
 import { Board } from "../board.js"
 import { furtherStudy } from "./layout.js"
 
@@ -81,8 +81,7 @@ export async function courseView(root, ctx, id) {
                     return h("li", { class: `line-row is-${s.kind}${s.due ? " is-due" : ""}` },
                         h("div", { class: "line-name" },
                             h("span", {}, figText(l.variation)),
-                            h("span", { class: "line-meta" }, `${plural(l.learnerMoves, "move")} to learn. ${statusText(s)}`),
-                            lineShare(stats, c, l, learner, yourGames)),
+                            h("span", { class: "line-meta" }, `${plural(l.learnerMoves, "move")} to learn. ${statusText(s)}`)),
                         h("div", { class: "line-actions" },
                             h("a", { class: "btn btn-small", href: `#/learn/${c.id}/${l.id}` }, "Learn"),
                             h("a", { class: "btn btn-small", href: `#/drill/${c.id}/${l.id}` }, "Drill")))
@@ -90,8 +89,7 @@ export async function courseView(root, ctx, id) {
         }),
         stats ? h("p", { class: "stats-note" },
             `How often: the bar under each chapter is the share of your ${shortName(c.opening)} games that reach its position, ` +
-            `if you play the moves in this course. Under a side line, the share is how often ${sideName(learner === "w" ? "b" : "w")} ` +
-            `picks that move at that point. Source: ${stats.label}.`) : null,
+            `if you play the moves in this course. Source: ${stats.label}.`) : null,
         furtherStudy(c.opening.furtherStudy)))
 
     // Boards are drawn once their frames are in the page, so they can measure their size.
@@ -109,21 +107,6 @@ function shareLine(share, yourGames) {
     return h("p", { class: "chapter-share" },
         h("span", { class: "share-bar", "aria-hidden": "true" }, h("span", { style: { width: `${Math.max(share * 100, 1)}%` } })),
         `Comes up in ${pct(share)} ${yourGames}`)
-}
-
-/**
- * For a side line, how often the opponent picks its (last) branching move at that point, and the
- * share of all the learner's games in the opening that reach it, when that can be worked out.
- */
-function lineShare(stats, c, line, learner, yourGames) {
-    const branch = line.nodes.filter(n => n.parent.children[0] !== n).pop()
-    if (!branch) return null
-    const here = moveShare(stats, branch.fenBefore, branch.uci)
-    if (here == null) return null
-    const overall = shareFrom(stats, c.opening.fen, branch, learner)
-    const extra = overall != null && pct(overall) !== pct(here) ? ` (${pct(overall)} ${yourGames})` : ""
-    return h("span", { class: "line-meta line-share" },
-        `${sideName(branch.color)} plays ${label(branch)} in ${pct(here)} of games at that point${extra}.`)
 }
 
 /** The board beside a chapter: the position after the move its title (or [Diagram] header) names. */

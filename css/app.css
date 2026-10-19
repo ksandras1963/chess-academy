@@ -219,7 +219,6 @@ main { outline: none; }
 .eco { font-size: 0.8125rem; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
 .op-moves { margin-top: 4px; font-family: var(--serif); font-size: 1.0625rem; }
 .op-summary { margin-top: 6px; color: var(--ink-dim); max-width: 38rem; }
-.op-share { margin-top: 4px; font-size: 0.875rem; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
 .stats-note { margin-top: 24px; max-width: 40rem; font-size: 0.8125rem; color: var(--ink-dim); }
 .op-courses { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
 .course-link {
@@ -426,8 +425,6 @@ a.chapter-board:focus-visible { outline: none; }
 }
 .alt-move:hover { border-color: var(--brass); }
 .alt-note { font-size: 0.875rem; color: var(--ink-dim); }
-.alt-share { flex: none; min-width: 3.5ch; font-size: 0.875rem; font-weight: 600; color: var(--brass); font-variant-numeric: tabular-nums; }
-.alts-share { margin-top: 4px; font-size: 0.8125rem; color: var(--ink-dim); }
 .alt-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
 .puzzle-action { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .extra .banner + .banner, .extra .result + .banner { margin-top: 10px; }
