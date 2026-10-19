@@ -98,6 +98,7 @@ export async function buildStandalone() {
         }
         if (op.puzzles) content[op.puzzles] = await readFile(path.join(root, op.puzzles), "utf8")
     }
+    content["content/opening-stats.json"] = await readFile(path.join(root, "content", "opening-stats.json"), "utf8")
 
     let html = await readFile(path.join(root, "index.html"), "utf8")
     const links = [...html.matchAll(/<link rel="stylesheet" href="([^"]+)">/g)]

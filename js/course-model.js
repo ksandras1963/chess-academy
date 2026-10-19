@@ -179,6 +179,19 @@ export function buildPuzzleSet(meta, pgnText) {
     })
 }
 
+const SCORE_RE = /Stockfish:\s*([−+-]?\d+\.\d)\s*,\s*((?:only\s+)?(?:slightly|clearly)\s+better for (?:White|Black)|winning for (?:White|Black)|equal)/
+
+/**
+ * How a puzzle line ends: "Checkmate. White wins." after a mating move, or the score from the
+ * last move's note ("Stockfish: +5.4, winning for White." reads "Stockfish +5.4, winning for White.").
+ * Null when the note has no score.
+ */
+export function finalScore(node) {
+    if (node.san.endsWith("#")) return `Checkmate. ${node.color === "w" ? "White" : "Black"} wins.`
+    const m = SCORE_RE.exec(node.note.text)
+    return m ? `Stockfish ${m[1]}, ${m[2]}.` : null
+}
+
 function extractLines(chapter, course) {
     const learner = course.side === "white" ? "w" : "b"
     const lines = []

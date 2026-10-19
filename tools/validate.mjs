@@ -11,7 +11,7 @@ import { readFile, writeFile, readdir, access } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import { Chess } from "../vendor/chess.js/chess.js"
-import { buildCourse, buildPuzzleSet, mainPath, moveLabel } from "../js/course-model.js"
+import { buildCourse, buildPuzzleSet, mainPath, moveLabel, finalScore } from "../js/course-model.js"
 const diagramLabel = ch => (ch.diagram && ch.diagram.node ? moveLabel(ch.diagram.node) : "—")
 import { Engine, DEFAULT_EXE, engineAvailable } from "./engine.mjs"
 import { buildStandalone } from "./build-standalone.mjs"
@@ -252,6 +252,13 @@ for (const op of catalog.openings.filter(o => o.puzzles && !onlyCourse)) {
                 }
                 process.stdout.write(".")
             }
+        }
+        // Every line end (the follow-up's and each side line's) gives the final position's score or mates.
+        const ends = []
+        const walk = n => (n.children.length ? n.children.forEach(walk) : ends.push(n))
+        walk(pz.chapter.root)
+        for (const end of ends.filter(n => !finalScore(n))) {
+            problems.push(`the line ending ${moveLabel(end)} has no score: end its note with "Stockfish: +1.2, clearly better for White."`)
         }
         for (const p of problems) errors.push(`${op.id} puzzle ${pz.number} (${pz.title}): ${p}`)
         const moves = pz.solution.filter(n => n.color === pz.learner).length

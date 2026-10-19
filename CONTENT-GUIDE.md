@@ -82,6 +82,7 @@ Each opening can have one puzzle file, named in `content/courses.json` as `"puzz
 - **Wrong tries:** a branch marked `?`, `??` or `?!` shows its explanation when the learner plays it. If the branch has moves after the wrong try, they play out on the board, and then the learner tries again. Any other wrong move gets "isn't the best move".
 - **Other good answers:** a branch marked `!` or `!!` is accepted as correct too ("Also good"), and one marked `!?` is accepted as "Playable". The answer ends at the same move number as on the main line, so in a branch the moves after that point are its follow-up.
 - **Stockfish scores in notes:** write them as `Stockfish: −3.9, winning for Black.` (+ for White, − for Black, one decimal). Use these verdicts: under 0.3 equal; 0.3 to 0.9 slightly better; 1.0 to 1.9 clearly better; 2.0 or more winning. Stockfish's score measures winning chances, not material, so an extra piece often shows as 3 to 5. Take the number from `tools/pv.mjs` at depth 20 or more.
+- **Every line must end with a score.** The last move of the follow-up, and of every branch, needs a `Stockfish:` note, unless the move is checkmate. The app shows the follow-up's score as "Final position" when the puzzle is solved, and the checker stops with an error if a line end has none.
 - **Marks are hidden** on the setup moves, so a `?` on the opponent's last move doesn't give the answer away.
 - **The checker is strict about puzzles.** For each move the learner must find, Stockfish's first choice has to be that move or an accepted `!` branch, and the move has to be at least 0.7 pawns better than every move that isn't accepted. Each opponent reply up to the `End` move must be within 0.5 pawns of Stockfish's choice. The follow-up and the branches are not checked, so check those lines yourself with `tools/pv.mjs` (see below). If a puzzle fails, start it a move earlier or later, or pick another position.
 - A learner who solves a puzzle with no wrong tries and without "Show answer" gets **Solved**. Otherwise it is marked **To retry**, and the puzzle list offers "Retry missed". Puzzle progress is separate from Review.
@@ -104,6 +105,16 @@ To see Stockfish's top three lines after any position while you write:
 ```bash
 node tools/pv.mjs "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4"
 ```
+
+## How often openings and lines are played
+
+`content/opening-stats.json` holds move counts from the Lichess opening explorer: rated rapid and classical games between players averaging 1800 to 2199, read in October 2026. The app works out three things from it:
+
+- **Main menu:** the share of all games that reach each opening's position (the Italian Game: 5%).
+- **Course page, under each chapter:** the share of your games in that opening that reach the chapter's position, if you play the course's moves. Only the opponent's choices count, so "Main line: 3...Bc5" comes up in 40% of Italian games for White.
+- **Side lines (course page and Learn):** how often the opponent picks that move at that point.
+
+The file covers the positions in the current courses. After adding a chapter or a branch for the opponent, ask Claude to read the new positions from the Lichess explorer (it needs a signed-in Lichess account) and add them; until then those figures are simply not shown.
 
 ## Progress when lines change
 

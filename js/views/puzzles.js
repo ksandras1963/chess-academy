@@ -3,7 +3,7 @@
 import { Chess } from "../../vendor/chess.js/chess.js"
 import { h, fig, label, paras, sideName, plural, sleep, backBar } from "../ui.js"
 import { puzzles as loadPuzzles } from "../content.js"
-import { mainPath } from "../course-model.js"
+import { mainPath, finalScore } from "../course-model.js"
 import { puzzleRecord, setPuzzleRecord } from "../storage.js"
 import { Board } from "../board.js"
 import { trainerLayout, renderSheet, mergedNote } from "./layout.js"
@@ -449,9 +449,11 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
 
         // The follow-up: how the line goes on after the last move the learner had to find.
         const followUp = mainPath(played[played.length - 1])
+        const score = finalScore([...played, ...followUp].pop())
         resultBox = h("div", { class: `result is-${clean ? "clean" : "failed"}` },
             h("h2", {}, clean ? "Solved" : "Solved with help"),
             h("p", {}, /[.!?]$/.test(pz.title) ? pz.title : pz.title + "."),
+            score ? h("p", { class: "result-score" }, h("strong", {}, "Final position: "), score) : null,
             clean ? null : h("p", { class: "muted" }, "Marked to retry. It appears under Retry missed until you solve it cleanly."),
             h("p", { class: "muted" }, [
                 followUp.length ? "The game goes on by itself on the board: ❚❚ pauses it, and you can tap any move to see that position."

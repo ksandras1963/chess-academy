@@ -1,0 +1,786 @@
+{
+ "source": "Lichess opening explorer (lichess.org/analysis), Lichess database",
+ "games": "Rated rapid and classical games in which the two players' average rating was 1800 to 2199",
+ "retrieved": "2026-10-18",
+ "label": "Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026",
+ "note": "Counts are as Lichess shows them, rounded to two or three figures. Keys are FENs without the move counters; moves are in UCI notation. Only the 12 most-played moves in each position are listed.",
+ "positions": {
+  "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -": {
+   "games": 255000000,
+   "moves": {
+    "e2e4": 159000000,
+    "d2d4": 66000000,
+    "c2c4": 9700000,
+    "g1f3": 7800000,
+    "f2f4": 2600000,
+    "e2e3": 2000000,
+    "b2b3": 2000000,
+    "g2g3": 1800000,
+    "b2b4": 1100000,
+    "d2d3": 686000,
+    "b1c3": 644000,
+    "g2g4": 608000
+   }
+  },
+  "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq -": {
+   "games": 159000000,
+   "moves": {
+    "e7e5": 61000000,
+    "c7c5": 40000000,
+    "e7e6": 17000000,
+    "c7c6": 14000000,
+    "d7d5": 11000000,
+    "d7d6": 5800000,
+    "g7g6": 3800000,
+    "b7b6": 2300000,
+    "g8f6": 2200000,
+    "b8c6": 2000000,
+    "a7a6": 344000,
+    "f7f5": 236000
+   }
+  },
+  "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -": {
+   "games": 61000000,
+   "moves": {
+    "g1f3": 41000000,
+    "f1c4": 6200000,
+    "f2f4": 5400000,
+    "d2d4": 3100000,
+    "b1c3": 2700000,
+    "d2d3": 627000,
+    "c2c3": 373000,
+    "d1h5": 288000,
+    "c2c4": 246000,
+    "d1f3": 143000,
+    "g2g3": 132000,
+    "b2b3": 84000
+   }
+  },
+  "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq -": {
+   "games": 41000000,
+   "moves": {
+    "b8c6": 28000000,
+    "d7d6": 5900000,
+    "g8f6": 4400000,
+    "d7d5": 798000,
+    "f8c5": 575000,
+    "d8f6": 433000,
+    "f7f5": 323000,
+    "f7f6": 85000,
+    "c7c6": 60000,
+    "f8d6": 60000,
+    "d8e7": 60000,
+    "c7c5": 21000
+   }
+  },
+  "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -": {
+   "games": 28000000,
+   "moves": {
+    "f1c4": 12000000,
+    "f1b5": 7600000,
+    "d2d4": 5000000,
+    "b1c3": 1700000,
+    "c2c3": 1100000,
+    "d2d3": 161000,
+    "f1e2": 116000,
+    "a2a3": 102000,
+    "g2g3": 76000,
+    "c2c4": 55000,
+    "h2h3": 52000,
+    "b2b3": 49000
+   }
+  },
+  "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq -": {
+   "games": 13000000,
+   "moves": {
+    "f8c5": 5200000,
+    "g8f6": 3800000,
+    "h7h6": 1500000,
+    "f8e7": 816000,
+    "d7d6": 641000,
+    "c6d4": 595000,
+    "f7f5": 360000,
+    "d8f6": 40000,
+    "g7g6": 40000,
+    "a7a6": 37000,
+    "f7f6": 28000,
+    "f8b4": 15000
+   }
+  },
+  "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -": {
+   "games": 40000000,
+   "moves": {
+    "g1f3": 23000000,
+    "f1c4": 3500000,
+    "b1c3": 2900000,
+    "c2c3": 2600000,
+    "d2d4": 2600000,
+    "f2f4": 2200000,
+    "c2c4": 600000,
+    "d2d3": 456000,
+    "b2b4": 389000,
+    "a2a3": 310000,
+    "g2g3": 210000,
+    "b2b3": 204000
+   }
+  },
+  "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -": {
+   "games": 17000000,
+   "moves": {
+    "d2d4": 9900000,
+    "g1f3": 3800000,
+    "f2f4": 850000,
+    "b1c3": 641000,
+    "f1c4": 485000,
+    "c2c4": 422000,
+    "d2d3": 384000,
+    "e4e5": 251000,
+    "b2b3": 140000,
+    "d1e2": 79000,
+    "c2c3": 70000,
+    "g2g3": 66000
+   }
+  },
+  "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq -": {
+   "games": 11000000,
+   "moves": {
+    "d7d5": 8300000,
+    "c7c5": 523000,
+    "b7b6": 469000,
+    "d7d6": 444000,
+    "c7c6": 387000,
+    "g8e7": 130000,
+    "g8f6": 120000,
+    "g7g6": 85000,
+    "a7a6": 84000,
+    "f8e7": 62000,
+    "b8c6": 43000,
+    "h7h6": 35000
+   }
+  },
+  "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -": {
+   "games": 8300000,
+   "moves": {
+    "e4e5": 2900000,
+    "e4d5": 2500000,
+    "b1c3": 1800000,
+    "b1d2": 889000,
+    "f1d3": 191000,
+    "c2c4": 29000,
+    "c1e3": 26000,
+    "f2f3": 24000,
+    "g1f3": 15000,
+    "c2c3": 7700,
+    "a2a3": 3900,
+    "f1b5": 2200
+   }
+  },
+  "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -": {
+   "games": 14000000,
+   "moves": {
+    "d2d4": 7300000,
+    "g1f3": 3200000,
+    "b1c3": 777000,
+    "f1c4": 640000,
+    "f2f4": 629000,
+    "c2c4": 404000,
+    "d2d3": 220000,
+    "c2c3": 87000,
+    "e4e5": 74000,
+    "g2g3": 48000,
+    "b2b3": 43000,
+    "g1e2": 35000
+   }
+  },
+  "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq -": {
+   "games": 7700000,
+   "moves": {
+    "d7d5": 7200000,
+    "d7d6": 218000,
+    "e7e6": 104000,
+    "g7g6": 49000,
+    "g8f6": 14000,
+    "a7a6": 13000,
+    "d8c7": 12000,
+    "b7b5": 11000,
+    "e7e5": 10000,
+    "d8b6": 10000,
+    "d8a5": 4700,
+    "h7h6": 4500
+   }
+  },
+  "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -": {
+   "games": 7300000,
+   "moves": {
+    "e4e5": 2800000,
+    "e4d5": 2100000,
+    "b1c3": 1600000,
+    "b1d2": 292000,
+    "f2f3": 280000,
+    "f1d3": 86000,
+    "c2c4": 21000,
+    "g1f3": 11000,
+    "c2c3": 6400,
+    "c1e3": 5700,
+    "f2f4": 1100,
+    "c1f4": 966
+   }
+  },
+  "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq -": {
+   "games": 66000000,
+   "moves": {
+    "d7d5": 29000000,
+    "g8f6": 18000000,
+    "e7e6": 5500000,
+    "g7g6": 2600000,
+    "e7e5": 2500000,
+    "c7c5": 2000000,
+    "c7c6": 1900000,
+    "d7d6": 1800000,
+    "f7f5": 1500000,
+    "b7b6": 872000,
+    "b8c6": 254000,
+    "b7b5": 114000
+   }
+  },
+  "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq -": {
+   "games": 29000000,
+   "moves": {
+    "c2c4": 13000000,
+    "c1f4": 5200000,
+    "g1f3": 4700000,
+    "e2e3": 1900000,
+    "b1c3": 1300000,
+    "e2e4": 754000,
+    "c1g5": 440000,
+    "g2g3": 262000,
+    "c2c3": 230000,
+    "f2f4": 195000,
+    "h2h3": 111000,
+    "b2b3": 57000
+   }
+  },
+  "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq -": {
+   "games": 13000000,
+   "moves": {
+    "e7e6": 4400000,
+    "c7c6": 3300000,
+    "d5c4": 2400000,
+    "g8f6": 1500000,
+    "e7e5": 636000,
+    "c8f5": 375000,
+    "c7c5": 227000,
+    "b8c6": 197000,
+    "g7g6": 29000,
+    "c8g4": 24000,
+    "c8e6": 14000,
+    "b7b6": 14000
+   }
+  },
+  "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R b KQkq -": {
+   "games": 686000,
+   "moves": {
+    "d7d6": 244000,
+    "e8g8": 182000,
+    "h7h6": 148000,
+    "a7a6": 38000,
+    "d7d5": 35000,
+    "c5b6": 11000,
+    "a7a5": 10000,
+    "f6g4": 8800,
+    "c6a5": 4700,
+    "d8e7": 2000,
+    "c5e7": 823,
+    "c5f2": 577
+   }
+  },
+  "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 b kq -": {
+   "games": 139000,
+   "moves": {
+    "c8g4": 41000,
+    "e8g8": 28000,
+    "h7h6": 26000,
+    "a7a6": 17000,
+    "c8e6": 10000,
+    "c5b6": 5700,
+    "a7a5": 4100,
+    "c6a5": 2300,
+    "d8e7": 1300,
+    "c6e7": 1300,
+    "f6g4": 885,
+    "c8d7": 587
+   }
+  },
+  "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQR1K1 b - -": {
+   "games": 9800,
+   "moves": {
+    "c8g4": 3100,
+    "h7h6": 1700,
+    "c8e6": 1400,
+    "a7a6": 1100,
+    "f6g4": 619,
+    "c6a5": 499,
+    "a7a5": 376,
+    "c5b6": 363,
+    "f8e8": 254,
+    "c6e7": 250,
+    "d8e7": 53,
+    "c8d7": 27
+   }
+  },
+  "r2q1rk1/bpp2pp1/p1np1nbp/4p3/4P2N/1BPP2NP/PP3PP1/R1BQR1K1 b - -": {
+   "games": 219,
+   "moves": {
+    "g6h7": 158,
+    "g8h7": 25,
+    "f6e4": 13,
+    "g8h8": 7,
+    "c6e7": 5,
+    "d6d5": 3,
+    "f6h7": 2,
+    "f6h5": 2,
+    "b7b5": 1,
+    "g6h5": 1,
+    "f8e8": 1,
+    "d8d7": 1
+   }
+  },
+  "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R b KQkq -": {
+   "games": 1400000,
+   "moves": {
+    "f8c5": 710000,
+    "f8e7": 250000,
+    "h7h6": 236000,
+    "d7d5": 109000,
+    "d7d6": 66000,
+    "f8b4": 16000,
+    "c6a5": 12000,
+    "a7a6": 9200,
+    "g7g6": 3200,
+    "f8d6": 2300,
+    "c6d4": 1600,
+    "b7b6": 744
+   }
+  },
+  "r1bqkbnr/ppp2ppp/2np4/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq -": {
+   "games": 160000,
+   "moves": {
+    "c8g4": 45000,
+    "f8e7": 33000,
+    "h7h6": 27000,
+    "g8f6": 21000,
+    "c8e6": 18000,
+    "a7a6": 4000,
+    "f7f5": 3200,
+    "c6a5": 2800,
+    "g7g6": 1700,
+    "c8d7": 1400,
+    "c6d4": 722,
+    "g8e7": 526
+   }
+  },
+  "r1bqkb1r/ppp2ppp/2n2n2/3Pp1N1/2B5/2N5/PPPP1PPP/R1BQK2R b KQkq -": {
+   "games": 5700,
+   "moves": {
+    "c6a5": 3300,
+    "f6d5": 1700,
+    "c6d4": 504,
+    "h7h6": 46,
+    "c6e7": 43,
+    "c6b4": 26,
+    "f6g4": 16,
+    "f8d6": 12,
+    "c8g4": 11,
+    "b7b5": 7,
+    "f8c5": 6,
+    "f6d7": 3
+   }
+  },
+  "r1bqkbnr/pppp2pp/2n5/4pp2/2B1P3/3P1N2/PPP2PPP/RNBQK2R b KQkq -": {
+   "games": 137000,
+   "moves": {
+    "g8f6": 49000,
+    "f8c5": 48000,
+    "f5f4": 19000,
+    "f5e4": 7900,
+    "h7h6": 5400,
+    "d7d6": 2900,
+    "f8e7": 2200,
+    "f8b4": 1200,
+    "c6a5": 429,
+    "d7d5": 156,
+    "a7a6": 116,
+    "d8f6": 48
+   }
+  },
+  "r1bqkbnr/pppp1ppp/8/8/2BpP3/8/PPPP1PPP/RNBQ1RK1 b kq -": {
+   "games": 71000,
+   "moves": {
+    "d7d6": 24000,
+    "f8c5": 16000,
+    "g8f6": 6700,
+    "c7c6": 5400,
+    "c7c5": 4600,
+    "d8f6": 2500,
+    "g7g6": 2000,
+    "f8e7": 1800,
+    "f8d6": 1500,
+    "b7b6": 1200,
+    "a7a5": 746,
+    "h7h6": 725
+   }
+  },
+  "r1bq2nr/pppp1kpp/8/2b4Q/3pP3/8/PPPP1PPP/RNB2RK1 b - -": {
+   "games": 1700,
+   "moves": {
+    "g7g6": 1300,
+    "f7f8": 359,
+    "f7e7": 20,
+    "f7e6": 20,
+    "f7f6": 4
+   }
+  },
+  "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq -": {
+   "games": 2000000,
+   "moves": {
+    "g8f6": 1200000,
+    "d7d6": 482000,
+    "h7h6": 88000,
+    "a7a6": 57000,
+    "d8f6": 50000,
+    "c5b6": 36000,
+    "g8e7": 29000,
+    "d8e7": 21000,
+    "a7a5": 8000,
+    "f7f5": 7700,
+    "c6a5": 5900,
+    "d7d5": 2200
+   }
+  },
+  "r1bqk1nr/pppp1pp1/2n4p/2b1p3/1PB1P3/2P2N2/P2P1PPP/RNBQK2R b KQkq -": {
+   "games": 13000,
+   "moves": {
+    "c5b6": 11000,
+    "c5d6": 939,
+    "c5e7": 398,
+    "g8f6": 21,
+    "c5f2": 19,
+    "c6b4": 12,
+    "c5b4": 10,
+    "d7d6": 7,
+    "a7a6": 7,
+    "b7b5": 4,
+    "c5f8": 3,
+    "d7d5": 2
+   }
+  },
+  "r1bqk1nr/pppp1pp1/1bn4p/1P2p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R b KQkq -": {
+   "games": 3900,
+   "moves": {
+    "c6a5": 3400,
+    "c6e7": 386,
+    "c6b8": 56,
+    "d7d5": 14,
+    "a7a6": 7,
+    "b6a5": 4,
+    "d8f6": 3,
+    "b6f2": 2,
+    "b6c5": 2,
+    "d7d6": 1,
+    "a7a5": 1,
+    "c6d4": 1
+   }
+  },
+  "r1bqk1nr/pppp1Bp1/1b5p/nP2p3/4P3/2P2N2/P2P1PPP/RNBQK2R b KQkq -": {
+   "games": 1300,
+   "moves": {
+    "e8f7": 1200,
+    "e8f8": 53,
+    "e8e7": 2
+   }
+  },
+  "r1bq2nr/pppp1kp1/1b5p/nP2N3/4P3/2P5/P2P1PPP/RNBQK2R b KQ -": {
+   "games": 1200,
+   "moves": {
+    "f7f8": 427,
+    "f7e6": 351,
+    "f7e8": 264,
+    "f7f6": 116,
+    "f7e7": 39
+   }
+  },
+  "r1bqk1nr/pppp2p1/1b5p/nP2N2Q/4P3/2P5/P2P1PPP/RNB1K2R b KQ -": {
+   "games": 241,
+   "moves": {
+    "e8e7": 220,
+    "e8f8": 13,
+    "g7g6": 8
+   }
+  },
+  "r1bq2nr/ppppk1p1/1b5p/nP2N2Q/4P3/B1P5/P2P1PPP/RN2K2R b KQ -": {
+   "games": 70,
+   "moves": {
+    "d7d6": 39,
+    "e7e6": 17,
+    "c7c5": 12,
+    "e7f6": 2
+   }
+  },
+  "r1bqk2r/ppp2ppp/2n5/2bnp3/2B5/1QPP1N2/PP3PPP/RNB1K2R b KQkq -": {
+   "games": 3900,
+   "moves": {
+    "c8e6": 1900,
+    "c6a5": 1100,
+    "c6e7": 488,
+    "e8g8": 109,
+    "d5f4": 72,
+    "d5b6": 57,
+    "d5f6": 56,
+    "c5f2": 14,
+    "d5e7": 8,
+    "d8d6": 5,
+    "c8g4": 5,
+    "e5e4": 3
+   }
+  },
+  "r1bqk2r/pppp1ppp/2n5/2b1p3/2BPP1n1/2P2N2/PP3PPP/RNBQK2R b KQkq -": {
+   "games": 767,
+   "moves": {
+    "e5d4": 729,
+    "c5b6": 28,
+    "g4f2": 5,
+    "c5e7": 2,
+    "c6d4": 1,
+    "d8f6": 1,
+    "c6a5": 1
+   }
+  },
+  "r1bqk2r/ppp2ppp/2np4/2b1p3/2B1P1n1/2PP1N1P/PP3PP1/RNBQ1RK1 b kq -": {
+   "games": 1700,
+   "moves": {
+    "h7h5": 1100,
+    "g4f6": 382,
+    "g4f2": 190,
+    "g4h6": 61,
+    "c5f2": 16,
+    "a7a6": 3,
+    "h7h6": 2,
+    "c6a5": 1,
+    "g4e3": 1,
+    "d8f6": 1,
+    "e8g8": 1
+   }
+  },
+  "r2qkbnr/ppp2ppp/2np4/4p3/2B1P1b1/2N2N1P/PPPP1PP1/R1BQK2R b KQkq -": {
+   "games": 35000,
+   "moves": {
+    "g4h5": 24000,
+    "g4f3": 10000,
+    "g4e6": 633,
+    "g4d7": 354,
+    "g8f6": 51,
+    "h7h5": 23,
+    "c6d4": 14,
+    "f8e7": 11,
+    "c6a5": 9,
+    "h7h6": 7,
+    "d8d7": 4,
+    "g4c8": 2
+   }
+  },
+  "r2qkbnr/ppp2ppp/2np4/4N2b/2B1P3/2N4P/PPPP1PP1/R1BQK2R b KQkq -": {
+   "games": 8600,
+   "moves": {
+    "c6e5": 5700,
+    "h5d1": 2600,
+    "d6e5": 254,
+    "d8g5": 75,
+    "g8f6": 43,
+    "h5g6": 8,
+    "d8f6": 7,
+    "d8e7": 3,
+    "c6d4": 2,
+    "d8h4": 2,
+    "d6d5": 1,
+    "c6a5": 1
+   }
+  },
+  "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -": {
+   "games": 1200000,
+   "moves": {
+    "d2d4": 663000,
+    "d2d3": 407000,
+    "e1g1": 94000,
+    "b2b4": 37000,
+    "f3g5": 12000,
+    "d1e2": 9700,
+    "d1c2": 4800,
+    "d1b3": 3300,
+    "c4f7": 2900,
+    "a2a4": 1900,
+    "h2h3": 1500,
+    "f3e5": 1200
+   }
+  },
+  "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -": {
+   "games": 5400000,
+   "moves": {
+    "c2c3": 1900000,
+    "e1g1": 1300000,
+    "d2d3": 746000,
+    "b2b4": 515000,
+    "b1c3": 492000,
+    "d2d4": 212000,
+    "a2a3": 66000,
+    "h2h3": 26000,
+    "c4f7": 20000,
+    "f3e5": 16000,
+    "f3g5": 15000,
+    "a2a4": 11000
+   }
+  },
+  "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq -": {
+   "games": 259000,
+   "moves": {
+    "e1g1": 65000,
+    "h2h3": 62000,
+    "b2b4": 26000,
+    "a2a4": 25000,
+    "c4b3": 23000,
+    "b1d2": 23000,
+    "c1g5": 21000,
+    "c1e3": 4700,
+    "d3d4": 2200,
+    "a2a3": 2100,
+    "f3g5": 2100,
+    "d1b3": 895
+   }
+  },
+  "r1bqk2r/pppp1ppp/2n2n2/2b5/2BpP3/2P2N2/PP3PPP/RNBQK2R w KQkq -": {
+   "games": 697000,
+   "moves": {
+    "c3d4": 454000,
+    "e4e5": 202000,
+    "e1g1": 23000,
+    "b2b4": 13000,
+    "c1g5": 1500,
+    "f3d4": 1200,
+    "c4f7": 850,
+    "f3g5": 501,
+    "d1b3": 271,
+    "d1e2": 39,
+    "b1d2": 18,
+    "c4d5": 18
+   }
+  },
+  "r1bqk2r/pppp1ppp/2n2n2/8/1bBPP3/5N2/PP3PPP/RNBQK2R w KQkq -": {
+   "games": 415000,
+   "moves": {
+    "b1c3": 238000,
+    "c1d2": 167000,
+    "b1d2": 7300,
+    "e1f1": 1900,
+    "f3d2": 205,
+    "d1d2": 118,
+    "e1e2": 10
+   }
+  },
+  "r1bqk2r/pppp1ppp/2n5/8/2BPn3/2b2N2/PP3PPP/R1BQ1RK1 w kq -": {
+   "games": 86000,
+   "moves": {
+    "b2c3": 49000,
+    "d4d5": 35000,
+    "d1b3": 452,
+    "c4f7": 202,
+    "d1e2": 187,
+    "c4d5": 112,
+    "d1d3": 94,
+    "d1c2": 89,
+    "f1e1": 35,
+    "b2b3": 32,
+    "c4d3": 9,
+    "f3g5": 2
+   }
+  },
+  "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq -": {
+   "games": 1100000,
+   "moves": {
+    "e1g1": 279000,
+    "c2c3": 264000,
+    "c1g5": 147000,
+    "b1c3": 121000,
+    "h2h3": 92000,
+    "c1e3": 52000,
+    "f3g5": 50000,
+    "a2a3": 38000,
+    "a2a4": 8300,
+    "b1d2": 6500,
+    "b2b4": 3000,
+    "c4b3": 2600
+   }
+  },
+  "r1bqk1nr/pppp1ppp/2n5/b3p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R w KQkq -": {
+   "games": 178000,
+   "moves": {
+    "d2d4": 125000,
+    "e1g1": 31000,
+    "d1b3": 19000,
+    "c1a3": 2200,
+    "d2d3": 246,
+    "c1b2": 146,
+    "d1a4": 96,
+    "a2a4": 85,
+    "c4f7": 74,
+    "f3g5": 58,
+    "e1f1": 28,
+    "f3e5": 19
+   }
+  },
+  "r1bq1rk1/pppp1ppp/2n2n2/2b1p1N1/2B1P3/3P4/PPP2PPP/RNBQK2R w KQ -": {
+   "games": 45000,
+   "moves": {
+    "e1g1": 13000,
+    "b1c3": 8900,
+    "g5f7": 4900,
+    "c2c3": 3800,
+    "h2h3": 3300,
+    "h2h4": 2800,
+    "c1e3": 2100,
+    "c4f7": 1900,
+    "d1f3": 1800,
+    "a2a3": 1400,
+    "g5f3": 562,
+    "f2f4": 512
+   }
+  },
+  "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq -": {
+   "games": 1000000,
+   "moves": {
+    "d2d3": 510000,
+    "e1g1": 298000,
+    "h2h3": 75000,
+    "a2a3": 56000,
+    "f3g5": 38000,
+    "d2d4": 9400,
+    "f3e5": 7000,
+    "c3a4": 6200,
+    "c3d5": 5800,
+    "c4b3": 3700,
+    "a2a4": 2600,
+    "c4f7": 2400
+   }
+  },
+  "r1bqk2r/pppp1ppp/5n2/2b5/2nPP3/2N5/PPP2PPP/R1BQK2R w KQkq -": {
+   "games": 3000,
+   "moves": {
+    "d4c5": 2900,
+    "e4e5": 85,
+    "d4d5": 8,
+    "b2b3": 4,
+    "d1e2": 2,
+    "e1g1": 1,
+    "d1d3": 1
+   }
+  }
+ }
+}

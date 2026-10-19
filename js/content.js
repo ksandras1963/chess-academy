@@ -63,6 +63,18 @@ export async function puzzles(openingId) {
     return set
 }
 
+let statsPromise = null
+
+/** Lichess move counts for the positions in the courses (opening-stats.json), or null if unreadable. */
+export function openingStats() {
+    if (!statsPromise) {
+        statsPromise = readText("content/opening-stats.json", "The opening statistics could not be loaded.")
+            .then(text => JSON.parse(text))
+            .catch(() => null)
+    }
+    return statsPromise
+}
+
 /** Every course that has content, built. */
 export async function availableCourses() {
     const cat = await catalog()

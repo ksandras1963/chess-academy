@@ -106,6 +106,7 @@ export function settingsView(root) {
                 h("li", {}, "Board: cm-chessboard by Stefan Haack, MIT license."),
                 h("li", {}, "Pieces: Colin M. L. Burnett, via Wikimedia Commons, CC BY-SA 3.0."),
                 h("li", {}, "Opening names: lichess-org/chess-openings, CC0."),
+                h("li", {}, "How often openings and lines are played: the Lichess opening explorer, from the Lichess games database (CC0); rated rapid and classical games between players averaging 1800 to 2199, October 2026."),
                 h("li", {}, "Script font: Dancing Script by the Dancing Script Project Authors, SIL Open Font License 1.1."),
                 h("li", {}, "Engine checks: Stockfish, GPL-3.0 (used offline when writing lessons, not part of the app).")))))
 }

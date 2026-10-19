@@ -219,6 +219,8 @@ main { outline: none; }
 .eco { font-size: 0.8125rem; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
 .op-moves { margin-top: 4px; font-family: var(--serif); font-size: 1.0625rem; }
 .op-summary { margin-top: 6px; color: var(--ink-dim); max-width: 38rem; }
+.op-share { margin-top: 4px; font-size: 0.875rem; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
+.stats-note { margin-top: 24px; max-width: 40rem; font-size: 0.8125rem; color: var(--ink-dim); }
 .op-courses { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
 .course-link {
     display: inline-flex; align-items: center; gap: 10px;
@@ -353,6 +355,10 @@ a.chapter-board:focus-visible { outline: none; }
     padding: 2px 8px; border-radius: 4px; border: 1px solid var(--flag); color: var(--flag);
 }
 .chapter-intro { margin-top: 6px; max-width: 40rem; color: var(--ink-dim); font-family: var(--serif); font-size: 1.0625rem; }
+.chapter-share { margin-top: 6px; display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
+.share-bar { flex: none; width: 96px; height: 6px; border-radius: 3px; background: var(--felt-high); overflow: hidden; }
+.share-bar > span { display: block; height: 100%; min-width: 2px; background: var(--brass); }
+.chapter-trap .share-bar > span { background: var(--flag); }
 .lines { list-style: none; margin: 12px 0 0; padding: 0; border-top: 1px solid var(--rule); }
 .line-row {
     display: flex; align-items: center; justify-content: space-between; gap: 12px;
@@ -420,6 +426,8 @@ a.chapter-board:focus-visible { outline: none; }
 }
 .alt-move:hover { border-color: var(--brass); }
 .alt-note { font-size: 0.875rem; color: var(--ink-dim); }
+.alt-share { flex: none; min-width: 3.5ch; font-size: 0.875rem; font-weight: 600; color: var(--brass); font-variant-numeric: tabular-nums; }
+.alts-share { margin-top: 4px; font-size: 0.8125rem; color: var(--ink-dim); }
 .alt-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
 .puzzle-action { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .extra .banner + .banner, .extra .result + .banner { margin-top: 10px; }
@@ -427,6 +435,7 @@ a.chapter-board:focus-visible { outline: none; }
 .result { padding: 12px 14px; border: 1px solid var(--rule); border-radius: 8px; background: var(--felt-raised); }
 .result h2 { font-size: 1.25rem; }
 .result p { margin-top: 4px; }
+.result-score { font-variant-numeric: tabular-nums; }
 .result.is-clean { border-color: var(--sage); }
 .result.is-failed { border-color: var(--flag); }
 
