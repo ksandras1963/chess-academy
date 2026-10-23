@@ -2,7 +2,7 @@
 
 A web app for learning chess openings from both sides, written for club players rated about 1500 to 2000. It works on phones, tablets and computers. Nothing to install, no accounts, and progress is saved in the browser.
 
-Version 1 covers the Italian Game, Sicilian, French, Caro-Kann and Queen's Gambit, each as White and as Black. The Italian Game courses are written. The others are coming.
+Version 1 covers the Italian Game, Sicilian, French, Caro-Kann and Queen's Gambit, each as White and as Black. The Italian Game and Caro-Kann courses are written. The others are coming.
 
 ## How it teaches
 

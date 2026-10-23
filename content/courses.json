@@ -61,12 +61,41 @@
     {
       "id": "caro-kann",
       "name": "Caro-Kann Defense",
-      "eco": "B12",
-      "moves": "1. e4 c6 2. d4 d5",
+      "eco": "B10",
+      "moves": "1. e4 c6",
       "summary": "Black supports ...d5 with the c-pawn, keeping a sound structure and an active light-squared bishop.",
+      "puzzles": "content/caro-kann-puzzles.pgn",
+      "furtherStudy": [
+        { "title": "Introduction to the Caro-Kann Defense · Complete Chess Openings", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=67gr8tQwGrI" },
+        { "title": "Caro-Kann Defense (introduction, main variations & ideas)", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=Jiz7KLKjLas" },
+        { "title": "Learn the Caro-Kann in 15 Minutes [Chess Openings Crash Course]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=HvER2idtW6M" },
+        { "title": "Learn the Caro-Kann Defense | Ideas, Traps, and Plans", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=tY037Q71w5A" },
+        { "title": "Two Knights Variation: How to CRUSH the Caro-Kann with Traps!", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=9E9eDY1jNOs" },
+        { "title": "My SECRET Sideline Against The Caro-Kann With 87% Win Rate", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=JtExmcEkydU" },
+        { "title": "Learn the Caro-Kann Defense | 10-Minute Chess Openings", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=rmbU97iftC8" },
+        { "title": "How to CRUSH with the Caro-Kann!", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=ebfzL_GwiIE" },
+        { "title": "Caro-Kann Masterclass (Introduction)", "by": "ChessGeek", "kind": "Video", "url": "https://www.youtube.com/watch?v=noGn7jidT9Q" },
+        { "title": "Destroy The Fantasy Variation in 7 moves | Caro-Kann Defense", "by": "IM Alex Banzea", "kind": "Video", "url": "https://www.youtube.com/watch?v=vyDwjpRbdVo" },
+        { "title": "The only Caro-Kann guide you will ever need", "by": "IM Alex Banzea", "kind": "Video", "url": "https://www.youtube.com/watch?v=8erPw1WADrQ" },
+        { "title": "Learn the Caro-Kann in 8 Minutes", "by": "ChessPage1", "kind": "Video", "url": "https://www.youtube.com/watch?v=0p_881Nwoo4" },
+        { "title": "The Caro Kann is UNSTOPPABLE Below 2000 ELO", "by": "ChesswithAkeem", "kind": "Video", "url": "https://www.youtube.com/watch?v=c5T0sXdpo6w" },
+        { "title": "Caro–Kann Defence", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/Caro%E2%80%93Kann_Defence" }
+      ],
       "courses": [
-        { "id": "caro-kann-white", "side": "white", "repertoire": "Advance, Short system" },
-        { "id": "caro-kann-black", "side": "black", "repertoire": "Classical (4...Bf5)" }
+        {
+          "id": "caro-kann-white",
+          "side": "white",
+          "file": "content/caro-kann-white.pgn",
+          "repertoire": "Advance (Short system), plus the Two Knights and the Fantasy",
+          "summary": "Gain space with 3.e5, castle before anything sharp, and meet ...c5 calmly. The Two Knights and the Fantasy are trap-filled surprise weapons."
+        },
+        {
+          "id": "caro-kann-black",
+          "side": "black",
+          "file": "content/caro-kann-black.pgn",
+          "repertoire": "Classical (4...Bf5), with 3...c5 against the Advance",
+          "summary": "Get the c8 bishop out before ...e6, hit d4 against the Advance, and know the traps in the Fantasy and Karpov lines."
+        }
       ]
     },
     {
