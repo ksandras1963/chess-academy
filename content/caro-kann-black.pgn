@@ -98,14 +98,14 @@ White can also delay h4. Against 6.Nf3, play ...Nd7 and ...e6; if White offers t
 (6... e6? {Natural, but too slow.} 7. h5 Bf5 8. Nxf5 exf5 {Black's f-pawns are doubled and the one on f5 is weak, while White has the two bishops: Stockfish +2.8.})
 7. Nf3 {Develops and eyes e5. 7.h5 Bh7 8.Nf3 Nd7 reaches the main line by a different move order.}
 7... Nd7 {Guards e5, so White's knight can't jump there, and prepares ...Ngf6. Stockfish prefers it slightly to 7...Nf6, which allows 8.Ne5.}
-8. h5 {[%csl Yh5,Yh6] Gains space and fixes Black's pawn on h6.
+8. h5 {[%csl Yh5,Yh6] This is the Spassky Variation. Gains space and fixes Black's pawn on h6.
 
 If White offers the trade at once with 8.Bd3, take first: 8...Bxd3 9.Qxd3 e6, with the usual setup. Don't play 8...Bh7?, because 9.Bxh7 Rxh7 misplaces the rook, and never 8...e6??, because 9.Bxg6 fxg6 wrecks your pawns (Stockfish +3.5).}
 8... Bh7 9. Bd3 {Offers to trade the bishop that Black has already moved four times.} Bxd3 10. Qxd3 e6 {[%cal Gc6d5,Ge6d5] The light-squared bishops are off, so ...e6 locks nothing in. Black's pawns on c6 and e6 form a solid wall.}
 11. Bd2 {The classical main line. White prepares to castle queenside.
 
 The modern 11.Bf4 is met by 11...Qa5+. After 12.Bd2 Bb4 13.c3 Be7 14.c4 Qc7 15.O-O-O Ngf6 16.Kb1 O-O, Black has provoked c3 and c4 at no cost, and the position is equal. Against 12.Qd2 or 12.c3, the same ...Bb4 and ...Ngf6 development works.}
-11... Ngf6 12. O-O-O Be7 {Black keeps the king flexible. Castling on either side is still possible.}
+11... Ngf6 12. O-O-O Be7 {This is the Lobron System. Black keeps the king flexible. Castling on either side is still possible.}
 13. Ne4 {Offers a knight trade that brings White's queen to the center. If 13.Kb1, castle and prepare ...c5.}
 13... Nxe4 14. Qxe4 Nf6 {The other knight comes to f6 with a gain of time on the queen.}
 15. Qe2 Qd5 {[%cal Gd5a2] The queen centralizes, eyes a2 next to White's king, and offers a trade on e4.}
@@ -118,7 +118,7 @@ The modern 11.Bf4 is met by 11...Qa5+. After 12.Bd2 Bb4 13.c3 Be7 14.c4 Qc7 15.O
 [ECO "B12"]
 
 {Against the Advance we hit the base of White's pawn chain at once. Black spends two moves on the c-pawn, but White's e5 push didn't develop a piece either. Botvinnik used 3...c5 in his 1961 match against Tal. The critical reply is 4.dxc5. The next chapter covers 4.c3; White's other fourth moves are under Advanced variations.}
-1. e4 c6 2. d4 d5 3. e5 {The Advance.} c5 {[%cal Gc5d4] Hits d4, the base of White's chain, before developing the bishop.}
+1. e4 c6 2. d4 d5 3. e5 {The Advance.} c5 {[%cal Gc5d4] This is the Botvinnik-Carls Defense. Hits d4, the base of White's chain, before developing the bishop.}
 4. dxc5 {The critical reply: White gives up the d-pawn and hopes to keep the extra pawn on c5.} e6 {Opens the f8 bishop's diagonal, so ...Bxc5 will regain the pawn. Stockfish prefers it to 4...Nc6, which allows 5.f4.}
 5. Nf3 {Other fifth moves. Against 5.Bd3, play ...Nd7, which hits c5 and e5, and take back on c5 with the knight. Against 5.Be3, which guards c5, bring a knight to f5 via e7 to hit the bishop. Against 5.Qg4, kick the queen with ...h5!, then win back c5 with ...Nc6 and ...Bxc5. In every case Black regains the pawn.}
 5... Bxc5 {Pawn regained. Black's c8 bishop is behind the e6 pawn, but White's d-pawn is gone, so Black has a free and easy game.}
@@ -131,7 +131,7 @@ The modern 11.Bf4 is met by 11...Qa5+. After 12.Bd2 Bb4 13.c3 Be7 14.c4 Qc7 15.O
 [ECO "B12"]
 
 {When White holds the chain with c3, Black's plan works smoothly: ...Nc6, take on d4, pin with ...Bg4, and bring a knight to f5. Every Black piece hits d4.}
-1. e4 c6 2. d4 d5 3. e5 c5
+1. e4 c6 2. d4 d5 3. e5 c5 {This is the Botvinnik-Carls Defense.}
 4. c3 {Supports the chain, French style.}
 4... Nc6 {Adds pressure on d4.}
 5. Nf3 cxd4! {Take first. 5...Bg4 at once allows 6.dxc5 (Stockfish +0.5).}
@@ -152,7 +152,7 @@ The modern 11.Bf4 is met by 11...Qa5+. After 12.Bd2 Bb4 13.c3 Be7 14.c4 Qc7 15.O
 4... Nc6 {Attacks d4 and prepares ...Bg4.}
 5. c3 {If 5.Nf3, pin with ...Bg4 at once, then play ...e6 and ...Bd6 to trade the dark-squared bishops.}
 5... Nf6
-6. Bf4 {White's ideal setup: the bishops on d3 and f4 rake Black's kingside. If 6.Nf3, pin with ...Bg4; after h3 Bh5 and Bf4, offer the trade of bishops with ...Bd6.}
+6. Bf4 {This is the Rubinstein Variation. White's ideal setup: the bishops on d3 and f4 rake Black's kingside. If 6.Nf3, pin with ...Bg4; after h3 Bh5 and Bf4, offer the trade of bishops with ...Bd6.}
 6... Bg4 {Develops with a threat to the queen, so White can't play Nf3 without allowing a pin.}
 7. Qb3 {Attacks b7.} Qd7 {Guards b7 along the seventh rank.}
 8. Nd2 e6 9. Ngf3 Bxf3 {Gives up the bishop to finish development quickly.} 10. Nxf3 Bd6 {Offers to trade White's best minor piece.}
@@ -258,7 +258,7 @@ Other fifth moves. Against 5.Ng5 (the modern main line) or 5.Bd3, develop with .
 [ECO "B12"]
 
 {White's rarer fourth moves against 3...c5. Against 4.Nf3, take on d4 at once. Against the check, offer the bishop trade: it removes Black's problem bishop. Against 4.c4, develop and take on d4.}
-1. e4 c6 2. d4 d5 3. e5 c5
+1. e4 c6 2. d4 d5 3. e5 c5 {This is the Botvinnik-Carls Defense.}
 4. Nf3 {Develops, but leaves d4 without pawn support.}
 (4. Bb5+ {Checks before Black has developed.} Bd7 {Offers the bishop trade.} 5. Bxd7+ Qxd7 6. c3 cxd4 7. cxd4 Nc6 {d4 is a target, and Black no longer has a bad bishop to worry about. Equal.})
 (4. c4 {Hits d5 from the side.} Nc6 5. Nf3 cxd4 6. Nxd4 e6 7. Nc3 Bc5 {Develops with a gain of time on the knight. Equal.})
@@ -272,7 +272,7 @@ Other fifth moves. Against 5.Ng5 (the modern main line) or 5.Bd3, develop with .
 [ECO "B13"]
 
 {White develops the dark-squared bishop first. Black's setup is the same as against 4.Bd3, and the moves usually come back to that line.}
-1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bf4 Nc6 5. c3 Nf6 6. Bd3 Bg4 {The main line of the Exchange by a different move order.} *
+1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bf4 Nc6 5. c3 Nf6 6. Bd3 {This is the Rubinstein Variation.} Bg4 {The main line of the Exchange by a different move order.} *
 
 [Chapter "Two Knights: 3...Bg4"]
 [Type "line"]
@@ -282,13 +282,13 @@ Other fifth moves. Against 5.Ng5 (the modern main line) or 5.Bd3, develop with .
 
 {White develops both knights before deciding on d4, and the lines after 3...dxe4 are full of traps. We pin with 3...Bg4 and give up the bishop when h3 asks. Then Black's pawns go to light squares (c6, d5, e6), where White's remaining light-squared bishop can't attack them. The same position often comes from 2.Nf3 d5 3.Nc3.}
 1. e4 c6 2. Nc3
-(2. Nf3 d5 3. Nc3 Bg4 {The same position by another move order.})
-2... d5 3. Nf3 Bg4 {Pins the knight.}
+(2. Nf3 d5 3. Nc3 Bg4 {This is the Mindeno Variation. The same position by another move order.})
+2... d5 3. Nf3 Bg4 {This is the Mindeno Variation. Pins the knight.}
 4. h3
 (4. Be2 Nf6 {Develops and hits e4.} 5. e5 Nfd7 6. d4 e6 {A French structure, but Black's light-squared bishop is already outside the chain. Equal.})
 (4. d4 e6 {Supports d5.} 5. Be2 Nd7 {Prepares ...Ngf6. Solid, with the bishop outside the pawn chain.})
-4... Bxf3 {Take when asked.}
-(4... Bh5?! {Keeps the pin but loses time.} 5. exd5 cxd5 6. g4 Bg6 7. Ne5 {White gains space and time against the bishop: Stockfish +0.7.})
+4... Bxf3 {This is the Exchange Line of the Mindeno Variation. Take when asked.}
+(4... Bh5?! {This is the Retreat Line of the Mindeno Variation. Keeps the pin but loses time.} 5. exd5 cxd5 6. g4 Bg6 7. Ne5 {White gains space and time against the bishop: Stockfish +0.7.})
 5. Qxf3 e6 {[%csl Yc6,Yd5,Ye6] The pawn wall on light squares.}
 6. d4
 (6. d3 Nf6 7. Be2 Nbd7 8. O-O Bc5 {Black develops freely. Equal.})
@@ -303,7 +303,7 @@ Other fifth moves. Against 5.Ng5 (the modern main line) or 5.Bd3, develop with .
 [ECO "B12"]
 
 {f3 keeps a pawn on e4: after ...dxe4 fxe4, White has two center pawns and the half-open f-file. But f3 weakens the diagonals to White's king, e1-h4 and g1-a7. We take on e4 and hit back with ...e5 at once.}
-1. e4 c6 2. d4 d5 3. f3 dxe4 4. fxe4 e5 {[%cal Ge5d4,Rd8h4] Strikes at d4 before White is developed. Taking with 5.dxe5? runs into ...Qh4+ (see the trap chapter).}
+1. e4 c6 2. d4 d5 3. f3 {This is the Maróczy Variation.} dxe4 4. fxe4 e5 {[%cal Ge5d4,Rd8h4] Strikes at d4 before White is developed. Taking with 5.dxe5? runs into ...Qh4+ (see the trap chapter).}
 5. Nf3 {Attacks e5 and covers h4.}
 (5. Nc3? exd4 {Hits the knight.} 6. Nce2 Nf6 {Black is a clean pawn up, and e4 is weak too: Stockfish −1.9.})
 (5. Bc4 Qxd4 {With no knight on f3, the d4 pawn is simply loose.} 6. Qxd4 exd4 {Black is a pawn up in an early endgame.})
@@ -321,7 +321,7 @@ Other fifth moves. Against 5.Ng5 (the modern main line) or 5.Bd3, develop with .
 [ECO "B10"]
 
 {2.d3 is the King's Indian Attack setup: d3, Nd2, Ngf3, g3, Bg2 and O-O, whatever Black does. With White's pawn on d3, Black can take a big center with ...d5 and ...e5.}
-1. e4 c6 2. d3 {The King's Indian Attack setup.} d5 3. Nd2 e5 {With White's pawn on d3, Black can take a big center with ...e5.}
+1. e4 c6 2. d3 {This is the Breyer Variation. The King's Indian Attack setup.} d5 3. Nd2 e5 {With White's pawn on d3, Black can take a big center with ...e5.}
 4. Ngf3 Bd6 5. g3 Nf6 6. Bg2 O-O 7. O-O Re8 {Black has a fine center and well-placed pieces. Equal.} *
 
 [Chapter "Hillbilly: 3.Bb3"]
@@ -352,7 +352,7 @@ Other fifth moves. Against 5.Ng5 (the modern main line) or 5.Bd3, develop with .
 [ECO "B12"]
 
 {In the Fantasy, after 3...dxe4 4.fxe4 e5, the pawn on e5 looks free. It isn't: f3 has opened the e1-h4 diagonal to White's king.}
-1. e4 c6 2. d4 d5 3. f3 dxe4 4. fxe4 e5
+1. e4 c6 2. d4 d5 3. f3 {This is the Maróczy Variation.} dxe4 4. fxe4 e5
 5. dxe5? {Grabs the pawn.} Qh4+! {[%cal Gh4e1,Gh4e4] Check, and the queen eyes the loose pawn on e4.}
 6. Kd2 {White's best try. 6.g3? loses the rook on h1 to 6...Qxe4+, a fork of king and rook (Stockfish −7.2). 6.Ke2? Qxe4+ 7.Be3 Bc5 leaves the king exposed to all of Black's pieces (Stockfish −2.9).}
 6... Qf4+ 7. Ke1 Qxe4+ {Wins the pawn back with check.} 8. Qe2 Bf5 {Black has regained the pawn, White's king can no longer castle, and the pawn on e5 is weak. Stockfish −1.2.} *
@@ -363,7 +363,7 @@ Other fifth moves. Against 5.Ng5 (the modern main line) or 5.Bd3, develop with .
 [ECO "B12"]
 
 {A surprise weapon against the Fantasy, popular in online games. Black gives up a pawn to open the dark diagonals that f3 weakened, and sets a mating trap that catches many club players. It is risky: against the best defense, 5.Nc3! and 6.Na4, White is slightly better (Stockfish +0.5). Use it as a surprise, not as your main weapon.}
-1. e4 c6 2. d4 d5 3. f3 e5 {[%cal Gd8h4,Gf8c5] Opens lines toward e1 and g1.}
+1. e4 c6 2. d4 d5 3. f3 {This is the Maróczy Variation.} e5 {[%cal Gd8h4,Gf8c5] Opens lines toward e1 and g1.}
 4. dxe5 {The most common reply: White takes the pawn.}
 (4. exd5 exd4 5. Qxd4 cxd5 {Equal. Black's development is easy.})
 (4. Nc3 dxe4 5. dxe5 Qxd1+ 6. Nxd1 Nd7 {Black wins back the pawn on e5. Equal.})
@@ -382,7 +382,7 @@ The best defense is 5.Nc3! Bc5 6.Na4!, hitting the queen and the bishop at once.
 [ECO "B15"]
 
 {Some White players gamble with 3.Nc3 dxe4 4.f3, hoping for quick development and an attack on the f-file. Take the pawn and develop calmly: Black is better. One trap to know: once your bishop is on g4 and White's on c4, play ...e6 before ...Nf6.}
-1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. f3 exf3 {Accept: the extra pawn is safe.}
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. f3 {This is the Rasa-Studier Gambit.} exf3 {Accept: the extra pawn is safe.}
 5. Nxf3 Bg4 {Pins the knight.}
 6. Bc4 {[%cal Gc4f7] Aims at f7. If 6.h3 instead, take on f3 and grab a second pawn with ...Qxd4 (Stockfish −0.4). If 6.Be3, ...Nf6 is fine, because there is no bishop on c4.}
 6... e6! {Shuts the bishop off from f7.}

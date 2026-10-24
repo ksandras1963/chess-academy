@@ -174,7 +174,7 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 [ECO "C50"]
 
 {3...Nd4 is a false gambit. It leaves e5 hanging on purpose and sets a famous trap. Take the knight, not the pawn, and watch for ...Bc5.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4 {Leaves e5 hanging and moves the knight a second time.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4 {Also called the Blackburne-Kostić Gambit. Leaves e5 hanging and moves the knight a second time.}
 4. Nxd4 {Trades off the strong knight. White is already better: Black has moved a knight twice just to trade it.}
 (4. Nxe5? {Greedy.} Qg5! {Hits the knight and g2 at once.} 5. Nxf7? Qxg2 6. Rf1 Qxe4+ 7. Be2 Nf3# {Smothered mate: White's own pieces box in the king. This is the trap Black was hoping for.})
 (4. O-O {Also strong: with the king safe, Nxe5 becomes a real threat. 4.Nxd4 is a little more forceful.})
