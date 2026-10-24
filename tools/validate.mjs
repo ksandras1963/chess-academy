@@ -126,7 +126,9 @@ for (const meta of courses) {
         continue
     }
     const chapters = course.chapters
-    section.push(`${chapters.length} chapters, ${course.lines.length} drillable lines, ` +
+    const bySection = id => course.lines.filter(l => l.section === id).length
+    section.push(`${chapters.length} chapters, ${course.lines.length} drillable lines ` +
+        `(basic ${bySection("basic")}, traps ${bySection("traps")}, advanced ${bySection("advanced")}), ` +
         `${course.lines.reduce((s, l) => s + l.learnerMoves, 0)} learner moves.`, "")
 
     // Course-page diagrams: every lesson chapter must point at a position on its main line

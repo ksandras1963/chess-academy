@@ -280,6 +280,20 @@ a.course-link:hover { border-color: var(--brass); }
 .ideas-list a { text-decoration-color: color-mix(in srgb, var(--brass) 60%, transparent); text-underline-offset: 3px; }
 .ideas-list a:hover { color: var(--brass); }
 
+/* Course hub: "What you need to know", then one card per section and the puzzles. */
+.essentials-points { margin: 12px 0 16px; padding-left: 1.25rem; display: grid; gap: 8px; max-width: 44rem; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.55; }
+.hub-links { margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.hub-card {
+    display: grid; gap: 6px; align-content: start; min-height: 88px; padding: 14px 16px;
+    border: 1px solid var(--rule); border-radius: 8px; background: var(--felt-raised);
+    text-decoration: none; color: inherit;
+}
+a.hub-card:hover, a.hub-card:focus-visible { border-color: var(--brass); }
+.hub-card.is-soon { color: var(--ink-dim); background: transparent; border-style: dashed; }
+.hub-title { font-family: var(--serif); font-size: 1.125rem; font-weight: 600; }
+.hub-meta { font-size: 0.8125rem; color: var(--ink-dim); }
+.hub-card .meter-wide { max-width: none; }
+
 /* Puzzle list: a grid of position cards */
 .puzzles { max-width: 1000px; margin: 0 auto; }
 .puzzle-grid {

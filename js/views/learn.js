@@ -5,7 +5,7 @@ import { course as loadCourse } from "../content.js"
 import { mainPath, sideNotes, siblingBranches } from "../course-model.js"
 import { Board } from "../board.js"
 import { trainerLayout, renderSheet, mergedNote, furtherStudy } from "./layout.js"
-import { sideLabel } from "./course.js"
+import { sideLabel, sectionLink } from "./course.js"
 
 export async function learnView(root, ctx, courseId, lineKey, startAt) {
     const c = await loadCourse(courseId)
@@ -32,7 +32,8 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
         steps.prev = link(ideas[at - 1])
         steps.next = link(ideas[at + 1])
     }
-    const L = trainerLayout(root, { backHref: `#/course/${c.id}`, backText: sideLabel(c), ...steps })
+    const back = base.line ? sectionLink(c, base.line) : { href: `#/course/${c.id}`, text: sideLabel(c) }
+    const L = trainerLayout(root, { backHref: back.href, backText: back.text, ...steps })
     L.setTitle(base.title, base.sub)
     const state = { nodes: base.nodes, idx: Math.min(Number(startAt) || 0, base.nodes.length), explore: null }
     const board = new Board(L.boardEl, { fen: base.start.fen, orientation: learner })

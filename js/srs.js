@@ -80,13 +80,16 @@ export function daysUntil(rec) {
     return Math.max(0, Math.round((startOfDay(rec.due) - startOfDay(now())) / DAY))
 }
 
-/** Due lines (most overdue first), then new lines up to today's allowance. */
+/**
+ * Due lines (most overdue first), then new lines up to today's allowance. New lines come only from
+ * the basic and trap sections: an advanced line joins the schedule once the learner drills it.
+ */
 export function buildQueue(lines, { includeNew = true } = {}) {
     const due = lines.map(l => ({ l, s: status(l.id) }))
         .filter(x => x.s.rec && x.s.due)
         .sort((a, b) => a.s.rec.due - b.s.rec.due)
         .map(x => x.l)
-    const fresh = includeNew ? lines.filter(l => !lineRecord(l.id)).slice(0, newRemainingToday()) : []
+    const fresh = includeNew ? lines.filter(l => !lineRecord(l.id) && l.section !== "advanced").slice(0, newRemainingToday()) : []
     return [...due, ...fresh]
 }
 

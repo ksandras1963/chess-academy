@@ -13,7 +13,7 @@ import { puzzlesView, puzzleView } from "./views/puzzles.js"
 
 const routes = [
     [/^#?\/?$/, (root, ctx) => homeView(root, ctx)],
-    [/^#\/course\/([\w-]+)$/, (root, ctx, m) => courseView(root, ctx, m[1])],
+    [/^#\/course\/([\w-]+)(?:\/(basic|traps|advanced))?$/, (root, ctx, m) => courseView(root, ctx, m[1], m[2])],
     [/^#\/learn\/([\w-]+)\/([\w-]+)(?:\/(\d+))?$/, (root, ctx, m) => learnView(root, ctx, m[1], m[2], m[3])],
     [/^#\/drill\/([\w-]+)(?:\/([\w-]+))?$/, (root, ctx, m) => drillView(root, ctx, m[1], m[2])],
     [/^#\/review$/, (root, ctx) => reviewView(root, ctx)],

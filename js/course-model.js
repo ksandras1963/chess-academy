@@ -5,6 +5,24 @@ import { Chess, DEFAULT_POSITION } from "../vendor/chess.js/chess.js"
 import { parsePgn, parseComment } from "./pgn.js"
 
 export const CHAPTER_TYPES = ["line", "trap", "ideas", "puzzle"]
+export const LEVELS = ["basic", "advanced"]
+
+/**
+ * The sections of a course page, in order. A line chapter is basic unless its header says
+ * [Level "advanced"]; trap chapters form their own section. Unstarted advanced lines stay out of
+ * the daily drill (srs.js).
+ */
+export const SECTIONS = [
+    { id: "basic", title: "Basic and common variations", short: "Basic variations" },
+    { id: "traps", title: "Traps and tricks", short: "Traps and tricks" },
+    { id: "advanced", title: "Advanced and uncommon variations", short: "Advanced variations" }
+]
+
+function sectionOf(type, level) {
+    if (type === "trap") return "traps"
+    if (type === "line") return level === "advanced" ? "advanced" : "basic"
+    return type // ideas, puzzle
+}
 
 export class ContentError extends Error {}
 
@@ -71,6 +89,10 @@ function buildChapter(game, index, course) {
     if (!CHAPTER_TYPES.includes(type)) {
         throw new ContentError(`${course.id} / ${title}: unknown Type "${h.Type}" (use line, trap or ideas)`)
     }
+    const level = (h.Level || "basic").toLowerCase()
+    if (!LEVELS.includes(level)) {
+        throw new ContentError(`${course.id} / ${title}: unknown Level "${h.Level}" (use basic or advanced)`)
+    }
     const root = game.root
     root.fen = h.FEN || DEFAULT_POSITION
     root.ply = 0
@@ -88,6 +110,8 @@ function buildChapter(game, index, course) {
         index,
         title,
         type,
+        level,
+        section: sectionOf(type, level),
         opening: h.Opening || "",
         eco: h.ECO || "",
         headers: h,
@@ -219,6 +243,7 @@ function extractLines(chapter, course) {
             courseId: course.id,
             chapter,
             type: chapter.type,
+            section: chapter.section,
             variation: suffix,
             title: `${chapter.title} (${suffix})`,
             nodes,

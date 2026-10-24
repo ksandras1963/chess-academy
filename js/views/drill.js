@@ -7,7 +7,7 @@ import { sideNotes } from "../course-model.js"
 import { status, buildQueue, practiceQueue, recordResult, daysUntil } from "../srs.js"
 import { Board } from "../board.js"
 import { trainerLayout, renderSheet } from "./layout.js"
-import { sideLabel } from "./course.js"
+import { sideLabel, sectionLink } from "./course.js"
 
 const ABORT = Symbol("abort")
 
@@ -23,8 +23,10 @@ export async function drillView(root, ctx, courseId, lineId) {
         lines = buildQueue(c.lines)
         if (!lines.length) lines = practiceQueue(c.lines)
     }
+    // A single line returns to its section; a session returns to the course hub.
+    const back = lineId ? sectionLink(c, lines[0]) : { href: `#/course/${c.id}`, text: sideLabel(c) }
     await runSession(root, ctx, lines.map(line => ({ course: c, line })), {
-        backHref: `#/course/${c.id}`, backText: sideLabel(c)
+        backHref: back.href, backText: back.text
     })
 }
 

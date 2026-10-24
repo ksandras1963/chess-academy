@@ -5,6 +5,7 @@ import { catalog, availableCourses, puzzles as loadPuzzles } from "../content.js
 import { progress, buildQueue } from "../srs.js"
 import { Board } from "../board.js"
 import { puzzleStats } from "./puzzles.js"
+import { coreLines } from "./course.js"
 
 export async function homeView(root, ctx) {
     const cat = await catalog()
@@ -26,11 +27,13 @@ export async function homeView(root, ctx) {
                     h("span", { class: `side-chip ${meta.side}` }), `As ${side}`,
                     h("span", { class: "course-meta" }, "Coming soon"))
             }
-            const p = progress(c.lines)
+            const p = progress(coreLines(c))
+            const advanced = c.lines.filter(l => l.section === "advanced").length
+            const lineCount = plural(c.lines.length - advanced, "line") + (advanced ? ` + ${advanced} advanced` : "")
             return h("a", { class: "course-link", href: `#/course/${meta.id}`, title: meta.repertoire },
                 h("span", { class: `side-chip ${meta.side}` }), `As ${side}`,
                 h("span", { class: "meter", "aria-hidden": "true" }, h("span", { style: { width: p.pct + "%" } })),
-                h("span", { class: "course-meta" }, p.due ? `${p.due} due` : plural(c.lines.length, "line")))
+                h("span", { class: "course-meta" }, p.due ? `${p.due} due` : lineCount))
         })
         const set = puzzleSets.get(op.id)
         const st = set && puzzleStats(set)

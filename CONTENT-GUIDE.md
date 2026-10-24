@@ -28,6 +28,18 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 | `Opening`, `ECO` | The Lichess opening name and code. The checker verifies both. |
 | `FEN` | Optional. Starts the chapter from a set position (used for Key ideas). |
 | `Diagram` | The move whose position is shown beside the chapter on the course page, e.g. `[Diagram "3...Nd4"]`. Without it, the last move named in the title is used (`Main line: 3...Bc5`). The checker reports an error if neither is found on the main line. |
+| `Level` | Optional, for `line` chapters: `basic` (the default) or `advanced`. See "Course sections" below. |
+
+### Course sections
+
+Each course has a hub page and three section pages:
+
+- **What you need to know about this opening**, on the hub itself: the `overview` points from `content/courses.json` (a list of short sentences in the course's entry), followed by links to the Key ideas pages.
+- **Basic and common variations:** `line` chapters without a `Level` header. Keep about 10 drill lines here: the lines that come up in at least 5% of the learner's games in this opening. Measure a line at the last opponent move where it leaves the course's other Basic lines, so the alternatives answered only in its notes, or in Advanced sidelines, count toward it. Opponent branches from move 6 on go to an Advanced "sidelines" chapter (for example "Pianissimo: White's sixth moves"), so they don't make a long main line look rare. When the opponent's choices are spread thin (Black often faces many White systems), fewer lines reach 5%; then take the 10 most common.
+- **Traps and tricks:** all `trap` chapters.
+- **Advanced and uncommon variations:** `line` chapters with `[Level "advanced"]`: lines played in under 5% of games, or more theoretical ones.
+
+"Start today's drill" takes new lines only from the basic and trap sections. An advanced line joins the schedule (and Review) once the learner drills it from its section page. The checker's report lists the number of lines in each section.
 
 ### Moves, branches and explanations
 
@@ -47,7 +59,7 @@ These go inside an explanation, in the same format Lichess uses:
 
 ### Key ideas pages and further study
 
-- **Key ideas pages:** chapters with `[Type "ideas"]`. They appear in order under "Key ideas" on the course page, and their moves are never drilled. A page can be a single position (`[FEN "..."]` with no moves) or a short move sequence.
+- **Key ideas pages:** chapters with `[Type "ideas"]`. They appear in order under "What you need to know about this opening" on the course hub, and their moves are never drilled. A page can be a single position (`[FEN "..."]` with no moves) or a short move sequence.
 - **Further study:** in `content/courses.json`, each opening can have a `furtherStudy` list (title, by, kind, url). It is shown on the course page and on every Key ideas page. Credit every source you draw on there, and always write the notes in your own words.
 
 ## Puzzles
@@ -108,7 +120,7 @@ node tools/pv.mjs "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4"
 
 ## How often each chapter comes up
 
-`content/opening-stats.json` holds move counts from the Lichess opening explorer: rated rapid and classical games between players averaging 1800 to 2199, read in October 2026. The course page shows, under each chapter, the share of your games in that opening that reach the chapter's position, if you play the course's moves. Only the opponent's choices count, so "Main line: 3...Bc5" comes up in 40% of Italian games for White. Openings and individual lines show no percentages.
+`content/opening-stats.json` holds move counts from the Lichess opening explorer: rated rapid and classical games between players averaging 1800 to 2199, read in October 2026. The course page shows, under each chapter, the share of your games in that opening that reach the chapter's position, if you play the course's moves. Only the opponent's choices count, so "Main line: 3...Bc5" comes up in 40% of Italian games for White. When a course gives the learner a choice of systems (the Caro-Kann for White plays 3.e5, 3.f3 or 2.Nc3), the share counts the games with that choice, and the page names it: "of your Caro-Kann games with 3.f3". Openings and individual lines show no percentages.
 
 The file covers the chapters in the current courses. After adding a chapter, ask Claude to read its positions from the Lichess explorer (it needs a signed-in Lichess account) and add them; until then that chapter shows no bar.
 
