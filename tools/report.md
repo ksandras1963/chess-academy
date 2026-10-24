@@ -1,12 +1,12 @@
 # Content validation report
 
-Generated 2026-10-24 02:01 · engine Stockfish, depth 18
+Generated 2026-10-24 02:31 · engine Stockfish, depth 18
 
 **No errors.**
 
 ## Italian Game — as White (`italian-white`)
 
-19 chapters, 42 drillable lines (basic 10, traps 24, advanced 8), 403 learner moves.
+17 chapters, 42 drillable lines (basic 6, traps 24, advanced 12), 403 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -14,13 +14,11 @@ Generated 2026-10-24 02:01 · engine Stockfish, depth 18
 |---|---|---|---|---|
 | Main line: 3...Bc5 | 3...Bc5 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Two Knights: 3...Nf6 | 3...Nf6 | Italian Game: Two Knights Defense, Modern Bishop's Opening | C55 | ok |
+| Pianissimo: 6...a6 and 6...Bg4 | 6...Bg4 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
+| Pianissimo: 7...Ng4 | 7...Ng4 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Other third moves | 3...Be7 | Italian Game: Hungarian Defense | C50 | ok |
 | Paris Defense: 3...d6 | 3...d6 | Italian Game: Paris Defense | C50 | ok |
 | Rousseau Gambit: 3...f5 | 3...f5 | Italian Game: Rousseau Gambit | C50 | ok |
-| Pianissimo: 6...a6 and 6...Bg4 | 6...Bg4 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
-| Pianissimo: 7...Ng4 | 7...Ng4 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
-| Paris Defense: 4...Nf6 | 4...Nf6 | Italian Game: Paris Defense | C50 | ok |
-| Rousseau Gambit: 4...fxe4 | 4...fxe4 | Italian Game: Rousseau Gambit | C50 | ok |
 | Trap: the Blackburne Shilling Gambit | 3...Nd4 | Italian Game: Blackburne-Kostić Gambit | C50 | ok |
 | Trap: 4...h6 and the b-pawn push | 4...h6 | Italian Game: Classical Variation | C53 | ok |
 | Trap: the early ...d5 and Qb3 | 5...d5 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
@@ -46,18 +44,18 @@ None.
 | Two Knights: 3...Nf6 (Main line) | 0.00 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
 | Two Knights: 3...Nf6 (4...Bc5) | 0.12 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Two Knights: 3...Nf6 (4...h6) | -0.07 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
-| Other third moves (Main line) | 0.09 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
-| Other third moves (3...h6) | -0.07 | C50 Italian Game: Anti-Fried Liver Defense |
-| Paris Defense: 3...d6 (Main line) | 0.46 | C50 Italian Game: Paris Defense |
-| Rousseau Gambit: 3...f5 (Main line) | 1.16 | C50 Italian Game: Rousseau Gambit |
 | Pianissimo: 6...a6 and 6...Bg4 (Main line) | 0.97 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Pianissimo: 6...a6 and 6...Bg4 (13...Kh8) | 0.68 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Pianissimo: 6...a6 and 6...Bg4 (13...Re8) | 7.34 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Pianissimo: 6...a6 and 6...Bg4 (6...a6) | 0.07 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Pianissimo: 7...Ng4 (Main line) | 0.34 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
-| Paris Defense: 4...Nf6 (Main line) | 1.30 | C50 Italian Game: Paris Defense |
-| Paris Defense: 4...Nf6 (6...Nxd5) | 5.57 | C50 Italian Game: Paris Defense |
-| Rousseau Gambit: 4...fxe4 (Main line) | 2.93 | C50 Italian Game: Rousseau Gambit |
+| Other third moves (Main line) | 0.09 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
+| Other third moves (3...h6) | -0.07 | C50 Italian Game: Anti-Fried Liver Defense |
+| Paris Defense: 3...d6 (Main line) | 1.30 | C50 Italian Game: Paris Defense |
+| Paris Defense: 3...d6 (6...Nxd5) | 5.57 | C50 Italian Game: Paris Defense |
+| Paris Defense: 3...d6 (4...Be7) | 0.46 | C50 Italian Game: Paris Defense |
+| Rousseau Gambit: 3...f5 (Main line) | 1.16 | C50 Italian Game: Rousseau Gambit |
+| Rousseau Gambit: 3...f5 (4...fxe4) | 2.93 | C50 Italian Game: Rousseau Gambit |
 | Trap: the Blackburne Shilling Gambit (Main line) | 6.08 | C50 Italian Game: Blackburne-Kostić Gambit |
 | Trap: the Blackburne Shilling Gambit (7...Kf8) | 6.16 | C50 Italian Game: Blackburne-Kostić Gambit |
 | Trap: the Blackburne Shilling Gambit (5...Nf6) | 1.37 | C50 Italian Game: Blackburne-Kostić Gambit |

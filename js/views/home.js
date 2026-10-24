@@ -28,10 +28,15 @@ export async function homeView(root, ctx) {
                     h("span", { class: "course-meta" }, "Coming soon"))
             }
             const p = progress(coreLines(c))
-            const advanced = c.lines.filter(l => l.section === "advanced").length
-            const lineCount = plural(c.lines.length - advanced, "line") + (advanced ? ` + ${advanced} advanced` : "")
+            // "6 lines · 24 traps · 12 advanced": the sections apart, so trap lines don't read as basic lines.
+            const count = section => c.lines.filter(l => l.section === section).length
+            // Each part stays on one line; a narrow screen wraps between the parts.
+            const lineCount = [plural(count("basic"), "line"),
+                count("traps") ? plural(count("traps"), "trap") : null,
+                count("advanced") ? `${count("advanced")} advanced` : null].filter(Boolean)
+                .map((part, i) => [i ? " · " : "", h("span", { class: "nowrap" }, part)])
             return h("a", { class: "course-link", href: `#/course/${meta.id}`, title: meta.repertoire },
-                h("span", { class: `side-chip ${meta.side}` }), `As ${side}`,
+                h("span", { class: `side-chip ${meta.side}` }), h("span", { class: "nowrap" }, `As ${side}`),
                 h("span", { class: "meter", "aria-hidden": "true" }, h("span", { style: { width: p.pct + "%" } })),
                 h("span", { class: "course-meta" }, p.due ? `${p.due} due` : lineCount))
         })

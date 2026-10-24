@@ -230,6 +230,7 @@ main { outline: none; }
 a.course-link:hover { border-color: var(--brass); }
 .course-link.is-soon { color: var(--ink-dim); background: transparent; border-style: dashed; }
 .course-meta { font-size: 0.8125rem; color: var(--ink-dim); }
+.nowrap { white-space: nowrap; }
 .side-chip { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--ink-dim); flex: none; }
 .puzzle-chip {
     width: 16px; height: 16px; border-radius: 4px; flex: none;

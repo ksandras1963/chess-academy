@@ -103,38 +103,6 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 9. Ba4 b5 10. Bc2 {Safe on c2 and still aiming at the kingside.} c5 {Black gains queenside space, Ruy Lopez style.}
 11. Nbd2 Nc6 12. Nf1 {The knight goes to g3 next, and d4 comes when we are ready.} *
 
-[Chapter "Other third moves"]
-[Diagram "3...Be7"]
-[Type "line"]
-[Opening "Italian Game: Hungarian Defense"]
-[ECO "C50"]
-
-{Two quieter third moves: the Hungarian Defense 3...Be7, and 3...h6. Against both, the same setup works.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 {The Hungarian Defense: solid but passive. It covers g5 against Ng5 ideas, but the bishop does less on e7 than it would on c5.}
-(3... h6 {Prevents Ng5 and Bg5 but spends a move on a pawn. The usual setup is fine against it.} 4. d3 Nf6 5. c3 d6 6. O-O g6 7. Re1 Bg7 8. Nbd2 O-O 9. Nf1 {Our usual plan: Ng3, h3, then d4.})
-4. d3 Nf6 5. O-O O-O 6. Re1 d6 7. c3 {The same structure as the Two Knights chapter.} *
-
-[Chapter "Paris Defense: 3...d6"]
-[Type "line"]
-[Opening "Italian Game: Paris Defense"]
-[ECO "C50"]
-
-{3...d6 supports e5 solidly but blocks Black's own bishop on f8. That leaves f7 with fewer defenders. Develop quickly; if Black covers g5 with ...Be7, take the center instead.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 d6
-4. Nc3 {Develops and adds control of d5. With Black's f8 bishop shut in, quick piece play pays off, and 4.Nc3 sets up Légal's trap if Black pins with ...Bg4 (see the trap chapter).} Be7 {Solid: the bishop covers g5 and prepares castling. The natural 4...Nf6? runs into 5.Ng5!: see Advanced variations.}
-5. d4 {With g5 covered, Ng5 no longer works, so we take the center instead.} exd4 6. Nxd4 Nf6 7. O-O O-O 8. Bf4 {Free development and more space for White.} *
-
-[Chapter "Rousseau Gambit: 3...f5"]
-[Type "line"]
-[Opening "Italian Game: Rousseau Gambit"]
-[ECO "C50"]
-
-{3...f5 attacks e4 and hopes for a quick attack on the f-file. Stockfish rates it more than a pawn worse for Black. The simplest answer is to decline the gambit and keep the center.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 f5?! {Attacks e4, but the f-pawn leaves f7 and opens the a2-g8 diagonal in front of Black's king.}
-4. d3! {Declines the gambit. e4 is protected, and if Black takes on e4 we recapture with the pawn. Taking with 4.exf5 lets Black play ...e4 and get the open game Black is hoping for.} Nf6 {4...fxe4 is under Advanced variations.}
-5. O-O {Castle first, keeping the king safe before the position opens.} Bc5 6. Nc3 d6
-7. Bg5 {[%cal Gg5f6,Gc4g8] Pins the knight. Note that Black can't castle kingside: with Black's f-pawn no longer on f7, our bishop on c4 covers g8. White is clearly better.} *
-
 [Chapter "Pianissimo: 6...a6 and 6...Bg4"]
 [Diagram "6...Bg4"]
 [Type "line"]
@@ -157,14 +125,28 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O O-O 7. Re1 Ng4 {Eyes f2, but a lone knight can't do much.}
 8. Re2 {Covers f2 calmly.} Kh8 9. h3 Nf6 10. Nbd2 {The knight has gone back, and h3 is a useful move for us anyway.} *
 
-[Chapter "Paris Defense: 4...Nf6"]
+[Chapter "Other third moves"]
+[Diagram "3...Be7"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Italian Game: Hungarian Defense"]
+[ECO "C50"]
+
+{Two quieter third moves: the Hungarian Defense 3...Be7, and 3...h6. Against both, the same setup works.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 {The Hungarian Defense: solid but passive. It covers g5 against Ng5 ideas, but the bishop does less on e7 than it would on c5.}
+(3... h6 {Prevents Ng5 and Bg5 but spends a move on a pawn. The usual setup is fine against it.} 4. d3 Nf6 5. c3 d6 6. O-O g6 7. Re1 Bg7 8. Nbd2 O-O 9. Nf1 {Our usual plan: Ng3, h3, then d4.})
+4. d3 Nf6 5. O-O O-O 6. Re1 d6 7. c3 {The same structure as the Two Knights chapter.} *
+
+[Chapter "Paris Defense: 3...d6"]
 [Type "line"]
 [Level "advanced"]
 [Opening "Italian Game: Paris Defense"]
 [ECO "C50"]
 
-{After 3...d6 4.Nc3, the natural 4...Nf6? leaves f7 with only the king to defend it. Hit it at once with 5.Ng5.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Nf6? {Natural, but now f7 has only the king to defend it.}
+{3...d6 supports e5 solidly but blocks Black's own bishop on f8. That leaves f7 with fewer defenders, and we aim at it at once.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 d6
+4. Nc3 {Develops and adds control of d5. With Black's f8 bishop shut in, quick piece play pays off, and 4.Nc3 sets up Légal's trap if Black pins with ...Bg4 (see the trap chapter).} Nf6? {Natural, but now f7 has only the king to defend it.}
+(4... Be7 {Solid: the bishop covers g5 and prepares castling.} 5. d4 {With g5 covered, Ng5 no longer works, so we take the center instead.} exd4 6. Nxd4 Nf6 7. O-O O-O 8. Bf4 {Free development and more space for White.})
 5. Ng5! {[%cal Gg5f7,Gc4f7] Two attackers on f7 and one defender. Black has to block the bishop with ...d5, and that costs a pawn.} d5
 6. exd5 Na5 {Attacks the bishop. This is Black's best try to win the pawn back.}
 (6... Nxd5? 7. Nxf7! {The Fried Liver sacrifice.} Kxf7 8. Bxd5+ {Wins back the piece with check.} Ke8 9. Bxc6+ bxc6 10. Qh5+ Kd7 11. Qf5+ Ke8 12. Qxe5+ Qe7 {White has two extra pawns, and Black's king is stuck in the center.})
@@ -172,14 +154,18 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 8. dxc6 bxc6 9. Ba4 {The bishop stays on the a4-e8 diagonal and pins the c6 pawn.} h6 {Kicks the knight.}
 10. Nf3 {White is a pawn up. Black has some activity in return, so finish developing with castling and d3.} Bd6 11. O-O O-O 12. d3 *
 
-[Chapter "Rousseau Gambit: 4...fxe4"]
+[Chapter "Rousseau Gambit: 3...f5"]
 [Type "line"]
 [Level "advanced"]
 [Opening "Italian Game: Rousseau Gambit"]
 [ECO "C50"]
 
-{If Black takes on e4 after 4.d3, recapture with the pawn. Black has given up the f-pawn and opened lines toward Black's own king.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 f5?! 4. d3! fxe4 5. dxe4 {Black has given up the f-pawn and opened lines toward Black's own king.} Nf6 6. Ng5! {[%cal Gg5f7,Gc4f7] The knight jumps toward f7 and e6.} d5 7. exd5 Na5 8. Bd3 {Keeps the bishop. White's pieces point at a king that has lost its f-pawn shelter.} *
+{3...f5 attacks e4 and hopes for a quick attack on the f-file. Stockfish rates it more than a pawn worse for Black. The simplest answer is to decline the gambit and keep the center.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 f5?! {Attacks e4, but the f-pawn leaves f7 and opens the a2-g8 diagonal in front of Black's king.}
+4. d3! {Declines the gambit. e4 is protected, and if Black takes on e4 we recapture with the pawn. Taking with 4.exf5 lets Black play ...e4 and get the open game Black is hoping for.} Nf6
+(4... fxe4 5. dxe4 {Black has given up the f-pawn and opened lines toward Black's own king.} Nf6 6. Ng5! {[%cal Gg5f7,Gc4f7] The knight jumps toward f7 and e6.} d5 7. exd5 Na5 8. Bd3 {Keeps the bishop. White's pieces point at a king that has lost its f-pawn shelter.})
+5. O-O {Castle first, keeping the king safe before the position opens.} Bc5 6. Nc3 d6
+7. Bg5 {[%cal Gg5f6,Gc4g8] Pins the knight. Note that Black can't castle kingside: with Black's f-pawn no longer on f7, our bishop on c4 covers g8. White is clearly better.} *
 
 [Chapter "Trap: the Blackburne Shilling Gambit"]
 [Diagram "3...Nd4"]
