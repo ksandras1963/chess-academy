@@ -53,28 +53,6 @@
       ]
     },
     {
-      "id": "sicilian",
-      "name": "Sicilian Defense",
-      "eco": "B20",
-      "moves": "1. e4 c5",
-      "summary": "Black fights for d4 from the side, accepting an unbalanced game in return for winning chances.",
-      "courses": [
-        { "id": "sicilian-white", "side": "white", "repertoire": "Alapin (2.c3)" },
-        { "id": "sicilian-black", "side": "black", "repertoire": "Accelerated Dragon" }
-      ]
-    },
-    {
-      "id": "french",
-      "name": "French Defense",
-      "eco": "C00",
-      "moves": "1. e4 e6 2. d4 d5",
-      "summary": "Black builds a solid pawn chain and counterattacks White's center with ...c5 and ...f6.",
-      "courses": [
-        { "id": "french-white", "side": "white", "repertoire": "Advance Variation (3.e5)" },
-        { "id": "french-black", "side": "black", "repertoire": "Rubinstein (3...dxe4)" }
-      ]
-    },
-    {
       "id": "caro-kann",
       "name": "Caro-Kann Defense",
       "eco": "B10",
@@ -128,6 +106,28 @@
             "Know the traps: in the Fantasy, 5.dxe5? runs into ...Qh4+; in the Karpov, 5.Qe2 Ngf6?? allows 6.Nd6 mate."
           ]
         }
+      ]
+    },
+    {
+      "id": "sicilian",
+      "name": "Sicilian Defense",
+      "eco": "B20",
+      "moves": "1. e4 c5",
+      "summary": "Black fights for d4 from the side, accepting an unbalanced game in return for winning chances.",
+      "courses": [
+        { "id": "sicilian-white", "side": "white", "repertoire": "Alapin (2.c3)" },
+        { "id": "sicilian-black", "side": "black", "repertoire": "Accelerated Dragon" }
+      ]
+    },
+    {
+      "id": "french",
+      "name": "French Defense",
+      "eco": "C00",
+      "moves": "1. e4 e6 2. d4 d5",
+      "summary": "Black builds a solid pawn chain and counterattacks White's center with ...c5 and ...f6.",
+      "courses": [
+        { "id": "french-white", "side": "white", "repertoire": "Advance Variation (3.e5)" },
+        { "id": "french-black", "side": "black", "repertoire": "Rubinstein (3...dxe4)" }
       ]
     },
     {
