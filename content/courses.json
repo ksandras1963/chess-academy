@@ -109,6 +109,60 @@
       ]
     },
     {
+      "id": "french",
+      "name": "French Defense",
+      "eco": "C00",
+      "moves": "1. e4 e6",
+      "summary": "Black builds a solid pawn chain and counterattacks White's center with ...c5 and ...f6.",
+      "puzzles": "content/french-puzzles.pgn",
+      "furtherStudy": [
+        { "title": "Introduction to the French Defense · Chess Openings", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=pig559oP5OM" },
+        { "title": "French Defense: Solid & Powerful Opening for Black vs 1.e4 [Tricks & Traps]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=f0FIJePXmgk" },
+        { "title": "Learn the French Defense | 10-Minute Chess Openings", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=5pec-u6PSvA" },
+        { "title": "Crush With 1.e6 | The Indestructible French Defense", "by": "Volclus", "kind": "Video", "url": "https://www.youtube.com/watch?v=192NboTurSI" },
+        { "title": "5 Reasons to Play the French Defense", "by": "GM Jose Gonzalez", "kind": "Video", "url": "https://www.youtube.com/watch?v=5B0pH12fUn0" },
+        { "title": "The French Defense Chess Opening Explained in 4 Minutes by a Chess Master", "by": "NM Nelson Lopez, Chess Vibes", "kind": "Video", "url": "https://www.youtube.com/watch?v=vOw5BQYCfWA" },
+        { "title": "Learn the French Defense in 7 Minutes", "by": "Kamryn", "kind": "Video", "url": "https://www.youtube.com/watch?v=gRUb6EeHKsM" },
+        { "title": "French Defense: The Worse Opening for Black in Chess?", "by": "Chessscape", "kind": "Video", "url": "https://www.youtube.com/watch?v=EfSZELTHoUg" },
+        { "title": "Chess Openings: French Defense Part 1", "by": "thechesswebsite", "kind": "Video", "url": "https://www.youtube.com/watch?v=rTNN7-Wwpzs" },
+        { "title": "Secret Opening Weapon for White Against the French Defense", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=xd5rR7tCEuI" },
+        { "title": "Learn to Crush the French Defense in 7 Minutes [Traps Included]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=Xld_sJwdk8k" },
+        { "title": "French Defence", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/French_Defence" }
+      ],
+      "courses": [
+        {
+          "id": "french-white",
+          "side": "white",
+          "file": "content/french-white.pgn",
+          "repertoire": "Advance (3.e5), with 6.a3 in the main line",
+          "summary": "Gain space with 3.e5, hold d4 with c3 and Nf3, and expand on the queenside with a3 and b4. The Milner-Barry Gambit is a trap-filled surprise weapon.",
+          "overview": [
+            "Play 3.e5. The pawn takes f6 away from Black's king's knight and gives you space; Black answers 3...c5 in nine games out of ten.",
+            "Hold d4 with c3 and Nf3. Black's whole plan is pressure on that pawn with ...Nc6, ...Qb6 and a knight on f5.",
+            "The main line, 5...Qb6, comes up in a quarter of your games. Play 6.a3 and b4 to gain space; after 6...cxd4 7.cxd4, Nc3 and Na4 chase the queen.",
+            "Count the attackers before Black takes on d4. With your queen behind the pawn, ...Nxd4 just drops a piece; with your bishop on d3 in the way, Bb5+ wins Black's queen.",
+            "Against 5...Bd7, play 6.Be2 and castle. Avoid 6.Bb5?, which runs into ...Nxe5.",
+            "Surprise weapon: the Milner-Barry Gambit, 6.Bd3. It is risky against best play, but Black often grabs too much: 7...Nxd4?? loses the queen, and 10...Qxe5 11.Re1 sets more traps."
+          ]
+        },
+        {
+          "id": "french-black",
+          "side": "black",
+          "file": "content/french-black.pgn",
+          "repertoire": "3...c5 against the Advance, the Rubinstein (3...dxe4), and ...Nc6 in the Exchange",
+          "summary": "Build the ...e6 and ...d5 center, attack d4 against the Advance, take on e4 against 3.Nc3 and 3.Nd2, and develop actively in the Exchange.",
+          "overview": [
+            "The French idea: ...e6 and ...d5 build a solid center and keep f7 safe. The price is the c8 bishop behind your pawn on e6, so plan to free it or trade it.",
+            "The Exchange is your most common opponent, about three games in ten, because 2.Nf3 d5 3.exd5 exd5 4.d4 leads there too. Develop with ...Nc6, ...Bd6, ...Bg4, ...Qd7 and ...Nge7, and castle short.",
+            "Against the Advance (3.e5), about one game in five, hit d4 at once with ...c5, ...Nc6 and ...Qb6. Against 6.a3, lock the queenside with 6...c4.",
+            "Against 3.Nc3 and 3.Nd2, take on e4 (the Rubinstein): ...Nd7, ...Ngf6, then ...c5 to free your game.",
+            "In the Milner-Barry Gambit (6.Bd3), play ...Bd7 before ...Nxd4. Otherwise 8.Nxd4 Qxd4 9.Bb5+ wins your queen.",
+            "Against the Monte Carlo (4.c4), check with 4...Bb4+, castle, and take on c4 only after White's bishop has moved."
+          ]
+        }
+      ]
+    },
+    {
       "id": "sicilian",
       "name": "Sicilian Defense",
       "eco": "B20",
@@ -117,17 +171,6 @@
       "courses": [
         { "id": "sicilian-white", "side": "white", "repertoire": "Alapin (2.c3)" },
         { "id": "sicilian-black", "side": "black", "repertoire": "Accelerated Dragon" }
-      ]
-    },
-    {
-      "id": "french",
-      "name": "French Defense",
-      "eco": "C00",
-      "moves": "1. e4 e6 2. d4 d5",
-      "summary": "Black builds a solid pawn chain and counterattacks White's center with ...c5 and ...f6.",
-      "courses": [
-        { "id": "french-white", "side": "white", "repertoire": "Advance Variation (3.e5)" },
-        { "id": "french-black", "side": "black", "repertoire": "Rubinstein (3...dxe4)" }
       ]
     },
     {

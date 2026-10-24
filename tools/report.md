@@ -1,6 +1,6 @@
 # Content validation report
 
-Generated 2026-10-24 02:45 · engine Stockfish, depth 18
+Generated 2026-10-24 16:18 · engine Stockfish, depth 18
 
 **No errors.**
 
@@ -297,6 +297,150 @@ None.
 | Trap: the 3...e5 gambit (4.Nc3) | 0.05 | B12 Caro-Kann Defense: Maróczy Variation |
 | Trap: the 4.f3 gambit (Main line) | 0.82 | B15 Caro-Kann Defense: Rasa-Studier Gambit |
 
+## French Defense — as White (`french-white`)
+
+19 chapters, 34 drillable lines (basic 8, traps 11, advanced 15), 326 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Main line: 5...Qb6 | 5...Qb6 | French Defense: Advance Variation, Main Line | C02 | ok |
+| 5...Bd7 | 5...Bd7 | French Defense: Advance Variation, Euwe Variation | C02 | ok |
+| 5...cxd4 | 5...cxd4 | French Defense: Advance Variation, Paulsen Attack | C02 | ok |
+| 5...Nge7 | 5...Nge7 | French Defense: Advance Variation, Paulsen Attack | C02 | ok |
+| Move orders: 4...Qb6 and 4...cxd4 | 4...Qb6 | French Defense: Advance Variation, Wade Variation | C02 | ok |
+| Main line: Black's other sixth moves | 6...Bd7 | French Defense: Advance Variation, Main Line | C02 | ok |
+| Fifth-move lines: other sixth moves | 6...Bb4+ | French Defense: Advance Variation, Paulsen Attack | C02 | ok |
+| Other fourth and fifth moves | 4...c4 | French Defense: Advance Variation | C02 | ok |
+| Third-move sidelines | 3...Nc6 | French Defense: Advance Variation | C02 | ok |
+| Second-move sidelines | 2...c5 | French Defense: Franco-Sicilian Defense | C00 | ok |
+| Trap: the Milner-Barry Gambit | 6.Bd3 | French Defense: Advance Variation, Milner-Barry Gambit, Main Line | C02 | ok |
+| Trap: the e5 pawn grab | 10...Qxe5 | French Defense: Advance Variation, Milner-Barry Gambit, Main Line | C02 | ok |
+| Trap: 3...f6 and Qh5+ | 3...f6 | French Defense: Advance Variation | C02 | ok |
+| Trap: the early ...Nb3 | 8...Nb3 | French Defense: Advance Variation, Main Line | C02 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Main line: 5...Qb6 (Main line) | 0.82 | C02 French Defense: Advance Variation, Main Line |
+| 5...Bd7 (Main line) | 0.53 | C02 French Defense: Advance Variation, Euwe Variation |
+| 5...cxd4 (Main line) | 0.45 | C02 French Defense: Advance Variation, Paulsen Attack |
+| 5...Nge7 (Main line) | 1.29 | C02 French Defense: Advance Variation, Paulsen Attack |
+| Move orders: 4...Qb6 and 4...cxd4 (Main line) | 0.32 | C02 French Defense: Advance Variation, Wade Variation |
+| Move orders: 4...Qb6 and 4...cxd4 (5...Nc6) | 0.19 | C02 French Defense: Advance Variation |
+| Move orders: 4...Qb6 and 4...cxd4 (4...cxd4) | 0.29 | C02 French Defense: Advance Variation |
+| Move orders: 4...Qb6 and 4...cxd4 (4...cxd4 … 5...Bb4+) | 0.92 | C02 French Defense: Advance Variation |
+| Main line: Black's other sixth moves (Main line) | 0.23 | C02 French Defense: Advance Variation, Main Line |
+| Main line: Black's other sixth moves (6...Nge7) | -0.05 | C02 French Defense: Advance Variation, Main Line |
+| Main line: Black's other sixth moves (6...c4) | 0.23 | C02 French Defense: Advance Variation, Main Line |
+| Main line: Black's other sixth moves (6...Nh6) | -0.05 | C02 French Defense: Advance Variation, Lputian Variation |
+| Fifth-move lines: other sixth moves (Main line) | 1.07 | C02 French Defense: Advance Variation, Paulsen Attack |
+| Fifth-move lines: other sixth moves (5...Bd7) | 0.24 | C02 French Defense: Advance Variation, Euwe Variation |
+| Fifth-move lines: other sixth moves (5...Nge7) | 0.23 | C02 French Defense: Advance Variation, Paulsen Attack |
+| Other fourth and fifth moves (Main line) | 0.79 | C02 French Defense: Advance Variation |
+| Third-move sidelines (Main line) | 0.90 | C02 French Defense: Advance Variation |
+| Third-move sidelines (3...Ne7) | 0.24 | C02 French Defense: Advance Variation |
+| Third-move sidelines (3...a6) | 0.45 | C02 French Defense: Advance Variation |
+| Second-move sidelines (Main line) | 0.60 | A43 Benoni Defense: French Benoni |
+| Second-move sidelines (2...b6) | 0.87 | C00 French Defense: Normal Variation |
+| Second-move sidelines (2...d6) | 0.87 | C00 Rat Defense: Small Center Defense |
+| Second-move sidelines (2...c6) | 0.73 | C00 French Defense: Normal Variation |
+| Trap: the Milner-Barry Gambit (Main line) | -0.51 | C02 French Defense: Advance Variation, Milner-Barry Gambit, Main Line |
+| Trap: the Milner-Barry Gambit (7...Nxd4) | 9.45 | C02 French Defense: Advance Variation, Milner-Barry Gambit |
+| Trap: the Milner-Barry Gambit (7...Bb4+) | 1.40 | C02 French Defense: Advance Variation, Milner-Barry Gambit |
+| Trap: the Milner-Barry Gambit (6...Bd7) | 0.49 | C02 French Defense: Advance Variation, Milner-Barry Gambit |
+| Trap: the e5 pawn grab (Main line) | 4.07 | C02 French Defense: Advance Variation, Milner-Barry Gambit, Main Line |
+| Trap: the e5 pawn grab (12...Bxb5) | 2.53 | C02 French Defense: Advance Variation, Milner-Barry Gambit, Main Line |
+| Trap: the e5 pawn grab (12...Qc6) | 7.22 | C02 French Defense: Advance Variation, Milner-Barry Gambit, Main Line |
+| Trap: the e5 pawn grab (12...Qb6) | 0.00 | C02 French Defense: Advance Variation, Milner-Barry Gambit, Main Line |
+| Trap: 3...f6 and Qh5+ (Main line) | 2.42 | C02 French Defense: Advance Variation |
+| Trap: 3...f6 and Qh5+ (4...g6) | 1.53 | C02 French Defense: Advance Variation |
+| Trap: the early ...Nb3 (Main line) | 2.15 | C02 French Defense: Advance Variation, Main Line |
+
+## French Defense — as Black (`french-black`)
+
+20 chapters, 37 drillable lines (basic 11, traps 7, advanced 19), 285 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Advance: 5...Qb6 | 5...Qb6 | French Defense: Advance Variation, Main Line | C02 | ok |
+| Exchange: 4.Nf3 | 4.Nf3 | French Defense: Exchange Variation | C01 | ok |
+| Exchange: 4.Bd3 and 4.Nc3 | 4.Bd3 | French Defense: Exchange Variation | C01 | ok |
+| Rubinstein: 3...dxe4 | 3...dxe4 | French Defense: Rubinstein Variation, Blackburne Defense | C10 | ok |
+| Advance: 6.Be2 and other sixth moves | 6.Be2 | French Defense: Advance Variation, Paulsen Attack | C02 | ok |
+| Advance: other fourth and fifth moves | 5.Bb5 | French Defense: Advance Variation | C02 | ok |
+| Rubinstein: other sixth moves | 6.Bg5 | French Defense: Rubinstein Variation, Blackburne Defense | C10 | ok |
+| Rubinstein: 4...Nf6 and ...gxf6 | 4...Nf6 | French Defense: Rubinstein Variation | C10 | ok |
+| 2.Nf3: other third moves | 3.e5 | French Defense: Knight Variation | C00 | ok |
+| 2.f4 | 2.f4 | French Defense: La Bourdonnais Variation | C00 | ok |
+| Other second moves | 2.Bc4 | French Defense | C00 | ok |
+| Horwitz: 2.b3 | 2.b3 | French Defense: Horwitz Attack | C00 | ok |
+| Trap: the Milner-Barry Gambit | 6.Bd3 | French Defense: Advance Variation, Milner-Barry Gambit, Main Line | C02 | ok |
+| Trap: the Monte Carlo, 4.c4 | 4.c4 | French Defense: Exchange Variation, Monte Carlo Variation | C01 | ok |
+| Trap: 3.f3 and ...Qh4+ | 3.f3 | French Defense | C00 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Advance: 5...Qb6 (Main line) | -0.23 | C02 French Defense: Advance Variation, Main Line |
+| Advance: 5...Qb6 (4.Nf3) | -0.26 | C02 French Defense: Advance Variation, Paulsen Attack |
+| Exchange: 4.Nf3 (Main line) | -0.14 | C01 French Defense: Exchange Variation |
+| Exchange: 4.Nf3 (5.Bb5) | -0.15 | C01 French Defense: Exchange Variation |
+| Exchange: 4.Nf3 (2.Nf3) | -0.11 | C01 French Defense: Exchange Variation |
+| Exchange: 4.Bd3 and 4.Nc3 (Main line) | 0.00 | C01 French Defense: Exchange Variation |
+| Exchange: 4.Bd3 and 4.Nc3 (4.Nc3) | -0.17 | C01 French Defense: Exchange Variation |
+| Exchange: 4.Bd3 and 4.Nc3 (2.Nc3) | -0.15 | C01 French Defense: Exchange Variation |
+| Rubinstein: 3...dxe4 (Main line) | 0.03 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Rubinstein: 3...dxe4 (5.Bd3) | -0.19 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Rubinstein: 3...dxe4 (3.Nd2) | -0.36 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Advance: 6.Be2 and other sixth moves (Main line) | 0.00 | C02 French Defense: Advance Variation, Paulsen Attack |
+| Advance: other fourth and fifth moves (Main line) | 0.00 | C02 French Defense: Advance Variation |
+| Advance: other fourth and fifth moves (6.Nf3) | 1.58 | C02 French Defense: Advance Variation |
+| Advance: other fourth and fifth moves (4.Bb5+) | 0.26 | C02 French Defense: Advance Variation |
+| Rubinstein: other sixth moves (Main line) | -0.17 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Rubinstein: other sixth moves (6.Nxf6+) | -0.26 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Rubinstein: other sixth moves (6.Ng3) | 0.23 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Rubinstein: 4...Nf6 and ...gxf6 (Main line) | -0.86 | C10 French Defense: Rubinstein Variation |
+| 2.Nf3: other third moves (Main line) | -0.26 | C02 French Defense: Advance Variation, Paulsen Attack |
+| 2.Nf3: other third moves (4.d4) | -0.30 | C02 French Defense: Advance Variation, Nimzowitsch System |
+| 2.Nf3: other third moves (4.b4) | 0.47 | C00 French Defense: Wing Gambit |
+| 2.Nf3: other third moves (3.Nc3) | -0.14 | C00 French Defense: Two Knights Variation |
+| 2.f4 (Main line) | 0.32 | C00 French Defense: La Bourdonnais Variation |
+| 2.f4 (3.exd5) | 0.64 | C00 French Defense: La Bourdonnais Variation |
+| Other second moves (Main line) | 0.18 | C00 French Defense |
+| Other second moves (2.c4) | 0.00 | C00 French Defense: Steiner Variation |
+| Other second moves (2.d3) | 0.05 | C00 French Defense: King's Indian Attack |
+| Horwitz: 2.b3 (Main line) | -0.02 | C00 French Defense: Horwitz Attack, Papa-Ticulat Gambit |
+| Horwitz: 2.b3 (4.e5) | 0.24 | C00 French Defense: Horwitz Attack, Papa-Ticulat Gambit |
+| Trap: the Milner-Barry Gambit (Main line) | 0.51 | C02 French Defense: Advance Variation, Milner-Barry Gambit, Main Line |
+| Trap: the Milner-Barry Gambit (7.O-O) | -0.19 | C02 French Defense: Advance Variation, Milner-Barry Gambit, Hector Variation |
+| Trap: the Monte Carlo, 4.c4 (Main line) | 0.07 | C01 French Defense: Exchange Variation, Monte Carlo Variation |
+| Trap: the Monte Carlo, 4.c4 (5.Bd2) | 0.01 | C01 French Defense: Exchange Variation, Monte Carlo Variation |
+| Trap: 3.f3 and ...Qh4+ (Main line) | 2.14 | C00 French Defense |
+| Trap: 3.f3 and ...Qh4+ (5.g3) | 7.07 | C00 French Defense |
+| Trap: 3.f3 and ...Qh4+ (4.Nc3) | 0.76 | C00 French Defense |
+
 ## Puzzles: Italian Game (`content/italian-puzzles.pgn`)
 
 15 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
@@ -343,3 +487,24 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 12 | Queen to h5 | White | 8.Qh5 | 2 | 9...Nf6 (6 half-moves) | ok |
 | 13 | The sacrifice on f7 | White | 8.Nxf7 | 1 | 8...Qc7 (2 half-moves) | ok |
 | 14 | Block the queen | Black | 4...g6 | 1 | 5.Qe2 (3 half-moves) | ok |
+
+## Puzzles: French Defense (`content/french-puzzles.pgn`)
+
+12 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Block the check first | Black | 7...Bd7 | 1 | 8.O-O (6 half-moves) | ok |
+| 2 | The discovered attack | White | 9.Bb5+ | 1 | 9...Bd7 (4 half-moves) | ok |
+| 3 | Queen to the attack | White | 13.Qf3 | 1 | 13...Bd6 (4 half-moves) | ok |
+| 4 | Cover c7 | White | 13.Bf4 | 1 | 13...Rc8 (6 half-moves) | ok |
+| 5 | Take the bishop first | Black | 9...Bxg7 | 1 | 10.Nbd2 (5 half-moves) | ok |
+| 6 | The pin is gone | Black | 6...Nxe5 | 2 | 8.a4 (4 half-moves) | ok |
+| 7 | Take the knight | White | 9.Nxb3 | 1 | 9...Qxb3 (6 half-moves) | ok |
+| 8 | Check on the open diagonal | White | 5.Qh5+ | 2 | 6...Kd7 (6 half-moves) | ok |
+| 9 | Remove the defender | Black | 6...Bxf3 | 2 | 8.Qd1 (3 half-moves) | ok |
+| 10 | Smirnov's fork | White | 11.Nxd5 | 1 | 11...Rxd3 (4 half-moves) | ok |
+| 11 | The f7 sacrifice | White | 11.Bxf7+ | 1 | 11...Kxf7 (6 half-moves) | ok |
+| 12 | The queen check | Black | 4...Qh4+ | 1 | 5.Kd2 (4 half-moves) | ok |
