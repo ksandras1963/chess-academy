@@ -68,7 +68,7 @@ The isolated pawn. If Black ever recaptures on c5 with a piece, the pawn on d5 i
 
 {[%cal Gf6d5,Gf8b4,Rg5d8] Five patterns to know.
 
-The Elephant trap. In the Exchange, after 4.cxd5 exd5 5.Bg5 Nbd7, the pawn on d5 looks free, because the knight on f6 is pinned. White grabs it with 6.Nxd5?? in about one game in five, and this is the position. Play 6...Nxd5! White can take your queen with 7.Bxd8, but 7...Bb4+ forces 8.Qd2 Bxd2+ 9.Kxd2 Kxd8, and you are a piece up (Stockfish −4.9, winning for Black). The trap works only with the knight on d7, which is one reason we play 5...Nbd7.
+The Elephant trap. In the Exchange, after 4.cxd5 exd5 5.Bg5 Nbd7, the pawn on d5 looks free, because the knight on f6 is pinned. White grabs it with 6.Nxd5?? in about one game in five, and this is the position. Play 6...Nxd5! White can take your queen with 7.Bxd8, but 7...Bb4+ forces 8.Qd2 Bxd2+ 9.Kxd2 Kxd8, and you are a piece up (Stockfish −5.1, winning for Black). The trap works only with the knight on d7, which is one reason we play 5...Nbd7.
 
 Take back with the bishop. After 6...h6 7.Bxf6, recapture 7...Bxf6. 7...gxf6? wrecks the pawns in front of your king, and White's pieces aim at it with Bd3 and Nh4 (Stockfish +3.0, winning for White).
 
