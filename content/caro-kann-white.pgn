@@ -85,39 +85,19 @@ Hit an overextended pawn. In the Two Knights, 3...d4?! looks active, but after 4
 [Opening "Caro-Kann Defense: Advance Variation, Short Variation"]
 [ECO "B12"]
 
-{Nigel Short's calm system. White develops with Nf3 and Be2 before anything sharp. Black's usual reply is the break ...c5, and 6.Be3 meets it: the bishop guards d4 and is ready to recapture there.}
+{Nigel Short's calm system. White develops with Nf3 and Be2 before anything sharp. Black's usual reply is the break ...c5, and 6.Be3 meets it: the bishop guards d4 and is ready to recapture there. Black can deviate at many points after move 5; the notes give the plan against each.}
 1. e4 c6 2. d4 d5 3. e5 {The Advance: space, and a cramp on Black's knights.} Bf5 {The main line. The bishop gets out before ...e6.}
-4. Nf3 {The Short system: quiet development.} e6 5. Be2 {Prepares to castle.} c5 {Black strikes at d4, the base of the chain.}
-6. Be3 {[%cal Ge3d4] Guards d4 a second time. If Black takes on d4, a White piece recaptures and keeps the square.} Qb6 {[%cal Rb6b2,Rb6d4] Hits b2 and d4.}
-(6... cxd4 7. Nxd4 {The knight recaptures and hits the bishop on f5.} Ne7
-(7... Nc6? 8. Nxf5 exf5 {Black's f-pawns are doubled and the pawn on d5 is weak: Stockfish +1.1.})
-8. O-O Nbc6 9. Bb5 {Pins the knight. After Bxc6, the knight on d4 can take on f5.} a6 10. Bxc6+ Nxc6 11. Nxf5 exf5 12. c3 {Black's pawns on d5 and f5 are targets, and White's pieces have good squares. Stockfish rates it about equal, but White's game is easier to play.})
-(6... Nd7 7. O-O Ne7 8. Nbd2 Nc6 9. c4 {[%cal Gc4d5] Opens the c-file and hits d5. About equal, but White has the easier game.})
-(6... Nc6 7. dxc5 {Takes the pawn while Black's pieces aren't ready to win it back.} Nge7 8. c3 {Supports b4, so the extra pawn on c5 holds for now: Stockfish +1.0.})
-7. Nc3 {Develops and leaves b2 hanging on purpose. 7...Qxb2? walks into a trap: see "Trap: the ...Qxb2 grab".} Nc6
-(7... c4 8. Rb1 {Guards b2. White has more space and a lead in development: Stockfish +0.5.})
-8. O-O {Offers the b2 pawn for fast development.} Qxb2
-(8... c4 9. Rb1 {Again the rook guards b2. Slightly better for White.})
-9. Qe1 {Keeps the queen and guards c3.} cxd4
-(9... c4 10. Rb1 Qa3 11. Nb5 {[%cal Gb5c7] Threatens Nc7+, forking the king and the rook on a8: Stockfish +1.2.})
+4. Nf3 {The Short system: quiet development.} e6 5. Be2 {Prepares to castle.} c5 {Black strikes at d4, the base of the chain.
+
+If Black delays ...c5 with 5...Nd7, 5...Ne7 or 5...h6, castle first, then gain queenside space with a4 (and c3), or hit d5 from the side with c4. Against 5...Ne7 6.O-O c5, take with 7.dxc5 and guard the pawn with Be3. Black usually plays ...c5 later anyway.}
+6. Be3 {[%cal Ge3d4] Guards d4 a second time. If Black takes on d4, a White piece recaptures and keeps the square.} Qb6 {[%cal Rb6b2,Rb6d4] Hits b2 and d4.
+
+Black's other sixth moves. After 6...cxd4, recapture with 7.Nxd4, castle, then play Bb5 and Nxf5 to leave Black with weak pawns on d5 and f5; if 7...Nc6?, take at once with 8.Nxf5 (Stockfish +1.1). After 6...Nd7, castle, then Nbd2 and c4 to open the c-file. After 6...Nc6, take with 7.dxc5 and hold the extra pawn with c3 and b4 (Stockfish +1.0).}
+7. Nc3 {Develops and leaves b2 hanging on purpose. 7...Qxb2? walks into a trap: see "Trap: the ...Qxb2 grab".} Nc6 {Adds pressure on d4. If 7...c4 instead, guard b2 with 8.Rb1: Stockfish +0.5.}
+8. O-O {Offers the b2 pawn for fast development.} Qxb2 {Takes the pawn. If 8...c4, the rook guards b2 again with 9.Rb1.}
+9. Qe1 {Keeps the queen and guards c3.} cxd4 {If 9...c4, then 10.Rb1 Qa3 11.Nb5! threatens Nc7+, forking the king and the rook on a8 (Stockfish +1.2).}
 10. Bxd4 Nxd4 11. Nxd4 Bb4 {Black's best: it pins the knight on c3.}
 12. Rb1 {Hits the queen.} Bxc3 13. Nxf5 {An in-between move: White takes the bishop first.} exf5 14. Rxb2 Bxe1 15. Rxe1 {The queens are off. Black has an extra pawn, but the f-pawns are doubled and b7 is weak, while White's rooks and bishop are active. Stockfish rates it equal: White's activity makes up for the pawn.} *
-
-[Chapter "Short system: other fifth moves"]
-[Diagram "5.Be2"]
-[Type "line"]
-[Opening "Caro-Kann Defense: Advance Variation, Short Variation"]
-[ECO "B12"]
-
-{If Black doesn't play ...c5 at once, keep developing: castle, then gain queenside space with a4 or hit d5 with c4. Black usually plays ...c5 later anyway.}
-1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 Nd7 {Prepares ...c5 and ...Ne7.}
-(5... Ne7 6. O-O c5
-(6... Nd7 7. c3 {Supports d4 calmly. Slightly better for White.})
-7. dxc5 {Takes the pawn. Black must spend time winning it back.} Nec6 8. Be3 {Guards c5.} Nd7 9. c4 {Hits d5 while Black is busy with c5. Equal.})
-(5... h6 6. O-O a6 7. a4 {Gains queenside space and stops ...b5. Slightly better for White.})
-6. O-O Ne7 7. a4 {[%cal Ga4a5] Gains queenside space.} a6
-(7... c5 8. c4 {Hits d5 from the side.} dxc4 9. Nbd2 {The knight wins back the pawn on c4 with a good game. Slightly better for White.})
-8. c3 c5 9. dxc5 Nxc5 10. Nd4 {[%cal Gd4f5] The knight eyes the bishop on f5. About equal, with more space for White.} *
 
 [Chapter "Advance: Black's other tries"]
 [Diagram "4.Nf3"]
@@ -128,14 +108,11 @@ Hit an overextended pawn. In the Two Knights, 3...d4?! looks active, but after 4
 {Black's less common third and fourth moves. Most of them let White hunt the f5 bishop with Nh4, or gain time against it.}
 1. e4 c6 2. d4 d5 3. e5 Bf5
 (3... e6 {A French setup, but now the c8 bishop is locked in.} 4. c3 c5 5. Bd3 {White has a good Advance French: Black's light-squared bishop is shut in. Stockfish +0.6.})
-4. Nf3 Nd7 {Natural, but it lets White hunt the bishop.}
+4. Nf3 Nd7 {Natural, but it lets White hunt the bishop.
+
+Black's other fourth moves. Against 4...Qb6, guard b2 and d4 with 5.c3, then gain space with a4 and a5 to chase the queen. Against 4...h6, go after the bishop anyway with 5.Nh4; after 5...Bh7, the pawn sacrifice 6.e6! opens lines toward Black's king (Stockfish +0.7). Against 4...Bg4, ask the question with 5.h3 and take the bishop pair after 5...Bxf3 6.Qxf3.}
 (4... c5? 5. dxc5 e6 6. Bb5+ {White keeps the extra pawn: Stockfish +2.2.})
-(4... Qb6 5. c3 {Guards b2 and d4.} e6 6. a4 {Gains space and threatens a5, chasing the queen. Slightly better for White.})
-(4... h6 5. Nh4 {Goes straight for the bishop.} Bh7 6. e6! {A pawn sacrifice that opens lines toward Black's king.} Qd6 7. exf7+ Kxf7 8. f4 {Black's king is exposed: Stockfish +0.7.})
-(4... Bg4 5. h3 Bxf3 6. Qxf3 e6 7. Be3 {White has the bishop pair and more space: Stockfish +0.6.})
-5. Nh4! {[%cal Gh4f5] Attacks the bishop, which has few squares.} Be4
-(5... e6 6. Nxf5 exf5 7. Be2 {White has the bishop pair, and Black's f-pawns are doubled: Stockfish +1.1.})
-(5... Bg6 6. e6! fxe6 7. Nxg6 hxg6 {Black's pawns are wrecked: Stockfish +1.6.})
+5. Nh4! {[%cal Gh4f5] Attacks the bishop, which has few squares.} Be4 {The bishop finds a square, but not for long. If 5...e6, take it: 6.Nxf5 exf5 leaves White the bishop pair and Black doubled f-pawns (Stockfish +1.1). If 5...Bg6, the pawn sacrifice 6.e6! fxe6 7.Nxg6 hxg6 wrecks Black's pawns (Stockfish +1.6).}
 6. e6! {[%cal Ge5e6] A pawn sacrifice. It breaks up Black's kingside pawns and opens the e-file.} fxe6 7. Nd2 {Hits the bishop again.} c5 8. f3 Bf5 9. g4 {Drives the bishop back.} Bg6 10. Nxg6 {White wins the bishop pair, and Black's pawns on e6 and g6 are weak: Stockfish +1.2.} *
 
 [Chapter "Advance: 3...c5"]
@@ -145,15 +122,9 @@ Hit an overextended pawn. In the Two Knights, 3...d4?! looks active, but after 4
 
 {3...c5 hits d4 at once. Take it: 4.dxc5. Black usually wins the pawn back, but White gets quick development and good squares in the center.}
 1. e4 c6 2. d4 d5 3. e5 c5 4. dxc5 {Takes the pawn.} e6 {Black's best: ...Bxc5 will win the pawn back.}
-(4... Nc6 5. f4! {Supports e5 so the chain stays strong, and keeps the extra pawn for now.} e6
-(5... Nh6 6. Nf3 e6 7. Be3 d4 8. Bxd4 Nxd4 9. Qxd4 Qxd4 10. Nxd4 {White keeps the extra pawn in the endgame: Stockfish +0.8.})
-6. Be3 d4 7. Bf2 Bxc5 8. Nd2 {Black has won back the pawn, but White develops fast and the pawn on d4 can become a target: Stockfish +0.8.})
-5. Nf3 Bxc5
-(5... Nd7 6. c4 {Strikes at d5 before Black wins back c5: Stockfish +0.8.})
-(5... Nc6 6. Be3 {Guards c5 and keeps the extra pawn for now. Slightly better for White.})
-6. Bd3 Nc6
-(6... Ne7 7. O-O Nbc6 8. a3 {Prepares b4 with a gain of time on the bishop.})
-(6... f6 7. Qe2 {Supports e5. If Black takes on e5, White's pieces become very active.})
+(4... Nc6 5. f4! {Supports e5 so the chain stays strong, and keeps the extra pawn for now. If 5...Nh6, the plan is the same: 6.Nf3 e6 7.Be3, and White keeps the extra pawn into the endgame (Stockfish +0.8).} e6 6. Be3 d4 7. Bf2 Bxc5 8. Nd2 {Black has won back the pawn, but White develops fast and the pawn on d4 can become a target: Stockfish +0.8.})
+5. Nf3 Bxc5 {If Black delays ...Bxc5 with 5...Nd7, hit d5 at once with 6.c4 (Stockfish +0.8). Against 5...Nc6, 6.Be3 guards c5 and keeps the pawn for now.}
+6. Bd3 Nc6 {6...Ne7 and 6...f6 are met the same way: castle, then a3 and b4 to gain space with a gain of time on the bishop, and Qe2 to support e5.}
 7. O-O Nge7 8. a3 {Prepares b4, gaining space with a gain of time on the bishop.} a6 9. Qe2 O-O 10. Rd1 {Equal. White has easy development and pressure on d5.} *
 
 [Chapter "Two Knights: 4...Nf6"]
@@ -259,8 +230,7 @@ Hit an overextended pawn. In the Two Knights, 3...d4?! looks active, but after 4
 
 {When Black's king is still on e8 and the bishop goes to g4, look at f7. The knight on f3 can jump to e5 even though it is pinned, because it threatens mate.}
 1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 Nf6 5. Qe2 Nxe4 6. Qxe4 Nd7 7. Bc4 Nf6 8. Qe2 Bg4? {Pins the knight, but f7 is weak. 8...Bf5 is correct.}
-9. Ne5! {[%cal Ge5g4,Gc4f7] Hits the bishop on g4 and threatens Bxf7 mate, since the knight covers d7. 9.Bxf7+ Kxf7 10.Ne5+ also wins material, but 9.Ne5 is stronger.} Be6
-(9... Qd4? 10. Bxf7+ Kd8 11. f3 {The bishop on g4 is trapped: Stockfish +6.4.})
+9. Ne5! {[%cal Ge5g4,Gc4f7] Hits the bishop on g4 and threatens Bxf7 mate, since the knight covers d7. 9.Bxf7+ Kxf7 10.Ne5+ also wins material, but 9.Ne5 is stronger.} Be6 {The only way to stop Bxf7 mate and keep the bishop. 9...Qd4? loses it: 10.Bxf7+ Kd8 11.f3 traps the bishop on g4 (Stockfish +6.4).}
 10. Bxe6 fxe6 11. O-O {Black's pawns on e6 and e7 are weak, and the king is stuck in the center: Stockfish +4.0.} *
 
 [Chapter "Trap: hunting the bishop"]
@@ -272,9 +242,7 @@ Hit an overextended pawn. In the Two Knights, 3...d4?! looks active, but after 4
 {In the Two Knights, the Classical retreat ...Bg6 is a mistake: White's knight on f3 is ready to jump to e5, and together with h4 and the queen it hunts the bishop and hits f7.}
 1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6?! {Natural, but now h4 and Ne5 are coming.}
 6. h4 {Threatens h5, trapping the bishop.} h6 7. Ne5 {Hits the bishop again.} Bh7? {Natural, but now f7 is weak. 7...Qd6 is Black's best try, though White is still clearly better.}
-8. Qh5! {[%cal Gh5f7,Ge5f7] Threatens Qxf7 mate.} g6
-(8... Qd5? 9. Bc4 {Hits the queen and adds a third attacker on f7: Stockfish +7.8.})
-(8... Bg6 9. Nxg6 {Black must recapture with the f-pawn, wrecking the kingside: Stockfish +5.3.})
+8. Qh5! {[%cal Gh5f7,Ge5f7] Threatens Qxf7 mate.} g6 {The only defense. 8...Qd5? loses to 9.Bc4, which hits the queen and adds a third attacker on f7 (Stockfish +7.8). 8...Bg6 9.Nxg6 forces ...fxg6, wrecking the kingside (Stockfish +5.3).}
 9. Qf3 {[%cal Gf3f7,Gf3b7] The queen hits f7 and b7 at once, and Black can't defend both: Stockfish +4.0.} *
 
 [Chapter "Trap: the sacrifice on f7"]
@@ -285,8 +253,7 @@ Hit an overextended pawn. In the Two Knights, 3...d4?! looks active, but after 4
 
 {After 4...Nd7 5.Bc4 Ngf6 6.Neg5 e6 7.Qe2, three White pieces aim at e6 and f7. If Black kicks the knight with ...h6 too early, the knight takes on f7.}
 1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 Nd7 5. Bc4 Ngf6 6. Neg5 e6 7. Qe2 h6?? {Kicks the knight, but it is too late.}
-8. Nxf7! {[%cal Gg5f7] The knight takes f7 and forks the queen and the rook on h8.} Qc7
-(8... Kxf7?? 9. Qxe6+ Kg6 10. Bd3+ Kh5 11. Qh3# {Mate: the king was dragged into the open.})
+8. Nxf7! {[%cal Gg5f7] The knight takes f7 and forks the queen and the rook on h8.} Qc7 {Saves the queen. 8...Kxf7?? walks into mate: 9.Qxe6+ Kg6 10.Bd3+ Kh5 11.Qh3#.}
 9. Nxh8 {White has won the rook and a pawn: Stockfish +9.3.} *
 
 [Chapter "Trap: the ...Qxb2 grab"]
@@ -297,9 +264,7 @@ Hit an overextended pawn. In the Two Knights, 3...d4?! looks active, but after 4
 
 {In the Short system, Black's queen on b6 often eyes b2. Grabbing it before Black has castled or developed the kingside can cost Black dearly.}
 1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 c5 6. Be3 Qb6 7. Nc3 Qxb2? {Grabs the pawn too early.}
-8. Qb1! {[%cal Gb1b2] Offers a queen trade that Black can't avoid without losing more.} Qxb1+
-(8... Qb4 9. a3 Qxb1+ 10. Rxb1 {The same endgame, with White's rook already on the b-file: Stockfish +1.4.})
-(8... Qb6? 9. dxc5 Bxc5 10. Bb5+ {Black's king is caught in the center: Stockfish +4.6.})
+8. Qb1! {[%cal Gb1b2] Offers a queen trade that Black can't avoid without losing more.} Qxb1+ {8...Qb4 9.a3 Qxb1+ 10.Rxb1 reaches the same endgame (Stockfish +1.4). 8...Qb6? keeps the queens, but 9.dxc5 Bxc5 10.Bb5+ catches Black's king in the center (Stockfish +4.6).}
 9. Rxb1 c4 10. Rxb7 {White has won back the pawn, and the rook on b7 is very active: Stockfish +1.4.} *
 
 [Chapter "Trap: the 3...e5 gambit"]
@@ -309,12 +274,9 @@ Hit an overextended pawn. In the Two Knights, 3...d4?! looks active, but after 4
 
 {Some Black players answer the Fantasy with 3...e5, a gambit full of traps. Know the refutation: take the pawn, then 5.Nc3! and 6.Na4.}
 1. e4 c6 2. d4 d5 3. f3 e5 {Opens the dark diagonals toward White's king.}
-4. dxe5 {Take the pawn.} Qb6 {[%cal Rb6g1] Eyes g1 and prepares ...Bc5.}
-(4... Bc5 5. Nc3 Qb6 6. Na4 {The same idea, by a different move order.})
+4. dxe5 {Take the pawn.} Qb6 {[%cal Rb6g1] Eyes g1 and prepares ...Bc5. 4...Bc5 5.Nc3 Qb6 6.Na4 comes to the same thing.}
 5. Nc3! {Develops and prepares Na4, which will hit the queen and the bishop.}
 (5. exd5? Bc5 {Now g1 is under fire.} 6. Ne2?? Bf2+ 7. Kd2 Qe3# {Mate. This is the trap Black is hoping for.})
-5... Bc5
-(5... dxe4 6. Nxe4 Bf5 7. Nd6+ Bxd6 8. exd6 {White has the bishop pair and a pawn on d6: Stockfish +0.8.})
-6. Na4! {[%cal Ga4b6,Ga4c5] The knight hits the queen and the bishop at once.} Bf2+
-(6... Qa5+ 7. c3 Bxg1 8. Rxg1 {White has the extra pawn and the bishop pair: Stockfish +0.9.})
+5... Bc5 {If 5...dxe4, then 6.Nxe4 Bf5 7.Nd6+ Bxd6 8.exd6 gives White the bishop pair and a strong pawn on d6 (Stockfish +0.8).}
+6. Na4! {[%cal Ga4b6,Ga4c5] The knight hits the queen and the bishop at once.} Bf2+ {If 6...Qa5+, then 7.c3 Bxg1 8.Rxg1 leaves White a pawn up with the bishop pair (Stockfish +0.9).}
 7. Ke2 {The king steps up, but Black has no follow-up.} Qd4 8. Qxd4 Bxd4 9. f4 {White keeps the extra pawn: Stockfish +0.5.} *
