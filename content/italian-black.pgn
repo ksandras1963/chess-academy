@@ -58,16 +58,15 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 [Opening "Italian Game: Classical Variation, Giuoco Pianissimo"]
 [ECO "C54"]
 
-{The most common setup at club level. Both sides build slowly, and small details decide who gets the useful pawn breaks.}
+{The most common setup at club level. Both sides build slowly, and small details decide who gets the useful pawn breaks. White's other sixth moves are under Advanced variations; the plan against them hardly changes.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 {[%cal Gc5f2] Develops to the best square: the bishop controls d4 and eyes f2.}
 4. c3 {White prepares d4, which would hit our bishop and build a big center.} Nf6 {Hits e4 at once, before White can play d4. White must now defend e4 or push d4 immediately.}
-5. d3 {The quiet Giuoco Pianissimo: White guards e4 and saves d4 for later.} d6 {Supports e5 and opens the diagonal for the light-squared bishop. With e5 solid, White's d4 break will be less effective.}
+5. d3 {The quiet Giuoco Pianissimo: White guards e4 and saves d4 for later.}
+(5. O-O {Castles first, keeping both d3 and d4 in reserve.} d6 {Keeps our usual setup. Stockfish slightly prefers 5...Nxe4, but after 6.d4 d5 the game turns sharp.}
+6. d4 {Hits the bishop and e5 at once. White's usual move here; 6.d3 goes back to the main line (see Advanced variations).} Bb6 {On b6 the bishop is safe and still aims at f2. Taking on d4 would give White a big pawn center after cxd4.})
+5... d6 {Supports e5 and opens the diagonal for the light-squared bishop. With e5 solid, White's d4 break will be less effective.}
 (5... d5?! {Too early. After 6.exd5 Nxd5 7.Qb3! queen and bishop hit d5 and f7 together, and Black loses a pawn or more.} 6. exd5 Nxd5 7. Qb3)
 6. O-O
-(6. Nbd2 a6 7. O-O Ba7 8. Re1 O-O 9. Nf1 h6 {Takes g5 away from White's pieces.} 10. h3 Re8)
-(6. b4 {Gains space and chases the bishop.} Bb6 7. a4 a5! {Stops White's queenside pawns from rolling on.} 8. b5 Ne7 {The knight reroutes toward g6 and the kingside.} 9. O-O O-O)
-(6. Bb3 a6 7. Nbd2 Ba7 8. Nf1 O-O 9. Ng3 h6)
-(6. Bg5 {Premature. Black hasn't castled, so the pin can be broken at no risk.} h6 7. Bh4 g5 8. Bg3 a6 {Calm. Now the pawns on g5 and h6 keep White's bishop and knight off g5.} (8... h5? {Too ambitious.} 9. Nxg5! {[%cal Gf3g5] With the h-pawn gone from h6, nothing guards g5. White grabs it and breaks through: Stockfish rates it about +3.5.}) 9. O-O Ba7)
 6... a6 {Makes room for ...Ba7 so the bishop survives d4 and b4.}
 7. a4 {Stops ...b5, which would gain space and chase White's bishop.} Ba7
 8. Re1 O-O
@@ -83,13 +82,15 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 [ECO "C54"]
 
 {White opens the center at once. This is the old main line that Greco analyzed around 1620. Three moves do the work: take on d4, check on b4, and free your game with ...d5.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3
+(4. d4 {Opens the center at once, without c3 to support it.} Bxd4 {Simplest: Black gives up the bishop for the knight and gets a strong knight on d4. 4...exd4 5.c3 Nf6 also reaches this chapter's main line.}
+5. Nxd4 Nxd4 {If c3 kicks the knight, it simply drops back to c6 or e6.}
+6. O-O {White's usual plan is f4, opening the f-file against e5.} d6 {Guards e5 and frees the c8 bishop. Black is comfortable.})
+4... Nf6
 5. d4 {Strikes in the center while our bishop on c5 is a target.} exd4 {Take, so White doesn't get a big center for free.}
-6. cxd4
-(6. e5 {Kicks the knight.} d5! {[%cal Gd5c4] Counterattacks the bishop instead of retreating. This is Black's only good reply.} 7. Bb5 Ne4 {A strong central knight.} 8. cxd4 Bb4+ 9. Bd2 Nxd2 10. Nbxd2 O-O {Black has castled and stands well.})
+6. cxd4 {6.e5 is under Advanced variations.}
 6... Bb4+ {Gains time before White can castle. White has to block with a piece.}
-7. Bd2
-(7. Nc3 Nxe4 {Take the center pawn. The pin on c3 makes this safe: the knight can't recapture.} 8. O-O Bxc3 (8... Nxc3 {Playable only with 9.bxc3 d5!} 9. bxc3 Bxc3? {Greedy.} 10. Ba3! {[%cal Ga3f8] The bishop stops Black from castling, and White's attack wins: Stockfish rates it about +4.8.}) 9. d5 {The Møller Attack: White gives a pawn for fast development.} (9. bxc3 d5! {The best answer. It hits the bishop and supports the knight, and Black keeps the extra pawn.} 10. Bd3 O-O 11. Qc2 Re8 12. Re1 Bf5 {The knight on e4 is rock solid.}) 9... Bf6 {The bishop drops back to its best defensive square.} 10. Re1 Ne7 11. Rxe4 d6 {Play ...d6 before castling, so the c8 bishop can come out.} 12. Bg5 Bxg5 13. Nxg5 h6! {Kick the knight first. 13...O-O allows 14.Nxh7! Kxh7 15.Qh5+, and White draws by perpetual check.} 14. Qa4+ Bd7 15. Qb3 O-O {Black has castled and keeps the extra pawn. Stockfish rates it equal.})
+7. Bd2 {The Møller Attack, 7.Nc3, is under Advanced variations.}
 7... Bxd2+
 (7... Nxe4 {Grabs the pawn. It is playable, but after 8.Bxb4 Nxb4 9.Bxf7+! Kxf7 10.Qb3+ White wins the piece back with a fork, and Black's king loses the right to castle. 7...Bxd2+ is simpler.} 8. Bxb4 Nxb4 9. Bxf7+ Kxf7 10. Qb3+)
 8. Nbxd2 d5! {[%cal Gd7d5] The key freeing move. It challenges e4 and opens the diagonal for the c8 bishop.}
@@ -117,11 +118,52 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 {The Evans Gambit was a favorite of 19th-century attackers; Anderssen's famous Evergreen Game of 1852 began with it. White gives a pawn to gain time for c3 and d4. Take it, retreat to a5, and give the pawn back with ...d5 at the right moment.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 {Accept: the pawn is free for now.}
 5. c3 {Gains time on the bishop and prepares d4.} Ba5 {The bishop stays active and out of reach of White's d-pawn.}
-6. d4
-(6. O-O d6 {Lasker's simple defense: support e5 and return the pawn on Black's terms.} 7. d4 Bb6 8. dxe5 dxe5 9. Qxd8+ Nxd8 {The queens are off, and with them White's attack.} 10. Nxe5 Be6 {White has the pawn back, but Black has an easy game, and the Italian bishop will be traded.})
+6. d4 {6.O-O is under Advanced variations.}
 6... exd4 7. O-O Nge7 {Develops and prepares ...d5.}
 8. cxd4 d5! {[%cal Gd7d5] Gives the pawn back to free the position and blunt White's bishop.}
 9. exd5 Nxd5 {Black's pieces are active. Castle next.} *
+
+[Chapter "Pianissimo: White's sixth moves"]
+[Diagram "6.h3"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Italian Game: Classical Variation, Giuoco Pianissimo"]
+[ECO "C54"]
+
+{White's other sixth moves in the Pianissimo, and 6.d3 after 5.O-O. The plan stays the same: ...a6 and ...Ba7 so the bishop is safe from b4 and d4, then castle and ...h6.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3
+(5. O-O d6 6. d3 a6 {Back in the main line by a different move order.})
+5... d6
+6. h3 {Takes g4 away from Black's bishop and knight, so there is no pin on f3.}
+(6. Nbd2 a6 7. O-O Ba7 8. Re1 O-O 9. Nf1 h6 {Takes g5 away from White's pieces.} 10. h3 Re8)
+(6. b4 {Gains space and chases the bishop.} Bb6 7. a4 a5! {Stops White's queenside pawns from rolling on.} 8. b5 Ne7 {The knight reroutes toward g6 and the kingside.} 9. O-O O-O)
+(6. a4 {Stops ...b5 and gains space on the queenside.} a6 {Same plan: make room for ...Ba7, where the bishop is safe from b4 and d4.} 7. O-O Ba7 {Back in the main line by a different move order.})
+(6. Bb3 a6 7. Nbd2 Ba7 8. Nf1 O-O 9. Ng3 h6)
+(6. Bg5 {Premature. Black hasn't castled, so the pin can be broken at no risk.} h6 7. Bh4 g5 8. Bg3 a6 {Calm. Now the pawns on g5 and h6 keep White's bishop and knight off g5.} (8... h5? {Too ambitious.} 9. Nxg5! {[%cal Gf3g5] With the h-pawn gone from h6, nothing guards g5. White grabs it and breaks through: Stockfish rates it about +3.5.}) 9. O-O Ba7)
+6... a6 {Same plan as against 6.O-O: make room for ...Ba7. With ...Bg4 ruled out, the c8 bishop will go to e6.} 7. O-O Ba7 8. Re1 O-O 9. a4 h6 {Back in the main line by a different move order.} *
+
+[Chapter "Center attack: 7.Nc3 and 6.e5"]
+[Diagram "7.Nc3"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Italian Game: Classical Variation, Center Attack"]
+[ECO "C54"]
+
+{The sharp tries in the Center attack. Against the Møller Attack, 7.Nc3, take the e4 pawn: the pin on c3 makes it safe. Against 6.e5, counterattack with ...d5.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4
+6. cxd4
+(6. e5 {Kicks the knight.} d5! {[%cal Gd5c4] Counterattacks the bishop instead of retreating. This is Black's only good reply.} 7. Bb5 Ne4 {A strong central knight.} 8. cxd4 Bb4+ 9. Bd2 Nxd2 10. Nbxd2 O-O {Black has castled and stands well.})
+6... Bb4+ 7. Nc3 Nxe4 {Take the center pawn. The pin on c3 makes this safe: the knight can't recapture.} 8. O-O Bxc3 (8... Nxc3 {Playable only with 9.bxc3 d5!} 9. bxc3 Bxc3? {Greedy.} 10. Ba3! {[%cal Ga3f8] The bishop stops Black from castling, and White's attack wins: Stockfish rates it about +4.8.}) 9. d5 {The Møller Attack: White gives a pawn for fast development.} (9. bxc3 d5! {The best answer. It hits the bishop and supports the knight, and Black keeps the extra pawn.} 10. Bd3 O-O 11. Qc2 Re8 12. Re1 Bf5 {The knight on e4 is rock solid.}) 9... Bf6 {The bishop drops back to its best defensive square.} 10. Re1 Ne7 11. Rxe4 d6 {Play ...d6 before castling, so the c8 bishop can come out.} 12. Bg5 Bxg5 13. Nxg5 h6! {Kick the knight first. 13...O-O allows 14.Nxh7! Kxh7 15.Qh5+, and White draws by perpetual check.} 14. Qa4+ Bd7 15. Qb3 O-O {Black has castled and keeps the extra pawn. Stockfish rates it equal.} *
+
+[Chapter "Evans Gambit: 6.O-O"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Italian Game: Evans Gambit, Lasker Defense"]
+[ECO "C52"]
+
+{If White castles before d4, use Lasker's simple defense: support e5 with ...d6 and give the pawn back on your own terms.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5
+6. O-O d6 {Lasker's simple defense: support e5 and return the pawn on Black's terms.} 7. d4 Bb6 8. dxe5 dxe5 9. Qxd8+ Nxd8 {The queens are off, and with them White's attack.} 10. Nxe5 Be6 {White has the pawn back, but Black has an easy game, and the Italian bishop will be traded.} *
 
 [Chapter "Trap: 5.Ng5 and f7"]
 [Type "trap"]

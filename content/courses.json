@@ -25,14 +25,30 @@
           "side": "white",
           "file": "content/italian-white.pgn",
           "repertoire": "Giuoco Pianissimo: c3, d3, and a slow build-up",
-          "summary": "Build with c3 and d3, castle, bring the queen's knight to g3, and break with d4 when ready."
+          "summary": "Build with c3 and d3, castle, bring the queen's knight to g3, and break with d4 when ready.",
+          "overview": [
+            "One plan against almost everything: c3 and d3, castle, Re1 and h3, and the knight route b1-d2-f1-g3. Play d4 only when it gains something.",
+            "Black's third move decides the chapter: 3...Bc5 comes up in about 40% of your games, and 3...Nf6 in about 30%.",
+            "Against 3...Nf6, play 4.d3, not 4.Ng5 or 4.Nc3: e4 stays protected, and you skip the Fried Liver theory and the fork trick.",
+            "Keep the Italian bishop. Drop it back to b3 or c2 before ...Na5 or ...b5 can trade it off.",
+            "The pin ...Bg4 is harmless here: ask the bishop with h3, guard f3 with Nbd2, and chase it with Ng3 and Nh4.",
+            "f7 is Black's weak point. If Black shuts in the f8 bishop with ...d6 and then plays ...Nf6, Ng5 hits f7 at once."
+          ]
         },
         {
           "id": "italian-black",
           "side": "black",
           "file": "content/italian-black.pgn",
           "repertoire": "3...Bc5 with ...Nf6, ...d6, ...a6, ...h6",
-          "summary": "Mirror White's slow setup, keep the bishop with ...a6 and ...Ba7, and know how to meet d4 and the Evans Gambit."
+          "summary": "Mirror White's slow setup, keep the bishop with ...a6 and ...Ba7, and know how to meet d4 and the Evans Gambit.",
+          "overview": [
+            "Play 3...Bc5, then ...Nf6, ...d6, ...a6 and ...Ba7. On a7 the bishop survives d4 and b4 and still aims at f2.",
+            "In more than half of your games White builds slowly with c3 and d3, or castles first. Mirror the setup: castle, ...h6 to keep White's pieces off g5, ...Re8, then ...Be6 and ...d5.",
+            "Don't rush ...d5. Played before you've developed, it lets White's queen join the bishop against d5 and f7 with Qb3.",
+            "Against the Center attack (4.c3 and 5.d4), take on d4, check on b4, and free your game with ...d5.",
+            "The Møller Attack, 7.Nc3, comes up often: take on e4, because the pin on c3 makes it safe.",
+            "Against the Evans Gambit (4.b4), take the pawn, retreat to a5, and give it back with ...d5 at the right moment."
+          ]
         }
       ]
     },
@@ -87,14 +103,30 @@
           "side": "white",
           "file": "content/caro-kann-white.pgn",
           "repertoire": "Advance (Short system), plus the Two Knights and the Fantasy",
-          "summary": "Gain space with 3.e5, castle before anything sharp, and meet ...c5 calmly. The Two Knights and the Fantasy are trap-filled surprise weapons."
+          "summary": "Gain space with 3.e5, castle before anything sharp, and meet ...c5 calmly. The Two Knights and the Fantasy are trap-filled surprise weapons.",
+          "overview": [
+            "Learn one system first. The Advance (3.e5) is the main weapon; the Two Knights (2.Nc3 and 3.Nf3) and the Fantasy (3.f3) are surprise weapons full of traps.",
+            "In the Advance, the pawn on e5 gains space and keeps Black's knight off f6. Develop calmly with Nf3, Be2 and O-O before anything sharp.",
+            "The main line, 3...Bf5 4.Nf3 e6, comes up in more than half of your Advance games.",
+            "Black's counterplay is ...c5 against d4, the base of your pawn chain. Guard d4 with Be3; against an early 3...c5, take with 4.dxc5.",
+            "In the Two Knights, wait before playing d4. Ask Black's bishop the question with h3 and take the bishop pair. After 4...Nf6, 5.Qe2 sets the smothered-mate trap.",
+            "In the Fantasy, the f-pawn holds e4. If Black takes, fxe4 gives you two center pawns and the half-open f-file, but your king is looser, so develop fast and castle."
+          ]
         },
         {
           "id": "caro-kann-black",
           "side": "black",
           "file": "content/caro-kann-black.pgn",
           "repertoire": "Classical (4...Bf5), with 3...c5 against the Advance",
-          "summary": "Get the c8 bishop out before ...e6, hit d4 against the Advance, and know the traps in the Fantasy and Karpov lines."
+          "summary": "Get the c8 bishop out before ...e6, hit d4 against the Advance, and know the traps in the Fantasy and Karpov lines.",
+          "overview": [
+            "The idea of the Caro-Kann: support ...d5 with the c-pawn, and get the c8 bishop out before ...e6 shuts it in.",
+            "Learn three structures first: the Advance (3.e5), the Classical (3.Nc3 or 3.Nd2) and the Exchange (exd5 cxd5), which comes from both 2.d4 and 2.Nf3. Together they come up in more than half of your games.",
+            "Against the Advance (3.e5), hit the base of White's chain at once with 3...c5. Against 4.c3, take on d4 and pile up on it with ...Nc6, ...Bg4 and ...Nf5.",
+            "Against 3.Nc3 or 3.Nd2, take on e4 and play 4...Bf5. Answer h4 with ...h6, and trade the light-squared bishops calmly.",
+            "In the Exchange, develop with ...Nc6, ...Bg4 and ...e6, then play for the minority attack with ...b5 and ...b4. Against the Panov's isolated d-pawn, blockade d5 and trade pieces.",
+            "Know the traps: in the Fantasy, 5.dxe5? runs into ...Qh4+; in the Karpov, 5.Qe2 Ngf6?? allows 6.Nd6 mate."
+          ]
         }
       ]
     },

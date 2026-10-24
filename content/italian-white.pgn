@@ -72,13 +72,11 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 2. Nf3 {Develops with an attack on e5.} Nc6 {Defends e5.}
 3. Bc4 {[%cal Gc4f7] The Italian bishop targets f7, the weakest point near Black's king, and controls d5.} Bc5 {Black's bishop mirrors ours. From c5 it controls d4 and eyes f2.}
 4. c3 {[%cal Gc3d4] The key move of the Italian. c3 supports a later d4, so White can build a pawn center that Black's pieces can't easily attack. It also frees c2 as a retreat square for the bishop. The cost is that the knight can no longer go to c3.} Nf6 {Counterattacks e4 at once, before White is ready for d4.}
+(4... d6 {Solid, but it doesn't attack e4. 5.d4 is a good alternative here; we keep our usual setup.} 5. d3 Nf6 {Back in the main line by a different move order.})
 5. d3 {Guards e4 calmly. The older 5.d4 opens the game at once and leads to sharp theory in which Black equalizes with an early ...d5. With 5.d3 we keep d4 in reserve and play it later, when it gains more.} d6 {Supports e5 and opens the diagonal for the c8 bishop. Both sides now build slowly.}
 (5... O-O 6. O-O d5 {The freeing break Black wants in every Italian, played here before Black has finished developing.} 7. exd5 Nxd5 8. Re1 {[%cal Ge1e5,Gf3e5] Now e5 is attacked twice and defended once. Black must spend a move defending it while we keep developing.})
-6. O-O O-O
-(6... a6 7. a4 {Gains queenside space and stops ...b5, which would chase our bishop.} Ba7 8. Re1 O-O 9. h3 h6 10. Nbd2 Re8 11. Nf1 {Same setup as the main line: the knight heads for g3.})
-(6... Bg4 {The tempting pin. Here it does little: with our pawn on c3, Black can never add ...Nd4 to attack the pinned knight again.} 7. h3 {Asks the bishop to decide.} Bh5 {Keeps the pin.} 8. Nbd2 {Guards f3 a second time, so the pin is harmless.} O-O 9. Re1 a6 10. Bb3 {Steps back before ...Na5 can trade it off.} Ba7 11. Nf1 h6 12. Ng3 {[%cal Gg3h5] The knight arrives with tempo on the bishop.} Bg6 13. Nh4 {[%cal Gh4g6,Gb3g8] Now Nxg6 is a real threat. Our bishop pins the f7 pawn, and after ...h6 the h-pawn can't recapture either.} Kh8 {Black has to unpin f7.} (13... Re8? 14. Nxg6 {Wins the bishop: neither pawn can recapture.}))
-7. Re1 {Protects e4 a second time and stands on the e-file, which opens once we play d4.} a6 {Gives the bishop a retreat on a7, so d4 or b4 won't gain time against it. It also prepares ...b5.}
-(7... Ng4 {Eyes f2, but a lone knight can't do much.} 8. Re2 {Covers f2 calmly.} Kh8 9. h3 Nf6 10. Nbd2 {The knight has gone back, and h3 is a useful move for us anyway.})
+6. O-O O-O {Black's other sixth moves, 6...a6 and the pin 6...Bg4, are under Advanced variations.}
+7. Re1 {Protects e4 a second time and stands on the e-file, which opens once we play d4.} a6 {Gives the bishop a retreat on a7, so d4 or b4 won't gain time against it. It also prepares ...b5. The knight raid 7...Ng4 is under Advanced variations.}
 8. Bb3 {Steps back before ...b5 or ...Na5 can hit the bishop. On b3 it still aims at f7.} Ba7
 9. h3 {[%csl Yg4] Takes g4 from Black's bishop and knight: no pin on f3 and no ...Ng4 raid. Now the knight on f3 and the bishop on c1 can move freely.} h6 {Black mirrors the idea and takes g5 from our bishop and knight.}
 10. Nbd2 Re8
@@ -105,22 +103,6 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 9. Ba4 b5 10. Bc2 {Safe on c2 and still aiming at the kingside.} c5 {Black gains queenside space, Ruy Lopez style.}
 11. Nbd2 Nc6 12. Nf1 {The knight goes to g3 next, and d4 comes when we are ready.} *
 
-[Chapter "Paris Defense: 3...d6"]
-[Type "line"]
-[Opening "Italian Game: Paris Defense"]
-[ECO "C50"]
-
-{3...d6 supports e5 solidly but blocks Black's own bishop on f8. That leaves f7 with fewer defenders, and we aim at it at once.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 d6
-4. Nc3 {Develops and adds control of d5. With Black's f8 bishop shut in, quick piece play pays off, and 4.Nc3 sets up Légal's trap if Black pins with ...Bg4 (see the trap chapter).} Nf6? {Natural, but now f7 has only the king to defend it.}
-(4... Be7 {Solid: the bishop covers g5 and prepares castling.} 5. d4 {With g5 covered, Ng5 no longer works, so we take the center instead.} exd4 6. Nxd4 Nf6 7. O-O O-O 8. Bf4 {Free development and more space for White.})
-5. Ng5! {[%cal Gg5f7,Gc4f7] Two attackers on f7 and one defender. Black has to block the bishop with ...d5, and that costs a pawn.} d5
-6. exd5 Na5 {Attacks the bishop. This is Black's best try to win the pawn back.}
-(6... Nxd5? 7. Nxf7! {The Fried Liver sacrifice.} Kxf7 8. Bxd5+ {Wins back the piece with check.} Ke8 9. Bxc6+ bxc6 10. Qh5+ Kd7 11. Qf5+ Ke8 12. Qxe5+ Qe7 {White has two extra pawns, and Black's king is stuck in the center.})
-7. Bb5+ {Check first, gaining time. After ...c6 and dxc6 the bishop stays active.} c6
-8. dxc6 bxc6 9. Ba4 {The bishop stays on the a4-e8 diagonal and pins the c6 pawn.} h6 {Kicks the knight.}
-10. Nf3 {White is a pawn up. Black has some activity in return, so finish developing with castling and d3.} Bd6 11. O-O O-O 12. d3 *
-
 [Chapter "Other third moves"]
 [Diagram "3...Be7"]
 [Type "line"]
@@ -132,6 +114,16 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 (3... h6 {Prevents Ng5 and Bg5 but spends a move on a pawn. The usual setup is fine against it.} 4. d3 Nf6 5. c3 d6 6. O-O g6 7. Re1 Bg7 8. Nbd2 O-O 9. Nf1 {Our usual plan: Ng3, h3, then d4.})
 4. d3 Nf6 5. O-O O-O 6. Re1 d6 7. c3 {The same structure as the Two Knights chapter.} *
 
+[Chapter "Paris Defense: 3...d6"]
+[Type "line"]
+[Opening "Italian Game: Paris Defense"]
+[ECO "C50"]
+
+{3...d6 supports e5 solidly but blocks Black's own bishop on f8. That leaves f7 with fewer defenders. Develop quickly; if Black covers g5 with ...Be7, take the center instead.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 d6
+4. Nc3 {Develops and adds control of d5. With Black's f8 bishop shut in, quick piece play pays off, and 4.Nc3 sets up Légal's trap if Black pins with ...Bg4 (see the trap chapter).} Be7 {Solid: the bishop covers g5 and prepares castling. The natural 4...Nf6? runs into 5.Ng5!: see Advanced variations.}
+5. d4 {With g5 covered, Ng5 no longer works, so we take the center instead.} exd4 6. Nxd4 Nf6 7. O-O O-O 8. Bf4 {Free development and more space for White.} *
+
 [Chapter "Rousseau Gambit: 3...f5"]
 [Type "line"]
 [Opening "Italian Game: Rousseau Gambit"]
@@ -139,10 +131,55 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 
 {3...f5 attacks e4 and hopes for a quick attack on the f-file. Stockfish rates it more than a pawn worse for Black. The simplest answer is to decline the gambit and keep the center.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 f5?! {Attacks e4, but the f-pawn leaves f7 and opens the a2-g8 diagonal in front of Black's king.}
-4. d3! {Declines the gambit. e4 is protected, and if Black takes on e4 we recapture with the pawn. Taking with 4.exf5 lets Black play ...e4 and get the open game Black is hoping for.} Nf6
-(4... fxe4 5. dxe4 {Black has given up the f-pawn and opened lines toward Black's own king.} Nf6 6. Ng5! {[%cal Gg5f7,Gc4f7] The knight jumps toward f7 and e6.} d5 7. exd5 Na5 8. Bd3 {Keeps the bishop. White's pieces point at a king that has lost its f-pawn shelter.})
+4. d3! {Declines the gambit. e4 is protected, and if Black takes on e4 we recapture with the pawn. Taking with 4.exf5 lets Black play ...e4 and get the open game Black is hoping for.} Nf6 {4...fxe4 is under Advanced variations.}
 5. O-O {Castle first, keeping the king safe before the position opens.} Bc5 6. Nc3 d6
 7. Bg5 {[%cal Gg5f6,Gc4g8] Pins the knight. Note that Black can't castle kingside: with Black's f-pawn no longer on f7, our bishop on c4 covers g8. White is clearly better.} *
+
+[Chapter "Pianissimo: 6...a6 and 6...Bg4"]
+[Diagram "6...Bg4"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Italian Game: Classical Variation, Giuoco Pianissimo"]
+[ECO "C54"]
+
+{Black's other sixth moves in the Pianissimo. Against 6...a6, gain queenside space with a4 and follow the usual plan. Against the pin 6...Bg4, ask the bishop with h3, guard f3 with Nbd2, and chase the bishop with Ng3 and Nh4.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O Bg4 {The tempting pin. Here it does little: with our pawn on c3, Black can never add ...Nd4 to attack the pinned knight again.}
+(6... a6 7. a4 {Gains queenside space and stops ...b5, which would chase our bishop.} Ba7 8. Re1 O-O 9. h3 h6 10. Nbd2 Re8 11. Nf1 {Same setup as the main line: the knight heads for g3.})
+7. h3 {Asks the bishop to decide.} Bh5 {Keeps the pin.} 8. Nbd2 {Guards f3 a second time, so the pin is harmless.} O-O 9. Re1 a6 10. Bb3 {Steps back before ...Na5 can trade it off.} Ba7 11. Nf1 h6 12. Ng3 {[%cal Gg3h5] The knight arrives with tempo on the bishop.} Bg6 13. Nh4 {[%cal Gh4g6,Gb3g8] Now Nxg6 is a real threat. Our bishop pins the f7 pawn, and after ...h6 the h-pawn can't recapture either.} Bh7 {The most common reply: the bishop steps out of the knight's reach.} (13... Kh8 {Unpins f7, so Nxg6 can now be met by ...fxg6.}) (13... Re8? 14. Nxg6 {Wins the bishop: neither pawn can recapture.}) 14. Nhf5 {[%cal Gg3f5] The knight lands on f5, next to Black's king, and the other knight backs it up. Stockfish rates White slightly better.} Bxf5 15. Nxf5 {Recapture with the knight, not the pawn: the knight on f5 is strong, and White keeps the two bishops.} *
+
+[Chapter "Pianissimo: 7...Ng4"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Italian Game: Classical Variation, Giuoco Pianissimo"]
+[ECO "C54"]
+
+{After 6...O-O 7.Re1, the knight raid 7...Ng4 eyes f2. Cover it calmly; the knight soon has to go back.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O O-O 7. Re1 Ng4 {Eyes f2, but a lone knight can't do much.}
+8. Re2 {Covers f2 calmly.} Kh8 9. h3 Nf6 10. Nbd2 {The knight has gone back, and h3 is a useful move for us anyway.} *
+
+[Chapter "Paris Defense: 4...Nf6"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Italian Game: Paris Defense"]
+[ECO "C50"]
+
+{After 3...d6 4.Nc3, the natural 4...Nf6? leaves f7 with only the king to defend it. Hit it at once with 5.Ng5.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Nf6? {Natural, but now f7 has only the king to defend it.}
+5. Ng5! {[%cal Gg5f7,Gc4f7] Two attackers on f7 and one defender. Black has to block the bishop with ...d5, and that costs a pawn.} d5
+6. exd5 Na5 {Attacks the bishop. This is Black's best try to win the pawn back.}
+(6... Nxd5? 7. Nxf7! {The Fried Liver sacrifice.} Kxf7 8. Bxd5+ {Wins back the piece with check.} Ke8 9. Bxc6+ bxc6 10. Qh5+ Kd7 11. Qf5+ Ke8 12. Qxe5+ Qe7 {White has two extra pawns, and Black's king is stuck in the center.})
+7. Bb5+ {Check first, gaining time. After ...c6 and dxc6 the bishop stays active.} c6
+8. dxc6 bxc6 9. Ba4 {The bishop stays on the a4-e8 diagonal and pins the c6 pawn.} h6 {Kicks the knight.}
+10. Nf3 {White is a pawn up. Black has some activity in return, so finish developing with castling and d3.} Bd6 11. O-O O-O 12. d3 *
+
+[Chapter "Rousseau Gambit: 4...fxe4"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Italian Game: Rousseau Gambit"]
+[ECO "C50"]
+
+{If Black takes on e4 after 4.d3, recapture with the pawn. Black has given up the f-pawn and opened lines toward Black's own king.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 f5?! 4. d3! fxe4 5. dxe4 {Black has given up the f-pawn and opened lines toward Black's own king.} Nf6 6. Ng5! {[%cal Gg5f7,Gc4f7] The knight jumps toward f7 and e6.} d5 7. exd5 Na5 8. Bd3 {Keeps the bishop. White's pieces point at a king that has lost its f-pawn shelter.} *
 
 [Chapter "Trap: the Blackburne Shilling Gambit"]
 [Diagram "3...Nd4"]
