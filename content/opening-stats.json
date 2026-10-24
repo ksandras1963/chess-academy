@@ -1,7 +1,7 @@
 {
  "source": "Lichess opening explorer (lichess.org/analysis), Lichess database",
  "games": "Rated rapid and classical games in which the two players' average rating was 1800 to 2199",
- "retrieved": "2026-10-18 to 2026-10-23",
+ "retrieved": "2026-10-18 to 2026-10-24",
  "label": "Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026",
  "note": "Counts are as Lichess shows them, rounded to two or three figures. Keys are FENs without the move counters; moves are in UCI notation. Only the 12 most-played moves in each position are listed.",
  "positions": {
@@ -3367,6 +3367,63 @@
     "b8d7": 173,
     "g8e7": 140,
     "a7a5": 96
+   }
+  },
+  "rnb1kbnr/ppp2ppp/4p3/8/3PP2q/8/PPP3PP/RNBQKBNR w KQkq -": {
+   "games": 4340,
+   "moves": {
+    "e1d2": 1500,
+    "g2g3": 1470,
+    "e1e2": 1380
+   }
+  },
+  "r3kbnr/pp1b1ppp/1q2p3/3pP3/3N4/3B4/PP3PPP/RNBQ1RK1 b kq -": {
+   "games": 61800,
+   "moves": {
+    "b6d4": 61800,
+    "f8c5": 17,
+    "b6b5": 5,
+    "b6c6": 4,
+    "b6c5": 3,
+    "a8c8": 1,
+    "f8e7": 1,
+    "a8d8": 1,
+    "b6c7": 1,
+    "b6a6": 1
+   }
+  },
+  "rnbqkbnr/ppp3pp/4pp2/3pP3/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq -": {
+   "games": 2190,
+   "moves": {
+    "f6e5": 692,
+    "b8c6": 375,
+    "c7c5": 346,
+    "g7g6": 269,
+    "f6f5": 260,
+    "g8e7": 72,
+    "d8e7": 47,
+    "b8d7": 34,
+    "f8e7": 24,
+    "f8b4": 22,
+    "h7h5": 13,
+    "a7a6": 11
+   }
+  },
+  "r1b1kbnr/pp3ppp/1q2p3/n2pP3/2pP4/P1P2N2/1P1N1PPP/1RBQKB1R b Kkq -": {
+   "games": 2730,
+   "moves": {
+    "c8d7": 2220,
+    "a5b3": 218,
+    "b6c7": 135,
+    "g8e7": 85,
+    "f8a3": 25,
+    "g8h6": 17,
+    "f8e7": 16,
+    "f7f6": 9,
+    "b6c6": 3,
+    "h7h6": 2,
+    "g7g6": 1,
+    "h7h5": 1
    }
   }
  }
