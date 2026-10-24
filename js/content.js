@@ -12,7 +12,7 @@ const embedded = globalThis.__OT_CONTENT__ || null
 
 async function readText(path, failMessage) {
     if (embedded && path in embedded) return embedded[path]
-    const r = await fetch(path).catch(() => null)
+    const r = await fetch(path, { cache: "no-cache" }).catch(() => null) // check for a newer version every time
     if (!r || !r.ok) throw new Error(failMessage)
     return r.text()
 }
