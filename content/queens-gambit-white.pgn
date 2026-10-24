@@ -1,0 +1,90 @@
+[Chapter "Key ideas: Why the Queen's Gambit"]
+[Type "ideas"]
+
+{Why play the Queen's Gambit? After 1.d4 d5, White can't play e4 yet, so 2.c4 attacks Black's center pawn from the side. If Black takes on c4, White builds a full center and wins the pawn back. If Black holds d5 with ...e6 or ...c6, White's pieces come out to natural squares, and the pawn on d4 is safe because the queen guards it. There are few early tactics against White's king.
+
+Our repertoire is built around one pawn structure. Against the Queen's Gambit Declined (2...e6) we play the Exchange Variation: take on d5 at once, then play the minority attack, a plan that works without long theory. Against the Slav (2...c6), the main line 4...e6 leads to the same structure. Against the Queen's Gambit Accepted (2...dxc4), 3.e3 wins the pawn back with Bxc4 and sets one of the oldest traps in chess.
+
+Black answers 2.c4 with 2...e6 in a third of your games, 2...c6 in a quarter, 2...dxc4 in about one game in six and 2...Nf6 in about one in nine.
+
+It is one of the oldest openings: it already appears in the Göttingen manuscript, a chess book written more than 500 years ago. Nearly every game of the 1927 world championship match between José Raúl Capablanca and Alexander Alekhine began with the Queen's Gambit Declined.
+
+Step through the moves to see the logic.}
+1. d4 {Takes the center. The queen guards the pawn from d1.} d5 {[%cal Rd5e4] Black's pawn stops e4 for now.}
+2. c4 {[%cal Gc4d5] The Queen's Gambit. A wing pawn attacks d5, Black's only center pawn.
+
+It isn't a real gambit. After 2...dxc4 3.e3, White wins the pawn back with Bxc4, and Black gets into trouble trying to keep it (see Typical tactics).} e6 {[%cal Re6d5] [%csl Yc8] The Queen's Gambit Declined. Black holds d5 with a pawn and keeps a solid center. The cost is the c8 bishop, shut in behind the pawn on e6.
+
+Black's main alternatives: 2...c6, the Slav, keeps the bishop free but takes c6 away from the knight. 2...dxc4, the Accepted, gives up the center for quick development.}
+3. Nc3 {A second attacker on d5.} Nf6 {Black guards d5 again and stops e4. Black plays this in six games out of ten.}
+4. cxd5 {[%cal Gc1g5] The Exchange Variation. White takes before Black can take on c4, and fixes the pawn structure for the rest of the game.
+
+Black takes back with the pawn in three games out of four. 4...Nxd5 gives White two center pawns after 5.e4; Black's best is 5...Nxc3 6.bxc3, and White keeps the bigger center (Stockfish +0.4, slightly better for White).} exd5 {The usual recapture. It opens the diagonal of Black's c8 bishop, so the problem piece is free again. White's next moves, Bg5, Qc2 and Bd3, keep it from finding a good square.}
+5. Bg5 {[%cal Gg5f6,Rf6d5] Pins the knight that guards d5. The plans that follow are on the next page.} *
+
+[Chapter "Key ideas: Plans for both sides"]
+[Type "ideas"]
+[FEN "r1bqrnk1/pp2bppp/2p2n2/3p2B1/3P4/2NBP3/PPQ1NPPP/R4RK1 w - - 7 11"]
+
+{[%cal Ga1b1,Gb2b4,Gb4b5,Gf2f3,Ge3e4,Rf6e4,Rf8g6,Re7d6] [%csl Yc6,Ye4] This is the Exchange Variation after 5.Bg5 c6 6.Qc2 Be7 7.e3 Nbd7 8.Bd3 O-O 9.Nge2 Re8 10.O-O Nf8. The green arrows are White's plans, the red arrows Black's. Stockfish rates it as equal (+0.2): the chances are balanced, but White's plans are easier to play.
+
+Plan 1: the minority attack. White's two queenside pawns (a and b) attack Black's three (a, b and c). Put a rook on b1, then push b4 and b5. When White takes on c6, Black is left with a weak pawn: a backward pawn on c6, on the half-open c-file, or an isolated pawn on d5 after ...cxb5. White's rooks and knights then attack it.
+
+Plan 2: f3 and e4. The knight on e2, not f3, leaves the f-pawn free. f3 takes the e4 and g4 squares away from Black's pieces and prepares e4, which opens the center while White's pieces are ready.
+
+Black's plans. Black has more room on the kingside and uses the e4 square: ...Ne4 trades a pair of minor pieces, and ...Ng6 and ...Bd6 aim at White's king. Black also wants to trade the c8 bishop, with ...Be6 or ...Bg4, or with ...Bf5 after ...g6. White's queen on c2 and bishop on d3 control f5, which is why we play Qc2 early.
+
+The Slav. After 3.Nf3 Nf6 4.Nc3 e6 5.cxd5 exd5 6.Bg5 the pawn structure is the same, and so are the plans (Stockfish −0.1, equal). Against 4...dxc4, play 5.a4 Bf5 6.e3 e6 7.Bxc4: White wins the pawn back, castles, and prepares e4 with Qe2 and Rd1 (Stockfish +0.2, equal, after 7...Bb4 8.O-O O-O 9.Qe2).
+
+The Accepted. After 3.e3 and Bxc4, White also aims for e4. If Black hits the center with ...c5 and ...cxd4, White takes back with the e-pawn and gets an isolated pawn on d4 with active pieces (next page).} *
+
+[Chapter "Key ideas: Pawn structures"]
+[Type "ideas"]
+[FEN "rnbqkb1r/pp3ppp/4pn2/8/2BP4/5N2/PP3PPP/RNBQ1RK1 b kq - 0 7"]
+
+{[%cal Gf3e5,Gc1g5,Gd4d5,Rd8d4,Rb8c6] [%csl Yd4] Three pawn structures come up again and again in this course.
+
+The Carlsbad structure: the Exchange Variation, and the Slav with 4...e6. White's pawns on d4 and e3 face Black's pawns on d5 and c6, and the c- and e-pawns have been traded. It is named after the 1923 Carlsbad tournament. White has the half-open c-file, Black the half-open e-file. White's queenside pawns are a minority, two against three, but they are the ones that create the weakness: b4, b5 and bxc6 leave a backward pawn on c6 or an isolated pawn on d5. Black's answer is piece play on the kingside and in the center, with a knight on e4.
+
+The isolated queen's pawn: this position, from the Accepted after 3.e3 Nf6 4.Bxc4 e6 5.Nf3 c5 6.O-O cxd4 7.exd4. White's d-pawn has no pawn neighbors, so pieces must guard it. In return White gets open lines and the e5 square for a knight. Keep pieces on the board: develop with Nc3, Re1 and Bg5 or Bf4, put a knight on e5, and look for an attack on the kingside or the break d5. If many pieces are traded, the pawn becomes a target in the endgame. Stockfish rates this position +0.4, slightly better for White.
+
+The Slav center, after 4...dxc4 5.a4. Black's pawns on c6 and e6 hold d5, and Black has taken a pawn on c4. White wins it back with e3 and Bxc4, and a4 stops ...b5. Then White plays for e4, with Qe2 and Rd1. Once the pawn reaches e4, White has the bigger center.} *
+
+[Chapter "Key ideas: Typical tactics"]
+[Type "ideas"]
+[FEN "rnbqkbnr/p3pppp/8/1p6/2pP4/4P3/1P3PPP/RNBQKBNR w KQkq - 0 6"]
+
+{[%cal Gd1f3,Gf3a8] [%csl Ra8] Six patterns to know.
+
+The Qf3 trap. This position comes from the Accepted after 3.e3 b5? 4.a4 c6 5.axb5 cxb5?. Black has kept the extra pawn, but the long diagonal is open: 6.Qf3 hits the rook on a8, and Black can't save it without losing a piece. The best try is 6...Nc6 7.Qxc6+ Bd7, and White is a piece up (Stockfish +5.7, winning for White). Black tries to keep the pawn with 3...b5 in almost one game in five, so expect this position.
+
+The rook on a8. In the same line, 4...a6? doesn't hold the pawn either. After 5.axb5, 5...axb5?? 6.Rxa8 wins the rook, because the a-file is open (Stockfish +7.0, winning for White).
+
+Qb3 against ...Bg4. When Black's light-squared bishop leaves c8, b7 is loose, and a queen on b3 hits b7 and f7 together. After 3.e3 Nf6 4.Bxc4 Nc6 5.Nf3 Bg4 6.Qb3, Black loses a pawn (Stockfish +1.9, clearly better for White), and 6...Bxf3? 7.Bxf7+ Kd7 8.Qe6# is checkmate.
+
+Nxd5 when c8 is loose. In the Exchange, after 5.Bg5 c6 6.Qc2 Be7 7.e3, the move 7...Nh5? looks like a good way to trade White's bishop. But after 8.Bxe7 Qxe7, 9.Nxd5! wins a pawn. If 9...cxd5?, the c-file is open and 10.Qxc8+ takes the bishop with check (Stockfish +5.6, winning for White). After 9...Qd6, Black is just a pawn down (Stockfish +3.1, winning for White). The trick works only while Black's knight is on b8, because then nothing guards c8.
+
+Don't take on d5: the Elephant trap. With Black's knight on d7, the pawn on d5 looks free after 4.cxd5 exd5 5.Bg5 Nbd7, because the knight on f6 is pinned. But 6.Nxd5?? Nxd5! 7.Bxd8 Bb4+ 8.Qd2 Bxd2+ 9.Kxd2 Kxd8 leaves Black a piece up (Stockfish −4.9, winning for Black). Play 6.e3 and develop.
+
+Qb3 in the Slav. After 3.Nf3 Nf6 4.Nc3 Bf5?! 5.cxd5 cxd5, Black's bishop has left, and nothing guards b7. 6.Qb3 hits it. Black should go back with 6...Bc8 (Stockfish +0.8, slightly better for White). The natural 6...Qd7? runs into 7.e4!, and White's knight comes to e5 with gain of time (Stockfish +4.2, winning for White).} *
+
+[Chapter "Key ideas: Gambits and early surprises"]
+[Type "ideas"]
+
+{Not every opponent plays 2...e6, 2...c6 or 2...dxc4. The rarer second moves try to surprise you, but each has a simple answer. The rule: when Black gives up the center or offers a pawn, take what is offered and develop.
+
+2...Nf6, the Marshall Defense, comes up in about one game in nine. Play 3.cxd5! Black can't take back with a pawn. After 3...Nxd5 4.Nf3, e4 follows soon and gains time on the knight (Stockfish +1.1, clearly better for White). After 3...Qxd5 4.Nc3, the queen is chased again (Stockfish +1.2, clearly better for White).
+
+2...Nc6, the Chigorin Defense: 3.Nf3, then Nc3 and Bg5 (Stockfish +0.6, slightly better for White).
+
+2...Bf5, the Baltic Defense: 3.cxd5. After 3...Bxb1 4.Rxb1 Qxd5 5.e3, Black has given up the bishop pair (Stockfish +1.0, clearly better for White).
+
+2...c5, the Austrian Defense: 3.cxd5, and White is a little better whichever way Black takes back (Stockfish +0.6, slightly better for White).
+
+2...e5, the Albin Countergambit, about one game in twenty, is the most dangerous. Step through the moves.}
+1. d4 d5 2. c4 e5 {[%cal Re5d4] Black offers a pawn for quick development and a cramping pawn on d4.}
+3. dxe5 {Take it.} d4 {[%csl Yd4] The pawn on d4 takes c3 away from White's knight. Black wants ...Nc6, ...Bg4 or ...Be6, and often castles queenside.}
+4. Nf3 {The right move: it develops and guards e5.
+
+Avoid 4.e3?, which looks natural but walks into the Lasker trap. After 4...Bb4+ 5.Bd2 dxe3!, the greedy 6.Bxb4? exf2+ 7.Ke2 fxg1=N+! promotes to a knight with check. After 8.Rxg1 Bg4+, Black wins White's queen (Stockfish −9.8, winning for Black). Even the best defense, 6.fxe3, leaves White with nothing (Stockfish −0.1, equal).} Nc6 {Black's usual move: it attacks e5.}
+5. a3 {[%cal Gb2b4,Gc1b2] Stops ...Bb4+ and prepares b4 and Bb2, aimed at the pawn on d4. White keeps the extra pawn (Stockfish +1.0, clearly better for White).} *
