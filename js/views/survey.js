@@ -3,7 +3,7 @@
 // link to its course; the line page plays the moves on the board, step by step or by itself.
 // Nothing here is drilled.
 
-import { h, paras, label, sideName, fig, figText, figMoves } from "../ui.js"
+import { h, paras, label, sideName, figText, figMoves } from "../ui.js"
 import { catalog, survey as loadSurvey } from "../content.js"
 import { mainPath } from "../course-model.js"
 import { Board } from "../board.js"
@@ -67,55 +67,52 @@ function courseLinks(cat, ch) {
 
 const lineHref = (s, ch, i) => `#/survey/${s.id}/${ch.index}${i ? `/${i}` : ""}`
 
-/** Every line on the page merged into one tree of moves, each line's name at the node where it ends. */
-function moveTree(s) {
-    const root = { kids: new Map(), ends: [] }
-    for (const ch of s.chapters) {
-        const paths = chapterPaths(ch)
-        // [Leads "Reversed Dragon | | Queen's Gambit Declined"]: where each line transposes to, in [Lines] order.
-        const leads = (ch.headers.Leads || "").split("|").map(t => t.trim())
-        paths.forEach((p, i) => {
-            let node = root
-            for (const n of p.nodes) {
-                if (!node.kids.has(n.san)) node.kids.set(n.san, { move: n, kids: new Map(), ends: [] })
-                node = node.kids.get(n.san)
-            }
-            // A line named only by its move ("1...c5", no Lichess name) shows the opening's name
-            // instead, so its tag doesn't repeat the move above it.
-            let name = paths.length > 1 ? p.name : ch.title
-            if (/^\d+\.(\.\.|…)?\s?[KQRBN]?[a-h]?[1-8]?x?[a-h][1-8]\S*$/.test(name)) name = ch.title.replace(/\s*\([^)]*\)$/, "")
-            // A branch (the Benko beside the Benoni) has no ECO code of its own here.
-            node.ends.push({ ch, name, eco: i ? "" : ch.eco, lead: leads[i] || "" })
-        })
-    }
-    return root
-}
+/** "King's Indian Defense (1...Nf6)" as "King's Indian": a chapter's short name for the map. */
+const mapName = ch => ch.title.replace(/\s*\([^)]*\)$/, "").replace(/ (Defense|Opening)\b/g, "")
 
 /**
- * The map at the top of an overview: the page's lines as a branching tree. Each row is a run of
- * moves with no choice in it; names are colored by their group and jump to the opening's card.
+ * The map at the top of an overview: the page's first move, the replies to it (on "Other first
+ * moves", the first moves themselves), and the page's openings, as boxes joined by lines. A reply
+ * that leads to one opening shares its box; one that leads to several (1...d5) branches into them.
+ * Each opening jumps to its card. A star marks a course in this app, hollow while it is being written.
  */
-function moveMap(s, jump) {
+function openingMap(s, cat, jump) {
     const groups = [...new Set(s.chapters.map(ch => ch.group))]
     const tone = ch => `tone-${groups.indexOf(ch.group) % 4}`
-    const rows = node => [...node.kids.values()].map(kid => {
-        const run = [kid]
-        for (let n = kid; n.kids.size === 1 && !n.ends.length;) run.push(n = [...n.kids.values()][0])
-        const last = run[run.length - 1]
-        return h("li", {},
-            h("div", { class: "mt-row" },
-                h("span", { class: "mt-moves" }, run.map((r, i) => (i === 0 || r.move.color === "w" ? label(r.move) : fig(r.move.san))).join(" ")),
-                last.ends.map(e => [h("button", { class: `mt-name ${tone(e.ch)}`, type: "button", onclick: () => jump(e.ch) },
-                    figText(e.name), e.eco ? h("span", { class: "eco" }, e.eco) : null),
-                e.lead ? h("span", { class: "mt-lead" }, `→ ${figText(e.lead)}`) : null])),
-            last.kids.size ? h("ul", {}, rows(last)) : null)
-    })
-    return h("section", { class: "move-map", "aria-labelledby": "move-map-title" },
-        h("h2", { id: "move-map-title" }, "Map of the openings"),
-        h("p", { class: "muted" }, "Read down from the first move: each fork is a choice of move. Tap a name to jump to its board."),
-        h("ul", { class: "mt" }, rows(moveTree(s))),
-        groups.length > 1 ? h("ul", { class: "mt-legend", "aria-label": "Colors" }, groups.map((g, i) =>
-            h("li", {}, h("span", { class: `mt-dot tone-${i % 4}`, "aria-hidden": "true" }), figText(g)))) : null)
+    const plies = s.moves ? s.moves.replace(/\d+\.(\.\.)?/g, " ").trim().split(/\s+/).length : 0
+    // The chapters by the first move after the page's own, in page order: 1...c5 → [Sicilian].
+    const branches = new Map()
+    for (const ch of s.chapters) {
+        const node = mainPath(ch.root)[plies]
+        if (!node) continue
+        if (!branches.has(node.san)) branches.set(node.san, { node, chapters: [] })
+        branches.get(node.san).chapters.push(ch)
+    }
+    const stars = new Set()
+    const star = ch => {
+        const op = cat.openings.find(o => o.id === ch.headers.Course)
+        if (!op) return null
+        const ready = op.courses.some(m => m.available)
+        stars.add(ready ? "ready" : "soon")
+        return h("span", { class: "om-star", title: ready ? "A course in this app" : "Course coming soon" }, ready ? "★" : "☆")
+    }
+    const opening = (ch, move) => h("button", { class: `om-box ${tone(ch)}`, type: "button", onclick: () => jump(ch) },
+        move ? h("span", { class: "om-move" }, label(move)) : null,
+        h("span", { class: "om-name" }, figText(mapName(ch))), star(ch))
+    const item = (box, kids) => h("li", { class: "om-item" }, box, kids ? h("ul", { class: "om-kids" }, kids) : null)
+    const replies = [...branches.values()].map(({ node, chapters }) => chapters.length === 1
+        ? item(opening(chapters[0], node))
+        : item(h("span", { class: "om-box" }, h("span", { class: "om-move" }, label(node))), chapters.map(ch => item(opening(ch)))))
+    const first = h("span", { class: "om-box om-root" }, h("span", { class: "om-move" }, s.moves ? figMoves(s.moves) : s.name))
+
+    return h("section", { class: "opening-map", "aria-labelledby": "opening-map-title" },
+        h("h2", { id: "opening-map-title" }, "Map of the openings"),
+        h("p", { class: "muted" }, "Tap an opening to go to it."),
+        h("ul", { class: "om-tree" }, item(first, replies)),
+        h("ul", { class: "om-legend", "aria-label": "Key" },
+            groups.length > 1 ? groups.map((g, i) => h("li", {}, h("span", { class: `om-dot tone-${i % 4}`, "aria-hidden": "true" }), figText(g))) : null,
+            stars.has("ready") ? h("li", {}, h("span", { class: "om-star", "aria-hidden": "true" }, "★"), "A course in this app") : null,
+            stars.has("soon") ? h("li", {}, h("span", { class: "om-star", "aria-hidden": "true" }, "☆"), "Course coming soon") : null))
 }
 
 export async function surveyView(root, ctx, id) {
@@ -145,7 +142,7 @@ export async function surveyView(root, ctx, id) {
             h("h1", {}, s.name),
             h("p", { class: "course-side" }, s.subtitle || ""),
             ...paras(s.summary, { class: "course-summary" })),
-        moveMap(s, jump),
+        openingMap(s, cat, jump),
         groups.map(g => [
             g.name ? h("h2", { class: "section-title" }, figText(g.name)) : null,
             g.chapters.map(ch => {

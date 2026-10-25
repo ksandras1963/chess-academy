@@ -101,7 +101,7 @@ Each opening can have one puzzle file, named in `content/courses.json` as `"puzz
 
 ## Opening overviews
 
-The overview pages (Replies to 1.e4, Replies to 1.d4, Other first moves) show each opening after its first four moves, with White's and Black's plans and a link to its course. They sit at the top of the main menu and are never drilled. At the top of each page, "Map of the openings" merges all its lines into one branching tree of moves, built from the PGN automatically. Each is one PGN file, listed in `content/courses.json` under `"surveys"` (id, name, eco, moves, file, count, subtitle, summary). The menu shows them in that order. Each chapter is one opening:
+The overview pages (Replies to 1.e4, Replies to 1.d4, Other first moves) show each opening after its first four moves, with White's and Black's plans and a link to its course. They sit at the top of the main menu and are never drilled. At the top of each page, "Map of the openings" is a tree diagram built from the PGN automatically: the page's first move, then each reply to it (taken from each chapter's main line), then the openings by name, colored by `Group` and starred when they have a course. A reply with several openings (1...d5 on the 1.d4 page) branches into them. Tapping a name jumps to that opening. Each is one PGN file, listed in `content/courses.json` under `"surveys"` (id, name, eco, moves, file, count, subtitle, summary). The menu shows them in that order. Each chapter is one opening:
 
 ```
 [Chapter "Benoni Defense and Benko Gambit"]
@@ -125,7 +125,7 @@ Black: Black's plan, the same way.}
 | `Group` | The heading the opening is listed under. |
 | `Diagram` | The position the overview's board shows, usually Black's fourth move. |
 | `Lines` | Only for a chapter with branches: a name for each line, main line first, then the branches in the order they appear. Each line gets its own Watch button. |
-| `Leads` | Optional: where each line transposes to, in `[Lines]` order, e.g. `[Leads "Reversed Dragon | | Queen's Gambit Declined"]`. The map at the top of the page shows it as "→ Queen's Gambit Declined"; an empty entry shows nothing. |
+| `Leads` | Optional: where each line transposes to, in `[Lines]` order, e.g. `[Leads "Reversed Dragon | | Queen's Gambit Declined"]`. Not shown at present: the map lists openings by name only. Kept so a later version can show the transpositions again. |
 | `Course` | Optional: an opening id from `courses.json`. Its built courses are linked; until one is built the page says "course coming soon", and without the header it says "Course coming later". `[Course "none"]` shows no course line, for an opening with no course planned. |
 
 The checker holds every move of both sides to within 0.6 pawns of Stockfish's choice, since an overview shows the usual moves, not mistakes. A gambit that costs a little more can be kept with `[%engine ok]` in that move's note.
