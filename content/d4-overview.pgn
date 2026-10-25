@@ -1,4 +1,5 @@
 [Chapter "Queen's Gambit Declined"]
+[Map "Queen's Gambit"]
 [Group "1...d5: the classical replies"]
 [Opening "Queen's Gambit Declined"]
 [ECO "D30"]
@@ -14,6 +15,7 @@ Black: Hold d5 with ...e6, ...Nf6 and ...Be7, then castle. Free your game with .
 4. Bg5 {Pins the knight that defends d5.} Be7 {Breaks the pin, ready to castle.} *
 
 [Chapter "Tarrasch Defense"]
+[Map "none"]
 [Group "1...d5: the classical replies"]
 [Opening "Tarrasch Defense"]
 [ECO "D32"]
@@ -27,6 +29,7 @@ Black: Accept an isolated d-pawn in return for free, active pieces: ...Nc6, ...N
 4. cxd5 {White's most common reply.} exd5 {The d5-pawn often ends up isolated once the c-pawns are traded.} *
 
 [Chapter "Slav Defense"]
+[Map "none"]
 [Course "queens-gambit"]
 [Group "1...d5: the classical replies"]
 [Opening "Slav Defense"]
@@ -41,6 +44,7 @@ Black: Support d5 with the c-pawn, so the c8 bishop stays free. Bring it out to 
 4. Nf3 {The Three Knights Variation.} Bf5 {The bishop comes out before ...e6 can shut it in.} *
 
 [Chapter "Semi-Slav Defense"]
+[Map "none"]
 [Course "queens-gambit"]
 [Group "1...d5: the classical replies"]
 [Opening "Semi-Slav Defense"]
@@ -53,6 +57,7 @@ Black: Build the c6–d5–e6 wall, then take on c4 once White's bishop has move
 1. d4 d5 2. c4 e6 {Black declines the gambit.} 3. Nc3 Nf6 4. Nf3 c6 {This is the Semi-Slav: the e6-pawn of the Queen's Gambit Declined plus the c6-pawn of the Slav. Black now threatens to take on c4 and hold the pawn with ...b5.} *
 
 [Chapter "Queen's Gambit Accepted"]
+[Map "none"]
 [Course "queens-gambit"]
 [Group "1...d5: the classical replies"]
 [Opening "Queen's Gambit Accepted"]
@@ -67,6 +72,7 @@ Black: Take on c4 to develop freely, but don't try to keep the pawn with ...b5: 
 4. e4 {White takes the whole center.} e5 {Black strikes back at once. 4...e6 is played more often, but it leaves White slightly better.} *
 
 [Chapter "Albin Countergambit"]
+[Map "none"]
 [Course "queens-gambit"]
 [Group "1...d5: the classical replies"]
 [Opening "Queen's Gambit Declined: Albin Countergambit"]
@@ -81,6 +87,7 @@ Black: The d4-pawn cramps White, so develop fast with ...Nc6, ...Be6 or ...Bg4, 
 4. Nf3 {Develops and guards e5.} Nc6 {Attacks e5 and supports d4.} *
 
 [Chapter "King's Indian Defense"]
+[MapReply "Indian Defenses"]
 [Group "1...Nf6: the Indian defenses"]
 [Opening "King's Indian Defense"]
 [ECO "E61"]
@@ -95,6 +102,7 @@ Black: Let White have the center, fianchetto your bishop and castle. Then strike
 4. e4 {White takes the whole center.} d6 {Stops e5 and prepares ...e5 or ...c5.} *
 
 [Chapter "Nimzo-Indian Defense"]
+[MapReply "Indian Defenses"]
 [Group "1...Nf6: the Indian defenses"]
 [Opening "Nimzo-Indian Defense"]
 [ECO "E20"]
@@ -108,6 +116,7 @@ Black: Pin the c3 knight so White can't play e4. Give up the bishop for the knig
 4. Qc2 {The Classical Variation. If Black takes on c3, the queen takes back and White's pawns stay whole.} O-O {Black castles and keeps ...d5, ...c5 and ...Bxc3 in reserve.} *
 
 [Chapter "Grünfeld Defense"]
+[MapReply "Indian Defenses"]
 [Group "1...Nf6: the Indian defenses"]
 [Opening "Grünfeld Defense"]
 [ECO "D80"]
@@ -120,6 +129,7 @@ Black: Let White build the center, then attack it with ...Bg7, ...c5 and ...Nc6.
 4. cxd5 {The Exchange Variation, White's most popular reply.} Nxd5 {After 5.e4 the knight is traded on c3, and White gets the big center Black wants to attack.} *
 
 [Chapter "Queen's Indian Defense"]
+[MapReply "Indian Defenses"]
 [Group "1...Nf6: the Indian defenses"]
 [Opening "Queen's Indian Defense"]
 [ECO "E12"]
@@ -132,6 +142,8 @@ Black: Control e4 and d5 from a distance with ...b6 and ...Bb7. Develop calmly w
 4. g3 {White fianchettoes too, to fight for the long diagonal.} Bb7 {Watches e4 and d5.} *
 
 [Chapter "Benoni Defense and Benko Gambit"]
+[MapReply "Indian Defenses"]
+[Map "Benoni"]
 [Group "1...Nf6: the Indian defenses"]
 [Opening "Benoni Defense"]
 [ECO "A56"]
@@ -160,6 +172,7 @@ Black: Claim e4 with ...f5 and ...Nf6, then pick a setup: Classical (...e6, ...B
 4. Bg5 {Pins the knight that guards e4.} Be7 {Breaks the pin.} *
 
 [Chapter "Budapest Gambit"]
+[Map "none"]
 [Group "Other replies for Black"]
 [Opening "Indian Defense: Budapest Gambit"]
 [ECO "A51"]
@@ -198,6 +211,7 @@ Black: Develop with ...c5, ...Nc6, ...Bd6 and castling, and meet e4 by trading i
 4. Bd3 {The bishop aims at h7 and supports e4.} c5 {Black hits d4 at once.} *
 
 [Chapter "Trompowsky Attack"]
+[Map "none"]
 [Group "White's systems"]
 [Opening "Trompowsky Attack"]
 [ECO "A45"]
@@ -211,6 +225,7 @@ Black: Avoid cheap doubled pawns with ...Ne4, ...e6 or ...d5. Here ...Be7 breaks
 4. e5 Nd5 {The knight finds a central square. Next, 5.Bxe7 Qxe7.} *
 
 [Chapter "Torre Attack"]
+[Map "none"]
 [Group "White's systems"]
 [Opening "Torre Attack: Classical Defense"]
 [ECO "A46"]
@@ -223,6 +238,7 @@ Black: Break the pin with ...Be7, or ask the bishop with ...h6. Then claim the c
 4. e3 {Supports d4 and opens the f1 bishop's diagonal.} d5 {Black takes a share of the center.} *
 
 [Chapter "Catalan Opening"]
+[Map "none"]
 [Group "White's systems"]
 [Opening "Catalan Opening"]
 [ECO "E00"]

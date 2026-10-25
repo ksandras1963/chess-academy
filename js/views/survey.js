@@ -67,8 +67,11 @@ function courseLinks(cat, ch) {
 
 const lineHref = (s, ch, i) => `#/survey/${s.id}/${ch.index}${i ? `/${i}` : ""}`
 
-/** "King's Indian Defense (1...Nf6)" as "King's Indian": a chapter's short name for the map. */
-const mapName = ch => ch.title.replace(/\s*\([^)]*\)$/, "").replace(/ (Defense|Opening)\b/g, "")
+/**
+ * "King's Indian Defense (1...Nf6)" as "King's Indian": a chapter's short name for the map, unless
+ * its [Map "Queen's Gambit"] header names it. [Map "none"] leaves the chapter out of the map.
+ */
+const mapName = ch => ch.headers.Map || ch.title.replace(/\s*\([^)]*\)$/, "").replace(/ (Defense|Opening)\b/g, "")
 
 /**
  * The map at the top of an overview: the page's first move, the replies to it (on "Other first
@@ -77,12 +80,13 @@ const mapName = ch => ch.title.replace(/\s*\([^)]*\)$/, "").replace(/ (Defense|O
  * Each opening jumps to its card. A star marks a course in this app, hollow while it is being written.
  */
 function openingMap(s, cat, jump) {
-    const groups = [...new Set(s.chapters.map(ch => ch.group))]
+    const shown = s.chapters.filter(ch => ch.headers.Map !== "none")
+    const groups = [...new Set(shown.map(ch => ch.group))]
     const tone = ch => `tone-${groups.indexOf(ch.group) % 4}`
     const plies = s.moves ? s.moves.replace(/\d+\.(\.\.)?/g, " ").trim().split(/\s+/).length : 0
     // The chapters by the first move after the page's own, in page order: 1...c5 → [Sicilian].
     const branches = new Map()
-    for (const ch of s.chapters) {
+    for (const ch of shown) {
         const node = mainPath(ch.root)[plies]
         if (!node) continue
         if (!branches.has(node.san)) branches.set(node.san, { node, chapters: [] })
@@ -100,9 +104,13 @@ function openingMap(s, cat, jump) {
         move ? h("span", { class: "om-move" }, label(move)) : null,
         h("span", { class: "om-name" }, figText(mapName(ch))), star(ch))
     const item = (box, kids) => h("li", { class: "om-item" }, box, kids ? h("ul", { class: "om-kids" }, kids) : null)
+    // A reply can carry a family name from its chapters' [MapReply] header: 1...Nf6 "Indian Defenses".
+    const replyName = chapters => chapters.map(ch => ch.headers.MapReply).find(Boolean)
     const replies = [...branches.values()].map(({ node, chapters }) => chapters.length === 1
         ? item(opening(chapters[0], node))
-        : item(h("span", { class: "om-box" }, h("span", { class: "om-move" }, label(node))), chapters.map(ch => item(opening(ch)))))
+        : item(h("span", { class: "om-box" }, h("span", { class: "om-move" }, label(node)),
+            replyName(chapters) ? h("span", { class: "om-name" }, figText(replyName(chapters))) : null),
+        chapters.map(ch => item(opening(ch)))))
     const first = h("span", { class: "om-box om-root" }, h("span", { class: "om-move" }, s.moves ? figMoves(s.moves) : s.name))
 
     return h("section", { class: "opening-map", "aria-labelledby": "opening-map-title" },

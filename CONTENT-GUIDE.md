@@ -127,6 +127,8 @@ Black: Black's plan, the same way.}
 | `Lines` | Only for a chapter with branches: a name for each line, main line first, then the branches in the order they appear. Each line gets its own Watch button. |
 | `Leads` | Optional: where each line transposes to, in `[Lines]` order, e.g. `[Leads "Reversed Dragon | | Queen's Gambit Declined"]`. Not shown at present: the map lists openings by name only. Kept so a later version can show the transpositions again. |
 | `Course` | Optional: an opening id from `courses.json`. Its built courses are linked; until one is built the page says "course coming soon", and without the header it says "Course coming later". `[Course "none"]` shows no course line, for an opening with no course planned. |
+| `Map` | Optional: the opening's name in the map at the top of the page, e.g. `[Map "Queen's Gambit"]`. `[Map "none"]` leaves it out of the map; its card stays on the page. Keeps the map to the main openings. |
+| `MapReply` | Optional: a family name for the reply box the opening sits under, e.g. `[MapReply "Indian Defenses"]` puts "1…♘f6 Indian Defenses" above the King's Indian, Nimzo-Indian and the rest. |
 
 The checker holds every move of both sides to within 0.6 pawns of Stockfish's choice, since an overview shows the usual moves, not mistakes. A gambit that costs a little more can be kept with `[%engine ok]` in that move's note.
 
