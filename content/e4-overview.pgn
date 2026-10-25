@@ -71,49 +71,8 @@ Black: 1...c6 supports ...d5 without blocking the c8 bishop, which comes out to 
 2. d4 d5 3. Nc3 dxe4 {Black gives up the center pawn so the bishop can come out.}
 4. Nxe4 Bf5 {The Classical Variation: the bishop develops before ...e6 shuts it in. White usually hits it with 5.Ng3.} *
 
-[Chapter "Scotch Game (3.d4)"]
-[Group "Other replies"]
-[Opening "Scotch Game: Schmidt Variation"]
-[ECO "C45"]
-[Diagram "4...Nf6"]
-
-{White: Open the center at once with 3.d4 and take back with the knight. You get space and easy development without the slow maneuvering of the Ruy Lopez. A common plan is Nxc6 and e5, gaining space and splitting Black's queenside pawns.
-
-Black: Develop with gain of time: ...Nf6 hits e4, and ...Bc5 hits the d4 knight. After Nxc6 bxc6, use the half-open b-file and fight for the center with ...d5. Your pieces get active early, which makes up for the less tidy pawns.}
-1. e4 e5 {The Open Game: Black meets White in the center at once.}
-2. Nf3 Nc6 3. d4 {This is the Scotch Game. White opens the center at once.} exd4 {Black takes, because holding e5 would leave Black passive.}
-4. Nxd4 {White regains the pawn and has a free center.} Nf6 {This is the Schmidt Variation. The knight hits e4, and White often answers 5.Nxc6 bxc6 6.e5.} *
-
-[Chapter "Petroff Defense (2...Nf6)"]
-[Group "Other replies"]
-[Opening "Petrov's Defense"]
-[ECO "C42"]
-[Diagram "4...Nxe4"]
-
-{White: Black's symmetry gives few chances to go wrong, so aim for a small, lasting edge in space and development. After 4...Nxe4, d4, Bd3, castling and c4 drive the e4 knight back. 5.Nc3, castling long, is a sharper way to play for an attack.
-
-Black: Hit e4 instead of defending e5, and aim for a solid, symmetrical game. After 3.Nxe5, play 3...d6 first: 3...Nxe4? 4.Qe2! costs a pawn, and 4...Nf6?? 5.Nc6+ wins the queen. Develop with ...d5, ...Bd6 and castling; the e4 knight stays strong until White drives it away.}
-1. e4 e5 {The Open Game: Black meets White in the center at once.}
-2. Nf3 Nf6 {This is the Petroff Defense, also spelled Petrov. Black counterattacks e4 instead of defending e5.}
-3. Nxe5 d6 {Black drives the knight back first. Copying White with 3...Nxe4? runs into 4.Qe2!}
-4. Nf3 Nxe4 {Black wins the pawn back, and material is level.} *
-
-[Chapter "King's Gambit (2.f4)"]
-[Group "Other replies"]
-[Opening "King's Gambit Accepted: King's Knight's Gambit"]
-[ECO "C39"]
-[Diagram "4...g4"]
-
-{White: Give the f-pawn to pull Black's e-pawn away, open the f-file and build a big center with d4. Attack quickly: h4 undermines the g5 pawn that holds f4, and Bc4 and castling bring pressure on f7. If the attack stalls, Black's extra pawn tells, so you must keep the initiative.
-
-Black: Take the pawn and hold it with ...g5, then answer h4 with ...g4, gaining time on the f3 knight. Your king's side is loosened, so develop fast and be ready to give the pawn back for safety. A calmer answer is 3...d5, which returns the pawn to develop quickly.}
-1. e4 e5 {The Open Game: Black meets White in the center at once.}
-2. f4 {[%engine ok] This is the King's Gambit. White offers the f-pawn to pull Black's e-pawn away from the center.} exf4 {Black accepts the gambit.}
-3. Nf3 {Stops ...Qh4+ and prepares d4.} g5 {Black guards the f4 pawn.}
-4. h4 {Attacks the g5 pawn, which holds the chain together.} g4 {Black pushes on with gain of time on the f3 knight. White's usual answer is 5.Ne5.} *
-
 [Chapter "Scandinavian Defense (1...d5)"]
-[Group "Other replies"]
+[Group "Main replies"]
 [Opening "Scandinavian Defense: Main Line, Mieses Variation"]
 [ECO "B01"]
 [Diagram "4...Nf6"]
@@ -126,42 +85,13 @@ Black: You remove White's e-pawn at once and develop easily with ...Nf6, ...c6, 
 3. Nc3 {Develops with a gain of time on the queen.} Qa5 {The main retreat. Once White plays d4, the queen pins the c3 knight.}
 4. d4 Nf6 {This is the Mieses Variation. Black develops and keeps an eye on e4.} *
 
-[Chapter "Pirc Defense (1...d6)"]
-[Group "Other replies"]
-[Opening "Pirc Defense: Classical Variation"]
-[ECO "B08"]
-[Diagram "4...Bg7"]
+[Chapter "Uncommon replies to 1.e4"]
+[Group "Other uncommon replies"]
+[Opening "King's Pawn Game"]
+[ECO "B00"]
+[Diagram "1.e4"]
+[Page "e4-uncommon"]
+[Map "none"]
 
-{White: Take the center with e4 and d4 and develop calmly with Nf3, Be2 and castling. Sharper choices are 4.f4 (the Austrian Attack) or Be3, Qd2 and Bh6 against the castled king. Keep the center under control, and push e4–e5 when it gains space.
-
-Black: Let White build the center, then fianchetto with ...g6 and ...Bg7 and castle. Strike at the center later with ...e5 or ...c5, sometimes after ...c6 and ...b5. Once the center opens, the g7 bishop becomes a strong piece.}
-1. e4 d6 {This is the Pirc Defense. Black lets White take the center for now.}
-2. d4 Nf6 {Hits e4, so White develops a piece to defend it.}
-3. Nc3 g6 {Prepares ...Bg7.}
-4. Nf3 {The Classical Variation: calm development.} Bg7 {The bishop aims at the center along the long diagonal. Black castles next.} *
-
-[Chapter "Modern Defense (1...g6)"]
-[Group "Other replies"]
-[Opening "Modern Defense: Standard Defense"]
-[ECO "B06"]
-[Diagram "4...a6"]
-
-{White: Build a broad center and develop with Nc3, Be3 and Qd2. Castling long and pushing h4–h5 against Black's king is a common plan. If Black spends time on ...a6 and ...b5, use your lead in development.
-
-Black: Delay ...Nf6, so the g7 bishop works on d4 and you keep your options open. Gain queenside space with ...a6 and ...b5, then hit the center with ...c5 or ...e5. It is riskier than the Pirc: White gets more space, so you must know the move orders.}
-1. e4 g6 {This is the Modern Defense. Black fianchettoes before deciding where the king's knight goes.}
-2. d4 Bg7 {The bishop already presses on d4.}
-3. Nc3 d6 4. Be3 {White prepares Qd2 and often castles long.} a6 {Prepares ...b5 to gain queenside space.} *
-
-[Chapter "Alekhine Defense (1...Nf6)"]
-[Group "Other replies"]
-[Opening "Alekhine Defense: Modern Variation, Main Line"]
-[ECO "B05"]
-[Diagram "4...Bg4"]
-
-{White: Take the space on offer with e5 and d4. Adding c4 and f4 (the Four Pawns Attack) is the sharpest way. In the Modern Variation (4.Nf3) you develop calmly with Be2, castling and c4, and keep the e5 pawn; pawns pushed too far without support become targets.
-
-Black: Invite White's pawns forward, then attack them, starting with ...d6. ...Bg4 pins the f3 knight, which defends e5 and d4. Develop with ...e6 and ...Be7, then choose the moment to take on e5.}
-1. e4 Nf6 {[%engine ok] This is the Alekhine Defense. Black invites e4–e5.}
-2. e5 Nd5 3. d4 d6 {Black attacks the e5 pawn right away.}
-4. Nf3 {The Modern Variation: White defends e5 with a piece.} Bg4 {Pins the knight that defends e5 and d4.} *
+{Six rarer openings, each played in fewer than 4% of 1.e4 games on Lichess: the Pirc, King's Gambit, Scotch, Petroff, Modern and Alekhine.}
+1. e4 *
