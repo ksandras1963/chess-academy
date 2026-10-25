@@ -377,7 +377,19 @@
       "file": "content/other-overview.pgn",
       "count": "5 openings",
       "subtitle": "The five first moves you meet most besides 1.e4 and 1.d4, with Black's main replies, each played out to move 4.",
-      "summary": "On Lichess, 1.e4 starts 62% of games and 1.d4 26%. Next come 1.c4, the English (4%), and 1.Nf3, the Zukertort (3%). 1.f4, 1.b3 and 1.g3 each start about 1 game in 100. These openings attack the center from the side and develop quietly, so they often turn into a 1.d4 opening or the English.\n\nEach opening has one board and a Watch button for each of Black's main replies, played out to move 4 along the moves club players choose most often on Lichess. Under each board, White's plan and Black's plan are summed up in a few lines."
+      "summary": "Each opening has one board and a Watch button for each of Black's main replies, played out to move 4 along the moves club players choose most often on Lichess. Under each board, White's plan and Black's plan are summed up in a few lines. No course is planned for these openings yet.",
+      "table": {
+        "after": "map",
+        "columns": ["White's first move", "Share", "What kind of game"],
+        "rows": [
+          ["1.c4 (English)", "3.8%", "White controls d5 from the side and often fianchettoes with g3 and Bg2. Positional games; after 1...e5 it is a Sicilian with colors reversed."],
+          ["1.Nf3 (Zukertort)", "3.1%", "The most flexible first move: White develops, stops ...e5 and chooses a setup later. It usually turns into a 1.d4 opening, the English or the Réti."],
+          ["1.f4 (Bird)", "1.0%", "White grabs e5 with the f-pawn: a Dutch Defense with colors reversed. Kingside attacking chances, at some cost to king safety."],
+          ["1.b3 (Nimzo-Larsen)", "0.8%", "White fianchettoes the queen's bishop toward e5 and plays against Black's center from the side. Offbeat, maneuvering games."],
+          ["1.g3 (Hungarian)", "0.7%", "White fianchettoes the king's bishop and decides on the center later, often reaching a King's Indian Attack or an English. Slow and flexible."]
+        ],
+        "note": "Share: how often each first move starts a game, in rated rapid and classical Lichess games between players averaging 1800 to 2199. For comparison, 1.e4 starts 62% of these games and 1.d4 26%."
+      }
     }
   ]
 }
