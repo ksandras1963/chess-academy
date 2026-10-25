@@ -219,9 +219,11 @@ export async function surveyView(root, ctx, id) {
         h("header", { class: "course-head" },
             h("h1", {}, s.name),
             h("p", { class: "course-side" }, figText(s.subtitle || "")),
-            s.table ? introTable(s.table) : null,
+            s.table && s.table.after !== "map" ? introTable(s.table) : null,
             ...paras(s.summary, { class: "course-summary" })),
         s.flow ? flowchart(s, jump) : openingMap(s, cat, jump),
+        // "after": "map" puts the table below the map instead of under the title (the 1.d4 page).
+        s.table && s.table.after === "map" ? introTable(s.table) : null,
         pageCourse,
         groups.map(g => [
             g.name ? h("h2", { class: "section-title" }, figText(g.name)) : null,

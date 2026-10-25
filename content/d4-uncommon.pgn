@@ -27,3 +27,17 @@ Black: Win back e5 with ...Nc6, ...Bb4+ and ...Qe7, developing quickly as you go
 1. d4 Nf6 2. c4 e5 {This is the Budapest Gambit. Black offers the e-pawn at once.}
 3. dxe5 Ng4 {The knight hits e5 straight away.}
 4. Nf3 {The Adler Variation. The knight guards e5.} Nc6 {Attacks e5 a second time.} *
+
+[Chapter "Colle System"]
+[Opening "Queen's Pawn Game: Colle System"]
+[ECO "D04"]
+[Diagram "4...c5"]
+[Course "none"]
+
+{White builds d4, e3, Bd3 and Nbd2, then breaks with e4 to open lines toward Black's king.
+
+White: Build the same setup every game: d4, Nf3, e3, Bd3, Nbd2, c3 and castling. Then break with e3–e4, which opens lines toward Black's king for the d3 bishop.
+
+Black: Develop with ...c5, ...Nc6, ...Bd6 and castling, and meet e4 by trading in the center. Bringing the c8 bishop out to f5 or g4 before ...e6 (the Anti-Colle) blunts White's d3 bishop.}
+1. d4 d5 2. Nf3 Nf6 3. e3 {This is the Colle System. White builds a solid center first.} e6 {Black's most common reply. It shuts in the c8 bishop, so 3...Bf5 and 3...Bg4 are popular too.}
+4. Bd3 {The bishop aims at h7 and supports e4.} c5 {Black hits d4 at once.} *

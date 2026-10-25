@@ -1,6 +1,6 @@
 # Content validation report
 
-Generated 2026-10-25 21:38 · engine Stockfish, depth 18
+Generated 2026-10-25 21:54 · engine Stockfish, depth 18
 
 **No errors.**
 
@@ -638,15 +638,14 @@ None.
 
 ## Overview: Replies to 1.d4 (`content/d4-overview.pgn`)
 
-5 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+4 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
 
 | Chapter | Board after | Opening header | ECO | Line ends | Check |
 |---|---|---|---|---|---|
 | Queen's Gambit | 2.c4 | Queen's Gambit | D06 | 2.c4 0.21 | ok |
+| London System | 4...c5 | Queen's Pawn Game: Accelerated London System | D00 | 4...c5 0.14 | ok |
 | Indian Defenses | 2.c4 | Indian Defense: Normal Variation | A50 | 2.c4 0.17 | ok |
 | Uncommon replies to 1.d4 | 1.d4 | Queen's Pawn Game | A40 | 1.d4 0.19 | ok |
-| London System | 4...c5 | Queen's Pawn Game: Accelerated London System | D00 | 4...c5 0.14 | ok |
-| Colle System | 4...c5 | Queen's Pawn Game: Colle System | D04 | 4...c5 0.13 | ok |
 
 ## Overview: Queen's Gambit (`content/qg-overview.pgn`)
 
@@ -677,12 +676,13 @@ None.
 
 ## Overview: Uncommon replies to 1.d4 (`content/d4-uncommon.pgn`)
 
-2 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+3 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
 
 | Chapter | Board after | Opening header | ECO | Line ends | Check |
 |---|---|---|---|---|---|
 | Dutch Defense | 4...Be7 | Dutch Defense | A80 | 4...Be7 0.42 | ok |
 | Budapest Gambit | 4...Nc6 | Indian Defense: Budapest Gambit | A51 | 4...Nc6 0.69 | ok |
+| Colle System | 4...c5 | Queen's Pawn Game: Colle System | D04 | 4...c5 0.13 | ok |
 
 ## Overview: Other first moves (`content/other-overview.pgn`)
 

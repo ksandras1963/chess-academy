@@ -9,6 +9,21 @@
 {White offers the c-pawn to lure Black's d-pawn away from the center. Black declines it with 2...e6 or 2...c6, or accepts it with 2...dxc4.}
 1. d4 d5 2. c4 {This is the Queen's Gambit.} *
 
+[Chapter "London System"]
+[Group "1...d5: the London System"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+[Diagram "4...c5"]
+
+{White's setup: Bf4, e3, Nf3, c3 and Nbd2. The c3–d4–e3 pawn triangle is hard to break.
+
+White: Play the same setup almost every game: d4, Bf4, e3, Nf3, c3, Nbd2, Bd3 and castling. The c3–d4–e3 pawn triangle is hard to break. Later, Ne5 and a kingside attack are typical.
+
+Black: Hit d4 with ...c5 and ...Nc6, and use ...Qb6 against the b2-pawn the f4 bishop left behind. Trade off White's good bishop with ...Bd6, or chase it with ...Nh5.}
+1. d4 d5 2. Bf4 {This is the London System. The bishop comes out before e3 can shut it in.} Nf6
+3. e3 {Builds the pawn triangle.} e6
+4. Nf3 c5 {The most active answer: Black hits d4 at once.} *
+
 [Chapter "Indian Defenses"]
 [Group "1...Nf6: the Indian Defenses"]
 [Opening "Indian Defense: Normal Variation"]
@@ -27,34 +42,5 @@
 [Page "d4-uncommon"]
 [Map "none"]
 
-{Two rarer replies, each in under 3% of 1.d4 games on Lichess: the Dutch Defense (1...f5) and the Budapest Gambit (1...Nf6 2.c4 e5).}
+{Three rarer openings, each in under 3% of 1.d4 games on Lichess: the Dutch Defense (1...f5), the Budapest Gambit (1...Nf6 2.c4 e5) and White's Colle System (1...d5 2.Nf3 Nf6 3.e3).}
 1. d4 *
-
-[Chapter "London System"]
-[Group "White's systems"]
-[Opening "Queen's Pawn Game: Accelerated London System"]
-[ECO "D00"]
-[Diagram "4...c5"]
-
-{White plays the same setup almost every game: Bf4, e3, Nf3, c3 and Nbd2. Easy to learn and hard to break.
-
-White: Play the same setup almost every game: d4, Bf4, e3, Nf3, c3, Nbd2, Bd3 and castling. The c3–d4–e3 pawn triangle is hard to break. Later, Ne5 and a kingside attack are typical.
-
-Black: Hit d4 with ...c5 and ...Nc6, and use ...Qb6 against the b2-pawn the f4 bishop left behind. Trade off White's good bishop with ...Bd6, or chase it with ...Nh5.}
-1. d4 d5 2. Bf4 {This is the London System. The bishop comes out before e3 can shut it in.} Nf6
-3. e3 {Builds the pawn triangle.} e6
-4. Nf3 c5 {The most active answer: Black hits d4 at once.} *
-
-[Chapter "Colle System"]
-[Group "White's systems"]
-[Opening "Queen's Pawn Game: Colle System"]
-[ECO "D04"]
-[Diagram "4...c5"]
-
-{White builds d4, e3, Bd3 and Nbd2, then breaks with e4. Quiet and easy to learn.
-
-White: Build the same setup every game: d4, Nf3, e3, Bd3, Nbd2, c3 and castling. Then break with e3–e4, which opens lines toward Black's king for the d3 bishop.
-
-Black: Develop with ...c5, ...Nc6, ...Bd6 and castling, and meet e4 by trading in the center. Bringing the c8 bishop out to f5 or g4 before ...e6 (the Anti-Colle) blunts White's d3 bishop.}
-1. d4 d5 2. Nf3 Nf6 3. e3 {This is the Colle System. White builds a solid center first.} e6 {Black's most common reply. It shuts in the c8 bishop, so 3...Bf5 and 3...Bg4 are popular too.}
-4. Bd3 {The bishop aims at h7 and supports e4.} c5 {Black hits d4 at once.} *
