@@ -285,7 +285,20 @@
       "file": "content/e4-uncommon.pgn",
       "count": "6 openings",
       "subtitle": "The Pirc, King's Gambit, Scotch, Petroff, Modern and Alekhine, each played out to move 4.",
-      "summary": "Each of these openings comes up in fewer than 4 of every 100 games that start with 1.e4. They are listed from most to least common on Lichess (rated rapid and classical games, players averaging 1800 to 2199): the Pirc 3.7%, King's Gambit 3.4%, Scotch 3.1%, Petroff 2.8%, Modern 2.4% and Alekhine 1.4%. Three of them start with 1...e5: in the King's Gambit and the Scotch, White chooses the opening; in the Petroff, Black does.\n\nEach board shows the position after four moves of a main line. Press Watch to see the moves played out. Under each board, three lines give White's plan and three give Black's."
+      "table": {
+        "after": "map",
+        "columns": ["Opening", "Share", "What kind of game"],
+        "rows": [
+          ["1...d6 (Pirc)", "3.6%", "Black lets White build a big center, then hits it from the side with a fianchettoed bishop and ...e5 or ...c5. Flexible, and often sharp."],
+          ["1...e5 2.f4 (King's Gambit)", "3.4%", "White gives a pawn to open the f-file and attack at once. Wild, tactical games where the initiative counts for more than the pawn."],
+          ["1...e5 2.Nf3 Nc6 3.d4 (Scotch)", "3.1%", "White opens the center straight away. Open, direct play with quick development and few slow maneuvers."],
+          ["1...e5 2.Nf3 Nf6 (Petroff)", "2.8%", "Black counterattacks e4 instead of defending e5. Symmetrical and solid: hard for White to win against."],
+          ["1...g6 (Modern)", "2.4%", "Like the Pirc, but Black waits with ...Nf6, keeping ...c6 and ...d5 in reserve. Flexible and slow to show its hand."],
+          ["1...Nf6 (Alekhine)", "1.4%", "Black invites White's pawns forward to e5, d4 and c4, then attacks the stretched center. Provocative and unbalanced."]
+        ],
+        "note": "Share: how often each opening comes up in games that start with 1.e4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. In the King's Gambit and the Scotch, White chooses the opening; in the others, Black does."
+      },
+      "summary": "Each board shows the position after four moves of a main line. Press Watch to see the moves played out. Under each board, three lines give White's plan and three give Black's."
     },
     {
       "id": "d4",
