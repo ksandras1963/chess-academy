@@ -187,7 +187,6 @@ main { outline: none; }
 }
 .home-intro { grid-area: intro; max-width: 34rem; }
 .home-brand { margin: 0 0 18px; display: grid; gap: 0; }
-.home-app { font-family: var(--serif); font-size: 1.125rem; color: var(--ink-dim); }
 .academy {
     font-family: "Dancing Script", "Segoe Script", cursive;
     font-weight: 600;

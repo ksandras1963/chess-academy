@@ -50,9 +50,8 @@ export async function homeView(root, ctx) {
 
     const intro = h("div", { class: "home-intro" },
         h("p", { class: "home-brand" },
-            h("span", { class: "home-app" }, "Opening Trainer"),
             h("span", { class: "academy" }, "Sandrasegaran Chess Academy")),
-        h("h1", {}, "Five openings, from both sides of the board"),
+        h("h1", {}, "Openings from both sides of the board"),
         h("p", { class: "lede" }, "Short explanations, then drills that make the moves stick. Written for club players rated about 1500 to 2000."),
         h("p", { class: "lede" }, "The most common openings are 1.e4, then 1.d4, and then others. We will look at each of these on the pages that follow."),
         h("h2", { class: "principles-title" }, "The core opening principles"),
