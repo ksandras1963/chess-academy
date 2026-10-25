@@ -634,6 +634,9 @@ textarea.code {
     width: 100%; padding: 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--felt-raised);
     font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 0.8125rem; resize: vertical;
 }
+/* iPhones zoom the whole page in (board included) when a text box under 16px gets focus, and it stays
+   zoomed. On touch screens the backup-code box is 16px, so pasting a code never enlarges the page. */
+@media (pointer: coarse) { textarea.code { font-size: 16px; } }
 .form-status:empty { display: none; }
 .form-status { padding: 8px 12px; border-left: 3px solid var(--brass); background: var(--felt-raised); }
 .credits { margin: 0; padding-left: 20px; color: var(--ink-dim); display: grid; gap: 4px; }

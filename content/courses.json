@@ -264,6 +264,7 @@
       "subtitle": "The six main openings after 1.e4, each played out to move 4, plus a page for the rarer ones.",
       "foldPlans": true,
       "table": {
+        "after": "map",
         "columns": ["Black's reply", "Share", "What kind of game"],
         "rows": [
           ["1...e5 (Ruy Lopez, Italian and others)", "38%", "The Open Games: both sides fight for the center at once, with quick development and early tactics."],
