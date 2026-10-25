@@ -45,7 +45,11 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+/* No double-tap zoom: on iPhones two quick taps (on a board or the move buttons) zoomed the page in,
+   and a training board, which takes no touch gestures, then blocked pinching back out. Pinch zoom
+   and scrolling still work. */
+html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
+a, button, summary, label { touch-action: manipulation; }
 
 body {
     margin: 0;
@@ -204,7 +208,7 @@ main { outline: none; }
     padding: 12px 16px; border: 1px solid var(--brass); border-radius: 8px;
 }
 .home-board { grid-area: board; width: min(100%, 280px); justify-self: center; }
-.home-board .board-frame { touch-action: auto; } /* display only: let the page scroll over it */
+.home-board .board-frame { touch-action: manipulation; } /* display only: let the page scroll over it */
 .board-caption { margin-top: 10px; font-family: var(--serif); font-size: 0.9375rem; color: var(--ink-dim); text-align: center; }
 .home-index { grid-area: index; }
 
@@ -311,7 +315,7 @@ a.hub-card:hover, a.hub-card:focus-visible { border-color: var(--brass); }
     border: 1px solid var(--rule); border-radius: 8px; background: var(--felt-raised);
     text-decoration: none; color: inherit;
 }
-.puzzle-card .board-frame { touch-action: auto; margin-bottom: 6px; }
+.puzzle-card .board-frame { touch-action: manipulation; margin-bottom: 6px; }
 .puzzle-card:hover, .puzzle-card:focus-visible { border-color: var(--brass); }
 .puzzle-num { font-family: var(--serif); font-size: 1.0625rem; font-weight: 600; }
 .puzzle-meta { font-size: 0.8125rem; color: var(--ink-dim); }
@@ -352,7 +356,7 @@ a.hub-card:hover, a.hub-card:focus-visible { border-color: var(--brass); }
     align-items: start;
 }
 .chapter-board { grid-area: board; display: block; text-decoration: none; color: inherit; }
-.chapter-board .board-frame { touch-action: auto; }
+.chapter-board .board-frame { touch-action: manipulation; }
 a.chapter-board:hover .board-frame, a.chapter-board:focus-visible .board-frame { outline: 2px solid var(--brass); outline-offset: 3px; }
 a.chapter-board:focus-visible { outline: none; }
 .chapter-board-caption { display: block; margin-top: 6px; font-family: var(--serif); font-size: 0.875rem; color: var(--ink-dim); text-align: center; }
