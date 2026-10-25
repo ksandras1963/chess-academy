@@ -251,6 +251,26 @@
         { "id": "scandinavian-white", "side": "white", "repertoire": "To be written" },
         { "id": "scandinavian-black", "side": "black", "repertoire": "To be written" }
       ]
+    },
+    {
+      "id": "london",
+      "name": "London System",
+      "eco": "D00",
+      "moves": "1. d4 d5 2. Bf4",
+      "summary": "White develops the bishop to f4 before e3 can shut it in, then builds the same solid setup in almost every game.",
+      "courses": [
+        { "id": "london-white", "side": "white", "repertoire": "London System" }
+      ]
+    },
+    {
+      "id": "kings-indian",
+      "name": "King's Indian Defense",
+      "eco": "E61",
+      "moves": "1. d4 Nf6 2. c4 g6 3. Nc3",
+      "summary": "Black lets White build a big center, then hits it with ...e5 and attacks on the kingside.",
+      "courses": [
+        { "id": "kings-indian-black", "side": "black", "repertoire": "King's Indian Defense" }
+      ]
     }
   ],
   "surveys": [

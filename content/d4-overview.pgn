@@ -10,6 +10,7 @@
 1. d4 d5 2. c4 {This is the Queen's Gambit.} *
 
 [Chapter "London System"]
+[Course "london"]
 [Group "1...d5: the London System"]
 [Opening "Queen's Pawn Game: Accelerated London System"]
 [ECO "D00"]
@@ -25,6 +26,8 @@ Black: Hit d4 with ...c5 and ...Nc6, and use ...Qb6 against the b2-pawn the f4 b
 4. Nf3 c5 {The most active answer: Black hits d4 at once.} *
 
 [Chapter "Indian Defenses"]
+[Map "King's Indian and other Indian Defenses"]
+[Course "kings-indian"]
 [Group "1...Nf6: the Indian Defenses"]
 [Opening "Indian Defense: Normal Variation"]
 [ECO "A50"]
