@@ -184,5 +184,37 @@
         { "id": "queens-gambit-black", "side": "black", "repertoire": "Queen's Gambit Declined (2...e6)" }
       ]
     }
+  ],
+  "surveys": [
+    {
+      "id": "e4",
+      "name": "Replies to 1.e4",
+      "eco": "B00–C99",
+      "moves": "1. e4",
+      "file": "content/e4-overview.pgn",
+      "count": "8 openings",
+      "subtitle": "Black's eight main replies to 1.e4, each played out to move 4.",
+      "summary": "After 1.e4, Black has four main replies and four other sound ones. 1...e5 meets White in the center at once, 1...c5 fights for d4 from the side, and 1...e6 and 1...c6 prepare ...d5. 1...d5 challenges e4 at once, while the Pirc, Modern and Alekhine let White build a center and attack it later.\n\nEach board shows the position after four moves of a main line. Press Watch to see the moves played out. Under each board, three lines give White's plan and three give Black's. The Italian, French and Caro-Kann link to their courses in this app; the others are coming later."
+    },
+    {
+      "id": "d4",
+      "name": "Replies to 1.d4",
+      "eco": "A40–E99",
+      "moves": "1. d4",
+      "file": "content/d4-overview.pgn",
+      "count": "18 openings",
+      "subtitle": "The 18 openings you meet most after 1.d4, each played out to move 4.",
+      "summary": "1.d4 usually leads to slower, more strategic games than 1.e4: plans and pawn structures matter more than early tactics. The queen guards the d4-pawn, so Black can't attack it at once. Black either meets it with ...d5 (the Queen's Gambit family), develops with ...Nf6 (the Indian defenses), or picks another first move. White, in turn, can skip most theory with a fixed setup such as the London.\n\nThe map below shows how the openings branch from 1.d4: tap a name to jump to its board. Each board shows the position after four moves, mostly the moves club players choose most often on Lichess. Press Watch to see them played out. Under each board, White's plan and Black's plan are summed up in a few lines. The Queen's Gambit openings will link to their course once it is written; the others are coming later."
+    },
+    {
+      "id": "other",
+      "name": "Other first moves",
+      "eco": "A00–A39",
+      "moves": "",
+      "file": "content/other-overview.pgn",
+      "count": "5 openings",
+      "subtitle": "The five first moves you meet most besides 1.e4 and 1.d4, with Black's main replies, each played out to move 4.",
+      "summary": "On Lichess, 1.e4 starts 62% of games and 1.d4 26%. Next come 1.c4, the English (4%), and 1.Nf3, the Zukertort (3%). 1.f4, 1.b3 and 1.g3 each start about 1 game in 100. These openings attack the center from the side and develop quietly, so they often turn into a 1.d4 opening or the English.\n\nEach opening has one board and a Watch button for each of Black's main replies, played out to move 4 along the moves club players choose most often on Lichess. Under each board, White's plan and Black's plan are summed up in a few lines."
+    }
   ]
 }

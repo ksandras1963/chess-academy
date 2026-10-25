@@ -1,6 +1,6 @@
 # Content validation report
 
-Generated 2026-10-24 16:37 · engine Stockfish, depth 18
+Generated 2026-10-25 04:57 · engine Stockfish, depth 18
 
 **No errors.**
 
@@ -440,6 +440,58 @@ None.
 | Trap: 3.f3 and ...Qh4+ (Main line) | 2.14 | C00 French Defense |
 | Trap: 3.f3 and ...Qh4+ (5.g3) | 7.07 | C00 French Defense |
 | Trap: 3.f3 and ...Qh4+ (4.Nc3) | 0.76 | C00 French Defense |
+
+## Overview: Replies to 1.e4 (`content/e4-overview.pgn`)
+
+8 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+
+| Chapter | Board after | Opening header | ECO | Line ends | Check |
+|---|---|---|---|---|---|
+| Italian Game (1...e5) | 4...Nf6 | Italian Game: Classical Variation | C54 | 4...Nf6 0.13 | ok |
+| Sicilian Defense (1...c5) | 4...Nf6 | Sicilian Defense: Modern Variations, Main Line | B54 | 4...Nf6 0.32 | ok |
+| French Defense (1...e6) | 4...Nc6 | French Defense: Advance Variation | C02 | 4...Nc6 0.20 | ok |
+| Caro-Kann Defense (1...c6) | 4...Bf5 | Caro-Kann Defense: Classical Variation | B18 | 4...Bf5 0.30 | ok |
+| Scandinavian Defense (1...d5) | 4...Nf6 | Scandinavian Defense: Main Line, Mieses Variation | B01 | 4...Nf6 0.70 | ok |
+| Pirc Defense (1...d6) | 4...Bg7 | Pirc Defense: Classical Variation | B08 | 4...Bg7 0.55 | ok |
+| Modern Defense (1...g6) | 4...a6 | Modern Defense: Standard Defense | B06 | 4...a6 0.71 | ok |
+| Alekhine Defense (1...Nf6) | 4...Bg4 | Alekhine Defense: Modern Variation, Main Line | B05 | 4...Bg4 0.96 | ok |
+
+## Overview: Replies to 1.d4 (`content/d4-overview.pgn`)
+
+18 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+
+| Chapter | Board after | Opening header | ECO | Line ends | Check |
+|---|---|---|---|---|---|
+| Queen's Gambit Declined | 4...Be7 | Queen's Gambit Declined | D30 | 4...Be7 0.03 | ok |
+| Tarrasch Defense | 4...exd5 | Tarrasch Defense | D32 | 4...exd5 0.27 | ok |
+| Slav Defense | 4...Bf5 | Slav Defense | D10 | 4...Bf5 0.53 | ok |
+| Semi-Slav Defense | 4...c6 | Semi-Slav Defense | D43 | 4...c6 0.23 | ok |
+| Queen's Gambit Accepted | 4...e5 | Queen's Gambit Accepted | D20 | 4...e5 -0.18 | ok |
+| Albin Countergambit | 4...Nc6 | Queen's Gambit Declined: Albin Countergambit | D08 | 4...Nc6 0.66 | ok |
+| King's Indian Defense | 4...d6 | King's Indian Defense | E61 | 4...d6 0.47 | ok |
+| Nimzo-Indian Defense | 4...O-O | Nimzo-Indian Defense | E20 | 4...O-O 0.04 | ok |
+| Grünfeld Defense | 4...Nxd5 | Grünfeld Defense | D80 | 4...Nxd5 0.29 | ok |
+| Queen's Indian Defense | 4...Bb7 | Queen's Indian Defense | E12 | 4...Bb7 0.32 | ok |
+| Benoni Defense and Benko Gambit | 4...exd5 | Benoni Defense | A56 | 4...exd5 0.93; 4...a6 0.57 | ok |
+| Dutch Defense | 4...Be7 | Dutch Defense | A80 | 4...Be7 0.42 | ok |
+| Budapest Gambit | 4...Nc6 | Indian Defense: Budapest Gambit | A51 | 4...Nc6 0.69 | ok |
+| London System | 4...c5 | Queen's Pawn Game: Accelerated London System | D00 | 4...c5 0.14 | ok |
+| Colle System | 4...c5 | Queen's Pawn Game: Colle System | D04 | 4...c5 0.13 | ok |
+| Trompowsky Attack | 4...Nd5 | Trompowsky Attack | A45 | 4...Nd5 0.56 | ok |
+| Torre Attack | 4...d5 | Torre Attack: Classical Defense | A46 | 4...d5 0.23 | ok |
+| Catalan Opening | 4...Be7 | Catalan Opening | E00 | 4...Be7 0.21 | ok |
+
+## Overview: Other first moves (`content/other-overview.pgn`)
+
+5 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+
+| Chapter | Board after | Opening header | ECO | Line ends | Check |
+|---|---|---|---|---|---|
+| English Opening (1.c4) | 4...Nxd5 | English Opening | A10 | 4...Nxd5 0.08; 4...O-O 0.37; 4...Bg7 0.11; 4...Nf6 0.25 | ok |
+| Zukertort Opening (1.Nf3) | 4...c5 | Zukertort Opening | A04 | 4...c5 0.14; 4...e6 0.17; 4...O-O 0.53; 4...g6 0.26 | ok |
+| Bird Opening (1.f4) | 4...Nf6 | Bird Opening | A02 | 4...Nf6 0.11; 4...Bd7 -0.12; 4...g5 0.56 | ok |
+| Nimzo-Larsen Attack (1.b3) | 4...Bd6 | Nimzo-Larsen Attack | A01 | 4...Bd6 0.00; 4...Bd7 0.10; 4...O-O 0.07 | ok |
+| Hungarian Opening (1.g3) | 4...Nc6 | Hungarian Opening | A00 | 4...Nc6 -0.14; 4...O-O 0.15; 4...e5 -0.29 | ok |
 
 ## Puzzles: Italian Game (`content/italian-puzzles.pgn`)
 

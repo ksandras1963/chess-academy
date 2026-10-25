@@ -277,6 +277,23 @@ export function buildCourse(meta, pgnText) {
     return { ...meta, chapters, lines }
 }
 
+/**
+ * Builds an opening overview (courses.json "surveys"): one chapter per opening, never drilled.
+ * Each chapter's [Group] header names the family it is listed under, and its [Diagram] move is
+ * the move that gives the opening its name.
+ */
+export function buildSurvey(meta, pgnText) {
+    let games
+    try {
+        games = parsePgn(pgnText)
+    } catch (e) {
+        throw new ContentError(`${meta.id}: ${e.message}`)
+    }
+    const chapters = games.map((g, i) => buildChapter(g, i, meta))
+    for (const ch of chapters) ch.group = ch.headers.Group || ""
+    return { ...meta, chapters }
+}
+
 /** Learner-side alternatives at a node (side notes that are not drilled). */
 export function sideNotes(node, learner) {
     if (!node.parent || node.color !== learner) return []

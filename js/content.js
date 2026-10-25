@@ -1,11 +1,12 @@
 // Loads the course catalog and course PGNs (cached for the session).
 
 import { Chess } from "../vendor/chess.js/chess.js"
-import { buildCourse, buildPuzzleSet } from "./course-model.js"
+import { buildCourse, buildPuzzleSet, buildSurvey } from "./course-model.js"
 
 let catalogPromise = null
 const courses = new Map()
 const puzzleSets = new Map()
+const surveys = new Map()
 
 // The single-file build ("Opening Trainer.html") embeds the content files here, so it needs no server.
 const embedded = globalThis.__OT_CONTENT__ || null
@@ -32,6 +33,11 @@ export function catalog() {
                         meta.available = Boolean(meta.file)
                         cat.courseById.set(meta.id, meta)
                     }
+                }
+                for (const s of cat.surveys || []) {
+                    const c = new Chess()
+                    c.loadPgn(s.moves)
+                    s.fen = c.fen()
                 }
                 return cat
             })
@@ -61,6 +67,24 @@ export async function puzzles(openingId) {
     const set = { opening: op, items: buildPuzzleSet({ id: op.id }, await readText(op.puzzles, `The file ${op.puzzles} could not be loaded.`)) }
     puzzleSets.set(openingId, set)
     return set
+}
+
+/** An opening overview (courses.json "surveys"), such as the replies to 1.d4. */
+export async function survey(id) {
+    if (surveys.has(id)) return surveys.get(id)
+    const cat = await catalog()
+    const meta = (cat.surveys || []).find(s => s.id === id)
+    if (!meta) throw new Error("There is no overview with that name. Go back to the main menu.")
+    const built = buildSurvey(meta, await readText(meta.file, `The file ${meta.file} could not be loaded.`))
+    surveys.set(id, built)
+    return built
+}
+
+/** The overview an opening sits under (the replies to 1.e4 for the Italian), as a back button: { href, text }. */
+export async function overviewBack(opening) {
+    const all = (await catalog()).surveys || []
+    const s = all.find(s => s.moves && opening.moves.startsWith(s.moves)) || all.find(s => !s.moves)
+    return s ? { href: `#/survey/${s.id}`, text: s.name } : null
 }
 
 let statsPromise = null

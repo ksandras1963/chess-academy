@@ -1,0 +1,87 @@
+[Chapter "English Opening (1.c4)"]
+[Group "The two main alternatives"]
+[Opening "English Opening"]
+[ECO "A10"]
+[Diagram "4...Nxd5"]
+[Lines "King's English | Anglo-Indian Defense | Symmetrical Variation | Agincourt Defense"]
+[Leads "Reversed Dragon | King's Indian setup | Ultra-Symmetrical | Queen's Gambit Declined"]
+[Course "none"]
+
+{White: Control d5 from the side with c4 and Nc3, and put the king's bishop on the long diagonal with g3 and Bg2. Then gain queenside space with a3, Rb1 and b4–b5, backed by the g2 bishop. An early d4 turns many lines into 1.d4 openings.
+
+Black: Take the center with ...e5, or copy White with ...c5, ...Nc6, ...g6 and ...Bg7. 1...e5 gives a Sicilian with colors reversed: Black plays White's usual Sicilian plans, a move behind. With ...Nf6 and ...e6 or ...g6 you can wait for d4 and pick a Queen's Gambit or King's Indian setup.}
+1. c4 {This is the English Opening. The c-pawn controls d5 from the side, as Black's c-pawn does in the Sicilian.} e5 {The King's English, the most common reply (a third of games). It is a Sicilian Defense with colors reversed.}
+(1... Nf6 {The Anglo-Indian Defense. Black develops and waits to see whether White plays d4.} 2. Nc3 g6 {Black prepares to fianchetto too.} 3. g3 Bg7 4. Bg2 O-O {Both king's bishops are on the long diagonals. If White plays d4 later, this can become a King's Indian Defense.})
+(1... c5 {The Symmetrical Variation: Black copies White.} 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 {This is the Ultra-Symmetrical Variation. White often plays for b4 next, prepared by a3 and Rb1.})
+(1... e6 {The Agincourt Defense. Black prepares ...d5.} 2. Nc3 d5 3. cxd5 exd5 4. d4 Nf6 {1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 reaches the same position: the Exchange Variation of the Queen's Gambit Declined.})
+2. Nc3 {This is the Reversed Sicilian. The knight adds control of d5.} Nf6 {Develops and prepares ...d5.}
+3. g3 {This is the Carls-Bremen System. The bishop will go to g2, aiming at d5 and b7.} d5 {This is the Reversed Dragon: a Sicilian Dragon with colors reversed.}
+4. cxd5 Nxd5 {Black's knight stands in the center. After 5.Bg2 it is attacked twice and usually drops back to b6.} *
+
+[Chapter "Zukertort Opening (1.Nf3)"]
+[Group "The two main alternatives"]
+[Opening "Zukertort Opening"]
+[ECO "A04"]
+[Diagram "4...c5"]
+[Lines "London System | Réti Opening | King's Indian Defense | Symmetrical English"]
+[Course "none"]
+
+{White: 1.Nf3 develops a piece, stops ...e5 and keeps every plan open. Choose your setup from Black's reply: d4 for a Queen's Pawn game such as the London, c4 for the Réti or the English, or g3, Bg2 and d3 for the King's Indian Attack. Many 1.Nf3 games end up in a 1.d4 or 1.c4 opening.
+
+Black: Take the center with ...d5, or keep your options open with ...Nf6. Decide which 1.d4 and 1.c4 openings you like, because 1.Nf3 usually transposes into one of them. Against the Réti, gain space with ...d4, or take on c4 and give the pawn back while you develop.}
+1. Nf3 {This is the Zukertort Opening; many players call it the Réti. The knight controls d4 and e5 and stops ...e5.} d5 {The most common reply (37%). Black takes the center.}
+(1... Nf6 {Black waits for White to show a plan.} 2. d4 g6 3. c4 Bg7 4. Nc3 O-O {This is a King's Indian Defense: 1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 O-O reaches the same position.})
+(1... c5 {The Sicilian Invitation: after 2.e4 the game is a Sicilian Defense.} 2. c4 {Played more often than 2.e4. This is the Symmetrical English, reached by a different move order.} Nc6 3. Nc3 Nf6 4. g3 g6 {Both sides will fianchetto the king's bishop, as in the Symmetrical English.})
+2. d4 {The most common move here (35%). White steers toward a 1.d4 opening.}
+(2. c4 {This is the Réti Opening. White attacks d5 from the side.} dxc4 {The Réti Accepted. Black takes a pawn that White can win back.} 3. e3 Nf6 {Black develops and gives the pawn back. The most common move, 3...b5, tries to keep it, but after 4.a4 c6? 5.axb5 cxb5 6.Nc3 White wins it back with a clear advantage (Stockfish +1.8).} 4. Bxc4 e6 {The position looks like a Queen's Gambit Accepted, but White's d-pawn has not moved yet.})
+2... Nf6 3. Bf4 {This is the London System, reached by a different move order.} e6 4. e3 c5 {Black hits d4, the usual counter against the London.} *
+
+[Chapter "Bird Opening (1.f4)"]
+[Group "Less common first moves"]
+[Opening "Bird Opening"]
+[ECO "A02"]
+[Diagram "4...Nf6"]
+[Lines "Dutch Variation | 1...c5 | From's Gambit (dubious)"]
+[Course "none"]
+
+{White: 1.f4 takes control of e5: a Dutch Defense with colors reversed. Develop with Nf3, e3 and Be2 or Bb5, castle, and attack on the kingside, often with Qe1 and Qh4. The pawn on f4 loosens your king, so watch the e1–h4 diagonal.
+
+Black: Take the center with ...d5 and develop quickly with ...Nf6, ...Nc6 and ...Bg4. Fight for e5, the square White's whole setup is built around. From's Gambit, 1...e5, gives a pawn for quick play against White's king, but Stockfish rates it as dubious.}
+1. f4 {This is the Bird Opening. The f-pawn controls e5.} d5 {The most common reply (40%). This is the Dutch Variation: a Dutch Defense with colors reversed.}
+(1... c5 2. Nf3 Nc6 3. e3 d5 4. Bb5 {Pins the knight. White may take on c6 to double Black's pawns and keep a grip on e5.} Bd7 {Breaks the pin.})
+(1... e5 {[%engine ok] This is From's Gambit. Black offers a pawn to open lines toward White's king. Stockfish rates it about two thirds of a pawn worse than 1...Nf6, but it is a dangerous surprise.} 2. fxe5 d6 3. exd6 Bxd6 {Black is a pawn down but threatens ...Qh4+.} 4. Nf3 {Covers h4. After 4.Nc3?? Qh4+ 5.g3 Qxg3+ 6.hxg3 Bxg3# White is mated.} g5 {This is the Lasker Variation. Black plans ...g4 to drive the knight off f3, where it guards h4. Stockfish still prefers White by about half a pawn.})
+2. Nf3 Nc6 3. e3 Bg4 {Pins the f3 knight.} 4. Be2 {Breaks the pin.} Nf6 {Black has developed freely and has a share of the center.} *
+
+[Chapter "Nimzo-Larsen Attack (1.b3)"]
+[Group "Less common first moves"]
+[Opening "Nimzo-Larsen Attack"]
+[ECO "A01"]
+[Diagram "4...Bd6"]
+[Lines "Modern Variation | Classical Variation | Indian Variation"]
+[Course "none"]
+
+{White: Fianchetto the queen's bishop with b3 and Bb2, aiming at e5 and Black's kingside. Add pressure on e5 with e3, Bb5 and Nf3, and be ready to take the c6 knight that defends it. Attack Black's center from the side rather than occupying it.
+
+Black: Build a big center with ...e5 and ...d5, and defend e5 with ...Nc6 and ...Bd6. The center gives you space, but it is a target, so keep it protected. Or contest the long diagonal with your own fianchetto: ...Nf6, ...g6 and ...Bg7.}
+1. b3 {This is the Nimzo-Larsen Attack. The bishop will go to b2.} e5 {The most common reply (37%): the Modern Variation. The e-pawn stands in the bishop's path.}
+(1... d5 {The Classical Variation.} 2. Bb2 c5 3. e3 Nc6 4. Bb5 {Pins the knight.} Bd7 {Breaks the pin. The pawns on c5 and d5 give Black space in the center.})
+(1... Nf6 {The Indian Variation.} 2. Bb2 g6 3. e3 Bg7 4. Nf3 O-O {The two fianchettoed bishops face each other on the long diagonal, with the f6 knight between them.})
+2. Bb2 {Attacks e5 at once.} Nc6 {Defends e5.}
+3. e3 d5 4. Bb5 {Pins the knight that defends e5.} Bd6 {Defends e5 again. 1...d5 2.Bb2 Nc6 3.e3 e5 4.Bb5 Bd6 reaches the same position.} *
+
+[Chapter "Hungarian Opening (1.g3)"]
+[Group "Less common first moves"]
+[Opening "Hungarian Opening"]
+[ECO "A00"]
+[Diagram "4...Nc6"]
+[Lines "1...d5 | Indian Defense | Sicilian Invitation"]
+[Leads " | | King's Indian Attack"]
+[Course "none"]
+
+{White: Fianchetto the king's bishop with g3 and Bg2, castle, and decide on the center later. With Nf3, d3 and e4 you get a King's Indian Attack; with c4 the game becomes an English. Let Black build a center, then attack it with c4 or e4 and the g2 bishop.
+
+Black: Take the center with ...d5 and ...e5 while White plays slowly, and develop with ...Nf6 and ...Nc6. Or copy White's fianchetto with ...Nf6, ...g6 and ...Bg7. A big center needs looking after, because the g2 bishop and c4 will hit it.}
+1. g3 {This is the Hungarian Opening, also called the King's Fianchetto. The bishop will go to g2.} d5 {The most common reply (37%). Black takes the center.}
+(1... Nf6 {The Indian Defense.} 2. Bg2 g6 3. Nf3 Bg7 4. O-O O-O {Both sides have fianchettoed and castled. The position is symmetrical until someone plays in the center, with d4 or c4, or ...d5 or ...c5.})
+(1... c5 {The Sicilian Invitation.} 2. Bg2 Nc6 3. Nf3 d5 4. O-O e5 {Black has a big center, and Stockfish gives Black a small edge. White's g3, Bg2, Nf3 and castling form a King's Indian Attack setup; d3 with e4 or c4 comes next.})
+2. Bg2 e5 {Black builds a full pawn center.} 3. d3 Nf6 4. Nf3 Nc6 {Black has both center pawns and easy development. White's setup is a King's Indian Defense with colors reversed and a move ahead. 1...e5 2.Bg2 d5 3.d3 Nf6 4.Nf3 Nc6, the second most common reply, reaches the same position.} *

@@ -10,6 +10,7 @@ import { learnView } from "./views/learn.js"
 import { drillView, reviewView } from "./views/drill.js"
 import { settingsView } from "./views/settings.js"
 import { puzzlesView, puzzleView } from "./views/puzzles.js"
+import { surveyView, surveyLineView } from "./views/survey.js"
 
 const routes = [
     [/^#?\/?$/, (root, ctx) => homeView(root, ctx)],
@@ -19,6 +20,8 @@ const routes = [
     [/^#\/review$/, (root, ctx) => reviewView(root, ctx)],
     [/^#\/puzzles\/([\w-]+)$/, (root, ctx, m) => puzzlesView(root, ctx, m[1])],
     [/^#\/puzzle\/([\w-]+)\/(\d+)(?:\/(retry))?$/, (root, ctx, m) => puzzleView(root, ctx, m[1], m[2], m[3])],
+    [/^#\/survey\/([\w-]+)$/, (root, ctx, m) => surveyView(root, ctx, m[1])],
+    [/^#\/survey\/([\w-]+)\/(\d+)(?:\/(\d+))?$/, (root, ctx, m) => surveyLineView(root, ctx, m[1], m[2], m[3])],
     [/^#\/settings$/, (root) => settingsView(root)]
 ]
 

@@ -2,7 +2,7 @@
 
 import { Chess } from "../../vendor/chess.js/chess.js"
 import { h, fig, label, paras, sideName, plural, sleep, backBar } from "../ui.js"
-import { puzzles as loadPuzzles } from "../content.js"
+import { puzzles as loadPuzzles, overviewBack } from "../content.js"
 import { mainPath, finalScore } from "../course-model.js"
 import { puzzleRecord, setPuzzleRecord } from "../storage.js"
 import { Board } from "../board.js"
@@ -41,6 +41,7 @@ async function needSet(openingId) {
 
 export async function puzzlesView(root, ctx, openingId) {
     const set = await needSet(openingId)
+    const back = await overviewBack(set.opening)
     if (!ctx.alive()) return
     const op = set.opening
     const st = puzzleStats(set)
@@ -49,7 +50,7 @@ export async function puzzlesView(root, ctx, openingId) {
     const frames = []
 
     root.append(h("section", { class: "puzzles" },
-        backBar(),
+        backBar(back),
         h("header", { class: "course-head" },
             h("h1", {}, `${op.name} puzzles`),
             h("p", { class: "course-summary" },

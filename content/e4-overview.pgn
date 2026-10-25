@@ -1,0 +1,112 @@
+[Chapter "Italian Game (1...e5)"]
+[Group "The four main replies"]
+[Opening "Italian Game: Classical Variation"]
+[ECO "C54"]
+[Diagram "4...Nf6"]
+[Course "italian"]
+
+{White: Develop fast and aim the c4 bishop at f7, Black's weakest square. Prepare d4 with c3, or build slowly with d3, castling, Re1 and the knight route b1–d2–f1–g3. Keep the Italian bishop: drop it back to b3 before ...Na5 can trade it off.
+
+Black: Develop the same way, with ...Bc5, ...Nf6, ...d6 and castling. Keep the c5 bishop with ...a6 and ...Ba7, and keep White's pieces off g5 with ...h6. Free your game with ...d5 once your pieces are ready.}
+1. e4 e5 {The Open Game: Black meets White in the center at once.}
+2. Nf3 {Develops and attacks e5.} Nc6 {Defends e5.}
+3. Bc4 {This is the Italian Game. The bishop aims at f7.} Bc5 {Black's bishop aims at f2 the same way.}
+4. c3 {Prepares d4.} Nf6 {Develops and hits e4 before White can play d4.} *
+
+[Chapter "Sicilian Defense (1...c5)"]
+[Group "The four main replies"]
+[Opening "Sicilian Defense: Modern Variations, Main Line"]
+[ECO "B54"]
+[Diagram "4...Nf6"]
+[Course "sicilian"]
+
+{White: Open the center with Nf3 and d4. After ...cxd4 and Nxd4 you lead in development and have more space. Attack the king, often by castling long and pushing the kingside pawns, because Black's counterplay on the queenside comes fast.
+
+Black: Trading the c-pawn for White's d-pawn leaves you two center pawns against one and a half-open c-file. Counterattack on the queenside with ...a6, ...b5 and the rooks on the c-file. Free your game with the break ...d5 once you have prepared it.}
+1. e4 c5 {This is the Sicilian Defense. The c-pawn controls d4 from the side.}
+2. Nf3 d6 {Stops e4–e5 and prepares ...Nf6.}
+3. d4 {White opens the center at once: the Open Sicilian.} cxd4 {Black trades a wing pawn for a center pawn.}
+4. Nxd4 Nf6 {Hits e4, so White usually defends it with 5.Nc3.} *
+
+[Chapter "French Defense (1...e6)"]
+[Group "The four main replies"]
+[Opening "French Defense: Advance Variation"]
+[ECO "C02"]
+[Diagram "4...Nc6"]
+[Course "french"]
+
+{White: Gain space with 3.e5 and hold the d4–e5 pawn chain with c3 and Nf3. The extra space on the kingside gives you attacking chances there. Keep d4 solid: it is the base of the chain, and Black attacks it all game.
+
+Black: Hit the base of the chain at once with ...c5, then pile up on d4 with ...Nc6, ...Qb6 and often ...Nge7–f5. Later, attack the head of the chain with ...f6. Your light-squared bishop is shut in behind e6, so plan to trade it or free it.}
+1. e4 e6 {This is the French Defense. Black prepares ...d5.}
+2. d4 d5 {Black challenges e4.}
+3. e5 {The Advance Variation: White gains space and closes the center.} c5 {Black attacks the base of White's pawn chain at once.}
+4. c3 {Keeps d4 protected by a pawn.} Nc6 {A second attacker on d4. ...Qb6 often comes next.} *
+
+[Chapter "Caro-Kann Defense (1...c6)"]
+[Group "The four main replies"]
+[Opening "Caro-Kann Defense: Classical Variation"]
+[ECO "B18"]
+[Diagram "4...Bf5"]
+[Course "caro-kann"]
+
+{White: You keep a pawn on d4 and more space. Chase the f5 bishop with Ng3, then gain kingside space with h4–h5. White often castles long and plays for an attack.
+
+Black: 1...c6 supports ...d5 without blocking the c8 bishop, which comes out to f5 before ...e6. Finish developing with ...e6, ...Nd7 and ...Ngf6, then break with ...c5. Your pawns have no weaknesses, so trading pieces suits you.}
+1. e4 c6 {This is the Caro-Kann Defense. Black prepares ...d5 without blocking the c8 bishop.}
+2. d4 d5 3. Nc3 dxe4 {Black gives up the center pawn so the bishop can come out.}
+4. Nxe4 Bf5 {The Classical Variation: the bishop develops before ...e6 shuts it in. White usually hits it with 5.Ng3.} *
+
+[Chapter "Scandinavian Defense (1...d5)"]
+[Group "Other sound replies"]
+[Opening "Scandinavian Defense: Main Line, Mieses Variation"]
+[ECO "B01"]
+[Diagram "4...Nf6"]
+
+{White: Gain time by hitting the queen with Nc3, then develop quickly with d4, Nf3, Bc4 or Bd2, and castle. Black has no pawn in the center, so use your d4 pawn and your lead in development. Bd2 is a useful move: if the c3 knight then moves, the bishop attacks the a5 queen.
+
+Black: You remove White's e-pawn at once and develop easily with ...Nf6, ...c6, ...Bf5 or ...Bg4, and ...e6. Once White's d-pawn has moved, the a5 queen pins the c3 knight. The c6 and e6 pawns give a solid structure like the Caro-Kann's; the price is the time spent with the queen.}
+1. e4 d5 {This is the Scandinavian Defense. Black challenges e4 at once.}
+2. exd5 Qxd5 {This is the Mieses-Kotroc Variation. The queen takes back, but it can be chased.}
+3. Nc3 {Develops with a gain of time on the queen.} Qa5 {The main retreat. Once White plays d4, the queen pins the c3 knight.}
+4. d4 Nf6 {This is the Mieses Variation. Black develops and keeps an eye on e4.} *
+
+[Chapter "Pirc Defense (1...d6)"]
+[Group "Other sound replies"]
+[Opening "Pirc Defense: Classical Variation"]
+[ECO "B08"]
+[Diagram "4...Bg7"]
+
+{White: Take the center with e4 and d4 and develop calmly with Nf3, Be2 and castling. Sharper choices are 4.f4 (the Austrian Attack) or Be3, Qd2 and Bh6 against the castled king. Keep the center under control, and push e4–e5 when it gains space.
+
+Black: Let White build the center, then fianchetto with ...g6 and ...Bg7 and castle. Strike at the center later with ...e5 or ...c5, sometimes after ...c6 and ...b5. Once the center opens, the g7 bishop becomes a strong piece.}
+1. e4 d6 {This is the Pirc Defense. Black lets White take the center for now.}
+2. d4 Nf6 {Hits e4, so White develops a piece to defend it.}
+3. Nc3 g6 {Prepares ...Bg7.}
+4. Nf3 {The Classical Variation: calm development.} Bg7 {The bishop aims at the center along the long diagonal. Black castles next.} *
+
+[Chapter "Modern Defense (1...g6)"]
+[Group "Other sound replies"]
+[Opening "Modern Defense: Standard Defense"]
+[ECO "B06"]
+[Diagram "4...a6"]
+
+{White: Build a broad center and develop with Nc3, Be3 and Qd2. Castling long and pushing h4–h5 against Black's king is a common plan. If Black spends time on ...a6 and ...b5, use your lead in development.
+
+Black: Delay ...Nf6, so the g7 bishop works on d4 and you keep your options open. Gain queenside space with ...a6 and ...b5, then hit the center with ...c5 or ...e5. It is riskier than the Pirc: White gets more space, so you must know the move orders.}
+1. e4 g6 {This is the Modern Defense. Black fianchettoes before deciding where the king's knight goes.}
+2. d4 Bg7 {The bishop already presses on d4.}
+3. Nc3 d6 4. Be3 {White prepares Qd2 and often castles long.} a6 {Prepares ...b5 to gain queenside space.} *
+
+[Chapter "Alekhine Defense (1...Nf6)"]
+[Group "Other sound replies"]
+[Opening "Alekhine Defense: Modern Variation, Main Line"]
+[ECO "B05"]
+[Diagram "4...Bg4"]
+
+{White: Take the space on offer with e5 and d4. Adding c4 and f4 (the Four Pawns Attack) is the sharpest way. In the Modern Variation (4.Nf3) you develop calmly with Be2, castling and c4, and keep the e5 pawn; pawns pushed too far without support become targets.
+
+Black: Invite White's pawns forward, then attack them, starting with ...d6. ...Bg4 pins the f3 knight, which defends e5 and d4. Develop with ...e6 and ...Be7, then choose the moment to take on e5.}
+1. e4 Nf6 {[%engine ok] This is the Alekhine Defense. Black invites e4–e5.}
+2. e5 Nd5 3. d4 d6 {Black attacks the e5 pawn right away.}
+4. Nf3 {The Modern Variation: White defends e5 with a piece.} Bg4 {Pins the knight that defends e5 and d4.} *

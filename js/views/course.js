@@ -2,7 +2,7 @@
 // sections. A section page (basic variations, traps, advanced variations) lists its lines by chapter.
 
 import { h, figText, paras, plural, backBar, label } from "../ui.js"
-import { course as loadCourse, openingStats, puzzles as loadPuzzles } from "../content.js"
+import { course as loadCourse, openingStats, puzzles as loadPuzzles, overviewBack } from "../content.js"
 import { SECTIONS } from "../course-model.js"
 import { status, progress, buildQueue, practiceQueue, newRemainingToday, daysUntil } from "../srs.js"
 import { chapterShare, pct, shortName } from "../stats.js"
@@ -44,9 +44,10 @@ export async function courseView(root, ctx, id, sectionId) {
     const c = await loadCourse(id)
     const stats = await openingStats()
     const set = await loadPuzzles(c.opening.id).catch(() => null)
+    const back = await overviewBack(c.opening)
     if (!ctx.alive()) return
     if (sectionId) return sectionPage(root, ctx, c, stats, SECTIONS.find(s => s.id === sectionId))
-    hubPage(root, c, set)
+    hubPage(root, c, set, back)
 }
 
 function drillAction(c) {
@@ -67,7 +68,7 @@ function drillAction(c) {
     return h("p", { class: "muted" }, "Start with the basic variations below.")
 }
 
-function hubPage(root, c, set) {
+function hubPage(root, c, set, back) {
     const ideas = c.chapters.filter(ch => ch.type === "ideas")
     const card = (href, title, meta, lines) => {
         const p = lines ? progress(lines) : null
@@ -93,7 +94,7 @@ function hubPage(root, c, set) {
     const core = progress(coreLines(c))
 
     root.append(h("section", { class: "course" },
-        backBar(),
+        backBar(back),
         h("header", { class: "course-head" },
             h("h1", {}, c.opening.name),
             h("p", { class: "course-side" }, `As ${c.side === "white" ? "White" : "Black"}: ${c.repertoire}`),

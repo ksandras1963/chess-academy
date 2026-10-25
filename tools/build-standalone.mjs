@@ -92,12 +92,14 @@ export async function buildStandalone() {
 
     const catalogText = await readFile(path.join(root, "content", "courses.json"), "utf8")
     const content = { "content/courses.json": catalogText }
-    for (const op of JSON.parse(catalogText).openings) {
+    const catalog = JSON.parse(catalogText)
+    for (const op of catalog.openings) {
         for (const c of op.courses) {
             if (c.file) content[c.file] = await readFile(path.join(root, c.file), "utf8")
         }
         if (op.puzzles) content[op.puzzles] = await readFile(path.join(root, op.puzzles), "utf8")
     }
+    for (const s of catalog.surveys || []) content[s.file] = await readFile(path.join(root, s.file), "utf8")
     content["content/opening-stats.json"] = await readFile(path.join(root, "content", "opening-stats.json"), "utf8")
 
     let html = await readFile(path.join(root, "index.html"), "utf8")

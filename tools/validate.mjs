@@ -11,7 +11,7 @@ import { readFile, writeFile, readdir, access } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import { Chess } from "../vendor/chess.js/chess.js"
-import { buildCourse, buildPuzzleSet, mainPath, moveLabel, finalScore } from "../js/course-model.js"
+import { buildCourse, buildPuzzleSet, buildSurvey, mainPath, moveLabel, finalScore } from "../js/course-model.js"
 const diagramLabel = ch => (ch.diagram && ch.diagram.node ? moveLabel(ch.diagram.node) : "—")
 import { Engine, DEFAULT_EXE, engineAvailable } from "./engine.mjs"
 import { buildStandalone } from "./build-standalone.mjs"
@@ -206,6 +206,70 @@ for (const meta of courses) {
             "| Line | Eval | Deepest named position |", "|---|---|---|", ...ends, "")
         await writeFile(cachePath, JSON.stringify(cache))
     }
+    report.push(section.join("\n"))
+}
+
+// ---------- Overviews (courses.json "surveys") ----------
+for (const meta of (catalog.surveys || []).filter(() => !onlyCourse)) {
+    const section = [`## Overview: ${meta.name} (\`${meta.file}\`)`, ""]
+    let survey
+    try {
+        survey = buildSurvey(meta, await readFile(path.join(root, meta.file), "utf8"))
+    } catch (e) {
+        errors.push(e.message)
+        report.push([...section, `**ERROR:** ${e.message}`, ""].join("\n"))
+        continue
+    }
+    const rows = []
+    for (const ch of survey.chapters) {
+        const where = `${meta.id} / ${ch.title}`
+        const problems = []
+        if (!ch.diagram) problems.push("no [Diagram] header naming the move whose position the overview's board shows")
+        else if (ch.diagram.error) problems.push(ch.diagram.error)
+        if (ch.headers.Course && ch.headers.Course !== "none" && !catalog.openings.some(o => o.id === ch.headers.Course)) {
+            problems.push(`[Course "${ch.headers.Course}"] is not an opening id in courses.json (or "none")`)
+        }
+        const entries = openings.byName.get(ch.opening)
+        if (!entries) problems.push(`"${ch.opening}" is not a Lichess opening name`)
+        else {
+            if (ch.eco && !entries.some(e => e.eco === ch.eco)) problems.push(`ECO ${ch.eco} does not match "${ch.opening}" (${entries.map(e => e.eco).join("/")})`)
+            const reached = new Set(mainPath(ch.root).map(n => epd(n.fen)))
+            if (!entries.some(e => reached.has(e.epd))) problems.push(`main line never reaches the "${ch.opening}" position`)
+        }
+        // A chapter with branches names each line in its [Lines] header, main line first.
+        const leaves = []
+        const walk = n => (n.children.length ? n.children.forEach(walk) : leaves.push(n))
+        walk(ch.root)
+        const names = (ch.headers.Lines || "").split("|").map(s => s.trim()).filter(Boolean)
+        if (leaves.length > 1 && names.length !== leaves.length) problems.push(`${leaves.length} lines but ${names.length} names in the [Lines] header`)
+        const leads = ch.headers.Leads ? ch.headers.Leads.split("|").length : 0
+        if (leads > leaves.length) problems.push(`${leads} entries in the [Leads] header but only ${leaves.length} lines`)
+        // Both sides' moves are checked: an overview shows the usual moves, not mistakes.
+        if (engine) {
+            const seen = new Set()
+            const all = []
+            const collect = n => { for (const k of n.children) { all.push(k); collect(k) } }
+            collect(ch.root)
+            for (const node of all) {
+                if (seen.has(node.fenBefore + node.uci)) continue
+                seen.add(node.fenBefore + node.uci)
+                const r = await moveLoss(node.fenBefore, node.uci)
+                if (r.loss > LEARNER_LOSS && !node.comments.some(c => /\[%engine ok\]/.test(c))) {
+                    problems.push(`${moveLabel(node)} is ${pawns(r.loss)} worse than ${uciToSan(node.fenBefore, r.best)}`)
+                }
+                process.stdout.write(".")
+            }
+        }
+        for (const p of problems) errors.push(`${where}: ${p}`)
+        const ends = []
+        for (const n of leaves) { // one at a time: the engine answers one question at a time
+            const e = engine ? await evalCached(n.fen) : null
+            ends.push(e ? `${moveLabel(n)} ${pawns((n.color === "w" ? -1 : 1) * e.score)}` : moveLabel(n))
+        }
+        rows.push(`| ${ch.title} | ${diagramLabel(ch)} | ${ch.opening} | ${ch.eco || "—"} | ${ends.join("; ")} | ${problems.length ? `**${problems.join("; ")}**` : "ok"} |`)
+    }
+    section.push(`${survey.chapters.length} chapters. Every move of both sides must be within ${pawns(LEARNER_LOSS)} pawns of Stockfish's choice (depth ${depth}), unless its note says \`[%engine ok]\`. Line ends are scored for White.`, "",
+        "| Chapter | Board after | Opening header | ECO | Line ends | Check |", "|---|---|---|---|---|---|", ...rows, "")
     report.push(section.join("\n"))
 }
 

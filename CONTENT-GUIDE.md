@@ -99,6 +99,37 @@ Each opening can have one puzzle file, named in `content/courses.json` as `"puzz
 - **The checker is strict about puzzles.** For each move the learner must find, Stockfish's first choice has to be that move or an accepted `!` branch, and the move has to be at least 0.7 pawns better than every move that isn't accepted. Each opponent reply up to the `End` move must be within 0.5 pawns of Stockfish's choice. The follow-up and the branches are not checked, so check those lines yourself with `tools/pv.mjs` (see below). If a puzzle fails, start it a move earlier or later, or pick another position.
 - A learner who solves a puzzle with no wrong tries and without "Show answer" gets **Solved**. Otherwise it is marked **To retry**, and the puzzle list offers "Retry missed". Puzzle progress is separate from Review.
 
+## Opening overviews
+
+The overview pages (Replies to 1.e4, Replies to 1.d4, Other first moves) show each opening after its first four moves, with White's and Black's plans and a link to its course. They sit at the top of the main menu and are never drilled. At the top of each page, "Map of the openings" merges all its lines into one branching tree of moves, built from the PGN automatically. Each is one PGN file, listed in `content/courses.json` under `"surveys"` (id, name, eco, moves, file, count, subtitle, summary). The menu shows them in that order. Each chapter is one opening:
+
+```
+[Chapter "Benoni Defense and Benko Gambit"]
+[Group "1...Nf6: the Indian defenses"]
+[Opening "Benoni Defense"]
+[ECO "A56"]
+[Diagram "4...exd5"]
+[Lines "Modern Benoni | Benko Gambit"]
+[Course "queens-gambit"]
+
+{White: White's plan, in two or three short sentences.
+
+Black: Black's plan, the same way.}
+1. d4 Nf6 2. c4 c5 3. d5 e6 {This is the Modern Benoni.}
+(3... b5 {This is the Benko Gambit.} 4. cxb5 a6)
+4. Nc3 exd5 *
+```
+
+| Header | Meaning |
+|---|---|
+| `Group` | The heading the opening is listed under. |
+| `Diagram` | The position the overview's board shows, usually Black's fourth move. |
+| `Lines` | Only for a chapter with branches: a name for each line, main line first, then the branches in the order they appear. Each line gets its own Watch button. |
+| `Leads` | Optional: where each line transposes to, in `[Lines]` order, e.g. `[Leads "Reversed Dragon | | Queen's Gambit Declined"]`. The map at the top of the page shows it as "→ Queen's Gambit Declined"; an empty entry shows nothing. |
+| `Course` | Optional: an opening id from `courses.json`. Its built courses are linked; until one is built the page says "course coming soon", and without the header it says "Course coming later". `[Course "none"]` shows no course line, for an opening with no course planned. |
+
+The checker holds every move of both sides to within 0.6 pawns of Stockfish's choice, since an overview shows the usual moves, not mistakes. A gambit that costs a little more can be kept with `[%engine ok]` in that move's note.
+
 ## After editing: run the checker
 
 ```bash
