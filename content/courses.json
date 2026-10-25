@@ -248,9 +248,35 @@
       "eco": "A40–E99",
       "moves": "1. d4",
       "file": "content/d4-overview.pgn",
-      "count": "18 openings",
-      "subtitle": "The 18 openings you meet most after 1.d4, each played out to move 4.",
-      "summary": "1.d4 usually leads to slower, more strategic games than 1.e4: plans and pawn structures matter more than early tactics. The queen guards the d4-pawn, so Black can't attack it at once. Black either meets it with ...d5 (the Queen's Gambit family), develops with ...Nf6 (the Indian defenses), or picks another first move. White, in turn, can skip most theory with a fixed setup such as the London.\n\nThe map below shows how the openings branch from 1.d4: tap a name to jump to its board. Each board shows the position after four moves, mostly the moves club players choose most often on Lichess. Press Watch to see them played out. Under each board, White's plan and Black's plan are summed up in a few lines. The Queen's Gambit openings link to their courses in this app; the others are coming later."
+      "count": "15 openings",
+      "compact": true,
+      "subtitle": "The Queen's Gambit, the Indian Defenses, and the other main replies.",
+      "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Black usually answers with 1...d5, which White meets with the Queen's Gambit, or with 1...Nf6, the start of the Indian Defenses. Each of those two families has its own page."
+    },
+    {
+      "id": "qg",
+      "parent": "d4",
+      "name": "Queen's Gambit",
+      "eco": "D06–D69",
+      "moves": "1. d4 d5 2. c4",
+      "file": "content/qg-overview.pgn",
+      "count": "6 variations",
+      "compact": true,
+      "course": "queens-gambit",
+      "subtitle": "1.d4 d5 2.c4: the main ways to decline it or take the pawn.",
+      "summary": "White offers the c-pawn to lure Black's d-pawn away from the center. Black declines with 2...e6 or 2...c6, or takes it with 2...dxc4. The map shows how the variations branch, and the courses below teach a full repertoire for each side."
+    },
+    {
+      "id": "indian",
+      "parent": "d4",
+      "name": "Indian Defenses",
+      "eco": "A56–E99",
+      "moves": "1. d4 Nf6 2. c4",
+      "file": "content/indian-overview.pgn",
+      "count": "5 defenses",
+      "compact": true,
+      "subtitle": "1.d4 Nf6 2.c4: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
+      "summary": "Black develops the knight first and keeps the choice of setup open: fianchetto with ...g6, pin with ...Bb4, or hit d4 with ...c5. The map shows where each defense starts."
     },
     {
       "id": "other",

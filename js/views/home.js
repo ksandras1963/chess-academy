@@ -12,8 +12,11 @@ const shortName = title => title.replace(/\s*\(.*\)\s*$/, "").replace(/ (Defense
 export async function homeView(root, ctx) {
     const cat = await catalog()
     const built = await availableCourses()
+    // The first-move overviews only: the Queen's Gambit and Indian Defenses pages ("parent": "d4")
+    // are reached from the 1.d4 page.
+    const firsts = (cat.surveys || []).filter(s => !s.parent)
     // A missing overview file shouldn't take the home page down: its card then shows the subtitle only.
-    const overviews = await Promise.all((cat.surveys || []).map(s => loadSurvey(s.id).catch(() => null)))
+    const overviews = await Promise.all(firsts.map(s => loadSurvey(s.id).catch(() => null)))
     if (!ctx.alive()) return
     const due = built.reduce((n, c) => n + buildQueue(c.lines, { includeNew: false }).length, 0)
 
@@ -21,7 +24,7 @@ export async function homeView(root, ctx) {
     const caption = h("p", { class: "board-caption" })
     const openingIds = new Set(cat.openings.map(op => op.id))
 
-    const firstMoves = (cat.surveys || []).map((s, i) => {
+    const firstMoves = firsts.map((s, i) => {
         const chapters = overviews[i] ? overviews[i].chapters : []
         // "Other first moves" starts from the initial position, so its board shows the most common one (1.c4).
         const lead = !s.moves && chapters[0] && chapters[0].root.children[0]

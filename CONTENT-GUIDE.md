@@ -129,6 +129,24 @@ Black: Black's plan, the same way.}
 | `Course` | Optional: an opening id from `courses.json`. Its built courses are linked; until one is built the page says "course coming soon", and without the header it says "Course coming later". `[Course "none"]` shows no course line, for an opening with no course planned. |
 | `Map` | Optional: the opening's name in the map at the top of the page, e.g. `[Map "Queen's Gambit"]`. `[Map "none"]` leaves it out of the map; its card stays on the page. Keeps the map to the main openings. |
 | `MapReply` | Optional: a family name for the reply box the opening sits under, e.g. `[MapReply "Indian Defenses"]` puts "1…♘f6 Indian Defenses" above the King's Indian, Nimzo-Indian and the rest. |
+| `Page` | Optional: the chapter stands for a page of its own, e.g. `[Page "qg"]` on the 1.d4 page's Queen's Gambit chapter. Its card and its map box open that page instead of playing moves. |
+
+### Family pages and flowcharts
+
+A family with many variations gets its own page, reached from a `[Page]` chapter: the Queen's Gambit (`content/qg-overview.pgn`) and the Indian Defenses (`content/indian-overview.pgn`), both under Replies to 1.d4. In `courses.json` such a page has `"parent": "d4"`, which keeps it off the main menu and gives it a back button to its parent. Two more optional fields: `"compact": true` keeps each card short (its White and Black plans fold away under a button, and only built courses are linked), and `"course": "queens-gambit"` links that course under the flowchart.
+
+A family page starts with a flowchart instead of the map: a chapter with `[Type "map"]`, written as one game with branches. Every move with a note becomes a box showing the moves since the box before it and the note as its name; an empty note `{}` makes a box with moves only. A box named exactly like an opening card on the page (its title or a `[Lines]` name) opens that card, and `[%course white]` or `[%course black]` in a note stars a line the course teaches:
+
+```
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. d4 d5 2. c4 {Queen's Gambit} e6 {Queen's Gambit Declined}
+(2... c6 {Slav Defense} 3. Nf3 (3. cxd5 cxd5 {Exchange Variation}) Nf6 4. Nc3 dxc4 {Main line})
+3. Nc3 Nf6 (3... c5 {Tarrasch Defense}) 4. Bg5 {[%course black] Main line} *
+```
+
+A branch goes right after the move it replaces, so `(3. cxd5 ...)` follows `3. Nf3`, not the end of that line. The checker reports a misplaced branch as an illegal move.
 
 The checker holds every move of both sides to within 0.6 pawns of Stockfish's choice, since an overview shows the usual moves, not mistakes. A gambit that costs a little more can be kept with `[%engine ok]` in that move's note.
 

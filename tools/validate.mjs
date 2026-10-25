@@ -221,11 +221,37 @@ for (const meta of (catalog.surveys || []).filter(() => !onlyCourse)) {
         continue
     }
     const rows = []
+    const surveyIds = new Set((catalog.surveys || []).map(s => s.id))
+    if (meta.parent && !surveyIds.has(meta.parent)) errors.push(`courses.json / ${meta.id}: "parent" ${meta.parent} is not an overview id`)
+    // Both sides' moves are checked: an overview shows the usual moves, not mistakes.
+    const checkMoves = async (root, problems) => {
+        if (!engine) return
+        const seen = new Set()
+        const all = []
+        const collect = n => { for (const k of n.children) { all.push(k); collect(k) } }
+        collect(root)
+        for (const node of all) {
+            if (seen.has(node.fenBefore + node.uci)) continue
+            seen.add(node.fenBefore + node.uci)
+            const r = await moveLoss(node.fenBefore, node.uci)
+            if (r.loss > LEARNER_LOSS && !node.comments.some(c => /\[%engine ok\]/.test(c))) {
+                problems.push(`${moveLabel(node)} is ${pawns(r.loss)} worse than ${uciToSan(node.fenBefore, r.best)}`)
+            }
+            process.stdout.write(".")
+        }
+    }
+    if (survey.flow) {
+        const problems = []
+        await checkMoves(survey.flow.root, problems)
+        for (const p of problems) errors.push(`${meta.id} / ${survey.flow.title}: ${p}`)
+        rows.push(`| ${survey.flow.title} (flowchart) | — | — | — | — | ${problems.length ? `**${problems.join("; ")}**` : "ok"} |`)
+    }
     for (const ch of survey.chapters) {
         const where = `${meta.id} / ${ch.title}`
         const problems = []
         if (!ch.diagram) problems.push("no [Diagram] header naming the move whose position the overview's board shows")
         else if (ch.diagram.error) problems.push(ch.diagram.error)
+        if (ch.headers.Page && !surveyIds.has(ch.headers.Page)) problems.push(`[Page "${ch.headers.Page}"] is not an overview id in courses.json`)
         if (ch.headers.Course && ch.headers.Course !== "none" && !catalog.openings.some(o => o.id === ch.headers.Course)) {
             problems.push(`[Course "${ch.headers.Course}"] is not an opening id in courses.json (or "none")`)
         }
@@ -244,22 +270,7 @@ for (const meta of (catalog.surveys || []).filter(() => !onlyCourse)) {
         if (leaves.length > 1 && names.length !== leaves.length) problems.push(`${leaves.length} lines but ${names.length} names in the [Lines] header`)
         const leads = ch.headers.Leads ? ch.headers.Leads.split("|").length : 0
         if (leads > leaves.length) problems.push(`${leads} entries in the [Leads] header but only ${leaves.length} lines`)
-        // Both sides' moves are checked: an overview shows the usual moves, not mistakes.
-        if (engine) {
-            const seen = new Set()
-            const all = []
-            const collect = n => { for (const k of n.children) { all.push(k); collect(k) } }
-            collect(ch.root)
-            for (const node of all) {
-                if (seen.has(node.fenBefore + node.uci)) continue
-                seen.add(node.fenBefore + node.uci)
-                const r = await moveLoss(node.fenBefore, node.uci)
-                if (r.loss > LEARNER_LOSS && !node.comments.some(c => /\[%engine ok\]/.test(c))) {
-                    problems.push(`${moveLabel(node)} is ${pawns(r.loss)} worse than ${uciToSan(node.fenBefore, r.best)}`)
-                }
-                process.stdout.write(".")
-            }
-        }
+        await checkMoves(ch.root, problems)
         for (const p of problems) errors.push(`${where}: ${p}`)
         const ends = []
         for (const n of leaves) { // one at a time: the engine answers one question at a time

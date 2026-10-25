@@ -462,6 +462,28 @@ button.om-box:hover, button.om-box:focus-visible { border-color: var(--tone); }
 .om-legend li { display: inline-flex; align-items: center; gap: 6px; }
 .om-dot { width: 10px; height: 10px; border-radius: 2px; background: var(--tone); }
 
+/* "Map of the variations" (the Queen's Gambit and Indian Defenses pages): the same tree, with each
+   box showing its moves over its name. Boxes that open a card on the page have a gold edge. */
+.fc-box { flex-direction: column; align-items: flex-start; gap: 0; }
+.fc-box .om-move { font-size: 0.9375rem; }
+.fc-name { font-family: var(--serif); font-size: 0.9375rem; color: var(--ink-dim); }
+button.fc-box .fc-name { color: var(--ink); }
+.fc-scroll { overflow-x: auto; }
+/* Left to right, boxes of one width line up in columns, like a printed flowchart. */
+@media (min-width: 760px) { .fc-box { min-width: 13rem; } }
+.fc-key { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 0.8125rem; color: var(--ink-dim); }
+.survey-courses { margin-top: 16px; }
+
+/* Compact overview cards: the plans fold away under a button. */
+.plans-more { margin-top: 10px; max-width: 40rem; }
+.plans-more > summary {
+    display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 12px;
+    border: 1px solid var(--rule); border-radius: 6px; cursor: pointer; font-size: 0.875rem; color: var(--ink-dim);
+}
+.plans-more > summary:hover { border-color: var(--brass); color: var(--ink); }
+.plans-more[open] > summary { color: var(--ink); }
+.plans-more .plans { margin-top: 8px; }
+
 /* ---------- trainer ---------- */
 
 .view:has(.trainer) { padding-top: 16px; }

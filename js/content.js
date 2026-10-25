@@ -83,7 +83,9 @@ export async function survey(id) {
 /** The overview an opening sits under (the replies to 1.e4 for the Italian), as a back button: { href, text }. */
 export async function overviewBack(opening) {
     const all = (await catalog()).surveys || []
-    const s = all.find(s => s.moves && opening.moves.startsWith(s.moves)) || all.find(s => !s.moves)
+    // The closest one: the Queen's Gambit page (1.d4 d5 2.c4) before Replies to 1.d4.
+    const s = all.filter(s => s.moves && opening.moves.startsWith(s.moves)).sort((a, b) => b.moves.length - a.moves.length)[0] ||
+        all.find(s => !s.moves)
     return s ? { href: `#/survey/${s.id}`, text: s.name } : null
 }
 

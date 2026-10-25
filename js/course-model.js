@@ -4,7 +4,7 @@
 import { Chess, DEFAULT_POSITION } from "../vendor/chess.js/chess.js"
 import { parsePgn, parseComment } from "./pgn.js"
 
-export const CHAPTER_TYPES = ["line", "trap", "ideas", "puzzle"]
+export const CHAPTER_TYPES = ["line", "trap", "ideas", "puzzle", "map"] // "map": an overview's flowchart
 export const LEVELS = ["basic", "advanced"]
 
 /**
@@ -117,7 +117,7 @@ function buildChapter(game, index, course) {
         headers: h,
         root
     }
-    chapter.diagram = type === "ideas" || type === "puzzle" ? null : chapterDiagram(chapter)
+    chapter.diagram = type === "ideas" || type === "puzzle" || type === "map" ? null : chapterDiagram(chapter)
     return chapter
 }
 
@@ -267,7 +267,7 @@ export function buildCourse(meta, pgnText) {
     const seen = new Set()
     const lines = []
     for (const ch of chapters) {
-        if (ch.type === "ideas") continue
+        if (ch.type === "ideas" || ch.type === "map") continue
         for (const line of extractLines(ch, meta)) {
             if (seen.has(line.id)) continue
             seen.add(line.id)
@@ -280,7 +280,8 @@ export function buildCourse(meta, pgnText) {
 /**
  * Builds an opening overview (courses.json "surveys"): one chapter per opening, never drilled.
  * Each chapter's [Group] header names the family it is listed under, and its [Diagram] move is
- * the move that gives the opening its name.
+ * the position its board shows. An optional [Type "map"] chapter is the page's flowchart, kept
+ * apart as `flow`; the openings are numbered without it, since links use those numbers.
  */
 export function buildSurvey(meta, pgnText) {
     let games
@@ -289,9 +290,13 @@ export function buildSurvey(meta, pgnText) {
     } catch (e) {
         throw new ContentError(`${meta.id}: ${e.message}`)
     }
-    const chapters = games.map((g, i) => buildChapter(g, i, meta))
-    for (const ch of chapters) ch.group = ch.headers.Group || ""
-    return { ...meta, chapters }
+    const all = games.map((g, i) => buildChapter(g, i, meta))
+    const chapters = all.filter(ch => ch.type !== "map")
+    chapters.forEach((ch, i) => {
+        ch.index = i
+        ch.group = ch.headers.Group || ""
+    })
+    return { ...meta, chapters, flow: all.find(ch => ch.type === "map") || null }
 }
 
 /** Learner-side alternatives at a node (side notes that are not drilled). */

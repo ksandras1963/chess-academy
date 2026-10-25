@@ -1,6 +1,6 @@
 # Content validation report
 
-Generated 2026-10-25 05:00 · engine Stockfish, depth 18
+Generated 2026-10-25 20:52 · engine Stockfish, depth 18
 
 **No errors.**
 
@@ -441,16 +441,188 @@ None.
 | Trap: 3.f3 and ...Qh4+ (5.g3) | 7.07 | C00 French Defense |
 | Trap: 3.f3 and ...Qh4+ (4.Nc3) | 0.76 | C00 French Defense |
 
+## Queen's Gambit — as White (`queens-gambit-white`)
+
+34 chapters, 48 drillable lines (basic 12, traps 13, advanced 23), 410 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Exchange: 5...Be7 | 5...Be7 | Queen's Gambit Declined: Exchange Variation, Reshevsky Variation | D36 | ok |
+| Exchange: 5...c6 | 5...c6 | Queen's Gambit Declined: Exchange Variation, Reshevsky Variation | D36 | ok |
+| Exchange: 4...Nxd5 | 4...Nxd5 | Queen's Gambit Declined: Semi-Tarrasch Defense, Exchange Variation | D41 | ok |
+| Slav: 4...e6 | 4...e6 | Queen's Gambit Declined: Exchange Variation, Reshevsky Variation | D36 | ok |
+| Slav: 4...Bf5 | 4...Bf5 | Slav Defense: Three Knights Variation | D15 | ok |
+| Accepted: 3...Nf6 | 3...Nf6 | Queen's Gambit Accepted: Furman Variation | D27 | ok |
+| Accepted: 3...e5 | 3...e5 | Queen's Gambit Accepted: Old Variation | D20 | ok |
+| Marshall: 3...Nxd5 | 3...Nxd5 | Queen's Gambit Declined: Marshall Defense | D06 | ok |
+| Albin: 4...Nc6 | 4...Nc6 | Queen's Gambit Declined: Albin Countergambit, Normal Line | D08 | ok |
+| Exchange: 5...Nbd7 and 5...Bb4 | 5...Nbd7 | Queen's Gambit Declined: Exchange Variation, Reshevsky Variation | D36 | ok |
+| QGD: 3...c6 | 3...c6 | Semi-Slav Defense: Accelerated Move Order | D31 | ok |
+| QGD: 3...Bb4 | 3...Bb4 | Queen's Gambit Declined: Queen's Knight Variation | D31 | ok |
+| QGD: 3...c5 | 3...c5 | Tarrasch Defense: Classical Variation, Carlsbad Variation | D34 | ok |
+| Slav: 5...cxd5 | 5...cxd5 | Semi-Slav Defense | D43 | ok |
+| Slav: ...Bg4 and Ne5 | 4...Bg4 | Slav Defense: Three Knights Variation | D15 | ok |
+| Slav: 4...dxc4 | 4...dxc4 | Slav Defense: Czech Variation, Classical System, Main Line | D19 | ok |
+| Slav: 4...g6 | 4...g6 | Slav Defense: Schlechter Variation | D15 | ok |
+| Slav: 3...dxc4 | 3...dxc4 | Slav Defense: Modern Line | D11 | ok |
+| Slav: 3...Bf5 | 3...Bf5 | Slav Defense: Modern Line | D11 | ok |
+| Accepted: 3...Bf5 | 3...Bf5 | Queen's Gambit Accepted: Old Variation | D20 | ok |
+| Marshall: other fourth moves | 4...Bg4 | Queen's Gambit Declined: Marshall Defense | D06 | ok |
+| Marshall: 3...Qxd5 | 3...Qxd5 | Queen's Gambit Declined: Marshall Defense | D06 | ok |
+| Other second moves | 2...Bf5 | Queen's Gambit Declined: Baltic Defense | D06 | ok |
+| Trap: 3...b5 and 4.a4 | 3...b5 | Queen's Gambit Accepted: Old Variation | D20 | ok |
+| Trap: 5...Bg4? and Qb3 | 5...Bg4 | Queen's Gambit Accepted: Old Variation | D20 | ok |
+| Trap: 7...Nh5? and Nxd5 | 7...Nh5 | Queen's Gambit Declined: Exchange Variation, Reshevsky Variation | D36 | ok |
+| Trap: ...b6? and ...Qd7? against Qb3 | 6...b6 | Slav Defense: Three Knights Variation | D15 | ok |
+| Trap: the Greek gift | 7...O-O | Queen's Gambit Declined: Marshall Defense | D06 | ok |
+| Trap: 7...Ne5? and Nxe5 | 7...Ne5 | Queen's Gambit Declined: Marshall Defense | D06 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+| Line | Move | Engine prefers | Loss |
+|---|---|---|---|
+| Trap: 7...Nh5? and Nxd5 (Main line) | 11.Bb5+ | Qxb7 | 0.74 |
+| Trap: 7...Nh5? and Nxd5 (Main line) | 12.Bxc6+ | Qxb7 | 1.35 |
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Exchange: 5...Be7 (Main line) | 0.11 | D36 Queen's Gambit Declined: Exchange Variation, Reshevsky Variation |
+| Exchange: 5...c6 (Main line) | 0.17 | D36 Queen's Gambit Declined: Exchange Variation, Reshevsky Variation |
+| Exchange: 4...Nxd5 (Main line) | 0.15 | D41 Queen's Gambit Declined: Semi-Tarrasch Defense, Exchange Variation |
+| Slav: 4...e6 (Main line) | 0.34 | D36 Queen's Gambit Declined: Exchange Variation, Reshevsky Variation |
+| Slav: 4...Bf5 (Main line) | 0.48 | D15 Slav Defense: Three Knights Variation |
+| Accepted: 3...Nf6 (Main line) | 0.13 | D27 Queen's Gambit Accepted: Furman Variation |
+| Accepted: 3...Nf6 (5...Be7) | 0.43 | D26 Queen's Gambit Accepted: Normal Variation, Traditional System |
+| Accepted: 3...Nf6 (3...e6) | 0.14 | D20 Queen's Gambit Accepted: Old Variation |
+| Accepted: 3...e5 (Main line) | 0.33 | D20 Queen's Gambit Accepted: Old Variation |
+| Marshall: 3...Nxd5 (Main line) | 2.48 | D06 Queen's Gambit Declined: Marshall Defense |
+| Marshall: 3...Nxd5 (4...Nc6) | 1.86 | D06 Queen's Gambit Declined: Marshall Defense |
+| Albin: 4...Nc6 (Main line) | 1.69 | D08 Queen's Gambit Declined: Albin Countergambit, Normal Line |
+| Exchange: 5...Nbd7 and 5...Bb4 (Main line) | 0.23 | D36 Queen's Gambit Declined: Exchange Variation, Reshevsky Variation |
+| Exchange: 5...Nbd7 and 5...Bb4 (5...Bb4) | 0.40 | D35 Queen's Gambit Declined: Exchange Variation, Positional Variation |
+| QGD: 3...c6 (Main line) | 0.16 | D31 Semi-Slav Defense: Accelerated Move Order |
+| QGD: 3...c6 (4...cxd5) | 0.20 | D31 Semi-Slav Defense: Accelerated Move Order |
+| QGD: 3...Bb4 (Main line) | 0.11 | D31 Queen's Gambit Declined: Queen's Knight Variation |
+| QGD: 3...c5 (Main line) | 0.16 | D34 Tarrasch Defense: Classical Variation, Carlsbad Variation |
+| QGD: 3...c5 (4...cxd4) | 0.39 | D32 Tarrasch Defense: Schara Gambit |
+| Slav: 5...cxd5 (Main line) | 0.23 | D43 Semi-Slav Defense |
+| Slav: ...Bg4 and Ne5 (Main line) | 4.23 | D15 Slav Defense: Three Knights Variation |
+| Slav: ...Bg4 and Ne5 (3...Bg4) | 4.47 | D11 Slav Defense: Modern Line |
+| Slav: 4...dxc4 (Main line) | 0.31 | D19 Slav Defense: Czech Variation, Classical System, Main Line |
+| Slav: 4...g6 (Main line) | 0.43 | D15 Slav Defense: Schlechter Variation |
+| Slav: 3...dxc4 (Main line) | 0.42 | D11 Slav Defense: Modern Line |
+| Slav: 3...Bf5 (Main line) | 4.50 | D11 Slav Defense: Modern Line |
+| Accepted: 3...Bf5 (Main line) | 0.93 | D20 Queen's Gambit Accepted: Old Variation |
+| Marshall: other fourth moves (Main line) | 2.09 | D06 Queen's Gambit Declined: Marshall Defense |
+| Marshall: other fourth moves (4...g6) | 1.48 | D06 Queen's Gambit Declined: Marshall Defense |
+| Marshall: 3...Qxd5 (Main line) | 1.51 | D06 Queen's Gambit Declined: Marshall Defense |
+| Marshall: 3...Qxd5 (4...Qa5) | 1.88 | D06 Queen's Gambit Declined: Marshall Defense |
+| Other second moves (Main line) | 3.73 | D06 Queen's Gambit Declined: Baltic Defense |
+| Other second moves (3...Bxb1) | 1.10 | D06 Queen's Gambit Declined: Baltic Defense |
+| Other second moves (2...c5) | 0.45 | D06 Queen's Gambit Declined: Austrian Defense |
+| Other second moves (2...Nc6) | 0.65 | D07 Queen's Gambit Declined: Chigorin Defense |
+| Trap: 3...b5 and 4.a4 (Main line) | 6.07 | D20 Queen's Gambit Accepted: Old Variation |
+| Trap: 3...b5 and 4.a4 (4...b4) | 0.96 | D20 Queen's Gambit Accepted: Old Variation |
+| Trap: 3...b5 and 4.a4 (4...a6) | 7.38 | D20 Queen's Gambit Accepted: Old Variation |
+| Trap: 5...Bg4? and Qb3 (Main line) | 100.00 | D20 Queen's Gambit Accepted: Old Variation |
+| Trap: 5...Bg4? and Qb3 (6...e6) | 2.43 | D20 Queen's Gambit Accepted: Old Variation |
+| Trap: 5...Bg4? and Qb3 (6...Na5) | 8.36 | D20 Queen's Gambit Accepted: Old Variation |
+| Trap: 7...Nh5? and Nxd5 (Main line) | 5.66 | D36 Queen's Gambit Declined: Exchange Variation, Reshevsky Variation |
+| Trap: 7...Nh5? and Nxd5 (9...Qd6) | 3.26 | D36 Queen's Gambit Declined: Exchange Variation, Reshevsky Variation |
+| Trap: ...b6? and ...Qd7? against Qb3 (Main line) | 5.89 | D15 Slav Defense: Three Knights Variation |
+| Trap: ...b6? and ...Qd7? against Qb3 (6...Qd7) | 5.42 | D15 Slav Defense: Three Knights Variation |
+| Trap: the Greek gift (Main line) | 7.52 | D06 Queen's Gambit Declined: Marshall Defense |
+| Trap: 7...Ne5? and Nxe5 (Main line) | 6.26 | D06 Queen's Gambit Declined: Marshall Defense |
+| Trap: 7...Ne5? and Nxe5 (7...Bxf3) | 6.57 | D06 Queen's Gambit Declined: Marshall Defense |
+
+## Queen's Gambit — as Black (`queens-gambit-black`)
+
+20 chapters, 29 drillable lines (basic 12, traps 2, advanced 15), 240 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Tartakower: 8.cxd5 | 8.cxd5 | Queen's Gambit Declined: Tartakower Defense, Makogonov Exchange Variation | D59 | ok |
+| Tartakower: 8.Bd3 | 8.Bd3 | Queen's Gambit Declined: Tartakower Defense | D58 | ok |
+| Tartakower: 7.Bxf6 | 7.Bxf6 | Queen's Gambit Declined: Anti-Tartakower Variation | D55 | ok |
+| Exchange: 4.cxd5 | 4.cxd5 | Queen's Gambit Declined: Exchange Variation, Reshevsky Variation | D36 | ok |
+| Three Knights: 5.Bf4 | 5.Bf4 | Queen's Gambit Declined: Harrwitz Attack | D37 | ok |
+| Three Knights: 5.e3 | 5.e3 | Queen's Gambit Declined: Three Knights Variation | D37 | ok |
+| Catalan: 4.g3 | 4.g3 | Catalan Opening: Open Defense, Classical Line | E05 | ok |
+| Tartakower: 11.Rc1 | 11.Rc1 | Queen's Gambit Declined: Tartakower Defense | D59 | ok |
+| Tartakower: other eighth moves | 8.Be2 | Queen's Gambit Declined: Tartakower Defense | D58 | ok |
+| Tartakower: 5.cxd5 and 5.Bxf6 | 5.cxd5 | Queen's Gambit Declined: Exchange Variation, Positional Variation | D35 | ok |
+| Exchange: 5.Nf3 and 5.Bf4 | 5.Nf3 | Queen's Gambit Declined: Exchange Variation | D35 | ok |
+| Three Knights: 5.cxd5 and 5.g3 | 5.cxd5 | Queen's Gambit Declined: Three Knights Variation | D37 | ok |
+| Catalan: 7.Ne5 | 7.Ne5 | Catalan Opening: Open Defense, Classical Line | E05 | ok |
+| Other third moves | 3.a3 | Queen's Gambit Declined | D30 | ok |
+| Trap: the Elephant trap | 6.Nxd5 | Queen's Gambit Declined: Exchange Variation, Positional Variation | D35 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Tartakower: 8.cxd5 (Main line) | -0.36 | D59 Queen's Gambit Declined: Tartakower Defense, Makogonov Exchange Variation |
+| Tartakower: 8.cxd5 (5.Nf3) | -0.70 | D55 Queen's Gambit Declined: Neo-Orthodox Variation |
+| Tartakower: 8.Bd3 (Main line) | -0.49 | D58 Queen's Gambit Declined: Tartakower Defense |
+| Tartakower: 7.Bxf6 (Main line) | -0.29 | D55 Queen's Gambit Declined: Anti-Tartakower Variation |
+| Exchange: 4.cxd5 (Main line) | -0.60 | D36 Queen's Gambit Declined: Exchange Variation, Reshevsky Variation |
+| Exchange: 4.cxd5 (3.cxd5) | -0.67 | D30 Queen's Gambit Declined |
+| Three Knights: 5.Bf4 (Main line) | -0.36 | D37 Queen's Gambit Declined: Harrwitz Attack |
+| Three Knights: 5.Bf4 (3.Nf3) | -0.62 | D37 Queen's Gambit Declined: Three Knights Variation |
+| Three Knights: 5.e3 (Main line) | -0.52 | D37 Queen's Gambit Declined: Three Knights Variation |
+| Three Knights: 5.e3 (4.e3) | -0.47 | D37 Queen's Gambit Declined: Three Knights Variation |
+| Three Knights: 5.e3 (3.e3) | -0.44 | D37 Queen's Gambit Declined: Three Knights Variation |
+| Catalan: 4.g3 (Main line) | -0.61 | E05 Catalan Opening: Open Defense, Classical Line |
+| Tartakower: 11.Rc1 (Main line) | -0.31 | D59 Queen's Gambit Declined: Tartakower Defense |
+| Tartakower: 11.Rc1 (12.Qa4) | -0.33 | D59 Queen's Gambit Declined: Tartakower Defense |
+| Tartakower: other eighth moves (Main line) | -0.41 | D58 Queen's Gambit Declined: Tartakower Defense |
+| Tartakower: other eighth moves (8.Rc1) | -0.38 | D58 Queen's Gambit Declined: Tartakower Defense |
+| Tartakower: other eighth moves (8.Qc2) | -0.22 | D58 Queen's Gambit Declined: Tartakower Defense |
+| Tartakower: 5.cxd5 and 5.Bxf6 (Main line) | -0.30 | D35 Queen's Gambit Declined: Exchange Variation, Positional Variation |
+| Tartakower: 5.cxd5 and 5.Bxf6 (5.Bxf6) | -0.41 | D53 Queen's Gambit Declined: Modern Variation, Heral Variation |
+| Exchange: 5.Nf3 and 5.Bf4 (Main line) | -0.47 | D35 Queen's Gambit Declined: Exchange Variation |
+| Exchange: 5.Nf3 and 5.Bf4 (5.Bf4) | -0.51 | D35 Queen's Gambit Declined: Exchange Variation |
+| Three Knights: 5.cxd5 and 5.g3 (Main line) | -0.65 | D37 Queen's Gambit Declined: Three Knights Variation |
+| Three Knights: 5.cxd5 and 5.g3 (5.g3) | -0.15 | D37 Queen's Gambit Declined: Three Knights Variation |
+| Catalan: 7.Ne5 (Main line) | -0.45 | E05 Catalan Opening: Open Defense, Classical Line |
+| Catalan: 7.Ne5 (8.Nxc6) | -0.38 | E05 Catalan Opening: Open Defense, Classical Line |
+| Other third moves (Main line) | -0.43 | D30 Queen's Gambit Declined |
+| Other third moves (3.cxd5) | -0.44 | D30 Queen's Gambit Declined |
+| Trap: the Elephant trap (Main line) | 4.84 | D35 Queen's Gambit Declined: Exchange Variation, Positional Variation |
+| Trap: the Elephant trap (7.Nf3) | 5.38 | D35 Queen's Gambit Declined: Exchange Variation, Positional Variation |
+
 ## Overview: Replies to 1.e4 (`content/e4-overview.pgn`)
 
-8 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+12 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
 
 | Chapter | Board after | Opening header | ECO | Line ends | Check |
 |---|---|---|---|---|---|
-| Italian Game (1...e5) | 4...Nf6 | Italian Game: Classical Variation | C54 | 4...Nf6 0.13 | ok |
+| Ruy Lopez (3.Bb5) | 4...Nf6 | Ruy Lopez: Morphy Defense | C70 | 4...Nf6 0.56 | ok |
+| Italian Game (3.Bc4) | 4...Nf6 | Italian Game: Classical Variation | C54 | 4...Nf6 0.13 | ok |
 | Sicilian Defense (1...c5) | 4...Nf6 | Sicilian Defense: Modern Variations, Main Line | B54 | 4...Nf6 0.32 | ok |
 | French Defense (1...e6) | 4...Nc6 | French Defense: Advance Variation | C02 | 4...Nc6 0.20 | ok |
 | Caro-Kann Defense (1...c6) | 4...Bf5 | Caro-Kann Defense: Classical Variation | B18 | 4...Bf5 0.30 | ok |
+| Scotch Game (3.d4) | 4...Nf6 | Scotch Game: Schmidt Variation | C45 | 4...Nf6 0.37 | ok |
+| Petroff Defense (2...Nf6) | 4...Nxe4 | Petrov's Defense | C42 | 4...Nxe4 0.62 | ok |
+| King's Gambit (2.f4) | 4...g4 | King's Gambit Accepted: King's Knight's Gambit | C39 | 4...g4 0.01 | ok |
 | Scandinavian Defense (1...d5) | 4...Nf6 | Scandinavian Defense: Main Line, Mieses Variation | B01 | 4...Nf6 0.70 | ok |
 | Pirc Defense (1...d6) | 4...Bg7 | Pirc Defense: Classical Variation | B08 | 4...Bg7 0.55 | ok |
 | Modern Defense (1...g6) | 4...a6 | Modern Defense: Standard Defense | B06 | 4...a6 0.71 | ok |
@@ -458,28 +630,43 @@ None.
 
 ## Overview: Replies to 1.d4 (`content/d4-overview.pgn`)
 
-18 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+6 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
 
 | Chapter | Board after | Opening header | ECO | Line ends | Check |
 |---|---|---|---|---|---|
+| Queen's Gambit | 2.c4 | Queen's Gambit | D06 | 2.c4 0.21 | ok |
+| Indian Defenses | 2.c4 | Indian Defense: Normal Variation | A50 | 2.c4 0.17 | ok |
+| Dutch Defense | 4...Be7 | Dutch Defense | A80 | 4...Be7 0.42 | ok |
+| Budapest Gambit | 4...Nc6 | Indian Defense: Budapest Gambit | A51 | 4...Nc6 0.69 | ok |
+| London System | 4...c5 | Queen's Pawn Game: Accelerated London System | D00 | 4...c5 0.14 | ok |
+| Colle System | 4...c5 | Queen's Pawn Game: Colle System | D04 | 4...c5 0.13 | ok |
+
+## Overview: Queen's Gambit (`content/qg-overview.pgn`)
+
+6 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+
+| Chapter | Board after | Opening header | ECO | Line ends | Check |
+|---|---|---|---|---|---|
+| Map of the variations (flowchart) | — | — | — | — | ok |
 | Queen's Gambit Declined | 4...Be7 | Queen's Gambit Declined | D30 | 4...Be7 0.03 | ok |
-| Tarrasch Defense | 4...exd5 | Tarrasch Defense | D32 | 4...exd5 0.27 | ok |
-| Slav Defense | 4...Bf5 | Slav Defense | D10 | 4...Bf5 0.53 | ok |
 | Semi-Slav Defense | 4...c6 | Semi-Slav Defense | D43 | 4...c6 0.23 | ok |
+| Tarrasch Defense | 4...exd5 | Tarrasch Defense | D32 | 4...exd5 0.27 | ok |
 | Queen's Gambit Accepted | 4...e5 | Queen's Gambit Accepted | D20 | 4...e5 -0.18 | ok |
+| Slav Defense | 4...Bf5 | Slav Defense | D10 | 4...Bf5 0.53 | ok |
 | Albin Countergambit | 4...Nc6 | Queen's Gambit Declined: Albin Countergambit | D08 | 4...Nc6 0.66 | ok |
+
+## Overview: Indian Defenses (`content/indian-overview.pgn`)
+
+5 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+
+| Chapter | Board after | Opening header | ECO | Line ends | Check |
+|---|---|---|---|---|---|
+| Map of the variations (flowchart) | — | — | — | — | ok |
 | King's Indian Defense | 4...d6 | King's Indian Defense | E61 | 4...d6 0.47 | ok |
 | Nimzo-Indian Defense | 4...O-O | Nimzo-Indian Defense | E20 | 4...O-O 0.04 | ok |
 | Grünfeld Defense | 4...Nxd5 | Grünfeld Defense | D80 | 4...Nxd5 0.29 | ok |
 | Queen's Indian Defense | 4...Bb7 | Queen's Indian Defense | E12 | 4...Bb7 0.32 | ok |
 | Benoni Defense and Benko Gambit | 4...exd5 | Benoni Defense | A56 | 4...exd5 0.93; 4...a6 0.57 | ok |
-| Dutch Defense | 4...Be7 | Dutch Defense | A80 | 4...Be7 0.42 | ok |
-| Budapest Gambit | 4...Nc6 | Indian Defense: Budapest Gambit | A51 | 4...Nc6 0.69 | ok |
-| London System | 4...c5 | Queen's Pawn Game: Accelerated London System | D00 | 4...c5 0.14 | ok |
-| Colle System | 4...c5 | Queen's Pawn Game: Colle System | D04 | 4...c5 0.13 | ok |
-| Trompowsky Attack | 4...Nd5 | Trompowsky Attack | A45 | 4...Nd5 0.56 | ok |
-| Torre Attack | 4...d5 | Torre Attack: Classical Defense | A46 | 4...d5 0.23 | ok |
-| Catalan Opening | 4...Be7 | Catalan Opening | E00 | 4...Be7 0.21 | ok |
 
 ## Overview: Other first moves (`content/other-overview.pgn`)
 
@@ -560,3 +747,22 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 10 | Smirnov's fork | White | 11.Nxd5 | 1 | 11...Rxd3 (4 half-moves) | ok |
 | 11 | The f7 sacrifice | White | 11.Bxf7+ | 1 | 11...Kxf7 (6 half-moves) | ok |
 | 12 | The queen check | Black | 4...Qh4+ | 1 | 5.Kd2 (4 half-moves) | ok |
+
+## Puzzles: Queen's Gambit (`content/queens-gambit-puzzles.pgn`)
+
+10 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Nxd5 when c8 is loose | White | 9.Nxd5 | 1 | 9...Qd6 (6 half-moves) | ok |
+| 2 | The Elephant trap | Black | 6...Nxd5 | 2 | 8.Qd2 (4 half-moves) | ok |
+| 3 | Take back with the bishop | Black | 7...Bxf6 | 1 | 8.Bd3 (4 half-moves) | ok |
+| 4 | Open the center | White | 7.e4 | 1 | 7...dxe4 (6 half-moves) | ok |
+| 5 | The long diagonal | White | 6.Qf3 | 1 | 6...Nc6 (4 half-moves) | ok |
+| 6 | Give up b7 | Black | 6...e6 | 1 | 7.Qxb7 (1 half-move) | ok |
+| 7 | Mate in two | White | 7.Bxf7+ | 2 | none | ok |
+| 8 | The Greek gift | White | 9.Bxh7+ | 2 | 10...Kg8 (4 half-moves) | ok |
+| 9 | Give up the queen | White | 8.Nxe5 | 2 | 9...c6 (8 half-moves) | ok |
+| 10 | The Lasker trap | Black | 6...exf2+ | 2 | 8.Rxg1 (2 half-moves) | ok |
