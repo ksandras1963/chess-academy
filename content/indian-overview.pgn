@@ -11,9 +11,7 @@
 [ECO "E61"]
 [Diagram "4...d6"]
 
-{Black lets White take the whole center, then hits it with ...e5 and attacks on the kingside. Sharp and double-edged.
-
-White: Build a big center with c4, d4 and e4, develop calmly with Nf3 and Be2, and castle. When the center closes with d5, attack on the queenside with c5, b4 and the c-file.
+{White: Build a big center with c4, d4 and e4, develop calmly with Nf3 and Be2, and castle. When the center closes with d5, attack on the queenside with c5, b4 and the c-file.
 
 Black: Let White have the center, fianchetto your bishop and castle. Then strike at the center with ...e5 or ...c5. Once the center is closed, attack the king with ...f5, ...f4 and ...g5: the game becomes a race.}
 1. d4 Nf6 {Stops e4 and keeps Black's options open: the start of the Indian defenses.}
@@ -26,9 +24,7 @@ Black: Let White have the center, fianchetto your bishop and castle. Then strike
 [ECO "E20"]
 [Diagram "4...O-O"]
 
-{The pin on c3 stops e4. Black is often ready to give up the bishop pair to double White's c-pawns.
-
-White: 4.Qc2 lets you take back on c3 with the queen, so you avoid doubled pawns. Then a3 wins the bishop pair and e4 takes the center. Your two bishops pay off once the position opens.
+{White: 4.Qc2 lets you take back on c3 with the queen, so you avoid doubled pawns. Then a3 wins the bishop pair and e4 takes the center. Your two bishops pay off once the position opens.
 
 Black: Pin the c3 knight so White can't play e4. Give up the bishop for the knight when it costs White time or doubles the c-pawns. Strike back with ...d5 or ...c5.}
 1. d4 Nf6 2. c4 e6 {Prepares ...d5 or ...Bb4.}
@@ -40,9 +36,7 @@ Black: Pin the c3 knight so White can't play e4. Give up the bishop for the knig
 [ECO "D80"]
 [Diagram "4...Nxd5"]
 
-{Black invites a big white center with ...d5, then attacks it with the g7 bishop and ...c5.
-
-White: Take the whole center with e4, usually after 5.e4 Nxc3 6.bxc3, then back it up with Nf3, Be3 or Bc4. A center that holds cramps Black and supports an attack.
+{White: Take the whole center with e4, usually after 5.e4 Nxc3 6.bxc3, then back it up with Nf3, Be3 or Bc4. A center that holds cramps Black and supports an attack.
 
 Black: Let White build the center, then attack it with ...Bg7, ...c5 and ...Nc6. Pile up on d4 with your pieces, and open lines with ...cxd4. Trade pieces once the center is weak.}
 1. d4 Nf6 2. c4 g6 3. Nc3 d5 {This is the Grünfeld Defense. Black challenges the center at once.}
@@ -53,9 +47,7 @@ Black: Let White build the center, then attack it with ...Bg7, ...c5 and ...Nc6.
 [ECO "E12"]
 [Diagram "4...Bb7"]
 
-{Black controls e4 and d5 from a distance with the queen's bishop on b7. Solid and positional.
-
-White: Avoid the Nimzo-Indian pin with 3.Nf3, then fianchetto with g3 and Bg2 to contest the long diagonal. Castle, then aim for e4 or d5 when Black's grip loosens.
+{White: Avoid the Nimzo-Indian pin with 3.Nf3, then fianchetto with g3 and Bg2 to contest the long diagonal. Castle, then aim for e4 or d5 when Black's grip loosens.
 
 Black: Control e4 and d5 from a distance with ...b6 and ...Bb7. Develop calmly with ...Be7 and castling, then break with ...c5 or ...d5.}
 1. d4 Nf6 2. c4 e6 3. Nf3 {Keeps the knight off c3, so ...Bb4 pins nothing.} b6 {This is the Queen's Indian Defense. The bishop will go to b7.}
@@ -67,9 +59,7 @@ Black: Control e4 and d5 from a distance with ...b6 and ...Bb7. Develop calmly w
 [Diagram "4...exd5"]
 [Lines "Modern Benoni | Benko Gambit"]
 
-{After 3.d5, Black either opens the e-file and pushes the queenside pawns (Modern Benoni) or gives a pawn for lasting pressure on the a- and b-files (Benko Gambit).
-
-White: Take space with d5 and e4. Against the Benoni, push e4–e5 to break through in the center. Against the Benko, keep the extra pawn, find a safe home for your king and use your central space.
+{White: Take space with d5 and e4. Against the Benoni, push e4–e5 to break through in the center. Against the Benko, keep the extra pawn, find a safe home for your king and use your central space.
 
 Black: In the Benoni, play ...exd5, ...d6, ...g6 and ...Bg7, then advance your queenside majority with ...a6 and ...b5. In the Benko, give a pawn for open a- and b-files that press on White's queenside for the rest of the game.}
 1. d4 Nf6 2. c4 c5 {Black hits d4 from the side.}

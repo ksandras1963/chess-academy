@@ -365,7 +365,21 @@
       "count": "5 defenses",
       "compact": true,
       "subtitle": "1.d4 Nf6 2.c4: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
-      "summary": "Black develops the knight first and keeps the choice of setup open: fianchetto with ...g6, pin with ...Bb4, or hit d4 with ...c5. The map shows where each defense starts."
+      "table": {
+        "after": "map",
+        "columns": ["Black's reply", "Share", "What kind of game"],
+        "rows": [
+          ["2...g6, then ...Bg7 and ...d6 (King's Indian)", "25.9%", "Black lets White take the whole center, then hits it with ...e5 and attacks on the kingside. Sharp and double-edged."],
+          ["2...e6 3.Nc3 Bb4 (Nimzo-Indian)", "11.8%", "The pin on c3 stops e4. Black is often ready to give up the bishop pair to double White's c-pawns."],
+          ["2...g6 3.Nc3 d5 (Grünfeld)", "6.0%", "Black invites a big white center with ...d5, then attacks it with the g7 bishop and ...c5."],
+          ["2...c5 3.d5 b5 (Benko Gambit)", "3.1%", "Black gives a pawn for lasting pressure on the a- and b-files."],
+          ["2...c5 3.d5 e6 (Modern Benoni)", "1.6%", "Black opens the e-file and pushes the queenside pawns, while White has more space in the center."],
+          ["2...e6 3.Nf3 b6 (Queen's Indian)", "1.5%", "Black controls e4 and d5 from a distance with the queen's bishop on b7. Solid and positional."],
+          ["Others: 2...e6 then ...d5, 2...e5, 2...d6 and more", "50% in all", "Most transpose: 2...e6 with ...d5 becomes a Queen's Gambit Declined (about 10%). 2...e5 is the Budapest Gambit (9.5%, see Uncommon replies to 1.d4); 2...d6 is the Old Indian (4%)."]
+        ],
+        "note": "Share: how often each defense comes up in games that reach 1.d4 Nf6 2.c4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. The King's Indian figure counts every 2...g6 game except the Grünfeld (3.Nc3 d5); the others are measured on the move order shown."
+      },
+      "summary": "Black develops the knight first and keeps the choice of setup open. The map shows where each defense starts; the table below it shows how often each one comes up."
     },
     {
       "id": "d4-uncommon",
