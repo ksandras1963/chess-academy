@@ -163,6 +163,63 @@
       ]
     },
     {
+      "id": "queens-gambit",
+      "name": "Queen's Gambit",
+      "eco": "D06",
+      "moves": "1. d4 d5 2. c4",
+      "summary": "White offers the c-pawn to pull Black's d-pawn away from the center. Rich in plans, light on early tactics.",
+      "puzzles": "content/queens-gambit-puzzles.pgn",
+      "furtherStudy": [
+        { "title": "Chess Openings: The Queen's Gambit", "by": "Kevin Butler, thechesswebsite", "kind": "Video", "url": "https://www.youtube.com/watch?v=HdHWAuQRG7E" },
+        { "title": "The Queen's Gambit Chess Opening Explained in 3 Minutes by a National Chess Master", "by": "NM Nelson Lopez, Chess Vibes", "kind": "Video", "url": "https://www.youtube.com/watch?v=KEmkjOL_hCc" },
+        { "title": "How To Play The Queen's Gambit", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=mtsabsZ4wG4" },
+        { "title": "Every Queen's Gambit Player Must Know These 9 Ideas", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ONB_yxkpAws" },
+        { "title": "Learn the Queen's Gambit Chess Opening: Traps & Errors", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=oRfGbul6MUs" },
+        { "title": "Chess Openings: Learn to Play the Queen's Gambit", "by": "NM Solomon Ruddell, The Chess Giant", "kind": "Video", "url": "https://www.youtube.com/watch?v=EWHYgn9fR10" },
+        { "title": "Queen's Gambit Strategy for Black | Plans, Traps, and Setup Explained", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ETG8cCyvnAg" },
+        { "title": "5 Best Chess Opening Traps in the Queen's Gambit", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ICXoGdCcsFI" },
+        { "title": "Queen's Gambit | Basic Ideas, Plans & Strategies | Chess Openings", "by": "IM Andrey Ostrovskiy, Chessfactor", "kind": "Video", "url": "https://www.youtube.com/watch?v=ITQwXN9hXms" },
+        { "title": "Queen's Gambit Opening Mistakes You Must Avoid (Traps Included!)", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=8Ui8lD8wJsU" },
+        { "title": "Top 5 Chess Opening Traps in the Queen's Gambit", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=iqIMpVnhWjc" },
+        { "title": "How To Play The Queen's Gambit", "by": "Anna Cramling", "kind": "Video", "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI" },
+        { "title": "Chess Opening: The Queen's Gambit (Full 500-2000 Guide)", "by": "ChesswithAkeem", "kind": "Video", "url": "https://www.youtube.com/watch?v=XhbTsyVVexc" },
+        { "title": "Queen's Gambit", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/Queen%27s_Gambit" },
+        { "title": "Queen's Gambit Declined", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/Queen%27s_Gambit_Declined" }
+      ],
+      "courses": [
+        {
+          "id": "queens-gambit-white",
+          "side": "white",
+          "file": "content/queens-gambit-white.pgn",
+          "repertoire": "Exchange QGD and the minority attack, with 3.e3 against the Accepted",
+          "summary": "Take on d5 against the Declined and play the minority attack, meet the Slav with Nf3 and Nc3, and win the pawn back at once with 3.e3 against the Accepted.",
+          "overview": [
+            "Against 2...e6, a third of your games, play 3.Nc3 and take at once: 4.cxd5 exd5 5.Bg5. Follow with Qc2, e3, Bd3 and Nge2, and castle short.",
+            "The plan is the minority attack: Rb1, b4 and b5 leave Black with a weak pawn on c6 or d5. With the knight on e2, f3 and e4 is the second plan.",
+            "Don't grab d5 while Black's knight is on d7: 6.Nxd5?? Nxd5! 7.Bxd8 Bb4+ wins a piece for Black. This is the Elephant trap.",
+            "Against the Slav (2...c6), a quarter of your games, play 3.Nf3 Nf6 4.Nc3. Against 4...e6, take on d5 and play Bg5, the same plan as in the Exchange. Against an early ...Bf5, cxd5 and Qb3 hit b7.",
+            "Against the Accepted, play 3.e3 and win the pawn back with Bxc4. If Black holds it with 3...b5, a4 breaks the chain, and after 4...c6 5.axb5 cxb5, 6.Qf3 hits the rook on a8 and wins a piece.",
+            "Against 2...Nf6, one game in nine, take on d5: Black can't recapture with a pawn. Against the Albin (2...e5), play 3.dxe5 d4 4.Nf3, never 4.e3?, which runs into the Lasker trap."
+          ]
+        },
+        {
+          "id": "queens-gambit-black",
+          "side": "black",
+          "file": "content/queens-gambit-black.pgn",
+          "repertoire": "Queen's Gambit Declined (2...e6), Tartakower Variation",
+          "summary": "Hold d5 with ...e6, castle quickly and play the Tartakower: ...h6, ...b6 and ...Bb7, then free the game with ...c5.",
+          "overview": [
+            "Hold d5 with 2...e6, then ...Nf6, ...Be7 and castle. Against 4.Bg5, White's most common move, play the Tartakower: ...h6, ...b6 and ...Bb7.",
+            "Answer Bg5 with ...h6. If White takes on f6, take back with the bishop and keep the pawns in front of your king intact.",
+            "When White takes on d5 (8.cxd5, four games in ten), take back with the knight and trade pieces. Then ...Be6 and ...c5; after dxc5, take back with the b-pawn, and your hanging pawns on c5 and d5 are active.",
+            "Take on c4 only after White's bishop has left f1, so that Bxc4 costs White a tempo.",
+            "Against the Exchange (4.cxd5 exd5 5.Bg5), play 5...Nbd7, then ...c6, ...Be7, castle, ...Re8 and ...Nf8. White plays 6.Nxd5?? in one game in five, and it loses a piece to the Elephant trap.",
+            "Against 3.Nf3 and the Catalan (4.g3), play ...Be7 and castle, then take on c4 once White has castled. Follow with ...a6, then ...b5 and ...Bb7, or ...Bd7 and ...Bc6 if White stops ...b5 with a4."
+          ]
+        }
+      ]
+    },
+    {
       "id": "sicilian",
       "name": "Sicilian Defense",
       "eco": "B20",
@@ -171,17 +228,6 @@
       "courses": [
         { "id": "sicilian-white", "side": "white", "repertoire": "Alapin (2.c3)" },
         { "id": "sicilian-black", "side": "black", "repertoire": "Accelerated Dragon" }
-      ]
-    },
-    {
-      "id": "queens-gambit",
-      "name": "Queen's Gambit",
-      "eco": "D06",
-      "moves": "1. d4 d5 2. c4",
-      "summary": "White offers the c-pawn to pull Black's d-pawn away from the center. Rich in plans, light on early tactics.",
-      "courses": [
-        { "id": "queens-gambit-white", "side": "white", "repertoire": "Exchange QGD and the minority attack" },
-        { "id": "queens-gambit-black", "side": "black", "repertoire": "Queen's Gambit Declined (2...e6)" }
       ]
     }
   ]
