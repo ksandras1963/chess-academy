@@ -229,6 +229,28 @@
         { "id": "sicilian-white", "side": "white", "repertoire": "Alapin (2.c3)" },
         { "id": "sicilian-black", "side": "black", "repertoire": "Accelerated Dragon" }
       ]
+    },
+    {
+      "id": "ruy-lopez",
+      "name": "Ruy Lopez",
+      "eco": "C60",
+      "moves": "1. e4 e5 2. Nf3 Nc6 3. Bb5",
+      "summary": "White's bishop pressures the knight that defends e5, for a long strategic fight over the center.",
+      "courses": [
+        { "id": "ruy-lopez-white", "side": "white", "repertoire": "To be written" },
+        { "id": "ruy-lopez-black", "side": "black", "repertoire": "To be written" }
+      ]
+    },
+    {
+      "id": "scandinavian",
+      "name": "Scandinavian Defense",
+      "eco": "B01",
+      "moves": "1. e4 d5",
+      "summary": "Black challenges e4 at once and takes back with the queen, for quick development and a solid pawn structure.",
+      "courses": [
+        { "id": "scandinavian-white", "side": "white", "repertoire": "To be written" },
+        { "id": "scandinavian-black", "side": "black", "repertoire": "To be written" }
+      ]
     }
   ],
   "surveys": [
@@ -240,7 +262,18 @@
       "file": "content/e4-overview.pgn",
       "count": "6 openings",
       "subtitle": "The six main openings after 1.e4, each played out to move 4, plus a page for the rarer ones.",
-      "summary": "After 1.e4, Black's main replies are 1...e5, 1...c5, 1...e6, 1...c6 and 1...d5. 1...e5 leads to the Open Games, where White's third move usually chooses between the Italian and the Ruy Lopez. 1...c5 fights for d4 from the side, 1...e6 and 1...c6 prepare ...d5, and 1...d5 challenges e4 at once.\n\nEach board shows the position after four moves of a main line. Press Watch to see the moves played out. Under each board, three lines give White's plan and three give Black's. The Italian, French and Caro-Kann link to their courses in this app. Rarer openings, such as the Pirc and the King's Gambit, have a page of their own, linked at the bottom."
+      "foldPlans": true,
+      "table": {
+        "columns": ["Black's reply", "Share", "What kind of game"],
+        "rows": [
+          ["1...e5 (Ruy Lopez, Italian and others)", "38%", "The Open Games: both sides fight for the center at once, with quick development and early tactics."],
+          ["1...c5 (Sicilian)", "25%", "Fights for d4 from the side. Unbalanced, sharp games."],
+          ["1...e6 (French) and 1...c6 (Caro-Kann)", "11%, 9%", "Black prepares ...d5 to challenge e4. Solid, slower games."],
+          ["1...d5 (Scandinavian)", "7%", "Challenges e4 at once. White gains time by chasing Black's queen."]
+        ],
+        "note": "Share: how often each reply follows 1.e4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
+      },
+      "summary": "Under each board, press ▶︎ Watch the moves to step through the first four moves. The Italian, French and Caro-Kann link to their courses in this app. Rarer openings, such as the Pirc and the King's Gambit, have a page of their own, linked at the bottom."
     },
     {
       "id": "e4-uncommon",

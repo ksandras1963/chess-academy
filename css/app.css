@@ -411,6 +411,19 @@ a.chapter-board:focus-visible { outline: none; }
 .plans { margin-top: 12px; display: grid; gap: 10px; max-width: 40rem; }
 .plan-side { display: flex; align-items: center; gap: 8px; font-family: var(--sans); font-size: 0.8125rem; font-weight: 600; color: var(--ink-dim); }
 .plan p { margin-top: 2px; font-family: var(--serif); font-size: 1rem; line-height: 1.55; }
+/* A page's table under its title (the replies to 1.e4 at a glance). */
+.survey-table { margin: 16px 0 0; max-width: 44rem; }
+.survey-table table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; line-height: 1.45; }
+.survey-table th, .survey-table td { padding: 8px 10px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); }
+.survey-table thead th { padding-top: 0; font-size: 0.8125rem; font-weight: 600; color: var(--ink-dim); border-bottom-color: var(--brass); }
+.survey-table tbody th { font-weight: 600; }
+.survey-table td { color: var(--ink-dim); }
+.survey-table td:nth-child(2) { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.survey-table figcaption { margin-top: 6px; font-size: 0.8125rem; }
+@media (max-width: 520px) {
+    .survey-table table { font-size: 0.875rem; }
+    .survey-table th, .survey-table td { padding: 7px 6px; }
+}
 .survey-actions { grid-area: lines; margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .extra .survey-plans, .extra .survey-actions { margin-top: 12px; }
 /* On phones the board sits above the text, large enough to read. */

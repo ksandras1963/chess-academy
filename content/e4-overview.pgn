@@ -3,6 +3,7 @@
 [Opening "Ruy Lopez: Morphy Defense"]
 [ECO "C70"]
 [Diagram "4...Nf6"]
+[Course "ruy-lopez"]
 
 {White: The bishop hits the c6 knight, the defender of e5, so Black's center is under pressure from move 3. Castle, then play Re1 and c3 to prepare d4 and build a strong center. Keep the bishop: it drops back to a4, b3 and later c2, where it aims at Black's kingside.
 
@@ -76,6 +77,7 @@ Black: 1...c6 supports ...d5 without blocking the c8 bishop, which comes out to 
 [Opening "Scandinavian Defense: Main Line, Mieses Variation"]
 [ECO "B01"]
 [Diagram "4...Nf6"]
+[Course "scandinavian"]
 
 {White: Gain time by hitting the queen with Nc3, then develop quickly with d4, Nf3, Bc4 or Bd2, and castle. Black has no pawn in the center, so use your d4 pawn and your lead in development. Bd2 is a useful move: if the c3 knight then moves, the bishop attacks the a5 queen.
 

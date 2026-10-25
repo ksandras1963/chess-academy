@@ -32,8 +32,8 @@ function plans(ch) {
     return out
 }
 
-/** The note's other paragraphs, then the plans; on a compact page the plans fold away under a button. */
-function planBlocks(ch, compact = false) {
+/** The note's other paragraphs, then the plans; on a compact or "foldPlans" page the plans fold away under a button. */
+function planBlocks(ch, fold = false) {
     const p = plans(ch)
     const block = (color, text) => text ? h("div", { class: "plan" },
         h("h3", { class: "plan-side" }, h("span", { class: `side-chip ${color === "w" ? "white" : "black"}`, "aria-hidden": "true" }), sideName(color)),
@@ -41,8 +41,18 @@ function planBlocks(ch, compact = false) {
     const both = p.w || p.b ? h("div", { class: "plans" }, block("w", p.w), block("b", p.b)) : null
     return [
         ...p.other.map(t => h("p", { class: "chapter-intro" }, figText(t))),
-        compact && both ? h("details", { class: "plans-more" }, h("summary", {}, "Plans for White and Black"), both) : both
+        fold && both ? h("details", { class: "plans-more" }, h("summary", {}, "Plans for White and Black"), both) : both
     ]
+}
+
+/** A page's table from courses.json ("table": { columns, rows, note }), under its title: the replies to 1.e4 at a glance. */
+function introTable(t) {
+    return h("figure", { class: "survey-table" },
+        h("table", {},
+            h("thead", {}, h("tr", {}, t.columns.map(c => h("th", { scope: "col" }, c)))),
+            h("tbody", {}, t.rows.map(r => h("tr", {},
+                r.map((cell, i) => i ? h("td", {}, figText(cell)) : h("th", { scope: "row" }, figText(cell))))))),
+        t.note ? h("figcaption", { class: "muted" }, t.note) : null)
 }
 
 /** "1.d4 ♘f6 2.c4 g6": the moves of a line. */
@@ -209,6 +219,7 @@ export async function surveyView(root, ctx, id) {
         h("header", { class: "course-head" },
             h("h1", {}, s.name),
             h("p", { class: "course-side" }, figText(s.subtitle || "")),
+            s.table ? introTable(s.table) : null,
             ...paras(s.summary, { class: "course-summary" })),
         s.flow ? flowchart(s, jump) : openingMap(s, cat, jump),
         pageCourse,
@@ -231,7 +242,7 @@ export async function surveyView(root, ctx, id) {
                         h("h2", {}, figText(ch.title), ch.eco ? h("span", { class: "eco", title: "ECO code" }, ch.eco) : null),
                         paths.map(p => h("p", { class: "op-moves" },
                             paths.length > 1 ? h("span", { class: "line-label" }, `${p.name}: `) : null, moveText(p.nodes))),
-                        ...planBlocks(ch, s.compact)),
+                        ...planBlocks(ch, s.compact || s.foldPlans)),
                     h("div", { class: "survey-actions" }, page
                         // "Queen's Gambit: 6 variations", "Uncommon replies to 1.d4: 2 openings": the page and what it holds.
                         ? h("a", { class: "btn btn-small btn-primary", href: `#/survey/${page.id}` }, page.count ? `${page.name}: ${page.count}` : page.name, h("span", { "aria-hidden": "true" }, "›"))
