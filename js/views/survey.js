@@ -233,7 +233,8 @@ export async function surveyView(root, ctx, id) {
                             paths.length > 1 ? h("span", { class: "line-label" }, `${p.name}: `) : null, moveText(p.nodes))),
                         ...planBlocks(ch, s.compact)),
                     h("div", { class: "survey-actions" }, page
-                        ? h("a", { class: "btn btn-small btn-primary", href: `#/survey/${page.id}` }, `${page.name}: all variations`, h("span", { "aria-hidden": "true" }, "›"))
+                        // "Queen's Gambit: 6 variations", "Uncommon replies to 1.d4: 2 openings": the page and what it holds.
+                        ? h("a", { class: "btn btn-small btn-primary", href: `#/survey/${page.id}` }, page.count ? `${page.name}: ${page.count}` : page.name, h("span", { "aria-hidden": "true" }, "›"))
                         : [paths.map((p, i) => h("a", { class: `btn btn-small${i ? "" : " btn-primary"}`, href: lineHref(s, ch, i) },
                             h("span", { "aria-hidden": "true" }, "▶︎"), paths.length > 1 ? `Watch: ${p.name}` : "Watch the moves")),
                         courses]))

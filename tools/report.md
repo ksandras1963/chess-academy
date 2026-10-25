@@ -1,6 +1,6 @@
 # Content validation report
 
-Generated 2026-10-25 20:52 · engine Stockfish, depth 18
+Generated 2026-10-25 21:38 · engine Stockfish, depth 18
 
 **No errors.**
 
@@ -611,7 +611,7 @@ None.
 
 ## Overview: Replies to 1.e4 (`content/e4-overview.pgn`)
 
-12 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+7 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
 
 | Chapter | Board after | Opening header | ECO | Line ends | Check |
 |---|---|---|---|---|---|
@@ -620,24 +620,31 @@ None.
 | Sicilian Defense (1...c5) | 4...Nf6 | Sicilian Defense: Modern Variations, Main Line | B54 | 4...Nf6 0.32 | ok |
 | French Defense (1...e6) | 4...Nc6 | French Defense: Advance Variation | C02 | 4...Nc6 0.20 | ok |
 | Caro-Kann Defense (1...c6) | 4...Bf5 | Caro-Kann Defense: Classical Variation | B18 | 4...Bf5 0.30 | ok |
-| Scotch Game (3.d4) | 4...Nf6 | Scotch Game: Schmidt Variation | C45 | 4...Nf6 0.37 | ok |
-| Petroff Defense (2...Nf6) | 4...Nxe4 | Petrov's Defense | C42 | 4...Nxe4 0.62 | ok |
-| King's Gambit (2.f4) | 4...g4 | King's Gambit Accepted: King's Knight's Gambit | C39 | 4...g4 0.01 | ok |
 | Scandinavian Defense (1...d5) | 4...Nf6 | Scandinavian Defense: Main Line, Mieses Variation | B01 | 4...Nf6 0.70 | ok |
-| Pirc Defense (1...d6) | 4...Bg7 | Pirc Defense: Classical Variation | B08 | 4...Bg7 0.55 | ok |
-| Modern Defense (1...g6) | 4...a6 | Modern Defense: Standard Defense | B06 | 4...a6 0.71 | ok |
-| Alekhine Defense (1...Nf6) | 4...Bg4 | Alekhine Defense: Modern Variation, Main Line | B05 | 4...Bg4 0.96 | ok |
+| Uncommon replies to 1.e4 | 1.e4 | King's Pawn Game | B00 | 1.e4 0.13 | ok |
 
-## Overview: Replies to 1.d4 (`content/d4-overview.pgn`)
+## Overview: Uncommon replies to 1.e4 (`content/e4-uncommon.pgn`)
 
 6 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
 
 | Chapter | Board after | Opening header | ECO | Line ends | Check |
 |---|---|---|---|---|---|
+| Pirc Defense (1...d6) | 4...Bg7 | Pirc Defense: Classical Variation | B08 | 4...Bg7 0.55 | ok |
+| King's Gambit (2.f4) | 4...g4 | King's Gambit Accepted: King's Knight's Gambit | C39 | 4...g4 0.01 | ok |
+| Scotch Game (3.d4) | 4...Nf6 | Scotch Game: Schmidt Variation | C45 | 4...Nf6 0.37 | ok |
+| Petroff Defense (2...Nf6) | 4...Nxe4 | Petrov's Defense | C42 | 4...Nxe4 0.62 | ok |
+| Modern Defense (1...g6) | 4...a6 | Modern Defense: Standard Defense | B06 | 4...a6 0.71 | ok |
+| Alekhine Defense (1...Nf6) | 4...Bg4 | Alekhine Defense: Modern Variation, Main Line | B05 | 4...Bg4 0.96 | ok |
+
+## Overview: Replies to 1.d4 (`content/d4-overview.pgn`)
+
+5 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+
+| Chapter | Board after | Opening header | ECO | Line ends | Check |
+|---|---|---|---|---|---|
 | Queen's Gambit | 2.c4 | Queen's Gambit | D06 | 2.c4 0.21 | ok |
 | Indian Defenses | 2.c4 | Indian Defense: Normal Variation | A50 | 2.c4 0.17 | ok |
-| Dutch Defense | 4...Be7 | Dutch Defense | A80 | 4...Be7 0.42 | ok |
-| Budapest Gambit | 4...Nc6 | Indian Defense: Budapest Gambit | A51 | 4...Nc6 0.69 | ok |
+| Uncommon replies to 1.d4 | 1.d4 | Queen's Pawn Game | A40 | 1.d4 0.19 | ok |
 | London System | 4...c5 | Queen's Pawn Game: Accelerated London System | D00 | 4...c5 0.14 | ok |
 | Colle System | 4...c5 | Queen's Pawn Game: Colle System | D04 | 4...c5 0.13 | ok |
 
@@ -667,6 +674,15 @@ None.
 | Grünfeld Defense | 4...Nxd5 | Grünfeld Defense | D80 | 4...Nxd5 0.29 | ok |
 | Queen's Indian Defense | 4...Bb7 | Queen's Indian Defense | E12 | 4...Bb7 0.32 | ok |
 | Benoni Defense and Benko Gambit | 4...exd5 | Benoni Defense | A56 | 4...exd5 0.93; 4...a6 0.57 | ok |
+
+## Overview: Uncommon replies to 1.d4 (`content/d4-uncommon.pgn`)
+
+2 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+
+| Chapter | Board after | Opening header | ECO | Line ends | Check |
+|---|---|---|---|---|---|
+| Dutch Defense | 4...Be7 | Dutch Defense | A80 | 4...Be7 0.42 | ok |
+| Budapest Gambit | 4...Nc6 | Indian Defense: Budapest Gambit | A51 | 4...Nc6 0.69 | ok |
 
 ## Overview: Other first moves (`content/other-overview.pgn`)
 

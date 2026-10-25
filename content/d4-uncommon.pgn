@@ -1,0 +1,29 @@
+[Chapter "Dutch Defense"]
+[Opening "Dutch Defense"]
+[ECO "A80"]
+[Diagram "4...Be7"]
+[Course "none"]
+
+{Black claims e4 with the f-pawn, for unbalanced play and kingside chances, at some cost to king safety.
+
+White: Fight for e4 with Nc3 and Bg5, which pins a defender of e4. Aim at the light squares that ...f5 loosened, such as e6 and the e8–h5 diagonal.
+
+Black: Claim e4 with ...f5 and ...Nf6, then pick a setup: Classical (...e6, ...Be7, ...d6), Stonewall (...e6, ...d5) or Leningrad (...g6). Castle, then attack on the kingside with ...Qe8–h5 or ...f4. Keep an eye on your own king, which ...f5 weakened.}
+1. d4 f5 {This is the Dutch Defense. The f-pawn controls e4.}
+2. c4 Nf6 3. Nc3 {Fights for e4.} e6 {The Classical setup: ...Be7 and castling follow.}
+4. Bg5 {Pins the knight that guards e4.} Be7 {Breaks the pin.} *
+
+[Chapter "Budapest Gambit"]
+[Opening "Indian Defense: Budapest Gambit"]
+[ECO "A51"]
+[Diagram "4...Nc6"]
+[Course "none"]
+
+{Black offers the e-pawn at once and usually wins it back with ...Ng4 and ...Nc6. Best as a surprise.
+
+White: Hold e5 for a while with Nf3 and Bf4, but keep developing; giving the pawn back calmly is fine. Watch the trap 5.Bf4 Bb4+ 6.Nbd2 Qe7 7.a3 Ngxe5 8.axb4?? Nd3#.
+
+Black: Win back e5 with ...Nc6, ...Bb4+ and ...Qe7, developing quickly as you go. Stockfish rates the gambit about half a pawn worse for Black, so it works best as a surprise.}
+1. d4 Nf6 2. c4 e5 {This is the Budapest Gambit. Black offers the e-pawn at once.}
+3. dxe5 Ng4 {The knight hits e5 straight away.}
+4. Nf3 {The Adler Variation. The knight guards e5.} Nc6 {Attacks e5 a second time.} *
