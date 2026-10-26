@@ -19,6 +19,7 @@
     --brass: #c9a34e;
     --brass-ink: #19130a;
     --flag: #e3654f;
+    --red: #f26b6b; /* the full-course box */
     --sage: #8cc489;
     --sq-light: #e6d1a7;
     --sq-dark: #a77b4f;
@@ -39,6 +40,7 @@
     --brass: #8a6517;
     --brass-ink: #fffaf0;
     --flag: #b23b28;
+    --red: #c0392b;
     --sage: #2e7838;
     color-scheme: light;
 }
@@ -492,16 +494,19 @@ button.fc-box .fc-name { color: var(--ink); }
 /* Left to right, boxes of one width line up in columns, like a printed flowchart. */
 @media (min-width: 760px) { .fc-box { min-width: 13rem; } }
 .fc-key { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 0.8125rem; color: var(--ink-dim); }
-/* The page's own courses (the Queen's Gambit Introduction): a box that stands out from the lesson links. */
+/* The full courses linked from an overview page, in red above its map so they stand out. */
 .course-box {
     margin-top: 20px; padding: 16px 20px;
-    border: 2px solid var(--brass); border-radius: 10px; background: var(--felt-raised);
+    border: 2px solid var(--red); border-radius: 10px; background: var(--felt-raised);
 }
-.course-box h2 { font-size: 1.25rem; color: var(--brass); }
-.course-box p { margin-top: 6px; max-width: 40rem; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
+.course-box h2 { font-size: 1.375rem; color: var(--red); }
+.course-box p { margin-top: 6px; max-width: 40rem; font-family: var(--serif); font-size: 1.1875rem; line-height: 1.5; }
 .course-box-links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px; }
-.course-box-link { min-height: 52px; padding: 0 18px; font-size: 1rem; white-space: normal; text-align: left; }
-.course-box-link .side-chip.white { border-color: var(--brass-ink); }
+.course-box-link {
+    min-height: 52px; padding: 0 18px; border: 2px solid var(--red); color: var(--red);
+    font-size: 1.125rem; font-weight: 600; white-space: normal; text-align: left;
+}
+.course-box-link:hover { border-color: var(--red); background: var(--felt-high); }
 
 /* Compact overview cards: the plans fold away under a button. */
 .plans-more { margin-top: 10px; max-width: 40rem; }

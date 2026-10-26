@@ -106,19 +106,26 @@ function courseLinks(cat, ch, lessons) {
 }
 
 /**
- * The page's own courses in a highlighted box, so they stand apart from the single-lesson links
- * under each variation: "These links open the full Queen's Gambit Course for White and ...".
+ * The full courses this page links (its own "course", then each chapter's [Course]), in a red box
+ * above the map, one row per opening: "These links open the full Queen's Gambit Course for White and ...".
+ * With lesson links on the page, a second sentence tells the two kinds of link apart.
  */
-function courseBox(cat, id) {
-    const op = cat.openings.find(o => o.id === id)
-    const built = op ? op.courses.filter(m => m.available) : []
-    if (!built.length) return null
-    const title = m => `${op.name} Course for ${m.side === "white" ? "White" : "Black"}`
+function courseBox(cat, s, hasLessons) {
+    const ids = new Set([s.course, ...s.chapters.map(ch => ch.headers.Course)].filter(Boolean))
+    const ops = [...ids].map(id => cat.openings.find(o => o.id === id)).filter(op => op && op.courses.some(m => m.available))
+    if (!ops.length) return null
+    const built = op => op.courses.filter(m => m.available)
+    const title = (op, m) => `${op.name} Course for ${m.side === "white" ? "White" : "Black"}`
+    const one = ops.length === 1 ? ops[0] : null
+    const plural = !one || built(one).length > 1
     return h("section", { class: "course-box" },
-        h("h2", {}, built.length > 1 ? `The full ${op.name} courses` : `The full ${op.name} course`),
-        h("p", {}, `${built.length > 1 ? "These links open" : "This link opens"} the full ${built.map(title).join(" and the ")}. The links under each variation below open only the lesson on that variation.`),
-        h("div", { class: "course-box-links" }, built.map(m => h("a", { class: "btn btn-primary course-box-link", href: `#/course/${m.id}`, title: m.repertoire },
-            h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }), title(m), h("span", { "aria-hidden": "true" }, "›")))))
+        h("h2", {}, one ? `The full ${one.name} course${plural ? "s" : ""}` : "The full courses"),
+        h("p", {}, [
+            one ? `${plural ? "These links open" : "This link opens"} the full ${built(one).map(m => title(one, m)).join(" and the ")}.`
+                : "These links open the full courses for the openings on this page.",
+            hasLessons ? " The links under each variation below open only the lesson on that variation." : ""].join("")),
+        ops.map(op => h("div", { class: "course-box-links" }, built(op).map(m => h("a", { class: "btn course-box-link", href: `#/course/${m.id}`, title: m.repertoire },
+            h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }), title(op, m), h("span", { "aria-hidden": "true" }, "›"))))))
 }
 
 const lineHref = (s, ch, i) => `#/survey/${s.id}/${ch.index}${i ? `/${i}` : ""}`
@@ -170,7 +177,7 @@ function flowchart(s, jump) {
         h("h2", { id: "flowchart-title" }, "Map of the variations"),
         h("p", { class: "muted" }, "Tap a name with a gold edge to see its board."),
         h("div", { class: "fc-scroll" }, h("ul", { class: "om-tree" }, boxesBelow(s.flow.root).map(k => item(k, s.flow.root)))),
-        starred ? h("p", { class: "fc-key" }, h("span", { class: "om-star", "aria-hidden": "true" }, "★"), " A line taught in the courses below the map") : null)
+        starred ? h("p", { class: "fc-key" }, h("span", { class: "om-star", "aria-hidden": "true" }, "★"), " A line taught in the full courses above the map") : null)
 }
 
 /**
@@ -254,8 +261,7 @@ export async function surveyView(root, ctx, id) {
         else groups.push({ name: ch.group, chapters: [ch] })
     }
 
-    // A page's own course (the Queen's Gambit page's "course"), in a highlighted box under its flowchart.
-    const pageCourse = s.course ? courseBox(cat, s.course) : null
+    const fullCourses = courseBox(cat, s, [...lessons.values()].some(Boolean))
 
     root.append(h("section", { class: "course survey" },
         h("nav", { class: "backbar", "aria-label": "Back" },
@@ -267,10 +273,10 @@ export async function surveyView(root, ctx, id) {
             h("p", { class: "course-side" }, figText(s.subtitle || "")),
             s.table && s.table.after !== "map" ? introTable(s.table) : null,
             ...paras(s.summary, { class: "course-summary" })),
+        fullCourses,
         s.flow ? flowchart(s, jump) : openingMap(s, cat, jump),
         // "after": "map" puts the table below the map instead of under the title (the 1.d4 page).
         s.table && s.table.after === "map" ? introTable(s.table) : null,
-        pageCourse,
         groups.map(g => [
             g.name ? h("h2", { class: "section-title" }, figText(g.name)) : null,
             g.chapters.map(ch => {
