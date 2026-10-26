@@ -492,7 +492,16 @@ button.fc-box .fc-name { color: var(--ink); }
 /* Left to right, boxes of one width line up in columns, like a printed flowchart. */
 @media (min-width: 760px) { .fc-box { min-width: 13rem; } }
 .fc-key { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 0.8125rem; color: var(--ink-dim); }
-.survey-courses { margin-top: 16px; }
+/* The page's own courses (the Queen's Gambit Introduction): a box that stands out from the lesson links. */
+.course-box {
+    margin-top: 20px; padding: 16px 20px;
+    border: 2px solid var(--brass); border-radius: 10px; background: var(--felt-raised);
+}
+.course-box h2 { font-size: 1.25rem; color: var(--brass); }
+.course-box p { margin-top: 6px; max-width: 40rem; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
+.course-box-links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px; }
+.course-box-link { min-height: 52px; padding: 0 18px; font-size: 1rem; white-space: normal; text-align: left; }
+.course-box-link .side-chip.white { border-color: var(--brass-ink); }
 
 /* Compact overview cards: the plans fold away under a button. */
 .plans-more { margin-top: 10px; max-width: 40rem; }
