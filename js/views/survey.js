@@ -62,13 +62,16 @@ function moveText(nodes) {
 
 /**
  * [WhiteLesson "Slav: 4...Bf5"] and [BlackLesson]: the chapter of the [Course] opening's course that
- * teaches this opening, found by its title. Returns { white, black } Learn links, or null.
+ * teaches this opening, found by its title; [WhiteCourse] or [BlackCourse] names another opening
+ * for that side. Returns { white, black } Learn links, or null.
  */
 async function lessonLinks(cat, ch) {
-    const op = cat.openings.find(o => o.id === ch.headers.Course)
     const out = {}
     for (const side of ["white", "black"]) {
-        const title = ch.headers[side === "white" ? "WhiteLesson" : "BlackLesson"]
+        const Side = side === "white" ? "White" : "Black"
+        const title = ch.headers[`${Side}Lesson`]
+        // [BlackCourse "slav"]: the lesson is in another opening's course (the Slav Course for Black).
+        const op = cat.openings.find(o => o.id === (ch.headers[`${Side}Course`] || ch.headers.Course))
         const meta = title && op && op.courses.find(m => m.side === side && m.available)
         if (!meta) continue
         const c = await loadCourse(meta.id).catch(() => null)
@@ -80,6 +83,12 @@ async function lessonLinks(cat, ch) {
     return Object.keys(out).length ? out : null
 }
 
+/** "Slav" for the card "Slav Defense", "Declined" for "Queen's Gambit Declined": a variation's short name. */
+function variationName(op, ch) {
+    const title = op && ch.title.startsWith(`${op.name} `) ? ch.title.slice(op.name.length + 1) : ch.title
+    return title.replace(/ (Defense|Defence|Countergambit|Gambit|Variation)$/, "")
+}
+
 /**
  * The chapter's [Course "italian"] header as links to that opening's courses: one per built
  * course, "Course coming soon" when the catalog lists it but nothing is written yet, and
@@ -89,16 +98,18 @@ async function lessonLinks(cat, ch) {
 function courseLinks(cat, ch, lessons) {
     if (ch.headers.Course === "none") return null
     const op = cat.openings.find(o => o.id === ch.headers.Course)
+    if (lessons) {
+        // "Queen's Gambit Slav variation as Black" over the lesson's title.
+        const variation = variationName(op, ch)
+        return ["white", "black"].filter(side => lessons[side]).map(side => h("a", { class: "course-link is-lesson", href: lessons[side].href, title: "Open this lesson in Learn mode" },
+            h("span", { class: `side-chip ${side}`, "aria-hidden": "true" }),
+            h("span", { class: "lesson-label" },
+                h("span", { class: "course-meta" }, `${op ? `${op.name} ` : ""}${variation} variation as ${side === "white" ? "White" : "Black"}`),
+                figText(lessons[side].title))))
+    }
     const built = op ? op.courses.filter(m => m.available) : []
     if (!built.length) {
         return h("span", { class: "course-link is-soon" }, op ? `${op.name} course coming soon` : "Course coming later")
-    }
-    if (lessons) {
-        return built.filter(m => lessons[m.side]).map(m => h("a", { class: "course-link is-lesson", href: lessons[m.side].href, title: "Open this lesson in Learn mode" },
-            h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }),
-            h("span", { class: "lesson-label" },
-                h("span", { class: "course-meta" }, `${op.name} as ${m.side === "white" ? "White" : "Black"}`),
-                figText(lessons[m.side].title))))
     }
     return built.map(m => h("a", { class: "course-link", href: `#/course/${m.id}`, title: m.repertoire },
         h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }),
@@ -106,12 +117,12 @@ function courseLinks(cat, ch, lessons) {
 }
 
 /**
- * The full courses this page links (its own "course", then each chapter's [Course]), in a red box
- * above the map, one row per opening: "These links open the full Queen's Gambit Course for White and ...".
+ * The full courses this page links (its own "course", then each chapter's [Course], [WhiteCourse]
+ * and [BlackCourse]), in a yellow box above the map, one row per opening: "These links open the full Queen's Gambit Course for White and ...".
  * With lesson links on the page, a second sentence tells the two kinds of link apart.
  */
 function courseBox(cat, s, hasLessons) {
-    const ids = new Set([s.course, ...s.chapters.map(ch => ch.headers.Course)].filter(Boolean))
+    const ids = new Set([s.course, ...s.chapters.flatMap(ch => [ch.headers.Course, ch.headers.WhiteCourse, ch.headers.BlackCourse])].filter(Boolean))
     const ops = [...ids].map(id => cat.openings.find(o => o.id === id)).filter(op => op && op.courses.some(m => m.available))
     if (!ops.length) return null
     const built = op => op.courses.filter(m => m.available)
