@@ -4,7 +4,7 @@
 // Nothing here is drilled.
 
 import { h, paras, label, sideName, fig, figText, figMoves } from "../ui.js"
-import { catalog, survey as loadSurvey } from "../content.js"
+import { catalog, survey as loadSurvey, course as loadCourse } from "../content.js"
 import { mainPath } from "../course-model.js"
 import { Board } from "../board.js"
 import { trainerLayout, renderSheet } from "./layout.js"
@@ -61,16 +61,44 @@ function moveText(nodes) {
 }
 
 /**
+ * [WhiteLesson "Slav: 4...Bf5"] and [BlackLesson]: the chapter of the [Course] opening's course that
+ * teaches this opening, found by its title. Returns { white, black } Learn links, or null.
+ */
+async function lessonLinks(cat, ch) {
+    const op = cat.openings.find(o => o.id === ch.headers.Course)
+    const out = {}
+    for (const side of ["white", "black"]) {
+        const title = ch.headers[side === "white" ? "WhiteLesson" : "BlackLesson"]
+        const meta = title && op && op.courses.find(m => m.side === side && m.available)
+        if (!meta) continue
+        const c = await loadCourse(meta.id).catch(() => null)
+        const target = c && c.chapters.find(x => x.title === title)
+        // A line chapter opens on its main line, the first line it gives.
+        const key = !target ? null : target.type === "ideas" ? `ideas-${target.index}` : c.lines.find(l => l.chapter === target)?.id
+        if (key) out[side] = { title, href: `#/learn/${c.id}/${key}` }
+    }
+    return Object.keys(out).length ? out : null
+}
+
+/**
  * The chapter's [Course "italian"] header as links to that opening's courses: one per built
  * course, "Course coming soon" when the catalog lists it but nothing is written yet, and
  * "Course coming later" without the header. [Course "none"] shows nothing: no course is planned.
+ * With lessons (from lessonLinks), each link opens that lesson, and only those sides are shown.
  */
-function courseLinks(cat, ch) {
+function courseLinks(cat, ch, lessons) {
     if (ch.headers.Course === "none") return null
     const op = cat.openings.find(o => o.id === ch.headers.Course)
     const built = op ? op.courses.filter(m => m.available) : []
     if (!built.length) {
         return h("span", { class: "course-link is-soon" }, op ? `${op.name} course coming soon` : "Course coming later")
+    }
+    if (lessons) {
+        return built.filter(m => lessons[m.side]).map(m => h("a", { class: "course-link is-lesson", href: lessons[m.side].href, title: "Open this lesson in Learn mode" },
+            h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }),
+            h("span", { class: "lesson-label" },
+                h("span", { class: "course-meta" }, `${op.name} as ${m.side === "white" ? "White" : "Black"}`),
+                figText(lessons[m.side].title))))
     }
     return built.map(m => h("a", { class: "course-link", href: `#/course/${m.id}`, title: m.repertoire },
         h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }),
@@ -188,6 +216,7 @@ function openingMap(s, cat, jump) {
 export async function surveyView(root, ctx, id) {
     const s = await loadSurvey(id)
     const cat = await catalog()
+    const lessons = new Map(await Promise.all(s.chapters.map(async ch => [ch, await lessonLinks(cat, ch)])))
     if (!ctx.alive()) return
     const diagrams = []
     const cards = new Map()
@@ -217,7 +246,8 @@ export async function surveyView(root, ctx, id) {
             h("a", { class: "btn btn-small btn-back", href: "#/" }, h("span", { "aria-hidden": "true" }, "‹"), "Main menu"),
             parent ? h("a", { class: "btn btn-small btn-back", href: `#/survey/${parent.id}` }, h("span", { "aria-hidden": "true" }, "‹"), parent.name) : null),
         h("header", { class: "course-head" },
-            h("h1", {}, s.name),
+            // "heading" replaces the name in the title only; buttons and back links keep the short name.
+            h("h1", {}, s.heading || s.name),
             h("p", { class: "course-side" }, figText(s.subtitle || "")),
             s.table && s.table.after !== "map" ? introTable(s.table) : null,
             ...paras(s.summary, { class: "course-summary" })),
@@ -236,7 +266,7 @@ export async function surveyView(root, ctx, id) {
                 const page = pageOf(ch)
                 // A compact page lists only built courses; "coming later" on every card would be noise.
                 const courses = s.compact && !(cat.openings.find(o => o.id === ch.headers.Course)?.courses.some(m => m.available))
-                    ? null : courseLinks(cat, ch)
+                    ? null : courseLinks(cat, ch, lessons.get(ch))
                 const card = h("section", { class: `chapter survey-chapter${s.compact ? " is-compact" : ""}` },
                     h("a", { class: "chapter-board", href: page ? `#/survey/${page.id}` : lineHref(s, ch, 0), title: page ? page.name : "Watch the moves" }, el,
                         node ? h("span", { class: "chapter-board-caption" }, `After ${label(node)}`) : null),
@@ -268,9 +298,10 @@ export async function surveyView(root, ctx, id) {
 export async function surveyLineView(root, ctx, id, chapterIndex, pathIndex) {
     const s = await loadSurvey(id)
     const cat = await catalog()
-    if (!ctx.alive()) return
     const ch = s.chapters[Number(chapterIndex)]
     if (!ch) throw new Error("This opening is no longer in the overview. Go back to the list.")
+    const lessons = await lessonLinks(cat, ch)
+    if (!ctx.alive()) return
     const paths = chapterPaths(ch)
     const path = paths[Number(pathIndex) || 0]
     if (!path) throw new Error("This line is no longer in the overview. Go back to the list.")
@@ -354,7 +385,7 @@ export async function surveyLineView(root, ctx, id, chapterIndex, pathIndex) {
                     h("span", { class: "alt-note" }, p.name))
             }))) : null,
         h("div", { class: "survey-plans" }, planBlocks(ch)),
-        ch.headers.Course !== "none" ? h("div", { class: "survey-actions" }, courseLinks(cat, ch)) : null
+        ch.headers.Course !== "none" ? h("div", { class: "survey-actions" }, courseLinks(cat, ch, lessons)) : null
     ].filter(Boolean)) // append() would write a null as the text "null"
 
     function updateControls() {

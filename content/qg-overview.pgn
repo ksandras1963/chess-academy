@@ -12,6 +12,9 @@
 [Opening "Queen's Gambit Declined"]
 [ECO "D30"]
 [Diagram "4...Be7"]
+[Course "queens-gambit"]
+[WhiteLesson "Key ideas: Why the Queen's Gambit"]
+[BlackLesson "Key ideas: Why the Queen's Gambit Declined"]
 
 {Black holds d5 with the e-pawn: solid and classical, at the cost of shutting in the c8 bishop for now.
 
@@ -27,6 +30,8 @@ Black: Hold d5 with ...e6, ...Nf6 and ...Be7, then castle. Free your game with .
 [Opening "Semi-Slav Defense"]
 [ECO "D43"]
 [Diagram "4...c6"]
+[Course "queens-gambit"]
+[WhiteLesson "Slav: 4...e6"]
 
 {Black adds ...c6 to the Declined setup, ready to take on c4 and hold the pawn with ...b5. Rich and often sharp.
 
@@ -39,6 +44,8 @@ Black: Build the c6–d5–e6 wall, then take on c4 once White's bishop has move
 [Opening "Tarrasch Defense"]
 [ECO "D32"]
 [Diagram "4...exd5"]
+[Course "queens-gambit"]
+[WhiteLesson "QGD: 3...c5"]
 
 {Black hits d4 with ...c5 at once, accepting an isolated d-pawn for free, active pieces.
 
@@ -52,6 +59,8 @@ Black: Accept an isolated d-pawn in return for free, active pieces: ...Nc6, ...N
 [Opening "Queen's Gambit Accepted"]
 [ECO "D20"]
 [Diagram "4...e5"]
+[Course "queens-gambit"]
+[WhiteLesson "Accepted: 3...Nf6"]
 
 {Black takes the pawn to develop freely and lets White have the center for a while, then strikes back with ...e5 or ...c5.
 
@@ -66,6 +75,8 @@ Black: Take on c4 to develop freely, but don't try to keep the pawn with ...b5: 
 [Opening "Slav Defense"]
 [ECO "D10"]
 [Diagram "4...Bf5"]
+[Course "queens-gambit"]
+[WhiteLesson "Slav: 4...Bf5"]
 
 {Black guards d5 with the c-pawn, so the c8 bishop can still come out to f5 or g4. Very solid.
 
@@ -80,6 +91,8 @@ Black: Support d5 with the c-pawn, so the c8 bishop stays free. Bring it out to 
 [Opening "Queen's Gambit Declined: Albin Countergambit"]
 [ECO "D08"]
 [Diagram "4...Nc6"]
+[Course "queens-gambit"]
+[WhiteLesson "Albin: 4...Nc6"]
 
 {Black gives up the e-pawn so the d-pawn can cramp White from d4. A surprise weapon, about half a pawn worse for Black.
 
