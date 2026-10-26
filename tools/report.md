@@ -1,6 +1,6 @@
 # Content validation report
 
-Generated 2026-10-25 23:03 · engine Stockfish, depth 18
+Generated 2026-10-26 04:54 · engine Stockfish, depth 18
 
 **No errors.**
 
@@ -609,6 +609,167 @@ None.
 | Trap: the Elephant trap (Main line) | 4.84 | D35 Queen's Gambit Declined: Exchange Variation, Positional Variation |
 | Trap: the Elephant trap (7.Nf3) | 5.38 | D35 Queen's Gambit Declined: Exchange Variation, Positional Variation |
 
+## King's Indian Defense — as White (`kings-indian-white`)
+
+22 chapters, 33 drillable lines (basic 9, traps 10, advanced 14), 350 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Mar del Plata: 9.b4 | 9.b4 | King's Indian Defense: Orthodox Variation, Bayonet Attack | E97 | ok |
+| 6...Nc6 | 6...Nc6 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Open center: 7...exd4 | 7...exd4 | King's Indian Defense: Orthodox Variation | E94 | ok |
+| 6...Nbd7 | 6...Nbd7 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| 6...c5: the Maroczy Bind | 6...c5 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| 6...Bg4 | 6...Bg4 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Bayonet: Black's ninth moves | 9...a5 | King's Indian Defense: Orthodox Variation, Bayonet Attack | E97 | ok |
+| Open center: Black's ninth moves | 9...Nc6 | King's Indian Defense: Orthodox Variation | E94 | ok |
+| Kazakh: 6...Na6 | 6...Na6 | King's Indian Defense: Kazakh Variation | E91 | ok |
+| 6...Nbd7: 7...c5 | 7...c5 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| 6...Bg4: Black's seventh moves | 7...Nc6 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Black's other sixth moves | 6...c6 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Black's fifth-move alternatives | 5...Nc6 | King's Indian Defense: Normal Variation, Rare Defenses | E90 | ok |
+| Trap: mistakes on move 5 | 5...e5 | King's Indian Defense: Normal Variation, Rare Defenses | E90 | ok |
+| Trap: loose knights in the Mar del Plata | 10...Nf4 | King's Indian Defense: Orthodox Variation, Bayonet Attack, Sokolov's Line | E97 | ok |
+| Trap: tactics in the open center | 9...Nbd7 | King's Indian Defense: Orthodox Variation | E94 | ok |
+| Trap: ...e5 or ...e6 after 8.d5 | 8...e5 | King's Indian Defense: Orthodox Variation | E91 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Learner moves flagged but accepted with `[%engine ok]`
+
+| Line | Move | Engine prefers | Loss |
+|---|---|---|---|
+| 6...Bg4: Black's seventh moves (Main line) | 9.Bxf3 | gxf3 | 0.61 |
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Mar del Plata: 9.b4 (Main line) | 1.07 | E97 King's Indian Defense: Orthodox Variation, Bayonet Attack |
+| Mar del Plata: 9.b4 (4...O-O) | 0.42 | E70 King's Indian Defense: Normal Variation |
+| 6...Nc6 (Main line) | 0.61 | E97 King's Indian Defense: Orthodox Variation, Aronin-Taimanov Defense |
+| Open center: 7...exd4 (Main line) | 0.33 | E94 King's Indian Defense: Orthodox Variation |
+| 6...Nbd7 (Main line) | 0.71 | E94 King's Indian Defense: Orthodox Variation, Positional Defense |
+| 6...Nbd7 (5...Nbd7) | 0.60 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| 6...c5: the Maroczy Bind (Main line) | 0.64 | E91 King's Indian Defense: Orthodox Variation |
+| 6...Bg4 (Main line) | 0.67 | E91 King's Indian Defense: Orthodox Variation |
+| 6...Bg4 (5...Bg4) | 0.56 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Bayonet: Black's ninth moves (Main line) | 0.47 | E97 King's Indian Defense: Orthodox Variation, Bayonet Attack |
+| Bayonet: Black's ninth moves (9...Nh5) | 0.56 | E97 King's Indian Defense: Orthodox Variation, Bayonet Attack, Sokolov's Line |
+| Bayonet: Black's ninth moves (9...Nd7) | 0.53 | E97 King's Indian Defense: Orthodox Variation, Bayonet Attack |
+| Open center: Black's ninth moves (Main line) | 0.50 | E94 King's Indian Defense: Orthodox Variation |
+| Open center: Black's ninth moves (9...Nbd7) | 0.88 | E94 King's Indian Defense: Orthodox Variation |
+| Kazakh: 6...Na6 (Main line) | 0.43 | E94 King's Indian Defense: Orthodox Variation, Glek Defense |
+| Kazakh: 6...Na6 (7...c5) | 1.00 | E91 King's Indian Defense: Kazakh Variation |
+| 6...Nbd7: 7...c5 (Main line) | 1.15 | E91 King's Indian Defense: Orthodox Variation |
+| 6...Bg4: Black's seventh moves (Main line) | 1.05 | E91 King's Indian Defense: Orthodox Variation |
+| 6...Bg4: Black's seventh moves (7...Bxf3) | 1.12 | E91 King's Indian Defense: Orthodox Variation |
+| Black's other sixth moves (Main line) | 0.73 | E94 King's Indian Defense: Orthodox Variation, Donner Defense |
+| Black's other sixth moves (6...Re8) | 0.46 | E91 King's Indian Defense: Orthodox Variation |
+| Black's fifth-move alternatives (Main line) | 0.66 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Black's fifth-move alternatives (6...Ne5) | 1.18 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Trap: mistakes on move 5 (Main line) | 2.00 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Trap: mistakes on move 5 (8...Nxe4) | 2.81 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Trap: mistakes on move 5 (5...Nc6) | 6.66 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Trap: loose knights in the Mar del Plata (Main line) | 1.23 | E97 King's Indian Defense: Orthodox Variation, Bayonet Attack, Sokolov's Line |
+| Trap: loose knights in the Mar del Plata (8...Nd4) | 1.20 | E97 King's Indian Defense: Orthodox Variation, Aronin-Taimanov Defense |
+| Trap: tactics in the open center (Main line) | 7.73 | E94 King's Indian Defense: Orthodox Variation |
+| Trap: tactics in the open center (10...c5) | 3.24 | E94 King's Indian Defense: Orthodox Variation |
+| Trap: tactics in the open center (9...c6) | 1.78 | E94 King's Indian Defense: Orthodox Variation |
+| Trap: ...e5 or ...e6 after 8.d5 (Main line) | 4.15 | E91 King's Indian Defense: Orthodox Variation |
+| Trap: ...e5 or ...e6 after 8.d5 (8...e6) | 4.15 | E91 King's Indian Defense: Orthodox Variation |
+
+## King's Indian Defense — as Black (`kings-indian-black`)
+
+30 chapters, 36 drillable lines (basic 9, traps 8, advanced 19), 376 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Classical: 6...Na6 | 6...Na6 | King's Indian Defense: Kazakh Variation | E91 | ok |
+| Classical: 6.Bd3 | 6.Bd3 | King's Indian Defense: Normal Variation | E70 | ok |
+| Makogonov: 5.h3 | 5.h3 | King's Indian Defense: Makogonov Variation | E71 | ok |
+| Four Pawns: 6...c5 | 6...c5 | King's Indian Defense: Four Pawns Attack, Normal Attack | E77 | ok |
+| Sämisch: 6...c5 | 6...c5 | King's Indian Defense: Sämisch Variation, Sämisch Gambit | E81 | ok |
+| 5.Be2: the Averbakh | 5.Be2 | King's Indian Defense: Averbakh Variation, Modern Defense | E73 | ok |
+| 5.Bd3 | 5.Bd3 | King's Indian Defense: Normal Variation | E70 | ok |
+| Classical: White's seventh moves | 7.a3 | King's Indian Defense: Kazakh Variation | E91 | ok |
+| Classical: White's eighth moves | 8.dxe5 | King's Indian Defense: Kazakh Variation | E91 | ok |
+| Classical: 6.h3 | 6.h3 | King's Indian Defense: Normal Variation | E70 | ok |
+| 6.Bd3: White's seventh moves | 7.O-O | King's Indian Defense: Normal Variation | E70 | ok |
+| Makogonov: the Karpov System | 6.Be3 | King's Indian Defense: Karpov System | E71 | ok |
+| Four Pawns: White's other tries | 6.e5 | King's Indian Defense: Four Pawns Attack | E76 | ok |
+| Four Pawns: 8.Bd3 | 8.Bd3 | King's Indian Defense: Four Pawns Attack, Dynamic Attack | E76 | ok |
+| Sämisch: White's sixth moves | 6.Bd3 | King's Indian Defense: Sämisch Variation, Normal Defense | E81 | ok |
+| Sämisch: 7.Nge2 and 7.dxc5 | 7.Nge2 | King's Indian Defense: Sämisch Variation, Sämisch Gambit | E81 | ok |
+| 5.Be2: the Semi-Averbakh | 6.Be3 | King's Indian Defense: Semi-Averbakh System | E73 | ok |
+| Fifth-move sidelines | 5.Bg5 | King's Indian Defense: Accelerated Averbakh Variation | E70 | ok |
+| 4.Nf3 | 5.Bg5 | King's Indian Defense | E61 | ok |
+| Fourth-move sidelines | 4.Bg5 | King's Indian Defense | E61 | ok |
+| Fianchetto: 3.Nf3 and 4.g3 | 4.g3 | King's Indian Defense: Fianchetto Variation | E60 | ok |
+| Trap: ...Nce5 against 6.Bd3 | 6...Bg4 | King's Indian Defense: Normal Variation | E70 | ok |
+| Trap: ...Nxe4 in the Four Pawns | 6...c5 | King's Indian Defense: Four Pawns Attack, Normal Attack | E77 | ok |
+| Trap: Bh6? in the Sämisch | 9...Re8 | King's Indian Defense: Sämisch Variation, Sämisch Gambit | E81 | ok |
+| Trap to avoid: ...e5 against the Averbakh | 6.Bg5 | King's Indian Defense: Averbakh Variation, Modern Defense | E73 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Classical: 6...Na6 (Main line) | -0.13 | E94 King's Indian Defense: Orthodox Variation, Glek Defense |
+| Classical: 6...Na6 (4.Nf3) | -0.42 | E61 King's Indian Defense |
+| Classical: 6...Na6 (3.Nf3) | -0.42 | E60 King's Indian Defense: Normal Variation, King's Knight Variation |
+| Classical: 6.Bd3 (Main line) | -0.04 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Makogonov: 5.h3 (Main line) | -0.10 | E71 King's Indian Defense: Makogonov Variation |
+| Four Pawns: 6...c5 (Main line) | 0.05 | A69 Benoni Defense: Four Pawns Attack, Main Line |
+| Sämisch: 6...c5 (Main line) | 2.00 | A65 Benoni Defense: King's Pawn Line |
+| 5.Be2: the Averbakh (Main line) | -0.43 | E73 King's Indian Defense: Averbakh Variation, Modern Defense |
+| 5.Bd3 (Main line) | -0.32 | E70 King's Indian Defense: Normal Variation |
+| Classical: White's seventh moves (Main line) | -0.17 | E91 King's Indian Defense: Kazakh Variation |
+| Classical: White's seventh moves (7.Be3) | -0.44 | E91 King's Indian Defense: Kazakh Variation |
+| Classical: White's eighth moves (Main line) | 0.00 | E94 King's Indian Defense: Orthodox Variation, Glek Defense |
+| Classical: White's eighth moves (8.Be3) | -0.43 | E94 King's Indian Defense: Orthodox Variation, Glek Defense |
+| Classical: 6.h3 (Main line) | -0.59 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| 6.Bd3: White's seventh moves (Main line) | -0.21 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| 6.Bd3: White's seventh moves (7.Be3) | 0.00 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Makogonov: the Karpov System (Main line) | -0.54 | E71 King's Indian Defense: Karpov System |
+| Four Pawns: White's other tries (Main line) | 1.00 | E76 King's Indian Defense: Four Pawns Attack |
+| Four Pawns: 8.Bd3 (Main line) | -0.25 | E76 King's Indian Defense: Four Pawns Attack, Dynamic Attack |
+| Sämisch: White's sixth moves (Main line) | 0.01 | E81 King's Indian Defense: Sämisch Variation, Normal Defense |
+| Sämisch: White's sixth moves (6.Bg5) | -0.13 | A65 Benoni Defense: King's Pawn Line, with Bg5 |
+| Sämisch: 7.Nge2 and 7.dxc5 (Main line) | -0.33 | E81 King's Indian Defense: Sämisch Variation, Sämisch Gambit |
+| Sämisch: 7.Nge2 and 7.dxc5 (7.dxc5) | -0.05 | E81 King's Indian Defense: Sämisch Variation, Sämisch Gambit Accepted |
+| 5.Be2: the Semi-Averbakh (Main line) | -0.69 | E73 King's Indian Defense: Semi-Averbakh System |
+| Fifth-move sidelines (Main line) | 0.05 | E90 King's Indian Defense: Zinnowitz Variation |
+| 4.Nf3 (Main line) | -0.27 | E61 King's Indian Defense |
+| Fourth-move sidelines (Main line) | -0.34 | E61 King's Indian Defense |
+| Fianchetto: 3.Nf3 and 4.g3 (Main line) | -0.42 | E63 King's Indian Defense: Fianchetto Variation, Panno Variation |
+| Trap: ...Nce5 against 6.Bd3 (Main line) | 5.31 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Trap: ...Nce5 against 6.Bd3 (10.O-O) | 1.50 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Trap: ...Nce5 against 6.Bd3 (7.O-O) | 1.44 | E90 King's Indian Defense: Normal Variation, Rare Defenses |
+| Trap: ...Nxe4 in the Four Pawns (Main line) | 2.60 | A69 Benoni Defense: Four Pawns Attack, Main Line |
+| Trap: ...Nxe4 in the Four Pawns (7.dxc5) | 1.14 | E76 King's Indian Defense: Four Pawns Attack |
+| Trap: Bh6? in the Sämisch (Main line) | 2.44 | A65 Benoni Defense: King's Pawn Line |
+| Trap: Bh6? in the Sämisch (11.fxe4) | 4.29 | A65 Benoni Defense: King's Pawn Line |
+| Trap to avoid: ...e5 against the Averbakh (Main line) | 0.22 | E73 King's Indian Defense: Averbakh Variation, Modern Defense |
+
 ## Overview: Replies to 1.e4 (`content/e4-overview.pgn`)
 
 7 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
@@ -782,3 +943,24 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 8 | The Greek gift | White | 9.Bxh7+ | 2 | 10...Kg8 (4 half-moves) | ok |
 | 9 | Give up the queen | White | 8.Nxe5 | 2 | 9...c6 (8 half-moves) | ok |
 | 10 | The Lasker trap | Black | 6...exf2+ | 2 | 8.Rxg1 (2 half-moves) | ok |
+
+## Puzzles: King's Indian Defense (`content/kings-indian-puzzles.pgn`)
+
+12 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Trade queens with check | White | 6.dxe5 | 3 | 8...Be6 (3 half-moves) | ok |
+| 2 | The queen check | White | 7.Qa4+ | 1 | 7...Nc6 (5 half-moves) | ok |
+| 3 | The loose knight on d4 | White | 9.Nxd4 | 2 | 10...Nd7 (2 half-moves) | ok |
+| 4 | The knight fork on c6 | White | 11.Nc6 | 1 | 11...Rxe4 (4 half-moves) | ok |
+| 5 | The weak d6 pawn | White | 11.Qxd6 | 1 | 11...Bf8 (2 half-moves) | ok |
+| 6 | Take en passant | White | 9.dxe6 | 2 | 10...Qb6 (4 half-moves) | ok |
+| 7 | The double knight fork | Black | 10...Nce5 | 2 | 12.Qg3 (4 half-moves) | ok |
+| 8 | Remove the defender | Black | 8...Bxf3 | 2 | 10.Qd1 (2 half-moves) | ok |
+| 9 | The pin on the e4 knight | Black | 10...Nxe4 | 2 | 12.Nfd2 (2 half-moves) | ok |
+| 10 | The pinned c3 knight | Black | 8...Nxe4 | 1 | 9.Bd2 (2 half-moves) | ok |
+| 11 | Qh4+ hits the bishop | Black | 10...Nxe4 | 2 | 12.g3 (4 half-moves) | ok |
+| 12 | Two bishops under attack | Black | 8...dxe5 | 1 | 9.Nxe5 (4 half-moves) | ok |

@@ -265,11 +265,52 @@
     {
       "id": "kings-indian",
       "name": "King's Indian Defense",
-      "eco": "E61",
-      "moves": "1. d4 Nf6 2. c4 g6 3. Nc3",
-      "summary": "Black lets White build a big center, then hits it with ...e5 and attacks on the kingside.",
+      "eco": "E60",
+      "moves": "1. d4 Nf6 2. c4 g6",
+      "summary": "Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside.",
+      "puzzles": "content/kings-indian-puzzles.pgn",
+      "furtherStudy": [
+        { "title": "The King's Indian Is Actually Easy If You Learn This", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=dM2AKqzRM84" },
+        { "title": "The King's Indian Is Brutal If You Learn These 10 Positional Concepts", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=K8MSjqFyVvs" },
+        { "title": "Punish 1.d4 with the King's Indian Defense [Key Attacking Ideas]", "by": "Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=rJ8LqYZZvnc" },
+        { "title": "Unknown King's Indian Defense Trick vs 1.d4", "by": "Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=468V5A2lFuw" },
+        { "title": "The King's Indian Defense: Step by Step (Chess Lesson 85)", "by": "NM Robert Ramirez", "kind": "Video", "url": "https://www.youtube.com/watch?v=bCmsHfrcBBc" },
+        { "title": "King's Indian Defense Masterclass (introduction and 12 chapters)", "by": "ChessGeek", "kind": "Video", "url": "https://www.youtube.com/playlist?list=PLOaFVRf_8WkQv_RtBn59zda2ZEBAy1RG7" },
+        { "title": "Complete King's Indian Repertoire for Black", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=0DY4Z_L866c" },
+        { "title": "Learn the King's Indian Setup | 10-Minute Chess Openings", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=kK0cq6UBt1Y" },
+        { "title": "King's Indian Defence", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/King%27s_Indian_Defence" }
+      ],
       "courses": [
-        { "id": "kings-indian-black", "side": "black", "repertoire": "King's Indian Defense" }
+        {
+          "id": "kings-indian-white",
+          "side": "white",
+          "file": "content/kings-indian-white.pgn",
+          "repertoire": "Classical (5.Nf3, 6.Be2 and castling), with 9.b4 against the Mar del Plata",
+          "summary": "Develop naturally, castle, and let Black commit first. Close the center with d5 and race on the queenside with b4 and c5; against ...exd4, guard e4 with f3 and use your space.",
+          "overview": [
+            "Play the Classical: 5.Nf3, 6.Be2 and castle. You make no weakening pawn moves, so Black's attack has nothing to aim at until the center closes.",
+            "After 6.Be2, Black's main reply is 6...e5, in about a third of those games, and 6...Nbd7 or 6...Nc6 usually lead to ...e5 as well. Castle first, then close the center with d5 or hold it with Be3.",
+            "Against 7...Nc6, the Mar del Plata, play 8.d5 and 9.b4. Your queenside attack with c5 must arrive before Black's ...f5, ...f4 and ...g5.",
+            "Against 7...exd4 8.Nxd4 Re8, guard e4 with 9.f3 at once. Natural moves such as 9.Bg5? or 9.Re1? let Black take on e4.",
+            "Against 6...c5, castle and take back on d4 with the knight. Your pawns on c4 and e4 form the Maroczy Bind, which clamps d5 and Black's freeing breaks.",
+            "Know the tricks: 5...e5?! 6.dxe5 wins a pawn before Black has castled, and the fork trick 8...Nxe4?? fails because your queen guards d4."
+          ]
+        },
+        {
+          "id": "kings-indian-black",
+          "side": "black",
+          "file": "content/kings-indian-black.pgn",
+          "repertoire": "The Kazakh 6...Na6 against the Classical, and ...c5 against the Four Pawns and the Sämisch",
+          "summary": "Let White build the big center, castle behind the g7 bishop, then strike with ...e5 or ...c5. The Kazakh 6...Na6 and a knight on c5 keep the theory light against the Classical.",
+          "overview": [
+            "Set up with ...g6, ...Bg7, ...d6 and ...O-O, then strike at White's center with ...e5 or ...c5. Your king is safe behind the g7 bishop.",
+            "White's systems are spread out: 5.Nf3 comes up in about a sixth of your games, and the Four Pawns, the Sämisch, the Makogonov, 5.Be2 and 5.Bd3 in about 5 to 8% each. Learn the plan for each.",
+            "Against the Classical, 6.Be2, play 6...Na6 and ...e5. When White closes the center with d5, put the knight on c5, play ...a5 so b4 can't chase it, then ...f5.",
+            "Against the Four Pawns (5.f4) and the Sämisch (5.f3 and Be3), strike at once with ...c5. White's center is loose and the king is not castled yet.",
+            "Against the Averbakh (Be2 and Bg5), play ...Na6 before ...e5. Otherwise Nd5 hits f6 and c7 and wins the exchange.",
+            "Against 6.Bd3, play 6...Bg4 and pile up on d4 with ...Bxf3, ...Nc6 and ...Nd7. The natural Ne2?? then loses material to ...Nce5."
+          ]
+        }
       ]
     }
   ],
