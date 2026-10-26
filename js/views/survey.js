@@ -105,6 +105,22 @@ function courseLinks(cat, ch, lessons) {
         `${op.name} as ${m.side === "white" ? "White" : "Black"}`))
 }
 
+/**
+ * The page's own courses in a highlighted box, so they stand apart from the single-lesson links
+ * under each variation: "These links open the full Queen's Gambit Course for White and ...".
+ */
+function courseBox(cat, id) {
+    const op = cat.openings.find(o => o.id === id)
+    const built = op ? op.courses.filter(m => m.available) : []
+    if (!built.length) return null
+    const title = m => `${op.name} Course for ${m.side === "white" ? "White" : "Black"}`
+    return h("section", { class: "course-box" },
+        h("h2", {}, built.length > 1 ? `The full ${op.name} courses` : `The full ${op.name} course`),
+        h("p", {}, `${built.length > 1 ? "These links open" : "This link opens"} the full ${built.map(title).join(" and the ")}. The links under each variation below open only the lesson on that variation.`),
+        h("div", { class: "course-box-links" }, built.map(m => h("a", { class: "btn btn-primary course-box-link", href: `#/course/${m.id}`, title: m.repertoire },
+            h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }), title(m), h("span", { "aria-hidden": "true" }, "›")))))
+}
+
 const lineHref = (s, ch, i) => `#/survey/${s.id}/${ch.index}${i ? `/${i}` : ""}`
 
 /** "1.d4 d5 2.c4" or "3.♘c3 ♘f6 4.♗g5": a run of moves, numbered like a score sheet. */
@@ -238,8 +254,8 @@ export async function surveyView(root, ctx, id) {
         else groups.push({ name: ch.group, chapters: [ch] })
     }
 
-    // A page's own course (the Queen's Gambit page's "course"), linked under its flowchart.
-    const pageCourse = s.course ? h("div", { class: "survey-actions survey-courses" }, courseLinks(cat, { headers: { Course: s.course } })) : null
+    // A page's own course (the Queen's Gambit page's "course"), in a highlighted box under its flowchart.
+    const pageCourse = s.course ? courseBox(cat, s.course) : null
 
     root.append(h("section", { class: "course survey" },
         h("nav", { class: "backbar", "aria-label": "Back" },
