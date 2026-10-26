@@ -387,6 +387,7 @@
       "id": "qg",
       "parent": "d4",
       "name": "Queen's Gambit",
+      "heading": "Queen's Gambit Introduction",
       "eco": "D06–D69",
       "moves": "1. d4 d5 2. c4",
       "file": "content/qg-overview.pgn",

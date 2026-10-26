@@ -217,7 +217,8 @@ export async function surveyView(root, ctx, id) {
             h("a", { class: "btn btn-small btn-back", href: "#/" }, h("span", { "aria-hidden": "true" }, "‹"), "Main menu"),
             parent ? h("a", { class: "btn btn-small btn-back", href: `#/survey/${parent.id}` }, h("span", { "aria-hidden": "true" }, "‹"), parent.name) : null),
         h("header", { class: "course-head" },
-            h("h1", {}, s.name),
+            // "heading" replaces the name in the title only; buttons and back links keep the short name.
+            h("h1", {}, s.heading || s.name),
             h("p", { class: "course-side" }, figText(s.subtitle || "")),
             s.table && s.table.after !== "map" ? introTable(s.table) : null,
             ...paras(s.summary, { class: "course-summary" })),
