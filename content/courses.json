@@ -381,7 +381,7 @@
         "note": "Share: how often each reply follows 1.d4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
       },
       "subtitle": "The Queen's Gambit, the Indian Defenses, and the other main replies.",
-      "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Against 1...d5, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level (and works against 1...Nf6 too); the Colle is much rarer and is listed with the uncommon replies."
+      "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Against 1...d5, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level (and works against 1...Nf6 too); the Colle is much rarer and is listed with the uncommon replies. Against 1...Nf6 2.c4, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside."
     },
     {
       "id": "qg",
