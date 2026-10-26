@@ -238,6 +238,9 @@ main { outline: none; }
 }
 a.course-link:hover { border-color: var(--brass); }
 .course-link.is-soon { color: var(--ink-dim); background: transparent; border-style: dashed; }
+/* A link straight to one lesson: the course above, the lesson's title below. */
+.course-link.is-lesson { padding: 6px 14px; }
+.lesson-label { display: flex; flex-direction: column; }
 .course-meta { font-size: 0.8125rem; color: var(--ink-dim); }
 .nowrap { white-space: nowrap; }
 .side-chip { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--ink-dim); flex: none; }

@@ -210,6 +210,7 @@ for (const meta of courses) {
 }
 
 // ---------- Overviews (courses.json "surveys") ----------
+const lessonCourses = new Map() // courses named by [WhiteLesson] and [BlackLesson], built once
 for (const meta of (catalog.surveys || []).filter(() => !onlyCourse)) {
     const section = [`## Overview: ${meta.name} (\`${meta.file}\`)`, ""]
     let survey
@@ -254,6 +255,16 @@ for (const meta of (catalog.surveys || []).filter(() => !onlyCourse)) {
         if (ch.headers.Page && !surveyIds.has(ch.headers.Page)) problems.push(`[Page "${ch.headers.Page}"] is not an overview id in courses.json`)
         if (ch.headers.Course && ch.headers.Course !== "none" && !catalog.openings.some(o => o.id === ch.headers.Course)) {
             problems.push(`[Course "${ch.headers.Course}"] is not an opening id in courses.json (or "none")`)
+        }
+        // [WhiteLesson] and [BlackLesson] name a chapter of that opening's course, which the page links to.
+        for (const side of ["white", "black"]) {
+            const tag = side === "white" ? "WhiteLesson" : "BlackLesson"
+            const title = ch.headers[tag]
+            if (!title) continue
+            const lessonMeta = catalog.openings.find(o => o.id === ch.headers.Course)?.courses.find(m => m.side === side && m.file)
+            if (!lessonMeta) { problems.push(`[${tag}] needs a [Course] header naming an opening with a written ${side} course`); continue }
+            if (!lessonCourses.has(lessonMeta.id)) lessonCourses.set(lessonMeta.id, buildCourse(lessonMeta, await readFile(path.join(root, lessonMeta.file), "utf8")))
+            if (!lessonCourses.get(lessonMeta.id).chapters.some(x => x.title === title)) problems.push(`[${tag} "${title}"] is not a chapter title in ${lessonMeta.file}`)
         }
         const entries = openings.byName.get(ch.opening)
         if (!entries) problems.push(`"${ch.opening}" is not a Lichess opening name`)
