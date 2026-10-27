@@ -29,7 +29,7 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 |---|---|
 | `Chapter` | The title shown in the app. In a course for one family, leave the family name out: the course's name says it (`Exchange: 5...Be7` in the Queen's Gambit Declined Course). Where a title needs one, write the Queen's Gambit families short, as `QGD` or `QGA`: each page spells out the first QGD or QGA it shows ("Queen's Gambit Declined (QGD)") and keeps the abbreviation after that (`spellOut` in `js/ui.js`). |
 | `Type` | `line` (normal lines), `trap`, or `ideas` (the Key ideas page, which is never drilled). Puzzle files use `puzzle` (see Puzzles below). |
-| `Side` | Only in a course for both sides (`"side": "both"`): `white` or `black`, the side the learner plays in this chapter. The checker reports a chapter without it. |
+| `Side` | Only in a course for both sides (`"side": "both"`): `white` or `black`, the side the learner plays in this chapter, or `both` for a chapter drilled from each side (every line then exists once as White and once as Black, with its own progress, and the chapter's tag reads "Both sides"). The checker reports a chapter without it. |
 | `Opening`, `ECO` | The Lichess opening name and code. The checker verifies both. |
 | `FEN` | Optional. Starts the chapter from a set position (used for Key ideas). |
 | `Diagram` | The move whose position is shown beside the chapter on the course page, e.g. `[Diagram "3...Nd4"]`. Without it, the last move named in the title is used (`Main line: 3...Bc5`). The checker reports an error if neither is found on the main line. |

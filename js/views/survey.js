@@ -87,9 +87,9 @@ async function lessonLinks(cat, ch) {
         const meta = title && op && op.courses.find(m => (m.side === side || m.side === "both") && m.available)
         if (!meta) continue
         const c = await loadCourse(meta.id).catch(() => null)
-        const target = c && c.chapters.find(x => x.title === title && x.side === side)
-        // A line chapter opens on its main line, the first line it gives.
-        const key = !target ? null : target.type === "ideas" ? `ideas-${target.index}` : c.lines.find(l => l.chapter === target)?.id
+        const target = c && c.chapters.find(x => x.title === title && (x.side === side || x.side === "both"))
+        // A line chapter opens on its main line, the first line it gives (from this side).
+        const key = !target ? null : target.type === "ideas" ? `ideas-${target.index}` : c.lines.find(l => l.chapter === target && l.side === side)?.id
         if (key) out[side] = { title, href: `#/learn/${c.id}/${key}` }
     }
     return Object.keys(out).length ? out : null
@@ -344,12 +344,11 @@ export async function surveyView(root, ctx, id) {
             // "heading" replaces the name in the title only; buttons and back links keep the short name.
             h("h1", {}, s.heading || s.name),
             h("p", { class: "course-side" }, figText(s.subtitle || "")),
-            s.table && s.table.after !== "map" ? introTable(s.table) : null,
             ...paras(s.summary, { class: "course-summary" })),
         fullCourses,
         s.flow ? flowchart(s, jump) : openingMap(s, cat, jump),
-        // "after": "map" puts the table below the map instead of under the title (the 1.d4 page).
-        s.table && s.table.after === "map" ? introTable(s.table) : null,
+        // Every page has the same order: short text, the full-course box, the map, then the table.
+        s.table ? introTable(s.table) : null,
         groups.map(g => [
             g.name ? h("h2", { class: "section-title" }, figText(g.name)) : null,
             g.chapters.map(ch => {

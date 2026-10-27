@@ -271,7 +271,7 @@ for (const meta of (catalog.surveys || []).filter(() => !onlyCourse)) {
             const lessonMeta = catalog.openings.find(o => o.id === courseId)?.courses.find(m => (m.side === side || m.side === "both") && m.file)
             if (!lessonMeta) { problems.push(`[${tag}] needs a [Course] or [${Side}Course] header naming an opening with a written ${side} course`); continue }
             if (!lessonCourses.has(lessonMeta.id)) lessonCourses.set(lessonMeta.id, buildCourse(lessonMeta, await readFile(path.join(root, lessonMeta.file), "utf8")))
-            if (!lessonCourses.get(lessonMeta.id).chapters.some(x => x.title === title && x.side === side)) problems.push(`[${tag} "${title}"] is not a ${side} chapter title in ${lessonMeta.file}`)
+            if (!lessonCourses.get(lessonMeta.id).chapters.some(x => x.title === title && (x.side === side || x.side === "both"))) problems.push(`[${tag} "${title}"] is not a ${side} chapter title in ${lessonMeta.file}`)
         }
         const entries = openings.byName.get(ch.opening)
         if (!entries) problems.push(`"${ch.opening}" is not a Lichess opening name`)

@@ -30,7 +30,9 @@ export function courseTitle(c) {
 
 /** In a course for both sides, the tag that says which side a chapter is played from. */
 function sideTag(c, ch) {
-    return c.side === "both" ? h("span", { class: `tag side-tag is-${ch.side}` }, `You play ${ch.side === "white" ? "White" : "Black"}`) : null
+    if (c.side !== "both") return null
+    const text = ch.side === "both" ? "Both sides" : `You play ${ch.side === "white" ? "White" : "Black"}`
+    return h("span", { class: `tag side-tag is-${ch.side}` }, text)
 }
 
 /** Where a line lives, for back buttons: its section page. */
@@ -203,7 +205,7 @@ function sectionPage(root, ctx, c, stats, section) {
                 chapterBoard(c, ch, lines, diagrams),
                 h("div", { class: "chapter-head" },
                     h("h2", {}, spellOut(ch.title, spelled), TYPE_LABEL[ch.type] ? h("span", { class: "tag" }, TYPE_LABEL[ch.type]) : null, sideTag(c, ch)),
-                    shareLine(chapterShare(stats, c.opening.fen, ch, ch.learner), labels[ch.learner](ch)),
+                    chapterShareLine(c, stats, ch, labels),
                     ...paras(ch.root.note.text, { class: "chapter-intro" })),
                 h("ul", { class: "lines" }, lines.map(l => {
                     const s = status(l.id)
@@ -251,6 +253,20 @@ function gamesLabel(c, learner) {
         }
         return base
     }
+}
+
+/**
+ * The "how often" line of a chapter, from the side it is played from. A chapter drilled from both
+ * sides gives both shares: "Comes up in 30% of your Caro-Kann games as White, 12% as Black".
+ */
+function chapterShareLine(c, stats, ch, labels) {
+    if (ch.side !== "both") return shareLine(chapterShare(stats, c.opening.fen, ch, ch.learner), labels[ch.learner](ch))
+    const w = chapterShare(stats, c.opening.fen, ch, "w"), b = chapterShare(stats, c.opening.fen, ch, "b")
+    if (w == null && b == null) return null
+    const most = Math.max(w ?? 0, b ?? 0)
+    return h("p", { class: "chapter-share" },
+        h("span", { class: "share-bar", "aria-hidden": "true" }, h("span", { style: { width: `${Math.max(most * 100, 1)}%` } })),
+        `Comes up in ${w == null ? "?" : pct(w)} of your ${shortName(c.opening)} games as White, ${b == null ? "?" : pct(b)} as Black`)
 }
 
 /** "Comes up in 40% of your Italian games", with a bar to compare chapters at a glance. */

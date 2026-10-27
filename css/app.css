@@ -397,6 +397,7 @@ a.chapter-board:focus-visible { outline: none; }
 .tag.side-tag { white-space: nowrap; }
 .tag.side-tag.is-white { background: #f4efe2; border-color: #f4efe2; color: #1b1b1b; }
 .tag.side-tag.is-black { background: #1b1b1b; border-color: #8a8a8a; color: #f4efe2; }
+.tag.side-tag.is-both { border-color: var(--ink-dim); color: var(--ink); }
 .ideas-list .side-tag { font-size: 0.6875rem; padding: 1px 6px; vertical-align: 2px; }
 .chapter-intro { margin-top: 6px; max-width: 40rem; color: var(--ink-dim); font-family: var(--serif); font-size: 1.0625rem; }
 .chapter-share { margin-top: 6px; display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
