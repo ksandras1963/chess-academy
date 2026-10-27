@@ -89,7 +89,7 @@
 [End "9...d5"]
 [Hint "Before grabbing on f2, deal with White's bishop and pawn aiming at f7."]
 
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. d3 O-O 6. Bg5 h6 7. h4?! {A famous gambit: White offers the bishop to open the h-file for the rook. Stockfish: −4.2 after 7...hxg5!, so Black should take.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. d3 O-O 6. Bg5 h6 7. h4?! {A gambit: White offers the bishop to open the h-file for the rook. Stockfish: −4.2 after 7...hxg5!, so Black should take.}
 7... hxg5! {Takes the bishop.}
 8. hxg5 {Opens the h-file and attacks the knight on f6.}
 8... Ng4! {Steps away with an eye on f2. Whatever White does now, Stockfish rates Black clearly winning (about −4.5).}
@@ -192,7 +192,7 @@
 7. fxg6 {Threatens to win the rook on h8 with g7+.} Nf6? {Attacks the queen, but walks into a discovered check.}
 (7... Qf6 {Black's best, but 8.g7+ still wins the rook.} 8. g7+ Kd8 9. gxh8=Q Qxh8 {Stockfish: +2.2, winning for White.})
 8. g7+! {[%cal Gh5e8] The pawn moves and uncovers check from the queen on h5. It also attacks the rook on h8.}
-(8. Bf7+? {A check, but it wins far less.} 8... Ke7 9. Qc5+ d6 10. Qxd4 hxg6 {Stockfish: +0.2, equal.})
+(8. Bf7+? {A check, but it wins far less.} 8... Ke7 9. Qc5+ d6 10. Qxd4 hxg6 {Stockfish: +0.5, slightly better for White.})
 (8. Qe5+? {Saves the queen with check, but the attack is gone.} 8... Ne6 9. Bxe6 dxe6 {Stockfish: −5.2, winning for Black.})
 8... Nxh5 {Black takes the queen, since nothing else answers the check.}
 9. gxh8=Q {[%hint Take the rook and choose your new piece carefully.] Takes the rook and makes a new queen. White wins back the queen with a rook to spare.}
