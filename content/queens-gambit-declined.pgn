@@ -51,7 +51,7 @@
 [Type "concept"]
 [FEN "r1bqrnk1/1p2bp1p/2p2np1/3p2B1/1P1P4/2NBP3/2Q1NPPP/1R3RK1 b - - 0 14"]
 
-{The same position after 11.Rab1 a5 12.a3 g6 13.b4 axb4 14.axb4. Black's best defense against the minority attack is to block it.}
+{The same position after 11.Rab1 a5 12.a3 g6 13.b4 axb4 14.axb4. Here Stockfish's first choice is to block White's b-pawn with ...b5. Black has other ways to meet the minority attack too: see the Key ideas page "Meeting the Exchange".}
 14... b5 {[%csl Yc5,Yc6] White's b-pawn can't advance any more. The price: the c6 pawn is fixed on the half-open c-file, and no black pawn can guard c5 now.}
 15. Ra1 {[%cal Ga1a8] White's rook takes the open a-file instead. Stockfish: 0.0, equal.} *
 
