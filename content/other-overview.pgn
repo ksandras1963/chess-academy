@@ -47,7 +47,7 @@ Black: Take the center with ...d5, or keep your options open with ...Nf6. Decide
 {White: 1.f4 takes control of e5: a Dutch Defense with colors reversed. Develop with Nf3, e3 and Be2 or Bb5, castle, and attack on the kingside, often with Qe1 and Qh4. The pawn on f4 loosens your king, so watch the e1–h4 diagonal.
 
 Black: Take the center with ...d5 and develop quickly with ...Nf6, ...Nc6 and ...Bg4. Fight for e5, the square White's whole setup is built around. From's Gambit, 1...e5, gives a pawn for quick play against White's king, but Stockfish rates it as dubious.}
-1. f4 {This is the Bird Opening. The f-pawn controls e5.} d5 {The most common reply (40%). This is the Dutch Variation: a Dutch Defense with colors reversed.}
+1. f4 {[%engine ok] This is the Bird Opening. The f-pawn controls e5.} d5 {The most common reply (40%). This is the Dutch Variation: a Dutch Defense with colors reversed.}
 (1... c5 2. Nf3 Nc6 3. e3 d5 4. Bb5 {Pins the knight. White may take on c6 to double Black's pawns and keep a grip on e5.} Bd7 {Breaks the pin.})
 (1... e5 {[%engine ok] This is From's Gambit. Black offers a pawn to open lines toward White's king. Stockfish rates it about two thirds of a pawn worse than 1...Nf6, but it is a dangerous surprise.} 2. fxe5 d6 3. exd6 Bxd6 {Black is a pawn down but threatens ...Qh4+.} 4. Nf3 {Covers h4. After 4.Nc3?? Qh4+ 5.g3 Qxg3+ 6.hxg3 Bxg3# White is mated.} g5 {This is the Lasker Variation. Black plans ...g4 to drive the knight off f3, where it guards h4. Stockfish still prefers White by about half a pawn.})
 2. Nf3 Nc6 3. e3 Bg4 {Pins the f3 knight.} 4. Be2 {Breaks the pin.} Nf6 {Black has developed freely and has a share of the center.} *
@@ -83,5 +83,5 @@ Black: Build a big center with ...e5 and ...d5, and defend e5 with ...Nc6 and ..
 Black: Take the center with ...d5 and ...e5 while White plays slowly, and develop with ...Nf6 and ...Nc6. Or copy White's fianchetto with ...Nf6, ...g6 and ...Bg7. A big center needs looking after, because the g2 bishop and c4 will hit it.}
 1. g3 {This is the Hungarian Opening, also called the King's Fianchetto. The bishop will go to g2.} d5 {The most common reply (37%). Black takes the center.}
 (1... Nf6 {The Indian Defense.} 2. Bg2 g6 3. Nf3 Bg7 4. O-O O-O {Both sides have fianchettoed and castled. The position is symmetrical until someone plays in the center, with d4 or c4, or ...d5 or ...c5.})
-(1... c5 {The Sicilian Invitation.} 2. Bg2 Nc6 3. Nf3 d5 4. O-O e5 {Black has a big center, and Stockfish gives Black a small edge. White's g3, Bg2, Nf3 and castling form a King's Indian Attack setup; d3 with e4 or c4 comes next.})
+(1... c5 {The Sicilian Invitation.} 2. Bg2 Nc6 3. Nf3 d5 4. O-O {[%engine ok]} e5 {Black has a big center, and Stockfish gives Black a small edge. White's g3, Bg2, Nf3 and castling form a King's Indian Attack setup; d3 with e4 or c4 comes next.})
 2. Bg2 e5 {Black builds a full pawn center.} 3. d3 Nf6 4. Nf3 Nc6 {Black has both center pawns and easy development. White's setup is a King's Indian Defense with colors reversed and a move ahead. 1...e5 2.Bg2 d5 3.d3 Nf6 4.Nf3 Nc6, the second most common reply, reaches the same position.} *
