@@ -1,6 +1,6 @@
 # Editing the lessons
 
-Each course is one PGN file in `content/`. For example, `italian-white.pgn` is the Italian Game played as White. You can edit these files in any text editor. You can also paste a whole file into a Lichess Study to see it on a board.
+Each course is one PGN file in `content/`. For example, `italian.pgn` is the Italian Game, played as White and as Black. You can edit these files in any text editor. You can also paste a whole file into a Lichess Study to see it on a board.
 
 A course can also teach both sides, like the Queen's Gambit courses (`queens-gambit-declined.pgn`, `queens-gambit-accepted.pgn`, `slav.pgn`, `tarrasch.pgn`). Its entry in `courses.json` has `"side": "both"`, and every chapter says which side the learner plays with a `[Side "white"]` or `[Side "black"]` header. The course page lists both sides together, most common first, with a "You play White" or "You play Black" tag on each chapter; the board and the "how often" bar follow the chapter's side. The page has a drill for each side ("Drill as White", "Drill as Black"). The title has no color: "Slav Defense Course". The King's Indian Defense (`kings-indian.pgn`) and the French Defense (`french.pgn`) are built the same way.
 
