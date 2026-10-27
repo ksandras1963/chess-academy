@@ -161,7 +161,7 @@ function courseBox(cat, s, hasLessons) {
         h("p", {}, [
             one ? `${plural ? "These links open" : "This link opens"} the full ${built(one).map(m => courseTitle(one, m)).join(" and the ")}.`
                 : "These links open the full courses for the openings on this page.",
-            bothSides ? " Each course teaches both sides, with a drill for each." : "",
+            bothSides ? (groups.flat().length > 1 ? " Each course teaches both sides, with a drill for each." : " The course teaches both sides, with a drill for each.") : "",
             hasLessons ? " The links under each variation below open only the lesson on that variation." : ""].join("")),
         boxRows(groups).map(row => h("div", { class: "course-box-links" }, row.map(it => h("a", { class: "btn course-box-link", href: it.href, title: it.tip },
             h("span", { class: `side-chip ${it.side}`, "aria-hidden": "true" }), it.text, h("span", { "aria-hidden": "true" }, "›"))))))
