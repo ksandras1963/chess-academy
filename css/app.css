@@ -579,6 +579,9 @@ a.om-box:hover, a.om-box:focus-visible { border-color: var(--tone); }
 .commentary { min-height: 5.5rem; }
 .cm-entry + .cm-entry { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--rule); }
 .cm-move { font-size: 1.25rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+/* The move line above the move buttons is always one line (Kumar's rule): it never wraps. */
+.move-head .cm-move, .concept-text > .cm-move { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.move-head .cm-who, .concept-text > .cm-move .cm-who { margin-left: 10px; }
 .cm-who { font-family: var(--sans); font-size: 0.8125rem; font-weight: 500; color: var(--ink-dim); }
 .commentary p { margin-top: 6px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.6; max-width: 38rem; }
 .cm-entry.is-wrong .cm-move { color: var(--flag); }
@@ -689,9 +692,10 @@ button.sheet-move:hover { background: var(--felt-high); }
 /* Display only: the page scrolls over these boards on a phone. */
 .concept-board .board-frame { max-width: 420px; margin: 0 auto; touch-action: manipulation; }
 .concept-text { display: grid; align-content: start; gap: 10px; }
-.concept-text > p, .concept-note p { font-family: var(--serif); font-size: 1.0625rem; line-height: 1.6; max-width: 38rem; }
-.concept-note p + p { margin-top: 8px; }
-.concept-text .cm-move { margin-top: 6px; }
+.concept-explain p, .concept-note p { font-family: var(--serif); font-size: 1.0625rem; line-height: 1.6; max-width: 38rem; }
+.concept-explain p + p, .concept-note p + p { margin-top: 8px; }
+.concept-note:empty { display: none; }
+.concept-note { padding: 8px 12px; border-left: 3px solid var(--brass); background: var(--felt-raised); border-radius: 0 6px 6px 0; }
 @media (min-width: 760px) {
     .concept-body { grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 28px; align-items: start; }
     .concept-board .board-frame { margin: 0; }

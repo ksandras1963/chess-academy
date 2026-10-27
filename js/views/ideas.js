@@ -32,15 +32,17 @@ function conceptSection(cp, i) {
     let idx = 0
     let board = null
 
-    // The move's heading, then the buttons, then its note, so the buttons stay put from move to move.
-    const steps = nodes.length
-        ? [move, h("div", { class: "nav-buttons" }, first, prev, next, last), note]
-        : []
+    // Only the move's one-line heading sits above the buttons; its note and the explanation go below
+    // them, so the buttons stay put from move to move.
+    const explain = h("div", { class: "concept-explain" }, ...paras(cp.root.note.text))
+    const text = nodes.length
+        ? [move, h("div", { class: "nav-buttons" }, first, prev, next, last), note, explain]
+        : [explain]
     const el = h("section", { class: "concept", "aria-label": cp.title },
         h("h2", { class: "concept-title" }, h("span", { class: "concept-num" }, String(i + 1)), spellOut(cp.title)),
         h("div", { class: "concept-body" },
             h("div", { class: "concept-board" }, boardEl),
-            h("div", { class: "concept-text" }, ...paras(cp.root.note.text), ...steps)))
+            h("div", { class: "concept-text" }, ...text)))
 
     function go(k, animate = true) {
         idx = Math.max(0, Math.min(k, nodes.length))
