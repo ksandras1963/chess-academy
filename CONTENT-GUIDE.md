@@ -12,7 +12,7 @@ Kumar's rules for every opening. The King's Indian follows them.
 
 1. **The page order.** An opening's Introduction page shows, in this order: a short text of two or three sentences, the course links (the yellow box), the map of the variations, then a table of the variations that says what happens in each and how often it is played (a "How often" column, with a note on how it is measured). A course page keeps the same order for its text, map and table (see above).
 2. **Name first, then the move.** Whenever a line is meant, give its name and then the move: "Mar del Plata, Bayonet Attack: 9.b4", "Classical, Open Center: 7...exd4". Chapter titles, notes and table rows use the same pattern.
-3. **Less text.** At most two sentences per note. Use the table and the map instead of long paragraphs.
+3. **Less text.** Keep notes short: up to 5 sentences, only when needed. In Kumar's words: "Can be longer sentences - up to 5, if needed." Use the table and the map instead of long paragraphs.
 4. **Names.** The Lichess name is the official one (the `Opening` header). Use a descriptive name ("Open Center") where Lichess has none.
 5. **Order by club frequency.** Frequencies come from Lichess club games (rated rapid and classical, players averaging 1800 to 2199). Lines with the same name stay together, and within a group the most-played line comes first; the map follows the same order. Count each game by the position it reaches, not by its first moves: a move order that transposes counts with the variation it becomes.
 6. **Traps** stay together in the Traps section, whatever the level of the line they come from.

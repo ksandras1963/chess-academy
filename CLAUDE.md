@@ -7,7 +7,7 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 ## One course per opening
 
 - One course teaches both sides. There are no separate White and Black courses, only separate drills: "Drill as White" and "Drill as Black".
-- Keep text short and concrete. No list of abstract points ("What you need to know"); what a reader needs about each variation goes in the table.
+- Keep text short and concrete. A note has up to 5 sentences, only when needed. In Kumar's words: "Can be longer sentences - up to 5, if needed." No list of abstract points ("What you need to know"); what a reader needs about each variation goes in the table.
 
 ## Introduction page (an opening's overview page), in this order
 
