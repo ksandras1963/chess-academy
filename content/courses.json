@@ -94,6 +94,12 @@
             "puzzles": "content/caro-kann-puzzles.pgn",
             "furtherStudy": [
                 {
+                    "title": "Learn the Caro-Kann Defense | 10-Minute Chess Openings",
+                    "by": "IM Levy Rozman, GothamChess",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=rmbU97iftC8"
+                },
+                {
                     "title": "Learn the Caro-Kann in 15 Minutes [Chess Openings Crash Course]",
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
@@ -104,36 +110,6 @@
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=tY037Q71w5A"
-                },
-                {
-                    "title": "Two Knights Variation: How to CRUSH the Caro-Kann with Traps!",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=9E9eDY1jNOs"
-                },
-                {
-                    "title": "My SECRET Sideline Against The Caro-Kann With 87% Win Rate",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=JtExmcEkydU"
-                },
-                {
-                    "title": "Learn the Caro-Kann Defense | 10-Minute Chess Openings",
-                    "by": "IM Levy Rozman, GothamChess",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=rmbU97iftC8"
-                },
-                {
-                    "title": "How to CRUSH with the Caro-Kann!",
-                    "by": "IM Levy Rozman, GothamChess",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=ebfzL_GwiIE"
-                },
-                {
-                    "title": "Destroy The Fantasy Variation in 7 moves | Caro-Kann Defense",
-                    "by": "IM Alex Banzea",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=vyDwjpRbdVo"
                 },
                 {
                     "title": "The only Caro-Kann guide you will ever need",
@@ -147,10 +123,10 @@
                     "id": "caro-kann",
                     "side": "both",
                     "file": "content/caro-kann.pgn",
-                    "repertoire": "The same lines for both sides: the Advance, the Panov, the Classical and Tartakower, the Two Knights and the Fantasy.",
-                    "summary": "1.e4 c6: Black supports ...d5 with the c-pawn.",
+                    "repertoire": "One repertoire for both sides: nine Basic lines, plus traps and rarer lines.",
+                    "summary": "1.e4 c6: the c-pawn supports ...d5, which attacks e4.",
                     "why": {
-                        "text": "As Black, 1...c6 prepares ...d5 without shutting in the c8 bishop, which comes out to f5 or g4 before ...e6. Your pawns have no weaknesses, so trades suit you.\n\nAs White, you choose the fight: the Advance gains space and cramps Black's pieces, the Panov gives you active pieces for an isolated pawn, and the Two Knights and the Fantasy are full of traps."
+                        "text": "As Black, you get a solid position with no weak pawns, so trades suit you. Unlike in the French, your light-squared bishop gets out before ...e6.\n\nAs White, you meet the Caro-Kann in about 9% of your 1.e4 games. You can choose the kind of game you want, from a space advantage to sharp sidelines full of traps."
                     },
                     "table": {
                         "columns": [
@@ -164,31 +140,31 @@
                                 "Advance, Short Variation: 3.e5 Bf5 4.Nf3",
                                 "20%",
                                 "25%",
-                                "White develops calmly with Nf3, Be2 and castling. Black hits d4 with ...c5, ...Nc6 and a knight on f5."
+                                "White develops quietly: Nf3, Be2 and castling before anything sharp. Black answers ...e6, ...c5 and ...Nc6, then brings a knight to f5."
                             ],
                             [
                                 "Advance, 4.Bd3: 3.e5 Bf5 4.Bd3",
                                 "20%",
                                 "24%",
-                                "White trades the light-squared bishops. Black gets a solid structure without a bad bishop, and hits d4 with ...c5 and ...Qb6."
+                                "White trades the light-squared bishops at once. Black then plays ...e6, ...c5 and ...Nc6, and ...Qb6 also hits b2."
                             ],
                             [
                                 "Advance, Botvinnik-Carls Defense: 3.e5 c5",
                                 "20%",
                                 "26%",
-                                "Black hits d4 at once and White holds it with c3. Black takes on d4, pins with ...Bg4 and brings a knight to f5."
+                                "Black plays ...c5 before developing the bishop. After c3 and ...cxd4, ...Bg4 pins the knight that guards d4."
                             ],
                             [
                                 "Panov Attack: 3.exd5 cxd5 4.c4",
                                 "15%",
                                 "23%",
-                                "White gets an isolated d-pawn and active pieces. Black blockades d5 with a knight and trades pieces."
+                                "White plays c4 and, after the trades on d5, keeps an isolated d-pawn. Black develops with ...Nf6, ...Nc6 and ...Bg4."
                             ],
                             [
                                 "Classical Variation: 3.Nc3 dxe4 4.Nxe4 Bf5",
                                 "11%",
                                 "48%",
-                                "Black's bishop comes out before ...e6. Club players often answer with Nf3, Bd3 and a bishop trade instead of the sharp h4."
+                                "4...Bf5 develops the bishop at once and lets White chase it with Ng3. Club players then often play Nf3, Bd3 and a bishop trade instead of the sharp h4."
                             ],
                             [
                                 "Tartakower Variation: 4.Nxe4 Nf6 5.Nxf6+ exf6",
@@ -974,31 +950,31 @@
                         "Advance, Short Variation: 3.e5 Bf5 4.Nf3",
                         "20%",
                         "25%",
-                        "White develops calmly with Nf3, Be2 and castling. Black hits d4 with ...c5, ...Nc6 and a knight on f5."
+                        "White develops quietly: Nf3, Be2 and castling before anything sharp. Black answers ...e6, ...c5 and ...Nc6, then brings a knight to f5."
                     ],
                     [
                         "Advance, 4.Bd3: 3.e5 Bf5 4.Bd3",
                         "20%",
                         "24%",
-                        "White trades the light-squared bishops. Black gets a solid structure without a bad bishop, and hits d4 with ...c5 and ...Qb6."
+                        "White trades the light-squared bishops at once. Black then plays ...e6, ...c5 and ...Nc6, and ...Qb6 also hits b2."
                     ],
                     [
                         "Advance, Botvinnik-Carls Defense: 3.e5 c5",
                         "20%",
                         "26%",
-                        "Black hits d4 at once and White holds it with c3. Black takes on d4, pins with ...Bg4 and brings a knight to f5."
+                        "Black plays ...c5 before developing the bishop. After c3 and ...cxd4, ...Bg4 pins the knight that guards d4."
                     ],
                     [
                         "Panov Attack: 3.exd5 cxd5 4.c4",
                         "15%",
                         "23%",
-                        "White gets an isolated d-pawn and active pieces. Black blockades d5 with a knight and trades pieces."
+                        "White plays c4 and, after the trades on d5, keeps an isolated d-pawn. Black develops with ...Nf6, ...Nc6 and ...Bg4."
                     ],
                     [
                         "Classical Variation: 3.Nc3 dxe4 4.Nxe4 Bf5",
                         "11%",
                         "48%",
-                        "Black's bishop comes out before ...e6. Club players often answer with Nf3, Bd3 and a bishop trade instead of the sharp h4."
+                        "4...Bf5 develops the bishop at once and lets White chase it with Ng3. Club players then often play Nf3, Bd3 and a bishop trade instead of the sharp h4."
                     ],
                     [
                         "Tartakower Variation: 4.Nxe4 Nf6 5.Nxf6+ exf6",
