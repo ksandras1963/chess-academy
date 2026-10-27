@@ -1,106 +1,42 @@
-[Chapter "Key ideas: Why the Advance"]
-[Side "white"]
+[Chapter "Key ideas: The French pawn chain"]
+[Side "both"]
 [Type "ideas"]
 
-{Why play the Advance? White grabs space at once, keeps Black's king's knight off f6, and gets an easy plan on the kingside. It also saves study: against 3.e5, Black answers 3...c5 in nine games out of ten, and the same structure follows. Step through the moves to see the logic.}
-1. e4 {Takes the center and opens lines for the queen and the f1 bishop.} e6 {[%cal Ge6d5] Prepares ...d5. Compared with 1...e5, Black keeps f7 out of reach of a bishop on c4. The cost is the c8 bishop, which is now shut in behind the pawn on e6.}
-2. d4 {Two pawns in the center. Black can't stop it.} d5 {[%cal Rd5e4] Black attacks e4. White must take on d5, push to e5, or protect the pawn.}
-3. e5 {[%cal Ge5f6,Ge5d6] [%csl Yf6,Yc8] The Advance. The pawn takes f6 away from Black's king's knight and locks Black's c8 bishop behind the pawns on e6 and d5. In return Black gets a clear target, the pawn on d4 at the base of White's chain, and hits it at once with 3...c5. The other choices, 3.Nc3 and 3.Nd2, lead to the Winawer, the Steinitz and the Tarrasch, where both sides need a lot of theory.} *
+{The French starts with a fight over the center. Step through the moves to see where the pawn chain comes from, and how each side attacks it.}
+1. e4 {Takes the center and opens lines for the queen and the f1 bishop.} e6 {[%cal Ge6d5] Prepares ...d5. Compared with 1...e5, f7 is out of reach of a bishop on c4; the cost is the c8 bishop, shut in behind the pawn on e6.}
+2. d4 d5 {[%cal Rd5e4] Black attacks e4. White can push it (3.e5), take on d5 (3.exd5) or defend it with a knight (3.Nc3 or 3.Nd2).}
+3. e5 {[%csl Yd4,Ye5] The pawn chain: d4 is its base and e5 its tip. Each chain points at the wing where its side should attack: White's at Black's kingside, Black's at White's queenside.} c5 {[%cal Gc5d4,Gf7f6] Black attacks the base with ...c5; the other break, ...f6, hits the tip and opens the f-file. If d4 falls, the pawn on e5 is cut off and weak. The same two breaks come back in the Winawer, the Tarrasch and the Steinitz.} *
 
 [Chapter "Key ideas: Plans in the Advance"]
-[Side "white"]
-[Type "ideas"]
-[FEN "r1b1kbnr/pp3ppp/1qn1p3/2ppP3/3P4/P1P2N2/1P3PPP/RNBQKB1R b KQkq - 0 6"]
-
-{[%cal Gb2b4,Gc1b2,Gf1d3,Rc5d4,Rc6d4,Rb6d4,Rg8e7] [%csl Yd4] The main line after 3...c5 4.c3 Nc6 5.Nf3 Qb6 6.a3: green arrows show White's plans, red arrows Black's, and Stockfish rates it as equal (+0.2).
-
-White keeps the chain: c3 and Nf3 hold d4, a3 and b4 gain space on the queenside, and Bb2 adds another defender. Castle before you open anything, then attack on the kingside, where the chain points, with Bd3, Qe2 or Qc2 and h4.
-
-Black piles up on d4 with ...c5, ...Nc6, ...Qb6 and a knight on f5, and can also hit the tip of the chain with ...f6. If d4 falls, the pawn on e5 is cut off and weak.} *
-
-[Chapter "Key ideas: The Advance pawn chain"]
-[Side "white"]
-[Type "ideas"]
-[FEN "r1b1kb1r/pp2nppp/1qn1p3/3pP3/3P4/P1N2N2/1P3PPP/R1BQKB1R b KQkq - 2 8"]
-
-{[%cal Gc3a4,Ga4c5,Gb2b4,Gc1f4,Rc6d4,Re7f5] [%csl Yc5,Yd4] In the Advance chain, d4 is the base and e5 the tip, and each chain points at the wing where its side should play.
-
-In this position, after 6...cxd4 7.cxd4 Nge7 8.Nc3, no White pawn can defend d4, so White holds it with pieces, and Na4 hits the queen and eyes the hole on c5 (Stockfish +0.8, slightly better for White).
-
-After 6...c4 the queenside is locked, so White guards b3, plays on the kingside, and can open the b-file later with b3.
-
-If White plays dxc5, the e5 pawn needs pieces to hold it: Nf3, Bf4, Qe2 and Re1.
-
-Against Black's ...f6 break, White usually takes on f6, and the e6 pawn becomes a target on the open e-file.} *
-
-[Chapter "Key ideas: Typical tactics"]
-[Side "white"]
-[Type "ideas"]
-[FEN "r3kbnr/pp1b1ppp/4p3/3pq3/8/2NB4/PP3PPP/R1BQR1K1 b kq - 1 11"]
-
-{[%cal Re1e5,Re5e8,Gc3b5,Gd1f3] [%csl Ye5] This position, after 10...Qxe5 11.Re1 in the Milner-Barry Gambit, shows the danger of the open e-file: after 11...Qd6 12.Nb5 only 12...Qb6 holds, while 12...Bxb5? 13.Bxb5+ and 12...Qb8? 13.Qf3 lose (Stockfish +2.6 and +3.9).
-
-Earlier in the same gambit, 7...Nxd4?? fails to 8.Nxd4 Qxd4 9.Bb5+, and White's queen takes Black's queen (Stockfish +9.3, winning for White).
-
-When White's queen still sees d4, ...Nxd4 just drops a piece, as after 6.a3 cxd4 7.cxd4 Nxd4? 8.Nxd4 (Stockfish +5.9, winning for White).
-
-After 3...f6 4.Bd3 fxe5? 5.Qh5+ g6 6.Bxg6+, taking with 6...hxg6?? loses the rook to 7.Qxh8, and even after 6...Kd7 White is winning (Stockfish +2.3).
-
-In the 6...c4 line, 7.Nbd2 Na5 8.Rb1 Nb3? 9.Nxb3 Qxb3 10.Qxb3 cxb3 11.Nd2 wins the pawn on b3 (Stockfish +2.0, winning for White).} *
-
-[Chapter "Key ideas: Move orders and early tricks"]
-[Side "white"]
-[Type "ideas"]
-
-{Black can reach the same positions by different routes, and some routes hide tricks. Step through the moves.}
-1. e4 e6 2. d4 d5 3. e5 c5 4. c3 {[%cal Gc3d4] The pawn on c3 guards d4, so White can always recapture on d4 with a pawn.} Nc6 {The main move. 4...Qb6 5.Nf3 Nc6 reaches the same position. After 4...Qb6 5.Nf3 Bd7, the Wade Variation, trade bishops with 6.Be2 Bb5 7.Bxb5+ Qxb5 and gain time on the queen with 8.Na3 (Stockfish +0.3). After 4...cxd4 5.cxd4, the check 5...Bb4+? is a mistake: block with 6.Nc3 and drive the bishop back with a3 later (Stockfish +1.0, clearly better for White).}
-5. Nf3 Bd7 {[%cal Gd7b5,Rc6e5] The line GM Igor Smirnov recommends for Black. Black waits with ...Bd7 and ...Rc8 and sets two traps.} 6. Be2 {Our move: castle next. Avoid 6.Bb5?, which runs into 6...Nxe5! 7.Nxe5 Bxb5, and Black has won a pawn and stopped White from castling (Stockfish −1.7, clearly better for Black). 6.Bd3 is playable, but after 6...Rc8 7.O-O cxd4 8.cxd4 Nb4 give up the bishop with 9.Nc3 Nxd3 10.Qxd3, because 9.Be2? lets 9...Nc2 trap the rook on a1 (Stockfish −2.2, winning for Black).} *
-
-[Chapter "Key ideas: Why the French"]
-[Side "black"]
-[Type "ideas"]
-
-{Why play the French? Black builds a pawn center with ...e6 and ...d5 that White can't easily knock down, then hits it from the side with ...c5, and sometimes ...f6. Compared with 1...e5, the diagonal from c4 to f7 is closed before White's bishop gets there, so attacks on f7 such as the Fried Liver don't work. The price is the c8 bishop, shut in behind the pawn on e6; the Key ideas page on the French bishop shows how to free it or trade it. Step through the moves to see the idea.}
-1. e4 e6 {[%cal Ge6d5] Prepares ...d5. If White ever takes on d5, Black recaptures with the e-pawn and keeps a pawn in the center.}
-2. d4 d5 {[%cal Rd5e4,Gc7c5] Black attacks e4, and each White answer leads to its own structure. Against 3.e5, the Advance, hit the base of White's chain with 3...c5. Against 3.exd5, the Exchange, develop with ...Nc6, ...Bd6 and ...Bg4. Against 3.Nc3 or 3.Nd2, take on e4 (the Rubinstein) and play ...Nd7 and ...Ngf6; the green arrow shows ...c5, Black's main way to fight back in nearly every line.} *
-
-[Chapter "Key ideas: The attack on d4"]
-[Side "black"]
-[Type "ideas"]
-[FEN "r1b1kbnr/pp3ppp/1qn1p3/2ppP3/3P4/2P2N2/PP3PPP/RNBQKB1R w KQkq - 3 6"]
-
-{[%cal Gc5d4,Gc6d4,Gb6d4,Gg8e7,Ge7f5,Rf3d4,Rc3d4,Re5f6] [%csl Yd4] The French plan in one picture: after 3.e5 c5 4.c3 Nc6 5.Nf3 Qb6, Black's c-pawn, knight and queen aim at d4 (green arrows), and the king's knight will join them from f5. White defends d4 with the c-pawn and the knight on f3 (red arrows), and Stockfish rates the position as equal (+0.2). The same break, ...c5 against d4, comes back in the Rubinstein and after 2.Nf3 d5 3.e5.} *
-
-[Chapter "Key ideas: Five French pawn structures"]
-[Side "black"]
+[Side "both"]
 [Type "ideas"]
 [FEN "r1b1kbnr/pp3ppp/1q2p3/n2pP3/2pP4/P1P2N2/1P1N1PPP/R1BQKB1R w KQkq - 2 8"]
 
-{[%cal Ga5b3,Gb7b5,Gf7f6,Rb2b4,Rh2h4] [%csl Yb3,Yc4] The Advance chain: Black attacks its base with ...c5 against d4 or its tip with ...f6, and if d4 falls, the e5 pawn is cut off and Black attacks it with ...Qc7, ...Nc6 and ...f6.
+{[%cal Ga5b3,Gb7b5,Gf7f6,Rb2b4,Rh2h4] [%csl Yb3,Yc4] After 3...c5 4.c3 Nc6 5.Nf3 Qb6, Black's c-pawn, knight and queen all hit d4; White holds it with c3 and Nf3 and plays 6.a3 to prepare b4 and gain space on the queenside. With 6...c4 (this position, after 7.Nbd2 Na5), Black stops b4 for good, and b3 becomes a hole for Black's knight, but 8.Rb1 Nb3? 9.Nxb3 Qxb3 10.Qxb3 cxb3 11.Nd2 loses the pawn (Stockfish +2.0, winning for White). Black usually castles queenside and later breaks with ...f6, while White plays on the kingside with h4 or opens the b-file with b3. If Black takes on d4 instead, 6...cxd4 7.cxd4, no White pawn can defend d4: White holds it with pieces, and Na4 hits the queen and eyes the hole on c5 (Stockfish +0.8, slightly better for White).} *
 
-The closed queenside (this position, after 6.a3 c4 7.Nbd2 Na5): b3 is a hole, but don't jump in too early, because 8.Rb1 Nb3? 9.Nxb3 Qxb3 10.Qxb3 cxb3 11.Nd2 loses the pawn on b3 (Stockfish +2.0, winning for White). Here Black usually castles queenside and later breaks with ...f6, while White plays on the kingside with h4 or opens the b-file with b3.
-
-The Exchange: the pawns are symmetrical, the more active side controls the e-file, and ...Nge7 avoids the pin Bg5.
-
-The Rubinstein: Black frees the game with ...c5; and in any line where White ends up with an isolated d-pawn, such as the Monte Carlo (4.c4 in the Exchange), blockade it with a piece on d5 and trade pieces.} *
-
-[Chapter "Key ideas: Tricks and traps"]
-[Side "black"]
+[Chapter "Key ideas: The Winawer structure"]
+[Side "both"]
 [Type "ideas"]
-[FEN "r1b1kbnr/pp3ppp/1qn1p3/3pP3/3P4/3B1N2/PP3PPP/RNBQK2R b KQkq - 0 7"]
+[FEN "rnbqk2r/pp2nppp/4p3/2ppP3/3P4/P1P5/2P2PPP/R1BQKBNR w KQkq - 1 7"]
 
-{[%cal Rd3b5,Rb5e8] [%csl Rd4] In the Milner-Barry Gambit the pawn on d4 looks free, but 7...Nxd4?? 8.Nxd4 Qxd4 9.Bb5+ uncovers the d-file, and White's queen takes Black's (Stockfish +9.3, winning for White), so play 7...Bd7 first and then take the pawn.
+{[%cal Gd1g4,Gg4g7] [%csl Yc2,Yc3,Yg7] After 3...Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7, White has doubled c-pawns, but also the two bishops, and the pawn on c3 supports d4. Black has given up the bishop that guarded the dark squares, so g7 is weak: that is why White plays 7.Qg4 at once. Black attacks c3 and d4 with ...Qc7, ...Nbc6 and ...cxd4, and Black's king often stays in the center, guarded by its pawns. In the Poisoned Pawn, White wins g7 and h7 and Black wins the center pawns; 7...O-O instead is safer but leaves Black defending. Slightly better for White (Stockfish +0.6), with chances for both sides.} *
 
-Later in the gambit, leave e5 alone: after 10...Qxe5 11.Re1, natural moves lose, and only 11...Qd6 12.Nb5 Qb6 holds, with a repetition.
+[Chapter "Key ideas: The ...f6 break and the e6 pawn"]
+[Side "both"]
+[Type "ideas"]
+[FEN "r1bqkb1r/pp4pp/2n1pn2/3p4/3P4/3B4/PP1NNPPP/R1BQK2R w KQkq - 0 10"]
 
-When White's queen still sees d4, ...Nxd4 drops a piece, as after 6.a3 cxd4 7.cxd4 Nxd4? 8.Nxd4 (Stockfish +5.9, winning for White).
+{[%cal Gf8f1,Gf6e4,Rd3h7] [%csl Ye5,Ye6] In the Tarrasch and the Steinitz, Black first hits d4 with ...c5 and then the tip of the chain with ...f6. This position, after 9.exf6 Nxf6 in the Tarrasch, shows the result: Black's pieces come out freely, the f-file opens for Black's rook, and the knight can jump to e4. The price is the pawn on e6, which is backward, and the square e5, which White wants for a knight or bishop. In the Steinitz, White's pawn on f4 holds e5 longer, so Black usually expands on the queenside first with ...a6 and ...b5. Slightly better for White here (Stockfish +0.5).} *
 
-After 3.f3 dxe4 4.fxe4?, 4...Qh4+ wins the e4 pawn, and 5.g3? Qxe4+ also hits the rook on h1 (Stockfish −7.0, winning for Black).
+[Chapter "Key ideas: Open games: Exchange and Rubinstein"]
+[Side "both"]
+[Type "ideas"]
+[FEN "r3k1nr/pppq1ppp/2nb4/3p4/3P2b1/2PB1N2/PP3PPP/RNBQ1RK1 w kq - 3 8"]
 
-Against the Monte Carlo, 4.c4, check with 4...Bb4+, castle, and take on c4 only after White's bishop has moved: that avoids GM Igor Smirnov's trap with 8...Ng4? 9.O-O!} *
+{[%cal Ge1e8,Gg8e7] [%csl Ye4,Ye5] After 3.exd5 exd5 the pawns are symmetrical and the e-file is open: the more active side controls it and the outposts on e4 and e5, and Black's c8 bishop is free from the start. Keep your knight off f6 when White can pin it with Bg5; ...Nge7 is more flexible. In the Rubinstein there are no e-pawns: White has d4 against Black's e6, and Black frees the game with ...c5 and puts the c8 bishop on b7. When White ends up with an isolated d-pawn, as in the Monte Carlo (4.c4 in the Exchange), Black blockades it with a piece on d5 and trades pieces.} *
 
 [Chapter "Key ideas: The French bishop"]
-[Side "black"]
+[Side "both"]
 [Type "ideas"]
 [FEN "rnbqkbnr/ppp2ppp/4p3/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3"]
 
@@ -111,6 +47,13 @@ Trade it with ...Bd7 and ...Bb5, or with ...b6 and ...Ba6. In the Rubinstein, br
 The breaks ...c5 and ...f6 give it more air, and after ...f6 and exf6 it can come out via d7 and e8.
 
 Even on d7 it guards e6, b5 and c6, so don't trade it for a knight without a reason.} *
+
+[Chapter "Key ideas: Tricks and traps"]
+[Side "both"]
+[Type "ideas"]
+[FEN "r1b1kbnr/pp3ppp/1qn1p3/3pP3/3P4/3B1N2/PP3PPP/RNBQK2R b KQkq - 0 7"]
+
+{[%cal Rd3b5,Rb5e8] [%csl Rd4] In the Milner-Barry Gambit (this position), 7...Nxd4?? 8.Nxd4 Qxd4 9.Bb5+ wins Black's queen (Stockfish +9.3), so Black plays 7...Bd7 first; later, after 10...Qxe5? 11.Re1, natural moves lose, and only 11...Qd6 12.Nb5 Qb6 holds. When White's queen still sees d4, ...Nxd4 just drops a piece, as after 6.a3 cxd4 7.cxd4 Nxd4? 8.Nxd4 (Stockfish +5.9, winning for White). Breaking with ...f6 too early loosens e8–h5: after 3...f6 4.Bd3 fxe5? 5.Qh5+ g6 6.Bxg6+, 6...hxg6?? 7.Qxh8 loses the rook. In the same way, 3.f3 dxe4 4.fxe4? Qh4+ wins the e4 pawn, and 5.g3? Qxe4+ also hits the rook on h1 (Stockfish −7.0, winning for Black). In the Winawer Poisoned Pawn, after 9...cxd4, 10.cxd4? Qc3+ forks White's king and rook; in the Tarrasch, 13...Ne4 can't be taken, because 14.Bxe4? dxe4 wins material for Black (Stockfish −4.5).} *
 
 [Chapter "Advance: 3.e5"]
 [Side "both"]
