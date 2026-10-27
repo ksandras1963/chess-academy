@@ -34,7 +34,7 @@
 
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. Bxf6 Bxf6! {Black gets the bishop pair, and the pawns in front of the king stay intact.}
 (7... gxf6? {Opens up Black's king.} 8. cxd5 exd5 9. Bd3 {White's pieces aim at the open king, and Qc2 or Nh4 comes next. Stockfish: +2.9, winning for White.})
-8. Bd3 dxc4 9. Bxc4 c5 {The freeing break, as in Tartakower: 7.Bxf6. Stockfish: 0.0, equal.}
+8. Bd3 dxc4 9. Bxc4 c5 {The freeing break, as in QGD – Tartakower: 7.Bxf6. Stockfish: 0.0, equal.}
 *
 
 [Puzzle "Open the center"]
