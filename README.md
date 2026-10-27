@@ -8,7 +8,7 @@ Version 1 covers the Italian Game, Sicilian, French, Caro-Kann and Queen's Gambi
 
 - **Learn:** step through a line and read why each move is played.
 - **Drill:** you play your side and the app plays the other. A wrong move shows the right one with its reason.
-- **Review:** spaced repetition. Lines you know come back less often, and lines you miss come back the next day.
+- **Review:** spaced repetition. Lines you know come back less often. A line you miss, or need a hint for, comes back in your next drill. There is no daily limit: you decide how many lines to drill.
 
 ## Open it
 

@@ -234,7 +234,7 @@ About one player in four takes back with the knight. 6.Qb3 hits b7 again, and af
 Black's best is 6...Bc8, which goes back to guard b7. Develop with 7.Bg5 e6 8.e3: Black has lost time, and the c8 bishop is shut in again (Stockfish +0.5, slightly better for White).
 
 6...e6? lets White take a pawn: 7.Qxb7 Nbd7 8.Bf4 (Stockfish +1.5, clearly better for White). 6...b6? and 6...Qd7? run into 7.e4!: see the trap chapter.} Qb6 {Offers a queen trade to cover b7.}
-7. Qxb6 {Trades queens and leaves Black with doubled pawns.} axb6 {[%csl Yb6,Yb7] Black's b-pawns are doubled, but the a-file is open for the rook.}
+7. Qxb6 {[%engine ok] Trades queens and leaves Black with doubled pawns. 7.Nxd5 is sharper: after 7...Nxd5 8.Qxd5 Qb4+ 9.Bd2 Qxb2 10.Rc1, Black wins the pawn back, and Stockfish rates both lines slightly better for White.} axb6 {[%csl Yb6,Yb7] Black's b-pawns are doubled, but the a-file is open for the rook.}
 8. e3 {[%cal Gf3e5,Gc3b5] Next Ne5, Bd2 and Nb5, aimed at c7 and the doubled pawns. White has an easy endgame plan. Stockfish: +0.5, slightly better for White.} *
 
 [Chapter "3...Bf5"]

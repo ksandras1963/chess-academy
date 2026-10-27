@@ -4,7 +4,7 @@
 import { h, figText, paras, plural, backBar, label, spellOut } from "../ui.js"
 import { course as loadCourse, openingStats, puzzles as loadPuzzles, overviewBack } from "../content.js"
 import { SECTIONS } from "../course-model.js"
-import { status, progress, buildQueue, practiceQueue, newRemainingToday, daysUntil, basicStarted } from "../srs.js"
+import { status, progress, buildQueue, practiceQueue, daysUntil, basicStarted } from "../srs.js"
 import { chapterShare, pct, shortName } from "../stats.js"
 import { Board } from "../board.js"
 import { furtherStudy } from "./layout.js"
@@ -16,7 +16,7 @@ const TYPE_LABEL = { line: "", trap: "Trap", ideas: "Key ideas" }
 const SECTION_TEXT = {
     basic: "The lines you will meet most often. Learn these first.",
     traps: "Traps to set and traps to avoid, each with its refutation.",
-    advanced: "Rarer and more theoretical lines. A line here joins your daily drill only after you drill it once."
+    advanced: "Rarer and more theoretical lines. A line here joins your drills only after you drill it once."
 }
 
 export function sideLabel(c) {
@@ -130,8 +130,7 @@ function hubPage(root, c, set, back) {
     const core = progress(coreLines(c))
     const map = c.chapters.find(ch => ch.type === "map")
     const scheduleLine = h("div", { class: "course-stats" },
-        h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.` +
-            (newRemainingToday() < 1 && core.fresh ? " Today's new lines are used up; any line can still be drilled from its section." : "")))
+        h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.`))
     const ideasList = ideas.length ? [
         h("p", { class: "muted" }, "Read these first: the reasons behind the moves you will drill."),
         h("ol", {}, ideas.map(ch => h("li", {},
