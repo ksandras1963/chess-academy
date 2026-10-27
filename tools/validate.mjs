@@ -132,7 +132,7 @@ for (const meta of courses) {
         `${course.lines.reduce((s, l) => s + l.learnerMoves, 0)} learner moves.`, "")
 
     // Course-page diagrams: every lesson chapter must point at a position on its main line
-    for (const ch of chapters.filter(c => c.type !== "ideas")) {
+    for (const ch of chapters.filter(c => c.type !== "ideas" && c.type !== "map")) {
         if (!ch.diagram) errors.push(`${meta.id} / ${ch.title}: no diagram. Name a move in the title (e.g. "3...Bc5") or add a [Diagram "3...Nd4"] header`)
         else if (ch.diagram.error) errors.push(`${meta.id} / ${ch.title}: ${ch.diagram.error}`)
     }
@@ -141,7 +141,7 @@ for (const meta of courses) {
     const nameRows = []
     for (const ch of chapters) {
         if (!ch.opening) {
-            if (ch.type !== "ideas") nameRows.push(`| ${ch.title} | ${diagramLabel(ch)} | — | — | no Opening header |`)
+            if (ch.type !== "ideas" && ch.type !== "map") nameRows.push(`| ${ch.title} | ${diagramLabel(ch)} | — | — | no Opening header |`)
             continue
         }
         const entries = openings.byName.get(ch.opening)
@@ -271,7 +271,7 @@ for (const meta of (catalog.surveys || []).filter(() => !onlyCourse)) {
             const lessonMeta = catalog.openings.find(o => o.id === courseId)?.courses.find(m => (m.side === side || m.side === "both") && m.file)
             if (!lessonMeta) { problems.push(`[${tag}] needs a [Course] or [${Side}Course] header naming an opening with a written ${side} course`); continue }
             if (!lessonCourses.has(lessonMeta.id)) lessonCourses.set(lessonMeta.id, buildCourse(lessonMeta, await readFile(path.join(root, lessonMeta.file), "utf8")))
-            if (!lessonCourses.get(lessonMeta.id).chapters.some(x => x.title === title && x.side === side)) problems.push(`[${tag} "${title}"] is not a ${side} chapter title in ${lessonMeta.file}`)
+            if (!lessonCourses.get(lessonMeta.id).chapters.some(x => x.title === title && (x.side === side || x.side === "both"))) problems.push(`[${tag} "${title}"] is not a ${side} chapter title in ${lessonMeta.file}`)
         }
         const entries = openings.byName.get(ch.opening)
         if (!entries) problems.push(`"${ch.opening}" is not a Lichess opening name`)

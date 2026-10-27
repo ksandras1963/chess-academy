@@ -289,6 +289,14 @@ a.course-link:hover { border-color: var(--brass); }
 .course-actions { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: stretch; gap: 12px; }
 .course-stats { margin-top: 20px; display: grid; gap: 8px; color: var(--ink-dim); font-size: 0.9375rem; }
 
+/* The Queen's Gambit course pages: "Why play it", the map and the table of variations. */
+.course-why { margin-top: 32px; }
+.course-why h2, .course-table h2 { font-size: 1.3125rem; }
+.course-why p { margin-top: 8px; max-width: 44rem; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.55; }
+.course .flowchart { margin-top: 32px; }
+.course-table { margin-top: 32px; }
+.course-table .survey-table { max-width: none; }
+.course-why + .flowchart, .course-table + .hub-links { margin-top: 32px; }
 .ideas-list { margin-top: 32px; }
 .ideas-list h2 { font-size: 1.3125rem; }
 .ideas-list p { margin-top: 4px; font-size: 0.9375rem; }
@@ -383,10 +391,13 @@ a.chapter-board:focus-visible { outline: none; }
     font-family: var(--sans); font-size: 0.75rem; font-weight: 600;
     padding: 2px 8px; border-radius: 4px; border: 1px solid var(--flag); color: var(--flag);
 }
+/* A course for both sides: "Drill as White" and "Drill as Black" side by side. */
+.drill-pair { display: flex; flex-wrap: wrap; gap: 12px; }
 /* "You play White" / "You play Black" in a course for both sides: the colors of the pieces. */
 .tag.side-tag { white-space: nowrap; }
 .tag.side-tag.is-white { background: #f4efe2; border-color: #f4efe2; color: #1b1b1b; }
 .tag.side-tag.is-black { background: #1b1b1b; border-color: #8a8a8a; color: #f4efe2; }
+.tag.side-tag.is-both { border-color: var(--ink-dim); color: var(--ink); }
 .ideas-list .side-tag { font-size: 0.6875rem; padding: 1px 6px; vertical-align: 2px; }
 .chapter-intro { margin-top: 6px; max-width: 40rem; color: var(--ink-dim); font-family: var(--serif); font-size: 1.0625rem; }
 .chapter-share { margin-top: 6px; display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
@@ -495,7 +506,9 @@ button.om-box:hover, button.om-box:focus-visible { border-color: var(--tone); }
 .fc-box { flex-direction: column; align-items: flex-start; gap: 0; }
 .fc-box .om-move { font-size: 0.9375rem; }
 .fc-name { font-family: var(--serif); font-size: 0.9375rem; color: var(--ink-dim); }
-button.fc-box .fc-name { color: var(--ink); }
+button.fc-box .fc-name, a.fc-box .fc-name { color: var(--ink); }
+a.om-box { text-decoration: none; }
+a.om-box:hover, a.om-box:focus-visible { border-color: var(--tone); }
 .fc-scroll { overflow-x: auto; }
 /* Left to right, boxes of one width line up in columns, like a printed flowchart. */
 @media (min-width: 760px) { .fc-box { min-width: 13rem; } }

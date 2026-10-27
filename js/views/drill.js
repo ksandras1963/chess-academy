@@ -14,17 +14,20 @@ const ABORT = Symbol("abort")
 export async function drillView(root, ctx, courseId, lineId) {
     const c = await loadCourse(courseId)
     if (!ctx.alive()) return
+    // "as-white" or "as-black": today's drill for one side of a course that teaches both.
+    const side = /^as-(white|black)$/.exec(lineId || "")?.[1]
     let lines
-    if (lineId) {
+    if (lineId && !side) {
         const line = c.lines.find(l => l.id === lineId)
         if (!line) throw new Error("This line no longer exists; it may have been edited. Go back to the course to see the current lines.")
         lines = [line]
     } else {
-        lines = buildQueue(c.lines)
-        if (!lines.length) lines = practiceQueue(c.lines)
+        const pool = side ? c.lines.filter(l => l.side === side) : c.lines
+        lines = buildQueue(pool)
+        if (!lines.length) lines = practiceQueue(pool)
     }
     // A single line returns to its section; a session returns to the course hub.
-    const back = lineId ? sectionLink(c, lines[0]) : { href: `#/course/${c.id}`, text: sideLabel(c) }
+    const back = lineId && !side ? sectionLink(c, lines[0]) : { href: `#/course/${c.id}`, text: sideLabel(c) }
     await runSession(root, ctx, lines.map(line => ({ course: c, line })), {
         backHref: back.href, backText: back.text
     })

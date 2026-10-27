@@ -95,9 +95,11 @@ function buildChapter(game, index, course) {
         throw new ContentError(`${course.id} / ${title}: unknown Level "${h.Level}" (use basic or advanced)`)
     }
     // The side the learner plays: the course's, or in a course for both sides ("both") the chapter's [Side].
+    // There, [Side "both"] makes a chapter that is drilled from each side: every line exists twice.
     const side = (h.Side || (SIDES.includes(course.side) ? course.side : "")).toLowerCase()
-    if (course.side && !["map", "puzzle"].includes(type) && !SIDES.includes(side)) {
-        throw new ContentError(`${course.id} / ${title}: ${h.Side ? `unknown Side "${h.Side}"` : "no [Side] header"} (use white or black)`)
+    const allowed = course.side === "both" ? [...SIDES, "both"] : SIDES
+    if (course.side && !["map", "puzzle"].includes(type) && !allowed.includes(side)) {
+        throw new ContentError(`${course.id} / ${title}: ${h.Side ? `unknown Side "${h.Side}"` : "no [Side] header"} (use ${allowed.join(", ")})`)
     }
     const root = game.root
     root.fen = h.FEN || DEFAULT_POSITION
@@ -118,7 +120,7 @@ function buildChapter(game, index, course) {
         type,
         level,
         side,
-        learner: side === "black" ? "b" : "w",
+        learner: side === "black" ? "b" : "w", // a "both" chapter's board and Key ideas page face White
         section: sectionOf(type, level),
         opening: h.Opening || "",
         eco: h.ECO || "",
@@ -225,7 +227,14 @@ export function finalScore(node) {
 }
 
 function extractLines(chapter, course) {
-    const learner = chapter.learner
+    // A [Side "both"] chapter gives each line twice, once for each side, each with its own progress.
+    if (chapter.side === "both") return ["white", "black"].flatMap(side => sideLines(chapter, course, side))
+    return sideLines(chapter, course, chapter.side)
+}
+
+function sideLines(chapter, course, side) {
+    const learner = side === "black" ? "b" : "w"
+    const both = chapter.side === "both"
     const lines = []
     const walk = (node, path) => {
         const kids = node.children
@@ -246,16 +255,17 @@ function extractLines(chapter, course) {
         const suffix = deviations.length === 0 ? "Main line"
             : deviations.length === 1 ? deviations[0]
                 : `${deviations[0]} … ${deviations[deviations.length - 1]}`
+        const variation = both ? `${suffix}, as ${side === "white" ? "White" : "Black"}` : suffix
         return {
-            id: hash(course.id + "|" + chapter.root.fen + "|" + nodes.map(n => n.san).join(" ")),
+            id: hash(course.id + (both ? "|" + side : "") + "|" + chapter.root.fen + "|" + nodes.map(n => n.san).join(" ")),
             courseId: course.id,
             chapter,
-            side: chapter.side,
+            side,
             learner,
             type: chapter.type,
             section: chapter.section,
-            variation: suffix,
-            title: `${chapter.title} (${suffix})`,
+            variation,
+            title: `${chapter.title} (${variation})`,
             nodes,
             learnerMoves: nodes.filter(n => n.color === learner).length
         }
