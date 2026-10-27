@@ -196,24 +196,6 @@
                     "url": "https://www.youtube.com/watch?v=5pec-u6PSvA"
                 },
                 {
-                    "title": "5 Reasons to Play the French Defense",
-                    "by": "GM Jose Gonzalez",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=5B0pH12fUn0"
-                },
-                {
-                    "title": "The French Defense Chess Opening Explained in 4 Minutes by a Chess Master",
-                    "by": "NM Nelson Lopez, Chess Vibes",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=vOw5BQYCfWA"
-                },
-                {
-                    "title": "Learn the French Defense in 7 Minutes",
-                    "by": "Kamryn",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=gRUb6EeHKsM"
-                },
-                {
                     "title": "Secret Opening Weapon for White Against the French Defense",
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
@@ -234,7 +216,7 @@
                     "repertoire": "As White: the Advance (3.e5), with 6.a3 in the main line. As Black: ...c5 against the Advance, ...Nc6 and ...Bd6 in the Exchange, and the Rubinstein (3...dxe4) against 3.Nc3 and 3.Nd2.",
                     "summary": "1.e4 e6 2.d4 d5: Black builds a solid center and hits back with ...c5.",
                     "why": {
-                        "text": "As White, the Advance (3.e5) gains space and keeps Black's king's knight off f6. Black answers 3...c5 in nine games out of ten, so one plan covers most of your games: hold d4 with c3 and Nf3, then gain space on the queenside with a3 and b4.\n\nAs Black, ...e6 and ...d5 build a center White can't easily knock down, and f7 stays out of reach of White's bishop. Then ...c5 hits White's center from the side. The price is the c8 bishop, shut in behind the pawn on e6; the Key ideas pages show how to free it or trade it."
+                        "text": "As White, the Advance gives you space and one clear plan, with much less theory to learn than after 3.Nc3, where Black chooses between the Winawer, the Classical and the Rubinstein.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5."
                     },
                     "table": {
                         "columns": [

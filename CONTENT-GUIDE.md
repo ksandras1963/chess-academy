@@ -6,6 +6,24 @@ A course can also teach both sides, like the Queen's Gambit courses (`queens-gam
 
 The Queen's Gambit course pages are short: a sentence on the opening, "Why play it", a map of the variations and a table of them, then the sections. In `courses.json` the course has `"why": { "text": "..." }` (paragraphs separated by a blank line) and `"table": { "columns": [...], "rows": [[...]], "note": "..." }`, like the overview tables; the course file ends with a `[Type "map"]` chapter, written like a family page's map. Each map box opens the first lesson that reaches its position, and `[%course white]` or `[%course black]` stars a Basic line. A course with `"why"` shows no "What you need to know" list.
 
+**Course page order (Kumar's rule for every course):**
+
+1. "Why play it": a short text.
+2. The map of the variations.
+3. The table of the variations.
+4. Key ideas.
+5. The section links (Basic, Traps, Advanced, Puzzles).
+6. The drills, "Drill as White" and "Drill as Black".
+7. Further study: at most 4 entries.
+
+Further study lists only sources with a named author or presenter. It has no Wikipedia articles and no entries credited only to a channel.
+
+Keep "Why play it", the table and the Key ideas pages free of significant overlap:
+
+- "Why play it" says why to choose the opening.
+- The table says what to do in each line, in one or two sentences.
+- The Key ideas pages explain the plans, structures and tactics in depth, without repeating the table line by line.
+
 ## What a file looks like
 
 A file is a series of chapters. Each chapter starts with a few header lines in square brackets, followed by the moves.

@@ -118,20 +118,14 @@ Protect it with 3.Nc3 or 3.Nd2. We take on e4 (the Rubinstein) and play ...Nd7 a
 
 The green arrow shows ...c5, Black's main way to fight back in nearly every line.} *
 
-[Chapter "Key ideas: Plans against each White system"]
+[Chapter "Key ideas: The attack on d4"]
 [Side "black"]
 [Type "ideas"]
 [FEN "r1b1kbnr/pp3ppp/1qn1p3/2ppP3/3P4/2P2N2/PP3PPP/RNBQKB1R w KQkq - 3 6"]
 
 {[%cal Gc5d4,Gc6d4,Gb6d4,Gg8e7,Ge7f5,Rf3d4,Rc3d4,Re5f6] [%csl Yd4] The French plan in one picture. This is the Advance after 3.e5 c5 4.c3 Nc6 5.Nf3 Qb6. Black's c-pawn, knight and queen all aim at d4 (green arrows), and the king's knight will join them from f5. White defends d4 with the c-pawn and the knight on f3 (red arrows). Stockfish rates the position as equal (+0.2).
 
-Advance (3.e5): White has space, and the pawn on e5 keeps Black's knight off f6. Black attacks d4, the base of White's chain: ...c5, ...Nc6, ...Qb6, and a knight on f5 via e7 or h6. Against 6.a3, which prepares b4, lock the queenside with 6...c4 and aim the knight at the hole on b3 with ...Na5. Castle late or queenside; White's chances are on the kingside.
-
-Exchange (3.exd5 exd5): the pawns are symmetrical and both sides have open lines. White wants a quiet game. Black develops actively with ...Nc6, ...Bd6, ...Bg4 (pinning the knight on f3), ...Qd7 and ...Nge7, then castles. The knight on e7 avoids the pin Bg5 and keeps the e-file open for Black's rook.
-
-Rubinstein (3.Nc3 or 3.Nd2 dxe4 4.Nxe4): Black gives up the center pawn for quick, safe development. ...Nd7 and ...Ngf6 challenge White's knight on e4, then ...c5 attacks d4. White has a little more space; Black has no weaknesses.
-
-2.Nf3: most often White plays 3.exd5 exd5 4.d4 and we are in the Exchange. Against 3.e5, play 3...c5 and ...Nc6, as in the Advance.} *
+The same break, ...c5 against d4, comes back in the Rubinstein and after 2.Nf3 d5 3.e5. The table on the course page gives the plan against each White system.} *
 
 [Chapter "Key ideas: Five French pawn structures"]
 [Side "black"]
