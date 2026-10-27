@@ -52,6 +52,8 @@
    and scrolling still work. */
 html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
 a, button, summary, label { touch-action: manipulation; }
+/* Keep room for the scrollbar, so the page does not shift sideways when one appears (Windows). */
+html { scrollbar-gutter: stable; }
 
 body {
     margin: 0;
@@ -637,11 +639,14 @@ button.sheet-move:hover { background: var(--felt-high); }
     }
     .trainer-board { grid-area: auto; }
     .trainer-board .board-frame { width: min(100%, calc(100dvh - var(--topbar) - 48px)); max-width: none; }
+    /* The board and the panel fit in the window with the page's padding (24px above, 8px below), so
+       a long note scrolls inside the panel and never gives the whole page a scrollbar. */
+    .view:has(> .trainer) { padding-bottom: 8px; }
     .trainer-panel {
         display: flex; flex-direction: column; gap: 16px;
         max-height: calc(100dvh - var(--topbar) - 32px);
         position: sticky; top: calc(var(--topbar) + 16px);
-        overflow-y: auto; overscroll-behavior: contain;
+        overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable;
     }
     /* Long notes scroll inside the panel instead of being squeezed; the buttons stay in view. */
     .trainer-panel > * { flex-shrink: 0; }
