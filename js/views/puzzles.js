@@ -105,6 +105,7 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
     const linkTo = p => (p ? { href: `#/puzzle/${op.id}/${p.number}${retryMode ? "/retry" : ""}`, text: `Puzzle ${p.number}` } : null)
     const L = trainerLayout(root, { backHref: `#/puzzles/${op.id}`, backText: `${op.name} puzzles`, prev: linkTo(prevUp), next: linkTo(nextUp) })
     L.setTitle(`Puzzle ${pz.number} of ${set.items.length}`, `${sideName(learner)} to move. ${pz.theme}.`)
+    L.setMove(null) // the move buttons come straight under the title; the notes go below them
     const last = lastSetup(pz)
     const board = new Board(L.boardEl, { fen: last ? last.fenBefore : pz.first.fenBefore, orientation: learner })
     ctx.onLeave(() => board.destroy())
