@@ -7,18 +7,21 @@
 
 [Chapter "The knight's trip to g3"]
 [Type "concept"]
+[Diagram "9...h6"]
 
 {The pawn on c3 takes the c3 square from the queen's knight, so it travels b1-d2-f1-g3 instead. From g3 it eyes f5 and h5, next to Black's king. h3, already played, keeps Black's bishop and knight off g4 while the knight makes the trip.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O O-O 7. Re1 a6 8. Bb3 Ba7 9. h3 h6 {[%cal Gb1d2,Gd2f1,Gf1g3] The position for this idea.} 10. Nbd2 {First stop: d2.} Re8 11. Nf1 {The rook on e1 still guards e4, so the knight can leave d2.} Be6 {Black offers to trade White's Italian bishop.} 12. Bc2 {[%cal Gf1g3] Keep the bishop. Next comes Ng3, and the plan is complete.} *
 
 [Chapter "The d4 break, when you are ready"]
 [Type "concept"]
+[Diagram "12...a5"]
 
 {With every piece developed, White opens the center with d4. Here Black has spent a move on ...a5 instead of freeing the game with ...d5, so the break comes at once.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O O-O 7. Re1 a6 8. Bb3 Ba7 9. h3 h6 10. Nbd2 Re8 11. Nf1 Be6 12. Bc2 a5 {[%cal Gd3d4] [%csl Ye5] The position for this idea.} 13. d4 {Hits e5. The rook on e1 is ready for the open e-file.} exd4 14. Nxd4 {[%csl Gd4,Ge4] White's pieces are active and the center is open. Stockfish: +0.5, slightly better for White.} *
 
 [Chapter "Against the ...Bg4 pin"]
 [Type "concept"]
+[Diagram "11...h6"]
 
 {When Black pins the knight on f3, ask the bishop with h3 and guard f3 with Nbd2. With the pawn on c3, Black can never add ...Nd4 to attack the pinned knight again. Then the knights hunt the bishop.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O Bg4 7. h3 Bh5 8. Nbd2 O-O 9. Re1 a6 10. Bb3 Ba7 11. Nf1 h6 {[%cal Gf1g3,Gg3h5] The position for this idea.} 12. Ng3 {Attacks the bishop on h5.} Bg6 13. Nh4 {[%cal Gh4g6] Hits the bishop again.} Bh7 {Black's most common reply.} 14. Nhf5 {[%csl Gf5] The knight lands on f5, next to Black's king. Stockfish rates White slightly better.} *
@@ -32,12 +35,14 @@
 
 [Chapter "Black's ...d5, played in time"]
 [Type "concept"]
+[Diagram "12.Bc2"]
 
 {Black has developed every piece and the rook stands on e8, so ...d5 is safe here. After the trade on d5 the center opens and the game is level.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O O-O 7. Re1 a6 8. Bb3 Ba7 9. h3 h6 10. Nbd2 Re8 11. Nf1 Be6 12. Bc2 {[%cal Gd6d5] The position for this idea.} 12... d5 {The freeing break.} 13. exd5 Bxd5 14. Ng3 {[%cal Gf3h4,Gg3f5] White turns to the kingside: Nh4 and Nf5. Stockfish: +0.2, equal.} *
 
 [Chapter "Punishing an early ...d5"]
 [Type "concept"]
+[Diagram "6.O-O"]
 
 {Here Black plays ...d5 before finishing development. Trade on d5 and hit e5 at once.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 O-O 6. O-O {[%cal Gd7d5] The position for this idea.} 6... d5 {Black frees the game before every piece is out.} 7. exd5 Nxd5 8. Re1 {[%cal Ge1e5,Gf3e5] e5 is attacked twice and defended once. Black must spend a move guarding it while White keeps developing. Stockfish: +0.4, slightly better for White.} *
@@ -51,30 +56,35 @@
 
 [Chapter "f7 is the target"]
 [Type "concept"]
+[Diagram "4...Nf6"]
 
 {Black has shut in the f8 bishop with ...d6 and played ...Nf6, so only the king guards f7. Ng5 adds a second attacker.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Nf6? {[%cal Gc4f7] [%csl Rf7] The position for this idea.} 5. Ng5 {[%cal Gg5f7,Gc4f7] Two attackers, one defender.} d5 {Black has to block the bishop's line.} 6. exd5 {White wins a pawn. Stockfish: +1.1, clearly better for White.} *
 
 [Chapter "The Qb3 battery"]
 [Type "concept"]
+[Diagram "5...d5"]
 
 {Queen and bishop on the a2-g8 diagonal hit d5 and f7 together. It punishes ...d5 played too early.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d5?! {[%cal Gc4d5,Gd1b3] The position for this idea.} 6. exd5 Nxd5 7. Qb3 {[%cal Gb3d5,Gb3f7] Hits d5 and f7 together. Black has no comfortable way to guard both. Stockfish: +1.0, clearly better for White.} *
 
 [Chapter "The pinned f7 pawn"]
 [Type "concept"]
+[Diagram "13.Nh4"]
 
 {White's bishop on b3 pins the f7 pawn to Black's king, and Black's h-pawn has gone to h6. So nothing can take back on g6.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O Bg4 7. h3 Bh5 8. Nbd2 O-O 9. Re1 a6 10. Bb3 Ba7 11. Nf1 h6 12. Ng3 Bg6 13. Nh4 {[%cal Gb3g8,Gh4g6] The position for this idea.} 13... Re8? {Leaves the bishop on g6.} 14. Nxg6 {Wins the bishop: neither the f-pawn nor the h-pawn can recapture.} *
 
 [Chapter "Keep the Italian bishop"]
 [Type "concept"]
+[Diagram "7...Na5"]
 
 {Black's knight attacks the bishop on c4. Don't let it trade off the Italian bishop: drop it back to a safe square.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. O-O O-O 6. Re1 d6 7. c3 Na5 {[%cal Ra5c4] The position for this idea.} 8. Bb5 {Avoids the trade.} a6 9. Ba4 b5 10. Bc2 {[%cal Gc2h7] Safe on c2, and still aiming at the kingside.} *
 
 [Chapter "The Bg5 pin, only after castling"]
 [Type "concept"]
+[Diagram "6...O-O"]
 
 {Pin the knight only once Black has castled. Against a king still on e8, ...h6 and ...g5 cost Black nothing. Here Black has castled, so ...g5 loosens the king.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O O-O {[%cal Gg5f6] The position for this idea.} 7. Bg5 h6 8. Bh4 g5 9. Bg3 {Retreat. The knight sacrifice 9.Nxg5? hxg5 10.Bxg5 looks tempting, but Stockfish rates it about a pawn and a quarter worse for White.} *
@@ -88,24 +98,28 @@
 
 [Chapter "...a6 and ...Ba7 keep the bishop"]
 [Type "concept"]
+[Diagram "6.O-O"]
 
 {White will play d4 or b4 to chase the bishop on c5. Make room for it on a7 first.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O {[%cal Gc5a7] The position for this idea.} 6... a6 {Prepares ...Ba7.} 7. a4 {Stops ...b5.} Ba7 {[%cal Ga7f2] On a7 the bishop is safe from d4 and b4 and still aims at f2.} *
 
 [Chapter "...h6: no Bg5, no Ng5"]
 [Type "concept"]
+[Diagram "9.h3"]
 
 {White's bishop and knight both want the g5 square. One pawn move takes it from them.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O a6 7. a4 Ba7 8. Re1 O-O 9. h3 {[%csl Yg5] The position for this idea.} 9... h6 {[%csl Rg5] No Bg5 pin, and no Ng5 jump toward f7.} 10. Nbd2 Re8 {Supports e5 and gets ready for ...Be6 and ...d5.} *
 
 [Chapter "...Be6 trades White's best bishop"]
 [Type "concept"]
+[Diagram "11.Nf1"]
 
 {White's bishop on c4 is its best attacking piece. Offer to trade it with ...Be6. Prefer ...Be6 to ...Bg4: with White's pawn on c3, Black can never add ...Nd4, so a pin on f3 does little.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O a6 7. a4 Ba7 8. Re1 O-O 9. h3 h6 10. Nbd2 Re8 11. Nf1 {[%cal Gc8e6] The position for this idea.} 11... Be6 12. Bxe6 Rxe6 {[%cal Ge6g6] The rook takes back and can swing along the sixth rank.} *
 
 [Chapter "...d5, when ready"]
 [Type "concept"]
+[Diagram "13.Ng3"]
 
 {Every piece is out and the rook supports e5. Now the freeing break is safe.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O a6 7. a4 Ba7 8. Re1 O-O 9. h3 h6 10. Nbd2 Re8 11. Nf1 Be6 12. Bxe6 Rxe6 13. Ng3 {[%cal Gd6d5] The position for this idea.} 13... d5 {Stockfish: 0.0, equal.} *
@@ -119,6 +133,7 @@
 
 [Chapter "A pawn with no neighbors"]
 [Type "concept"]
+[Diagram "12...c6"]
 
 {White's d-pawn is isolated: no White pawn stands on the c- or e-file beside it, so no pawn can ever guard it. No White pawn can attack d5 either, so your knight is safe there. Trades help you: the fewer pieces are left, the weaker the lone pawn becomes.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Bd2 Bxd2+ 8. Nbxd2 d5 9. exd5 Nxd5 10. Qb3 Nce7 11. O-O O-O 12. Rfe1 c6 {[%csl Rd4,Gd5] The position for this idea.} 13. Ne4 {White's chances come early, from active pieces.} a5 14. Qa3 Qc7 {[%csl Gd5] Black finishes developing and keeps the knight on d5. Stockfish: +0.2, equal.} *
@@ -132,18 +147,21 @@
 
 [Chapter "The early ...Ng4"]
 [Type "concept"]
+[Diagram "5.O-O"]
 
 {Attacking f2 with a lone knight loses time. Here White even has a tactic against it.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. O-O {[%cal Rf6g4,Rg4f2] The position for this idea.} 5... Ng4? {[%engine ok] Eyes f2, but leaves f7 short of defenders.} 6. Bxf7+ Kxf7 7. Ng5+ Kg8 8. Qxg4 {White has won a pawn and Black's king has lost its shelter. Stockfish: +1.1, clearly better for White.} *
 
 [Chapter "The early ...d5"]
 [Type "concept"]
+[Diagram "5.d3"]
 
 {Played before you have developed, ...d5 lets White's queen join the bishop against d5 and f7. Prepare it with ...Re8 and ...Be6 first.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 {[%cal Rd7d5] The position for this idea.} 5... d5?! {[%engine ok] Too early.} 6. exd5 Nxd5 7. Qb3 {[%cal Gb3d5,Gb3f7] Hits d5 and f7 together. Black has no comfortable way to guard both. Stockfish: +1.0, clearly better for White.} *
 
 [Chapter "...g5, but not ...h5"]
 [Type "concept"]
+[Diagram "8.Bg3"]
 
 {Breaking the Bg5 pin with ...h6 and ...g5 is fine. But the g5 pawn needs the h-pawn's support, so don't push ...h5. Play 8...a6 and ...Ba7 instead.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. Bg5 h6 7. Bh4 g5 8. Bg3 {[%csl Yg5] The position for this idea.} 8... h5? {[%engine ok] Too ambitious: now nothing guards g5.} 9. Nxg5 {[%cal Gf3g5] White grabs the pawn, and Black's kingside is broken. Stockfish: +1.9, clearly better for White.} *
