@@ -549,7 +549,7 @@ Against 7...Nge7, play 8.O-O Ng6 9.Be4 (Stockfish +1.7, clearly better for White
 6...Ba6? loses a piece to 7.Qf3!: the queen hits the rook on a8, and the rook on a1 hits the bishop on a6 (Stockfish +7.8, winning for White).} c6 {Two players in three guard the bishop with the c-pawn.}
 7. b3! {[%cal Gb3c4] Hits c4. Against 7...a5, 7...e6 or 7...e5, play 8.bxc4: the pawn is back and hits the bishop on b5. White has the bigger center and quicker development, and Black's queenside pawns are weak (Stockfish +2.8 after 7...a5, +3.2 after 7...e6).} cxb3? {The natural capture, chosen by two players in three. It opens the diagonal from f1 to b5.}
 8. Nxb5! {[%cal Gf1b5] Takes the bishop. If Black takes back, the f1 bishop comes to b5 with check.} cxb5 9. Bxb5+ Nd7
-10. Qxb3 {[%cal Gb5e8] White has both pawns back, and the knight on d7 is pinned. The a-pawn falls next: 10...a6 11.Bc6 Rc8 12.Rxa6. The engine's main line goes on with Ne5 and Nc6, which wins a rook for a knight. Stockfish: +5.8, winning for White.})
+10. Qxb3 {[%cal Gb5e8] White has both pawns back, and the knight on d7 is pinned. The a-pawn falls next: 10...a6 11.Bc6 Rc8 12.Rxa6. The engine's main line goes on with Ne5 and Nc6, which wins a rook for a knight. Stockfish: +6.2, winning for White.})
 5. axb5 {Takes the base of the chain.} cxb5?? {Holds c4, but opens the long diagonal to the rook on a8. 5...Nf6 was the best try, and White is still clearly better (Stockfish +1.9).}
 6. Qf3 {[%cal Gf3a8] Hits the rook on a8. Black has to give up a piece to save it.} Nc6 {The best try: the knight blocks the diagonal.}
 7. Qxc6+ Bd7 8. Qa6 {[%cal Ga6b5] White is a piece up, and the b5 pawn is next. Stockfish: +5.5, winning for White.} *

@@ -241,7 +241,7 @@ Against 8.Nxe5, 8...Bxd4 wins a knight for two pawns (Stockfish −4.4). Against
 6. Qa4+ {About one White player in eleven checks. Most play 6.Ne4 (see 5.dxc5: 5...d4).} Nc6! {Blocks with the knight, which also guards d4.}
 (6... Bd7? {Blocks with the wrong piece: d4 is now unguarded.} 7. Qxd4 {White has won a pawn. Stockfish: +0.9, slightly better for White.})
 7. Ne4 {Two White players in three.}
-(7. Nb5 Bxc5 {Takes back on c5. The knight on b5 can't do much: the d4 pawn is guarded twice. Stockfish: −0.9, slightly better for Black.})
+(7. Nb5 Bxc5 {Takes back on c5. The knight on b5 can't do much: the d4 pawn is guarded twice. Stockfish: −1.2, clearly better for Black.})
 7... Qd5 {[%cal Gd5e4,Gd5c5] Hits the knight on e4 and the pawn on c5. Stockfish: −0.4, slightly better for Black.} *
 
 [Chapter "Trap: 6.Bg5 and the d5 pawn"]
