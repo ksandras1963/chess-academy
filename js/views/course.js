@@ -8,6 +8,7 @@ import { status, progress, buildQueue, practiceQueue, newRemainingToday, daysUnt
 import { chapterShare, pct, shortName } from "../stats.js"
 import { Board } from "../board.js"
 import { furtherStudy } from "./layout.js"
+import { setPreferredSide } from "../storage.js"
 import { puzzleStats } from "./puzzles.js"
 
 const TYPE_LABEL = { line: "", trap: "Trap", ideas: "Key ideas" }
@@ -19,7 +20,22 @@ const SECTION_TEXT = {
 }
 
 export function sideLabel(c) {
-    return `${c.opening.name}, as ${c.side === "white" ? "White" : "Black"}`
+    const side = c.side === "white" ? "White" : "Black"
+    return c.unified ? `${c.opening.name}, playing ${side}` : `${c.opening.name}, as ${side}`
+}
+
+/**
+ * "You play: White | Black" for a course that covers both sides. Both sides share the same
+ * chapters; the switch changes which moves are drilled. `suffix` keeps the section ("/basic").
+ */
+function sideSwitch(c, suffix = "") {
+    return h("div", { class: "side-switch", role: "group", "aria-label": "The side you play" },
+        h("span", { class: "side-switch-label" }, "You play"),
+        c.opening.courses.map(m => h("a", {
+            class: `side-option${m.side === c.side ? " is-current" : ""}`,
+            href: `#/course/${m.id}${suffix}`,
+            "aria-current": m.side === c.side ? "true" : null
+        }, h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }), m.side === "white" ? "White" : "Black")))
 }
 
 /** Where a line lives, for back buttons: its section page. */
@@ -46,6 +62,7 @@ export async function courseView(root, ctx, id, sectionId) {
     const set = await loadPuzzles(c.opening.id).catch(() => null)
     const back = await overviewBack(c.opening)
     if (!ctx.alive()) return
+    if (c.unified) setPreferredSide(c.opening.id, c.side)
     if (sectionId) return sectionPage(root, ctx, c, stats, SECTIONS.find(s => s.id === sectionId))
     hubPage(root, c, set, back)
 }
@@ -96,8 +113,8 @@ function hubPage(root, c, set, back) {
     root.append(h("section", { class: "course" },
         backBar(back),
         h("header", { class: "course-head" },
-            h("h1", {}, `${c.opening.name} Course for ${c.side === "white" ? "White" : "Black"}`),
-            h("p", { class: "course-side" }, c.repertoire),
+            h("h1", {}, c.unified ? `${c.opening.name} Course` : `${c.opening.name} Course for ${c.side === "white" ? "White" : "Black"}`),
+            c.unified ? sideSwitch(c) : h("p", { class: "course-side" }, c.repertoire),
             h("p", { class: "course-summary" }, figText(c.summary || ""))),
         h("div", { class: "course-actions" }, drillAction(c)),
         h("section", { class: "ideas-list essentials" },
@@ -128,7 +145,7 @@ function sectionPage(root, ctx, c, stats, section) {
         backBar({ href: `#/course/${c.id}`, text: sideLabel(c) }),
         h("header", { class: "course-head" },
             h("h1", {}, section.title),
-            h("p", { class: "course-side" }, sideLabel(c)),
+            c.unified ? sideSwitch(c, `/${section.id}`) : h("p", { class: "course-side" }, sideLabel(c)),
             h("p", { class: "course-summary" }, SECTION_TEXT[section.id])),
         sectionLines.length ? h("div", { class: "course-stats" },
             h("div", { class: "meter meter-wide", role: "progressbar", "aria-valuenow": p.pct, "aria-valuemin": 0, "aria-valuemax": 100, "aria-label": "Section progress" },

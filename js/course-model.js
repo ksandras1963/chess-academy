@@ -26,6 +26,18 @@ function sectionOf(type, level) {
 
 export class ContentError extends Error {}
 
+/**
+ * An opening's courses. Most openings list one course per side ("courses"). An opening with a
+ * single "course" has one PGN for both sides: it becomes a White and a Black course built from the
+ * same file, so the learner picks a side and drills those moves. Its "sides" lists the side shown
+ * first. Ids stay "<opening>-white" and "<opening>-black".
+ */
+export function expandCourses(op) {
+    if (!op.course) return op.courses || []
+    const sides = op.course.sides || ["white", "black"]
+    return sides.map(side => ({ ...op.course, id: `${op.id}-${side}`, side, unified: true }))
+}
+
 // FNV-1a, enough to give each line a short stable id.
 function hash(str) {
     let h = 0x811c9dc5
@@ -263,7 +275,15 @@ export function buildCourse(meta, pgnText) {
     } catch (e) {
         throw new ContentError(`${meta.id}: ${e.message}`)
     }
-    const chapters = games.map((g, i) => buildChapter(g, i, meta))
+    // [Side "black"] keeps a chapter to one side's course: a trap is drilled by the side that sets it.
+    for (const g of games) {
+        const side = g.headers.Side
+        if (side && side !== "white" && side !== "black") {
+            throw new ContentError(`${meta.id} / ${g.headers.Chapter || "a chapter"}: unknown Side "${side}" (use white or black)`)
+        }
+    }
+    const chapters = games.filter(g => !g.headers.Side || g.headers.Side === meta.side)
+        .map((g, i) => buildChapter(g, i, meta))
     const seen = new Set()
     const lines = []
     for (const ch of chapters) {

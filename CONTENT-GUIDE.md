@@ -1,6 +1,17 @@
 # Editing the lessons
 
-Each course is one PGN file in `content/`. For example, `italian-white.pgn` is the Italian Game played as White. You can edit these files in any text editor. You can also paste a whole file into a Lichess Study to see it on a board.
+Each course is one PGN file in `content/`. For example, `italian-white.pgn` is the Italian Game played as White, and `kings-indian.pgn` is the King's Indian for both sides. You can edit these files in any text editor. You can also paste a whole file into a Lichess Study to see it on a board.
+
+## General rules for every course
+
+These rules apply to every opening. The King's Indian is the first course written this way; the others will follow.
+
+1. **One course per opening, for both sides.** There are no separate White and Black courses. The lines are written once, and the learner chooses White or Black inside the course and drills that side's moves (see "One course for both sides" below).
+2. **The Introduction page, in this order:** a short text (two or three sentences), then the yellow box about the course with its link, then the map of the variations, then the table of the basic lines (see "Family pages and flowcharts").
+3. **Name first, then the move.** Whenever a line is meant, give its name and then the move: "Mar del Plata, Bayonet Attack: 9.b4", "Classical, Open Center: 7...exd4". Chapter titles use the same pattern, and the overview points and notes refer to lines the same way.
+4. **Less text.** At most two sentences per note. Use the table and the map instead of long paragraphs.
+5. **Two sections of lines.** Basic: the opening's core lines, about 11, chosen for the course. Advanced or rare: everything else.
+6. **Names.** The Lichess name is the official one (the `Opening` header). Use the common English name in titles where it differs, and a descriptive name ("Open Center") where Lichess has none.
 
 ## What a file looks like
 
@@ -29,6 +40,7 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 | `FEN` | Optional. Starts the chapter from a set position (used for Key ideas). |
 | `Diagram` | The move whose position is shown beside the chapter on the course page, e.g. `[Diagram "3...Nd4"]`. Without it, the last move named in the title is used (`Main line: 3...Bc5`). The checker reports an error if neither is found on the main line. |
 | `Level` | Optional, for `line` chapters: `basic` (the default) or `advanced`. See "Course sections" below. |
+| `Side` | Optional, in a course for both sides: `white` or `black` keeps the chapter to that side. Use it for traps (drilled by the side that sets them), for lines that end badly for one side, and for Key ideas pages written for one side. |
 
 ### Course sections
 
@@ -40,6 +52,27 @@ Each course has a hub page and three section pages:
 - **Advanced and uncommon variations:** `line` chapters with `[Level "advanced"]`: lines played in under 5% of games, or more theoretical ones.
 
 "Start today's drill" takes new lines only from the basic and trap sections. An advanced line joins the schedule (and Review) once the learner drills it from its section page. The checker's report lists the number of lines in each section.
+
+### One course for both sides
+
+In `courses.json`, an opening with one course for both sides has a `"course"` object instead of the `"courses"` list:
+
+```json
+"course": {
+  "file": "content/kings-indian.pgn",
+  "sides": ["black", "white"],
+  "summary": "One course for both sides. ...",
+  "overview": ["...", "..."]
+}
+```
+
+The app builds a White and a Black course from the same file, with the ids `kings-indian-white` and `kings-indian-black`, so progress is kept per side. `sides` lists the side shown first. The course page has a "You play: Black | White" switch, and the app remembers the last choice. `#/course/kings-indian` opens the side chosen last.
+
+Every chapter is drilled from both sides unless it has a `[Side]` header. So in a both-sides course:
+
+- Write sound moves for both sides on the main line. The checker tests each side's moves, so a `?!` move on the main line would be flagged when drilling that side; put such lines under `[Side]`.
+- A branch at the opponent's move becomes its own drill line; a branch at the learner's move is a side note. With both sides drilled, a white branch is a drill line for Black and a side note for White, and the other way round.
+- Don't give two different answers for the same position in two chapters of one section, unless the chapter titles name both moves ("Classical, Open Center: 7...exd4" with 10.Kh1 and "Classical, Open Center: 10.Nc2").
 
 ### Moves, branches and explanations
 
@@ -134,9 +167,12 @@ Black: Black's plan, the same way.}
 
 ### Family pages and flowcharts
 
-A family with many variations gets its own page, reached from a `[Page]` chapter: the Queen's Gambit (`content/qg-overview.pgn`) and the Indian Defenses (`content/indian-overview.pgn`), both under Replies to 1.d4. In `courses.json` such a page has `"parent": "d4"`, which keeps it off the main menu and gives it a back button to its parent. Two more optional fields: `"compact": true` keeps each card short (its White and Black plans fold away under a button, and only built courses are linked), and `"course": "queens-gambit"` adds that opening to the page's full-course box. The box sits in yellow above the map of every overview page that links a written course: it lists the page's `course` and each chapter's `[Course]`, one row per opening, with a button for each side. `"heading"` gives the page a longer title ("Queen's Gambit Introduction") while buttons and back links keep the short `name`. `"foldPlans": true` folds the plans the same way but keeps every course line (Replies to 1.e4). `"table": { "columns": [...], "rows": [[...], ...], "note": "..." }` shows a small table under the page title in place of a long introduction, such as Black's replies to 1.e4 with their Lichess shares; the first cell of each row is its heading.
+A family with many variations gets its own page, reached from a `[Page]` chapter: the Queen's Gambit (`content/qg-overview.pgn`) and the Indian Defenses (`content/indian-overview.pgn`), both under Replies to 1.d4. In `courses.json` such a page has `"parent": "d4"`, which keeps it off the main menu and gives it a back button to its parent. Two more optional fields: `"compact": true` keeps each card short (its White and Black plans fold away under a button, and only built courses are linked), and `"course": "queens-gambit"` adds that opening to the page's full-course box. The box sits in yellow above the map of every overview page that links a written course: it lists the page's `course` and each chapter's `[Course]`, one row per opening, with a button for each side. `"heading"` gives the page a longer title ("Queen's Gambit Introduction") while buttons and back links keep the short `name`. `"foldPlans": true` folds the plans the same way but keeps every course line (Replies to 1.e4). `"table": { "columns": [...], "rows": [[...], ...], "note": "..." }` shows a small table under the page title in place of a long introduction, such as Black's replies to 1.e4 with their Lichess shares; the first cell of each row is its heading. `"after": "map"` puts the table below the map, as the general rules ask for an Introduction page. For an opening with one course for both sides, the yellow box shows a single course link.
 
-A family page starts with a flowchart instead of the map: a chapter with `[Type "map"]`, written as one game with branches. Every move with a note becomes a box showing the moves since the box before it and the note as its name; an empty note `{}` makes a box with moves only. A box named exactly like an opening card on the page (its title or a `[Lines]` name) opens that card, and `[%course white]` or `[%course black]` in a note stars a line the course teaches:
+A family page starts with a flowchart instead of the map: a chapter with `[Type "map"]`, written as one game with branches. Every move with a note becomes a box showing the moves since the box before it and the note as its name; an empty note `{}` makes a box with moves only. A box named exactly like an opening card on the page (its title or a `[Lines]` name) opens that card, and `[%course white]`, `[%course black]` or `[%course both]` in a note stars a line the course teaches. Two more commands, used on an opening's Introduction page (`content/kid-overview.pgn`):
+
+- `[%lesson Mar del Plata, Bayonet Attack: 9.b4]` makes the box open that chapter of the page's `course` in Learn mode. The checker reports a title that is not a chapter of the course.
+- `[%level advanced]` draws the box dashed, for a line in the course's Advanced section.
 
 ```
 [Chapter "Map of the variations"]

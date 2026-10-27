@@ -51,7 +51,8 @@ function introTable(t) {
         h("table", {},
             h("thead", {}, h("tr", {}, t.columns.map(c => h("th", { scope: "col" }, c)))),
             h("tbody", {}, t.rows.map(r => h("tr", {},
-                r.map((cell, i) => i ? h("td", {}, figText(cell)) : h("th", { scope: "row" }, figText(cell))))))),
+                // A share ("25.9%", "16% in all") stays on one line; moves and sentences wrap.
+                r.map((cell, i) => i ? h("td", { class: cell.length <= 12 && /%/.test(cell) ? "num" : null }, figText(cell)) : h("th", { scope: "row" }, figText(cell))))))),
         t.note ? h("figcaption", { class: "muted" }, t.note) : null)
 }
 
@@ -66,6 +67,7 @@ function moveText(nodes) {
  */
 async function lessonLinks(cat, ch) {
     const op = cat.openings.find(o => o.id === ch.headers.Course)
+    if (op && op.course) return null // one course for both sides: the course link is enough
     const out = {}
     for (const side of ["white", "black"]) {
         const title = ch.headers[side === "white" ? "WhiteLesson" : "BlackLesson"]
@@ -93,6 +95,7 @@ function courseLinks(cat, ch, lessons) {
     if (!built.length) {
         return h("span", { class: "course-link is-soon" }, op ? `${op.name} course coming soon` : "Course coming later")
     }
+    if (op.course) return h("a", { class: "course-link", href: `#/course/${op.id}` }, `${op.name} Course`)
     if (lessons) {
         return built.filter(m => lessons[m.side]).map(m => h("a", { class: "course-link is-lesson", href: lessons[m.side].href, title: "Open this lesson in Learn mode" },
             h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }),
@@ -114,8 +117,9 @@ function courseBox(cat, s, hasLessons) {
     const ids = new Set([s.course, ...s.chapters.map(ch => ch.headers.Course)].filter(Boolean))
     const ops = [...ids].map(id => cat.openings.find(o => o.id === id)).filter(op => op && op.courses.some(m => m.available))
     if (!ops.length) return null
-    const built = op => op.courses.filter(m => m.available)
-    const title = (op, m) => `${op.name} Course for ${m.side === "white" ? "White" : "Black"}`
+    // A course that covers both sides is one link; the learner picks a side inside it.
+    const built = op => op.course ? [{ id: op.id, unified: true }] : op.courses.filter(m => m.available)
+    const title = (op, m) => m.unified ? `${op.name} Course` : `${op.name} Course for ${m.side === "white" ? "White" : "Black"}`
     const one = ops.length === 1 ? ops[0] : null
     const plural = !one || built(one).length > 1
     return h("section", { class: "course-box" },
@@ -123,9 +127,10 @@ function courseBox(cat, s, hasLessons) {
         h("p", {}, [
             one ? `${plural ? "These links open" : "This link opens"} the full ${built(one).map(m => title(one, m)).join(" and the ")}.`
                 : "These links open the full courses for the openings on this page.",
+            one && one.course ? ` ${one.course.box || "The course covers both sides: choose White or Black inside it."}` : "",
             hasLessons ? " The links under each variation below open only the lesson on that variation." : ""].join("")),
         ops.map(op => h("div", { class: "course-box-links" }, built(op).map(m => h("a", { class: "btn course-box-link", href: `#/course/${m.id}`, title: m.repertoire },
-            h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }), title(op, m), h("span", { "aria-hidden": "true" }, "›"))))))
+            m.unified ? null : h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }), title(op, m), h("span", { "aria-hidden": "true" }, "›"))))))
 }
 
 const lineHref = (s, ch, i) => `#/survey/${s.id}/${ch.index}${i ? `/${i}` : ""}`
@@ -142,13 +147,21 @@ function moveRun(nodes) {
  * moves only), and the moves in between run together. A box named like an opening on the page
  * jumps to its card, and [%course white] or [%course black] in a note stars a line a course teaches.
  */
-function flowchart(s, jump) {
+function flowchart(s, jump, linked) {
     const byName = new Map()
     for (const ch of s.chapters) {
         byName.set(ch.title, ch)
         for (const p of chapterPaths(ch)) byName.set(p.name, ch)
     }
     let starred = false
+    let dashed = false
+    // [%lesson Chapter title] opens that chapter of the page's course in Learn mode.
+    const lessonHref = title => {
+        const ch = linked && linked.chapters.find(x => x.title === title)
+        if (!ch) return null
+        const key = ch.type === "ideas" ? `ideas-${ch.index}` : linked.lines.find(l => l.chapter === ch)?.id
+        return key ? `#/learn/${linked.id}/${key}` : null
+    }
     const boxesBelow = node => {
         const out = []
         const walk = n => n.children.forEach(k => (k.comments.length ? out.push(k) : walk(k)))
@@ -160,24 +173,33 @@ function flowchart(s, jump) {
         for (let n = node; n !== from; n = n.parent) run.unshift(n)
         const name = node.note.text
         const ch = byName.get(name)
-        const course = /\[%course (white|black)\]/.exec(node.comments.join(" "))
+        const raw = node.comments.join(" ")
+        const course = /\[%course (white|black|both)\]/.exec(raw)
         if (course) starred = true
+        const advanced = /\[%level advanced\]/.test(raw)
+        if (advanced) dashed = true
+        const lesson = /\[%lesson ([^\]]+)\]/.exec(raw)
+        const href = lesson ? lessonHref(lesson[1].trim()) : null
         const content = [
             h("span", { class: "fc-move" }, moveRun(run)),
             name ? h("span", { class: "fc-name" }, figText(name),
-                course ? h("span", { class: "om-star", title: `In the ${course[1] === "white" ? "White" : "Black"} course` }, " ★") : null) : null]
+                course ? h("span", { class: "om-star", title: course[1] === "both" ? "In the full course" : `In the ${course[1] === "white" ? "White" : "Black"} course` }, " ★") : null) : null]
         // Laid out like the "Map of the openings" (the om- classes), with two-line boxes.
-        const box = ch
-            ? h("button", { class: "om-box fc-box tone-0", type: "button", title: "Go to its board", onclick: () => jump(ch) }, content)
-            : h("span", { class: "om-box fc-box" }, content)
+        const cls = `om-box fc-box${advanced ? " is-advanced" : ""}`
+        const box = href
+            ? h("a", { class: `${cls} tone-0`, href, title: "Open this lesson" }, content)
+            : ch
+                ? h("button", { class: `${cls} tone-0`, type: "button", title: "Go to its board", onclick: () => jump(ch) }, content)
+                : h("span", { class: cls }, content)
         const kids = boxesBelow(node)
         return h("li", { class: "om-item" }, box, kids.length ? h("ul", { class: "om-kids" }, kids.map(k => item(k, node))) : null)
     }
     return h("section", { class: "opening-map flowchart", "aria-labelledby": "flowchart-title" },
         h("h2", { id: "flowchart-title" }, "Map of the variations"),
-        h("p", { class: "muted" }, "Tap a name with a gold edge to see its board."),
+        h("p", { class: "muted" }, linked ? "Tap a line with a gold edge to open its lesson." : "Tap a name with a gold edge to see its board."),
         h("div", { class: "fc-scroll" }, h("ul", { class: "om-tree" }, boxesBelow(s.flow.root).map(k => item(k, s.flow.root)))),
-        starred ? h("p", { class: "fc-key" }, h("span", { class: "om-star", "aria-hidden": "true" }, "★"), " A line taught in the full courses above the map") : null)
+        starred ? h("p", { class: "fc-key" }, h("span", { class: "om-star", "aria-hidden": "true" }, "★"), " A line taught in the full courses above the map") : null,
+        dashed ? h("p", { class: "fc-key" }, h("span", { class: "fc-dash", "aria-hidden": "true" }), " Dashed box: an advanced or rare line, in the course's Advanced section") : null)
 }
 
 /**
@@ -240,6 +262,7 @@ export async function surveyView(root, ctx, id) {
     const s = await loadSurvey(id)
     const cat = await catalog()
     const lessons = new Map(await Promise.all(s.chapters.map(async ch => [ch, await lessonLinks(cat, ch)])))
+    const linked = s.flow && s.course ? await loadCourse(s.course).catch(() => null) : null
     if (!ctx.alive()) return
     const diagrams = []
     const cards = new Map()
@@ -274,7 +297,7 @@ export async function surveyView(root, ctx, id) {
             s.table && s.table.after !== "map" ? introTable(s.table) : null,
             ...paras(s.summary, { class: "course-summary" })),
         fullCourses,
-        s.flow ? flowchart(s, jump) : openingMap(s, cat, jump),
+        s.flow ? flowchart(s, jump, linked) : openingMap(s, cat, jump),
         // "after": "map" puts the table below the map instead of under the title (the 1.d4 page).
         s.table && s.table.after === "map" ? introTable(s.table) : null,
         groups.map(g => [

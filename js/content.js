@@ -1,7 +1,8 @@
 // Loads the course catalog and course PGNs (cached for the session).
 
 import { Chess } from "../vendor/chess.js/chess.js"
-import { buildCourse, buildPuzzleSet, buildSurvey } from "./course-model.js"
+import { buildCourse, buildPuzzleSet, buildSurvey, expandCourses } from "./course-model.js"
+import { preferredSide } from "./storage.js"
 
 let catalogPromise = null
 const courses = new Map()
@@ -28,6 +29,7 @@ export function catalog() {
                     const c = new Chess()
                     c.loadPgn(op.moves)
                     op.fen = c.fen()
+                    op.courses = expandCourses(op)
                     for (const meta of op.courses) {
                         meta.opening = op
                         meta.available = Boolean(meta.file)
@@ -46,7 +48,21 @@ export function catalog() {
     return catalogPromise
 }
 
+/**
+ * The course id to open for `id`: itself, or for an opening whose one course covers both sides
+ * ("kings-indian"), the side the learner chose last, else the first side the catalog lists.
+ */
+export async function courseIdFor(id) {
+    const cat = await catalog()
+    if (cat.courseById.has(id)) return id
+    const op = cat.openings.find(o => o.id === id && o.course)
+    if (!op) return id
+    const side = preferredSide(op.id)
+    return (op.courses.find(m => m.side === side) || op.courses[0]).id
+}
+
 export async function course(id) {
+    id = await courseIdFor(id)
     if (courses.has(id)) return courses.get(id)
     const cat = await catalog()
     const meta = cat.courseById.get(id)

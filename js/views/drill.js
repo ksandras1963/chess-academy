@@ -117,7 +117,7 @@ async function runSession(root, ctx, items, { backHref, backText }) {
                 sheet(i + 1)
                 continue
             }
-            const r = await playMove(node, learner, i, missed, say)
+            const r = await playMove(node, learner, i, missed, say, course)
             hints += r.hints
             sheet(i + 1)
             await sleep(120)
@@ -127,7 +127,7 @@ async function runSession(root, ctx, items, { backHref, backText }) {
         return missed.size ? "failed" : hints ? "hinted" : "clean"
     }
 
-    function playMove(node, learner, i, missed, say) {
+    function playMove(node, learner, i, missed, say, course) {
         return new Promise((resolve, reject) => {
             let hints = 0
             let answered = false
@@ -179,7 +179,9 @@ async function runSession(root, ctx, items, { backHref, backText }) {
                 }
                 const alt = sideNotes(node, learner).find(n => n.san === mv.san)
                 if (alt) {
-                    say({ kind: "alt", title: `${label(alt)} is not this repertoire`, text: (alt.note.text ? alt.note.text + " " : "") + "Try the move this course plays." })
+                    say(course.unified
+                        ? { kind: "alt", title: `${label(alt)} is not the move in this line`, text: (alt.note.text ? alt.note.text + " " : "") + "Try the move this line plays." }
+                        : { kind: "alt", title: `${label(alt)} is not this repertoire`, text: (alt.note.text ? alt.note.text + " " : "") + "Try the move this course plays." })
                     return false
                 }
                 missed.add(i)

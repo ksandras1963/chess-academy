@@ -284,6 +284,16 @@ a.course-link:hover { border-color: var(--brass); }
 .empty .backbar { margin-bottom: 0; }
 .course-head h1 { font-size: clamp(2rem, 1.4rem + 2.4vw, 2.75rem); }
 .course-side { margin-top: 6px; font-size: 1.0625rem; }
+/* "You play: White | Black" on a course that covers both sides. */
+.side-switch { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.side-switch-label { font-size: 0.9375rem; color: var(--ink-dim); margin-right: 2px; }
+.side-option {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px;
+    border: 1px solid var(--rule); border-radius: 999px; background: var(--felt-raised);
+    color: var(--ink); font-weight: 600; text-decoration: none;
+}
+.side-option:hover, .side-option:focus-visible { border-color: var(--brass); }
+.side-option.is-current { border: 2px solid var(--brass); background: color-mix(in srgb, var(--brass) 16%, var(--felt-raised)); }
 .course-summary { margin-top: 10px; max-width: 40rem; font-family: var(--serif); font-size: 1.125rem; line-height: 1.6; color: var(--ink-dim); }
 .course-actions { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: stretch; gap: 12px; }
 .course-stats { margin-top: 20px; display: grid; gap: 8px; color: var(--ink-dim); font-size: 0.9375rem; }
@@ -423,7 +433,7 @@ a.chapter-board:focus-visible { outline: none; }
 .survey-table thead th { padding-top: 0; font-size: 0.8125rem; font-weight: 600; color: var(--ink-dim); border-bottom-color: var(--brass); }
 .survey-table tbody th { font-weight: 600; }
 .survey-table td { color: var(--ink-dim); }
-.survey-table td:nth-child(2) { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.survey-table td.num { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .survey-table figcaption { margin-top: 6px; font-size: 0.8125rem; }
 @media (max-width: 520px) {
     .survey-table table { font-size: 0.875rem; }
@@ -454,8 +464,8 @@ a.chapter-board:focus-visible { outline: none; }
     border: 1px solid var(--rule); border-left: 4px solid var(--tone, var(--ink-dim)); border-radius: 6px;
     background: var(--felt); color: var(--ink); font: inherit; line-height: 1.35; text-align: left;
 }
-button.om-box { cursor: pointer; }
-button.om-box:hover, button.om-box:focus-visible { border-color: var(--tone); }
+button.om-box, a.om-box { cursor: pointer; text-decoration: none; }
+button.om-box:hover, button.om-box:focus-visible, a.om-box:hover, a.om-box:focus-visible { border-color: var(--tone); }
 .om-move { font-family: var(--serif); font-weight: 700; white-space: nowrap; }
 .om-name { font-family: var(--serif); }
 .om-star { color: var(--brass); }
@@ -489,7 +499,10 @@ button.om-box:hover, button.om-box:focus-visible { border-color: var(--tone); }
 .fc-box { flex-direction: column; align-items: flex-start; gap: 0; }
 .fc-box .om-move { font-size: 0.9375rem; }
 .fc-name { font-family: var(--serif); font-size: 0.9375rem; color: var(--ink-dim); }
-button.fc-box .fc-name { color: var(--ink); }
+button.fc-box .fc-name, a.fc-box .fc-name { color: var(--ink); }
+/* An advanced or rare line ([%level advanced]): a dashed box. */
+.fc-box.is-advanced { border-style: dashed; border-left-style: dashed; }
+.fc-dash { display: inline-block; width: 22px; height: 12px; vertical-align: -1px; border: 1.5px dashed var(--ink-dim); border-radius: 3px; }
 .fc-scroll { overflow-x: auto; }
 /* Left to right, boxes of one width line up in columns, like a printed flowchart. */
 @media (min-width: 760px) { .fc-box { min-width: 13rem; } }

@@ -12,6 +12,7 @@
 import { readFile, writeFile } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import { expandCourses } from "../js/course-model.js"
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 export const OUTPUT = "Opening Trainer.html"
@@ -94,7 +95,7 @@ export async function buildStandalone() {
     const content = { "content/courses.json": catalogText }
     const catalog = JSON.parse(catalogText)
     for (const op of catalog.openings) {
-        for (const c of op.courses) {
+        for (const c of expandCourses(op)) {
             if (c.file) content[c.file] = await readFile(path.join(root, c.file), "utf8")
         }
         if (op.puzzles) content[op.puzzles] = await readFile(path.join(root, op.puzzles), "utf8")

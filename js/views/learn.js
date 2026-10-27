@@ -84,7 +84,7 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
         if (!base.line) L.extra.append(furtherStudy(c.opening.furtherStudy) || "")
         if (state.explore) {
             L.extra.append(h("div", { class: "banner" },
-                h("p", {}, "Side line. It isn't part of this repertoire and isn't drilled."),
+                h("p", {}, c.unified ? "Side line. It isn't drilled in this line." : "Side line. It isn't part of this repertoire and isn't drilled."),
                 h("button", { class: "btn btn-small", type: "button", onclick: leaveExplore }, "Back to the line")))
         }
         if (node) {
@@ -92,7 +92,7 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
             const branches = siblingBranches(node, learner)
             if (notes.length) {
                 L.extra.append(h("div", { class: "alts" },
-                    h("h3", {}, "Other moves here, not in this repertoire"),
+                    h("h3", {}, c.unified ? "Other moves for you here, not drilled in this line" : "Other moves here, not in this repertoire"),
                     h("ul", {}, notes.map(n => h("li", {},
                         h("button", { class: "alt-move", type: "button", onclick: () => explore(n) }, label(n) + (n.symbol || "")),
                         n.note.text ? h("span", { class: "alt-note" }, figText(n.note.text.replace(/\n\n/g, " "))) : null)))))

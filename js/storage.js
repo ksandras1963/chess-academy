@@ -7,7 +7,7 @@ const DEFAULTS = {
     lines: {},            // lineId -> { box, due, last, reps, lapses }
     puzzles: {},          // puzzleId -> { status: "solved" | "missed", tries, last }
     daily: { day: "", newCount: 0 },
-    settings: { theme: "dark", newPerDay: 3, animation: "normal", coordinates: true, notation: "figurines" }
+    settings: { theme: "dark", newPerDay: 3, animation: "normal", coordinates: true, notation: "figurines", sides: {} }
 }
 
 let state = null
@@ -47,6 +47,15 @@ export function settings() { return load().settings }
 
 export function updateSettings(patch) {
     Object.assign(load().settings, patch)
+    save()
+}
+
+/** The side last chosen in a course that covers both sides ("white" or "black"), or null. */
+export function preferredSide(openingId) { return (load().settings.sides || {})[openingId] || null }
+
+export function setPreferredSide(openingId, side) {
+    const s = load().settings
+    s.sides = { ...(s.sides || {}), [openingId]: side }
     save()
 }
 

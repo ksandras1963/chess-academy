@@ -4,13 +4,14 @@
 1. d4 Nf6 2. c4 {Indian Defenses} g6
 (2... e6 {} 3. Nc3 (3. Nf3 b6 {Queen's Indian Defense}) Bb4 {Nimzo-Indian Defense})
 (2... c5 3. d5 {} e6 {Modern Benoni} (3... b5 {Benko Gambit}))
-3. Nc3 {} Bg7 (3... d5 {Grünfeld Defense}) 4. e4 d6 {[%course black] King's Indian Defense} 5. Nf3 O-O 6. Be2 {[%course white] Classical Variation} *
+3. Nc3 {} Bg7 (3... d5 {Grünfeld Defense}) 4. e4 d6 {[%course both] King's Indian Defense} *
 
 [Chapter "King's Indian Defense"]
 [Opening "King's Indian Defense"]
 [ECO "E61"]
 [Diagram "4...d6"]
 [Course "kings-indian"]
+[Page "kid"]
 
 {White: Build a big center with c4, d4 and e4, develop calmly with Nf3 and Be2, and castle. When the center closes with d5, attack on the queenside with c5, b4 and the c-file.
 

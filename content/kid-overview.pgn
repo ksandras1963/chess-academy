@@ -1,0 +1,33 @@
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 {King's Indian Defense}
+4. e4
+(4. Nf3 d6 5. g3 O-O 6. Bg2 {Fianchetto} Nc6
+(6... Nbd7 {[%lesson Fianchetto, Classical: 6...Nbd7] Classical})
+(6... c5 {[%level advanced] [%lesson Fianchetto, Yugoslav: 6...c5] Yugoslav})
+7. O-O a6 {[%lesson Fianchetto, Panno: 7...a6] Panno})
+4... d6
+5. Nf3
+(5. f3 O-O 6. Be3 {Sämisch} c5 {[%lesson Sämisch Gambit: 6...c5] Gambit}
+(6... e5 {[%lesson Sämisch, Orthodox: 6...e5] Orthodox})
+(6... Nc6 {[%level advanced] [%lesson Sämisch, Panno: 6...Nc6] Panno}))
+(5. Be2 O-O 6. Bg5 {Averbakh} c5 {[%lesson Averbakh, Benoni Defense: 6...c5] Benoni Defense}
+(6... Na6 {[%lesson Averbakh, Modern Defense: 6...Na6] Modern Defense})
+(6... h6 {[%level advanced] [%lesson Averbakh, Flexible Defense: 6...h6] Flexible Defense}))
+(5. f4 O-O 6. Nf3 {Four Pawns Attack} c5 {[%lesson Four Pawns Attack, Main line: 6...c5] Main line}
+(6... Na6 {[%level advanced] [%lesson Four Pawns Attack, 6...Na6]}))
+(5. h3 O-O {[%level advanced] [%lesson Makogonov: 5.h3] Makogonov})
+5... O-O 6. Be2 e5 {Classical}
+7. O-O
+(7. Be3 {[%level advanced] [%lesson Classical, Gligorić System: 7.Be3] Gligorić System})
+(7. d5 {[%level advanced] [%lesson Classical, Petrosian System: 7.d5] Petrosian System})
+(7. dxe5 {[%level advanced] [%lesson Classical, Exchange Variation: 7.dxe5] Exchange Variation})
+7... Nc6
+(7... Nbd7 {[%lesson Classical, Positional Defense: 7...Nbd7] Positional Defense})
+(7... exd4 {[%lesson Classical, Open Center: 7...exd4] Open Center})
+(7... Na6 {[%level advanced] [%lesson Classical, Kazakh and Glek: 6...Na6] Glek Defense})
+8. d5 Ne7 {Mar del Plata}
+9. b4 {[%lesson Mar del Plata, Bayonet Attack: 9.b4] Bayonet Attack}
+(9. Ne1 {[%lesson Mar del Plata, Main line: 9.Ne1] Main line})
+(9. Nd2 {[%level advanced] [%lesson Mar del Plata, Modern System: 9.Nd2] Modern System}) *

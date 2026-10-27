@@ -11,7 +11,7 @@ import { readFile, writeFile, readdir, access } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import { Chess } from "../vendor/chess.js/chess.js"
-import { buildCourse, buildPuzzleSet, buildSurvey, mainPath, moveLabel, finalScore } from "../js/course-model.js"
+import { buildCourse, buildPuzzleSet, buildSurvey, mainPath, moveLabel, finalScore, expandCourses } from "../js/course-model.js"
 const diagramLabel = ch => (ch.diagram && ch.diagram.node ? moveLabel(ch.diagram.node) : "—")
 import { Engine, DEFAULT_EXE, engineAvailable } from "./engine.mjs"
 import { buildStandalone } from "./build-standalone.mjs"
@@ -73,6 +73,7 @@ async function exists(p) {
 
 // ---------- main ----------
 const catalog = JSON.parse(await readFile(path.join(root, "content", "courses.json"), "utf8"))
+for (const o of catalog.openings) o.courses = expandCourses(o) // one "course" for both sides becomes two
 const courses = catalog.openings.flatMap(o => o.courses.map(c => ({ ...c, opening: o })))
     .filter(c => c.file && (!onlyCourse || c.id === onlyCourse))
 
@@ -244,6 +245,23 @@ for (const meta of (catalog.surveys || []).filter(() => !onlyCourse)) {
     if (survey.flow) {
         const problems = []
         await checkMoves(survey.flow.root, problems)
+        // [%lesson Chapter title] in a box must name a chapter of the page's own course ("course").
+        const titles = []
+        const collect = n => n.children.forEach(k => {
+            for (const c of k.comments) for (const m of c.matchAll(/\[%lesson ([^\]]+)\]/g)) titles.push(m[1].trim())
+            collect(k)
+        })
+        collect(survey.flow.root)
+        if (titles.length) {
+            const op = catalog.openings.find(o => o.id === meta.course)
+            const metas = op ? op.courses.filter(m => m.file) : []
+            if (!metas.length) problems.push(`[%lesson] needs "course" in courses.json naming an opening with a written course`)
+            else {
+                const known = new Set()
+                for (const m of metas) buildCourse(m, await readFile(path.join(root, m.file), "utf8")).chapters.forEach(ch => known.add(ch.title))
+                for (const t of titles) if (!known.has(t)) problems.push(`[%lesson ${t}] is not a chapter title in the ${op.name} course`)
+            }
+        }
         for (const p of problems) errors.push(`${meta.id} / ${survey.flow.title}: ${p}`)
         rows.push(`| ${survey.flow.title} (flowchart) | — | — | — | — | ${problems.length ? `**${problems.join("; ")}**` : "ok"} |`)
     }
