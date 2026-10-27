@@ -50,7 +50,7 @@
 [Diagram "6.O-O"]
 
 {Here Black plays ...d5 before finishing development. Trade on d5 and hit e5 at once.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 O-O 6. O-O {[%cal Gd7d5] The idea starts from this position.} 6... d5 {Black frees the game before every piece is out.} 7. exd5 Nxd5 8. Re1 {[%cal Ge1e5,Gf3e5] e5 is attacked twice and defended once. Black must spend a move guarding it while White keeps developing. Stockfish: +0.4, slightly better for White.} *
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 O-O 6. O-O {[%cal Gd7d5] The idea starts from this position.} 6... d5 {Black frees the game before every piece is out.} 7. exd5 Nxd5 8. Re1 {[%cal Ge1e5,Gf3e5] e5 is attacked twice and defended once. Black must spend a move guarding it while White keeps developing. Stockfish: +0.2, equal.} *
 
 [Chapter "Key ideas: Typical tactics"]
 [Side "white"]
@@ -73,7 +73,7 @@
 [Diagram "5...d5"]
 
 {Queen and bishop on the a2-g8 diagonal hit d5 and f7 together. It punishes ...d5 played too early.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d5?! {[%cal Gc4d5,Gd1b3] The idea starts from this position.} 6. exd5 Nxd5 7. Qb3 {[%cal Gb3d5,Gb3f7] Hits d5 and f7 together. Black has no comfortable way to guard both. Stockfish: +1.0, clearly better for White.} *
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d5?! {[%cal Gc4d5,Gd1b3] The idea starts from this position.} 6. exd5 Nxd5 7. Qb3 {[%cal Gb3d5,Gb3f7] Hits d5 and f7 together. Black has no comfortable way to guard both. Stockfish: +0.9, slightly better for White.} *
 
 [Chapter "The pinned f7 pawn"]
 [Type "concept"]
@@ -174,7 +174,7 @@
 [Diagram "5.d3"]
 
 {Played before you have developed, ...d5 lets White's queen join the bishop against d5 and f7. Prepare it with ...Re8 and ...Be6 first.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 {[%cal Rd7d5] The idea starts from this position.} 5... d5?! {[%engine ok] Too early.} 6. exd5 Nxd5 7. Qb3 {[%cal Gb3d5,Gb3f7] Hits d5 and f7 together. Black has no comfortable way to guard both. Stockfish: +1.0, clearly better for White.} *
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 {[%cal Rd7d5] The idea starts from this position.} 5... d5?! {[%engine ok] Too early.} 6. exd5 Nxd5 7. Qb3 {[%cal Gb3d5,Gb3f7] Hits d5 and f7 together. Black has no comfortable way to guard both. Stockfish: +0.9, slightly better for White.} *
 
 [Chapter "...g5, but not ...h5"]
 [Type "concept"]
@@ -236,7 +236,7 @@
 {White castles before choosing c3, d3 or Nc3. This is White's most common fourth move, about one game in four. Play 4...Nf6 and the same setup as always: ...d6, ...a6 and ...Ba7. Most games then reach the main line by another move order. The one new idea is 5.d4, where you take on d4 with the bishop.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O {Castles first and keeps c3, d3 and Nc3 open.} Nf6 {Hits e4, as in every line of this course.}
 5. d3 {The most common reply, about three games in ten. It guards e4. This is the same position as 4.d3 Nf6 5.O-O.}
-(5. c3 d6 {[%engine ok] Back in the main line: this is 4.c3 Nf6 5.O-O d6. Stockfish slightly prefers 5...Nxe4, but the game then turns sharp.})
+(5. c3 d6 {[%engine ok] Back in the main line: this is 4.c3 Nf6 5.O-O d6. Stockfish prefers 5...Nxe4, but the game then turns sharp.})
 (5. d4 {Opens the center at once, about one game in five.} Bxd4 {[%cal Gc5d4] Take with the bishop. Stockfish prefers it to 5...exd4, which leads to the sharp Max Lange Attack.}
 6. Nxd4 Nxd4 {Black's knight now stands well on d4.}
 7. f4 {White wants to open the f-file against e5 and f7.}
@@ -281,7 +281,7 @@
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 {[%cal Gc5f2] Develops to the best square: the bishop controls d4 and eyes f2.}
 4. c3 {White prepares d4, which would hit our bishop and build a big center.} Nf6 {Hits e4 at once, before White can play d4. White must now defend e4 or push d4 immediately.}
 5. d3 {The quiet Giuoco Pianissimo: White guards e4 and saves d4 for later.}
-(5. O-O {Castles first, keeping both d3 and d4 in reserve.} d6 {[%engine ok] Keeps our usual setup. Stockfish slightly prefers 5...Nxe4, but after 6.d4 d5 the game turns sharp.}
+(5. O-O {Castles first, keeping both d3 and d4 in reserve.} d6 {[%engine ok] Keeps our usual setup. Stockfish prefers 5...Nxe4, but after 6.d4 d5 the game turns sharp.}
 6. d4 {Hits the bishop and e5 at once. White's usual move here; 6.d3 goes back to the main line (see Advanced variations).} Bb6 {On b6 the bishop is safe and still aims at f2. Taking on d4 would give White a big pawn center after cxd4.})
 5... d6 {Supports e5 and opens the diagonal for the light-squared bishop. With e5 solid, White's d4 break will be less effective.}
 (5... d5?! {Too early. After 6.exd5 Nxd5 7.Qb3! queen and bishop hit d5 and f7 together, and Black loses a pawn or more.} 6. exd5 Nxd5 7. Qb3)
