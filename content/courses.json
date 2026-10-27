@@ -255,16 +255,33 @@
       "name": "Queen's Gambit Accepted",
       "eco": "D20",
       "moves": "1. d4 d5 2. c4 dxc4",
-      "summary": "To be written in the build stage.",
-      "furtherStudy": [],
+      "summary": "Black takes the c-pawn and gives up the center for a moment. White wins the pawn back, and Black uses the time to hit back with ...e5 or ...c5.",
+      "furtherStudy": [
+        { "title": "How To Play The Queen's Gambit", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=mtsabsZ4wG4" },
+        { "title": "Learn the Queen's Gambit Chess Opening: Traps & Errors", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=oRfGbul6MUs" },
+        { "title": "Every Queen's Gambit Player Must Know These 9 Ideas", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ONB_yxkpAws" },
+        { "title": "Chess Openings: Learn to Play the Queen's Gambit", "by": "NM Solomon Ruddell, The Chess Giant", "kind": "Video", "url": "https://www.youtube.com/watch?v=EWHYgn9fR10" },
+        { "title": "5 Best Chess Opening Traps in the Queen's Gambit", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ICXoGdCcsFI" },
+        { "title": "Queen's Gambit Opening Mistakes You Must Avoid (Traps Included!)", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=8Ui8lD8wJsU" },
+        { "title": "The Queen's Gambit Chess Opening Explained in 3 Minutes by a National Chess Master", "by": "NM Nelson Lopez, Chess Vibes", "kind": "Video", "url": "https://www.youtube.com/watch?v=KEmkjOL_hCc" },
+        { "title": "Chess Openings: The Queen's Gambit", "by": "Kevin Butler, thechesswebsite", "kind": "Video", "url": "https://www.youtube.com/watch?v=HdHWAuQRG7E" },
+        { "title": "How To Play The Queen's Gambit", "by": "Anna Cramling", "kind": "Video", "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI" }
+      ],
       "courses": [
         {
           "id": "queens-gambit-accepted-black",
           "side": "black",
           "file": "content/queens-gambit-accepted-black.pgn",
-          "repertoire": "...e5 against 3.Nc3, 3.e3 and 3.e4; ...Nf6, ...e6 and ...c5 against 3.Nf3",
-          "summary": "To be written in the build stage.",
-          "overview": []
+          "repertoire": "...e5 at once against 3.Nc3, 3.e3 and 3.e4; the Classical (...Nf6, ...e6, ...c5, ...a6) against 3.Nf3",
+          "summary": "Take the pawn, then hit White's center with ...e5 at once. Only 3.Nf3 stops it; then play the Classical setup with ...Nf6, ...e6, ...c5 and ...a6.",
+          "overview": [
+            "Take on c4, then strike with ...e5 at once against 3.Nc3, 3.e3 and 3.e4, which make up 86% of your games. Only 3.Nf3 (10%) stops ...e5; then play ...Nf6, ...e6, ...c5 and ...a6.",
+            "Against 4.d5, White's most common reply, play ...Nf6. After 5.e4 (or 3.e4 e5 4.d5 Nf6 5.Nc3), 5...b5! keeps the extra pawn: if 6.Nxb5, then 6...Nxe4 takes White's center pawn.",
+            "Never play ...Bb4 while White's queen can check on a4: 4.d5 Bb4?? and 5.e4 Bb4?? lose the bishop to Qa4+. About one club player in three plays 5...Bb4 there.",
+            "When White takes back on d4 with the e-pawn, White has an isolated pawn. Develop with ...Nf6 and ...Bd6 and castle, then play ...Nc6 and ...Bg4 to press on d4. Castle before ...Bg4: an early ...Bg4 runs into Bxf7+ and Ne5+, or Qb3.",
+            "Don't try to keep the pawn with ...b5 against 3.e3: after 4.a4 c6 5.axb5 cxb5?, 6.Qf3 wins a piece.",
+            "If White trades queens (3.Nc3 e5 4.dxe5 Qxd1+, or 3.e3 e5 4.Bxc4 exd4 5.Qxd4 Qxd4), develop fast with ...Nc6, ...Be6 or ...Bg4, and castle long. Black scores 59–60% in these lines at club level."
+          ]
         }
       ]
     },

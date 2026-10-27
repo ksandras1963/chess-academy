@@ -63,14 +63,16 @@ Black: Accept an isolated d-pawn in return for free, active pieces: ...Nc6, ...N
 [Diagram "4...e5"]
 [Course "queens-gambit"]
 [WhiteLesson "QGA: 3...Nf6"]
+[BlackCourse "queens-gambit-accepted"]
+[BlackLesson "Key ideas: Why the Queen's Gambit Accepted"]
 
 {Black takes the pawn to develop freely and lets White have the center for a while, then strikes back with ...e5 or ...c5.
 
 White: Take the center with e4 while the c4-pawn waits, then win it back with Bxc4. Use your lead in development and your center before Black catches up.
 
-Black: Take on c4 to develop freely, but don't try to keep the pawn with ...b5: it usually costs too much. Hit back at White's center at once with ...e5 or ...c5.}
+Black: Take on c4 to develop freely, then hit back at White's center at once with ...e5 or ...c5. Don't try to keep the pawn with an early ...b5: after 3.e3 b5 4.a4, Black's best is to give it back, and the natural 4...c6 can cost a piece. ...b5 works only when White's own pawns block the long diagonal, as in 3.Nc3 e5 4.d5 Nf6 5.e4 b5.}
 1. d4 d5 2. c4 dxc4 {This is the Queen's Gambit Accepted. Black gives up the center for a moment.}
-3. Nc3 {The most common move at club level. White prepares e4.} Nf6 {Develops and watches e4.}
+3. Nc3 {The most common move at club level. White prepares e4.} Nf6 {Develops and watches e4. 3...e5 at once is just as good, and it is what the Queen's Gambit Accepted Course for Black plays.}
 4. e4 {White takes the whole center.} e5 {Black strikes back at once. 4...e6 is played more often, but it leaves White slightly better.} *
 
 [Chapter "Slav Defense"]
