@@ -119,8 +119,9 @@ function hubPage(root, c, set, back) {
             h("a", { href: `#/learn/${c.id}/ideas-${ch.index}` }, ch.title.replace(/^Key ideas:\s*/i, "")), c.side === "both" ? " " : null, sideTag(c, ch))))
     ] : null
 
-    // A course page with "why" (the Queen's Gambit courses): a short text, why the opening is played,
-    // a map of its variations and a table of them, then the sections. No list of points to remember.
+    // A course page with "why" (the Queen's Gambit courses), in the user's order: the text (a short
+    // description and why the opening is played), the map of its variations, the table of them, the Key
+    // ideas, the sections, and last the drills, which come after the lines have been seen.
     if (c.why) {
         root.append(h("section", { class: "course" },
             backBar(back),
@@ -128,7 +129,6 @@ function hubPage(root, c, set, back) {
                 h("h1", {}, courseTitle(c)),
                 h("p", { class: "course-side" }, c.repertoire),
                 h("p", { class: "course-summary" }, figText(c.summary || ""))),
-            h("div", { class: "course-actions" }, drillAction(c)),
             h("section", { class: "course-why" }, h("h2", {}, c.why.title || "Why play it"), ...paras(c.why.text)),
             map ? variationMap(map.root, {
                 target: node => lessonTarget([c], node),
@@ -137,11 +137,15 @@ function hubPage(root, c, set, back) {
                 key: " A Basic line: learn these first",
             }) : null,
             c.table ? h("section", { class: "course-table" }, h("h2", {}, c.table.title || "The variations"), introTable(c.table)) : null,
-            h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard),
-            h("div", { class: "course-stats" },
-                h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.` +
-                    (newRemainingToday() < 1 && core.fresh ? " Today's new lines are used up; any line can still be drilled from its section." : ""))),
             ideasList ? h("section", { class: "ideas-list" }, h("h2", {}, "Key ideas"), ideasList) : null,
+            h("section", { class: "course-sections" }, h("h2", {}, "The lines"),
+                h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard)),
+            h("section", { class: "course-drills" }, h("h2", {}, "Drills"),
+                h("p", { class: "muted" }, "Once you have looked through the lines, drill them from each side."),
+                h("div", { class: "course-actions" }, drillAction(c)),
+                h("div", { class: "course-stats" },
+                    h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.` +
+                        (newRemainingToday() < 1 && core.fresh ? " Today's new lines are used up; any line can still be drilled from its section." : "")))),
             furtherStudy(c.opening.furtherStudy)))
         return
     }
