@@ -46,8 +46,9 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 ## Key ideas pages
 
 - Every course, the Caro-Kann included. Kumar found the Key ideas pages "too long", with "multiple moves which cannot be followed by average player". In his words: "Every concept you want to show have the pieces on the board and show how the moves work (this may need multiple boards on each page - one per concept)."
-- So: one board per concept. Set up the position that shows the concept (a `[FEN]` start where it helps), then play only the few moves that show how it works. A page with several concepts has several boards. The format (`[Type "concept"]` chapters after the `[Type "ideas"]` page) is in CONTENT-GUIDE.md.
+- So: one board per concept. Reach the position that shows the concept from move 1 (see below), then play only the few moves that show how it works. A page with several concepts has several boards. The format (`[Type "concept"]` chapters after the `[Type "ideas"]` page) is in CONTENT-GUIDE.md.
 - Every Key ideas page in every opening course is converted to this format. In Kumar's words: "Convert all Key ideas in every opening course to this format."
+- Every board starts from the opening position, with no moves played, and the learner steps through the moves up to the position the idea is about. In Kumar's words: "For all key ideas start board from starting position (no moves yet) and advance to where you are discussing the idea. It is difficult for a learner to know how you arrived at the position you are discussing." So no `[FEN]` start: play the moves from move 1, and put the board's arrows and a short note on the move that reaches the idea's position.
 
 ## Names
 
