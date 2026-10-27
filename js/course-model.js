@@ -10,8 +10,8 @@ export const SIDES = ["white", "black"]
 
 /**
  * The sections of a course page, in order. A line chapter is basic unless its header says
- * [Level "advanced"]; trap chapters form their own section. Unstarted advanced lines stay out of
- * the drills (srs.js).
+ * [Level "advanced"]; trap chapters form their own section. A drill takes the advanced lines last,
+ * after a pause (srs.js, drill.js).
  */
 export const SECTIONS = [
     { id: "basic", title: "Basic and common variations", short: "Basic variations" },

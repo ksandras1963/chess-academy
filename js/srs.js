@@ -59,22 +59,20 @@ export function daysUntil(rec) {
 }
 
 /**
- * Due lines (most overdue first), then every new line. New lines come only from the basic and trap
- * sections: an advanced line joins the schedule once the learner drills it.
+ * Today's drill: the Basic and Traps lines first, then the Advanced lines. In each part the due lines come
+ * first (most overdue first), then the new ones in course order. The drill stops to ask before the
+ * Advanced part (drill.js), since many learners stop at the Basic lines.
  */
 export function buildQueue(lines, { includeNew = true } = {}) {
-    const due = lines.map(l => ({ l, s: status(l.id) }))
-        .filter(x => x.s.rec && x.s.due)
-        .sort((a, b) => a.s.rec.due - b.s.rec.due)
-        .map(x => x.l)
-    const fresh = includeNew ? lines.filter(l => !lineRecord(l.id) && l.section !== "advanced") : []
-    return [...due, ...fresh]
-}
-
-/** True once every Basic and Traps line among `lines` has been started, so the drill has no new lines left. */
-export function basicStarted(lines) {
-    const core = lines.filter(l => l.section !== "advanced")
-    return core.length > 0 && core.every(l => lineRecord(l.id))
+    const part = advanced => {
+        const own = lines.filter(l => (l.section === "advanced") === advanced)
+        const due = own.map(l => ({ l, s: status(l.id) }))
+            .filter(x => x.s.rec && x.s.due)
+            .sort((a, b) => a.s.rec.due - b.s.rec.due)
+            .map(x => x.l)
+        return includeNew ? [...due, ...own.filter(l => !lineRecord(l.id))] : due
+    }
+    return [...part(false), ...part(true)]
 }
 
 /** Lines to practice when nothing is due: weakest and least recently seen first. */
