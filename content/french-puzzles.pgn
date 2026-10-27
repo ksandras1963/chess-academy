@@ -124,6 +124,7 @@
 [Hint "The rook on e3 and the bishop on b4 are both loose. Can one piece hit them both?"]
 
 1. e4 e6 2. d4 d5 3. exd5 exd5 4. c4 Nf6 5. Nc3 Bb4 6. Nf3 O-O 7. Bd3 Re8+ 8. Be3 Ng4 9. O-O Nxe3 10. fxe3 Rxe3? 11. Nxd5! {[%cal Gd5e3,Gd5b4] The knight takes the pawn and forks the rook and the bishop. This is GM Igor Smirnov's trap in the Monte Carlo.}
+(11. Ne5!? {Also good. Whether Black's rook takes the bishop or the knight, White wins the exchange.} 11... Rxd3 (11... Rxe5 12. dxe5 {White is the exchange ahead. Stockfish: +3.8, winning for White.}) 12. Qxd3 Nc6 13. Nxd5 {White wins the pawn on d5 too and is the exchange ahead. Stockfish: +3.0, winning for White. The fork 11.Nxd5 is stronger.})
 (11. Qd2?! {Attacks the rook, but Black gives it up for a bishop.} 11... Rxd3 12. Qxd3 Be6 {White is ahead, but far less than after the fork. Stockfish: +2.5, winning for White.})
 11... Rxd3 12. Qxd3 a5 13. Nxb4 {White wins the bishop on b4 as well and stays at least the exchange ahead, with an attack on Black's king. Stockfish: +6.6, winning for White.}
 *
