@@ -49,8 +49,10 @@
 
 /* No double-tap zoom: on iPhones two quick taps (on a board or the move buttons) zoomed the page in,
    and a training board, which takes no touch gestures, then blocked pinching back out. Pinch zoom
-   and scrolling still work. */
-html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
+   and scrolling still work.
+   The scroll bar is always shown, even when nothing needs scrolling, so a page never shifts sideways
+   when it appears (Kumar's choice). Phones overlay their scroll bars, so they are unaffected. */
+html { -webkit-text-size-adjust: 100%; touch-action: manipulation; overflow-y: scroll; }
 a, button, summary, label { touch-action: manipulation; }
 
 body {
@@ -641,7 +643,7 @@ button.sheet-move:hover { background: var(--felt-high); }
         display: flex; flex-direction: column; gap: 16px;
         max-height: calc(100dvh - var(--topbar) - 32px);
         position: sticky; top: calc(var(--topbar) + 16px);
-        overflow-y: auto; overscroll-behavior: contain;
+        overflow-y: scroll; overscroll-behavior: contain; /* always shown, like the page's scroll bar */
     }
     /* Long notes scroll inside the panel instead of being squeezed; the buttons stay in view. */
     .trainer-panel > * { flex-shrink: 0; }
