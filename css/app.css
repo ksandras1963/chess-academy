@@ -329,7 +329,7 @@ a.hub-card:hover, a.hub-card:focus-visible { border-color: var(--brass); }
     display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px;
 }
 .puzzle-card {
-    display: grid; gap: 4px; padding: 10px; height: 100%;
+    display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 10px; height: 100%;
     border: 1px solid var(--rule); border-radius: 8px; background: var(--felt-raised);
     text-decoration: none; color: inherit;
 }
