@@ -75,15 +75,13 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
         renderSheet(L.sheet, state.nodes, { current: state.idx - 1, onPick: i => go(i, false) })
 
         if (!node) {
-            L.commentary.replaceChildren(
-                ...(base.line ? [h("h2", { class: "cm-move" }, "Starting position")] : []),
-                ...paras((!base.line && note.text) || (state.nodes.length
-                    ? "Step through the line with the arrows below, or tap any move on the score sheet." : "")))
+            L.setMove(state.nodes.length ? h("h2", { class: "cm-move" }, "Starting position") : null)
+            L.commentary.replaceChildren(...paras((!base.line && note.text) || (state.nodes.length
+                ? "Step through the line with the arrows, or tap any move on the score sheet." : "")))
         } else {
             const who = node.color === learner ? `${sideName(node.color)}, your side` : sideName(node.color)
-            L.commentary.replaceChildren(
-                h("h2", { class: "cm-move" }, label(node) + (node.symbol || ""), h("span", { class: "cm-who" }, who)),
-                ...paras(note.text))
+            L.setMove(h("h2", { class: "cm-move" }, label(node) + (node.symbol || ""), h("span", { class: "cm-who" }, who)))
+            L.commentary.replaceChildren(...paras(note.text))
         }
 
         L.extra.replaceChildren()

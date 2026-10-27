@@ -455,9 +455,11 @@ export async function surveyLineView(root, ctx, id, chapterIndex, pathIndex) {
             arrows: node ? node.note.arrows : [], squares: node ? node.note.squares : []
         })
         renderSheet(L.sheet, nodes, { current: state.idx - 1, onPick: i => { stopPlay(); go(i, false) } })
-        L.commentary.replaceChildren(...(node
-            ? [h("h2", { class: "cm-move" }, label(node), h("span", { class: "cm-who" }, sideName(node.color))), ...paras(node.note.text)]
-            : [h("h2", { class: "cm-move" }, "Starting position"), h("p", {}, "Press ▶︎ to watch the moves, or step through them with the arrows.")]))
+        L.setMove(node
+            ? h("h2", { class: "cm-move" }, label(node), h("span", { class: "cm-who" }, sideName(node.color)))
+            : h("h2", { class: "cm-move" }, "Starting position"))
+        L.commentary.replaceChildren(...(node ? paras(node.note.text)
+            : [h("p", {}, "Press ▶︎ to watch the moves, or step through them with the arrows.")]))
         updateControls()
     }
 
