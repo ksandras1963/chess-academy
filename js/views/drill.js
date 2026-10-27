@@ -85,7 +85,7 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null, a
         L.commentary.replaceChildren(
             h("h2", { class: "cm-move" }, `${plural(results.length, "line")} drilled`),
             h("p", {}, clean === results.length ? "Every line without a mistake. Well played."
-                : `${clean} without a mistake. The others come back tomorrow.`))
+                : `${clean} without a mistake. The others come back in your next drill.`))
         const basicNow = pool && !basicBefore && basicStarted(pool) && pool.some(l => l.section === "advanced")
         if (basicNow) {
             L.extra.append(h("p", { class: "banner" }, "You have now started every Basic line and trap. The Advanced variations are optional: many players stop here, and they join your drill only if you open them."))
@@ -213,8 +213,8 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null, a
         const wasDue = !s0.rec || s0.due
         const updated = recordResult(line.id, result)
         let msg
-        if (result === "failed") msg = "Done, with a mistake. This line comes back tomorrow."
-        else if (result === "hinted") msg = "Done, with a hint. This line comes back tomorrow."
+        if (result === "failed") msg = "Done, with a mistake. This line comes back in your next drill."
+        else if (result === "hinted") msg = "Done, with a hint. This line comes back in your next drill."
         else if (!wasDue) msg = "No mistakes. This line wasn't due yet, so its schedule stays the same."
         else msg = `No mistakes. Next review in ${plural(daysUntil(updated), "day")}.`
         L.extra.replaceChildren(h("div", { class: `result is-${result}` }, h("h2", {}, "Line complete"), h("p", {}, msg)))
