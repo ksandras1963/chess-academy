@@ -49,11 +49,11 @@
 
 /* No double-tap zoom: on iPhones two quick taps (on a board or the move buttons) zoomed the page in,
    and a training board, which takes no touch gestures, then blocked pinching back out. Pinch zoom
-   and scrolling still work. */
-html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
+   and scrolling still work.
+   The scroll bar is always shown, even when nothing needs scrolling, so a page never shifts sideways
+   when it appears (Kumar's choice). Phones overlay their scroll bars, so they are unaffected. */
+html { -webkit-text-size-adjust: 100%; touch-action: manipulation; overflow-y: scroll; }
 a, button, summary, label { touch-action: manipulation; }
-/* Keep room for the scrollbar, so the page does not shift sideways when one appears (Windows). */
-html { scrollbar-gutter: stable; }
 
 body {
     margin: 0;
@@ -579,6 +579,9 @@ a.om-box:hover, a.om-box:focus-visible { border-color: var(--tone); }
 .commentary { min-height: 5.5rem; }
 .cm-entry + .cm-entry { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--rule); }
 .cm-move { font-size: 1.25rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+/* The move line above the move buttons is always one line (Kumar's rule): it never wraps. */
+.move-head .cm-move, .concept-text > .cm-move { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.move-head .cm-who, .concept-text > .cm-move .cm-who { margin-left: 10px; }
 .cm-who { font-family: var(--sans); font-size: 0.8125rem; font-weight: 500; color: var(--ink-dim); }
 .commentary p { margin-top: 6px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.6; max-width: 38rem; }
 .cm-entry.is-wrong .cm-move { color: var(--flag); }
@@ -639,14 +642,11 @@ button.sheet-move:hover { background: var(--felt-high); }
     }
     .trainer-board { grid-area: auto; }
     .trainer-board .board-frame { width: min(100%, calc(100dvh - var(--topbar) - 48px)); max-width: none; }
-    /* The board and the panel fit in the window with the page's padding (24px above, 8px below), so
-       a long note scrolls inside the panel and never gives the whole page a scrollbar. */
-    .view:has(> .trainer) { padding-bottom: 8px; }
     .trainer-panel {
         display: flex; flex-direction: column; gap: 16px;
         max-height: calc(100dvh - var(--topbar) - 32px);
         position: sticky; top: calc(var(--topbar) + 16px);
-        overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable;
+        overflow-y: scroll; overscroll-behavior: contain; /* always shown, like the page's scroll bar */
     }
     /* Long notes scroll inside the panel instead of being squeezed; the buttons stay in view. */
     .trainer-panel > * { flex-shrink: 0; }
@@ -674,6 +674,31 @@ button.sheet-move:hover { background: var(--felt-high); }
     .trainer.has-move .lesson-intro { order: 4; }
     .trainer.has-move .scoresheet { order: 5; }
     .trainer.has-move .extra { order: 6; }
+}
+
+/* ---------- Key ideas page: one board per concept ---------- */
+
+.ideas-page { max-width: 1040px; }
+.ideas-head .backbar { margin-bottom: 12px; }
+.ideas-head h1 { margin-top: 4px; font-size: 2rem; }
+.ideas-head .lede { max-width: 44rem; }
+.concept { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--rule); }
+.concept-title { display: flex; align-items: baseline; gap: 10px; font-size: 1.375rem; }
+.concept-num {
+    flex: none; display: inline-grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 50%;
+    background: var(--brass); color: var(--felt); font-family: var(--sans); font-size: 0.9375rem; font-weight: 700;
+}
+.concept-body { margin-top: 14px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+/* Display only: the page scrolls over these boards on a phone. */
+.concept-board .board-frame { max-width: 420px; margin: 0 auto; touch-action: manipulation; }
+.concept-text { display: grid; align-content: start; gap: 10px; }
+.concept-explain p, .concept-note p { font-family: var(--serif); font-size: 1.0625rem; line-height: 1.6; max-width: 38rem; }
+.concept-explain p + p, .concept-note p + p { margin-top: 8px; }
+.concept-note:empty { display: none; }
+.concept-note { padding: 8px 12px; border-left: 3px solid var(--brass); background: var(--felt-raised); border-radius: 0 6px 6px 0; }
+@media (min-width: 760px) {
+    .concept-body { grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 28px; align-items: start; }
+    .concept-board .board-frame { margin: 0; }
 }
 
 /* ---------- empty, settings ---------- */
