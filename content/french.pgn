@@ -102,7 +102,7 @@
 [Chapter "Exchange: the e-file and ...Nge7"]
 [Type "concept"]
 
-{The pawns are symmetrical and the e-file is open; the side with the more active pieces controls it and the squares e4 and e5. Black's knight goes to e7, not f6, so White can't pin it with Bg5.}
+{The pawns are symmetrical and the e-file is open; the side with the more active pieces controls it and the squares e4 and e5. Black's knight goes to e7, not f6, so the f-pawn stays free to move and the knight can come to f5 or g6.}
 1. e4 e6 2. d4 d5 3. exd5 exd5 4. Nf3 Nc6 5. Bd3 Bg4 6. c3 Bd6 7. O-O Qd7 {[%csl Ye4,Ye5] The idea starts from this position.} 8. Re1+ {[%cal Ge1e8] The rook takes the open file with check.} 8... Nge7 {Blocks the check. The knight is pinned for one move, until Black castles.} 9. Nbd2 O-O {Black castles short.} *
 
 [Chapter "Rubinstein: ...c5 frees the game"]
