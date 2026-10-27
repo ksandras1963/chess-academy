@@ -27259,6 +27259,70 @@
     "h2h3": 2,
     "d1a4": 1
    }
+  },
+  "rnbqk1nr/1p3ppp/p3p3/2b5/2PN4/5N2/PP2PPPP/R1BQKB1R b KQkq -": {
+   "games": 184,
+   "moves": {
+    "e6e5": 84,
+    "g8f6": 32,
+    "b8c6": 31,
+    "c5d4": 22,
+    "d8b6": 7,
+    "c5b4": 3,
+    "h7h6": 2,
+    "g8e7": 2,
+    "f7f6": 1
+   }
+  },
+  "rnbqk1nr/1p3ppp/p7/2b1p3/2PN4/5N2/PP2PPPP/R1BQKB1R w KQkq -": {
+   "games": 82,
+   "moves": {
+    "d4b3": 54,
+    "c1g5": 7,
+    "f3e5": 6,
+    "e2e3": 6,
+    "d1a4": 6,
+    "d4c2": 3
+   }
+  },
+  "r1b1kb1r/pp3ppp/2n5/2P2qB1/3p4/5N2/PP2PPPP/R2QKB1R w KQkq -": {
+   "games": 78,
+   "moves": {
+    "e2e3": 21,
+    "a1c1": 16,
+    "g2g3": 8,
+    "d1d3": 7,
+    "e2e4": 6,
+    "h2h4": 4,
+    "g5h4": 4,
+    "d1d2": 3,
+    "g5d2": 2,
+    "a2a3": 2,
+    "d1a4": 2,
+    "b2b4": 1
+   }
+  },
+  "rnbqk1nr/1p3ppp/p3p3/2b5/2Pp4/N4N2/PP2PPPP/R1BQKB1R b KQkq -": {
+   "games": 4,
+   "moves": {
+    "b8c6": 3,
+    "c5a3": 1
+   }
+  },
+  "r1bqkbnr/pp3ppp/2n5/2P5/Q2pN3/8/PP2PPPP/R1B1KBNR b KQkq -": {
+   "games": 556,
+   "moves": {
+    "c8f5": 222,
+    "g8f6": 124,
+    "d8d5": 99,
+    "f7f5": 66,
+    "c8d7": 36,
+    "d8a5": 5,
+    "d8h4": 1,
+    "h7h6": 1,
+    "f8e7": 1,
+    "f8c5": 1
+   }
   }
  }
 }

@@ -46,12 +46,14 @@ Black: Build the c6–d5–e6 wall, then take on c4 once White's bishop has move
 [Diagram "4...exd5"]
 [Course "queens-gambit"]
 [WhiteLesson "QGD: 3...c5"]
+[BlackCourse "tarrasch"]
+[BlackLesson "Key ideas: Why the Tarrasch"]
 
 {Black hits d4 with ...c5 at once, accepting an isolated d-pawn for free, active pieces.
 
 White: Aim at the d5-pawn, which is often left isolated after ...cxd4. Blockade it on d4, press on it with Nf3, g3, Bg2 and your rooks, and trade minor pieces, because endgames favor the side playing against an isolated pawn.
 
-Black: Accept an isolated d-pawn in return for free, active pieces: ...Nc6, ...Nf6, ...Be7 and castling. Use the space and the open lines to attack, and push ...d4 when it opens the game for you.}
+Black: Accept an isolated d-pawn in return for free, active pieces: ...Nc6, ...Nf6, ...Be7 and castling. Keep pieces on and use the open c- and e-files. If White takes on c5 early, push ...d4! instead of taking back; later, push ...d4 when it opens the game for you.}
 1. d4 d5 2. c4 e6 3. Nc3 {More pressure on d5.} c5 {This is the Tarrasch Defense. Black hits d4 at once, ready to accept an isolated d-pawn for active pieces.}
 4. cxd5 {White's most common reply.} exd5 {The d5-pawn often ends up isolated once the c-pawns are traded.} *
 

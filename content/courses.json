@@ -260,16 +260,28 @@
       "name": "Tarrasch Defense",
       "eco": "D32",
       "moves": "1. d4 d5 2. c4 e6 3. Nc3 c5",
-      "summary": "To be written in the build stage.",
-      "furtherStudy": [],
+      "summary": "Black strikes at d4 with 3...c5 and accepts an isolated d-pawn in return for quick, active development.",
+      "furtherStudy": [
+        { "title": "Queen's Gambit | Basic Ideas, Plans & Strategies | Chess Openings", "by": "IM Andrey Ostrovskiy, Chessfactor", "kind": "Video", "url": "https://www.youtube.com/watch?v=ITQwXN9hXms" },
+        { "title": "Queen's Gambit Strategy for Black | Plans, Traps, and Setup Explained", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ETG8cCyvnAg" },
+        { "title": "Every Queen's Gambit Player Must Know These 9 Ideas", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ONB_yxkpAws" },
+        { "title": "Tarrasch Defense Opening Theory", "by": "Stjepan Tomić, Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=esjT83wWr78" }
+      ],
       "courses": [
         {
           "id": "tarrasch-black",
           "side": "black",
           "file": "content/tarrasch-black.pgn",
-          "repertoire": "The Classical Tarrasch: 4.cxd5 exd5, ...Nc6, ...Nf6 and ...Be7",
-          "summary": "To be written in the build stage.",
-          "overview": []
+          "repertoire": "The Classical Tarrasch: 4.cxd5 exd5, ...Nc6, ...Nf6 and ...Be7, and ...d4 against an early dxc5",
+          "summary": "Hit White's center at once with 3...c5 and accept an isolated d-pawn for free, active pieces. Develop with ...Nc6, ...Nf6 and ...Be7 against the 6.g3 main line, and answer early captures on c5 with ...d4.",
+          "overview": [
+            "Answer 3.Nc3 with 3...c5. After 4.cxd5, about four games in ten, take back with the e-pawn: your c8 bishop is free and your pieces come out quickly. The price is an isolated pawn on d5.",
+            "Against the classical 6.g3 and Bg2, develop with ...Nf6, ...Be7 and castle. After 9.Bg5, take on d4, then play ...h6 and ...Re8. Active pieces are your payment for the weak pawn, so avoid needless trades.",
+            "When White takes on c5 early (4.dxc5, 5.dxc5 or 6.dxc5, together about three games in ten), push ...d4! and win the pawn back later. Never 5...Bxc5?: 6.Qxd5 wins your d5 pawn.",
+            "If White's knight lands on b5, look for ...Qa5+, which checks and hits the knight, and for ...e5, which hits a bishop on f4 or a knight on d4.",
+            "Against 4.e3 and 4.Nf3, about one game in five each, play 4...Nc6 and ...Nf6. If White develops the f1 bishop without taking on d5, take on c4 and expand with ...a6, ...b5 and ...Bb7.",
+            "Against Bg5, block with ...Be7, and after Bxe7 take back with the g8 knight, never the queen: the queen must keep guarding d5."
+          ]
         }
       ]
     },
