@@ -40,6 +40,11 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - A move's note can run up to five sentences when needed. In Kumar's words: "Can be longer sentences - up to 5, if needed."
 - A lesson's introduction (the text under "Starting position") stays visible while the moves play, and the current move is shown above it, beside the board. In Kumar's words: "Whatever is written after Starting position of each variation should remain visible when the pieces start moving."
 
+## Key ideas pages
+
+- Every course, the Caro-Kann included. Kumar found the Key ideas pages "too long", with "multiple moves which cannot be followed by average player". In his words: "Every concept you want to show have the pieces on the board and show how the moves work (this may need multiple boards on each page - one per concept)."
+- So: one board per concept. Set up the position that shows the concept (a `[FEN]` start where it helps), then play only the few moves that show how it works. A page with several concepts has several boards.
+
 ## Names
 
 - Spell out an abbreviation the first time a page uses it, then use the short form: "Queen's Gambit Declined (QGD)", then "QGD".
