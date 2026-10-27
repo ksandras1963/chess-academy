@@ -73,7 +73,7 @@ Each course has a hub page and three section pages:
 - **Traps and tricks:** all `trap` chapters.
 - **Advanced and uncommon variations:** `line` chapters with `[Level "advanced"]`: lines played in under 5% of games, or more theoretical ones.
 
-"Start today's drill" takes new lines only from the basic and trap sections. An advanced line joins the schedule (and Review) once the learner drills it from its section page. The checker's report lists the number of lines in each section.
+"Start today's drill" takes new lines only from the basic and trap sections. An advanced line joins the schedule (and Review) once the learner drills it from its section page. Once every Basic and Traps line has been started, the end of that drill and the course page say that the Advanced variations are optional, since many learners stop at the Basic lines; the note goes away once an Advanced line is started (per side in a course for both sides). The checker's report lists the number of lines in each section.
 
 ### Moves, branches and explanations
 

@@ -4,7 +4,7 @@ import { Chess } from "../../vendor/chess.js/chess.js"
 import { h, figText, paras, label, sideName, plural, sleep, backBar, spellOut } from "../ui.js"
 import { course as loadCourse, availableCourses } from "../content.js"
 import { sideNotes } from "../course-model.js"
-import { status, buildQueue, practiceQueue, recordResult, daysUntil } from "../srs.js"
+import { status, buildQueue, practiceQueue, recordResult, daysUntil, basicStarted } from "../srs.js"
 import { Board } from "../board.js"
 import { trainerLayout, renderSheet } from "./layout.js"
 import { sideLabel, sectionLink } from "./course.js"
@@ -17,19 +17,20 @@ export async function drillView(root, ctx, courseId, lineId) {
     // "as-white" or "as-black": today's drill for one side of a course that teaches both.
     const side = /^as-(white|black)$/.exec(lineId || "")?.[1]
     let lines
+    let pool = null // the lines today's drill draws from; a single line has none
     if (lineId && !side) {
         const line = c.lines.find(l => l.id === lineId)
         if (!line) throw new Error("This line no longer exists; it may have been edited. Go back to the course to see the current lines.")
         lines = [line]
     } else {
-        const pool = side ? c.lines.filter(l => l.side === side) : c.lines
+        pool = side ? c.lines.filter(l => l.side === side) : c.lines
         lines = buildQueue(pool)
         if (!lines.length) lines = practiceQueue(pool)
     }
     // A single line returns to its section; a session returns to the course hub.
     const back = lineId && !side ? sectionLink(c, lines[0]) : { href: `#/course/${c.id}`, text: sideLabel(c) }
     await runSession(root, ctx, lines.map(line => ({ course: c, line })), {
-        backHref: back.href, backText: back.text
+        backHref: back.href, backText: back.text, pool, advancedHref: `#/course/${c.id}/advanced`
     })
 }
 
@@ -49,7 +50,7 @@ export async function reviewView(root, ctx) {
     await runSession(root, ctx, items, { backHref: "#/", backText: "All openings" })
 }
 
-async function runSession(root, ctx, items, { backHref, backText }) {
+async function runSession(root, ctx, items, { backHref, backText, pool = null, advancedHref = null }) {
     if (!items.length) {
         root.append(h("section", { class: "empty" },
             backBar(backHref !== "#/" ? { href: backHref, text: backText } : null),
@@ -63,6 +64,9 @@ async function runSession(root, ctx, items, { backHref, backText }) {
     ctx.onLeave(() => board.destroy())
     const check = () => { if (!ctx.alive()) throw ABORT }
     const results = []
+    // Whether every Basic line and trap was already started: if this session starts the last of them,
+    // its end screen says the Advanced variations are optional.
+    const basicBefore = pool ? basicStarted(pool) : true
 
     try {
         for (let k = 0; k < items.length; k++) {
@@ -82,7 +86,12 @@ async function runSession(root, ctx, items, { backHref, backText }) {
             h("h2", { class: "cm-move" }, `${plural(results.length, "line")} drilled`),
             h("p", {}, clean === results.length ? "Every line without a mistake. Well played."
                 : `${clean} without a mistake. The others come back tomorrow.`))
-        L.controls.replaceChildren(h("a", { class: "btn btn-primary", href: backHref }, "Done"))
+        const basicNow = pool && !basicBefore && basicStarted(pool) && pool.some(l => l.section === "advanced")
+        if (basicNow) {
+            L.extra.append(h("p", { class: "banner" }, "You have now started every Basic line and trap. The Advanced variations are optional: many players stop here, and they join your drill only if you open them."))
+        }
+        L.controls.replaceChildren(h("a", { class: "btn btn-primary", href: backHref }, "Done"),
+            basicNow ? h("a", { class: "btn", href: advancedHref }, "See the Advanced variations") : null)
     } catch (e) {
         if (e !== ABORT) throw e
     }

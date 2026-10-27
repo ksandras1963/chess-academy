@@ -93,6 +93,12 @@ export function buildQueue(lines, { includeNew = true } = {}) {
     return [...due, ...fresh]
 }
 
+/** True once every Basic and Traps line among `lines` has been started, so the drill has no new lines left. */
+export function basicStarted(lines) {
+    const core = lines.filter(l => l.section !== "advanced")
+    return core.length > 0 && core.every(l => lineRecord(l.id))
+}
+
 /** Lines to practice when nothing is due: weakest and least recently seen first. */
 export function practiceQueue(lines, n = 5) {
     return lines.map(l => ({ l, r: lineRecord(l.id) }))
