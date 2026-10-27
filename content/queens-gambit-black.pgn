@@ -123,6 +123,27 @@ If White plays Nf3 instead of Nge2, there is no f3 plan, and White usually goes 
 (3. cxd5 exd5 4. Nf3 Nf6 {Develop with ...Be7 or ...Bd6, ...c6 and castle. Stockfish: +0.1, equal.})
 3... Nf6 4. e3 Be7 {Castle next, as usual. Stockfish: +0.1, equal.} *
 
+[Chapter "QGD – Tartakower: 8.cxd5"]
+[Type "line"]
+[Opening "Queen's Gambit Declined: Tartakower Defense, Makogonov Exchange Variation"]
+[ECO "D59"]
+
+{The main line of the course. After 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 b6, four White players in ten take on d5 at once. Take back with the knight and trade two pairs of minor pieces: every trade gives Black's pieces more room. Then ...Be6 guards d5, and ...c5 hits White's center. Against castling, ...c4 gains space. If White takes on c5, take back with the pawn and play with hanging pawns (see Key ideas: Pawn structures).}
+1. d4 d5 2. c4 e6 3. Nc3 {If White starts with 3.Nf3 Nf6 4.Bg5, about one game in thirty, play 4...Be7 and castle. Seven games in ten then reach this chapter: 5.Nc3 O-O is the 5.Nf3 branch below, and 5.e3 O-O 6.Nc3 h6 is the main line after 6...h6. If White plays Bd3 and castles before Nc3, play ...h6, ...b6 and ...Bb7 all the same: 6.Bd3 h6 7.Bh4 b6 8.O-O Bb7 9.Nc3 is QGD – Tartakower: 8.Bd3 after 9.O-O (Stockfish +0.1, equal). Against 6.Nbd2, 6...h6 7.Bh4 b6 (Stockfish 0.0, equal).} Nf6 4. Bg5 Be7 {Breaks the pin and prepares to castle. Against 5.cxd5 or 5.Bxf6, see Advanced variations.}
+5. e3
+(5. Nf3 O-O 6. e3 h6 {The same position as in the main line after 6...h6. Stockfish: +0.1, equal.})
+5... O-O
+6. Nf3 {The most common move. Against 6.Bd3 or 6.cxd5, see QGD – Tartakower: 6.Bd3 and 6.cxd5. After 6.cxd5, take back at once: 6...h6? drops a pawn. Against 6.Rc1 or 6.Qc2, play 6...h6 and ...b6 just the same. If 6.Qc2 h6 7.h4, White aims at Black's king: hit back in the center with 7...c5 (Stockfish −0.2, equal).} h6 {[%cal Rh6g5] Puts the question to the bishop. Against 7.Bxf6, see QGD – Tartakower: 7.Bxf6.}
+7. Bh4 {Against 7.Bf4, about one game in fourteen, strike in the center with 7...c5, as in QGD – Three Knights: 5.Bf4. After 8.cxd5 Nxd5 9.Nxd5, take back with the queen: 9...Qxd5 10.dxc5 Qxc5 (Stockfish −0.2, equal). 9...cxd4?? loses a piece to 10.Nxe7+ (Stockfish +6.7).} b6 {[%cal Gc8b7,Gc7c5] The Tartakower: the bishop comes out next, then ...c5.}
+8. cxd5 Nxd5 {This is the Makogonov Exchange Variation. Take back with the knight: it offers trades.}
+(8... c5? {Natural, but White's pawn on d5 can take it en passant.} 9. dxc6 {White has won a pawn, and Black's center is gone. Stockfish: +1.8, clearly better for White.})
+9. Bxe7 Qxe7 {After 9.Nxd5 exd5 10.Bxe7 Qxe7, the same position arises.}
+10. Nxd5 exd5 {[%csl Yd5] The c8 bishop is free again, and Black has the half-open e-file.}
+11. Bd3 {The most common move. 11.Rc1 is under Advanced variations.} Be6 {[%cal Ge6d5] The bishop guards d5. With the pawn fixed on d5, a bishop on b7 would bite on its own pawn.}
+12. O-O c5 {[%cal Gc5d4] Black's freeing break.}
+13. Rc1 {The most common move. After 13.dxc5 bxc5, Black has active hanging pawns on c5 and d5 (Stockfish 0.0, equal).} c4 {[%cal Gc4b3] Gains space on the queenside and drives the bishop back.}
+14. Bb1 Nc6 {The last minor piece comes out. If 15.Ne5, trade it with 15...Nxe5. Stockfish: 0.0, equal.} *
+
 [Chapter "QGD – Three Knights: 5.Bf4"]
 [Type "line"]
 [Level "advanced"]
@@ -208,28 +229,6 @@ If White plays Nf3 instead of Nge2, there is no f3 plan, and White usually goes 
 (8. Nxc6 bxc6 {Take back with the pawn. Black keeps the extra pawn on c4. Stockfish: −0.1, equal.})
 8... bxc6 9. Nxc6 Qe8 {[%cal Ge8c6] Hits the knight.}
 10. Nxe7+ Qxe7 {Material is level, White has given up the g2 bishop, and Black's pieces are free. Stockfish: +0.1, equal.} *
-
-[Chapter "QGD – Tartakower: 8.cxd5"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Queen's Gambit Declined: Tartakower Defense, Makogonov Exchange Variation"]
-[ECO "D59"]
-
-{The main line of the course. After 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 b6, four White players in ten take on d5 at once. Take back with the knight and trade two pairs of minor pieces: every trade gives Black's pieces more room. Then ...Be6 guards d5, and ...c5 hits White's center. Against castling, ...c4 gains space. If White takes on c5, take back with the pawn and play with hanging pawns (see Key ideas: Pawn structures).}
-1. d4 d5 2. c4 e6 3. Nc3 {If White starts with 3.Nf3 Nf6 4.Bg5, about one game in thirty, play 4...Be7 and castle. Seven games in ten then reach this chapter: 5.Nc3 O-O is the 5.Nf3 branch below, and 5.e3 O-O 6.Nc3 h6 is the main line after 6...h6. If White plays Bd3 and castles before Nc3, play ...h6, ...b6 and ...Bb7 all the same: 6.Bd3 h6 7.Bh4 b6 8.O-O Bb7 9.Nc3 is QGD – Tartakower: 8.Bd3 after 9.O-O (Stockfish +0.1, equal). Against 6.Nbd2, 6...h6 7.Bh4 b6 (Stockfish 0.0, equal).} Nf6 4. Bg5 Be7 {Breaks the pin and prepares to castle. Against 5.cxd5 or 5.Bxf6, see Advanced variations.}
-5. e3
-(5. Nf3 O-O 6. e3 h6 {The same position as in the main line after 6...h6. Stockfish: +0.1, equal.})
-5... O-O
-6. Nf3 {The most common move. Against 6.Bd3 or 6.cxd5, see QGD – Tartakower: 6.Bd3 and 6.cxd5. After 6.cxd5, take back at once: 6...h6? drops a pawn. Against 6.Rc1 or 6.Qc2, play 6...h6 and ...b6 just the same. If 6.Qc2 h6 7.h4, White aims at Black's king: hit back in the center with 7...c5 (Stockfish −0.2, equal).} h6 {[%cal Rh6g5] Puts the question to the bishop. Against 7.Bxf6, see QGD – Tartakower: 7.Bxf6.}
-7. Bh4 {Against 7.Bf4, about one game in fourteen, strike in the center with 7...c5, as in QGD – Three Knights: 5.Bf4. After 8.cxd5 Nxd5 9.Nxd5, take back with the queen: 9...Qxd5 10.dxc5 Qxc5 (Stockfish −0.2, equal). 9...cxd4?? loses a piece to 10.Nxe7+ (Stockfish +6.7).} b6 {[%cal Gc8b7,Gc7c5] The Tartakower: the bishop comes out next, then ...c5.}
-8. cxd5 Nxd5 {This is the Makogonov Exchange Variation. Take back with the knight: it offers trades.}
-(8... c5? {Natural, but White's pawn on d5 can take it en passant.} 9. dxc6 {White has won a pawn, and Black's center is gone. Stockfish: +1.8, clearly better for White.})
-9. Bxe7 Qxe7 {After 9.Nxd5 exd5 10.Bxe7 Qxe7, the same position arises.}
-10. Nxd5 exd5 {[%csl Yd5] The c8 bishop is free again, and Black has the half-open e-file.}
-11. Bd3 {The most common move. 11.Rc1 is under Advanced variations.} Be6 {[%cal Ge6d5] The bishop guards d5. With the pawn fixed on d5, a bishop on b7 would bite on its own pawn.}
-12. O-O c5 {[%cal Gc5d4] Black's freeing break.}
-13. Rc1 {The most common move. After 13.dxc5 bxc5, Black has active hanging pawns on c5 and d5 (Stockfish 0.0, equal).} c4 {[%cal Gc4b3] Gains space on the queenside and drives the bishop back.}
-14. Bb1 Nc6 {The last minor piece comes out. If 15.Ne5, trade it with 15...Nxe5. Stockfish: 0.0, equal.} *
 
 [Chapter "QGD – Tartakower: 5.cxd5 and 5.Bxf6"]
 [Diagram "5.cxd5"]
