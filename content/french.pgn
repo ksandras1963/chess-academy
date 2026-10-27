@@ -407,6 +407,87 @@ Qxb2 {[%cal Gb2a1] Hits the rook on a1, and the bishop on h6 is still hanging.}
 6. h3 {Stops ...Bg4. After 6.Nf3 Bg4, you are in the Exchange main line again. After 6.Ne2, play 6...Nge7 and castle.} Nge7 7. Nf3 Bf5 {[%cal Gf5d3] Offers to trade White's good bishop.}
 8. Bxf5 Nxf5 9. O-O O-O 10. Re1 Nce7 {The knight makes room for ...c6, which makes d5 rock solid.} 11. Nbd2 c6 {Equal (Stockfish 0.0).} *
 
+[Chapter "Winawer: 7...O-O"]
+[Side "both"]
+[Diagram "7...O-O"]
+[Type "line"]
+[Level "advanced"]
+[Opening "French Defense: Winawer Variation, Warsaw Variation"]
+[ECO "C18"]
+
+{Castling guards g7 without giving up a pawn, but Black has to defend for a while. White aims at h7 with Bd3, Qh5 and Nf3, and Black keeps the kingside closed. Later Black closes the queenside with ...c4 and plays there.}
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. a3 Bxc3+ 6. bxc3 Ne7 7. Qg4 O-O {Black guards g7 by castling. Solid, but passive.}
+8. Bd3 Nbc6 9. Qh5 {[%cal Gh5h7,Gd3h7] Two pieces aim at h7.} Ng6 {The knight shields h7 and the kingside.}
+10. Nf3 Qc7 11. Be3 c4 {[%cal Gc4d3] Hits the bishop on d3 and closes the queenside. Slightly better for White (Stockfish +0.5).} *
+
+[Chapter "Tarrasch: 3...c5"]
+[Side "both"]
+[Diagram "3...c5"]
+[Type "line"]
+[Level "advanced"]
+[Opening "French Defense: Tarrasch Variation, Chistyakov Defense, Modern Line"]
+[ECO "C07"]
+
+{The open variation: Black hits d4 at once, and after 4.exd5 recaptures with the queen, so the pawn on e6 stays to guard Black's king. White wins the d4 pawn back with Ngf3, Bc4 and Nb3, and Black gets free development; ...a6 keeps White's pieces off b5. Taking back with 4...exd5 is also playable, but it usually leaves Black with an isolated d-pawn.}
+1. e4 e6 2. d4 d5 3. Nd2 c5 {The open variation: Black strikes at d4 at once.}
+4. exd5 Qxd5 {The queen recaptures, and the pawn on e6 keeps guarding Black's king.} 5. Ngf3 cxd4 6. Bc4 {Gains time on the queen.} Qd6 {Not all the way back to d8.}
+7. O-O Nf6 8. Nb3 {[%cal Gb3d4,Gf3d4] A third attacker on d4: the pawn will fall.} Nc6 {Black gives the pawn back. Holding it with ...e5 leaves Black's king stuck in the center.}
+9. Nbxd4 Nxd4 10. Nxd4 a6 {Keeps White's pieces off b5.}
+11. Re1 Be7 {Black castles next, with free pieces. Slightly better for White (Stockfish +0.3).} *
+
+[Chapter "Steinitz: 7...Qb6"]
+[Side "both"]
+[Diagram "7...Qb6"]
+[Type "line"]
+[Level "advanced"]
+[Opening "French Defense: Steinitz Variation, Boleslavsky Variation"]
+[ECO "C11"]
+
+{7...Qb6 attacks b2 and leads to a forcing line. After 8.Na4 Qa5+ 9.c3 cxd4 10.b4, Black gives a knight for two pawns with 10...Nxb4, and White's king stays in the center for a while. It is sharp and risky for Black: at the end Stockfish prefers White (+1.5), so play it only if you know it well.}
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. e5 Nfd7 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 {[%cal Gb6b2] Hits b2.}
+8. Na4 {Hits the queen and guards b2.} Qa5+ 9. c3 cxd4 10. b4 {Attacks the queen again.} Nxb4 {A knight for two pawns.}
+11. cxb4 Bxb4+ 12. Bd2 Bxd2+ 13. Nxd2 O-O 14. Bd3 b6 {The bishop comes to a6 next. Clearly better for White (Stockfish +1.5), but Black has two pawns and play against White's king.} *
+
+[Chapter "Steinitz: 7...cxd4"]
+[Side "both"]
+[Diagram "7...cxd4"]
+[Type "line"]
+[Level "advanced"]
+[Opening "French Defense: Steinitz Variation, Boleslavsky Variation"]
+[ECO "C11"]
+
+{7...cxd4 releases the tension at once. After 8.Nxd4 Bc5 9.Qd2 O-O 10.O-O-O, the kings are on opposite sides and both sides attack. Against 11.h4, Black trades on d4 and races with ...b5 and ...b4.}
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. e5 Nfd7 5. f4 c5 6. Nf3 Nc6 7. Be3 cxd4
+8. Nxd4 Bc5 {[%cal Gc5d4] More pressure on d4. Black doesn't take on d4 yet.} 9. Qd2 O-O 10. O-O-O {Opposite-side castling: both sides attack.} a6 {Keeps White's knights off b5 and prepares ...b5.}
+11. h4 {White's best try: the kingside pawns go forward at once.} Nxd4 12. Bxd4 b5 13. h5 {The h-pawn keeps going. 13.Rh3, bringing the rook to the third rank, is also played, but Stockfish prefers 13.h5.} b4
+14. Na4 Bxd4 15. Qxd4 {Equal (Stockfish +0.1). White's attack is easy to play, but the knight on a4 is offside.} *
+
+[Chapter "Steinitz: 7...Be7"]
+[Side "both"]
+[Diagram "7...Be7"]
+[Type "line"]
+[Level "advanced"]
+[Opening "French Defense: Steinitz Variation, Boleslavsky Variation"]
+[ECO "C11"]
+
+{7...Be7 looks quiet, but it sets a trap: after 8.Qd2 O-O, White must not castle queenside. The normal plan is Be2 and short castling. Black plays ...b6 and then ...f6 to break in the center.}
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. e5 Nfd7 5. f4 c5 6. Nf3 Nc6 7. Be3 Be7
+8. Qd2 O-O 9. Be2 {Not 9.O-O-O?, which runs into 9...c4! and ...b5 (Stockfish −1.5).} b6 {Prepares ...Bb7 or ...Ba6.}
+10. O-O f6 {[%cal Gf6e5] Black's second break, against the head of the chain.} 11. dxc5 Nxc5 12. Rad1 Bb7 13. Qe1 fxe5 14. fxe5 {[%csl Ye5,Ye4] The pawn on e5 is isolated, and e4 is a good square for Black's knight. Slightly better for White (Stockfish +0.3).} *
+
+[Chapter "Burn Variation: 4.Bg5 dxe4"]
+[Side "both"]
+[Diagram "4...dxe4"]
+[Type "line"]
+[Level "advanced"]
+[Opening "French Defense: Classical Variation, Burn Variation, Morozevich Line"]
+[ECO "C13"]
+
+{Against 4.Bg5, Black takes on e4 and recaptures on f6 with the g-pawn: the g-file opens for Black's rook, and Black keeps the dark-squared bishop. 6...Bxf6 is the more common, quieter recapture. Both sides often castle queenside.}
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 {Pins the knight against the queen.} dxe4 5. Nxe4 Be7 {Breaks the pin.}
+6. Bxf6 gxf6 {[%cal Gh8g8] Opens the g-file for Black's rook.} 7. Nf3 f5 {Drives the knight away from the center.}
+8. Nc3 a6 9. Qd2 {White prepares long castling. Equal (Stockfish 0.0).} *
+
 [Chapter "Rubinstein: 4...Nf6 and ...gxf6"]
 [Side "black"]
 [Diagram "4...Nf6"]
