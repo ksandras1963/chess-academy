@@ -220,6 +220,78 @@
       ]
     },
     {
+      "id": "slav",
+      "name": "Slav Defense",
+      "eco": "D10",
+      "moves": "1. d4 d5 2. c4 c6",
+      "summary": "To be written in the build stage.",
+      "furtherStudy": [],
+      "courses": [
+        {
+          "id": "slav-black",
+          "side": "black",
+          "file": "content/slav-black.pgn",
+          "repertoire": "The Czech Variation: 4...dxc4 5.a4 Bf5",
+          "summary": "To be written in the build stage.",
+          "overview": []
+        }
+      ]
+    },
+    {
+      "id": "queens-gambit-accepted",
+      "name": "Queen's Gambit Accepted",
+      "eco": "D20",
+      "moves": "1. d4 d5 2. c4 dxc4",
+      "summary": "To be written in the build stage.",
+      "furtherStudy": [],
+      "courses": [
+        {
+          "id": "queens-gambit-accepted-black",
+          "side": "black",
+          "file": "content/queens-gambit-accepted-black.pgn",
+          "repertoire": "...e5 against 3.Nc3, 3.e3 and 3.e4; ...Nf6, ...e6 and ...c5 against 3.Nf3",
+          "summary": "To be written in the build stage.",
+          "overview": []
+        }
+      ]
+    },
+    {
+      "id": "tarrasch",
+      "name": "Tarrasch Defense",
+      "eco": "D32",
+      "moves": "1. d4 d5 2. c4 e6 3. Nc3 c5",
+      "summary": "To be written in the build stage.",
+      "furtherStudy": [],
+      "courses": [
+        {
+          "id": "tarrasch-black",
+          "side": "black",
+          "file": "content/tarrasch-black.pgn",
+          "repertoire": "The Classical Tarrasch: 4.cxd5 exd5, ...Nc6, ...Nf6 and ...Be7",
+          "summary": "To be written in the build stage.",
+          "overview": []
+        }
+      ]
+    },
+    {
+      "id": "albin-countergambit",
+      "name": "Albin Countergambit",
+      "eco": "D08",
+      "moves": "1. d4 d5 2. c4 e5",
+      "summary": "To be written in the build stage.",
+      "furtherStudy": [],
+      "courses": [
+        {
+          "id": "albin-countergambit-black",
+          "side": "black",
+          "file": "content/albin-countergambit-black.pgn",
+          "repertoire": "A surprise weapon: 3.dxe5 d4, then ...Nge7 and ...Ng6 to win back e5",
+          "summary": "To be written in the build stage.",
+          "overview": []
+        }
+      ]
+    },
+    {
       "id": "sicilian",
       "name": "Sicilian Defense",
       "eco": "B20",
