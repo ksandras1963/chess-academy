@@ -19,6 +19,7 @@
     --brass: #c9a34e;
     --brass-ink: #19130a;
     --flag: #e3654f;
+    --yellow: #f5cd47; /* the full-course box */
     --sage: #8cc489;
     --sq-light: #e6d1a7;
     --sq-dark: #a77b4f;
@@ -39,6 +40,7 @@
     --brass: #8a6517;
     --brass-ink: #fffaf0;
     --flag: #b23b28;
+    --yellow: #8a6a00; /* a dark yellow: bright yellow can't be read on white */
     --sage: #2e7838;
     color-scheme: light;
 }
@@ -203,6 +205,7 @@ main { outline: none; }
 .principles-title { margin-top: 24px; font-size: 1.25rem; }
 .principles { margin: 10px 0 0; padding-left: 1.5rem; display: grid; gap: 8px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
 .principles strong { font-weight: 600; }
+.home-levels { margin-top: 10px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
 .review-strip {
     margin-top: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px;
     padding: 12px 16px; border: 1px solid var(--brass); border-radius: 8px;
@@ -238,6 +241,9 @@ main { outline: none; }
 }
 a.course-link:hover { border-color: var(--brass); }
 .course-link.is-soon { color: var(--ink-dim); background: transparent; border-style: dashed; }
+/* A link straight to one lesson: the course above, the lesson's title below. */
+.course-link.is-lesson { padding: 6px 14px; }
+.lesson-label { display: flex; flex-direction: column; }
 .course-meta { font-size: 0.8125rem; color: var(--ink-dim); }
 .nowrap { white-space: nowrap; }
 .side-chip { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--ink-dim); flex: none; }
@@ -250,6 +256,7 @@ a.course-link:hover { border-color: var(--brass); }
 .course-link.is-soon .puzzle-chip { background: transparent; color: var(--ink-dim); border: 1.5px solid var(--ink-dim); }
 .side-chip.white { background: #f4efe2; border-color: #f4efe2; }
 .side-chip.black { background: #1b1b1b; border-color: #8a8a8a; }
+.side-chip.both { background: linear-gradient(90deg, #f4efe2 50%, #1b1b1b 50%); border-color: #8a8a8a; }
 
 @media (min-width: 900px) {
     .home {
@@ -283,6 +290,18 @@ a.course-link:hover { border-color: var(--brass); }
 .course-actions { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: stretch; gap: 12px; }
 .course-stats { margin-top: 20px; display: grid; gap: 8px; color: var(--ink-dim); font-size: 0.9375rem; }
 
+/* The Queen's Gambit course pages: "Why play it", the map and the table of variations. */
+.course-why { margin-top: 32px; }
+.course-why h2, .course-table h2 { font-size: 1.3125rem; }
+.course-why p { margin-top: 8px; max-width: 44rem; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.55; }
+.course .flowchart { margin-top: 32px; }
+.course-table { margin-top: 32px; }
+.course-table .survey-table { max-width: none; }
+.course-sections, .course-drills { margin-top: 32px; }
+.course-sections h2, .course-drills h2 { font-size: 1.3125rem; }
+.course-sections .hub-links { margin-top: 12px; }
+.course-drills .course-actions { margin-top: 12px; }
+.advanced-note { margin-top: 16px; }
 .ideas-list { margin-top: 32px; }
 .ideas-list h2 { font-size: 1.3125rem; }
 .ideas-list p { margin-top: 4px; font-size: 0.9375rem; }
@@ -311,7 +330,7 @@ a.hub-card:hover, a.hub-card:focus-visible { border-color: var(--brass); }
     display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px;
 }
 .puzzle-card {
-    display: grid; gap: 4px; padding: 10px; height: 100%;
+    display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 10px; height: 100%;
     border: 1px solid var(--rule); border-radius: 8px; background: var(--felt-raised);
     text-decoration: none; color: inherit;
 }
@@ -372,11 +391,19 @@ a.chapter-board:focus-visible { outline: none; }
     .chapter-board { position: sticky; top: calc(var(--topbar) + 16px); }
     .chapter-board-caption { font-size: 0.9375rem; }
 }
-.chapter h2 { font-size: 1.3125rem; display: flex; align-items: baseline; gap: 10px; }
+.chapter h2 { font-size: 1.3125rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
 .tag {
     font-family: var(--sans); font-size: 0.75rem; font-weight: 600;
     padding: 2px 8px; border-radius: 4px; border: 1px solid var(--flag); color: var(--flag);
 }
+/* A course for both sides: "Drill as White" and "Drill as Black" side by side. */
+.drill-pair { display: flex; flex-wrap: wrap; gap: 12px; }
+/* "You play White" / "You play Black" in a course for both sides: the colors of the pieces. */
+.tag.side-tag { white-space: nowrap; }
+.tag.side-tag.is-white { background: #f4efe2; border-color: #f4efe2; color: #1b1b1b; }
+.tag.side-tag.is-black { background: #1b1b1b; border-color: #8a8a8a; color: #f4efe2; }
+.tag.side-tag.is-both { border-color: var(--ink-dim); color: var(--ink); }
+.ideas-list .side-tag { font-size: 0.6875rem; padding: 1px 6px; vertical-align: 2px; }
 .chapter-intro { margin-top: 6px; max-width: 40rem; color: var(--ink-dim); font-family: var(--serif); font-size: 1.0625rem; }
 .chapter-share { margin-top: 6px; display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
 .share-bar { flex: none; width: 96px; height: 6px; border-radius: 3px; background: var(--felt-high); overflow: hidden; }
@@ -418,7 +445,7 @@ a.chapter-board:focus-visible { outline: none; }
 .survey-table thead th { padding-top: 0; font-size: 0.8125rem; font-weight: 600; color: var(--ink-dim); border-bottom-color: var(--brass); }
 .survey-table tbody th { font-weight: 600; }
 .survey-table td { color: var(--ink-dim); }
-.survey-table td:nth-child(2) { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.survey-table td:nth-child(2) { white-space: pre; font-variant-numeric: tabular-nums; } /* no wrapping, but a line break in the text starts a new line ("12% as White" over "4% as Black") */
 .survey-table figcaption { margin-top: 6px; font-size: 0.8125rem; }
 @media (max-width: 520px) {
     .survey-table table { font-size: 0.875rem; }
@@ -484,12 +511,27 @@ button.om-box:hover, button.om-box:focus-visible { border-color: var(--tone); }
 .fc-box { flex-direction: column; align-items: flex-start; gap: 0; }
 .fc-box .om-move { font-size: 0.9375rem; }
 .fc-name { font-family: var(--serif); font-size: 0.9375rem; color: var(--ink-dim); }
-button.fc-box .fc-name { color: var(--ink); }
+button.fc-box .fc-name, a.fc-box .fc-name { color: var(--ink); }
+a.om-box { text-decoration: none; }
+a.om-box:hover, a.om-box:focus-visible { border-color: var(--tone); }
 .fc-scroll { overflow-x: auto; }
 /* Left to right, boxes of one width line up in columns, like a printed flowchart. */
 @media (min-width: 760px) { .fc-box { min-width: 13rem; } }
 .fc-key { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 0.8125rem; color: var(--ink-dim); }
-.survey-courses { margin-top: 16px; }
+/* The full courses linked from an overview page, in yellow above its map so they stand out. */
+.course-box {
+    margin-top: 20px; padding: 16px 20px;
+    border: 2px solid var(--yellow); border-radius: 10px; background: var(--felt-raised);
+}
+.course-box h2 { font-size: 1.375rem; color: var(--yellow); }
+.course-box p { margin-top: 6px; max-width: 40rem; font-family: var(--serif); font-size: 1.1875rem; line-height: 1.5; }
+.course-box-links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px; }
+.course-box-link {
+    min-height: 52px; padding: 0 18px; border: 2px solid var(--yellow); color: var(--yellow);
+    font-size: 1.125rem; font-weight: 600; white-space: normal; text-align: left;
+}
+.course-box-link:hover { border-color: var(--yellow); background: var(--felt-high); }
+.course-box-link .side-chip.white { border-color: var(--ink-dim); } /* visible on a white button too */
 
 /* Compact overview cards: the plans fold away under a button. */
 .plans-more { margin-top: 10px; max-width: 40rem; }
@@ -507,14 +549,16 @@ button.fc-box .fc-name { color: var(--ink); }
 .trainer {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "head" "board" "controls" "commentary" "extra" "sheet";
+    grid-template-areas: "head" "board" "controls" "move" "commentary" "intro" "extra" "sheet";
     gap: 14px;
 }
 .trainer-panel { display: contents; }
 .tp-head { grid-area: head; }
 .trainer-board { grid-area: board; }
 .controls { grid-area: controls; }
+.move-head { grid-area: move; }
 .commentary { grid-area: commentary; }
+.lesson-intro { grid-area: intro; }
 .extra { grid-area: extra; }
 .scoresheet { grid-area: sheet; }
 
@@ -526,6 +570,10 @@ button.fc-box .fc-name { color: var(--ink); }
 .nav-buttons, .more-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
 .prompt { font-weight: 600; }
 
+/* The line's introduction: stays in view while the moves are played. */
+.lesson-intro { padding: 10px 14px; border-left: 3px solid var(--brass); border-radius: 0 6px 6px 0; background: var(--felt-raised); }
+.intro-label { font-family: var(--sans); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.02em; color: var(--ink-dim); }
+.lesson-intro p { margin-top: 6px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.55; max-width: 38rem; }
 .commentary { min-height: 5.5rem; }
 .cm-entry + .cm-entry { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--rule); }
 .cm-move { font-size: 1.25rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
@@ -597,7 +645,7 @@ button.sheet-move:hover { background: var(--felt-high); }
     }
     /* Long notes scroll inside the panel instead of being squeezed; the buttons stay in view. */
     .trainer-panel > * { flex-shrink: 0; }
-    .tp-head, .controls, .commentary, .extra, .scoresheet { grid-area: auto; }
+    .tp-head, .controls, .move-head, .commentary, .extra, .scoresheet, .lesson-intro { grid-area: auto; }
     .scoresheet { order: 1; max-height: calc(15 * (1.5rem + 7px) + 12px); }
     .sheet-move { padding-top: 3px; padding-bottom: 3px; }
     .controls { position: sticky; bottom: 0; z-index: 1; padding: 10px 0 2px; background: var(--felt); }
@@ -605,6 +653,22 @@ button.sheet-move:hover { background: var(--felt-high); }
     .commentary { order: 2; }
     .extra { order: 3; }
     .controls { order: 4; }
+    /* A line with an introduction: title, the current move with its note, the buttons, the
+       introduction, then the score sheet, so the move's note is never pushed below a long sheet. */
+    .trainer.has-intro .commentary { order: 1; }
+    .trainer.has-intro .controls { order: 2; }
+    .trainer.has-intro .lesson-intro { order: 3; }
+    .trainer.has-intro .scoresheet { order: 4; }
+    .trainer.has-intro .extra { order: 5; }
+    /* Lessons: the move's heading, then the buttons, then its note, so the buttons stay at the same
+       height on every move. In Kumar's words: "Ensure all move lines are at same level. If additional
+       text is needed, add this below the move line." */
+    .trainer.has-move .move-head { order: 1; }
+    .trainer.has-move .controls { order: 2; position: static; padding: 0; }
+    .trainer.has-move .commentary { order: 3; min-height: 0; }
+    .trainer.has-move .lesson-intro { order: 4; }
+    .trainer.has-move .scoresheet { order: 5; }
+    .trainer.has-move .extra { order: 6; }
 }
 
 /* ---------- empty, settings ---------- */

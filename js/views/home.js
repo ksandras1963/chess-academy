@@ -32,7 +32,7 @@ export async function homeView(root, ctx) {
         const shown = s.moves ? `After ${figMoves(s.moves)}` : lead ? figText(chapters[0].title) : s.name
         // The openings on the page, the ones with a course in full ink: "Italian · Sicilian · French …"
         const names = chapters.map((ch, k) => [k ? " · " : "",
-            h("span", { class: openingIds.has(ch.headers.Course) ? "fm-taught" : null }, shortName(ch.title))])
+            h("span", { class: (ch.headers.Course || "").split(/\s+/).some(id => openingIds.has(id)) ? "fm-taught" : null }, shortName(ch.title))])
         const li = h("li", { class: "opening first-move", tabindex: "-1" },
             h("div", { class: "op-head" }, h("h2", {}, s.name), h("span", { class: "eco", title: "ECO codes" }, s.eco)),
             names.length ? h("p", { class: "fm-names" }, names) : h("p", { class: "op-summary" }, s.subtitle),
@@ -64,6 +64,8 @@ export async function homeView(root, ctx) {
             ["Castle early", "Get the king to safety and activate the rooks."],
             ["Don't bring the queen out too soon", "Early queen moves invite opponent pieces to gain time (tempi) by attacking it."]
         ].map(([term, text]) => h("li", {}, h("strong", {}, `${term}: `), text))),
+        h("h2", { class: "principles-title" }, "Basic and Advanced variations"),
+        h("p", { class: "home-levels" }, "Each course has Basic and Advanced variations. Learn the Basic variations first: they are the lines you will meet most often. The Advanced variations are worth learning for the openings you play all the time, or when you want to go beyond a 2000 rating."),
         due ? h("p", { class: "review-strip" },
             h("span", {}, `${plural(due, "line")} ready for review.`),
             h("a", { class: "btn btn-primary", href: "#/review" }, "Review now")) : null)

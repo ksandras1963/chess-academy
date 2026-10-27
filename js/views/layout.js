@@ -1,11 +1,15 @@
 // Shared trainer layout (board + panel) and the scoresheet.
 
-import { h, fig, backBar } from "../ui.js"
+import { h, fig, backBar, backTrail } from "../ui.js"
 
-/** prev / next: optional { href, text } links shown under the back buttons (next idea, next puzzle). */
-export function trainerLayout(root, { backHref, backText, prev = null, next = null }) {
+/**
+ * prev / next: optional { href, text } links shown under the back buttons (next idea, next puzzle).
+ * trail: optional back links, nearest first, shown before Main menu in place of backHref (lesson pages).
+ */
+export function trainerLayout(root, { backHref, backText, trail = null, prev = null, next = null }) {
     const boardEl = h("div", { class: "board-frame" })
-    const back = backBar(backHref && backHref !== "#/" ? { href: backHref, text: backText } : null)
+    const back = trail ? backTrail(trail)
+        : backBar(backHref && backHref !== "#/" ? { href: backHref, text: backText } : null)
     const steps = prev || next ? h("nav", { class: "stepbar", "aria-label": "Previous and next" },
         prev ? h("a", { class: "btn btn-small btn-step", href: prev.href, "aria-label": `Previous: ${prev.text}` },
             h("span", { "aria-hidden": "true" }, "‹"), h("span", { class: "step-text" }, prev.text)) : h("span"),
@@ -14,16 +18,37 @@ export function trainerLayout(root, { backHref, backText, prev = null, next = nu
     const title = h("h1", { class: "tp-title" })
     const sub = h("p", { class: "tp-sub" })
     const sheet = h("div", { class: "scoresheet" })
+    // The line's introduction, kept on screen below the current move while the moves are played
+    // (line lessons, overview lines).
+    const intro = h("section", { class: "lesson-intro", "aria-label": "About this line" })
+    intro.hidden = true
+    // The current move's heading, above the buttons in lessons, so the buttons keep their height
+    // whatever the length of the note below them.
+    const move = h("div", { class: "move-head" })
+    move.hidden = true
     const commentary = h("div", { class: "commentary", "aria-live": "polite" })
     const extra = h("div", { class: "extra" })
     const controls = h("div", { class: "controls" })
-    root.append(h("section", { class: "trainer" },
+    const trainer = h("section", { class: "trainer" },
         h("div", { class: "trainer-board" }, boardEl),
         h("aside", { class: "trainer-panel" },
             h("header", { class: "tp-head" }, back, steps, title, sub),
-            sheet, commentary, extra, controls)))
+            intro, move, commentary, controls, sheet, extra))
+    root.append(trainer)
     return {
         boardEl, sheet, commentary, extra, controls,
+        /** Shows the introduction (an array of nodes) above the move notes, or hides it when empty. */
+        setIntro(nodes) {
+            intro.replaceChildren(...(nodes.length ? [h("h2", { class: "intro-label" }, "About this line"), ...nodes] : []))
+            intro.hidden = !nodes.length
+            trainer.classList.toggle("has-intro", nodes.length > 0) // reorders the panel (css/app.css)
+        },
+        /** Shows the current move's heading (or hides it when null) above the buttons, with the note below them. */
+        setMove(heading) {
+            move.replaceChildren(...(heading ? [heading] : []))
+            move.hidden = !heading
+            trainer.classList.add("has-move") // reorders the panel (css/app.css)
+        },
         setTitle(t, s = "") {
             title.textContent = t
             sub.textContent = s

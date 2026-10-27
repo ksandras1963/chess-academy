@@ -1,25 +1,38 @@
 // Course pages. The hub: what you need to know about the opening, today's drill, and links to the
 // sections. A section page (basic variations, traps, advanced variations) lists its lines by chapter.
 
-import { h, figText, paras, plural, backBar, label } from "../ui.js"
+import { h, figText, paras, plural, backBar, label, spellOut } from "../ui.js"
 import { course as loadCourse, openingStats, puzzles as loadPuzzles, overviewBack } from "../content.js"
 import { SECTIONS } from "../course-model.js"
-import { status, progress, buildQueue, practiceQueue, newRemainingToday, daysUntil } from "../srs.js"
+import { status, progress, buildQueue, practiceQueue, daysUntil } from "../srs.js"
 import { chapterShare, pct, shortName } from "../stats.js"
 import { Board } from "../board.js"
 import { furtherStudy } from "./layout.js"
 import { puzzleStats } from "./puzzles.js"
+import { variationMap, introTable, lessonTarget } from "./survey.js"
 
 const TYPE_LABEL = { line: "", trap: "Trap", ideas: "Key ideas" }
 
 const SECTION_TEXT = {
     basic: "The lines you will meet most often. Learn these first.",
     traps: "Traps to set and traps to avoid, each with its refutation.",
-    advanced: "Rarer and more theoretical lines. A line here joins your daily drill only after you drill it once."
+    advanced: "Rarer and more theoretical lines. Your drills come to these after the Basic lines, and ask first."
 }
 
 export function sideLabel(c) {
-    return `${c.opening.name}, as ${c.side === "white" ? "White" : "Black"}`
+    return c.side === "both" ? courseTitle(c) : `${c.opening.name}, as ${c.side === "white" ? "White" : "Black"}`
+}
+
+/** "Slav Defense Course" for a course that teaches both sides, else "Italian Game Course for White". */
+export function courseTitle(c) {
+    return c.side === "both" ? `${c.opening.name} Course` : `${c.opening.name} Course for ${c.side === "white" ? "White" : "Black"}`
+}
+
+/** In a course for both sides, the tag that says which side a chapter is played from. */
+function sideTag(c, ch) {
+    if (c.side !== "both") return null
+    const text = ch.side === "both" ? "Both sides" : `You play ${ch.side === "white" ? "White" : "Black"}`
+    return h("span", { class: `tag side-tag is-${ch.side}` }, text)
 }
 
 /** Where a line lives, for back buttons: its section page. */
@@ -51,19 +64,38 @@ export async function courseView(root, ctx, id, sectionId) {
 }
 
 function drillAction(c) {
-    const queue = buildQueue(c.lines)
-    const dueCount = queue.filter(l => status(l.id).rec).length
-    const newCount = queue.length - dueCount
+    // A course for both sides has a drill for each side: the board stays the same way up all session.
+    if (c.side === "both") {
+        return h("div", { class: "drill-pair" }, ["white", "black"].map(side =>
+            drillButton(c.lines.filter(l => l.side === side), `#/drill/${c.id}/as-${side}`, `Drill as ${side === "white" ? "White" : "Black"}`)))
+    }
+    return drillButton(c.lines, `#/drill/${c.id}`, "Start today's drill")
+}
+
+/** Under the drill buttons, in a course with Advanced lines: the order a drill takes. */
+function drillNote(c) {
+    if (!c.lines.some(l => l.section === "advanced")) return null
+    return h("p", { class: "muted advanced-note" }, "Each drill takes the Basic lines and traps first, then asks before it goes on to the Advanced variations.")
+}
+
+function drillButton(lines, href, title) {
+    const queue = buildQueue(lines)
     if (queue.length) {
+        // The Basic lines and traps first; the Advanced lines, which come after a pause, as one number.
+        const basic = queue.filter(l => l.section !== "advanced")
+        const dueCount = basic.filter(l => status(l.id).rec).length
+        const newCount = basic.length - dueCount
+        const advanced = queue.length - basic.length
         const parts = []
         if (dueCount) parts.push(`${dueCount} to review`)
         if (newCount) parts.push(`${newCount} new`)
-        return h("a", { class: "btn btn-primary btn-big", href: `#/drill/${c.id}` },
-            "Start today's drill", h("span", { class: "btn-detail" }, parts.join(", ")))
+        const detail = !advanced ? parts.join(", ")
+            : parts.length ? `${parts.join(", ")}, then ${advanced} Advanced`
+                : `Basic lines up to date. Next: ${plural(advanced, "Advanced line")}`
+        return h("a", { class: "btn btn-primary btn-big", href }, title, h("span", { class: "btn-detail" }, detail))
     }
-    if (practiceQueue(c.lines).length) {
-        return h("a", { class: "btn btn-primary btn-big", href: `#/drill/${c.id}` },
-            "Practice", h("span", { class: "btn-detail" }, "Nothing due. Drill your weakest lines."))
+    if (practiceQueue(lines).length) {
+        return h("a", { class: "btn btn-primary btn-big", href }, title, h("span", { class: "btn-detail" }, "Nothing due. Drill your weakest lines."))
     }
     return h("p", { class: "muted" }, "Start with the basic variations below.")
 }
@@ -92,37 +124,72 @@ function hubPage(root, c, set, back) {
         ? card(`#/puzzles/${c.opening.id}`, "Puzzles", `${st.solved} of ${st.total} solved`, null)
         : h("span", { class: "hub-card is-soon" }, h("span", { class: "hub-title" }, "Puzzles"), h("span", { class: "hub-meta" }, "Coming soon"))
     const core = progress(coreLines(c))
+    const map = c.chapters.find(ch => ch.type === "map")
+    const scheduleLine = h("div", { class: "course-stats" },
+        h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.`))
+    const ideasList = ideas.length ? [
+        h("p", { class: "muted" }, "Read these first: the reasons behind the moves you will drill."),
+        h("ol", {}, ideas.map(ch => h("li", {},
+            h("a", { href: `#/learn/${c.id}/ideas-${ch.index}` }, ch.title.replace(/^Key ideas:\s*/i, "")), c.side === "both" ? " " : null, sideTag(c, ch))))
+    ] : null
+
+    // A course page with "why" (the Queen's Gambit courses), in the user's order: the text (a short
+    // description and why the opening is played), the map of its variations, the table of them, the Key
+    // ideas, the sections, and last the drills, which come after the lines have been seen.
+    if (c.why) {
+        root.append(h("section", { class: "course" },
+            backBar(back),
+            h("header", { class: "course-head" },
+                h("h1", {}, courseTitle(c)),
+                h("p", { class: "course-side" }, c.repertoire),
+                h("p", { class: "course-summary" }, figText(c.summary || ""))),
+            h("section", { class: "course-why" }, h("h2", {}, c.why.title || "Why play it"), ...paras(c.why.text)),
+            map ? variationMap(map.root, {
+                target: node => lessonTarget([c], node),
+                hint: "Tap a box to see its position in a lesson.",
+                star: side => (side === "both" ? "A Basic line, for both sides" : `A Basic line: you play ${side === "white" ? "White" : "Black"}`),
+                key: " A Basic line: learn these first",
+            }) : null,
+            c.table ? h("section", { class: "course-table" }, h("h2", {}, c.table.title || "The variations"), introTable(c.table)) : null,
+            ideasList ? h("section", { class: "ideas-list" }, h("h2", {}, "Key ideas"), ideasList) : null,
+            h("section", { class: "course-sections" }, h("h2", {}, "The lines"),
+                h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard),
+                scheduleLine),
+            h("section", { class: "course-drills" }, h("h2", {}, "Drills"),
+                h("p", { class: "muted" }, "Once you have looked through the lines, drill them from each side."),
+                h("div", { class: "course-actions" }, drillAction(c)),
+                drillNote(c)),
+            furtherStudy(c.opening.furtherStudy)))
+        return
+    }
 
     root.append(h("section", { class: "course" },
         backBar(back),
         h("header", { class: "course-head" },
-            h("h1", {}, c.opening.name),
-            h("p", { class: "course-side" }, `As ${c.side === "white" ? "White" : "Black"}: ${c.repertoire}`),
+            h("h1", {}, courseTitle(c)),
+            h("p", { class: "course-side" }, c.repertoire),
             h("p", { class: "course-summary" }, figText(c.summary || ""))),
-        h("div", { class: "course-actions" }, drillAction(c)),
         h("section", { class: "ideas-list essentials" },
             h("h2", {}, "What you need to know about this opening"),
             c.overview && c.overview.length ? h("ul", { class: "essentials-points" }, c.overview.map(pt => h("li", {}, figText(pt)))) : null,
-            ideas.length ? [
-                h("p", { class: "muted" }, "Read these first: the reasons behind the moves you will drill."),
-                h("ol", {}, ideas.map(ch => h("li", {},
-                    h("a", { href: `#/learn/${c.id}/ideas-${ch.index}` }, ch.title.replace(/^Key ideas:\s*/i, "")))))
-            ] : null),
+            ideasList),
+        // The drills come after the sections on every course page: the lines are seen before they are drilled.
         h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard),
-        h("div", { class: "course-stats" },
-            h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.` +
-                (newRemainingToday() < 1 && core.fresh ? " Today's new lines are used up; any line can still be drilled from its section." : ""))),
+        scheduleLine,
+        h("div", { class: "course-actions" }, drillAction(c)),
+        drillNote(c),
         furtherStudy(c.opening.furtherStudy)))
 }
 
 function sectionPage(root, ctx, c, stats, section) {
     if (!section) throw new Error("There is no such section. Go back to the course.")
-    const learner = c.side === "white" ? "w" : "b"
-    const yourGames = gamesLabel(c, learner)
+    // "of your Slav games" for each chapter, from the side the chapter is played from.
+    const labels = { w: gamesLabel(c, "w"), b: gamesLabel(c, "b") }
     const chapters = c.chapters.filter(ch => ch.section === section.id)
     const sectionLines = c.lines.filter(l => l.section === section.id)
     const p = progress(sectionLines)
     const diagrams = []
+    const spelled = new Set() // QGD and QGA are spelled out in the first title that uses them
 
     root.append(h("section", { class: "course" },
         backBar({ href: `#/course/${c.id}`, text: sideLabel(c) }),
@@ -140,8 +207,8 @@ function sectionPage(root, ctx, c, stats, section) {
             return h("section", { class: `chapter chapter-${ch.type}` },
                 chapterBoard(c, ch, lines, diagrams),
                 h("div", { class: "chapter-head" },
-                    h("h2", {}, ch.title, TYPE_LABEL[ch.type] ? h("span", { class: "tag" }, TYPE_LABEL[ch.type]) : null),
-                    shareLine(chapterShare(stats, c.opening.fen, ch, learner), yourGames(ch)),
+                    h("h2", {}, spellOut(ch.title, spelled), TYPE_LABEL[ch.type] ? h("span", { class: "tag" }, TYPE_LABEL[ch.type]) : null, sideTag(c, ch)),
+                    chapterShareLine(c, stats, ch, labels),
                     ...paras(ch.root.note.text, { class: "chapter-intro" })),
                 h("ul", { class: "lines" }, lines.map(l => {
                     const s = status(l.id)
@@ -160,7 +227,7 @@ function sectionPage(root, ctx, c, stats, section) {
 
     // Boards are drawn once their frames are in the page, so they can measure their size.
     const boards = diagrams.map(d => {
-        const board = new Board(d.el, { fen: d.node ? d.node.fen : d.fen, orientation: learner })
+        const board = new Board(d.el, { fen: d.node ? d.node.fen : d.fen, orientation: d.learner })
         if (d.node) board.annotate({ lastMove: { from: d.node.from, to: d.node.to } })
         return board
     })
@@ -176,7 +243,7 @@ function gamesLabel(c, learner) {
     const key = fen => fen.split(" ").slice(0, 4).join(" ")
     const choices = new Map()
     for (const l of c.lines) for (const n of l.nodes) {
-        if (n.color !== learner) continue
+        if (l.learner !== learner || n.color !== learner) continue
         const k = key(n.fenBefore)
         if (!choices.has(k)) choices.set(k, new Set())
         choices.get(k).add(n.san)
@@ -191,6 +258,20 @@ function gamesLabel(c, learner) {
     }
 }
 
+/**
+ * The "how often" line of a chapter, from the side it is played from. A chapter drilled from both
+ * sides gives both shares: "Comes up in 30% of your Caro-Kann games as White, 12% as Black".
+ */
+function chapterShareLine(c, stats, ch, labels) {
+    if (ch.side !== "both") return shareLine(chapterShare(stats, c.opening.fen, ch, ch.learner), labels[ch.learner](ch))
+    const w = chapterShare(stats, c.opening.fen, ch, "w"), b = chapterShare(stats, c.opening.fen, ch, "b")
+    if (w == null && b == null) return null
+    const most = Math.max(w ?? 0, b ?? 0)
+    return h("p", { class: "chapter-share" },
+        h("span", { class: "share-bar", "aria-hidden": "true" }, h("span", { style: { width: `${Math.max(most * 100, 1)}%` } })),
+        `Comes up in ${w == null ? "?" : pct(w)} of your ${shortName(c.opening)} games as White, ${b == null ? "?" : pct(b)} as Black`)
+}
+
 /** "Comes up in 40% of your Italian games", with a bar to compare chapters at a glance. */
 function shareLine(share, yourGames) {
     if (share == null) return null
@@ -203,7 +284,7 @@ function shareLine(share, yourGames) {
 function chapterBoard(c, ch, lines, diagrams) {
     const node = ch.diagram && ch.diagram.node
     const el = h("div", { class: "board-frame" })
-    diagrams.push({ el, node, fen: ch.root.fen })
+    diagrams.push({ el, node, fen: ch.root.fen, learner: ch.learner })
     if (!node) return h("div", { class: "chapter-board" }, el)
     const first = lines.find(l => l.nodes[node.ply - 1] === node)
     const caption = h("span", { class: "chapter-board-caption" }, `After ${label(node)}${node.symbol || ""}`)

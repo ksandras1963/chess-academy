@@ -8,6 +8,7 @@
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 e5?! 6. dxe5! {[%cal Gd1d8] Opens the d-file while Black's king is still on e8.}
 (6. d5?! {Closes the center and lets Black castle in peace.} O-O 7. h3 Nh5 8. g3 Na6 {A normal King's Indian. Stockfish: +0.5, slightly better for White.})
 6... dxe5 7. Qxd8+ {[%hint The queens are facing each other. Trade with check.] With check, so Black has no time for tricks.} Kxd8 8. Nxe5 {[%hint Which black pawn has lost its defender?] Wins the pawn, and Black's king can no longer castle.}
+(8. Be3!? {Keeps White better, but gives Black time to guard e5. Taking the pawn at once is stronger.} 8... Nc6 9. O-O-O+ Bd7 {Black has guarded e5, so no pawn is won. Stockfish: +0.8, slightly better for White.})
 8... Be6 9. Nf3 Nc6 {White is a pawn up, and Black's king is stuck in the center. Stockfish: +1.9, clearly better for White.}
 *
 
@@ -56,7 +57,8 @@
 [Hint "Black's last move blocked one of its own pieces. Which black pawn has lost a defender?"]
 
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O exd4 8. Nxd4 Re8 9. f3 c6 10. Nc2 Nbd7? 11. Qxd6! {[%cal Gd1d6] The knight on d7 blocks Black's queen from d6, so the pawn simply falls.}
-(11. Be3?! {Develops, but the chance is gone.} Ne5 12. Rc1 a6 {Stockfish: +0.4, slightly better for White.})
+(11. Be3!? {Develops and keeps White better, but after 11...Ne5 the queen guards d6 again. Take the pawn while it is loose.} 11... Ne5 12. Rc1 a6 {Stockfish: +0.5, slightly better for White.})
+(11. Bg5!? {The same story: after 11...h6 12.Be3 Ne5 the queen guards d6 again. Taking on d6 at once is stronger.} 11... h6 12. Be3 Ne5 {Stockfish: +0.8, slightly better for White.})
 11... Bf8 12. Qd1 {White is a clean pawn up. Stockfish: +1.8, clearly better for White.}
 *
 
@@ -136,6 +138,7 @@
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 c5 7. d5 e6 8. Qd2 exd5 9. cxd5 Re8 10. Bh6? Nxe4! {Hits the queen on d2.}
 (10... Bxh6?! {The trade White wanted.} 11. Qxh6 Nbd7 {Stockfish: +0.1, equal.})
 11. Nxe4 Qh4+ {[%hint Find a check that also attacks the bishop on h6.] [%cal Gh4e1,Gh4h6] A double attack: check, and the bishop on h6 is hit.}
+(11... Rxe4+!? {Also wins back the piece, but costs the rook for a knight. The check 11...Qh4+ at once keeps the rook.} 12. fxe4 Qh4+ 13. g3 Qxh6 14. Qxh6 Bxh6 {Black has a bishop and a pawn for the rook. Stockfish: −0.6, slightly better for Black.})
 12. g3 Qxh6 13. Qxh6 Bxh6 {Black has won a pawn and keeps a strong bishop. Stockfish: −2.1, winning for Black.}
 *
 

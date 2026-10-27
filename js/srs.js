@@ -1,6 +1,7 @@
-// Spaced repetition per line (Leitner boxes). Box 0 = new; a clean run moves a due line up one box.
+// Spaced repetition per line (Leitner boxes). Box 0 = new or just missed; a clean run moves a due line up
+// one box. There is no daily limit: the learner decides how many lines to drill.
 
-import { load, save, lineRecord, setLineRecord, settings } from "./storage.js"
+import { lineRecord, setLineRecord } from "./storage.js"
 
 export const INTERVALS = [0, 1, 3, 7, 14, 30, 60] // days for boxes 0..6
 const DAY = 86400000
@@ -19,11 +20,6 @@ function startOfDay(t) {
     return d.getTime()
 }
 
-function dayKey(t) {
-    const d = new Date(t)
-    return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`
-}
-
 export function status(lineId) {
     const rec = lineRecord(lineId)
     if (!rec) return { kind: "new", label: "New", due: false, box: 0 }
@@ -32,40 +28,22 @@ export function status(lineId) {
     return { kind, label, due: rec.due <= now(), box: rec.box, rec }
 }
 
-export function newRemainingToday() {
-    const s = load()
-    const limit = settings().newPerDay
-    if (s.daily.day !== dayKey(now())) return limit
-    return Math.max(0, limit - s.daily.newCount)
-}
-
-function countNew() {
-    const s = load()
-    const today = dayKey(now())
-    if (s.daily.day !== today) s.daily = { day: today, newCount: 0 }
-    s.daily.newCount++
-    save()
-}
-
 /**
  * Records a drill result: "clean" (no help), "hinted" (used a hint) or "failed" (a wrong move or shown answer).
- * Returns the updated record.
+ * A missed or hinted line is due again at once, so it comes back in the next drill. Returns the updated record.
  */
 export function recordResult(lineId, result) {
     const t = now()
     let rec = lineRecord(lineId)
-    if (!rec) {
-        rec = { box: 0, due: 0, reps: 0, lapses: 0, first: t }
-        countNew()
-    }
+    if (!rec) rec = { box: 0, due: 0, reps: 0, lapses: 0, first: t }
     const wasDue = rec.box === 0 || rec.due <= t
     if (result === "failed") {
-        rec.box = 1
+        rec.box = 0
         rec.lapses++
-        rec.due = startOfDay(t) + DAY
+        rec.due = t
     } else if (result === "hinted") {
-        rec.box = Math.max(1, rec.box)
-        rec.due = startOfDay(t) + DAY
+        rec.box = Math.min(rec.box, 1)
+        rec.due = t
     } else if (wasDue) {
         rec.box = Math.min(rec.box + 1, INTERVALS.length - 1)
         rec.due = startOfDay(t) + INTERVALS[rec.box] * DAY
@@ -81,16 +59,20 @@ export function daysUntil(rec) {
 }
 
 /**
- * Due lines (most overdue first), then new lines up to today's allowance. New lines come only from
- * the basic and trap sections: an advanced line joins the schedule once the learner drills it.
+ * Today's drill: the Basic and Traps lines first, then the Advanced lines. In each part the due lines come
+ * first (most overdue first), then the new ones in course order. The drill stops to ask before the
+ * Advanced part (drill.js), since many learners stop at the Basic lines.
  */
 export function buildQueue(lines, { includeNew = true } = {}) {
-    const due = lines.map(l => ({ l, s: status(l.id) }))
-        .filter(x => x.s.rec && x.s.due)
-        .sort((a, b) => a.s.rec.due - b.s.rec.due)
-        .map(x => x.l)
-    const fresh = includeNew ? lines.filter(l => !lineRecord(l.id) && l.section !== "advanced").slice(0, newRemainingToday()) : []
-    return [...due, ...fresh]
+    const part = advanced => {
+        const own = lines.filter(l => (l.section === "advanced") === advanced)
+        const due = own.map(l => ({ l, s: status(l.id) }))
+            .filter(x => x.s.rec && x.s.due)
+            .sort((a, b) => a.s.rec.due - b.s.rec.due)
+            .map(x => x.l)
+        return includeNew ? [...due, ...own.filter(l => !lineRecord(l.id))] : due
+    }
+    return [...part(false), ...part(true)]
 }
 
 /** Lines to practice when nothing is due: weakest and least recently seen first. */

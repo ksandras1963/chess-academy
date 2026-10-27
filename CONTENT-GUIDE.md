@@ -1,6 +1,39 @@
 # Editing the lessons
 
-Each course is one PGN file in `content/`. For example, `italian-white.pgn` is the Italian Game played as White. You can edit these files in any text editor. You can also paste a whole file into a Lichess Study to see it on a board.
+Each course is one PGN file in `content/`. For example, `italian.pgn` is the Italian Game, played as White and as Black. You can edit these files in any text editor. You can also paste a whole file into a Lichess Study to see it on a board.
+
+A course can also teach both sides, like the Queen's Gambit courses (`queens-gambit-declined.pgn`, `queens-gambit-accepted.pgn`, `slav.pgn`, `tarrasch.pgn`). Its entry in `courses.json` has `"side": "both"`, and every chapter says which side the learner plays with a `[Side "white"]` or `[Side "black"]` header. The course page lists both sides together, most common first, with a "You play White" or "You play Black" tag on each chapter; the board and the "how often" bar follow the chapter's side. A chapter worth learning from both sides has `[Side "both"]` and a "Both sides" tag; each of its lines is taught twice, once for each side. Its main line takes the variation's name from the title, the part before the colon and after the last comma there: "Mar del Plata, Bayonet Attack: 9.b4" gives "Bayonet Attack, as White" and "Bayonet Attack, as Black". If that part is "Main line", the name before it is used ("Mar del Plata, Main line: 9.Ne1" gives "Mar del Plata"); if it starts with a small letter, the move after the colon is used ("Sidelines, fourth moves: 4.Bg5" gives "4.Bg5"). The page has a drill for each side ("Drill as White", "Drill as Black"). The title has no color: "Slav Defense Course". The King's Indian Defense (`kings-indian.pgn`) and the French Defense (`french.pgn`) are built the same way.
+
+The Queen's Gambit and King's Indian course pages are short, in this order: a sentence on the opening, "Why play it", a map of the variations, a table of them, the Key ideas, the sections ("The lines": Basic, Traps, Advanced, Puzzles), and last the drills for each side, which come after the lines have been seen. In `courses.json` the course has `"why": { "text": "..." }` (paragraphs separated by a blank line) and `"table": { "columns": [...], "rows": [[...]], "note": "..." }`, like the overview tables; the course file ends with a `[Type "map"]` chapter, written like a family page's map. Each map box opens the first lesson that reaches its position, and `[%course white]`, `[%course black]` or `[%course both]` stars a Basic line. `[%order 2]` in a note sets a box's place among the boxes that branch from the same box, so the map can follow the course's order even when lines branch at different moves (the King's Indian Fianchetto leaves at move 4, the Sämisch at move 5); boxes without a number follow, in PGN order. On an Introduction page whose `"course"` names a single opening (a Caro-Kann page with no cards), a map box that names no card opens that course's lessons the same way. A course with `"why"` shows no "What you need to know" list. A lesson page's back buttons are, in this order: its section (Basic variations, Traps or Advanced variations), the course page, and Main menu, since a lesson can be opened straight from the course page's map; a Key ideas page has the course page and Main menu. The table (Variation, How often, What to do) says what happens in each Basic line and how often it is played, with a note that says how that is measured. A line taught for both sides gives both figures, "20% as White" above "3% as Black" (a line break in the cell), and its What to do starts "As White:" and then "As Black:".
+
+## General rules for every course
+
+Kumar's rules for every opening. The King's Indian follows them.
+
+1. **The page order.** An opening's Introduction page shows, in this order: a short text of two or three sentences, the course links (the yellow box), the map of the variations, then a table of the variations that says what happens in each and how often it is played (a "How often" column, with a note on how it is measured). A course page keeps the same order for its text, map and table (see above).
+2. **Name first, then the move.** Whenever a line is meant, give its name and then the move: "Mar del Plata, Bayonet Attack: 9.b4", "Classical, Open Center: 7...exd4". Chapter titles, notes and table rows use the same pattern.
+3. **Less text.** A note can run up to five sentences when needed; keep it shorter when it can be. In Kumar's words: "Can be longer sentences - up to 5, if needed." Use the table and the map instead of long paragraphs.
+4. **Names.** The Lichess name is the official one (the `Opening` header). Use a descriptive name ("Open Center") where Lichess has none.
+5. **Order by club frequency.** Frequencies come from Lichess club games (rated rapid and classical, players averaging 1800 to 2199). Lines with the same name stay together, and within a group the most-played line comes first; the map follows the same order. Count each game by the position it reaches, not by its first moves: a move order that transposes counts with the variation it becomes.
+6. **Traps** stay together in the Traps section, whatever the level of the line they come from.
+
+**Course page order (Kumar's rule for every course):**
+
+1. "Why play it": a short text.
+2. The map of the variations.
+3. The table of the variations.
+4. Key ideas.
+5. The section links (Basic, Traps, Advanced, Puzzles).
+6. The drills, "Drill as White" and "Drill as Black".
+7. Further study: 4 entries for most courses, never more than 5.
+
+Further study lists only sources with a named author or presenter. It has no Wikipedia articles and no entries credited only to a channel.
+
+Keep "Why play it", the table and the Key ideas pages free of significant overlap:
+
+- "Why play it" says why to choose the opening.
+- The table says what to do in each line, in one or two sentences.
+- The Key ideas pages explain the plans, structures and tactics in depth, without repeating the table line by line.
 
 ## What a file looks like
 
@@ -23,8 +56,9 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 
 | Header | Meaning |
 |---|---|
-| `Chapter` | The title shown in the app. |
+| `Chapter` | The title shown in the app. In a course for one family, leave the family name out: the course's name says it (`Exchange: 5...Be7` in the Queen's Gambit Declined Course). Where a title needs one, write the Queen's Gambit families short, as `QGD` or `QGA`: each page spells out the first QGD or QGA it shows ("Queen's Gambit Declined (QGD)") and keeps the abbreviation after that (`spellOut` in `js/ui.js`). |
 | `Type` | `line` (normal lines), `trap`, or `ideas` (the Key ideas page, which is never drilled). Puzzle files use `puzzle` (see Puzzles below). |
+| `Side` | Only in a course for both sides (`"side": "both"`): `white` or `black`, the side the learner plays in this chapter, or `both` for a chapter drilled from each side (every line then exists once as White and once as Black, with its own progress, and the chapter's tag reads "Both sides"). The checker reports a chapter without it. |
 | `Opening`, `ECO` | The Lichess opening name and code. The checker verifies both. |
 | `FEN` | Optional. Starts the chapter from a set position (used for Key ideas). |
 | `Diagram` | The move whose position is shown beside the chapter on the course page, e.g. `[Diagram "3...Nd4"]`. Without it, the last move named in the title is used (`Main line: 3...Bc5`). The checker reports an error if neither is found on the main line. |
@@ -35,11 +69,11 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 Each course has a hub page and three section pages:
 
 - **What you need to know about this opening**, on the hub itself: the `overview` points from `content/courses.json` (a list of short sentences in the course's entry), followed by links to the Key ideas pages.
-- **Basic and common variations:** `line` chapters without a `Level` header. Keep about 10 drill lines here (8 to 12 is fine, never 20 or more; trap lines are counted separately): the opening's main systems, with the lines that come up in at least 5% of the learner's games in this opening. Minor defenses can go to Advanced even when common. Measure a line at the last opponent move where it leaves the course's other Basic lines, so the alternatives answered only in its notes, or in Advanced sidelines, count toward it. Opponent branches from move 6 on go to an Advanced "sidelines" chapter (for example "Pianissimo: White's sixth moves"), so they don't make a long main line look rare. When the opponent's choices are spread thin (Black often faces many White systems), fewer lines reach 5%; then take the 10 most common.
+- **Basic and common variations:** `line` chapters without a `Level` header. Keep only the lines that come up in about 10% or more of the learner's games in this opening (9.5% and up): about 4 to 6 lines, the very core (trap lines are counted separately). Kumar makes exceptions himself: the King's Indian has 7 Basic lines. Measure a line as "How often" does (see "How often each chapter comes up" below): the share of the learner's games that reach it from the side they play, so the alternatives answered only in its notes, or in Advanced sidelines, count toward it. Minor defenses can go to Advanced even when common. Opponent branches from move 6 on go to an Advanced "sidelines" chapter (for example "Pianissimo: White's sixth moves"), so they don't make a long main line look rare. When the opponent's choices are spread thin (Black often faces many White systems), fewer lines reach 10%; then take the 4 to 6 most common.
 - **Traps and tricks:** all `trap` chapters.
-- **Advanced and uncommon variations:** `line` chapters with `[Level "advanced"]`: lines played in under 5% of games, or more theoretical ones.
+- **Advanced and uncommon variations:** `line` chapters with `[Level "advanced"]`: lines played in under about 10% of games, or more theoretical ones, grouped by variation name, most common first.
 
-"Start today's drill" takes new lines only from the basic and trap sections. An advanced line joins the schedule (and Review) once the learner drills it from its section page. The checker's report lists the number of lines in each section.
+A drill ("Drill as White", "Drill as Black", or "Start today's drill") takes the Basic and Traps lines first, due ones then new ones, and the Advanced lines after them. Before the first Advanced line it stops: the Advanced variations come next and are optional, since many learners stop at the Basic lines, so the learner can go on or stop there (and, when no Basic line is due, drill the weakest Basic lines instead). There is no daily limit, and a line drilled with a mistake or a hint comes back in the next drill. The checker's report lists the number of lines in each section.
 
 ### Moves, branches and explanations
 
@@ -110,7 +144,7 @@ The overview pages (Replies to 1.e4, Replies to 1.d4, Other first moves) show ea
 [ECO "A56"]
 [Diagram "4...exd5"]
 [Lines "Modern Benoni | Benko Gambit"]
-[Course "queens-gambit"]
+[Course "kings-indian"]
 
 {White: White's plan, in two or three short sentences.
 
@@ -126,14 +160,16 @@ Black: Black's plan, the same way.}
 | `Diagram` | The position the overview's board shows, usually Black's fourth move. |
 | `Lines` | Only for a chapter with branches: a name for each line, main line first, then the branches in the order they appear. Each line gets its own Watch button. |
 | `Leads` | Optional: where each line transposes to, in `[Lines]` order, e.g. `[Leads "Reversed Dragon | | Queen's Gambit Declined"]`. Not shown at present: the map lists openings by name only. Kept so a later version can show the transpositions again. |
-| `Course` | Optional: an opening id from `courses.json`. Its built courses are linked; until one is built the page says "course coming soon", and without the header it says "Course coming later". `[Course "none"]` shows no course line, for an opening with no course planned. |
+| `Course` | Optional: an opening id from `courses.json`. Its built courses are linked; until one is built the page says "course coming soon", and without the header it says "Course coming later". `[Course "none"]` shows no course line, for an opening with no course planned (the Albin Countergambit card, for now). It can list several ids, separated by spaces: the 1.d4 page's Queen's Gambit card has `[Course "queens-gambit-declined queens-gambit-accepted slav tarrasch"]`. A survey's `"course"` field in `courses.json` works the same way. On a `[Page]` chapter, such a list shows as one link, "Queen's Gambit Course", to that page, which lists the courses. |
+| `WhiteLesson`, `BlackLesson` | Optional, with `Course`: the exact title of the chapter in that side's course that teaches this opening, such as `[WhiteLesson "Slav: 4...Bf5"]` or `[BlackLesson "Key ideas: Why the Queen's Gambit Declined"]`. The page then links straight to that lesson in Learn mode, and only for the sides that have one. Each link is labelled with the opening and the card's short name, for example "Queen's Gambit Slav variation as White". The checker reports a title that is not in the course. |
+| `WhiteCourse`, `BlackCourse` | Optional: an opening id whose course holds that side's lesson, when it isn't the `Course` opening. In a course for both sides, both lessons are in the same course, so the Queen's Gambit cards need only `[Course]`. These courses also join the page's full-course box. |
 | `Map` | Optional: the opening's name in the map at the top of the page, e.g. `[Map "Queen's Gambit"]`. `[Map "none"]` leaves it out of the map; its card stays on the page. Keeps the map to the main openings. |
 | `MapReply` | Optional: a family name for the reply box the opening sits under, e.g. `[MapReply "Indian Defenses"]` puts "1…♘f6 Indian Defenses" above the King's Indian, Nimzo-Indian and the rest. |
 | `Page` | Optional: the chapter stands for a page of its own, e.g. `[Page "qg"]` on the 1.d4 page's Queen's Gambit chapter. Its card and its map box open that page instead of playing moves. |
 
 ### Family pages and flowcharts
 
-A family with many variations gets its own page, reached from a `[Page]` chapter: the Queen's Gambit (`content/qg-overview.pgn`) and the Indian Defenses (`content/indian-overview.pgn`), both under Replies to 1.d4. In `courses.json` such a page has `"parent": "d4"`, which keeps it off the main menu and gives it a back button to its parent. Two more optional fields: `"compact": true` keeps each card short (its White and Black plans fold away under a button, and only built courses are linked), and `"course": "queens-gambit"` links that course under the flowchart. `"foldPlans": true` folds the plans the same way but keeps every course line (Replies to 1.e4). `"table": { "columns": [...], "rows": [[...], ...], "note": "..." }` shows a small table under the page title in place of a long introduction, such as Black's replies to 1.e4 with their Lichess shares; the first cell of each row is its heading.
+A family with many variations gets its own page, reached from a `[Page]` chapter: the Queen's Gambit (`content/qg-overview.pgn`) and the Indian Defenses (`content/indian-overview.pgn`), both under Replies to 1.d4. In `courses.json` such a page has `"parent": "d4"`, which keeps it off the main menu and gives it a back button to its parent. Two more optional fields: `"compact": true` keeps each card short (its White and Black plans fold away under a button, and only built courses are linked), and `"course": "queens-gambit"` adds that opening to the page's full-course box. The box sits in yellow above the map of every overview page that links a written course: it lists the page's `course` and each chapter's `[Course]`, one row per opening, with a button for each side. `"heading"` gives the page a longer title ("Queen's Gambit Introduction") while buttons and back links keep the short `name`. `"foldPlans": true` folds the plans the same way but keeps every course line (Replies to 1.e4). `"table": { "columns": [...], "rows": [[...], ...], "note": "..." }` shows a small table under the page title in place of a long introduction, such as Black's replies to 1.e4 with their Lichess shares; the first cell of each row is its heading.
 
 A family page starts with a flowchart instead of the map: a chapter with `[Type "map"]`, written as one game with branches. Every move with a note becomes a box showing the moves since the box before it and the note as its name; an empty note `{}` makes a box with moves only. A box named exactly like an opening card on the page (its title or a `[Lines]` name) opens that card, and `[%course white]` or `[%course black]` in a note stars a line the course teaches:
 
@@ -171,7 +207,7 @@ node tools/pv.mjs "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4"
 
 ## How often each chapter comes up
 
-`content/opening-stats.json` holds move counts from the Lichess opening explorer: rated rapid and classical games between players averaging 1800 to 2199, read in October 2026. The course page shows, under each chapter, the share of your games in that opening that reach the chapter's position, if you play the course's moves. Only the opponent's choices count, so "Main line: 3...Bc5" comes up in 40% of Italian games for White. When a course gives the learner a choice of systems (the Caro-Kann for White plays 3.e5, 3.f3 or 2.Nc3), the share counts the games with that choice, and the page names it: "of your Caro-Kann games with 3.f3". Openings and individual lines show no percentages.
+`content/opening-stats.json` holds move counts from the Lichess opening explorer: rated rapid and classical games between players averaging 1800 to 2199, read in October 2026. The course page shows, under each chapter, the share of your games in that opening that reach the chapter's position, if you play the course's moves. A table's "How often" counts all of a line's move orders: the chance that its position comes up when you steer toward it and your opponents move as club players do, so it can be higher than the chapter's bar, which follows the course's own move order. Only the opponent's choices count, so "Main line: 3...Bc5" comes up in 40% of Italian games for White. When a course gives the learner a choice of systems (the Caro-Kann for White plays 3.e5, 3.f3 or 2.Nc3), the share counts the games with that choice, and the page names it: "of your Caro-Kann games with 3.f3". Openings and individual lines show no percentages.
 
 The file covers the chapters in the current courses. After adding a chapter, ask Claude to read its positions from the Lichess explorer (it needs a signed-in Lichess account) and add them; until then that chapter shows no bar.
 

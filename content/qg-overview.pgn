@@ -2,16 +2,19 @@
 [Type "map"]
 
 1. d4 d5 2. c4 {Queen's Gambit} e6 {Queen's Gambit Declined}
-(2... dxc4 {Queen's Gambit Accepted} 3. e3 {[%course white] Old Variation} (3. e4 {Central Variation}) (3. Nf3 {Normal Variation}))
-(2... c6 {Slav Defense} 3. Nf3 (3. cxd5 cxd5 {Exchange Variation}) Nf6 4. Nc3 dxc4 {Main line})
+(2... dxc4 {Queen's Gambit Accepted} 3. e3 {[%course white] Old Variation} (3. e4 {[%course black] Central Variation}) (3. Nf3 {[%course black] Normal Variation}))
+(2... c6 {Slav Defense} 3. Nf3 (3. cxd5 cxd5 {[%course black] Exchange Variation}) Nf6 4. Nc3 dxc4 {[%course black] Main line})
 (2... e5 {Albin Countergambit})
-3. Nc3 Nf6 (3... c5 {Tarrasch Defense})
+3. Nc3 Nf6 (3... c5 {[%course black] Tarrasch Defense})
 4. Bg5 {[%course black] Main line} (4. cxd5 exd5 {[%course white] Exchange Variation}) (4. Nf3 c6 {Semi-Slav Defense} (4... Bb4 {Ragozin Defense})) *
 
 [Chapter "Queen's Gambit Declined"]
 [Opening "Queen's Gambit Declined"]
 [ECO "D30"]
 [Diagram "4...Be7"]
+[Course "queens-gambit-declined"]
+[WhiteLesson "Key ideas: Why the Queen's Gambit"]
+[BlackLesson "Key ideas: Why the Queen's Gambit Declined"]
 
 {Black holds d5 with the e-pawn: solid and classical, at the cost of shutting in the c8 bishop for now.
 
@@ -27,6 +30,8 @@ Black: Hold d5 with ...e6, ...Nf6 and ...Be7, then castle. Free your game with .
 [Opening "Semi-Slav Defense"]
 [ECO "D43"]
 [Diagram "4...c6"]
+[Course "slav"]
+[WhiteLesson "Semi-Slav: 4...e6"]
 
 {Black adds ...c6 to the Declined setup, ready to take on c4 and hold the pawn with ...b5. Rich and often sharp.
 
@@ -39,12 +44,15 @@ Black: Build the c6–d5–e6 wall, then take on c4 once White's bishop has move
 [Opening "Tarrasch Defense"]
 [ECO "D32"]
 [Diagram "4...exd5"]
+[Course "tarrasch"]
+[WhiteLesson "Rubinstein System: 4.cxd5 and 6.g3"]
+[BlackLesson "Key ideas: Why the Tarrasch"]
 
 {Black hits d4 with ...c5 at once, accepting an isolated d-pawn for free, active pieces.
 
 White: Aim at the d5-pawn, which is often left isolated after ...cxd4. Blockade it on d4, press on it with Nf3, g3, Bg2 and your rooks, and trade minor pieces, because endgames favor the side playing against an isolated pawn.
 
-Black: Accept an isolated d-pawn in return for free, active pieces: ...Nc6, ...Nf6, ...Be7 and castling. Use the space and the open lines to attack, and push ...d4 when it opens the game for you.}
+Black: Accept an isolated d-pawn in return for free, active pieces: ...Nc6, ...Nf6, ...Be7 and castling. Keep pieces on and use the open c- and e-files. If White takes on c5 early, push ...d4! instead of taking back; later, push ...d4 when it opens the game for you.}
 1. d4 d5 2. c4 e6 3. Nc3 {More pressure on d5.} c5 {This is the Tarrasch Defense. Black hits d4 at once, ready to accept an isolated d-pawn for active pieces.}
 4. cxd5 {White's most common reply.} exd5 {The d5-pawn often ends up isolated once the c-pawns are traded.} *
 
@@ -52,40 +60,47 @@ Black: Accept an isolated d-pawn in return for free, active pieces: ...Nc6, ...N
 [Opening "Queen's Gambit Accepted"]
 [ECO "D20"]
 [Diagram "4...e5"]
+[Course "queens-gambit-accepted"]
+[WhiteLesson "3...Nf6"]
+[BlackLesson "Key ideas: Why the Queen's Gambit Accepted"]
 
 {Black takes the pawn to develop freely and lets White have the center for a while, then strikes back with ...e5 or ...c5.
 
 White: Take the center with e4 while the c4-pawn waits, then win it back with Bxc4. Use your lead in development and your center before Black catches up.
 
-Black: Take on c4 to develop freely, but don't try to keep the pawn with ...b5: it usually costs too much. Hit back at White's center at once with ...e5 or ...c5.}
+Black: Take on c4 to develop freely, then hit back at White's center at once with ...e5 or ...c5. Don't try to keep the pawn with an early ...b5: after 3.e3 b5 4.a4, Black's best is to give it back, and the natural 4...c6 can cost a piece. ...b5 works only when White's own pawns block the long diagonal, as in 3.Nc3 e5 4.d5 Nf6 5.e4 b5.}
 1. d4 d5 2. c4 dxc4 {This is the Queen's Gambit Accepted. Black gives up the center for a moment.}
-3. Nc3 {The most common move at club level. White prepares e4.} Nf6 {Develops and watches e4.}
+3. Nc3 {The most common move at club level. White prepares e4.} Nf6 {Develops and watches e4. 3...e5 at once is just as good, and it is what the Queen's Gambit Accepted Course plays as Black.}
 4. e4 {White takes the whole center.} e5 {Black strikes back at once. 4...e6 is played more often, but it leaves White slightly better.} *
 
 [Chapter "Slav Defense"]
-[Opening "Slav Defense"]
-[ECO "D10"]
-[Diagram "4...Bf5"]
+[Opening "Slav Defense: Two Knights Attack"]
+[ECO "D15"]
+[Diagram "4...dxc4"]
+[Course "slav"]
+[WhiteLesson "Czech Variation: 4...dxc4"]
+[BlackLesson "Key ideas: Why the Slav"]
 
-{Black guards d5 with the c-pawn, so the c8 bishop can still come out to f5 or g4. Very solid.
+{Black guards d5 with the c-pawn, which keeps the c8 bishop's diagonal open. Solid, with a few exact lines to know.
 
-White: Develop with Nc3 and Nf3 and aim for e4. Once Black's bishop leaves c8, cxd5 and Qb3 hit the b7-pawn it no longer guards. If Black takes on c4, win the pawn back with a4 and e3.
+White: Develop with Nc3 and Nf3. Against 4...dxc4, play 5.a4 to stop ...b5, then win the pawn back with e3 and Bxc4, castle, and prepare e4 with Qe2. If Black's bishop leaves c8 before Black takes on c4, cxd5 and Qb3 hit the b7-pawn it no longer guards.
 
-Black: Support d5 with the c-pawn, so the c8 bishop stays free. Bring it out to f5 or g4 before you play ...e6. Then build a solid c6–d5–e6 triangle and castle.}
+Black: Take on c4 first, then bring the bishop out: after 5.a4, play 5...Bf5, ...e6, ...Bb4 and castle (the Czech Variation). If White doesn't play a4, keep the extra pawn with ...b5. Against an early e3, play ...Bf5 at once.}
 1. d4 d5 2. c4 c6 {This is the Slav Defense. The c-pawn defends d5 and leaves the c8 bishop free.}
 3. Nc3 {More popular than 3.Nf3 at club level.} Nf6 {Defends d5 and develops.}
-4. Nf3 {The Three Knights Variation.} Bf5 {The bishop comes out before ...e6 can shut it in.} *
+4. Nf3 {The Three Knights Variation.} dxc4 {Black takes the pawn before bringing the bishop out. 4...Bf5?! at once lets White play cxd5 and Qb3, hitting b7.} *
 
 [Chapter "Albin Countergambit"]
 [Opening "Queen's Gambit Declined: Albin Countergambit"]
 [ECO "D08"]
 [Diagram "4...Nc6"]
+[Course "none"]
 
-{Black gives up the e-pawn so the d-pawn can cramp White from d4. A surprise weapon, about half a pawn worse for Black.
+{Black gives up the e-pawn so the d-pawn can cramp White from d4. A surprise weapon: Stockfish rates it slightly better for White (+0.7).
 
 White: Keep the extra pawn and develop with Nf3, g3, Bg2, Nbd2 and castling. Don't play e3 early: 4.e3? Bb4+ 5.Bd2 dxe3 walks into the Lasker Trap. Later, round up the d4-pawn.
 
-Black: The d4-pawn cramps White, so develop fast with ...Nc6, ...Be6 or ...Bg4, ...Qd7 and often castling long. Win back e5 with ...Nge7–g6 when you can. Stockfish rates the gambit about half a pawn worse for Black, so it works best as a surprise.}
+Black: Win back the e5-pawn with ...Nge7 and ...Ng6, after ...Nc6, while the d4-pawn cramps White. If White plays e3, check first with ...Bb4+, then take on e3. Stockfish rates the gambit slightly better for White (+0.7), so it works best as a surprise.}
 1. d4 d5 2. c4 e5 {This is the Albin Countergambit. Black offers the e-pawn to break up White's center.}
 3. dxe5 d4 {The d-pawn advances and cramps White: it controls c3 and e3.}
 4. Nf3 {Develops and guards e5.} Nc6 {Attacks e5 and supports d4.} *

@@ -51,7 +51,7 @@ export async function course(id) {
     const cat = await catalog()
     const meta = cat.courseById.get(id)
     if (!meta) throw new Error("There is no course with that name. Go back to the openings list.")
-    if (!meta.available) throw new Error(`${meta.opening.name} as ${meta.side === "white" ? "White" : "Black"} is coming soon.`)
+    if (!meta.available) throw new Error(`${meta.opening.name}${meta.side === "both" ? "" : ` as ${meta.side === "white" ? "White" : "Black"}`} is coming soon.`)
     const built = buildCourse(meta, await readText(meta.file, `The file ${meta.file} could not be loaded.`))
     courses.set(id, built)
     return built
@@ -83,8 +83,10 @@ export async function survey(id) {
 /** The overview an opening sits under (the replies to 1.e4 for the Italian), as a back button: { href, text }. */
 export async function overviewBack(opening) {
     const all = (await catalog()).surveys || []
-    // The closest one: the Queen's Gambit page (1.d4 d5 2.c4) before Replies to 1.d4.
-    const s = all.filter(s => s.moves && opening.moves.startsWith(s.moves)).sort((a, b) => b.moves.length - a.moves.length)[0] ||
+    // The closest one: the Queen's Gambit page (1.d4 d5 2.c4) before Replies to 1.d4. An opening's own
+    // Introduction page (the Caro-Kann's, 1.e4 c6) is skipped: its course page repeats its map and table.
+    const s = all.filter(s => s.moves && opening.moves.startsWith(s.moves) && s.moves !== opening.moves)
+        .sort((a, b) => b.moves.length - a.moves.length)[0] ||
         all.find(s => !s.moves)
     return s ? { href: `#/survey/${s.id}`, text: s.name } : null
 }

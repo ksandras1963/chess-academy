@@ -3,7 +3,7 @@
 [Opening "Queen's Gambit"]
 [ECO "D06"]
 [Diagram "2.c4"]
-[Course "queens-gambit"]
+[Course "queens-gambit-declined queens-gambit-accepted slav tarrasch"]
 [Page "qg"]
 
 {White offers the c-pawn to lure Black's d-pawn away from the center. Black declines it with 2...e6 or 2...c6, or accepts it with 2...dxc4.}
@@ -25,9 +25,26 @@ Black: Keep the setup you play against the Queen's Gambit: ...Nf6, ...e6, ...c5 
 3. e3 {Builds the pawn triangle.} e6
 4. Nf3 c5 {The most active answer: Black hits d4 at once.} *
 
-[Chapter "Indian Defenses"]
-[Map "King's Indian and other Indian Defenses"]
+[Chapter "King's Indian Defense"]
+[Map "King's Indian"]
+[MapReply "Indian Defenses"]
 [Course "kings-indian"]
+[Group "1...Nf6: the Indian Defenses"]
+[Opening "King's Indian Defense"]
+[ECO "E61"]
+[Diagram "4...d6"]
+
+{White: Build a big center with c4, d4 and e4, develop calmly with Nf3 and Be2, and castle. When the center closes with d5, attack on the queenside with c5, b4 and the c-file.
+
+Black: Let White have the center, fianchetto your bishop and castle. Then strike at the center with ...e5 or ...c5. Once the center is closed, attack the king with ...f5, ...f4 and ...g5: the game becomes a race.}
+1. d4 Nf6 {Stops e4 and keeps Black's options open: the start of the Indian defenses.}
+2. c4 g6 {Prepares to fianchetto the bishop.}
+3. Nc3 Bg7 {This is the King's Indian Defense. The bishop will press on the long diagonal.}
+4. e4 {White takes the whole center.} d6 {Stops e5 and prepares ...e5 or ...c5.} *
+
+[Chapter "Indian Defenses"]
+[Map "Other Indian Defenses"]
+[MapReply "Indian Defenses"]
 [Group "1...Nf6: the Indian Defenses"]
 [Opening "Indian Defense: Normal Variation"]
 [ECO "A50"]
