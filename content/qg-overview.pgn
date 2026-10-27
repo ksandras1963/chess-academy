@@ -31,7 +31,7 @@ Black: Hold d5 with ...e6, ...Nf6 and ...Be7, then castle. Free your game with .
 [ECO "D43"]
 [Diagram "4...c6"]
 [Course "queens-gambit"]
-[WhiteLesson "Slav Defense: 4...e6"]
+[WhiteLesson "Slav Defense – Semi-Slav: 4...e6"]
 
 {Black adds ...c6 to the Declined setup, ready to take on c4 and hold the pawn with ...b5. Rich and often sharp.
 
@@ -80,7 +80,7 @@ Black: Take on c4 to develop freely, then hit back at White's center at once wit
 [ECO "D15"]
 [Diagram "4...dxc4"]
 [Course "queens-gambit"]
-[WhiteLesson "Slav Defense: 4...dxc4"]
+[WhiteLesson "Slav Defense – Czech: 4...dxc4"]
 [BlackCourse "slav"]
 [BlackLesson "Key ideas: Why the Slav"]
 

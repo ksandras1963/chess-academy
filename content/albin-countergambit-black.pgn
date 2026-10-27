@@ -74,102 +74,6 @@ The fork on c2. After 3.Nc3 exd4 4.Qxd4 Nc6 5.Qxd5, play 5...Be6!, not 5...Qxd5?
 
 Take on f3. When White plays h3 against your bishop on g4, take the knight. After 5.a3 Nge7 6.e3 Bg4 7.h3, 7...Bxf3 is equal (Stockfish −0.2). 7...Bh5?? 8.g4 cuts the bishop off: 8...Bg6 9.exd4 leaves Black two pawns down with the bishop shut in, and 8...dxe3 9.Qxd8+ Rxd8 10.gxh5 loses it outright (Stockfish +5.3, winning for White).} *
 
-[Chapter "Main line: 5.a3"]
-[Type "line"]
-[Opening "Queen's Gambit Declined: Albin Countergambit, Normal Line"]
-[ECO "D08"]
-
-{The main line of the course, and White's best plan. After 3.dxe5 d4 4.Nf3 Nc6, about one White player in four plays 5.a3. It stops ...Bb4+ and prepares b4 and Bb2, aimed at the d4 pawn. Play 5...Nge7 and ...Ng6 to win the e5 pawn back. White usually wins the d4 pawn in return, so material ends level, with White slightly better. Against 6.e3, White's most common sixth move, 6...Bg4! and a queen trade give an equal game.}
-1. d4 d5 2. c4 e5 3. dxe5 d4
-4. Nf3 {Against 4.a3, play 4...Nc6. After 5.Nf3, seven times in ten, you are back in this chapter. Against 5.e3, play 5...Nge7 (Stockfish +0.2, equal); against 5.f4, 5...f6 (Stockfish −0.1, equal); against 5.Bf4, 5...Nge7 (Stockfish 0.0, equal).} Nc6 {[%cal Gc6e5] Hits e5.}
-5. a3 {[%cal Rb2b4,Rc1b2] Stops ...Bb4+ and prepares b4 and Bb2. This is White's best plan (Stockfish +0.8, slightly better for White). 5.e3, 5.g3, 5.Nbd2, 5.Bg5 and 5.Bf4 have their own chapters. Against 5.e4, play 5...Nge7; against 5.b3, check with 5...Bb4+ (both Stockfish −0.1, equal).} Nge7 {[%cal Ge7g6] The knight heads for g6, where it hits e5 a second time.}
-(5... Bg4?! {The most common move, chosen by almost half of Black players, but it gives White time.} 6. Nbd2 Nge7 7. h3 Bxf3 8. Nxf3 Ng6 9. e6! fxe6 10. g3 {White gave the pawn back to break up Black's pawns. The pawns on e6 and d4 are weak, and White has the two bishops. Stockfish: +1.4, clearly better for White.})
-6. b4 {[%cal Rc1b2] White's main plan: Bb2 next, aimed at d4.
-
-Against 6.e3, the most common move, see the branch. Against 6.Bg5 (one game in seven), play 6...h6: after 7.Bxe7 Qxe7, Black wins e5 back (Stockfish +0.1, equal). Against 6.Nbd2, 6.Bf4 or 6.g3, play 6...Ng6 (Stockfish +0.6, 0.0 and +0.2).}
-(6. e3 Bg4! {[%cal Gg4f3] Pins the knight on f3. White can't win the d4 pawn easily, and ...dxe3 is coming. 6...dxe3 at once, or 6...Nf5, gives White a little more (Stockfish +0.8).} 7. Be2 {Six White players in ten. Against 7.exd4, 7...Bxf3 8.Qxf3 Qxd4 wins the pawn back (Stockfish −0.1, equal). Against 7.h3, take the knight: 7...Bxf3! (Stockfish −0.2, equal). Never 7...Bh5?? 8.g4, which cuts the bishop off (Stockfish +5.3, winning for White).} dxe3 8. Qxd8+ {Seven in ten trade queens. Against 8.Bxe3, trade them yourself: 8...Qxd1+ (Stockfish 0.0, equal).} Rxd8 9. Bxe3 Nf5 {[%cal Gf5e3,Gg4f3] Hits the bishop on e3. Next ...Nxe3, or ...Bxf3 and ...Nxe5, wins the e5 pawn back. Stockfish: +0.1, equal.})
-6... Ng6
-7. Bb2 {[%cal Rb2d4] Now d4 is attacked twice. Against 7.b5, take at once: 7...Ncxe5 (Stockfish −0.7, slightly better for Black). Against 7.Bg5, which hits the queen, 7...Be7 trades off White's active bishop (Stockfish −0.7, slightly better for Black).} a5! {[%cal Ga5b4] Hits the b4 pawn first. Taking on e5 at once, as six players in ten do, lets White win d4 on good terms: 7...Ncxe5 8.Nxe5 Nxe5 9.e3 (Stockfish +1.0, clearly better for White).}
-8. b5 {Nine White players in ten push. Against 8.Nxd4, take on e5: 8...Ngxe5 (Stockfish +0.2, equal).} Ncxe5 {The c6 knight was attacked, so it takes on e5.}
-9. Nxe5 Nxe5 {[%csl Yd4] White's next target is d4.}
-10. e3 {Half of White players. Against 10.Qxd4, trade queens: 10...Qxd4 11.Bxd4 Nxc4 wins back the c4 pawn (Stockfish +0.1, equal). 10...f6? keeps the queens on but weakens Black's king (Stockfish +1.7). Against 10.Bxd4, take on c4 at once: 10...Nxc4 (Stockfish +0.8, slightly better for White).} Be6 {[%cal Ge6c4] Develops and hits c4. 10...Bc5 is a little more accurate (Stockfish +0.6), but 10...Be6, the most common move, wins the pawn back at once.}
-11. Bxd4 Nxc4 {Material is level again. White has the two bishops and is slightly better, but Black's pieces are active. Next ...Bd6 or ...Be7, and castle. Stockfish: +0.7, slightly better for White.} *
-
-[Chapter "5.e3: check with 5...Bb4+"]
-[Diagram "5.e3"]
-[Type "line"]
-[Opening "Queen's Gambit Declined: Albin Countergambit, Normal Line"]
-[ECO "D08"]
-
-{After 4.Nf3 Nc6, almost one White player in four plays 5.e3, hitting the d4 pawn. It looks natural, but it lets Black trade queens and equalize at once. Check first with 5...Bb4+, then take on e3. Black scores 57% after 5...Bb4+ in club games. If White takes the bishop with 7.Bxb4?, see Trap: 7.Bxb4? after 5.e3.}
-1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6
-5. e3 {[%cal Re3d4] Hits d4.} Bb4+! {[%cal Gb4e1] Check first. White's dark-squared bishop has to block on d2, where it will be traded.}
-6. Bd2 {Nine White players in ten. Against 6.Nbd2, take on e3: 6...dxe3 7.fxe3 Be7 (Stockfish +0.1, equal). Against 6.Ke2?!, develop with 6...Be6 (Stockfish −0.4, slightly better for Black).} dxe3 {The bishop on d2 is pinned to White's king, so it can't take back on e3.}
-7. fxe3 {The right move, played by three in four. 7.Bxb4? is in the trap chapter.} Bxd2+
-8. Qxd2 {Six in ten. Against 8.Nbxd2, 8...Qe7 hits e5 (Stockfish −0.2, equal).} Qxd2+ 9. Nbxd2 Nge7 {[%cal Ge7g6] Heads for g6, to win e5 back.}
-10. Bd3 {The most common move. Against 10.Be2, play 10...Be6 (Stockfish +0.1, equal). Against 10.O-O-O or 10.a3, 10...Ng6 (Stockfish −0.1, equal).} Ng6 {[%cal Gg6e5] Hits e5 twice. Black wins the pawn back next, and the game is level. Stockfish: +0.1, equal.} *
-
-[Chapter "Fianchetto: 5.g3"]
-[Type "line"]
-[Opening "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation"]
-[ECO "D09"]
-
-{About one White player in six fianchettoes with 5.g3. It is the hardest test for the Albin in club play: Black scores only 41% against it. Use the same plan: ...Nge7, ...Ng6 and ...Ngxe5. Then hold the d4 pawn with ...Be7 and ...c5, so that White's bishop on b2 has nothing to bite on.}
-1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6
-5. g3 {[%cal Rf1g2,Rg2b7] This is the Fianchetto Variation. The bishop goes to g2, aimed at b7 and the long diagonal.} Nge7 {The popular 5...Bg4 and 5...Be6, followed by ...Qd7 and long castling, give White more (Stockfish +1.3 and +1.4, clearly better for White).}
-6. Bg2 {Nine in ten. Against 6.Bg5, play 6...h6 (Stockfish 0.0, equal).} Ng6
-7. O-O {Six in ten. Against 7.Bg5, which hits the queen, play 7...Qd7! (Stockfish +0.2, equal). Half of Black players block with 7...Be7?, but after 8.Bxe7 White wins the d4 pawn (Stockfish +1.8, clearly better for White). Against 7.Bf4, play 7...Bg4 (Stockfish +0.4, slightly better for White).} Ngxe5
-8. Nxe5 {Against 8.Nbd2, play 8...Be7 (Stockfish +0.1, equal). Against 8.b3 or 8.Bf4, trade on f3: 8...Nxf3+ (Stockfish −0.4 and −0.3, slightly better for Black).} Nxe5
-9. b3 {[%cal Rc1b2,Rb2d4] Prepares Bb2 against d4. Against 9.Bf4, play 9...Ng6 (Stockfish +0.3, slightly better for White). Against 9.Nd2, play 9...Be7 (Stockfish +0.1, equal).} Be7
-10. Bb2 c5! {[%cal Gc5d4] Holds the d4 pawn. Black has won the pawn back, and the d4 pawn still cramps White. Next ...O-O and ...Bf6 or ...Bg4. Stockfish: +0.4, slightly better for White.}
-(10... Bf6? {Natural, but it leaves the d4 pawn short of support.} 11. Nd2 {[%cal Rd2e4,Re4f6] Next Ne4 hits the bishop, and White builds up against d4. Stockfish: +1.4, clearly better for White.}) *
-
-[Chapter "Modern Line: 5.Nbd2"]
-[Type "line"]
-[Opening "Queen's Gambit Declined: Albin Countergambit, Modern Line"]
-[ECO "D08"]
-
-{About one White player in ten plays 5.Nbd2. The knight heads for b3, to win the d4 pawn. Let it go: Black wins e5 back with ...Nge7, ...Ng6 and ...Ngxe5, then develops with ...Bc5 and castles. Material is level, and White is slightly better.}
-1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6
-5. Nbd2 {[%cal Rd2b3,Rb3d4] This is the Modern Line. The knight heads for b3, then takes on d4.} Nge7
-6. Nb3 {Eight in ten. Against 6.g3, play 6...Ng6 (Stockfish +0.2, equal). Against 6.a3, 6...Ng6 too (Stockfish +0.6, slightly better for White).} Ng6
-7. Nbxd4 {Six in ten. Against 7.Bg5, which hits the queen, play 7...Bb4+ (Stockfish −0.1, equal). Against 7.Nfxd4, 7...Ngxe5 (Stockfish +0.5, slightly better for White). Against 7.a3, 7...Be7 (Stockfish +0.6, slightly better for White).} Ngxe5
-8. Nxe5 {Half of White players. Against 8.Nxc6, trade queens first: 8...Qxd1+ 9.Kxd1 Nxc6 (Stockfish +0.5, slightly better for White). 8...Nxc6? lets White trade queens with check, and Black has to take back awkwardly (Stockfish +1.3, clearly better for White). Against 8.e3, 8...Nxf3+ 9.Nxf3 Qxd1+ (Stockfish +0.4, slightly better for White).} Nxe5
-9. e3 {Six in ten. Against 9.Bf4 or 9.e4, check with 9...Bb4+ (Stockfish −0.5 and −0.7, slightly better for Black).} Bc5! {[%cal Gc5d4] Develops with a hit on the knight on d4. Next ...O-O. Stockfish: +0.7, slightly better for White.}
-(9... c5? {Kicks the knight, but weakens b5 and d6.} 10. Nb5! {[%cal Rb5c7] After the queens come off, the knight jumps to c7 with check. Stockfish: +2.0, winning for White.}) *
-
-[Chapter "Bishop moves: 5.Bg5 and 5.Bf4"]
-[Diagram "5.Bg5"]
-[Type "line"]
-[Opening "Queen's Gambit Declined: Albin Countergambit, Normal Line"]
-[ECO "D08"]
-
-{About one White player in six develops the c1 bishop at once: 5.Bg5 or 5.Bf4, each in about one game in twelve. Against both, play 5...Nge7 and the usual plan. After 5.Bg5 Nge7 6.e3, the pin 6...Bg4! and a queen trade give an equal game.}
-1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6
-5. Bg5 {[%cal Rg5d8] Hits the queen: Black's e-pawn has gone, so the diagonal to d8 is open.
-
-Against 5.Bf4, play 5...Nge7 too. After 6.Nbd2 or 6.e3, 6...Ng6 hits the bishop and e5 (Stockfish +0.2 and −0.1, equal).} Nge7 {Blocks the attack on the queen, and the knight heads for g6 as usual. 5...f6, chosen by a third of Black players, is also fine (Stockfish +0.1, equal).}
-6. e3 {[%cal Re3d4] Four in ten. Against 6.Nbd2, play 6...h6 (Stockfish −0.3, slightly better for Black). Against 6.g3, 6...h6 (Stockfish +0.1, equal). Against 6.Bxe7, 6...Qxe7 (Stockfish −0.7, slightly better for Black).} Bg4! {[%cal Gg4f3] Pins the knight, as against 5.a3 Nge7 6.e3. Next ...dxe3.}
-(6... h6? {The most common move. It looks natural, but White takes on e7 and wins the d4 pawn.} 7. Bxe7 Bxe7 8. Nxd4 {White keeps the extra pawn. Stockfish: +1.1, clearly better for White.})
-7. Be2 {Half of White players. Against 7.exd4, 7...Bxf3 8.Qxf3 Qxd4 wins the pawn back (Stockfish 0.0, equal). Against 7.h3, take the knight: 7...Bxf3 8.Qxf3 h6 (Stockfish 0.0, equal).} dxe3
-8. Qxd8+ Rxd8 9. Bxe3 Nf5 {[%cal Gf5e3] Hits the bishop. Black wins e5 back next, with ...Nxe3 and ...Bxf3 or with ...Nxe5. Stockfish: 0.0, equal.} *
-
-[Chapter "4.e3: take on e3"]
-[Diagram "4.e3"]
-[Type "line"]
-[Opening "Queen's Gambit Declined: Albin Countergambit, Lasker Trap"]
-[ECO "D08"]
-
-{About one White player in nine hits the d4 pawn with 4.e3. It is a mistake, and Black scores 63% against it in club games. Check with 4...Bb4+, then take on e3 after 5.Bd2. A third of White players now take the bishop with 6.Bxb4?, which loses to the Lasker Trap (see the trap chapter). The only good move is 6.fxe3. Then 6...Qh4+ and ...Qe4 win the e3 pawn back, and Black is, if anything, slightly better.}
-1. d4 d5 2. c4 e5 3. dxe5 d4
-4. e3? {[%cal Re3d4] Hits the pawn on d4, but it walks into a famous trap.} Bb4+ {[%cal Gb4e1] Check first, so the bishop on c1 has to block.}
-5. Bd2 {Nine in ten. Against 5.Nd2, play 5...dxe3 6.fxe3 Qh4+ (Stockfish −0.6, slightly better for Black). Against 5.Ke2?!, 5...c5 holds the d4 pawn (Stockfish −0.6, slightly better for Black).} dxe3 {[%cal Ge3f2] This is the Lasker Trap. Black leaves the bishop on b4 hanging, because the pawn now hits f2.}
-6. fxe3 {About half of White players find the only good move (Stockfish −0.1, equal). For 6.Bxb4? and 6.Qa4+?, see Trap: the Lasker Trap.} Qh4+ {[%cal Gh4e1] Check, before White can play Nf3.}
-7. g3 {Nearly every White player.} Qe4 {[%cal Ge4e3,Ge4h1] Hits the e3 pawn and the rook on h1 at once.}
-8. Nf3 {Almost half of White players. Against 8.Qf3, trade: 8...Bxd2+ 9.Nxd2 Qxe5 (Stockfish −0.6, slightly better for Black). One White player in eight grabs the bishop with 8.Bxb4?, and 8...Qxh1 wins the rook (Stockfish −1.6, clearly better for Black).} Qxe3+ {Black has won the pawn back.}
-9. Be2 {Six in ten. Against 9.Qe2, trade everything: 9...Bxd2+ 10.Nbxd2 Qxe2+ 11.Bxe2 (Stockfish 0.0, equal).} Bxd2+
-10. Nbxd2 {Half of White players. Against 10.Qxd2, trade queens: 10...Qxd2+ 11.Nbxd2 Ne7 (Stockfish −0.2, equal).} Ne7 {[%cal Ge7f5,Gb8c6] Develops. White's king is still in the center, and the e5 pawn is weak. 10...Nh6 is just as good. Stockfish: −0.4, slightly better for Black.} *
-
 [Chapter "3.cxd5 Qxd5"]
 [Diagram "3.cxd5"]
 [Type "line"]
@@ -203,6 +107,41 @@ Three White players in four take back with the pawn. Against 4.Qxd4, play 4...Nf
 8. O-O dxc4 {White's bishop has moved once, so taking back costs it a second move.}
 9. Bxc4 Bg4 {[%cal Gg4f3,Gc6d4] Pins the knight that guards d4. White has an isolated d-pawn: block it with a piece on d5, and pile up on it. Stockfish: −0.1, equal.} *
 
+[Chapter "Normal Line: 5.a3"]
+[Type "line"]
+[Opening "Queen's Gambit Declined: Albin Countergambit, Normal Line"]
+[ECO "D08"]
+
+{The main line of the course, and White's best plan. After 3.dxe5 d4 4.Nf3 Nc6, about one White player in four plays 5.a3. It stops ...Bb4+ and prepares b4 and Bb2, aimed at the d4 pawn. Play 5...Nge7 and ...Ng6 to win the e5 pawn back. White usually wins the d4 pawn in return, so material ends level, with White slightly better. Against 6.e3, White's most common sixth move, 6...Bg4! and a queen trade give an equal game.}
+1. d4 d5 2. c4 e5 3. dxe5 d4
+4. Nf3 {Against 4.a3, play 4...Nc6. After 5.Nf3, seven times in ten, you are back in this chapter. Against 5.e3, play 5...Nge7 (Stockfish +0.2, equal); against 5.f4, 5...f6 (Stockfish −0.1, equal); against 5.Bf4, 5...Nge7 (Stockfish 0.0, equal).} Nc6 {[%cal Gc6e5] Hits e5.}
+5. a3 {[%cal Rb2b4,Rc1b2] Stops ...Bb4+ and prepares b4 and Bb2. This is White's best plan (Stockfish +0.8, slightly better for White). 5.e3, 5.g3, 5.Nbd2, 5.Bg5 and 5.Bf4 have their own chapters. Against 5.e4, play 5...Nge7; against 5.b3, check with 5...Bb4+ (both Stockfish −0.1, equal).} Nge7 {[%cal Ge7g6] The knight heads for g6, where it hits e5 a second time.}
+(5... Bg4?! {The most common move, chosen by almost half of Black players, but it gives White time.} 6. Nbd2 Nge7 7. h3 Bxf3 8. Nxf3 Ng6 9. e6! fxe6 10. g3 {White gave the pawn back to break up Black's pawns. The pawns on e6 and d4 are weak, and White has the two bishops. Stockfish: +1.4, clearly better for White.})
+6. b4 {[%cal Rc1b2] White's main plan: Bb2 next, aimed at d4.
+
+Against 6.e3, the most common move, see the branch. Against 6.Bg5 (one game in seven), play 6...h6: after 7.Bxe7 Qxe7, Black wins e5 back (Stockfish +0.1, equal). Against 6.Nbd2, 6.Bf4 or 6.g3, play 6...Ng6 (Stockfish +0.6, 0.0 and +0.2).}
+(6. e3 Bg4! {[%cal Gg4f3] Pins the knight on f3. White can't win the d4 pawn easily, and ...dxe3 is coming. 6...dxe3 at once, or 6...Nf5, gives White a little more (Stockfish +0.8).} 7. Be2 {Six White players in ten. Against 7.exd4, 7...Bxf3 8.Qxf3 Qxd4 wins the pawn back (Stockfish −0.1, equal). Against 7.h3, take the knight: 7...Bxf3! (Stockfish −0.2, equal). Never 7...Bh5?? 8.g4, which cuts the bishop off (Stockfish +5.3, winning for White).} dxe3 8. Qxd8+ {Seven in ten trade queens. Against 8.Bxe3, trade them yourself: 8...Qxd1+ (Stockfish 0.0, equal).} Rxd8 9. Bxe3 Nf5 {[%cal Gf5e3,Gg4f3] Hits the bishop on e3. Next ...Nxe3, or ...Bxf3 and ...Nxe5, wins the e5 pawn back. Stockfish: +0.1, equal.})
+6... Ng6
+7. Bb2 {[%cal Rb2d4] Now d4 is attacked twice. Against 7.b5, take at once: 7...Ncxe5 (Stockfish −0.7, slightly better for Black). Against 7.Bg5, which hits the queen, 7...Be7 trades off White's active bishop (Stockfish −0.7, slightly better for Black).} a5! {[%cal Ga5b4] Hits the b4 pawn first. Taking on e5 at once, as six players in ten do, lets White win d4 on good terms: 7...Ncxe5 8.Nxe5 Nxe5 9.e3 (Stockfish +1.0, clearly better for White).}
+8. b5 {Nine White players in ten push. Against 8.Nxd4, take on e5: 8...Ngxe5 (Stockfish +0.2, equal).} Ncxe5 {The c6 knight was attacked, so it takes on e5.}
+9. Nxe5 Nxe5 {[%csl Yd4] White's next target is d4.}
+10. e3 {Half of White players. Against 10.Qxd4, trade queens: 10...Qxd4 11.Bxd4 Nxc4 wins back the c4 pawn (Stockfish +0.1, equal). 10...f6? keeps the queens on but weakens Black's king (Stockfish +1.7). Against 10.Bxd4, take on c4 at once: 10...Nxc4 (Stockfish +0.8, slightly better for White).} Be6 {[%cal Ge6c4] Develops and hits c4. 10...Bc5 is a little more accurate (Stockfish +0.6), but 10...Be6, the most common move, wins the pawn back at once.}
+11. Bxd4 Nxc4 {Material is level again. White has the two bishops and is slightly better, but Black's pieces are active. Next ...Bd6 or ...Be7, and castle. Stockfish: +0.7, slightly better for White.} *
+
+[Chapter "Normal Line: 5.e3"]
+[Diagram "5.e3"]
+[Type "line"]
+[Opening "Queen's Gambit Declined: Albin Countergambit, Normal Line"]
+[ECO "D08"]
+
+{After 4.Nf3 Nc6, almost one White player in four plays 5.e3, hitting the d4 pawn. It looks natural, but it lets Black trade queens and equalize at once. Check first with 5...Bb4+, then take on e3. Black scores 57% after 5...Bb4+ in club games. If White takes the bishop with 7.Bxb4?, see Trap: 7.Bxb4? after 5.e3.}
+1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6
+5. e3 {[%cal Re3d4] Hits d4.} Bb4+! {[%cal Gb4e1] Check first. White's dark-squared bishop has to block on d2, where it will be traded.}
+6. Bd2 {Nine White players in ten. Against 6.Nbd2, take on e3: 6...dxe3 7.fxe3 Be7 (Stockfish +0.1, equal). Against 6.Ke2?!, develop with 6...Be6 (Stockfish −0.4, slightly better for Black).} dxe3 {The bishop on d2 is pinned to White's king, so it can't take back on e3.}
+7. fxe3 {The right move, played by three in four. 7.Bxb4? is in the trap chapter.} Bxd2+
+8. Qxd2 {Six in ten. Against 8.Nbxd2, 8...Qe7 hits e5 (Stockfish −0.2, equal).} Qxd2+ 9. Nbxd2 Nge7 {[%cal Ge7g6] Heads for g6, to win e5 back.}
+10. Bd3 {The most common move. Against 10.Be2, play 10...Be6 (Stockfish +0.1, equal). Against 10.O-O-O or 10.a3, 10...Ng6 (Stockfish −0.1, equal).} Ng6 {[%cal Gg6e5] Hits e5 twice. Black wins the pawn back next, and the game is level. Stockfish: +0.1, equal.} *
+
 [Chapter "3.Nc3 exd4"]
 [Diagram "3.Nc3"]
 [Type "line"]
@@ -216,6 +155,69 @@ Three White players in four take back with the pawn. Against 4.Qxd4, play 4...Nf
 5. Qxd5 {Eight in ten. Against 5.Qd1?, 5...d4! gains space with a hit on the knight (Stockfish −1.5, clearly better for Black). Against 5.Qe3+, 5...Nge7 (Stockfish −0.3, slightly better for Black).} Be6! {[%cal Ge6c4] Offers the queen trade on Black's terms and hits c4.}
 (5... Qxd5? {Three Black players in ten trade queens this way, and it loses a pawn.} 6. Nxd5 {[%cal Rd5c7] The knight takes back with a threat on c7. Stockfish: +2.2, winning for White.})
 6. Qxd8+ {Eight in ten. Against 6.Qb5, 6...Bb4 7.Bd2 a6 8.Qa4 Bxc4 wins the pawn back (Stockfish +0.3, slightly better for White).} Rxd8 {[%cal Gc6b4,Gb4c2,Ge6c4] Black will win the c4 pawn back, and the knight eyes b4 and c2. Most White players now go wrong: see the trap chapter. Stockfish: +0.1, equal.} *
+
+[Chapter "Fianchetto: 5.g3"]
+[Type "line"]
+[Opening "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation"]
+[ECO "D09"]
+
+{About one White player in six fianchettoes with 5.g3. It is the hardest test for the Albin in club play: Black scores only 41% against it. Use the same plan: ...Nge7, ...Ng6 and ...Ngxe5. Then hold the d4 pawn with ...Be7 and ...c5, so that White's bishop on b2 has nothing to bite on.}
+1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6
+5. g3 {[%cal Rf1g2,Rg2b7] This is the Fianchetto Variation. The bishop goes to g2, aimed at b7 and the long diagonal.} Nge7 {The popular 5...Bg4 and 5...Be6, followed by ...Qd7 and long castling, give White more (Stockfish +1.3 and +1.4, clearly better for White).}
+6. Bg2 {Nine in ten. Against 6.Bg5, play 6...h6 (Stockfish 0.0, equal).} Ng6
+7. O-O {Six in ten. Against 7.Bg5, which hits the queen, play 7...Qd7! (Stockfish +0.2, equal). Half of Black players block with 7...Be7?, but after 8.Bxe7 White wins the d4 pawn (Stockfish +1.8, clearly better for White). Against 7.Bf4, play 7...Bg4 (Stockfish +0.4, slightly better for White).} Ngxe5
+8. Nxe5 {Against 8.Nbd2, play 8...Be7 (Stockfish +0.1, equal). Against 8.b3 or 8.Bf4, trade on f3: 8...Nxf3+ (Stockfish −0.4 and −0.3, slightly better for Black).} Nxe5
+9. b3 {[%cal Rc1b2,Rb2d4] Prepares Bb2 against d4. Against 9.Bf4, play 9...Ng6 (Stockfish +0.3, slightly better for White). Against 9.Nd2, play 9...Be7 (Stockfish +0.1, equal).} Be7
+10. Bb2 c5! {[%cal Gc5d4] Holds the d4 pawn. Black has won the pawn back, and the d4 pawn still cramps White. Next ...O-O and ...Bf6 or ...Bg4. Stockfish: +0.4, slightly better for White.}
+(10... Bf6? {Natural, but it leaves the d4 pawn short of support.} 11. Nd2 {[%cal Rd2e4,Re4f6] Next Ne4 hits the bishop, and White builds up against d4. Stockfish: +1.4, clearly better for White.}) *
+
+[Chapter "4.e3: take on e3"]
+[Diagram "4.e3"]
+[Type "line"]
+[Opening "Queen's Gambit Declined: Albin Countergambit, Lasker Trap"]
+[ECO "D08"]
+
+{About one White player in nine hits the d4 pawn with 4.e3. It is a mistake, and Black scores 63% against it in club games. Check with 4...Bb4+, then take on e3 after 5.Bd2. A third of White players now take the bishop with 6.Bxb4?, which loses to the Lasker Trap (see the trap chapter). The only good move is 6.fxe3. Then 6...Qh4+ and ...Qe4 win the e3 pawn back, and Black is, if anything, slightly better.}
+1. d4 d5 2. c4 e5 3. dxe5 d4
+4. e3? {[%cal Re3d4] Hits the pawn on d4, but it walks into a famous trap.} Bb4+ {[%cal Gb4e1] Check first, so the bishop on c1 has to block.}
+5. Bd2 {Nine in ten. Against 5.Nd2, play 5...dxe3 6.fxe3 Qh4+ (Stockfish −0.6, slightly better for Black). Against 5.Ke2?!, 5...c5 holds the d4 pawn (Stockfish −0.6, slightly better for Black).} dxe3 {[%cal Ge3f2] This is the Lasker Trap. Black leaves the bishop on b4 hanging, because the pawn now hits f2.}
+6. fxe3 {About half of White players find the only good move (Stockfish −0.1, equal). For 6.Bxb4? and 6.Qa4+?, see Trap: the Lasker Trap.} Qh4+ {[%cal Gh4e1] Check, before White can play Nf3.}
+7. g3 {Nearly every White player.} Qe4 {[%cal Ge4e3,Ge4h1] Hits the e3 pawn and the rook on h1 at once.}
+8. Nf3 {Almost half of White players. Against 8.Qf3, trade: 8...Bxd2+ 9.Nxd2 Qxe5 (Stockfish −0.6, slightly better for Black). One White player in eight grabs the bishop with 8.Bxb4?, and 8...Qxh1 wins the rook (Stockfish −1.6, clearly better for Black).} Qxe3+ {Black has won the pawn back.}
+9. Be2 {Six in ten. Against 9.Qe2, trade everything: 9...Bxd2+ 10.Nbxd2 Qxe2+ 11.Bxe2 (Stockfish 0.0, equal).} Bxd2+
+10. Nbxd2 {Half of White players. Against 10.Qxd2, trade queens: 10...Qxd2+ 11.Nbxd2 Ne7 (Stockfish −0.2, equal).} Ne7 {[%cal Ge7f5,Gb8c6] Develops. White's king is still in the center, and the e5 pawn is weak. 10...Nh6 is just as good. Stockfish: −0.4, slightly better for Black.} *
+
+[Chapter "Modern Line: 5.Nbd2"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Queen's Gambit Declined: Albin Countergambit, Modern Line"]
+[ECO "D08"]
+
+{About one White player in ten plays 5.Nbd2. The knight heads for b3, to win the d4 pawn. Let it go: Black wins e5 back with ...Nge7, ...Ng6 and ...Ngxe5, then develops with ...Bc5 and castles. Material is level, and White is slightly better.}
+1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6
+5. Nbd2 {[%cal Rd2b3,Rb3d4] This is the Modern Line. The knight heads for b3, then takes on d4.} Nge7
+6. Nb3 {Eight in ten. Against 6.g3, play 6...Ng6 (Stockfish +0.2, equal). Against 6.a3, 6...Ng6 too (Stockfish +0.6, slightly better for White).} Ng6
+7. Nbxd4 {Six in ten. Against 7.Bg5, which hits the queen, play 7...Bb4+ (Stockfish −0.1, equal). Against 7.Nfxd4, 7...Ngxe5 (Stockfish +0.5, slightly better for White). Against 7.a3, 7...Be7 (Stockfish +0.6, slightly better for White).} Ngxe5
+8. Nxe5 {Half of White players. Against 8.Nxc6, trade queens first: 8...Qxd1+ 9.Kxd1 Nxc6 (Stockfish +0.5, slightly better for White). 8...Nxc6? lets White trade queens with check, and Black has to take back awkwardly (Stockfish +1.3, clearly better for White). Against 8.e3, 8...Nxf3+ 9.Nxf3 Qxd1+ (Stockfish +0.4, slightly better for White).} Nxe5
+9. e3 {Six in ten. Against 9.Bf4 or 9.e4, check with 9...Bb4+ (Stockfish −0.5 and −0.7, slightly better for Black).} Bc5! {[%cal Gc5d4] Develops with a hit on the knight on d4. Next ...O-O. Stockfish: +0.7, slightly better for White.}
+(9... c5? {Kicks the knight, but weakens b5 and d6.} 10. Nb5! {[%cal Rb5c7] After the queens come off, the knight jumps to c7 with check. Stockfish: +2.0, winning for White.}) *
+
+[Chapter "Normal Line: 5.Bg5 and 5.Bf4"]
+[Diagram "5.Bg5"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Queen's Gambit Declined: Albin Countergambit, Normal Line"]
+[ECO "D08"]
+
+{About one White player in six develops the c1 bishop at once: 5.Bg5 or 5.Bf4, each in about one game in twelve. Against both, play 5...Nge7 and the usual plan. After 5.Bg5 Nge7 6.e3, the pin 6...Bg4! and a queen trade give an equal game.}
+1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6
+5. Bg5 {[%cal Rg5d8] Hits the queen: Black's e-pawn has gone, so the diagonal to d8 is open.
+
+Against 5.Bf4, play 5...Nge7 too. After 6.Nbd2 or 6.e3, 6...Ng6 hits the bishop and e5 (Stockfish +0.2 and −0.1, equal).} Nge7 {Blocks the attack on the queen, and the knight heads for g6 as usual. 5...f6, chosen by a third of Black players, is also fine (Stockfish +0.1, equal).}
+6. e3 {[%cal Re3d4] Four in ten. Against 6.Nbd2, play 6...h6 (Stockfish −0.3, slightly better for Black). Against 6.g3, 6...h6 (Stockfish +0.1, equal). Against 6.Bxe7, 6...Qxe7 (Stockfish −0.7, slightly better for Black).} Bg4! {[%cal Gg4f3] Pins the knight, as against 5.a3 Nge7 6.e3. Next ...dxe3.}
+(6... h6? {The most common move. It looks natural, but White takes on e7 and wins the d4 pawn.} 7. Bxe7 Bxe7 8. Nxd4 {White keeps the extra pawn. Stockfish: +1.1, clearly better for White.})
+7. Be2 {Half of White players. Against 7.exd4, 7...Bxf3 8.Qxf3 Qxd4 wins the pawn back (Stockfish 0.0, equal). Against 7.h3, take the knight: 7...Bxf3 8.Qxf3 h6 (Stockfish 0.0, equal).} dxe3
+8. Qxd8+ Rxd8 9. Bxe3 Nf5 {[%cal Gf5e3] Hits the bishop. Black wins e5 back next, with ...Nxe3 and ...Bxf3 or with ...Nxe5. Stockfish: 0.0, equal.} *
 
 [Chapter "Trap: the Lasker Trap"]
 [Diagram "6.Bxb4"]
@@ -240,7 +242,7 @@ Three White players in four take back with the pawn. Against 4.Qxd4, play 4...Nf
 [Opening "Queen's Gambit Declined: Albin Countergambit, Normal Line"]
 [ECO "D08"]
 
-{The Lasker Trap idea also works after 4.Nf3 Nc6 5.e3 Bb4+ 6.Bd2 dxe3. One White player in four grabs the bishop with 7.Bxb4?. With White's knight already on f3, there is no knight promotion, but 7...exf2+ still wins: Black trades queens with check and wins the bishop back, and White's king is stuck in the center. The right move is 7.fxe3: see 5.e3: check with 5...Bb4+.}
+{The Lasker Trap idea also works after 4.Nf3 Nc6 5.e3 Bb4+ 6.Bd2 dxe3. One White player in four grabs the bishop with 7.Bxb4?. With White's knight already on f3, there is no knight promotion, but 7...exf2+ still wins: Black trades queens with check and wins the bishop back, and White's king is stuck in the center. The right move is 7.fxe3: see Normal Line: 5.e3.}
 1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. e3 Bb4+ 6. Bd2 dxe3
 7. Bxb4? {Grabs the bishop. 7.fxe3 is right (Stockfish +0.1, equal).} exf2+ {[%cal Gf2e1] Check.}
 8. Ke2 {Nearly nine in ten.}
