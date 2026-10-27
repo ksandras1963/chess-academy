@@ -133,7 +133,7 @@ function hubPage(root, c, set, back) {
             map ? variationMap(map.root, {
                 target: node => mapTarget(c, node),
                 hint: "Tap a box to see its position in a lesson.",
-                star: side => `A Basic line: you play ${side === "white" ? "White" : "Black"}`,
+                star: side => side === "both" ? "A Basic line, for both sides" : `A Basic line: you play ${side === "white" ? "White" : "Black"}`,
                 key: " A Basic line: learn these first",
             }) : null,
             c.table ? h("section", { class: "course-table" }, h("h2", {}, c.table.title || "The variations"), introTable(c.table)) : null,

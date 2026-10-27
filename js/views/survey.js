@@ -218,19 +218,22 @@ function flowchart(s, jump) {
  * plain box; `[%course white|black]` in a note stars it (`star(side)` is its tooltip), explained by `key`. Used by the family pages
  * (boxes open a card) and by the course pages (boxes open the position in a lesson).
  */
-export function variationMap(root, { target, hint, key, star = side => `Taught in a course, from ${side === "white" ? "White" : "Black"}'s side` }) {
+export function variationMap(root, { target, hint, key, star = side => side === "both" ? "Taught in a course, from both sides" : `Taught in a course, from ${side === "white" ? "White" : "Black"}'s side` }) {
     let starred = false
+    // [%order 2] in a note places the box among its sibling boxes (most-played first, as in the
+    // course); boxes without one keep their order in the PGN, after the numbered ones.
+    const orderOf = n => Number((/\[%order (\d+)\]/.exec(n.comments.join(" ")) || [])[1] || 1e9)
     const boxesBelow = node => {
         const out = []
         const walk = n => n.children.forEach(k => (k.comments.length ? out.push(k) : walk(k)))
         walk(node)
-        return out
+        return out.map((k, i) => [orderOf(k), i, k]).sort((a, b) => a[0] - b[0] || a[1] - b[1]).map(x => x[2])
     }
     const item = (node, from) => {
         const run = []
         for (let n = node; n !== from; n = n.parent) run.unshift(n)
         const name = node.note.text
-        const course = /\[%course (white|black)\]/.exec(node.comments.join(" "))
+        const course = /\[%course (white|black|both)\]/.exec(node.comments.join(" "))
         if (course) starred = true
         const content = [
             h("span", { class: "fc-move" }, moveRun(run)),
