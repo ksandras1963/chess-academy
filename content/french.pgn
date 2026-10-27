@@ -108,7 +108,7 @@
 [Chapter "Rubinstein: ...c5 frees the game"]
 [Type "concept"]
 
-{In the Rubinstein there are no e-pawns: White has d4 against Black's e6. Black frees the game with ...c5, which hits d4 and opens lines for the bishops.}
+{After 3...dxe4, Black's d-pawn has taken White's e-pawn, so the center is White's d4 against Black's e6. Black frees the game with ...c5, which hits d4 and opens lines for the bishops.}
 1. e4 e6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Nf3 Ngf6 6. Bd3 Nxe4 7. Bxe4 Nf6 8. Bd3 {[%csl Yd4,Ye6] The idea starts from this position.} 8... c5 {[%cal Gc5d4] The freeing break.} 9. dxc5 Bxc5 10. O-O O-O {Black has no weaknesses. Equal.} *
 
 [Chapter "Key ideas: The French bishop"]

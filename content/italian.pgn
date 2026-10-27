@@ -7,6 +7,7 @@
 
 [Chapter "The knight's trip to g3"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "9...h6"]
 
 {The pawn on c3 takes the c3 square from the queen's knight, so it travels b1-d2-f1-g3 instead. From g3 it eyes f5 and h5, next to Black's king. h3, already played, keeps Black's bishop and knight off g4 while the knight makes the trip.}
@@ -14,6 +15,7 @@
 
 [Chapter "The d4 break, when you are ready"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "12...a5"]
 
 {With every piece developed, White opens the center with d4. Here Black has spent a move on ...a5 instead of freeing the game with ...d5, so the break comes at once.}
@@ -21,6 +23,7 @@
 
 [Chapter "Against the ...Bg4 pin"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "11...h6"]
 
 {When Black pins the knight on f3, ask the bishop with h3 and guard f3 with Nbd2. With the pawn on c3, Black can never add ...Nd4 to attack the pinned knight again. Then the knights hunt the bishop.}
@@ -35,6 +38,7 @@
 
 [Chapter "Black's ...d5, played in time"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "12.Bc2"]
 
 {Black has developed every piece and the rook stands on e8, so ...d5 is safe here. After the trade on d5 the center opens and the game is level.}
@@ -42,6 +46,7 @@
 
 [Chapter "Punishing an early ...d5"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "6.O-O"]
 
 {Here Black plays ...d5 before finishing development. Trade on d5 and hit e5 at once.}
@@ -56,6 +61,7 @@
 
 [Chapter "f7 is the target"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "4...Nf6"]
 
 {Black has shut in the f8 bishop with ...d6 and played ...Nf6, so only the king guards f7. Ng5 adds a second attacker.}
@@ -63,6 +69,7 @@
 
 [Chapter "The Qb3 battery"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "5...d5"]
 
 {Queen and bishop on the a2-g8 diagonal hit d5 and f7 together. It punishes ...d5 played too early.}
@@ -70,6 +77,7 @@
 
 [Chapter "The pinned f7 pawn"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "13.Nh4"]
 
 {White's bishop on b3 pins the f7 pawn to Black's king, and Black's h-pawn has gone to h6. So nothing can take back on g6.}
@@ -77,6 +85,7 @@
 
 [Chapter "Keep the Italian bishop"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "7...Na5"]
 
 {Black's knight attacks the bishop on c4. Don't let it trade off the Italian bishop: drop it back to a safe square.}
@@ -84,6 +93,7 @@
 
 [Chapter "The Bg5 pin, only after castling"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "6...O-O"]
 
 {Pin the knight only once Black has castled. Against a king still on e8, ...h6 and ...g5 cost Black nothing. Here Black has castled, so ...g5 loosens the king.}
@@ -98,6 +108,7 @@
 
 [Chapter "...a6 and ...Ba7 keep the bishop"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "6.O-O"]
 
 {White will play d4 or b4 to chase the bishop on c5. Make room for it on a7 first.}
@@ -105,6 +116,7 @@
 
 [Chapter "...h6: no Bg5, no Ng5"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "9.h3"]
 
 {White's bishop and knight both want the g5 square. One pawn move takes it from them.}
@@ -112,6 +124,7 @@
 
 [Chapter "...Be6 trades White's best bishop"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "11.Nf1"]
 
 {White's bishop on c4 is its best attacking piece. Offer to trade it with ...Be6. Prefer ...Be6 to ...Bg4: with White's pawn on c3, Black can never add ...Nd4, so a pin on f3 does little.}
@@ -119,6 +132,7 @@
 
 [Chapter "...d5, when ready"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "13.Ng3"]
 
 {Every piece is out and the rook supports e5. Now the freeing break is safe.}
@@ -133,6 +147,7 @@
 
 [Chapter "A pawn with no neighbors"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "12...c6"]
 
 {White's d-pawn is isolated: no White pawn stands on the c- or e-file beside it, so no pawn can ever guard it. No White pawn can attack d5 either, so your knight is safe there. Trades help you: the fewer pieces are left, the weaker the lone pawn becomes.}
@@ -147,6 +162,7 @@
 
 [Chapter "The early ...Ng4"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "5.O-O"]
 
 {Attacking f2 with a lone knight loses time. Here White even has a tactic against it.}
@@ -154,6 +170,7 @@
 
 [Chapter "The early ...d5"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "5.d3"]
 
 {Played before you have developed, ...d5 lets White's queen join the bishop against d5 and f7. Prepare it with ...Re8 and ...Be6 first.}
@@ -161,6 +178,7 @@
 
 [Chapter "...g5, but not ...h5"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "8.Bg3"]
 
 {Breaking the Bg5 pin with ...h6 and ...g5 is fine. But the g5 pawn needs the h-pawn's support, so don't push ...h5. Play 8...a6 and ...Ba7 instead.}
