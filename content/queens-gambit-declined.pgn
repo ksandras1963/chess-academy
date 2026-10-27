@@ -663,7 +663,7 @@ Black can prepare ...Bf5 with ...g6. After 6...g6 7.e3 Bf5 8.Bd3 Bxd3 9.Qxd3, or
 {About one White player in seven takes on f6 before Black can play ...b6. Take back with the bishop: Black gets the bishop pair, and the bishop on f6 presses on d4. Wait for White's bishop to move, then take on c4 and play ...c5.}
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6
 7. Bxf6 {This is the Anti-Tartakower Variation.} Bxf6 {Always take back with the bishop.}
-(7... gxf6? {Wrecks the pawns in front of Black's king.} 8. cxd5 exd5 9. Bd3 {[%cal Gd3h7,Gd1h5] White's pieces aim at the open king, and Qc2 or Nh4 comes next. Stockfish: +2.9, winning for White.})
+(7... gxf6? {Wrecks the pawns in front of Black's king.} 8. cxd5 exd5 9. Bd3 {[%cal Gd3h7,Gd1c2,Gf3h4] White's pieces aim at the open king, and Qc2 or Nh4 comes next. Stockfish: +2.9, winning for White.})
 8. Bd3 {The most common move.
 
 Against 8.cxd5, take back with the e-pawn: 8...exd5, then ...c6, ...Be6 and ...Nd7 (Stockfish +0.1, equal). 8...c5? runs into 9.dxc6, the same trick as in the main Tartakower (Stockfish +1.0). Against 8.Rc1, play 8...c6 and ...Nd7 (Stockfish +0.1, equal).} dxc4 {White's bishop has just moved, so Bxc4 costs it a second move.}
