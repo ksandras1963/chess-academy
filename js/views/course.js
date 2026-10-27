@@ -113,6 +113,9 @@ function hubPage(root, c, set, back) {
         : h("span", { class: "hub-card is-soon" }, h("span", { class: "hub-title" }, "Puzzles"), h("span", { class: "hub-meta" }, "Coming soon"))
     const core = progress(coreLines(c))
     const map = c.chapters.find(ch => ch.type === "map")
+    const scheduleLine = h("div", { class: "course-stats" },
+        h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.` +
+            (newRemainingToday() < 1 && core.fresh ? " Today's new lines are used up; any line can still be drilled from its section." : "")))
     const ideasList = ideas.length ? [
         h("p", { class: "muted" }, "Read these first: the reasons behind the moves you will drill."),
         h("ol", {}, ideas.map(ch => h("li", {},
@@ -139,13 +142,11 @@ function hubPage(root, c, set, back) {
             c.table ? h("section", { class: "course-table" }, h("h2", {}, c.table.title || "The variations"), introTable(c.table)) : null,
             ideasList ? h("section", { class: "ideas-list" }, h("h2", {}, "Key ideas"), ideasList) : null,
             h("section", { class: "course-sections" }, h("h2", {}, "The lines"),
-                h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard)),
+                h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard),
+                scheduleLine),
             h("section", { class: "course-drills" }, h("h2", {}, "Drills"),
                 h("p", { class: "muted" }, "Once you have looked through the lines, drill them from each side."),
-                h("div", { class: "course-actions" }, drillAction(c)),
-                h("div", { class: "course-stats" },
-                    h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.` +
-                        (newRemainingToday() < 1 && core.fresh ? " Today's new lines are used up; any line can still be drilled from its section." : "")))),
+                h("div", { class: "course-actions" }, drillAction(c))),
             furtherStudy(c.opening.furtherStudy)))
         return
     }
@@ -156,15 +157,14 @@ function hubPage(root, c, set, back) {
             h("h1", {}, courseTitle(c)),
             h("p", { class: "course-side" }, c.repertoire),
             h("p", { class: "course-summary" }, figText(c.summary || ""))),
-        h("div", { class: "course-actions" }, drillAction(c)),
         h("section", { class: "ideas-list essentials" },
             h("h2", {}, "What you need to know about this opening"),
             c.overview && c.overview.length ? h("ul", { class: "essentials-points" }, c.overview.map(pt => h("li", {}, figText(pt)))) : null,
             ideasList),
+        // The drills come after the sections on every course page: the lines are seen before they are drilled.
         h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard),
-        h("div", { class: "course-stats" },
-            h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.` +
-                (newRemainingToday() < 1 && core.fresh ? " Today's new lines are used up; any line can still be drilled from its section." : ""))),
+        scheduleLine,
+        h("div", { class: "course-actions" }, drillAction(c)),
         furtherStudy(c.opening.furtherStudy)))
 }
 
