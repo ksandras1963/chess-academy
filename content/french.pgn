@@ -14,7 +14,7 @@
 [Chapter "Attack the tip: ...f6"]
 [Type "concept"]
 
-{Black's second break hits the tip of the chain with ...f6. This position is from the Tarrasch, after ...c5 and ...cxd4. After the trade on f6, the f-file opens for Black's rook.}
+{Black's second break hits the tip of the chain with ...f6. This position is from the Tarrasch, after ...c5 and ...cxd4. After the trade on f6, the f-file is half-open for Black's rook.}
 1. e4 e6 2. d4 d5 3. Nd2 Nf6 4. e5 Nfd7 5. Bd3 c5 6. c3 Nc6 7. Ne2 cxd4 8. cxd4 {The idea starts from this position.} 8... f6 {[%cal Gf6e5] Hits e5.} 9. exf6 {White gives up the tip.} 9... Nxf6 {[%cal Gf8f1] Black's pieces come out freely, and the f-file is half-open for Black's rook.} *
 
 [Chapter "Key ideas: Plans in the Advance"]
@@ -28,13 +28,13 @@
 [Type "concept"]
 
 {White wants b4, to drive Black's c-pawn away from d4 and gain space on the queenside. Then Bb2 adds another defender of d4.}
-1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Qb6 {[%cal Ga2a3,Gb2b4] The idea starts from this position.} 6. a3 {Prepares b4.} 6... Bd7 7. b4 {[%cal Gb4c5] Gains space and asks the c-pawn to decide.} 7... cxd4 8. cxd4 {No White pawn guards d4 now, so White uses pieces.} 8... Rc8 9. Bb2 {[%cal Gb2d4] A fourth defender of d4.} *
+1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Qb6 {[%cal Ga2a3,Gb2b4] The idea starts from this position.} 6. a3 {Prepares b4.} 6... Bd7 7. b4 {[%cal Gb4c5] Gains space and asks the c-pawn to decide.} 7... cxd4 8. cxd4 {No White pawn guards d4 now, so White uses pieces.} 8... Rc8 9. Bb2 {[%cal Gb2d4] A third defender of d4, with the knight and queen.} *
 
 [Chapter "Black: ...c4 and the hole on b3"]
 [Type "concept"]
 
-{With ...c4 Black stops b4 for good and fixes White's queenside. The square b3 becomes a hole for Black's knight, and White has to guard it.}
-1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Qb6 6. a3 {[%csl Yb3] The idea starts from this position.} 6... c4 {[%cal Rb2b4] b4 is no longer possible.} 7. Nbd2 {Guards b3.} 7... Na5 {[%cal Ga5b3] The knight eyes b3.} 8. Rb1 {[%csl Yb3] Guards b3 a second time.} 8... Bd7 {Black develops and later castles queenside, then breaks with ...f6.} *
+{With ...c4 Black takes away White's b4 plan: b4 would now be met by ...cxb3 en passant. The square b3 becomes a hole for Black's knight, and White has to guard it.}
+1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Qb6 6. a3 {[%csl Yb3] The idea starts from this position.} 6... c4 {[%cal Rb2b4] Now b4 is met by ...cxb3 en passant.} 7. Nbd2 {Guards b3.} 7... Na5 {[%cal Ga5b3] The knight eyes b3.} 8. Rb1 {Guards b2, so the c1 bishop can move, and prepares b3 to challenge the c4 pawn.} 8... Bd7 {Black develops and later castles queenside, then breaks with ...f6.} *
 
 [Chapter "Don't jump into b3 too early"]
 [Type "concept"]
@@ -45,7 +45,7 @@
 [Chapter "White holds d4 with pieces"]
 [Type "concept"]
 
-{If Black takes on d4 instead, no White pawn can guard d4 any more. White guards it with pieces and uses the knight to chase Black's queen. The square c5 becomes a hole in Black's camp.}
+{If Black takes on d4 instead, no White pawn can guard d4 any more. White guards it with pieces and uses the knight to chase Black's queen. The square c5 becomes a weak square in Black's camp.}
 1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Qb6 6. a3 cxd4 7. cxd4 {The idea starts from this position.} 7... Nge7 {[%cal Ge7f5] Heads for f5, to hit d4 again.} 8. Nc3 Nf5 9. Na4 {[%cal Ga4b6,Ga4c5] Hits the queen and eyes c5.} 9... Qd8 10. b4 {[%cal Gc1b2] Space on the queenside, and Bb2 comes next. Stockfish +0.6, slightly better for White.} *
 
 [Chapter "Key ideas: The Winawer structure"]
@@ -58,8 +58,8 @@
 [Chapter "The weak g7 pawn"]
 [Type "concept"]
 
-{Without its dark-squared bishop, Black's g7 pawn has no defender but the rook. That is why White's queen goes straight to g4.}
-1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. a3 Bxc3+ 6. bxc3 {[%csl Yg7] The idea starts from this position.} 6... Ne7 {[%cal Ge7f5] f6 is taken, so the knight develops to e7.} 7. Qg4 {[%cal Gg4g7] Attacks g7 at once.} *
+{Without its dark-squared bishop, nothing guards Black's g7 pawn. That is why White's queen goes straight to g4.}
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. a3 Bxc3+ 6. bxc3 {[%csl Yg7] The idea starts from this position.} 6... Ne7 {[%cal Ge7f5] The e5 pawn covers f6, so the knight develops to e7.} 7. Qg4 {[%cal Gg4g7] Attacks g7 at once.} *
 
 [Chapter "The Poisoned Pawn"]
 [Type "concept"]
@@ -102,8 +102,8 @@
 [Chapter "Exchange: the e-file and ...Nge7"]
 [Type "concept"]
 
-{The pawns are symmetrical and the e-file is open; the side with the more active pieces controls it and the outposts on e4 and e5. Black's knight goes to e7, not f6, so White can't pin it with Bg5.}
-1. e4 e6 2. d4 d5 3. exd5 exd5 4. Nf3 Nc6 5. Bd3 Bg4 6. c3 Bd6 7. O-O Qd7 {[%csl Ye4,Ye5] The idea starts from this position.} 8. Re1+ {[%cal Ge1e8] The rook takes the open file with check.} 8... Nge7 {Blocks the check; on e7 the knight can't be pinned.} 9. Nbd2 O-O {Black castles short.} *
+{The pawns are symmetrical and the e-file is open; the side with the more active pieces controls it and the squares e4 and e5. Black's knight goes to e7, not f6, so White can't pin it with Bg5.}
+1. e4 e6 2. d4 d5 3. exd5 exd5 4. Nf3 Nc6 5. Bd3 Bg4 6. c3 Bd6 7. O-O Qd7 {[%csl Ye4,Ye5] The idea starts from this position.} 8. Re1+ {[%cal Ge1e8] The rook takes the open file with check.} 8... Nge7 {Blocks the check. The knight is pinned for one move, until Black castles.} 9. Nbd2 O-O {Black castles short.} *
 
 [Chapter "Rubinstein: ...c5 frees the game"]
 [Type "concept"]
@@ -124,10 +124,10 @@
 {In the Advance, Black can offer to trade the bad bishop for White's good one with ...Bd7 and ...Bb5. This is the Wade Variation. White takes and gains time on the queen.}
 1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Qb6 5. Nf3 {[%cal Gc8d7,Gd7b5] The idea starts from this position.} 5... Bd7 6. Be2 Bb5 {[%cal Gb5e2] Offers the trade.} 7. Bxb5+ Qxb5 8. Na3 {[%cal Ga3b5] Gains time on the queen. Stockfish +0.2.} *
 
-[Chapter "Trade it: ...b6 and ...Ba6"]
+[Chapter "Trade it: ...b5 and ...Ba6"]
 [Type "concept"]
 
-{In the Steinitz, the bishop comes out on a6 to trade itself for White's good bishop. Don't take on d3 with the knight: 12...Nxd3+? 13.cxd3 only strengthens d4 (Stockfish +0.6).}
+{In the Steinitz, the bishop comes out on a6 to trade itself for White's good bishop. Don't take on d3 with the knight: 12...Nxd3+? 13.cxd3 gives up Black's best piece and leaves the bad bishop at home (Stockfish +0.5).}
 1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. e5 Nfd7 5. f4 c5 6. Nf3 Nc6 7. Be3 a6 8. Qd2 b5 9. dxc5 Bxc5 10. Bxc5 Nxc5 11. Qf2 Qb6 12. Bd3 {[%cal Gc8a6,Ga6d3] The idea starts from this position.} 12... b4 {Chases the knight from c3.} 13. Ne2 a5 14. O-O Ba6 {[%cal Ga6d3] Offers the trade. Equal.} *
 
 [Chapter "The long diagonal"]
@@ -158,20 +158,20 @@
 [Chapter "The queen behind d4"]
 [Type "concept"]
 
-{Count the defenders before taking on d4. Here White's queen still sees d4, so the knight trade leaves Black a piece down.}
-1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Qb6 6. a3 cxd4 7. cxd4 {[%cal Gd1d4] The idea starts from this position.} 7... Nxd4? 8. Nxd4 Qxd4? 9. Qxd4 {Black has lost a knight. Stockfish +7.0, winning for White.} *
+{Count the defenders before taking on d4. Here White's queen still sees d4, so taking the pawn leaves Black a piece down.}
+1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Qb6 6. a3 cxd4 7. cxd4 {[%cal Gd1d4] The idea starts from this position.} 7... Nxd4? 8. Nxd4 {[%cal Gd1d4] Now 8...Qxd4?? 9.Qxd4 loses the queen, so Black is simply a knight down for a pawn. Stockfish +3.6, winning for White.} *
 
 [Chapter "Qh5+ against an early ...f6"]
 [Type "concept"]
 
 {Breaking with ...f6 too early loosens the diagonal from h5 to Black's king. If Black also takes on e5, the queen check wins material.}
-1. e4 e6 2. d4 d5 3. e5 f6 {[%cal Gd1h5,Gh5e8] The idea starts from this position.} 4. Bd3 {Prepares Qh5+.} 4... fxe5? 5. Qh5+ g6 6. Bxg6+ {6...hxg6?? 7.Qxh8 loses the rook.} 6... Kd7 {Black's king is stuck in the center. Stockfish +1.4, clearly better for White.} *
+1. e4 e6 2. d4 d5 3. e5 f6 {[%cal Gd1h5,Gh5e8] The idea starts from this position.} 4. Bd3 {Prepares Qh5+.} 4... fxe5? 5. Qh5+ g6 6. Bxg6+ {6...hxg6?? 7.Qxh8 loses the rook.} 6... Kd7 {Black's king is stuck in the center. Stockfish +1.7, clearly better for White.} *
 
 [Chapter "Qh4+ against 3.f3"]
 [Type "concept"]
 
 {The move f3 weakens the diagonal from h4 to White's king. After 4.fxe4?, the queen check wins the e4 pawn.}
-1. e4 e6 2. d4 d5 3. f3?! {[%cal Gd8h4,Gh4e1] The idea starts from this position.} 3... dxe4 4. fxe4? Qh4+ {[%cal Gh4e4] Checks and hits e4.} 5. g3? Qxe4+ {Forks the king and the rook on h1. Stockfish −3.5, winning for Black.} *
+1. e4 e6 2. d4 d5 3. f3?! {[%cal Gd8h4,Gh4e1] The idea starts from this position.} 3... dxe4 4. fxe4? Qh4+ {[%cal Gh4e4] Checks and hits e4.} 5. g3? Qxe4+ {Forks the king and the rook on h1. Stockfish −4.0, winning for Black.} *
 
 [Chapter "Advance: 3.e5"]
 [Side "both"]
