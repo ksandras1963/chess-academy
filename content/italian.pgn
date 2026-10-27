@@ -60,7 +60,7 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 
 {[%cal Ga7f2,Gd6d5] [%csl Yg5] Match White's patience, then choose the right moment for ...d5. This position from the main line shows the setup.
 
-...Nf6 and ...d6 develop and support e5. Time your castling: first ...a6 and ...Ba7. An early ...O-O invites the Bg5 pin, while a king still on e8 can meet Bg5 with ...h6 and ...g5. Don't wait too long, though: most quick losses in the Italian happen to a king stuck in the center.
+...Nf6 and ...d6 develop and support e5. Time your castling: first ...a6 and ...Ba7. An early ...O-O invites the Bg5 pin, while a king still on e8 can meet Bg5 with ...h6 and ...g5. Don't wait too long, though: White's quick attacks, such as Ng5 and Bxf7+, work best against a king still on e8.
 
 ...a6 and ...Ba7 keep the bishop. On a7 it is safe from d4 and b4, still aims at f2, and supports a later ...b5.
 
@@ -70,19 +70,20 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 
 ...d5 is the freeing break. Play it when your pieces are ready to support it.} *
 
-[Chapter "Key ideas: Meeting d4"]
+[Chapter "Key ideas: The isolated d-pawn"]
 [Side "black"]
 [Type "ideas"]
+[FEN "r1bq1rk1/pp2nppp/2p5/3n4/2BP4/1Q3N2/PP1N1PPP/R3R1K1 w - - 0 13"]
 
-{When White plays an early d4, three moves do the work: take, check, and strike back with ...d5. Greco worked out these lines around 1620, and the recipe still holds. Step through the moves.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6
-5. d4 {White opens the center at once.} exd4 {Take, so White doesn't get a big center for free.}
-6. cxd4 Bb4+ {[%cal Gb4e1] Check, gaining time before White can castle.}
-7. Bd2 Bxd2+ 8. Nbxd2 d5 {[%cal Gd5e4,Gd5c4] The freeing move: it hits e4 and the bishop on c4, and opens the diagonal for the c8 bishop. Black is fine.
+{[%csl Rd4,Gd5] When White opens the center early with c3 and d4, you free your game with ...d5 (see Center attack: 5.d4). This position from that chapter shows the pawn structure that follows, and the structure decides the plans.
 
-If White plays 7.Nc3 instead, take on e4. In this Møller Attack Black keeps an extra pawn but must know the moves; see the Center attack chapter.
+White's d-pawn is isolated: no White pawn stands on the c- or e-file beside it, so no pawn can ever guard it. White has to defend it with pieces.
 
-Against the Evans Gambit, 4.b4, the same idea applies: take the pawn, retreat to a5, and give it back with ...d5 at the right moment.} *
+No White pawn can attack d5 either. Your knight is safe there, and ...c6 and ...Ne7 keep it in place.
+
+Trades help you. Each exchange takes away some of White's active play, and the fewer pieces are left, the weaker the lone d-pawn becomes.
+
+White's chances come early: active pieces and the open e-file. So finish developing and castle before you go after d4.} *
 
 [Chapter "Key ideas: Tricks to avoid"]
 [Side "black"]
