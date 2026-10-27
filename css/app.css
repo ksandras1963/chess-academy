@@ -205,6 +205,7 @@ main { outline: none; }
 .principles-title { margin-top: 24px; font-size: 1.25rem; }
 .principles { margin: 10px 0 0; padding-left: 1.5rem; display: grid; gap: 8px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
 .principles strong { font-weight: 600; }
+.home-levels { margin-top: 10px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
 .review-strip {
     margin-top: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px;
     padding: 12px 16px; border: 1px solid var(--brass); border-radius: 8px;
@@ -548,13 +549,14 @@ a.om-box:hover, a.om-box:focus-visible { border-color: var(--tone); }
 .trainer {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "head" "board" "controls" "commentary" "intro" "extra" "sheet";
+    grid-template-areas: "head" "board" "controls" "move" "commentary" "intro" "extra" "sheet";
     gap: 14px;
 }
 .trainer-panel { display: contents; }
 .tp-head { grid-area: head; }
 .trainer-board { grid-area: board; }
 .controls { grid-area: controls; }
+.move-head { grid-area: move; }
 .commentary { grid-area: commentary; }
 .lesson-intro { grid-area: intro; }
 .extra { grid-area: extra; }
@@ -643,7 +645,7 @@ button.sheet-move:hover { background: var(--felt-high); }
     }
     /* Long notes scroll inside the panel instead of being squeezed; the buttons stay in view. */
     .trainer-panel > * { flex-shrink: 0; }
-    .tp-head, .controls, .commentary, .extra, .scoresheet, .lesson-intro { grid-area: auto; }
+    .tp-head, .controls, .move-head, .commentary, .extra, .scoresheet, .lesson-intro { grid-area: auto; }
     .scoresheet { order: 1; max-height: calc(15 * (1.5rem + 7px) + 12px); }
     .sheet-move { padding-top: 3px; padding-bottom: 3px; }
     .controls { position: sticky; bottom: 0; z-index: 1; padding: 10px 0 2px; background: var(--felt); }
@@ -658,6 +660,15 @@ button.sheet-move:hover { background: var(--felt-high); }
     .trainer.has-intro .lesson-intro { order: 3; }
     .trainer.has-intro .scoresheet { order: 4; }
     .trainer.has-intro .extra { order: 5; }
+    /* Lessons: the move's heading, then the buttons, then its note, so the buttons stay at the same
+       height on every move. In Kumar's words: "Ensure all move lines are at same level. If additional
+       text is needed, add this below the move line." */
+    .trainer.has-move .move-head { order: 1; }
+    .trainer.has-move .controls { order: 2; position: static; padding: 0; }
+    .trainer.has-move .commentary { order: 3; min-height: 0; }
+    .trainer.has-move .lesson-intro { order: 4; }
+    .trainer.has-move .scoresheet { order: 5; }
+    .trainer.has-move .extra { order: 6; }
 }
 
 /* ---------- empty, settings ---------- */
