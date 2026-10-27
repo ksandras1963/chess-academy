@@ -1,0 +1,28 @@
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. e4 c6 {Caro-Kann Defense}
+2. d4
+(2. Nf3 d5 {[%order 1]} 3. exd5 {[%order 1] [%lesson 2.Nf3, Exchange: 3.exd5] Exchange}
+(3. e5 {[%order 2] [%lesson 2.Nf3, Advance: 3.e5] Advance}))
+(2. Nc3 d5 3. Nf3 {[%order 5] Two Knights Attack} dxe4 {[%order 1] [%lesson Two Knights Attack: 3...dxe4]}
+(3... Bg4 {[%order 2] [%level advanced] [%lesson Two Knights Attack, Mindeno Variation: 3...Bg4] Mindeno Variation}))
+2... d5
+3. e5 {[%order 2] Advance Variation}
+(3. exd5 cxd5 {[%order 3] Exchange Variation} 4. Bd3 {[%order 2] [%lesson Exchange Variation: 4.Bd3]}
+(4. Nf3 {[%order 1] [%lesson 2.Nf3, Exchange: 3.exd5] Same as 2.Nf3, Exchange})
+(4. c4 {[%order 3] [%lesson Panov Attack: 4.c4] Panov Attack})
+(4. Nc3 {[%order 4] [%level advanced] [%lesson Exchange Variation: 4.Nc3]}))
+(3. Nc3 dxe4 4. Nxe4 {[%order 4] Main Line (3.Nc3 or 3.Nd2)} Bf5 {[%order 1] [%lesson Classical Variation: 4...Bf5] Classical Variation}
+(4... Nf6 5. Nxf6+ exf6 {[%order 2] [%lesson Tartakower Variation: 5...exf6] Tartakower Variation}
+(5... gxf6 {[%order 3] [%level advanced] [%engine ok] [%lesson Bronstein-Larsen Variation: 5...gxf6] Bronstein-Larsen Variation}))
+(4... Nd7 {[%order 4] [%level advanced] [%lesson Karpov Variation: 4...Nd7] Karpov Variation}))
+(3. f3 {[%order 6] [%level advanced] Maróczy Variation (Fantasy)} dxe4 {[%order 1] [%level advanced] [%lesson Maróczy Variation, Maróczy Gambit: 5...exd4] [%lesson Maróczy Variation: 5...Bg4 6.Bc4]}
+(3... e6 {[%order 2] [%level advanced] [%lesson Maróczy Variation: 3...e6]}))
+3... Bf5
+(3... c5 {[%order 1] [%lesson Advance, Botvinnik-Carls Defense: 3...c5] Botvinnik-Carls Defense})
+4. Nf3 {[%order 2] [%lesson Advance, Short Variation: 4.Nf3] Short Variation}
+(4. Bd3 {[%order 3] [%lesson Advance, 4.Bd3]})
+(4. h4 {[%order 4] [%level advanced] [%lesson Advance, Tal Variation: 4.h4] Tal Variation})
+(4. g4 {[%order 5] [%level advanced] [%lesson Advance, Bayonet Attack: 4.g4] Bayonet Attack})
+(4. Nc3 {[%order 6] [%level advanced] [%lesson Advance, Van der Wiel Attack: 4.Nc3] Van der Wiel Attack}) *

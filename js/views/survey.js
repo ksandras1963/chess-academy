@@ -181,8 +181,8 @@ function flowchart(s, jump, linked) {
         if (course) starred = true
         const advanced = /\[%level advanced\]/.test(raw)
         if (advanced) anyAdvanced = true
-        const lesson = /\[%lesson ([^\]]+)\]/.exec(raw)
-        const href = lesson ? lessonHref(lesson[1].trim()) : null
+        // A box can name one lesson per side ([%lesson A] [%lesson B]); it opens the one in the chosen side's course.
+        const href = [...raw.matchAll(/\[%lesson ([^\]]+)\]/g)].map(m => lessonHref(m[1].trim())).find(Boolean) || null
         const content = [
             h("span", { class: "fc-move" }, moveRun(run)),
             name ? h("span", { class: "fc-name" }, figText(name),
