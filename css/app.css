@@ -300,6 +300,7 @@ a.course-link:hover { border-color: var(--brass); }
 .course-sections h2, .course-drills h2 { font-size: 1.3125rem; }
 .course-sections .hub-links { margin-top: 12px; }
 .course-drills .course-actions { margin-top: 12px; }
+.advanced-note { margin-top: 16px; }
 .ideas-list { margin-top: 32px; }
 .ideas-list h2 { font-size: 1.3125rem; }
 .ideas-list p { margin-top: 4px; font-size: 0.9375rem; }

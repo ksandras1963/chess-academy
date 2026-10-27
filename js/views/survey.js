@@ -236,11 +236,14 @@ export function lessonTarget(courses, node) {
  */
 export function variationMap(root, { target, hint, key, star = side => (side === "both" ? "Taught in a course, for both sides" : `Taught in a course, from ${side === "white" ? "White" : "Black"}'s side`) }) {
     let starred = false
+    // [%order 2] in a note places the box among its sibling boxes (most-played first, as in the
+    // course); boxes without one keep their order in the PGN, after the numbered ones.
+    const orderOf = n => Number((/\[%order (\d+)\]/.exec(n.comments.join(" ")) || [])[1] || 1e9)
     const boxesBelow = node => {
         const out = []
         const walk = n => n.children.forEach(k => (k.comments.length ? out.push(k) : walk(k)))
         walk(node)
-        return out
+        return out.map((k, i) => [orderOf(k), i, k]).sort((a, b) => a[0] - b[0] || a[1] - b[1]).map(x => x[2])
     }
     const item = (node, from) => {
         const run = []
