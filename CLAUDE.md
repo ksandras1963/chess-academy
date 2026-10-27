@@ -2,6 +2,8 @@
 
 These are Kumar's standing rules for every opening. Follow them in every session, for every course. File formats and the checker are in CONTENT-GUIDE.md.
 
+When Kumar gives a rule for every course, in any session, add it to this file in that session, in his words where possible. Merge main first, and once he approves the merge, tell the other sessions to merge main so they pick it up.
+
 ## One course per opening
 
 - One course teaches both sides. There are no separate White and Black courses, only separate drills: "Drill as White" and "Drill as Black".
