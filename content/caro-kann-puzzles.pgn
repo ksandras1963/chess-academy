@@ -1,17 +1,15 @@
 [Puzzle "Punish the pawn grab"]
 [Type "puzzle"]
 [Theme "Punish the mistake"]
-[Solve "8.Qb1"]
-[End "8.Qb1"]
-[Hint "Black's queen on b2 is short of squares. Offer a trade that Black can't refuse."]
+[Solve "9.dxc5"]
+[End "9.dxc5"]
+[Hint "Black's king is still on e8. Find a move that opens lines toward it."]
 
-1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 c5 6. Be3 Qb6 7. Nc3 Qxb2? 8. Qb1! {[%cal Gb1b2] Offers a queen trade. If Black avoids it, the queen runs out of squares; if Black takes, White wins back the pawn on b7 with a fine endgame.}
-(8. Nb5? {Chases the queen, but Black counterattacks.} 8... c4 9. Rb1 Qxc2 10. Qxc2 Bxc2 11. Rb2 Ba4 {Black has kept the extra pawn, and the game is level. Stockfish: 0.0, equal.})
-(8. Kd2?! {Guards c3 with the king, an awkward way to play.} 8... Qa3 9. Rb1 {White will win back b7, but the king is badly placed. Stockfish: 0.0, equal.})
-8... Qxb1+ {Black accepts the trade.}
-(8... Qb4 {Delays the trade.} 9. a3 Qxb1+ 10. Rxb1 {The same endgame. Stockfish: +1.4, clearly better for White.})
-(8... Qb6? {Keeps the queens, but leaves Black's king in the center.} 9. dxc5 Bxc5 10. Bb5+ {White's pieces swarm around Black's king. Stockfish: +4.6, winning for White.})
-9. Rxb1 c4 10. Rxb7 {White has won back the pawn, and the rook on b7 cramps Black's whole queenside. Stockfish: +1.4, clearly better for White. Material is level, so the score comes from White's active rook and Black's weak queenside pawns.}
+1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 c5 6. Be3 Qb6 7. Nc3 Qxb2? 8. Qb1 {Offers a queen trade.} Qb6? {Black refuses the trade, but the king is still in the center.}
+(8... Qxb1+ {The best reply: Black takes the trade.} 9. Rxb1 c4 10. Rxb7 {White wins back the pawn. Stockfish: +0.9, slightly better for White.})
+9. dxc5! {[%cal Gd4c5,Ge2b5] Takes a pawn, and after 9...Bxc5, Bb5+ catches Black's king in the center.}
+(9. Bb5+!? {Playable: the check first. White keeps an edge, but a smaller one.} 9... Nd7 10. dxc5 Qc7 {Stockfish: +0.8, slightly better for White.})
+9... Bxc5 10. Bb5+ {[%cal Gb5e8]} Kd8 {Blocking with a knight loses more.} 11. Na4 Qa5+ 12. Bd2 Qc7 {Black's king is stuck in the center and can no longer castle. Stockfish: +1.6, clearly better for White.}
 *
 
 [Puzzle "Bishop check, knight fork"]
