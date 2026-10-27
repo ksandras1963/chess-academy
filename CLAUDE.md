@@ -1,6 +1,8 @@
 # Opening Trainer: rules for every course
 
-These are Kumar's standing rules for every opening. Follow them in every session, for every course. File formats and the checker are in CONTENT-GUIDE.md.
+These are Kumar's standing rules for every opening. Follow them in every session, for every course. File formats and the checker are in CONTENT-GUIDE.md, and its section "General rules for every course" (name first, then the move; less text; order by club frequency; traps stay in the Traps section; and more) is part of these rules.
+
+When Kumar gives a rule for every course, in any session, add it to this file in that session, in his words where possible. Merge main first, and once he approves the merge, tell the other sessions to merge main so they pick it up.
 
 ## One course per opening
 
@@ -26,8 +28,21 @@ These are Kumar's standing rules for every opening. Follow them in every session
 
 ## Basic lines and "How often"
 
-- Basic holds only the lines played in about 10% or more of your games (9.5% and up): about 4 to 6 lines, the very core. Everything else goes to Advanced, grouped by variation name, most common first. Kumar makes exceptions himself (the King's Indian has 7 Basic lines).
+- Basic holds only the lines played in about 10% or more of your games (9.5% and up): about 4 to 6 lines, the very core. Everything else goes to Advanced, grouped by variation name, most common first. Kumar makes exceptions himself (the King's Indian has 7 Basic lines; the Caro-Kann keeps its 9 Basic lines and its own table, by his choice, so leave them as they are).
 - "How often", in tables and chapter bars, is the share of your games in the opening that reach the line, from the side you play in it: the product of the opponent's move frequencies from the course start, in Lichess rated rapid and classical games between players averaging 1800 to 2199 (`content/opening-stats.json`). A table counts all of the line's move orders.
+
+## Tables
+
+- A course page's table of the variations has the columns Variation, How often, and What to do. The Caro-Kann is the exception: it keeps its own columns, by Kumar's choice.
+
+## Lesson pages
+
+- A lesson's introduction (the text under "Starting position") stays visible while the moves play, and the current move is shown above it, beside the board. In Kumar's words: "Whatever is written after Starting position of each variation should remain visible when the pieces start moving."
+
+## Names
+
+- Spell out an abbreviation the first time a page uses it, then use the short form: "Queen's Gambit Declined (QGD)", then "QGD".
+- No colour in course titles: "Caro-Kann Defense Course", not "Caro-Kann Defense Course for White".
 
 ## Drills
 
@@ -53,6 +68,11 @@ These are Kumar's standing rules for every opening. Follow them in every session
 ## Back buttons
 
 Every lesson page (a line in Basic, Traps or Advanced) shows its back buttons in this order: the section, then the course page, then Main menu. For example: "< Basic variations < French Defense Course < Main menu". A Key ideas page shows the course page, then Main menu. A Puzzles page shows the course page, then Main menu. A course page shows Main menu, then the overview page the opening sits under, never the opening's own Introduction page, which repeats the course page's map and table (the Caro-Kann course page goes back to Replies to 1.e4).
+
+## Sessions and branches
+
+- One working session per opening. In Kumar's words: "Start new session for every opening - so I don't get confused."
+- Major structural changes to the app go on their own GitHub branch, for review.
 
 ## Before merging
 
