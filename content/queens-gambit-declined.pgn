@@ -128,7 +128,7 @@
 [Diagram "5.axb5"]
 
 {From the Queen's Gambit Accepted: 1.d4 d5 2.c4 dxc4 3.e3 b5 4.a4 c6 5.axb5. Almost one Accepted player in five tries to keep the extra pawn with 3...b5. Now the natural recapture opens the long diagonal from f3 to a8.}
-1. d4 d5 2. c4 dxc4 3. e3 b5 4. a4 c6 5. axb5 {[%cal Rf3a8]}
+1. d4 d5 2. c4 dxc4 3. e3 b5?! 4. a4 c6?! 5. axb5 {[%cal Rf3a8]}
 5... cxb5? {[%cal Gd1f3,Gf3a8] Opens the diagonal. Nothing stands between f3 and the rook on a8.}
 6. Qf3 {[%cal Gf3a8] Hits the rook. Black can't save it without losing a piece.} Nc6 {The best try: the knight blocks.}
 7. Qxc6+ {Nothing guards the knight, so the queen takes it with check.} Bd7
