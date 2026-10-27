@@ -140,12 +140,6 @@
                     "by": "IM Alex Banzea",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=8erPw1WADrQ"
-                },
-                {
-                    "title": "Caro–Kann Defence",
-                    "by": "Wikipedia",
-                    "kind": "Article",
-                    "url": "https://en.wikipedia.org/wiki/Caro%E2%80%93Kann_Defence"
                 }
             ],
             "courses": [
@@ -230,12 +224,6 @@
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=Xld_sJwdk8k"
-                },
-                {
-                    "title": "French Defence",
-                    "by": "Wikipedia",
-                    "kind": "Article",
-                    "url": "https://en.wikipedia.org/wiki/French_Defence"
                 }
             ],
             "courses": [
@@ -350,18 +338,6 @@
                     "by": "Anna Cramling",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI"
-                },
-                {
-                    "title": "Queen's Gambit",
-                    "by": "Wikipedia",
-                    "kind": "Article",
-                    "url": "https://en.wikipedia.org/wiki/Queen%27s_Gambit"
-                },
-                {
-                    "title": "Queen's Gambit Declined",
-                    "by": "Wikipedia",
-                    "kind": "Article",
-                    "url": "https://en.wikipedia.org/wiki/Queen%27s_Gambit_Declined"
                 }
             ],
             "courses": [
@@ -447,12 +423,6 @@
                     "by": "Anna Cramling",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI"
-                },
-                {
-                    "title": "Slav Defense",
-                    "by": "Wikipedia",
-                    "kind": "Article",
-                    "url": "https://en.wikipedia.org/wiki/Slav_Defense"
                 }
             ],
             "courses": [
@@ -569,12 +539,6 @@
                     "by": "Anna Cramling",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI"
-                },
-                {
-                    "title": "Queen's Gambit Accepted",
-                    "by": "Wikipedia",
-                    "kind": "Article",
-                    "url": "https://en.wikipedia.org/wiki/Queen%27s_Gambit_Accepted"
                 }
             ],
             "courses": [
@@ -666,12 +630,6 @@
                     "by": "Stjepan Tomić, Hanging Pawns",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=esjT83wWr78"
-                },
-                {
-                    "title": "Tarrasch Defense",
-                    "by": "Wikipedia",
-                    "kind": "Article",
-                    "url": "https://en.wikipedia.org/wiki/Tarrasch_Defense"
                 }
             ],
             "courses": [
@@ -824,12 +782,6 @@
                     "by": "IM Levy Rozman, GothamChess",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=kK0cq6UBt1Y"
-                },
-                {
-                    "title": "King's Indian Defence",
-                    "by": "Wikipedia",
-                    "kind": "Article",
-                    "url": "https://en.wikipedia.org/wiki/King%27s_Indian_Defence"
                 }
             ],
             "courses": [
