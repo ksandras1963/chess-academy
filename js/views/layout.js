@@ -14,7 +14,8 @@ export function trainerLayout(root, { backHref, backText, prev = null, next = nu
     const title = h("h1", { class: "tp-title" })
     const sub = h("p", { class: "tp-sub" })
     const sheet = h("div", { class: "scoresheet" })
-    // The line's introduction, which stays in view while the moves are played (line lessons, overview lines).
+    // The line's introduction, kept on screen below the current move while the moves are played
+    // (line lessons, overview lines).
     const intro = h("section", { class: "lesson-intro", "aria-label": "About this line" })
     intro.hidden = true
     const commentary = h("div", { class: "commentary", "aria-live": "polite" })

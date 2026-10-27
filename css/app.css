@@ -525,7 +525,7 @@ button.fc-box .fc-name { color: var(--ink); }
 .trainer {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "head" "board" "controls" "intro" "commentary" "extra" "sheet";
+    grid-template-areas: "head" "board" "controls" "commentary" "intro" "extra" "sheet";
     gap: 14px;
 }
 .trainer-panel { display: contents; }
@@ -628,11 +628,11 @@ button.sheet-move:hover { background: var(--felt-high); }
     .commentary { order: 2; }
     .extra { order: 3; }
     .controls { order: 4; }
-    /* A line with an introduction: title, the introduction, the current move, the buttons, then the
-       score sheet, so the introduction and the move's note stay in view beside the board. */
-    .trainer.has-intro .lesson-intro { order: 1; }
-    .trainer.has-intro .commentary { order: 2; }
-    .trainer.has-intro .controls { order: 3; }
+    /* A line with an introduction: title, the current move with its note, the buttons, the
+       introduction, then the score sheet, so the move's note is never pushed below a long sheet. */
+    .trainer.has-intro .commentary { order: 1; }
+    .trainer.has-intro .controls { order: 2; }
+    .trainer.has-intro .lesson-intro { order: 3; }
     .trainer.has-intro .scoresheet { order: 4; }
     .trainer.has-intro .extra { order: 5; }
 }
