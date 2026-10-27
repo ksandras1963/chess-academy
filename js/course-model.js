@@ -232,6 +232,22 @@ function extractLines(chapter, course) {
     return sideLines(chapter, course, chapter.side)
 }
 
+/**
+ * The variation a chapter title names: the part before the colon, and after the last comma there
+ * ("Mar del Plata, Bayonet Attack: 9.b4" gives "Bayonet Attack", "Exchange: 3.cxd5" gives "Exchange").
+ * "Main line" gives way to the name before it ("Mar del Plata, Main line: 9.Ne1" gives "Mar del
+ * Plata"), and a lowercase description to the move after the colon ("Sidelines, fourth moves:
+ * 4.Bg5" gives "4.Bg5").
+ */
+function variationOf(title) {
+    const colon = title.indexOf(":")
+    const parts = (colon < 0 ? title : title.slice(0, colon)).split(",").map(p => p.trim()).filter(Boolean)
+    if (parts.length > 1 && parts.at(-1).toLowerCase() === "main line") parts.pop()
+    const name = parts.at(-1) || "Main line"
+    const after = colon < 0 ? "" : title.slice(colon + 1).trim()
+    return /^[a-z]/.test(name) && after ? after : name
+}
+
 function sideLines(chapter, course, side) {
     const learner = side === "black" ? "b" : "w"
     const both = chapter.side === "both"
@@ -252,7 +268,9 @@ function sideLines(chapter, course, side) {
     walk(chapter.root, [])
     return lines.map(nodes => {
         const deviations = nodes.filter(n => n.parent.children[0] !== n).map(moveLabel)
-        const suffix = deviations.length === 0 ? "Main line"
+        // In a chapter drilled from both sides, the main line takes the variation's name, so the two
+        // copies read "Bayonet Attack, as White" and "Bayonet Attack, as Black", not "Main line".
+        const suffix = deviations.length === 0 ? (both ? variationOf(chapter.title) : "Main line")
             : deviations.length === 1 ? deviations[0]
                 : `${deviations[0]} … ${deviations[deviations.length - 1]}`
         const variation = both ? `${suffix}, as ${side === "white" ? "White" : "Black"}` : suffix

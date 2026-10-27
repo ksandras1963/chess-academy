@@ -10,28 +10,16 @@
             "puzzles": "content/italian-puzzles.pgn",
             "furtherStudy": [
                 {
-                    "title": "Italian Game Chess Opening Explained in 20 Minutes [Crash Course]",
+                    "title": "The Complete Italian Game Guide | Gambits, Traps for White & Black",
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=qUews8fEGkc"
+                    "url": "https://www.youtube.com/watch?v=yWlMjUiNLBM"
                 },
                 {
                     "title": "Italian Game Every Single Line Explained [Opening Crash Course]",
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=ALwL52J8IV4"
-                },
-                {
-                    "title": "Learn The Italian Game, ALL Variations Explained [Traps, Ideas, And Plans]",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=6ACqk117Q7U"
-                },
-                {
-                    "title": "The Complete Italian Game Guide | Gambits, Traps for White & Black",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=yWlMjUiNLBM"
                 },
                 {
                     "title": "7 WINNING Attacking PLANS in the Italian Game for White",
@@ -44,44 +32,68 @@
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=MhNs8GLo894"
-                },
-                {
-                    "title": "Master The Italian Game: Chess Strategy Explained",
-                    "by": "Coach Kestony",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=8YP1iVMG_Rg"
                 }
             ],
             "courses": [
                 {
-                    "id": "italian-white",
-                    "side": "white",
-                    "file": "content/italian-white.pgn",
-                    "repertoire": "Giuoco Pianissimo: c3, d3, and a slow build-up",
-                    "summary": "Build with c3 and d3, castle, bring the queen's knight to g3, and break with d4 when ready.",
-                    "overview": [
-                        "One plan against almost everything: c3 and d3, castle, Re1 and h3, and the knight route b1-d2-f1-g3. Play d4 only when it gains something.",
-                        "Black's third move decides the chapter: 3...Bc5 comes up in about 40% of your games, and 3...Nf6 in about 30%.",
-                        "Against 3...Nf6, play 4.d3, not 4.Ng5 or 4.Nc3: e4 stays protected, and you skip the Fried Liver theory and the fork trick.",
-                        "Keep the Italian bishop. Drop it back to b3 or c2 before ...Na5 or ...b5 can trade it off.",
-                        "The pin ...Bg4 is harmless here: ask the bishop with h3, guard f3 with Nbd2, and chase it with Ng3 and Nh4.",
-                        "f7 is Black's weak point. If Black shuts in the f8 bishop with ...d6 and then plays ...Nf6, Ng5 hits f7 at once."
-                    ]
-                },
-                {
-                    "id": "italian-black",
-                    "side": "black",
-                    "file": "content/italian-black.pgn",
-                    "repertoire": "3...Bc5 with ...Nf6, ...d6, ...a6, ...h6",
-                    "summary": "Mirror White's slow setup, keep the bishop with ...a6 and ...Ba7, and know how to meet d4 and the Evans Gambit.",
-                    "overview": [
-                        "Play 3...Bc5, then ...Nf6, ...d6, ...a6 and ...Ba7. On a7 the bishop survives d4 and b4 and still aims at f2.",
-                        "In more than half of your games White builds slowly with c3 and d3, or castles first. Mirror the setup: castle, ...h6 to keep White's pieces off g5, ...Re8, then ...Be6 and ...d5.",
-                        "Don't rush ...d5. Played before you've developed, it lets White's queen join the bishop against d5 and f7 with Qb3.",
-                        "Against the Center attack (4.c3 and 5.d4), take on d4, check on b4, and free your game with ...d5.",
-                        "The Møller Attack, 7.Nc3, comes up often: take on e4, because the pin on c3 makes it safe.",
-                        "Against the Evans Gambit (4.b4), take the pawn, retreat to a5, and give it back with ...d5 at the right moment."
-                    ]
+                    "id": "italian",
+                    "side": "both",
+                    "file": "content/italian.pgn",
+                    "repertoire": "As White: the Giuoco Pianissimo, with c3, d3 and a slow build-up. As Black: 3...Bc5, then ...Nf6, ...d6, ...a6 and ...Ba7.",
+                    "summary": "1.e4 e5 2.Nf3 Nc6 3.Bc4: the bishop aims at f7, the weakest square near Black's king.",
+                    "why": {
+                        "text": "As White, the Italian follows the opening principles: develop quickly, castle early, and aim the bishop at f7, the square only Black's king defends. The slow Giuoco Pianissimo taught here avoids the long forcing lines of the open game, so one plan works against almost everything. The opening goes back to Greco in the 1620s, and top players have favored it since the Berlin Defense blunted the Ruy Lopez in Kramnik's 2000 world title match.\n\nAs Black, 3...Bc5 is the most natural reply: the bishop takes its best diagonal and aims at f2, just as White's aims at f7. It avoids the sharp 4.Ng5 lines of the Two Knights Defense, and in most games you can copy White's quiet setup. Only the Center attack and the Evans Gambit need exact moves."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Giuoco Piano: 3...Bc5",
+                                "40% as White",
+                                "4.c3 and 5.d3, castle, Re1. Drop the bishop to b3 before ...Na5 or ...b5 can trade it."
+                            ],
+                            [
+                                "Two Knights: 3...Nf6",
+                                "29% as White",
+                                "4.d3, not 4.Ng5. 4...Bc5 5.c3 is the main line. Against ...Na5, Bb5, Ba4 and Bc2 keep the bishop."
+                            ],
+                            [
+                                "Castling first: 4.O-O",
+                                "24% as Black",
+                                "4...Nf6, then ...d6, ...a6 and ...Ba7. Against 5.d4, take with the bishop: 5...Bxd4."
+                            ],
+                            [
+                                "Center attack: 4.c3 Nf6 5.d4",
+                                "19% as Black",
+                                "5...exd4 6.cxd4 Bb4+, then ...d5. Against 7.Nc3, take the e4 pawn."
+                            ],
+                            [
+                                "Quiet 4.d3",
+                                "14% as Black",
+                                "4...Nf6 and ...d6. Against 5.Bg5, ...h6 and, if needed, ...g5 before you castle."
+                            ],
+                            [
+                                "Main line: 4.c3 Nf6 5.d3",
+                                "14% as Black",
+                                "...d6, ...a6, ...Ba7, castle and ...h6. ...d5 only after ...Re8 and ...Be6."
+                            ],
+                            [
+                                "Evans Gambit: 4.b4",
+                                "10% as Black",
+                                "4...Bxb4 5.c3 Ba5, then give the pawn back with ...d5."
+                            ],
+                            [
+                                "Italian Four Knights: 4.Nc3",
+                                "9% as Black",
+                                "4...Nf6, ...d6, ...a6 and ...Ba7. The fork trick 5.Nxe5? fails to 6...Nxc4!"
+                            ]
+                        ],
+                        "note": "How often: the share of your Italian games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
                 }
             ]
         },
@@ -217,24 +229,6 @@
                     "url": "https://www.youtube.com/watch?v=5pec-u6PSvA"
                 },
                 {
-                    "title": "5 Reasons to Play the French Defense",
-                    "by": "GM Jose Gonzalez",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=5B0pH12fUn0"
-                },
-                {
-                    "title": "The French Defense Chess Opening Explained in 4 Minutes by a Chess Master",
-                    "by": "NM Nelson Lopez, Chess Vibes",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=vOw5BQYCfWA"
-                },
-                {
-                    "title": "Learn the French Defense in 7 Minutes",
-                    "by": "Kamryn",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=gRUb6EeHKsM"
-                },
-                {
                     "title": "Secret Opening Weapon for White Against the French Defense",
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
@@ -249,34 +243,54 @@
             ],
             "courses": [
                 {
-                    "id": "french-white",
-                    "side": "white",
-                    "file": "content/french-white.pgn",
-                    "repertoire": "Advance (3.e5), with 6.a3 in the main line",
-                    "summary": "Gain space with 3.e5, hold d4 with c3 and Nf3, and expand on the queenside with a3 and b4. The Milner-Barry Gambit is a trap-filled surprise weapon.",
-                    "overview": [
-                        "Play 3.e5. The pawn takes f6 away from Black's king's knight and gives you space; Black answers 3...c5 in nine games out of ten.",
-                        "Hold d4 with c3 and Nf3. Black's whole plan is pressure on that pawn with ...Nc6, ...Qb6 and a knight on f5.",
-                        "The main line, 5...Qb6, comes up in a quarter of your games. Play 6.a3 and b4 to gain space; after 6...cxd4 7.cxd4, Nc3 and Na4 chase the queen.",
-                        "Count the attackers before Black takes on d4. With your queen behind the pawn, ...Nxd4 just drops a piece; with your bishop on d3 in the way, Bb5+ wins Black's queen.",
-                        "Against 5...Bd7, play 6.Be2 and castle. Avoid 6.Bb5?, which runs into ...Nxe5.",
-                        "Surprise weapon: the Milner-Barry Gambit, 6.Bd3. It is risky against best play, but Black often grabs too much: 7...Nxd4?? loses the queen, and 10...Qxe5 11.Re1 sets more traps."
-                    ]
-                },
-                {
-                    "id": "french-black",
-                    "side": "black",
-                    "file": "content/french-black.pgn",
-                    "repertoire": "3...c5 against the Advance, the Rubinstein (3...dxe4), and ...Nc6 in the Exchange",
-                    "summary": "Build the ...e6 and ...d5 center, attack d4 against the Advance, take on e4 against 3.Nc3 and 3.Nd2, and develop actively in the Exchange.",
-                    "overview": [
-                        "The French idea: ...e6 and ...d5 build a solid center and keep f7 safe. The price is the c8 bishop behind your pawn on e6, so plan to free it or trade it.",
-                        "The Exchange is your most common opponent, about three games in ten, because 2.Nf3 d5 3.exd5 exd5 4.d4 leads there too. Develop with ...Nc6, ...Bd6, ...Bg4, ...Qd7 and ...Nge7, and castle short.",
-                        "Against the Advance (3.e5), about one game in five, hit d4 at once with ...c5, ...Nc6 and ...Qb6. Against 6.a3, lock the queenside with 6...c4.",
-                        "Against 3.Nc3 and 3.Nd2, take on e4 (the Rubinstein): ...Nd7, ...Ngf6, then ...c5 to free your game.",
-                        "In the Milner-Barry Gambit (6.Bd3), play ...Bd7 before ...Nxd4. Otherwise 8.Nxd4 Qxd4 9.Bb5+ wins your queen.",
-                        "Against the Monte Carlo (4.c4), check with 4...Bb4+, castle, and take on c4 only after White's bishop has moved."
-                    ]
+                    "id": "french",
+                    "side": "both",
+                    "file": "content/french.pgn",
+                    "repertoire": "As White: the Advance (3.e5), with 6.a3 in the main line. As Black: ...c5 against the Advance, ...Nc6 and ...Bd6 in the Exchange, and the Rubinstein (3...dxe4) against 3.Nc3 and 3.Nd2.",
+                    "summary": "1.e4 e6 2.d4 d5: Black builds a solid center and hits back with ...c5.",
+                    "why": {
+                        "text": "As White, the Advance gives you space and one clear plan, with much less theory to learn than after 3.Nc3, where Black chooses between the Winawer, the Classical and the Rubinstein.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Advance main line: 4.c3 Nc6 5.Nf3 Qb6 (also 4...Qb6 5.Nf3 Nc6)",
+                                "33% as White",
+                                "Play 6.a3 and b4. After 6...cxd4 7.cxd4, Nc3 and Na4 chase the queen. Count the attackers before Black takes on d4."
+                            ],
+                            [
+                                "Exchange Variation: 3.exd5 exd5 (also 2.Nf3 d5 3.exd5 exd5 4.d4)",
+                                "30% as Black",
+                                "Develop with ...Nc6, ...Bd6, ...Bg4 and ...Nge7, then castle short. Against 4.Nc3, put the knight on f6 to guard d5."
+                            ],
+                            [
+                                "Advance Variation: 3.e5",
+                                "22% as Black",
+                                "Hit d4 with ...c5, ...Nc6 and ...Qb6. Against 6.a3, lock the queenside with 6...c4. Against the Milner-Barry Gambit, 6.Bd3, play ...Bd7 before ...Nxd4."
+                            ],
+                            [
+                                "Rubinstein Variation: 3.Nc3 or 3.Nd2 dxe4",
+                                "19% as Black",
+                                "Play ...Nd7 and ...Ngf6 to trade White's knight on e4, then free your game with ...c5."
+                            ],
+                            [
+                                "Euwe Variation: 5...Bd7",
+                                "9% as White",
+                                "Play 6.Be2 and castle. Avoid 6.Bb5?, which runs into 6...Nxe5!"
+                            ],
+                            [
+                                "Early ...cxd4 and the Wade Variation: 4...cxd4, or 4...Qb6 5.Nf3 Bd7",
+                                "6% as White",
+                                "Against 5...Bb4+, block with 6.Nc3. Against the Wade, trade bishops with 6.Be2 Bb5 7.Bxb5+ Qxb5 and hit the queen with 8.Na3."
+                            ]
+                        ],
+                        "note": "How often: the share of your French games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
                 }
             ]
         },
