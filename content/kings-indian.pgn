@@ -925,7 +925,7 @@ a5 {[%cal Ga5b4] Opens the a-file before White plays c5.}
 
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 {King's Indian Defense}
 4. e4
-(4. Nf3 d6 5. g3 O-O 6. Bg2 {[%order 2] Fianchetto} Nc6
+(4. Nf3 d6 5. g3 O-O 6. Bg2 {[%order 1] Fianchetto} Nc6
 (6... Nbd7 {[%course both] [%order 1] Classical})
 (6... c5 {[%order 3] Yugoslav})
 7. O-O a6 {[%course both] [%order 2] Panno})
@@ -937,10 +937,10 @@ a5 {[%cal Ga5b4] Opens the a-file before White plays c5.}
 (5. Be2 O-O 6. Bg5 {[%order 5] Averbakh} c5 {[%order 2] Benoni Defense}
 (6... Na6 {[%order 3] Modern Defense})
 (6... h6 {[%order 1] Flexible Defense}))
-(5. f4 O-O 6. Nf3 {[%order 3] Four Pawns Attack} c5 {[%course both] [%order 1] Main line}
+(5. f4 O-O 6. Nf3 {[%order 2] Four Pawns Attack} c5 {[%course both] [%order 1] Main line}
 (6... Na6 {[%order 2]}))
 (5. h3 O-O {[%order 6] Makogonov})
-5... O-O 6. Be2 e5 {[%order 1] Classical}
+5... O-O 6. Be2 e5 {[%order 3] Classical}
 7. O-O
 (7. Be3 {[%order 5] Gligorić System})
 (7. d5 {[%order 3] Petrosian System})
