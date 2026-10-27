@@ -22,6 +22,10 @@ export function trainerLayout(root, { backHref, backText, trail = null, prev = n
     // (line lessons, overview lines).
     const intro = h("section", { class: "lesson-intro", "aria-label": "About this line" })
     intro.hidden = true
+    // The current move's heading, above the buttons in lessons, so the buttons keep their height
+    // whatever the length of the note below them.
+    const move = h("div", { class: "move-head" })
+    move.hidden = true
     const commentary = h("div", { class: "commentary", "aria-live": "polite" })
     const extra = h("div", { class: "extra" })
     const controls = h("div", { class: "controls" })
@@ -29,7 +33,7 @@ export function trainerLayout(root, { backHref, backText, trail = null, prev = n
         h("div", { class: "trainer-board" }, boardEl),
         h("aside", { class: "trainer-panel" },
             h("header", { class: "tp-head" }, back, steps, title, sub),
-            intro, commentary, controls, sheet, extra))
+            intro, move, commentary, controls, sheet, extra))
     root.append(trainer)
     return {
         boardEl, sheet, commentary, extra, controls,
@@ -38,6 +42,12 @@ export function trainerLayout(root, { backHref, backText, trail = null, prev = n
             intro.replaceChildren(...(nodes.length ? [h("h2", { class: "intro-label" }, "About this line"), ...nodes] : []))
             intro.hidden = !nodes.length
             trainer.classList.toggle("has-intro", nodes.length > 0) // reorders the panel (css/app.css)
+        },
+        /** Shows the current move's heading (or hides it when null) above the buttons, with the note below them. */
+        setMove(heading) {
+            move.replaceChildren(...(heading ? [heading] : []))
+            move.hidden = !heading
+            trainer.classList.add("has-move") // reorders the panel (css/app.css)
         },
         setTitle(t, s = "") {
             title.textContent = t
