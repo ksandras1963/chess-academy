@@ -96,6 +96,7 @@
 9. g6 {Sets the trap: if Black grabs on f2, 10.Nxe5! wins.}
 9... d5! {[%cal Gd5c4] Blocks the bishop's line to f7 (c4, d5, e6, f7) and attacks the bishop at the same time. Only now is ...Nxf2 safe.}
 (9... Nxf2? {Grabs the pawn and forks queen and rook, but it walks into the trap: see the next puzzle.} 10. Nxe5! Nxh1 11. gxf7+ Rxf7 12. Bxf7+ Kf8 13. Qh5 {Stockfish: +5.4, winning for White.})
+(9... d6!? {Also keeps the win: it guards e5, so the Nxe5 trick no longer works. 9...d5 is stronger because it also hits the bishop.} 10. Bxf7+ Rxf7 11. gxf7+ Kxf7 12. Rf1 {Stockfish: −1.6, clearly better for Black.})
 (9... Bxf2+!? {Also wins for Black, though 9...d5 is cleaner.} 10. Ke2 Nd4+ 11. Nxd4 exd4 12. gxf7+ Rxf7 13. Bxf7+ {Stockfish: −4.5, winning for Black.})
 10. Nxd5 Nxf2 11. Nxe5 Nxd1 12. gxf7+ Rxf7 13. Rh8+ Kxh8 14. Nxf7+ Kh7 15. Nxd8 Nxd8 {The checks run out, and Black has an extra piece for two pawns. Stockfish: −4.5, winning for Black.}
 *
@@ -249,7 +250,7 @@
 [Type "puzzle"]
 [Theme "Tactics"]
 [Solve "7.Nxf7"]
-[End "8.Bxd5+"]
+[End "7.Nxf7"]
 [Hint "Your knight on g5 is attacked. Before you save it, look at f7: only Black's king defends it."]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Nf6? 5. Ng5 d5 6. exd5 Nxd5? 7. Nxf7! {[%cal Gg5f7] The knight was attacked by Black's queen anyway. Now it takes on f7 and drags the king out.}

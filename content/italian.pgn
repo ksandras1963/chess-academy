@@ -198,7 +198,7 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 {[%cal Gc5f2] Develops to the best square: the bishop controls d4 and eyes f2.}
 4. c3 {White prepares d4, which would hit our bishop and build a big center.} Nf6 {Hits e4 at once, before White can play d4. White must now defend e4 or push d4 immediately.}
 5. d3 {The quiet Giuoco Pianissimo: White guards e4 and saves d4 for later.}
-(5. O-O {Castles first, keeping both d3 and d4 in reserve.} d6 {Keeps our usual setup. Stockfish slightly prefers 5...Nxe4, but after 6.d4 d5 the game turns sharp.}
+(5. O-O {Castles first, keeping both d3 and d4 in reserve.} d6 {[%engine ok] Keeps our usual setup. Stockfish slightly prefers 5...Nxe4, but after 6.d4 d5 the game turns sharp.}
 6. d4 {Hits the bishop and e5 at once. White's usual move here; 6.d3 goes back to the main line (see Advanced variations).} Bb6 {On b6 the bishop is safe and still aims at f2. Taking on d4 would give White a big pawn center after cxd4.})
 5... d6 {Supports e5 and opens the diagonal for the light-squared bishop. With e5 solid, White's d4 break will be less effective.}
 (5... d5?! {Too early. After 6.exd5 Nxd5 7.Qb3! queen and bishop hit d5 and f7 together, and Black loses a pawn or more.} 6. exd5 Nxd5 7. Qb3)
