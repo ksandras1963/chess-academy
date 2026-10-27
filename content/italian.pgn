@@ -78,9 +78,9 @@ A pin is not a cage. Légal's mate shows that a pinned knight can still move whe
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6
 5. d4 {White opens the center at once.} exd4 {Take, so White doesn't get a big center for free.}
 6. cxd4 Bb4+ {[%cal Gb4e1] Check, gaining time before White can castle.}
-7. Bd2 Bxd2+ 8. Nbxd2 d5 {[%cal Gd5e4,Gd5c4] The freeing move. It hits e4 and the bishop on c4 and opens the diagonal for the c8 bishop. Black is fine.
+7. Bd2 Bxd2+ 8. Nbxd2 d5 {[%cal Gd5e4,Gd5c4] The freeing move: it hits e4 and the bishop on c4, and opens the diagonal for the c8 bishop. Black is fine.
 
-If White plays 7.Nc3 instead, take on e4. In the Møller Attack (first played in 1898) Black keeps an extra pawn but must know the moves; see the Center attack chapter.
+If White plays 7.Nc3 instead, take on e4. In this Møller Attack Black keeps an extra pawn but must know the moves; see the Center attack chapter.
 
 Against the Evans Gambit, 4.b4, the same idea applies: take the pawn, retreat to a5, and give it back with ...d5 at the right moment.} *
 
@@ -212,7 +212,7 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 12. Bxe6 Rxe6 {The rook recaptures and can swing along the sixth rank.}
 13. Ng3 {Balanced. Black plans ...d5, or ...Qd7 and ...Rae8 first.} *
 
-[Chapter "Quiet 4.d3"]
+[Chapter "Quiet Variation: 4.d3"]
 [Side "black"]
 [Type "line"]
 [Opening "Italian Game: Giuoco Pianissimo"]
@@ -261,7 +261,7 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 7... g5 {[%cal Gg5h4] Breaks the pin while Black's king is still on e8. Stockfish slightly prefers Black.} 8. Bg3 a6 {Next ...Ba7, then ...Qe7 and ...Be6.})
 6... a6 {Prepares ...Ba7 as usual.} 7. a3 Ba7 8. O-O O-O {Both sides have castled. Next ...h6 and ...Be6.} *
 
-[Chapter "Other third moves"]
+[Chapter "Other third moves: 3...Be7 and 3...h6"]
 [Side "white"]
 [Diagram "3...Be7"]
 [Type "line"]
@@ -522,7 +522,7 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 (3... d6 {Paris Defense})
 4. c3 {}
 (4. O-O {[%course black] Castling first})
-(4. d3 {[%course black] Quiet 4.d3})
+(4. d3 {[%course black] Quiet Variation})
 (4. b4 {[%course black] Evans Gambit})
 (4. Nc3 {[%course black] Italian Four Knights})
 4... Nf6 5. d3 {[%course both] Giuoco Pianissimo}
