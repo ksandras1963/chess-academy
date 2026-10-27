@@ -27323,6 +27323,13 @@
     "f8e7": 1,
     "f8c5": 1
    }
+  },
+  "rnbqk1nr/ppp2ppp/8/4P3/1BP5/8/PP3pPP/RN1QKBNR w KQkq -": {
+   "games": 10900,
+   "moves": {
+    "e1e2": 9930,
+    "e1f2": 957
+   }
   }
  }
 }
