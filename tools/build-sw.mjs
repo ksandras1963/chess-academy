@@ -14,9 +14,10 @@ import { fileURLToPath } from "node:url"
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 export const SW_FILE = "sw.js"
 
-// What the app loads in the browser. Docs, licenses and tools are not needed offline.
+// What the app loads in the browser. Docs, licenses and tools are not needed offline, and neither is
+// content/set-aside (lessons left out of the app for now).
 const DIRS = ["css", "js", "content", "fonts", "icons", "vendor"]
-const SKIP = /(^|\/)(LICENSE|OFL\.txt|README|.*\.md$)/
+const SKIP = /(^|\/)(LICENSE|OFL\.txt|README|.*\.md$)|^content\/set-aside\//
 
 async function walk(dir) {
     const out = []

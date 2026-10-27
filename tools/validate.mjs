@@ -115,8 +115,8 @@ async function moveLoss(fen, uci) {
 }
 
 for (const meta of courses) {
-    const learner = meta.side === "white" ? "w" : "b"
-    const section = [`## ${meta.opening.name} — as ${meta.side === "white" ? "White" : "Black"} (\`${meta.id}\`)`, ""]
+    const sideText = `as ${meta.side === "white" ? "White" : "Black"}`
+    const section = [`## ${meta.opening.name} — ${sideText} (\`${meta.id}\`)`, ""]
     let course
     try {
         course = buildCourse(meta, await readFile(path.join(root, meta.file), "utf8"))
@@ -168,8 +168,9 @@ for (const meta of courses) {
         const notes = []
         const ends = []
         const done = new Set()
-        const checkMove = async (node, title) => {
-            const key = node.fenBefore + node.uci
+        // The learner's side is the chapter's: a course for both sides mixes them.
+        const checkMove = async (node, title, learner) => {
+            const key = node.fenBefore + node.uci + learner
             if (done.has(key)) return
             done.add(key)
             const r = await moveLoss(node.fenBefore, node.uci)
@@ -184,13 +185,13 @@ for (const meta of courses) {
         }
         // Moves shown on Key ideas pages are checked too, though they are never drilled.
         for (const ch of chapters.filter(c => c.type === "ideas")) {
-            for (const node of mainPath(ch.root)) await checkMove(node, ch.title)
+            for (const node of mainPath(ch.root)) await checkMove(node, ch.title, ch.learner)
         }
         for (const line of course.lines) {
-            for (const node of line.nodes) await checkMove(node, line.title)
+            for (const node of line.nodes) await checkMove(node, line.title, line.learner)
             const last = line.nodes[line.nodes.length - 1]
             const e = await evalCached(last.fen)
-            const learnerView = (last.color === learner ? -1 : 1) * e.score
+            const learnerView = (last.color === line.learner ? -1 : 1) * e.score
             const named = [...line.nodes].reverse().map(n => openings.byEpd.get(epd(n.fen))).find(Boolean)
             ends.push(`| ${line.title} | ${pawns(learnerView)}${learnerView < LINE_END_BAD ? " **flag**" : ""} | ${named ? `${named.eco} ${named.name}` : "—"} |`)
             if (learnerView < LINE_END_BAD) flags.push(`| ${line.title} | (line end) | — | ends at ${pawns(learnerView)} |`)
@@ -271,18 +272,24 @@ for (const meta of (catalog.surveys || []).filter(() => !onlyCourse)) {
         if (!ch.diagram) problems.push("no [Diagram] header naming the move whose position the overview's board shows")
         else if (ch.diagram.error) problems.push(ch.diagram.error)
         if (ch.headers.Page && !surveyIds.has(ch.headers.Page)) problems.push(`[Page "${ch.headers.Page}"] is not an overview id in courses.json`)
-        if (ch.headers.Course && ch.headers.Course !== "none" && !catalog.openings.some(o => o.id === ch.headers.Course)) {
-            problems.push(`[Course "${ch.headers.Course}"] is not an opening id in courses.json (or "none")`)
+        // [Course] may list several openings, separated by spaces (the Queen's Gambit's four courses).
+        const courseIds = (ch.headers.Course || "").split(/\s+/).filter(Boolean)
+        for (const id of courseIds) if (id !== "none" && !catalog.openings.some(o => o.id === id)) {
+            problems.push(`[Course "${id}"] is not an opening id in courses.json (or "none")`)
         }
-        // [WhiteLesson] and [BlackLesson] name a chapter of that opening's course, which the page links to.
+        // [WhiteLesson] and [BlackLesson] name a chapter of that opening's course, which the page links to;
+        // [WhiteCourse] or [BlackCourse] names another opening for that side.
         for (const side of ["white", "black"]) {
-            const tag = side === "white" ? "WhiteLesson" : "BlackLesson"
+            const Side = side === "white" ? "White" : "Black"
+            const tag = `${Side}Lesson`
+            const courseId = ch.headers[`${Side}Course`] || courseIds[0]
+            if (ch.headers[`${Side}Course`] && !catalog.openings.some(o => o.id === courseId)) problems.push(`[${Side}Course "${courseId}"] is not an opening id in courses.json`)
             const title = ch.headers[tag]
             if (!title) continue
-            const lessonMeta = catalog.openings.find(o => o.id === ch.headers.Course)?.courses.find(m => m.side === side && m.file)
-            if (!lessonMeta) { problems.push(`[${tag}] needs a [Course] header naming an opening with a written ${side} course`); continue }
+            const lessonMeta = catalog.openings.find(o => o.id === courseId)?.courses.find(m => m.side === side && m.file)
+            if (!lessonMeta) { problems.push(`[${tag}] needs a [Course] or [${Side}Course] header naming an opening with a written ${side} course`); continue }
             if (!lessonCourses.has(lessonMeta.id)) lessonCourses.set(lessonMeta.id, buildCourse(lessonMeta, await readFile(path.join(root, lessonMeta.file), "utf8")))
-            if (!lessonCourses.get(lessonMeta.id).chapters.some(x => x.title === title)) problems.push(`[${tag} "${title}"] is not a chapter title in ${lessonMeta.file}`)
+            if (!lessonCourses.get(lessonMeta.id).chapters.some(x => x.title === title && x.side === side)) problems.push(`[${tag} "${title}"] is not a ${side} chapter title in ${lessonMeta.file}`)
         }
         const entries = openings.byName.get(ch.opening)
         if (!entries) problems.push(`"${ch.opening}" is not a Lichess opening name`)

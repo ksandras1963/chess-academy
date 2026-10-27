@@ -6,6 +6,7 @@ import { parsePgn, parseComment } from "./pgn.js"
 
 export const CHAPTER_TYPES = ["line", "trap", "ideas", "puzzle", "map"] // "map": an overview's flowchart
 export const LEVELS = ["basic", "advanced"]
+export const SIDES = ["white", "black"]
 
 /**
  * The sections of a course page, in order. A line chapter is basic unless its header says
@@ -105,6 +106,11 @@ function buildChapter(game, index, course) {
     if (!LEVELS.includes(level)) {
         throw new ContentError(`${course.id} / ${title}: unknown Level "${h.Level}" (use basic or advanced)`)
     }
+    // The side the learner plays: the chapter's [Side], or else the course's.
+    const side = (h.Side || (SIDES.includes(course.side) ? course.side : "")).toLowerCase()
+    if (course.side && !["map", "puzzle"].includes(type) && !SIDES.includes(side)) {
+        throw new ContentError(`${course.id} / ${title}: ${h.Side ? `unknown Side "${h.Side}"` : "no [Side] header"} (use white or black)`)
+    }
     const root = game.root
     root.fen = h.FEN || DEFAULT_POSITION
     root.ply = 0
@@ -123,6 +129,8 @@ function buildChapter(game, index, course) {
         title,
         type,
         level,
+        side,
+        learner: side === "black" ? "b" : "w",
         section: sectionOf(type, level),
         opening: h.Opening || "",
         eco: h.ECO || "",
@@ -229,7 +237,7 @@ export function finalScore(node) {
 }
 
 function extractLines(chapter, course) {
-    const learner = course.side === "white" ? "w" : "b"
+    const learner = chapter.learner
     const lines = []
     const walk = (node, path) => {
         const kids = node.children
@@ -254,6 +262,8 @@ function extractLines(chapter, course) {
             id: hash(course.id + "|" + chapter.root.fen + "|" + nodes.map(n => n.san).join(" ")),
             courseId: course.id,
             chapter,
+            side: chapter.side,
+            learner,
             type: chapter.type,
             section: chapter.section,
             variation: suffix,

@@ -14,6 +14,8 @@ These rules apply to every opening. The King's Indian is the first course writte
 6. **Names.** The Lichess name is the official one (the `Opening` header). Use the common English name in titles where it differs, and a descriptive name ("Open Center") where Lichess has none.
 7. **Order by club frequency.** Frequencies come from Lichess club games (rated rapid and classical, players averaging 1800 to 2199), the same games as the "how often" bars. Lines with the same name stay together (all the Mar del Plata lines, then all the Fianchetto lines), and within a group the most-played line comes first. The Basic groups follow the order chosen for the course (King's Indian: Mar del Plata, Fianchetto, Four Pawns Attack, Sämisch; Caro-Kann: Advance, Exchange, Main Line, Two Knights). Count each game by the position it reaches, not by the first move: a move order that transposes counts with the variation it becomes, and its chapter goes in that group with both move orders shown. In the Caro-Kann, 2.Nf3 d5 3.exd5 cxd5 4.d4 is the Exchange Variation and 2.Nf3 d5 3.Nc3 is the Two Knights Attack, so 2.Nf3 has no group of its own. In Advanced, the groups themselves are ordered by how often their system is played, sidelines last, and a line's follow-ups come right after it. The map uses the same order: basic lines first, then the blue advanced ones.
 
+The Queen's Gambit courses (`queens-gambit-declined.pgn`, `queens-gambit-accepted.pgn`, `slav.pgn`, `tarrasch.pgn`) are courses for both sides in which every chapter carries a `[Side]` header, because each side has its own repertoire there; the King's Indian and the Caro-Kann share most of their lines between the sides. Both kinds use the same `"course"` object (see "One course for both sides" below).
+
 ## What a file looks like
 
 A file is a series of chapters. Each chapter starts with a few header lines in square brackets, followed by the moves.
@@ -35,7 +37,7 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 
 | Header | Meaning |
 |---|---|
-| `Chapter` | The title shown in the app. |
+| `Chapter` | The title shown in the app. In a course for one family, leave the family name out: the course's name says it (`Exchange: 5...Be7` in the Queen's Gambit Declined Course). Where a title needs one, write the Queen's Gambit families short, as `QGD` or `QGA`: each page spells out the first QGD or QGA it shows ("Queen's Gambit Declined (QGD)") and keeps the abbreviation after that (`spellOut` in `js/ui.js`). |
 | `Type` | `line` (normal lines), `trap`, or `ideas` (the Key ideas page, which is never drilled). Puzzle files use `puzzle` (see Puzzles below). |
 | `Opening`, `ECO` | The Lichess opening name and code. The checker verifies both. |
 | `FEN` | Optional. Starts the chapter from a set position (used for Key ideas). |
@@ -144,7 +146,7 @@ The overview pages (Replies to 1.e4, Replies to 1.d4, Other first moves) show ea
 [ECO "A56"]
 [Diagram "4...exd5"]
 [Lines "Modern Benoni | Benko Gambit"]
-[Course "queens-gambit"]
+[Course "kings-indian"]
 
 {White: White's plan, in two or three short sentences.
 
@@ -160,8 +162,9 @@ Black: Black's plan, the same way.}
 | `Diagram` | The position the overview's board shows, usually Black's fourth move. |
 | `Lines` | Only for a chapter with branches: a name for each line, main line first, then the branches in the order they appear. Each line gets its own Watch button. |
 | `Leads` | Optional: where each line transposes to, in `[Lines]` order, e.g. `[Leads "Reversed Dragon | | Queen's Gambit Declined"]`. Not shown at present: the map lists openings by name only. Kept so a later version can show the transpositions again. |
-| `Course` | Optional: an opening id from `courses.json`. Its built courses are linked; until one is built the page says "course coming soon", and without the header it says "Course coming later". `[Course "none"]` shows no course line, for an opening with no course planned. |
-| `WhiteLesson`, `BlackLesson` | Optional, with `Course`: the exact title of the chapter in that side's course that teaches this opening, such as `[WhiteLesson "Slav: 4...Bf5"]` or `[BlackLesson "Key ideas: Why the Queen's Gambit Declined"]`. The page then links straight to that lesson in Learn mode, and only for the sides that have one. The checker reports a title that is not in the course. |
+| `Course` | Optional: an opening id from `courses.json`. Its built courses are linked; until one is built the page says "course coming soon", and without the header it says "Course coming later". `[Course "none"]` shows no course line, for an opening with no course planned (the Albin Countergambit card, for now). It can list several ids, separated by spaces: the 1.d4 page's Queen's Gambit card has `[Course "queens-gambit-declined queens-gambit-accepted slav tarrasch"]`. A survey's `"course"` field in `courses.json` works the same way. |
+| `WhiteLesson`, `BlackLesson` | Optional, with `Course`: the exact title of the chapter in that side's course that teaches this opening, such as `[WhiteLesson "Slav: 4...Bf5"]` or `[BlackLesson "Key ideas: Why the Queen's Gambit Declined"]`. The page then links straight to that lesson in Learn mode, and only for the sides that have one. Each link is labelled with the opening and the card's short name, for example "Queen's Gambit Slav variation as White". The checker reports a title that is not in the course. |
+| `WhiteCourse`, `BlackCourse` | Optional: an opening id whose course holds that side's lesson, when it isn't the `Course` opening. In a course for both sides, both lessons are in the same course (its White and its Black side), so the Queen's Gambit cards need only `[Course]`. These courses also join the page's full-course box. |
 | `Map` | Optional: the opening's name in the map at the top of the page, e.g. `[Map "Queen's Gambit"]`. `[Map "none"]` leaves it out of the map; its card stays on the page. Keeps the map to the main openings. |
 | `MapReply` | Optional: a family name for the reply box the opening sits under, e.g. `[MapReply "Indian Defenses"]` puts "1…♘f6 Indian Defenses" above the King's Indian, Nimzo-Indian and the rest. |
 | `Page` | Optional: the chapter stands for a page of its own, e.g. `[Page "qg"]` on the 1.d4 page's Queen's Gambit chapter. Its card and its map box open that page instead of playing moves. |

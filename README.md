@@ -2,7 +2,7 @@
 
 A web app for learning chess openings from both sides, written for club players rated about 1500 to 2000. It works on phones, tablets and computers. Nothing to install, no accounts, and progress is saved in the browser.
 
-Version 1 covers the Italian Game, Sicilian, French and Queen's Gambit, each as White and as Black, plus the King's Indian Defense and the Caro-Kann Defense. The King's Indian and the Caro-Kann are each one course for both sides: you choose White or Black inside it. They are in the new format (see the general rules in CONTENT-GUIDE.md), and the others will follow. The Italian Game, Caro-Kann, French Defense, Queen's Gambit and King's Indian Defense courses are written. The Sicilian is coming.
+Version 1 covers the Italian Game, Sicilian, French and Queen's Gambit, plus the King's Indian Defense and the Caro-Kann Defense. The King's Indian, the Caro-Kann and the Queen's Gambit are each taught as one course for both sides, in which you choose White or Black (see the general rules in CONTENT-GUIDE.md). The Queen's Gambit has four such courses: the Queen's Gambit Declined, Queen's Gambit Accepted, Slav Defense and Tarrasch Defense. The Italian Game and French Defense are still taught as separate White and Black courses, and will follow. The Sicilian is coming.
 
 ## How it teaches
 
