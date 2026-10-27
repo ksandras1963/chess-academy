@@ -1,11 +1,15 @@
 // Shared trainer layout (board + panel) and the scoresheet.
 
-import { h, fig, backBar } from "../ui.js"
+import { h, fig, backBar, backTrail } from "../ui.js"
 
-/** prev / next: optional { href, text } links shown under the back buttons (next idea, next puzzle). */
-export function trainerLayout(root, { backHref, backText, prev = null, next = null }) {
+/**
+ * prev / next: optional { href, text } links shown under the back buttons (next idea, next puzzle).
+ * trail: optional back links, nearest first, shown before Main menu in place of backHref (lesson pages).
+ */
+export function trainerLayout(root, { backHref, backText, trail = null, prev = null, next = null }) {
     const boardEl = h("div", { class: "board-frame" })
-    const back = backBar(backHref && backHref !== "#/" ? { href: backHref, text: backText } : null)
+    const back = trail ? backTrail(trail)
+        : backBar(backHref && backHref !== "#/" ? { href: backHref, text: backText } : null)
     const steps = prev || next ? h("nav", { class: "stepbar", "aria-label": "Previous and next" },
         prev ? h("a", { class: "btn btn-small btn-step", href: prev.href, "aria-label": `Previous: ${prev.text}` },
             h("span", { "aria-hidden": "true" }, "‹"), h("span", { class: "step-text" }, prev.text)) : h("span"),
