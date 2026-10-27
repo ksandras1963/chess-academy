@@ -59,6 +59,13 @@ export function backBar(parent = null) {
         parent ? h("a", { class: "btn btn-small btn-back", href: parent.href }, h("span", { "aria-hidden": "true" }, "‹"), parent.text) : null)
 }
 
+/** Back buttons from the nearest page to the farthest, with Main menu last (lesson pages). */
+export function backTrail(links) {
+    return h("nav", { class: "backbar", "aria-label": "Back" },
+        [...links, { href: "#/", text: "Main menu" }].map(l =>
+            h("a", { class: "btn btn-small btn-back", href: l.href }, h("span", { "aria-hidden": "true" }, "‹"), l.text)))
+}
+
 /** A note as paragraphs (a blank line in the PGN comment starts a new one), with figurines. */
 export function paras(text, attrs = {}) {
     return String(text || "").split(/\n\n+/).filter(Boolean).map(p => h("p", attrs, figText(p)))
