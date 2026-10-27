@@ -286,11 +286,11 @@
         "summary": "One course for both sides. Choose White or Black: the lines are the same, and you drill the moves of the side you choose.",
         "overview": [
           "Black lets White build a big center, castles behind the g7 bishop, then strikes with ...e5 or ...c5. When the center locks, White attacks on the queenside and Black on the kingside.",
-          "Classical (5.Nf3 O-O 6.Be2 e5): learn Mar del Plata, Bayonet Attack: 9.b4 and Mar del Plata, Main line: 9.Ne1 first. They are the heart of the opening.",
-          "Classical, Positional Defense: 7...Nbd7 and Classical, Open Center: 7...exd4 are Black's main ways to avoid the Mar del Plata.",
-          "Sämisch (5.f3 and 6.Be3): Black strikes at once with the Sämisch Gambit: 6...c5 or the Orthodox: 6...e5.",
-          "Averbakh (5.Be2 and 6.Bg5): ...e5 at once loses material to Nd5, so Black plays the Benoni Defense: 6...c5 or the Modern Defense: 6...Na6.",
-          "Four Pawns Attack, Main line: 6...c5 and the Fianchetto (Panno: 7...a6 and Classical: 6...Nbd7) complete the basic lines."
+          "Mar del Plata (5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7): learn Mar del Plata, Main line: 9.Ne1 and Mar del Plata, Bayonet Attack: 9.b4 first. They are the heart of the opening.",
+          "Fianchetto (4.Nf3, g3 and Bg2): the g2 bishop guards White's king. Learn Fianchetto, Classical: 6...Nbd7 and Fianchetto, Panno: 7...a6.",
+          "Four Pawns Attack, Main line: 6...c5: Black hits White's big center at once, and the game turns into a Benoni structure.",
+          "Sämisch (5.f3 and 6.Be3): learn Sämisch, Orthodox: 6...e5 and the Sämisch Gambit: 6...c5.",
+          "Everything else, including the Averbakh, the Makogonov and the other Classical lines, is in the Advanced section. Lines are listed most-played first in club games."
         ]
       }
     }
@@ -412,28 +412,24 @@
       "eco": "E60–E99",
       "moves": "1. d4 Nf6 2. c4 g6",
       "file": "content/kid-overview.pgn",
-      "count": "11 basic lines",
+      "count": "7 basic lines",
       "compact": true,
       "course": "kings-indian",
-      "subtitle": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7: the main systems and the eleven lines to learn first.",
+      "subtitle": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7: the main systems and the seven lines to learn first.",
       "summary": "Black lets White build a big center, castles behind the g7 bishop, then strikes with ...e5 or ...c5. When the center locks, White attacks on the queenside and Black on the kingside.",
       "table": {
         "after": "map",
         "columns": ["Basic line", "Moves", "What happens"],
         "rows": [
-          ["Mar del Plata, Bayonet Attack", "7.O-O Nc6 8.d5 Ne7 9.b4", "White races on the queenside with c5; Black answers with ...Nh5 and ...f5."],
-          ["Mar del Plata, Main line", "9.Ne1 Nd7", "The classic race: White's c5 against Black's ...f5, ...f4 and ...g5."],
-          ["Classical, Positional Defense", "7.O-O Nbd7", "Black keeps the tension. After d5 the queenside locks, and Black plays ...f5."],
-          ["Classical, Open Center", "7.O-O exd4 8.Nxd4", "Black opens the e-file and the long diagonal; White holds e4 with f3."],
-          ["Sämisch Gambit", "5.f3 O-O 6.Be3 c5", "Black hits d4 before White's kingside attack. Taking the pawn gives Black fast development."],
-          ["Sämisch, Orthodox", "6.Be3 e5", "After d5, Black opens the c-file and prepares ...f5."],
-          ["Averbakh, Benoni Defense", "5.Be2 O-O 6.Bg5 c5", "Black avoids ...e5 and plays for activity, even at the cost of the d6 pawn."],
-          ["Averbakh, Modern Defense", "6.Bg5 Na6", "The knight guards c7 first, so ...e5 is safe."],
+          ["Mar del Plata, Main line", "7.O-O Nc6 8.d5 Ne7 9.Ne1", "The classic race: White's c5 against Black's ...f5, ...f4 and ...g5."],
+          ["Mar del Plata, Bayonet Attack", "9.b4", "White races on the queenside with c5; Black answers with ...Nh5 and ...f5."],
+          ["Fianchetto, Classical", "4.Nf3 d6 5.g3 O-O 6.Bg2 Nbd7 7.O-O e5 8.e4", "Black presses on d4 and e4 with ...c6, ...Qb6 and ...exd4."],
+          ["Fianchetto, Panno", "6...Nc6 7.O-O a6", "White's g2 bishop guards the king; Black plays ...Rb8 and ...b5 on the queenside."],
           ["Four Pawns Attack, Main line", "5.f4 O-O 6.Nf3 c5", "A Benoni structure: White's central majority against Black's queenside majority."],
-          ["Fianchetto, Panno", "4.Nf3 d6 5.g3 O-O 6.Bg2 Nc6 7.O-O a6", "White's g2 bishop guards the king; Black plays ...Rb8 and ...b5 on the queenside."],
-          ["Fianchetto, Classical", "6.Bg2 Nbd7 7.O-O e5 8.e4", "Black presses on d4 and e4 with ...c6, ...Qb6 and ...exd4."]
+          ["Sämisch, Orthodox", "5.f3 O-O 6.Be3 e5", "After d5, Black opens the c-file and prepares ...f5."],
+          ["Sämisch Gambit", "6.Be3 c5", "Black hits d4 before White's kingside attack. Taking the pawn gives Black fast development."]
         ],
-        "note": "Moves follow 1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6, and the Classical lines follow 5.Nf3 O-O 6.Be2 e5. The Fianchetto starts 4.Nf3 instead of 4.e4. The advanced and rare lines are in the course's Advanced section."
+        "note": "Moves follow 1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6, and the Mar del Plata follows 5.Nf3 O-O 6.Be2 e5. The Fianchetto starts 4.Nf3 instead of 4.e4. Within each group, the most-played line in club games comes first. Everything else, including the Averbakh and the Makogonov, is in the course's Advanced section."
       }
     },
     {

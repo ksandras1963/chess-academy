@@ -162,11 +162,14 @@ function flowchart(s, jump, linked) {
         const key = ch.type === "ideas" ? `ideas-${ch.index}` : linked.lines.find(l => l.chapter === ch)?.id
         return key ? `#/learn/${linked.id}/${key}` : null
     }
+    // [%order 2] in a note places the box among its sibling boxes (most-played first); boxes
+    // without one keep their order in the PGN, after the numbered ones.
+    const orderOf = n => Number((/\[%order (\d+)\]/.exec(n.comments.join(" ")) || [])[1] || 1e9)
     const boxesBelow = node => {
         const out = []
         const walk = n => n.children.forEach(k => (k.comments.length ? out.push(k) : walk(k)))
         walk(node)
-        return out
+        return out.sort((a, b) => orderOf(a) - orderOf(b))
     }
     const item = (node, from) => {
         const run = []
