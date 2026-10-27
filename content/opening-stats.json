@@ -27330,6 +27330,142 @@
     "e1e2": 9930,
     "e1f2": 957
    }
+  },
+  "rnbqkb1r/p3pppp/2p2n2/4P1B1/P1pP4/2p5/1P3PPP/R2QKBNR w KQkq -": {
+   "games": 85,
+   "moves": {
+    "e5f6": 82,
+    "f1c4": 1,
+    "g5f6": 1,
+    "b2c3": 1
+   }
+  },
+  "rnbqkb1r/p3pppp/2p2B2/8/P1pPP3/2p5/1P3PPP/R2QKBNR w KQkq -": {
+   "games": 278,
+   "moves": {
+    "f6e5": 89,
+    "f6h4": 61,
+    "b2c3": 49,
+    "f6g5": 39,
+    "f6e7": 22,
+    "f6g7": 16,
+    "f1c4": 1,
+    "d4d5": 1
+   }
+  },
+  "rnbqkb1r/p3pppp/2p5/8/P1pPn3/1p2B3/NP3PPP/R2QKBNR w KQkq -": {
+   "games": 72,
+   "moves": {
+    "a2c3": 54,
+    "a2c1": 7,
+    "a2b4": 7,
+    "f2f3": 2,
+    "f1c4": 1,
+    "d1f3": 1
+   }
+  },
+  "rnbqkb1r/p3pppp/2p5/8/P1pP4/1pn1B3/1P3PPP/R2QKBNR w KQkq -": {
+   "games": 48,
+   "moves": {
+    "b2c3": 48
+   }
+  },
+  "rnbqkb1r/p3ppp1/2p4p/3nP3/PppP3B/2N5/1P3PPP/R2QKBNR w KQkq -": {
+   "games": 15,
+   "moves": {
+    "c3e4": 10,
+    "c3a2": 3,
+    "c3d5": 2
+   }
+  },
+  "rnbqkb1r/p3pp2/2p4p/3nP1p1/PppPN2B/8/1P3PPP/R2QKBNR w KQkq -": {
+   "games": 9,
+   "moves": {
+    "h4g3": 9
+   }
+  },
+  "r2q1rk1/pp1n1ppp/2p1p3/3nP2b/Pb1P4/2NB1N2/1P2QPPP/R1B2RK1 w - -": {
+   "games": 87,
+   "moves": {
+    "c3d5": 77,
+    "c3e4": 4,
+    "d3h7": 2,
+    "e2e4": 1,
+    "c1g5": 1,
+    "h2h3": 1,
+    "c1d2": 1
+   }
+  },
+  "rnbqkb1r/5ppp/2p1p3/p7/PpBPn3/5N2/NP3PPP/R1BQ1RK1 w kq -": {
+   "games": 332,
+   "moves": {
+    "f1e1": 202,
+    "f3e5": 35,
+    "c1f4": 32,
+    "c1e3": 15,
+    "b2b3": 13,
+    "d1c2": 12,
+    "c4d3": 6,
+    "d1e2": 6,
+    "c1g5": 4,
+    "d1d3": 4,
+    "f3d2": 1,
+    "d1b3": 1
+   }
+  },
+  "r2qk2r/pp1nbppp/2p1pn2/8/2PPp3/2NQ1N2/PP3PPP/R1B2RK1 w kq -": {
+   "games": 566,
+   "moves": {
+    "c3e4": 565,
+    "d3e4": 1
+   }
+  },
+  "r2qk2r/pp1nbppp/4pn2/2p5/2PPN3/3Q1N2/PP3PPP/R1B2RK1 w kq -": {
+   "games": 8,
+   "moves": {
+    "c1e3": 2,
+    "d4d5": 2,
+    "b2b3": 1,
+    "e4f6": 1,
+    "d4c5": 1,
+    "c1f4": 1
+   }
+  },
+  "r3kb1r/pp1qpppp/2n2n2/3p1b2/3P1B2/1QN1P3/PP3PPP/R3KBNR w KQkq -": {
+   "games": 1180,
+   "moves": {
+    "g1f3": 900,
+    "f1b5": 161,
+    "c3b5": 70,
+    "a1c1": 23,
+    "f1e2": 8,
+    "h2h3": 6,
+    "f2f3": 4,
+    "c3a4": 2,
+    "a2a3": 2,
+    "f4g5": 2,
+    "b3d5": 1,
+    "g2g4": 1
+   }
+  },
+  "r2qkb1r/p3pppp/1pn2n2/3p1b2/3P1B2/1QN1P3/PP3PPP/R3KBNR w KQkq -": {
+   "games": 322,
+   "moves": {
+    "f1b5": 224,
+    "g1f3": 59,
+    "c3b5": 19,
+    "a1c1": 12,
+    "f1a6": 7,
+    "b3a4": 1
+   }
+  },
+  "rnb1kb1r/pp2pppp/8/q5B1/3Pp3/4P3/PP1Q1PPP/R3KBNR b KQkq -": {
+   "games": 1180,
+   "moves": {
+    "a5g5": 1160,
+    "a5d2": 16,
+    "b8c6": 1
+   }
   }
  }
 }

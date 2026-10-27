@@ -74,20 +74,22 @@ Black: Take on c4 to develop freely, but don't try to keep the pawn with ...b5: 
 4. e4 {White takes the whole center.} e5 {Black strikes back at once. 4...e6 is played more often, but it leaves White slightly better.} *
 
 [Chapter "Slav Defense"]
-[Opening "Slav Defense"]
-[ECO "D10"]
-[Diagram "4...Bf5"]
+[Opening "Slav Defense: Two Knights Attack"]
+[ECO "D15"]
+[Diagram "4...dxc4"]
 [Course "queens-gambit"]
-[WhiteLesson "Slav: 4...Bf5"]
+[WhiteLesson "Slav: 4...dxc4"]
+[BlackCourse "slav"]
+[BlackLesson "Key ideas: Why the Slav"]
 
-{Black guards d5 with the c-pawn, so the c8 bishop can still come out to f5 or g4. Very solid.
+{Black guards d5 with the c-pawn, which keeps the c8 bishop's diagonal open. Solid, with a few exact lines to know.
 
-White: Develop with Nc3 and Nf3 and aim for e4. Once Black's bishop leaves c8, cxd5 and Qb3 hit the b7-pawn it no longer guards. If Black takes on c4, win the pawn back with a4 and e3.
+White: Develop with Nc3 and Nf3. Against 4...dxc4, play 5.a4 to stop ...b5, then win the pawn back with e3 and Bxc4, castle, and prepare e4 with Qe2. If Black's bishop leaves c8 before Black takes on c4, cxd5 and Qb3 hit the b7-pawn it no longer guards.
 
-Black: Support d5 with the c-pawn, so the c8 bishop stays free. Bring it out to f5 or g4 before you play ...e6. Then build a solid c6–d5–e6 triangle and castle.}
+Black: Take on c4 first, then bring the bishop out: after 5.a4, play 5...Bf5, ...e6, ...Bb4 and castle (the Czech Variation). If White doesn't play a4, keep the extra pawn with ...b5. Against an early e3, play ...Bf5 at once.}
 1. d4 d5 2. c4 c6 {This is the Slav Defense. The c-pawn defends d5 and leaves the c8 bishop free.}
 3. Nc3 {More popular than 3.Nf3 at club level.} Nf6 {Defends d5 and develops.}
-4. Nf3 {The Three Knights Variation.} Bf5 {The bishop comes out before ...e6 can shut it in.} *
+4. Nf3 {The Three Knights Variation.} dxc4 {Black takes the pawn before bringing the bishop out. 4...Bf5?! at once lets White play cxd5 and Qb3, hitting b7.} *
 
 [Chapter "Albin Countergambit"]
 [Opening "Queen's Gambit Declined: Albin Countergambit"]

@@ -224,16 +224,29 @@
       "name": "Slav Defense",
       "eco": "D10",
       "moves": "1. d4 d5 2. c4 c6",
-      "summary": "To be written in the build stage.",
-      "furtherStudy": [],
+      "summary": "Black guards d5 with the c-pawn, so the light-squared bishop can still come out before ...e6. Solid, with a few exact lines to know.",
+      "furtherStudy": [
+        { "title": "Chess Openings: Learn to Play the Queen's Gambit", "by": "NM Solomon Ruddell, The Chess Giant", "kind": "Video", "url": "https://www.youtube.com/watch?v=EWHYgn9fR10" },
+        { "title": "Queen's Gambit Opening Mistakes You Must Avoid (Traps Included!)", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=8Ui8lD8wJsU" },
+        { "title": "How To Play The Queen's Gambit", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=mtsabsZ4wG4" },
+        { "title": "How To Play The Queen's Gambit", "by": "Anna Cramling", "kind": "Video", "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI" },
+        { "title": "Slav Defense", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/Slav_Defense" }
+      ],
       "courses": [
         {
           "id": "slav-black",
           "side": "black",
           "file": "content/slav-black.pgn",
-          "repertoire": "The Czech Variation: 4...dxc4 5.a4 Bf5",
-          "summary": "To be written in the build stage.",
-          "overview": []
+          "repertoire": "Czech Variation (4...dxc4 5.a4 Bf5), with ...b5 against 5.e4 and 5.e3, and ...Bf5 against the e3 lines",
+          "summary": "Take on c4 once both White knights are out, then play the Czech Variation: ...Bf5, ...e6, ...Bb4 and castle. Keep the pawn with ...b5 when White allows it, and play ...Bf5 at once against the quiet e3 lines.",
+          "overview": [
+            "Answer 3.Nc3 and 3.Nf3 with ...Nf6. When White has both knights out, about a third of your games, take on c4 first with 4...dxc4, and only then bring the bishop to f5. 4...Bf5?! at once allows cxd5 and Qb3, hitting b7.",
+            "Against 5.a4, about half the time, play the Czech Variation: 5...Bf5, ...e6, ...Bb4 and castle. Against 5.e4 (the Geller Gambit) or 5.e3, keep the extra pawn with 5...b5.",
+            "Against an early 4.Bg5 or 4.Bf4, one game in six, take on c4 as well and hold the pawn with ...b5. After 4.Bg5 dxc4 5.e4 b5, the natural 6.a4? loses material to 6...b4!.",
+            "Against the quiet e3 lines, also one game in six, play ...Bf5 at once, then ...e6, ...Nbd7 and ...Be7, and castle. With White's pawn on e3, the c1 bishop is shut in, so the early bishop is safe.",
+            "Once your bishop has left c8, watch b7. After cxd5 cxd5 and Qb3, go back with ...Bc8, or hit the queen with ...Na5 in the Exchange. Never guard b7 with ...b6?, which runs into Bb5 or Bb5+.",
+            "Against the Exchange (cxd5 cxd5), about one game in five, copy White's setup: ...Nf6, ...Nc6, ...Bf5 and ...e6. Against 5.Bg5, jump to e4 with the knight: after 6.Nxe4 dxe4, 7.e3? loses the bishop to 7...Qa5+."
+          ]
         }
       ]
     },
