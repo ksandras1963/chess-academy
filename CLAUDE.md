@@ -37,3 +37,7 @@ These are Kumar's standing rules for every opening. Follow them in every session
 - Usually 4 per course; 5 at most, only when needed.
 - No Wikipedia.
 - No source whose author is unknown: a video must name its presenter, not only its channel.
+
+## Back buttons
+
+Every lesson page (a line in Basic, Traps or Advanced) shows its back buttons in this order: the section, then the course page, then Main menu. For example: "< Basic variations < French Defense Course < Main menu". A Key ideas page shows the course page, then Main menu.
