@@ -577,3 +577,13 @@ Against 8.cxd5, take back with the e-pawn: 8...exd5, then ...c6, ...Be6 and ...N
 9. Nxd5! {[%cal Gc2c8] The c6 pawn can't take back safely: the c-file would open, and the queen on c2 takes the bishop on c8.} cxd5?
 (9... Qd6 {The best defense: the queen hits the knight.} 10. Nc3 {The knight goes back. Black is a pawn down, and the knight on h5 is far from the center. Stockfish: +3.1, winning for White.})
 10. Qxc8+ Qd8 11. Bb5+ Nc6 12. Bxc6+ bxc6 13. Qxc6+ {White is two pawns up, and the queen attacks the rook on a8 too. Stockfish: +5.5, winning for White.} *
+
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. d4 d5 2. c4 e6 {Queen's Gambit Declined}
+3. Nc3 (3. Nf3 Nf6 4. g3 {Catalan}) (3. a3 {[%course black] Other third moves})
+3... Nf6 (3... c6 {Semi-Slav move order}) (3... Bb4 {})
+4. cxd5 {[%course black] Exchange Variation} (4. Bg5 {Main line} Be7 5. e3 O-O 6. Nf3 h6 7. Bh4 b6 {Tartakower} 8. cxd5 {[%course black]}) (4. Nf3 {Three Knights}) (4. Bf4 {Harrwitz Attack})
+4... exd5 (4... Nxd5 {})
+5. Bg5 Be7 {[%course white]} (5... c6 {Minority attack}) (5... Nbd7 {}) *

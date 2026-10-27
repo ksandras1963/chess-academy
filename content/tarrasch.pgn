@@ -289,3 +289,12 @@ Next, against 8.e3, 8...c4 gains space on the queenside (Stockfish −0.2, equal
 (7. Bd2 Qxb5 {Black is a knight up for a pawn. Stockfish: −4.3, winning for Black.})
 (7. Nc3? {The knight comes back to block the check, but now the d4 pawn takes it.} dxc3 {Black has won a knight. After White takes back on c3, Black is a knight up for two pawns. Stockfish: −6.4, winning for Black.})
 7... Qxb5 {Black is a knight up for a pawn. Stockfish: −5.9, winning for Black.} *
+
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. d4 d5 2. c4 e6 3. Nc3 c5 {Tarrasch Defense}
+4. cxd5 (4. e3 Nc6 {[%course black] Symmetrical Variation}) (4. Nf3 Nc6 {}) (4. dxc5 d4 {[%course black]})
+4... exd5 {} (4... cxd4 {Schara Gambit})
+5. Nf3 (5. dxc5 d4 {[%course black]})
+5... Nc6 6. g3 {[%course white] Rubinstein System} (6. e3 {Two Knights}) (6. dxc5 {Two Knights}) *

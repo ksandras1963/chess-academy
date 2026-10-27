@@ -370,3 +370,10 @@ It happens in the 3.e4 lines too. After 4.Nf3 exd4 5.Bxc4, 5...Bg4? runs into 6.
 (6... e6 {Black gives up b7.} 7. Qxb7 {White is a pawn up, and the knight on c6 is attacked. Stockfish: +2.1, winning for White.})
 (6... Na5? {Hits the queen and the bishop at once.} 7. Bxf7+! {The bishop escapes with check.} Kd7 8. Ne5+ {Another check, and the queen still has time to move.} Kc8 9. Qa4 {[%cal Ga4a5] The queen steps away and hits the knight on a5.} Bf5 10. Qxa5 {White is a knight and a pawn up, and Black's king is exposed. Stockfish: +7.8, winning for White.})
 7. Bxf7+ Kd7 8. Qe6# *
+
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. d4 d5 2. c4 dxc4 {Queen's Gambit Accepted}
+3. e3 {Old Variation} (3. Nc3 e5 {} 4. d5 {[%course black]} (4. dxe5 {})) (3. e4 e5 {Central Variation} 4. d5 {} (4. Nf3 {})) (3. Nf3 {[%course black] Normal Variation})
+3... Nf6 {[%course white]} (3... e5 {[%course black]}) (3... b5 {}) (3... Bf5 {}) *

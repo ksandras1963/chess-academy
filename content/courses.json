@@ -50,18 +50,6 @@
                     "by": "Coach Kestony",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=8YP1iVMG_Rg"
-                },
-                {
-                    "title": "Italian Game",
-                    "by": "365Chess",
-                    "kind": "Opening guide",
-                    "url": "https://www.365chess.com/chess-openings/Italian-Game"
-                },
-                {
-                    "title": "Italian Game",
-                    "by": "Chess.com",
-                    "kind": "Opening page",
-                    "url": "https://www.chess.com/openings/Italian-Game"
                 }
             ],
             "courses": [
@@ -106,18 +94,6 @@
             "puzzles": "content/caro-kann-puzzles.pgn",
             "furtherStudy": [
                 {
-                    "title": "Introduction to the Caro-Kann Defense · Complete Chess Openings",
-                    "by": "Hanging Pawns",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=67gr8tQwGrI"
-                },
-                {
-                    "title": "Caro-Kann Defense (introduction, main variations & ideas)",
-                    "by": "Hanging Pawns",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=Jiz7KLKjLas"
-                },
-                {
                     "title": "Learn the Caro-Kann in 15 Minutes [Chess Openings Crash Course]",
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
@@ -154,12 +130,6 @@
                     "url": "https://www.youtube.com/watch?v=ebfzL_GwiIE"
                 },
                 {
-                    "title": "Caro-Kann Masterclass (Introduction)",
-                    "by": "ChessGeek",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=noGn7jidT9Q"
-                },
-                {
                     "title": "Destroy The Fantasy Variation in 7 moves | Caro-Kann Defense",
                     "by": "IM Alex Banzea",
                     "kind": "Video",
@@ -170,18 +140,6 @@
                     "by": "IM Alex Banzea",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=8erPw1WADrQ"
-                },
-                {
-                    "title": "Learn the Caro-Kann in 8 Minutes",
-                    "by": "ChessPage1",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=0p_881Nwoo4"
-                },
-                {
-                    "title": "The Caro Kann is UNSTOPPABLE Below 2000 ELO",
-                    "by": "ChesswithAkeem",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=c5T0sXdpo6w"
                 },
                 {
                     "title": "Caro–Kann Defence",
@@ -232,12 +190,6 @@
             "puzzles": "content/french-puzzles.pgn",
             "furtherStudy": [
                 {
-                    "title": "Introduction to the French Defense · Chess Openings",
-                    "by": "Hanging Pawns",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=pig559oP5OM"
-                },
-                {
                     "title": "French Defense: Solid & Powerful Opening for Black vs 1.e4 [Tricks & Traps]",
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
@@ -248,12 +200,6 @@
                     "by": "IM Levy Rozman, GothamChess",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=5pec-u6PSvA"
-                },
-                {
-                    "title": "Crush With 1.e6 | The Indestructible French Defense",
-                    "by": "Volclus",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=192NboTurSI"
                 },
                 {
                     "title": "5 Reasons to Play the French Defense",
@@ -272,18 +218,6 @@
                     "by": "Kamryn",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=gRUb6EeHKsM"
-                },
-                {
-                    "title": "French Defense: The Worse Opening for Black in Chess?",
-                    "by": "Chessscape",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=EfSZELTHoUg"
-                },
-                {
-                    "title": "Chess Openings: French Defense Part 1",
-                    "by": "thechesswebsite",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=rTNN7-Wwpzs"
                 },
                 {
                     "title": "Secret Opening Weapon for White Against the French Defense",
@@ -418,12 +352,6 @@
                     "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI"
                 },
                 {
-                    "title": "Chess Opening: The Queen's Gambit (Full 500-2000 Guide)",
-                    "by": "ChesswithAkeem",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=XhbTsyVVexc"
-                },
-                {
                     "title": "Queen's Gambit",
                     "by": "Wikipedia",
                     "kind": "Article",
@@ -442,18 +370,50 @@
                     "side": "both",
                     "file": "content/queens-gambit-declined.pgn",
                     "repertoire": "As White: the Exchange Variation and the minority attack. As Black: the Tartakower Variation.",
-                    "summary": "As White, take on d5 at once and play the minority attack. As Black, hold d5 with ...e6, castle quickly and play the Tartakower: ...h6, ...b6 and ...Bb7, then free the game with ...c5.",
-                    "overview": [
-                        "As White: against 2...e6, a third of your Queen's Gambit games, play 3.Nc3 and take at once: 4.cxd5 exd5 5.Bg5. Follow with Qc2, e3, Bd3 and Nge2, and castle short.",
-                        "As White: the plan is the minority attack: Rb1, b4 and b5 leave Black with a weak pawn on c6 or d5. With the knight on e2, f3 and e4 is the second plan.",
-                        "As White: don't grab d5 while Black's knight is on d7: 6.Nxd5?? Nxd5! 7.Bxd8 Bb4+ wins a piece for Black. This is the Elephant trap.",
-                        "As Black: hold d5 with 2...e6, then ...Nf6, ...Be7 and castle. Against 4.Bg5, White's most common move, play the Tartakower: ...h6, ...b6 and ...Bb7.",
-                        "As Black: answer Bg5 with ...h6. If White takes on f6, take back with the bishop and keep the pawns in front of your king intact.",
-                        "As Black: when White takes on d5 (8.cxd5, four games in ten), take back with the knight and trade pieces. Then ...Be6 and ...c5; after dxc5, take back with the b-pawn, and your hanging pawns on c5 and d5 are active.",
-                        "As Black: take on c4 only after White's bishop has left f1, so that Bxc4 costs White a tempo.",
-                        "As Black: against the Exchange (4.cxd5 exd5 5.Bg5), play 5...Nbd7, then ...c6, ...Be7, castle, ...Re8 and ...Nf8. White plays 6.Nxd5?? in one game in five, and it loses a piece to the Elephant trap.",
-                        "As Black: against 3.Nf3 and the Catalan (4.g3), play ...Be7 and castle, then take on c4 once White has castled. Follow with ...a6, then ...b5 and ...Bb7, or ...Bd7 and ...Bc6 if White stops ...b5 with a4."
-                    ]
+                    "summary": "1.d4 d5 2.c4 e6: Black declines the pawn and holds d5 with the e-pawn.",
+                    "why": {
+                        "text": "As Black, 2...e6 holds d5 with a pawn and keeps the position solid. The price is the c8 bishop, shut in behind e6: the Tartakower brings it out with ...b6 and ...Bb7.\n\nAs White, the Exchange Variation (4.cxd5 exd5) fixes the pawns and gives you clear plans: the minority attack, or f3 and e4."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Exchange Variation: 3.Nc3 Nf6 4.cxd5 exd5",
+                                "47% as White",
+                                "Play Bg5, e3, Bd3 and Qc2, and castle. Then the minority attack (Rb1, b4, b5), or Nge2, f3 and e4."
+                            ],
+                            [
+                                "Three Knights: 3.Nc3 Nf6 4.Nf3 (or 3.Nf3 Nf6 4.Nc3)",
+                                "23% as Black",
+                                "Play ...Be7 and castle. Against 5.Bf4, hit the center with ...c5. Against 5.Bg5, play ...h6 and the Tartakower."
+                            ],
+                            [
+                                "Main line: 3.Nc3 Nf6 4.Bg5",
+                                "22% as Black",
+                                "The Tartakower: ...Be7, castle, ...h6, then ...b6 and ...Bb7. If White takes on f6, take back with the bishop."
+                            ],
+                            [
+                                "4...Nxd5 in the Exchange",
+                                "15% as White",
+                                "5.e4 gains time on the knight and builds a full center."
+                            ],
+                            [
+                                "3...c6 (Semi-Slav move order)",
+                                "12% as White",
+                                "Take on d5 anyway. With no knight on f6 to pin, the bishop goes to f4."
+                            ],
+                            [
+                                "Exchange Variation: 3.Nc3 Nf6 4.cxd5",
+                                "10% as Black",
+                                "Play 5...Nbd7, which sets the Elephant trap. Then ...c6, ...Be7, castle, ...Re8 and ...Nf8."
+                            ]
+                        ],
+                        "note": "How often: the share of your Queen's Gambit Declined games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
                 }
             ]
         },
@@ -501,16 +461,50 @@
                     "side": "both",
                     "file": "content/slav.pgn",
                     "repertoire": "As White: 3.Nf3 and 4.Nc3, then cxd5 and Bg5 against ...e6. As Black: the Czech Variation (4...dxc4 5.a4 Bf5).",
-                    "summary": "As White, meet the Slav with Nf3 and Nc3, and take on d5 against ...e6. As Black, take on c4 once both White knights are out, then play the Czech Variation: ...Bf5, ...e6, ...Bb4 and castle.",
-                    "overview": [
-                        "As White: against the Slav (2...c6), a quarter of your Queen's Gambit games, play 3.Nf3 Nf6 4.Nc3. Against 4...e6, take on d5 and play Bg5, the same plan as in the Exchange. Against an early ...Bf5, cxd5 and Qb3 hit b7.",
-                        "As Black: answer 3.Nc3 and 3.Nf3 with ...Nf6. When White has both knights out, about a third of your games, take on c4 first with 4...dxc4, and only then bring the bishop to f5. 4...Bf5?! at once allows cxd5 and Qb3, hitting b7.",
-                        "As Black: against 5.a4, about half the time, play the Czech Variation: 5...Bf5, ...e6, ...Bb4 and castle. Against 5.e4 (the Geller Gambit) or 5.e3, keep the extra pawn with 5...b5.",
-                        "As Black: against an early 4.Bg5 or 4.Bf4, one game in six, take on c4 as well and hold the pawn with ...b5. After 4.Bg5 dxc4 5.e4 b5, the natural 6.a4? loses material to 6...b4!.",
-                        "As Black: against the quiet e3 lines, also one game in six, play ...Bf5 at once, then ...e6, ...Nbd7 and ...Be7, and castle. With White's pawn on e3, the c1 bishop is shut in, so the early bishop is safe.",
-                        "As Black: once your bishop has left c8, watch b7. After cxd5 cxd5 and Qb3, go back with ...Bc8, or hit the queen with ...Na5 in the Exchange. Never guard b7 with ...b6?, which runs into Bb5 or Bb5+.",
-                        "As Black: against the Exchange (cxd5 cxd5), about one game in five, copy White's setup: ...Nf6, ...Nc6, ...Bf5 and ...e6. Against 5.Bg5, jump to e4 with the knight: after 6.Nxe4 dxe4, 7.e3? loses the bishop to 7...Qa5+."
-                    ]
+                    "summary": "1.d4 d5 2.c4 c6: Black guards d5 with the c-pawn.",
+                    "why": {
+                        "text": "As Black, ...c6 guards d5 and keeps the c8 bishop's diagonal open, so the bishop can come out to f5 before ...e6 shuts it in. Solid, with a few exact lines to know.\n\nAs White, 3.Nf3 and 4.Nc3 lead to familiar plans: against ...e6, take on d5 and play as in the Exchange Variation of the Declined."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Semi-Slav: ...e6 (3.Nf3 e6, or 3...Nf6 4.Nc3 e6)",
+                                "33% as White",
+                                "Take on d5, then Bg5, Bd3, Qc2, castle and the minority attack, as in the Exchange Variation."
+                            ],
+                            [
+                                "Both knights out: 3.Nc3 Nf6 4.Nf3 dxc4",
+                                "31% as Black",
+                                "Take on c4. Against 5.a4, play the Czech Variation: ...Bf5, ...e6, ...Bb4 and castle. Against 5.e4 or 5.e3, keep the pawn with 5...b5."
+                            ],
+                            [
+                                "Early ...Bf5 (3...Bf5 or 4...Bf5)",
+                                "24% as White",
+                                "Take on d5 and play Qb3, which hits b7. ...b6? and ...Qd7? lose material."
+                            ],
+                            [
+                                "Exchange Variation: cxd5 cxd5",
+                                "19% as Black",
+                                "Copy White's setup: ...Nf6, ...Nc6, ...Bf5 and ...e6. Watch for Qb3 hitting b7."
+                            ],
+                            [
+                                "Quiet Variation: e3 lines",
+                                "17% as Black",
+                                "Play ...Bf5 at once, then ...e6, ...Nbd7 and ...Be7, and castle."
+                            ],
+                            [
+                                "Early bishop: 3.Nc3 Nf6 4.Bg5 or 4.Bf4",
+                                "15% as Black",
+                                "Take on c4 and hold the pawn with ...b5. After 4.Bg5 dxc4 5.e4 b5, 6.a4? loses material to 6...b4!"
+                            ]
+                        ],
+                        "note": "How often: the share of your Slav games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
                 }
             ],
             "puzzles": "content/slav-puzzles.pgn"
@@ -589,16 +583,55 @@
                     "side": "both",
                     "file": "content/queens-gambit-accepted.pgn",
                     "repertoire": "As White: 3.e3 and Bxc4. As Black: ...e5 at once, and the Classical setup against 3.Nf3.",
-                    "summary": "As White, win the pawn back at once with 3.e3 and Bxc4. As Black, take the pawn and hit White's center with ...e5 at once; only 3.Nf3 stops it, and then you play ...Nf6, ...e6, ...c5 and ...a6.",
-                    "overview": [
-                        "As White: play 3.e3 and win the pawn back with Bxc4. If Black holds it with 3...b5, a4 breaks the chain, and after 4...c6 5.axb5 cxb5, 6.Qf3 hits the rook on a8 and wins a piece.",
-                        "As Black: take on c4, then strike with ...e5 at once against 3.Nc3, 3.e3 and 3.e4, which make up 86% of your games. Only 3.Nf3 (10%) stops ...e5; then play ...Nf6, ...e6, ...c5 and ...a6.",
-                        "As Black: against 4.d5, White's most common reply, play ...Nf6. After 5.e4 (or 3.e4 e5 4.d5 Nf6 5.Nc3), 5...b5! keeps the extra pawn: if 6.Nxb5, then 6...Nxe4 takes White's center pawn.",
-                        "As Black: never play ...Bb4 while White's queen can check on a4: 4.d5 Bb4?? and 5.e4 Bb4?? lose the bishop to Qa4+. About one club player in three plays 5...Bb4 there.",
-                        "As Black: when White takes back on d4 with the e-pawn, White has an isolated pawn. Develop with ...Nf6 and ...Bd6 and castle, then play ...Nc6 and ...Bg4 to press on d4. Castle before ...Bg4: an early ...Bg4 runs into Bxf7+ and Ne5+, or Qb3.",
-                        "As Black: don't try to keep the pawn with ...b5 against 3.e3: after 4.a4 c6 5.axb5 cxb5?, 6.Qf3 wins a piece.",
-                        "As Black: if White trades queens (3.Nc3 e5 4.dxe5 Qxd1+, or 3.e3 e5 4.Bxc4 exd4 5.Qxd4 Qxd4), develop fast with ...Nc6, ...Be6 or ...Bg4, and castle long. Black scores 59–60% in these lines at club level."
-                    ]
+                    "summary": "1.d4 d5 2.c4 dxc4: Black takes the pawn and gives up the center for a moment.",
+                    "why": {
+                        "text": "As Black, taking on c4 frees your pieces, and ...e5 hits White's center at once. White wins the pawn back, but you develop quickly.\n\nAs White, 3.e3 opens the diagonal of the f1 bishop, and Bxc4 wins the pawn back at once."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "3.Nc3 e5",
+                                "34% as Black",
+                                "Against 4.d5, play ...Nf6. After 5.e4, 5...b5! keeps the extra pawn. Never play ...Bb4 while Qa4+ is possible."
+                            ],
+                            [
+                                "Old Variation: 3.e3 e5",
+                                "29% as Black",
+                                "After 4.Bxc4 exd4 5.exd4, White has an isolated pawn: play ...Nf6, ...Bd6 and castle, then ...Nc6 and ...Bg4."
+                            ],
+                            [
+                                "Central Variation: 3.e4 e5",
+                                "24% as Black",
+                                "Against 4.d5, play ...Nf6 and ...b5, as against 3.Nc3. Against 4.Nf3, take on d4, then ...Nc6 and ...Be6."
+                            ],
+                            [
+                                "3.e3 Nf6",
+                                "21% as White",
+                                "4.Bxc4 and castle. Then trade queens for a small endgame edge, or keep them and push e4."
+                            ],
+                            [
+                                "3.e3 b5",
+                                "18% as White",
+                                "4.a4 hits the pawn chain. After 4...c6 5.axb5 cxb5, 6.Qf3 wins a piece."
+                            ],
+                            [
+                                "3.e3 e5",
+                                "13% as White",
+                                "After 4.Bxc4 exd4 5.exd4, play Nf3 and Nc3, castle, and use the open e-file."
+                            ],
+                            [
+                                "Normal Variation: 3.Nf3",
+                                "10% as Black",
+                                "...e5 is impossible here: play ...Nf6, ...e6, ...c5 and ...a6."
+                            ]
+                        ],
+                        "note": "How often: the share of your Queen's Gambit Accepted games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
                 }
             ],
             "puzzles": "content/queens-gambit-accepted-puzzles.pgn"
@@ -647,16 +680,45 @@
                     "side": "both",
                     "file": "content/tarrasch.pgn",
                     "repertoire": "As White: the Rubinstein System (4.cxd5, Nf3, g3 and Bg2). As Black: the Classical Tarrasch.",
-                    "summary": "As White, take on d5 and aim the g2 bishop at Black's isolated pawn. As Black, hit White's center at once with 3...c5 and accept an isolated d-pawn for free, active pieces.",
-                    "overview": [
-                        "As White: take on d5 with 4.cxd5, then play Nf3, g3 and Bg2. The bishop on the long diagonal hits d5, the isolated pawn. Against 4...cxd4, the Schara Gambit, take the pawn and keep it.",
-                        "As Black: answer 3.Nc3 with 3...c5. After 4.cxd5, about four games in ten, take back with the e-pawn: your c8 bishop is free and your pieces come out quickly. The price is an isolated pawn on d5.",
-                        "As Black: against the classical 6.g3 and Bg2, develop with ...Nf6, ...Be7 and castle. After 9.Bg5, take on d4, then play ...h6 and ...Re8. Active pieces are your payment for the weak pawn, so avoid needless trades.",
-                        "As Black: when White takes on c5 early (4.dxc5, 5.dxc5 or 6.dxc5, together about three games in ten), push ...d4! and win the pawn back later. Never 5...Bxc5?: 6.Qxd5 wins your d5 pawn.",
-                        "As Black: if White's knight lands on b5, look for ...Qa5+, which checks and hits the knight, and for ...e5, which hits a bishop on f4 or a knight on d4.",
-                        "As Black: against 4.e3 and 4.Nf3, about one game in five each, play 4...Nc6 and ...Nf6. If White develops the f1 bishop without taking on d5, take on c4 and expand with ...a6, ...b5 and ...Bb7.",
-                        "As Black: against Bg5, block with ...Be7, and after Bxe7 take back with the g8 knight, never the queen: the queen must keep guarding d5."
-                    ]
+                    "summary": "1.d4 d5 2.c4 e6 3.Nc3 c5: Black hits White's center at once.",
+                    "why": {
+                        "text": "As Black, 3...c5 strikes at the center before White is ready. You accept an isolated pawn on d5 and get free, active pieces in return.\n\nAs White, take on d5, then play g3 and Bg2: the bishop on the long diagonal presses on the isolated pawn."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Rubinstein System: 4.cxd5 exd5, then Nf3, g3 and Bg2",
+                                "73% as White",
+                                "The bishop on g2 hits d5, the isolated pawn. Castle and keep up the pressure."
+                            ],
+                            [
+                                "4.e3 or 4.Nf3",
+                                "45% as Black",
+                                "Play ...Nc6 and ...Nf6. If White develops the f1 bishop before taking on d5, take on c4, then play ...a6, ...b5 and ...Bb7."
+                            ],
+                            [
+                                "4.cxd5 exd5",
+                                "38% as Black",
+                                "Develop with ...Nc6, ...Nf6 and ...Be7, and castle. Your active pieces make up for the isolated pawn."
+                            ],
+                            [
+                                "Early dxc5: 4.dxc5 or 5.dxc5",
+                                "27% as Black",
+                                "Push ...d4! and win the pawn back later. Never 5...Bxc5?: 6.Qxd5 wins your d5 pawn."
+                            ],
+                            [
+                                "Schara Gambit: 4.cxd5 cxd4",
+                                "26% as White",
+                                "Take the pawn with Qxd4 and keep it."
+                            ]
+                        ],
+                        "note": "How often: the share of your Tarrasch games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
                 }
             ]
         },
@@ -752,34 +814,10 @@
                     "url": "https://www.youtube.com/watch?v=K8MSjqFyVvs"
                 },
                 {
-                    "title": "Punish 1.d4 with the King's Indian Defense [Key Attacking Ideas]",
-                    "by": "Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=rJ8LqYZZvnc"
-                },
-                {
-                    "title": "Unknown King's Indian Defense Trick vs 1.d4",
-                    "by": "Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=468V5A2lFuw"
-                },
-                {
                     "title": "The King's Indian Defense: Step by Step (Chess Lesson 85)",
                     "by": "NM Robert Ramirez",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=bCmsHfrcBBc"
-                },
-                {
-                    "title": "King's Indian Defense Masterclass (introduction and 12 chapters)",
-                    "by": "ChessGeek",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/playlist?list=PLOaFVRf_8WkQv_RtBn59zda2ZEBAy1RG7"
-                },
-                {
-                    "title": "Complete King's Indian Repertoire for Black",
-                    "by": "Hanging Pawns",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=0DY4Z_L866c"
                 },
                 {
                     "title": "Learn the King's Indian Setup | 10-Minute Chess Openings",
@@ -796,33 +834,24 @@
             ],
             "courses": [
                 {
-                    "id": "kings-indian-white",
-                    "side": "white",
-                    "file": "content/kings-indian-white.pgn",
-                    "repertoire": "Classical (5.Nf3, 6.Be2 and castling), with 9.b4 against the Mar del Plata",
-                    "summary": "Develop naturally, castle, and let Black commit first. Close the center with d5 and race on the queenside with b4 and c5; against ...exd4, guard e4 with f3 and use your space.",
+                    "id": "kings-indian",
+                    "side": "both",
+                    "file": "content/kings-indian.pgn",
+                    "repertoire": "As White: Classical (5.Nf3, 6.Be2 and castling), with 9.b4 against the Mar del Plata. As Black: the Kazakh 6...Na6 against the Classical, and ...c5 against the Four Pawns and the Sämisch.",
+                    "summary": "As White: develop naturally, castle, and let Black commit first. Close the center with d5 and race on the queenside with b4 and c5; against ...exd4, guard e4 with f3 and use your space. As Black: let White build the big center, castle behind the g7 bishop, then strike with ...e5 or ...c5. The Kazakh 6...Na6 and a knight on c5 keep the theory light against the Classical.",
                     "overview": [
-                        "Play the Classical: 5.Nf3, 6.Be2 and castle. You make no weakening pawn moves, so Black's attack has nothing to aim at until the center closes.",
-                        "After 6.Be2, Black's main reply is 6...e5, in about a third of those games, and 6...Nbd7 or 6...Nc6 usually lead to ...e5 as well. Castle first, then close the center with d5 or hold it with Be3.",
-                        "Against 7...Nc6, the Mar del Plata, play 8.d5 and 9.b4. Your queenside attack with c5 must arrive before Black's ...f5, ...f4 and ...g5.",
-                        "Against 7...exd4 8.Nxd4 Re8, guard e4 with 9.f3 at once. Natural moves such as 9.Bg5? or 9.Re1? let Black take on e4.",
-                        "Against 6...c5, castle and take back on d4 with the knight. Your pawns on c4 and e4 form the Maroczy Bind, which clamps d5 and Black's freeing breaks.",
-                        "Know the tricks: 5...e5?! 6.dxe5 wins a pawn before Black has castled, and the fork trick 8...Nxe4?? fails because your queen guards d4."
-                    ]
-                },
-                {
-                    "id": "kings-indian-black",
-                    "side": "black",
-                    "file": "content/kings-indian-black.pgn",
-                    "repertoire": "The Kazakh 6...Na6 against the Classical, and ...c5 against the Four Pawns and the Sämisch",
-                    "summary": "Let White build the big center, castle behind the g7 bishop, then strike with ...e5 or ...c5. The Kazakh 6...Na6 and a knight on c5 keep the theory light against the Classical.",
-                    "overview": [
-                        "Set up with ...g6, ...Bg7, ...d6 and ...O-O, then strike at White's center with ...e5 or ...c5. Your king is safe behind the g7 bishop.",
-                        "White's systems are spread out: 5.Nf3 comes up in about a sixth of your games, and the Four Pawns, the Sämisch, the Makogonov, 5.Be2 and 5.Bd3 in about 5 to 8% each. Learn the plan for each.",
-                        "Against the Classical, 6.Be2, play 6...Na6 and ...e5. When White closes the center with d5, put the knight on c5, play ...a5 so b4 can't chase it, then ...f5.",
-                        "Against the Four Pawns (5.f4) and the Sämisch (5.f3 and Be3), strike at once with ...c5. White's center is loose and the king is not castled yet.",
-                        "Against the Averbakh (Be2 and Bg5), play ...Na6 before ...e5. Otherwise Nd5 hits f6 and c7 and wins the exchange.",
-                        "Against 6.Bd3, play 6...Bg4 and pile up on d4 with ...Bxf3, ...Nc6 and ...Nd7. The natural Ne2?? then loses material to ...Nce5."
+                        "As White: play the Classical: 5.Nf3, 6.Be2 and castle. You make no weakening pawn moves, so Black's attack has nothing to aim at until the center closes.",
+                        "As White: after 6.Be2, Black's main reply is 6...e5, in about a third of those games, and 6...Nbd7 or 6...Nc6 usually lead to ...e5 as well. Castle first, then close the center with d5 or hold it with Be3.",
+                        "As White: against 7...Nc6, the Mar del Plata, play 8.d5 and 9.b4. Your queenside attack with c5 must arrive before Black's ...f5, ...f4 and ...g5.",
+                        "As White: against 7...exd4 8.Nxd4 Re8, guard e4 with 9.f3 at once. Natural moves such as 9.Bg5? or 9.Re1? let Black take on e4.",
+                        "As White: against 6...c5, castle and take back on d4 with the knight. Your pawns on c4 and e4 form the Maroczy Bind, which clamps d5 and Black's freeing breaks.",
+                        "As White: know the tricks: 5...e5?! 6.dxe5 wins a pawn before Black has castled, and the fork trick 8...Nxe4?? fails because your queen guards d4.",
+                        "As Black: set up with ...g6, ...Bg7, ...d6 and ...O-O, then strike at White's center with ...e5 or ...c5. Your king is safe behind the g7 bishop.",
+                        "As Black: White's systems are spread out: 5.Nf3 comes up in about a sixth of your games, and the Four Pawns, the Sämisch, the Makogonov, 5.Be2 and 5.Bd3 in about 5 to 8% each. Learn the plan for each.",
+                        "As Black: against the Classical, 6.Be2, play 6...Na6 and ...e5. When White closes the center with d5, put the knight on c5, play ...a5 so b4 can't chase it, then ...f5.",
+                        "As Black: against the Four Pawns (5.f4) and the Sämisch (5.f3 and Be3), strike at once with ...c5. White's center is loose and the king is not castled yet.",
+                        "As Black: against the Averbakh (Be2 and Bg5), play ...Na6 before ...e5. Otherwise Nd5 hits f6 and c7 and wins the exchange.",
+                        "As Black: against 6.Bd3, play 6...Bg4 and pile up on d4 with ...Bxf3, ...Nc6 and ...Nd7. The natural Ne2?? then loses material to ...Nce5."
                     ]
                 }
             ]

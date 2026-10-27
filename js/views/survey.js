@@ -46,7 +46,7 @@ function planBlocks(ch, fold = false, withIntro = true) {
 }
 
 /** A page's table from courses.json ("table": { columns, rows, note }), under its title: the replies to 1.e4 at a glance. */
-function introTable(t) {
+export function introTable(t) {
     return h("figure", { class: "survey-table" },
         h("table", {},
             h("thead", {}, h("tr", {}, t.columns.map(c => h("th", { scope: "col" }, c)))),
@@ -121,6 +121,11 @@ function courseLinks(cat, s, ch, lessons, spelled = new Set()) {
                 h("span", { class: "course-meta" }, `${page.name} ${variation} variation as ${side === "white" ? "White" : "Black"}`),
                 figText(spellOut(lessons[side].title, spelled)))))
     }
+    // A family with its own page (the Queen's Gambit on the 1.d4 page) links to that page, which lists its courses.
+    if (ch.headers.Page && ops.length > 1 && ops.some(op => op.courses.some(m => m.available))) {
+        return h("a", { class: "course-link", href: `#/survey/${ch.headers.Page}`, title: "Its courses are listed on its page" },
+            h("span", { class: "side-chip both", "aria-hidden": "true" }), `${ch.title} Course`)
+    }
     const built = ops.flatMap(op => op.courses.filter(m => m.available))
     if (!built.length) {
         return h("span", { class: "course-link is-soon" }, ops.length ? `${ops[0].name} course coming soon` : "Course coming later")
@@ -136,23 +141,47 @@ function courseLinks(cat, s, ch, lessons, spelled = new Set()) {
  * With lesson links on the page, a second sentence tells the two kinds of link apart.
  */
 function courseBox(cat, s, hasLessons) {
+    // A [Page] chapter whose [Course] lists several openings (the Queen's Gambit on the 1.d4 page) is one
+    // link, to its own page, which lists those courses.
+    const families = s.chapters.filter(ch => ch.headers.Page && courseOps(cat, ch.headers.Course).length > 1)
+    const inFamily = new Set(families.flatMap(ch => courseOps(cat, ch.headers.Course)))
     const ids = [s.course, ...s.chapters.flatMap(ch => [ch.headers.Course, ch.headers.WhiteCourse, ch.headers.BlackCourse])].join(" ")
-    const ops = [...new Set(courseOps(cat, ids))].filter(op => op.courses.some(m => m.available))
-    if (!ops.length) return null
+    const ops = [...new Set(courseOps(cat, ids))].filter(op => !inFamily.has(op) && op.courses.some(m => m.available))
     const built = op => op.courses.filter(m => m.available)
-    const title = courseTitle
-    const bothSides = ops.every(op => built(op).every(m => m.side === "both"))
-    const one = ops.length === 1 ? ops[0] : null
+    const groups = [
+        ...families.map(ch => [{ href: `#/survey/${ch.headers.Page}`, text: `${ch.title} Course`, side: "both", tip: "Its courses are listed on its page" }]),
+        ...ops.map(op => built(op).map(m => ({ href: `#/course/${m.id}`, text: courseTitle(op, m), side: m.side, tip: m.repertoire }))),
+    ]
+    if (!groups.length) return null
+    const bothSides = groups.every(g => g.every(it => it.side === "both"))
+    const one = ops.length === 1 && !families.length ? ops[0] : null
     const plural = !one || built(one).length > 1
     return h("section", { class: "course-box" },
         h("h2", {}, one ? `The full ${one.name} course${plural ? "s" : ""}` : "The full courses"),
         h("p", {}, [
-            one ? `${plural ? "These links open" : "This link opens"} the full ${built(one).map(m => title(one, m)).join(" and the ")}.`
+            one ? `${plural ? "These links open" : "This link opens"} the full ${built(one).map(m => courseTitle(one, m)).join(" and the ")}.`
                 : "These links open the full courses for the openings on this page.",
-            bothSides ? " Each course teaches both sides: you play White in some lines and Black in others." : "",
+            bothSides ? " Each course teaches both sides, with a drill for each." : "",
             hasLessons ? " The links under each variation below open only the lesson on that variation." : ""].join("")),
-        ops.map(op => h("div", { class: "course-box-links" }, built(op).map(m => h("a", { class: "btn course-box-link", href: `#/course/${m.id}`, title: m.repertoire },
-            h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }), title(op, m), h("span", { "aria-hidden": "true" }, "›"))))))
+        boxRows(groups).map(row => h("div", { class: "course-box-links" }, row.map(it => h("a", { class: "btn course-box-link", href: it.href, title: it.tip },
+            h("span", { class: `side-chip ${it.side}`, "aria-hidden": "true" }), it.text, h("span", { "aria-hidden": "true" }, "›"))))))
+}
+
+/**
+ * The box's rows: an opening's White and Black courses side by side, and courses for both sides two
+ * to a row (the Queen's Gambit Declined beside the Accepted, the Slav beside the Tarrasch).
+ */
+function boxRows(groups) {
+    const rows = []
+    let pair = null
+    for (const items of groups) {
+        if (!items.every(it => it.side === "both")) { rows.push(items); pair = null; continue }
+        for (const it of items) {
+            if (pair && pair.length < 2) pair.push(it)
+            else { pair = [it]; rows.push(pair) }
+        }
+    }
+    return rows
 }
 
 const lineHref = (s, ch, i) => `#/survey/${s.id}/${ch.index}${i ? `/${i}` : ""}`
@@ -175,6 +204,21 @@ function flowchart(s, jump) {
         byName.set(ch.title, ch)
         for (const p of chapterPaths(ch)) byName.set(p.name, ch)
     }
+    return variationMap(s.flow.root, {
+        target: (node, name) => (byName.has(name) ? { title: "Go to its board", onclick: () => jump(byName.get(name)) } : null),
+        hint: "Tap a name with a gold edge to see its board.",
+        key: " A line taught in the full courses above the map",
+    })
+}
+
+/**
+ * A "Map of the variations" flowchart from a [Type "map"] chapter's move tree: every move with a note
+ * becomes a box showing the moves since the box before it, with the note as its name.
+ * `target(node, name)` makes a box a link ({ href } or { onclick }, with a title) or returns null for a
+ * plain box; `[%course white|black]` in a note stars it (`star(side)` is its tooltip), explained by `key`. Used by the family pages
+ * (boxes open a card) and by the course pages (boxes open the position in a lesson).
+ */
+export function variationMap(root, { target, hint, key, star = side => `Taught in a course, from ${side === "white" ? "White" : "Black"}'s side` }) {
     let starred = false
     const boxesBelow = node => {
         const out = []
@@ -186,25 +230,26 @@ function flowchart(s, jump) {
         const run = []
         for (let n = node; n !== from; n = n.parent) run.unshift(n)
         const name = node.note.text
-        const ch = byName.get(name)
         const course = /\[%course (white|black)\]/.exec(node.comments.join(" "))
         if (course) starred = true
         const content = [
             h("span", { class: "fc-move" }, moveRun(run)),
-            name ? h("span", { class: "fc-name" }, figText(name),
-                course ? h("span", { class: "om-star", title: `Taught in a course, from ${course[1] === "white" ? "White" : "Black"}'s side` }, " ★") : null) : null]
+            name || course ? h("span", { class: "fc-name" }, name ? figText(name) : null,
+                course ? h("span", { class: "om-star", title: star(course[1]) }, name ? " ★" : "★") : null) : null]
         // Laid out like the "Map of the openings" (the om- classes), with two-line boxes.
-        const box = ch
-            ? h("button", { class: "om-box fc-box tone-0", type: "button", title: "Go to its board", onclick: () => jump(ch) }, content)
-            : h("span", { class: "om-box fc-box" }, content)
+        const t = target(node, name)
+        const box = !t ? h("span", { class: "om-box fc-box" }, content)
+            : t.href ? h("a", { class: "om-box fc-box is-link tone-0", href: t.href, title: t.title }, content)
+                : h("button", { class: "om-box fc-box tone-0", type: "button", title: t.title, onclick: t.onclick }, content)
         const kids = boxesBelow(node)
         return h("li", { class: "om-item" }, box, kids.length ? h("ul", { class: "om-kids" }, kids.map(k => item(k, node))) : null)
     }
+    const tree = h("div", { class: "fc-scroll" }, h("ul", { class: "om-tree" }, boxesBelow(root).map(k => item(k, root))))
     return h("section", { class: "opening-map flowchart", "aria-labelledby": "flowchart-title" },
         h("h2", { id: "flowchart-title" }, "Map of the variations"),
-        h("p", { class: "muted" }, "Tap a name with a gold edge to see its board."),
-        h("div", { class: "fc-scroll" }, h("ul", { class: "om-tree" }, boxesBelow(s.flow.root).map(k => item(k, s.flow.root)))),
-        starred ? h("p", { class: "fc-key" }, h("span", { class: "om-star", "aria-hidden": "true" }, "★"), " A line taught in the full courses above the map") : null)
+        hint ? h("p", { class: "muted" }, hint) : null,
+        tree,
+        starred && key ? h("p", { class: "fc-key" }, h("span", { class: "om-star", "aria-hidden": "true" }, "★"), key) : null)
 }
 
 /**

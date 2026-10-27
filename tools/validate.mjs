@@ -132,7 +132,7 @@ for (const meta of courses) {
         `${course.lines.reduce((s, l) => s + l.learnerMoves, 0)} learner moves.`, "")
 
     // Course-page diagrams: every lesson chapter must point at a position on its main line
-    for (const ch of chapters.filter(c => c.type !== "ideas")) {
+    for (const ch of chapters.filter(c => c.type !== "ideas" && c.type !== "map")) {
         if (!ch.diagram) errors.push(`${meta.id} / ${ch.title}: no diagram. Name a move in the title (e.g. "3...Bc5") or add a [Diagram "3...Nd4"] header`)
         else if (ch.diagram.error) errors.push(`${meta.id} / ${ch.title}: ${ch.diagram.error}`)
     }
@@ -141,7 +141,7 @@ for (const meta of courses) {
     const nameRows = []
     for (const ch of chapters) {
         if (!ch.opening) {
-            if (ch.type !== "ideas") nameRows.push(`| ${ch.title} | ${diagramLabel(ch)} | — | — | no Opening header |`)
+            if (ch.type !== "ideas" && ch.type !== "map") nameRows.push(`| ${ch.title} | ${diagramLabel(ch)} | — | — | no Opening header |`)
             continue
         }
         const entries = openings.byName.get(ch.opening)

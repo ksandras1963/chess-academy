@@ -9,6 +9,7 @@ import { chapterShare, pct, shortName } from "../stats.js"
 import { Board } from "../board.js"
 import { furtherStudy } from "./layout.js"
 import { puzzleStats } from "./puzzles.js"
+import { variationMap, introTable } from "./survey.js"
 
 const TYPE_LABEL = { line: "", trap: "Trap", ideas: "Key ideas" }
 
@@ -61,19 +62,26 @@ export async function courseView(root, ctx, id, sectionId) {
 }
 
 function drillAction(c) {
-    const queue = buildQueue(c.lines)
+    // A course for both sides has a drill for each side: the board stays the same way up all session.
+    if (c.side === "both") {
+        return h("div", { class: "drill-pair" }, ["white", "black"].map(side =>
+            drillButton(c.lines.filter(l => l.side === side), `#/drill/${c.id}/as-${side}`, `Drill as ${side === "white" ? "White" : "Black"}`)))
+    }
+    return drillButton(c.lines, `#/drill/${c.id}`, "Start today's drill")
+}
+
+function drillButton(lines, href, title) {
+    const queue = buildQueue(lines)
     const dueCount = queue.filter(l => status(l.id).rec).length
     const newCount = queue.length - dueCount
     if (queue.length) {
         const parts = []
         if (dueCount) parts.push(`${dueCount} to review`)
         if (newCount) parts.push(`${newCount} new`)
-        return h("a", { class: "btn btn-primary btn-big", href: `#/drill/${c.id}` },
-            "Start today's drill", h("span", { class: "btn-detail" }, parts.join(", ")))
+        return h("a", { class: "btn btn-primary btn-big", href }, title, h("span", { class: "btn-detail" }, parts.join(", ")))
     }
-    if (practiceQueue(c.lines).length) {
-        return h("a", { class: "btn btn-primary btn-big", href: `#/drill/${c.id}` },
-            "Practice", h("span", { class: "btn-detail" }, "Nothing due. Drill your weakest lines."))
+    if (practiceQueue(lines).length) {
+        return h("a", { class: "btn btn-primary btn-big", href }, title, h("span", { class: "btn-detail" }, "Nothing due. Drill your weakest lines."))
     }
     return h("p", { class: "muted" }, "Start with the basic variations below.")
 }
@@ -102,6 +110,39 @@ function hubPage(root, c, set, back) {
         ? card(`#/puzzles/${c.opening.id}`, "Puzzles", `${st.solved} of ${st.total} solved`, null)
         : h("span", { class: "hub-card is-soon" }, h("span", { class: "hub-title" }, "Puzzles"), h("span", { class: "hub-meta" }, "Coming soon"))
     const core = progress(coreLines(c))
+    const map = c.chapters.find(ch => ch.type === "map")
+    const ideasList = ideas.length ? [
+        h("p", { class: "muted" }, "Read these first: the reasons behind the moves you will drill."),
+        h("ol", {}, ideas.map(ch => h("li", {},
+            h("a", { href: `#/learn/${c.id}/ideas-${ch.index}` }, ch.title.replace(/^Key ideas:\s*/i, "")), c.side === "both" ? " " : null, sideTag(c, ch))))
+    ] : null
+
+    // A course page with "why" (the Queen's Gambit courses): a short text, why the opening is played,
+    // a map of its variations and a table of them, then the sections. No list of points to remember.
+    if (c.why) {
+        root.append(h("section", { class: "course" },
+            backBar(back),
+            h("header", { class: "course-head" },
+                h("h1", {}, courseTitle(c)),
+                h("p", { class: "course-side" }, c.repertoire),
+                h("p", { class: "course-summary" }, figText(c.summary || ""))),
+            h("div", { class: "course-actions" }, drillAction(c)),
+            h("section", { class: "course-why" }, h("h2", {}, c.why.title || "Why play it"), ...paras(c.why.text)),
+            map ? variationMap(map.root, {
+                target: node => mapTarget(c, node),
+                hint: "Tap a box to see its position in a lesson.",
+                star: side => `A Basic line: you play ${side === "white" ? "White" : "Black"}`,
+                key: " A Basic line: learn these first",
+            }) : null,
+            c.table ? h("section", { class: "course-table" }, h("h2", {}, c.table.title || "The variations"), introTable(c.table)) : null,
+            h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard),
+            h("div", { class: "course-stats" },
+                h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.` +
+                    (newRemainingToday() < 1 && core.fresh ? " Today's new lines are used up; any line can still be drilled from its section." : ""))),
+            ideasList ? h("section", { class: "ideas-list" }, h("h2", {}, "Key ideas"), ideasList) : null,
+            furtherStudy(c.opening.furtherStudy)))
+        return
+    }
 
     root.append(h("section", { class: "course" },
         backBar(back),
@@ -113,16 +154,26 @@ function hubPage(root, c, set, back) {
         h("section", { class: "ideas-list essentials" },
             h("h2", {}, "What you need to know about this opening"),
             c.overview && c.overview.length ? h("ul", { class: "essentials-points" }, c.overview.map(pt => h("li", {}, figText(pt)))) : null,
-            ideas.length ? [
-                h("p", { class: "muted" }, "Read these first: the reasons behind the moves you will drill."),
-                h("ol", {}, ideas.map(ch => h("li", {},
-                    h("a", { href: `#/learn/${c.id}/ideas-${ch.index}` }, ch.title.replace(/^Key ideas:\s*/i, "")), c.side === "both" ? " " : null, sideTag(c, ch))))
-            ] : null),
+            ideasList),
         h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard),
         h("div", { class: "course-stats" },
             h("p", {}, `${plural(core.total, "line")} in your schedule: ${core.fresh} new, ${core.learning} learning, ${core.review + core.known} reviewing or known.` +
                 (newRemainingToday() < 1 && core.fresh ? " Today's new lines are used up; any line can still be drilled from its section." : ""))),
         furtherStudy(c.opening.furtherStudy)))
+}
+
+/**
+ * Where a box of the course's map leads: the first lesson that passes through its position, opened at
+ * that move (in the side the lesson is played from). Null when no line of the course reaches it.
+ */
+function mapTarget(c, node) {
+    const key = fen => fen.split(" ").slice(0, 4).join(" ")
+    const want = key(node.fen)
+    for (const l of c.lines) {
+        const i = l.nodes.findIndex(n => key(n.fen) === want)
+        if (i >= 0) return { href: `#/learn/${c.id}/${l.id}/${i + 1}`, title: `Open this position in ${l.chapter.title}` }
+    }
+    return null
 }
 
 function sectionPage(root, ctx, c, stats, section) {
