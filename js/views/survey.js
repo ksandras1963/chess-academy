@@ -33,14 +33,14 @@ function plans(ch) {
 }
 
 /** The note's other paragraphs, then the plans; on a compact or "foldPlans" page the plans fold away under a button. */
-function planBlocks(ch, fold = false) {
+function planBlocks(ch, fold = false, withIntro = true) {
     const p = plans(ch)
     const block = (color, text) => text ? h("div", { class: "plan" },
         h("h3", { class: "plan-side" }, h("span", { class: `side-chip ${color === "w" ? "white" : "black"}`, "aria-hidden": "true" }), sideName(color)),
         h("p", {}, figText(text))) : null
     const both = p.w || p.b ? h("div", { class: "plans" }, block("w", p.w), block("b", p.b)) : null
     return [
-        ...p.other.map(t => h("p", { class: "chapter-intro" }, figText(t))),
+        ...(withIntro ? p.other.map(t => h("p", { class: "chapter-intro" }, figText(t))) : []),
         fold && both ? h("details", { class: "plans-more" }, h("summary", {}, "Plans for White and Black"), both) : both
     ]
 }
@@ -350,6 +350,8 @@ export async function surveyLineView(root, ctx, id, chapterIndex, pathIndex) {
     const L = trainerLayout(root, { backHref: `#/survey/${s.id}`, backText: s.name, prev: all[at - 1] || null, next: all[at + 1] || null })
     // The ECO code belongs to the chapter's main line (the Benoni's A56 is not the Benko's).
     L.setTitle(figText(ch.title), [paths.length > 1 ? path.name : "", path === paths[0] ? ch.eco : ""].filter(Boolean).join(" · "))
+    // The card's description stays in view while the moves play; the plans stay below.
+    L.setIntro(plans(ch).other.map(t => h("p", {}, figText(t))))
 
     const nodes = path.nodes
     const state = { idx: 0 }
@@ -419,7 +421,7 @@ export async function surveyLineView(root, ctx, id, chapterIndex, pathIndex) {
                     h("a", { class: "alt-move", href: lineHref(s, ch, i) }, split ? label(split) : p.name),
                     h("span", { class: "alt-note" }, p.name))
             }))) : null,
-        h("div", { class: "survey-plans" }, planBlocks(ch)),
+        h("div", { class: "survey-plans" }, planBlocks(ch, false, false)),
         ch.headers.Course !== "none" ? h("div", { class: "survey-actions" }, courseLinks(cat, ch, lessons)) : null
     ].filter(Boolean)) // append() would write a null as the text "null"
 

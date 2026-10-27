@@ -525,7 +525,7 @@ button.fc-box .fc-name { color: var(--ink); }
 .trainer {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "head" "board" "controls" "commentary" "extra" "sheet";
+    grid-template-areas: "head" "board" "controls" "intro" "commentary" "extra" "sheet";
     gap: 14px;
 }
 .trainer-panel { display: contents; }
@@ -533,6 +533,7 @@ button.fc-box .fc-name { color: var(--ink); }
 .trainer-board { grid-area: board; }
 .controls { grid-area: controls; }
 .commentary { grid-area: commentary; }
+.lesson-intro { grid-area: intro; }
 .extra { grid-area: extra; }
 .scoresheet { grid-area: sheet; }
 
@@ -544,6 +545,10 @@ button.fc-box .fc-name { color: var(--ink); }
 .nav-buttons, .more-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
 .prompt { font-weight: 600; }
 
+/* The line's introduction: stays in view while the moves are played. */
+.lesson-intro { padding: 10px 14px; border-left: 3px solid var(--brass); border-radius: 0 6px 6px 0; background: var(--felt-raised); }
+.intro-label { font-family: var(--sans); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.02em; color: var(--ink-dim); }
+.lesson-intro p { margin-top: 6px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.55; max-width: 38rem; }
 .commentary { min-height: 5.5rem; }
 .cm-entry + .cm-entry { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--rule); }
 .cm-move { font-size: 1.25rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
@@ -615,7 +620,7 @@ button.sheet-move:hover { background: var(--felt-high); }
     }
     /* Long notes scroll inside the panel instead of being squeezed; the buttons stay in view. */
     .trainer-panel > * { flex-shrink: 0; }
-    .tp-head, .controls, .commentary, .extra, .scoresheet { grid-area: auto; }
+    .tp-head, .controls, .commentary, .extra, .scoresheet, .lesson-intro { grid-area: auto; }
     .scoresheet { order: 1; max-height: calc(15 * (1.5rem + 7px) + 12px); }
     .sheet-move { padding-top: 3px; padding-bottom: 3px; }
     .controls { position: sticky; bottom: 0; z-index: 1; padding: 10px 0 2px; background: var(--felt); }
@@ -623,6 +628,13 @@ button.sheet-move:hover { background: var(--felt-high); }
     .commentary { order: 2; }
     .extra { order: 3; }
     .controls { order: 4; }
+    /* A line with an introduction: title, the introduction, the current move, the buttons, then the
+       score sheet, so the introduction and the move's note stay in view beside the board. */
+    .trainer.has-intro .lesson-intro { order: 1; }
+    .trainer.has-intro .commentary { order: 2; }
+    .trainer.has-intro .controls { order: 3; }
+    .trainer.has-intro .scoresheet { order: 4; }
+    .trainer.has-intro .extra { order: 5; }
 }
 
 /* ---------- empty, settings ---------- */

@@ -35,6 +35,9 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
     const back = base.line ? sectionLink(c, base.line) : { href: `#/course/${c.id}`, text: sideLabel(c) }
     const L = trainerLayout(root, { backHref: back.href, backText: back.text, ...steps })
     L.setTitle(spellOut(base.title), base.sub)
+    // A line's introduction stays in view while the moves are played; a Key ideas page shows its text
+    // as the starting position's note instead.
+    if (base.line) L.setIntro(paras(base.start.note.text || ""))
     const state = { nodes: base.nodes, idx: Math.min(Number(startAt) || 0, base.nodes.length), explore: null }
     const board = new Board(L.boardEl, { fen: base.start.fen, orientation: learner })
     ctx.onLeave(() => board.destroy())
@@ -71,7 +74,7 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
         if (!node) {
             L.commentary.replaceChildren(
                 ...(base.line ? [h("h2", { class: "cm-move" }, "Starting position")] : []),
-                ...paras(note.text || (state.nodes.length
+                ...paras((!base.line && note.text) || (state.nodes.length
                     ? "Step through the line with the arrows below, or tap any move on the score sheet." : "")))
         } else {
             const who = node.color === learner ? `${sideName(node.color)}, your side` : sideName(node.color)
