@@ -6,6 +6,7 @@ import { mainPath, sideNotes, siblingBranches } from "../course-model.js"
 import { Board } from "../board.js"
 import { trainerLayout, renderSheet, mergedNote, furtherStudy } from "./layout.js"
 import { sideLabel, sectionLink } from "./course.js"
+import { ideasPage } from "./ideas.js"
 
 export async function learnView(root, ctx, courseId, lineKey, startAt) {
     const c = await loadCourse(courseId)
@@ -36,6 +37,9 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
     const coursePage = { href: `#/course/${c.id}`, text: sideLabel(c) }
     const section = base.line ? sectionLink(c, base.line) : coursePage
     const trail = section.href === coursePage.href ? [coursePage] : [section, coursePage]
+    // A Key ideas page made of concepts shows one board per concept instead of the single trainer board.
+    const page = base.line ? null : c.chapters[Number(lineKey.slice(6))]
+    if (page && page.concepts.length) return ideasPage(root, ctx, c, page, { trail, ...steps })
     const L = trainerLayout(root, { trail, ...steps })
     L.setTitle(spellOut(base.title), base.sub)
     // A line's introduction stays in view while the moves are played; a Key ideas page shows its text

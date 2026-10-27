@@ -57,7 +57,7 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 | Header | Meaning |
 |---|---|
 | `Chapter` | The title shown in the app. In a course for one family, leave the family name out: the course's name says it (`Exchange: 5...Be7` in the Queen's Gambit Declined Course). Where a title needs one, write the Queen's Gambit families short, as `QGD` or `QGA`: each page spells out the first QGD or QGA it shows ("Queen's Gambit Declined (QGD)") and keeps the abbreviation after that (`spellOut` in `js/ui.js`). |
-| `Type` | `line` (normal lines), `trap`, or `ideas` (the Key ideas page, which is never drilled). Puzzle files use `puzzle` (see Puzzles below). |
+| `Type` | `line` (normal lines), `trap`, `ideas` (a Key ideas page, which is never drilled), or `concept` (one board on the Key ideas page before it). Puzzle files use `puzzle` (see Puzzles below). |
 | `Side` | Only in a course for both sides (`"side": "both"`): `white` or `black`, the side the learner plays in this chapter, or `both` for a chapter drilled from each side (every line then exists once as White and once as Black, with its own progress, and the chapter's tag reads "Both sides"). The checker reports a chapter without it. |
 | `Opening`, `ECO` | The Lichess opening name and code. The checker verifies both. |
 | `FEN` | Optional. Starts the chapter from a set position (used for Key ideas). |
@@ -94,6 +94,7 @@ These go inside an explanation, in the same format Lichess uses:
 ### Key ideas pages and further study
 
 - **Key ideas pages:** chapters with `[Type "ideas"]`. They appear in order under "What you need to know about this opening" on the course hub, and their moves are never drilled. A page can be a single position (`[FEN "..."]` with no moves) or a short move sequence.
+- **Key ideas with one board per concept** (Kumar's rule, in CLAUDE.md): put the page's short introduction in a `[Type "ideas"]` chapter with no moves, then one `[Type "concept"]` chapter per idea right after it. Each concept has its own `[Chapter]` title, a `[FEN]` that sets up the position for that idea, a comment of two to five sentences that explains it, and only the few moves that show how it works, each with a short note. The page then shows the concepts one under another, numbered, each with its own board and move buttons. A concept takes its page's `[Side]` unless it has its own. The concepts are not listed on the course page and are never drilled; the checker checks their moves like any Key ideas moves. `content/queens-gambit-declined.pgn`, "Key ideas: Plans in the Exchange Variation", is the worked example.
 - **Further study:** in `content/courses.json`, each opening can have a `furtherStudy` list (title, by, kind, url). It is shown on the course page and on every Key ideas page. Credit every source you draw on there, and always write the notes in your own words.
 
 ## Puzzles
