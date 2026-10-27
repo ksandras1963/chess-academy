@@ -2,9 +2,9 @@
 [Type "map"]
 
 1. d4 d5 2. c4 {Queen's Gambit} e6 {Queen's Gambit Declined}
-(2... dxc4 {Queen's Gambit Accepted} 3. e3 {[%course white] Old Variation} (3. e4 {Central Variation}) (3. Nf3 {Normal Variation}))
-(2... c6 {Slav Defense} 3. Nf3 (3. cxd5 cxd5 {Exchange Variation}) Nf6 4. Nc3 dxc4 {Main line})
-(2... e5 {Albin Countergambit})
+(2... dxc4 {Queen's Gambit Accepted} 3. e3 {[%course white] Old Variation} (3. e4 {[%course black] Central Variation}) (3. Nf3 {[%course black] Normal Variation}))
+(2... c6 {Slav Defense} 3. Nf3 (3. cxd5 cxd5 {[%course black] Exchange Variation}) Nf6 4. Nc3 dxc4 {[%course black] Main line})
+(2... e5 {[%course black] Albin Countergambit})
 3. Nc3 Nf6 (3... c5 {[%course black] Tarrasch Defense})
 4. Bg5 {[%course black] Main line} (4. cxd5 exd5 {[%course white] Exchange Variation}) (4. Nf3 c6 {Semi-Slav Defense} (4... Bb4 {Ragozin Defense})) *
 
