@@ -153,7 +153,7 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 {White castles before choosing c3, d3 or Nc3. This is White's most common fourth move, about one game in four. Play 4...Nf6 and the same setup as always: ...d6, ...a6 and ...Ba7. Most games then reach the main line by another move order. The one new idea is 5.d4, where you take on d4 with the bishop.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O {Castles first and keeps c3, d3 and Nc3 open.} Nf6 {Hits e4, as in every line of this course.}
 5. d3 {The most common reply, about three games in ten. It guards e4. This is the same position as 4.d3 Nf6 5.O-O.}
-(5. c3 d6 {Back in the main line: this is 4.c3 Nf6 5.O-O d6.})
+(5. c3 d6 {[%engine ok] Back in the main line: this is 4.c3 Nf6 5.O-O d6. Stockfish slightly prefers 5...Nxe4, but the game then turns sharp.})
 (5. d4 {Opens the center at once, about one game in five.} Bxd4 {[%cal Gc5d4] Take with the bishop. Stockfish prefers it to 5...exd4, which leads to the sharp Max Lange Attack.}
 6. Nxd4 Nxd4 {Black's knight now stands well on d4.}
 7. f4 {White wants to open the f-file against e5 and f7.}
@@ -330,7 +330,7 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4
 6. cxd4 {This is the Traditional Line of the Greco Gambit.}
 (6. e5 {This is the Modern Line of the Greco Gambit. Kicks the knight.} d5! {[%cal Gd5c4] Counterattacks the bishop instead of retreating. This is Black's only good reply.} 7. Bb5 Ne4 {A strong central knight.} 8. cxd4 Bb4+ {This is the Anderssen Variation of the Greco Gambit.} 9. Bd2 Nxd2 10. Nbxd2 O-O {Black has castled and stands well.})
-6... Bb4+ 7. Nc3 {This is Greco's Attack.} Nxe4 {Take the center pawn. The pin on c3 makes this safe: the knight can't recapture.} 8. O-O Bxc3 {This is the Main Line of the Greco Gambit.} (8... Nxc3 {This is the Greco Variation of the Greco Gambit. Playable only with 9.bxc3 d5!} 9. bxc3 Bxc3? {Greedy.} 10. Ba3! {[%cal Ga3f8] This is the Aitken Variation. The bishop stops Black from castling, and White's attack wins: Stockfish rates it about +4.8.}) 9. d5 {This is the Møller Attack, also called the Moeller-Therkatz Attack. The Møller Attack: White gives a pawn for fast development.} (9. bxc3 d5! {The best answer. It hits the bishop and supports the knight, and Black keeps the extra pawn.} 10. Bd3 O-O 11. Qc2 Re8 12. Re1 Bf5 {The knight on e4 is rock solid.}) 9... Bf6 {The bishop drops back to its best defensive square.} 10. Re1 Ne7 11. Rxe4 d6 {Play ...d6 before castling, so the c8 bishop can come out.} 12. Bg5 Bxg5 13. Nxg5 h6! {Kick the knight first. 13...O-O allows 14.Nxh7! Kxh7 15.Qh5+, and White draws by perpetual check.} 14. Qa4+ Bd7 15. Qb3 O-O {Black has castled and keeps the extra pawn. Stockfish rates it equal.} *
+6... Bb4+ 7. Nc3 {This is Greco's Attack.} Nxe4 {Take the center pawn. The pin on c3 makes this safe: the knight can't recapture.} 8. O-O Bxc3 {This is the Main Line of the Greco Gambit.} (8... Nxc3 {This is the Greco Variation of the Greco Gambit. Playable only with 9.bxc3 d5!} 9. bxc3 Bxc3? {Greedy.} 10. Ba3! {[%cal Ga3f8] This is the Aitken Variation. The bishop stops Black from castling, and White's attack wins: Stockfish rates it about +4.8.}) 9. d5 {This is the Møller Attack, also called the Moeller-Therkatz Attack. The Møller Attack: White gives a pawn for fast development.} (9. bxc3 d5! {The best answer. It hits the bishop and supports the knight, and Black keeps the extra pawn.} 10. Bd3 O-O 11. Qc2 Re8 12. Re1 Bf5 {The knight on e4 is rock solid.}) 9... Bf6 {The bishop drops back to its best defensive square.} 10. Re1 Ne7 11. Rxe4 d6 {Play ...d6 before castling, so the c8 bishop can come out.} 12. Bg5 Bxg5 13. Nxg5 h6! {[%engine ok] Kick the knight first. Stockfish at depth 26 rates it best. 13...O-O allows 14.Nxh7! Kxh7 15.Qh5+, and White draws by perpetual check.} 14. Qa4+ Bd7 15. Qb3 O-O {Black has castled and keeps the extra pawn. Stockfish rates it equal.} *
 
 [Chapter "Paris Defense: 3...d6"]
 [Side "white"]
@@ -525,5 +525,5 @@ Légal's mate shows that a pin on the knight on f3 is not a cage. White's knight
 (4. d3 {[%course black] Quiet 4.d3})
 (4. b4 {[%course black] Evans Gambit})
 (4. Nc3 {[%course black] Italian Four Knights})
-4... Nf6 5. d3 {[%course black] Giuoco Pianissimo}
+4... Nf6 5. d3 {[%course both] Giuoco Pianissimo}
 (5. d4 {[%course black] Center attack}) *

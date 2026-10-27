@@ -24,8 +24,6 @@ Keep "Why play it", the table and the Key ideas pages free of significant overla
 - The table says what to do in each line, in one or two sentences.
 - The Key ideas pages explain the plans, structures and tactics in depth, without repeating the table line by line.
 
-**Page order for every course (Kumar's rule, October 2026):** a short "Why play it", then the map, then the table, then the Key ideas, then the section tabs (Basic, Traps, Advanced, Puzzles), then the drill buttons for White and Black, then Further study. Further study lists at most 4 entries, each with a named author or presenter: no Wikipedia, and nothing credited only to a channel or site. Avoid significant overlap between "Why play it", the table and the Key ideas: "Why play it" says why each side plays the opening (no plans), each table row gives the concrete moves in one line, and the Key ideas explain the plans and tactics in depth.
-
 ## What a file looks like
 
 A file is a series of chapters. Each chapter starts with a few header lines in square brackets, followed by the moves.
