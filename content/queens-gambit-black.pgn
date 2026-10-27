@@ -165,7 +165,7 @@ Against 8.cxd5, take back with the e-pawn: 8...exd5, then ...c6, ...Be6 and ...N
 [Opening "Queen's Gambit Declined: Harrwitz Attack"]
 [ECO "D37"]
 
-{After 4.Nf3 Be7, about three White players in ten put the bishop on f4 instead of g5. Without a pin, Black can hit the center at once with ...c5. Against 7.cxd5, take back with the knight and trade into an equal position with no weaknesses. Against 5.Bg5, play 5...O-O 6.e3 h6 and the Tartakower chapters.}
+{After 4.Nf3 Be7, about three White players in ten put the bishop on f4 instead of g5. Without a pin, Black can hit the center at once with ...c5. Against 7.cxd5, take back with the knight and trade into an equal position with no weaknesses. Against 5.Bg5, play 5...O-O 6.e3 h6 and the Tartakower chapters. Without c4 (1.d4 d5 2.Bf4), White is playing the London System: see the London System course, as Black, which uses the same ...e6 and ...c5 ideas.}
 1. d4 d5 2. c4 e6 3. Nc3
 (3. Nf3 Nf6 4. Nc3 Be7 {The same position as after 4.Nf3 Be7 in the main line. Stockfish: +0.3, slightly better for White.})
 3... Nf6 4. Nf3 {Against 4.Bf4, play 4...Be7 5.e3 O-O 6.Nf3 c5: the same position as in this chapter after 6...c5.} Be7 5. Bf4 {This is the Harrwitz Attack.} O-O
@@ -291,7 +291,7 @@ Against 8.cxd5, take back with the e-pawn: 8...exd5, then ...c6, ...Be6 and ...N
 [Opening "Queen's Gambit Declined"]
 [ECO "D30"]
 
-{Rarer third moves. Against 3.a3, which stops ...Bb4, play 3...Nf6 and the usual setup. After 3.cxd5 exd5 4.Nf3, develop the same way. 3.e3 usually reaches Three Knights: 5.e3. Against 3.g3, 3...Nf6 4.Bg2 Be7 5.Nf3 O-O reaches the Catalan; against 3.Bf4, 3...Nf6 4.e3 c5 hits the center (Stockfish 0.0, equal).}
+{Rarer third moves. Against 3.a3, which stops ...Bb4, play 3...Nf6 and the usual setup. After 3.cxd5 exd5 4.Nf3, develop the same way. 3.e3 usually reaches Three Knights: 5.e3. Against 3.g3, 3...Nf6 4.Bg2 Be7 5.Nf3 O-O reaches the Catalan; against 3.Bf4, 3...Nf6 4.e3 c5 hits the center (Stockfish 0.0, equal), as it does against the London.}
 1. d4 d5 2. c4 e6 3. a3
 (3. cxd5 exd5 4. Nf3 Nf6 {Develop with ...Be7 or ...Bd6, ...c6 and castle. Stockfish: +0.1, equal.})
 3... Nf6 4. e3 Be7 {Castle next, as usual. Stockfish: +0.1, equal.} *

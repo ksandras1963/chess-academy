@@ -255,11 +255,56 @@
     {
       "id": "london",
       "name": "London System",
-      "eco": "D00",
-      "moves": "1. d4 d5 2. Bf4",
-      "summary": "White develops the bishop to f4 before e3 can shut it in, then builds the same solid setup in almost every game.",
+      "eco": "A40",
+      "moves": "1. d4",
+      "summary": "White develops the bishop to f4 before e3 can shut it in, then builds the same solid setup against almost every defense.",
+      "furtherStudy": [
+        { "title": "A Complete London System Repertoire for White", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=9aOJZBDgdwY" },
+        { "title": "Introduction to the London System", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=S_OYdWbJMKM" },
+        { "title": "London System against 1...d5", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=9z0NuNeDU6M" },
+        { "title": "London System against the King's Indian setup", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=8riYW7EC1lQ" },
+        { "title": "London System against the Queen's Indian setup", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=3ZOcEWKPSOc" },
+        { "title": "London System against the early c5 (Benoni setups)", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=N9CczxstD2g" },
+        { "title": "London System against the Chigorin (Nc6 setups)", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=z43Nz5-bU6E" },
+        { "title": "9 London System Traps", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=dDeJMfDkwTY" },
+        { "title": "When and how you can play the London System with Black", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=aiQIrbujvkI" },
+        { "title": "Crush the London System in 4 Simple Steps", "by": "ChessGeek", "kind": "Video", "url": "https://www.youtube.com/watch?v=lPrLtV_RjbY" },
+        { "title": "Want To Crush The London System?", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=Nc8rzTIfFCw" },
+        { "title": "London System", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/London_System" },
+        { "title": "James Mason and the London System", "by": "ChessBase", "kind": "Article", "url": "https://en.chessbase.com/post/james-mason-and-the-london-system" },
+        { "title": "The pendulum swings: Ding Liren equalises again", "by": "FIDE", "kind": "Article", "url": "https://www.fide.com/news/2340" }
+      ],
       "courses": [
-        { "id": "london-white", "side": "white", "repertoire": "London System" }
+        {
+          "id": "london-white",
+          "side": "white",
+          "file": "content/london-white.pgn",
+          "repertoire": "2.Bf4 against everything: c3 against ...c5, c4 against ...c6, h3 and Be2 against the King's Indian setup",
+          "summary": "Bring the bishop to f4 on move 2, build the c3–d4–e3 triangle, then attack with Ne5 or the e4 break. Learn the few changes against ...Bf5, ...c6 and the Indian setups.",
+          "overview": [
+            "Play the same setup against almost anything: Bf4 on move 2, then e3, c3, Nd2, Ngf3 and Bd3. Bring the bishop out before Nf3.",
+            "Against the main line, 2...Nf6 3.e3 c5, play 4.c3 Nc6 5.Nd2. After 5...e6 6.Ngf3 Bd6, keep your bishop with 7.Bg3 and play 8.Bd3. Then jump to e5 against ...Qe7 or ...Re8, and break with e4 against ...b6.",
+            "The pawn on b2 is your weak spot. Answer ...Qb6 with Qb3, or with Nc3 when Black's pawn is on d5 and no knight stands on f6: then 4...Qxb2?? 5.Nxd5 wins.",
+            "Against ...Bf5, hit b7 with Qb3. Against ...c6 with ...Bf5, play c4 and Nc3, not c3.",
+            "Against 1...Nf6 2.Bf4 g6, the King's Indian setup (a quarter of those games), play e3, Nf3, h3 and Be2. With the bishop on d3, ...e5 and dxe5?? lose a piece.",
+            "Know the Greek gift: when Black's queen takes on c5 or stops guarding h4, Bxh7+, then Qh5+ or Qh4+ with Ne4 or Ng5, can win at once."
+          ]
+        },
+        {
+          "id": "london-black",
+          "side": "black",
+          "file": "content/london-black.pgn",
+          "repertoire": "With 1...d5: ...e6, ...Bd6, ...c5, ...Qc7 and ...e5. With 1...Nf6: the King's Indian setup",
+          "summary": "Meet the London with the setup you already play: the Queen's Gambit Declined pieces after 1...d5, the King's Indian after 1...Nf6. Challenge the London bishop, cover e5, then break with ...e5 or ...c5.",
+          "overview": [
+            "Keep the setup you play against 1.d4. With 1...d5: ...Nf6, ...e6, ...Bd6, castle, then ...c5, ...Qc7 and ...Nbd7. With 1...Nf6: ...g6, ...Bg7, castle and ...d6.",
+            "Offer to trade White's best piece with ...Bd6. If White keeps it with Bg3, cover e5 three times with ...Qc7, ...Bd6 and ...Nbd7, then break with ...e5.",
+            "In the King's Indian setup, play ...e5 against Bd3: 8.dxe5?? dxe5 wins a piece. Against Be2 and h3, play ...c5 and ...Qb6 instead.",
+            "Look for the ...e4 fork when White's bishop is on d3 and the knight on f3: 10.Bh4?? in the main line and 10.O-O? g5! in the King's Indian setup both cost White a piece.",
+            "Against the Jobava London (Nc3 instead of Nd2), guard c7: answer Nb5 with ...Na6.",
+            "Respect White's Greek gift on h7: don't take on c5 with your queen when Bxh7+ and Ne4 work, and keep a defender on h4."
+          ]
+        }
       ]
     },
     {

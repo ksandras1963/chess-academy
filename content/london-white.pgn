@@ -1,0 +1,412 @@
+[Chapter "Key ideas: Why the London"]
+[Type "ideas"]
+
+{Why play the London? It is a system: White builds the same setup against almost any defense. The bishop goes to f4, the pawns to c3, d4 and e3, the knights to d2 and f3, the other bishop to d3, and the king castles. The pawn triangle on c3, d4 and e3 is very hard to break, and the bishop on f4 stands outside it, so White has no bad bishop.
+
+Compare the Queen's Gambit. There 2.c4 fights for d5 at once, but it also loosens d4, so Black's ...c5 and ...e5 hit harder. The London asks for less: Stockfish rates our main lines close to 0.0, equal. In return you learn one setup, one set of plans and a handful of tricks, and Black has to know what to do. The cost is the pawn on b2: once the bishop leaves c1, ...Qb6 can hit it, and much of this course is about meeting that.
+
+We bring the bishop out on move 2, before Nf3. This is the modern move order. It keeps c3 and Qb3 ready against ...c5 and ...Qb6, and it keeps a trick against ...Bf5 that the 2.Nf3 order loses (see Typical tactics).
+
+How often: after 1.d4, Black plays 1...d5 in 44% of games and 1...Nf6 in 27%. Both meet the same setup; the 1...Nf6 setups are on the last page. On Lichess, among players rated 1800 to 2199, White chooses 2.Bf4 in about 18% of games after 1...d5 and 16% after 1...Nf6.
+
+The London is old. James Mason played it regularly in the 1880s, and it takes its name from the London tournament of 1922, where several masters, José Raúl Capablanca among them, used it. Gata Kamsky and Magnus Carlsen have played it often at the top level, and Ding Liren won a game with it in his 2023 world championship match against Ian Nepomniachtchi.
+
+Step through the moves to see the setup.}
+1. d4 {Takes the center. The queen guards the pawn from d1.} d5 {Black's most common reply.}
+2. Bf4 {[%cal Gf4b8] This is the London System. The bishop comes out before e3 can shut it in, and from f4 it watches e5 and the whole h2–b8 diagonal.} Nf6
+3. e3 {[%cal Gf1d3] Guards d4 and opens the way for the f1 bishop.} c5 {[%cal Rc5d4] The most active reply: Black hits d4 before White's triangle is complete.}
+4. c3 {[%csl Yc3,Yd4,Ye3] The triangle is complete, and d4 is held twice. The rule: against ...c5 play c3, against ...c6 play c4 (see Pawn structures).} Nc6
+5. Nd2 {The queen's knight goes to d2, not c3, so it doesn't block the c-pawn. The knight also clears b1, which the queen can use later (see the trap 7...Bf5?? and Qxf5), and f3 stays free for the other knight.} e6 {[%csl Yc8] Black's most solid setup. The c8 bishop stays home and guards b7; the price is a passive bishop.}
+6. Ngf3 Bd6 {[%cal Rd6f4] Black offers to trade the London bishop, White's best minor piece.}
+7. Bg3 {[%cal Gh1h7] Keep it. If Black takes, hxg3 opens the h-file for White's rook, and White still controls e5.} O-O
+8. Bd3 {[%cal Gd3h7,Gf3e5,Ge3e4] The setup is complete. White can castle, jump to e5 or break with e4; the plans are on the next page. Stockfish: +0.2, equal.} *
+
+[Chapter "Key ideas: Plans for both sides"]
+[Type "ideas"]
+[FEN "r1bq1rk1/pp3ppp/2nbpn2/2pp4/3P4/2PBPNB1/PP1N1PPP/R2QK2R b KQ - 5 8"]
+
+{[%cal Gf3e5,Gf2f4,Ge3e4,Gd1e2,Rd8b6,Rb6b2,Rd6g3,Re6e5,Rc5d4] [%csl Ye5,Yb2] This is the main line after 8.Bd3 (Stockfish +0.2, equal). The green arrows are White's plans, the red arrows Black's.
+
+White's plans. The key square is e5. Ne5, often followed by f4, puts a knight there that Black can remove only by trading a minor piece for it, and the pawn that takes back on e5 cramps Black's kingside. The second plan is the break e4, played at once against ...b6 or prepared with Qe2. It opens lines toward Black's king, where the bishop on d3 already aims at h7. White often castles late: behind the triangle the king is safe in the center, and White keeps the choice of side.
+
+Black's plans. Black hits d4 and b2 with ...c5, ...Nc6 and ...Qb6, which is why White's queen must stay ready for b3 or c2. Black also wants to trade the London bishop with ...Bd6, to break with ...e5 after ...Qc7 or ...Qe7, or to take on d4 and attack c3 with ...b5 and ...b4.
+
+Against each system:
+
+...e6 and ...Bd6 (this position): jump to e5 when Black puts a piece on the e-file (...Qe7 or ...Re8); play e4 against ...b6.
+
+...Bf5 instead of ...e6: the bishop has left c8, so b7 is loose. Hit it at once with Qb3.
+
+...cxd4 early: take back with the e-pawn. The structure is the one from the Exchange Caro-Kann, a reversed Carlsbad (next page). Trade Black's f5 bishop with Nh4 once Black's queen has left d8, and play on the kingside.
+
+...c6 and ...Bf5, Black copying the London: play c4 and Nc3, not c3. Qb3 hits b7.
+
+1...Nf6 with ...g6, ...e6 or ...c5: see the last page.} *
+
+[Chapter "Key ideas: Pawn structures"]
+[Type "ideas"]
+[FEN "r2qkbnr/pp3ppp/2n1p3/3p1b2/3P1B2/2P2N2/PP1N1PPP/R2QKB1R b KQkq - 1 7"]
+
+{[%cal Gf3h4,Gf3e5,Gf1d3,Rb7b5,Rb5b4] [%csl Yc3,Ye5] Five structures come up again and again.
+
+The London triangle (the main line). White's pawns on c3, d4 and e3 face Black's on c5, d5 and e6. Neither side wants to release the tension first. If Black takes on d4, take back with the e-pawn: it opens the e-file for White's rook and keeps the c3 pawn guarding b4 and d4. If White takes on c5, Black's bishop or queen takes back with gain of time, so take only when it wins something.
+
+The reversed Carlsbad (this position, after 2...c5 3.e3 cxd4 4.exd4 Nc6 5.c3 Bf5 6.Nf3 e6 7.Nbd2). It is the pawn structure of the Exchange Caro-Kann, and of the Exchange Queen's Gambit with White in Black's shoes. Black has the minority attack, ...b5 and ...b4, against the pawn on c3. White plays in the center and on the kingside: Bd3, Qc2 or Qe2, castling, a rook to e1 and a knight to e5. Black's bishop on f5 is the problem piece. Chase it with Nh4 and take it, but only once Black's queen has left d8. With the queen still on d8, Nh4?? Qxh4 wins a knight (Stockfish −7.6, winning for Black). After 7...Bd6 8.Bxd6 Qxd6, 9.Nh4 is safe. Watch the d3 square too: 9.Bd3?? loses a piece to 9...Bxd3, because the knight on d2 cuts the queen off from d3 (Stockfish −6.9, winning for Black). Stockfish rates this position +0.1, equal.
+
+c3 or c4. Against ...c5, play c3: the triangle holds d4. Against ...c6 with ...Bf5, Black's own London, play c4 and Nc3. You get a Queen's Gambit position with an extra tempo, and Qb3 hits b7, which the f5 bishop no longer guards.
+
+The King's Indian structure (1...Nf6 with ...g6, ...d6 and ...e5). Black's pawn on e5 hits d4. Keep the bishop with h3 and Bh2. If Black takes on d4, take back with the e-pawn; if the pawns are traded on e5, the d-file opens and the game is symmetrical. White's play is on the queenside, with a4 and sometimes b4.
+
+The e5 outpost. A white knight on e5, guarded by the pawn on d4, is the heart of White's attack. If Black takes it, the pawn that takes back on e5 chases a knight from f6, takes the d6 and f6 squares from Black's pieces, and leaves Black's king short of defenders.} *
+
+[Chapter "Key ideas: Typical tactics"]
+[Type "ideas"]
+[FEN "r2q1rk1/pb3ppp/1pn1p3/2b5/Q3B3/2P2NB1/PP3PPP/R3K2R b KQ - 1 13"]
+
+{[%cal Ge4h7,Ga4h4,Ga4c6] [%csl Rh4,Rh7] Seven patterns to know.
+
+The Greek gift with Qh4. This position comes from the main line after 8...b6 9.e4 dxe4 10.Nxe4 Nxe4 11.Bxe4 Bb7 12.dxc5 Bxc5 13.Qa4. White attacks the knight on c6 twice. 13...Qc8?? guards it again but leaves h4: 14.Bxh7+! Kxh7 15.Qh4+ Kg8 16.Ng5, and the queen can only stop mate on h7 at a huge cost (Stockfish +6.7, winning for White). Once the bishop leaves e4, the fourth rank is open for the queen. The right defense is 13...Rc8 14.Rd1 Qe7!, guarding h4 (Stockfish +0.8, slightly better for White). 14...Qf6? 15.O-O leaves the queen short of squares and costs material (Stockfish +3.3, winning for White).
+
+The Greek gift with Ne4. After 8...Qe7 9.Ne5 Nd7 10.Nxd7 Bxd7 11.Bxd6 Qxd6 12.dxc5, taking back with 12...Qxc5? lets the queen be hit with gain of time. 13.Bxh7+! Kxh7 14.Qh5+ Kg8 15.Ne4 attacks the queen and threatens Ng5 and mate (Stockfish +3.4, winning for White). 12...Qc7 is better (Stockfish +0.5, slightly better for White).
+
+Qxf5 against a late ...Bf5. After 5...Qb6 6.Qb3 c4 7.Qc2, the natural 7...Bf5?? drops a piece to 8.Qxf5. Black's hoped-for 8...Qxb2 wins only pawns: 9.Qb1 Qxc3 leaves Black two pawns for the piece (Stockfish +3.2, winning for White). This is one reason we play Bf4 before Nf3. With the knight already on f3 (1.d4 d5 2.Nf3 Nf6 3.Bf4 c5 4.e3 Nc6 5.c3 Qb6 6.Qb3 c4 7.Qc2), 7...Bf5 is a good move: 8.Qxf5?? Qxb2 wins back the piece with interest, so White must retreat with 8.Qc1 (Stockfish −0.3, slightly better for Black).
+
+Nxd5 against ...Qxb2. With a black pawn on d5 and no knight on f6, the b2 pawn is poisoned. After 2...c5 3.e3 Qb6 4.Nc3!, 4...Qxb2?? 5.Nxd5 threatens Nc7+ and Rb1 (Stockfish +7.0, winning for White).
+
+c5! against ...Qb6. After 3...Bf5 4.c4 e6 5.Nc3 c6 6.Qb3 Qb6?, 7.c5! hits the queen. Black must trade with 7...Qxb3 8.axb3, and White's queenside pawns roll forward with b4 and b5 (Stockfish +1.3, clearly better for White). 7...Bxc5? 8.dxc5 Qxc5 9.Qxb7 costs Black a piece for a pawn (Stockfish +6.3, winning for White).
+
+The Englund trap. Against 1...e5, take the pawn: 2.dxe5 Nc6 3.Nf3 Qe7 4.Bf4 Qb4+ 5.Bd2 Qxb2. Now 6.Nc3! guards everything and leaves Black's queen in danger (Stockfish +3.6, winning for White). The natural 6.Bc3?? loses to 6...Bb4!, because 7.Qd2 Bxc3 8.Qxc3 Qc1# is checkmate (Stockfish −7.2, winning for Black).
+
+A trick to avoid. Against 2...h5, the automatic 3.e3?? walks into 3...e5!: the bishop is attacked, and ...g5 and ...h4 trap it (Stockfish −1.6, clearly better for Black). Play 3.Nf3 or 3.c4 instead (Stockfish +0.7, slightly better for White).} *
+
+[Chapter "Key ideas: Against the King's Indian and other Indian setups"]
+[Type "ideas"]
+
+{After 1.d4 Nf6 2.Bf4, Black's setups are 2...g6 (25% of games after 2.Bf4), 2...d5 (23%, the same as 1...d5), 2...e6 (22%), 2...d6 (15%) and 2...c5 (9%). Each needs a small change to the usual setup.
+
+The King's Indian setup: ...g6, ...Bg7, ...O-O and ...d6. Play e3, Nf3, h3 and Be2, then c3. Step through the moves below.
+
+Why Be2 and not Bd3. On d3 the bishop stands in front of the queen, so when Black plays ...e5 and the pawns are traded, the open d-file points at it. This is the trap from the King's Indian course: after 5.Bd3 d6 6.c3 Nc6 7.Nbd2 e5, the natural 8.dxe5?? dxe5 hits the f4 bishop with the pawn and the d3 bishop with the queen, and White loses a piece (Stockfish −6.4, winning for Black). With the bishop on e2 there is no such trick.
+
+Against ...Nbd7 or ...Nc6 and ...e5, take on e5 when Black isn't ready. After 5.h3 d6 6.Be2 Nbd7 7.O-O e5?!, 8.dxe5! is good for White: 8...dxe5 9.Nxe5 wins a pawn (Stockfish +0.9, slightly better for White). When ...e5 is well prepared, drop the bishop to h2 and keep the tension.
+
+The Grünfeld setup, ...g6 and ...d5: the same h3, Be2, c3 and Nbd2. Black has no quick ...e5, so White is comfortable (Stockfish +0.1, equal).
+
+The Queen's Indian setup, ...e6 and ...b6: play Nf3, h3, Nbd2 and Bd3, and c3 when Black plays ...c5 (Stockfish +0.2, equal). If Black follows with ...d6, prepare e4 with Qe2; if ...d5, put a knight on e5.
+
+2...c5, the sharpest reply. Play 3.e3, and against 3...Qb6, 4.Nc3!. The b2 pawn is defended by tactics: 4...Qxb2 5.Nb5 Nd5 6.Rb1 Qxa2 7.Ra1 Qb2 8.Nf3, and Black's queen and king are both short of safe squares (Stockfish +0.5, slightly better for White). The quieter 3.c3 is playable but gives Black an easy game after 3...Qb6 4.Qb3 cxd4 5.Qxb6 axb6 6.cxd4 (Stockfish −0.2, equal).
+
+These lines are in the course; the rarer ones are under Advanced variations.}
+1. d4 Nf6 2. Bf4 g6 {The King's Indian setup.}
+3. e3 Bg7 4. Nf3 O-O
+5. h3 {[%cal Gf4h2] Makes a retreat square on h2, so ...Nh5 can never trade the bishop. It also keeps ...Ng4 and ...Bg4 out.} d6
+6. Be2 {The bishop stays off the d-file. 6.Bd3 invites the ...e5 trick explained above.} c5 {[%cal Rc5d4] Black's most active plan: hit d4 before ...e5.}
+7. c3 {The rule again: c3 against ...c5. 7.dxc5?! would open the long diagonal for Black's g7 bishop.} Qb6 {[%cal Rb6b2] Hits b2.}
+8. Qb3 {Meets the queen head-on. Always answer ...Qb6 with Qb3 in this setup.} Be6 {Black forces the queen trade with gain of time.}
+9. Qxb6 axb6 {The queens are off. White's pawns are solid and Black's b-pawns are doubled, but Black's rook is active on the half-open a-file. Stockfish: −0.1, equal.} *
+
+[Chapter "Main line: 5...e6"]
+[Type "line"]
+[Opening "Queen's Pawn Game: London System"]
+[ECO "D02"]
+
+{The main line of the course. Black meets 2.Bf4 with ...Nf6, ...c5 and ...Nc6, and 5...e6 builds a Queen's Gambit Declined setup. White completes the London with Ngf3 and Bd3, keeps the bishop with Bg3 when Black offers a trade, and only then chooses between Ne5 and the break e4. Against 8...b6, the most popular eighth move, e4 comes at once.}
+1. d4 d5 2. Bf4 Nf6 3. e3 c5 {[%cal Rc5d4] The most active reply. 3...e6 and 3...Bf5 have their own chapters.}
+4. c3 {[%csl Yc3,Yd4,Ye3] Holds d4 with a pawn. The rule: c3 against ...c5.
+
+Other fourth moves: 4...e6 5.Nd2 Nc6 6.Ngf3 comes back to this chapter. Against 4...Qb6, 5.Qb3 meets the queen (Stockfish 0.0, equal). Against 4...cxd4, take back with the e-pawn: 5.exd4 gives the reversed Carlsbad of the 2...c5 chapter (Stockfish +0.1, equal).} Nc6
+5. Nd2 {Develops without blocking the c-pawn and keeps f3 for the other knight. 5...Bf5 and 5...Qb6 are in the next chapter.} e6 {[%csl Yc8] The most solid move. The c8 bishop stays home and guards b7.}
+6. Ngf3 {[%cal Gf3e5] The knight eyes e5.
+
+Against 6...Be7, play 7.Bd3, the same setup (Stockfish +0.1, equal). Against 6...Nh5, 7.Bg5! keeps the bishop: after 7...f6 8.Bh4, Black's knight on h5 is offside and the pawns in front of Black's king are weakened (Stockfish +0.1, equal).} Bd6 {[%cal Rd6f4] Offers to trade the London bishop.}
+7. Bg3 {[%cal Gh1h5] Keeps the bishop. If 7...Bxg3 8.hxg3, the h-file opens for White's rook and White still controls e5 (Stockfish +0.6, slightly better for White). Against 7...Qb6, meet the queen with 8.Qb3 (Stockfish 0.0, equal).} O-O
+8. Bd3 {[%cal Gd3h7] The setup is complete. Keep the king in the center for now: castling can wait until you know where Black's pieces are going.
+
+8...Qe7, 8...Re8 and 8...Qc7 are under Advanced variations. Against the first two, jump to e5.} b6 {[%cal Rc8b7] Prepares ...Bb7.}
+9. e4 {[%cal Ge4d5,Ge4e5] The most active answer: White opens the center while Black's bishop is still on c8.
+
+Taking on e4 is natural but helps White. Stockfish prefers 9...Be7 or 9...Nh5, which step out of the way of e5. After 9...Be7 10.e5 Nh5 11.Ng5, White's pieces swarm toward Black's king (Stockfish +0.4, slightly better for White).} dxe4
+10. Nxe4 Nxe4 11. Bxe4 {[%cal Ge4c6,Ge4h7] The bishop hits the knight on c6 and aims at h7.} Bb7 {Guards the knight.}
+12. dxc5 {[%cal Gd1d6] Hits the bishop on d6. 12...bxc5? would lose it: 13.Bxd6 (Stockfish +7.6, winning for White).} Bxc5
+13. Qa4 {[%cal Ga4c6,Ge4c6] Attacks the knight on c6 twice. 13...Qc8?? guards it but loses to a sacrifice on h7: see the trap chapter on 13...Qc8.} Rc8 {The right defense: the rook guards c6 and the queen stays on d8, where it guards h4.}
+14. Rd1 {[%cal Gd1d8] Hits the queen with gain of time. 14...Qe7! is the only good square: it keeps h4 guarded. 14...Qe8?? and 14...Qf6? lose material (same trap chapter).} Qe7
+15. O-O {[%cal Ga2a4,Gb2b4] White's king is safe, the bishops are strong, and White has a queenside majority: three pawns against two. Next Rfe1, then Ne5 or b4 and b5. Stockfish: +0.8, slightly better for White.} *
+
+[Chapter "Main line: 5...Bf5 and 5...Qb6"]
+[Diagram "5...Bf5"]
+[Type "line"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+
+{Two ways for Black to aim at b2. 5...Bf5 develops the bishop before ...e6, so b7 loses its guard: hit it at once with 6.Qb3. 5...Qb6 attacks b2 directly: meet the queen with 6.Qb3. In both lines the game stays level, and White's solid structure makes it easy to play.}
+1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Nc6 5. Nd2 Bf5 {[%csl Yb7] The bishop takes an active diagonal, but b7 is now loose.}
+(5... Qb6 {[%cal Rb6b2] Hits b2.} 6. Qb3 {Meets the queen. With the knight on d2, not f3, Black's ...c4 and ...Bf5 trick doesn't work: see the trap chapter on 7...Bf5.} e6 {The solid reply. 6...c4 7.Qc2 gains space, but White gets the e4 break (Stockfish +0.5, slightly better for White).} 7. Ngf3 Be7 8. Be2 {Not 8.Bd3?, which runs into 8...c4!: the pawn hits the bishop, and after 9.Qxb6 axb6 White has lost time (Stockfish −0.6, slightly better for Black).} O-O 9. O-O {Next h3, a4 or Rfe1. If the queens come off, White's pawn triangle makes the endgame easy to play. Stockfish: +0.1, equal.})
+6. Qb3 {[%cal Gb3b7] Hits b7 at once, before Ngf3, so Black must spend a move guarding it.} Qc8 {Guards b7. 6...Qd7 is similar: 7.Ngf3 c4 8.Qd1 e6 9.Nh4 chases the bishop (Stockfish +0.1, equal).}
+7. Ngf3 c4 {[%cal Rc4b3] Kicks the queen and gains space. 7...e6 is just as good: 8.Nh4, and if 8...c4 9.Qd1, the knight chases the bishop next (Stockfish 0.0, equal).}
+8. Qd1 {The queen goes home. It has done its job: Black's queen is passive on c8.} e6
+9. Be2 {[%cal Gf3h4,Gb2b3] The pawn on c4 takes d3 away, so the bishop goes to e2. Next castle, then b3 to break up Black's queenside pawns, or Nh4 to chase the f5 bishop. Stockfish: 0.0, equal.} *
+
+[Chapter "2...c5"]
+[Diagram "2...c5"]
+[Type "line"]
+[Opening "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit"]
+[ECO "D00"]
+
+{Black strikes at d4 before ...Nf6. Play 3.e3: then ...cxd4 can be met by exd4, and the b2 pawn is defended by tactics. Against 3...cxd4 you get the reversed Carlsbad (see Pawn structures). Against 3...Qb6, 4.Nc3! makes b2 poisoned. Against 3...Nc6, play 4.c3 and the main line follows.}
+1. d4 d5 2. Bf4 c5 {This is the Steinitz Countergambit. Black offers the c-pawn for quick play against d4.}
+3. e3 {[%cal Ge3d4] Guards d4 and opens the f1 bishop. Taking with 3.dxc5 gives up the center.} cxd4
+(3... Qb6 {[%cal Rb6b2] Hits b2 before White can play c3.} 4. Nc3! {[%cal Gc3d5,Gc3b5] With a black pawn on d5 and no knight on f6, the b2 pawn is poisoned: 4...Qxb2?? 5.Nxd5 (see the trap chapter).} e6 5. Nb5 {[%cal Gb5c7] Threatens Nc7+. Black has to guard c7.} Na6 6. c3 {[%cal Ga2a4] The knight on b5 is safe now, and White can reroute it later via a3. Black's knight on a6 is badly placed.} Nf6 7. a4 {[%cal Ga4a5] Gains space, and a5 is coming to chase the queen. White has the easier game. Stockfish: +0.5, slightly better for White.})
+(3... Nc6 4. c3 {The rule again: c3 against ...c5.} Nf6 5. Nd2 {The main line is back. After 5...e6, 5...Bf5 or 5...Qb6, see those chapters. Stockfish: 0.0, equal.})
+4. exd4 {[%cal Ge1e8] Take back with the e-pawn. The e-file opens for White's rook, and the pawn on c3 will guard d4.} Nc6
+5. c3 {[%csl Yc3,Yd4] This is the reversed Carlsbad, the pawn structure of the Exchange Caro-Kann. Black will try the minority attack, ...b5 and ...b4.} Bf5 {[%cal Rf5b1] The best square for the bishop.}
+6. Nf3 e6 7. Nbd2 {Not 7.Nh4??, which loses the knight to 7...Qxh4.} Bd6 {[%cal Rd6f4] Offers the trade.}
+8. Bxd6 {In this structure the trade is fine: it also pulls Black's queen away from d8, where it guards h4.} Qxd6 {Now 9.Bd3?? loses a piece to 9...Bxd3: the knight on d2 cuts the queen off from d3 (Stockfish −6.9, winning for Black).} 9. Nh4 {[%cal Gh4f5] Now the knight can chase the f5 bishop, Black's best minor piece: the queen has left d8, so h4 is safe. Next Nxf5, then Bd3 or Be2 and castle. Stockfish: 0.0, equal.} *
+
+[Chapter "Early ...e6 and ...Bd6"]
+[Diagram "3...e6"]
+[Type "line"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+
+{Black plays ...e6 first and brings the bishop to d6 before ...Nc6. Then ...Qc7 fights for e5 before White's knight can get there, and Black prepares ...e5. There is no way to stop this plan, and the position is level. Complete the setup, castle, and play for small advantages: Qe2, a4 and the break c4 or e4.}
+1. d4 d5 2. Bf4 Nf6 3. e3 e6 {[%csl Yc8] Black keeps the c8 bishop at home and the choice between ...c5 and ...Bd6.}
+4. Nd2 {Keeps the f3 square for the other knight and the c-pawn free.
+
+4...c5 5.c3 Nc6 6.Ngf3 reaches the main line.} Bd6 {[%cal Rd6f4] Challenges the bishop at once.}
+5. Bg3 {Keeps the bishop. Taking on d6 would help Black: the queen recaptures and covers e5.} O-O 6. Ngf3 c5 7. c3 Qc7 {[%cal Rc7e5,Re6e5] The queen joins the fight for e5. 8.Ne5 is met by 8...Nbd7, and the knight is challenged at once (Stockfish −0.1, equal).
+
+7...Nc6 8.Bd3 reaches the main-line position after 8.Bd3.}
+8. Bd3 Nbd7 {[%cal Rd7e5] Covers e5 a third time and prepares ...e5.}
+9. O-O {[%cal Gd1e2,Ga2a4,Gc3c4] White has no attack here. Play Qe2, a4 and the break c4 or e4, and use the pawn triangle to keep the center safe. Stockfish: −0.1, equal.} *
+
+[Chapter "King's Indian: 2...g6"]
+[Diagram "2...g6"]
+[Type "line"]
+[Opening "London System"]
+[ECO "A48"]
+
+{Black's most common reply to 2.Bf4 after 1...Nf6: the King's Indian setup. Play e3, Nf3, h3 and Be2, then c3 when Black plays ...c5. The bishop goes to e2, not d3: see the last Key ideas page for why. Against ...Qb6, always answer with Qb3.}
+1. d4 Nf6 2. Bf4 g6 {The King's Indian setup.}
+3. e3 Bg7 4. Nf3 O-O {4...d6 5.h3 O-O 6.Be2 reaches the same position.}
+5. h3 {[%cal Gf4h2] Makes a retreat square on h2, so ...Nh5 can't trade the bishop. It also keeps ...Ng4 and ...Bg4 out.} d6
+(5... d5 {The Grünfeld setup: Black puts a pawn on d5 instead of d6.} 6. Be2 c5 7. c3 {[%csl Yc3,Yd4,Ye3] The same triangle as against 1...d5. Next Nbd2 and castle. Black has no quick ...e5, so White is comfortable. Stockfish: +0.1, equal.})
+6. Be2 {The bishop stays off the d-file.
+
+6...Nbd7 and 6...Nc6 with ...e5 are under Advanced variations.} c5 {[%cal Rc5d4] Black's most active plan: hit d4 before ...e5.}
+7. c3 {The rule: c3 against ...c5. 7.dxc5?! would open the long diagonal for Black's g7 bishop.} Qb6 {[%cal Rb6b2] Hits b2. 7...cxd4 8.exd4 Qb6 9.Qb3 is the same idea.}
+8. Qb3 {Meets the queen head-on.} Be6 {Black forces the queen trade with gain of time.}
+9. Qxb6 axb6 10. a3 {[%cal Gb1d2] The a2 pawn was attacked by the rook and the e6 bishop. On a3 the b2 pawn guards it, and it stops ...Nb4. Next Nbd2 and castle. White's pawns are solid and Black's b-pawns are doubled; Black has the half-open a-file in return. Stockfish: −0.1, equal.} *
+
+[Chapter "Indian setups: 2...e6"]
+[Diagram "2...e6"]
+[Type "line"]
+[Opening "Indian Defense: Accelerated London System"]
+[ECO "A45"]
+
+{After 1...Nf6 2.Bf4 e6, Black can go into the main line with ...d5 and ...c5, or play the Queen's Indian setup with ...b6 and ...Bb7. Against the Queen's Indian, play Nf3, h3, Nbd2 and Bd3, and c3 when Black plays ...c5. Then the plan depends on Black's d-pawn: e4 against ...d6, a knight on e5 against ...d5.}
+1. d4 Nf6 2. Bf4 e6 3. e3 {3...d5 reaches the chapter Early ...e6 and ...Bd6. 3...c5 4.c3 d5 5.Nd2 Nc6 6.Ngf3 reaches the main line.} b6 {The Queen's Indian setup.}
+4. Nf3 Bb7 5. h3 {[%cal Gf4h2] The retreat square again, so ...Nh5 can't trade the bishop.} Be7 6. Nbd2 O-O 7. Bd3 c5 {[%cal Rc5d4] Black's usual break.}
+8. c3 {[%csl Yc3,Yd4,Ye3] The triangle holds. Against 8...d6, play Qe2 and e4. Against 8...d5, put a knight on e5 and support it with f4. Stockfish: +0.2, equal.} *
+
+[Chapter "Main line: Black's eighth moves"]
+[Diagram "8...Qe7"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Queen's Pawn Game: London System"]
+[ECO "D02"]
+
+{After 8.Bd3, three other moves come up often. When Black puts the queen or a rook on the e-file to prepare ...e5, jump into e5 with the knight first. Against 8...Qc7, which also aims at e5, a pawn capture sets up a trick on the diagonal from g3 to c7.}
+1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Nc6 5. Nd2 e6 6. Ngf3 Bd6 7. Bg3 O-O 8. Bd3 Qe7 {[%cal Re6e5] Prepares ...e5.}
+(8... Re8 {Also prepares ...e5.} 9. Ne5 {[%cal Ge5f7] Jumps in before ...e5.} Bxe5 {Black's usual answer: the knight on e5 is too strong to leave there.} 10. dxe5 Nd7 {Now 11.f4 is tempting, but it loosens White's position (Stockfish +0.3, slightly better for White).} 11. Nf3 {[%cal Gd1c2,Gd3h7] Guards e5. White has the bishop pair and space on the kingside, and Qc2 lines up against h7. Stockfish: +0.7, slightly better for White.})
+(8... Qc7 {Fights for e5.} 9. dxc5! {[%cal Gg3c7] Opens the diagonal from g3 to c7: 9...Bxc5?? 10.Bxc7 wins the queen.} Bxg3 10. hxg3 {[%cal Gh1h7] The h-file is open, and White has won a pawn for the moment. Next Qc2 or Qb1 and Nb3 to hold c5. Stockfish: +0.8, slightly better for White.})
+9. Ne5 {[%cal Ge5c6,Ge5d7,Ge5f7] The knight jumps in.} Nd7 {The most common reply: Black challenges e5 and prepares ...f6.}
+10. Nxd7 Qxd7 {The safe recapture. 10...Bxd7 lets White grab the c5 pawn: see the trap chapter on ...Qe7 and ...Nd7.}
+11. O-O {[%cal Gd1h5,Gf2f4] White keeps a small edge: Qh5 and f4 are coming, and Black's king has lost its best defender, the knight on f6. Stockfish: +0.3, slightly better for White.} *
+
+[Chapter "Symmetrical: 3...Bf5"]
+[Diagram "3...Bf5"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+
+{Black copies the London: the bishop goes to f5 before ...e6. Black's pawn will go to c6, not c5, so play c4 and Nc3 instead of c3. You get a Queen's Gambit position with an extra tempo, and the queen on b3 hits b7, which the f5 bishop no longer guards: the same idea as against the Slav's 4...Bf5 in the Queen's Gambit course.}
+1. d4 d5 2. Bf4 Nf6 3. e3 Bf5 {[%csl Yb7] The mirror image of White's setup.}
+4. c4 {[%cal Gc4d5,Gd1b3] Hits d5 and opens the way to b3 for the queen. After 4...c5 5.Nc3 Nc6 6.Nf3 e6 7.Rc1 the position is symmetrical (Stockfish +0.1, equal).} e6
+5. Nc3 c6 {Black plays a London a tempo down: the pawn on c6 guards d5, but b7 is weak.}
+(5... Bb4 {Pins the knight instead.} 6. Nf3 O-O 7. Be2 {Castle next, then Qb3 or Rc1. Stockfish: +0.2, equal.})
+6. Qb3 {[%cal Gb3b7] Hits b7. 6...Qb6? runs into 7.c5!: see the trap chapter.} Qc8 {The safest way to guard b7.}
+7. Nf3 Nbd7 8. cxd5 {Half-opens the c-file. Black's queen on c8 stands on it, behind the c6 pawn.} Nxd5
+9. Bg3 {[%cal Ga1c1,Gf1e2] Keeps the bishop. Next Be2, castle and Rc1. White has more space and the easier game. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "Other third moves: 3...Bg4 and 3...g6"]
+[Diagram "3...Bg4"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+
+{Two less common third moves. Against 3...Bg4, develop with 4.Nf3 and ask the bishop with h3: if it takes on f3, White gets the bishop pair. Against 3...g6, Black's Grünfeld setup, build the usual triangle with c3 and Nd2.}
+1. d4 d5 2. Bf4 Nf6 3. e3 Bg4 {[%cal Rg4d1] Pins nothing yet, but eyes White's queen.}
+(3... g6 {The Grünfeld setup.} 4. c3 Bg7 5. Nd2 O-O 6. Ngf3 {[%csl Yc3,Yd4,Ye3] The triangle again. Against ...Nh5, keep the bishop with Bg5 or Be5. Next Be2, h3 and castle. Stockfish: +0.1, equal.})
+4. Nf3 e6 5. h3 {Asks the bishop to decide.} Bxf3
+6. Qxf3 {White has the bishop pair. Next Nd2, Bd3 and castle, or c3. Stockfish: +0.1, equal.} *
+
+[Chapter "Second-move sidelines"]
+[Diagram "2...Bf5"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+
+{Three rarer second moves. Against 2...Bf5 and 2...c6, follow the rule: Black's pawn will stand on c6, so play c4. Against 2...Nc6, the Chigorin setup, play e3 and c4 as well: the knight blocks Black's c-pawn, so Black can't hit back at your center.}
+1. d4 d5 2. Bf4 Bf5 {Black copies at once.}
+(2... c6 {Prepares ...Qb6 or ...Bf5.} 3. e3 Qb6 {[%cal Rb6b2] Hits b2 before White can play c4 or c3.} 4. Qc1 {[%cal Gc1b2] Guards b2. Qb3 isn't possible yet, so the queen steps back; it comes into play later.} Bf5 5. Nf3 e6 6. c4 {[%cal Gc4c5] The rule: c4 against ...c6. Next Nc3 and c5 to gain space on the queenside. Stockfish: +0.4, slightly better for White.})
+(2... Nc6 {The Chigorin setup. The knight blocks Black's c-pawn.} 3. e3 {3...e5?! now gives up a pawn: 4.dxe5 (Stockfish +1.0, clearly better for White).} Bf5 4. c4 {Against 4...e5?!, take with the bishop: 5.Bxe5! Nxe5 6.dxe5 (Stockfish +1.2, clearly better for White). Not 5.cxd5?, which allows 5...Nxd4! (Stockfish −0.1, equal).} e6 5. Nc3 Nf6 6. c5 {[%cal Gb2b4,Gb4b5] Gains space and keeps Black cramped. Next Bb5 or b4 and b5 against the knight. Stockfish: +0.4, slightly better for White.})
+3. e3 e6 4. c4 {[%cal Gd1b3] The same plan as against 3...Bf5. After 4...Bxb1, check first with 5.Qa4+! and take the bishop next move: 5.Rxb1? allows 5...Bb4+.} Nf6
+5. Nc3 {5...c6 6.Qb3 reaches the chapter Symmetrical: 3...Bf5. Against 5...Bb4, play 6.Nf3 and Qb3. Stockfish: +0.1, equal.} *
+
+[Chapter "Indian setups: 2...c5"]
+[Diagram "2...c5"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Indian Defense: Accelerated London System"]
+[ECO "A45"]
+
+{The sharpest reply to 2.Bf4. Black hits d4 before White's triangle is built and eyes b2 with ...Qb6. Play 3.e3, and answer ...Qb6 with 4.Nc3!: if the queen takes on b2, the knight jumps to b5 and Black's queen runs short of squares. If Black plays ...d5 instead, the main line follows.}
+1. d4 Nf6 2. Bf4 c5 {[%cal Rc5d4]}
+3. e3 {[%cal Ge3d4] Stockfish slightly prefers 3.d5 (+0.3 against +0.1 for 3.e3), but it gives a Benoni structure and leaves the London. 3.c3 is playable but passive: 3...Qb6 4.Qb3 cxd4 5.Qxb6 axb6 6.cxd4, and Black's rook is already active on the a-file (Stockfish −0.2, equal).
+
+3...d5 4.c3 Nc6 5.Nd2 reaches the main line.} Qb6 {[%cal Rb6b2] Hits b2.}
+4. Nc3 {[%cal Gc3b5] Develops and sets a trap: if the queen takes on b2, Nb5 hits c7.} Qxb2 {The critical test.}
+(4... cxd4 5. exd4 {Take back with the pawn: the e-file opens.} a6 {Stops Nb5 and threatens ...Qxb2 again.} 6. a3 {[%cal Gc3a4] Now 6...Qxb2?? loses the queen to 7.Na4. Next Nf3, Bd3 and castle. Stockfish: +0.1, equal.})
+5. Nb5 {[%cal Gb5c7] Threatens Nc7+.} Nd5 {The only good move: the knight covers c7. 5...cxd4? 6.Rb1 Qxa2 7.Ra1 Qb2 8.exd4 leaves Black's queen caged (Stockfish +3.5, winning for White).}
+6. Rb1 {[%cal Gb1b2] Chases the queen.} Qxa2 7. Ra1 Qb2
+8. Nf3 {[%cal Gb5c7] 8.Rb1 Qa2 9.Ra1 repeats the position for a draw. 8.Nf3 plays on: Black's queen is short of squares, and Nc7+ is in the air. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "King's Indian: ...Nbd7, ...Nc6 and ...e5"]
+[Diagram "6...Nbd7"]
+[Type "line"]
+[Level "advanced"]
+[Opening "London System"]
+[ECO "A48"]
+
+{Black can prepare ...e5 instead of ...c5. With the knight on d7 and no rook on e8, the break comes too early: dxe5 wins a pawn. With the knight on c6, ...e5 is sound: drop the bishop to h2 and keep the center. 2...d6 with ...g6 leads to the same positions.}
+1. d4 Nf6 2. Bf4 g6 3. e3 Bg7 4. Nf3 O-O 5. h3 d6 6. Be2 Nbd7 {[%cal Rd7e5]}
+(6... Nc6 7. O-O e5 {Here the break is well prepared.} 8. Bh2 {[%cal Gh2e5] Keeps the bishop and the tension.} exd4 9. exd4 {The e-file opens, and White's pawn on d4 is solid. Next c3, Re1 and Nbd2. Stockfish: 0.0, equal.})
+7. O-O e5?! {Too early.}
+8. dxe5! {[%cal Gd4e5] Opens the d-file. If 8...Ne4, 9.Qd5 hits the knight and keeps the extra pawn.} dxe5 9. Nxe5 {White has won a pawn. Stockfish: +0.9, slightly better for White.} *
+
+[Chapter "Dutch: 1...f5"]
+[Diagram "1...f5"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Dutch Defense"]
+[ECO "A80"]
+
+{The Dutch Defense comes up in about one game in forty. The London handles it well: the bishop on f4 controls e5, a square Black's ...f5 has loosened. Against the Leningrad setup with ...g6, attack at once with h4. Against ...e6 and ...d5, the Stonewall, hit the center with c4.}
+1. d4 f5 {This is the Dutch Defense.}
+2. Bf4 Nf6 3. e3 g6 {The Leningrad setup.}
+(3... e6 4. Nf3 d5 {The Stonewall setup.} 5. c4 {[%cal Gc4d5,Gf4d6] Hits d5 before Black can play ...c6. Next Nc3 and Qb3, and if Black's bishop comes to d6, trade it: then Black is left with the bad bishop on c8. Stockfish: +1.0, clearly better for White.})
+4. h4 {[%cal Gh4h5] The pawn heads for h5 to pry open g6. If 4...Bg7, 5.h5 opens the h-file (Stockfish +1.1, clearly better for White).} h6 {The best reply: it meets h5 with ...g5.}
+5. Nc3 {[%cal Gd1f3,Ge3e4] Next Qf3, castle queenside and e4. White's pieces are ready before Black's king is safe. Stockfish: +0.9, slightly better for White.} *
+
+[Chapter "Other first moves"]
+[Diagram "1...e6"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Horwitz Defense"]
+[ECO "A40"]
+
+{Rarer first moves. Most of them come back to setups you know: play 2.Bf4 and e3, and wait for Black to choose. 1...c5 is the exception: answer it with 2.d5. Against 1...d6, 2.Bf4 Nf6 3.e3 g6 reaches the King's Indian chapter; against 1...c6, 2.Bf4 d5 3.e3 reaches the second-move sidelines.}
+1. d4 e6 {Black keeps the choice of ...d5, ...Nf6 or ...f5.}
+(1... g6 2. Bf4 Bg7 3. e3 d6 4. h3 {The King's Indian setup, even without ...Nf6: the same plan with h3, Nf3, Be2 and c3. Stockfish: +0.1, equal.})
+(1... c5 2. d5 {[%cal Gd5d6] Takes space. A London setup with 2.c3 is possible but gives Black an easy game (Stockfish +0.1); 2.d5 is Stockfish's choice.} Nf6 3. Nc3 d6 4. e4 g6 5. Nf3 Bg7 6. Be2 {White has a big center. Castle, then a4 and Bf4. Stockfish: +0.7, slightly better for White.})
+2. Bf4 {2...d5 3.e3 Nf6 reaches the chapter Early ...e6 and ...Bd6. 2...Nf6 3.e3 reaches Indian setups: 2...e6. 2...f5 is a Dutch.} c5 3. e3 d5 4. c3 Nf6
+5. Nd2 {The London triangle again, close to the main line. Stockfish: +0.1, equal.} *
+
+[Chapter "Trap: ...Qe7, ...Nd7 and Bxh7+"]
+[Diagram "12...Qxc5"]
+[Type "trap"]
+[Opening "Queen's Pawn Game: London System"]
+[ECO "D02"]
+
+{In the line 8...Qe7 9.Ne5 Nd7 10.Nxd7, taking back with the bishop looks natural. But after the trades, Black's knight has left f6, and h7 is guarded only by the king. When Black's queen takes on c5, the Greek gift wins: Bxh7+, Qh5+ and Ne4, which attacks the queen and threatens Ng5 and mate.}
+1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Nc6 5. Nd2 e6 6. Ngf3 Bd6 7. Bg3 O-O 8. Bd3 Qe7 9. Ne5 Nd7 10. Nxd7 Bxd7 {Develops, but the queen will have to take back on d6.}
+11. Bxd6 Qxd6 12. dxc5 {[%cal Gd1h5,Gd3h7] Offers the pawn: if the queen takes it, it can be hit with gain of time.} Qxc5? {Takes the pawn and walks into the Greek gift.}
+(12... Qc7 {The right move: leave the pawn for now.} 13. Bc2 {[%cal Gd1h5] Next Qh5 and f4. White keeps the extra pawn for the moment. Stockfish: +0.5, slightly better for White.})
+13. Bxh7+! {[%cal Gd3h7] The Greek gift.} Kxh7 14. Qh5+ Kg8
+15. Ne4 {[%cal Ge4c5,Ge4g5] Hits the queen and threatens Ng5 with mate on h7.} Qc4? {Black's most common reply. The queen attacks the knight, but there is no time.}
+(15... g6 {The best defense: Black lets the queen go to stop mate, and the queens come off.} 16. Nxc5 gxh5 17. Nxd7 Rfc8 18. Nf6+ Kf8 19. Nxh5 {White is two pawns up, and Black's kingside is wrecked. Stockfish: +3.2, winning for White.})
+16. Ng5 {[%cal Gh5h7] Threatens Qh7#.} Rfe8 17. Qxf7+ Kh8 18. Qh5+ Kg8
+19. Rd1 {[%cal Gd1d4] The rook joins the attack via d4 or d3, and Black's king can't escape. Stockfish: +6.6, winning for White.} *
+
+[Chapter "Trap: 13...Qc8?? and Bxh7+"]
+[Diagram "13...Qc8"]
+[Type "trap"]
+[Opening "Queen's Pawn Game: London System"]
+[ECO "D02"]
+
+{In the main line, 13.Qa4 attacks the knight on c6 twice. Guarding it with the queen looks natural, but the queen on d8 was also guarding h4. Once it leaves, Bxh7+ and Qh4+ bring White's queen to the kingside with check: the bishop's departure from e4 opens the fourth rank.}
+1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Nc6 5. Nd2 e6 6. Ngf3 Bd6 7. Bg3 O-O 8. Bd3 b6 9. e4 dxe4 10. Nxe4 Nxe4 11. Bxe4 Bb7 12. dxc5 Bxc5 13. Qa4 Qc8?? {Guards c6 but leaves h4.}
+(13... Rc8 14. Rd1 {Now 14...Qe8?? leaves h4 again: 15.Bxh7+! Kxh7 16.Qh4+ Kg8 17.Ng5, and mate on h7 can't be stopped. The safe move is 14...Qe7: see the chapter Main line: 5...e6.} Qf6? {Gets the queen off the d-file, but puts it out of play.} 15. O-O {[%cal Gf3e5] The queen on f6 has few squares, and Ne5 or Rd7 wins material. Stockfish: +3.3, winning for White.})
+14. Bxh7+! {[%cal Ge4h7,Ga4h4] The fourth rank opens for the queen.} Kxh7 15. Qh4+ Kg8 16. Ng5 {Threatens Qh7#.} Rd8 17. Qh7+ Kf8 18. Qh8+ Ke7 19. Qxg7 {[%cal Gg7f7] White has two pawns for the bishop, Black's king is stuck in the center, and more material will fall. Stockfish: +6.3, winning for White.} *
+
+[Chapter "Trap: c5! against ...Qb6"]
+[Diagram "6...Qb6"]
+[Type "trap"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+
+{When Black copies the London with ...Bf5 and ...c6, White's Qb3 hits b7. The natural defense 6...Qb6? meets the queen head-on, but 7.c5! drives it away: it can't stay on the b6–g1 diagonal or keep guarding b7. Black has to trade queens, and White's doubled b-pawns become a battering ram.}
+1. d4 d5 2. Bf4 Nf6 3. e3 Bf5 4. c4 e6 5. Nc3 c6 6. Qb3 Qb6? {Natural, but it walks into c5.}
+7. c5! {[%cal Gc5b6] Hits the queen. 7...Qd8? 8.Qxb7 Nbd7 9.Nf3 Be7 10.Bc7! hits the queen, and it has no safe square (Stockfish +6.9, winning for White).} Qxb3
+(7... Bxc5? {Gives up a piece to keep b7.} 8. dxc5 Qxc5 9. Qxb7 {White has won a piece for a pawn, and the rook on a8 is attacked. Stockfish: +6.3, winning for White.})
+8. axb3 {[%cal Gb3b4,Gb4b5] The doubled pawns are a battering ram: b4 and b5 come next, against c6, and the rook on a1 already has the open file.} Be7 9. Nf3 a6 10. b4 {Next b5. Stockfish: +1.3, clearly better for White.} *
+
+[Chapter "Trap: 7...Bf5?? and Qxf5"]
+[Diagram "7...Bf5"]
+[Type "trap"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+
+{After 5...Qb6 6.Qb3 c4 7.Qc2, Black would love to hit the queen with ...Bf5. With White's knight on d2, it simply loses a piece: nothing guards f5. This is the main reason to play Bf4 before Nf3: with the knight on f3 and the other still on b1, the same ...Bf5 works for Black.}
+1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Nc6 5. Nd2 Qb6 6. Qb3 c4 7. Qc2 Bf5?? {Hits the queen, but the bishop is unguarded.}
+(7... Bg4 {Better: the bishop pins nothing yet but develops.} 8. Ngf3 e6 9. Nh4 {[%cal Gh2h3,Gg2g4] Next h3 and g4 to chase the bishop, or the break e4. White has the easier game. Stockfish: +0.5, slightly better for White.})
+8. Qxf5 Qxb2 {Black's idea: the rook on a1 is attacked.}
+9. Qb1 {[%cal Gb1b2] Offers a queen trade and guards the rook.} Qxc3 10. Nf3 Qb4 11. Be2 {White has a piece for two pawns, and Black's queen will be chased. Stockfish: +3.2, winning for White.} *
+
+[Chapter "Trap: ...Qxb2?? and Nxd5"]
+[Diagram "4...Qxb2"]
+[Type "trap"]
+[Opening "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit"]
+[ECO "D00"]
+
+{After 2...c5 3.e3 Qb6 4.Nc3, the b2 pawn looks free. It isn't: Black's pawn on d5 has no knight on f6 to guard it, so 5.Nxd5 threatens Nc7+, forking king and rook.}
+1. d4 d5 2. Bf4 c5 3. e3 Qb6 4. Nc3 Qxb2?? {Takes the pawn, but d5 falls with a double threat.}
+5. Nxd5 {[%cal Gd5c7] Threatens Nc7+ and Rb1. Black can't meet both.} Nf6 6. Rb1 Qxa2 7. Nc7+ Kd8 8. Nxa8 {White has won a rook. Stockfish: +7.3, winning for White.} *
+
+[Chapter "Trap: the Englund Gambit"]
+[Diagram "5...Qxb2"]
+[Type "trap"]
+[Opening "Englund Gambit: Main Line"]
+[ECO "A40"]
+
+{About one game in twenty-five after 1.d4, Black plays 1...e5, the Englund Gambit. Take the pawn and develop. The main line is a trap: after Black's queen takes on b2, the natural 6.Bc3?? loses to a mate on c1. 6.Nc3! guards everything, and Black's queen is the piece in danger.}
+1. d4 e5?! {The Englund Gambit. It gives up a pawn for too little: after 2.dxe5, Stockfish rates White clearly better (+1.5).} 2. dxe5 Nc6 3. Nf3 Qe7 {[%cal Re7e5] Hits e5 and sets a trap.}
+4. Bf4 {[%cal Gf4e5] The London bishop guards e5.} Qb4+ 5. Bd2 Qxb2?!
+6. Nc3! {[%cal Gc3d5,Ga1b1] Guards a2 and the c3 square, and Rb1 is coming.}
+(6. Bc3?? {Hits the queen, but walks into a mate.} Bb4! 7. Qd2 Bxc3 8. Qxc3 Qc1#)
+6... Bb4 7. Rb1 Qa3 8. Nd5 {[%cal Gd5c7] Threatens Nxc7+, forking the king and rook. 8.Rb3 is just as strong. 8...Qxa2? 9.Nxc7+ wins the rook (Stockfish +7.5, winning for White).} Bxd2+ 9. Qxd2 Kd8 {Guards c7, but Black's king can no longer castle.} 10. e4 {[%cal Gf1e2,Ge1g1] Material is level, but White is far ahead in development, and Black's king is stuck in the center. Next Be2 and castle. Stockfish: +4.0, winning for White.} *
+
+[Chapter "Trap: 2...h5 and 3.e3??"]
+[Diagram "2...h5"]
+[Type "trap"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+
+{A cheap trick against London players who play e3 without looking. After 2...h5, the natural 3.e3?? runs into 3...e5!: the bishop on f4 is attacked, and ...g5 and ...h4 trap it. Play 3.Nf3 first: it guards e5, and Black's h-pawn move is just a weakness.}
+1. d4 d5 2. Bf4 h5?! {Prepares ...e5 and ...g5.}
+3. Nf3 {[%cal Gf3e5] Guards e5.}
+(3. e3?? e5! {Now 4.Bxe5 f6 limits the damage (Stockfish −1.6, clearly better for Black).} 4. dxe5? g5! 5. Bg3? h4 {[%cal Rh4g3] The bishop is trapped. White gets two pawns for it at most. Stockfish: −4.4, winning for Black.})
+3... Nf6 4. e3 Bf5 5. c4 {[%cal Gd1b3] The rule against ...Bf5: c4 and Qb3. The pawn on h5 is a weakness, not a strength. Stockfish: +0.7, slightly better for White.} *
