@@ -156,6 +156,7 @@ Against 7.Nc3, play 7...b5 8.Bb3 Bb7 (Stockfish +0.1, equal). Against 7.dxc5, ta
 
 [Chapter "Central: 4.Nf3"]
 [Type "line"]
+[Level "advanced"]
 [Opening "Queen's Gambit Accepted: Central Variation, McDonnell Defense"]
 [ECO "D20"]
 

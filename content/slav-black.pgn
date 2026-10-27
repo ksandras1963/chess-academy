@@ -151,6 +151,7 @@ Against 9.Qb3, play 9...a5 (Stockfish +0.2, equal). Against 9.Nh4, play 9...Nbd7
 
 [Chapter "Geller Gambit: 5.e4"]
 [Type "line"]
+[Level "advanced"]
 [Opening "Slav Defense: Geller Gambit"]
 [ECO "D15"]
 
@@ -171,6 +172,7 @@ Against 6.a3, play 6...e6 (Stockfish −0.3, slightly better for Black). Against
 
 [Chapter "Quiet Variation: 4.e3 Bf5"]
 [Type "line"]
+[Level "advanced"]
 [Opening "Slav Defense: Quiet Variation, Schallopp Defense"]
 [ECO "D12"]
 

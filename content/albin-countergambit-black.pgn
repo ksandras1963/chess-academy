@@ -145,6 +145,7 @@ Against 6.e3, the most common move, see the branch. Against 6.Bg5 (one game in s
 [Chapter "3.Nc3 exd4"]
 [Diagram "3.Nc3"]
 [Type "line"]
+[Level "advanced"]
 [Opening "Queen's Gambit Declined: Albin Countergambit"]
 [ECO "D08"]
 
@@ -158,6 +159,7 @@ Against 6.e3, the most common move, see the branch. Against 6.Bg5 (one game in s
 
 [Chapter "Fianchetto: 5.g3"]
 [Type "line"]
+[Level "advanced"]
 [Opening "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation"]
 [ECO "D09"]
 
@@ -174,6 +176,7 @@ Against 6.e3, the most common move, see the branch. Against 6.Bg5 (one game in s
 [Chapter "4.e3: take on e3"]
 [Diagram "4.e3"]
 [Type "line"]
+[Level "advanced"]
 [Opening "Queen's Gambit Declined: Albin Countergambit, Lasker Trap"]
 [ECO "D08"]
 
