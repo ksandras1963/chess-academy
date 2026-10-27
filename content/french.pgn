@@ -429,7 +429,7 @@ Qxb2 {[%cal Gb2a1] Hits the rook on a1, and the bishop on h6 is still hanging.}
 1. e4 e6 2. d4 d5 3. e5 c5 4. c3 c4 {Locks the queenside early, but takes the pressure off d4.}
 5. b3 {[%cal Gb3c4] Attacks the chain at once.} b5 6. a4 Qa5 7. Bb2 Nc6 8. axb5 Qxb5 9. Nd2 {The b-file opens and Black's pawn on c4 becomes a target. Stockfish +0.9, slightly better for White.} *
 
-[Chapter "Black's second-move sidelines"]
+[Chapter "Franco-Sicilian: 2...c5 and other second moves"]
 [Side "white"]
 [Diagram "2...c5"]
 [Type "line"]
@@ -479,7 +479,7 @@ It is riskier than 4...Nd7: Stockfish rates the main line slightly better for Wh
 8. h4 {Supports the bishop on g5 and prepares long castling.} O-O 9. Qd2 e5! {[%cal Ge6e5] The second freeing break. It hits d4 and opens the diagonal of the c8 bishop.}
 10. Bxf6 Qxf6 11. O-O-O exd4 12. Qxd4 Qxd4 13. Rxd4 Nf6 {Equal endgame (Stockfish 0.0). Black's bishop is no longer bad.} *
 
-[Chapter "2.Nf3: other third moves"]
+[Chapter "Knight Variation: other third moves"]
 [Side "black"]
 [Diagram "3.e5"]
 [Type "line"]
@@ -497,7 +497,7 @@ It is riskier than 4...Nd7: Stockfish rates the main line slightly better for Wh
 (4. b4 {The Wing Gambit. White offers the b-pawn to pull Black's c-pawn away from d4.} cxb4 {Take it.} 5. d4 {After 5.a3, take again with 5...bxa3 and develop.} Bd7 {[%cal Gd7b5] Heads for b5 to trade the French bishop.} 6. a3 Qa5 7. Bd3 Bb5 {Trades the bishops and keeps the extra pawn. Slightly better for Black (Stockfish −0.4).})
 4... Nc6 5. d4 {This is the Paulsen Attack. After 5.Bb5, play 5...Bd7.} Qb6 {The main line of the Advance after 5...Qb6, by another move order.} *
 
-[Chapter "White's other second moves"]
+[Chapter "Rare second moves: 2.Bc4, 2.c4 and 2.d3"]
 [Side "black"]
 [Diagram "2.Bc4"]
 [Type "line"]
@@ -515,7 +515,7 @@ Other tries. After 2.Nc3 d5 3.exd5 exd5 4.d4, you are in the Exchange with 4.Nc3
 2... d5 {Attacks the bishop: White has to take or retreat.}
 3. exd5 exd5 4. Bb3 Nf6 5. d4 Bd6 6. Nf3 O-O 7. O-O h6 {Black has an easy game. Equal (Stockfish −0.1).} *
 
-[Chapter "2.f4"]
+[Chapter "La Bourdonnais Variation: 2.f4"]
 [Side "black"]
 [Type "line"]
 [Level "advanced"]
