@@ -23,7 +23,7 @@ A file is a series of chapters. Each chapter starts with a few header lines in s
 
 | Header | Meaning |
 |---|---|
-| `Chapter` | The title shown in the app. |
+| `Chapter` | The title shown in the app. Write the Queen's Gambit families short, as `QGD – Exchange: 5...Be7` or `QGA: 3...Nf6`: each page spells out the first QGD or QGA it shows ("Queen's Gambit Declined (QGD) – Exchange: 5...Be7") and keeps the abbreviation after that (`spellOut` in `js/ui.js`). |
 | `Type` | `line` (normal lines), `trap`, or `ideas` (the Key ideas page, which is never drilled). Puzzle files use `puzzle` (see Puzzles below). |
 | `Opening`, `ECO` | The Lichess opening name and code. The checker verifies both. |
 | `FEN` | Optional. Starts the chapter from a set position (used for Key ideas). |

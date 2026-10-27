@@ -3,7 +3,7 @@
 // link to its course; the line page plays the moves on the board, step by step or by itself.
 // Nothing here is drilled.
 
-import { h, paras, label, sideName, fig, figText, figMoves } from "../ui.js"
+import { h, paras, label, sideName, fig, figText, figMoves, spellOut } from "../ui.js"
 import { catalog, survey as loadSurvey, course as loadCourse } from "../content.js"
 import { mainPath } from "../course-model.js"
 import { Board } from "../board.js"
@@ -93,9 +93,10 @@ function variationName(op, ch) {
  * The chapter's [Course "italian"] header as links to that opening's courses: one per built
  * course, "Course coming soon" when the catalog lists it but nothing is written yet, and
  * "Course coming later" without the header. [Course "none"] shows nothing: no course is planned.
- * With lessons (from lessonLinks), each link opens that lesson, and only those sides are shown.
+ * With lessons (from lessonLinks), each link opens that lesson, and only those sides are shown;
+ * `spelled` is the page's set of abbreviations already spelled out (see spellOut).
  */
-function courseLinks(cat, ch, lessons) {
+function courseLinks(cat, ch, lessons, spelled = new Set()) {
     if (ch.headers.Course === "none") return null
     const op = cat.openings.find(o => o.id === ch.headers.Course)
     if (lessons) {
@@ -105,7 +106,7 @@ function courseLinks(cat, ch, lessons) {
             h("span", { class: `side-chip ${side}`, "aria-hidden": "true" }),
             h("span", { class: "lesson-label" },
                 h("span", { class: "course-meta" }, `${op ? `${op.name} ` : ""}${variation} variation as ${side === "white" ? "White" : "Black"}`),
-                figText(lessons[side].title))))
+                figText(spellOut(lessons[side].title, spelled)))))
     }
     const built = op ? op.courses.filter(m => m.available) : []
     if (!built.length) {
@@ -252,6 +253,7 @@ export async function surveyView(root, ctx, id) {
     const cat = await catalog()
     const lessons = new Map(await Promise.all(s.chapters.map(async ch => [ch, await lessonLinks(cat, ch)])))
     if (!ctx.alive()) return
+    const spelled = new Set()
     const diagrams = []
     const cards = new Map()
     // A [Page "qg"] chapter stands for a page of its own (the Queen's Gambit), so its map box goes there.
@@ -299,7 +301,7 @@ export async function surveyView(root, ctx, id) {
                 const page = pageOf(ch)
                 // A compact page lists only built courses; "coming later" on every card would be noise.
                 const courses = s.compact && !(cat.openings.find(o => o.id === ch.headers.Course)?.courses.some(m => m.available))
-                    ? null : courseLinks(cat, ch, lessons.get(ch))
+                    ? null : courseLinks(cat, ch, lessons.get(ch), spelled)
                 const card = h("section", { class: `chapter survey-chapter${s.compact ? " is-compact" : ""}` },
                     h("a", { class: "chapter-board", href: page ? `#/survey/${page.id}` : lineHref(s, ch, 0), title: page ? page.name : "Watch the moves" }, el,
                         node ? h("span", { class: "chapter-board-caption" }, `After ${label(node)}`) : null),

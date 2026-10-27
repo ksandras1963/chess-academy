@@ -1,7 +1,7 @@
 // Drill mode: the learner plays their side, the app plays the other. Results feed the review schedule.
 
 import { Chess } from "../../vendor/chess.js/chess.js"
-import { h, figText, paras, label, sideName, plural, sleep, backBar } from "../ui.js"
+import { h, figText, paras, label, sideName, plural, sleep, backBar, spellOut } from "../ui.js"
 import { course as loadCourse, availableCourses } from "../content.js"
 import { sideNotes } from "../course-model.js"
 import { status, buildQueue, practiceQueue, recordResult, daysUntil } from "../srs.js"
@@ -89,7 +89,7 @@ async function runSession(root, ctx, items, { backHref, backText }) {
         const nodes = line.nodes
         const missed = new Set()
         let hints = 0
-        L.setTitle(line.chapter.title, `${figText(line.variation)}${total > 1 ? `. Line ${k + 1} of ${total}` : ""}`)
+        L.setTitle(spellOut(line.chapter.title), `${figText(line.variation)}${total > 1 ? `. Line ${k + 1} of ${total}` : ""}`)
         if (board.orientation !== learner) await board.setOrientation(learner)
         await board.show(line.chapter.root.fen, { animate: false })
         check()

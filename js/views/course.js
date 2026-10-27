@@ -1,7 +1,7 @@
 // Course pages. The hub: what you need to know about the opening, today's drill, and links to the
 // sections. A section page (basic variations, traps, advanced variations) lists its lines by chapter.
 
-import { h, figText, paras, plural, backBar, label } from "../ui.js"
+import { h, figText, paras, plural, backBar, label, spellOut } from "../ui.js"
 import { course as loadCourse, openingStats, puzzles as loadPuzzles, overviewBack } from "../content.js"
 import { SECTIONS } from "../course-model.js"
 import { status, progress, buildQueue, practiceQueue, newRemainingToday, daysUntil } from "../srs.js"
@@ -123,6 +123,7 @@ function sectionPage(root, ctx, c, stats, section) {
     const sectionLines = c.lines.filter(l => l.section === section.id)
     const p = progress(sectionLines)
     const diagrams = []
+    const spelled = new Set() // QGD and QGA are spelled out in the first title that uses them
 
     root.append(h("section", { class: "course" },
         backBar({ href: `#/course/${c.id}`, text: sideLabel(c) }),
@@ -140,7 +141,7 @@ function sectionPage(root, ctx, c, stats, section) {
             return h("section", { class: `chapter chapter-${ch.type}` },
                 chapterBoard(c, ch, lines, diagrams),
                 h("div", { class: "chapter-head" },
-                    h("h2", {}, ch.title, TYPE_LABEL[ch.type] ? h("span", { class: "tag" }, TYPE_LABEL[ch.type]) : null),
+                    h("h2", {}, spellOut(ch.title, spelled), TYPE_LABEL[ch.type] ? h("span", { class: "tag" }, TYPE_LABEL[ch.type]) : null),
                     shareLine(chapterShare(stats, c.opening.fen, ch, learner), yourGames(ch)),
                     ...paras(ch.root.note.text, { class: "chapter-intro" })),
                 h("ul", { class: "lines" }, lines.map(l => {

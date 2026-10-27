@@ -1,6 +1,6 @@
 // Learn mode: step through a line (or a key-ideas chapter) with the explanation for each move.
 
-import { h, figText, paras, label, sideName } from "../ui.js"
+import { h, figText, paras, label, sideName, spellOut } from "../ui.js"
 import { course as loadCourse } from "../content.js"
 import { mainPath, sideNotes, siblingBranches } from "../course-model.js"
 import { Board } from "../board.js"
@@ -34,7 +34,7 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
     }
     const back = base.line ? sectionLink(c, base.line) : { href: `#/course/${c.id}`, text: sideLabel(c) }
     const L = trainerLayout(root, { backHref: back.href, backText: back.text, ...steps })
-    L.setTitle(base.title, base.sub)
+    L.setTitle(spellOut(base.title), base.sub)
     const state = { nodes: base.nodes, idx: Math.min(Number(startAt) || 0, base.nodes.length), explore: null }
     const board = new Board(L.boardEl, { fen: base.start.fen, orientation: learner })
     ctx.onLeave(() => board.destroy())
