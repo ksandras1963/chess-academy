@@ -26,6 +26,11 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 6. Drills for White and for Black
 7. References (Further study)
 
+## Basic lines and "How often"
+
+- Basic holds only the lines played in about 10% or more of your games (9.5% and up): about 4 to 6 lines, the very core. Everything else goes to Advanced, grouped by variation name, most common first. Kumar makes exceptions himself (the King's Indian has 7 Basic lines).
+- "How often", in tables and chapter bars, is the share of your games in the opening that reach the line, from the side you play in it: the product of the opponent's move frequencies from the course start, in Lichess rated rapid and classical games between players averaging 1800 to 2199 (`content/opening-stats.json`). A table counts all of the line's move orders.
+
 ## Drills
 
 - No daily limit: every line is in the drill from the start, and the learner decides how many to drill.
@@ -50,3 +55,8 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 ## Back buttons
 
 Every lesson page (a line in Basic, Traps or Advanced) shows its back buttons in this order: the section, then the course page, then Main menu. For example: "< Basic variations < French Defense Course < Main menu". A Key ideas page shows the course page, then Main menu. A Puzzles page shows the course page, then Main menu. A course page shows Main menu, then the overview page the opening sits under, never the opening's own Introduction page, which repeats the course page's map and table (the Caro-Kann course page goes back to Replies to 1.e4).
+
+## Before merging
+
+- Show Kumar screenshots of every change that is not live yet. Pages that are already published need no screenshots: he can see them online.
+- Never push to main or merge without Kumar's "Yes, merge it so it goes live".

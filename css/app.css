@@ -444,7 +444,7 @@ a.chapter-board:focus-visible { outline: none; }
 .survey-table thead th { padding-top: 0; font-size: 0.8125rem; font-weight: 600; color: var(--ink-dim); border-bottom-color: var(--brass); }
 .survey-table tbody th { font-weight: 600; }
 .survey-table td { color: var(--ink-dim); }
-.survey-table td:nth-child(2) { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.survey-table td:nth-child(2) { white-space: pre; font-variant-numeric: tabular-nums; } /* no wrapping, but a line break in the text starts a new line ("12% as White" over "4% as Black") */
 .survey-table figcaption { margin-top: 6px; font-size: 0.8125rem; }
 @media (max-width: 520px) {
     .survey-table table { font-size: 0.875rem; }
