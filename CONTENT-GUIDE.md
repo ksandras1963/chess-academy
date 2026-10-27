@@ -14,7 +14,7 @@ The Queen's Gambit course pages are short: a sentence on the opening, "Why play 
 4. Key ideas.
 5. The section links (Basic, Traps, Advanced, Puzzles).
 6. The drills, "Drill as White" and "Drill as Black".
-7. Further study: at most 4 entries.
+7. Further study: 4 entries for most courses, never more than 5.
 
 Further study lists only sources with a named author or presenter. It has no Wikipedia articles and no entries credited only to a channel.
 
