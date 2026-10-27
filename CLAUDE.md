@@ -34,6 +34,6 @@ These are Kumar's standing rules for every opening. Follow them in every session
 
 ## References
 
-- At most 4 per course.
+- Usually 4 per course; 5 at most, only when needed.
 - No Wikipedia.
 - No source whose author is unknown: a video must name its presenter, not only its channel.
