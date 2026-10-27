@@ -746,22 +746,64 @@
                     "id": "kings-indian",
                     "side": "both",
                     "file": "content/kings-indian.pgn",
-                    "repertoire": "As White: Classical (5.Nf3, 6.Be2 and castling), with 9.b4 against the Mar del Plata. As Black: the Kazakh 6...Na6 against the Classical, and ...c5 against the Four Pawns and the Sämisch.",
-                    "summary": "As White: develop naturally, castle, and let Black commit first. Close the center with d5 and race on the queenside with b4 and c5; against ...exd4, guard e4 with f3 and use your space. As Black: let White build the big center, castle behind the g7 bishop, then strike with ...e5 or ...c5. The Kazakh 6...Na6 and a knight on c5 keep the theory light against the Classical.",
-                    "overview": [
-                        "As White: play the Classical: 5.Nf3, 6.Be2 and castle. You make no weakening pawn moves, so Black's attack has nothing to aim at until the center closes.",
-                        "As White: after 6.Be2, Black's main reply is 6...e5, in about a third of those games, and 6...Nbd7 or 6...Nc6 usually lead to ...e5 as well. Castle first, then close the center with d5 or hold it with Be3.",
-                        "As White: against 7...Nc6, the Mar del Plata, play 8.d5 and 9.b4. Your queenside attack with c5 must arrive before Black's ...f5, ...f4 and ...g5.",
-                        "As White: against 7...exd4 8.Nxd4 Re8, guard e4 with 9.f3 at once. Natural moves such as 9.Bg5? or 9.Re1? let Black take on e4.",
-                        "As White: against 6...c5, castle and take back on d4 with the knight. Your pawns on c4 and e4 form the Maroczy Bind, which clamps d5 and Black's freeing breaks.",
-                        "As White: know the tricks: 5...e5?! 6.dxe5 wins a pawn before Black has castled, and the fork trick 8...Nxe4?? fails because your queen guards d4.",
-                        "As Black: set up with ...g6, ...Bg7, ...d6 and ...O-O, then strike at White's center with ...e5 or ...c5. Your king is safe behind the g7 bishop.",
-                        "As Black: White's systems are spread out: 5.Nf3 comes up in about a sixth of your games, and the Four Pawns, the Sämisch, the Makogonov, 5.Be2 and 5.Bd3 in about 5 to 8% each. Learn the plan for each.",
-                        "As Black: against the Classical, 6.Be2, play 6...Na6 and ...e5. When White closes the center with d5, put the knight on c5, play ...a5 so b4 can't chase it, then ...f5.",
-                        "As Black: against the Four Pawns (5.f4) and the Sämisch (5.f3 and Be3), strike at once with ...c5. White's center is loose and the king is not castled yet.",
-                        "As Black: against the Averbakh (Be2 and Bg5), play ...Na6 before ...e5. Otherwise Nd5 hits f6 and c7 and wins the exchange.",
-                        "As Black: against 6.Bd3, play 6...Bg4 and pile up on d4 with ...Bxf3, ...Nc6 and ...Nd7. The natural Ne2?? then loses material to ...Nce5."
-                    ]
+                    "repertoire": "Seven Basic lines for both sides: the Mar del Plata, the Fianchetto, the Four Pawns Attack and the Sämisch.",
+                    "summary": "Black lets White build a big center, castles behind the g7 bishop, then strikes with ...e5 or ...c5. When the center locks, White attacks on the queenside and Black on the kingside.",
+                    "why": {
+                        "text": "As Black, the King's Indian lets White take the center, then fights back against it, so the game stays unbalanced, with chances for both sides.\n\nAs White, the big center gives extra space, and White chooses the system: the Classical, the Fianchetto, the Four Pawns Attack or the Sämisch."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "Share",
+                            "What to know as White",
+                            "What to know as Black"
+                        ],
+                        "rows": [
+                            [
+                                "Mar del Plata, Main line: 9.Ne1",
+                                "35%",
+                                "Close the center with d5, hold e4 with Ne1, Be3 and f3, then open the c-file with c5.",
+                                "Bring the knight to e7, then storm the kingside with ...f5, ...f4 and ...g5."
+                            ],
+                            [
+                                "Mar del Plata, Bayonet Attack: 9.b4",
+                                "29%",
+                                "Skip Ne1 and race on the queenside at once with b4 and c5.",
+                                "Free the f-pawn with ...Nh5, play ...f5, and hit d5 with ...c6."
+                            ],
+                            [
+                                "Fianchetto, Classical: 6...Nbd7",
+                                "32%",
+                                "The g2 bishop guards your king. Take more center with e4, and stop ...Ng4 with h3.",
+                                "Play ...Nbd7 and ...e5, then hit d4 and e4 with ...c6, ...Qb6 and ...exd4."
+                            ],
+                            [
+                                "Fianchetto, Panno: 7...a6",
+                                "17%",
+                                "Gain space with d5, and protect c4 with Nd2 and b3.",
+                                "Open lines on the queenside with ...Nc6, ...a6, ...Rb8 and ...b5."
+                            ],
+                            [
+                                "Four Pawns Attack, Main line: 6...c5",
+                                "37%",
+                                "Push d5 and keep your central majority.",
+                                "Hit the center at once with ...c5, trade the f3 knight with ...Bg4, and press e4 with ...Re8."
+                            ],
+                            [
+                                "Sämisch, Orthodox: 6...e5",
+                                "29%",
+                                "f3 holds e4. After d5, castle short once the c-file opens.",
+                                "Answer d5 with ...c6 to open the c-file, then play ...Nh5 and ...f5."
+                            ],
+                            [
+                                "Sämisch Gambit: 6...c5",
+                                "10%",
+                                "Keep the tension with Nge2. Taking on c5 gives Black fast development for the pawn.",
+                                "Hit d4 at once with ...c5, put a knight on e5, then play ...e6 and ...a6 to prepare ...b5."
+                            ]
+                        ],
+                        "note": "The Mar del Plata starts 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7, the Fianchetto 4.Nf3 d6 5.g3 O-O 6.Bg2, the Four Pawns Attack 4.e4 d6 5.f4, and the Sämisch 4.e4 d6 5.f3 O-O 6.Be3, all after 1.d4 Nf6 2.c4 g6 3.Nc3 Bg7. Share: how often the line's title move is chosen where the line branches off (9.Ne1 in 35% of games after 8...Ne7), in Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Everything else is in Advanced."
+                    }
                 }
             ]
         }
