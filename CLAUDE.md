@@ -38,6 +38,7 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 ## Lesson pages
 
 - A move's note can run up to five sentences when needed. In Kumar's words: "Can be longer sentences - up to 5, if needed."
+- The move buttons (« ‹ › ») stay at the same height on every move, directly under the move line; a move's note goes below them. In Kumar's words: "The moves line keeps moving up and down - very annoying. Ensure all move lines are at same level. If additional text if needed, add this below the move line."
 - A lesson's introduction (the text under "Starting position") stays visible while the moves play, and the current move is shown above it, beside the board. In Kumar's words: "Whatever is written after Starting position of each variation should remain visible when the pieces start moving."
 
 ## Names
