@@ -14,16 +14,27 @@ export function trainerLayout(root, { backHref, backText, prev = null, next = nu
     const title = h("h1", { class: "tp-title" })
     const sub = h("p", { class: "tp-sub" })
     const sheet = h("div", { class: "scoresheet" })
+    // The line's introduction, kept on screen below the current move while the moves are played
+    // (line lessons, overview lines).
+    const intro = h("section", { class: "lesson-intro", "aria-label": "About this line" })
+    intro.hidden = true
     const commentary = h("div", { class: "commentary", "aria-live": "polite" })
     const extra = h("div", { class: "extra" })
     const controls = h("div", { class: "controls" })
-    root.append(h("section", { class: "trainer" },
+    const trainer = h("section", { class: "trainer" },
         h("div", { class: "trainer-board" }, boardEl),
         h("aside", { class: "trainer-panel" },
             h("header", { class: "tp-head" }, back, steps, title, sub),
-            sheet, commentary, extra, controls)))
+            intro, commentary, controls, sheet, extra))
+    root.append(trainer)
     return {
         boardEl, sheet, commentary, extra, controls,
+        /** Shows the introduction (an array of nodes) above the move notes, or hides it when empty. */
+        setIntro(nodes) {
+            intro.replaceChildren(...(nodes.length ? [h("h2", { class: "intro-label" }, "About this line"), ...nodes] : []))
+            intro.hidden = !nodes.length
+            trainer.classList.toggle("has-intro", nodes.length > 0) // reorders the panel (css/app.css)
+        },
         setTitle(t, s = "") {
             title.textContent = t
             sub.textContent = s

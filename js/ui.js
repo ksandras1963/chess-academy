@@ -33,6 +33,22 @@ export function figText(text) {
     return text.replace(/(^|[\s(.…])([KQRBN])(?=[a-h]?[1-8]?x?[a-h][1-8]\b)/g, (_, pre, p) => pre + FIG[p] + VS15)
 }
 
+/** Abbreviations in chapter titles, spelled out the first time a page uses them. */
+const ABBREVIATIONS = { QGD: "Queen's Gambit Declined", QGA: "Queen's Gambit Accepted" }
+
+/**
+ * "QGD – Exchange: 5...Be7" becomes "Queen's Gambit Declined (QGD) – Exchange: 5...Be7" the first time a
+ * page shows QGD. `seen` holds the abbreviations a page has already spelled out; a page with a
+ * single title leaves it out.
+ */
+export function spellOut(text, seen = new Set()) {
+    return text.replace(/\b(QGD|QGA)\b/g, abbr => {
+        if (seen.has(abbr)) return abbr
+        seen.add(abbr)
+        return `${ABBREVIATIONS[abbr]} (${abbr})`
+    })
+}
+
 /**
  * The back buttons at the top of every page except the main menu.
  * `parent` adds a second button, e.g. back to the course from a lesson: { href, text }.

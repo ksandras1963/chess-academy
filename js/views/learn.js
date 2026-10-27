@@ -1,6 +1,6 @@
 // Learn mode: step through a line (or a key-ideas chapter) with the explanation for each move.
 
-import { h, figText, paras, label, sideName } from "../ui.js"
+import { h, figText, paras, label, sideName, spellOut } from "../ui.js"
 import { course as loadCourse } from "../content.js"
 import { mainPath, sideNotes, siblingBranches } from "../course-model.js"
 import { Board } from "../board.js"
@@ -10,8 +10,6 @@ import { sideLabel, sectionLink } from "./course.js"
 export async function learnView(root, ctx, courseId, lineKey, startAt) {
     const c = await loadCourse(courseId)
     if (!ctx.alive()) return
-    const learner = c.side === "white" ? "w" : "b"
-
     let base
     if (lineKey.startsWith("ideas-")) {
         const ch = c.chapters[Number(lineKey.slice(6))]
@@ -22,6 +20,8 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
         if (!line) throw new Error("This line no longer exists; it may have been edited. Go back to the course to see the current lines.")
         base = { nodes: line.nodes, start: line.chapter.root, title: line.chapter.title, sub: figText(line.variation), line }
     }
+    // The side the learner plays here: the chapter's (a course for both sides mixes them).
+    const learner = base.line ? base.line.learner : c.chapters[Number(lineKey.slice(6))].learner
 
     // Key ideas pages link to the previous and next idea, so they can be read in order.
     const steps = {}
@@ -34,7 +34,10 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
     }
     const back = base.line ? sectionLink(c, base.line) : { href: `#/course/${c.id}`, text: sideLabel(c) }
     const L = trainerLayout(root, { backHref: back.href, backText: back.text, ...steps })
-    L.setTitle(base.title, base.sub)
+    L.setTitle(spellOut(base.title), base.sub)
+    // A line's introduction stays in view while the moves are played; a Key ideas page shows its text
+    // as the starting position's note instead.
+    if (base.line) L.setIntro(paras(base.start.note.text || ""))
     const state = { nodes: base.nodes, idx: Math.min(Number(startAt) || 0, base.nodes.length), explore: null }
     const board = new Board(L.boardEl, { fen: base.start.fen, orientation: learner })
     ctx.onLeave(() => board.destroy())
@@ -71,7 +74,7 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
         if (!node) {
             L.commentary.replaceChildren(
                 ...(base.line ? [h("h2", { class: "cm-move" }, "Starting position")] : []),
-                ...paras(note.text || (state.nodes.length
+                ...paras((!base.line && note.text) || (state.nodes.length
                     ? "Step through the line with the arrows below, or tap any move on the score sheet." : "")))
         } else {
             const who = node.color === learner ? `${sideName(node.color)}, your side` : sideName(node.color)

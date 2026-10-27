@@ -1,7 +1,7 @@
 // Course pages. The hub: what you need to know about the opening, today's drill, and links to the
 // sections. A section page (basic variations, traps, advanced variations) lists its lines by chapter.
 
-import { h, figText, paras, plural, backBar, label } from "../ui.js"
+import { h, figText, paras, plural, backBar, label, spellOut } from "../ui.js"
 import { course as loadCourse, openingStats, puzzles as loadPuzzles, overviewBack } from "../content.js"
 import { SECTIONS } from "../course-model.js"
 import { status, progress, buildQueue, practiceQueue, newRemainingToday, daysUntil } from "../srs.js"
@@ -20,8 +20,17 @@ const SECTION_TEXT = {
 }
 
 export function sideLabel(c) {
+    if (c.side === "both") return courseTitle(c)
     const side = c.side === "white" ? "White" : "Black"
     return c.unified ? `${c.opening.name}, playing ${side}` : `${c.opening.name}, as ${side}`
+}
+
+/**
+ * "King's Indian Defense Course" for a course that covers both sides (one you choose a side in,
+ * or one whose chapters each name their side), else "Italian Game Course for White".
+ */
+export function courseTitle(c) {
+    return c.unified || c.side === "both" ? `${c.opening.name} Course` : `${c.opening.name} Course for ${c.side === "white" ? "White" : "Black"}`
 }
 
 /**
@@ -36,6 +45,11 @@ function sideSwitch(c, suffix = "") {
             href: `#/course/${m.id}${suffix}`,
             "aria-current": m.side === c.side ? "true" : null
         }, h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }), m.side === "white" ? "White" : "Black")))
+}
+
+/** In a course whose chapters each name their side ("side": "both"), the tag that says which side a chapter is played from. */
+function sideTag(c, ch) {
+    return c.side === "both" ? h("span", { class: `tag side-tag is-${ch.side}` }, `You play ${ch.side === "white" ? "White" : "Black"}`) : null
 }
 
 /** Where a line lives, for back buttons: its section page. */
@@ -113,7 +127,7 @@ function hubPage(root, c, set, back) {
     root.append(h("section", { class: "course" },
         backBar(back),
         h("header", { class: "course-head" },
-            h("h1", {}, c.unified ? `${c.opening.name} Course` : `${c.opening.name} Course for ${c.side === "white" ? "White" : "Black"}`),
+            h("h1", {}, courseTitle(c)),
             c.unified ? sideSwitch(c) : h("p", { class: "course-side" }, c.repertoire),
             h("p", { class: "course-summary" }, figText(c.summary || ""))),
         h("div", { class: "course-actions" }, drillAction(c)),
@@ -123,7 +137,7 @@ function hubPage(root, c, set, back) {
             ideas.length ? [
                 h("p", { class: "muted" }, "Read these first: the reasons behind the moves you will drill."),
                 h("ol", {}, ideas.map(ch => h("li", {},
-                    h("a", { href: `#/learn/${c.id}/ideas-${ch.index}` }, ch.title.replace(/^Key ideas:\s*/i, "")))))
+                    h("a", { href: `#/learn/${c.id}/ideas-${ch.index}` }, ch.title.replace(/^Key ideas:\s*/i, "")), c.side === "both" ? " " : null, sideTag(c, ch))))
             ] : null),
         h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard),
         h("div", { class: "course-stats" },
@@ -134,12 +148,13 @@ function hubPage(root, c, set, back) {
 
 function sectionPage(root, ctx, c, stats, section) {
     if (!section) throw new Error("There is no such section. Go back to the course.")
-    const learner = c.side === "white" ? "w" : "b"
-    const yourGames = gamesLabel(c, learner)
+    // "of your Slav games" for each chapter, from the side the chapter is played from.
+    const labels = { w: gamesLabel(c, "w"), b: gamesLabel(c, "b") }
     const chapters = c.chapters.filter(ch => ch.section === section.id)
     const sectionLines = c.lines.filter(l => l.section === section.id)
     const p = progress(sectionLines)
     const diagrams = []
+    const spelled = new Set() // QGD and QGA are spelled out in the first title that uses them
 
     root.append(h("section", { class: "course" },
         backBar({ href: `#/course/${c.id}`, text: sideLabel(c) }),
@@ -157,8 +172,8 @@ function sectionPage(root, ctx, c, stats, section) {
             return h("section", { class: `chapter chapter-${ch.type}` },
                 chapterBoard(c, ch, lines, diagrams),
                 h("div", { class: "chapter-head" },
-                    h("h2", {}, ch.title, TYPE_LABEL[ch.type] ? h("span", { class: "tag" }, TYPE_LABEL[ch.type]) : null),
-                    shareLine(chapterShare(stats, c.opening.fen, ch, learner), yourGames(ch)),
+                    h("h2", {}, spellOut(ch.title, spelled), TYPE_LABEL[ch.type] ? h("span", { class: "tag" }, TYPE_LABEL[ch.type]) : null, sideTag(c, ch)),
+                    shareLine(chapterShare(stats, c.opening.fen, ch, ch.learner), labels[ch.learner](ch)),
                     ...paras(ch.root.note.text, { class: "chapter-intro" })),
                 h("ul", { class: "lines" }, lines.map(l => {
                     const s = status(l.id)
@@ -177,7 +192,7 @@ function sectionPage(root, ctx, c, stats, section) {
 
     // Boards are drawn once their frames are in the page, so they can measure their size.
     const boards = diagrams.map(d => {
-        const board = new Board(d.el, { fen: d.node ? d.node.fen : d.fen, orientation: learner })
+        const board = new Board(d.el, { fen: d.node ? d.node.fen : d.fen, orientation: d.learner })
         if (d.node) board.annotate({ lastMove: { from: d.node.from, to: d.node.to } })
         return board
     })
@@ -193,7 +208,7 @@ function gamesLabel(c, learner) {
     const key = fen => fen.split(" ").slice(0, 4).join(" ")
     const choices = new Map()
     for (const l of c.lines) for (const n of l.nodes) {
-        if (n.color !== learner) continue
+        if (l.learner !== learner || n.color !== learner) continue
         const k = key(n.fenBefore)
         if (!choices.has(k)) choices.set(k, new Set())
         choices.get(k).add(n.san)
@@ -220,7 +235,7 @@ function shareLine(share, yourGames) {
 function chapterBoard(c, ch, lines, diagrams) {
     const node = ch.diagram && ch.diagram.node
     const el = h("div", { class: "board-frame" })
-    diagrams.push({ el, node, fen: ch.root.fen })
+    diagrams.push({ el, node, fen: ch.root.fen, learner: ch.learner })
     if (!node) return h("div", { class: "chapter-board" }, el)
     const first = lines.find(l => l.nodes[node.ply - 1] === node)
     const caption = h("span", { class: "chapter-board-caption" }, `After ${label(node)}${node.symbol || ""}`)

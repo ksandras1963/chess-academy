@@ -1,0 +1,38 @@
+[Puzzle "Nxd5 when c8 is loose"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "9.Nxd5"]
+[End "9.Nxd5"]
+[Hint "Your queen on c2 and Black's bishop on c8 stand on the same file. What stands between them?"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 c6 6. Qc2 Be7 7. e3 Nh5? 8. Bxe7 Qxe7? 9. Nxd5! {[%cal Gc2c8] Takes the pawn. If 9...cxd5, the c-file opens, and the queen takes the bishop on c8 with check.}
+(9. Nf3? {Develops, but the chance is gone.} 9... O-O 10. Bd3 g6 {Black has traded off White's good bishop and is fine. Stockfish: +0.2, equal.})
+9... Qd6 {The best defense: the queen hits the knight.}
+(9... cxd5? 10. Qxc8+ Qd8 11. Bb5+ Nc6 12. Bxc6+ bxc6 13. Qxc6+ {White is two pawns up, and the queen attacks the rook on a8 too. Stockfish: +5.5, winning for White.})
+10. Nc3 O-O 11. Be2 Nf6 12. Nf3 {White is a pawn up, and the knight on h5 had to go back. Stockfish: +3.4, winning for White.}
+*
+
+[Puzzle "The Elephant trap"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "6...Nxd5"]
+[End "7...Bb4+"]
+[Hint "The knight on f6 looks pinned. What happens if it moves anyway?"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 Nbd7 6. Nxd5?? Nxd5! {Gives up the queen. White's bishop can take it, but look at White's king.}
+(6... c6? {Black has lost a pawn for nothing.} 7. Nc3 Bb4 8. Nf3 O-O {Black has a little play for the pawn, but not enough. Stockfish: +1.1, clearly better for White.})
+7. Bxd8 Bb4+ {[%hint White's king is still on e1. Which check can only be blocked by the queen?] [%cal Gb4e1] Check. White's only block is Qd2, and the queen falls.}
+8. Qd2 Bxd2+ 9. Kxd2 Kxd8 {Black has won a knight for a pawn. Stockfish: −5.1, winning for Black.}
+*
+
+[Puzzle "Take back with the bishop"]
+[Type "puzzle"]
+[Theme "Avoid the trap"]
+[Solve "7...Bxf6"]
+[End "7...Bxf6"]
+[Hint "Two pieces can take on f6. Which recapture keeps your king safe?"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. Bxf6 Bxf6! {Black gets the bishop pair, and the pawns in front of the king stay intact.}
+(7... gxf6? {Opens up Black's king.} 8. cxd5 exd5 9. Bd3 {White's pieces aim at the open king, and Qc2 or Nh4 comes next. Stockfish: +2.9, winning for White.})
+8. Bd3 dxc4 9. Bxc4 c5 {The freeing break, as in QGD – Tartakower: 7.Bxf6. Stockfish: 0.0, equal.}
+*
