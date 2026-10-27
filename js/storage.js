@@ -6,8 +6,7 @@ const DEFAULTS = {
     v: 1,
     lines: {},            // lineId -> { box, due, last, reps, lapses }
     puzzles: {},          // puzzleId -> { status: "solved" | "missed", tries, last }
-    daily: { day: "", newCount: 0 },
-    settings: { theme: "dark", newPerDay: 3, animation: "normal", coordinates: true, notation: "figurines" }
+    settings: { theme: "dark", animation: "normal", coordinates: true, notation: "figurines" }
 }
 
 let state = null
@@ -19,7 +18,6 @@ function normalize(data) {
     if (data && typeof data === "object") {
         if (data.lines && typeof data.lines === "object") s.lines = data.lines
         if (data.puzzles && typeof data.puzzles === "object") s.puzzles = data.puzzles
-        if (data.daily) s.daily = { ...s.daily, ...data.daily }
         if (data.settings) s.settings = { ...s.settings, ...data.settings }
     }
     return s
@@ -68,7 +66,6 @@ export function resetProgress() {
     const s = load()
     s.lines = {}
     s.puzzles = {}
-    s.daily = { day: "", newCount: 0 }
     save()
 }
 

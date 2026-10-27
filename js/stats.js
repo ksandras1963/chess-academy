@@ -4,12 +4,27 @@
 
 const key = fen => fen.split(" ").slice(0, 4).join(" ")
 
+// Lichess sometimes writes castling as the king taking its own rook (e8h8); the course moves say e8g8.
+const CASTLING = { e1g1: "e1h1", e1c1: "e1a1", e8g8: "e8h8", e8c8: "e8a8" }
+
+/** The piece letter on a square of a FEN board ("K", "p"), or "" when it is empty. */
+function pieceOn(fen, square) {
+    const rank = fen.split(" ")[0].split("/")[8 - Number(square[1])]
+    let file = 0
+    for (const ch of rank) {
+        if (/\d/.test(ch)) file += Number(ch)
+        else if (file++ === square.charCodeAt(0) - 97) return ch
+    }
+    return ""
+}
+
 /** Share of the games in a position in which `uci` was played (0 when it isn't among the listed moves). */
 export function moveShare(stats, fen, uci) {
     const p = stats && stats.positions[key(fen)]
     if (!p) return null
     const listed = Object.values(p.moves).reduce((a, b) => a + b, 0)
-    return (p.moves[uci] || 0) / Math.max(p.games, listed)
+    const castle = CASTLING[uci] && /^[Kk]$/.test(pieceOn(fen, uci.slice(0, 2))) ? p.moves[CASTLING[uci]] || 0 : 0
+    return ((p.moves[uci] || 0) + castle) / Math.max(p.games, listed)
 }
 
 /**
