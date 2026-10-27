@@ -7,6 +7,7 @@
 
 [Chapter "3...c5 frees the c8 bishop"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "3.Nc3"]
 
 {Most defenses to the Queen's Gambit hold the pawn on d5 and wait. In the Queen's Gambit Declined with 3...Nf6, Black's c8 bishop stays shut in behind the pawn on e6. The Tarrasch hits back at once with 3...c5, and when Black takes back on d5 with the e-pawn, the bishop is free.}
@@ -17,6 +18,7 @@
 
 [Chapter "The price: an isolated pawn"]
 [Type "concept"]
+[Idea "both"]
 [Diagram "8...O-O"]
 
 {When Black's c-pawn is traded off, the d-pawn has no pawn beside it on the c- or e-file: it is an isolated pawn. Only pieces can guard it, and d4, the square in front of it, is a safe home for a White piece. White's best setup is the Rubinstein System, with g3 and Bg2 to press on d5. In his Queen's Gambit video, IM Andrey Ostrovskiy says this pressure is why the Tarrasch is no longer thought to be very good for Black, but Stockfish rates it only slightly better for White.}
@@ -26,6 +28,7 @@
 
 [Chapter "Other move orders"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "2...e6"]
 
 {White doesn't always play 3.Nc3. After 3.cxd5 exd5 4.Nc3, play 4...c5, and you are in the course. After 3.Nf3, 3...c5 gets there too if White plays Nc3 soon, as on this board. But White can also keep the knight on b1 with 4.e3 or 4.g3, so if you would rather avoid that, answer 3.Nf3, 3.g3 and 3.Bf4 with 3...Nf6, as in the Queen's Gambit Declined Course.}
@@ -43,6 +46,7 @@
 
 [Chapter "Black's pieces take the open lines"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "10.Nxd4"]
 
 {Black's payment for the isolated pawn is activity: open files for the rooks, free diagonals for the bishops, and the e4 square, which the d5 pawn supports, for a knight. Keep pieces on the board, because every trade makes the pawn weaker.}
@@ -53,6 +57,7 @@
 
 [Chapter "White's plan: blockade and pressure"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "12...Bf8"]
 
 {White keeps a piece on d4, the square in front of the pawn, so the pawn can't advance. Then White lines up on d5: the bishop on g2, the queen and a rook. White also likes to trade minor pieces: the fewer pieces Black has, the weaker d5 becomes, and an endgame against an isolated pawn favors White.}
@@ -62,6 +67,7 @@
 
 [Chapter "Tactics guard d5"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "10...h6"]
 
 {The d5 pawn can look loose, but Black's active pieces often guard it with tactics. Here White trades off one of its defenders, the knight on f6. Before you take a pawn, or let White take one, count what each piece attacks.}
@@ -71,6 +77,7 @@
 
 [Chapter "The ...d4 break"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "10.Bg5"]
 
 {When no White piece blocks d4, push the isolated pawn. ...d4 gains space and drives a knight away, and the pawn stops being a target on d5. This position comes from the main line when White takes on c5 instead: 9.dxc5 Bxc5 10.Bg5.}
@@ -88,6 +95,7 @@
 
 [Chapter "Pawns on c6 and d5"]
 [Type "concept"]
+[Idea "both"]
 [Diagram "11...Re8"]
 
 {In the main line after 11.Be3 Re8, White can trade knights on c6. If Black takes back with the b-pawn, the d5 pawn is no longer isolated: the pawn on c6 guards it. Black also gets the half-open b-file for a rook, while White aims at the c6 pawn and the c5 square in front of it. If Black later plays ...c5, the c- and d-pawns become hanging pawns: side by side, with no pawns beside them. Keep them side by side, guarded by pieces, and push one only when it gains something.}
@@ -98,6 +106,7 @@
 
 [Chapter "The ...d4 wedge"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "4.dxc5"]
 
 {When White takes on c5 early, don't take back at once: push the d-pawn. It gains space and drives White's knight from c3, and Black wins the c5 pawn back later. This board starts after 1.d4 d5 2.c4 e6 3.Nc3 c5 4.dxc5. The same push answers 5.dxc5 and 6.dxc5 after White has taken on d5.}
@@ -109,6 +118,7 @@
 
 [Chapter "The ...c4 majority"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "9.Bg5"]
 
 {Instead of taking on d4, Black can push ...c4. Then there is no isolated pawn, and Black has three pawns against two on the queenside. White answers by striking at the chain, as with b3 on this board. In this position, the main line after 9.Bg5, the course takes on d4 instead, but it plays ...c4 against some White setups, such as 6.Bf4 Nf6 7.e3 c4 in the Two Knights.}
@@ -120,6 +130,7 @@
 
 [Chapter "When White keeps the tension"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "6.Be2"]
 
 {Against 4.e3 and 4.Nf3, White often develops without taking on d5, as in the Symmetrical Variation, 4.e3 Nc6 5.Nf3 Nf6 6.Be2. Wait until White's f1 bishop has moved, then take on c4: Bxc4 costs White a second move with the same bishop. Then ...a6, ...b5 and ...Bb7 gain space on the queenside. If Black later takes on d4 and White takes back with the e-pawn, it is White who has the isolated pawn.}
@@ -138,6 +149,7 @@
 
 [Chapter "...Qa5+ against a knight on b5"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "5...d4"]
 
 {After 4.cxd5 exd5 5.dxc5 d4, White's knight on c3 is attacked and must move. On b5 it eyes c7 and d4, but nothing guards it there, so a queen check that also hits the knight wins it. The same check works in the Two Knights after 5.Nf3 Nc6 6.dxc5 d4 7.Nb5? Qa5+! (Stockfish: −4.4, winning for Black).}
@@ -147,6 +159,7 @@
 
 [Chapter "Push the d-pawn, block with the knight"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "5.dxc5"]
 
 {After 4.cxd5 exd5 5.dxc5, the d5 pawn has lost its partner on c5, and White's queen and knight both hit it. Four Black players in ten take back on c5 and lose the pawn. Push it instead, and watch for the queen check that follows.}
@@ -157,6 +170,7 @@
 
 [Chapter "...e5! against a knight on b5"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "6...a6"]
 
 {After 4.dxc5 d4 5.Nb5 Bxc5 6.Nf3 a6, White's knight on b5 is attacked, and the d4 pawn looks loose. Grabbing it lets ...e5 hit the knight twice. The same push punishes 6.Bf4?: 6...e5! hits the bishop (Stockfish: −5.1, winning for Black).}
@@ -167,6 +181,7 @@
 
 [Chapter "Bg5 and the d5 pawn"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "6.Bg5"]
 
 {After 4.cxd5 exd5 5.Nf3 Nc6 6.Bg5, White's bishop hits the queen, and the queen guards d5. Block with the bishop, and if White trades, take back with the g8 knight so the queen keeps guarding d5. Two natural moves lose the pawn: 6...Nf6?, which one Black player in five plays, and 7...Qxe7?? after the trade.}

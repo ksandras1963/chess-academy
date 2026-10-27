@@ -129,6 +129,11 @@ function buildChapter(game, index, course) {
         headers: h,
         root
     }
+    // Whose idea a concept board shows: [Idea "white"], [Idea "black"] or [Idea "both"].
+    if (type === "concept" && h.Idea && !["white", "black", "both"].includes(h.Idea.toLowerCase())) {
+        throw new ContentError(`${course.id} / ${title}: unknown Idea "${h.Idea}" (use white, black or both)`)
+    }
+    chapter.idea = type === "concept" && h.Idea ? h.Idea.toLowerCase() : null
     // A concept names the position its idea is about with [Diagram "10...Nf8"] (never from its title).
     chapter.diagram = type === "concept" ? (h.Diagram ? chapterDiagram(chapter) : null)
         : ["ideas", "puzzle", "map"].includes(type) ? null : chapterDiagram(chapter)
