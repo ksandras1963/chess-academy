@@ -754,55 +754,47 @@
                     "table": {
                         "columns": [
                             "Variation",
-                            "Share",
-                            "What to know as White",
-                            "What to know as Black"
+                            "How often",
+                            "What to do"
                         ],
                         "rows": [
                             [
-                                "Mar del Plata, Main line: 9.Ne1",
-                                "35%",
-                                "Close the center with d5, hold e4 with Ne1, Be3 and f3, then open the c-file with c5.",
-                                "Bring the knight to e7, then storm the kingside with ...f5, ...f4 and ...g5."
-                            ],
-                            [
-                                "Mar del Plata, Bayonet Attack: 9.b4",
-                                "29%",
-                                "Skip Ne1 and race on the queenside at once with b4 and c5.",
-                                "Free the f-pawn with ...Nh5, play ...f5, and hit d5 with ...c6."
-                            ],
-                            [
                                 "Fianchetto, Classical: 6...Nbd7",
-                                "32%",
-                                "The g2 bishop guards your king. Take more center with e4, and stop ...Ng4 with h3.",
-                                "Play ...Nbd7 and ...e5, then hit d4 and e4 with ...c6, ...Qb6 and ...exd4."
+                                "18% as White\n5% as Black",
+                                "As White: The g2 bishop guards your king. Take more center with e4, and stop ...Ng4 with h3. As Black: Play ...Nbd7 and ...e5, then hit d4 and e4 with ...c6, ...Qb6 and ...exd4."
                             ],
                             [
                                 "Fianchetto, Panno: 7...a6",
-                                "17%",
-                                "Gain space with d5, and protect c4 with Nd2 and b3.",
-                                "Open lines on the queenside with ...Nc6, ...a6, ...Rb8 and ...b5."
+                                "2% as White\n5% as Black",
+                                "As White: Gain space with d5, and protect c4 with Nd2 and b3. As Black: Open lines on the queenside with ...Nc6, ...a6, ...Rb8 and ...b5."
                             ],
                             [
                                 "Four Pawns Attack, Main line: 6...c5",
-                                "37%",
-                                "Push d5 and keep your central majority.",
-                                "Hit the center at once with ...c5, trade the f3 knight with ...Bg4, and press e4 with ...Re8."
+                                "20% as White\n6% as Black",
+                                "As White: Push d5 and keep your central majority. As Black: Hit the center at once with ...c5, trade the f3 knight with ...Bg4, and press e4 with ...Re8."
+                            ],
+                            [
+                                "Mar del Plata, Main line: 9.Ne1",
+                                "21% as White\n3% as Black",
+                                "As White: Close the center with d5, hold e4 with Ne1, Be3 and f3, then open the c-file with c5. As Black: Bring the knight to e7, then storm the kingside with ...f5, ...f4 and ...g5."
+                            ],
+                            [
+                                "Mar del Plata, Bayonet Attack: 9.b4",
+                                "21% as White\n2% as Black",
+                                "As White: Skip Ne1 and race on the queenside at once with b4 and c5. As Black: Free the f-pawn with ...Nh5, play ...f5, and hit d5 with ...c6."
                             ],
                             [
                                 "Sämisch, Orthodox: 6...e5",
-                                "29%",
-                                "f3 holds e4. After d5, castle short once the c-file opens.",
-                                "Answer d5 with ...c6 to open the c-file, then play ...Nh5 and ...f5."
+                                "17% as White\n7% as Black",
+                                "As White: f3 holds e4. After d5, castle short once the c-file opens. As Black: Answer d5 with ...c6 to open the c-file, then play ...Nh5 and ...f5."
                             ],
                             [
                                 "Sämisch Gambit: 6...c5",
-                                "10%",
-                                "Keep the tension with Nge2. Taking on c5 gives Black fast development for the pawn.",
-                                "Hit d4 at once with ...c5, put a knight on e5, then play ...e6 and ...a6 to prepare ...b5."
+                                "6% as White\n7% as Black",
+                                "As White: Keep the tension with Nge2. Taking on c5 gives Black fast development for the pawn. As Black: Hit d4 at once with ...c5, put a knight on e5, then play ...e6 and ...a6 to prepare ...b5."
                             ]
                         ],
-                        "note": "The Mar del Plata starts 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7, the Fianchetto 4.Nf3 d6 5.g3 O-O 6.Bg2, the Four Pawns Attack 4.e4 d6 5.f4, and the Sämisch 4.e4 d6 5.f3 O-O 6.Be3, all after 1.d4 Nf6 2.c4 g6 3.Nc3 Bg7. Share: how often the line's title move is chosen where the line branches off (9.Ne1 in 35% of games after 8...Ne7), in Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Everything else is in Advanced."
+                        "note": "How often: the share of your King's Indian games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. The Fianchetto starts 4.Nf3 d6 5.g3 O-O 6.Bg2, the Four Pawns Attack 4.e4 d6 5.f4, the Mar del Plata 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7, and the Sämisch 4.e4 d6 5.f3 O-O 6.Be3, all after 1.d4 Nf6 2.c4 g6 3.Nc3 Bg7. Rarer lines are in Advanced."
                     }
                 }
             ]
