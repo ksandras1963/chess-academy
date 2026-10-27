@@ -57,7 +57,8 @@
 [Hint "Black's last move blocked one of its own pieces. Which black pawn has lost a defender?"]
 
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O exd4 8. Nxd4 Re8 9. f3 c6 10. Nc2 Nbd7? 11. Qxd6! {[%cal Gd1d6] The knight on d7 blocks Black's queen from d6, so the pawn simply falls.}
-(11. Be3?! {Develops, but the chance is gone.} Ne5 12. Rc1 a6 {Stockfish: +0.4, slightly better for White.})
+(11. Be3!? {Develops and keeps White better, but after 11...Ne5 the queen guards d6 again. Take the pawn while it is loose.} 11... Ne5 12. Rc1 a6 {Stockfish: +0.5, slightly better for White.})
+(11. Bg5!? {The same story: after 11...h6 12.Be3 Ne5 the queen guards d6 again. Taking on d6 at once is stronger.} 11... h6 12. Be3 Ne5 {Stockfish: +0.8, slightly better for White.})
 11... Bf8 12. Qd1 {White is a clean pawn up. Stockfish: +1.8, clearly better for White.}
 *
 
