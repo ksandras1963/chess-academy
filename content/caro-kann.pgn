@@ -1,64 +1,136 @@
 [Chapter "Key ideas: Plans for White"]
 [Side "white"]
 [Type "ideas"]
-[FEN "r2qkbnr/pp3ppp/2n1p3/2ppPb2/3P4/2P2N2/PP2BPPP/RNBQ1RK1 b kq - 2 7"]
 
-{[%cal Gc3d4,Gc1e3,Gb1d2,Gd2b3] Your plan in each system.
+{Three lines where White's plan is more than normal development. Each board starts from the first move: step through to the position, then the plan.}
+*
 
-Advance, Main line, Short Variation: 4.Nf3 (this position). Black will pile up on d4, so add defenders: c3, Be3, and the knight route b1-d2-b3, which also eyes c5.
+[Chapter "Space with h4-h5"]
+[Type "concept"]
 
-Panov Attack: 4.c4. Keep pieces on the board. Every trade brings Black closer to an endgame against your isolated pawn.
+{Classical Variation, Main Line: 6.h4. White chases Black's bishop with the h-pawn and gains space on the kingside. The pawn on h5 also fixes Black's h6 pawn, a target for later. White then trades the light-squared bishops with Bd3 and castles queenside.}
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 {[%cal Gh2h4,Gh4h5] The idea starts from this position.}
+6. h4 {Threatens h5, which would drive the bishop off g6.} 6... h6 {Makes room for the bishop on h7.}
+7. Nf3 {Develops; h5 can wait a move.} 7... Nd7 {Keeps White's knight out of e5.}
+8. h5 {[%csl Yh5,Yh6] Gains space and fixes the h6 pawn.} 8... Bh7 {The bishop's only good square (Stockfish +0.3, slightly better for White).} *
 
-Classical Variation, Main Line: 6.h4. The sharp try is h4-h5, then castling queenside and attacking with g4-g5.
+[Chapter "h3 and the bishop pair"]
+[Type "concept"]
 
-Two Knights Attack, Mindeno Variation: 3...Bg4, and Two Knights Attack: 4...Bf5. Harass Black's bishop with h3, h4 and knight jumps. Against ...Bg4, h3 asks the bishop to take on f3 and gives you the bishop pair.
+{Two Knights Attack, Mindeno Variation: 3...Bg4. Black pins the f3 knight, and White asks the bishop to decide with h3. After ...Bxf3 White has the two bishops; Black answers with pawns on light squares, where White's light-squared bishop can't attack them.}
+1. e4 c6 2. Nc3 d5 3. Nf3 Bg4 {[%cal Gg4f3] The idea starts from this position.}
+4. h3 {Asks the bishop to take or retreat.} 4... Bxf3 {Retreating with 4...Bh5 loses time after exd5 and g4.}
+5. Qxf3 {White has the bishop pair.} 5... e6 {[%csl Yc6,Yd5,Ye6] Black's pawns go to light squares (Stockfish +0.3, slightly better for White).} *
 
-Maróczy Variation (Fantasy): 3...dxe4. f3 loosens your king, so develop and castle early. After 4.fxe4 e5, play Nf3, Bc4 and O-O.} *
+[Chapter "Develop and castle before anything else"]
+[Type "concept"]
+
+{Maróczy Variation (Fantasy): 3...dxe4. After 4.fxe4 White has two center pawns, but f3 has opened the diagonals to White's king. Develop the kingside pieces and castle before grabbing anything: 5.dxe5? Qh4+ is in the Traps section.}
+1. e4 c6 2. d4 d5 3. f3 dxe4 4. fxe4 e5 {[%cal Ge5d4] The idea starts from this position.}
+5. Nf3 {[%cal Gf3e5,Gf3h4] Attacks e5 and covers h4.} 5... Bg4 {Pins the knight.}
+6. Bc4 {Develops and aims at f7.} 6... Nd7 {Supports e5.}
+7. O-O {The king is safe, and the rook gets the half-open f-file (Stockfish 0.0, equal).} *
 
 [Chapter "Key ideas: Plans for Black"]
 [Side "black"]
 [Type "ideas"]
-[FEN "r4rk1/ppqnbpp1/2p1pn1p/7P/2PP4/3Q1NN1/PP1B1PP1/1K1R3R w - - 5 17"]
 
-{[%cal Gc6c5,Rg2g4,Rg4g5] [%csl Yh5,Yh6] Your plan in each system.
+{Two lines where Black's plan is more than normal development. Black's plans in the Advance, the Classical, the Exchange and the Panov come from their pawn structures: see Key ideas: Pawn structures. Each board starts from the first move.}
+*
 
-Classical Variation, Main Line: 6.h4 (this position). Trade your bishop for White's on d3. When White castles queenside, castle kingside only when the ...c5 break is ready (green arrow), because the pawn on h6 is a hook for White's g4-g5 (red arrows).
+[Chapter "Trade knights, then gain time on the queen"]
+[Type "concept"]
 
-Exchange Variation: 4.Bd3. Develop with ...Nc6, ...Nf6, ...Bg4, ...e6 and ...Bd6, offering to trade White's best bishop.
+{Two Knights Attack: 3...dxe4. White's queen comes to e2 and then e4, so Black trades a pair of knights and brings the other knight to f6 with a gain of time on the queen. Careful: with the queen on e2, ...Nbd7?? allows Nd6 mate (see Key ideas: Typical tactics and traps).}
+1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 {The idea starts from this position.}
+4... Nf6 {Offers the knight trade.} 5. Qe2 {[%cal Ge2e7] Guards the knight and pins Black's e-pawn.} 5... Nxe4 {Trades.}
+6. Qxe4 {Takes back.} 6... Nd7 {[%cal Gd7f6] Heads for f6.}
+7. Bc4 {Develops.} 7... Nf6 {[%cal Gf6e4] Hits the queen, so White must spend another move on it (Stockfish +0.4, slightly better for White).} *
 
-Two Knights Attack: 3...dxe4. Offer the knight trade with 4...Nf6, then bring the other knight to f6 with a gain of time on White's queen.} *
+[Chapter "Doubled pawns for fast development"]
+[Type "concept"]
+
+{Tartakower Variation: 5...exf6. Black takes back with the e-pawn and gets doubled f-pawns, but the bishops come out at once and the e-file opens for a rook. Black's king is safe behind the f-pawns; in the endgame, White's healthier pawns count more.}
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 {[%csl Yf6,Yf7] The idea starts from this position.}
+6. Nf3 {Develops.} 6... Bd6 {The bishop is out at once.}
+7. Bd3 {Develops.} 7... O-O {The king is safe behind the f-pawns.}
+8. O-O {Castles.} 8... Re8 {[%cal Ge8e1] The rook takes the open e-file.}
+9. c3 {Supports d4.} 9... Bg4 {[%cal Gg4f3] Pins the knight. Black's pieces are active (Stockfish 0.0, equal).} *
 
 [Chapter "Key ideas: Pawn structures"]
 [Side "both"]
 [Type "ideas"]
-[FEN "r2qkb1r/pp2nppp/2n1p3/3pP3/3P2b1/5N2/PP2BPPP/RNBQ1RK1 w kq - 2 9"]
 
-{[%cal Gc6d4,Gg4f3,Ge7f5,Gd8b6] [%csl Yd4] Four structures cover most Caro-Kann middlegames.
+{Four structures cover most Caro-Kann middlegames. Each board starts from the first move, reaches the structure, then shows the plan that goes with it.}
+*
 
-The Advance chain (this position, from Advance, Botvinnik-Carls Defense: 3...c5). d4 is the base of White's chain, so Black aims the knights, ...Bxf3 and ...Qb6 at it; White holds it and uses the extra space.
+[Chapter "The Advance chain: every piece hits d4"]
+[Type "concept"]
 
-The Classical structure (Classical Variation: 4...Bf5). White has no e-pawn and Black has no d-pawn, so White's d4 pawn faces Black's pawns on c6 and e6. White has a little more space, and Black frees the game with ...c5 or ...e5.
+{Advance, Main line, Short Variation: 4.Nf3. White's pawns on d4 and e5 form a chain, and d4 is its base. Black has already struck at it with ...c5 and traded on d4, so no White pawn can defend it. Now the knights and ...Bxf3, which removes a defender, hit d4; White holds it and uses the extra space.}
+1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 c5 6. c3 Nc6 7. O-O cxd4 8. cxd4 {[%csl Yd4,Ye5] [%cal Gc6d4] The idea starts from this position.}
+8... Nge7 {[%cal Ge7f5] Heads for f5.} 9. Nc3 {Develops.} 9... Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
+10. h3 {Asks the bishop.} 10... Bxf3 {Removes a defender of d4.}
+11. Bxf3 {Takes back.} 11... Nf5 {[%cal Gf5d4,Gc6d4] Two knights hit d4 (Stockfish +0.1, equal).} *
 
-The Carlsbad (Exchange Variation: 4.Bd3). Black attacks White's queenside pawns with ...b5 and ...b4; White attacks on the kingside.
+[Chapter "The Classical structure: the ...c5 break"]
+[Type "concept"]
 
-The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces but is weak in the endgame, so Black blockades it on d5 and trades pieces.} *
+{Classical Variation: 4...Bf5. White has no e-pawn and Black has no d-pawn, so White's d4 pawn faces Black's pawns on c6 and e6. White has a little more space. Black frees the game with the break ...c5 (or ...e5), which trades off White's center pawn.}
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. Nf3 Nd7 7. Bd3 Bxd3 8. Qxd3 Ngf6 9. O-O e6 10. Re1 Be7 11. c4 O-O 12. Bf4 Re8 {[%csl Yd4,Yc6,Ye6] [%cal Gc6c5] The idea starts from this position.}
+13. a3 {Keeps Black's pieces off b4.} 13... c5 {[%cal Gc5d4] The break.}
+14. h3 {Gives the king an escape square on h2.} 14... cxd4 {Trades off White's center pawn.}
+15. Nxd4 {Black's pieces have room, and the position is level (Stockfish 0.0, equal).} *
+
+[Chapter "The Carlsbad: the minority attack"]
+[Type "concept"]
+
+{Exchange Variation: 4.Bd3. Black has already traded White's best bishop with ...Bd6. Now Black's two queenside pawns (a and b) attack White's three: ...b5 and ...b4 aim to leave White a weak pawn on c3. White's play is on the kingside, with Ne5 and f4.}
+1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. Bf4 Bg4 7. Qb3 Qd7 8. Nd2 e6 9. Ngf3 Bd6 10. Bxd6 Qxd6 11. O-O O-O 12. Rae1 {[%cal Gb7b5,Gb5b4] The idea starts from this position.}
+12... Bxf3 {Trades the bishop for a knight.} 13. Nxf3 {Takes back.} 13... Rfb8 {[%cal Gb8b5] The rook supports the b-pawn.}
+14. Ne5 {The other knight jumps to e5.} 14... b5 {The minority attack starts.}
+15. f4 {[%cal Gf4f5] White's play is on the kingside.} 15... b4 {[%cal Gb4c3] ...bxc3 will leave White a weak pawn (Stockfish 0.0, equal).} *
+
+[Chapter "The isolated d-pawn: blockade and trade"]
+[Type "concept"]
+
+{Panov Attack: 4.c4. After the trades on d5, White's d4 pawn has no pawn beside it. It gives White's pieces space and the e5 square, but it is weak in the endgame. So Black blockades it on d5 and trades pieces, and White should try to keep them on.}
+1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 Nc6 6. Nf3 Bg4 7. cxd5 Nxd5 8. Be2 e6 9. O-O Be7 10. h3 Bh5 {[%csl Yd4,Yd5] The idea starts from this position.}
+11. Ne5 {[%cal Ge5c6] The knight uses e5. Stockfish prefers 11.Qb3, which keeps the pieces on.} 11... Bxe2 {Trades.} 12. Qxe2 {Takes back.} 12... O-O {Castles.}
+13. Nxd5 {Another trade.} 13... Qxd5 {The queen blockades d5.}
+14. Nxc6 {And another.} 14... Qxc6 {[%csl Yd4] Two pairs of minor pieces are off, and the d4 pawn is a target (Stockfish −0.2, equal).} *
 
 [Chapter "Key ideas: Typical tactics and traps"]
 [Side "both"]
 [Type "ideas"]
-[FEN "r1bqkb1r/pp1npppp/2p2n2/8/4N3/5N2/PPPPQPPP/R1B1KB1R w KQkq - 3 6"]
 
-{[%cal Ge4d6,Ge2e7] [%csl Re8] Five patterns behind the traps in this course.
+{Three patterns behind the traps in this course. Each board starts from the first move; the Traps section has every trap in full.}
+*
 
-The smothered mate on d6 (this position, from Two Knights Attack: 5...Nbd7?? 6.Nd6#). With White's queen on e2, Black's e7 pawn is pinned, so a knight on d6 can't be taken. The same mate follows Karpov Variation: 5...Ngf6?? 6.Nd6#.
+[Chapter "Smothered mate on d6"]
+[Type "concept"]
 
-The f7 square. While Black's king is on e8, a bishop on c4 and a knight on e5 or g5 aim at f7. Rasa-Studier Gambit: 6...Nf6? 7.Bxf7+ Kxf7 8.Ne5+. Two Knights Attack: 8...Nxe4?? 9.Bxf7#, 8...Bg4? 9.Ne5! and 7...h6?? 8.Nxf7, which forks the queen and the rook on h8.
+{Two Knights Attack: 5.Qe2. With White's queen on e2, Black's e7 pawn is pinned to the king, so a knight on d6 can't be taken. If Black blocks the king in with ...Nbd7, Nd6 is mate. The same mate follows Karpov Variation: 5...Ngf6?? 6.Nd6#.}
+1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 Nf6 {The idea starts from this position.}
+5. Qe2 {[%cal Ge2e7] The queen pins the e7 pawn.} 5... Nbd7?? {Natural, but it takes d7 from the king.}
+6. Nd6# {[%cal Ge4d6] Smothered mate: Black's own pieces box in the king.} *
 
-The hunted bishop. A bishop on g6 or f5 can be chased by h4-h5 and a knight on g3. Make room for it, or stop the pawn, in time: Classical Variation, Main Line: 6...h6!, and Advance, Main line, Tal Variation: 4...h5.
+[Chapter "The f7 square"]
+[Type "concept"]
 
-The b2 pawn (Short Variation: 7...Qxb2? 8.Qb1!). Black's queen takes b2 before Black has developed, and 8.Qb1! offers a queen trade that Black can't avoid without losing more.
+{While Black's king is on e8, f7 is guarded only by the king. A bishop on c4 and a knight on e5 or g5 aim at it. In the Two Knights Attack, 8.Ne5 even leaves the queen hanging, because 8...Nxe4?? 9.Bxf7# is mate. The same target decides Rasa-Studier Gambit: 6...Nf6? 7.Bxf7+ Kxf7 8.Ne5+.}
+1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 Nf6 5. Qe2 Nxe4 6. Qxe4 Nd7 7. Bc4 Nf6 {[%cal Gc4f7] The idea starts from this position.}
+8. Ne5 {[%cal Gc4f7,Ge5f7] Leaves the queen hanging.} 8... Nxe4?? {8...e6 is correct: it blocks the bishop's line to f7.}
+9. Bxf7# {The knight on e5 covers d7, so Black's king has no square.} *
 
-The dark squares (Maróczy Variation, also called the Fantasy). f3 empties f2 and opens two diagonals to White's king. Maróczy Variation: 5.dxe5? Qh4+. In the 3...e5 gambit, Maróczy Variation: 6.Ne2?? Bf2+ 7.Kd2 Qe3# is mate.} *
+[Chapter "The dark squares after f3"]
+[Type "concept"]
+
+{Maróczy Variation (Fantasy): 3...e5. The move f3 leaves f2 empty and opens two diagonals to White's king: e1-h4 and g1-a7. In this gambit Black aims the queen and the bishop at g1 and f2. White's best defense is 5.Nc3! and 6.Na4, hitting both pieces.}
+1. e4 c6 2. d4 d5 3. f3 e5 4. dxe5 {[%csl Yf2,Yg1] The idea starts from this position.}
+4... Qb6 {[%cal Gb6g1] Eyes g1 and makes room for ...Bc5.} 5. exd5? {Grabs a second pawn. 5.Nc3! is the best defense.} 5... Bc5 {[%cal Gc5g1,Gb6g1] Two pieces hit g1.}
+6. Ne2?? {The most common reply, and it loses at once. Only 6.Nh3! keeps White in the game.} 6... Bf2+ {The bishop checks from f2.}
+7. Kd2 {The only square.} 7... Qe3# {Mate: the king has no square.} *
 
 [Chapter "Advance, Main line, Short Variation: 4.Nf3"]
 [Side "both"]
