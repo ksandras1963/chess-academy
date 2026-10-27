@@ -1,7 +1,7 @@
 // Puzzles: the list for an opening, and the solving screen.
 
 import { Chess } from "../../vendor/chess.js/chess.js"
-import { h, fig, label, paras, sideName, plural, sleep, backBar } from "../ui.js"
+import { h, fig, label, paras, sideName, plural, sleep, backTrail } from "../ui.js"
 import { puzzles as loadPuzzles, overviewBack } from "../content.js"
 import { mainPath, finalScore } from "../course-model.js"
 import { puzzleRecord, setPuzzleRecord } from "../storage.js"
@@ -41,7 +41,12 @@ async function needSet(openingId) {
 
 export async function puzzlesView(root, ctx, openingId) {
     const set = await needSet(openingId)
-    const back = await overviewBack(set.opening)
+    // Back to the opening's course, whose page links here, then Main menu. Without a written course,
+    // back to the overview the opening sits under.
+    const built = set.opening.courses.filter(m => m.available)
+    const back = built.length === 1
+        ? { href: `#/course/${built[0].id}`, text: built[0].side === "both" ? `${set.opening.name} Course` : `${set.opening.name} Course for ${built[0].side === "white" ? "White" : "Black"}` }
+        : await overviewBack(set.opening)
     if (!ctx.alive()) return
     const op = set.opening
     const st = puzzleStats(set)
@@ -50,7 +55,7 @@ export async function puzzlesView(root, ctx, openingId) {
     const frames = []
 
     root.append(h("section", { class: "puzzles" },
-        backBar(back),
+        backTrail(back ? [back] : []),
         h("header", { class: "course-head" },
             h("h1", {}, `${op.name} puzzles`),
             h("p", { class: "course-summary" },
