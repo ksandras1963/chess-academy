@@ -1,471 +1,1125 @@
 {
-  "version": 1,
-  "openings": [
-    {
-      "id": "italian",
-      "name": "Italian Game",
-      "eco": "C50",
-      "moves": "1. e4 e5 2. Nf3 Nc6 3. Bc4",
-      "summary": "White's bishop eyes f7 while both sides build in the center. Slow, strategic, and played at every level.",
-      "puzzles": "content/italian-puzzles.pgn",
-      "furtherStudy": [
-        { "title": "Italian Game Chess Opening Explained in 20 Minutes [Crash Course]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=qUews8fEGkc" },
-        { "title": "Italian Game Every Single Line Explained [Opening Crash Course]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ALwL52J8IV4" },
-        { "title": "Learn The Italian Game, ALL Variations Explained [Traps, Ideas, And Plans]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=6ACqk117Q7U" },
-        { "title": "The Complete Italian Game Guide | Gambits, Traps for White & Black", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=yWlMjUiNLBM" },
-        { "title": "7 WINNING Attacking PLANS in the Italian Game for White", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ZFOI8cGHNy0" },
-        { "title": "Learn the Italian Game in 20 Minutes [Chess Opening Crash Course]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=MhNs8GLo894" },
-        { "title": "Master The Italian Game: Chess Strategy Explained", "by": "Coach Kestony", "kind": "Video", "url": "https://www.youtube.com/watch?v=8YP1iVMG_Rg" },
-        { "title": "Italian Game", "by": "365Chess", "kind": "Opening guide", "url": "https://www.365chess.com/chess-openings/Italian-Game" },
-        { "title": "Italian Game", "by": "Chess.com", "kind": "Opening page", "url": "https://www.chess.com/openings/Italian-Game" }
-      ],
-      "courses": [
+    "version": 1,
+    "openings": [
         {
-          "id": "italian-white",
-          "side": "white",
-          "file": "content/italian-white.pgn",
-          "repertoire": "Giuoco Pianissimo: c3, d3, and a slow build-up",
-          "summary": "Build with c3 and d3, castle, bring the queen's knight to g3, and break with d4 when ready.",
-          "overview": [
-            "One plan against almost everything: c3 and d3, castle, Re1 and h3, and the knight route b1-d2-f1-g3. Play d4 only when it gains something.",
-            "Black's third move decides the chapter: 3...Bc5 comes up in about 40% of your games, and 3...Nf6 in about 30%.",
-            "Against 3...Nf6, play 4.d3, not 4.Ng5 or 4.Nc3: e4 stays protected, and you skip the Fried Liver theory and the fork trick.",
-            "Keep the Italian bishop. Drop it back to b3 or c2 before ...Na5 or ...b5 can trade it off.",
-            "The pin ...Bg4 is harmless here: ask the bishop with h3, guard f3 with Nbd2, and chase it with Ng3 and Nh4.",
-            "f7 is Black's weak point. If Black shuts in the f8 bishop with ...d6 and then plays ...Nf6, Ng5 hits f7 at once."
-          ]
+            "id": "italian",
+            "name": "Italian Game",
+            "eco": "C50",
+            "moves": "1. e4 e5 2. Nf3 Nc6 3. Bc4",
+            "summary": "White's bishop eyes f7 while both sides build in the center. Slow, strategic, and played at every level.",
+            "puzzles": "content/italian-puzzles.pgn",
+            "furtherStudy": [
+                {
+                    "title": "Italian Game Chess Opening Explained in 20 Minutes [Crash Course]",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=qUews8fEGkc"
+                },
+                {
+                    "title": "Italian Game Every Single Line Explained [Opening Crash Course]",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ALwL52J8IV4"
+                },
+                {
+                    "title": "Learn The Italian Game, ALL Variations Explained [Traps, Ideas, And Plans]",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=6ACqk117Q7U"
+                },
+                {
+                    "title": "The Complete Italian Game Guide | Gambits, Traps for White & Black",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=yWlMjUiNLBM"
+                },
+                {
+                    "title": "7 WINNING Attacking PLANS in the Italian Game for White",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ZFOI8cGHNy0"
+                },
+                {
+                    "title": "Learn the Italian Game in 20 Minutes [Chess Opening Crash Course]",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=MhNs8GLo894"
+                },
+                {
+                    "title": "Master The Italian Game: Chess Strategy Explained",
+                    "by": "Coach Kestony",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=8YP1iVMG_Rg"
+                },
+                {
+                    "title": "Italian Game",
+                    "by": "365Chess",
+                    "kind": "Opening guide",
+                    "url": "https://www.365chess.com/chess-openings/Italian-Game"
+                },
+                {
+                    "title": "Italian Game",
+                    "by": "Chess.com",
+                    "kind": "Opening page",
+                    "url": "https://www.chess.com/openings/Italian-Game"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "italian-white",
+                    "side": "white",
+                    "file": "content/italian-white.pgn",
+                    "repertoire": "Giuoco Pianissimo: c3, d3, and a slow build-up",
+                    "summary": "Build with c3 and d3, castle, bring the queen's knight to g3, and break with d4 when ready.",
+                    "overview": [
+                        "One plan against almost everything: c3 and d3, castle, Re1 and h3, and the knight route b1-d2-f1-g3. Play d4 only when it gains something.",
+                        "Black's third move decides the chapter: 3...Bc5 comes up in about 40% of your games, and 3...Nf6 in about 30%.",
+                        "Against 3...Nf6, play 4.d3, not 4.Ng5 or 4.Nc3: e4 stays protected, and you skip the Fried Liver theory and the fork trick.",
+                        "Keep the Italian bishop. Drop it back to b3 or c2 before ...Na5 or ...b5 can trade it off.",
+                        "The pin ...Bg4 is harmless here: ask the bishop with h3, guard f3 with Nbd2, and chase it with Ng3 and Nh4.",
+                        "f7 is Black's weak point. If Black shuts in the f8 bishop with ...d6 and then plays ...Nf6, Ng5 hits f7 at once."
+                    ]
+                },
+                {
+                    "id": "italian-black",
+                    "side": "black",
+                    "file": "content/italian-black.pgn",
+                    "repertoire": "3...Bc5 with ...Nf6, ...d6, ...a6, ...h6",
+                    "summary": "Mirror White's slow setup, keep the bishop with ...a6 and ...Ba7, and know how to meet d4 and the Evans Gambit.",
+                    "overview": [
+                        "Play 3...Bc5, then ...Nf6, ...d6, ...a6 and ...Ba7. On a7 the bishop survives d4 and b4 and still aims at f2.",
+                        "In more than half of your games White builds slowly with c3 and d3, or castles first. Mirror the setup: castle, ...h6 to keep White's pieces off g5, ...Re8, then ...Be6 and ...d5.",
+                        "Don't rush ...d5. Played before you've developed, it lets White's queen join the bishop against d5 and f7 with Qb3.",
+                        "Against the Center attack (4.c3 and 5.d4), take on d4, check on b4, and free your game with ...d5.",
+                        "The Møller Attack, 7.Nc3, comes up often: take on e4, because the pin on c3 makes it safe.",
+                        "Against the Evans Gambit (4.b4), take the pawn, retreat to a5, and give it back with ...d5 at the right moment."
+                    ]
+                }
+            ]
         },
         {
-          "id": "italian-black",
-          "side": "black",
-          "file": "content/italian-black.pgn",
-          "repertoire": "3...Bc5 with ...Nf6, ...d6, ...a6, ...h6",
-          "summary": "Mirror White's slow setup, keep the bishop with ...a6 and ...Ba7, and know how to meet d4 and the Evans Gambit.",
-          "overview": [
-            "Play 3...Bc5, then ...Nf6, ...d6, ...a6 and ...Ba7. On a7 the bishop survives d4 and b4 and still aims at f2.",
-            "In more than half of your games White builds slowly with c3 and d3, or castles first. Mirror the setup: castle, ...h6 to keep White's pieces off g5, ...Re8, then ...Be6 and ...d5.",
-            "Don't rush ...d5. Played before you've developed, it lets White's queen join the bishop against d5 and f7 with Qb3.",
-            "Against the Center attack (4.c3 and 5.d4), take on d4, check on b4, and free your game with ...d5.",
-            "The Møller Attack, 7.Nc3, comes up often: take on e4, because the pin on c3 makes it safe.",
-            "Against the Evans Gambit (4.b4), take the pawn, retreat to a5, and give it back with ...d5 at the right moment."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "caro-kann",
-      "name": "Caro-Kann Defense",
-      "eco": "B10",
-      "moves": "1. e4 c6",
-      "summary": "Black supports ...d5 with the c-pawn, keeping a sound structure and an active light-squared bishop.",
-      "puzzles": "content/caro-kann-puzzles.pgn",
-      "furtherStudy": [
-        { "title": "Introduction to the Caro-Kann Defense · Complete Chess Openings", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=67gr8tQwGrI" },
-        { "title": "Caro-Kann Defense (introduction, main variations & ideas)", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=Jiz7KLKjLas" },
-        { "title": "Learn the Caro-Kann in 15 Minutes [Chess Openings Crash Course]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=HvER2idtW6M" },
-        { "title": "Learn the Caro-Kann Defense | Ideas, Traps, and Plans", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=tY037Q71w5A" },
-        { "title": "Two Knights Variation: How to CRUSH the Caro-Kann with Traps!", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=9E9eDY1jNOs" },
-        { "title": "My SECRET Sideline Against The Caro-Kann With 87% Win Rate", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=JtExmcEkydU" },
-        { "title": "Learn the Caro-Kann Defense | 10-Minute Chess Openings", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=rmbU97iftC8" },
-        { "title": "How to CRUSH with the Caro-Kann!", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=ebfzL_GwiIE" },
-        { "title": "Caro-Kann Masterclass (Introduction)", "by": "ChessGeek", "kind": "Video", "url": "https://www.youtube.com/watch?v=noGn7jidT9Q" },
-        { "title": "Destroy The Fantasy Variation in 7 moves | Caro-Kann Defense", "by": "IM Alex Banzea", "kind": "Video", "url": "https://www.youtube.com/watch?v=vyDwjpRbdVo" },
-        { "title": "The only Caro-Kann guide you will ever need", "by": "IM Alex Banzea", "kind": "Video", "url": "https://www.youtube.com/watch?v=8erPw1WADrQ" },
-        { "title": "Learn the Caro-Kann in 8 Minutes", "by": "ChessPage1", "kind": "Video", "url": "https://www.youtube.com/watch?v=0p_881Nwoo4" },
-        { "title": "The Caro Kann is UNSTOPPABLE Below 2000 ELO", "by": "ChesswithAkeem", "kind": "Video", "url": "https://www.youtube.com/watch?v=c5T0sXdpo6w" },
-        { "title": "Caro–Kann Defence", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/Caro%E2%80%93Kann_Defence" }
-      ],
-      "courses": [
-        {
-          "id": "caro-kann-white",
-          "side": "white",
-          "file": "content/caro-kann-white.pgn",
-          "repertoire": "Advance (Short system), plus the Two Knights and the Fantasy",
-          "summary": "Gain space with 3.e5, castle before anything sharp, and meet ...c5 calmly. The Two Knights and the Fantasy are trap-filled surprise weapons.",
-          "overview": [
-            "Learn one system first. The Advance (3.e5) is the main weapon; the Two Knights (2.Nc3 and 3.Nf3) and the Fantasy (3.f3) are surprise weapons full of traps.",
-            "In the Advance, the pawn on e5 gains space and keeps Black's knight off f6. Develop calmly with Nf3, Be2 and O-O before anything sharp.",
-            "The main line, 3...Bf5 4.Nf3 e6, comes up in more than half of your Advance games.",
-            "Black's counterplay is ...c5 against d4, the base of your pawn chain. Guard d4 with Be3; against an early 3...c5, take with 4.dxc5.",
-            "In the Two Knights, wait before playing d4. Ask Black's bishop the question with h3 and take the bishop pair. After 4...Nf6, 5.Qe2 sets the smothered-mate trap.",
-            "In the Fantasy, the f-pawn holds e4. If Black takes, fxe4 gives you two center pawns and the half-open f-file, but your king is looser, so develop fast and castle."
-          ]
+            "id": "caro-kann",
+            "name": "Caro-Kann Defense",
+            "eco": "B10",
+            "moves": "1. e4 c6",
+            "summary": "Black supports ...d5 with the c-pawn, keeping a sound structure and an active light-squared bishop.",
+            "puzzles": "content/caro-kann-puzzles.pgn",
+            "furtherStudy": [
+                {
+                    "title": "Introduction to the Caro-Kann Defense · Complete Chess Openings",
+                    "by": "Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=67gr8tQwGrI"
+                },
+                {
+                    "title": "Caro-Kann Defense (introduction, main variations & ideas)",
+                    "by": "Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=Jiz7KLKjLas"
+                },
+                {
+                    "title": "Learn the Caro-Kann in 15 Minutes [Chess Openings Crash Course]",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=HvER2idtW6M"
+                },
+                {
+                    "title": "Learn the Caro-Kann Defense | Ideas, Traps, and Plans",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=tY037Q71w5A"
+                },
+                {
+                    "title": "Two Knights Variation: How to CRUSH the Caro-Kann with Traps!",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=9E9eDY1jNOs"
+                },
+                {
+                    "title": "My SECRET Sideline Against The Caro-Kann With 87% Win Rate",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=JtExmcEkydU"
+                },
+                {
+                    "title": "Learn the Caro-Kann Defense | 10-Minute Chess Openings",
+                    "by": "IM Levy Rozman, GothamChess",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=rmbU97iftC8"
+                },
+                {
+                    "title": "How to CRUSH with the Caro-Kann!",
+                    "by": "IM Levy Rozman, GothamChess",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ebfzL_GwiIE"
+                },
+                {
+                    "title": "Caro-Kann Masterclass (Introduction)",
+                    "by": "ChessGeek",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=noGn7jidT9Q"
+                },
+                {
+                    "title": "Destroy The Fantasy Variation in 7 moves | Caro-Kann Defense",
+                    "by": "IM Alex Banzea",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=vyDwjpRbdVo"
+                },
+                {
+                    "title": "The only Caro-Kann guide you will ever need",
+                    "by": "IM Alex Banzea",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=8erPw1WADrQ"
+                },
+                {
+                    "title": "Learn the Caro-Kann in 8 Minutes",
+                    "by": "ChessPage1",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=0p_881Nwoo4"
+                },
+                {
+                    "title": "The Caro Kann is UNSTOPPABLE Below 2000 ELO",
+                    "by": "ChesswithAkeem",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=c5T0sXdpo6w"
+                },
+                {
+                    "title": "Caro–Kann Defence",
+                    "by": "Wikipedia",
+                    "kind": "Article",
+                    "url": "https://en.wikipedia.org/wiki/Caro%E2%80%93Kann_Defence"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "caro-kann-white",
+                    "side": "white",
+                    "file": "content/caro-kann-white.pgn",
+                    "repertoire": "Advance (Short system), plus the Two Knights and the Fantasy",
+                    "summary": "Gain space with 3.e5, castle before anything sharp, and meet ...c5 calmly. The Two Knights and the Fantasy are trap-filled surprise weapons.",
+                    "overview": [
+                        "Learn one system first. The Advance (3.e5) is the main weapon; the Two Knights (2.Nc3 and 3.Nf3) and the Fantasy (3.f3) are surprise weapons full of traps.",
+                        "In the Advance, the pawn on e5 gains space and keeps Black's knight off f6. Develop calmly with Nf3, Be2 and O-O before anything sharp.",
+                        "The main line, 3...Bf5 4.Nf3 e6, comes up in more than half of your Advance games.",
+                        "Black's counterplay is ...c5 against d4, the base of your pawn chain. Guard d4 with Be3; against an early 3...c5, take with 4.dxc5.",
+                        "In the Two Knights, wait before playing d4. Ask Black's bishop the question with h3 and take the bishop pair. After 4...Nf6, 5.Qe2 sets the smothered-mate trap.",
+                        "In the Fantasy, the f-pawn holds e4. If Black takes, fxe4 gives you two center pawns and the half-open f-file, but your king is looser, so develop fast and castle."
+                    ]
+                },
+                {
+                    "id": "caro-kann-black",
+                    "side": "black",
+                    "file": "content/caro-kann-black.pgn",
+                    "repertoire": "Classical (4...Bf5), with 3...c5 against the Advance",
+                    "summary": "Get the c8 bishop out before ...e6, hit d4 against the Advance, and know the traps in the Fantasy and Karpov lines.",
+                    "overview": [
+                        "The idea of the Caro-Kann: support ...d5 with the c-pawn, and get the c8 bishop out before ...e6 shuts it in.",
+                        "Learn three structures first: the Advance (3.e5), the Classical (3.Nc3 or 3.Nd2) and the Exchange (exd5 cxd5), which comes from both 2.d4 and 2.Nf3. Together they come up in more than half of your games.",
+                        "Against the Advance (3.e5), hit the base of White's chain at once with 3...c5. Against 4.c3, take on d4 and pile up on it with ...Nc6, ...Bg4 and ...Nf5.",
+                        "Against 3.Nc3 or 3.Nd2, take on e4 and play 4...Bf5. Answer h4 with ...h6, and trade the light-squared bishops calmly.",
+                        "In the Exchange, develop with ...Nc6, ...Bg4 and ...e6, then play for the minority attack with ...b5 and ...b4. Against the Panov's isolated d-pawn, blockade d5 and trade pieces.",
+                        "Know the traps: in the Fantasy, 5.dxe5? runs into ...Qh4+; in the Karpov, 5.Qe2 Ngf6?? allows 6.Nd6 mate."
+                    ]
+                }
+            ]
         },
         {
-          "id": "caro-kann-black",
-          "side": "black",
-          "file": "content/caro-kann-black.pgn",
-          "repertoire": "Classical (4...Bf5), with 3...c5 against the Advance",
-          "summary": "Get the c8 bishop out before ...e6, hit d4 against the Advance, and know the traps in the Fantasy and Karpov lines.",
-          "overview": [
-            "The idea of the Caro-Kann: support ...d5 with the c-pawn, and get the c8 bishop out before ...e6 shuts it in.",
-            "Learn three structures first: the Advance (3.e5), the Classical (3.Nc3 or 3.Nd2) and the Exchange (exd5 cxd5), which comes from both 2.d4 and 2.Nf3. Together they come up in more than half of your games.",
-            "Against the Advance (3.e5), hit the base of White's chain at once with 3...c5. Against 4.c3, take on d4 and pile up on it with ...Nc6, ...Bg4 and ...Nf5.",
-            "Against 3.Nc3 or 3.Nd2, take on e4 and play 4...Bf5. Answer h4 with ...h6, and trade the light-squared bishops calmly.",
-            "In the Exchange, develop with ...Nc6, ...Bg4 and ...e6, then play for the minority attack with ...b5 and ...b4. Against the Panov's isolated d-pawn, blockade d5 and trade pieces.",
-            "Know the traps: in the Fantasy, 5.dxe5? runs into ...Qh4+; in the Karpov, 5.Qe2 Ngf6?? allows 6.Nd6 mate."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "french",
-      "name": "French Defense",
-      "eco": "C00",
-      "moves": "1. e4 e6",
-      "summary": "Black builds a solid pawn chain and counterattacks White's center with ...c5 and ...f6.",
-      "puzzles": "content/french-puzzles.pgn",
-      "furtherStudy": [
-        { "title": "Introduction to the French Defense · Chess Openings", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=pig559oP5OM" },
-        { "title": "French Defense: Solid & Powerful Opening for Black vs 1.e4 [Tricks & Traps]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=f0FIJePXmgk" },
-        { "title": "Learn the French Defense | 10-Minute Chess Openings", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=5pec-u6PSvA" },
-        { "title": "Crush With 1.e6 | The Indestructible French Defense", "by": "Volclus", "kind": "Video", "url": "https://www.youtube.com/watch?v=192NboTurSI" },
-        { "title": "5 Reasons to Play the French Defense", "by": "GM Jose Gonzalez", "kind": "Video", "url": "https://www.youtube.com/watch?v=5B0pH12fUn0" },
-        { "title": "The French Defense Chess Opening Explained in 4 Minutes by a Chess Master", "by": "NM Nelson Lopez, Chess Vibes", "kind": "Video", "url": "https://www.youtube.com/watch?v=vOw5BQYCfWA" },
-        { "title": "Learn the French Defense in 7 Minutes", "by": "Kamryn", "kind": "Video", "url": "https://www.youtube.com/watch?v=gRUb6EeHKsM" },
-        { "title": "French Defense: The Worse Opening for Black in Chess?", "by": "Chessscape", "kind": "Video", "url": "https://www.youtube.com/watch?v=EfSZELTHoUg" },
-        { "title": "Chess Openings: French Defense Part 1", "by": "thechesswebsite", "kind": "Video", "url": "https://www.youtube.com/watch?v=rTNN7-Wwpzs" },
-        { "title": "Secret Opening Weapon for White Against the French Defense", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=xd5rR7tCEuI" },
-        { "title": "Learn to Crush the French Defense in 7 Minutes [Traps Included]", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=Xld_sJwdk8k" },
-        { "title": "French Defence", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/French_Defence" }
-      ],
-      "courses": [
-        {
-          "id": "french-white",
-          "side": "white",
-          "file": "content/french-white.pgn",
-          "repertoire": "Advance (3.e5), with 6.a3 in the main line",
-          "summary": "Gain space with 3.e5, hold d4 with c3 and Nf3, and expand on the queenside with a3 and b4. The Milner-Barry Gambit is a trap-filled surprise weapon.",
-          "overview": [
-            "Play 3.e5. The pawn takes f6 away from Black's king's knight and gives you space; Black answers 3...c5 in nine games out of ten.",
-            "Hold d4 with c3 and Nf3. Black's whole plan is pressure on that pawn with ...Nc6, ...Qb6 and a knight on f5.",
-            "The main line, 5...Qb6, comes up in a quarter of your games. Play 6.a3 and b4 to gain space; after 6...cxd4 7.cxd4, Nc3 and Na4 chase the queen.",
-            "Count the attackers before Black takes on d4. With your queen behind the pawn, ...Nxd4 just drops a piece; with your bishop on d3 in the way, Bb5+ wins Black's queen.",
-            "Against 5...Bd7, play 6.Be2 and castle. Avoid 6.Bb5?, which runs into ...Nxe5.",
-            "Surprise weapon: the Milner-Barry Gambit, 6.Bd3. It is risky against best play, but Black often grabs too much: 7...Nxd4?? loses the queen, and 10...Qxe5 11.Re1 sets more traps."
-          ]
+            "id": "french",
+            "name": "French Defense",
+            "eco": "C00",
+            "moves": "1. e4 e6",
+            "summary": "Black builds a solid pawn chain and counterattacks White's center with ...c5 and ...f6.",
+            "puzzles": "content/french-puzzles.pgn",
+            "furtherStudy": [
+                {
+                    "title": "Introduction to the French Defense · Chess Openings",
+                    "by": "Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=pig559oP5OM"
+                },
+                {
+                    "title": "French Defense: Solid & Powerful Opening for Black vs 1.e4 [Tricks & Traps]",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=f0FIJePXmgk"
+                },
+                {
+                    "title": "Learn the French Defense | 10-Minute Chess Openings",
+                    "by": "IM Levy Rozman, GothamChess",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=5pec-u6PSvA"
+                },
+                {
+                    "title": "Crush With 1.e6 | The Indestructible French Defense",
+                    "by": "Volclus",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=192NboTurSI"
+                },
+                {
+                    "title": "5 Reasons to Play the French Defense",
+                    "by": "GM Jose Gonzalez",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=5B0pH12fUn0"
+                },
+                {
+                    "title": "The French Defense Chess Opening Explained in 4 Minutes by a Chess Master",
+                    "by": "NM Nelson Lopez, Chess Vibes",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=vOw5BQYCfWA"
+                },
+                {
+                    "title": "Learn the French Defense in 7 Minutes",
+                    "by": "Kamryn",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=gRUb6EeHKsM"
+                },
+                {
+                    "title": "French Defense: The Worse Opening for Black in Chess?",
+                    "by": "Chessscape",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=EfSZELTHoUg"
+                },
+                {
+                    "title": "Chess Openings: French Defense Part 1",
+                    "by": "thechesswebsite",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=rTNN7-Wwpzs"
+                },
+                {
+                    "title": "Secret Opening Weapon for White Against the French Defense",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=xd5rR7tCEuI"
+                },
+                {
+                    "title": "Learn to Crush the French Defense in 7 Minutes [Traps Included]",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=Xld_sJwdk8k"
+                },
+                {
+                    "title": "French Defence",
+                    "by": "Wikipedia",
+                    "kind": "Article",
+                    "url": "https://en.wikipedia.org/wiki/French_Defence"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "french-white",
+                    "side": "white",
+                    "file": "content/french-white.pgn",
+                    "repertoire": "Advance (3.e5), with 6.a3 in the main line",
+                    "summary": "Gain space with 3.e5, hold d4 with c3 and Nf3, and expand on the queenside with a3 and b4. The Milner-Barry Gambit is a trap-filled surprise weapon.",
+                    "overview": [
+                        "Play 3.e5. The pawn takes f6 away from Black's king's knight and gives you space; Black answers 3...c5 in nine games out of ten.",
+                        "Hold d4 with c3 and Nf3. Black's whole plan is pressure on that pawn with ...Nc6, ...Qb6 and a knight on f5.",
+                        "The main line, 5...Qb6, comes up in a quarter of your games. Play 6.a3 and b4 to gain space; after 6...cxd4 7.cxd4, Nc3 and Na4 chase the queen.",
+                        "Count the attackers before Black takes on d4. With your queen behind the pawn, ...Nxd4 just drops a piece; with your bishop on d3 in the way, Bb5+ wins Black's queen.",
+                        "Against 5...Bd7, play 6.Be2 and castle. Avoid 6.Bb5?, which runs into ...Nxe5.",
+                        "Surprise weapon: the Milner-Barry Gambit, 6.Bd3. It is risky against best play, but Black often grabs too much: 7...Nxd4?? loses the queen, and 10...Qxe5 11.Re1 sets more traps."
+                    ]
+                },
+                {
+                    "id": "french-black",
+                    "side": "black",
+                    "file": "content/french-black.pgn",
+                    "repertoire": "3...c5 against the Advance, the Rubinstein (3...dxe4), and ...Nc6 in the Exchange",
+                    "summary": "Build the ...e6 and ...d5 center, attack d4 against the Advance, take on e4 against 3.Nc3 and 3.Nd2, and develop actively in the Exchange.",
+                    "overview": [
+                        "The French idea: ...e6 and ...d5 build a solid center and keep f7 safe. The price is the c8 bishop behind your pawn on e6, so plan to free it or trade it.",
+                        "The Exchange is your most common opponent, about three games in ten, because 2.Nf3 d5 3.exd5 exd5 4.d4 leads there too. Develop with ...Nc6, ...Bd6, ...Bg4, ...Qd7 and ...Nge7, and castle short.",
+                        "Against the Advance (3.e5), about one game in five, hit d4 at once with ...c5, ...Nc6 and ...Qb6. Against 6.a3, lock the queenside with 6...c4.",
+                        "Against 3.Nc3 and 3.Nd2, take on e4 (the Rubinstein): ...Nd7, ...Ngf6, then ...c5 to free your game.",
+                        "In the Milner-Barry Gambit (6.Bd3), play ...Bd7 before ...Nxd4. Otherwise 8.Nxd4 Qxd4 9.Bb5+ wins your queen.",
+                        "Against the Monte Carlo (4.c4), check with 4...Bb4+, castle, and take on c4 only after White's bishop has moved."
+                    ]
+                }
+            ]
         },
         {
-          "id": "french-black",
-          "side": "black",
-          "file": "content/french-black.pgn",
-          "repertoire": "3...c5 against the Advance, the Rubinstein (3...dxe4), and ...Nc6 in the Exchange",
-          "summary": "Build the ...e6 and ...d5 center, attack d4 against the Advance, take on e4 against 3.Nc3 and 3.Nd2, and develop actively in the Exchange.",
-          "overview": [
-            "The French idea: ...e6 and ...d5 build a solid center and keep f7 safe. The price is the c8 bishop behind your pawn on e6, so plan to free it or trade it.",
-            "The Exchange is your most common opponent, about three games in ten, because 2.Nf3 d5 3.exd5 exd5 4.d4 leads there too. Develop with ...Nc6, ...Bd6, ...Bg4, ...Qd7 and ...Nge7, and castle short.",
-            "Against the Advance (3.e5), about one game in five, hit d4 at once with ...c5, ...Nc6 and ...Qb6. Against 6.a3, lock the queenside with 6...c4.",
-            "Against 3.Nc3 and 3.Nd2, take on e4 (the Rubinstein): ...Nd7, ...Ngf6, then ...c5 to free your game.",
-            "In the Milner-Barry Gambit (6.Bd3), play ...Bd7 before ...Nxd4. Otherwise 8.Nxd4 Qxd4 9.Bb5+ wins your queen.",
-            "Against the Monte Carlo (4.c4), check with 4...Bb4+, castle, and take on c4 only after White's bishop has moved."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "queens-gambit",
-      "name": "Queen's Gambit",
-      "eco": "D06",
-      "moves": "1. d4 d5 2. c4",
-      "summary": "White offers the c-pawn to pull Black's d-pawn away from the center. Rich in plans, light on early tactics.",
-      "puzzles": "content/queens-gambit-puzzles.pgn",
-      "furtherStudy": [
-        { "title": "Chess Openings: The Queen's Gambit", "by": "Kevin Butler, thechesswebsite", "kind": "Video", "url": "https://www.youtube.com/watch?v=HdHWAuQRG7E" },
-        { "title": "The Queen's Gambit Chess Opening Explained in 3 Minutes by a National Chess Master", "by": "NM Nelson Lopez, Chess Vibes", "kind": "Video", "url": "https://www.youtube.com/watch?v=KEmkjOL_hCc" },
-        { "title": "How To Play The Queen's Gambit", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=mtsabsZ4wG4" },
-        { "title": "Every Queen's Gambit Player Must Know These 9 Ideas", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ONB_yxkpAws" },
-        { "title": "Learn the Queen's Gambit Chess Opening: Traps & Errors", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=oRfGbul6MUs" },
-        { "title": "Chess Openings: Learn to Play the Queen's Gambit", "by": "NM Solomon Ruddell, The Chess Giant", "kind": "Video", "url": "https://www.youtube.com/watch?v=EWHYgn9fR10" },
-        { "title": "Queen's Gambit Strategy for Black | Plans, Traps, and Setup Explained", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ETG8cCyvnAg" },
-        { "title": "5 Best Chess Opening Traps in the Queen's Gambit", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=ICXoGdCcsFI" },
-        { "title": "Queen's Gambit | Basic Ideas, Plans & Strategies | Chess Openings", "by": "IM Andrey Ostrovskiy, Chessfactor", "kind": "Video", "url": "https://www.youtube.com/watch?v=ITQwXN9hXms" },
-        { "title": "Queen's Gambit Opening Mistakes You Must Avoid (Traps Included!)", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=8Ui8lD8wJsU" },
-        { "title": "Top 5 Chess Opening Traps in the Queen's Gambit", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=iqIMpVnhWjc" },
-        { "title": "How To Play The Queen's Gambit", "by": "Anna Cramling", "kind": "Video", "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI" },
-        { "title": "Chess Opening: The Queen's Gambit (Full 500-2000 Guide)", "by": "ChesswithAkeem", "kind": "Video", "url": "https://www.youtube.com/watch?v=XhbTsyVVexc" },
-        { "title": "Queen's Gambit", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/Queen%27s_Gambit" },
-        { "title": "Queen's Gambit Declined", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/Queen%27s_Gambit_Declined" }
-      ],
-      "courses": [
-        {
-          "id": "queens-gambit-white",
-          "side": "white",
-          "file": "content/queens-gambit-white.pgn",
-          "repertoire": "Exchange QGD and the minority attack, with 3.e3 against the Accepted",
-          "summary": "Take on d5 against the Declined and play the minority attack, meet the Slav with Nf3 and Nc3, and win the pawn back at once with 3.e3 against the Accepted.",
-          "overview": [
-            "Against 2...e6, a third of your games, play 3.Nc3 and take at once: 4.cxd5 exd5 5.Bg5. Follow with Qc2, e3, Bd3 and Nge2, and castle short.",
-            "The plan is the minority attack: Rb1, b4 and b5 leave Black with a weak pawn on c6 or d5. With the knight on e2, f3 and e4 is the second plan.",
-            "Don't grab d5 while Black's knight is on d7: 6.Nxd5?? Nxd5! 7.Bxd8 Bb4+ wins a piece for Black. This is the Elephant trap.",
-            "Against the Slav (2...c6), a quarter of your games, play 3.Nf3 Nf6 4.Nc3. Against 4...e6, take on d5 and play Bg5, the same plan as in the Exchange. Against an early ...Bf5, cxd5 and Qb3 hit b7.",
-            "Against the Accepted, play 3.e3 and win the pawn back with Bxc4. If Black holds it with 3...b5, a4 breaks the chain, and after 4...c6 5.axb5 cxb5, 6.Qf3 hits the rook on a8 and wins a piece.",
-            "Against 2...Nf6, one game in nine, take on d5: Black can't recapture with a pawn. Against the Albin (2...e5), play 3.dxe5 d4 4.Nf3, never 4.e3?, which runs into the Lasker trap."
-          ]
+            "id": "queens-gambit-declined",
+            "name": "Queen's Gambit Declined",
+            "eco": "D30",
+            "moves": "1. d4 d5 2. c4 e6",
+            "summary": "Black holds d5 with the e-pawn. Solid and classical: White aims for the minority attack, Black for the freeing break ...c5.",
+            "puzzles": "content/queens-gambit-declined-puzzles.pgn",
+            "furtherStudy": [
+                {
+                    "title": "Chess Openings: The Queen's Gambit",
+                    "by": "Kevin Butler, thechesswebsite",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=HdHWAuQRG7E"
+                },
+                {
+                    "title": "The Queen's Gambit Chess Opening Explained in 3 Minutes by a National Chess Master",
+                    "by": "NM Nelson Lopez, Chess Vibes",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=KEmkjOL_hCc"
+                },
+                {
+                    "title": "How To Play The Queen's Gambit",
+                    "by": "IM Levy Rozman, GothamChess",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=mtsabsZ4wG4"
+                },
+                {
+                    "title": "Every Queen's Gambit Player Must Know These 9 Ideas",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ONB_yxkpAws"
+                },
+                {
+                    "title": "Learn the Queen's Gambit Chess Opening: Traps & Errors",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=oRfGbul6MUs"
+                },
+                {
+                    "title": "Chess Openings: Learn to Play the Queen's Gambit",
+                    "by": "NM Solomon Ruddell, The Chess Giant",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=EWHYgn9fR10"
+                },
+                {
+                    "title": "Queen's Gambit Strategy for Black | Plans, Traps, and Setup Explained",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ETG8cCyvnAg"
+                },
+                {
+                    "title": "5 Best Chess Opening Traps in the Queen's Gambit",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ICXoGdCcsFI"
+                },
+                {
+                    "title": "Queen's Gambit | Basic Ideas, Plans & Strategies | Chess Openings",
+                    "by": "IM Andrey Ostrovskiy, Chessfactor",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ITQwXN9hXms"
+                },
+                {
+                    "title": "Queen's Gambit Opening Mistakes You Must Avoid (Traps Included!)",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=8Ui8lD8wJsU"
+                },
+                {
+                    "title": "Top 5 Chess Opening Traps in the Queen's Gambit",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=iqIMpVnhWjc"
+                },
+                {
+                    "title": "How To Play The Queen's Gambit",
+                    "by": "Anna Cramling",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI"
+                },
+                {
+                    "title": "Chess Opening: The Queen's Gambit (Full 500-2000 Guide)",
+                    "by": "ChesswithAkeem",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=XhbTsyVVexc"
+                },
+                {
+                    "title": "Queen's Gambit",
+                    "by": "Wikipedia",
+                    "kind": "Article",
+                    "url": "https://en.wikipedia.org/wiki/Queen%27s_Gambit"
+                },
+                {
+                    "title": "Queen's Gambit Declined",
+                    "by": "Wikipedia",
+                    "kind": "Article",
+                    "url": "https://en.wikipedia.org/wiki/Queen%27s_Gambit_Declined"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "queens-gambit-declined",
+                    "side": "both",
+                    "file": "content/queens-gambit-declined.pgn",
+                    "repertoire": "As White: the Exchange Variation and the minority attack. As Black: the Tartakower Variation.",
+                    "summary": "As White, take on d5 at once and play the minority attack. As Black, hold d5 with ...e6, castle quickly and play the Tartakower: ...h6, ...b6 and ...Bb7, then free the game with ...c5.",
+                    "overview": [
+                        "As White: against 2...e6, a third of your Queen's Gambit games, play 3.Nc3 and take at once: 4.cxd5 exd5 5.Bg5. Follow with Qc2, e3, Bd3 and Nge2, and castle short.",
+                        "As White: the plan is the minority attack: Rb1, b4 and b5 leave Black with a weak pawn on c6 or d5. With the knight on e2, f3 and e4 is the second plan.",
+                        "As White: don't grab d5 while Black's knight is on d7: 6.Nxd5?? Nxd5! 7.Bxd8 Bb4+ wins a piece for Black. This is the Elephant trap.",
+                        "As Black: hold d5 with 2...e6, then ...Nf6, ...Be7 and castle. Against 4.Bg5, White's most common move, play the Tartakower: ...h6, ...b6 and ...Bb7.",
+                        "As Black: answer Bg5 with ...h6. If White takes on f6, take back with the bishop and keep the pawns in front of your king intact.",
+                        "As Black: when White takes on d5 (8.cxd5, four games in ten), take back with the knight and trade pieces. Then ...Be6 and ...c5; after dxc5, take back with the b-pawn, and your hanging pawns on c5 and d5 are active.",
+                        "As Black: take on c4 only after White's bishop has left f1, so that Bxc4 costs White a tempo.",
+                        "As Black: against the Exchange (4.cxd5 exd5 5.Bg5), play 5...Nbd7, then ...c6, ...Be7, castle, ...Re8 and ...Nf8. White plays 6.Nxd5?? in one game in five, and it loses a piece to the Elephant trap.",
+                        "As Black: against 3.Nf3 and the Catalan (4.g3), play ...Be7 and castle, then take on c4 once White has castled. Follow with ...a6, then ...b5 and ...Bb7, or ...Bd7 and ...Bc6 if White stops ...b5 with a4."
+                    ]
+                }
+            ]
         },
         {
-          "id": "queens-gambit-black",
-          "side": "black",
-          "file": "content/queens-gambit-black.pgn",
-          "repertoire": "Queen's Gambit Declined (2...e6), Tartakower Variation",
-          "summary": "Hold d5 with ...e6, castle quickly and play the Tartakower: ...h6, ...b6 and ...Bb7, then free the game with ...c5.",
-          "overview": [
-            "Hold d5 with 2...e6, then ...Nf6, ...Be7 and castle. Against 4.Bg5, White's most common move, play the Tartakower: ...h6, ...b6 and ...Bb7.",
-            "Answer Bg5 with ...h6. If White takes on f6, take back with the bishop and keep the pawns in front of your king intact.",
-            "When White takes on d5 (8.cxd5, four games in ten), take back with the knight and trade pieces. Then ...Be6 and ...c5; after dxc5, take back with the b-pawn, and your hanging pawns on c5 and d5 are active.",
-            "Take on c4 only after White's bishop has left f1, so that Bxc4 costs White a tempo.",
-            "Against the Exchange (4.cxd5 exd5 5.Bg5), play 5...Nbd7, then ...c6, ...Be7, castle, ...Re8 and ...Nf8. White plays 6.Nxd5?? in one game in five, and it loses a piece to the Elephant trap.",
-            "Against 3.Nf3 and the Catalan (4.g3), play ...Be7 and castle, then take on c4 once White has castled. Follow with ...a6, then ...b5 and ...Bb7, or ...Bd7 and ...Bc6 if White stops ...b5 with a4."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "sicilian",
-      "name": "Sicilian Defense",
-      "eco": "B20",
-      "moves": "1. e4 c5",
-      "summary": "Black fights for d4 from the side, accepting an unbalanced game in return for winning chances.",
-      "courses": [
-        { "id": "sicilian-white", "side": "white", "repertoire": "Alapin (2.c3)" },
-        { "id": "sicilian-black", "side": "black", "repertoire": "Accelerated Dragon" }
-      ]
-    },
-    {
-      "id": "ruy-lopez",
-      "name": "Ruy Lopez",
-      "eco": "C60",
-      "moves": "1. e4 e5 2. Nf3 Nc6 3. Bb5",
-      "summary": "White's bishop pressures the knight that defends e5, for a long strategic fight over the center.",
-      "courses": [
-        { "id": "ruy-lopez-white", "side": "white", "repertoire": "To be written" },
-        { "id": "ruy-lopez-black", "side": "black", "repertoire": "To be written" }
-      ]
-    },
-    {
-      "id": "scandinavian",
-      "name": "Scandinavian Defense",
-      "eco": "B01",
-      "moves": "1. e4 d5",
-      "summary": "Black challenges e4 at once and takes back with the queen, for quick development and a solid pawn structure.",
-      "courses": [
-        { "id": "scandinavian-white", "side": "white", "repertoire": "To be written" },
-        { "id": "scandinavian-black", "side": "black", "repertoire": "To be written" }
-      ]
-    },
-    {
-      "id": "london",
-      "name": "London System",
-      "eco": "D00",
-      "moves": "1. d4 d5 2. Bf4",
-      "summary": "White develops the bishop to f4 before e3 can shut it in, then builds the same solid setup in almost every game.",
-      "courses": [
-        { "id": "london-white", "side": "white", "repertoire": "London System" }
-      ]
-    },
-    {
-      "id": "kings-indian",
-      "name": "King's Indian Defense",
-      "eco": "E60",
-      "moves": "1. d4 Nf6 2. c4 g6",
-      "summary": "Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside.",
-      "puzzles": "content/kings-indian-puzzles.pgn",
-      "furtherStudy": [
-        { "title": "The King's Indian Is Actually Easy If You Learn This", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=dM2AKqzRM84" },
-        { "title": "The King's Indian Is Brutal If You Learn These 10 Positional Concepts", "by": "GM Igor Smirnov, Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=K8MSjqFyVvs" },
-        { "title": "Punish 1.d4 with the King's Indian Defense [Key Attacking Ideas]", "by": "Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=rJ8LqYZZvnc" },
-        { "title": "Unknown King's Indian Defense Trick vs 1.d4", "by": "Remote Chess Academy", "kind": "Video", "url": "https://www.youtube.com/watch?v=468V5A2lFuw" },
-        { "title": "The King's Indian Defense: Step by Step (Chess Lesson 85)", "by": "NM Robert Ramirez", "kind": "Video", "url": "https://www.youtube.com/watch?v=bCmsHfrcBBc" },
-        { "title": "King's Indian Defense Masterclass (introduction and 12 chapters)", "by": "ChessGeek", "kind": "Video", "url": "https://www.youtube.com/playlist?list=PLOaFVRf_8WkQv_RtBn59zda2ZEBAy1RG7" },
-        { "title": "Complete King's Indian Repertoire for Black", "by": "Hanging Pawns", "kind": "Video", "url": "https://www.youtube.com/watch?v=0DY4Z_L866c" },
-        { "title": "Learn the King's Indian Setup | 10-Minute Chess Openings", "by": "IM Levy Rozman, GothamChess", "kind": "Video", "url": "https://www.youtube.com/watch?v=kK0cq6UBt1Y" },
-        { "title": "King's Indian Defence", "by": "Wikipedia", "kind": "Article", "url": "https://en.wikipedia.org/wiki/King%27s_Indian_Defence" }
-      ],
-      "courses": [
-        {
-          "id": "kings-indian-white",
-          "side": "white",
-          "file": "content/kings-indian-white.pgn",
-          "repertoire": "Classical (5.Nf3, 6.Be2 and castling), with 9.b4 against the Mar del Plata",
-          "summary": "Develop naturally, castle, and let Black commit first. Close the center with d5 and race on the queenside with b4 and c5; against ...exd4, guard e4 with f3 and use your space.",
-          "overview": [
-            "Play the Classical: 5.Nf3, 6.Be2 and castle. You make no weakening pawn moves, so Black's attack has nothing to aim at until the center closes.",
-            "After 6.Be2, Black's main reply is 6...e5, in about a third of those games, and 6...Nbd7 or 6...Nc6 usually lead to ...e5 as well. Castle first, then close the center with d5 or hold it with Be3.",
-            "Against 7...Nc6, the Mar del Plata, play 8.d5 and 9.b4. Your queenside attack with c5 must arrive before Black's ...f5, ...f4 and ...g5.",
-            "Against 7...exd4 8.Nxd4 Re8, guard e4 with 9.f3 at once. Natural moves such as 9.Bg5? or 9.Re1? let Black take on e4.",
-            "Against 6...c5, castle and take back on d4 with the knight. Your pawns on c4 and e4 form the Maroczy Bind, which clamps d5 and Black's freeing breaks.",
-            "Know the tricks: 5...e5?! 6.dxe5 wins a pawn before Black has castled, and the fork trick 8...Nxe4?? fails because your queen guards d4."
-          ]
+            "id": "slav",
+            "name": "Slav Defense",
+            "eco": "D10",
+            "moves": "1. d4 d5 2. c4 c6",
+            "summary": "Black guards d5 with the c-pawn, so the light-squared bishop can still come out before ...e6. Solid, with a few exact lines to know.",
+            "furtherStudy": [
+                {
+                    "title": "Chess Openings: Learn to Play the Queen's Gambit",
+                    "by": "NM Solomon Ruddell, The Chess Giant",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=EWHYgn9fR10"
+                },
+                {
+                    "title": "Queen's Gambit Opening Mistakes You Must Avoid (Traps Included!)",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=8Ui8lD8wJsU"
+                },
+                {
+                    "title": "How To Play The Queen's Gambit",
+                    "by": "IM Levy Rozman, GothamChess",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=mtsabsZ4wG4"
+                },
+                {
+                    "title": "How To Play The Queen's Gambit",
+                    "by": "Anna Cramling",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI"
+                },
+                {
+                    "title": "Slav Defense",
+                    "by": "Wikipedia",
+                    "kind": "Article",
+                    "url": "https://en.wikipedia.org/wiki/Slav_Defense"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "slav",
+                    "side": "both",
+                    "file": "content/slav.pgn",
+                    "repertoire": "As White: 3.Nf3 and 4.Nc3, then cxd5 and Bg5 against ...e6. As Black: the Czech Variation (4...dxc4 5.a4 Bf5).",
+                    "summary": "As White, meet the Slav with Nf3 and Nc3, and take on d5 against ...e6. As Black, take on c4 once both White knights are out, then play the Czech Variation: ...Bf5, ...e6, ...Bb4 and castle.",
+                    "overview": [
+                        "As White: against the Slav (2...c6), a quarter of your Queen's Gambit games, play 3.Nf3 Nf6 4.Nc3. Against 4...e6, take on d5 and play Bg5, the same plan as in the Exchange. Against an early ...Bf5, cxd5 and Qb3 hit b7.",
+                        "As Black: answer 3.Nc3 and 3.Nf3 with ...Nf6. When White has both knights out, about a third of your games, take on c4 first with 4...dxc4, and only then bring the bishop to f5. 4...Bf5?! at once allows cxd5 and Qb3, hitting b7.",
+                        "As Black: against 5.a4, about half the time, play the Czech Variation: 5...Bf5, ...e6, ...Bb4 and castle. Against 5.e4 (the Geller Gambit) or 5.e3, keep the extra pawn with 5...b5.",
+                        "As Black: against an early 4.Bg5 or 4.Bf4, one game in six, take on c4 as well and hold the pawn with ...b5. After 4.Bg5 dxc4 5.e4 b5, the natural 6.a4? loses material to 6...b4!.",
+                        "As Black: against the quiet e3 lines, also one game in six, play ...Bf5 at once, then ...e6, ...Nbd7 and ...Be7, and castle. With White's pawn on e3, the c1 bishop is shut in, so the early bishop is safe.",
+                        "As Black: once your bishop has left c8, watch b7. After cxd5 cxd5 and Qb3, go back with ...Bc8, or hit the queen with ...Na5 in the Exchange. Never guard b7 with ...b6?, which runs into Bb5 or Bb5+.",
+                        "As Black: against the Exchange (cxd5 cxd5), about one game in five, copy White's setup: ...Nf6, ...Nc6, ...Bf5 and ...e6. Against 5.Bg5, jump to e4 with the knight: after 6.Nxe4 dxe4, 7.e3? loses the bishop to 7...Qa5+."
+                    ]
+                }
+            ],
+            "puzzles": "content/slav-puzzles.pgn"
         },
         {
-          "id": "kings-indian-black",
-          "side": "black",
-          "file": "content/kings-indian-black.pgn",
-          "repertoire": "The Kazakh 6...Na6 against the Classical, and ...c5 against the Four Pawns and the Sämisch",
-          "summary": "Let White build the big center, castle behind the g7 bishop, then strike with ...e5 or ...c5. The Kazakh 6...Na6 and a knight on c5 keep the theory light against the Classical.",
-          "overview": [
-            "Set up with ...g6, ...Bg7, ...d6 and ...O-O, then strike at White's center with ...e5 or ...c5. Your king is safe behind the g7 bishop.",
-            "White's systems are spread out: 5.Nf3 comes up in about a sixth of your games, and the Four Pawns, the Sämisch, the Makogonov, 5.Be2 and 5.Bd3 in about 5 to 8% each. Learn the plan for each.",
-            "Against the Classical, 6.Be2, play 6...Na6 and ...e5. When White closes the center with d5, put the knight on c5, play ...a5 so b4 can't chase it, then ...f5.",
-            "Against the Four Pawns (5.f4) and the Sämisch (5.f3 and Be3), strike at once with ...c5. White's center is loose and the king is not castled yet.",
-            "Against the Averbakh (Be2 and Bg5), play ...Na6 before ...e5. Otherwise Nd5 hits f6 and c7 and wins the exchange.",
-            "Against 6.Bd3, play 6...Bg4 and pile up on d4 with ...Bxf3, ...Nc6 and ...Nd7. The natural Ne2?? then loses material to ...Nce5."
-          ]
+            "id": "queens-gambit-accepted",
+            "name": "Queen's Gambit Accepted",
+            "eco": "D20",
+            "moves": "1. d4 d5 2. c4 dxc4",
+            "summary": "Black takes the c-pawn and gives up the center for a moment. White wins the pawn back, and Black uses the time to hit back with ...e5 or ...c5.",
+            "furtherStudy": [
+                {
+                    "title": "How To Play The Queen's Gambit",
+                    "by": "IM Levy Rozman, GothamChess",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=mtsabsZ4wG4"
+                },
+                {
+                    "title": "Learn the Queen's Gambit Chess Opening: Traps & Errors",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=oRfGbul6MUs"
+                },
+                {
+                    "title": "Every Queen's Gambit Player Must Know These 9 Ideas",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ONB_yxkpAws"
+                },
+                {
+                    "title": "Chess Openings: Learn to Play the Queen's Gambit",
+                    "by": "NM Solomon Ruddell, The Chess Giant",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=EWHYgn9fR10"
+                },
+                {
+                    "title": "5 Best Chess Opening Traps in the Queen's Gambit",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ICXoGdCcsFI"
+                },
+                {
+                    "title": "Queen's Gambit Opening Mistakes You Must Avoid (Traps Included!)",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=8Ui8lD8wJsU"
+                },
+                {
+                    "title": "The Queen's Gambit Chess Opening Explained in 3 Minutes by a National Chess Master",
+                    "by": "NM Nelson Lopez, Chess Vibes",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=KEmkjOL_hCc"
+                },
+                {
+                    "title": "Chess Openings: The Queen's Gambit",
+                    "by": "Kevin Butler, thechesswebsite",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=HdHWAuQRG7E"
+                },
+                {
+                    "title": "How To Play The Queen's Gambit",
+                    "by": "Anna Cramling",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI"
+                },
+                {
+                    "title": "Queen's Gambit Accepted",
+                    "by": "Wikipedia",
+                    "kind": "Article",
+                    "url": "https://en.wikipedia.org/wiki/Queen%27s_Gambit_Accepted"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "queens-gambit-accepted",
+                    "side": "both",
+                    "file": "content/queens-gambit-accepted.pgn",
+                    "repertoire": "As White: 3.e3 and Bxc4. As Black: ...e5 at once, and the Classical setup against 3.Nf3.",
+                    "summary": "As White, win the pawn back at once with 3.e3 and Bxc4. As Black, take the pawn and hit White's center with ...e5 at once; only 3.Nf3 stops it, and then you play ...Nf6, ...e6, ...c5 and ...a6.",
+                    "overview": [
+                        "As White: play 3.e3 and win the pawn back with Bxc4. If Black holds it with 3...b5, a4 breaks the chain, and after 4...c6 5.axb5 cxb5, 6.Qf3 hits the rook on a8 and wins a piece.",
+                        "As Black: take on c4, then strike with ...e5 at once against 3.Nc3, 3.e3 and 3.e4, which make up 86% of your games. Only 3.Nf3 (10%) stops ...e5; then play ...Nf6, ...e6, ...c5 and ...a6.",
+                        "As Black: against 4.d5, White's most common reply, play ...Nf6. After 5.e4 (or 3.e4 e5 4.d5 Nf6 5.Nc3), 5...b5! keeps the extra pawn: if 6.Nxb5, then 6...Nxe4 takes White's center pawn.",
+                        "As Black: never play ...Bb4 while White's queen can check on a4: 4.d5 Bb4?? and 5.e4 Bb4?? lose the bishop to Qa4+. About one club player in three plays 5...Bb4 there.",
+                        "As Black: when White takes back on d4 with the e-pawn, White has an isolated pawn. Develop with ...Nf6 and ...Bd6 and castle, then play ...Nc6 and ...Bg4 to press on d4. Castle before ...Bg4: an early ...Bg4 runs into Bxf7+ and Ne5+, or Qb3.",
+                        "As Black: don't try to keep the pawn with ...b5 against 3.e3: after 4.a4 c6 5.axb5 cxb5?, 6.Qf3 wins a piece.",
+                        "As Black: if White trades queens (3.Nc3 e5 4.dxe5 Qxd1+, or 3.e3 e5 4.Bxc4 exd4 5.Qxd4 Qxd4), develop fast with ...Nc6, ...Be6 or ...Bg4, and castle long. Black scores 59–60% in these lines at club level."
+                    ]
+                }
+            ],
+            "puzzles": "content/queens-gambit-accepted-puzzles.pgn"
+        },
+        {
+            "id": "tarrasch",
+            "name": "Tarrasch Defense",
+            "eco": "D32",
+            "moves": "1. d4 d5 2. c4 e6 3. Nc3 c5",
+            "summary": "Black strikes at d4 with 3...c5 and accepts an isolated d-pawn in return for quick, active development.",
+            "furtherStudy": [
+                {
+                    "title": "Queen's Gambit | Basic Ideas, Plans & Strategies | Chess Openings",
+                    "by": "IM Andrey Ostrovskiy, Chessfactor",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ITQwXN9hXms"
+                },
+                {
+                    "title": "Queen's Gambit Strategy for Black | Plans, Traps, and Setup Explained",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ETG8cCyvnAg"
+                },
+                {
+                    "title": "Every Queen's Gambit Player Must Know These 9 Ideas",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=ONB_yxkpAws"
+                },
+                {
+                    "title": "Tarrasch Defense Opening Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=esjT83wWr78"
+                },
+                {
+                    "title": "Tarrasch Defense",
+                    "by": "Wikipedia",
+                    "kind": "Article",
+                    "url": "https://en.wikipedia.org/wiki/Tarrasch_Defense"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "tarrasch",
+                    "side": "both",
+                    "file": "content/tarrasch.pgn",
+                    "repertoire": "As White: the Rubinstein System (4.cxd5, Nf3, g3 and Bg2). As Black: the Classical Tarrasch.",
+                    "summary": "As White, take on d5 and aim the g2 bishop at Black's isolated pawn. As Black, hit White's center at once with 3...c5 and accept an isolated d-pawn for free, active pieces.",
+                    "overview": [
+                        "As White: take on d5 with 4.cxd5, then play Nf3, g3 and Bg2. The bishop on the long diagonal hits d5, the isolated pawn. Against 4...cxd4, the Schara Gambit, take the pawn and keep it.",
+                        "As Black: answer 3.Nc3 with 3...c5. After 4.cxd5, about four games in ten, take back with the e-pawn: your c8 bishop is free and your pieces come out quickly. The price is an isolated pawn on d5.",
+                        "As Black: against the classical 6.g3 and Bg2, develop with ...Nf6, ...Be7 and castle. After 9.Bg5, take on d4, then play ...h6 and ...Re8. Active pieces are your payment for the weak pawn, so avoid needless trades.",
+                        "As Black: when White takes on c5 early (4.dxc5, 5.dxc5 or 6.dxc5, together about three games in ten), push ...d4! and win the pawn back later. Never 5...Bxc5?: 6.Qxd5 wins your d5 pawn.",
+                        "As Black: if White's knight lands on b5, look for ...Qa5+, which checks and hits the knight, and for ...e5, which hits a bishop on f4 or a knight on d4.",
+                        "As Black: against 4.e3 and 4.Nf3, about one game in five each, play 4...Nc6 and ...Nf6. If White develops the f1 bishop without taking on d5, take on c4 and expand with ...a6, ...b5 and ...Bb7.",
+                        "As Black: against Bg5, block with ...Be7, and after Bxe7 take back with the g8 knight, never the queen: the queen must keep guarding d5."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sicilian",
+            "name": "Sicilian Defense",
+            "eco": "B20",
+            "moves": "1. e4 c5",
+            "summary": "Black fights for d4 from the side, accepting an unbalanced game in return for winning chances.",
+            "courses": [
+                {
+                    "id": "sicilian-white",
+                    "side": "white",
+                    "repertoire": "Alapin (2.c3)"
+                },
+                {
+                    "id": "sicilian-black",
+                    "side": "black",
+                    "repertoire": "Accelerated Dragon"
+                }
+            ]
+        },
+        {
+            "id": "ruy-lopez",
+            "name": "Ruy Lopez",
+            "eco": "C60",
+            "moves": "1. e4 e5 2. Nf3 Nc6 3. Bb5",
+            "summary": "White's bishop pressures the knight that defends e5, for a long strategic fight over the center.",
+            "courses": [
+                {
+                    "id": "ruy-lopez-white",
+                    "side": "white",
+                    "repertoire": "To be written"
+                },
+                {
+                    "id": "ruy-lopez-black",
+                    "side": "black",
+                    "repertoire": "To be written"
+                }
+            ]
+        },
+        {
+            "id": "scandinavian",
+            "name": "Scandinavian Defense",
+            "eco": "B01",
+            "moves": "1. e4 d5",
+            "summary": "Black challenges e4 at once and takes back with the queen, for quick development and a solid pawn structure.",
+            "courses": [
+                {
+                    "id": "scandinavian-white",
+                    "side": "white",
+                    "repertoire": "To be written"
+                },
+                {
+                    "id": "scandinavian-black",
+                    "side": "black",
+                    "repertoire": "To be written"
+                }
+            ]
+        },
+        {
+            "id": "london",
+            "name": "London System",
+            "eco": "D00",
+            "moves": "1. d4 d5 2. Bf4",
+            "summary": "White develops the bishop to f4 before e3 can shut it in, then builds the same solid setup in almost every game.",
+            "courses": [
+                {
+                    "id": "london-white",
+                    "side": "white",
+                    "repertoire": "London System"
+                }
+            ]
+        },
+        {
+            "id": "kings-indian",
+            "name": "King's Indian Defense",
+            "eco": "E60",
+            "moves": "1. d4 Nf6 2. c4 g6",
+            "summary": "Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside.",
+            "puzzles": "content/kings-indian-puzzles.pgn",
+            "furtherStudy": [
+                {
+                    "title": "The King's Indian Is Actually Easy If You Learn This",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=dM2AKqzRM84"
+                },
+                {
+                    "title": "The King's Indian Is Brutal If You Learn These 10 Positional Concepts",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=K8MSjqFyVvs"
+                },
+                {
+                    "title": "Punish 1.d4 with the King's Indian Defense [Key Attacking Ideas]",
+                    "by": "Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=rJ8LqYZZvnc"
+                },
+                {
+                    "title": "Unknown King's Indian Defense Trick vs 1.d4",
+                    "by": "Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=468V5A2lFuw"
+                },
+                {
+                    "title": "The King's Indian Defense: Step by Step (Chess Lesson 85)",
+                    "by": "NM Robert Ramirez",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=bCmsHfrcBBc"
+                },
+                {
+                    "title": "King's Indian Defense Masterclass (introduction and 12 chapters)",
+                    "by": "ChessGeek",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/playlist?list=PLOaFVRf_8WkQv_RtBn59zda2ZEBAy1RG7"
+                },
+                {
+                    "title": "Complete King's Indian Repertoire for Black",
+                    "by": "Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=0DY4Z_L866c"
+                },
+                {
+                    "title": "Learn the King's Indian Setup | 10-Minute Chess Openings",
+                    "by": "IM Levy Rozman, GothamChess",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=kK0cq6UBt1Y"
+                },
+                {
+                    "title": "King's Indian Defence",
+                    "by": "Wikipedia",
+                    "kind": "Article",
+                    "url": "https://en.wikipedia.org/wiki/King%27s_Indian_Defence"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "kings-indian-white",
+                    "side": "white",
+                    "file": "content/kings-indian-white.pgn",
+                    "repertoire": "Classical (5.Nf3, 6.Be2 and castling), with 9.b4 against the Mar del Plata",
+                    "summary": "Develop naturally, castle, and let Black commit first. Close the center with d5 and race on the queenside with b4 and c5; against ...exd4, guard e4 with f3 and use your space.",
+                    "overview": [
+                        "Play the Classical: 5.Nf3, 6.Be2 and castle. You make no weakening pawn moves, so Black's attack has nothing to aim at until the center closes.",
+                        "After 6.Be2, Black's main reply is 6...e5, in about a third of those games, and 6...Nbd7 or 6...Nc6 usually lead to ...e5 as well. Castle first, then close the center with d5 or hold it with Be3.",
+                        "Against 7...Nc6, the Mar del Plata, play 8.d5 and 9.b4. Your queenside attack with c5 must arrive before Black's ...f5, ...f4 and ...g5.",
+                        "Against 7...exd4 8.Nxd4 Re8, guard e4 with 9.f3 at once. Natural moves such as 9.Bg5? or 9.Re1? let Black take on e4.",
+                        "Against 6...c5, castle and take back on d4 with the knight. Your pawns on c4 and e4 form the Maroczy Bind, which clamps d5 and Black's freeing breaks.",
+                        "Know the tricks: 5...e5?! 6.dxe5 wins a pawn before Black has castled, and the fork trick 8...Nxe4?? fails because your queen guards d4."
+                    ]
+                },
+                {
+                    "id": "kings-indian-black",
+                    "side": "black",
+                    "file": "content/kings-indian-black.pgn",
+                    "repertoire": "The Kazakh 6...Na6 against the Classical, and ...c5 against the Four Pawns and the Sämisch",
+                    "summary": "Let White build the big center, castle behind the g7 bishop, then strike with ...e5 or ...c5. The Kazakh 6...Na6 and a knight on c5 keep the theory light against the Classical.",
+                    "overview": [
+                        "Set up with ...g6, ...Bg7, ...d6 and ...O-O, then strike at White's center with ...e5 or ...c5. Your king is safe behind the g7 bishop.",
+                        "White's systems are spread out: 5.Nf3 comes up in about a sixth of your games, and the Four Pawns, the Sämisch, the Makogonov, 5.Be2 and 5.Bd3 in about 5 to 8% each. Learn the plan for each.",
+                        "Against the Classical, 6.Be2, play 6...Na6 and ...e5. When White closes the center with d5, put the knight on c5, play ...a5 so b4 can't chase it, then ...f5.",
+                        "Against the Four Pawns (5.f4) and the Sämisch (5.f3 and Be3), strike at once with ...c5. White's center is loose and the king is not castled yet.",
+                        "Against the Averbakh (Be2 and Bg5), play ...Na6 before ...e5. Otherwise Nd5 hits f6 and c7 and wins the exchange.",
+                        "Against 6.Bd3, play 6...Bg4 and pile up on d4 with ...Bxf3, ...Nc6 and ...Nd7. The natural Ne2?? then loses material to ...Nce5."
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "surveys": [
-    {
-      "id": "e4",
-      "name": "Replies to 1.e4",
-      "eco": "B00–C99",
-      "moves": "1. e4",
-      "file": "content/e4-overview.pgn",
-      "count": "6 openings",
-      "subtitle": "The six main openings after 1.e4, each played out to move 4, plus a page for the rarer ones.",
-      "foldPlans": true,
-      "table": {
-        "after": "map",
-        "columns": ["Black's reply", "Share", "What kind of game"],
-        "rows": [
-          ["1...e5 (Ruy Lopez, Italian and others)", "38%", "The Open Games: both sides fight for the center at once, with quick development and early tactics."],
-          ["1...c5 (Sicilian)", "25%", "Fights for d4 from the side. Unbalanced, sharp games."],
-          ["1...e6 (French) and 1...c6 (Caro-Kann)", "11%, 9%", "Black prepares ...d5 to challenge e4. Solid, slower games."],
-          ["1...d5 (Scandinavian)", "7%", "Challenges e4 at once. White gains time by chasing Black's queen."]
-        ],
-        "note": "Share: how often each reply follows 1.e4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
-      },
-      "summary": "Under each board, press ▶︎ Watch the moves to step through the first four moves. The Italian, French and Caro-Kann link to their courses in this app. Rarer openings, such as the Pirc and the King's Gambit, have a page of their own, linked at the bottom."
-    },
-    {
-      "id": "e4-uncommon",
-      "parent": "e4",
-      "name": "Uncommon replies to 1.e4",
-      "eco": "B02–C45",
-      "moves": "1. e4",
-      "file": "content/e4-uncommon.pgn",
-      "count": "6 openings",
-      "subtitle": "The Pirc, King's Gambit, Scotch, Petroff, Modern and Alekhine, each played out to move 4.",
-      "table": {
-        "after": "map",
-        "columns": ["Opening", "Share", "What kind of game"],
-        "rows": [
-          ["1...d6 (Pirc)", "3.6%", "Black lets White build a big center, then hits it from the side with a fianchettoed bishop and ...e5 or ...c5. Flexible, and often sharp."],
-          ["1...e5 2.f4 (King's Gambit)", "3.4%", "White gives a pawn to open the f-file and attack at once. Wild, tactical games where the initiative counts for more than the pawn."],
-          ["1...e5 2.Nf3 Nc6 3.d4 (Scotch)", "3.1%", "White opens the center straight away. Open, direct play with quick development and few slow maneuvers."],
-          ["1...e5 2.Nf3 Nf6 (Petroff)", "2.8%", "Black counterattacks e4 instead of defending e5. Symmetrical and solid: hard for White to win against."],
-          ["1...g6 (Modern)", "2.4%", "Like the Pirc, but Black waits with ...Nf6, keeping ...c6 and ...d5 in reserve. Flexible and slow to show its hand."],
-          ["1...Nf6 (Alekhine)", "1.4%", "Black invites White's pawns forward to e5, d4 and c4, then attacks the stretched center. Provocative and unbalanced."]
-        ],
-        "note": "Share: how often each opening comes up in games that start with 1.e4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. In the King's Gambit and the Scotch, White chooses the opening; in the others, Black does."
-      },
-      "summary": "Each board shows the position after four moves of a main line. Press Watch to see the moves played out. Under each board, three lines give White's plan and three give Black's."
-    },
-    {
-      "id": "d4",
-      "name": "Replies to 1.d4",
-      "eco": "A40–E99",
-      "moves": "1. d4",
-      "file": "content/d4-overview.pgn",
-      "count": "15 openings",
-      "compact": true,
-      "table": {
-        "after": "map",
-        "columns": ["Black's reply", "Share", "What kind of game"],
-        "rows": [
-          ["1...d5 (Queen's Gambit, London)", "43%", "The closed games: Black stakes a claim with a pawn on d5 at once, so White can no longer play e4 for free."],
-          ["1...Nf6 (Indian Defenses)", "28%", "Black stops e4 with a piece instead of a pawn. The games range from solid (Queen's Indian) to sharp (King's Indian, Grünfeld)."],
-          ["1...e6", "8%", "A waiting move that usually transposes: after 2.c4 to the Queen's Gambit Declined (2...d5) or an Indian defense (2...Nf6); after 2.e4 to the French."],
-          ["Others: 1...g6 (4%), 1...e5 (4%), 1...c5 (3%), 1...c6 (3%), 1...f5 (2%)", "16% in all","Rarer tries that often transpose: ...g6 to a King's Indian, ...c5 to a Benoni, ...c6 to a Slav. 1...f5 is the Dutch (see Uncommon replies). 1...e5, the Englund Gambit, is unsound."]
-        ],
-        "note": "Share: how often each reply follows 1.d4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
-      },
-      "subtitle": "The Queen's Gambit, the Indian Defenses, and the other main replies.",
-      "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Against 1...d5, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level (and works against 1...Nf6 too); the Colle is much rarer and is listed with the uncommon replies. Against 1...Nf6 2.c4, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside."
-    },
-    {
-      "id": "qg",
-      "parent": "d4",
-      "name": "Queen's Gambit",
-      "heading": "Queen's Gambit Introduction",
-      "eco": "D06–D69",
-      "moves": "1. d4 d5 2. c4",
-      "file": "content/qg-overview.pgn",
-      "count": "6 variations",
-      "compact": true,
-      "course": "queens-gambit",
-      "subtitle": "1.d4 d5 2.c4: the main ways to decline it or take the pawn.",
-      "summary": "White offers the c-pawn to lure Black's d-pawn away from the center. Black declines with 2...e6 or 2...c6, or takes it with 2...dxc4. The map shows how the variations branch, and the courses below teach a full repertoire for each side."
-    },
-    {
-      "id": "indian",
-      "parent": "d4",
-      "name": "Indian Defenses",
-      "eco": "A56–E99",
-      "moves": "1. d4 Nf6 2. c4",
-      "file": "content/indian-overview.pgn",
-      "count": "5 defenses",
-      "compact": true,
-      "subtitle": "1.d4 Nf6 2.c4: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
-      "table": {
-        "after": "map",
-        "columns": ["Black's reply", "Share", "What kind of game"],
-        "rows": [
-          ["2...g6, then ...Bg7 and ...d6 (King's Indian)", "25.9%", "Black lets White take the whole center, then hits it with ...e5 and attacks on the kingside. Sharp and double-edged."],
-          ["2...e6 3.Nc3 Bb4 (Nimzo-Indian)", "11.8%", "The pin on c3 stops e4. Black is often ready to give up the bishop pair to double White's c-pawns."],
-          ["2...g6 3.Nc3 d5 (Grünfeld)", "6.0%", "Black invites a big white center with ...d5, then attacks it with the g7 bishop and ...c5."],
-          ["2...c5 3.d5 b5 (Benko Gambit)", "3.1%", "Black gives a pawn for lasting pressure on the a- and b-files."],
-          ["2...c5 3.d5 e6 (Modern Benoni)", "1.6%", "Black opens the e-file and pushes the queenside pawns, while White has more space in the center."],
-          ["2...e6 3.Nf3 b6 (Queen's Indian)", "1.5%", "Black controls e4 and d5 from a distance with the queen's bishop on b7. Solid and positional."],
-          ["Others: 2...e6 then ...d5, 2...e5, 2...d6 and more", "50% in all", "Most transpose: 2...e6 with ...d5 becomes a Queen's Gambit Declined (about 10%). 2...e5 is the Budapest Gambit (9.5%, see Uncommon replies to 1.d4); 2...d6 is the Old Indian (4%)."]
-        ],
-        "note": "Share: how often each defense comes up in games that reach 1.d4 Nf6 2.c4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. The King's Indian figure counts every 2...g6 game except the Grünfeld (3.Nc3 d5); the others are measured on the move order shown."
-      },
-      "summary": "Black develops the knight first and keeps the choice of setup open. The map shows where each defense starts; the table below it shows how often each one comes up."
-    },
-    {
-      "id": "d4-uncommon",
-      "parent": "d4",
-      "name": "Uncommon replies to 1.d4",
-      "eco": "A51, A80, D04",
-      "moves": "1. d4",
-      "file": "content/d4-uncommon.pgn",
-      "count": "3 openings",
-      "compact": true,
-      "subtitle": "The Dutch Defense, the Budapest Gambit and White's Colle System, each played out to move 4.",
-      "table": {
-        "after": "map",
-        "columns": ["Opening", "Share", "What kind of game"],
-        "rows": [
-          ["1...f5 (Dutch)", "2.6%", "Black claims e4 with the f-pawn, for unbalanced play and kingside chances, at some cost to king safety."],
-          ["1...Nf6 2.c4 e5 (Budapest Gambit)", "1.3%", "A gambit: Black offers the e-pawn at once and usually wins it back with ...Ng4 and ...Nc6. Best as a surprise."],
-          ["1...d5 2.Nf3 Nf6 3.e3 (Colle)", "0.6%", "A quiet White system: d4, e3, Bd3 and Nbd2, then the break e4 opens lines toward Black's king."]
-        ],
-        "note": "Share: how often each opening comes up in games that start with 1.d4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. The Dutch figure includes games that reach it by 1...e6 and a later ...f5. In the Colle, White chooses the opening; in the others, Black does."
-      },
-      "summary": "Each board shows the position after four moves. Press Watch to see the moves played out; the plans for White and Black fold out under each card. No course is planned for these openings yet."
-    },
-    {
-      "id": "other",
-      "name": "Other first moves",
-      "eco": "A00–A39",
-      "moves": "",
-      "file": "content/other-overview.pgn",
-      "count": "5 openings",
-      "subtitle": "The five first moves you meet most besides 1.e4 and 1.d4, with Black's main replies, each played out to move 4.",
-      "summary": "Each opening has one board and a Watch button for each of Black's main replies, played out to move 4 along the moves club players choose most often on Lichess. Under each board, White's plan and Black's plan are summed up in a few lines. No course is planned for these openings yet.",
-      "table": {
-        "after": "map",
-        "columns": ["White's first move", "Share", "What kind of game"],
-        "rows": [
-          ["1.c4 (English)", "3.8%", "White controls d5 from the side and often fianchettoes with g3 and Bg2. Positional games; after 1...e5 it is a Sicilian with colors reversed."],
-          ["1.Nf3 (Zukertort)", "3.1%", "The most flexible first move: White develops, stops ...e5 and chooses a setup later. It usually turns into a 1.d4 opening, the English or the Réti."],
-          ["1.f4 (Bird)", "1.0%", "White grabs e5 with the f-pawn: a Dutch Defense with colors reversed. Kingside attacking chances, at some cost to king safety."],
-          ["1.b3 (Nimzo-Larsen)", "0.8%", "White fianchettoes the queen's bishop toward e5 and plays against Black's center from the side. Offbeat, maneuvering games."],
-          ["1.g3 (Hungarian)", "0.7%", "White fianchettoes the king's bishop and decides on the center later, often reaching a King's Indian Attack or an English. Slow and flexible."]
-        ],
-        "note": "Share: how often each first move starts a game, in rated rapid and classical Lichess games between players averaging 1800 to 2199. For comparison, 1.e4 starts 62% of these games and 1.d4 26%."
-      }
-    }
-  ]
+    ],
+    "surveys": [
+        {
+            "id": "e4",
+            "name": "Replies to 1.e4",
+            "eco": "B00–C99",
+            "moves": "1. e4",
+            "file": "content/e4-overview.pgn",
+            "count": "6 openings",
+            "subtitle": "The six main openings after 1.e4, each played out to move 4, plus a page for the rarer ones.",
+            "foldPlans": true,
+            "table": {
+                "after": "map",
+                "columns": [
+                    "Black's reply",
+                    "Share",
+                    "What kind of game"
+                ],
+                "rows": [
+                    [
+                        "1...e5 (Ruy Lopez, Italian and others)",
+                        "38%",
+                        "The Open Games: both sides fight for the center at once, with quick development and early tactics."
+                    ],
+                    [
+                        "1...c5 (Sicilian)",
+                        "25%",
+                        "Fights for d4 from the side. Unbalanced, sharp games."
+                    ],
+                    [
+                        "1...e6 (French) and 1...c6 (Caro-Kann)",
+                        "11%, 9%",
+                        "Black prepares ...d5 to challenge e4. Solid, slower games."
+                    ],
+                    [
+                        "1...d5 (Scandinavian)",
+                        "7%",
+                        "Challenges e4 at once. White gains time by chasing Black's queen."
+                    ]
+                ],
+                "note": "Share: how often each reply follows 1.e4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
+            },
+            "summary": "Under each board, press ▶︎ Watch the moves to step through the first four moves. The Italian, French and Caro-Kann link to their courses in this app. Rarer openings, such as the Pirc and the King's Gambit, have a page of their own, linked at the bottom."
+        },
+        {
+            "id": "e4-uncommon",
+            "parent": "e4",
+            "name": "Uncommon replies to 1.e4",
+            "eco": "B02–C45",
+            "moves": "1. e4",
+            "file": "content/e4-uncommon.pgn",
+            "count": "6 openings",
+            "subtitle": "The Pirc, King's Gambit, Scotch, Petroff, Modern and Alekhine, each played out to move 4.",
+            "table": {
+                "after": "map",
+                "columns": [
+                    "Opening",
+                    "Share",
+                    "What kind of game"
+                ],
+                "rows": [
+                    [
+                        "1...d6 (Pirc)",
+                        "3.6%",
+                        "Black lets White build a big center, then hits it from the side with a fianchettoed bishop and ...e5 or ...c5. Flexible, and often sharp."
+                    ],
+                    [
+                        "1...e5 2.f4 (King's Gambit)",
+                        "3.4%",
+                        "White gives a pawn to open the f-file and attack at once. Wild, tactical games where the initiative counts for more than the pawn."
+                    ],
+                    [
+                        "1...e5 2.Nf3 Nc6 3.d4 (Scotch)",
+                        "3.1%",
+                        "White opens the center straight away. Open, direct play with quick development and few slow maneuvers."
+                    ],
+                    [
+                        "1...e5 2.Nf3 Nf6 (Petroff)",
+                        "2.8%",
+                        "Black counterattacks e4 instead of defending e5. Symmetrical and solid: hard for White to win against."
+                    ],
+                    [
+                        "1...g6 (Modern)",
+                        "2.4%",
+                        "Like the Pirc, but Black waits with ...Nf6, keeping ...c6 and ...d5 in reserve. Flexible and slow to show its hand."
+                    ],
+                    [
+                        "1...Nf6 (Alekhine)",
+                        "1.4%",
+                        "Black invites White's pawns forward to e5, d4 and c4, then attacks the stretched center. Provocative and unbalanced."
+                    ]
+                ],
+                "note": "Share: how often each opening comes up in games that start with 1.e4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. In the King's Gambit and the Scotch, White chooses the opening; in the others, Black does."
+            },
+            "summary": "Each board shows the position after four moves of a main line. Press Watch to see the moves played out. Under each board, three lines give White's plan and three give Black's."
+        },
+        {
+            "id": "d4",
+            "name": "Replies to 1.d4",
+            "eco": "A40–E99",
+            "moves": "1. d4",
+            "file": "content/d4-overview.pgn",
+            "count": "15 openings",
+            "compact": true,
+            "table": {
+                "after": "map",
+                "columns": [
+                    "Black's reply",
+                    "Share",
+                    "What kind of game"
+                ],
+                "rows": [
+                    [
+                        "1...d5 (Queen's Gambit, London)",
+                        "43%",
+                        "The closed games: Black stakes a claim with a pawn on d5 at once, so White can no longer play e4 for free."
+                    ],
+                    [
+                        "1...Nf6 (Indian Defenses)",
+                        "28%",
+                        "Black stops e4 with a piece instead of a pawn. The games range from solid (Queen's Indian) to sharp (King's Indian, Grünfeld)."
+                    ],
+                    [
+                        "1...e6",
+                        "8%",
+                        "A waiting move that usually transposes: after 2.c4 to the Queen's Gambit Declined (2...d5) or an Indian defense (2...Nf6); after 2.e4 to the French."
+                    ],
+                    [
+                        "Others: 1...g6 (4%), 1...e5 (4%), 1...c5 (3%), 1...c6 (3%), 1...f5 (2%)",
+                        "16% in all",
+                        "Rarer tries that often transpose: ...g6 to a King's Indian, ...c5 to a Benoni, ...c6 to a Slav. 1...f5 is the Dutch (see Uncommon replies). 1...e5, the Englund Gambit, is unsound."
+                    ]
+                ],
+                "note": "Share: how often each reply follows 1.d4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
+            },
+            "subtitle": "The Queen's Gambit, the Indian Defenses, and the other main replies.",
+            "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Against 1...d5, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level (and works against 1...Nf6 too); the Colle is much rarer and is listed with the uncommon replies. Against 1...Nf6 2.c4, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside."
+        },
+        {
+            "id": "qg",
+            "parent": "d4",
+            "name": "Queen's Gambit",
+            "heading": "Queen's Gambit Introduction",
+            "eco": "D06–D69",
+            "moves": "1. d4 d5 2. c4",
+            "file": "content/qg-overview.pgn",
+            "count": "6 variations",
+            "compact": true,
+            "course": "queens-gambit-declined queens-gambit-accepted slav tarrasch",
+            "subtitle": "1.d4 d5 2.c4: the main ways to decline it or take the pawn.",
+            "summary": "White offers the c-pawn to lure Black's d-pawn away from the center. Black declines with 2...e6 or 2...c6, or takes it with 2...dxc4. The map shows how the variations branch, and the courses below teach a full repertoire for each side."
+        },
+        {
+            "id": "indian",
+            "parent": "d4",
+            "name": "Indian Defenses",
+            "eco": "A56–E99",
+            "moves": "1. d4 Nf6 2. c4",
+            "file": "content/indian-overview.pgn",
+            "count": "5 defenses",
+            "compact": true,
+            "subtitle": "1.d4 Nf6 2.c4: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
+            "table": {
+                "after": "map",
+                "columns": [
+                    "Black's reply",
+                    "Share",
+                    "What kind of game"
+                ],
+                "rows": [
+                    [
+                        "2...g6, then ...Bg7 and ...d6 (King's Indian)",
+                        "25.9%",
+                        "Black lets White take the whole center, then hits it with ...e5 and attacks on the kingside. Sharp and double-edged."
+                    ],
+                    [
+                        "2...e6 3.Nc3 Bb4 (Nimzo-Indian)",
+                        "11.8%",
+                        "The pin on c3 stops e4. Black is often ready to give up the bishop pair to double White's c-pawns."
+                    ],
+                    [
+                        "2...g6 3.Nc3 d5 (Grünfeld)",
+                        "6.0%",
+                        "Black invites a big white center with ...d5, then attacks it with the g7 bishop and ...c5."
+                    ],
+                    [
+                        "2...c5 3.d5 b5 (Benko Gambit)",
+                        "3.1%",
+                        "Black gives a pawn for lasting pressure on the a- and b-files."
+                    ],
+                    [
+                        "2...c5 3.d5 e6 (Modern Benoni)",
+                        "1.6%",
+                        "Black opens the e-file and pushes the queenside pawns, while White has more space in the center."
+                    ],
+                    [
+                        "2...e6 3.Nf3 b6 (Queen's Indian)",
+                        "1.5%",
+                        "Black controls e4 and d5 from a distance with the queen's bishop on b7. Solid and positional."
+                    ],
+                    [
+                        "Others: 2...e6 then ...d5, 2...e5, 2...d6 and more",
+                        "50% in all",
+                        "Most transpose: 2...e6 with ...d5 becomes a Queen's Gambit Declined (about 10%). 2...e5 is the Budapest Gambit (9.5%, see Uncommon replies to 1.d4); 2...d6 is the Old Indian (4%)."
+                    ]
+                ],
+                "note": "Share: how often each defense comes up in games that reach 1.d4 Nf6 2.c4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. The King's Indian figure counts every 2...g6 game except the Grünfeld (3.Nc3 d5); the others are measured on the move order shown."
+            },
+            "summary": "Black develops the knight first and keeps the choice of setup open. The map shows where each defense starts; the table below it shows how often each one comes up."
+        },
+        {
+            "id": "d4-uncommon",
+            "parent": "d4",
+            "name": "Uncommon replies to 1.d4",
+            "eco": "A51, A80, D04",
+            "moves": "1. d4",
+            "file": "content/d4-uncommon.pgn",
+            "count": "3 openings",
+            "compact": true,
+            "subtitle": "The Dutch Defense, the Budapest Gambit and White's Colle System, each played out to move 4.",
+            "table": {
+                "after": "map",
+                "columns": [
+                    "Opening",
+                    "Share",
+                    "What kind of game"
+                ],
+                "rows": [
+                    [
+                        "1...f5 (Dutch)",
+                        "2.6%",
+                        "Black claims e4 with the f-pawn, for unbalanced play and kingside chances, at some cost to king safety."
+                    ],
+                    [
+                        "1...Nf6 2.c4 e5 (Budapest Gambit)",
+                        "1.3%",
+                        "A gambit: Black offers the e-pawn at once and usually wins it back with ...Ng4 and ...Nc6. Best as a surprise."
+                    ],
+                    [
+                        "1...d5 2.Nf3 Nf6 3.e3 (Colle)",
+                        "0.6%",
+                        "A quiet White system: d4, e3, Bd3 and Nbd2, then the break e4 opens lines toward Black's king."
+                    ]
+                ],
+                "note": "Share: how often each opening comes up in games that start with 1.d4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. The Dutch figure includes games that reach it by 1...e6 and a later ...f5. In the Colle, White chooses the opening; in the others, Black does."
+            },
+            "summary": "Each board shows the position after four moves. Press Watch to see the moves played out; the plans for White and Black fold out under each card. No course is planned for these openings yet."
+        },
+        {
+            "id": "other",
+            "name": "Other first moves",
+            "eco": "A00–A39",
+            "moves": "",
+            "file": "content/other-overview.pgn",
+            "count": "5 openings",
+            "subtitle": "The five first moves you meet most besides 1.e4 and 1.d4, with Black's main replies, each played out to move 4.",
+            "summary": "Each opening has one board and a Watch button for each of Black's main replies, played out to move 4 along the moves club players choose most often on Lichess. Under each board, White's plan and Black's plan are summed up in a few lines. No course is planned for these openings yet.",
+            "table": {
+                "after": "map",
+                "columns": [
+                    "White's first move",
+                    "Share",
+                    "What kind of game"
+                ],
+                "rows": [
+                    [
+                        "1.c4 (English)",
+                        "3.8%",
+                        "White controls d5 from the side and often fianchettoes with g3 and Bg2. Positional games; after 1...e5 it is a Sicilian with colors reversed."
+                    ],
+                    [
+                        "1.Nf3 (Zukertort)",
+                        "3.1%",
+                        "The most flexible first move: White develops, stops ...e5 and chooses a setup later. It usually turns into a 1.d4 opening, the English or the Réti."
+                    ],
+                    [
+                        "1.f4 (Bird)",
+                        "1.0%",
+                        "White grabs e5 with the f-pawn: a Dutch Defense with colors reversed. Kingside attacking chances, at some cost to king safety."
+                    ],
+                    [
+                        "1.b3 (Nimzo-Larsen)",
+                        "0.8%",
+                        "White fianchettoes the queen's bishop toward e5 and plays against Black's center from the side. Offbeat, maneuvering games."
+                    ],
+                    [
+                        "1.g3 (Hungarian)",
+                        "0.7%",
+                        "White fianchettoes the king's bishop and decides on the center later, often reaching a King's Indian Attack or an English. Slow and flexible."
+                    ]
+                ],
+                "note": "Share: how often each first move starts a game, in rated rapid and classical Lichess games between players averaging 1800 to 2199. For comparison, 1.e4 starts 62% of these games and 1.d4 26%."
+            }
+        }
+    ]
 }

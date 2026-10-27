@@ -51,7 +51,7 @@ export async function course(id) {
     const cat = await catalog()
     const meta = cat.courseById.get(id)
     if (!meta) throw new Error("There is no course with that name. Go back to the openings list.")
-    if (!meta.available) throw new Error(`${meta.opening.name} as ${meta.side === "white" ? "White" : "Black"} is coming soon.`)
+    if (!meta.available) throw new Error(`${meta.opening.name}${meta.side === "both" ? "" : ` as ${meta.side === "white" ? "White" : "Black"}`} is coming soon.`)
     const built = buildCourse(meta, await readText(meta.file, `The file ${meta.file} could not be loaded.`))
     courses.set(id, built)
     return built

@@ -3,7 +3,7 @@
 // link to its course; the line page plays the moves on the board, step by step or by itself.
 // Nothing here is drilled.
 
-import { h, paras, label, sideName, fig, figText, figMoves } from "../ui.js"
+import { h, paras, label, sideName, fig, figText, figMoves, spellOut } from "../ui.js"
 import { catalog, survey as loadSurvey, course as loadCourse } from "../content.js"
 import { mainPath } from "../course-model.js"
 import { Board } from "../board.js"
@@ -33,14 +33,14 @@ function plans(ch) {
 }
 
 /** The note's other paragraphs, then the plans; on a compact or "foldPlans" page the plans fold away under a button. */
-function planBlocks(ch, fold = false) {
+function planBlocks(ch, fold = false, withIntro = true) {
     const p = plans(ch)
     const block = (color, text) => text ? h("div", { class: "plan" },
         h("h3", { class: "plan-side" }, h("span", { class: `side-chip ${color === "w" ? "white" : "black"}`, "aria-hidden": "true" }), sideName(color)),
         h("p", {}, figText(text))) : null
     const both = p.w || p.b ? h("div", { class: "plans" }, block("w", p.w), block("b", p.b)) : null
     return [
-        ...p.other.map(t => h("p", { class: "chapter-intro" }, figText(t))),
+        ...(withIntro ? p.other.map(t => h("p", { class: "chapter-intro" }, figText(t))) : []),
         fold && both ? h("details", { class: "plans-more" }, h("summary", {}, "Plans for White and Black"), both) : both
     ]
 }
@@ -55,6 +55,17 @@ function introTable(t) {
         t.note ? h("figcaption", { class: "muted" }, t.note) : null)
 }
 
+/**
+ * The openings a [Course] header (or a survey's "course") names. It can list several, separated by
+ * spaces: the Queen's Gambit is taught as four courses, "queens-gambit-declined slav ...".
+ */
+function courseOps(cat, ids) {
+    return String(ids || "").split(/\s+/).filter(Boolean).map(id => cat.openings.find(o => o.id === id)).filter(Boolean)
+}
+
+/** "Slav Defense Course" for a course that teaches both sides, else "Italian Game Course for White". */
+const courseTitle = (op, m) => m.side === "both" ? `${op.name} Course` : `${op.name} Course for ${m.side === "white" ? "White" : "Black"}`
+
 /** "1.d4 ♘f6 2.c4 g6": the moves of a line. */
 function moveText(nodes) {
     return figMoves(nodes.map(n => (n.color === "w" ? `${n.moveNumber}. ${n.san}` : n.san)).join(" "))
@@ -62,17 +73,21 @@ function moveText(nodes) {
 
 /**
  * [WhiteLesson "Slav: 4...Bf5"] and [BlackLesson]: the chapter of the [Course] opening's course that
- * teaches this opening, found by its title. Returns { white, black } Learn links, or null.
+ * teaches this opening, found by its title; [WhiteCourse] or [BlackCourse] names another opening
+ * for that side. Returns { white, black } Learn links, or null.
  */
 async function lessonLinks(cat, ch) {
-    const op = cat.openings.find(o => o.id === ch.headers.Course)
     const out = {}
     for (const side of ["white", "black"]) {
-        const title = ch.headers[side === "white" ? "WhiteLesson" : "BlackLesson"]
-        const meta = title && op && op.courses.find(m => m.side === side && m.available)
+        const Side = side === "white" ? "White" : "Black"
+        const title = ch.headers[`${Side}Lesson`]
+        // [BlackCourse "slav"]: the lesson is in another opening's course (the Slav Course for Black).
+        const op = courseOps(cat, ch.headers[`${Side}Course`] || ch.headers.Course)[0]
+        // The course for that side, or the course that teaches both sides.
+        const meta = title && op && op.courses.find(m => (m.side === side || m.side === "both") && m.available)
         if (!meta) continue
         const c = await loadCourse(meta.id).catch(() => null)
-        const target = c && c.chapters.find(x => x.title === title)
+        const target = c && c.chapters.find(x => x.title === title && x.side === side)
         // A line chapter opens on its main line, the first line it gives.
         const key = !target ? null : target.type === "ideas" ? `ideas-${target.index}` : c.lines.find(l => l.chapter === target)?.id
         if (key) out[side] = { title, href: `#/learn/${c.id}/${key}` }
@@ -80,42 +95,53 @@ async function lessonLinks(cat, ch) {
     return Object.keys(out).length ? out : null
 }
 
+/** "Slav" for the card "Slav Defense", "Declined" for "Queen's Gambit Declined": a variation's short name. */
+function variationName(op, ch) {
+    const title = op && ch.title.startsWith(`${op.name} `) ? ch.title.slice(op.name.length + 1) : ch.title
+    return title.replace(/ (Defense|Defence|Countergambit|Gambit|Variation)$/, "")
+}
+
 /**
  * The chapter's [Course "italian"] header as links to that opening's courses: one per built
  * course, "Course coming soon" when the catalog lists it but nothing is written yet, and
  * "Course coming later" without the header. [Course "none"] shows nothing: no course is planned.
- * With lessons (from lessonLinks), each link opens that lesson, and only those sides are shown.
+ * With lessons (from lessonLinks), each link opens that lesson, and only those sides are shown;
+ * `spelled` is the page's set of abbreviations already spelled out (see spellOut).
  */
-function courseLinks(cat, ch, lessons) {
+function courseLinks(cat, s, ch, lessons, spelled = new Set()) {
     if (ch.headers.Course === "none") return null
-    const op = cat.openings.find(o => o.id === ch.headers.Course)
-    const built = op ? op.courses.filter(m => m.available) : []
-    if (!built.length) {
-        return h("span", { class: "course-link is-soon" }, op ? `${op.name} course coming soon` : "Course coming later")
-    }
+    const ops = courseOps(cat, ch.headers.Course)
     if (lessons) {
-        return built.filter(m => lessons[m.side]).map(m => h("a", { class: "course-link is-lesson", href: lessons[m.side].href, title: "Open this lesson in Learn mode" },
-            h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }),
+        // "Queen's Gambit Slav variation as Black" over the lesson's title: the page's opening, then the card's.
+        const page = { name: s.name }
+        const variation = variationName(page, ch)
+        return ["white", "black"].filter(side => lessons[side]).map(side => h("a", { class: "course-link is-lesson", href: lessons[side].href, title: "Open this lesson in Learn mode" },
+            h("span", { class: `side-chip ${side}`, "aria-hidden": "true" }),
             h("span", { class: "lesson-label" },
-                h("span", { class: "course-meta" }, `${op.name} as ${m.side === "white" ? "White" : "Black"}`),
-                figText(lessons[m.side].title))))
+                h("span", { class: "course-meta" }, `${page.name} ${variation} variation as ${side === "white" ? "White" : "Black"}`),
+                figText(spellOut(lessons[side].title, spelled)))))
+    }
+    const built = ops.flatMap(op => op.courses.filter(m => m.available))
+    if (!built.length) {
+        return h("span", { class: "course-link is-soon" }, ops.length ? `${ops[0].name} course coming soon` : "Course coming later")
     }
     return built.map(m => h("a", { class: "course-link", href: `#/course/${m.id}`, title: m.repertoire },
         h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }),
-        `${op.name} as ${m.side === "white" ? "White" : "Black"}`))
+        m.side === "both" ? courseTitle(m.opening, m) : `${m.opening.name} as ${m.side === "white" ? "White" : "Black"}`))
 }
 
 /**
- * The full courses this page links (its own "course", then each chapter's [Course]), in a red box
- * above the map, one row per opening: "These links open the full Queen's Gambit Course for White and ...".
+ * The full courses this page links (its own "course", then each chapter's [Course], [WhiteCourse]
+ * and [BlackCourse]), in a yellow box above the map, one row per opening: "These links open the full Queen's Gambit Course for White and ...".
  * With lesson links on the page, a second sentence tells the two kinds of link apart.
  */
 function courseBox(cat, s, hasLessons) {
-    const ids = new Set([s.course, ...s.chapters.map(ch => ch.headers.Course)].filter(Boolean))
-    const ops = [...ids].map(id => cat.openings.find(o => o.id === id)).filter(op => op && op.courses.some(m => m.available))
+    const ids = [s.course, ...s.chapters.flatMap(ch => [ch.headers.Course, ch.headers.WhiteCourse, ch.headers.BlackCourse])].join(" ")
+    const ops = [...new Set(courseOps(cat, ids))].filter(op => op.courses.some(m => m.available))
     if (!ops.length) return null
     const built = op => op.courses.filter(m => m.available)
-    const title = (op, m) => `${op.name} Course for ${m.side === "white" ? "White" : "Black"}`
+    const title = courseTitle
+    const bothSides = ops.every(op => built(op).every(m => m.side === "both"))
     const one = ops.length === 1 ? ops[0] : null
     const plural = !one || built(one).length > 1
     return h("section", { class: "course-box" },
@@ -123,6 +149,7 @@ function courseBox(cat, s, hasLessons) {
         h("p", {}, [
             one ? `${plural ? "These links open" : "This link opens"} the full ${built(one).map(m => title(one, m)).join(" and the ")}.`
                 : "These links open the full courses for the openings on this page.",
+            bothSides ? " Each course teaches both sides: you play White in some lines and Black in others." : "",
             hasLessons ? " The links under each variation below open only the lesson on that variation." : ""].join("")),
         ops.map(op => h("div", { class: "course-box-links" }, built(op).map(m => h("a", { class: "btn course-box-link", href: `#/course/${m.id}`, title: m.repertoire },
             h("span", { class: `side-chip ${m.side}`, "aria-hidden": "true" }), title(op, m), h("span", { "aria-hidden": "true" }, "›"))))))
@@ -165,7 +192,7 @@ function flowchart(s, jump) {
         const content = [
             h("span", { class: "fc-move" }, moveRun(run)),
             name ? h("span", { class: "fc-name" }, figText(name),
-                course ? h("span", { class: "om-star", title: `In the ${course[1] === "white" ? "White" : "Black"} course` }, " ★") : null) : null]
+                course ? h("span", { class: "om-star", title: `Taught in a course, from ${course[1] === "white" ? "White" : "Black"}'s side` }, " ★") : null) : null]
         // Laid out like the "Map of the openings" (the om- classes), with two-line boxes.
         const box = ch
             ? h("button", { class: "om-box fc-box tone-0", type: "button", title: "Go to its board", onclick: () => jump(ch) }, content)
@@ -207,9 +234,9 @@ function openingMap(s, cat, jump) {
     }
     const stars = new Set()
     const star = ch => {
-        const op = cat.openings.find(o => o.id === ch.headers.Course)
-        if (!op) return null
-        const ready = op.courses.some(m => m.available)
+        const ops = courseOps(cat, ch.headers.Course)
+        if (!ops.length) return null
+        const ready = ops.some(op => op.courses.some(m => m.available))
         stars.add(ready ? "ready" : "soon")
         return h("span", { class: "om-star", title: ready ? "A course in this app" : "Course coming soon" }, ready ? "★" : "☆")
     }
@@ -241,6 +268,7 @@ export async function surveyView(root, ctx, id) {
     const cat = await catalog()
     const lessons = new Map(await Promise.all(s.chapters.map(async ch => [ch, await lessonLinks(cat, ch)])))
     if (!ctx.alive()) return
+    const spelled = new Set()
     const diagrams = []
     const cards = new Map()
     // A [Page "qg"] chapter stands for a page of its own (the Queen's Gambit), so its map box goes there.
@@ -287,8 +315,8 @@ export async function surveyView(root, ctx, id) {
                 const paths = chapterPaths(ch)
                 const page = pageOf(ch)
                 // A compact page lists only built courses; "coming later" on every card would be noise.
-                const courses = s.compact && !(cat.openings.find(o => o.id === ch.headers.Course)?.courses.some(m => m.available))
-                    ? null : courseLinks(cat, ch, lessons.get(ch))
+                const courses = s.compact && !courseOps(cat, ch.headers.Course).some(op => op.courses.some(m => m.available))
+                    ? null : courseLinks(cat, s, ch, lessons.get(ch), spelled)
                 const card = h("section", { class: `chapter survey-chapter${s.compact ? " is-compact" : ""}` },
                     h("a", { class: "chapter-board", href: page ? `#/survey/${page.id}` : lineHref(s, ch, 0), title: page ? page.name : "Watch the moves" }, el,
                         node ? h("span", { class: "chapter-board-caption" }, `After ${label(node)}`) : null),
@@ -337,6 +365,8 @@ export async function surveyLineView(root, ctx, id, chapterIndex, pathIndex) {
     const L = trainerLayout(root, { backHref: `#/survey/${s.id}`, backText: s.name, prev: all[at - 1] || null, next: all[at + 1] || null })
     // The ECO code belongs to the chapter's main line (the Benoni's A56 is not the Benko's).
     L.setTitle(figText(ch.title), [paths.length > 1 ? path.name : "", path === paths[0] ? ch.eco : ""].filter(Boolean).join(" · "))
+    // The card's description stays in view while the moves play; the plans stay below.
+    L.setIntro(plans(ch).other.map(t => h("p", {}, figText(t))))
 
     const nodes = path.nodes
     const state = { idx: 0 }
@@ -406,8 +436,8 @@ export async function surveyLineView(root, ctx, id, chapterIndex, pathIndex) {
                     h("a", { class: "alt-move", href: lineHref(s, ch, i) }, split ? label(split) : p.name),
                     h("span", { class: "alt-note" }, p.name))
             }))) : null,
-        h("div", { class: "survey-plans" }, planBlocks(ch)),
-        ch.headers.Course !== "none" ? h("div", { class: "survey-actions" }, courseLinks(cat, ch, lessons)) : null
+        h("div", { class: "survey-plans" }, planBlocks(ch, false, false)),
+        ch.headers.Course !== "none" ? h("div", { class: "survey-actions" }, courseLinks(cat, s, ch, lessons)) : null
     ].filter(Boolean)) // append() would write a null as the text "null"
 
     function updateControls() {
