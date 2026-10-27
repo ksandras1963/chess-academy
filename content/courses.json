@@ -199,11 +199,12 @@
                 "summary": "One course for both sides. Choose White or Black: the lines are the same, and you drill the moves of the side you choose.",
                 "overview": [
                     "Black supports ...d5 with the c-pawn and brings the c8 bishop out before ...e6. White's main tries are the Advance (3.e5), the Exchange (exd5 cxd5) and 3.Nc3.",
-                    "Advance (3.e5): learn Advance, Botvinnik-Carls Defense: 3...c5, Advance, Short Variation: 4.Nf3 and Advance, 4.Bd3. Black attacks d4, the base of White's pawn chain.",
-                    "Exchange (exd5 cxd5): learn Exchange Variation: 2.Nf3 and 4.d4, Exchange Variation: 4.Bd3 and Panov Attack: 4.c4. Club players often reach the Exchange with 2.Nf3 first.",
+                    "Advance (3.e5): 3...Bf5 is the Main line. Learn Advance, Main line, Short Variation: 4.Nf3 and Advance, Main line: 4.Bd3, then Advance, Botvinnik-Carls Defense: 3...c5. Black attacks d4, the base of White's pawn chain.",
+                    "Exchange (exd5 cxd5): learn Panov Attack: 4.c4. The quieter 4.Bd3 and 4.Nf3 (often reached with 2.Nf3) are in the Advanced section.",
                     "Main Line (3.Nc3 dxe4 4.Nxe4): learn Classical Variation: 4...Bf5 and Tartakower Variation: 5...exf6.",
-                    "Two Knights Attack: 3...dxe4 (2.Nc3 d5 3.Nf3, or 2.Nf3 d5 3.Nc3) is full of traps. After 2.Nf3 d5 3.e5, see 2.Nf3, Advance: 3.e5.",
-                    "Everything else, including the Tal Variation, the Karpov Variation and the Maróczy (Fantasy) Variation, is in the Advanced section. Lines are listed most-played first in club games, counting each game by the position it reaches."
+                    "Two Knights Attack: 3...dxe4 (2.Nc3 d5 3.Nf3, or 2.Nf3 d5 3.Nc3) is full of traps.",
+                    "Maróczy Variation (the Fantasy, 3.f3): learn Maróczy Variation: 3...dxe4 and Maróczy Variation: 3...e6.",
+                    "Everything else, including the Tal Variation, the Karpov Variation and 2.Nf3 d5 3.e5, is in the Advanced section. Lines are listed most-played first in club games, counting each game by the position it reaches."
                 ]
             }
         },
@@ -847,10 +848,10 @@
             "eco": "B10–B19",
             "moves": "1. e4 c6",
             "file": "content/ck-overview.pgn",
-            "count": "10 basic lines",
+            "count": "9 basic lines",
             "compact": true,
             "course": "caro-kann",
-            "subtitle": "1.e4 c6: the main systems and the ten lines to learn first.",
+            "subtitle": "1.e4 c6: the main systems and the nine lines to learn first.",
             "summary": "Black supports ...d5 with the c-pawn and brings the c8 bishop out before ...e6 shuts it in. Black's position is solid; White's main tries all aim to cramp Black's pieces.",
             "table": {
                 "after": "map",
@@ -861,33 +862,23 @@
                 ],
                 "rows": [
                     [
-                        "Advance, Botvinnik-Carls Defense",
-                        "2.d4 d5 3.e5 c5 4.c3 Nc6 5.Nf3 cxd4",
-                        "Black hits d4 at once, pins with ...Bg4 and brings a knight to f5."
-                    ],
-                    [
-                        "Advance, Short Variation",
-                        "3...Bf5 4.Nf3 e6 5.Be2 c5",
+                        "Advance, Main line, Short Variation",
+                        "2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2 c5",
                         "White develops calmly; Black strikes at d4 with ...c5, ...Nc6 and ...Nf5."
                     ],
                     [
-                        "Advance, 4.Bd3",
+                        "Advance, Main line, 4.Bd3",
                         "3...Bf5 4.Bd3 Bxd3 5.Qxd3 e6",
                         "White trades the light-squared bishops; Black hits d4 with ...c5 and ...Qb6."
                     ],
                     [
-                        "Exchange Variation, 2.Nf3 and 4.d4",
-                        "2.Nf3 d5 3.exd5 cxd5 4.d4 Nc6 5.Bb5 Bg4",
-                        "The same position as 2.d4 d5 3.exd5 cxd5 4.Nf3. Black pins the f3 knight with ...Bg4."
-                    ],
-                    [
-                        "Exchange Variation, 4.Bd3",
-                        "2.d4 d5 3.exd5 cxd5 4.Bd3 Nc6 5.c3 Nf6 6.Bf4",
-                        "The Carlsbad structure: Black plays on the queenside with ...b5 and ...b4."
+                        "Advance, Botvinnik-Carls Defense",
+                        "3...c5 4.c3 Nc6 5.Nf3 cxd4",
+                        "Black hits d4 at once, pins with ...Bg4 and brings a knight to f5."
                     ],
                     [
                         "Panov Attack",
-                        "4.c4 Nf6 5.Nc3 Nc6",
+                        "2.d4 d5 3.exd5 cxd5 4.c4 Nf6 5.Nc3 Nc6",
                         "White gets an isolated d-pawn. Black blockades d5 and trades pieces."
                     ],
                     [
@@ -906,12 +897,17 @@
                         "White develops first and sets traps on d6 and f7. 2.Nf3 d5 3.Nc3 is the same position."
                     ],
                     [
-                        "2.Nf3, Advance",
-                        "2.Nf3 d5 3.e5 Bg4 4.d4 e6",
-                        "Black's bishop comes out before ...e6, then ...c5 hits d4."
+                        "Maróczy Variation, 3...dxe4",
+                        "2.d4 d5 3.f3 dxe4 4.fxe4 e5 5.Nf3 Bg4",
+                        "Black takes on e4 and hits back with ...e5; White's king is weaker after f3."
+                    ],
+                    [
+                        "Maróczy Variation, 3...e6",
+                        "3.f3 e6 4.Nc3 Bb4 5.Bd2 Ne7",
+                        "Black keeps the center closed and pins the c3 knight; White answers with a3 and Bd3."
                     ]
                 ],
-                "note": "Moves follow 1.e4 c6, and continue the line above unless they start again from move 2. Lines are grouped Advance, Exchange, Main Line and Two Knights; within each group the most-played line in club games comes first, counting each game by the position it reaches. Everything else, including the Tal Variation, the Karpov Variation and the Maróczy (Fantasy) Variation, is in the course's Advanced section."
+                "note": "Moves follow 1.e4 c6, and continue the line above unless they start again from move 2. Lines are grouped Advance, Exchange, Main Line, Two Knights and Maróczy (Fantasy); within each group the most-played line in club games comes first, counting each game by the position it reaches. The Maróczy is played less than 5% of the time, but it is kept in Basic by choice. Everything else, including the Exchange with 4.Bd3 or 4.Nf3, the Tal Variation and 2.Nf3 d5 3.e5, is in the course's Advanced section."
             }
         },
         {

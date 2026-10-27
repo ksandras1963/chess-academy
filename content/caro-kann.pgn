@@ -21,6 +21,29 @@ The Carlsbad (Exchange Variation: 4.Bd3). Black attacks White's queenside pawns 
 
 The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces but is weak in the endgame, so Black blockades it on d5 and trades pieces.} *
 
+[Chapter "Advance, Main line, Short Variation: 4.Nf3"]
+[Opening "Caro-Kann Defense: Advance Variation, Short Variation"]
+[ECO "B12"]
+
+{Nigel Short's calm system: White develops with Nf3 and Be2 and castles before anything sharp. Black strikes at d4 with ...c5, ...Nc6 and a knight on f5.}
+1. e4 c6 2. d4 d5 3. e5 Bf5 {This is the Main line: the bishop gets out before ...e6.}
+4. Nf3 {This is the Short Variation.} e6
+5. Be2 {Prepares to castle. 5.Bd3 offers a bishop trade and leads to Advance, Main line: 4.Bd3.} c5 {[%cal Gc5d4] Black strikes at the base of the chain.}
+6. c3 Nc6 7. O-O cxd4 8. cxd4 {Now no White pawn can defend d4.} Nge7 {[%cal Ge7f5] Heads for f5.}
+9. Nc3 Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
+10. h3 Bxf3 11. Bxf3 Nf5 {[%cal Gf5d4,Gc6d4] Two knights hit d4 (Stockfish +0.1, equal).} *
+
+[Chapter "Advance, Main line: 4.Bd3"]
+[Opening "Caro-Kann Defense: Advance Variation"]
+[ECO "B12"]
+
+{White offers to trade the light-squared bishops at once, a popular choice at club level. Black accepts and gets a solid structure without a bad bishop.}
+1. e4 c6 2. d4 d5 3. e5 Bf5
+4. Bd3 {Offers the bishop trade.} Bxd3 5. Qxd3 e6 {With the bishops off, ...e6 shuts nothing in.}
+6. Nf3 c5 {[%cal Gc5d4] Hits d4.} 7. c3 Nc6
+8. O-O Qb6 {[%cal Gb6b2,Gb6d4] Hits d4 and b2.}
+9. b3 cxd4 10. cxd4 Nge7 {[%cal Ge7f5] Heads for f5 to hit d4 again (Stockfish +0.3, slightly better for White).} *
+
 [Chapter "Advance, Botvinnik-Carls Defense: 3...c5"]
 [Opening "Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense"]
 [ECO "B12"]
@@ -34,57 +57,6 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 7. Be2 e6 {With the bishop outside the chain, the e-pawn can move.}
 8. O-O Nge7 {[%cal Ge7f5] Heads for f5.}
 9. Nbd2 Nf5 {[%cal Gf5d4,Gc6d4] Two knights hit d4, and Black's plan is easy to follow (Stockfish +0.4, slightly better for White).} *
-
-[Chapter "Advance, Short Variation: 4.Nf3"]
-[Opening "Caro-Kann Defense: Advance Variation, Short Variation"]
-[ECO "B12"]
-
-{Nigel Short's calm system: White develops with Nf3 and Be2 and castles before anything sharp. Black strikes at d4 with ...c5, ...Nc6 and a knight on f5.}
-1. e4 c6 2. d4 d5 3. e5 Bf5 {The bishop gets out before ...e6.}
-4. Nf3 {This is the Short Variation.} e6
-5. Be2 {Prepares to castle. 5.Bd3 offers a bishop trade and leads to Advance, 4.Bd3.} c5 {[%cal Gc5d4] Black strikes at the base of the chain.}
-6. c3 Nc6 7. O-O cxd4 8. cxd4 {Now no White pawn can defend d4.} Nge7 {[%cal Ge7f5] Heads for f5.}
-9. Nc3 Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
-10. h3 Bxf3 11. Bxf3 Nf5 {[%cal Gf5d4,Gc6d4] Two knights hit d4 (Stockfish +0.1, equal).} *
-
-[Chapter "Advance, 4.Bd3"]
-[Opening "Caro-Kann Defense: Advance Variation"]
-[ECO "B12"]
-
-{White offers to trade the light-squared bishops at once, a popular choice at club level. Black accepts and gets a solid structure without a bad bishop.}
-1. e4 c6 2. d4 d5 3. e5 Bf5
-4. Bd3 {Offers the bishop trade.} Bxd3 5. Qxd3 e6 {With the bishops off, ...e6 shuts nothing in.}
-6. Nf3 c5 {[%cal Gc5d4] Hits d4.} 7. c3 Nc6
-8. O-O Qb6 {[%cal Gb6b2,Gb6d4] Hits d4 and b2.}
-9. b3 cxd4 10. cxd4 Nge7 {[%cal Ge7f5] Heads for f5 to hit d4 again (Stockfish +0.3, slightly better for White).} *
-
-[Chapter "Exchange Variation: 2.Nf3 and 4.d4"]
-[Diagram "4.d4"]
-[Opening "Caro-Kann Defense: Exchange Variation"]
-[ECO "B13"]
-
-{In club games this Exchange position, with White's knight on f3, comes more often from 2.Nf3 than from 2.d4 d5 3.exd5 cxd5 4.Nf3. Black develops with ...Nc6 and pins the f3 knight with ...Bg4.}
-1. e4 c6 {Prepares ...d5.}
-2. Nf3 {Develops and keeps the choice between d4 and d3.} d5
-3. exd5 {White's most common choice after 2.Nf3.} cxd5 {Black recaptures toward the center.}
-4. d4 {This is the Exchange Variation, the same position as 2.d4 d5 3.exd5 cxd5 4.Nf3.} Nc6 {[%cal Gc6d4] Hits d4 and prepares ...Bg4.}
-5. Bb5 {Pins the knight.} Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
-6. O-O e6 7. h3 Bxf3 {Black gives up the bishop rather than retreat.}
-8. Qxf3 Nf6 9. Bg5 Be7 10. Nc3 O-O
-11. Bxc6 bxc6 {[%cal Gc6d5] The c-pawns guard d5, and Black's rook can use the half-open b-file (Stockfish 0.0, equal).} *
-
-[Chapter "Exchange Variation: 4.Bd3"]
-[Opening "Caro-Kann Defense: Exchange Variation, Rubinstein Variation"]
-[ECO "B13"]
-
-{White trades on d5 and aims the pieces at Black's kingside. Black develops, trades White's best bishop and plays on the queenside with ...b5 and ...b4.}
-1. e4 c6 2. d4 d5 3. exd5 cxd5 {Black recaptures toward the center.}
-4. Bd3 {Develops and keeps Black's bishop off f5. 4.Nf3 is under Exchange Variation: 2.Nf3 and 4.d4.} Nc6 {[%cal Gc6d4] Hits d4.}
-5. c3 Nf6
-6. Bf4 {This is the Rubinstein Variation: the bishops on d3 and f4 aim at Black's kingside.} Bg4 {Develops with a threat against the queen.}
-7. Qb3 {Attacks b7.} Qd7 {Guards b7.}
-8. Nd2 e6 9. Ngf3 Bd6 {Offers to trade White's active bishop.}
-10. Bxd6 Qxd6 11. O-O O-O {[%cal Gb7b5,Gb5b4] Black follows with ...b5 and ...b4, the minority attack (Stockfish +0.3, slightly better for White).} *
 
 [Chapter "Panov Attack: 4.c4"]
 [Opening "Caro-Kann Defense: Panov Attack"]
@@ -137,17 +109,35 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 (8... Nxe4?? 9. Bxf7# {The knight on e5 covers d7, so Black's king has no square.})
 9. Qe2 Bd6 10. d4 O-O 11. O-O {Black is solid; White's pieces are a little more active (Stockfish +0.4, slightly better for White).} *
 
-[Chapter "2.Nf3, Advance: 3.e5"]
-[Opening "Caro-Kann Defense"]
-[ECO "B10"]
+[Chapter "Maróczy Variation: 3...dxe4"]
+[Opening "Caro-Kann Defense: Maróczy Variation"]
+[ECO "B12"]
 
-{After 2.Nf3 d5, White can gain space with 3.e5 before playing d4. Black brings the bishop to g4 before ...e6, then strikes at d4 with ...c5.}
-1. e4 c6 2. Nf3 d5
-3. e5 {Gains space, but without d4 the center is less firm.} Bg4 {The bishop comes out before ...e6.}
-4. d4 e6 {Now the pawn chain doesn't shut in the bishop.}
-5. Be2 c5 {[%cal Gc5d4] Hits the base of White's chain.}
-6. c3 {Supports d4.} Nc6
-7. O-O Nge7 {[%cal Ge7f5] The knight heads for f5 to add pressure on d4 (Stockfish +0.1, equal).} *
+{After 3...dxe4 4.fxe4, White has two center pawns and the half-open f-file, but f3 has weakened the diagonals to White's king. Black takes on e4 and hits back with ...e5 at once.}
+1. e4 c6 2. d4 d5 3. f3 {This is the Maróczy Variation, also called the Fantasy.} dxe4 4. fxe4 e5 {[%cal Ge5d4,Rd8h4] Strikes at d4 before White is developed. 5.dxe5? runs into ...Qh4+: see the Traps section.}
+5. Nf3 {Attacks e5 and covers h4.}
+(5. Nc3? exd4 {Hits the knight.} 6. Nce2 Nf6 {Black is a clean pawn up, and e4 is weak too (Stockfish −1.6, clearly better for Black).})
+(5. Bc4 Qxd4 {With no knight on f3, the d4 pawn is simply loose.} 6. Qxd4 exd4 {Black is a pawn up in an early endgame (Stockfish −0.3, slightly better for Black).})
+(5. Be3 Qh4+ {The weakened diagonal.} 6. Bf2 Qxe4+ 7. Qe2 Qxe2+ 8. Nxe2 exd4 {Black is a pawn up in the endgame (Stockfish −0.8, slightly better for Black).})
+5... Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
+6. Bc4 {Aims at f7.}
+(6. c3 Nd7 7. Be2 Ngf6 8. O-O Bd6 {The same setup: the e5 pawn holds (Stockfish +0.3, slightly better for White).})
+6... Nd7 {Supports e5 and prepares ...Ngf6.}
+7. O-O Ngf6 {Not 7...Bxf3? 8.Qxf3, when f7 comes under fire.}
+8. c3 Bd6 {Black has developed everything and keeps a strong pawn on e5 (Stockfish −0.2, equal).} *
+
+[Chapter "Maróczy Variation: 3...e6"]
+[Opening "Caro-Kann Defense: Maróczy Variation"]
+[ECO "B12"]
+
+{Black keeps the center closed with 3...e6, a French-style setup in which f3 looks odd. Black pins the c3 knight with ...Bb4, and White answers with a3 and Bd3.}
+1. e4 c6 2. d4 d5
+3. f3 {This is the Maróczy Variation, also called the Fantasy. The f-pawn guards e4.} e6 {Solid: Black keeps the center closed.}
+4. Nc3 {Defends e4 a second time.} Bb4 {[%cal Gb4c3] Pins the knight that guards e4.}
+5. Bd2 {Unpins, so the knight can take back on e4.} Ne7 {Develops the knight where e5 can't hit it.}
+6. a3 {Asks the bishop to decide.} Ba5 {Keeps the pin.}
+7. Bd3 {Guards e4.} Bb6 {[%cal Gb6d4] The bishop eyes d4.}
+8. Nge2 O-O {Both sides finish developing (Stockfish +0.2, equal).} *
 
 [Chapter "Trap, Short Variation: 7...Qxb2? 8.Qb1!"]
 [Side "white"]
@@ -156,7 +146,7 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 [Opening "Caro-Kann Defense: Advance Variation, Short Variation"]
 [ECO "B12"]
 
-{In Advance, Short Variation: 6.Be3, Black's queen on b6 eyes b2. Taking it before Black has developed the kingside costs Black dearly.}
+{In Advance, Main line, Short Variation: 6.Be3, Black's queen on b6 eyes b2. Taking it before Black has developed the kingside costs Black dearly.}
 1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 c5 6. Be3 Qb6 7. Nc3 Qxb2? {Grabs the pawn too early.}
 8. Qb1! {[%cal Gb1b2] Offers a queen trade that Black can't avoid without losing more.} Qxb1+ {8...Qb4 9.a3 Qxb1+ 10.Rxb1 reaches the same endgame. 8...Qb6? 9.dxc5 Bxc5 10.Bb5+ catches Black's king in the center (Stockfish +1.8, clearly better for White).}
 9. Rxb1 c4 10. Rxb7 {White has won back the pawn, and the rook on b7 is very active (Stockfish +1.0, clearly better for White).} *
@@ -277,7 +267,7 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 5. exd5 {Grabs a second pawn. The best defense is 5.Nc3! Bc5 6.Na4!, hitting the queen and the bishop.} Bc5 {[%cal Gc5g1,Gb6g1] Two pieces hit g1.}
 6. Ne2?? {The most common reply, and it loses at once. Only 6.Nh3! keeps White in the game (Stockfish −0.3, slightly better for Black).} Bf2+ 7. Kd2 Qe3# {Mate. The king has no squares.} *
 
-[Chapter "Advance, Tal Variation: 4.h4"]
+[Chapter "Advance, Main line, Tal Variation: 4.h4"]
 [Level "advanced"]
 [Opening "Caro-Kann Defense: Advance Variation, Tal Variation"]
 [ECO "B12"]
@@ -289,7 +279,7 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 7. Nf3 c5 {[%cal Gc5d4] Hits the base of the chain.}
 8. c3 Nc6 9. O-O cxd4 10. cxd4 Nge7 {[%cal Ge7f5] The knight heads for f5 to hit d4 (Stockfish +0.2, equal).} *
 
-[Chapter "Advance, 4.f4"]
+[Chapter "Advance, Main line: 4.f4"]
 [Side "black"]
 [Level "advanced"]
 [Opening "Caro-Kann Defense: Advance Variation"]
@@ -303,7 +293,7 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 8. Bxc6+ bxc6 {White has given up the light-squared bishop, so the f5 bishop has no rival.}
 9. O-O h5 {Stops g4, which would chase the bishop, and prepares ...Nh6 (Stockfish −0.9, slightly better for Black).} *
 
-[Chapter "Advance, Bayonet Attack: 4.g4"]
+[Chapter "Advance, Main line, Bayonet Attack: 4.g4"]
 [Level "advanced"]
 [Opening "Caro-Kann Defense: Advance Variation, Bayonet Attack"]
 [ECO "B12"]
@@ -317,19 +307,19 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 9. Qg6+ Kd7 {The king is safe enough on d7.}
 10. Qxg4 {White wins a pawn back. Black is a pawn up, but the king can no longer castle (Stockfish +0.2, equal).} *
 
-[Chapter "Advance, 4.c3"]
+[Chapter "Advance, Main line: 4.c3"]
 [Level "advanced"]
 [Opening "Caro-Kann Defense: Advance Variation"]
 [ECO "B12"]
 
-{White supports d4 before Black hits it and decides on the bishop later. After ...e6, ...c5 and a bishop trade on d3, the game often transposes into Advance, 4.Bd3.}
+{White supports d4 before Black hits it and decides on the bishop later. After ...e6, ...c5 and a bishop trade on d3, the game often transposes into Advance, Main line: 4.Bd3.}
 1. e4 c6 2. d4 d5 3. e5 Bf5
 4. c3 {Supports d4.} e6
 5. Nf3 c5 {[%cal Gc5d4] Hits the base of the chain.}
 6. Bd3 {Offers the bishop trade.} Bxd3 7. Qxd3 Nc6
-8. O-O {The same position as Advance, 4.Bd3 after 8.O-O, where Black goes on with 8...Qb6 (Stockfish +0.3, slightly better for White).} *
+8. O-O {The same position as Advance, Main line: 4.Bd3 after 8.O-O, where Black goes on with 8...Qb6 (Stockfish +0.3, slightly better for White).} *
 
-[Chapter "Advance, Van der Wiel Attack: 4.Nc3"]
+[Chapter "Advance, Main line, Van der Wiel Attack: 4.Nc3"]
 [Level "advanced"]
 [Opening "Caro-Kann Defense: Advance Variation, Van der Wiel Attack"]
 [ECO "B12"]
@@ -342,6 +332,21 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 5... c5 {[%cal Gc5d4] Hits d4.}
 6. Bb5+ Nc6 7. O-O Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
 8. h3 Bxf3 9. Qxf3 cxd4 10. Ne2 {The knight steps away from the attack and eyes d4 (Stockfish 0.0, equal).} *
+
+[Chapter "Advance, Main line, Short Variation: 6.Be3"]
+[Level "advanced"]
+[Opening "Caro-Kann Defense: Advance Variation, Short Variation"]
+[ECO "B12"]
+
+{Instead of 6.c3, White guards d4 with the bishop. Black's usual reply hits b2, and White offers the pawn for quick development.}
+1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 c5
+6. Be3 {[%cal Ge3d4] Guards d4 a second time.} Qb6 {[%cal Rb6b2,Rb6d4] Hits b2 and d4. After 6...cxd4 7.Nxd4, White castles and aims Bb5 and Nxf5 at Black's pawns.}
+7. Nc3 {Leaves b2 hanging: 7...Qxb2? walks into a trap, Trap, Short Variation: 7...Qxb2? 8.Qb1!.} Nc6 {Adds pressure on d4.}
+8. O-O {Offers the b2 pawn for fast development.} Qxb2 {If 8...c4, the rook guards b2 with 9.Rb1.}
+9. Qe1 {Keeps the queens and guards c3.} cxd4 {If 9...c4, then 10.Rb1 Qa3 11.Nb5! threatens Nc7+ (Stockfish +1.1, clearly better for White).}
+10. Bxd4 Nxd4 11. Nxd4 Bb4 {Pins the knight on c3.}
+12. Rb1 {Hits the queen.} Bxc3 13. Nxf5 {White takes the bishop first.} exf5
+14. Rxb2 Bxe1 15. Rxe1 {Black has an extra pawn but doubled f-pawns, and White's pieces are active (Stockfish +0.3, slightly better for White).} *
 
 [Chapter "Advance, Botvinnik-Carls Defense: 4.dxc5"]
 [Level "advanced"]
@@ -386,21 +391,6 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 9. O-O Ne7 10. a3 {Asks the bishop to decide.} Bxc3
 11. bxc3 {White has the bishop pair, but the a3 pawn is weak (Stockfish +0.2, equal).} *
 
-[Chapter "Advance, Short Variation: 6.Be3"]
-[Level "advanced"]
-[Opening "Caro-Kann Defense: Advance Variation, Short Variation"]
-[ECO "B12"]
-
-{Instead of 6.c3, White guards d4 with the bishop. Black's usual reply hits b2, and White offers the pawn for quick development.}
-1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 c5
-6. Be3 {[%cal Ge3d4] Guards d4 a second time.} Qb6 {[%cal Rb6b2,Rb6d4] Hits b2 and d4. After 6...cxd4 7.Nxd4, White castles and aims Bb5 and Nxf5 at Black's pawns.}
-7. Nc3 {Leaves b2 hanging: 7...Qxb2? walks into a trap, Trap, Short Variation: 7...Qxb2? 8.Qb1!.} Nc6 {Adds pressure on d4.}
-8. O-O {Offers the b2 pawn for fast development.} Qxb2 {If 8...c4, the rook guards b2 with 9.Rb1.}
-9. Qe1 {Keeps the queens and guards c3.} cxd4 {If 9...c4, then 10.Rb1 Qa3 11.Nb5! threatens Nc7+ (Stockfish +1.1, clearly better for White).}
-10. Bxd4 Nxd4 11. Nxd4 Bb4 {Pins the knight on c3.}
-12. Rb1 {Hits the queen.} Bxc3 13. Nxf5 {White takes the bishop first.} exf5
-14. Rxb2 Bxe1 15. Rxe1 {Black has an extra pawn but doubled f-pawns, and White's pieces are active (Stockfish +0.3, slightly better for White).} *
-
 [Chapter "Advance, Black's other tries"]
 [Side "white"]
 [Diagram "4...Nd7"]
@@ -417,6 +407,36 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 6. e6! {[%cal Ge5e6] A pawn sacrifice that breaks up Black's kingside pawns.} fxe6
 7. Nd2 {Hits the bishop again.} c5 8. f3 Bf5 9. g4 {Drives the bishop back.} Bg6
 10. Nxg6 {White wins the bishop pair, and Black's pawns on e6 and g6 are weak (Stockfish +1.2, clearly better for White).} *
+
+[Chapter "Exchange Variation: 2.Nf3 and 4.d4"]
+[Level "advanced"]
+[Diagram "4.d4"]
+[Opening "Caro-Kann Defense: Exchange Variation"]
+[ECO "B13"]
+
+{In club games this Exchange position, with White's knight on f3, comes more often from 2.Nf3 than from 2.d4 d5 3.exd5 cxd5 4.Nf3. Black develops with ...Nc6 and pins the f3 knight with ...Bg4.}
+1. e4 c6 {Prepares ...d5.}
+2. Nf3 {Develops and keeps the choice between d4 and d3.} d5
+3. exd5 {White's most common choice after 2.Nf3.} cxd5 {Black recaptures toward the center.}
+4. d4 {This is the Exchange Variation, the same position as 2.d4 d5 3.exd5 cxd5 4.Nf3.} Nc6 {[%cal Gc6d4] Hits d4 and prepares ...Bg4.}
+5. Bb5 {Pins the knight.} Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
+6. O-O e6 7. h3 Bxf3 {Black gives up the bishop rather than retreat.}
+8. Qxf3 Nf6 9. Bg5 Be7 10. Nc3 O-O
+11. Bxc6 bxc6 {[%cal Gc6d5] The c-pawns guard d5, and Black's rook can use the half-open b-file (Stockfish 0.0, equal).} *
+
+[Chapter "Exchange Variation: 4.Bd3"]
+[Level "advanced"]
+[Opening "Caro-Kann Defense: Exchange Variation, Rubinstein Variation"]
+[ECO "B13"]
+
+{White trades on d5 and aims the pieces at Black's kingside. Black develops, trades White's best bishop and plays on the queenside with ...b5 and ...b4.}
+1. e4 c6 2. d4 d5 3. exd5 cxd5 {Black recaptures toward the center.}
+4. Bd3 {Develops and keeps Black's bishop off f5. 4.Nf3 is under Exchange Variation: 2.Nf3 and 4.d4.} Nc6 {[%cal Gc6d4] Hits d4.}
+5. c3 Nf6
+6. Bf4 {This is the Rubinstein Variation: the bishops on d3 and f4 aim at Black's kingside.} Bg4 {Develops with a threat against the queen.}
+7. Qb3 {Attacks b7.} Qd7 {Guards b7.}
+8. Nd2 e6 9. Ngf3 Bd6 {Offers to trade White's active bishop.}
+10. Bxd6 Qxd6 11. O-O O-O {[%cal Gb7b5,Gb5b4] Black follows with ...b5 and ...b4, the minority attack (Stockfish +0.3, slightly better for White).} *
 
 [Chapter "Exchange Variation: 4.Nc3"]
 [Level "advanced"]
@@ -605,25 +625,6 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 (4... Nfd7 5. d4 {An Advance French in which Black's knight has lost time (Stockfish +1.0, clearly better for White).})
 5. Ne2 {Prepares d3 to drive the knight back.} Qb6 6. d4 {White has more space (Stockfish +0.7, slightly better for White).} *
 
-[Chapter "Maróczy Variation: 5...Bg4 6.Bc4"]
-[Side "black"]
-[Level "advanced"]
-[Opening "Caro-Kann Defense: Maróczy Variation"]
-[ECO "B12"]
-
-{After 3...dxe4 4.fxe4, White has two center pawns and the half-open f-file, but f3 has weakened the diagonals to White's king. Take on e4 and hit back with ...e5 at once.}
-1. e4 c6 2. d4 d5 3. f3 {This is the Maróczy Variation, also called the Fantasy.} dxe4 4. fxe4 e5 {[%cal Ge5d4,Rd8h4] Strikes at d4 before White is developed. 5.dxe5? runs into ...Qh4+: see the Traps section.}
-5. Nf3 {Attacks e5 and covers h4.}
-(5. Nc3? exd4 {Hits the knight.} 6. Nce2 Nf6 {Black is a clean pawn up, and e4 is weak too (Stockfish −1.6, clearly better for Black).})
-(5. Bc4 Qxd4 {With no knight on f3, the d4 pawn is simply loose.} 6. Qxd4 exd4 {Black is a pawn up in an early endgame (Stockfish −0.3, slightly better for Black).})
-(5. Be3 Qh4+ {The weakened diagonal.} 6. Bf2 Qxe4+ 7. Qe2 Qxe2+ 8. Nxe2 exd4 {Black is a pawn up in the endgame (Stockfish −0.8, slightly better for Black).})
-5... Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
-6. Bc4 {Aims at f7.}
-(6. c3 Nd7 7. Be2 Ngf6 8. O-O Bd6 {The same setup: the e5 pawn holds (Stockfish +0.3, slightly better for White).})
-6... Nd7 {Supports e5 and prepares ...Ngf6.}
-7. O-O Ngf6 {Not 7...Bxf3? 8.Qxf3, when f7 comes under fire.}
-8. c3 Bd6 {Black has developed everything and keeps a strong pawn on e5 (Stockfish −0.2, equal).} *
-
 [Chapter "Maróczy Variation: 5...Bg4 6.c3"]
 [Side "white"]
 [Diagram "5...Bg4"]
@@ -651,16 +652,6 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 5. Nf3 {Develops and attacks e5. Never 5.dxe5?, which runs into 5...Qh4+.} exd4 {Black takes the pawn.}
 6. Bc4 {This is the Maróczy Gambit: White gives the d-pawn for fast development.} Nf6 7. O-O Nbd7
 8. Qe1 {The queen heads for g3 or h4 (Stockfish +0.8, slightly better for White).} *
-
-[Chapter "Maróczy Variation: 3...e6"]
-[Level "advanced"]
-[Opening "Caro-Kann Defense: Maróczy Variation"]
-[ECO "B12"]
-
-{Black keeps the center closed with 3...e6, a French-style setup in which f3 looks odd. White develops quickly with Nc3, and the f3 pawn simply supports e4.}
-1. e4 c6 2. d4 d5 3. f3 {This is the Maróczy Variation, also called the Fantasy.} e6 {Solid: Black keeps the center closed.}
-4. Nc3 {Defends e4 a second time.} Bb4 {Pins the knight.}
-5. Bd2 {Unpins. If Black takes on e4, White takes back.} Nd7 6. Bd3 {White has a solid center (Stockfish +0.2, equal).} *
 
 [Chapter "Maróczy Variation: 3...g6 and 3...Qb6"]
 [Side "white"]
@@ -703,10 +694,23 @@ The isolated d-pawn (Panov Attack: 4.c4). White's d4 pawn gives active pieces bu
 [Opening "Caro-Kann Defense"]
 [ECO "B10"]
 
-{2.f4 often leads to Advance, 4.f4 after 2...d5 3.e5 Bf5 4.Nf3 e6 5.d4. Black develops the bishop to f5 before ...e6, as usual.}
+{2.f4 often leads to Advance, Main line: 4.f4 after 2...d5 3.e5 Bf5 4.Nf3 e6 5.d4. Black develops the bishop to f5 before ...e6, as usual.}
 1. e4 c6 2. f4 d5 {Black hits e4 at once.}
 3. e5 {Gains space.} Bf5 {The bishop comes out before ...e6.}
-4. Nf3 e6 5. d4 {The same position as Advance, 4.f4 after 5.Nf3 (Stockfish −0.2, equal).} *
+4. Nf3 e6 5. d4 {The same position as Advance, Main line: 4.f4 after 5.Nf3 (Stockfish −0.2, equal).} *
+
+[Chapter "Sidelines: 2.Nf3 and 3.e5"]
+[Level "advanced"]
+[Opening "Caro-Kann Defense"]
+[ECO "B10"]
+
+{After 2.Nf3 d5, White can gain space with 3.e5 before playing d4; 2.Nf3 d5 3.exd5 and 3.Nc3 lead to the Exchange Variation and the Two Knights Attack. Black brings the bishop to g4 before ...e6, then strikes at d4 with ...c5.}
+1. e4 c6 2. Nf3 d5
+3. e5 {Gains space, but without d4 the center is less firm.} Bg4 {The bishop comes out before ...e6.}
+4. d4 e6 {Now the pawn chain doesn't shut in the bishop.}
+5. Be2 c5 {[%cal Gc5d4] Hits the base of White's chain.}
+6. c3 {Supports d4.} Nc6
+7. O-O Nge7 {[%cal Ge7f5] The knight heads for f5 to add pressure on d4 (Stockfish +0.1, equal).} *
 
 [Chapter "Sidelines, Breyer Variation: 2.d3"]
 [Level "advanced"]
