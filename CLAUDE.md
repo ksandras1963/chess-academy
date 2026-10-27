@@ -46,8 +46,8 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 ## Key ideas pages
 
 - Every course, the Caro-Kann included. Kumar found the Key ideas pages "too long", with "multiple moves which cannot be followed by average player". In his words: "Every concept you want to show have the pieces on the board and show how the moves work (this may need multiple boards on each page - one per concept)."
-- So: one board per concept. Set up the position that shows the concept (a `[FEN]` start where it helps), then play only the few moves that show how it works. A page with several concepts has several boards. The format (`[Type "concept"]` chapters after the `[Type "ideas"]` page) is in CONTENT-GUIDE.md.
-- Every board starts from the starting position (no moves yet), moves to where the discussion starts, and then shows the key idea. In Kumar's words: "Key Ideas start with staring position (no moves yet), moves to where the discussion starts, and then the key idea." And: "It is difficult for a learner to know how you arrived at the position you are discussing." Write the moves from the start in the concept, mark the position the idea is about with `[Diagram "10...Nf8"]`, and give it no `[FEN]`.
+- So: one board per concept. Each board starts from the initial position and plays the moves that lead to the idea, then only the few moves that show how it works. A page with several concepts has several boards. The format (`[Type "concept"]` chapters after the `[Type "ideas"]` page) is in CONTENT-GUIDE.md.
+- Every board starts from the initial position, never from a set-up position. In Kumar's words: "For all key ideas start board from starting position (no moves yet) and advance to where you are discussing the idea. It is difficult for a learner to know how you arrived at the position you are discussing." And: "Key Ideas start with staring position (no moves yet), moves to where the discussion starts, and then the key idea." And: "Yes, do this for all courses."
 - Every Key ideas page in every opening course is converted to this format. In Kumar's words: "Convert all Key ideas in every opening course to this format."
 
 ## Names

@@ -23,8 +23,11 @@ export function ideasPage(root, ctx, c, page, { trail, prev, next }) {
 
 function conceptSection(cp, i) {
     const nodes = mainPath(cp.root)
-    // The position the idea is about: the [Diagram] move, reached from the opening position.
-    const target = cp.diagram?.node ? nodes.indexOf(cp.diagram.node) + 1 : 0
+    // The position the idea is about: the [Diagram] move, or else, on a board that starts from the
+    // initial position, the first move with a note ("The idea starts from this position.").
+    const fromStart = !cp.headers.FEN
+    const noted = fromStart ? nodes.findIndex(n => n.note.text || n.note.arrows.length || n.note.squares.length) + 1 : 0
+    const target = cp.diagram?.node ? nodes.indexOf(cp.diagram.node) + 1 : noted
     const boardEl = h("div", { class: "board-frame" })
     const move = h("h3", { class: "cm-move" })
     const note = h("div", { class: "concept-note", "aria-live": "polite" })
@@ -97,7 +100,7 @@ function conceptSection(cp, i) {
             ? [label(node) + (node.symbol || ""), h("span", { class: "cm-who" }, sideName(node.color))]
             : ["Starting position"]))
         const atTarget = target && idx === target
-        note.replaceChildren(...(atTarget && !n.text ? paras("This is the position the idea is about.") : paras(n.text)))
+        note.replaceChildren(...(atTarget && !n.text ? paras("The idea starts from this position.") : paras(n.text)))
         moveButtons.forEach((b, k) => b.classList.toggle("is-current", k + 1 === idx))
         first.disabled = prev.disabled = idx === 0
         next.disabled = last.disabled = idx >= nodes.length
