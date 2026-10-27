@@ -369,6 +369,17 @@ for (const op of catalog.openings.filter(o => o.puzzles && !onlyCourse)) {
 if (engine) await writeFile(cachePath, JSON.stringify(cache))
 engine?.quit()
 
+// Key ideas boards should say whose idea they show ([Idea "white" | "black" | "both"], Kumar's rule).
+const untagged = []
+for (const op of catalog.openings) for (const m of op.courses || []) {
+    if (!m.file || (onlyCourse && m.id !== onlyCourse)) continue
+    try {
+        const c = buildCourse(m, await readFile(path.join(root, m.file), "utf8"))
+        const n = c.chapters.filter(ch => ch.type === "concept" && !ch.idea).length
+        if (n) untagged.push(`${m.id} (${n})`)
+    } catch { /* reported above */ }
+}
+if (untagged.length) report.push("## Key ideas boards without an [Idea] tag", "", untagged.map(u => `- ${u}`).join("\n"), "")
 const header = [
     "# Content validation report", "",
     `Generated ${new Date().toISOString().slice(0, 16).replace("T", " ")} · engine ${engine ? `Stockfish, depth ${depth}` : "skipped"}`, "",
@@ -376,6 +387,7 @@ const header = [
 ]
 await writeFile(path.join(root, "tools", "report.md"), header.concat(report).join("\n"))
 console.log(`\n${errors.length ? errors.join("\n") : "No errors."}\nReport: tools/report.md`)
+if (untagged.length) console.log(`Note: Key ideas boards without an [Idea] tag: ${untagged.join(", ")}`)
 if (!errors.length && !onlyCourse) {
     const b = await buildStandalone()
     console.log(`Rebuilt ${b.file} (${(b.bytes / 1024).toFixed(0)} KB).`)
