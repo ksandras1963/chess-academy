@@ -296,7 +296,10 @@ a.course-link:hover { border-color: var(--brass); }
 .course .flowchart { margin-top: 32px; }
 .course-table { margin-top: 32px; }
 .course-table .survey-table { max-width: none; }
-.course-why + .flowchart, .course-table + .hub-links { margin-top: 32px; }
+.course-sections, .course-drills { margin-top: 32px; }
+.course-sections h2, .course-drills h2 { font-size: 1.3125rem; }
+.course-sections .hub-links { margin-top: 12px; }
+.course-drills .course-actions { margin-top: 12px; }
 .ideas-list { margin-top: 32px; }
 .ideas-list h2 { font-size: 1.3125rem; }
 .ideas-list p { margin-top: 4px; font-size: 0.9375rem; }
@@ -386,7 +389,7 @@ a.chapter-board:focus-visible { outline: none; }
     .chapter-board { position: sticky; top: calc(var(--topbar) + 16px); }
     .chapter-board-caption { font-size: 0.9375rem; }
 }
-.chapter h2 { font-size: 1.3125rem; display: flex; align-items: baseline; gap: 10px; }
+.chapter h2 { font-size: 1.3125rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
 .tag {
     font-family: var(--sans); font-size: 0.75rem; font-weight: 600;
     padding: 2px 8px; border-radius: 4px; border: 1px solid var(--flag); color: var(--flag);

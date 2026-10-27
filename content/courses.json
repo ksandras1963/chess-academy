@@ -270,40 +270,10 @@
             "puzzles": "content/queens-gambit-declined-puzzles.pgn",
             "furtherStudy": [
                 {
-                    "title": "Chess Openings: The Queen's Gambit",
-                    "by": "Kevin Butler, thechesswebsite",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=HdHWAuQRG7E"
-                },
-                {
-                    "title": "The Queen's Gambit Chess Opening Explained in 3 Minutes by a National Chess Master",
-                    "by": "NM Nelson Lopez, Chess Vibes",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=KEmkjOL_hCc"
-                },
-                {
                     "title": "How To Play The Queen's Gambit",
-                    "by": "IM Levy Rozman, GothamChess",
+                    "by": "Anna Cramling",
                     "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=mtsabsZ4wG4"
-                },
-                {
-                    "title": "Every Queen's Gambit Player Must Know These 9 Ideas",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=ONB_yxkpAws"
-                },
-                {
-                    "title": "Learn the Queen's Gambit Chess Opening: Traps & Errors",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=oRfGbul6MUs"
-                },
-                {
-                    "title": "Chess Openings: Learn to Play the Queen's Gambit",
-                    "by": "NM Solomon Ruddell, The Chess Giant",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=EWHYgn9fR10"
+                    "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI"
                 },
                 {
                     "title": "Queen's Gambit Strategy for Black | Plans, Traps, and Setup Explained",
@@ -312,34 +282,16 @@
                     "url": "https://www.youtube.com/watch?v=ETG8cCyvnAg"
                 },
                 {
-                    "title": "5 Best Chess Opening Traps in the Queen's Gambit",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "title": "How To Play The Queen's Gambit",
+                    "by": "IM Levy Rozman, GothamChess",
                     "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=ICXoGdCcsFI"
+                    "url": "https://www.youtube.com/watch?v=mtsabsZ4wG4"
                 },
                 {
                     "title": "Queen's Gambit | Basic Ideas, Plans & Strategies | Chess Openings",
                     "by": "IM Andrey Ostrovskiy, Chessfactor",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=ITQwXN9hXms"
-                },
-                {
-                    "title": "Queen's Gambit Opening Mistakes You Must Avoid (Traps Included!)",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=8Ui8lD8wJsU"
-                },
-                {
-                    "title": "Top 5 Chess Opening Traps in the Queen's Gambit",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=iqIMpVnhWjc"
-                },
-                {
-                    "title": "How To Play The Queen's Gambit",
-                    "by": "Anna Cramling",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI"
                 }
             ],
             "courses": [
@@ -350,7 +302,7 @@
                     "repertoire": "As White: the Exchange Variation and the minority attack. As Black: the Tartakower Variation.",
                     "summary": "1.d4 d5 2.c4 e6: Black declines the pawn and holds d5 with the e-pawn.",
                     "why": {
-                        "text": "As Black, 2...e6 holds d5 with a pawn and keeps the position solid. The price is the c8 bishop, shut in behind e6: the Tartakower brings it out with ...b6 and ...Bb7.\n\nAs White, the Exchange Variation (4.cxd5 exd5) fixes the pawns and gives you clear plans: the minority attack, or f3 and e4."
+                        "text": "As Black, 2...e6 holds the center with a pawn and keeps the position solid. The cost is the c8 bishop, shut in behind e6, so Black's plans are about freeing it.\n\nAs White, taking on d5 early fixes the pawn structure. You know your plans in advance, and there are few early tactics to calculate."
                     },
                     "table": {
                         "columns": [
@@ -435,7 +387,7 @@
                     "repertoire": "As White: 3.Nf3 and 4.Nc3, then cxd5 and Bg5 against ...e6. As Black: the Czech Variation (4...dxc4 5.a4 Bf5).",
                     "summary": "1.d4 d5 2.c4 c6: Black guards d5 with the c-pawn.",
                     "why": {
-                        "text": "As Black, ...c6 guards d5 and keeps the c8 bishop's diagonal open, so the bishop can come out to f5 before ...e6 shuts it in. Solid, with a few exact lines to know.\n\nAs White, 3.Nf3 and 4.Nc3 lead to familiar plans: against ...e6, take on d5 and play as in the Exchange Variation of the Declined."
+                        "text": "As Black, ...c6 guards d5 and keeps the c8 bishop's diagonal open, so the bishop can come out before ...e6 shuts it in. Solid, with a few exact lines to know.\n\nAs White, the Slav often turns into positions you know from the Declined, so the same plans work."
                     },
                     "table": {
                         "columns": [
@@ -489,10 +441,10 @@
             "summary": "Black takes the c-pawn and gives up the center for a moment. White wins the pawn back, and Black uses the time to hit back with ...e5 or ...c5.",
             "furtherStudy": [
                 {
-                    "title": "How To Play The Queen's Gambit",
-                    "by": "IM Levy Rozman, GothamChess",
+                    "title": "Chess Openings: The Queen's Gambit",
+                    "by": "Kevin Butler, thechesswebsite",
                     "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=mtsabsZ4wG4"
+                    "url": "https://www.youtube.com/watch?v=HdHWAuQRG7E"
                 },
                 {
                     "title": "Learn the Queen's Gambit Chess Opening: Traps & Errors",
@@ -511,36 +463,6 @@
                     "by": "NM Solomon Ruddell, The Chess Giant",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=EWHYgn9fR10"
-                },
-                {
-                    "title": "5 Best Chess Opening Traps in the Queen's Gambit",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=ICXoGdCcsFI"
-                },
-                {
-                    "title": "Queen's Gambit Opening Mistakes You Must Avoid (Traps Included!)",
-                    "by": "GM Igor Smirnov, Remote Chess Academy",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=8Ui8lD8wJsU"
-                },
-                {
-                    "title": "The Queen's Gambit Chess Opening Explained in 3 Minutes by a National Chess Master",
-                    "by": "NM Nelson Lopez, Chess Vibes",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=KEmkjOL_hCc"
-                },
-                {
-                    "title": "Chess Openings: The Queen's Gambit",
-                    "by": "Kevin Butler, thechesswebsite",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=HdHWAuQRG7E"
-                },
-                {
-                    "title": "How To Play The Queen's Gambit",
-                    "by": "Anna Cramling",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=NTOPdpKMuUI"
                 }
             ],
             "courses": [
@@ -551,7 +473,7 @@
                     "repertoire": "As White: 3.e3 and Bxc4. As Black: ...e5 at once, and the Classical setup against 3.Nf3.",
                     "summary": "1.d4 d5 2.c4 dxc4: Black takes the pawn and gives up the center for a moment.",
                     "why": {
-                        "text": "As Black, taking on c4 frees your pieces, and ...e5 hits White's center at once. White wins the pawn back, but you develop quickly.\n\nAs White, 3.e3 opens the diagonal of the f1 bishop, and Bxc4 wins the pawn back at once."
+                        "text": "As Black, giving up the center for a moment frees your pieces, and you get to hit back at White's center early. White wins the pawn back, but you develop quickly.\n\nAs White, you win the pawn back at once and keep the center, with a small, safe edge."
                     },
                     "table": {
                         "columns": [
@@ -642,7 +564,7 @@
                     "repertoire": "As White: the Rubinstein System (4.cxd5, Nf3, g3 and Bg2). As Black: the Classical Tarrasch.",
                     "summary": "1.d4 d5 2.c4 e6 3.Nc3 c5: Black hits White's center at once.",
                     "why": {
-                        "text": "As Black, 3...c5 strikes at the center before White is ready. You accept an isolated pawn on d5 and get free, active pieces in return.\n\nAs White, take on d5, then play g3 and Bg2: the bishop on the long diagonal presses on the isolated pawn."
+                        "text": "As Black, 3...c5 fights for the center at once. You accept a weak pawn in return for quick, active development.\n\nAs White, you get a lasting target: Black's isolated pawn on d5, which only pieces can guard."
                     },
                     "table": {
                         "columns": [
@@ -664,7 +586,7 @@
                             [
                                 "4.cxd5 exd5",
                                 "38% as Black",
-                                "Develop with ...Nc6, ...Nf6 and ...Be7, and castle. Your active pieces make up for the isolated pawn."
+                                "Develop with ...Nc6, ...Nf6 and ...Be7, and castle. Avoid needless trades."
                             ],
                             [
                                 "Early dxc5: 4.dxc5 or 5.dxc5",
