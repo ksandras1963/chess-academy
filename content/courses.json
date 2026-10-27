@@ -246,10 +246,10 @@
                     "id": "french",
                     "side": "both",
                     "file": "content/french.pgn",
-                    "repertoire": "Six main lines, each drilled as White and as Black: the Advance, Exchange, Winawer, Tarrasch, Classical and Rubinstein.",
+                    "repertoire": "Six main lines, each drilled as White and as Black: the Advance, Exchange, Winawer, Tarrasch, Steinitz and Rubinstein.",
                     "summary": "1.e4 e6 2.d4 d5: Black builds a solid center and hits back with ...c5.",
                     "why": {
-                        "text": "As White, you choose the game: the Advance (3.e5) gains space, the Exchange (3.exd5) keeps it simple, and 3.Nc3 or 3.Nd2 keep the tension in the center.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5. Against 3.Nc3 you choose between the sharp Winawer, the Classical and the solid Rubinstein."
+                        "text": "As White, you choose the game: the Advance (3.e5) gains space, the Exchange (3.exd5) keeps it simple, and 3.Nc3 or 3.Nd2 keep the tension in the center.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5. Against 3.Nc3 you choose between the sharp Winawer, 3...Nf6 (met by 4.e5, the Steinitz) and the solid Rubinstein."
                     },
                     "table": {
                         "columns": [
@@ -276,12 +276,12 @@
                             [
                                 "Tarrasch: 3.Nd2",
                                 "Your choice as White; 6% as Black",
-                                "White supports d4 with c3. After 3...Nf6 4.e5 Nfd7, Black breaks with ...c5 and ...f6, and after exf6 Nxf6 Black has the f-file while White aims at e5."
+                                "White supports d4 with c3. After 3...Nf6 4.e5 Nfd7, Black breaks with ...c5 and ...f6; after exf6 Nxf6, Black has the f-file and a strong knight on e4, while White aims at e5."
                             ],
                             [
-                                "Classical: 3.Nc3 Nf6",
+                                "Steinitz: 3.Nc3 Nf6 4.e5",
                                 "28% as White, with 3.Nc3; your choice as Black",
-                                "In the Steinitz, 4.e5 Nfd7 5.f4, White builds a big center. Black hits it with ...c5 and ...Nc6, then plays ...a6 and ...b5 on the queenside."
+                                "White builds a big center with 4.e5 Nfd7 5.f4. Black hits d4 with ...c5 and ...Nc6, then plays ...a6, ...b5 and ...b4 on the queenside, and trades the c8 bishop with ...Ba6."
                             ],
                             [
                                 "Rubinstein: 3.Nc3 dxe4",

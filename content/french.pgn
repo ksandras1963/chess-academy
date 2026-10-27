@@ -5,7 +5,7 @@
 {Why play the Advance? White grabs space at once, keeps Black's king's knight off f6, and gets an easy plan on the kingside. It also saves study: against 3.e5, Black answers 3...c5 in nine games out of ten, and the same structure follows. Step through the moves to see the logic.}
 1. e4 {Takes the center and opens lines for the queen and the f1 bishop.} e6 {[%cal Ge6d5] Prepares ...d5. Compared with 1...e5, Black keeps f7 out of reach of a bishop on c4. The cost is the c8 bishop, which is now shut in behind the pawn on e6.}
 2. d4 {Two pawns in the center. Black can't stop it.} d5 {[%cal Rd5e4] Black attacks e4. White must take on d5, push to e5, or protect the pawn.}
-3. e5 {[%cal Ge5f6,Ge5d6] [%csl Yf6,Yc8] The Advance. The pawn takes f6 away from Black's king's knight and locks Black's c8 bishop behind the pawns on e6 and d5. In return Black gets a clear target, the pawn on d4 at the base of White's chain, and hits it at once with 3...c5. The other choices, 3.Nc3 and 3.Nd2, lead to the Winawer, the Classical and the Tarrasch, where both sides need a lot of theory.} *
+3. e5 {[%cal Ge5f6,Ge5d6] [%csl Yf6,Yc8] The Advance. The pawn takes f6 away from Black's king's knight and locks Black's c8 bishop behind the pawns on e6 and d5. In return Black gets a clear target, the pawn on d4 at the base of White's chain, and hits it at once with 3...c5. The other choices, 3.Nc3 and 3.Nd2, lead to the Winawer, the Steinitz and the Tarrasch, where both sides need a lot of theory.} *
 
 [Chapter "Key ideas: Plans in the Advance"]
 [Side "white"]
@@ -175,25 +175,28 @@ Watch for White's mistakes here. 6.h3? Bxf3 7.Qxf3 Nxd4 wins the d4 pawn (Stockf
 [Opening "French Defense: Tarrasch Variation, Closed Variation, Main Line"]
 [ECO "C06"]
 
-{3.Nd2 also guards e4, but it keeps the c-pawn free, so White can support d4 with c3 without spoiling the queenside. After 3...Nf6 4.e5 Nfd7, Black attacks the chain with ...c5 and then ...f6. In this main line the f-file opens after 9.exf6 Nxf6: Black gets free piece play, while White aims at e5 and the pawn on e6. Against 3.Nd2, Black can also take on e4: that is the Rubinstein lesson.}
+{3.Nd2 also guards e4, but it keeps the c-pawn free, so White can support d4 with c3 without spoiling the queenside. After 3...Nf6 4.e5 Nfd7, Black attacks the chain with ...c5 and then ...f6. In this main line the f-file opens after 9.exf6 Nxf6: Black gets free piece play and a strong knight on e4, while White aims at e5 and the pawn on e6. Against 3.Nd2, Black can also play 3...c5 (not covered yet) or take on e4, the Rubinstein lesson.}
 1. e4 e6 2. d4 d5 3. Nd2 {The Tarrasch. The knight guards e4 and leaves the c-pawn free.} Nf6 {Attacks e4 and invites e5.}
 4. e5 Nfd7 5. Bd3 c5 6. c3 {[%cal Gc3d4] Supports d4 with a pawn, which the knight on d2 makes possible.} Nc6
 7. Ne2 {[%cal Gd2f3] The knight goes to e2, not f3: White keeps f4 free, and the other knight can come to f3 to defend d4.} cxd4 8. cxd4 f6 {[%cal Gf6e5] Black hits the head of the chain.}
 9. exf6 {The quieter main line. 9.Nf4 is a sharp alternative.} Nxf6 {Black's pieces come out freely, and the f-file is half-open for Black's rook.}
-10. O-O Bd6 11. Nf3 O-O 12. Bf4 {Offers to trade Black's good bishop.} Bxf4 13. Nxf4 {[%csl Ye5,Ye6] White controls e5 and eyes the pawn on e6, while Black has the f-file. Stockfish +0.4, slightly better for White.} *
+10. O-O Bd6 11. Nf3 O-O 12. Bf4 {Offers to trade Black's good bishop.} Bxf4 13. Nxf4 {[%csl Ye5,Ye6] White controls e5 and eyes the pawn on e6, while Black has the f-file.} Ne4 {[%cal Gf8f4] A strong square for the knight, and the rook on f8 now attacks the knight on f4. 14.Bxe4? dxe4 attacks the knight on f3, and Black wins material (Stockfish −4.5).}
+14. Qc1 {Guards the knight on f4.} Ng5 15. Nxg5 Qxg5 {Black's pieces are active, and White has the weaker king position for now. Slightly better for White (Stockfish +0.3).} *
 
-[Chapter "Classical: 3.Nc3 Nf6"]
+[Chapter "Steinitz: 3.Nc3 Nf6 4.e5"]
 [Diagram "3...Nf6"]
 [Side "both"]
 [Type "line"]
 [Opening "French Defense: Classical Variation, Steinitz Variation"]
 [ECO "C11"]
 
-{3...Nf6 attacks e4. In the Steinitz Variation, 4.e5 Nfd7 5.f4, White builds a big center with pawns on d4, e5 and f4. Black hits it with ...c5 and ...Nc6, then expands on the queenside with ...a6 and ...b5. White's other main move, 4.Bg5, is not covered yet.}
-1. e4 e6 2. d4 d5 3. Nc3 Nf6 {The Classical. The knight develops and attacks e4.}
-4. e5 {The Steinitz Variation: White gains space and drives the knight back.} Nfd7 5. f4 {[%cal Gf4e5] White supports e5 with a pawn and gains space on the kingside.} c5 {[%cal Gc5d4] Black hits d4, the base of the chain.}
+{After 3...Nf6, the Steinitz Variation, 4.e5 Nfd7 5.f4, gives White a big center with pawns on d4, e5 and f4. Black hits it with ...c5 and ...Nc6, then expands on the queenside with ...a6, ...b5 and ...b4. d4 is White's main weakness, e6 is Black's, and Black's c8 bishop often comes out to a6 to trade White's good bishop. White's other answer to 3...Nf6, 4.Bg5, is not covered yet.}
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 {The knight develops and attacks e4.}
+4. e5 {The Steinitz Variation: White gains space and drives the knight back.} Nfd7 {The only good square: on d7 the knight supports both breaks, ...c5 and ...f6.} 5. f4 {[%cal Gf4e5] White supports e5 with a pawn and gains space on the kingside.} c5 {[%cal Gc5d4] Black hits d4, the base of the chain.}
 6. Nf3 Nc6 7. Be3 {Guards d4 a third time.} a6 {Prepares ...b5 to gain space on the queenside.}
-8. Qd2 {Connects the rooks and prepares long castling.} b5 9. dxc5 {Releases the tension before Black's pressure on d4 grows.} Bxc5 10. Bxc5 Nxc5 {Black has traded the dark-squared bishops and has a good knight on c5. Equal (Stockfish 0.0).} *
+8. Qd2 {Connects the rooks and prepares long castling.} b5 9. dxc5 {Releases the tension before Black's pressure on d4 grows.} Bxc5 10. Bxc5 Nxc5 {Black has traded the dark-squared bishops and has a good knight on c5.}
+11. Qf2 {Attacks the knight.} Qb6 12. Bd3 b4 {[%cal Gb5b4] Chases the knight from c3. 12...Nxd3+? 13.cxd3 only strengthens d4 (Stockfish +0.6, against 0.0 after 12...b4).}
+13. Ne2 a5 {Black has gained a lot of space on the queenside.} 14. O-O Ba6 {[%cal Ga6d3] Offers to trade Black's bad bishop for White's good one.} 15. Kh1 {Steps off the diagonal of Black's queen. Equal (Stockfish −0.1), and Black has the easier plans on the queenside.} *
 
 [Chapter "Rubinstein: 3.Nc3 dxe4"]
 [Side "both"]
@@ -637,5 +640,5 @@ Qxb2 {[%cal Gb2a1] Hits the rook on a1, and the bishop on h6 is still hanging.}
 (3. exd5 exd5 {[%course both] Exchange Variation})
 (3. Nc3 Bb4 {[%course both] Winawer Variation})
 (3. Nd2 {[%course both] Tarrasch Variation})
-(3. Nc3 Nf6 {[%course both] Classical Variation})
+(3. Nc3 Nf6 4. e5 {[%course both] Steinitz Variation})
 (3. Nc3 dxe4 {[%course both] Rubinstein Variation}) *
