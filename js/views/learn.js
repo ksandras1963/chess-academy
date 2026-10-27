@@ -32,8 +32,11 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
         steps.prev = link(ideas[at - 1])
         steps.next = link(ideas[at + 1])
     }
-    const back = base.line ? sectionLink(c, base.line) : { href: `#/course/${c.id}`, text: sideLabel(c) }
-    const L = trainerLayout(root, { backHref: back.href, backText: back.text, ...steps })
+    // Back to the line's section, then the course page (whose map opens lessons directly), then Main menu.
+    const coursePage = { href: `#/course/${c.id}`, text: sideLabel(c) }
+    const section = base.line ? sectionLink(c, base.line) : coursePage
+    const trail = section.href === coursePage.href ? [coursePage] : [section, coursePage]
+    const L = trainerLayout(root, { trail, ...steps })
     L.setTitle(spellOut(base.title), base.sub)
     // A line's introduction stays in view while the moves are played; a Key ideas page shows its text
     // as the starting position's note instead.
