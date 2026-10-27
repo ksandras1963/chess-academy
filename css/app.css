@@ -500,9 +500,10 @@ button.om-box:hover, button.om-box:focus-visible, a.om-box:hover, a.om-box:focus
 .fc-box .om-move { font-size: 0.9375rem; }
 .fc-name { font-family: var(--serif); font-size: 0.9375rem; color: var(--ink-dim); }
 button.fc-box .fc-name, a.fc-box .fc-name { color: var(--ink); }
-/* An advanced or rare line ([%level advanced]): a dashed box. */
-.fc-box.is-advanced { border-style: dashed; border-left-style: dashed; }
-.fc-dash { display: inline-block; width: 22px; height: 12px; vertical-align: -1px; border: 1.5px dashed var(--ink-dim); border-radius: 3px; }
+/* An advanced or rare line ([%level advanced]): a blue left edge (tone-3) instead of gold. */
+.fc-blue { display: inline-block; width: 4px; height: 14px; vertical-align: -2px; border-radius: 2px; background: var(--tone); }
+.fc-key .fc-blue { --tone: #5d9bd8; }
+:root[data-theme="light"] .fc-key .fc-blue { --tone: #2e6fbf; }
 .fc-scroll { overflow-x: auto; }
 /* Left to right, boxes of one width line up in columns, like a printed flowchart. */
 @media (min-width: 760px) { .fc-box { min-width: 13rem; } }

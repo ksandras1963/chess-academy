@@ -172,7 +172,7 @@ A family with many variations gets its own page, reached from a `[Page]` chapter
 A family page starts with a flowchart instead of the map: a chapter with `[Type "map"]`, written as one game with branches. Every move with a note becomes a box showing the moves since the box before it and the note as its name; an empty note `{}` makes a box with moves only. A box named exactly like an opening card on the page (its title or a `[Lines]` name) opens that card, and `[%course white]`, `[%course black]` or `[%course both]` in a note stars a line the course teaches. Two more commands, used on an opening's Introduction page (`content/kid-overview.pgn`):
 
 - `[%lesson Mar del Plata, Bayonet Attack: 9.b4]` makes the box open that chapter of the page's `course` in Learn mode. The checker reports a title that is not a chapter of the course.
-- `[%level advanced]` draws the box dashed, for a line in the course's Advanced section.
+- `[%level advanced]` gives the box a blue edge instead of a gold one, for a line in the course's Advanced section.
 
 ```
 [Chapter "Map of the variations"]

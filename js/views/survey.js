@@ -154,7 +154,7 @@ function flowchart(s, jump, linked) {
         for (const p of chapterPaths(ch)) byName.set(p.name, ch)
     }
     let starred = false
-    let dashed = false
+    let anyAdvanced = false
     // [%lesson Chapter title] opens that chapter of the page's course in Learn mode.
     const lessonHref = title => {
         const ch = linked && linked.chapters.find(x => x.title === title)
@@ -177,7 +177,7 @@ function flowchart(s, jump, linked) {
         const course = /\[%course (white|black|both)\]/.exec(raw)
         if (course) starred = true
         const advanced = /\[%level advanced\]/.test(raw)
-        if (advanced) dashed = true
+        if (advanced) anyAdvanced = true
         const lesson = /\[%lesson ([^\]]+)\]/.exec(raw)
         const href = lesson ? lessonHref(lesson[1].trim()) : null
         const content = [
@@ -185,21 +185,23 @@ function flowchart(s, jump, linked) {
             name ? h("span", { class: "fc-name" }, figText(name),
                 course ? h("span", { class: "om-star", title: course[1] === "both" ? "In the full course" : `In the ${course[1] === "white" ? "White" : "Black"} course` }, " ★") : null) : null]
         // Laid out like the "Map of the openings" (the om- classes), with two-line boxes.
-        const cls = `om-box fc-box${advanced ? " is-advanced" : ""}`
+        // An advanced or rare line has a blue edge; a line that opens a lesson or a card, a gold one.
+        const cls = `om-box fc-box${advanced ? " is-advanced tone-3" : ""}`
+        const tone = advanced ? "" : " tone-0"
         const box = href
-            ? h("a", { class: `${cls} tone-0`, href, title: "Open this lesson" }, content)
+            ? h("a", { class: cls + tone, href, title: "Open this lesson" }, content)
             : ch
-                ? h("button", { class: `${cls} tone-0`, type: "button", title: "Go to its board", onclick: () => jump(ch) }, content)
+                ? h("button", { class: cls + tone, type: "button", title: "Go to its board", onclick: () => jump(ch) }, content)
                 : h("span", { class: cls }, content)
         const kids = boxesBelow(node)
         return h("li", { class: "om-item" }, box, kids.length ? h("ul", { class: "om-kids" }, kids.map(k => item(k, node))) : null)
     }
     return h("section", { class: "opening-map flowchart", "aria-labelledby": "flowchart-title" },
         h("h2", { id: "flowchart-title" }, "Map of the variations"),
-        h("p", { class: "muted" }, linked ? "Tap a line with a gold edge to open its lesson." : "Tap a name with a gold edge to see its board."),
+        h("p", { class: "muted" }, linked ? "Tap a line to open its lesson." : "Tap a name with a gold edge to see its board."),
         h("div", { class: "fc-scroll" }, h("ul", { class: "om-tree" }, boxesBelow(s.flow.root).map(k => item(k, s.flow.root)))),
         starred ? h("p", { class: "fc-key" }, h("span", { class: "om-star", "aria-hidden": "true" }, "★"), " A line taught in the full courses above the map") : null,
-        dashed ? h("p", { class: "fc-key" }, h("span", { class: "fc-dash", "aria-hidden": "true" }), " Dashed box: an advanced or rare line, in the course's Advanced section") : null)
+        anyAdvanced ? h("p", { class: "fc-key" }, h("span", { class: "fc-blue", "aria-hidden": "true" }), " Blue edge: an advanced or rare line, in the course's Advanced section") : null)
 }
 
 /**
