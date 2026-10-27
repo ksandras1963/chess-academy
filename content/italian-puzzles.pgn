@@ -42,7 +42,7 @@
 6... Na5 {Saves the knight and hits the bishop on c4.}
 (6... axb5! {The point of ...a6.} 7. Bxb5 Nf6 8. d3 O-O 9. O-O {Black has the open a-file and is ahead in development. Stockfish: −0.5, slightly better for Black.})
 7. Bxf7+? {The trick from puzzle 1. Here it doesn't work.}
-(7. Nxe5! {White's best, though the game stays balanced. Stockfish: +0.2, equal.})
+(7. Nxe5! {White's best: it wins back the pawn and keeps a small edge. Stockfish: +0.6, slightly better for White.})
 7... Kxf7! {Take it. With the h-pawn still on h7, the square g6 is covered, so there is no knight fork against your king and rook.}
 (7... Kf8? {Declining lets White keep the extra pawn, and your king has already lost the right to castle.} 8. Bb3 axb5 9. d4 Nxb3 10. Qxb3 {White has won back the pawn, keeps the f7 pawn, and Black's king is stuck on f8. Stockfish: +1.8, clearly better for White.})
 8. Nxe5+ {Takes the pawn with check, as in puzzle 1.}
@@ -234,7 +234,7 @@
 (5. O-O?! {Safe, but it lets Black off the hook.} 5... Be7 6. d4 Bg4 7. dxe5 dxe5 {Black has caught up in development. Stockfish: +0.3, slightly better for White.})
 (5. d4?! {Natural, but it misses the chance.} 5... Bg4 6. Bb5 Nd7 7. d5 Nd4 {Stockfish: +0.3, slightly better for White.})
 5... d5 {The only decent defense: it blocks the bishop's line to f7.}
-(5... Be6 {Covers f7 with the bishop, but the bishop is taken.} 6. Nxe6 fxe6 7. Bxe6 {White has won a pawn, and Black's king has lost its shelter. Stockfish: +2.6, winning for White.})
+(5... Be6 {Covers f7 with the bishop, but the bishop is taken.} 6. Nxe6 fxe6 7. Bxe6 {White has won a pawn, and Black's king has lost its shelter. Stockfish: +1.8, clearly better for White.})
 (5... Qe7 {Defends f7 with the queen, but it isn't enough.} 6. Bxf7+ Kd7 7. Be6+ Ke8 8. Bxc8 Rxc8 {White has won a pawn and the bishop pair, and Black can no longer castle. Stockfish: +2.9, winning for White.})
 6. exd5 {[%hint The pawn on d5 attacks your bishop. Which capture keeps the pressure on f7?] Takes the pawn and keeps the bishop aimed at f7.}
 (6. Nxd5? {Trades off the attacker on d5, but Black's pieces come alive.} 6... Nxd5 7. d3 Bb4+ 8. c3 {Stockfish: −0.4, slightly better for Black.})
