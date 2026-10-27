@@ -1092,7 +1092,7 @@
                 ],
                 "note": "Share: how often each defense comes up in games that reach 1.d4 Nf6 2.c4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. The King's Indian figure counts every 2...g6 game except the Grünfeld (3.Nc3 d5); the others are measured on the move order shown."
             },
-            "summary": "Black develops the knight first and keeps the choice of setup open. The map shows where each defense starts; the table below it shows how often each one comes up."
+            "summary": "Black develops the knight first and keeps the choice of setup open. The name is older than it looks: as early as 1884, writers called these openings the “Indian Defence” after Moheschunder Bannerjee, a Bengali player who met the Scottish master John Cochrane in hundreds of games in Calcutta between 1848 and 1860. Savielly Tartakower made the name popular in his 1924 book Die hypermoderne Schachpartie."
         },
         {
             "id": "d4-uncommon",
