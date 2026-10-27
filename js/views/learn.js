@@ -10,8 +10,6 @@ import { sideLabel, sectionLink } from "./course.js"
 export async function learnView(root, ctx, courseId, lineKey, startAt) {
     const c = await loadCourse(courseId)
     if (!ctx.alive()) return
-    const learner = c.side === "white" ? "w" : "b"
-
     let base
     if (lineKey.startsWith("ideas-")) {
         const ch = c.chapters[Number(lineKey.slice(6))]
@@ -22,6 +20,8 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
         if (!line) throw new Error("This line no longer exists; it may have been edited. Go back to the course to see the current lines.")
         base = { nodes: line.nodes, start: line.chapter.root, title: line.chapter.title, sub: figText(line.variation), line }
     }
+    // The side the learner plays here: the chapter's (a course for both sides mixes them).
+    const learner = base.line ? base.line.learner : c.chapters[Number(lineKey.slice(6))].learner
 
     // Key ideas pages link to the previous and next idea, so they can be read in order.
     const steps = {}

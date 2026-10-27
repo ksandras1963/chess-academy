@@ -1,0 +1,36 @@
+[Puzzle "The Greek gift"]
+[Type "puzzle"]
+[Theme "Attack the king"]
+[Solve "9.Bxh7+"]
+[End "10.Ng5+"]
+[Hint "Black's knight has left f6, the best defender of h7. Which piece can take there with check?"]
+
+1. d4 d5 2. c4 Nf6 3. cxd5 Nxd5 4. Nf3 e6 5. e4 Nf6 6. Nc3 Bb4 7. Bd3 O-O?? 8. e5 Nd5? 9. Bxh7+! {[%cal Gd3h7] The bishop takes h7 with check.}
+(9. O-O? {Too slow: Black covers h7 with ...f5.} 9... Be7 10. Qc2 f5 11. exf6 Nxf6 {White is still better, but the attack is gone. Stockfish: +2.6, winning for White.})
+9... Kxh7 10. Ng5+ {[%hint The king is on h7. Which piece checks it and opens the way for your queen?] [%cal Gd1h5] The knight checks, and the queen comes to h5 next.} Kg8 11. Qh5 {The queen joins the knight against h7 and f7. Black has to give up the queen to avoid mate.} Qxg5 12. Bxg5 {White has won the queen for a bishop and a knight. Stockfish: +7.0, winning for White.}
+*
+
+[Puzzle "Give up the queen"]
+[Type "puzzle"]
+[Theme "Tactics"]
+[Solve "8.Nxe5"]
+[End "9.Bb5+"]
+[Hint "Black's bishop pins your knight to the queen. Is the queen really lost if the knight moves?"]
+
+1. d4 d5 2. c4 Nf6 3. cxd5 Nxd5 4. Nf3 Nc6 5. e4 Nf6 6. Nc3 Bg4? 7. d5 Ne5? 8. Nxe5! {[%cal Ge5c6,Ge5f7] Takes the knight and lets Black take the queen.}
+(8. Be2?! {Saves the queen, but lets Black trade knights.} 8... Nxf3+ 9. gxf3 Bh3 10. Qb3 {White is still better, but 8.Nxe5 wins much more. Stockfish: +2.4, winning for White.})
+8... Bxd1 9. Bb5+ {[%hint Your queen is gone. Which check forces Black to block with a pawn?] The check forces ...c6.} c6 10. dxc6 a6 11. c7+ axb5 12. cxd8=Q+ Rxd8 13. Nxd1 {White has won back the queen and is a knight up. Stockfish: +5.8, winning for White.}
+*
+
+[Puzzle "The Lasker trap"]
+[Type "puzzle"]
+[Theme "Win the queen"]
+[Solve "6...exf2+"]
+[End "7...fxg1=N+"]
+[Hint "White's king is still on e1. Push the pawn with check."]
+
+1. d4 d5 2. c4 e5 3. dxe5 d4 4. e3? Bb4+ 5. Bd2 dxe3 6. Bxb4? exf2+! {[%cal Ge3f2] The pawn checks the king and attacks the knight on g1.}
+(6... Qxd1+? {Trades queens, and White keeps the extra piece.} 7. Kxd1 exf2 8. Nf3 {Stockfish: +6.2, winning for White.})
+7. Ke2 fxg1=N+! {[%hint The pawn can promote. Which new piece comes with check?] A knight, with check. A new queen would be taken by the rook at once.}
+8. Rxg1 Bg4+ {The bishop check wins White's queen on d1. Stockfish: −10.2, winning for Black.}
+*

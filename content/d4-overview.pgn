@@ -3,7 +3,7 @@
 [Opening "Queen's Gambit"]
 [ECO "D06"]
 [Diagram "2.c4"]
-[Course "queens-gambit"]
+[Course "queens-gambit-declined queens-gambit-accepted slav tarrasch"]
 [Page "qg"]
 
 {White offers the c-pawn to lure Black's d-pawn away from the center. Black declines it with 2...e6 or 2...c6, or accepts it with 2...dxc4.}

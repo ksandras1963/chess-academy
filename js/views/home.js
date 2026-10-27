@@ -32,7 +32,7 @@ export async function homeView(root, ctx) {
         const shown = s.moves ? `After ${figMoves(s.moves)}` : lead ? figText(chapters[0].title) : s.name
         // The openings on the page, the ones with a course in full ink: "Italian · Sicilian · French …"
         const names = chapters.map((ch, k) => [k ? " · " : "",
-            h("span", { class: openingIds.has(ch.headers.Course) ? "fm-taught" : null }, shortName(ch.title))])
+            h("span", { class: (ch.headers.Course || "").split(/\s+/).some(id => openingIds.has(id)) ? "fm-taught" : null }, shortName(ch.title))])
         const li = h("li", { class: "opening first-move", tabindex: "-1" },
             h("div", { class: "op-head" }, h("h2", {}, s.name), h("span", { class: "eco", title: "ECO codes" }, s.eco)),
             names.length ? h("p", { class: "fm-names" }, names) : h("p", { class: "op-summary" }, s.subtitle),

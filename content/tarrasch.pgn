@@ -1,13 +1,14 @@
 [Chapter "Key ideas: Why the Tarrasch"]
+[Side "black"]
 [Type "ideas"]
 
 {Why play the Tarrasch? Most defenses to the Queen's Gambit hold the pawn on d5 and wait. The Tarrasch hits back at once: 3...c5 attacks d4 and claims a share of the center. When White takes on d5 and Black takes back with the e-pawn, the c8 bishop has an open diagonal, and Black's pieces come out quickly: ...Nc6, ...Nf6, ...Be7 and castling.
 
-The price is a pawn weakness. Once the c-pawns are traded, Black's d-pawn has no pawn beside it on the c- or e-file. It is an isolated pawn: only pieces can guard it, and White can put a piece on d4, the square in front of it. In return Black gets free, active pieces, and most of this course is about using them.
+The price is a pawn weakness. Once the c-pawns are traded, Black's d-pawn has no pawn beside it on the c- or e-file. It is an isolated pawn: only pieces can guard it, and White can put a piece on d4, the square in front of it. In return Black gets free, active pieces, and most of Black's side of this course is about using them.
 
-Compare the Queen's Gambit Declined with 3...Nf6, taught in our Queen's Gambit Course for Black. It is more solid, but the c8 bishop stays shut in behind e6. The Tarrasch frees that bishop at once and gives a more open game.
+Compare the Queen's Gambit Declined with 3...Nf6, taught in our Queen's Gambit Declined Course. It is more solid, but the c8 bishop stays shut in behind e6. The Tarrasch frees that bishop at once and gives a more open game.
 
-Stockfish rates the position after 3...c5 as slightly better for White (+0.3). At club level the results are close to the Declined: in Lichess games between players rated 1800 to 2199, White scores 52% after 3...c5 and 53% after 3...Nf6. In his Queen's Gambit video, IM Andrey Ostrovskiy says the Tarrasch is no longer thought to be very good for Black, because White's g3 and Bg2 setup keeps up the pressure on d5. Stockfish is milder: about +0.3 to +0.5 in that main line, slightly better for White, and the other lines in this course are equal or slightly better for Black.
+Stockfish rates the position after 3...c5 as slightly better for White (+0.3). At club level the results are close to the Declined: in Lichess games between players rated 1800 to 2199, White scores 52% after 3...c5 and 53% after 3...Nf6. In his Queen's Gambit video, IM Andrey Ostrovskiy says the Tarrasch is no longer thought to be very good for Black, because White's g3 and Bg2 setup keeps up the pressure on d5. Stockfish is milder: about +0.3 to +0.5 in that main line, slightly better for White, and the other Black lines in this course are equal or slightly better for Black.
 
 The defense is named after Siegbert Tarrasch, who held it to be the correct answer to the Queen's Gambit and accepted the isolated pawn in return for active pieces. Boris Spassky played it in his 1969 world championship match against Tigran Petrosian, which he won. Garry Kasparov used it in his Candidates matches of 1983 and 1984, and Anatoly Karpov beat it in game 7 of their 1984 world championship match. More recently, Daniil Dubov revived a sharp version, 7...cxd4 8.Nxd4 Bc5 in the main line, now called the Dubov Tarrasch.
 
@@ -16,12 +17,13 @@ Step through the moves to see the idea.}
 
 White's main replies: 4.cxd5 in about four games in ten, 4.e3 and 4.Nf3 in about one in five each, and 4.dxc5 in one in eight. Each has its own chapter.
 
-Other move orders. After 3.cxd5 exd5 4.Nc3, play 4...c5, and you are in the course. After 3.Nf3, 3...c5 reaches the course if White plays Nc3 soon (4.Nc3, or 4.cxd5 exd5 5.Nc3), but White can also keep the knight on b1 with 4.e3 or 4.g3. If you would rather avoid those lines, answer 3.Nf3, 3.g3 and 3.Bf4 with 3...Nf6, as in the Queen's Gambit Course for Black.}
+Other move orders. After 3.cxd5 exd5 4.Nc3, play 4...c5, and you are in the course. After 3.Nf3, 3...c5 reaches the course if White plays Nc3 soon (4.Nc3, or 4.cxd5 exd5 5.Nc3), but White can also keep the knight on b1 with 4.e3 or 4.g3. If you would rather avoid those lines, answer 3.Nf3, 3.g3 and 3.Bf4 with 3...Nf6, as in the Queen's Gambit Declined Course.}
 4. cxd5 exd5 {[%cal Gc8h3] [%csl Yd5] The c8 bishop's diagonal is open. The d5 pawn becomes isolated as soon as the c-pawns are traded, by ...cxd4 or by dxc5.}
 5. Nf3 {This is the Two Knights Variation, White's most common fifth move. The other main try is 5.dxc5, which you answer with 5...d4!.} Nc6 {[%cal Gc6d4] Develops and adds pressure on d4.}
 6. g3 {[%cal Gf1g2,Gg2d5] This is the Rubinstein System, the classical main line. The bishop goes to g2, where it presses on d5. At club level it comes up in fewer than one Tarrasch game in twenty.} Nf6 {This is the Prague Variation. Next come ...Be7 and castling. The plans are on the next page.} *
 
 [Chapter "Key ideas: Playing with the isolated pawn"]
+[Side "black"]
 [Type "ideas"]
 [FEN "r1bqr1k1/pp2bpp1/2n2n1p/3p4/3N4/2N1B1P1/PP2PPBP/R2Q1RK1 w - - 2 12"]
 
@@ -36,6 +38,7 @@ Nxc6. If White trades on c6 and Black takes back with the b-pawn, the isolated p
 The e3 lines. After 6.e3 or 4.e3, White's c1 bishop sits behind the pawn on e3, so there is less pressure on d5. Black's bishop often goes to d6, where it aims at h2.} *
 
 [Chapter "Key ideas: Pawn structures"]
+[Side "black"]
 [Type "ideas"]
 [FEN "rnb1k2r/pp3ppp/1q6/2b3B1/3p4/5N2/PP2PPPP/R2QKB1R w KQkq - 2 10"]
 
@@ -43,7 +46,7 @@ The e3 lines. After 6.e3 or 4.e3, White's c1 bishop sits behind the pawn on e3, 
 
 The isolated pawn on d5. After ...cxd4, or dxc5 and ...Bxc5, Black's d-pawn stands alone. Its strengths: the e4 and c4 squares for Black's pieces, the half-open c- and e-files for the rooks, and a free c8 bishop. Its weaknesses: pieces must guard it, and d4, the square in front of it, is a safe home for a White knight. Keep pieces on, and push ...d4 when it opens lines. See the previous page.
 
-Pawns on c6 and d5, and hanging pawns. If White trades a knight on c6 and Black takes back with the b-pawn, the d5 pawn is no longer isolated: the pawn on c6 guards it, and Black's rook can use the open b-file. Later ...c5 turns them into hanging pawns on c5 and d5: two pawns side by side with no pawns next to them. Guard them with pieces, keep them side by side, and push ...d4 only when it gains something, because a pawn left behind becomes weak. Our Queen's Gambit Course for Black has the same hanging pawns.
+Pawns on c6 and d5, and hanging pawns. If White trades a knight on c6 and Black takes back with the b-pawn, the d5 pawn is no longer isolated: the pawn on c6 guards it, and Black's rook can use the open b-file. Later ...c5 turns them into hanging pawns on c5 and d5: two pawns side by side with no pawns next to them. Guard them with pieces, keep them side by side, and push ...d4 only when it gains something, because a pawn left behind becomes weak. Our Queen's Gambit Declined Course has the same hanging pawns.
 
 The ...d4 wedge. When White takes on c5 early (4.dxc5, 5.dxc5 or 6.dxc5), push ...d4 instead of taking back. The pawn gains space and drives White's knight from c3 to a4, b5, e4 or b1, and Black wins the c5 pawn back later with ...Bxc5 or ...Qa5+. This position shows the result: Black's pieces are active, and the d4 pawn cramps White. At club level Black scores 59% after 5.dxc5 d4.
 
@@ -52,6 +55,7 @@ The ...c4 majority. Instead of taking on d4, Black can sometimes push ...c4, as 
 When White keeps the tension. Against 4.e3 and 4.Nf3, White often develops without taking on d5. Wait until White's f1 bishop has moved, then take on c4: Bxc4 costs White a second move with the same bishop. Expand with ...a6, ...b5 and ...Bb7. If ...cxd4 follows and White takes back with the e-pawn, it is White who has the isolated pawn, on d4.} *
 
 [Chapter "Key ideas: Tricks and traps"]
+[Side "black"]
 [Type "ideas"]
 [FEN "rnbqkbnr/pp3ppp/8/1NP5/3p4/8/PP2PPPP/R1BQKBNR b KQkq - 1 6"]
 
@@ -69,7 +73,21 @@ Bg5 and the d5 pawn. After 4.cxd5 exd5 5.Nf3 Nc6 6.Bg5, block with 6...Be7!, and
 
 The poisoned d5 pawn. In the main line, after 9.Bg5 cxd4 10.Nxd4 h6 11.Bxf6 Bxf6, the d5 pawn looks loose. 12.Nxd5?? loses a piece to 12...Bxd4, because the knight on c6 guards the bishop (Stockfish −5.8, winning for Black).} *
 
+[Chapter "Rubinstein System: 4.cxd5 and 6.g3"]
+[Side "white"]
+[Type "line"]
+[Opening "Tarrasch Defense: Classical Variation, Carlsbad Variation"]
+[ECO "D34"]
+
+{In about one game in twenty after 3.Nc3, Black plays 3...c5 and accepts an isolated pawn on d5 in return for free piece play. Take on d5, then play g3 and Bg2: the bishop on the long diagonal hits d5, the weak pawn. Against 4...cxd4, take the pawn and keep it.}
+1. d4 d5 2. c4 e6 3. Nc3 c5 {This is the Tarrasch Defense.}
+4. cxd5 exd5
+(4... cxd4 {This is the Schara Gambit. Black gives a pawn for quick development.} 5. Qxd4 Nc6 6. Qd1 {The queen goes home, out of reach of Black's pieces.} exd5 7. Qxd5 {White is a pawn up. Black has some development in return, but not enough. Stockfish: +0.5, slightly better for White.})
+5. Nf3 Nc6 6. g3 {[%cal Gf1g2,Gg2d5] This is the Rubinstein System. The bishop goes to g2, where it hits d5.} Nf6 {This is the Prague Variation.}
+7. Bg2 Be7 8. O-O O-O 9. Bg5 {[%cal Gg5f6,Rf6d5] This is the Carlsbad Variation. The bishop hits f6, a defender of d5. White aims to trade on f6, then win d5 or blockade it. Stockfish: +0.3, slightly better for White.} *
+
 [Chapter "Symmetrical Variation: 4.e3"]
+[Side "black"]
 [Diagram "4...Nc6"]
 [Type "line"]
 [Opening "Tarrasch Defense: Symmetrical Variation"]
@@ -84,6 +102,7 @@ The poisoned d5 pawn. In the main line, after 9.Bg5 cxd4 10.Nxd4 h6 11.Bxf6 Bxf6
 9. Be2 {About half. Against 9.Bd3 or 9.Bb3, play 9...Bb7 just the same (Stockfish 0.0 and −0.2, equal).} Bb7 {[%cal Gb7g2] The bishop takes the long diagonal. Next come ...Be7, castling, and ...cxd4 or ...Qc7. Stockfish: 0.0, equal.} *
 
 [Chapter "5.dxc5: 5...d4"]
+[Side "black"]
 [Type "line"]
 [Opening "Queen's Gambit Declined: Tarrasch Defense"]
 [ECO "D32"]
@@ -98,6 +117,7 @@ Against 6.Nb5?, 6...Qa5+! wins the knight, and against 6.Qa4+, block with 6...Nc
 9. Bg5 {Half of White players. Against 9.g3, play 9...O-O (Stockfish −0.3); against 9.a3, 9...Nc6 (Stockfish −0.6).} Qb6 {[%cal Gb6b2,Gc5f2] The queen hits b2, and with the bishop it eyes f2. Stockfish: −0.6, slightly better for Black.} *
 
 [Chapter "4.dxc5: 4...d4"]
+[Side "black"]
 [Type "line"]
 [Opening "Tarrasch Defense"]
 [ECO "D32"]
@@ -113,6 +133,7 @@ Against 6.Nb5?, 6...Qa5+! wins the knight, and against 6.Qa4+, block with 6...Nc
 7. Nf3 {Two White players in three. Against 7.b4?!, which tries to keep the c5 pawn, play 7...a5! and break up White's queenside (Stockfish −1.3, clearly better for Black). Against 7.e3, take on e3: 7...dxe3 8.Bxe3 Qxb2 (Stockfish −0.6, slightly better for Black).} Bxc5 {The pawn is back, and Black's pieces are more active. Stockfish: −0.4, slightly better for Black.} *
 
 [Chapter "4.Nf3: 5.Bf4 and 5.Bg5"]
+[Side "black"]
 [Diagram "5.Bf4"]
 [Type "line"]
 [Level "advanced"]
@@ -134,6 +155,7 @@ Against 5.e3, play 5...Nf6 (see Symmetrical Variation: 4.e3). Against 5.cxd5, ta
 7. e3 {About a third of White players. Against 7.Nxc6, take back with 7...bxc6 (Stockfish −0.1, equal). Against 7.Ndb5, hit back with 7...e5! (Stockfish −0.1, equal). Against 7.cxd5, take back with 7...Nxd5 (Stockfish +0.1, equal).} Bb4 {[%cal Gb4c3] Pins the knight on c3 and prepares to castle. Next come ...O-O and ...dxc4 or ...Ne4. Stockfish: 0.0, equal.} *
 
 [Chapter "Rubinstein System: 6.g3"]
+[Side "black"]
 [Type "line"]
 [Level "advanced"]
 [Opening "Tarrasch Defense: Classical Variation, Main Line"]
@@ -166,6 +188,7 @@ Against 11.Bxf6, take back with the bishop: 11...Bxf6 (Stockfish +0.1, equal). T
 12. Rc1 {The most common move. Against 12.h3, which stops ...Bg4, play 12...Bd6 (Stockfish +0.1, equal). Against 12.Qb3, 12...Na5 hits the queen (Stockfish +0.4). Against 12.Qa4, 12...Bd7 (Stockfish +0.3). Against 12.Nxc6, take back with 12...bxc6: the pawn on c6 now guards d5 (Stockfish 0.0, equal).} Bf8 {[%cal Gf8b4,Ge8e2] The bishop steps off the e-file, so the rook sees e3 and e2, and from f8 it guards the king. Next come ...Bg4 or ...Bb4. Stockfish: +0.5, slightly better for White.} *
 
 [Chapter "Two Knights: 6.e3"]
+[Side "black"]
 [Type "line"]
 [Level "advanced"]
 [Opening "Tarrasch Defense: Symmetrical Variation"]
@@ -180,6 +203,7 @@ Against 7.dxc5, take back: 7...Bxc5 (Stockfish −0.1, equal). Against 7.Be2, ta
 9. O-O {About half. Against 9.Qa4, play 9...a6 and ask the bishop to decide (Stockfish −0.4, slightly better for Black). Against 9.Nxc6 or 9.Bxc6, take back with the b-pawn: the pawn on c6 now guards d5, and the b-file opens for Black's rook (Stockfish −0.4 and −0.5, slightly better for Black).} Bd6 {[%cal Gd6h2] The bishop aims at h2, and Black castles next. Stockfish: +0.1, equal.} *
 
 [Chapter "Two Knights: 6.dxc5"]
+[Side "black"]
 [Type "line"]
 [Level "advanced"]
 [Opening "Tarrasch Defense: Two Knights Variation"]
@@ -193,20 +217,24 @@ Against 7.dxc5, take back: 7...Bxc5 (Stockfish −0.1, equal). Against 7.Be2, ta
 9. Bg5 {[%cal Gg5f6] Hits the queen. Against 9.e3, take the pawn: 9...Bxc5 (Stockfish 0.0, equal). Against 9.g3, also 9...Bxc5 (Stockfish −0.2, equal).} Qf5 {From f5 the queen watches c5 along the fifth rank and stays out of the bishop's reach.}
 10. e3 {About one White player in four. Against 10.Rc1 or 10.g3, take the pawn too: 10...Bxc5 (Stockfish −0.5 and −0.3, slightly better for Black).} Bxc5 {The pawn is back, and Black's pieces are active. Stockfish: 0.0, equal.} *
 
-[Chapter "Trap: 6.Nb5? and ...Qa5+"]
+[Chapter "Trap: 5.dxc5 and the d-pawn"]
+[Side "black"]
 [Type "trap"]
 [Opening "Queen's Gambit Declined: Tarrasch Defense"]
 [ECO "D32"]
 
-{After 5.dxc5 d4, one White player in eight jumps to b5 with 6.Nb5?, eyeing c7 and d4. It loses a piece. 6...Qa5+! gives check and attacks the knight at the same time, and White can't deal with both. Eight Black players in ten find it. The same check works after 5.Nf3 Nc6 6.dxc5 d4 7.Nb5? Qa5+! (Stockfish −4.1, winning for Black).}
-1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. dxc5 d4
-6. Nb5? {[%cal Gb5c7,Gb5d4] Eyes c7 and d4. 6.Ne4 is the right move (see 5.dxc5: 5...d4).} Qa5+! {[%cal Ga5e1,Ga5b5] Check, and the queen hits the knight.}
-7. Qd2?! {Half of White players block with the queen. 7.Bd2 loses a little less, but White is lost either way.}
-(7. Bd2 Qxb5 {Black is a knight up for a pawn. Stockfish: −4.3, winning for Black.})
-(7. Nc3? {The knight comes back to block the check, but now the d4 pawn takes it.} dxc3 {Black has won a knight. After White takes back on c3, Black is a knight up for two pawns. Stockfish: −6.4, winning for Black.})
-7... Qxb5 {Black is a knight up for a pawn. Stockfish: −5.9, winning for Black.} *
+{After 4.cxd5 exd5 5.dxc5, the d5 pawn has lost its partner on c5, and White's queen and knight both hit it. Four Black players in ten take back with 5...Bxc5? and lose the pawn to 6.Qxd5. Push it instead: 5...d4!. Then watch for the check 6.Qa4+, and block with the knight, not the bishop. At this level White scores 60% after 5...Bxc5, but only 41% after 5...d4.}
+1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. dxc5 d4! {[%cal Gd4c3] Saves the pawn by pushing it, and kicks the knight.}
+(5... Bxc5? {Natural, but now only the queen guards d5.} 6. Qxd5 {White has won a pawn, and the queen hits the bishop on c5.} Nd7 {The best defense: the knight guards the bishop and comes into play. Black is still a pawn down. Stockfish: +0.6, slightly better for White.}
+(6... Qxd5?? {More than half of Black players trade queens here.} 7. Nxd5 {[%cal Gd5c7] Now the knight threatens Nc7+, forking king and rook, and Black will lose more material. Stockfish: +1.9, clearly better for White.}))
+6. Qa4+ {About one White player in eleven checks. Most play 6.Ne4 (see 5.dxc5: 5...d4).} Nc6! {Blocks with the knight, which also guards d4.}
+(6... Bd7? {Blocks with the wrong piece: d4 is now unguarded.} 7. Qxd4 {White has won a pawn. Stockfish: +0.9, slightly better for White.})
+7. Ne4 {Two White players in three.}
+(7. Nb5 Bxc5 {Takes back on c5. The knight on b5 can't do much: the d4 pawn is guarded twice. Stockfish: −1.2, clearly better for Black.})
+7... Qd5 {[%cal Gd5e4,Gd5c5] Hits the knight on e4 and the pawn on c5. Stockfish: −0.4, slightly better for Black.} *
 
 [Chapter "Trap: 5.Nb5 and ...e5!"]
+[Side "black"]
 [Type "trap"]
 [Opening "Tarrasch Defense"]
 [ECO "D32"]
@@ -229,22 +257,8 @@ Against 8.Nxe5, 8...Bxd4 wins a knight for two pawns (Stockfish −4.4). Against
 8... Bxf2+! {[%cal Gd8d1] Drags the king to f2, so it no longer guards the queen.}
 9. Kxf2 Qxd1 {Black has won the queen for a bishop. Stockfish: −7.9, winning for Black.} *
 
-[Chapter "Trap: 5.dxc5 and the d-pawn"]
-[Type "trap"]
-[Opening "Queen's Gambit Declined: Tarrasch Defense"]
-[ECO "D32"]
-
-{After 4.cxd5 exd5 5.dxc5, the d5 pawn has lost its partner on c5, and White's queen and knight both hit it. Four Black players in ten take back with 5...Bxc5? and lose the pawn to 6.Qxd5. Push it instead: 5...d4!. Then watch for the check 6.Qa4+, and block with the knight, not the bishop. At this level White scores 60% after 5...Bxc5, but only 41% after 5...d4.}
-1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. dxc5 d4! {[%cal Gd4c3] Saves the pawn by pushing it, and kicks the knight.}
-(5... Bxc5? {Natural, but now only the queen guards d5.} 6. Qxd5 {White has won a pawn, and the queen hits the bishop on c5.} Nd7 {The best defense: the knight guards the bishop and comes into play. Black is still a pawn down. Stockfish: +0.6, slightly better for White.}
-(6... Qxd5?? {More than half of Black players trade queens here.} 7. Nxd5 {[%cal Gd5c7] Now the knight threatens Nc7+, forking king and rook, and Black will lose more material. Stockfish: +1.9, clearly better for White.}))
-6. Qa4+ {About one White player in eleven checks. Most play 6.Ne4 (see 5.dxc5: 5...d4).} Nc6! {Blocks with the knight, which also guards d4.}
-(6... Bd7? {Blocks with the wrong piece: d4 is now unguarded.} 7. Qxd4 {White has won a pawn. Stockfish: +0.9, slightly better for White.})
-7. Ne4 {Two White players in three.}
-(7. Nb5 Bxc5 {Takes back on c5. The knight on b5 can't do much: the d4 pawn is guarded twice. Stockfish: −1.2, clearly better for Black.})
-7... Qd5 {[%cal Gd5e4,Gd5c5] Hits the knight on e4 and the pawn on c5. Stockfish: −0.4, slightly better for Black.} *
-
 [Chapter "Trap: 6.Bg5 and the d5 pawn"]
+[Side "black"]
 [Type "trap"]
 [Opening "Queen's Gambit Declined: Tarrasch Defense"]
 [ECO "D32"]
@@ -262,3 +276,16 @@ Against 8.Nxe5, 8...Bxd4 wins a knight for two pawns (Stockfish −4.4). Against
 Next, against 8.e3, 8...c4 gains space on the queenside (Stockfish −0.2, equal). Against 8.dxc5, push 8...d4! 9.Ne4 O-O (Stockfish 0.0, equal).}
 (7... Qxe7?? {The queen no longer guards d5.} 8. Nxd5 {[%cal Gd5e7,Gd5c7] White has won a pawn, and the knight hits the queen. Stockfish: +2.1, winning for White.}) *
 
+[Chapter "Trap: 6.Nb5? and ...Qa5+"]
+[Side "black"]
+[Type "trap"]
+[Opening "Queen's Gambit Declined: Tarrasch Defense"]
+[ECO "D32"]
+
+{After 5.dxc5 d4, one White player in eight jumps to b5 with 6.Nb5?, eyeing c7 and d4. It loses a piece. 6...Qa5+! gives check and attacks the knight at the same time, and White can't deal with both. Eight Black players in ten find it. The same check works after 5.Nf3 Nc6 6.dxc5 d4 7.Nb5? Qa5+! (Stockfish −4.1, winning for Black).}
+1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. dxc5 d4
+6. Nb5? {[%cal Gb5c7,Gb5d4] Eyes c7 and d4. 6.Ne4 is the right move (see 5.dxc5: 5...d4).} Qa5+! {[%cal Ga5e1,Ga5b5] Check, and the queen hits the knight.}
+7. Qd2?! {Half of White players block with the queen. 7.Bd2 loses a little less, but White is lost either way.}
+(7. Bd2 Qxb5 {Black is a knight up for a pawn. Stockfish: −4.3, winning for Black.})
+(7. Nc3? {The knight comes back to block the check, but now the d4 pawn takes it.} dxc3 {Black has won a knight. After White takes back on c3, Black is a knight up for two pawns. Stockfish: −6.4, winning for Black.})
+7... Qxb5 {Black is a knight up for a pawn. Stockfish: −5.9, winning for Black.} *

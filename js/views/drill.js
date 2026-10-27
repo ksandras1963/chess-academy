@@ -56,7 +56,7 @@ async function runSession(root, ctx, items, { backHref, backText }) {
         return
     }
     const L = trainerLayout(root, { backHref, backText })
-    const board = new Board(L.boardEl, { orientation: items[0].course.side === "white" ? "w" : "b" })
+    const board = new Board(L.boardEl, { orientation: items[0].line.learner })
     ctx.onLeave(() => board.destroy())
     const check = () => { if (!ctx.alive()) throw ABORT }
     const results = []
@@ -84,8 +84,8 @@ async function runSession(root, ctx, items, { backHref, backText }) {
         if (e !== ABORT) throw e
     }
 
-    async function drillLine({ course, line }, k, total) {
-        const learner = course.side === "white" ? "w" : "b"
+    async function drillLine({ line }, k, total) {
+        const learner = line.learner // a course for both sides turns the board from line to line
         const nodes = line.nodes
         const missed = new Set()
         let hints = 0
