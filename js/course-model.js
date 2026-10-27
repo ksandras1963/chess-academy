@@ -129,7 +129,9 @@ function buildChapter(game, index, course) {
         headers: h,
         root
     }
-    chapter.diagram = ["ideas", "concept", "puzzle", "map"].includes(type) ? null : chapterDiagram(chapter)
+    // A concept names the position its idea is about with [Diagram "10...Nf8"] (never from its title).
+    chapter.diagram = type === "concept" ? (h.Diagram ? chapterDiagram(chapter) : null)
+        : ["ideas", "puzzle", "map"].includes(type) ? null : chapterDiagram(chapter)
     return chapter
 }
 

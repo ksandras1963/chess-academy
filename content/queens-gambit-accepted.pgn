@@ -7,9 +7,10 @@
 
 [Chapter "Take the pawn, then hit back with ...e5"]
 [Type "concept"]
-[FEN "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"]
+[Diagram "2.c4"]
 
-{[%cal Gc8h3] After 1.d4 d5 2.c4, taking on c4 keeps the c8 bishop's diagonal open; in the Queen's Gambit Declined (2...e6), the pawn on e6 shuts the bishop in. It isn't a real gambit: White wins the pawn back with e3 and Bxc4. Use that time to hit the center: play ...e5 at once against 3.e3, 3.Nc3 and 3.e4, almost nine games in ten.}
+{After 1.d4 d5 2.c4, taking on c4 keeps the c8 bishop's diagonal open; in the Queen's Gambit Declined (2...e6), the pawn on e6 shuts the bishop in. It isn't a real gambit: White wins the pawn back with e3 and Bxc4. Use that time to hit the center: play ...e5 at once against 3.e3, 3.Nc3 and 3.e4, almost nine games in ten.}
+1. d4 d5 2. c4 {[%cal Gc8h3]}
 2... dxc4 {[%csl Yc4] Black takes the pawn and gives up the center for a moment.}
 3. e3 {[%cal Gf1c4] Opens the f1 bishop's diagonal: Bxc4 comes next.} e5 {[%cal Ge5d4] Hits d4 before White has the pawn back.}
 4. Bxc4 {The pawn is back.} exd4 {Black takes on d4 at once.}
@@ -17,9 +18,10 @@
 
 [Chapter "Against 3.Nf3: ...c5 instead"]
 [Type "concept"]
-[FEN "rnbqkbnr/ppp1pppp/8/8/2pP4/5N2/PP2PPPP/RNBQKB1R b KQkq - 1 3"]
+[Diagram "3.Nf3"]
 
-{[%cal Rf3e5] After 1.d4 d5 2.c4 dxc4 3.Nf3, one game in ten, the knight guards e5. 3...e5? 4.Nxe5 wins the pawn back at once (Stockfish: +1.3, clearly better for White). Hit d4 with the c-pawn instead, after ...Nf6 and ...e6.}
+{After 1.d4 d5 2.c4 dxc4 3.Nf3, one game in ten, the knight guards e5. 3...e5? 4.Nxe5 wins the pawn back at once (Stockfish: +1.3, clearly better for White). Hit d4 with the c-pawn instead, after ...Nf6 and ...e6.}
+1. d4 d5 2. c4 dxc4 3. Nf3 {[%cal Rf3e5]}
 3... Nf6 {Develops and stops e4.}
 4. e3 {[%cal Gf1c4] Bxc4 comes next.} e6 {[%cal Gf8c5] Opens the f8 bishop's diagonal.}
 5. Bxc4 {White has the pawn back.} c5 {[%cal Gc5d4] Hits d4, the main freeing move of the Accepted. Next come ...a6, ...Nc6, ...Be7 and castling. Stockfish: +0.3, slightly better for White.} *
@@ -33,9 +35,10 @@
 
 [Chapter "The d5 chain: take on e4"]
 [Type "concept"]
-[FEN "rnbqkb1r/ppp2ppp/5n2/3Pp3/2p1P3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 5"]
+[Diagram "5.e4"]
 
-{[%cal Gc3e4] [%csl Yd5,Ye4] After 3.Nc3 e5 4.d5 Nf6 5.e4, or 3.e4 e5 4.d5 Nf6 5.Nc3. White's pawns on d5 and e4 gain space, but they block White's own long diagonal: a queen on f3 hits nothing, so ...b5 can hold the extra pawn on c4. Only the knight on c3 guards e4. If it takes on b5, take on e4, then check on b4 so that White's king can't castle.}
+{After 3.Nc3 e5 4.d5 Nf6 5.e4, or 3.e4 e5 4.d5 Nf6 5.Nc3. White's pawns on d5 and e4 gain space, but they block White's own long diagonal: a queen on f3 hits nothing, so ...b5 can hold the extra pawn on c4. Only the knight on c3 guards e4. If it takes on b5, take on e4, then check on b4 so that White's king can't castle.}
+1. d4 d5 2. c4 dxc4 3. Nc3 e5 4. d5 Nf6 5. e4 {[%cal Gc3e4] [%csl Yd5,Ye4]}
 5... b5! {[%cal Gb5c4] Keeps the extra pawn on c4.}
 6. Nxb5 {The most common move. The knight wins a pawn back, but it no longer guards e4.} Nxe4 {Takes White's center pawn.}
 7. Bxc4 {Most White players take back on c4. 7.Nc3 holds out a little better (Stockfish: −1.2, clearly better for Black).} Bb4+ {[%cal Gb4e1] Check. Blocking with 8.Nc3?? loses a rook (see Key ideas: Tricks and traps).}
@@ -43,9 +46,10 @@
 
 [Chapter "Against 6.Bg5: ...Bc5 hits f2"]
 [Type "concept"]
-[FEN "rnbqkb1r/p1p2ppp/5n2/1p1Pp1B1/2p1P3/2N5/PP3PPP/R2QKBNR b KQkq - 1 6"]
+[Diagram "6.Bg5"]
 
-{[%cal Rg5f6,Gf8c5,Gc5f2] After 5...b5 6.Bg5, White pins the knight on f6, the piece that would take on e4. Black's answer is ...Bc5, aimed at f2, the weak square beside White's king. If White's knight takes on b5, Black gives up the bishop on f2 and wins the piece back with checks.}
+{After 5...b5 6.Bg5, White pins the knight on f6, the piece that would take on e4. Black's answer is ...Bc5, aimed at f2, the weak square beside White's king. If White's knight takes on b5, Black gives up the bishop on f2 and wins the piece back with checks.}
+1. d4 d5 2. c4 dxc4 3. Nc3 e5 4. d5 Nf6 5. e4 b5! 6. Bg5 {[%cal Rg5f6,Gf8c5,Gc5f2]}
 6... Bc5 {[%cal Gc5f2] Develops and aims at f2.}
 7. Nxb5 {Takes the pawn.} Bxf2+! {Gives up the bishop for a pawn and pulls White's king out.}
 8. Kxf2 Nxe4+ {[%cal Ge4g5] Check, and the knight hits the bishop on g5.}
@@ -54,9 +58,10 @@
 
 [Chapter "Queens off: castle long"]
 [Type "concept"]
-[FEN "rnb1kbnr/ppp2ppp/8/8/2BP4/8/PP3PPP/RNB1K1NR b KQkq - 0 6"]
+[Diagram "6.exd4"]
 
-{[%cal Gd8d4] After 3.e3 e5 4.Bxc4 exd4 5.Qxd4 Qxd4 6.exd4. With the queens off, Black's king is safe. Develop fast and castle long: the rook then comes to the d-file in one move, against White's lone d-pawn.}
+{After 3.e3 e5 4.Bxc4 exd4 5.Qxd4 Qxd4 6.exd4. With the queens off, Black's king is safe. Develop fast and castle long: the rook then comes to the d-file in one move, against White's lone d-pawn.}
+1. d4 d5 2. c4 dxc4 3. e3 e5 4. Bxc4 exd4 5. Qxd4 Qxd4 6. exd4 {[%cal Gd8d4]}
 6... Nc6 {[%cal Gc6d4] Hits d4 at once.}
 7. Nf3 {Guards d4.} Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
 8. Be3 {Guards d4 again.} Bxf3 {Gives up the bishop to double White's f-pawns.}
@@ -64,9 +69,10 @@
 
 [Chapter "Against 3.e4 e5 4.Nf3: trade the c4 bishop"]
 [Type "concept"]
-[FEN "r1bqkbnr/ppp2ppp/2n5/8/2BpP3/5N2/PP3PPP/RNBQ1RK1 b kq - 2 6"]
+[Diagram "6.O-O"]
 
-{[%csl Yc4,Yd4] After 3.e4 e5 4.Nf3 exd4 5.Bxc4 Nc6 6.O-O. Black has an extra pawn on d4, but White is ahead in development, and the bishop on c4 is White's best attacking piece. Offer to trade it with ...Be6. Black gives the extra pawn back on b7, but gets quick development and the open b-file.}
+{After 3.e4 e5 4.Nf3 exd4 5.Bxc4 Nc6 6.O-O. Black has an extra pawn on d4, but White is ahead in development, and the bishop on c4 is White's best attacking piece. Offer to trade it with ...Be6. Black gives the extra pawn back on b7, but gets quick development and the open b-file.}
+1. d4 d5 2. c4 dxc4 3. e4 e5 4. Nf3 exd4 5. Bxc4 Nc6 6. O-O {[%csl Yc4,Yd4]}
 6... Be6 {[%cal Ge6c4] Offers the trade. Stockfish's choice.}
 7. Bxe6 fxe6 {[%cal Ge6d5] The pawn on e6 guards d5, and the f-file is half-open for Black's rook.}
 8. Qb3 {[%cal Gb3b7,Gb3e6] Hits b7 and e6.} Qd7 {Guards e6 and lets b7 go.}
@@ -81,9 +87,10 @@
 
 [Chapter "The isolated pawn: Black presses on d4"]
 [Type "concept"]
-[FEN "rnbq1rk1/ppp2ppp/3b1n2/8/2BP4/2N2N2/PP3PPP/R1BQ1RK1 b - - 6 8"]
+[Diagram "8.Nc3"]
 
-{[%csl Yd4,Yd5] After 3.e3 e5 4.Bxc4 exd4 5.exd4 Nf6 6.Nf3 Bd6 7.O-O O-O 8.Nc3. The pawn on d4 gives White space, but only pieces can guard it. Black aims pieces at it and pins the knight on f3 that guards it. The square in front of the pawn, d5, is a fine square for a Black knight: no White pawn can chase it away. Trade pieces when you can, since in an endgame the pawn is only a weakness.}
+{After 3.e3 e5 4.Bxc4 exd4 5.exd4 Nf6 6.Nf3 Bd6 7.O-O O-O 8.Nc3. The pawn on d4 gives White space, but only pieces can guard it. Black aims pieces at it and pins the knight on f3 that guards it. The square in front of the pawn, d5, is a fine square for a Black knight: no White pawn can chase it away. Trade pieces when you can, since in an endgame the pawn is only a weakness.}
+1. d4 d5 2. c4 dxc4 3. e3 e5 4. Bxc4 exd4 5. exd4 Nf6 6. Nf3 Bd6 7. O-O O-O 8. Nc3 {[%csl Yd4,Yd5]}
 8... Nc6 {[%cal Gc6d4] Hits d4.}
 9. Bg5 {[%cal Gg5f6] White pins Black's knight in turn.} h6 {Asks the bishop to decide.}
 10. Bh4 Bg4 {[%cal Gg4f3,Gc6d4] Pins the knight that guards d4.}
@@ -92,9 +99,10 @@
 [Chapter "The isolated pawn: White's knight on e5"]
 [Side "white"]
 [Type "concept"]
-[FEN "rnbq1rk1/ppp2ppp/5n2/8/1bBP4/2N2N2/PP3PPP/R1BQ1RK1 b - - 6 8"]
+[Diagram "8.O-O"]
 
-{[%cal Gd4e5,Gf3e5] [%csl Ye5] As White, after 3.e3 e5 4.Bxc4 exd4 5.exd4 Nf6 6.Nf3 Bb4+ 7.Nc3 O-O 8.O-O. The pawn on d4 guards e5, a strong square for a White knight. White's plan is active pieces: h3 stops the pin ...Bg4, then the bishop and the knight come to f4 and e5. Keep pieces on the board: trades help Black.}
+{As White, after 3.e3 e5 4.Bxc4 exd4 5.exd4 Nf6 6.Nf3 Bb4+ 7.Nc3 O-O 8.O-O. The pawn on d4 guards e5, a strong square for a White knight. White's plan is active pieces: h3 stops the pin ...Bg4, then the bishop and the knight come to f4 and e5. Keep pieces on the board: trades help Black.}
+1. d4 d5 2. c4 dxc4 3. e3 e5 4. Bxc4 exd4 5. exd4 Nf6 6. Nf3 Bb4+ 7. Nc3 O-O 8. O-O {[%cal Gd4e5,Gf3e5] [%csl Ye5]}
 8... Nc6 {[%cal Gc6d4] Black hits d4.}
 9. h3 {Stops ...Bg4, so the knight on f3 can't be pinned.} h6 {Black stops Bg5 the same way.}
 10. Bf4 {[%cal Gf4e5] The bishop eyes e5.} Bd6 {Black offers a trade of bishops.}
@@ -102,9 +110,10 @@
 
 [Chapter "After 4.dxe5: the pawn on e5"]
 [Type "concept"]
-[FEN "rnb1kbnr/ppp2ppp/8/4P3/2p5/8/PP2PPPP/R1BNKBNR b KQkq - 0 5"]
+[Diagram "5.Nxd1"]
 
-{[%csl Ye5,Yc4] After 3.Nc3 e5 4.dxe5 Qxd1+ 5.Nxd1. With the queens off, each side has a loose pawn: White's on e5, Black's on c4. Black's knight hits e5 at once, and a check on b4 can trade off a piece that could guard it. Keep an eye on c4 too: ...Be6 guards it.}
+{After 3.Nc3 e5 4.dxe5 Qxd1+ 5.Nxd1. With the queens off, each side has a loose pawn: White's on e5, Black's on c4. Black's knight hits e5 at once, and a check on b4 can trade off a piece that could guard it. Keep an eye on c4 too: ...Be6 guards it.}
+1. d4 d5 2. c4 dxc4 3. Nc3 e5 4. dxe5 Qxd1+ 5. Nxd1 {[%csl Ye5,Yc4]}
 5... Nc6 {[%cal Gc6e5] Hits the pawn on e5.}
 6. Nf3 {Guards it.} Bb4+ {[%cal Gb4e1] Check.}
 7. Bd2 {Stockfish's choice. Against 7.Nc3, the most common move, guard c4 with 7...Be6.} Bxd2+ {Trades off a bishop that could guard e5.}
@@ -119,27 +128,30 @@
 
 [Chapter "...Bb4?? and Qa4+"]
 [Type "concept"]
-[FEN "rnbqkb1r/ppp2ppp/5n2/3Pp3/2p1P3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 5"]
+[Diagram "5.e4"]
 
-{[%cal Rd1a4] After 3.Nc3 e5 4.d5 Nf6 5.e4, ...Bb4 looks natural: it develops and pins the knight. But White's queen can check from a4 and hit the bishop at the same time, and nothing guards b4. It is the most common move here at club level. The same trick works a move earlier: 4...Bb4?? 5.Qa4+ (Stockfish: +5.5, winning for White).}
+{After 3.Nc3 e5 4.d5 Nf6 5.e4, ...Bb4 looks natural: it develops and pins the knight. But White's queen can check from a4 and hit the bishop at the same time, and nothing guards b4. It is the most common move here at club level. The same trick works a move earlier: 4...Bb4?? 5.Qa4+ (Stockfish: +5.5, winning for White).}
+1. d4 d5 2. c4 dxc4 3. Nc3 e5 4. d5 Nf6 5. e4 {[%cal Rd1a4]}
 5... Bb4?? {Develops and pins, but the bishop has no guard.}
 6. Qa4+! {[%cal Ga4e8,Ga4b4] Check, and the bishop on b4 is hit.} c6 {Blocks the check.}
 7. Qxb4 {White is a piece up. Stockfish: +6.0, winning for White. Play 5...b5! instead.} *
 
 [Chapter "...b5 against 3.e3: the long diagonal"]
 [Type "concept"]
-[FEN "rnbqkbnr/p3pppp/2p5/1P6/2pP4/4P3/1P3PPP/RNBQKBNR b KQkq - 0 5"]
+[Diagram "5.axb5"]
 
-{[%cal Rf3a8] After 3.e3 b5?! 4.a4 c6 5.axb5. Black tried to keep the c4 pawn, and now taking back on b5 opens the long diagonal from f3 to a8. Here nothing blocks it, unlike the d5 chain, where White's own pawns on d5 and e4 stand in the way. Against 3.e3, don't hold the pawn: play 3...e5.}
+{After 3.e3 b5?! 4.a4 c6 5.axb5. Black tried to keep the c4 pawn, and now taking back on b5 opens the long diagonal from f3 to a8. Here nothing blocks it, unlike the d5 chain, where White's own pawns on d5 and e4 stand in the way. Against 3.e3, don't hold the pawn: play 3...e5.}
+1. d4 d5 2. c4 dxc4 3. e3 b5?! 4. a4 c6?! 5. axb5 {[%cal Rf3a8]}
 5... cxb5?? {Guards c4, but opens the diagonal to the rook on a8.}
 6. Qf3 {[%cal Gf3a8] Hits the rook. Black has to give up a piece to save it.} Nc6 {Blocks with the knight.}
 7. Qxc6+ Bd7 8. Qa6 {White is a piece up. Stockfish: +5.5, winning for White.} *
 
 [Chapter "...Bg4 before castling: Bxf7+"]
 [Type "concept"]
-[FEN "rnbqkb1r/ppp2ppp/5n2/8/2BP4/5N2/PP3PPP/RNBQK2R b KQkq - 2 6"]
+[Diagram "6.Nf3"]
 
-{[%cal Rc4f7] [%csl Rf7] After 3.e3 e5 4.Bxc4 exd4 5.exd4 Nf6 6.Nf3, only Black's king guards f7, and White's bishop on c4 aims at it. A bishop on g4 then falls to a fork. Castle first, then play ...Bg4. The same weakness shows after 3...Nf6 4.Bxc4 Nc6 5.Nf3 Bg4?: 6.Qb3! hits f7 and b7, and 6...e6 7.Qxb7 costs a pawn (Stockfish: +2.0, winning for White).}
+{After 3.e3 e5 4.Bxc4 exd4 5.exd4 Nf6 6.Nf3, only Black's king guards f7, and White's bishop on c4 aims at it. A bishop on g4 then falls to a fork. Castle first, then play ...Bg4. The same weakness shows after 3...Nf6 4.Bxc4 Nc6 5.Nf3 Bg4?: 6.Qb3! hits f7 and b7, and 6...e6 7.Qxb7 costs a pawn (Stockfish: +2.0, winning for White).}
+1. d4 d5 2. c4 dxc4 3. e3 e5 4. Bxc4 exd4 5. exd4 Nf6 6. Nf3 {[%cal Rc4f7] [%csl Rf7]}
 6... Bg4? {Pins the knight, but f7 is weak.}
 7. Bxf7+! {[%cal Gc4f7] Gives up the bishop for the f7 pawn and pulls the king out.} Kxf7
 8. Ne5+ {[%cal Ge5g4] Check, and the knight hits the bishop on g4.} Kg8
@@ -147,9 +159,10 @@
 
 [Chapter "White's mistake: 8.Nc3??"]
 [Type "concept"]
-[FEN "rnbqk2r/p1p2ppp/8/1N1Pp3/1bB1n3/8/PP3PPP/R1BQK1NR w KQkq - 1 8"]
+[Diagram "7...Bb4"]
 
-{[%cal Gb4e1] After 5...b5 6.Nxb5 Nxe4 7.Bxc4 Bb4+. Blocking the check with the knight looks natural, and one White player in three plays it. But the knight on c3 is pinned, and Black can take it twice. Two more White mistakes against 5...b5, 6.a4? and 9.a3?, are in Trap: White's mistakes against 5...b5.}
+{After 5...b5 6.Nxb5 Nxe4 7.Bxc4 Bb4+. Blocking the check with the knight looks natural, and one White player in three plays it. But the knight on c3 is pinned, and Black can take it twice. Two more White mistakes against 5...b5, 6.a4? and 9.a3?, are in Trap: White's mistakes against 5...b5.}
+1. d4 d5 2. c4 dxc4 3. Nc3 e5 4. d5 Nf6 5. e4 b5! 6. Nxb5 Nxe4 7. Bxc4 Bb4+ {[%cal Gb4e1]}
 8. Nc3?? {Blocks the check, but the knight is pinned to the king.} Nxc3 {[%cal Gc3d1] Hits the queen.}
 9. bxc3 Bxc3+ {[%cal Gc3a1] Check, and the bishop hits the rook on a1.}
 10. Bd2 Bxa1 11. Qxa1 {Black has won a rook and a pawn for a bishop. Stockfish: −6.0, winning for Black.} *
