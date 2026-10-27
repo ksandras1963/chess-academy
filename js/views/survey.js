@@ -161,7 +161,7 @@ function courseBox(cat, s, hasLessons) {
         h("p", {}, [
             one ? `${plural ? "These links open" : "This link opens"} the full ${built(one).map(m => courseTitle(one, m)).join(" and the ")}.`
                 : "These links open the full courses for the openings on this page.",
-            bothSides ? " Each course teaches both sides, with a drill for each." : "",
+            bothSides ? (groups.flat().length > 1 ? " Each course teaches both sides, with a drill for each." : " The course teaches both sides, with a drill for each.") : "",
             hasLessons ? " The links under each variation below open only the lesson on that variation." : ""].join("")),
         boxRows(groups).map(row => h("div", { class: "course-box-links" }, row.map(it => h("a", { class: "btn course-box-link", href: it.href, title: it.tip },
             h("span", { class: `side-chip ${it.side}`, "aria-hidden": "true" }), it.text, h("span", { "aria-hidden": "true" }, "›"))))))
@@ -198,27 +198,43 @@ function moveRun(nodes) {
  * moves only), and the moves in between run together. A box named like an opening on the page
  * jumps to its card, and [%course white] or [%course black] in a note stars a line a course teaches.
  */
-function flowchart(s, jump) {
+function flowchart(s, jump, courses = []) {
     const byName = new Map()
     for (const ch of s.chapters) {
         byName.set(ch.title, ch)
         for (const p of chapterPaths(ch)) byName.set(p.name, ch)
     }
+    // A box that names a card opens it; any other box opens a lesson of the page's course that reaches
+    // its position (a page whose "course" is one opening, such as a Caro-Kann page with no cards).
     return variationMap(s.flow.root, {
-        target: (node, name) => (byName.has(name) ? { title: "Go to its board", onclick: () => jump(byName.get(name)) } : null),
-        hint: "Tap a name with a gold edge to see its board.",
+        target: (node, name) => (byName.has(name) ? { title: "Go to its board", onclick: () => jump(byName.get(name)) } : lessonTarget(courses, node)),
+        hint: courses.length ? "Tap a box with a gold edge to see its position." : "Tap a name with a gold edge to see its board.",
         key: " A line taught in the full courses above the map",
     })
+}
+
+/**
+ * Where a map box leads in the given built courses: the first lesson that passes through its
+ * position, opened at that move (in the side the lesson is played from). Null when none reaches it.
+ */
+export function lessonTarget(courses, node) {
+    const key = fen => fen.split(" ").slice(0, 4).join(" ")
+    const want = key(node.fen)
+    for (const c of courses) for (const l of c.lines) {
+        const i = l.nodes.findIndex(n => key(n.fen) === want)
+        if (i >= 0) return { href: `#/learn/${c.id}/${l.id}/${i + 1}`, title: `Open this position in ${l.chapter.title}` }
+    }
+    return null
 }
 
 /**
  * A "Map of the variations" flowchart from a [Type "map"] chapter's move tree: every move with a note
  * becomes a box showing the moves since the box before it, with the note as its name.
  * `target(node, name)` makes a box a link ({ href } or { onclick }, with a title) or returns null for a
- * plain box; `[%course white|black]` in a note stars it (`star(side)` is its tooltip), explained by `key`. Used by the family pages
+ * plain box; `[%course white|black|both]` in a note stars it (`star(side)` is its tooltip), explained by `key`. Used by the family pages
  * (boxes open a card) and by the course pages (boxes open the position in a lesson).
  */
-export function variationMap(root, { target, hint, key, star = side => side === "both" ? "Taught in a course, from both sides" : `Taught in a course, from ${side === "white" ? "White" : "Black"}'s side` }) {
+export function variationMap(root, { target, hint, key, star = side => (side === "both" ? "Taught in a course, for both sides" : `Taught in a course, from ${side === "white" ? "White" : "Black"}'s side`) }) {
     let starred = false
     // [%order 2] in a note places the box among its sibling boxes (most-played first, as in the
     // course); boxes without one keep their order in the PGN, after the numbered ones.
@@ -315,6 +331,11 @@ export async function surveyView(root, ctx, id) {
     const s = await loadSurvey(id)
     const cat = await catalog()
     const lessons = new Map(await Promise.all(s.chapters.map(async ch => [ch, await lessonLinks(cat, ch)])))
+    // A page whose "course" is a single opening: its map boxes can open that opening's lessons.
+    const pageOps = courseOps(cat, s.course)
+    const mapCourses = s.flow && pageOps.length === 1
+        ? (await Promise.all(pageOps[0].courses.filter(m => m.available).map(m => loadCourse(m.id).catch(() => null)))).filter(Boolean)
+        : []
     if (!ctx.alive()) return
     const spelled = new Set()
     const diagrams = []
@@ -349,7 +370,7 @@ export async function surveyView(root, ctx, id) {
             h("p", { class: "course-side" }, figText(s.subtitle || "")),
             ...paras(s.summary, { class: "course-summary" })),
         fullCourses,
-        s.flow ? flowchart(s, jump) : openingMap(s, cat, jump),
+        s.flow ? flowchart(s, jump, mapCourses) : openingMap(s, cat, jump),
         // Every page has the same order: short text, the full-course box, the map, then the table.
         s.table ? introTable(s.table) : null,
         groups.map(g => [
