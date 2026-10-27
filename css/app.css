@@ -684,7 +684,13 @@ button.sheet-move:hover { background: var(--felt-high); }
 .ideas-head .lede { max-width: 44rem; }
 .concept { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--rule); }
 .concept-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; font-size: 1.375rem; }
-.concept-title .side-tag { font-size: 0.75rem; }
+/* Whose idea: big enough to see at a glance, white for White, black for Black, gold for both. */
+.idea-tag { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; font-size: 0.875rem; font-weight: 600; }
+.idea-tag .side-chip { width: 12px; height: 12px; }
+.idea-tag.is-white .side-chip { border-color: #1b1b1b; } /* the white dot shows on the white tag */
+.tag.idea-tag.is-black { background: #000; border-color: #f4efe2; color: #f4efe2; }
+.tag.idea-tag.is-both { background: var(--brass); border-color: var(--brass); color: var(--felt); }
+.ideas-side { margin-top: 8px; }
 .concept-num {
     flex: none; display: inline-grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 50%;
     background: var(--brass); color: var(--felt); font-family: var(--sans); font-size: 0.9375rem; font-weight: 700;
