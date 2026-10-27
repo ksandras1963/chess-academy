@@ -9,7 +9,7 @@
 (9. Nf3? {Develops, but the chance is gone.} 9... O-O 10. Bd3 g6 {Black has traded off White's good bishop and is fine. Stockfish: +0.2, equal.})
 9... Qd6 {The best defense: the queen hits the knight.}
 (9... cxd5? 10. Qxc8+ Qd8 11. Bb5+ Nc6 12. Bxc6+ bxc6 13. Qxc6+ {White is two pawns up, and the queen attacks the rook on a8 too. Stockfish: +5.5, winning for White.})
-10. Nc3 O-O 11. Be2 Nf6 12. Nf3 {White is a pawn up, and the knight on h5 had to go back. Stockfish: +3.0, winning for White.}
+10. Nc3 O-O 11. Be2 Nf6 12. Nf3 {White is a pawn up, and the knight on h5 had to go back. Stockfish: +3.4, winning for White.}
 *
 
 [Puzzle "The Elephant trap"]
