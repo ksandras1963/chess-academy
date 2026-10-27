@@ -2,9 +2,9 @@
 [Side "both"]
 [Type "ideas"]
 
-{Black lets White build a big center, castles behind the g7 bishop, then strikes with ...e5 or ...c5. When the center locks, each side attacks on its own wing: White on the queenside, Black on the kingside.
+{Black's first five moves hardly change from game to game: ...Nf6, ...g6, ...Bg7, ...d6 and castling. Black castles first and only then picks a break, ...e5 or ...c5, to challenge the d4 pawn.
 
-Step through the moves to see the setup.}
+Step through the moves to see why each one is played.}
 1. d4 Nf6 {Stops e4 for now and keeps every option open.}
 2. c4 g6 {Prepares ...Bg7.}
 3. Nc3 Bg7 {[%cal Gg7d4] The bishop aims down the long diagonal. 3...d5 instead would be the Grünfeld, a different opening.}
@@ -17,38 +17,36 @@ Step through the moves to see the setup.}
 [Type "ideas"]
 [FEN "r1bq1rk1/pppnn1bp/3p4/3Pp1p1/2P1Pp2/2N2P2/PP2BBPP/R2QNRK1 w - - 0 13"]
 
-{[%cal Gc4c5,Gb2b4,Rg5g4,Rf4f3] [%csl Yd6] Four structures cover most King's Indian middlegames.
+{[%cal Gc4c5,Gb2b4,Rg5g4,Rf4f3] [%csl Yd6] Four pawn structures cover most King's Indian middlegames.
 
-The closed center (this position, from Mar del Plata, Main line). Each side attacks where its pawns point: White with c5 on the queenside (green), Black with ...g4 on the kingside (red).
+Closed center (this position, from Mar del Plata, Main line: 9.Ne1): each side attacks where its pawns point, White with c5 on the queenside (green) and Black with ...g4 on the kingside (red).
 
-The open center (Classical, Open Center: 7...exd4). Black's g7 bishop and e8 rook press d4 and e4; White uses the extra space and holds e4 with f3.
+Open center (Classical, Open Center: 7...exd4): Black's g7 bishop and e8 rook press d4 and e4, while White uses the extra space and holds e4 with f3.
 
-The Benoni (Four Pawns Attack, Main line, and Averbakh, Benoni Defense). White has a central majority and wants e5; Black has a queenside majority and wants ...b5.
+Benoni (Four Pawns Attack, Main line: 6...c5, and Averbakh, Benoni Defense: 6...c5): White's central majority wants e5, and Black's queenside majority wants ...b5.
 
-The Exchange (Classical, Exchange Variation: 7.dxe5). The center is symmetrical and the queens often come off; d4 and d5 are the outposts.} *
+Exchange (Classical, Exchange Variation: 7.dxe5): the center is symmetrical, the queens often come off, and d4 and d5 are the outposts.} *
 
 [Chapter "Key ideas: Meeting the kingside attack"]
 [Type "ideas"]
 [Side "white"]
 [FEN "r1bq1rk1/ppp1n1bp/3p1np1/3PppN1/1PP1P3/2N2P2/P3B1PP/R1BQR1K1 b - - 0 12"]
 
-{[%cal Gg5e6,Gc4c5,Rf5f4,Rg6g5] [%csl Ye6] In the closed center, Black's whole game is the kingside attack: ...f5, ...f4, ...g5 and ...g4. It is slow, and you have defenders. This position comes from Mar del Plata, Bayonet Attack, with 12.f3 instead of 12.Bf3.
+{[%cal Gg5e6,Gc4c5,Rf5f4,Rg6g5] [%csl Ye6] In the closed center, Black's whole game is the kingside attack with ...f5, ...f4, ...g5 and ...g4, but it is slow and you have defenders. This position comes from Mar del Plata, Bayonet Attack: 9.b4, with 12.f3 instead of 12.Bf3.
 
-The knight on g5 eyes e6, a hole after ...f5. The pawn on f3 holds e4 and g4, so Black needs ...g5 and ...g4 to open lines.
-
-With a rook on e1, the bishop can drop to f1 and avoid a trade with a knight on f4. Your queenside attack, c5 with a4 and Ba3, has to arrive first.} *
+The knight on g5 eyes e6, a hole after ...f5, and the pawn on f3 holds e4 and g4, so Black needs ...g5 and ...g4 to open lines. With a rook on e1, the bishop can drop to f1 and avoid a trade with a knight on f4. Your queenside attack, c5 with a4 and Ba3, has to arrive first.} *
 
 [Chapter "Key ideas: Against the London and other second moves"]
 [Type "ideas"]
 [Side "black"]
 
-{After 1.d4 Nf6, Lichess players rated 1800 to 2199 choose 2.c4 in only about half their games. 2.Bf4 (the London) and 2.Nf3 each come up about one game in six.
+{After 1.d4 Nf6, White plays 2.c4 in only about half of Lichess games between players averaging 1800 to 2199. 2.Bf4 (the London) and 2.Nf3 each come up about one game in six.
 
 You need no new theory: play ...g6, ...Bg7, ...O-O and ...d6, then strike with ...e5 or ...c5. Without a white pawn on c4, ...e5 is even stronger.}
 1. d4 Nf6 2. Bf4 {This is the London System.} g6 3. e3 Bg7 4. Nf3 O-O
 5. Bd3 d6 {[%cal Gd6e5] Stops Ne5 and prepares ...e5.}
 6. c3 Nc6 {Supports ...e5.}
-7. Nbd2 e5 {[%cal Ge5f4,Gd8d3] Equal (Stockfish 0.0). White should keep the tension with 8.Bg5: 8.dxe5?? dxe5 loses a piece, because the pawn hits f4 and the queen hits d3 (Stockfish −6.4, winning for Black).} *
+7. Nbd2 e5 {[%cal Ge5f4,Gd8d3] Stockfish: −0.3, about equal. White should keep the tension with 8.Bg5: 8.dxe5?? dxe5 loses a piece, because the pawn hits f4 and the queen hits d3 (Stockfish: −4.8, winning for Black).} *
 
 [Chapter "Mar del Plata, Main line: 9.Ne1"]
 [Side "both"]
