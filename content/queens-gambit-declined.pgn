@@ -26,20 +26,35 @@ Black takes back with the pawn in three games out of four. 4...Nxd5 gives White 
 [Chapter "Key ideas: Plans in the Exchange Variation"]
 [Side "white"]
 [Type "ideas"]
+
+{The Exchange Variation gives almost the same pawn structure in every game, so the plans repeat too. The boards below start from the main position of this course: 1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 c6 6.Qc2 Be7 7.e3 O-O 8.Bd3 Nbd7 9.Nge2 Re8 10.O-O Nf8. Stockfish rates it as equal (+0.2). Each board shows one plan with the few moves that carry it out.}
+*
+
+[Chapter "The minority attack"]
+[Type "concept"]
 [FEN "r1bqrnk1/pp2bppp/2p2n2/3p2B1/3P4/2NBP3/PPQ1NPPP/R4RK1 w - - 7 11"]
 
-{[%cal Ga1b1,Gb2b4,Gb4b5,Gf2f3,Ge3e4,Rf6e4,Rf8g6,Re7d6] [%csl Yc6,Ye4] This is the Exchange Variation after 5.Bg5 c6 6.Qc2 Be7 7.e3 Nbd7 8.Bd3 O-O 9.Nge2 Re8 10.O-O Nf8. The green arrows are White's plans, the red arrows Black's. Stockfish rates it as equal (+0.2): the chances are balanced, but White's plans are easier to play.
+{[%cal Gb2b4,Gb4b5] [%csl Yc6] White's two queenside pawns (a and b) attack Black's three (a, b and c). The rook goes to b1, then the b-pawn advances to b4 and b5. When it takes on c6, Black is left with a weak pawn on c6 or d5.}
+11. Rab1 {[%cal Gb1b4] The rook stands behind the b-pawn.} a5 {[%cal Ra5b4] Black stops b4 for now: 12.b4? axb4 just loses a pawn, since b4 is guarded by the e7 bishop (Stockfish −1.2).}
+12. a3 {Prepares b4 again.} g6
+13. b4 axb4
+14. axb4 {[%cal Gb4b5] [%csl Yc6] Next comes b5. After b5 and bxc6, Black is left with the weak pawn. The next board shows Black's best answer.} *
 
-Plan 1: the minority attack. White's two queenside pawns (a and b) attack Black's three (a, b and c). Put a rook on b1, then push b4 and b5. When White takes on c6, Black is left with a weak pawn: a backward pawn on c6, on the half-open c-file, or an isolated pawn on d5 after ...cxb5. White's rooks and knights then attack it.
+[Chapter "Black's answer: ...b5"]
+[Type "concept"]
+[FEN "r1bqrnk1/1p2bp1p/2p2np1/3p2B1/1P1P4/2NBP3/2Q1NPPP/1R3RK1 b - - 0 14"]
 
-Plan 2: f3 and e4. The knight on e2, not f3, leaves the f-pawn free. f3 takes the e4 and g4 squares away from Black's pieces and prepares e4, which opens the center while White's pieces are ready.
+{The same position after 11.Rab1 a5 12.a3 g6 13.b4 axb4 14.axb4. Black's best defense against the minority attack is to block it.}
+14... b5 {[%csl Yc5,Yc6] White's b-pawn can't advance any more. The price: the c6 pawn is fixed on the half-open c-file, and no black pawn can guard c5 now.}
+15. Ra1 {[%cal Ga1a8] White's rook takes the open a-file instead. Stockfish: 0.0, equal.} *
 
-Black's plans. Black has more room on the kingside and uses the e4 square: ...Ne4 trades a pair of minor pieces, and ...Ng6 and ...Bd6 aim at White's king. Black also wants to trade the c8 bishop, with ...Be6 or ...Bg4, or with ...Bf5 after ...g6. White's queen on c2 and bishop on d3 control f5, which is why we play Qc2 early.
+[Chapter "f3 and e4"]
+[Type "concept"]
+[FEN "r1bqrnk1/pp2bppp/2p2n2/3p2B1/3P4/2NBP3/PPQ1NPPP/R4RK1 w - - 7 11"]
 
-The Slav. After 3.Nf3 Nf6 4.Nc3 e6 5.cxd5 exd5 6.Bg5 the pawn structure is the same, and so are the plans (Stockfish −0.1, equal). Against 4...dxc4, play 5.a4 Bf5 6.e3 e6 7.Bxc4: White wins the pawn back, castles, and prepares e4 with Qe2 and Rd1 (Stockfish +0.2, equal, after 7...Bb4 8.O-O O-O 9.Qe2).
-
-The Accepted. After 3.e3 and Bxc4, White also aims for e4. If Black hits the center with ...c5 and ...cxd4, White takes back with the e-pawn and gets an isolated pawn on d4 with active pieces (next page).} *
-
+{[%cal Gf2f3,Ge3e4] [%csl Ye4] White's other plan uses the knight on e2, not f3, which leaves the f-pawn free. f3 takes the e4 square away from Black's knights and prepares e4, which opens the center.}
+11. f3 {[%csl Ye4] No black knight can come to e4 now.} g6
+12. Rae1 {[%cal Ge1e4,Ge3e4] The rook backs up the e-pawn. Push e4 only when your pieces are ready: played too early, Black takes on e4 and Stockfish then slightly prefers Black.} *
 [Chapter "Key ideas: Three pawn structures"]
 [Side "white"]
 [Type "ideas"]
