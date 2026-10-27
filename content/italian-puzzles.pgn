@@ -208,7 +208,7 @@
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Bg4 5. h3 Bh5? {Keeps the pin, but the knight is pinned only to the queen.}
 6. Nxe5! {[%cal Gf3e5] The pinned knight moves anyway and takes a pawn. If Black takes the queen, it's mate.}
-(6. g4?! {Breaks the pin, but slowly: Black's bishop just steps back.} 6... Bg6 7. d4 Nf6 8. d5 Nb8 {Stockfish: +1.0, clearly better for White, against +2.6 after 6.Nxe5.})
+(6. g4!? {Playable: it breaks the pin, but slowly, and Black's bishop just steps back.} 6... Bg6 7. d4 Nf6 8. d5 Nb8 {Stockfish: +1.0, clearly better for White, against +1.9 after 6.Nxe5.})
 6... Nxe5 {Black's best: it takes the knight and attacks the bishop on c4.}
 (6... Bxd1?? {Takes the queen and walks into Légal's mate.} 7. Bxf7+ {Check. The king's only square is e7.} 7... Ke7 8. Nd5# {Mate with three minor pieces. The knight on d5 gives check, the knight on e5 covers d7, and the bishop covers e6 and e8.})
 (6... dxe5 {Takes back with the pawn, but the bishop on h5 still hangs.} 7. Qxh5 g6 8. Qf3 Qf6 9. Qxf6 Nxf6 10. d3 {White is a pawn up and has the two bishops. Stockfish: +3.1, winning for White.})
