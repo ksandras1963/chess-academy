@@ -1,0 +1,3523 @@
+{
+ "caroKannGames": 13583174,
+ "variations": [
+  {
+   "id": "classical",
+   "name": "Classical Variation",
+   "group": "main",
+   "key": 8,
+   "lines": [
+    {
+     "label": "Main line",
+     "san": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. h5 Bh7 9. Bd3 Bxd3 10. Qxd3 e6",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nc3",
+       "uci": "b1c3",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq - 1 3",
+       "from": "b1",
+       "to": "c3",
+       "games": 1628919,
+       "of": 7276799,
+       "rank": 3,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "dxe4",
+       "uci": "d5e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 4",
+       "from": "d5",
+       "to": "e4",
+       "games": 1440557,
+       "of": 1765829,
+       "rank": 1,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nxe4",
+       "uci": "c3e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+       "from": "c3",
+       "to": "e4",
+       "games": 1328505,
+       "of": 1444917,
+       "rank": 1,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense: Main Line"
+       }
+      },
+      {
+       "san": "Bf5",
+       "uci": "c8f5",
+       "fen": "rn1qkbnr/pp2pppp/2p5/5b2/3PN3/8/PPP2PPP/R1BQKBNR w KQkq - 1 5",
+       "from": "c8",
+       "to": "f5",
+       "games": 754281,
+       "of": 1569175,
+       "rank": 1,
+       "opening": {
+        "eco": "B18",
+        "name": "Caro-Kann Defense: Classical Variation"
+       }
+      },
+      {
+       "san": "Ng3",
+       "uci": "e4g3",
+       "fen": "rn1qkbnr/pp2pppp/2p5/5b2/3P4/6N1/PPP2PPP/R1BQKBNR b KQkq - 2 5",
+       "from": "e4",
+       "to": "g3",
+       "games": 626825,
+       "of": 754078,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bg6",
+       "uci": "f5g6",
+       "fen": "rn1qkbnr/pp2pppp/2p3b1/8/3P4/6N1/PPP2PPP/R1BQKBNR w KQkq - 3 6",
+       "from": "f5",
+       "to": "g6",
+       "games": 613611,
+       "of": 626693,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "h4",
+       "uci": "h2h4",
+       "fen": "rn1qkbnr/pp2pppp/2p3b1/8/3P3P/6N1/PPP2PP1/R1BQKBNR b KQkq - 0 6",
+       "from": "h2",
+       "to": "h4",
+       "games": 192417,
+       "of": 613887,
+       "rank": 2,
+       "opening": {
+        "eco": "B18",
+        "name": "Caro-Kann Defense: Classical Variation, Main Line"
+       }
+      },
+      {
+       "san": "h6",
+       "uci": "h7h6",
+       "fen": "rn1qkbnr/pp2ppp1/2p3bp/8/3P3P/6N1/PPP2PP1/R1BQKBNR w KQkq - 0 7",
+       "from": "h7",
+       "to": "h6",
+       "games": 160937,
+       "of": 192400,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rn1qkbnr/pp2ppp1/2p3bp/8/3P3P/5NN1/PPP2PP1/R1BQKB1R b KQkq - 1 7",
+       "from": "g1",
+       "to": "f3",
+       "games": 78426,
+       "of": 160916,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nd7",
+       "uci": "b8d7",
+       "fen": "r2qkbnr/pp1nppp1/2p3bp/8/3P3P/5NN1/PPP2PP1/R1BQKB1R w KQkq - 2 8",
+       "from": "b8",
+       "to": "d7",
+       "games": 46847,
+       "of": 83955,
+       "rank": 1,
+       "opening": {
+        "eco": "B19",
+        "name": "Caro-Kann Defense: Classical Variation"
+       }
+      },
+      {
+       "san": "h5",
+       "uci": "h4h5",
+       "fen": "r2qkbnr/pp1nppp1/2p3bp/7P/3P4/5NN1/PPP2PP1/R1BQKB1R b KQkq - 0 8",
+       "from": "h4",
+       "to": "h5",
+       "games": 58688,
+       "of": 86232,
+       "rank": 1,
+       "opening": {
+        "eco": "B19",
+        "name": "Caro-Kann Defense: Classical Variation, Spassky Variation"
+       }
+      },
+      {
+       "san": "Bh7",
+       "uci": "g6h7",
+       "fen": "r2qkbnr/pp1npppb/2p4p/7P/3P4/5NN1/PPP2PP1/R1BQKB1R w KQkq - 1 9",
+       "from": "g6",
+       "to": "h7",
+       "games": 58650,
+       "of": 58681,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bd3",
+       "uci": "f1d3",
+       "fen": "r2qkbnr/pp1npppb/2p4p/7P/3P4/3B1NN1/PPP2PP1/R1BQK2R b KQkq - 2 9",
+       "from": "f1",
+       "to": "d3",
+       "games": 73575,
+       "of": 83903,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bxd3",
+       "uci": "h7d3",
+       "fen": "r2qkbnr/pp1nppp1/2p4p/7P/3P4/3b1NN1/PPP2PP1/R1BQK2R w KQkq - 0 10",
+       "from": "h7",
+       "to": "d3",
+       "games": 71439,
+       "of": 73569,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Qxd3",
+       "uci": "d1d3",
+       "fen": "r2qkbnr/pp1nppp1/2p4p/7P/3P4/3Q1NN1/PPP2PP1/R1B1K2R b KQkq - 0 10",
+       "from": "d1",
+       "to": "d3",
+       "games": 71348,
+       "of": 71435,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "r2qkbnr/pp1n1pp1/2p1p2p/7P/3P4/3Q1NN1/PPP2PP1/R1B1K2R w KQkq - 0 11",
+       "from": "e7",
+       "to": "e6",
+       "games": 35631,
+       "of": 72042,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 754078,
+   "keyOpening": {
+    "eco": "B18",
+    "name": "Caro-Kann Defense: Classical Variation"
+   }
+  },
+  {
+   "id": "karpov",
+   "name": "Karpov Variation",
+   "group": "main",
+   "key": 8,
+   "lines": [
+    {
+     "label": "Main line",
+     "san": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Nf3 Ngf6 6. Nxf6+ Nxf6 7. Bc4 Bf5 8. O-O e6 9. c3 Bd6",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nc3",
+       "uci": "b1c3",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq - 1 3",
+       "from": "b1",
+       "to": "c3",
+       "games": 1628919,
+       "of": 7276799,
+       "rank": 3,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "dxe4",
+       "uci": "d5e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 4",
+       "from": "d5",
+       "to": "e4",
+       "games": 1440557,
+       "of": 1765829,
+       "rank": 1,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nxe4",
+       "uci": "c3e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+       "from": "c3",
+       "to": "e4",
+       "games": 1328505,
+       "of": 1444917,
+       "rank": 1,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense: Main Line"
+       }
+      },
+      {
+       "san": "Nd7",
+       "uci": "b8d7",
+       "fen": "r1bqkbnr/pp1npppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR w KQkq - 1 5",
+       "from": "b8",
+       "to": "d7",
+       "games": 177804,
+       "of": 1569175,
+       "rank": 3,
+       "opening": {
+        "eco": "B17",
+        "name": "Caro-Kann Defense: Karpov Variation"
+       }
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "r1bqkbnr/pp1npppp/2p5/8/3PN3/5N2/PPP2PPP/R1BQKB1R b KQkq - 2 5",
+       "from": "g1",
+       "to": "f3",
+       "games": 95607,
+       "of": 177772,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Ngf6",
+       "uci": "g8f6",
+       "fen": "r1bqkb1r/pp1npppp/2p2n2/8/3PN3/5N2/PPP2PPP/R1BQKB1R w KQkq - 3 6",
+       "from": "g8",
+       "to": "f6",
+       "games": 98247,
+       "of": 106233,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nxf6+",
+       "uci": "e4f6",
+       "fen": "r1bqkb1r/pp1npppp/2p2N2/8/3P4/5N2/PPP2PPP/R1BQKB1R b KQkq - 0 6",
+       "from": "e4",
+       "to": "f6",
+       "games": 25683,
+       "of": 98241,
+       "rank": 3,
+       "opening": null
+      },
+      {
+       "san": "Nxf6",
+       "uci": "d7f6",
+       "fen": "r1bqkb1r/pp2pppp/2p2n2/8/3P4/5N2/PPP2PPP/R1BQKB1R w KQkq - 0 7",
+       "from": "d7",
+       "to": "f6",
+       "games": 25445,
+       "of": 25677,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bc4",
+       "uci": "f1c4",
+       "fen": "r1bqkb1r/pp2pppp/2p2n2/8/2BP4/5N2/PPP2PPP/R1BQK2R b KQkq - 1 7",
+       "from": "f1",
+       "to": "c4",
+       "games": 6852,
+       "of": 27313,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Bf5",
+       "uci": "c8f5",
+       "fen": "r2qkb1r/pp2pppp/2p2n2/5b2/2BP4/5N2/PPP2PPP/R1BQK2R w KQkq - 2 8",
+       "from": "c8",
+       "to": "f5",
+       "games": 2215,
+       "of": 8396,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e1g1",
+       "fen": "r2qkb1r/pp2pppp/2p2n2/5b2/2BP4/5N2/PPP2PPP/R1BQ1RK1 b kq - 3 8",
+       "from": "e1",
+       "to": "g1",
+       "games": 1271,
+       "of": 2211,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "r2qkb1r/pp3ppp/2p1pn2/5b2/2BP4/5N2/PPP2PPP/R1BQ1RK1 w kq - 0 9",
+       "from": "e7",
+       "to": "e6",
+       "games": 1261,
+       "of": 1291,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "c3",
+       "uci": "c2c3",
+       "fen": "r2qkb1r/pp3ppp/2p1pn2/5b2/2BP4/2P2N2/PP3PPP/R1BQ1RK1 b kq - 0 9",
+       "from": "c2",
+       "to": "c3",
+       "games": 293,
+       "of": 1263,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Bd6",
+       "uci": "f8d6",
+       "fen": "r2qk2r/pp3ppp/2pbpn2/5b2/2BP4/2P2N2/PP3PPP/R1BQ1RK1 w kq - 1 10",
+       "from": "f8",
+       "to": "d6",
+       "games": 168,
+       "of": 473,
+       "rank": 2,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 177772,
+   "keyOpening": {
+    "eco": "B17",
+    "name": "Caro-Kann Defense: Karpov Variation"
+   }
+  },
+  {
+   "id": "advance",
+   "name": "Advance Variation",
+   "group": "main",
+   "key": 5,
+   "lines": [
+    {
+     "label": "3...Bf5",
+     "san": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 c5 6. Be3 Qb6 7. Nc3 Nc6",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "e5",
+       "uci": "e4e5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+       "from": "e4",
+       "to": "e5",
+       "games": 2810139,
+       "of": 7276799,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Advance Variation"
+       }
+      },
+      {
+       "san": "Bf5",
+       "uci": "c8f5",
+       "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 1 4",
+       "from": "c8",
+       "to": "f5",
+       "games": 1916329,
+       "of": 2839719,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 2 4",
+       "from": "g1",
+       "to": "f3",
+       "games": 475490,
+       "of": 1917310,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Advance Variation, Short Variation"
+       }
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 5",
+       "from": "e7",
+       "to": "e6",
+       "games": 568673,
+       "of": 642228,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Be2",
+       "uci": "f1e2",
+       "fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/5N2/PPP1BPPP/RNBQK2R b KQkq - 1 5",
+       "from": "f1",
+       "to": "e2",
+       "games": 112586,
+       "of": 570327,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "c5",
+       "uci": "c6c5",
+       "fen": "rn1qkbnr/pp3ppp/4p3/2ppPb2/3P4/5N2/PPP1BPPP/RNBQK2R w KQkq - 0 6",
+       "from": "c6",
+       "to": "c5",
+       "games": 52558,
+       "of": 120101,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Be3",
+       "uci": "c1e3",
+       "fen": "rn1qkbnr/pp3ppp/4p3/2ppPb2/3P4/4BN2/PPP1BPPP/RN1QK2R b KQkq - 1 6",
+       "from": "c1",
+       "to": "e3",
+       "games": 10175,
+       "of": 52714,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Qb6",
+       "uci": "d8b6",
+       "fen": "rn2kbnr/pp3ppp/1q2p3/2ppPb2/3P4/4BN2/PPP1BPPP/RN1QK2R w KQkq - 2 7",
+       "from": "d8",
+       "to": "b6",
+       "games": 3635,
+       "of": 10210,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nc3",
+       "uci": "b1c3",
+       "fen": "rn2kbnr/pp3ppp/1q2p3/2ppPb2/3P4/2N1BN2/PPP1BPPP/R2QK2R b KQkq - 3 7",
+       "from": "b1",
+       "to": "c3",
+       "games": 2710,
+       "of": 3637,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nc6",
+       "uci": "b8c6",
+       "fen": "r3kbnr/pp3ppp/1qn1p3/2ppPb2/3P4/2N1BN2/PPP1BPPP/R2QK2R w KQkq - 4 8",
+       "from": "b8",
+       "to": "c6",
+       "games": 1122,
+       "of": 2813,
+       "rank": 2,
+       "opening": null
+      }
+     ]
+    },
+    {
+     "label": "3...c5",
+     "san": "1. e4 c6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 cxd4 6. cxd4 Bg4 7. Be2 e6 8. O-O Nge7",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "e5",
+       "uci": "e4e5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+       "from": "e4",
+       "to": "e5",
+       "games": 2810139,
+       "of": 7276799,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Advance Variation"
+       }
+      },
+      {
+       "san": "c5",
+       "uci": "c6c5",
+       "fen": "rnbqkbnr/pp2pppp/8/2ppP3/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4",
+       "from": "c6",
+       "to": "c5",
+       "games": 728432,
+       "of": 2839719,
+       "rank": 2,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense"
+       }
+      },
+      {
+       "san": "c3",
+       "uci": "c2c3",
+       "fen": "rnbqkbnr/pp2pppp/8/2ppP3/3P4/2P5/PP3PPP/RNBQKBNR b KQkq - 0 4",
+       "from": "c2",
+       "to": "c3",
+       "games": 455616,
+       "of": 728395,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nc6",
+       "uci": "b8c6",
+       "fen": "r1bqkbnr/pp2pppp/2n5/2ppP3/3P4/2P5/PP3PPP/RNBQKBNR w KQkq - 1 5",
+       "from": "b8",
+       "to": "c6",
+       "games": 361168,
+       "of": 459048,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "r1bqkbnr/pp2pppp/2n5/2ppP3/3P4/2P2N2/PP3PPP/RNBQKB1R b KQkq - 2 5",
+       "from": "g1",
+       "to": "f3",
+       "games": 193135,
+       "of": 361074,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "cxd4",
+       "uci": "c5d4",
+       "fen": "r1bqkbnr/pp2pppp/2n5/3pP3/3p4/2P2N2/PP3PPP/RNBQKB1R w KQkq - 0 6",
+       "from": "c5",
+       "to": "d4",
+       "games": 53721,
+       "of": 216843,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "cxd4",
+       "uci": "c3d4",
+       "fen": "r1bqkbnr/pp2pppp/2n5/3pP3/3P4/5N2/PP3PPP/RNBQKB1R b KQkq - 0 6",
+       "from": "c3",
+       "to": "d4",
+       "games": 52343,
+       "of": 53796,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bg4",
+       "uci": "c8g4",
+       "fen": "r2qkbnr/pp2pppp/2n5/3pP3/3P2b1/5N2/PP3PPP/RNBQKB1R w KQkq - 1 7",
+       "from": "c8",
+       "to": "g4",
+       "games": 71098,
+       "of": 78848,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Be2",
+       "uci": "f1e2",
+       "fen": "r2qkbnr/pp2pppp/2n5/3pP3/3P2b1/5N2/PP2BPPP/RNBQK2R b KQkq - 2 7",
+       "from": "f1",
+       "to": "e2",
+       "games": 33384,
+       "of": 74284,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "r2qkbnr/pp3ppp/2n1p3/3pP3/3P2b1/5N2/PP2BPPP/RNBQK2R w KQkq - 0 8",
+       "from": "e7",
+       "to": "e6",
+       "games": 34626,
+       "of": 40892,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e1g1",
+       "fen": "r2qkbnr/pp3ppp/2n1p3/3pP3/3P2b1/5N2/PP2BPPP/RNBQ1RK1 b kq - 1 8",
+       "from": "e1",
+       "to": "g1",
+       "games": 18292,
+       "of": 37260,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nge7",
+       "uci": "g8e7",
+       "fen": "r2qkb1r/pp2nppp/2n1p3/3pP3/3P2b1/5N2/PP2BPPP/RNBQ1RK1 w kq - 2 9",
+       "from": "g8",
+       "to": "e7",
+       "games": 17490,
+       "of": 26716,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 2839719,
+   "keyOpening": {
+    "eco": "B12",
+    "name": "Caro-Kann Defense: Advance Variation"
+   }
+  },
+  {
+   "id": "exchange",
+   "name": "Exchange Variation",
+   "group": "main",
+   "key": 7,
+   "shareAt": 6,
+   "lines": [
+    {
+     "label": "4.Bd3",
+     "san": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. Bf4 Bg4 7. Qb3 Qd7 8. Nd2 e6 9. Ngf3",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "exd5",
+       "uci": "e4d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+       "from": "e4",
+       "to": "d5",
+       "games": 2130055,
+       "of": 7276799,
+       "rank": 2,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Exchange Variation"
+       }
+      },
+      {
+       "san": "cxd5",
+       "uci": "c6d5",
+       "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4",
+       "from": "c6",
+       "to": "d5",
+       "games": 2105800,
+       "of": 2156129,
+       "rank": 1,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Exchange Variation"
+       }
+      },
+      {
+       "san": "Bd3",
+       "uci": "f1d3",
+       "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq - 1 4",
+       "from": "f1",
+       "to": "d3",
+       "games": 576899,
+       "of": 2154059,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Nc6",
+       "uci": "b8c6",
+       "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/3B4/PPP2PPP/RNBQK1NR w KQkq - 2 5",
+       "from": "b8",
+       "to": "c6",
+       "games": 319515,
+       "of": 577489,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "c3",
+       "uci": "c2c3",
+       "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/2PB4/PP3PPP/RNBQK1NR b KQkq - 0 5",
+       "from": "c2",
+       "to": "c3",
+       "games": 257026,
+       "of": 319434,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf6",
+       "uci": "g8f6",
+       "fen": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P4/2PB4/PP3PPP/RNBQK1NR w KQkq - 1 6",
+       "from": "g8",
+       "to": "f6",
+       "games": 201211,
+       "of": 266588,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bf4",
+       "uci": "c1f4",
+       "fen": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P1B2/2PB4/PP3PPP/RN1QK1NR b KQkq - 2 6",
+       "from": "c1",
+       "to": "f4",
+       "games": 85509,
+       "of": 230153,
+       "rank": 1,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Exchange Variation, Rubinstein Variation"
+       }
+      },
+      {
+       "san": "Bg4",
+       "uci": "c8g4",
+       "fen": "r2qkb1r/pp2pppp/2n2n2/3p4/3P1Bb1/2PB4/PP3PPP/RN1QK1NR w KQkq - 3 7",
+       "from": "c8",
+       "to": "g4",
+       "games": 65815,
+       "of": 107980,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Qb3",
+       "uci": "d1b3",
+       "fen": "r2qkb1r/pp2pppp/2n2n2/3p4/3P1Bb1/1QPB4/PP3PPP/RN2K1NR b KQkq - 4 7",
+       "from": "d1",
+       "to": "b3",
+       "games": 43058,
+       "of": 65807,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Qd7",
+       "uci": "d8d7",
+       "fen": "r3kb1r/pp1qpppp/2n2n2/3p4/3P1Bb1/1QPB4/PP3PPP/RN2K1NR w KQkq - 5 8",
+       "from": "d8",
+       "to": "d7",
+       "games": 15231,
+       "of": 43057,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nd2",
+       "uci": "b1d2",
+       "fen": "r3kb1r/pp1qpppp/2n2n2/3p4/3P1Bb1/1QPB4/PP1N1PPP/R3K1NR b KQkq - 6 8",
+       "from": "b1",
+       "to": "d2",
+       "games": 15044,
+       "of": 16358,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "r3kb1r/pp1q1ppp/2n1pn2/3p4/3P1Bb1/1QPB4/PP1N1PPP/R3K1NR w KQkq - 0 9",
+       "from": "e7",
+       "to": "e6",
+       "games": 14000,
+       "of": 15052,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Ngf3",
+       "uci": "g1f3",
+       "fen": "r3kb1r/pp1q1ppp/2n1pn2/3p4/3P1Bb1/1QPB1N2/PP1N1PPP/R3K2R b KQkq - 1 9",
+       "from": "g1",
+       "to": "f3",
+       "games": 13303,
+       "of": 14087,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    },
+    {
+     "label": "4.Nf3",
+     "san": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 Nc6 5. Bb5 Bg4 6. O-O e6",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "exd5",
+       "uci": "e4d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+       "from": "e4",
+       "to": "d5",
+       "games": 2130055,
+       "of": 7276799,
+       "rank": 2,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Exchange Variation"
+       }
+      },
+      {
+       "san": "cxd5",
+       "uci": "c6d5",
+       "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4",
+       "from": "c6",
+       "to": "d5",
+       "games": 2105800,
+       "of": 2156129,
+       "rank": 1,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Exchange Variation"
+       }
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 4",
+       "from": "g1",
+       "to": "f3",
+       "games": 600338,
+       "of": 2154059,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nc6",
+       "uci": "b8c6",
+       "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/5N2/PPP2PPP/RNBQKB1R w KQkq - 2 5",
+       "from": "b8",
+       "to": "c6",
+       "games": 764689,
+       "of": 2072358,
+       "rank": 1,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Exchange Variation"
+       }
+      },
+      {
+       "san": "Bb5",
+       "uci": "f1b5",
+       "fen": "r1bqkbnr/pp2pppp/2n5/1B1p4/3P4/5N2/PPP2PPP/RNBQK2R b KQkq - 3 5",
+       "from": "f1",
+       "to": "b5",
+       "games": 194429,
+       "of": 770210,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bg4",
+       "uci": "c8g4",
+       "fen": "r2qkbnr/pp2pppp/2n5/1B1p4/3P2b1/5N2/PPP2PPP/RNBQK2R w KQkq - 4 6",
+       "from": "c8",
+       "to": "g4",
+       "games": 98229,
+       "of": 217089,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e1g1",
+       "fen": "r2qkbnr/pp2pppp/2n5/1B1p4/3P2b1/5N2/PPP2PPP/RNBQ1RK1 b kq - 5 6",
+       "from": "e1",
+       "to": "g1",
+       "games": 38633,
+       "of": 127931,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "r2qkbnr/pp3ppp/2n1p3/1B1p4/3P2b1/5N2/PPP2PPP/RNBQ1RK1 w kq - 0 7",
+       "from": "e7",
+       "to": "e6",
+       "games": 24087,
+       "of": 40577,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 577489,
+   "keyOpening": null
+  },
+  {
+   "id": "panov",
+   "name": "Panov-Botvinnik Attack",
+   "group": "main",
+   "key": 7,
+   "lines": [
+    {
+     "label": "Main line",
+     "san": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 e6 6. Nf3 Be7 7. cxd5 Nxd5 8. Bd3 Nc6 9. O-O O-O",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "exd5",
+       "uci": "e4d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+       "from": "e4",
+       "to": "d5",
+       "games": 2130055,
+       "of": 7276799,
+       "rank": 2,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Exchange Variation"
+       }
+      },
+      {
+       "san": "cxd5",
+       "uci": "c6d5",
+       "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4",
+       "from": "c6",
+       "to": "d5",
+       "games": 2105800,
+       "of": 2156129,
+       "rank": 1,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Exchange Variation"
+       }
+      },
+      {
+       "san": "c4",
+       "uci": "c2c4",
+       "fen": "rnbqkbnr/pp2pppp/8/3p4/2PP4/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
+       "from": "c2",
+       "to": "c4",
+       "games": 490388,
+       "of": 2154059,
+       "rank": 3,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Panov Attack"
+       }
+      },
+      {
+       "san": "Nf6",
+       "uci": "g8f6",
+       "fen": "rnbqkb1r/pp2pppp/5n2/3p4/2PP4/8/PP3PPP/RNBQKBNR w KQkq - 1 5",
+       "from": "g8",
+       "to": "f6",
+       "games": 314252,
+       "of": 526206,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nc3",
+       "uci": "b1c3",
+       "fen": "rnbqkb1r/pp2pppp/5n2/3p4/2PP4/2N5/PP3PPP/R1BQKBNR b KQkq - 2 5",
+       "from": "b1",
+       "to": "c3",
+       "games": 248892,
+       "of": 347305,
+       "rank": 1,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Panov Attack"
+       }
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "rnbqkb1r/pp3ppp/4pn2/3p4/2PP4/2N5/PP3PPP/R1BQKBNR w KQkq - 0 6",
+       "from": "e7",
+       "to": "e6",
+       "games": 81505,
+       "of": 255757,
+       "rank": 2,
+       "opening": {
+        "eco": "B14",
+        "name": "Caro-Kann Defense: Panov Attack"
+       }
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rnbqkb1r/pp3ppp/4pn2/3p4/2PP4/2N2N2/PP3PPP/R1BQKB1R b KQkq - 1 6",
+       "from": "g1",
+       "to": "f3",
+       "games": 70862,
+       "of": 123060,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Be7",
+       "uci": "f8e7",
+       "fen": "rnbqk2r/pp2bppp/4pn2/3p4/2PP4/2N2N2/PP3PPP/R1BQKB1R w KQkq - 2 7",
+       "from": "f8",
+       "to": "e7",
+       "games": 30730,
+       "of": 134831,
+       "rank": 3,
+       "opening": null
+      },
+      {
+       "san": "cxd5",
+       "uci": "c4d5",
+       "fen": "rnbqk2r/pp2bppp/4pn2/3P4/3P4/2N2N2/PP3PPP/R1BQKB1R b KQkq - 0 7",
+       "from": "c4",
+       "to": "d5",
+       "games": 7298,
+       "of": 31604,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nxd5",
+       "uci": "f6d5",
+       "fen": "rnbqk2r/pp2bppp/4p3/3n4/3P4/2N2N2/PP3PPP/R1BQKB1R w KQkq - 0 8",
+       "from": "f6",
+       "to": "d5",
+       "games": 5458,
+       "of": 7433,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bd3",
+       "uci": "f1d3",
+       "fen": "rnbqk2r/pp2bppp/4p3/3n4/3P4/2NB1N2/PP3PPP/R1BQK2R b KQkq - 1 8",
+       "from": "f1",
+       "to": "d3",
+       "games": 3512,
+       "of": 7498,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nc6",
+       "uci": "b8c6",
+       "fen": "r1bqk2r/pp2bppp/2n1p3/3n4/3P4/2NB1N2/PP3PPP/R1BQK2R w KQkq - 2 9",
+       "from": "b8",
+       "to": "c6",
+       "games": 823,
+       "of": 3640,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e1g1",
+       "fen": "r1bqk2r/pp2bppp/2n1p3/3n4/3P4/2NB1N2/PP3PPP/R1BQ1RK1 b kq - 3 9",
+       "from": "e1",
+       "to": "g1",
+       "games": 1949,
+       "of": 2290,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e8g8",
+       "fen": "r1bq1rk1/pp2bppp/2n1p3/3n4/3P4/2NB1N2/PP3PPP/R1BQ1RK1 w - - 4 10",
+       "from": "e8",
+       "to": "g8",
+       "games": 1593,
+       "of": 2282,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 526206,
+   "keyOpening": {
+    "eco": "B13",
+    "name": "Caro-Kann Defense: Panov Attack"
+   }
+  },
+  {
+   "id": "two-knights",
+   "name": "Two Knights Attack",
+   "group": "main",
+   "key": 5,
+   "lines": [
+    {
+     "label": "3...Bg4",
+     "san": "1. e4 c6 2. Nc3 d5 3. Nf3 Bg4 4. h3 Bxf3 5. Qxf3 e6 6. d4 Nf6 7. e5 Nfd7",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nc3",
+       "uci": "b1c3",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2",
+       "from": "b1",
+       "to": "c3",
+       "games": 776866,
+       "of": 13583174,
+       "rank": 3,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 717365,
+       "of": 785344,
+       "rank": 1,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 1 3",
+       "from": "g1",
+       "to": "f3",
+       "games": 266137,
+       "of": 724838,
+       "rank": 2,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense: Two Knights Attack"
+       }
+      },
+      {
+       "san": "Bg4",
+       "uci": "c8g4",
+       "fen": "rn1qkbnr/pp2pppp/2p5/3p4/4P1b1/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 2 4",
+       "from": "c8",
+       "to": "g4",
+       "games": 193394,
+       "of": 679104,
+       "rank": 2,
+       "opening": {
+        "eco": "B11",
+        "name": "Caro-Kann Defense: Two Knights Attack, Mindeno Variation"
+       }
+      },
+      {
+       "san": "h3",
+       "uci": "h2h3",
+       "fen": "rn1qkbnr/pp2pppp/2p5/3p4/4P1b1/2N2N1P/PPPP1PP1/R1BQKB1R b KQkq - 0 4",
+       "from": "h2",
+       "to": "h3",
+       "games": 100356,
+       "of": 193347,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bxf3",
+       "uci": "g4f3",
+       "fen": "rn1qkbnr/pp2pppp/2p5/3p4/4P3/2N2b1P/PPPP1PP1/R1BQKB1R w KQkq - 0 5",
+       "from": "g4",
+       "to": "f3",
+       "games": 62717,
+       "of": 100338,
+       "rank": 1,
+       "opening": {
+        "eco": "B11",
+        "name": "Caro-Kann Defense: Two Knights Attack, Mindeno Variation, Exchange Line"
+       }
+      },
+      {
+       "san": "Qxf3",
+       "uci": "d1f3",
+       "fen": "rn1qkbnr/pp2pppp/2p5/3p4/4P3/2N2Q1P/PPPP1PP1/R1B1KB1R b KQkq - 0 5",
+       "from": "d1",
+       "to": "f3",
+       "games": 61790,
+       "of": 62705,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "rn1qkbnr/pp3ppp/2p1p3/3p4/4P3/2N2Q1P/PPPP1PP1/R1B1KB1R w KQkq - 0 6",
+       "from": "e7",
+       "to": "e6",
+       "games": 38364,
+       "of": 61788,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rn1qkbnr/pp3ppp/2p1p3/3p4/3PP3/2N2Q1P/PPP2PP1/R1B1KB1R b KQkq - 0 6",
+       "from": "d2",
+       "to": "d4",
+       "games": 12329,
+       "of": 38348,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf6",
+       "uci": "g8f6",
+       "fen": "rn1qkb1r/pp3ppp/2p1pn2/3p4/3PP3/2N2Q1P/PPP2PP1/R1B1KB1R w KQkq - 1 7",
+       "from": "g8",
+       "to": "f6",
+       "games": 5137,
+       "of": 13658,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e5",
+       "uci": "e4e5",
+       "fen": "rn1qkb1r/pp3ppp/2p1pn2/3pP3/3P4/2N2Q1P/PPP2PP1/R1B1KB1R b KQkq - 0 7",
+       "from": "e4",
+       "to": "e5",
+       "games": 2774,
+       "of": 5330,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nfd7",
+       "uci": "f6d7",
+       "fen": "rn1qkb1r/pp1n1ppp/2p1p3/3pP3/3P4/2N2Q1P/PPP2PP1/R1B1KB1R w KQkq - 1 8",
+       "from": "f6",
+       "to": "d7",
+       "games": 2688,
+       "of": 2773,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    },
+    {
+     "label": "3...dxe4",
+     "san": "1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 Nf6 5. Qe2 Nxe4 6. Qxe4 Nd7 7. Bc4 Nf6 8. Qe2 Bf5",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nc3",
+       "uci": "b1c3",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2",
+       "from": "b1",
+       "to": "c3",
+       "games": 776866,
+       "of": 13583174,
+       "rank": 3,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 717365,
+       "of": 785344,
+       "rank": 1,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 1 3",
+       "from": "g1",
+       "to": "f3",
+       "games": 266137,
+       "of": 724838,
+       "rank": 2,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense: Two Knights Attack"
+       }
+      },
+      {
+       "san": "dxe4",
+       "uci": "d5e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/4p3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 0 4",
+       "from": "d5",
+       "to": "e4",
+       "games": 365688,
+       "of": 679104,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nxe4",
+       "uci": "c3e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/4N3/5N2/PPPP1PPP/R1BQKB1R b KQkq - 0 4",
+       "from": "c3",
+       "to": "e4",
+       "games": 362008,
+       "of": 365616,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf6",
+       "uci": "g8f6",
+       "fen": "rnbqkb1r/pp2pppp/2p2n2/8/4N3/5N2/PPPP1PPP/R1BQKB1R w KQkq - 1 5",
+       "from": "g8",
+       "to": "f6",
+       "games": 174901,
+       "of": 362898,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Qe2",
+       "uci": "d1e2",
+       "fen": "rnbqkb1r/pp2pppp/2p2n2/8/4N3/5N2/PPPPQPPP/R1B1KB1R b KQkq - 2 5",
+       "from": "d1",
+       "to": "e2",
+       "games": 61564,
+       "of": 174855,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Nxe4",
+       "uci": "f6e4",
+       "fen": "rnbqkb1r/pp2pppp/2p5/8/4n3/5N2/PPPPQPPP/R1B1KB1R w KQkq - 0 6",
+       "from": "f6",
+       "to": "e4",
+       "games": 43264,
+       "of": 61783,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Qxe4",
+       "uci": "e2e4",
+       "fen": "rnbqkb1r/pp2pppp/2p5/8/4Q3/5N2/PPPP1PPP/R1B1KB1R b KQkq - 0 6",
+       "from": "e2",
+       "to": "e4",
+       "games": 43243,
+       "of": 43263,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nd7",
+       "uci": "b8d7",
+       "fen": "r1bqkb1r/pp1npppp/2p5/8/4Q3/5N2/PPPP1PPP/R1B1KB1R w KQkq - 1 7",
+       "from": "b8",
+       "to": "d7",
+       "games": 25124,
+       "of": 43279,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bc4",
+       "uci": "f1c4",
+       "fen": "r1bqkb1r/pp1npppp/2p5/8/2B1Q3/5N2/PPPP1PPP/R1B1K2R b KQkq - 2 7",
+       "from": "f1",
+       "to": "c4",
+       "games": 19365,
+       "of": 25118,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf6",
+       "uci": "d7f6",
+       "fen": "r1bqkb1r/pp2pppp/2p2n2/8/2B1Q3/5N2/PPPP1PPP/R1B1K2R w KQkq - 3 8",
+       "from": "d7",
+       "to": "f6",
+       "games": 19067,
+       "of": 20854,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Qe2",
+       "uci": "e4e2",
+       "fen": "r1bqkb1r/pp2pppp/2p2n2/8/2B5/5N2/PPPPQPPP/R1B1K2R b KQkq - 4 8",
+       "from": "e4",
+       "to": "e2",
+       "games": 5457,
+       "of": 19163,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Bf5",
+       "uci": "c8f5",
+       "fen": "r2qkb1r/pp2pppp/2p2n2/5b2/2B5/5N2/PPPPQPPP/R1B1K2R w KQkq - 5 9",
+       "from": "c8",
+       "to": "f5",
+       "games": 1273,
+       "of": 5483,
+       "rank": 3,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 679104,
+   "keyOpening": {
+    "eco": "B10",
+    "name": "Caro-Kann Defense: Two Knights Attack"
+   }
+  },
+  {
+   "id": "fantasy",
+   "name": "Fantasy Variation",
+   "group": "main",
+   "key": 5,
+   "lines": [
+    {
+     "label": "3...e6",
+     "san": "1. e4 c6 2. d4 d5 3. f3 e6 4. Nc3 Bb4 5. Bd2",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "f3",
+       "uci": "f2f3",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/5P2/PPP3PP/RNBQKBNR b KQkq - 0 3",
+       "from": "f2",
+       "to": "f3",
+       "games": 279963,
+       "of": 7276799,
+       "rank": 5,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Maróczy Variation"
+       }
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "rnbqkbnr/pp3ppp/2p1p3/3p4/3PP3/5P2/PPP3PP/RNBQKBNR w KQkq - 0 4",
+       "from": "e7",
+       "to": "e6",
+       "games": 58440,
+       "of": 283536,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Nc3",
+       "uci": "b1c3",
+       "fen": "rnbqkbnr/pp3ppp/2p1p3/3p4/3PP3/2N2P2/PPP3PP/R1BQKBNR b KQkq - 1 4",
+       "from": "b1",
+       "to": "c3",
+       "games": 30457,
+       "of": 60216,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bb4",
+       "uci": "f8b4",
+       "fen": "rnbqk1nr/pp3ppp/2p1p3/3p4/1b1PP3/2N2P2/PPP3PP/R1BQKBNR w KQkq - 2 5",
+       "from": "f8",
+       "to": "b4",
+       "games": 13582,
+       "of": 36108,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bd2",
+       "uci": "c1d2",
+       "fen": "rnbqk1nr/pp3ppp/2p1p3/3p4/1b1PP3/2N2P2/PPPB2PP/R2QKBNR b KQkq - 3 5",
+       "from": "c1",
+       "to": "d2",
+       "games": 3818,
+       "of": 13664,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    },
+    {
+     "label": "3...dxe4",
+     "san": "1. e4 c6 2. d4 d5 3. f3 dxe4 4. fxe4 e5 5. Nf3 Bg4 6. Bc4 Nd7 7. O-O Ngf6 8. c3 Bd6",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "f3",
+       "uci": "f2f3",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/5P2/PPP3PP/RNBQKBNR b KQkq - 0 3",
+       "from": "f2",
+       "to": "f3",
+       "games": 279963,
+       "of": 7276799,
+       "rank": 5,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Maróczy Variation"
+       }
+      },
+      {
+       "san": "dxe4",
+       "uci": "d5e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/3Pp3/5P2/PPP3PP/RNBQKBNR w KQkq - 0 4",
+       "from": "d5",
+       "to": "e4",
+       "games": 140604,
+       "of": 283536,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "fxe4",
+       "uci": "f3e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/3PP3/8/PPP3PP/RNBQKBNR b KQkq - 0 4",
+       "from": "f3",
+       "to": "e4",
+       "games": 137196,
+       "of": 140765,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e5",
+       "uci": "e7e5",
+       "fen": "rnbqkbnr/pp3ppp/2p5/4p3/3PP3/8/PPP3PP/RNBQKBNR w KQkq - 0 5",
+       "from": "e7",
+       "to": "e5",
+       "games": 72473,
+       "of": 137262,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rnbqkbnr/pp3ppp/2p5/4p3/3PP3/5N2/PPP3PP/RNBQKB1R b KQkq - 1 5",
+       "from": "g1",
+       "to": "f3",
+       "games": 63316,
+       "of": 72599,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bg4",
+       "uci": "c8g4",
+       "fen": "rn1qkbnr/pp3ppp/2p5/4p3/3PP1b1/5N2/PPP3PP/RNBQKB1R w KQkq - 2 6",
+       "from": "c8",
+       "to": "g4",
+       "games": 32873,
+       "of": 63322,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bc4",
+       "uci": "f1c4",
+       "fen": "rn1qkbnr/pp3ppp/2p5/4p3/2BPP1b1/5N2/PPP3PP/RNBQK2R b KQkq - 3 6",
+       "from": "f1",
+       "to": "c4",
+       "games": 22591,
+       "of": 32892,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nd7",
+       "uci": "b8d7",
+       "fen": "r2qkbnr/pp1n1ppp/2p5/4p3/2BPP1b1/5N2/PPP3PP/RNBQK2R w KQkq - 4 7",
+       "from": "b8",
+       "to": "d7",
+       "games": 9785,
+       "of": 22586,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e1g1",
+       "fen": "r2qkbnr/pp1n1ppp/2p5/4p3/2BPP1b1/5N2/PPP3PP/RNBQ1RK1 b kq - 5 7",
+       "from": "e1",
+       "to": "g1",
+       "games": 7191,
+       "of": 9787,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Ngf6",
+       "uci": "g8f6",
+       "fen": "r2qkb1r/pp1n1ppp/2p2n2/4p3/2BPP1b1/5N2/PPP3PP/RNBQ1RK1 w kq - 6 8",
+       "from": "g8",
+       "to": "f6",
+       "games": 5973,
+       "of": 7189,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "c3",
+       "uci": "c2c3",
+       "fen": "r2qkb1r/pp1n1ppp/2p2n2/4p3/2BPP1b1/2P2N2/PP4PP/RNBQ1RK1 b kq - 0 8",
+       "from": "c2",
+       "to": "c3",
+       "games": 1773,
+       "of": 6037,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bd6",
+       "uci": "f8d6",
+       "fen": "r2qk2r/pp1n1ppp/2pb1n2/4p3/2BPP1b1/2P2N2/PP4PP/RNBQ1RK1 w kq - 1 9",
+       "from": "f8",
+       "to": "d6",
+       "games": 1223,
+       "of": 2047,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 283536,
+   "keyOpening": {
+    "eco": "B12",
+    "name": "Caro-Kann Defense: Maróczy Variation"
+   }
+  },
+  {
+   "id": "tartakower",
+   "name": "Tartakower Variation",
+   "group": "nf6",
+   "key": 10,
+   "lines": [
+    {
+     "label": "Main line",
+     "san": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. c3 Bd6 7. Bd3 O-O 8. Qc2",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nc3",
+       "uci": "b1c3",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq - 1 3",
+       "from": "b1",
+       "to": "c3",
+       "games": 1628919,
+       "of": 7276799,
+       "rank": 3,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "dxe4",
+       "uci": "d5e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 4",
+       "from": "d5",
+       "to": "e4",
+       "games": 1440557,
+       "of": 1765829,
+       "rank": 1,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nxe4",
+       "uci": "c3e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+       "from": "c3",
+       "to": "e4",
+       "games": 1328505,
+       "of": 1444917,
+       "rank": 1,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense: Main Line"
+       }
+      },
+      {
+       "san": "Nf6",
+       "uci": "g8f6",
+       "fen": "rnbqkb1r/pp2pppp/2p2n2/8/3PN3/8/PPP2PPP/R1BQKBNR w KQkq - 1 5",
+       "from": "g8",
+       "to": "f6",
+       "games": 596934,
+       "of": 1569175,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Nxf6+",
+       "uci": "e4f6",
+       "fen": "rnbqkb1r/pp2pppp/2p2N2/8/3P4/8/PPP2PPP/R1BQKBNR b KQkq - 0 5",
+       "from": "e4",
+       "to": "f6",
+       "games": 377702,
+       "of": 596746,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "exf6",
+       "uci": "e7f6",
+       "fen": "rnbqkb1r/pp3ppp/2p2p2/8/3P4/8/PPP2PPP/R1BQKBNR w KQkq - 0 6",
+       "from": "e7",
+       "to": "f6",
+       "games": 348255,
+       "of": 377668,
+       "rank": 1,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense: Tartakower Variation"
+       }
+      },
+      {
+       "san": "c3",
+       "uci": "c2c3",
+       "fen": "rnbqkb1r/pp3ppp/2p2p2/8/3P4/2P5/PP3PPP/R1BQKBNR b KQkq - 0 6",
+       "from": "c2",
+       "to": "c3",
+       "games": 73709,
+       "of": 348314,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Bd6",
+       "uci": "f8d6",
+       "fen": "rnbqk2r/pp3ppp/2pb1p2/8/3P4/2P5/PP3PPP/R1BQKBNR w KQkq - 1 7",
+       "from": "f8",
+       "to": "d6",
+       "games": 61042,
+       "of": 73691,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bd3",
+       "uci": "f1d3",
+       "fen": "rnbqk2r/pp3ppp/2pb1p2/8/3P4/2PB4/PP3PPP/R1BQK1NR b KQkq - 2 7",
+       "from": "f1",
+       "to": "d3",
+       "games": 48908,
+       "of": 61038,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e8g8",
+       "fen": "rnbq1rk1/pp3ppp/2pb1p2/8/3P4/2PB4/PP3PPP/R1BQK1NR w KQ - 3 8",
+       "from": "e8",
+       "to": "g8",
+       "games": 44223,
+       "of": 50077,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Qc2",
+       "uci": "d1c2",
+       "fen": "rnbq1rk1/pp3ppp/2pb1p2/8/3P4/2PB4/PPQ2PPP/R1B1K1NR b KQ - 4 8",
+       "from": "d1",
+       "to": "c2",
+       "games": 22192,
+       "of": 44213,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 348314,
+   "keyOpening": {
+    "eco": "B15",
+    "name": "Caro-Kann Defense: Tartakower Variation"
+   }
+  },
+  {
+   "id": "bronstein-larsen",
+   "name": "Bronstein-Larsen Variation",
+   "group": "nf6",
+   "key": 10,
+   "lines": [
+    {
+     "label": "Main line",
+     "san": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ gxf6 6. Nf3 Bg4 7. Be2",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d4",
+       "games": 7344234,
+       "of": 13583174,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 7204007,
+       "of": 7667445,
+       "rank": 1,
+       "opening": {
+        "eco": "B12",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nc3",
+       "uci": "b1c3",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq - 1 3",
+       "from": "b1",
+       "to": "c3",
+       "games": 1628919,
+       "of": 7276799,
+       "rank": 3,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "dxe4",
+       "uci": "d5e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 4",
+       "from": "d5",
+       "to": "e4",
+       "games": 1440557,
+       "of": 1765829,
+       "rank": 1,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nxe4",
+       "uci": "c3e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+       "from": "c3",
+       "to": "e4",
+       "games": 1328505,
+       "of": 1444917,
+       "rank": 1,
+       "opening": {
+        "eco": "B15",
+        "name": "Caro-Kann Defense: Main Line"
+       }
+      },
+      {
+       "san": "Nf6",
+       "uci": "g8f6",
+       "fen": "rnbqkb1r/pp2pppp/2p2n2/8/3PN3/8/PPP2PPP/R1BQKBNR w KQkq - 1 5",
+       "from": "g8",
+       "to": "f6",
+       "games": 596934,
+       "of": 1569175,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Nxf6+",
+       "uci": "e4f6",
+       "fen": "rnbqkb1r/pp2pppp/2p2N2/8/3P4/8/PPP2PPP/R1BQKBNR b KQkq - 0 5",
+       "from": "e4",
+       "to": "f6",
+       "games": 377702,
+       "of": 596746,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "gxf6",
+       "uci": "g7f6",
+       "fen": "rnbqkb1r/pp2pp1p/2p2p2/8/3P4/8/PPP2PPP/R1BQKBNR w KQkq - 0 6",
+       "from": "g7",
+       "to": "f6",
+       "games": 29413,
+       "of": 377668,
+       "rank": 2,
+       "opening": {
+        "eco": "B16",
+        "name": "Caro-Kann Defense: Bronstein-Larsen Variation"
+       }
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rnbqkb1r/pp2pp1p/2p2p2/8/3P4/5N2/PPP2PPP/R1BQKB1R b KQkq - 1 6",
+       "from": "g1",
+       "to": "f3",
+       "games": 14765,
+       "of": 29453,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bg4",
+       "uci": "c8g4",
+       "fen": "rn1qkb1r/pp2pp1p/2p2p2/8/3P2b1/5N2/PPP2PPP/R1BQKB1R w KQkq - 2 7",
+       "from": "c8",
+       "to": "g4",
+       "games": 8435,
+       "of": 16953,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Be2",
+       "uci": "f1e2",
+       "fen": "rn1qkb1r/pp2pp1p/2p2p2/8/3P2b1/5N2/PPP1BPPP/R1BQK2R b KQkq - 3 7",
+       "from": "f1",
+       "to": "e2",
+       "games": 5068,
+       "of": 8521,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 29453,
+   "keyOpening": {
+    "eco": "B16",
+    "name": "Caro-Kann Defense: Bronstein-Larsen Variation"
+   }
+  },
+  {
+   "id": "nf3",
+   "name": "2.Nf3",
+   "group": "side",
+   "key": 3,
+   "lines": [
+    {
+     "label": "3.exd5",
+     "san": "1. e4 c6 2. Nf3 d5 3. exd5 cxd5 4. d4 Nc6 5. Bb5 Bg4 6. O-O e6",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+       "from": "g1",
+       "to": "f3",
+       "games": 3180672,
+       "of": 13583174,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 2993464,
+       "of": 3216747,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "exd5",
+       "uci": "e4d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3P4/8/5N2/PPPP1PPP/RNBQKB1R b KQkq - 0 3",
+       "from": "e4",
+       "to": "d5",
+       "games": 1858365,
+       "of": 3005472,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "cxd5",
+       "uci": "c6d5",
+       "fen": "rnbqkbnr/pp2pppp/8/3p4/8/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 4",
+       "from": "c6",
+       "to": "d5",
+       "games": 1839430,
+       "of": 1875738,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 4",
+       "from": "d2",
+       "to": "d4",
+       "games": 1457499,
+       "of": 1838961,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nc6",
+       "uci": "b8c6",
+       "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/5N2/PPP2PPP/RNBQKB1R w KQkq - 1 5",
+       "from": "b8",
+       "to": "c6",
+       "games": 764689,
+       "of": 2072358,
+       "rank": 1,
+       "opening": {
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Exchange Variation"
+       }
+      },
+      {
+       "san": "Bb5",
+       "uci": "f1b5",
+       "fen": "r1bqkbnr/pp2pppp/2n5/1B1p4/3P4/5N2/PPP2PPP/RNBQK2R b KQkq - 2 5",
+       "from": "f1",
+       "to": "b5",
+       "games": 194429,
+       "of": 770210,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bg4",
+       "uci": "c8g4",
+       "fen": "r2qkbnr/pp2pppp/2n5/1B1p4/3P2b1/5N2/PPP2PPP/RNBQK2R w KQkq - 3 6",
+       "from": "c8",
+       "to": "g4",
+       "games": 98229,
+       "of": 217089,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e1g1",
+       "fen": "r2qkbnr/pp2pppp/2n5/1B1p4/3P2b1/5N2/PPP2PPP/RNBQ1RK1 b kq - 4 6",
+       "from": "e1",
+       "to": "g1",
+       "games": 38633,
+       "of": 127931,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "r2qkbnr/pp3ppp/2n1p3/1B1p4/3P2b1/5N2/PPP2PPP/RNBQ1RK1 w kq - 0 7",
+       "from": "e7",
+       "to": "e6",
+       "games": 24087,
+       "of": 40577,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    },
+    {
+     "label": "3.e5",
+     "san": "1. e4 c6 2. Nf3 d5 3. e5 Bg4 4. d4 e6 5. Be2 c5 6. O-O Nc6",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+       "from": "g1",
+       "to": "f3",
+       "games": 3180672,
+       "of": 13583174,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 2993464,
+       "of": 3216747,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e5",
+       "uci": "e4e5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3pP3/8/5N2/PPPP1PPP/RNBQKB1R b KQkq - 0 3",
+       "from": "e4",
+       "to": "e5",
+       "games": 580409,
+       "of": 3005472,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Bg4",
+       "uci": "c8g4",
+       "fen": "rn1qkbnr/pp2pppp/2p5/3pP3/6b1/5N2/PPPP1PPP/RNBQKB1R w KQkq - 1 4",
+       "from": "c8",
+       "to": "g4",
+       "games": 296110,
+       "of": 583662,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "d4",
+       "uci": "d2d4",
+       "fen": "rn1qkbnr/pp2pppp/2p5/3pP3/3P2b1/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 4",
+       "from": "d2",
+       "to": "d4",
+       "games": 203854,
+       "of": 296072,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e6",
+       "uci": "e7e6",
+       "fen": "rn1qkbnr/pp3ppp/2p1p3/3pP3/3P2b1/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 5",
+       "from": "e7",
+       "to": "e6",
+       "games": 172269,
+       "of": 206044,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Be2",
+       "uci": "f1e2",
+       "fen": "rn1qkbnr/pp3ppp/2p1p3/3pP3/3P2b1/5N2/PPP1BPPP/RNBQK2R b KQkq - 1 5",
+       "from": "f1",
+       "to": "e2",
+       "games": 62834,
+       "of": 172296,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "c5",
+       "uci": "c6c5",
+       "fen": "rn1qkbnr/pp3ppp/4p3/2ppP3/3P2b1/5N2/PPP1BPPP/RNBQK2R w KQkq - 0 6",
+       "from": "c6",
+       "to": "c5",
+       "games": 44229,
+       "of": 83842,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e1g1",
+       "fen": "rn1qkbnr/pp3ppp/4p3/2ppP3/3P2b1/5N2/PPP1BPPP/RNBQ1RK1 b kq - 1 6",
+       "from": "e1",
+       "to": "g1",
+       "games": 5357,
+       "of": 48514,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Nc6",
+       "uci": "b8c6",
+       "fen": "r2qkbnr/pp3ppp/2n1p3/2ppP3/3P2b1/5N2/PPP1BPPP/RNBQ1RK1 w kq - 2 7",
+       "from": "b8",
+       "to": "c6",
+       "games": 4495,
+       "of": 6094,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 3216747,
+   "keyOpening": null
+  },
+  {
+   "id": "hillbilly",
+   "name": "2.Bc4",
+   "group": "side",
+   "key": 3,
+   "lines": [
+    {
+     "label": "3.exd5",
+     "san": "1. e4 c6 2. Bc4 d5 3. exd5 cxd5 4. Bb5+ Bd7",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Bc4",
+       "uci": "f1c4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq - 1 2",
+       "from": "f1",
+       "to": "c4",
+       "games": 640375,
+       "of": 13583174,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense: Hillbilly Attack"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2B1P3/8/PPPP1PPP/RNBQK1NR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 580192,
+       "of": 640092,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "exd5",
+       "uci": "e4d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3P4/2B5/8/PPPP1PPP/RNBQK1NR b KQkq - 0 3",
+       "from": "e4",
+       "to": "d5",
+       "games": 548576,
+       "of": 580088,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "cxd5",
+       "uci": "c6d5",
+       "fen": "rnbqkbnr/pp2pppp/8/3p4/2B5/8/PPPP1PPP/RNBQK1NR w KQkq - 0 4",
+       "from": "c6",
+       "to": "d5",
+       "games": 547936,
+       "of": 549038,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bb5+",
+       "uci": "c4b5",
+       "fen": "rnbqkbnr/pp2pppp/8/1B1p4/8/8/PPPP1PPP/RNBQK1NR b KQkq - 1 4",
+       "from": "c4",
+       "to": "b5",
+       "games": 129916,
+       "of": 547842,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Bd7",
+       "uci": "c8d7",
+       "fen": "rn1qkbnr/pp1bpppp/8/1B1p4/8/8/PPPP1PPP/RNBQK1NR w KQkq - 2 5",
+       "from": "c8",
+       "to": "d7",
+       "games": 58540,
+       "of": 130075,
+       "rank": 2,
+       "opening": null
+      }
+     ]
+    },
+    {
+     "label": "3.Bb3",
+     "san": "1. e4 c6 2. Bc4 d5 3. Bb3 dxe4 4. Qh5 g6",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "Bc4",
+       "uci": "f1c4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq - 1 2",
+       "from": "f1",
+       "to": "c4",
+       "games": 640375,
+       "of": 13583174,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense: Hillbilly Attack"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2B1P3/8/PPPP1PPP/RNBQK1NR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 580192,
+       "of": 640092,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bb3",
+       "uci": "c4b3",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/1B6/PPPP1PPP/RNBQK1NR b KQkq - 1 3",
+       "from": "c4",
+       "to": "b3",
+       "games": 25402,
+       "of": 580088,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "dxe4",
+       "uci": "d5e4",
+       "fen": "rnbqkbnr/pp2pppp/2p5/8/4p3/1B6/PPPP1PPP/RNBQK1NR w KQkq - 0 4",
+       "from": "d5",
+       "to": "e4",
+       "games": 18492,
+       "of": 25395,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Qh5",
+       "uci": "d1h5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/7Q/4p3/1B6/PPPP1PPP/RNB1K1NR b KQkq - 1 4",
+       "from": "d1",
+       "to": "h5",
+       "games": 11976,
+       "of": 18476,
+       "rank": 1,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense: Hillbilly Attack, Schaeffer Gambit"
+       }
+      },
+      {
+       "san": "g6",
+       "uci": "g7g6",
+       "fen": "rnbqkbnr/pp2pp1p/2p3p1/7Q/4p3/1B6/PPPP1PPP/RNB1K1NR w KQkq - 0 5",
+       "from": "g7",
+       "to": "g6",
+       "games": 6745,
+       "of": 11975,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 640092,
+   "keyOpening": {
+    "eco": "B10",
+    "name": "Caro-Kann Defense: Hillbilly Attack"
+   }
+  },
+  {
+   "id": "c4",
+   "name": "2.c4",
+   "group": "side",
+   "key": 3,
+   "lines": [
+    {
+     "label": "Main line",
+     "san": "1. e4 c6 2. c4 d5 3. exd5 cxd5 4. cxd5 Nf6 5. Nc3 Nxd5 6. Nf3 Nc6",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "c4",
+       "uci": "c2c4",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/2P1P3/8/PP1P1PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "c2",
+       "to": "c4",
+       "games": 403854,
+       "of": 13583174,
+       "rank": 6,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense: Accelerated Panov Attack"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2P1P3/8/PP1P1PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 353030,
+       "of": 447860,
+       "rank": 1,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense: Accelerated Panov Attack"
+       }
+      },
+      {
+       "san": "exd5",
+       "uci": "e4d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3P4/2P5/8/PP1P1PPP/RNBQKBNR b KQkq - 0 3",
+       "from": "e4",
+       "to": "d5",
+       "games": 88001,
+       "of": 352487,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "cxd5",
+       "uci": "c6d5",
+       "fen": "rnbqkbnr/pp2pppp/8/3p4/2P5/8/PP1P1PPP/RNBQKBNR w KQkq - 0 4",
+       "from": "c6",
+       "to": "d5",
+       "games": 90049,
+       "of": 93110,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "cxd5",
+       "uci": "c4d5",
+       "fen": "rnbqkbnr/pp2pppp/8/3P4/8/8/PP1P1PPP/RNBQKBNR b KQkq - 0 4",
+       "from": "c4",
+       "to": "d5",
+       "games": 58542,
+       "of": 90034,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf6",
+       "uci": "g8f6",
+       "fen": "rnbqkb1r/pp2pppp/5n2/3P4/8/8/PP1P1PPP/RNBQKBNR w KQkq - 1 5",
+       "from": "g8",
+       "to": "f6",
+       "games": 96703,
+       "of": 238482,
+       "rank": 2,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense: Accelerated Panov Attack, Modern Variation"
+       }
+      },
+      {
+       "san": "Nc3",
+       "uci": "b1c3",
+       "fen": "rnbqkb1r/pp2pppp/5n2/3P4/8/2N5/PP1P1PPP/R1BQKBNR b KQkq - 2 5",
+       "from": "b1",
+       "to": "c3",
+       "games": 54889,
+       "of": 96680,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nxd5",
+       "uci": "f6d5",
+       "fen": "rnbqkb1r/pp2pppp/8/3n4/8/2N5/PP1P1PPP/R1BQKBNR w KQkq - 0 6",
+       "from": "f6",
+       "to": "d5",
+       "games": 80505,
+       "of": 88614,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf3",
+       "uci": "g1f3",
+       "fen": "rnbqkb1r/pp2pppp/8/3n4/8/2N2N2/PP1P1PPP/R1BQKB1R b KQkq - 1 6",
+       "from": "g1",
+       "to": "f3",
+       "games": 16011,
+       "of": 80482,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Nc6",
+       "uci": "b8c6",
+       "fen": "r1bqkb1r/pp2pppp/2n5/3n4/8/2N2N2/PP1P1PPP/R1BQKB1R w KQkq - 2 7",
+       "from": "b8",
+       "to": "c6",
+       "games": 7681,
+       "of": 20017,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 447860,
+   "keyOpening": {
+    "eco": "B10",
+    "name": "Caro-Kann Defense: Accelerated Panov Attack"
+   }
+  },
+  {
+   "id": "d3",
+   "name": "2.d3",
+   "group": "side",
+   "key": 3,
+   "lines": [
+    {
+     "label": "Main line",
+     "san": "1. e4 c6 2. d3 d5 3. Nd2 e5 4. Ngf3 Bd6 5. g3 Nf6 6. Bg2 O-O 7. O-O Re8",
+     "plies": [
+      {
+       "san": "e4",
+       "uci": "e2e4",
+       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+       "from": "e2",
+       "to": "e4",
+       "games": 159109735,
+       "of": 255263569,
+       "rank": 1,
+       "opening": {
+        "eco": "B00",
+        "name": "King's Pawn Game"
+       }
+      },
+      {
+       "san": "c6",
+       "uci": "c7c6",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+       "from": "c7",
+       "to": "c6",
+       "games": 13598055,
+       "of": 158800656,
+       "rank": 4,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+       }
+      },
+      {
+       "san": "d3",
+       "uci": "d2d3",
+       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/3P4/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+       "from": "d2",
+       "to": "d3",
+       "games": 219763,
+       "of": 13583174,
+       "rank": 7,
+       "opening": {
+        "eco": "B10",
+        "name": "Caro-Kann Defense: Breyer Variation"
+       }
+      },
+      {
+       "san": "d5",
+       "uci": "d7d5",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/3P4/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+       "from": "d7",
+       "to": "d5",
+       "games": 206780,
+       "of": 224023,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nd2",
+       "uci": "b1d2",
+       "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/3P4/PPPN1PPP/R1BQKBNR b KQkq - 1 3",
+       "from": "b1",
+       "to": "d2",
+       "games": 88342,
+       "of": 208604,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "e5",
+       "uci": "e7e5",
+       "fen": "rnbqkbnr/pp3ppp/2p5/3pp3/4P3/3P4/PPPN1PPP/R1BQKBNR w KQkq - 0 4",
+       "from": "e7",
+       "to": "e5",
+       "games": 24331,
+       "of": 89086,
+       "rank": 2,
+       "opening": null
+      },
+      {
+       "san": "Ngf3",
+       "uci": "g1f3",
+       "fen": "rnbqkbnr/pp3ppp/2p5/3pp3/4P3/3P1N2/PPPN1PPP/R1BQKB1R b KQkq - 1 4",
+       "from": "g1",
+       "to": "f3",
+       "games": 18641,
+       "of": 26096,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bd6",
+       "uci": "f8d6",
+       "fen": "rnbqk1nr/pp3ppp/2pb4/3pp3/4P3/3P1N2/PPPN1PPP/R1BQKB1R w KQkq - 2 5",
+       "from": "f8",
+       "to": "d6",
+       "games": 10698,
+       "of": 18725,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "g3",
+       "uci": "g2g3",
+       "fen": "rnbqk1nr/pp3ppp/2pb4/3pp3/4P3/3P1NP1/PPPN1P1P/R1BQKB1R b KQkq - 0 5",
+       "from": "g2",
+       "to": "g3",
+       "games": 6819,
+       "of": 10760,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Nf6",
+       "uci": "g8f6",
+       "fen": "rnbqk2r/pp3ppp/2pb1n2/3pp3/4P3/3P1NP1/PPPN1P1P/R1BQKB1R w KQkq - 1 6",
+       "from": "g8",
+       "to": "f6",
+       "games": 3917,
+       "of": 6838,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Bg2",
+       "uci": "f1g2",
+       "fen": "rnbqk2r/pp3ppp/2pb1n2/3pp3/4P3/3P1NP1/PPPN1PBP/R1BQK2R b KQkq - 2 6",
+       "from": "f1",
+       "to": "g2",
+       "games": 3956,
+       "of": 4070,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e8g8",
+       "fen": "rnbq1rk1/pp3ppp/2pb1n2/3pp3/4P3/3P1NP1/PPPN1PBP/R1BQK2R w KQ - 3 7",
+       "from": "e8",
+       "to": "g8",
+       "games": 3104,
+       "of": 4657,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "O-O",
+       "uci": "e1g1",
+       "fen": "rnbq1rk1/pp3ppp/2pb1n2/3pp3/4P3/3P1NP1/PPPN1PBP/R1BQ1RK1 b - - 4 7",
+       "from": "e1",
+       "to": "g1",
+       "games": 3006,
+       "of": 3136,
+       "rank": 1,
+       "opening": null
+      },
+      {
+       "san": "Re8",
+       "uci": "f8e8",
+       "fen": "rnbqr1k1/pp3ppp/2pb1n2/3pp3/4P3/3P1NP1/PPPN1PBP/R1BQ1RK1 w - - 5 8",
+       "from": "f8",
+       "to": "e8",
+       "games": 1005,
+       "of": 3465,
+       "rank": 1,
+       "opening": null
+      }
+     ]
+    }
+   ],
+   "keyGames": 224023,
+   "keyOpening": {
+    "eco": "B10",
+    "name": "Caro-Kann Defense: Breyer Variation"
+   }
+  }
+ ]
+}

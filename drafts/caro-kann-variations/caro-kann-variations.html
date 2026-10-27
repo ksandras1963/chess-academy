@@ -1,0 +1,952 @@
+<title>Caro-Kann Variations</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a field guide. Map first, then one card per variation: board on the left, notes on the right; stacks on phones. */
+:root {
+  --bg: #f3f5f2;
+  --surface: #ffffff;
+  --ink: #1a231f;
+  --muted: #55625b;
+  --rule: #d6ddd7;
+  --accent: #2c6a4d;
+  --accent-soft: #e2eee6;
+  --accent-ink: #ffffff;
+  --sq-light: #eeeed2;
+  --sq-dark: #769656;
+  --hl: rgba(246, 204, 60, 0.55);
+  --warn-bg: #fbf1dc;
+  --warn-ink: #6b4300;
+  --warn-rule: #e3bd72;
+  --f-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101512; --surface: #18201c; --ink: #e3e9e5; --muted: #9ba8a1; --rule: #2b3530;
+    --accent: #86c9a5; --accent-soft: #1e3228; --accent-ink: #0d1a13;
+    --sq-light: #dcdcc0; --sq-dark: #678848; --hl: rgba(246, 204, 60, 0.5);
+    --warn-bg: #2a2214; --warn-ink: #f0cd8c; --warn-rule: #6b5328;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101512; --surface: #18201c; --ink: #e3e9e5; --muted: #9ba8a1; --rule: #2b3530;
+  --accent: #86c9a5; --accent-soft: #1e3228; --accent-ink: #0d1a13;
+  --sq-light: #dcdcc0; --sq-dark: #678848; --hl: rgba(246, 204, 60, 0.5);
+  --warn-bg: #2a2214; --warn-ink: #f0cd8c; --warn-rule: #6b5328;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.55;
+}
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-block: 32px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 40px;
+}
+h1, h2, h3 { font-family: var(--f-display); font-weight: 600; text-wrap: balance; margin: 0; line-height: 1.15; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); letter-spacing: -0.01em; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.45rem; }
+p { margin: 0; }
+a { color: var(--accent); text-underline-offset: 2px; }
+b { font-weight: 600; }
+.mv { font-family: var(--f-mono); font-size: 0.92em; white-space: nowrap; }
+
+/* Hero */
+.hero { display: grid; gap: 16px; max-width: 72ch; }
+.eyebrow { font-family: var(--f-mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.lede { font-size: 1.12rem; }
+.howto { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; color: var(--muted); font-size: 0.95rem; }
+.howto p { flex: 1 1 32ch; min-width: 0; }
+.flip { display: inline-flex; align-items: center; gap: 6px; }
+.flip span { margin-right: 4px; }
+
+button {
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+button:hover { border-color: var(--accent); }
+button:focus-visible, .board-wrap:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+/* Map */
+.map { display: grid; gap: 10px; }
+.map-note { color: var(--muted); font-size: 0.92rem; }
+.tree-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 20px; }
+.tree, .tree ul { list-style: none; margin: 0; padding: 0; }
+.tree ul { margin-left: 10px; padding-left: 18px; border-left: 1px solid var(--rule); }
+.tree li { position: relative; padding: 3px 0; white-space: nowrap; }
+.tree ul > li::before {
+  content: ""; position: absolute; left: -18px; top: 15px; width: 12px; border-top: 1px solid var(--rule);
+}
+.tree .pct { font-family: var(--f-mono); font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tree .games { font-size: 0.85rem; color: var(--muted); }
+.tree a { font-weight: 600; margin-left: 4px; }
+.tree a::before { content: "\2192\00a0"; color: var(--muted); font-weight: 400; }
+.tree .note { font-size: 0.85rem; color: var(--muted); font-style: italic; margin-left: 4px; }
+
+/* Groups and cards */
+.group { display: grid; gap: 20px; }
+.group-head { display: grid; gap: 6px; border-top: 2px solid var(--ink); padding-top: 14px; max-width: 72ch; }
+.group-head p { color: var(--muted); }
+.var {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.var-head { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; align-items: flex-start; }
+.var-title { display: grid; gap: 4px; min-width: 0; }
+.def-moves { font-family: var(--f-mono); font-size: 0.9rem; color: var(--muted); overflow-wrap: anywhere; }
+.share { display: grid; justify-items: end; text-align: right; max-width: 22ch; }
+.share-n { font-family: var(--f-display); font-size: 1.9rem; font-weight: 600; color: var(--accent); line-height: 1; font-variant-numeric: tabular-nums; }
+.share-l { font-size: 0.8rem; color: var(--muted); }
+.aka { font-size: 0.9rem; color: var(--muted); }
+.eco {
+  display: inline-block; font-family: var(--f-mono); font-size: 0.75rem; letter-spacing: 0.04em;
+  background: var(--accent-soft); color: var(--ink); border-radius: 4px; padding: 1px 6px; margin-right: 6px;
+}
+.var-body { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 24px; align-items: start; }
+
+.board-col { display: grid; gap: 10px; min-width: 0; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.tabs button { font-family: var(--f-mono); font-size: 0.85rem; padding: 4px 10px; }
+.board-wrap { border-radius: 4px; }
+.board { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1 / 1; border-radius: 4px; }
+.sq-l { fill: var(--sq-light); }
+.sq-d { fill: var(--sq-dark); }
+.hl { fill: var(--hl); }
+.coords text { font-family: var(--f-body); font-size: 9px; font-weight: 600; pointer-events: none; }
+.coords .on-l { fill: var(--sq-dark); }
+.coords .on-d { fill: var(--sq-light); }
+.pc.moving { transition: transform 220ms ease-out; }
+.controls { display: flex; gap: 6px; }
+.controls button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 7px 10px; flex: 0 0 auto; }
+.controls svg { fill: currentColor; }
+.controls .watch { flex: 1 1 auto; font-weight: 600; }
+.status { font-size: 0.88rem; color: var(--muted); min-height: 2.6em; }
+.status b { color: var(--ink); }
+.movelist { display: flex; flex-wrap: wrap; gap: 2px 2px; align-items: baseline; font-family: var(--f-mono); font-size: 0.86rem; }
+.movelist .num { color: var(--muted); margin: 0 1px 0 6px; }
+.movelist .num:first-child { margin-left: 0; }
+.movelist button { border: 0; background: none; padding: 1px 4px; border-radius: 4px; font: inherit; color: var(--ink); }
+.movelist button.def { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.movelist button.now { background: var(--accent); color: var(--accent-ink); }
+
+.notes { margin: 0; display: grid; gap: 14px; min-width: 0; }
+.notes .row { display: grid; gap: 2px; }
+.notes dt { font-family: var(--f-mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.notes dd { margin: 0; max-width: 62ch; }
+.notes .warn { background: var(--warn-bg); color: var(--warn-ink); border: 1px solid var(--warn-rule); border-radius: 8px; padding: 10px 12px; }
+.notes .warn dt { color: var(--warn-ink); }
+
+.sources { display: grid; gap: 10px; color: var(--muted); font-size: 0.9rem; max-width: 80ch; border-top: 1px solid var(--rule); padding-top: 20px; }
+.sources h2 { font-size: 1.2rem; color: var(--ink); }
+
+@media (max-width: 720px) {
+  .var-body { grid-template-columns: minmax(0, 1fr); }
+  .board-col { max-width: 420px; }
+  .share { justify-items: start; text-align: left; }
+  .var { padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pc.moving { transition: none; }
+}
+
+</style>
+<svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0"><defs><g id="p-wk" stroke-linecap="round" stroke-linejoin="round" transform="translate(5.000000, 5.000000)" stroke="#000000" stroke-width="1.5"><line x1="15" y1="4.96764706" x2="15" y2="0" /><line x1="12.8571429" y1="1.76470588" x2="17.1428571" y2="1.76470588" /><path d="M17.5714286,7.5 C17.5714286,7.5 16.7142857,5.29411765 15,5.29411765 C13.2857143,5.29411765 12.4285714,7.5 12.4285714,7.5 C11.1428571,10.1470588 15,16.7647059 15,16.7647059 C15,16.7647059 18.8571429,10.1470588 17.5714286,7.5 Z" fill="#FFFFFF" /><path d="M5.57142857,27.3529412 C10.2857143,30.4411765 18.8571429,30.4411765 23.5714286,27.3529412 L23.5714286,21.1764706 C23.5714286,21.1764706 31.2857143,17.2058824 28.7142857,11.9117647 C25.2857143,6.17647059 17.1428571,8.82352941 15,15.4411765 L15,18.5294118 L15,15.4411765 C12,8.82352941 3.85714286,6.17647059 1.28571429,11.9117647 C-1.28571429,17.2058824 5.57142857,20.7352941 5.57142857,20.7352941 L5.57142857,27.3529412 Z" fill="#FFFFFF" /><path d="M5.57142857,21.1764706 C10.2857143,18.5294118 18.8571429,18.5294118 23.5714286,21.1764706" fill-opacity="0" fill="#000000" /><path d="M5.57142857,24.2647059 C10.2857143,21.6176471 18.8571429,21.6176471 23.5714286,24.2647059" fill-opacity="0" fill="#000000" stroke-linecap="square" /><path d="M5.57142857,27.3529412 C10.2857143,24.7058824 18.8571429,24.7058824 23.5714286,27.3529412" fill-opacity="0" fill="#000000" /></g>
+    
+<g id="p-wq" stroke-linecap="round" stroke-linejoin="round" transform="translate(4.000000, 5.000000)" stroke="#000000" stroke-width="1.5"><path d="M3.45945946,6.2 C3.45945946,7.17833299 2.68503308,7.97142857 1.72972973,7.97142857 C0.774426379,7.97142857 0,7.17833299 0,6.2 C0,5.22166701 0.774426379,4.42857143 1.72972973,4.42857143 C2.68503308,4.42857143 3.45945946,5.22166701 3.45945946,6.2 Z" fill="#FFFFFF" /><path d="M17.7297297,2.21428571 C17.7297297,3.1926187 16.9553034,3.98571429 16,3.98571429 C15.0446966,3.98571429 14.2702703,3.1926187 14.2702703,2.21428571 C14.2702703,1.23595273 15.0446966,0.442857143 16,0.442857143 C16.9553034,0.442857143 17.7297297,1.23595273 17.7297297,2.21428571 Z" fill="#FFFFFF" /><path d="M32,6.2 C32,7.17833299 31.2255736,7.97142857 30.2702703,7.97142857 C29.3149669,7.97142857 28.5405405,7.17833299 28.5405405,6.2 C28.5405405,5.22166701 29.3149669,4.42857143 30.2702703,4.42857143 C31.2255736,4.42857143 32,5.22166701 32,6.2 Z" fill="#FFFFFF" /><path d="M10.3783784,3.1 C10.3783784,4.07833299 9.603952,4.87142857 8.64864865,4.87142857 C7.6933453,4.87142857 6.91891892,4.07833299 6.91891892,3.1 C6.91891892,2.12166701 7.6933453,1.32857143 8.64864865,1.32857143 C9.603952,1.32857143 10.3783784,2.12166701 10.3783784,3.1 Z" fill="#FFFFFF" /><path d="M25.0810811,3.54285714 C25.0810811,4.52119013 24.3066547,5.31428571 23.3513514,5.31428571 C22.396048,5.31428571 21.6216216,4.52119013 21.6216216,3.54285714 C21.6216216,2.56452416 22.396048,1.77142857 23.3513514,1.77142857 C24.3066547,1.77142857 25.0810811,2.56452416 25.0810811,3.54285714 Z" fill="#FFFFFF" /><path d="M4.32432432,18.6 C11.6756757,17.2714286 22.4864865,17.2714286 27.6756757,18.6 L29.4054054,7.97142857 L23.3513514,17.7142857 L23.3513514,5.31428571 L18.5945946,17.2714286 L16,3.98571429 L13.4054054,17.2714286 L8.64864865,4.87142857 L8.64864865,17.7142857 L2.59459459,7.97142857 L4.32432432,18.6 Z" fill="#FFFFFF" /><path d="M4.32432432,18.6 C4.32432432,20.3714286 5.62162162,20.3714286 6.48648649,22.1428571 C7.35135135,23.4714286 7.35135135,23.0285714 6.91891892,25.2428571 C5.62162162,26.1285714 5.62162162,27.4571429 5.62162162,27.4571429 C4.32432432,28.7857143 6.05405405,29.6714286 6.05405405,29.6714286 C11.6756757,30.5571429 20.3243243,30.5571429 25.9459459,29.6714286 C25.9459459,29.6714286 27.2432432,28.7857143 25.9459459,27.4571429 C25.9459459,27.4571429 26.3783784,26.1285714 25.0810811,25.2428571 C24.6486486,23.0285714 24.6486486,23.4714286 25.5135135,22.1428571 C26.3783784,20.3714286 27.6756757,20.3714286 27.6756757,18.6 C20.3243243,17.2714286 11.6756757,17.2714286 4.32432432,18.6 Z" fill="#FFFFFF" /><path d="M6.48648649,22.1428571 C9.51351351,21.2571429 22.4864865,21.2571429 25.5135135,22.1428571" /><path d="M6.91891892,25.2428571 C12.1081081,24.3571429 19.8918919,24.3571429 25.0810811,25.2428571" /></g>
+    
+<g id="p-wb" stroke-linecap="round" stroke-linejoin="round" transform="translate(6.000000, 5.000000)" stroke="#000000" stroke-width="1.5"><g fill="#FFFFFF"><path d="M2.54545455,27.3529412 C5.42181818,26.4970588 11.1236364,27.7323529 14,25.5882353 C16.8763636,27.7323529 22.5781818,26.4970588 25.4545455,27.3529412 C25.4545455,27.3529412 26.8545455,27.8294118 28,29.1176471 C27.4230303,29.9735294 26.6,29.9911765 25.4545455,29.5588235 C22.5781818,28.7029412 16.8763636,29.9647059 14,28.6764706 C11.1236364,29.9647059 5.42181818,28.7029412 2.54545455,29.5588235 C1.39660606,29.9911765 0.574424242,29.9735294 0,29.1176471 C1.14884848,27.4058824 2.54545455,27.3529412 2.54545455,27.3529412 Z" /><path d="M7.63636364,23.8235294 C9.75757576,26.0294118 18.2424242,26.0294118 20.3636364,23.8235294 C20.7878788,22.5 20.3636364,22.0588235 20.3636364,22.0588235 C20.3636364,19.8529412 18.2424242,18.5294118 18.2424242,18.5294118 C22.9090909,17.2058824 23.3333333,8.38235294 14,4.85294118 C4.66666667,8.38235294 5.09090909,17.2058824 9.75757576,18.5294118 C9.75757576,18.5294118 7.63636364,19.8529412 7.63636364,22.0588235 C7.63636364,22.0588235 7.21212121,22.5 7.63636364,23.8235294 Z" /><path d="M16.1212121,2.64705882 C16.1212121,3.86533401 15.1715131,4.85294118 14,4.85294118 C12.8284869,4.85294118 11.8787879,3.86533401 11.8787879,2.64705882 C11.8787879,1.42878364 12.8284869,0.441176471 14,0.441176471 C15.1715131,0.441176471 16.1212121,1.42878364 16.1212121,2.64705882 Z" /></g><path d="M9.75757576,18.5294118 L18.2424242,18.5294118 M7.63636364,22.0588235 L20.3636364,22.0588235 M14,9.26470588 L14,13.6764706 M11.8787879,11.4705882 L16.1212121,11.4705882" /></g>
+    
+<g id="p-wn" stroke-linecap="round" stroke-linejoin="round" transform="translate(6.000000, 6.000000)" stroke="#000000"><path d="M13.5757576,2.625 C22.4848485,3.5 27.5757576,9.625 27.1515152,28 L7.63636364,28 C7.63636364,20.125 16.1212121,22.3125 14.4242424,9.625" stroke-width="1.5" fill="#FFFFFF" /><path d="M15.2727273,9.625 C15.5951515,12.17125 10.5636364,16.07375 8.48484848,17.5 C5.93939394,19.25 6.09212121,21.2975 4.24242424,21 C3.35830303,20.1775 5.43878788,18.34 4.24242424,18.375 C3.39393939,18.375 4.40363636,19.45125 3.39393939,20.125 C2.54545455,20.125 -0.00254545455,21 -1.90580876e-06,16.625 C-1.90580876e-06,14.875 5.09090909,6.125 5.09090909,6.125 C5.09090909,6.125 6.69454545,4.4625 6.78787879,3.0625 C6.16848485,2.19275 6.36363636,1.3125 6.36363636,0.4375 C7.21212121,-0.4375 8.90909091,2.625 8.90909091,2.625 L10.6060606,2.625 C10.6060606,2.625 11.2678788,0.882 12.7272727,0 C13.5757576,0 13.5757576,2.625 13.5757576,2.625" stroke-width="1.5" fill="#FFFFFF" /><path d="M2.96969697,16.1875 C2.96969697,16.4291246 2.77975717,16.625 2.54545455,16.625 C2.31115192,16.625 2.12121212,16.4291246 2.12121212,16.1875 C2.12121212,15.9458754 2.31115192,15.75 2.54545455,15.75 C2.77975717,15.75 2.96969697,15.9458754 2.96969697,16.1875 Z" stroke-width="1.5" fill="#000000" /><path d="M7.6363543,7.4375 C7.6363543,8.16235779 7.44641868,8.74997112 7.21212121,8.74997112 C6.97782375,8.74997112 6.78788812,8.16235779 6.78788812,7.4375 C6.78788812,6.71264221 6.97782375,6.12502888 7.21212121,6.12502888 C7.44641868,6.12502888 7.6363543,6.71264221 7.6363543,7.4375 L7.6363543,7.4375 Z" stroke-width="1.499967" fill="#000000" transform="translate(7.212121, 7.437500) rotate(30.000728) translate(-7.212121, -7.437500) " /></g>
+    
+<g id="p-wr" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.000000, 8.000000)" stroke="#000000" stroke-width="1.5"><polygon fill="#FFFFFF" points="0 26 22 26 22 23.4 0 23.4" /><polygon fill="#FFFFFF" points="2.44444444 23.4 2.44444444 19.9333333 19.5555556 19.9333333 19.5555556 23.4" /><polyline fill="#FFFFFF" points="1.62962963 4.33333333 1.62962963 0 4.88888889 0 4.88888889 1.73333333 8.96296296 1.73333333 8.96296296 0 13.037037 0 13.037037 1.73333333 17.1111111 1.73333333 17.1111111 0 20.3703704 0 20.3703704 4.33333333" /><polyline fill="#FFFFFF" points="20.3703704 4.33333333 17.9259259 6.93333333 4.07407407 6.93333333 1.62962963 4.33333333" /><polyline fill="#FFFFFF" points="17.9259259 6.93333333 17.9259259 17.7666667 4.07407407 17.7666667 4.07407407 6.93333333" /><polyline fill="#FFFFFF" points="17.9259259 17.7666667 19.1481481 19.9333333 2.85185185 19.9333333 4.07407407 17.7666667" /><line x1="1.62962963" y1="4.33333333" x2="20.3703704" y2="4.33333333" /></g>
+    
+<g id="p-wp" transform="translate(10.000000, 9.000000)" fill="#FFFFFF" stroke="#000000" stroke-linecap="round" stroke-width="1.5"><path d="M10,0 C8.15833333,0 6.66666667,1.50129032 6.66666667,3.35483871 C6.66666667,4.10129032 6.90833333,4.78903226 7.31666667,5.35096774 C5.69166667,6.29032258 4.58333333,8.04322581 4.58333333,10.0645161 C4.58333333,11.7670968 5.36666667,13.2851613 6.59166667,14.2832258 C4.09166667,15.1722581 0.416666667,18.9380645 0.416666667,25.5806452 L19.5833333,25.5806452 C19.5833333,18.9380645 15.9083333,15.1722581 13.4083333,14.2832258 C14.6333333,13.2851613 15.4166667,11.7670968 15.4166667,10.0645161 C15.4166667,8.04322581 14.3083333,6.29032258 12.6833333,5.35096774 C13.0916667,4.78903226 13.3333333,4.10129032 13.3333333,3.35483871 C13.3333333,1.50129032 11.8416667,0 10,0 Z" /></g>
+    
+<g id="p-bk" stroke-linecap="round" stroke-linejoin="round" transform="translate(5.000000, 5.000000)" stroke-width="1.5"><line x1="15" y1="4.96764706" x2="15" y2="0" stroke="#000000" /><path d="M15,16.7647059 C15,16.7647059 18.8571429,10.1470588 17.5714286,7.5 C17.5714286,7.5 16.7142857,5.29411765 15,5.29411765 C13.2857143,5.29411765 12.4285714,7.5 12.4285714,7.5 C11.1428571,10.1470588 15,16.7647059 15,16.7647059" stroke="#000000" fill="#000000" /><path d="M5.57142857,27.3529412 C10.2857143,30.4411765 18.8571429,30.4411765 23.5714286,27.3529412 L23.5714286,21.1764706 C23.5714286,21.1764706 31.2857143,17.2058824 28.7142857,11.9117647 C25.2857143,6.17647059 17.1428571,8.82352941 15,15.4411765 L15,18.5294118 L15,15.4411765 C12,8.82352941 3.85714286,6.17647059 1.28571429,11.9117647 C-1.28571429,17.2058824 5.57142857,20.7352941 5.57142857,20.7352941 L5.57142857,27.3529412 Z" stroke="#000000" fill="#000000" /><line x1="12.8571429" y1="1.76470588" x2="17.1428571" y2="1.76470588" stroke="#000000" /><path d="M23.1428571,20.7352941 C23.1428571,20.7352941 30.4285714,17.2058824 28.3114286,12.2205882 C24.9857143,7.05882353 17.1428571,10.5882353 15,16.3235294 L15.0085714,18.1764706 L15,16.3235294 C12.8571429,10.5882353 4.20514286,7.05882353 1.71171429,12.2205882 C-0.428571429,17.2058824 5.87142857,20.1617647 5.87142857,20.1617647" stroke="#FFFFFF" /><path d="M5.57142857,21.1764706 C10.2857143,18.5294118 18.8571429,18.5294118 23.5714286,21.1764706 M5.57142857,24.2647059 C10.2857143,21.6176471 18.8571429,21.6176471 23.5714286,24.2647059 M5.57142857,27.3529412 C10.2857143,24.7058824 18.8571429,24.7058824 23.5714286,27.3529412" stroke="#FFFFFF" /></g>
+    
+<g id="p-bq" stroke-linecap="round" stroke-linejoin="round" transform="translate(3.000000, 4.000000)"><g fill="#000000"><ellipse cx="2.61538462" cy="6.22222222" rx="2.3974359" ry="2.44444444" /><ellipse cx="9.58974359" cy="3.55555556" rx="2.3974359" ry="2.44444444" /><ellipse cx="17" cy="2.66666667" rx="2.3974359" ry="2.44444444" /><ellipse cx="24.4102564" cy="3.55555556" rx="2.3974359" ry="2.44444444" /><ellipse cx="31.3846154" cy="6.22222222" rx="2.3974359" ry="2.44444444" /></g><path d="M5.23076923,18.6666667 C12.6410256,17.3333333 23.5384615,17.3333333 28.7692308,18.6666667 L30.9487179,7.55555556 L24.4102564,17.7777778 L24.1487179,5.24444444 L19.6153846,17.3333333 L17,4.44444444 L14.3846154,17.3333333 L9.85128205,5.24444444 L9.58974359,17.7777778 L3.05128205,7.55555556 L5.23076923,18.6666667 Z" stroke="#000000" stroke-width="1.5" fill="#000000" /><path d="M5.23076923,18.6666667 C5.23076923,20.4444444 6.53846154,20.4444444 7.41025641,22.2222222 C8.28205128,23.5555556 8.28205128,23.1111111 7.84615385,25.3333333 C6.53846154,26.2222222 6.53846154,27.5555556 6.53846154,27.5555556 C5.23076923,28.8888889 6.97435897,29.7777778 6.97435897,29.7777778 C12.6410256,30.6666667 21.3589744,30.6666667 27.025641,29.7777778 C27.025641,29.7777778 28.3333333,28.8888889 27.025641,27.5555556 C27.025641,27.5555556 27.4615385,26.2222222 26.1538462,25.3333333 C25.7179487,23.1111111 25.7179487,23.5555556 26.5897436,22.2222222 C27.4615385,20.4444444 28.7692308,20.4444444 28.7692308,18.6666667 C21.3589744,17.3333333 12.6410256,17.3333333 5.23076923,18.6666667 Z" stroke="#000000" stroke-width="1.5" fill="#000000" /><path d="M6.97435897,29.7777778 C13.4672777,32.080866 20.5327223,32.080866 27.025641,29.7777778" stroke="#000000" stroke-width="1.5" /><path d="M6.97435897,21.3333333 C13.4672777,19.0302452 20.5327223,19.0302452 27.025641,21.3333333" stroke="#FFFFFF" stroke-width="1.5" /><line x1="8.28205128" y1="23.5555556" x2="25.7179487" y2="23.5555556" stroke="#FFFFFF" stroke-width="1.5" /><path d="M7.41025641,26.2222222 C13.6372326,28.3241535 20.3627674,28.3241535 26.5897436,26.2222222" stroke="#FFFFFF" stroke-width="1.5" /><path d="M6.53846154,28.8888889 C13.2948481,31.4031829 20.7051519,31.4031829 27.4615385,28.8888889" stroke="#FFFFFF" stroke-width="1.5" /></g>
+    
+<g id="p-bb" stroke-linecap="round" stroke-linejoin="round" transform="translate(6.000000, 5.000000)" stroke-width="1.5"><g fill="#000000" stroke="#000000"><path d="M2.54545455,27.3529412 C5.42181818,26.4970588 11.1236364,27.7323529 14,25.5882353 C16.8763636,27.7323529 22.5781818,26.4970588 25.4545455,27.3529412 C25.4545455,27.3529412 26.8545455,27.8294118 28,29.1176471 C27.4230303,29.9735294 26.6,29.9911765 25.4545455,29.5588235 C22.5781818,28.7029412 16.8763636,29.9647059 14,28.6764706 C11.1236364,29.9647059 5.42181818,28.7029412 2.54545455,29.5588235 C1.39660606,29.9911765 0.574424242,29.9735294 0,29.1176471 C1.14884848,27.4058824 2.54545455,27.3529412 2.54545455,27.3529412 Z" /><path d="M7.63636364,23.8235294 C9.75757576,26.0294118 18.2424242,26.0294118 20.3636364,23.8235294 C20.7878788,22.5 20.3636364,22.0588235 20.3636364,22.0588235 C20.3636364,19.8529412 18.2424242,18.5294118 18.2424242,18.5294118 C22.9090909,17.2058824 23.3333333,8.38235294 14,4.85294118 C4.66666667,8.38235294 5.09090909,17.2058824 9.75757576,18.5294118 C9.75757576,18.5294118 7.63636364,19.8529412 7.63636364,22.0588235 C7.63636364,22.0588235 7.21212121,22.5 7.63636364,23.8235294 Z" /><path d="M16.1212121,2.64705882 C16.1212121,3.86533401 15.1715131,4.85294118 14,4.85294118 C12.8284869,4.85294118 11.8787879,3.86533401 11.8787879,2.64705882 C11.8787879,1.42878364 12.8284869,0.441176471 14,0.441176471 C15.1715131,0.441176471 16.1212121,1.42878364 16.1212121,2.64705882 Z" /></g><path d="M9.75757576,18.5294118 L18.2424242,18.5294118 M7.63636364,22.0588235 L20.3636364,22.0588235 M14,9.26470588 L14,13.6764706 M11.8787879,11.4705882 L16.1212121,11.4705882" stroke="#FFFFFF" /></g>
+    
+<g id="p-bn" stroke-linecap="round" stroke-linejoin="round" transform="translate(6.000000, 6.000000)"><path d="M13.5757576,2.63636364 C22.4848485,3.51515152 27.5757576,9.66666667 27.1515152,28.1212121 L7.63636364,28.1212121 C7.63636364,20.2121212 16.1212121,22.4090909 14.4242424,9.66666667" stroke="#000000" stroke-width="1.5" fill="#000000" /><path d="M15.2727273,9.66666667 C15.5951515,12.2239394 10.5636364,16.1433333 8.48484848,17.5757576 C5.93939394,19.3333333 6.09212121,21.389697 4.24242424,21.0909091 C3.35830303,20.2648485 5.43878788,18.4193939 4.24242424,18.4545455 C3.39393939,18.4545455 4.40363636,19.5354545 3.39393939,20.2121212 C2.54545455,20.2121212 -0.00254545455,21.0909091 -1.90580876e-06,16.6969697 C-1.90580876e-06,14.9393939 5.09090909,6.15151515 5.09090909,6.15151515 C5.09090909,6.15151515 6.69454545,4.48181818 6.78787879,3.07575758 C6.16848485,2.20224242 6.36363636,1.31818182 6.36363636,0.439393939 C7.21212121,-0.439393939 8.90909091,2.63636364 8.90909091,2.63636364 L10.6060606,2.63636364 C10.6060606,2.63636364 11.2678788,0.885818182 12.7272727,0 C13.5757576,0 13.5757576,2.63636364 13.5757576,2.63636364" stroke="#000000" stroke-width="1.5" fill="#000000" /><path d="M2.96969697,16.2575758 C2.96969697,16.5002463 2.77975717,16.6969697 2.54545455,16.6969697 C2.31115192,16.6969697 2.12121212,16.5002463 2.12121212,16.2575758 C2.12121212,16.0149052 2.31115192,15.8181818 2.54545455,15.8181818 C2.77975717,15.8181818 2.96969697,16.0149052 2.96969697,16.2575758 Z" stroke="#FFFFFF" stroke-width="1.5" fill="#FFFFFF" /><path d="M7.6363543,7.46969697 C7.6363543,8.19769267 7.44641868,8.78784979 7.21212121,8.78784979 C6.97782375,8.78784979 6.78788812,8.19769267 6.78788812,7.46969697 C6.78788812,6.74170127 6.97782375,6.15154415 7.21212121,6.15154415 C7.44641868,6.15154415 7.6363543,6.74170127 7.6363543,7.46969697 L7.6363543,7.46969697 Z" stroke="#FFFFFF" stroke-width="1.499967" fill="#FFFFFF" transform="translate(7.212121, 7.469697) rotate(30.000728) translate(-7.212121, -7.469697) " /><path d="M15.7393939,2.98787879 L15.3575758,4.26212121 L15.7818182,4.39393939 C18.4545455,5.27272727 20.5757576,6.58212121 22.4848485,10.3257576 C24.3939394,14.0693939 25.2424242,19.3860606 24.8181818,28.1212121 L24.7757576,28.5606061 L26.6848485,28.5606061 L26.7272727,28.1212121 C27.1515152,19.2806061 25.9806061,13.3136364 23.969697,9.36787879 C21.9587879,5.42212121 19.0569697,3.53272727 16.1721212,3.07575758 L15.7393939,2.98787879 Z" fill="#FFFFFF" /></g>
+    
+<g id="p-br" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.000000, 8.000000)"><polygon stroke="#000000" stroke-width="1.5" fill="#000000" points="0 26 22 26 22 23.4 0 23.4" /><polygon stroke="#000000" stroke-width="1.5" fill="#000000" points="2.85185185 19.9333333 4.07407407 17.7666667 17.9259259 17.7666667 19.1481481 19.9333333" /><polygon stroke="#000000" stroke-width="1.5" fill="#000000" points="2.44444444 23.4 2.44444444 19.9333333 19.5555556 19.9333333 19.5555556 23.4" /><polygon stroke="#000000" stroke-width="1.5" fill="#000000" points="4.07407407 17.7666667 4.07407407 6.5 17.9259259 6.5 17.9259259 17.7666667" /><polygon stroke="#000000" stroke-width="1.5" fill="#000000" points="4.07407407 6.5 1.62962963 4.33333333 20.3703704 4.33333333 17.9259259 6.5" /><polygon stroke="#000000" stroke-width="1.5" fill="#000000" points="1.62962963 4.33333333 1.62962963 0 4.88888889 0 4.88888889 1.73333333 8.96296296 1.73333333 8.96296296 0 13.037037 0 13.037037 1.73333333 17.1111111 1.73333333 17.1111111 0 20.3703704 0 20.3703704 4.33333333" /><polyline stroke="#FFFFFF" points="2.44444444 22.9666667 19.5555556 22.9666667 19.5555556 22.9666667" /><line x1="3.25925926" y1="19.5" x2="18.7407407" y2="19.5" stroke="#FFFFFF" /><line x1="4.07407407" y1="17.7666667" x2="17.9259259" y2="17.7666667" stroke="#FFFFFF" /><line x1="4.07407407" y1="6.5" x2="17.9259259" y2="6.5" stroke="#FFFFFF" /><line x1="1.62962963" y1="4.33333333" x2="20.3703704" y2="4.33333333" stroke="#FFFFFF" /></g>
+    
+<g id="p-bp" transform="translate(10.000000, 8.000000)" fill="#000000" stroke="#000000" stroke-linecap="round" stroke-width="1.5"><path d="M10,0 C8.15833333,0 6.66666667,1.50129032 6.66666667,3.35483871 C6.66666667,4.10129032 6.90833333,4.78903226 7.31666667,5.35096774 C5.69166667,6.29032258 4.58333333,8.04322581 4.58333333,10.0645161 C4.58333333,11.7670968 5.36666667,13.2851613 6.59166667,14.2832258 C4.09166667,15.1722581 0.416666667,18.9380645 0.416666667,25.5806452 L19.5833333,25.5806452 C19.5833333,18.9380645 15.9083333,15.1722581 13.4083333,14.2832258 C14.6333333,13.2851613 15.4166667,11.7670968 15.4166667,10.0645161 C15.4166667,8.04322581 14.3083333,6.29032258 12.6833333,5.35096774 C13.0916667,4.78903226 13.3333333,4.10129032 13.3333333,3.35483871 C13.3333333,1.50129032 11.8416667,0 10,0 Z" /></g>
+</defs></svg>
+<div class="page">
+  <header class="hero">
+    <p class="eyebrow">Opening field guide · ECO B10–B19</p>
+    <h1>Caro-Kann Variations</h1>
+    <p class="lede"><span class="mv">1.e4 c6</span> prepares ...d5 without shutting in the c8 bishop. After <span class="mv">2.d4 d5</span> White must decide what to do with the attacked e4 pawn: push it (the Advance), trade it (the Exchange and the Panov), or defend it (3.Nc3 or 3.Nd2, which lead to the Classical and Karpov lines, and 3.f3, the Fantasy). White can also skip 2.d4.</p>
+    <div class="howto">
+      <p>Each board opens on the position that defines the variation. Press <b>Watch</b> to play the line from move 1, or step with the arrows. Under each board you can see how often club players chose that move on Lichess.</p>
+      <div class="flip" role="group" aria-label="Board orientation">
+        <span>View from</span>
+        <button type="button" data-flip="white" aria-pressed="true">White</button>
+        <button type="button" data-flip="black" aria-pressed="false">Black</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="map" aria-labelledby="map-h">
+    <h2 id="map-h">Map of the variations</h2>
+    <p class="map-note">Each percentage is the share of games that continue with that move from the position before it.</p>
+    <div class="tree-wrap">
+<ul class="tree">
+  <li><span class="mv">1.e4 c6</span> <span class="games">13.6 million games</span>
+    <ul>
+      <li><span class="mv">2.d4</span> <span class="pct">54%</span> <span class="mv">d5</span>
+        <ul>
+          <li><span class="mv">3.e5</span> <span class="pct">39%</span> <a href="#advance">Advance Variation</a></li>
+          <li><span class="mv">3.exd5</span> <span class="pct">29%</span> <span class="mv">cxd5</span>
+            <ul>
+              <li><span class="mv">4.Nf3</span> <span class="pct">28%</span>, <span class="mv">4.Bd3</span> <span class="pct">27%</span> <a href="#exchange">Exchange Variation</a></li>
+              <li><span class="mv">4.c4</span> <span class="pct">23%</span> <a href="#panov">Panov-Botvinnik Attack</a></li>
+            </ul></li>
+          <li><span class="mv">3.Nc3</span> <span class="pct">22%</span> or <span class="mv">3.Nd2</span> <span class="pct">4%</span> <span class="mv">dxe4 4.Nxe4</span>
+            <ul>
+              <li><span class="mv">4...Bf5</span> <span class="pct">48%</span> <a href="#classical">Classical Variation</a></li>
+              <li><span class="mv">4...Nf6</span> <span class="pct">38%</span> <span class="mv">5.Nxf6+</span> <span class="pct">63%</span>
+                <ul>
+                  <li><span class="mv">5...exf6</span> <span class="pct">92%</span> <a href="#tartakower">Tartakower Variation</a></li>
+                  <li><span class="mv">5...gxf6</span> <span class="pct">8%</span> <a href="#bronstein-larsen">Bronstein-Larsen Variation</a></li>
+                </ul></li>
+              <li><span class="mv">4...Nd7</span> <span class="pct">11%</span> <a href="#karpov">Karpov Variation</a></li>
+            </ul></li>
+          <li><span class="mv">3.f3</span> <span class="pct">4%</span> <a href="#fantasy">Fantasy Variation</a></li>
+        </ul></li>
+      <li><span class="mv">2.Nf3</span> <span class="pct">23%</span> <a href="#nf3">2.Nf3</a>: usually transposes</li>
+      <li><span class="mv">2.Nc3</span> <span class="pct">6%</span> <span class="mv">d5 3.Nf3</span> <span class="pct">37%</span> <a href="#two-knights">Two Knights Attack</a></li>
+      <li><span class="mv">2.Bc4</span> <span class="pct">5%</span> <a href="#hillbilly">2.Bc4</a></li>
+      <li><span class="mv">2.f4</span> <span class="pct">5%</span> <span class="note">no card on this page</span></li>
+      <li><span class="mv">2.c4</span> <span class="pct">3%</span> <a href="#c4">2.c4</a></li>
+      <li><span class="mv">2.d3</span> <span class="pct">2%</span> <a href="#d3">2.d3</a></li>
+    </ul></li>
+</ul></div>
+  </section>
+
+<section class="group" aria-labelledby="g-main">
+  <div class="group-head"><h2 id="g-main">Main variations</h2><p>White’s main ways to meet 1...c6 and 2...d5, and Black’s two main fourth moves in the Classical lines.</p></div>
+  
+<article class="var" id="classical" aria-labelledby="classical-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="classical-h">Classical Variation</h3>
+      <p class="def-moves">1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5</p>
+    </div>
+    <p class="share"><span class="share-n">5.6%</span><span class="share-l">of Caro-Kann games reach 4...Bf5</span></p>
+  </header>
+  <p class="aka"><span class="eco">B18</span> Lichess: Caro-Kann Defense: Classical Variation. Also called the Capablanca Variation.</p>
+  <div class="var-body">
+    <div class="board-col">
+      
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>The main line. Black gives up the center pawn so the c8 bishop can come out to f5 before ...e6 shuts it in.</dd></div>
+      <div class="row"><dt>White</dt><dd>Chase the bishop with Ng3, then gain kingside space with h4 and h5. Trade the bishop on d3, and castle queenside if you want to attack.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Answer h4 with ...h6, trade the bishop on d3, then finish with ...e6, ...Ngf6 and ...Be7. Free your game with ...c5 or ...e5.</dd></div>
+      <div class="row warn"><dt>Watch out</dt><dd>After 5.Ng3 Bg6 6.h4, play 6...h6. The natural 6...e6? 7.h5 drives the bishop to f5, where the knight takes it and leaves Black with doubled f-pawns.</dd></div>
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Main line: 4...Bf5<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Classical: 3.Nd2</dd></div>
+    </dl>
+  </div>
+</article>
+
+<article class="var" id="karpov" aria-labelledby="karpov-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="karpov-h">Karpov Variation</h3>
+      <p class="def-moves">1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7</p>
+    </div>
+    <p class="share"><span class="share-n">1.3%</span><span class="share-l">of Caro-Kann games reach 4...Nd7</span></p>
+  </header>
+  <p class="aka"><span class="eco">B17</span> Lichess: Caro-Kann Defense: Karpov Variation.</p>
+  <div class="var-body">
+    <div class="board-col">
+      
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>Very solid. Black gets ready for ...Ngf6, so that if White trades knights, Black takes back with a knight and keeps a healthy pawn structure.</dd></div>
+      <div class="row"><dt>White</dt><dd>Develop with Nf3 and Bc4, or jump to g5 with 5.Ng5 to pressure f7 and e6. Castle and keep more space in the center.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Play ...Ngf6, ...e6 and ...Bd6 or ...Be7, then castle. The c8 bishop can still come to f5 or g4. Free your game with ...c5 or ...e5.</dd></div>
+      <div class="row warn"><dt>Watch out</dt><dd>After 5.Qe2, don’t play 5...Ngf6?? because 6.Nd6 is smothered mate: the e7 pawn is pinned to the king. Play 5...Ndf6 instead.</dd></div>
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Karpov: 4...Nd7<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Trap: 5.Qe2 and the smothered mate</dd></div>
+    </dl>
+  </div>
+</article>
+
+<article class="var" id="advance" aria-labelledby="advance-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="advance-h">Advance Variation</h3>
+      <p class="def-moves">1.e4 c6 2.d4 d5 3.e5</p>
+    </div>
+    <p class="share"><span class="share-n">21%</span><span class="share-l">of Caro-Kann games reach 3.e5</span></p>
+  </header>
+  <p class="aka"><span class="eco">B12</span> Lichess: Caro-Kann Defense: Advance Variation. Lichess calls 3...c5 the Botvinnik-Carls Defense and 4.Nf3 the Short Variation.</p>
+  <div class="var-body">
+    <div class="board-col">
+      <div class="tabs" role="group" aria-label="Lines"><button type="button" data-line="0" aria-pressed="true">3...Bf5</button><button type="button" data-line="1" aria-pressed="false">3...c5</button></div>
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>White gains space with e5 and takes f6 away from Black’s knight. Black attacks d4, the base of White’s pawn chain.</dd></div>
+      <div class="row"><dt>White</dt><dd>The calm Short system: Nf3, Be2 and castle, then Be3, c3 or c4. Sharper tries are 4.h4 (the Tal Variation) and 4.Nc3 with g4 (the Van der Wiel Attack).</dd></div>
+      <div class="row"><dt>Black</dt><dd>Hit d4 with ...c5, then pile up on it with ...Nc6, ...Qb6 and a knight on f5. Get the c8 bishop out before ...e6.</dd></div>
+      <div class="row warn"><dt>Watch out</dt><dd>After 3...Bf5 4.h4, the natural 4...e6?? loses the bishop to 5.g4 and h5.</dd></div>
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-white" target="_blank" rel="noopener">White course</a> › Main line: 5...c5<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-white" target="_blank" rel="noopener">White course</a> › Advance: 3...c5<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Advance: 3...c5<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Advance: 4.c3</dd></div>
+    </dl>
+  </div>
+</article>
+
+<article class="var" id="exchange" aria-labelledby="exchange-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="exchange-h">Exchange Variation</h3>
+      <p class="def-moves">1.e4 c6 2.d4 d5 3.exd5 cxd5 4.Bd3</p>
+    </div>
+    <p class="share"><span class="share-n">16%</span><span class="share-l">of Caro-Kann games reach 3...cxd5</span></p>
+  </header>
+  <p class="aka"><span class="eco">B13</span> Lichess: Caro-Kann Defense: Exchange Variation. Lichess calls 6.Bf4 the Rubinstein Variation.</p>
+  <div class="var-body">
+    <div class="board-col">
+      <div class="tabs" role="group" aria-label="Lines"><button type="button" data-line="0" aria-pressed="true">4.Bd3</button><button type="button" data-line="1" aria-pressed="false">4.Nf3</button></div>
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>The pawns are traded on d5, and Black’s c-pawn recaptures toward the center. After 4.Bd3 White aims at Black’s kingside; the quieter 4.Nf3 is played just as often at club level. 4.c4, the Panov, has its own card.</dd></div>
+      <div class="row"><dt>White</dt><dd>With Bd3, c3 and Bf4 you get a Carlsbad structure: three queenside pawns against Black’s two. Aim at the kingside with Qb3 or Qc2, a knight on e5 and a rook lift.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Develop with ...Nc6, ...Nf6, ...Bg4 and ...e6, then use the two queenside pawns to attack White’s three with ...b5 and ...b4, the minority attack.</dd></div>
+      
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Exchange: 4.Bd3 and 4.Nf3<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Exchange: 4.Bf4</dd></div>
+    </dl>
+  </div>
+</article>
+
+<article class="var" id="panov" aria-labelledby="panov-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="panov-h">Panov-Botvinnik Attack</h3>
+      <p class="def-moves">1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4</p>
+    </div>
+    <p class="share"><span class="share-n">3.9%</span><span class="share-l">of Caro-Kann games reach 4.c4</span></p>
+  </header>
+  <p class="aka"><span class="eco">B13</span> Lichess: Caro-Kann Defense: Panov Attack.</p>
+  <div class="var-body">
+    <div class="board-col">
+      
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>White accepts an isolated d-pawn in return for fast, active development. Open, more tactical games.</dd></div>
+      <div class="row"><dt>White</dt><dd>Develop quickly and use the outposts on e5 and c5 to attack. Pushing c4–c5 instead gives White three queenside pawns against two.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Develop fast, block the d-pawn with a knight on d5 and trade pieces. Endgames favor Black, because the isolated pawn becomes a weakness.</dd></div>
+      
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Panov: 4.c4</dd></div>
+    </dl>
+  </div>
+</article>
+
+<article class="var" id="two-knights" aria-labelledby="two-knights-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="two-knights-h">Two Knights Attack</h3>
+      <p class="def-moves">1.e4 c6 2.Nc3 d5 3.Nf3</p>
+    </div>
+    <p class="share"><span class="share-n">5.0%</span><span class="share-l">of Caro-Kann games reach 3.Nf3</span></p>
+  </header>
+  <p class="aka"><span class="eco">B10</span> Lichess: Caro-Kann Defense: Two Knights Attack. Lichess calls 3...Bg4 the Mindeno Variation.</p>
+  <div class="var-body">
+    <div class="board-col">
+      <div class="tabs" role="group" aria-label="Lines"><button type="button" data-line="0" aria-pressed="true">3...Bg4</button><button type="button" data-line="1" aria-pressed="false">3...dxe4</button></div>
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>White develops both knights and delays d4, hoping for tricks. It often turns into a Classical-type position.</dd></div>
+      <div class="row"><dt>White</dt><dd>Keep the d-pawn flexible, ready for d4 or d3. Aim at f7 and the e-file with Qe2, Bc4, Ng5 and Ne5, and harass Black’s bishop with h3.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Pin with ...Bg4. When h3 asks the question, take on f3, then play ...e6 and ...Nf6. Black is solid and comfortable.</dd></div>
+      <div class="row warn"><dt>Watch out</dt><dd>After 3...dxe4 4.Nxe4 Nf6 5.Qe2, don’t play 5...Nbd7?? because 6.Nd6 is smothered mate.</dd></div>
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-white" target="_blank" rel="noopener">White course</a> › Two Knights: 3...Bg4<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-white" target="_blank" rel="noopener">White course</a> › Two Knights: 4...Nf6<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Two Knights: 3...Bg4</dd></div>
+    </dl>
+  </div>
+</article>
+
+<article class="var" id="fantasy" aria-labelledby="fantasy-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="fantasy-h">Fantasy Variation</h3>
+      <p class="def-moves">1.e4 c6 2.d4 d5 3.f3</p>
+    </div>
+    <p class="share"><span class="share-n">2.1%</span><span class="share-l">of Caro-Kann games reach 3.f3</span></p>
+  </header>
+  <p class="aka"><span class="eco">B12</span> Lichess: Caro-Kann Defense: Maróczy Variation.</p>
+  <div class="var-body">
+    <div class="board-col">
+      <div class="tabs" role="group" aria-label="Lines"><button type="button" data-line="0" aria-pressed="true">3...e6</button><button type="button" data-line="1" aria-pressed="false">3...dxe4</button></div>
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>White props up e4 with the f-pawn so that, if Black takes, fxe4 keeps two pawns in the center and opens the f-file.</dd></div>
+      <div class="row"><dt>White</dt><dd>Develop with Nc3, Be3 and Qd2, castle quickly, and use the f-file. Remember that f3 weakens the diagonals toward your king.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Either play 3...e6 with ...Bb4, or take with 3...dxe4 and strike back with ...e5. Use the weak dark diagonals: ...Qh4+ and ...Bc5.</dd></div>
+      <div class="row warn"><dt>Watch out</dt><dd>After 3...dxe4 4.fxe4 e5, White must not take on e5: 5.dxe5? Qh4+ wins the e4 pawn with check.</dd></div>
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-white" target="_blank" rel="noopener">White course</a> › Fantasy: 3...dxe4<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-white" target="_blank" rel="noopener">White course</a> › Fantasy: 3...e6<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Fantasy: 3...dxe4</dd></div>
+    </dl>
+  </div>
+</article>
+</section>
+
+<section class="group" aria-labelledby="g-nf6">
+  <div class="group-head"><h2 id="g-nf6">Black’s other fourth move: 4...Nf6</h2><p>After 3.Nc3 dxe4 4.Nxe4 Nf6 White usually trades knights with 5.Nxf6+, and Black chooses which pawn takes back.</p></div>
+  
+<article class="var" id="tartakower" aria-labelledby="tartakower-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="tartakower-h">Tartakower Variation</h3>
+      <p class="def-moves">1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nf6 5.Nxf6+ exf6</p>
+    </div>
+    <p class="share"><span class="share-n">2.6%</span><span class="share-l">of Caro-Kann games reach 5...exf6</span></p>
+  </header>
+  <p class="aka"><span class="eco">B15</span> Lichess: Caro-Kann Defense: Tartakower Variation.</p>
+  <div class="var-body">
+    <div class="board-col">
+      
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>Black takes back with the e-pawn for quick, easy development and a safe king, at the cost of a structure that is worse in the endgame.</dd></div>
+      <div class="row"><dt>White</dt><dd>Develop with Bd3, Ne2 or Nf3, Qc2 and castle. Trade toward an endgame, where your healthy queenside majority matters and Black’s doubled f-pawns do not help.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Develop at once with ...Bd6, ...O-O, ...Re8 and ...Qc7, and play for the initiative in the middlegame.</dd></div>
+      
+      
+    </dl>
+  </div>
+</article>
+
+<article class="var" id="bronstein-larsen" aria-labelledby="bronstein-larsen-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="bronstein-larsen-h">Bronstein-Larsen Variation</h3>
+      <p class="def-moves">1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nf6 5.Nxf6+ gxf6</p>
+    </div>
+    <p class="share"><span class="share-n">0.2%</span><span class="share-l">of Caro-Kann games reach 5...gxf6</span></p>
+  </header>
+  <p class="aka"><span class="eco">B16</span> Lichess: Caro-Kann Defense: Bronstein-Larsen Variation.</p>
+  <div class="var-body">
+    <div class="board-col">
+      
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>Unbalanced. Black takes back toward the edge, accepting doubled f-pawns for the half-open g-file and active pieces.</dd></div>
+      <div class="row"><dt>White</dt><dd>Develop calmly, keep your king safe, and remember that your pawn structure is healthier: a 4-against-3 majority on the queenside counts in an endgame.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Use the g-file for a rook and play actively with ...Bg4 or ...Bf5, ...e6, ...Qc7 and ...Nd7. Queenside castling is common.</dd></div>
+      
+      
+    </dl>
+  </div>
+</article>
+</section>
+
+<section class="group" aria-labelledby="g-side">
+  <div class="group-head"><h2 id="g-side">White’s other second moves</h2><p>White can skip 2.d4. 2.Nf3 is very common at club level, but it usually transposes to a main line.</p></div>
+  
+<article class="var" id="nf3" aria-labelledby="nf3-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="nf3-h">2.Nf3</h3>
+      <p class="def-moves">1.e4 c6 2.Nf3</p>
+    </div>
+    <p class="share"><span class="share-n">24%</span><span class="share-l">of Caro-Kann games reach 2.Nf3</span></p>
+  </header>
+  <p class="aka"><span class="eco">B10</span> Lichess: Caro-Kann Defense.</p>
+  <div class="var-body">
+    <div class="board-col">
+      <div class="tabs" role="group" aria-label="Lines"><button type="button" data-line="0" aria-pressed="true">3.exd5</button><button type="button" data-line="1" aria-pressed="false">3.e5</button></div>
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>White develops first and keeps the choice of d4 for later. Most games transpose to a main line.</dd></div>
+      <div class="row"><dt>White</dt><dd>3.Nc3 reaches the Two Knights. 3.e5 is like the Advance, and 3.exd5 cxd5 4.d4 is an Exchange.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Answer 2...d5. Against 3.e5, play ...Bg4 before ...e6. Against 3.exd5 cxd5 4.d4, develop with ...Nc6 and ...Bg4.</dd></div>
+      
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › 2.Nf3: 3.exd5<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › 2.Nf3: 3.e5</dd></div>
+    </dl>
+  </div>
+</article>
+
+<article class="var" id="hillbilly" aria-labelledby="hillbilly-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="hillbilly-h">2.Bc4</h3>
+      <p class="def-moves">1.e4 c6 2.Bc4</p>
+    </div>
+    <p class="share"><span class="share-n">4.7%</span><span class="share-l">of Caro-Kann games reach 2.Bc4</span></p>
+  </header>
+  <p class="aka"><span class="eco">B10</span> Lichess: Caro-Kann Defense: Hillbilly Attack.</p>
+  <div class="var-body">
+    <div class="board-col">
+      <div class="tabs" role="group" aria-label="Lines"><button type="button" data-line="0" aria-pressed="true">3.exd5</button><button type="button" data-line="1" aria-pressed="false">3.Bb3</button></div>
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>White puts the bishop on c4 before d4, where ...d5 hits it at once. Popular online for its traps.</dd></div>
+      <div class="row"><dt>White</dt><dd>Against 2...d5, 3.exd5 cxd5 4.Bb5+ trades off; 3.Bb3 dxe4 4.Qh5 is the Schaeffer Gambit.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Answer 2...d5. After 3.Bb3 dxe4 4.Qh5, play 4...g6 and keep the extra pawn.</dd></div>
+      
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Other second moves: 2.Bc4 and 2.c4<br><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Hillbilly: 3.Bb3</dd></div>
+    </dl>
+  </div>
+</article>
+
+<article class="var" id="c4" aria-labelledby="c4-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="c4-h">2.c4</h3>
+      <p class="def-moves">1.e4 c6 2.c4</p>
+    </div>
+    <p class="share"><span class="share-n">3.3%</span><span class="share-l">of Caro-Kann games reach 2.c4</span></p>
+  </header>
+  <p class="aka"><span class="eco">B10</span> Lichess: Caro-Kann Defense: Accelerated Panov Attack.</p>
+  <div class="var-body">
+    <div class="board-col">
+      
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>White hits d5 from the side before playing d4. Black wins back the pawn and gets an open, active game.</dd></div>
+      <div class="row"><dt>White</dt><dd>After 2...d5 3.exd5 cxd5 4.cxd5 Nf6, develop with Nc3 and Nf3 and play against Black’s knight on d5.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Play 2...d5. After 3.exd5 cxd5 4.cxd5 Nf6, win the pawn back with ...Nxd5 and develop with ...Nc6.</dd></div>
+      
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Other second moves: 2.Bc4 and 2.c4</dd></div>
+    </dl>
+  </div>
+</article>
+
+<article class="var" id="d3" aria-labelledby="d3-h">
+  <header class="var-head">
+    <div class="var-title">
+      <h3 id="d3-h">2.d3</h3>
+      <p class="def-moves">1.e4 c6 2.d3</p>
+    </div>
+    <p class="share"><span class="share-n">1.6%</span><span class="share-l">of Caro-Kann games reach 2.d3</span></p>
+  </header>
+  <p class="aka"><span class="eco">B10</span> Lichess: Caro-Kann Defense: Breyer Variation.</p>
+  <div class="var-body">
+    <div class="board-col">
+      
+      <div class="board-wrap" tabindex="0" aria-label="Board. Use the left and right arrow keys to step through the moves.">
+        <svg class="board" viewBox="0 0 320 320" role="img"></svg>
+      </div>
+      <div class="controls" role="group" aria-label="Move controls">
+        <button type="button" data-act="first" aria-label="Start"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 4h2v12H5zM16 4v12L8 10z"/></svg></button>
+        <button type="button" data-act="prev" aria-label="Back one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M14 4v12L6 10z"/></svg></button>
+        <button type="button" data-act="watch" class="watch" aria-pressed="false"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l9-6z"/></svg><span class="lbl">Watch</span></button>
+        <button type="button" data-act="next" aria-label="Forward one move"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 4v12l8-6z"/></svg></button>
+        <button type="button" data-act="last" aria-label="End of line"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13 4h2v12h-2zM4 4v12l8-6z"/></svg></button>
+      </div>
+      <p class="status" aria-live="polite"></p>
+      <div class="movelist" aria-label="Moves"></div>
+    </div>
+    <dl class="notes">
+      <div class="row"><dt>The game</dt><dd>A quiet system: White plays d3, Nd2, Ngf3, g3 and Bg2, like a King’s Indian Attack.</dd></div>
+      <div class="row"><dt>White</dt><dd>Finish the setup, castle, and look for e4–e5 or a kingside attack later.</dd></div>
+      <div class="row"><dt>Black</dt><dd>Take the center with ...d5 and ...e5, develop with ...Bd6, ...Nf6 and ...O-O, and enjoy a free, comfortable game.</dd></div>
+      
+      <div class="row"><dt>In your app</dt><dd><a href="https://ksandras1963.github.io/chess-academy/#/course/caro-kann-black" target="_blank" rel="noopener">Black course</a> › Other second moves: 2.d3</dd></div>
+    </dl>
+  </div>
+</article>
+</section>
+  <footer class="sources">
+    <h2>Sources and notes</h2>
+    <p><b>How often:</b> Lichess opening explorer, rated rapid and classical games between players averaging 1800 to 2199, retrieved 27 October 2026. Card figures are the share of the 13.6 million games after 1.e4 c6 that reach the named position by any move order. Because move orders transpose, some games count on more than one card: 2.Nf3 d5 3.Nc3 is also the Two Knights, 2.Nf3 d5 3.exd5 cxd5 4.d4 is also the Exchange with 4.Nf3, and 2.c4 d5 3.exd5 cxd5 4.d4 is also the Panov. The figures agree within 3% with the snapshot your app saved on 18 to 25 October 2026.</p>
+    <p><b>Names:</b> ECO codes and names as Lichess gives them (lichess-org/chess-openings). Where Lichess uses a different name from the usual one, the card says so, for example the Fantasy, which Lichess calls the Maróczy Variation.</p>
+    <p><b>Lines:</b> most lines follow your Opening Trainer’s Caro-Kann courses. The Tartakower, Bronstein-Larsen and Two Knights (3...Bg4) lines follow named Lichess lines and the moves club players choose most. Every line was checked for legal moves with chess.js, and each trap in a Watch out box was checked move by move. The plans are general guidance, not engine evaluations.</p>
+    <p><b>Pieces:</b> Colin M. L. Burnett, via Wikimedia Commons and cm-chessboard, CC BY-SA 3.0.</p>
+  </footer>
+</div>
+<script>window.CK_DATA = [{"id":"classical","name":"Classical Variation","lines":[{"label":"Main line","start":8,"keyFrom":8,"keyTo":8,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["Nc3","b1","c3","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR",22],["dxe4","d5","e4","rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N5/PPP2PPP/R1BQKBNR",82],["Nxe4","c3","e4","rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR",92],["Bf5","c8","f5","rn1qkbnr/pp2pppp/2p5/5b2/3PN3/8/PPP2PPP/R1BQKBNR",48],["Ng3","e4","g3","rn1qkbnr/pp2pppp/2p5/5b2/3P4/6N1/PPP2PPP/R1BQKBNR",83],["Bg6","f5","g6","rn1qkbnr/pp2pppp/2p3b1/8/3P4/6N1/PPP2PPP/R1BQKBNR",98],["h4","h2","h4","rn1qkbnr/pp2pppp/2p3b1/8/3P3P/6N1/PPP2PP1/R1BQKBNR",31],["h6","h7","h6","rn1qkbnr/pp2ppp1/2p3bp/8/3P3P/6N1/PPP2PP1/R1BQKBNR",84],["Nf3","g1","f3","rn1qkbnr/pp2ppp1/2p3bp/8/3P3P/5NN1/PPP2PP1/R1BQKB1R",49],["Nd7","b8","d7","r2qkbnr/pp1nppp1/2p3bp/8/3P3P/5NN1/PPP2PP1/R1BQKB1R",56],["h5","h4","h5","r2qkbnr/pp1nppp1/2p3bp/7P/3P4/5NN1/PPP2PP1/R1BQKB1R",68],["Bh7","g6","h7","r2qkbnr/pp1npppb/2p4p/7P/3P4/5NN1/PPP2PP1/R1BQKB1R",100],["Bd3","f1","d3","r2qkbnr/pp1npppb/2p4p/7P/3P4/3B1NN1/PPP2PP1/R1BQK2R",88],["Bxd3","h7","d3","r2qkbnr/pp1nppp1/2p4p/7P/3P4/3b1NN1/PPP2PP1/R1BQK2R",97],["Qxd3","d1","d3","r2qkbnr/pp1nppp1/2p4p/7P/3P4/3Q1NN1/PPP2PP1/R1B1K2R",100],["e6","e7","e6","r2qkbnr/pp1n1pp1/2p1p2p/7P/3P4/3Q1NN1/PPP2PP1/R1B1K2R",49]]}]},{"id":"karpov","name":"Karpov Variation","lines":[{"label":"Main line","start":8,"keyFrom":8,"keyTo":8,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["Nc3","b1","c3","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR",22],["dxe4","d5","e4","rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N5/PPP2PPP/R1BQKBNR",82],["Nxe4","c3","e4","rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR",92],["Nd7","b8","d7","r1bqkbnr/pp1npppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR",11],["Nf3","g1","f3","r1bqkbnr/pp1npppp/2p5/8/3PN3/5N2/PPP2PPP/R1BQKB1R",54],["Ngf6","g8","f6","r1bqkb1r/pp1npppp/2p2n2/8/3PN3/5N2/PPP2PPP/R1BQKB1R",92],["Nxf6+","e4","f6","r1bqkb1r/pp1npppp/2p2N2/8/3P4/5N2/PPP2PPP/R1BQKB1R",26],["Nxf6","d7","f6","r1bqkb1r/pp2pppp/2p2n2/8/3P4/5N2/PPP2PPP/R1BQKB1R",99],["Bc4","f1","c4","r1bqkb1r/pp2pppp/2p2n2/8/2BP4/5N2/PPP2PPP/R1BQK2R",25],["Bf5","c8","f5","r2qkb1r/pp2pppp/2p2n2/5b2/2BP4/5N2/PPP2PPP/R1BQK2R",26],["O-O","e1","g1","r2qkb1r/pp2pppp/2p2n2/5b2/2BP4/5N2/PPP2PPP/R1BQ1RK1",57],["e6","e7","e6","r2qkb1r/pp3ppp/2p1pn2/5b2/2BP4/5N2/PPP2PPP/R1BQ1RK1",98],["c3","c2","c3","r2qkb1r/pp3ppp/2p1pn2/5b2/2BP4/2P2N2/PP3PPP/R1BQ1RK1",23],["Bd6","f8","d6","r2qk2r/pp3ppp/2pbpn2/5b2/2BP4/2P2N2/PP3PPP/R1BQ1RK1",36]]}]},{"id":"advance","name":"Advance Variation","lines":[{"label":"3...Bf5","start":5,"keyFrom":5,"keyTo":5,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["e5","e4","e5","rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR",39],["Bf5","c8","f5","rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/8/PPP2PPP/RNBQKBNR",67],["Nf3","g1","f3","rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/5N2/PPP2PPP/RNBQKB1R",25],["e6","e7","e6","rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/5N2/PPP2PPP/RNBQKB1R",89],["Be2","f1","e2","rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/5N2/PPP1BPPP/RNBQK2R",20],["c5","c6","c5","rn1qkbnr/pp3ppp/4p3/2ppPb2/3P4/5N2/PPP1BPPP/RNBQK2R",44],["Be3","c1","e3","rn1qkbnr/pp3ppp/4p3/2ppPb2/3P4/4BN2/PPP1BPPP/RN1QK2R",19],["Qb6","d8","b6","rn2kbnr/pp3ppp/1q2p3/2ppPb2/3P4/4BN2/PPP1BPPP/RN1QK2R",36],["Nc3","b1","c3","rn2kbnr/pp3ppp/1q2p3/2ppPb2/3P4/2N1BN2/PPP1BPPP/R2QK2R",75],["Nc6","b8","c6","r3kbnr/pp3ppp/1qn1p3/2ppPb2/3P4/2N1BN2/PPP1BPPP/R2QK2R",40]]},{"label":"3...c5","start":6,"keyFrom":6,"keyTo":6,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["e5","e4","e5","rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR",39],["c5","c6","c5","rnbqkbnr/pp2pppp/8/2ppP3/3P4/8/PPP2PPP/RNBQKBNR",26],["c3","c2","c3","rnbqkbnr/pp2pppp/8/2ppP3/3P4/2P5/PP3PPP/RNBQKBNR",63],["Nc6","b8","c6","r1bqkbnr/pp2pppp/2n5/2ppP3/3P4/2P5/PP3PPP/RNBQKBNR",79],["Nf3","g1","f3","r1bqkbnr/pp2pppp/2n5/2ppP3/3P4/2P2N2/PP3PPP/RNBQKB1R",53],["cxd4","c5","d4","r1bqkbnr/pp2pppp/2n5/3pP3/3p4/2P2N2/PP3PPP/RNBQKB1R",25],["cxd4","c3","d4","r1bqkbnr/pp2pppp/2n5/3pP3/3P4/5N2/PP3PPP/RNBQKB1R",97],["Bg4","c8","g4","r2qkbnr/pp2pppp/2n5/3pP3/3P2b1/5N2/PP3PPP/RNBQKB1R",90],["Be2","f1","e2","r2qkbnr/pp2pppp/2n5/3pP3/3P2b1/5N2/PP2BPPP/RNBQK2R",45],["e6","e7","e6","r2qkbnr/pp3ppp/2n1p3/3pP3/3P2b1/5N2/PP2BPPP/RNBQK2R",85],["O-O","e1","g1","r2qkbnr/pp3ppp/2n1p3/3pP3/3P2b1/5N2/PP2BPPP/RNBQ1RK1",49],["Nge7","g8","e7","r2qkb1r/pp2nppp/2n1p3/3pP3/3P2b1/5N2/PP2BPPP/RNBQ1RK1",65]]}]},{"id":"exchange","name":"Exchange Variation","lines":[{"label":"4.Bd3","start":7,"keyFrom":7,"keyTo":7,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["exd5","e4","d5","rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PPP2PPP/RNBQKBNR",29],["cxd5","c6","d5","rnbqkbnr/pp2pppp/8/3p4/3P4/8/PPP2PPP/RNBQKBNR",98],["Bd3","f1","d3","rnbqkbnr/pp2pppp/8/3p4/3P4/3B4/PPP2PPP/RNBQK1NR",27],["Nc6","b8","c6","r1bqkbnr/pp2pppp/2n5/3p4/3P4/3B4/PPP2PPP/RNBQK1NR",55],["c3","c2","c3","r1bqkbnr/pp2pppp/2n5/3p4/3P4/2PB4/PP3PPP/RNBQK1NR",80],["Nf6","g8","f6","r1bqkb1r/pp2pppp/2n2n2/3p4/3P4/2PB4/PP3PPP/RNBQK1NR",75],["Bf4","c1","f4","r1bqkb1r/pp2pppp/2n2n2/3p4/3P1B2/2PB4/PP3PPP/RN1QK1NR",37],["Bg4","c8","g4","r2qkb1r/pp2pppp/2n2n2/3p4/3P1Bb1/2PB4/PP3PPP/RN1QK1NR",61],["Qb3","d1","b3","r2qkb1r/pp2pppp/2n2n2/3p4/3P1Bb1/1QPB4/PP3PPP/RN2K1NR",65],["Qd7","d8","d7","r3kb1r/pp1qpppp/2n2n2/3p4/3P1Bb1/1QPB4/PP3PPP/RN2K1NR",35],["Nd2","b1","d2","r3kb1r/pp1qpppp/2n2n2/3p4/3P1Bb1/1QPB4/PP1N1PPP/R3K1NR",92],["e6","e7","e6","r3kb1r/pp1q1ppp/2n1pn2/3p4/3P1Bb1/1QPB4/PP1N1PPP/R3K1NR",93],["Ngf3","g1","f3","r3kb1r/pp1q1ppp/2n1pn2/3p4/3P1Bb1/1QPB1N2/PP1N1PPP/R3K2R",94]]},{"label":"4.Nf3","start":7,"keyFrom":7,"keyTo":7,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["exd5","e4","d5","rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PPP2PPP/RNBQKBNR",29],["cxd5","c6","d5","rnbqkbnr/pp2pppp/8/3p4/3P4/8/PPP2PPP/RNBQKBNR",98],["Nf3","g1","f3","rnbqkbnr/pp2pppp/8/3p4/3P4/5N2/PPP2PPP/RNBQKB1R",28],["Nc6","b8","c6","r1bqkbnr/pp2pppp/2n5/3p4/3P4/5N2/PPP2PPP/RNBQKB1R",37],["Bb5","f1","b5","r1bqkbnr/pp2pppp/2n5/1B1p4/3P4/5N2/PPP2PPP/RNBQK2R",25],["Bg4","c8","g4","r2qkbnr/pp2pppp/2n5/1B1p4/3P2b1/5N2/PPP2PPP/RNBQK2R",45],["O-O","e1","g1","r2qkbnr/pp2pppp/2n5/1B1p4/3P2b1/5N2/PPP2PPP/RNBQ1RK1",30],["e6","e7","e6","r2qkbnr/pp3ppp/2n1p3/1B1p4/3P2b1/5N2/PPP2PPP/RNBQ1RK1",59]]}]},{"id":"panov","name":"Panov-Botvinnik Attack","lines":[{"label":"Main line","start":7,"keyFrom":7,"keyTo":7,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["exd5","e4","d5","rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PPP2PPP/RNBQKBNR",29],["cxd5","c6","d5","rnbqkbnr/pp2pppp/8/3p4/3P4/8/PPP2PPP/RNBQKBNR",98],["c4","c2","c4","rnbqkbnr/pp2pppp/8/3p4/2PP4/8/PP3PPP/RNBQKBNR",23],["Nf6","g8","f6","rnbqkb1r/pp2pppp/5n2/3p4/2PP4/8/PP3PPP/RNBQKBNR",60],["Nc3","b1","c3","rnbqkb1r/pp2pppp/5n2/3p4/2PP4/2N5/PP3PPP/R1BQKBNR",72],["e6","e7","e6","rnbqkb1r/pp3ppp/4pn2/3p4/2PP4/2N5/PP3PPP/R1BQKBNR",32],["Nf3","g1","f3","rnbqkb1r/pp3ppp/4pn2/3p4/2PP4/2N2N2/PP3PPP/R1BQKB1R",58],["Be7","f8","e7","rnbqk2r/pp2bppp/4pn2/3p4/2PP4/2N2N2/PP3PPP/R1BQKB1R",23],["cxd5","c4","d5","rnbqk2r/pp2bppp/4pn2/3P4/3P4/2N2N2/PP3PPP/R1BQKB1R",23],["Nxd5","f6","d5","rnbqk2r/pp2bppp/4p3/3n4/3P4/2N2N2/PP3PPP/R1BQKB1R",73],["Bd3","f1","d3","rnbqk2r/pp2bppp/4p3/3n4/3P4/2NB1N2/PP3PPP/R1BQK2R",47],["Nc6","b8","c6","r1bqk2r/pp2bppp/2n1p3/3n4/3P4/2NB1N2/PP3PPP/R1BQK2R",23],["O-O","e1","g1","r1bqk2r/pp2bppp/2n1p3/3n4/3P4/2NB1N2/PP3PPP/R1BQ1RK1",85],["O-O","e8","g8","r1bq1rk1/pp2bppp/2n1p3/3n4/3P4/2NB1N2/PP3PPP/R1BQ1RK1",70]]}]},{"id":"two-knights","name":"Two Knights Attack","lines":[{"label":"3...Bg4","start":5,"keyFrom":5,"keyTo":5,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["Nc3","b1","c3","rnbqkbnr/pp1ppppp/2p5/8/4P3/2N5/PPPP1PPP/R1BQKBNR",6],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N5/PPPP1PPP/R1BQKBNR",91],["Nf3","g1","f3","rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N2N2/PPPP1PPP/R1BQKB1R",37],["Bg4","c8","g4","rn1qkbnr/pp2pppp/2p5/3p4/4P1b1/2N2N2/PPPP1PPP/R1BQKB1R",28],["h3","h2","h3","rn1qkbnr/pp2pppp/2p5/3p4/4P1b1/2N2N1P/PPPP1PP1/R1BQKB1R",52],["Bxf3","g4","f3","rn1qkbnr/pp2pppp/2p5/3p4/4P3/2N2b1P/PPPP1PP1/R1BQKB1R",63],["Qxf3","d1","f3","rn1qkbnr/pp2pppp/2p5/3p4/4P3/2N2Q1P/PPPP1PP1/R1B1KB1R",99],["e6","e7","e6","rn1qkbnr/pp3ppp/2p1p3/3p4/4P3/2N2Q1P/PPPP1PP1/R1B1KB1R",62],["d4","d2","d4","rn1qkbnr/pp3ppp/2p1p3/3p4/3PP3/2N2Q1P/PPP2PP1/R1B1KB1R",32],["Nf6","g8","f6","rn1qkb1r/pp3ppp/2p1pn2/3p4/3PP3/2N2Q1P/PPP2PP1/R1B1KB1R",38],["e5","e4","e5","rn1qkb1r/pp3ppp/2p1pn2/3pP3/3P4/2N2Q1P/PPP2PP1/R1B1KB1R",52],["Nfd7","f6","d7","rn1qkb1r/pp1n1ppp/2p1p3/3pP3/3P4/2N2Q1P/PPP2PP1/R1B1KB1R",97]]},{"label":"3...dxe4","start":6,"keyFrom":6,"keyTo":6,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["Nc3","b1","c3","rnbqkbnr/pp1ppppp/2p5/8/4P3/2N5/PPPP1PPP/R1BQKBNR",6],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N5/PPPP1PPP/R1BQKBNR",91],["Nf3","g1","f3","rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N2N2/PPPP1PPP/R1BQKB1R",37],["dxe4","d5","e4","rnbqkbnr/pp2pppp/2p5/8/4p3/2N2N2/PPPP1PPP/R1BQKB1R",54],["Nxe4","c3","e4","rnbqkbnr/pp2pppp/2p5/8/4N3/5N2/PPPP1PPP/R1BQKB1R",99],["Nf6","g8","f6","rnbqkb1r/pp2pppp/2p2n2/8/4N3/5N2/PPPP1PPP/R1BQKB1R",48],["Qe2","d1","e2","rnbqkb1r/pp2pppp/2p2n2/8/4N3/5N2/PPPPQPPP/R1B1KB1R",35],["Nxe4","f6","e4","rnbqkb1r/pp2pppp/2p5/8/4n3/5N2/PPPPQPPP/R1B1KB1R",70],["Qxe4","e2","e4","rnbqkb1r/pp2pppp/2p5/8/4Q3/5N2/PPPP1PPP/R1B1KB1R",100],["Nd7","b8","d7","r1bqkb1r/pp1npppp/2p5/8/4Q3/5N2/PPPP1PPP/R1B1KB1R",58],["Bc4","f1","c4","r1bqkb1r/pp1npppp/2p5/8/2B1Q3/5N2/PPPP1PPP/R1B1K2R",77],["Nf6","d7","f6","r1bqkb1r/pp2pppp/2p2n2/8/2B1Q3/5N2/PPPP1PPP/R1B1K2R",91],["Qe2","e4","e2","r1bqkb1r/pp2pppp/2p2n2/8/2B5/5N2/PPPPQPPP/R1B1K2R",28],["Bf5","c8","f5","r2qkb1r/pp2pppp/2p2n2/5b2/2B5/5N2/PPPPQPPP/R1B1K2R",23]]}]},{"id":"fantasy","name":"Fantasy Variation","lines":[{"label":"3...e6","start":5,"keyFrom":5,"keyTo":5,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["f3","f2","f3","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/5P2/PPP3PP/RNBQKBNR",4],["e6","e7","e6","rnbqkbnr/pp3ppp/2p1p3/3p4/3PP3/5P2/PPP3PP/RNBQKBNR",21],["Nc3","b1","c3","rnbqkbnr/pp3ppp/2p1p3/3p4/3PP3/2N2P2/PPP3PP/R1BQKBNR",51],["Bb4","f8","b4","rnbqk1nr/pp3ppp/2p1p3/3p4/1b1PP3/2N2P2/PPP3PP/R1BQKBNR",38],["Bd2","c1","d2","rnbqk1nr/pp3ppp/2p1p3/3p4/1b1PP3/2N2P2/PPPB2PP/R2QKBNR",28]]},{"label":"3...dxe4","start":6,"keyFrom":6,"keyTo":6,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["f3","f2","f3","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/5P2/PPP3PP/RNBQKBNR",4],["dxe4","d5","e4","rnbqkbnr/pp2pppp/2p5/8/3Pp3/5P2/PPP3PP/RNBQKBNR",50],["fxe4","f3","e4","rnbqkbnr/pp2pppp/2p5/8/3PP3/8/PPP3PP/RNBQKBNR",97],["e5","e7","e5","rnbqkbnr/pp3ppp/2p5/4p3/3PP3/8/PPP3PP/RNBQKBNR",53],["Nf3","g1","f3","rnbqkbnr/pp3ppp/2p5/4p3/3PP3/5N2/PPP3PP/RNBQKB1R",87],["Bg4","c8","g4","rn1qkbnr/pp3ppp/2p5/4p3/3PP1b1/5N2/PPP3PP/RNBQKB1R",52],["Bc4","f1","c4","rn1qkbnr/pp3ppp/2p5/4p3/2BPP1b1/5N2/PPP3PP/RNBQK2R",69],["Nd7","b8","d7","r2qkbnr/pp1n1ppp/2p5/4p3/2BPP1b1/5N2/PPP3PP/RNBQK2R",43],["O-O","e1","g1","r2qkbnr/pp1n1ppp/2p5/4p3/2BPP1b1/5N2/PPP3PP/RNBQ1RK1",73],["Ngf6","g8","f6","r2qkb1r/pp1n1ppp/2p2n2/4p3/2BPP1b1/5N2/PPP3PP/RNBQ1RK1",83],["c3","c2","c3","r2qkb1r/pp1n1ppp/2p2n2/4p3/2BPP1b1/2P2N2/PP4PP/RNBQ1RK1",29],["Bd6","f8","d6","r2qk2r/pp1n1ppp/2pb1n2/4p3/2BPP1b1/2P2N2/PP4PP/RNBQ1RK1",60]]}]},{"id":"tartakower","name":"Tartakower Variation","lines":[{"label":"Main line","start":10,"keyFrom":10,"keyTo":10,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["Nc3","b1","c3","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR",22],["dxe4","d5","e4","rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N5/PPP2PPP/R1BQKBNR",82],["Nxe4","c3","e4","rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR",92],["Nf6","g8","f6","rnbqkb1r/pp2pppp/2p2n2/8/3PN3/8/PPP2PPP/R1BQKBNR",38],["Nxf6+","e4","f6","rnbqkb1r/pp2pppp/2p2N2/8/3P4/8/PPP2PPP/R1BQKBNR",63],["exf6","e7","f6","rnbqkb1r/pp3ppp/2p2p2/8/3P4/8/PPP2PPP/R1BQKBNR",92],["c3","c2","c3","rnbqkb1r/pp3ppp/2p2p2/8/3P4/2P5/PP3PPP/R1BQKBNR",21],["Bd6","f8","d6","rnbqk2r/pp3ppp/2pb1p2/8/3P4/2P5/PP3PPP/R1BQKBNR",83],["Bd3","f1","d3","rnbqk2r/pp3ppp/2pb1p2/8/3P4/2PB4/PP3PPP/R1BQK1NR",80],["O-O","e8","g8","rnbq1rk1/pp3ppp/2pb1p2/8/3P4/2PB4/PP3PPP/R1BQK1NR",88],["Qc2","d1","c2","rnbq1rk1/pp3ppp/2pb1p2/8/3P4/2PB4/PPQ2PPP/R1B1K1NR",50]]}]},{"id":"bronstein-larsen","name":"Bronstein-Larsen Variation","lines":[{"label":"Main line","start":10,"keyFrom":10,"keyTo":10,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d4","d2","d4","rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR",54],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR",94],["Nc3","b1","c3","rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR",22],["dxe4","d5","e4","rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N5/PPP2PPP/R1BQKBNR",82],["Nxe4","c3","e4","rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR",92],["Nf6","g8","f6","rnbqkb1r/pp2pppp/2p2n2/8/3PN3/8/PPP2PPP/R1BQKBNR",38],["Nxf6+","e4","f6","rnbqkb1r/pp2pppp/2p2N2/8/3P4/8/PPP2PPP/R1BQKBNR",63],["gxf6","g7","f6","rnbqkb1r/pp2pp1p/2p2p2/8/3P4/8/PPP2PPP/R1BQKBNR",8],["Nf3","g1","f3","rnbqkb1r/pp2pp1p/2p2p2/8/3P4/5N2/PPP2PPP/R1BQKB1R",50],["Bg4","c8","g4","rn1qkb1r/pp2pp1p/2p2p2/8/3P2b1/5N2/PPP2PPP/R1BQKB1R",50],["Be2","f1","e2","rn1qkb1r/pp2pp1p/2p2p2/8/3P2b1/5N2/PPP1BPPP/R1BQK2R",59]]}]},{"id":"nf3","name":"2.Nf3","lines":[{"label":"3.exd5","start":3,"keyFrom":3,"keyTo":3,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["Nf3","g1","f3","rnbqkbnr/pp1ppppp/2p5/8/4P3/5N2/PPPP1PPP/RNBQKB1R",23],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/4P3/5N2/PPPP1PPP/RNBQKB1R",93],["exd5","e4","d5","rnbqkbnr/pp2pppp/2p5/3P4/8/5N2/PPPP1PPP/RNBQKB1R",62],["cxd5","c6","d5","rnbqkbnr/pp2pppp/8/3p4/8/5N2/PPPP1PPP/RNBQKB1R",98],["d4","d2","d4","rnbqkbnr/pp2pppp/8/3p4/3P4/5N2/PPP2PPP/RNBQKB1R",79],["Nc6","b8","c6","r1bqkbnr/pp2pppp/2n5/3p4/3P4/5N2/PPP2PPP/RNBQKB1R",37],["Bb5","f1","b5","r1bqkbnr/pp2pppp/2n5/1B1p4/3P4/5N2/PPP2PPP/RNBQK2R",25],["Bg4","c8","g4","r2qkbnr/pp2pppp/2n5/1B1p4/3P2b1/5N2/PPP2PPP/RNBQK2R",45],["O-O","e1","g1","r2qkbnr/pp2pppp/2n5/1B1p4/3P2b1/5N2/PPP2PPP/RNBQ1RK1",30],["e6","e7","e6","r2qkbnr/pp3ppp/2n1p3/1B1p4/3P2b1/5N2/PPP2PPP/RNBQ1RK1",59]]},{"label":"3.e5","start":5,"keyFrom":5,"keyTo":5,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["Nf3","g1","f3","rnbqkbnr/pp1ppppp/2p5/8/4P3/5N2/PPPP1PPP/RNBQKB1R",23],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/4P3/5N2/PPPP1PPP/RNBQKB1R",93],["e5","e4","e5","rnbqkbnr/pp2pppp/2p5/3pP3/8/5N2/PPPP1PPP/RNBQKB1R",19],["Bg4","c8","g4","rn1qkbnr/pp2pppp/2p5/3pP3/6b1/5N2/PPPP1PPP/RNBQKB1R",51],["d4","d2","d4","rn1qkbnr/pp2pppp/2p5/3pP3/3P2b1/5N2/PPP2PPP/RNBQKB1R",69],["e6","e7","e6","rn1qkbnr/pp3ppp/2p1p3/3pP3/3P2b1/5N2/PPP2PPP/RNBQKB1R",84],["Be2","f1","e2","rn1qkbnr/pp3ppp/2p1p3/3pP3/3P2b1/5N2/PPP1BPPP/RNBQK2R",36],["c5","c6","c5","rn1qkbnr/pp3ppp/4p3/2ppP3/3P2b1/5N2/PPP1BPPP/RNBQK2R",53],["O-O","e1","g1","rn1qkbnr/pp3ppp/4p3/2ppP3/3P2b1/5N2/PPP1BPPP/RNBQ1RK1",11],["Nc6","b8","c6","r2qkbnr/pp3ppp/2n1p3/2ppP3/3P2b1/5N2/PPP1BPPP/RNBQ1RK1",74]]}]},{"id":"hillbilly","name":"2.Bc4","lines":[{"label":"3.exd5","start":3,"keyFrom":3,"keyTo":3,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["Bc4","f1","c4","rnbqkbnr/pp1ppppp/2p5/8/2B1P3/8/PPPP1PPP/RNBQK1NR",5],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/2B1P3/8/PPPP1PPP/RNBQK1NR",91],["exd5","e4","d5","rnbqkbnr/pp2pppp/2p5/3P4/2B5/8/PPPP1PPP/RNBQK1NR",95],["cxd5","c6","d5","rnbqkbnr/pp2pppp/8/3p4/2B5/8/PPPP1PPP/RNBQK1NR",100],["Bb5+","c4","b5","rnbqkbnr/pp2pppp/8/1B1p4/8/8/PPPP1PPP/RNBQK1NR",24],["Bd7","c8","d7","rn1qkbnr/pp1bpppp/8/1B1p4/8/8/PPPP1PPP/RNBQK1NR",45]]},{"label":"3.Bb3","start":5,"keyFrom":5,"keyTo":5,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["Bc4","f1","c4","rnbqkbnr/pp1ppppp/2p5/8/2B1P3/8/PPPP1PPP/RNBQK1NR",5],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/2B1P3/8/PPPP1PPP/RNBQK1NR",91],["Bb3","c4","b3","rnbqkbnr/pp2pppp/2p5/3p4/4P3/1B6/PPPP1PPP/RNBQK1NR",4],["dxe4","d5","e4","rnbqkbnr/pp2pppp/2p5/8/4p3/1B6/PPPP1PPP/RNBQK1NR",73],["Qh5","d1","h5","rnbqkbnr/pp2pppp/2p5/7Q/4p3/1B6/PPPP1PPP/RNB1K1NR",65],["g6","g7","g6","rnbqkbnr/pp2pp1p/2p3p1/7Q/4p3/1B6/PPPP1PPP/RNB1K1NR",56]]}]},{"id":"c4","name":"2.c4","lines":[{"label":"Main line","start":3,"keyFrom":3,"keyTo":3,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["c4","c2","c4","rnbqkbnr/pp1ppppp/2p5/8/2P1P3/8/PP1P1PPP/RNBQKBNR",3],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/2P1P3/8/PP1P1PPP/RNBQKBNR",79],["exd5","e4","d5","rnbqkbnr/pp2pppp/2p5/3P4/2P5/8/PP1P1PPP/RNBQKBNR",25],["cxd5","c6","d5","rnbqkbnr/pp2pppp/8/3p4/2P5/8/PP1P1PPP/RNBQKBNR",97],["cxd5","c4","d5","rnbqkbnr/pp2pppp/8/3P4/8/8/PP1P1PPP/RNBQKBNR",65],["Nf6","g8","f6","rnbqkb1r/pp2pppp/5n2/3P4/8/8/PP1P1PPP/RNBQKBNR",41],["Nc3","b1","c3","rnbqkb1r/pp2pppp/5n2/3P4/8/2N5/PP1P1PPP/R1BQKBNR",57],["Nxd5","f6","d5","rnbqkb1r/pp2pppp/8/3n4/8/2N5/PP1P1PPP/R1BQKBNR",91],["Nf3","g1","f3","rnbqkb1r/pp2pppp/8/3n4/8/2N2N2/PP1P1PPP/R1BQKB1R",20],["Nc6","b8","c6","r1bqkb1r/pp2pppp/2n5/3n4/8/2N2N2/PP1P1PPP/R1BQKB1R",38]]}]},{"id":"d3","name":"2.d3","lines":[{"label":"Main line","start":3,"keyFrom":3,"keyTo":3,"moves":[["e4","e2","e4","rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",62],["c6","c7","c6","rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR",9],["d3","d2","d3","rnbqkbnr/pp1ppppp/2p5/8/4P3/3P4/PPP2PPP/RNBQKBNR",2],["d5","d7","d5","rnbqkbnr/pp2pppp/2p5/3p4/4P3/3P4/PPP2PPP/RNBQKBNR",92],["Nd2","b1","d2","rnbqkbnr/pp2pppp/2p5/3p4/4P3/3P4/PPPN1PPP/R1BQKBNR",42],["e5","e7","e5","rnbqkbnr/pp3ppp/2p5/3pp3/4P3/3P4/PPPN1PPP/R1BQKBNR",27],["Ngf3","g1","f3","rnbqkbnr/pp3ppp/2p5/3pp3/4P3/3P1N2/PPPN1PPP/R1BQKB1R",71],["Bd6","f8","d6","rnbqk1nr/pp3ppp/2pb4/3pp3/4P3/3P1N2/PPPN1PPP/R1BQKB1R",57],["g3","g2","g3","rnbqk1nr/pp3ppp/2pb4/3pp3/4P3/3P1NP1/PPPN1P1P/R1BQKB1R",63],["Nf6","g8","f6","rnbqk2r/pp3ppp/2pb1n2/3pp3/4P3/3P1NP1/PPPN1P1P/R1BQKB1R",57],["Bg2","f1","g2","rnbqk2r/pp3ppp/2pb1n2/3pp3/4P3/3P1NP1/PPPN1PBP/R1BQK2R",97],["O-O","e8","g8","rnbq1rk1/pp3ppp/2pb1n2/3pp3/4P3/3P1NP1/PPPN1PBP/R1BQK2R",67],["O-O","e1","g1","rnbq1rk1/pp3ppp/2pb1n2/3pp3/4P3/3P1NP1/PPPN1PBP/R1BQ1RK1",96],["Re8","f8","e8","rnbqr1k1/pp3ppp/2pb1n2/3pp3/4P3/3P1NP1/PPPN1PBP/R1BQ1RK1",29]]}]}];</script>
+<script>
+(function () {
+  "use strict";
+  var V = window.CK_DATA;
+  var SVGNS = "http://www.w3.org/2000/svg";
+  var SQ = 40;
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var flipped = false;
+  try { flipped = localStorage.getItem("ck-flip") === "1"; } catch (e) {}
+
+  function el(name, attrs) {
+    var n = document.createElementNS(SVGNS, name);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+  function parseBoard(fen) {
+    var out = {};
+    var rows = fen.split(" ")[0].split("/");
+    for (var r = 0; r < 8; r++) {
+      var f = 0;
+      for (var i = 0; i < rows[r].length; i++) {
+        var c = rows[r][i];
+        if (/\d/.test(c)) { f += +c; continue; }
+        var color = c === c.toUpperCase() ? "w" : "b";
+        out["abcdefgh"[f] + (8 - r)] = color + c.toLowerCase();
+        f++;
+      }
+    }
+    return out;
+  }
+  function xy(sq) {
+    var f = "abcdefgh".indexOf(sq[0]), r = +sq[1];
+    return flipped ? [(7 - f) * SQ, (r - 1) * SQ] : [f * SQ, (8 - r) * SQ];
+  }
+  function moveLabel(i, san) {
+    var n = Math.floor(i / 2) + 1;
+    return i % 2 === 0 ? n + "." + san : n + "..." + san;
+  }
+  var START = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
+
+  function Board(card, v) {
+    var self = this;
+    this.v = v;
+    this.lineIx = 0;
+    this.ply = v.lines[0].start;
+    this.timer = null;
+    this.svg = card.querySelector("svg.board");
+    this.status = card.querySelector(".status");
+    this.list = card.querySelector(".movelist");
+    this.watchBtn = card.querySelector("[data-act=watch]");
+    this.tabs = card.querySelectorAll("[data-line]");
+
+    var sqG = el("g", {}), coordG = el("g", { "class": "coords" });
+    this.hlG = el("g", {});
+    this.pcG = el("g", {});
+    for (var r = 0; r < 8; r++) for (var f = 0; f < 8; f++) {
+      sqG.appendChild(el("rect", { x: f * SQ, y: r * SQ, width: SQ, height: SQ,
+        "class": (r + f) % 2 ? "sq-d" : "sq-l" }));
+    }
+    this.coordG = coordG;
+    this.svg.appendChild(sqG);
+    this.svg.appendChild(this.hlG);
+    this.svg.appendChild(coordG);
+    this.svg.appendChild(this.pcG);
+
+    card.querySelector(".controls").addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-act]");
+      if (!b) return;
+      var a = b.getAttribute("data-act");
+      if (a === "watch") return self.toggleWatch();
+      self.stop();
+      if (a === "first") self.go(0);
+      if (a === "prev") self.go(self.ply - 1);
+      if (a === "next") self.go(self.ply + 1, true);
+      if (a === "last") self.go(self.line().moves.length);
+    });
+    this.list.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-ply]");
+      if (!b) return;
+      self.stop();
+      var p = +b.getAttribute("data-ply");
+      self.go(p, p === self.ply + 1);
+    });
+    Array.prototype.forEach.call(this.tabs, function (t) {
+      t.addEventListener("click", function () {
+        self.stop();
+        self.lineIx = +t.getAttribute("data-line");
+        self.ply = self.line().start;
+        self.drawList();
+        self.render(false);
+      });
+    });
+    card.querySelector(".board-wrap").addEventListener("keydown", function (e) {
+      var map = { ArrowLeft: -1, ArrowRight: 1 };
+      if (e.key in map) { self.stop(); self.go(self.ply + map[e.key], map[e.key] === 1); e.preventDefault(); }
+      if (e.key === "Home") { self.stop(); self.go(0); e.preventDefault(); }
+      if (e.key === "End") { self.stop(); self.go(self.line().moves.length); e.preventDefault(); }
+    });
+    this.drawCoords();
+    this.drawList();
+    this.render(false);
+  }
+  Board.prototype.line = function () { return this.v.lines[this.lineIx]; };
+  Board.prototype.go = function (p, animate) {
+    var n = this.line().moves.length;
+    p = Math.max(0, Math.min(n, p));
+    if (p === this.ply) return;
+    this.ply = p;
+    this.render(!!animate);
+  };
+  Board.prototype.stop = function () {
+    if (this.timer) { clearInterval(this.timer); this.timer = null; }
+    this.watchBtn.setAttribute("aria-pressed", "false");
+    this.watchBtn.querySelector(".lbl").textContent = "Watch";
+  };
+  Board.prototype.toggleWatch = function () {
+    var self = this;
+    if (this.timer) return this.stop();
+    this.watchBtn.setAttribute("aria-pressed", "true");
+    this.watchBtn.querySelector(".lbl").textContent = "Pause";
+    if (this.ply >= this.line().moves.length || this.ply === this.line().start) { this.ply = 0; this.render(false); }
+    this.timer = setInterval(function () {
+      if (self.ply >= self.line().moves.length) return self.stop();
+      self.go(self.ply + 1, true);
+    }, 850);
+  };
+  Board.prototype.drawCoords = function () {
+    var g = this.coordG;
+    while (g.firstChild) g.removeChild(g.firstChild);
+    for (var i = 0; i < 8; i++) {
+      var file = flipped ? "hgfedcba"[i] : "abcdefgh"[i];
+      var rank = flipped ? i + 1 : 8 - i;
+      var t = el("text", { x: i * SQ + SQ - 3, y: 8 * SQ - 3, "text-anchor": "end",
+        "class": (7 + i) % 2 ? "on-d" : "on-l" });
+      t.textContent = file;
+      g.appendChild(t);
+      var u = el("text", { x: 3, y: i * SQ + 10, "class": i % 2 ? "on-d" : "on-l" });
+      u.textContent = rank;
+      g.appendChild(u);
+    }
+  };
+  Board.prototype.render = function (animate) {
+    var line = this.line(), p = this.ply;
+    var mv = p > 0 ? line.moves[p - 1] : null;
+    var board = parseBoard(mv ? mv[3] : START);
+
+    while (this.hlG.firstChild) this.hlG.removeChild(this.hlG.firstChild);
+    if (mv) [mv[1], mv[2]].forEach(function (s) {
+      var c = xy(s);
+      this.hlG.appendChild(el("rect", { x: c[0], y: c[1], width: SQ, height: SQ, "class": "hl" }));
+    }, this);
+
+    while (this.pcG.firstChild) this.pcG.removeChild(this.pcG.firstChild);
+    var moving = null;
+    for (var s in board) {
+      var c = xy(s);
+      var u = el("use", { href: "#p-" + board[s], "class": "pc" });
+      u.style.transform = "translate(" + c[0] + "px," + c[1] + "px)";
+      if (animate && mv && s === mv[2]) moving = { node: u, to: c };
+      this.pcG.appendChild(u);
+    }
+    if (moving && !reduceMotion) {
+      var f = xy(mv[1]);
+      moving.node.style.transform = "translate(" + f[0] + "px," + f[1] + "px)";
+      this.pcG.appendChild(moving.node);
+      moving.node.getBoundingClientRect();
+      requestAnimationFrame(function () {
+        moving.node.classList.add("moving");
+        moving.node.style.transform = "translate(" + moving.to[0] + "px," + moving.to[1] + "px)";
+      });
+    }
+
+    var label = mv ? moveLabel(p - 1, mv[0]) : null;
+    this.svg.setAttribute("aria-label", this.v.name + ": " + (label ? "position after " + label : "starting position"));
+    if (!mv) {
+      this.status.innerHTML = "Starting position. Press <b>Watch</b> to play the line from move 1.";
+    } else {
+      this.status.innerHTML = "<b>" + label + "</b> · chosen in <b>" + mv[4] + "%</b> of club games from the position before it";
+    }
+    Array.prototype.forEach.call(this.list.querySelectorAll("button[data-ply]"), function (b) {
+      var on = +b.getAttribute("data-ply") === p;
+      b.classList.toggle("now", on);
+      if (on) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current");
+    });
+    var self = this;
+    Array.prototype.forEach.call(this.tabs, function (t) {
+      t.setAttribute("aria-pressed", String(+t.getAttribute("data-line") === self.lineIx));
+    });
+  };
+  Board.prototype.drawList = function () {
+    var line = this.line(), html = "";
+    for (var i = 0; i < line.moves.length; i++) {
+      if (i % 2 === 0) html += '<span class="num">' + (i / 2 + 1) + ".</span>";
+      var cls = i + 1 >= line.keyFrom && i + 1 <= line.keyTo ? ' class="def"' : "";
+      html += '<button type="button" data-ply="' + (i + 1) + '"' + cls + ">" + line.moves[i][0] + "</button>";
+    }
+    this.list.innerHTML = html;
+  };
+
+  var boards = [];
+  V.forEach(function (v) {
+    var card = document.getElementById(v.id);
+    if (card) boards.push(new Board(card, v));
+  });
+
+  var flipBtns = document.querySelectorAll("[data-flip]");
+  function setFlip(val) {
+    flipped = val;
+    try { localStorage.setItem("ck-flip", val ? "1" : "0"); } catch (e) {}
+    Array.prototype.forEach.call(flipBtns, function (b) {
+      b.setAttribute("aria-pressed", String((b.getAttribute("data-flip") === "black") === val));
+    });
+    boards.forEach(function (b) { b.drawCoords(); b.render(false); });
+  }
+  Array.prototype.forEach.call(flipBtns, function (b) {
+    b.addEventListener("click", function () { setFlip(b.getAttribute("data-flip") === "black"); });
+  });
+  setFlip(flipped);
+})();
+
+</script>
