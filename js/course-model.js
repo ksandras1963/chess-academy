@@ -235,10 +235,17 @@ function extractLines(chapter, course) {
 /**
  * The variation a chapter title names: the part before the colon, and after the last comma there
  * ("Mar del Plata, Bayonet Attack: 9.b4" gives "Bayonet Attack", "Exchange: 3.cxd5" gives "Exchange").
+ * "Main line" gives way to the name before it ("Mar del Plata, Main line: 9.Ne1" gives "Mar del
+ * Plata"), and a lowercase description to the move after the colon ("Sidelines, fourth moves:
+ * 4.Bg5" gives "4.Bg5").
  */
 function variationOf(title) {
-    const name = title.includes(":") ? title.slice(0, title.indexOf(":")) : title
-    return name.split(",").pop().trim() || "Main line"
+    const colon = title.indexOf(":")
+    const parts = (colon < 0 ? title : title.slice(0, colon)).split(",").map(p => p.trim()).filter(Boolean)
+    if (parts.length > 1 && parts.at(-1).toLowerCase() === "main line") parts.pop()
+    const name = parts.at(-1) || "Main line"
+    const after = colon < 0 ? "" : title.slice(colon + 1).trim()
+    return /^[a-z]/.test(name) && after ? after : name
 }
 
 function sideLines(chapter, course, side) {
