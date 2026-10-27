@@ -714,60 +714,60 @@
                     "repertoire": "Seven Basic lines for both sides: the Mar del Plata, the Fianchetto, the Four Pawns Attack and the Sämisch.",
                     "summary": "Black lets White build a big center, castles behind the g7 bishop, then strikes with ...e5 or ...c5. When the center locks, White attacks on the queenside and Black on the kingside.",
                     "why": {
-                        "text": "As Black, the King's Indian gives an unbalanced game with a clear plan: once White closes the center with d5, Black attacks the king with ...f5, ...f4 and ...g5.\n\nAs White, the big center gives space and an easy plan: close the center with d5 and break open the queenside with b4 and c5."
+                        "text": "As Black, the King's Indian lets White take the center, then fights back against it, so the game stays unbalanced, with chances for both sides.\n\nAs White, the big center gives extra space, and White chooses the system: the Classical, the Fianchetto, the Four Pawns Attack or the Sämisch."
                     },
                     "table": {
                         "columns": [
-                            "Basic line",
+                            "Variation",
                             "Share",
-                            "Moves",
-                            "What happens"
+                            "What to know as White",
+                            "What to know as Black"
                         ],
                         "rows": [
                             [
-                                "Mar del Plata, Main line",
+                                "Mar del Plata, Main line: 9.Ne1",
                                 "35%",
-                                "4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Ne1",
-                                "The classic race: White's c5 against Black's ...f5, ...f4 and ...g5."
+                                "Close the center with d5, hold e4 with Ne1, Be3 and f3, then open the c-file with c5.",
+                                "Bring the knight to e7, then storm the kingside with ...f5, ...f4 and ...g5."
                             ],
                             [
-                                "Mar del Plata, Bayonet Attack",
+                                "Mar del Plata, Bayonet Attack: 9.b4",
                                 "29%",
-                                "9.b4",
-                                "White races on the queenside with c5; Black answers with ...Nh5 and ...f5."
+                                "Skip Ne1 and race on the queenside at once with b4 and c5.",
+                                "Free the f-pawn with ...Nh5, play ...f5, and hit d5 with ...c6."
                             ],
                             [
-                                "Fianchetto, Classical",
+                                "Fianchetto, Classical: 6...Nbd7",
                                 "32%",
-                                "4.Nf3 d6 5.g3 O-O 6.Bg2 Nbd7 7.O-O e5 8.e4",
-                                "Black presses on d4 and e4 with ...c6, ...Qb6 and ...exd4."
+                                "The g2 bishop guards your king. Take more center with e4, and stop ...Ng4 with h3.",
+                                "Play ...Nbd7 and ...e5, then hit d4 and e4 with ...c6, ...Qb6 and ...exd4."
                             ],
                             [
-                                "Fianchetto, Panno",
+                                "Fianchetto, Panno: 7...a6",
                                 "17%",
-                                "6...Nc6 7.O-O a6",
-                                "White's g2 bishop guards the king; Black plays ...Rb8 and ...b5 on the queenside."
+                                "Gain space with d5, and protect c4 with Nd2 and b3.",
+                                "Open lines on the queenside with ...Nc6, ...a6, ...Rb8 and ...b5."
                             ],
                             [
-                                "Four Pawns Attack, Main line",
+                                "Four Pawns Attack, Main line: 6...c5",
                                 "37%",
-                                "4.e4 d6 5.f4 O-O 6.Nf3 c5",
-                                "A Benoni structure: White's central majority against Black's queenside majority."
+                                "Push d5 and keep your central majority.",
+                                "Hit the center at once with ...c5, trade the f3 knight with ...Bg4, and press e4 with ...Re8."
                             ],
                             [
-                                "Sämisch, Orthodox",
+                                "Sämisch, Orthodox: 6...e5",
                                 "29%",
-                                "5.f3 O-O 6.Be3 e5",
-                                "After d5, Black opens the c-file and prepares ...f5."
+                                "f3 holds e4. After d5, castle short once the c-file opens.",
+                                "Answer d5 with ...c6 to open the c-file, then play ...Nh5 and ...f5."
                             ],
                             [
-                                "Sämisch Gambit",
+                                "Sämisch Gambit: 6...c5",
                                 "10%",
-                                "6.Be3 c5",
-                                "Black hits d4 before White's kingside attack. Taking the pawn gives Black fast development."
+                                "Keep the tension with Nge2. Taking on c5 gives Black fast development for the pawn.",
+                                "Hit d4 at once with ...c5, put a knight on e5, then play ...e6 and ...a6 to prepare ...b5."
                             ]
                         ],
-                        "note": "Moves follow 1.d4 Nf6 2.c4 g6 3.Nc3 Bg7; a row that starts later continues the row above. Share: how often the line's title move is chosen where the line branches off (9.Ne1 in 35% of games after 8...Ne7), in Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Everything else, including the Averbakh and the Makogonov, is in Advanced."
+                        "note": "The Mar del Plata starts 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7, the Fianchetto 4.Nf3 d6 5.g3 O-O 6.Bg2, the Four Pawns Attack 4.e4 d6 5.f4, and the Sämisch 4.e4 d6 5.f3 O-O 6.Be3, all after 1.d4 Nf6 2.c4 g6 3.Nc3 Bg7. Share: how often the line's title move is chosen where the line branches off (9.Ne1 in 35% of games after 8...Ne7), in Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Everything else is in Advanced."
                     }
                 }
             ]
