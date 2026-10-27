@@ -24,6 +24,13 @@ These are Kumar's standing rules for every opening. Follow them in every session
 6. Drills for White and for Black
 7. References (Further study)
 
+## Drills
+
+- No daily limit: every line is in the drill from the start, and the learner decides how many to drill.
+- The White and Black drills can both be done on the same day.
+- A drill takes the Basic lines (and traps) first. Before the Advanced variations it stops with an alert that they come next, so a learner can stop at the Basic lines.
+- A line played incorrectly (a wrong move, or a hint) comes back in the next drill.
+
 ## No repetition
 
 "Why play it", the table and the Key ideas pages must not repeat each other in any significant way:
@@ -37,3 +44,7 @@ These are Kumar's standing rules for every opening. Follow them in every session
 - Usually 4 per course; 5 at most, only when needed.
 - No Wikipedia.
 - No source whose author is unknown: a video must name its presenter, not only its channel.
+
+## Back buttons
+
+Every lesson page (a line in Basic, Traps or Advanced) shows its back buttons in this order: the section, then the course page, then Main menu. For example: "< Basic variations < French Defense Course < Main menu". A Key ideas page shows the course page, then Main menu.

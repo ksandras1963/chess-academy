@@ -4,7 +4,7 @@
 import { h, figText, paras, plural, backBar, label, spellOut } from "../ui.js"
 import { course as loadCourse, openingStats, puzzles as loadPuzzles, overviewBack } from "../content.js"
 import { SECTIONS } from "../course-model.js"
-import { status, progress, buildQueue, practiceQueue, daysUntil, basicStarted } from "../srs.js"
+import { status, progress, buildQueue, practiceQueue, daysUntil } from "../srs.js"
 import { chapterShare, pct, shortName } from "../stats.js"
 import { Board } from "../board.js"
 import { furtherStudy } from "./layout.js"
@@ -16,7 +16,7 @@ const TYPE_LABEL = { line: "", trap: "Trap", ideas: "Key ideas" }
 const SECTION_TEXT = {
     basic: "The lines you will meet most often. Learn these first.",
     traps: "Traps to set and traps to avoid, each with its refutation.",
-    advanced: "Rarer and more theoretical lines. A line here joins your drills only after you drill it once."
+    advanced: "Rarer and more theoretical lines. Your drills come to these after the Basic lines, and ask first."
 }
 
 export function sideLabel(c) {
@@ -72,31 +72,27 @@ function drillAction(c) {
     return drillButton(c.lines, `#/drill/${c.id}`, "Start today's drill")
 }
 
-/**
- * Once every Basic line and trap is started, and before any Advanced line is, a note that the
- * Advanced variations are optional: many learners stop at the Basic lines. Per side in a course
- * for both sides.
- */
-function advancedNote(c) {
-    const pools = c.side === "both" ? ["white", "black"].map(side => [side, c.lines.filter(l => l.side === side)]) : [[null, c.lines]]
-    const done = pools.filter(([, lines]) => basicStarted(lines)
-        && lines.some(l => l.section === "advanced") && !lines.some(l => l.section === "advanced" && status(l.id).rec))
-    if (!done.length) return null
-    const as = c.side === "both" ? ` as ${done.map(([side]) => (side === "white" ? "White" : "Black")).join(" and as ")}` : ""
-    return h("p", { class: "banner advanced-note" },
-        h("span", {}, `You have started every Basic line and trap${as}. The Advanced variations are optional: many players stop here.`),
-        h("a", { class: "btn btn-small", href: `#/course/${c.id}/advanced` }, "See the Advanced variations"))
+/** Under the drill buttons, in a course with Advanced lines: the order a drill takes. */
+function drillNote(c) {
+    if (!c.lines.some(l => l.section === "advanced")) return null
+    return h("p", { class: "muted advanced-note" }, "Each drill takes the Basic lines and traps first, then asks before it goes on to the Advanced variations.")
 }
 
 function drillButton(lines, href, title) {
     const queue = buildQueue(lines)
-    const dueCount = queue.filter(l => status(l.id).rec).length
-    const newCount = queue.length - dueCount
     if (queue.length) {
+        // The Basic lines and traps first; the Advanced lines, which come after a pause, as one number.
+        const basic = queue.filter(l => l.section !== "advanced")
+        const dueCount = basic.filter(l => status(l.id).rec).length
+        const newCount = basic.length - dueCount
+        const advanced = queue.length - basic.length
         const parts = []
         if (dueCount) parts.push(`${dueCount} to review`)
         if (newCount) parts.push(`${newCount} new`)
-        return h("a", { class: "btn btn-primary btn-big", href }, title, h("span", { class: "btn-detail" }, parts.join(", ")))
+        const detail = !advanced ? parts.join(", ")
+            : parts.length ? `${parts.join(", ")}, then ${advanced} Advanced`
+                : `Basic lines up to date. Next: ${plural(advanced, "Advanced line")}`
+        return h("a", { class: "btn btn-primary btn-big", href }, title, h("span", { class: "btn-detail" }, detail))
     }
     if (practiceQueue(lines).length) {
         return h("a", { class: "btn btn-primary btn-big", href }, title, h("span", { class: "btn-detail" }, "Nothing due. Drill your weakest lines."))
@@ -162,7 +158,7 @@ function hubPage(root, c, set, back) {
             h("section", { class: "course-drills" }, h("h2", {}, "Drills"),
                 h("p", { class: "muted" }, "Once you have looked through the lines, drill them from each side."),
                 h("div", { class: "course-actions" }, drillAction(c)),
-                advancedNote(c)),
+                drillNote(c)),
             furtherStudy(c.opening.furtherStudy)))
         return
     }
@@ -181,7 +177,7 @@ function hubPage(root, c, set, back) {
         h("nav", { class: "hub-links", "aria-label": "Course sections" }, sectionCards, puzzleCard),
         scheduleLine,
         h("div", { class: "course-actions" }, drillAction(c)),
-        advancedNote(c),
+        drillNote(c),
         furtherStudy(c.opening.furtherStudy)))
 }
 
