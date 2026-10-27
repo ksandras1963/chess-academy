@@ -2,7 +2,7 @@
 
 Each course is one PGN file in `content/`. For example, `italian-white.pgn` is the Italian Game played as White. You can edit these files in any text editor. You can also paste a whole file into a Lichess Study to see it on a board.
 
-A course can also teach both sides, like the Queen's Gambit courses (`queens-gambit-declined.pgn`, `queens-gambit-accepted.pgn`, `slav.pgn`, `tarrasch.pgn`). Its entry in `courses.json` has `"side": "both"`, and every chapter says which side the learner plays with a `[Side "white"]` or `[Side "black"]` header. The course page lists both sides together, most common first, with a "You play White" or "You play Black" tag on each chapter; the board and the "how often" bar follow the chapter's side. The page has a drill for each side ("Drill as White", "Drill as Black"). The title has no color: "Slav Defense Course". The King's Indian Defense (`kings-indian.pgn`) is built the same way.
+A course can also teach both sides, like the Queen's Gambit courses (`queens-gambit-declined.pgn`, `queens-gambit-accepted.pgn`, `slav.pgn`, `tarrasch.pgn`). Its entry in `courses.json` has `"side": "both"`, and every chapter says which side the learner plays with a `[Side "white"]` or `[Side "black"]` header. The course page lists both sides together, most common first, with a "You play White" or "You play Black" tag on each chapter; the board and the "how often" bar follow the chapter's side. The page has a drill for each side ("Drill as White", "Drill as Black"). The title has no color: "Slav Defense Course". The King's Indian Defense (`kings-indian.pgn`) and the French Defense (`french.pgn`) are built the same way.
 
 The Queen's Gambit and King's Indian course pages are short, in this order: a sentence on the opening, "Why play it", a map of the variations, a table of them, the Key ideas, the sections ("The lines": Basic, Traps, Advanced, Puzzles), and last the drills for each side, which come after the lines have been seen. In `courses.json` the course has `"why": { "text": "..." }` (paragraphs separated by a blank line) and `"table": { "columns": [...], "rows": [[...]], "note": "..." }`, like the overview tables; the course file ends with a `[Type "map"]` chapter, written like a family page's map. Each map box opens the first lesson that reaches its position, and `[%course white]`, `[%course black]` or `[%course both]` stars a Basic line. `[%order 2]` in a note sets a box's place among the boxes that branch from the same box, so the map can follow the course's order even when lines branch at different moves (the King's Indian Fianchetto leaves at move 4, the Sämisch at move 5); boxes without a number follow, in PGN order. On an Introduction page whose `"course"` names a single opening (a Caro-Kann page with no cards), a map box that names no card opens that course's lessons the same way. A course with `"why"` shows no "What you need to know" list. The table says what happens in each Basic line and how often it is played, with a note that says how the share is measured: in the King's Indian, how often the line's title move is chosen where the line branches off.
 
@@ -16,6 +16,24 @@ Kumar's rules for every opening. The King's Indian follows them.
 4. **Names.** The Lichess name is the official one (the `Opening` header). Use a descriptive name ("Open Center") where Lichess has none.
 5. **Order by club frequency.** Frequencies come from Lichess club games (rated rapid and classical, players averaging 1800 to 2199). Lines with the same name stay together, and within a group the most-played line comes first; the map follows the same order. Count each game by the position it reaches, not by its first moves: a move order that transposes counts with the variation it becomes.
 6. **Traps** stay together in the Traps section, whatever the level of the line they come from.
+
+**Course page order (Kumar's rule for every course):**
+
+1. "Why play it": a short text.
+2. The map of the variations.
+3. The table of the variations.
+4. Key ideas.
+5. The section links (Basic, Traps, Advanced, Puzzles).
+6. The drills, "Drill as White" and "Drill as Black".
+7. Further study: 4 entries for most courses, never more than 5.
+
+Further study lists only sources with a named author or presenter. It has no Wikipedia articles and no entries credited only to a channel.
+
+Keep "Why play it", the table and the Key ideas pages free of significant overlap:
+
+- "Why play it" says why to choose the opening.
+- The table says what to do in each line, in one or two sentences.
+- The Key ideas pages explain the plans, structures and tactics in depth, without repeating the table line by line.
 
 ## What a file looks like
 

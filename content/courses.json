@@ -196,24 +196,6 @@
                     "url": "https://www.youtube.com/watch?v=5pec-u6PSvA"
                 },
                 {
-                    "title": "5 Reasons to Play the French Defense",
-                    "by": "GM Jose Gonzalez",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=5B0pH12fUn0"
-                },
-                {
-                    "title": "The French Defense Chess Opening Explained in 4 Minutes by a Chess Master",
-                    "by": "NM Nelson Lopez, Chess Vibes",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=vOw5BQYCfWA"
-                },
-                {
-                    "title": "Learn the French Defense in 7 Minutes",
-                    "by": "Kamryn",
-                    "kind": "Video",
-                    "url": "https://www.youtube.com/watch?v=gRUb6EeHKsM"
-                },
-                {
                     "title": "Secret Opening Weapon for White Against the French Defense",
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
@@ -228,34 +210,54 @@
             ],
             "courses": [
                 {
-                    "id": "french-white",
-                    "side": "white",
-                    "file": "content/french-white.pgn",
-                    "repertoire": "Advance (3.e5), with 6.a3 in the main line",
-                    "summary": "Gain space with 3.e5, hold d4 with c3 and Nf3, and expand on the queenside with a3 and b4. The Milner-Barry Gambit is a trap-filled surprise weapon.",
-                    "overview": [
-                        "Play 3.e5. The pawn takes f6 away from Black's king's knight and gives you space; Black answers 3...c5 in nine games out of ten.",
-                        "Hold d4 with c3 and Nf3. Black's whole plan is pressure on that pawn with ...Nc6, ...Qb6 and a knight on f5.",
-                        "The main line, 5...Qb6, comes up in a quarter of your games. Play 6.a3 and b4 to gain space; after 6...cxd4 7.cxd4, Nc3 and Na4 chase the queen.",
-                        "Count the attackers before Black takes on d4. With your queen behind the pawn, ...Nxd4 just drops a piece; with your bishop on d3 in the way, Bb5+ wins Black's queen.",
-                        "Against 5...Bd7, play 6.Be2 and castle. Avoid 6.Bb5?, which runs into ...Nxe5.",
-                        "Surprise weapon: the Milner-Barry Gambit, 6.Bd3. It is risky against best play, but Black often grabs too much: 7...Nxd4?? loses the queen, and 10...Qxe5 11.Re1 sets more traps."
-                    ]
-                },
-                {
-                    "id": "french-black",
-                    "side": "black",
-                    "file": "content/french-black.pgn",
-                    "repertoire": "3...c5 against the Advance, the Rubinstein (3...dxe4), and ...Nc6 in the Exchange",
-                    "summary": "Build the ...e6 and ...d5 center, attack d4 against the Advance, take on e4 against 3.Nc3 and 3.Nd2, and develop actively in the Exchange.",
-                    "overview": [
-                        "The French idea: ...e6 and ...d5 build a solid center and keep f7 safe. The price is the c8 bishop behind your pawn on e6, so plan to free it or trade it.",
-                        "The Exchange is your most common opponent, about three games in ten, because 2.Nf3 d5 3.exd5 exd5 4.d4 leads there too. Develop with ...Nc6, ...Bd6, ...Bg4, ...Qd7 and ...Nge7, and castle short.",
-                        "Against the Advance (3.e5), about one game in five, hit d4 at once with ...c5, ...Nc6 and ...Qb6. Against 6.a3, lock the queenside with 6...c4.",
-                        "Against 3.Nc3 and 3.Nd2, take on e4 (the Rubinstein): ...Nd7, ...Ngf6, then ...c5 to free your game.",
-                        "In the Milner-Barry Gambit (6.Bd3), play ...Bd7 before ...Nxd4. Otherwise 8.Nxd4 Qxd4 9.Bb5+ wins your queen.",
-                        "Against the Monte Carlo (4.c4), check with 4...Bb4+, castle, and take on c4 only after White's bishop has moved."
-                    ]
+                    "id": "french",
+                    "side": "both",
+                    "file": "content/french.pgn",
+                    "repertoire": "As White: the Advance (3.e5), with 6.a3 in the main line. As Black: ...c5 against the Advance, ...Nc6 and ...Bd6 in the Exchange, and the Rubinstein (3...dxe4) against 3.Nc3 and 3.Nd2.",
+                    "summary": "1.e4 e6 2.d4 d5: Black builds a solid center and hits back with ...c5.",
+                    "why": {
+                        "text": "As White, the Advance gives you space and one clear plan, with much less theory to learn than after 3.Nc3, where Black chooses between the Winawer, the Classical and the Rubinstein.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Advance main line: 4.c3 Nc6 5.Nf3 Qb6 (also 4...Qb6 5.Nf3 Nc6)",
+                                "33% as White",
+                                "Play 6.a3 and b4. After 6...cxd4 7.cxd4, Nc3 and Na4 chase the queen. Count the attackers before Black takes on d4."
+                            ],
+                            [
+                                "Exchange Variation: 3.exd5 exd5 (also 2.Nf3 d5 3.exd5 exd5 4.d4)",
+                                "30% as Black",
+                                "Develop with ...Nc6, ...Bd6, ...Bg4 and ...Nge7, then castle short. Against 4.Nc3, put the knight on f6 to guard d5."
+                            ],
+                            [
+                                "Advance Variation: 3.e5",
+                                "22% as Black",
+                                "Hit d4 with ...c5, ...Nc6 and ...Qb6. Against 6.a3, lock the queenside with 6...c4. Against the Milner-Barry Gambit, 6.Bd3, play ...Bd7 before ...Nxd4."
+                            ],
+                            [
+                                "Rubinstein Variation: 3.Nc3 or 3.Nd2 dxe4",
+                                "19% as Black",
+                                "Play ...Nd7 and ...Ngf6 to trade White's knight on e4, then free your game with ...c5."
+                            ],
+                            [
+                                "Euwe Variation: 5...Bd7",
+                                "9% as White",
+                                "Play 6.Be2 and castle. Avoid 6.Bb5?, which runs into 6...Nxe5!"
+                            ],
+                            [
+                                "Early ...cxd4 and the Wade Variation: 4...cxd4, or 4...Qb6 5.Nf3 Bd7",
+                                "6% as White",
+                                "Against 5...Bb4+, block with 6.Nc3. Against the Wade, trade bishops with 6.Be2 Bb5 7.Bxb5+ Qxb5 and hit the queen with 8.Na3."
+                            ]
+                        ],
+                        "note": "How often: the share of your French games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
                 }
             ]
         },
