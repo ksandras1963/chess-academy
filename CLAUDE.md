@@ -24,6 +24,13 @@ These are Kumar's standing rules for every opening. Follow them in every session
 6. Drills for White and for Black
 7. References (Further study)
 
+## Drills
+
+- No daily limit: every line is in the drill from the start, and the learner decides how many to drill.
+- The White and Black drills can both be done on the same day.
+- A drill takes the Basic lines (and traps) first. Before the Advanced variations it stops with an alert that they come next, so a learner can stop at the Basic lines.
+- A line played incorrectly (a wrong move, or a hint) comes back in the next drill.
+
 ## No repetition
 
 "Why play it", the table and the Key ideas pages must not repeat each other in any significant way:

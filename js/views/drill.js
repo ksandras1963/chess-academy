@@ -4,7 +4,7 @@ import { Chess } from "../../vendor/chess.js/chess.js"
 import { h, figText, paras, label, sideName, plural, sleep, backBar, spellOut } from "../ui.js"
 import { course as loadCourse, availableCourses } from "../content.js"
 import { sideNotes } from "../course-model.js"
-import { status, buildQueue, practiceQueue, recordResult, daysUntil, basicStarted } from "../srs.js"
+import { status, buildQueue, practiceQueue, recordResult, daysUntil } from "../srs.js"
 import { Board } from "../board.js"
 import { trainerLayout, renderSheet } from "./layout.js"
 import { sideLabel, sectionLink } from "./course.js"
@@ -17,7 +17,7 @@ export async function drillView(root, ctx, courseId, lineId) {
     // "as-white" or "as-black": today's drill for one side of a course that teaches both.
     const side = /^as-(white|black)$/.exec(lineId || "")?.[1]
     let lines
-    let pool = null // the lines today's drill draws from; a single line has none
+    let pool = null // the lines today's drill draws from; a single line or a practice session has none
     if (lineId && !side) {
         const line = c.lines.find(l => l.id === lineId)
         if (!line) throw new Error("This line no longer exists; it may have been edited. Go back to the course to see the current lines.")
@@ -25,12 +25,15 @@ export async function drillView(root, ctx, courseId, lineId) {
     } else {
         pool = side ? c.lines.filter(l => l.side === side) : c.lines
         lines = buildQueue(pool)
-        if (!lines.length) lines = practiceQueue(pool)
+        if (!lines.length) {
+            lines = practiceQueue(pool)
+            pool = null
+        }
     }
     // A single line returns to its section; a session returns to the course hub.
     const back = lineId && !side ? sectionLink(c, lines[0]) : { href: `#/course/${c.id}`, text: sideLabel(c) }
     await runSession(root, ctx, lines.map(line => ({ course: c, line })), {
-        backHref: back.href, backText: back.text, pool, advancedHref: `#/course/${c.id}/advanced`
+        backHref: back.href, backText: back.text, pool
     })
 }
 
@@ -50,7 +53,7 @@ export async function reviewView(root, ctx) {
     await runSession(root, ctx, items, { backHref: "#/", backText: "All openings" })
 }
 
-async function runSession(root, ctx, items, { backHref, backText, pool = null, advancedHref = null }) {
+async function runSession(root, ctx, items, { backHref, backText, pool = null }) {
     if (!items.length) {
         root.append(h("section", { class: "empty" },
             backBar(backHref !== "#/" ? { href: backHref, text: backText } : null),
@@ -64,12 +67,24 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null, a
     ctx.onLeave(() => board.destroy())
     const check = () => { if (!ctx.alive()) throw ABORT }
     const results = []
-    // Whether every Basic line and trap was already started: if this session starts the last of them,
-    // its end screen says the Advanced variations are optional.
-    const basicBefore = pool ? basicStarted(pool) : true
+    // Today's drill takes the Basic lines and traps first. Before the first Advanced line it stops to say
+    // that they come next and are optional, and the learner can stop there.
+    let advancedFrom = pool ? items.findIndex(it => it.line.section === "advanced") : -1
 
     try {
         for (let k = 0; k < items.length; k++) {
+            if (k === advancedFrom) {
+                // With no Basic line due, the pause also offers the weakest Basic lines instead.
+                const weakest = k === 0 ? practiceQueue(pool.filter(l => l.section !== "advanced")) : []
+                const choice = await advancedNext(k, weakest.length > 0)
+                if (choice === "stop") break
+                if (choice === "practice") {
+                    items = weakest.map(line => ({ course: items[0].course, line }))
+                    advancedFrom = -1
+                    k = -1
+                    continue
+                }
+            }
             let action
             do {
                 const result = await drillLine(items[k], k, items.length)
@@ -86,12 +101,7 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null, a
             h("h2", { class: "cm-move" }, `${plural(results.length, "line")} drilled`),
             h("p", {}, clean === results.length ? "Every line without a mistake. Well played."
                 : `${clean} without a mistake. The others come back in your next drill.`))
-        const basicNow = pool && !basicBefore && basicStarted(pool) && pool.some(l => l.section === "advanced")
-        if (basicNow) {
-            L.extra.append(h("p", { class: "banner" }, "You have now started every Basic line and trap. The Advanced variations are optional: many players stop here, and they join your drill only if you open them."))
-        }
-        L.controls.replaceChildren(h("a", { class: "btn btn-primary", href: backHref }, "Done"),
-            basicNow ? h("a", { class: "btn", href: advancedHref }, "See the Advanced variations") : null)
+        L.controls.replaceChildren(h("a", { class: "btn btn-primary", href: backHref }, "Done"))
     } catch (e) {
         if (e !== ABORT) throw e
     }
@@ -204,6 +214,30 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null, a
                 say({ kind: "wrong", title: `Not ${mv.san}. Play ${label(node)}`, text: node.note.text })
                 return false
             })
+        })
+    }
+
+    // The pause before the Advanced lines. Resolves to "go", "stop" or "practice".
+    async function advancedNext(k, canPractice) {
+        const count = items.length - k
+        L.setTitle("Advanced variations next", plural(count, "line"))
+        // A clean board and scoresheet: the next line's start, without the last line's moves and arrows.
+        await board.show(items[k].line.chapter.root.fen, { animate: false })
+        check()
+        renderSheet(L.sheet, [], { upto: 0, mistakes: new Set() })
+        L.commentary.replaceChildren(
+            h("h2", { class: "cm-move" }, k ? "Basic lines done" : "Basic lines up to date"),
+            h("p", {}, k ? `${plural(k, "line")} drilled.` : "No Basic line or trap is due."))
+        L.extra.replaceChildren(h("p", { class: "banner" },
+            `Next come the Advanced variations: ${plural(count, "line")}. They are optional: many players stop at the Basic lines.`))
+        return new Promise(resolve => {
+            L.controls.replaceChildren(h("div", { class: "more-buttons" },
+                h("button", { class: "btn btn-primary", type: "button", onclick: () => resolve("go") }, "Go on to the Advanced lines"),
+                canPractice ? h("button", { class: "btn", type: "button", onclick: () => resolve("practice") }, "Drill my weakest Basic lines") : null,
+                // Stopping after some lines shows the session's results; stopping before any goes back.
+                k ? h("button", { class: "btn", type: "button", onclick: () => resolve("stop") }, "Stop here")
+                    : h("a", { class: "btn", href: backHref }, "Stop here")))
+            const timer = setInterval(() => { if (!ctx.alive()) { clearInterval(timer); resolve("stop") } }, 500)
         })
     }
 
