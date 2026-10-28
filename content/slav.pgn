@@ -184,7 +184,7 @@
 (4. Bf4 dxc4 {The same idea (Stockfish −0.2, equal).}
 5. e3 {The most common move. Against 5.e4, play 5...b5 (Stockfish −0.5, slightly better for Black). Against 5.a4, play 5...Nd5, which hits the bishop on f4 and the knight on c3 (Stockfish −0.2, equal). After 5.e4 b5 6.a4 b4, 7.e5? runs into 7...bxc3!, as in the trap chapter on 6.a4? b4!.} b5
 6. a4 {Two White players in three hit b5.} Qb6 {[%cal Gb6b5] The queen guards b5, so after axb5 Black takes back with the c-pawn and keeps the chain.}
-7. axb5?! {The most common move, but now Black keeps a solid extra pawn. 7.Nf3, about one game in five, is better: 7...e6 and ...Bb4 (Stockfish −0.5, slightly better for Black).} cxb5 {[%csl Yb5,Yc4] The pawn on b5 guards c4.}
+7. axb5? {The most common move, but now Black keeps a solid extra pawn. 7.Nf3, about one game in five, is better: 7...e6 and ...Bb4 (Stockfish −0.5, slightly better for Black).} cxb5 {[%csl Yb5,Yc4] The pawn on b5 guards c4.}
 8. Nf3 {Against 8.b3, which hits c4, play 8...e6 9.bxc4 Bb4 (Stockfish −1.8, clearly better for Black).} e6 {[%cal Gf8b4] Next ...Bb4 and castle. Black is a solid pawn up. Stockfish: −1.6, clearly better for Black.})
 4... dxc4 {[%csl Yc4] Take the pawn. Stockfish: −0.2, equal.}
 5. e4 {The most common move, about one game in three.
