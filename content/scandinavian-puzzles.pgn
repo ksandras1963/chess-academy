@@ -7,7 +7,7 @@
 
 1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. b4 Qxb4 5. Rb1 Qd6 6. Nf3 Bg4? 7. Rxb7 Qc6? 8. Bb5! {[%cal Gb5e8] Pins the queen to the king. Black has to give up the queen for the bishop.}
 (8. Rb1? {Saves the rook, but lets Black off the hook.} 8... Bxf3 9. gxf3 Nd7 {White's pawns are spoiled. Stockfish: +1.3, clearly better for White.})
-8... Bxf3 9. Qxf3 {The queen is still pinned, and now White's queen hits it too. Stockfish: +10.4, winning for White.}
+8... Bxf3 9. Qxf3 {The queen is still pinned, and now White's queen hits it too. Stockfish: +10.1, winning for White.}
 *
 
 [Puzzle "The knight uncovers the bishop"]
@@ -96,7 +96,7 @@
 (11... Qc7?! {Good, but much slower.} 12. Qa4+ Nd7 13. d3 {Stockfish: −2.0, winning for Black.})
 12. Qxf3 {The best defense: White gives up the queen.}
 (12. Ke2 Qd3# {Checkmate: the queen is protected by the pawn on e4.})
-12... exf3 {Stockfish: −5.6, winning for Black.}
+12... exf3 {Stockfish: −5.9, winning for Black.}
 *
 
 [Puzzle "Check first"]
