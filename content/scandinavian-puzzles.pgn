@@ -10,16 +10,18 @@
 8... Bxf3 9. Qxf3 {The queen is still pinned, and now White's queen hits it too. Stockfish: +14.6, winning for White.}
 *
 
-[Puzzle "The knight uncovers the bishop"]
+[Puzzle "The only safe square"]
 [Type "puzzle"]
-[Theme "Punish the mistake"]
-[Solve "12.Nd5"]
-[End "12.Nd5"]
-[Hint "Your bishop on d2 and Black's queen on a5 are on the same diagonal. What stands between them?"]
+[Theme "Defend the king"]
+[Solve "8.Kd2"]
+[End "8.Kd2"]
+[Hint "Black's knight wants to jump to c2 and fork your king and rook. Which move gets out of check and guards c2?"]
 
-1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. Bc4 Nf6 5. d3 c6 6. Bd2 Bg4? 7. f3 Bh5 8. g4 Bg6 9. f4 e6 10. Qe2 Be7 11. O-O-O Nbd7? 12. Nd5! {[%cal Gd2a5,Gd5e7] Uncovers the bishop's attack on the queen, and the knight hits the bishop on e7.}
-(12. Re1!? {Playable: White keeps a big advantage, but 12.Nd5! wins more.} 12... Qd8 13. a4 {Stockfish: +3.5, winning for White.})
-12... Qd8 13. Nxe7 Qxe7 14. Re1 {White has the two bishops and more space, and Black's king is still in the center. Stockfish: +5.0, winning for White.}
+1. e4 d5 2. exd5 Nf6 3. Nc3 Nxd5 4. Nxd5 Qxd5 5. d4 Nc6 6. Nf3 Nb4 {[%cal Gd5e4,Gb4c2] Threatens ...Qe4+ and then ...Nc2+, forking the king and the rook on a1.} 7. a3 {The best answer: White chases the knight first.} Qe4+
+8. Kd2! {[%cal Gd2c2] Gets out of check and guards c2, so the knight can't fork.}
+(8. Be2?? {Blocks the check, but leaves c2 unguarded.} 8... Nxc2+ 9. Kf1 Nxa1 {Black has won a rook. Stockfish: −4.4, winning for Black.})
+(8. Be3? {Blocks the check, but c2 is still unguarded.} 8... Nxc2+ 9. Kd2 Nxa1 10. Qxa1 {Black has won the exchange and a pawn. Stockfish: −2.9, winning for Black.})
+8... Nc6 9. Bd3 Qe6 10. c3 {White's king is safe enough on d2, and Black's knight has gone back. Stockfish: +0.5, slightly better for White.}
 *
 
 [Puzzle "The queen offer"]
