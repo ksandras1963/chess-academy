@@ -59,7 +59,7 @@ export async function puzzlesView(root, ctx, openingId) {
         h("header", { class: "course-head" },
             h("h1", {}, `${op.name} puzzles`),
             h("p", { class: "course-summary" },
-                `${set.items.length} positions from the ${op.name} courses. Find the best move: some punish a trap, some escape one, and a few finish the game.`),
+                `${set.items.length} positions from the ${op.name} ${built.length === 1 ? "course" : "courses"}. Find the best move: some punish a trap, some escape one, and a few finish the game.`),
             h("p", { class: "muted" },
                 "Stockfish scores read + for White and − for Black. They measure winning chances, not material: about ±1 is a clear edge, and ±2 or more usually wins.")),
         h("div", { class: "course-actions" },
