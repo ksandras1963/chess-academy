@@ -280,7 +280,7 @@
 
 {In Advance, Main line, Short Variation: 6.Be3, Black's queen on b6 eyes b2. Taking it before Black has developed the kingside hands White the initiative.}
 1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 c5 6. Be3 Qb6 7. Nc3 Qxb2? {Grabs the pawn too early.}
-8. Qb1! {[%cal Gb1b2] Offers a queen trade that Black can't avoid without losing more.} Qxb1+ {8...Qb4 9.a3 Qxb1+ 10.Rxb1 reaches the same endgame. 8...Qb6? 9.dxc5 Bxc5 10.Bb5+ catches Black's king in the center (Stockfish +2.2, winning for White).}
+8. Qb1! {[%cal Gb1b2] Offers a queen trade that Black can't avoid without losing more.} Qxb1+ {8...Qb4 9.a3 Qxb1+ 10.Rxb1 reaches the same endgame. 8...Qb6? 9.dxc5 Bxc5 10.Bb5+ catches Black's king in the center (Stockfish +1.4, clearly better for White).}
 9. Rxb1 c4 10. Rxb7 {White has won back the pawn, and the rook on b7 is very active (Stockfish +0.8, slightly better for White).} *
 
 [Chapter "Trap, Two Knights Attack: 5...Nbd7?? 6.Nd6#"]
@@ -480,7 +480,7 @@
 6. Be3 {[%cal Ge3d4] Guards d4 a second time.} Qb6 {[%cal Rb6b2,Rb6d4] Hits b2 and d4. After 6...cxd4 7.Nxd4, White castles and can take the bishop with Nxf5, doubling Black's f-pawns.}
 7. Nc3 {Leaves b2 hanging: 7...Qxb2? walks into a trap, Trap, Short Variation: 7...Qxb2? 8.Qb1!.} Nc6 {Adds pressure on d4.}
 8. O-O {Offers the b2 pawn for fast development.} Qxb2 {If 8...c4, the rook guards b2 with 9.Rb1.}
-9. Qe1 {Keeps the queens and guards c3.} cxd4 {If 9...c4, then 10.Rb1 Qa3 11.Nb5! threatens Nc7+ (Stockfish +0.6, slightly better for White).}
+9. Qe1 {Keeps the queens and guards c3.} cxd4 {If 9...c4, then 10.Rb1 Qa3 11.Nb5! threatens Nc7+ (Stockfish +0.3, slightly better for White).}
 10. Bxd4 Nxd4 11. Nxd4 Bb4 {Pins the knight on c3.}
 12. Rb1 {Hits the queen.} Bxc3 13. Nxf5 {White takes the bishop first.} exf5
 14. Rxb2 Bxe1 15. Rxe1 {Black has an extra pawn but doubled f-pawns, and White's pieces are active (Stockfish +0.3, slightly better for White).} *
@@ -542,7 +542,7 @@
 (3... e6 {A French setup, but now the c8 bishop is locked in.} 4. c3 c5 5. Bd3 {White has a good Advance French (Stockfish +0.6, slightly better for White).})
 4. Nf3 {This is the Short Variation.} Nd7 {Natural, but it lets White hunt the bishop. Against 4...h6, 5.Nh4 Bh7 6.e6! opens lines toward Black's king (Stockfish +0.8).}
 (4... c5? 5. dxc5 e6 6. Bb5+ {White keeps the extra pawn (Stockfish +1.6, clearly better for White).})
-5. Nh4! {[%cal Gh4f5] Attacks the bishop, which has few squares.} Be4 {If 5...e6, then 6.Nxf5 exf5 leaves White the bishop pair and Black doubled f-pawns (Stockfish +1.3).}
+5. Nh4! {[%cal Gh4f5] Attacks the bishop, which has few squares.} Be4 {If 5...e6, then 6.Nxf5 exf5 leaves White the bishop pair and Black doubled f-pawns (Stockfish +1.1).}
 6. e6! {[%cal Ge5e6] A pawn sacrifice that breaks up Black's kingside pawns.} fxe6
 7. Nd2 {Hits the bishop again.} c5 8. f3 Bf5 9. g4 {Drives the bishop back.} Bg6
 10. Nxg6 {White wins the bishop pair, and Black's pawns on e6 and g6 are weak (Stockfish +1.2, clearly better for White).} *
