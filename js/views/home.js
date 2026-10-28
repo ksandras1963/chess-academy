@@ -23,6 +23,12 @@ export async function homeView(root, ctx) {
     const boardEl = h("div", { class: "board-frame" })
     const caption = h("p", { class: "board-caption" })
     const openingIds = new Set(cat.openings.map(op => op.id))
+    // A chapter's courses: its [Course], and for a [Page] chapter also its page's "course" list
+    // (the Indian Defenses page lists the King's Indian, Nimzo-Indian and Grünfeld courses).
+    const courseIds = ch => {
+        const page = ch.headers.Page && (cat.surveys || []).find(x => x.id === ch.headers.Page)
+        return `${ch.headers.Course || ""} ${(page && page.course) || ""}`.split(/\s+/).filter(Boolean)
+    }
 
     const firstMoves = firsts.map((s, i) => {
         const chapters = overviews[i] ? overviews[i].chapters : []
@@ -30,9 +36,12 @@ export async function homeView(root, ctx) {
         const lead = !s.moves && chapters[0] && chapters[0].root.children[0]
         const fen = lead ? lead.fen : s.fen
         const shown = s.moves ? `After ${figMoves(s.moves)}` : lead ? figText(chapters[0].title) : s.name
-        // The openings on the page, the ones with a course in full ink: "Italian · Sicilian · French …"
-        const names = chapters.map((ch, k) => [k ? " · " : "",
-            h("span", { class: (ch.headers.Course || "").split(/\s+/).some(id => openingIds.has(id)) ? "fm-taught" : null }, shortName(ch.title))])
+        // The openings on the page, the ones with a course in full ink: "Italian · Sicilian · French …".
+        // A [Page] chapter stands for the chapters whose courses its page lists: the Indian Defenses for the King's Indian.
+        const inPage = new Set(chapters.filter(ch => ch.headers.Page).flatMap(courseIds))
+        const listed = chapters.filter(ch => ch.headers.Page || !courseIds(ch).length || !courseIds(ch).every(id => inPage.has(id)))
+        const names = listed.map((ch, k) => [k ? " · " : "",
+            h("span", { class: courseIds(ch).some(id => openingIds.has(id)) ? "fm-taught" : null }, shortName(ch.title))])
         const li = h("li", { class: "opening first-move", tabindex: "-1" },
             h("div", { class: "op-head" }, h("h2", {}, s.name), h("span", { class: "eco", title: "ECO codes" }, s.eco)),
             names.length ? h("p", { class: "fm-names" }, names) : h("p", { class: "op-summary" }, s.subtitle),
