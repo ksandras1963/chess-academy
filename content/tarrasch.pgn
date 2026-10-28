@@ -216,7 +216,7 @@
 6. Be2 {About one White player in five. Against 6.cxd5, one in three, 6...exd5 reaches Two Knights: 6.e3. Against 6.a3 or 6.Bd3, the plan is the same: 6...dxc4 7.Bxc4 a6 (Stockfish +0.1, equal). Against 6.dxc5, take back: 6...Bxc5 (Stockfish −0.1, equal).} dxc4 {White's bishop has just moved, so Bxc4 costs it a second move.}
 7. Bxc4 a6 {[%cal Gb7b5] Prepares ...b5, which gains time on the bishop.}
 8. O-O {Half of White players. Against 8.a4, which stops ...b5, develop with 8...Be7 and castle (Stockfish 0.0, equal). Against 8.a3, play 8...b5 just the same (Stockfish −0.2, equal).} b5
-9. Be2 {About half. Against 9.Bd3 or 9.Bb3, play 9...Bb7 just the same (Stockfish 0.0 and −0.2, equal).} Bb7 {[%cal Gb7g2] The bishop takes the long diagonal, behind the knight on c6 for now. Next come ...Be7, castling, and ...cxd4 or ...Qc7. Stockfish: 0.0, equal.} *
+9. Be2 {About half. Against 9.Bd3 or 9.Bb3, play 9...Bb7 just the same (Stockfish 0.0 and −0.2, equal).} Bb7 {[%cal Gb7f3] The bishop takes the long diagonal, behind the knight on c6 for now. Next come ...Be7, castling, and ...cxd4 or ...Qc7. Stockfish: 0.0, equal.} *
 
 [Chapter "5.dxc5: 5...d4"]
 [Side "black"]
