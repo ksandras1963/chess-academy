@@ -267,32 +267,32 @@
                             [
                                 "Advance: 3.e5",
                                 "Your choice as White; 22% as Black",
-                                "White's plans are to gain space and attack on the kingside.\nBlack's plans are to attack White's center and play on the queenside."
+                                "White: Gain space and attack on the kingside.\nBlack: Attack White's center and play on the queenside."
                             ],
                             [
                                 "Exchange: 3.exd5 exd5",
                                 "Your choice as White; 30% as Black",
-                                "White's plans are to develop calmly, castle and use the open file.\nBlack's plans are to develop quickly, castle and keep the game equal."
+                                "White: Develop calmly, castle and use the open file.\nBlack: Develop quickly, castle and keep the game equal."
                             ],
                             [
                                 "Winawer: 3.Nc3 Bb4",
                                 "19% as White, with 3.Nc3; your choice as Black",
-                                "White's plans are to win the two bishops and attack Black's king.\nBlack's plans are to damage White's pawns and counterattack in the center."
+                                "White: Win the two bishops and attack Black's king.\nBlack: Damage White's pawns and counterattack in the center."
                             ],
                             [
                                 "Tarrasch: 3.Nd2",
                                 "Your choice as White; 6% as Black",
-                                "White's plans are to keep a strong center and develop the knights.\nBlack's plans are to attack the center with pawns and open lines for the pieces."
+                                "White: Keep a strong center and develop the knights.\nBlack: Attack the center with pawns and open lines for the pieces."
                             ],
                             [
                                 "Steinitz: 3.Nc3 Nf6 4.e5",
                                 "28% as White, with 3.Nc3; your choice as Black",
-                                "White's plans are to build a big pawn center and attack on the kingside.\nBlack's plans are to attack the center and gain space on the queenside."
+                                "White: Build a big pawn center and attack on the kingside.\nBlack: Attack the center and gain space on the queenside."
                             ],
                             [
                                 "Rubinstein: 3.Nc3 dxe4",
                                 "16% as White, with 3.Nc3 or 3.Nd2; your choice as Black",
-                                "White's plans are to develop quickly and keep a little more space.\nBlack's plans are to trade pieces and free the game with a pawn break."
+                                "White: Develop quickly and keep a little more space.\nBlack: Trade pieces and free the game with a pawn break."
                             ]
                         ],
                         "note": "How often: the share of your French games that reach the line, from the side that faces it, counting all its move orders; the side that chooses the line can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -1140,57 +1140,57 @@
                             [
                                 "Classical, Keres Defense: 6...b6",
                                 "33% as White\n21% as Black",
-                                "White's plans are to keep the two bishops and build a strong center.\nBlack's plans are to develop quickly, strike at the center and prevent White's central advance."
+                                "White: Keep the two bishops and build a strong center.\nBlack: Develop quickly, strike at the center and prevent White's central advance."
                             ],
                             [
                                 "Classical, Noa Variation: 4...d5",
                                 "23% as White",
-                                "White's plans are to develop calmly, castle and gain space on the queenside.\nBlack's plans are to keep a solid center and keep the king safe."
+                                "White: Develop calmly, castle and gain space on the queenside.\nBlack: Keep a solid center and keep the king safe."
                             ],
                             [
                                 "Classical, Berlin Variation: 4...c5",
                                 "22% as White",
-                                "White's plans are to develop smoothly and leave Black with a weak, isolated pawn.\nBlack's plans are to develop fast and free the position with a central pawn break."
+                                "White: Develop smoothly and leave Black with a weak, isolated pawn.\nBlack: Develop fast and free the position with a central pawn break."
                             ],
                             [
                                 "Classical: 4...b6",
                                 "11% as White",
-                                "White's plans are to take the whole center and use the two bishops.\nBlack's plans are to give up a bishop for a knight and hold the center with pawns."
+                                "White: Take the whole center and use the two bishops.\nBlack: Give up a bishop for a knight and hold the center with pawns."
                             ],
                             [
                                 "Rubinstein, Gligorić System: 9...b6",
                                 "49% as White\n12% as Black",
-                                "White's plans are to castle early and attack Black's king, using the isolated pawn as a spearhead.\nBlack's plans are to stop the isolated pawn and leave White with weak pawns."
+                                "White: Castle early and attack Black's king, using the isolated pawn as a spearhead.\nBlack: Stop the isolated pawn and leave White with weak pawns."
                             ],
                             [
                                 "Rubinstein, Hübner Variation: 4...c5",
                                 "19% as White",
-                                "White's plans are to gain space and later open the position for the two bishops.\nBlack's plans are to double White's pawns, keep the position closed and prevent the bishops from becoming active."
+                                "White: Gain space and later open the position for the two bishops.\nBlack: Double White's pawns, keep the position closed and prevent the bishops from becoming active."
                             ],
                             [
                                 "Rubinstein, St. Petersburg Variation: 4...b6",
                                 "13% as White",
-                                "White's plans are to develop quickly, castle and build a big pawn center.\nBlack's plans are to give up a bishop for a knight and prevent White's central advance."
+                                "White: Develop quickly, castle and build a big pawn center.\nBlack: Give up a bishop for a knight and prevent White's central advance."
                             ],
                             [
                                 "Leningrad Variation: 4...c5",
                                 "16% as Black",
-                                "White's plans are to pin Black's knight, close the center and use the two bishops later.\nBlack's plans are to double White's pawns and keep the position closed so the bishops stay passive."
+                                "White: Pin Black's knight, close the center and use the two bishops later.\nBlack: Double White's pawns and keep the position closed so the bishops stay passive."
                             ],
                             [
                                 "Bd2 Variation: 4...c5",
                                 "16% as Black",
-                                "White's plans are to avoid doubled pawns and develop quietly.\nBlack's plans are to strike in the center and attack the isolated pawn White is left with."
+                                "White: Avoid doubled pawns and develop quietly.\nBlack: Strike in the center and attack the isolated pawn White is left with."
                             ],
                             [
                                 "Three Knights Variation: 4...O-O",
                                 "14% as Black",
-                                "White's plans are to develop quickly and keep several setups open.\nBlack's plans are to castle, strike in the center and leave White with an isolated pawn."
+                                "White: Develop quickly and keep several setups open.\nBlack: Castle, strike in the center and leave White with an isolated pawn."
                             ],
                             [
                                 "Sämisch Variation: 5...c5",
                                 "11% as Black",
-                                "White's plans are to win the two bishops and build a big pawn center.\nBlack's plans are to fix White's doubled pawns, attack them and prevent the center from advancing."
+                                "White: Win the two bishops and build a big pawn center.\nBlack: Fix White's doubled pawns, attack them and prevent the center from advancing."
                             ]
                         ],
                         "note": "How often: the share of your Nimzo-Indian games that reach the line, from the side you play in it, counting all its move orders. As White, it is the share of your games with that fourth move (4.Qc2 or 4.e3). Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
