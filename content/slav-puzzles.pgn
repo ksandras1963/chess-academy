@@ -7,6 +7,6 @@
 
 1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 Bf5 5. cxd5 cxd5 6. Qb3 b6? 7. e4! {[%cal Ge4d5,Ge4f5] Opens the center while Black's king is on e8, and hits the bishop on f5.} dxe4
 8. Ne5! {[%cal Ge5f7,Gb3f7] Threatens Qxf7 mate: the knight also covers d7, so Black's king would have no escape.}
-(8. Bb5+?! {Gives Black time to block with the bishop.} 8... Bd7 9. Ne5 e6 10. Nxd7 Nbxd7 {Stockfish: +1.2, clearly better for White.})
-8... Be6 {Blocks the queen's line to f7.} 9. Bb5+ Nfd7 10. Qc2 {Black's king is stuck in the center, and the pawn on e4 falls next. Stockfish: +3.0, winning for White.}
+(8. Bb5+?! {Gives Black time to block with the bishop.} 8... Bd7 9. Ne5 e6 10. Nxd7 Nbxd7 {Stockfish: +1.6, clearly better for White.})
+8... Be6 {Blocks the queen's line to f7.} 9. Bb5+ Nfd7 10. Qc2 {Black's king is stuck in the center, and the pawn on e4 falls next. Stockfish: +5.0, winning for White.}
 *

@@ -59,6 +59,11 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - Spell out an abbreviation the first time a page uses it, then use the short form: "Queen's Gambit Declined (QGD)", then "QGD".
 - No colour in course titles: "Caro-Kann Defense Course", not "Caro-Kann Defense Course for White".
 
+## Move notation
+
+- Moves are written in letters (Nf3) by default, everywhere in the app. Figurines (♘f3) stay as a choice in Settings. In Kumar's words: "Could you make letters as default for moves like Nf3, instead of figurines. However keep the figurines in the settings in case user prefers that. This applies to whole chess app."
+- Write moves in letters in the course files too; the app adds figurines for learners who choose them.
+
 ## Drills
 
 - No daily limit: every line is in the drill from the start, and the learner decides how many to drill.
