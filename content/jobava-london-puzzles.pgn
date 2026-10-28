@@ -26,12 +26,12 @@
 [Type "puzzle"]
 [Theme "Punish the mistake"]
 [Solve "7.Bxg6"]
-[End "8.Qd3"]
+[End "7.Bxg6"]
 [Hint "Black's h-pawn has left h7. Which pawn would have to take back on g6?"]
 
 1. d4 d5 2. Nc3 Nf6 3. Bf4 Bf5 4. e3 e6 5. Bd3 Bg6 6. h4 h5? 7. Bxg6! {[%cal Gd3g6] Takes the bishop. Black must take back with the f-pawn.}
 (7. Nf3? {Develops, but Black gets to trade on d3.} 7... Bxd3 8. Qxd3 c6 {Stockfish: +0.5, slightly better for White.})
-7... fxg6 8. Qd3 {[%hint The pawn on g6 has no guard. Which piece can attack it?] [%cal Gd3g6] Hits g6. Qxg6+ comes next.} Bd6 9. Qxg6+ Kf8 {White is a pawn up, and Black's king can't castle. Stockfish: +3.0, winning for White.}
+7... fxg6 8. Qd3 {[%cal Gd3g6] The pawn on g6 has no guard: the queen hits it, and Qxg6+ comes next.} Bd6 9. Qxg6+ Kf8 {White is a pawn up, and Black's king can't castle. Stockfish: +3.0, winning for White.}
 *
 
 [Puzzle "Trap the bishop"]
