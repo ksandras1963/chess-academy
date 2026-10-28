@@ -2,7 +2,7 @@
 [Side "both"]
 [Type "ideas"]
 
-{After 1.e4 e6 2.d4 d5 3.e5, White's pawns on d4 and e5 and Black's on d5 and e6 form a chain. Each chain points at the wing where its side should attack: White's at Black's kingside, Black's at White's queenside. Black has two ways to break it.}
+{When White pushes the e-pawn in the Advance, White's pawns on d4 and e5 and Black's on d5 and e6 form a chain. Each chain points at the wing where its side should attack: White's at Black's kingside, Black's at White's queenside. Black has two ways to break it.}
 *
 
 [Chapter "Attack the base: ...c5"]
@@ -23,7 +23,7 @@
 [Side "both"]
 [Type "ideas"]
 
-{In the Advance main line, 3...c5 4.c3 Nc6 5.Nf3 Qb6, Black's c-pawn, knight and queen all hit d4. White holds it and plays 6.a3 to prepare b4. Each board shows one plan.}
+{In the Advance main line, Black's c-pawn, queen's knight and queen all hit d4. White holds it with a pawn and the king's knight, then prepares to push the b-pawn. Each board shows one plan.}
 *
 
 [Chapter "White: a3 and b4"]
@@ -58,7 +58,7 @@
 [Side "both"]
 [Type "ideas"]
 
-{After 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3, White has doubled c-pawns but the two bishops, and the pawn on c3 supports d4. Black has given up the bishop that guarded the dark squares. Each board shows what that means.}
+{In the Winawer, Black gives up the dark-squared bishop for White's knight on c3. White has doubled c-pawns but the two bishops, and the pawn on c3 supports d4. Black's dark squares, around the king, lose their defender. Each board shows what that means.}
 *
 
 [Chapter "The weak g7 pawn"]
@@ -86,7 +86,7 @@
 [Side "both"]
 [Type "ideas"]
 
-{In the Tarrasch and the Steinitz, Black hits d4 with ...c5 and then the tip of the chain with ...f6. After the trade on f6, Black's pieces come out freely, but the e6 pawn is backward and e5 is a square for White's pieces. In the Steinitz, Black usually plays on the queenside first.}
+{In the Tarrasch and the Steinitz, Black hits d4 with the c-pawn and then the tip of the chain with the f-pawn. After the trade on f6, Black's pieces come out freely, but the e6 pawn is backward and e5 is a square for White's pieces. In the Steinitz, Black usually plays on the queenside first.}
 *
 
 [Chapter "The knight jump to e4"]
@@ -107,7 +107,7 @@
 [Side "both"]
 [Type "ideas"]
 
-{After 3.exd5 exd5 or 3...dxe4, the center opens and the pawn chain is gone. Development and the open files matter most. Each board shows one idea.}
+{In the Exchange and the Rubinstein, pawns are traded in the center, so it opens and there is no pawn chain. Development and the open files matter most. Each board shows one idea.}
 *
 
 [Chapter "Exchange: the e-file and ...Nge7"]
