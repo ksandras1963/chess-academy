@@ -2,7 +2,7 @@
 // starts from the opening position and plays up to the idea's position ([Diagram]), so the learner
 // sees how it is reached.
 
-import { h, paras, label, sideName, spellOut, backTrail, ideasTitle } from "../ui.js"
+import { h, paras, label, sideName, spellOut, backTrail } from "../ui.js"
 import { mainPath } from "../course-model.js"
 import { Board } from "../board.js"
 import { stepBar, mergedNote, furtherStudy } from "./layout.js"
@@ -13,7 +13,7 @@ export function ideasPage(root, ctx, c, page, { trail, prev, next }) {
     root.append(h("section", { class: "ideas-page" },
         h("header", { class: "ideas-head" },
             backTrail(trail), stepBar(prev, next),
-            h("h1", {}, spellOut(ideasTitle(page))),
+            h("h1", {}, spellOut(page.title)),
             pageSideTag(page.side),
             ...paras(page.root.note.text, { class: "lede" })),
         ...concepts.map(k => k.el),

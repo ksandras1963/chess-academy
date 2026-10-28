@@ -1,6 +1,6 @@
 // Learn mode: step through a line (or a key-ideas chapter) with the explanation for each move.
 
-import { h, figText, paras, label, sideName, spellOut, ideasTitle } from "../ui.js"
+import { h, figText, paras, label, sideName, spellOut } from "../ui.js"
 import { course as loadCourse } from "../content.js"
 import { mainPath, sideNotes, siblingBranches } from "../course-model.js"
 import { Board } from "../board.js"
@@ -15,7 +15,7 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
     if (lineKey.startsWith("ideas-")) {
         const ch = c.chapters[Number(lineKey.slice(6))]
         if (!ch || ch.type !== "ideas") throw new Error("This key-ideas page no longer exists. Go back to the course.")
-        base = { nodes: mainPath(ch.root), start: ch.root, title: ideasTitle(ch), sub: "", line: null }
+        base = { nodes: mainPath(ch.root), start: ch.root, title: ch.title, sub: "", line: null }
     } else {
         const line = c.lines.find(l => l.id === lineKey)
         if (!line) throw new Error("This line no longer exists; it may have been edited. Go back to the course to see the current lines.")

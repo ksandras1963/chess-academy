@@ -85,20 +85,6 @@ export function figMoves(movetext) {
 
 export function sideName(color) { return color === "w" ? "White" : "Black" }
 
-/**
- * A Key ideas page's title says which side it is for: "Playing as White: The setup and the move order".
- * The side isn't named twice ("Plans for White" becomes "Plans", "White's plan" becomes "The plan").
- * A page about both sides keeps its own title.
- */
-export function ideasTitle(ch) {
-    const side = { white: "White", black: "Black" }[ch.side]
-    if (!side) return ch.title
-    const rest = ch.title.replace(/^Key ideas:\s*/i, "")
-        .replace(new RegExp(`\\s+(for|as) ${side}$`), "")
-        .replace(new RegExp(`^${side}'s\\s+`), "The ")
-    return `Playing as ${side}: ${rest}`
-}
-
 export function plural(n, word, many = word + "s") { return `${n} ${n === 1 ? word : many}` }
 
 export const sleep = ms => new Promise(r => setTimeout(r, ms))
