@@ -65,7 +65,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{The Berlin Defense brings the king's knight out to hit e4 at once, instead of first chasing the bishop with a pawn. When White castles, Black takes the pawn: White wins it back, but Black gets the two bishops and a free game. Each board shows one idea.}
+{The Berlin Defense brings the king's knight out to hit e4 at once, instead of first chasing the bishop with a pawn. When White castles, Black takes the pawn: White wins it back, but Black usually gets the two bishops and a free game. Each board shows one idea.}
 *
 
 [Chapter "Take e4, then ...Nd6"]
@@ -114,7 +114,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{In the Anti-Berlin White guards e4 with the d-pawn. Black's bishop goes to c5 and Black castles. White will push the d-pawn again one day, so Black keeps the bishop out of its reach and brings the king's knight to g6. Each board shows one idea.}
+{In the Anti-Berlin White guards e4 with the d-pawn. Black's bishop goes to c5 and Black castles. White will push the d-pawn again one day, so Black keeps the bishop out of its reach and brings the queen's knight round to g6. Each board shows one idea.}
 *
 
 [Chapter "...a6 and ...Ba7: keep the bishop"]
@@ -207,11 +207,11 @@
 [Opening "Ruy Lopez: Berlin Defense, Rio Gambit Accepted"]
 [ECO "C67"]
 
-{After 4.O-O Nxe4 5.Re1 Nd6, four White players in ten take back the pawn at once with 6.Nxe5. Black develops with ...Be7, and after Bf1 the knights are traded on e5. Black castles, hits the rook with ...Bf6, and trades rooks on the e-file. The game is level: Black has the two bishops and no weaknesses.}
+{After 4.O-O Nxe4 5.Re1 Nd6, four White players in ten take back the pawn at once with 6.Nxe5. Black develops with ...Be7, and after Bf1 the knights are traded on e5. Black castles, hits the rook with ...Bf6, and trades rooks on the e-file. The game is level, and Black has no weaknesses.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. Re1 Nd6
 6. Nxe5 {Wins the pawn back at once.} Be7 {[%cal Ge7f6] Prepares to castle. 6...Nxe5 7.Rxe5+ Be7 comes to the same thing.}
 7. Bf1 {The bishop steps back, out of reach of the d6 knight.} Nxe5 8. Rxe5 O-O 9. d4 Bf6 {[%cal Gf6e5] Hits the rook with gain of time.}
-10. Re1 Re8 {[%cal Ge8e1] Offers to trade on the open file.} 11. c3 Rxe1 12. Qxe1 Ne8 {[%cal Ge8f6] The knight heads back to f6, where it guards the kingside. Black is solid, with the two bishops. Stockfish: +0.2, equal.} *
+10. Re1 Re8 {[%cal Ge8e1] Offers to trade on the open file.} 11. c3 Rxe1 12. Qxe1 Ne8 {[%cal Ge8f6] The knight heads back to f6, where it guards the kingside. Black is solid, with no weaknesses. Stockfish: +0.2, equal.} *
 
 [Chapter "Berlin Endgame: 4.O-O Nxe4 5.d4"]
 [Side "black"]
@@ -234,7 +234,7 @@
 [Opening "Ruy Lopez: Berlin Defense, Anti-Berlin Variation"]
 [ECO "C65"]
 
-{3...Nf6 is the Berlin Defense. 4.d3, the Anti-Berlin, guards e4 for good, so Black can't take it as after 4.O-O. As White, build the setup of the main lines: c3, castling, Re1, the knight trip d2–f1–g3, then d4. As Black, play 4...Bc5, castle, ...d6, then ...a6 and ...Ba7 to keep the bishop, and bring the king's knight to g6.}
+{3...Nf6 is the Berlin Defense. 4.d3, the Anti-Berlin, guards e4 for good, so Black can't take it as after 4.O-O. As White, build the setup of the main lines: c3, castling, Re1, the knight trip d2–f1–g3, then d4. As Black, play 4...Bc5, castle, ...d6, then ...a6 and ...Ba7 to keep the bishop, and bring the queen's knight round to g6 via e7.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 {This is the Berlin Defense. Black hits e4 at once instead of asking the bishop with ...a6.}
 4. d3 {[%csl Ge4] This is the Anti-Berlin Variation. The pawn guards e4.} Bc5 {The most common reply. The bishop takes its most active diagonal.}
 5. c3 {[%cal Gd3d4] Prepares d4, which would hit the bishop with gain of time.}
@@ -539,7 +539,7 @@
 [Opening "Ruy Lopez: Berlin Defense, Rio Gambit Accepted"]
 [ECO "C67"]
 
-{After 5.Re1 Nd6, White's rarer sixth and seventh moves. The plan stays the same: block checks on the e-file with ...Be7, castle, and use the two bishops. After 6.Ba4 or 6.Bf1 the bishop has stepped back, so Black keeps the knight on c6 and the structure stays whole.}
+{After 5.Re1 Nd6, White's rarer sixth and seventh moves. The plan stays the same: block checks on the e-file with ...Be7, castle, and, when White has taken on c6, use the two bishops. After 6.Ba4 or 6.Bf1 the bishop has stepped back, so Black keeps the knight on c6 and the structure stays whole.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. Re1 Nd6
 6. Bxc6
 (6. Ba4 Be7 7. Nxe5 Nxe5 8. Rxe5 O-O 9. d4 Nc4 {[%cal Gc4e5] Hits the rook. Stockfish: 0.0, equal.})
@@ -559,7 +559,7 @@
 7. Nxc6 {The most common move.}
 (7. Bxc6 dxc6 {The same position as in Berlin Defense, 5.Re1: 6.Bxc6 after 7...Be7. Stockfish: −0.3, slightly better for Black.})
 (7. Ba4 Nxe5 8. Rxe5 O-O 9. Re1 Nf5 {[%cal Gd7d5] Black is fully developed and ready for ...d5. Stockfish: 0.0, equal.})
-7... dxc6 {[%cal Gd6b5,Gc6b5] Opens lines for the c8 bishop and the queen, and the b5 bishop is attacked twice.} 8. Bf1 Be6 9. c3 Nf5 10. d3 O-O {Black has the two bishops and easy development. Stockfish: +0.1, equal.} *
+7... dxc6 {[%cal Gd6b5,Gc6b5] Opens lines for the c8 bishop and the queen, and the b5 bishop is attacked twice.} 8. Bf1 Be6 9. c3 Nf5 10. d3 O-O {Black's pieces develop easily. Stockfish: +0.1, equal.} *
 
 [Chapter "Berlin Endgame: White's ninth moves"]
 [Side "black"]

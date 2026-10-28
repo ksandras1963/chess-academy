@@ -61,7 +61,7 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 ## Moves in text
 
 - No strings of moves in text that has no board beside it: the lines under a course title, "Why play it", the introductions of Key ideas pages, and the text of Introduction and overview pages. Say it in words: name the variation, the piece or the square. Kumar's example was the Ruy Lopez course header, "As White: the d3 system, with 5.d3 against 4...Nf6 and 4.d3 against the Berlin, then c3, Re1, Nbd2–f1–g3 and d4 later. As Black: the Berlin Defense, 3...Nf6, taking on e4 after 4.O-O." and "1.e4 e5 2.Nf3 Nc6 3.Bb5: the bishop hits the knight that guards e5." In his words: "Avoid writing like this since it is very difficult to follow without a board."
-- Tables of the variations keep their moves, and so do notes beside a board: lessons, Key ideas boards, puzzles and overview cards. Kumar chose this, and asked for the rule in every course.
+- Notes beside a board keep their moves: lessons, Key ideas boards, puzzles and overview cards. Tables follow their own rule (see Tables): plain words, with one key move at most. Kumar asked for this rule in every course.
 
 ## Drills
 
