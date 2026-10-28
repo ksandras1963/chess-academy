@@ -353,27 +353,27 @@
                             [
                                 "Exchange Variation: 4.cxd5",
                                 "47% as White\n15% as Black",
-                                "White's plans are to develop calmly, castle and attack with the queenside pawns.\nBlack's plans are to develop freely, guard the king and hold the center."
+                                "White: Develop calmly, castle and attack with the queenside pawns.\nBlack: Develop freely, guard the king and hold the center."
                             ],
                             [
                                 "Three Knights: 4.Nf3",
                                 "23% as Black",
-                                "White's plans are to develop the knights and keep the tension in the center.\nBlack's plans are to develop quickly, castle and strike at the center."
+                                "White: Develop the knights and keep the tension in the center.\nBlack: Develop quickly, castle and strike at the center."
                             ],
                             [
                                 "Main line, Tartakower: 4.Bg5",
                                 "22% as Black",
-                                "White's plans are to pin a knight, develop calmly and press on the center.\nBlack's plans are to break the pin, trade pieces and free the game."
+                                "White: Pin a knight, develop calmly and press on the center.\nBlack: Break the pin, trade pieces and free the game."
                             ],
                             [
                                 "Exchange: 4...Nxd5",
                                 "15% as White",
-                                "White's plans are to chase the knight and build a big pawn center.\nBlack's plans are to trade pieces and attack the center."
+                                "White: Chase the knight and build a big pawn center.\nBlack: Trade pieces and attack the center."
                             ],
                             [
                                 "Semi-Slav move order: 3...c6",
                                 "12% as White",
-                                "White's plans are to fix the pawns and attack on the queenside, as in the Exchange.\nBlack's plans are to keep the center solid and trade off White's active bishop."
+                                "White: Fix the pawns and attack on the queenside, as in the Exchange.\nBlack: Keep the center solid and trade off White's active bishop."
                             ]
                         ],
                         "note": "How often: the share of your Queen's Gambit Declined games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -433,32 +433,32 @@
                             [
                                 "Semi-Slav: 4...e6",
                                 "33% as White",
-                                "White's plans are to fix the pawns and attack on the queenside.\nBlack's plans are to keep the center solid and bring the light-squared bishop into play."
+                                "White: Fix the pawns and attack on the queenside.\nBlack: Keep the center solid and bring the light-squared bishop into play."
                             ],
                             [
                                 "Main line, Czech Variation: 5.a4 Bf5",
                                 "31% as Black",
-                                "White's plans are to win the pawn back, castle and take the center.\nBlack's plans are to develop quickly and keep a solid center."
+                                "White: Win the pawn back, castle and take the center.\nBlack: Develop quickly and keep a solid center."
                             ],
                             [
                                 "Early ...Bf5: 3...Bf5 or 4...Bf5",
                                 "24% as White",
-                                "White's plans are to attack Black's weakened queenside with the queen.\nBlack's plans are to develop the bishop early without losing a pawn."
+                                "White: Attack Black's weakened queenside with the queen.\nBlack: Develop the bishop early without losing a pawn."
                             ],
                             [
                                 "Exchange Variation: 3.cxd5",
                                 "19% as Black",
-                                "White's plans are to keep a small, safe edge in a balanced position.\nBlack's plans are to copy White's setup and keep the queenside safe."
+                                "White: Keep a small, safe edge in a balanced position.\nBlack: Copy White's setup and keep the queenside safe."
                             ],
                             [
                                 "Quiet Variation: 4.e3",
                                 "19% as Black",
-                                "White's plans are to develop quietly and castle.\nBlack's plans are to develop the light-squared bishop first and build a solid center."
+                                "White: Develop quietly and castle.\nBlack: Develop the light-squared bishop first and build a solid center."
                             ],
                             [
                                 "Early bishop: 4.Bg5 or 4.Bf4",
                                 "15% as Black",
-                                "White's plans are to develop quickly and build a big center.\nBlack's plans are to take a pawn and hold on to it."
+                                "White: Develop quickly and build a big center.\nBlack: Take a pawn and hold on to it."
                             ]
                         ],
                         "note": "How often: the share of your Slav games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -519,32 +519,32 @@
                             [
                                 "3.Nc3: 3...e5",
                                 "34% as Black",
-                                "White's plans are to gain space in the center and win the pawn back later.\nBlack's plans are to hit the center at once and keep the extra pawn when it is safe."
+                                "White: Gain space in the center and win the pawn back later.\nBlack: Hit the center at once and keep the extra pawn when it is safe."
                             ],
                             [
                                 "Old Variation: 3...e5",
                                 "29% as Black\n13% as White",
-                                "White's plans are to win the pawn back, develop fast and use the open lines.\nBlack's plans are to strike at the center and attack White's isolated pawn."
+                                "White: Win the pawn back, develop fast and use the open lines.\nBlack: Strike at the center and attack White's isolated pawn."
                             ],
                             [
                                 "Central Variation: 3.e4",
                                 "24% as Black",
-                                "White's plans are to take the whole center and win the pawn back.\nBlack's plans are to hit back in the center at once and trade off White's best attacker."
+                                "White: Take the whole center and win the pawn back.\nBlack: Hit back in the center at once and trade off White's best attacker."
                             ],
                             [
                                 "3.e3: 3...Nf6",
                                 "21% as White",
-                                "White's plans are to win the pawn back at once, castle and take the center later.\nBlack's plans are to develop quietly and attack the center."
+                                "White: Win the pawn back at once, castle and take the center later.\nBlack: Develop quietly and attack the center."
                             ],
                             [
                                 "Trap: 3...b5 and 4.a4",
                                 "18% as White",
-                                "White's plans are to break up Black's queenside pawns and win material.\nBlack's plans are to keep the extra pawn, but here it is best to give it back."
+                                "White: Break up Black's queenside pawns and win material.\nBlack: Give the extra pawn back: holding it doesn't work here."
                             ],
                             [
                                 "Normal Variation: 3.Nf3",
                                 "10% as Black",
-                                "White's plans are to develop quietly and win the pawn back.\nBlack's plans are to develop calmly, attack the center and gain space on the queenside."
+                                "White: Develop quietly and win the pawn back.\nBlack: Develop calmly, attack the center and gain space on the queenside."
                             ]
                         ],
                         "note": "How often: the share of your Queen's Gambit Accepted games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -605,22 +605,22 @@
                             [
                                 "Main line: 4.cxd5 exd5",
                                 "73% as White\n38% as Black",
-                                "White's plans are to attack Black's isolated pawn and trade pieces.\nBlack's plans are to use active pieces and avoid trades."
+                                "White: Attack Black's isolated pawn and trade pieces.\nBlack: Use active pieces and avoid trades."
                             ],
                             [
                                 "Symmetrical Variation: 4.e3",
                                 "45% as Black",
-                                "White's plans are to keep the tension and develop quietly.\nBlack's plans are to develop quickly and gain space on the queenside."
+                                "White: Keep the tension and develop quietly.\nBlack: Develop quickly and gain space on the queenside."
                             ],
                             [
                                 "Early dxc5: 4.dxc5 or 5.dxc5",
                                 "27% as Black",
-                                "White's plans are to grab a pawn and attack Black's center.\nBlack's plans are to push the center pawn forward and win the pawn back later."
+                                "White: Grab a pawn and attack Black's center.\nBlack: Push the center pawn forward and win the pawn back later."
                             ],
                             [
                                 "Schara Gambit: 4...cxd4",
                                 "26% as White",
-                                "White's plans are to take the gambit pawn and keep it.\nBlack's plans are to develop quickly and open lines for the pieces."
+                                "White: Take the gambit pawn and keep it.\nBlack: Develop quickly and open lines for the pieces."
                             ]
                         ],
                         "note": "How often: the share of your Tarrasch games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
