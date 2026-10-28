@@ -158,7 +158,7 @@
 [Opening "Ruy Lopez: Morphy Defense, Anderssen Variation"]
 [ECO "C77"]
 
-{After 3...a6 4.Ba4 Nf6, the main move is 5.O-O, but then Black can take on e4 (the Open Ruy Lopez) or play the Marshall Attack, and both need long lines learned by heart. This course plays 5.d3, as in ChessGeek's Ruy Lopez Masterclass: the pawn guards e4, and White builds the setup of the main lines, with c3, castling, Re1, the knight trip to g3 and h3. Then d4 comes, in two steps. Black's most common reply, 5...b5, is the main line here.}
+{After 3...a6 4.Ba4 Nf6, the main move is 5.O-O, but then Black can take on e4 (the Open Ruy Lopez) or play the Marshall Attack, and both need long lines learned by heart. This course plays 5.d3: the pawn guards e4, and White builds the setup of the main lines, with c3, castling, Re1, the knight trip to g3 and h3. Then d4 comes, in two steps. Black's most common reply, 5...b5, is the main line here.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 {This is the Morphy Defense, Black's most common reply: one club game in three.}
 4. Ba4 {Keeps the pin on the c6 knight. Later the bishop drops back to b3 or c2, where it aims at Black's kingside. 4.Bxc6 is the Exchange Variation, not played in this course.} Nf6 {Develops and hits e4. 4...b5 and 4...d6 are under Advanced.}
 5. d3 {[%csl Ge4] This is the Anderssen Variation. The pawn guards e4 for good. White plays d4 later, once c3 and the other pieces are ready.} b5 {More than half of club players drive the bishop back at once. 5...Be7? loses a pawn to 6.Bxc6 dxc6 7.Nxe5: see Traps.}
