@@ -1269,7 +1269,7 @@
             "eco": "D06–D69",
             "moves": "1. d4 d5 2. c4",
             "file": "content/qg-overview.pgn",
-            "count": "6 variations",
+            "count": "13 variations",
             "compact": true,
             "course": "queens-gambit-declined queens-gambit-accepted slav tarrasch",
             "subtitle": "1.d4 d5 2.c4: the main ways to decline it or take the pawn.",
