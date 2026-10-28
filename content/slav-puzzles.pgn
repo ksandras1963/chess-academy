@@ -7,6 +7,6 @@
 
 1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 Bf5 5. cxd5 cxd5 6. Qb3 b6? 7. e4! {[%cal Ge4d5,Ge4f5] Opens the center while Black's king is on e8, and hits the bishop on f5. 7...Bxe4 8.Nxe4 dxe4 9.Bb5+ is even worse for Black.}
 (7. Ne5! {Also strong: e4 follows next move.} 7... a6 8. e4 Bxe4 9. Bxa6 Rxa6 10. Nxe4 {Stockfish: +4.9, winning for White.})
-(7. Bf4?! {Develops, but gives Black time.} 7... a6 8. Bxb8 Rxb8 9. e4 Nxe4 10. Nxe4 {White is still better, but 7.e4 wins much more. Stockfish: +3.7, winning for White.})
-7... dxe4 8. Ne5 Be6 9. Bb5+ Nfd7 10. Qc2 {Black's king is stuck in the center, and the pawn on e4 falls next. Stockfish: +5.2, winning for White.}
+(7. Bf4?! {Develops, but gives Black time.} 7... a6 8. Bxb8 Rxb8 9. e4 Nxe4 10. Nxe4 {White is still better, but 7.e4 wins much more. Stockfish: +2.9, winning for White.})
+7... dxe4 8. Ne5 Be6 9. Bb5+ Nfd7 10. Qc2 {Black's king is stuck in the center, and the pawn on e4 falls next. Stockfish: +5.0, winning for White.}
 *
