@@ -453,7 +453,7 @@
 
 {Two rarer fourth moves against 4.e3. 4...Bxc3+ gives up the bishop at once, and 4...Ne4 brings the knight to its favorite square. Against both, the same setup works: Bd3, then Nf3 or Ne2.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 Bxc3+
-(4... Ne4 {[%cal Ge4c3] Hits c3 a second time.} 5. Qc2 {Guards c3 and hits the knight.} f5 {Supports the knight.} 6. Bd3 d5 7. Ne2 c6 8. f3 {[%cal Gf3e4] Drives the knight away. Stockfish: +0.5, slightly better for White.})
+(4... Ne4 {[%cal Ge4c3] Hits c3 a second time.} 5. Qc2 {Guards c3 and hits the knight.} f5 {Supports the knight.} 6. Bd3 d5 7. Ne2 c6 8. O-O {Castle first.} O-O 9. f3 {[%cal Gf3e4] Drives the knight away.} Nxc3 10. bxc3 {[%cal Ge3e4] White's center is ready for e4. Stockfish: +0.9, slightly better for White.})
 5. bxc3 {[%csl Yc3,Yd4] The pawn on c3 supports d4.} O-O
 6. Bd3 b6
 7. e4 {[%csl Yd4,Ye4] White takes the whole center.} Bb7? {Natural, but it walks into a tactic.}
@@ -531,7 +531,7 @@
 {Against 4.Bg5 c5, White has several fifth moves besides 5.d5 and 5.e3. In each of them the bishop on g5 is loose, and ...h6 and ...Qa5 make use of it.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Bg5 c5
 5. a3
-(5. Nf3 h6 6. Bh4 g5 7. Bg3 g4 {[%cal Gg4f3] Kicks the knight.} 8. Ne5 Ne4 {[%cal Ge4c3,Ge4g3] Hits c3 and g3.} 9. Qc2 Nxg3 10. hxg3 {Black has the two bishops and pressure on d4. Stockfish: −1.9, clearly better for Black.})
+(5. Nf3 h6 6. Bh4 g5 7. Bg3 g4 {[%cal Gg4f3] Kicks the knight.} 8. Ne5 Ne4 {[%cal Ge4c3,Ge4g3] Hits c3 and g3.} 9. Qc2 Nxg3 10. hxg3 {Black has the two bishops and pressure on d4. Stockfish: −1.7, clearly better for Black.})
 (5. dxc5 Bxc3+ 6. bxc3 Qa5 {[%cal Ga5c3,Ga5g5] Hits c3 and g5.} 7. Bxf6 gxf6 8. Qd4 e5 9. Qe3 Na6 {[%cal Ga6c5] The knight takes the c5 pawn next, and White's c-pawns stay weak. Stockfish: −0.3, slightly better for Black.})
 (5. Bxf6 Qxf6 6. e3 b6 7. Nf3 Bb7 8. Be2 cxd4 9. exd4 Bxc3+ 10. bxc3 {White's c-pawns are doubled, and Black's bishop rules the long diagonal. Stockfish: −0.4, slightly better for Black.})
 5... Bxc3+ 6. bxc3 h6 {[%cal Gh6g5] Asks the bishop to decide.}
@@ -669,7 +669,7 @@
 {In Classical: 4...b6, about one Black player in seven castles after 7.bxc3. That walks into 8.e5: the knight on f6 must move, and then White's bishop and queen hit h7.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 b6 5. e4 Bb7 6. Bd3 Bxc3+ 7. bxc3 O-O?
 8. e5! {[%cal Ge5f6,Gd3h7] Hits the knight. If it moves, Bxh7+ follows.} Bxg2 {Two Black players in three try this: the bishop hits the rook on h1.}
-(8... Ne8 9. Bxh7+ Kh8 10. Be4 {White has won the h7 pawn, and Black's king is bare. Stockfish: +3.6, winning for White.})
+(8... Ne8 9. Bxh7+ Kh8 10. Be4 {White has won the h7 pawn, and Black's king is bare. Stockfish: +3.4, winning for White.})
 (8... Ng4 9. Bxh7+ Kh8 10. Be4 {Again the h7 pawn falls, and the knight on g4 is out of play. Stockfish: +3.3, winning for White.})
 9. exf6 Bxh1 {Black has won the rook, but now comes a check.}
 10. Bxh7+! {[%cal Gc2h7] The queen now guards h7, so the king can't take the bishop.} Kh8
@@ -687,7 +687,7 @@
 {In Sämisch Variation: 5...c5, after 8...Qa5 the c3 pawn is pinned to White's king. Four White players in ten guard it with 9.Qc2?, and one in seven with 9.Qd2?. Both lose material. White had to play 9.Bxf6.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. a3 Bxc3+ 5. bxc3 c5 6. Nf3 Nc6 7. Bg5 h6 8. Bh4 Qa5
 9. Qc2? {Guards c3, but the pawn is still pinned.}
-(9. Qd2? {Guards c3 too, but the queen can be hit.} Ne4! {[%cal Ge4d2] Attacks the queen.} 10. Qe3 cxd4 11. Nxd4 Nxd4 12. Qxd4 e5 {[%cal Ge5d4] Black wins time on the queen, and the c3 pawn is weak. Stockfish: −1.5, clearly better for Black.})
+(9. Qd2? {Guards c3 too, but the queen can be hit.} Ne4! {[%cal Ge4d2] Attacks the queen.} 10. Qe3 cxd4 11. Nxd4 Nxd4 12. Qxd4 e5 {[%cal Ge5d4] Black wins time on the queen, and the c3 pawn is weak. Stockfish: −1.7, clearly better for Black.})
 9... cxd4! {[%cal Gd4c3] Wins the d4 pawn. White can't take back with the c3 pawn, because it is pinned to the king.}
 10. Bxf6 {The most common reply.} gxf6 {Not 10...d3?, which lets White back into the game (Stockfish +0.4).}
 11. Rc1 dxc3 {Black has won two pawns. Stockfish: −2.2, winning for Black.} *
