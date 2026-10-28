@@ -776,10 +776,10 @@
                     "id": "scandinavian",
                     "side": "both",
                     "file": "content/scandinavian.pgn",
-                    "repertoire": "As Black: 2...Qxd5 3.Nc3 Qa5, or the Modern Variation, 2...Nf6. As White: 2.exd5 and 3.Nc3, and 3.d4 against the Modern.",
-                    "summary": "1.e4 d5: Black challenges e4 at once and takes back on d5 with the queen or the knight.",
+                    "repertoire": "As Black: the main line, with the queen taking back and going to a5, or the Modern Variation, taking back with the knight. As White: take the pawn and chase the queen with the knight, and take the center with the d-pawn against the Modern.",
+                    "summary": "Black challenges e4 at once and takes back on d5 with the queen or the knight.",
                     "why": {
-                        "text": "As Black, 1...d5 makes the game a Scandinavian from the first move, whatever White had prepared, and its plans are few and easy to learn. After 2...Qxd5 and 3...Qa5 you get a solid position with no weak pawns, like a Caro-Kann. The Modern Variation, 2...Nf6, takes the pawn back with the knight instead, so your queen is not chased.\n\nAs White, you meet the Scandinavian in about 7% of your 1.e4 games. Black's queen comes out early, so you develop with gain of time and keep a pawn on d4 and more space."
+                        "text": "As Black, the Scandinavian starts on your very first move, whatever White had prepared, and its plans are few and easy to learn. When the queen takes back and goes to a5, you get a solid position with no weak pawns, like a Caro-Kann. The Modern Variation takes the pawn back with the knight instead, so your queen is not chased.\n\nAs White, you meet the Scandinavian in about 7% of your games that start with the king's pawn. Black's queen comes out early, so you develop with gain of time and keep a pawn on d4 and more space."
                     },
                     "table": {
                         "columns": [
@@ -819,7 +819,7 @@
                                 "White: Hold on to the extra pawn.\nBlack: Develop fast, win the pawn back and keep White's king from castling."
                             ]
                         ],
-                        "note": "How often: the share of your Scandinavian games that reach the line, from the side that faces it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Lasker Variation (...Bg4 met by h3, about 11% as White) and the Advance Variation (2.e5, 11% as Black) are in Advanced by choice, with the rarer lines."
+                        "note": "How often: the share of your Scandinavian games that reach the line, from the side that faces it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Lasker Variation (Black pins the knight early and White chases the bishop with the h-pawn, about 11% as White) and the Advance Variation (White pushes the e-pawn past Black's pawn, 11% as Black) are in Advanced by choice, with the rarer lines."
                     }
                 }
             ]
