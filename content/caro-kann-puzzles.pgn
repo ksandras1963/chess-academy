@@ -180,6 +180,6 @@
 1. e4 c6 2. Bc4 d5 3. Bb3 dxe4 4. Qh5 g6! {[%cal Rh5f7] Kicks the queen off the h5-f7 line. Black keeps the extra pawn.}
 (4... e6! {Also good: it shuts out the bishop instead.} 5. Nc3 a5 6. Nxe4 {Stockfish: −0.5, slightly better for Black.})
 (4... Nf6? {Develops, but walks into a check on f7.} 5. Qxf7+ Kd7 6. Nc3 {Black's king is stuck in the open. Stockfish: +2.2, winning for White.})
-(4... Nh6?! {Guards f7, but the knight is offside.} 5. Nc3 Nd7 6. Nxe4 {White has won back the pawn. Stockfish: +0.2, equal.})
+(4... Nh6!? {Playable: it guards f7, but the knight is offside.} 5. Nc3 Nd7 6. Nxe4 {White has won back the pawn. Stockfish: +0.2, equal.})
 5. Qe2 Nf6 6. Nc3 {Black is a pawn up. Stockfish: −0.8, slightly better for Black.}
 *

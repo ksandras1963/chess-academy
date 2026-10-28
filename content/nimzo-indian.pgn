@@ -636,9 +636,9 @@
 [Opening "Nimzo-Indian Defense: Leningrad Variation"]
 [ECO "E30"]
 
-{Against 4.Bg5 c5, White's most common move is 5.e3, played in three games in ten on Lichess. It leaves the bishop on g5 without a guard. 5...Qa5! pins the knight on c3 and eyes g5, and Black scores three games in four from here.}
+{Against 4.Bg5 c5, White's most common move is 5.e3, played in three games in ten on Lichess. The pawn on e3 cuts the bishop on g5 off from d2, where it could break the pin on c3. 5...Qa5! pins the knight, and Black scores three games in four from here.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Bg5 c5
-5. e3? {Natural, but now nothing guards the bishop on g5.} Qa5! {[%cal Ga5c3,Gf6e4] Pins the knight on c3. Next, ...Ne4 hits c3 and g5 together.}
+5. e3? {Natural, but now the bishop on g5 can't come back to d2 to break the pin.} Qa5! {[%cal Ga5c3,Gf6e4] Pins the knight on c3. Next, ...Ne4 hits c3 and g5 together.}
 6. Bxf6 {The most common reply.}
 (6. Qc2 {Guards c3, but not g5.} Ne4! {[%cal Ge4g5,Ge4c3] Hits g5 and c3.} 7. Qxe4 Bxc3+ 8. Kd1 Bxb2 {[%cal Gb2a1] The bishop takes a pawn and hits the rook.} 9. Rb1 Bc3 {Black is a pawn up, and White's king is stuck on d1. Stockfish: −1.4, clearly better for Black.})
 (6. Ne2 {The best defense: the knight guards c3 a second time.} Ne4 {[%cal Ge4g5] Now g5 is attacked.} 7. Qd3 d5! {Not 7...Nxg5?: 8.h4 hits the knight, which has no safe square, and White wins it back (Stockfish +0.2).} 8. Bh4 cxd4 9. exd4 {White's pieces are tangled and the king is still in the center. Stockfish: −0.7, slightly better for Black.})

@@ -105,15 +105,14 @@
 [Puzzle "The pin on the e4 knight"]
 [Type "puzzle"]
 [Theme "Punish the mistake"]
-[Solve "10...Nxe4"]
+[Solve "11...Bf5"]
 [End "11...Bf5"]
 [Hint "White's queen has stepped onto the b1–h7 diagonal. Can you use that?"]
 
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Be2 exd5 9. cxd5 Re8 10. Qc2? Nxe4! {Gives the knight for a pawn, for a moment.}
-(10... c4!? {Also strong: Black gains queenside space with tempo.} 11. O-O b5 12. e5 dxe5 13. fxe5 Nxd5 {Stockfish: −1.2, clearly better for Black.})
-(10... Bg4?! {Develops, but misses the tactic.} 11. O-O c4 12. Bxc4 {Stockfish: 0.0, equal.})
-11. Nxe4 Bf5 {[%hint Which piece is now pinned to White's queen?] The knight on e4 is pinned to the queen: if it moves, ...Bxc2.}
-12. Nfd2 Na6 {[%cal Ga6b4] The knight heads for b4 to chase the queen away from e4. Black should win the knight back and end up a pawn ahead. Stockfish: −1.8, clearly better for Black.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Be2 exd5 9. cxd5 Re8 10. Qc2? Nxe4! {Gives the knight for a pawn, for a moment.} 11. Nxe4
+11... Bf5! {[%cal Gf5c2] The knight on e4 is pinned to the queen: if it moves, ...Bxc2.}
+(11... c4? {Too slow: the knight on e4 simply retreats.} 12. Ng3 Qb6 13. Qxc4 {White keeps the extra knight. Stockfish: +2.0, winning for White.})
+12. Nfd2 Na6 {[%cal Ga6b4] The knight heads for b4 to chase the queen away from e4. Black should win the knight back and end up a pawn ahead. Stockfish: −1.1, clearly better for Black.}
 *
 
 [Puzzle "The pinned c3 knight"]
