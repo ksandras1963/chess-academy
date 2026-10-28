@@ -333,17 +333,28 @@ export function buildCourse(meta, pgnText) {
     }
     const chapters = games.map((g, i) => buildChapter(g, i, meta))
     attachConcepts(chapters, meta)
-    const seen = new Set()
+    const seen = new Map() // line id -> the line that has it
     const lines = []
+    // Lines for the other side that share moves with an earlier line: kept, under their own id.
+    const sharedMoves = []
     for (const ch of chapters) {
         if (ch.type === "ideas" || ch.type === "concept" || ch.type === "map") continue
         for (const line of extractLines(ch, meta)) {
-            if (seen.has(line.id)) continue
-            seen.add(line.id)
+            const first = seen.get(line.id)
+            if (first && first.side === line.side) continue // the same line again (a trap repeated in a lesson)
+            if (first) {
+                // A line id doesn't include the side, so a White and a Black line with the same moves
+                // collided and the later one was dropped from its drill. The earlier line keeps its id
+                // (and its saved progress); the later one gets an id of its own.
+                sharedMoves.push({ line, other: first })
+                line.id = hash(line.id + "|" + line.side)
+                if (seen.has(line.id)) continue
+            }
+            seen.set(line.id, line)
             lines.push(line)
         }
     }
-    return { ...meta, chapters, lines }
+    return { ...meta, chapters, lines, sharedMoves }
 }
 
 /**
