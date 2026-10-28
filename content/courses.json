@@ -887,22 +887,22 @@
                             [
                                 "QGD setup: 5.Bg3",
                                 "9% as White\n20% as Black",
-                                "White's plans are to build a solid pawn triangle, keep the London bishop and castle.\nBlack's plans are to castle, control the center and break with a central pawn."
+                                "White: Build a solid pawn triangle, keep the London bishop and castle.\nBlack: Castle, control the center and break with a central pawn."
                             ],
                             [
                                 "King's Indian setup: 5.h3 and 5.Be2",
                                 "9% as White\n14% as Black",
-                                "White's plans are to develop calmly and trade queens when Black attacks.\nBlack's plans are to castle, hit back in the center and use the open files."
+                                "White: Develop calmly and trade queens when Black attacks.\nBlack: Castle, hit back in the center and use the open files."
                             ],
                             [
                                 "Symmetrical: 2...Bf5",
                                 "10% as White",
-                                "White's plans are to attack Black's center and the weak queenside.\nBlack's plans are to copy White's setup and keep the queenside safe."
+                                "White: Attack Black's center and the weak queenside.\nBlack: Copy White's setup and keep the queenside safe."
                             ],
                             [
                                 "King's Indian setup, Rapport-Jobava: 3.Nc3",
                                 "4% as Black",
-                                "White's plans are to grab the center and attack with the kingside pawns.\nBlack's plans are to stop White's center and pawn attack, then hit back in the center."
+                                "White: Grab the center and attack with the kingside pawns.\nBlack: Stop White's center and pawn attack, then hit back in the center."
                             ]
                         ],
                         "note": "How often: the share of your games that reach the line, from the side you play in it, counting every move order. As White, of your 1.d4 games; as Black, of your games with 1...d5 or 1...Nf6. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Everything else is in Advanced."
@@ -963,32 +963,32 @@
                             [
                                 "Pin on c3: 4...Bb4",
                                 "60% as Black",
-                                "White's plans are to develop quietly, castle and keep the pawns healthy.\nBlack's plans are to pin White's knight and hit back in the center."
+                                "White: Develop quietly, castle and keep the pawns healthy.\nBlack: Pin White's knight and hit back in the center."
                             ],
                             [
                                 "Check on b4: 4...Bb4+",
                                 "24% as Black",
-                                "White's plans are to attack early with the knight and chase Black's bishop.\nBlack's plans are to check first, drive the knight back and keep the bishop safe."
+                                "White: Attack early with the knight and chase Black's bishop.\nBlack: Check first, drive the knight back and keep the bishop safe."
                             ],
                             [
                                 "Knight to b5: 4.Nb5",
                                 "23% as White",
-                                "White's plans are to attack early with the knight and push Black's pieces back.\nBlack's plans are to defend calmly, chase the knight away and regroup."
+                                "White: Attack early with the knight and push Black's pieces back.\nBlack: Defend calmly, chase the knight away and regroup."
                             ],
                             [
                                 "Early bishop: 3...Bf5",
                                 "20% as White",
-                                "White's plans are to trade off Black's active bishop and press on the queenside.\nBlack's plans are to develop the bishop early and keep a solid center."
+                                "White: Trade off Black's active bishop and press on the queenside.\nBlack: Develop the bishop early and keep a solid center."
                             ],
                             [
                                 "Guarding b5: 3...a6",
                                 "17% as White",
-                                "White's plans are to develop London style and trade off Black's active bishop.\nBlack's plans are to stop White's knight jumps, then develop and hit back in the center."
+                                "White: Develop London style and trade off Black's active bishop.\nBlack: Stop White's knight jumps, then develop and hit back in the center."
                             ],
                             [
                                 "Slav setup: 3...c6",
                                 "16% as White",
-                                "White's plans are to develop quietly and attack with the kingside pawns.\nBlack's plans are to build a solid pawn chain and develop the bishop early."
+                                "White: Develop quietly and attack with the kingside pawns.\nBlack: Build a solid pawn chain and develop the bishop early."
                             ]
                         ],
                         "note": "How often: the share of your Jobava London games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
