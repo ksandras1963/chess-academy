@@ -37,6 +37,7 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - Tables give general strategies, not lists of moves. In Kumar's words: "for all tables instead of giving a list of moves that are very difficult to understand give general strategies for that variant - white castles early and attack center with white-squared bishop, while black develops strong pawn structure and powerful King side knight."
 - So, by his choices: each row's What to do says in plain words what White aims for and what Black aims for. It names a move only when a learner must know it (a trap, say), and then one move at most. The Variation column gives the line's name and its key move, like the chapter titles: "Classical, Keres Defense: 6...b6", not the whole move order.
 - Keep What to do easy to read and general, in under five sentences. In Kumar's words: "The 'what to do' though in words is still difficult to read. Could you make it easier and more general - e.g. whites plans are to develop xxx and do xx. Blacks plans are to do xx and prevent xx. Keep strategies to under 5 sentences." So each cell reads "White's plans are to ..." and then, on a new line, "Black's plans are to ... and to prevent ...", in short, everyday words, under five sentences in the whole cell. And, on the first table in this style: "Table looks good but may be a bit too detailed. See general rules." So keep it general and short, as the general rules ask: about one short sentence for each side, like his first example, with no conditions or side lines.
+- Simpler still: no squares, files or piece destinations. In Kumar's words: "what to do is a bit too long and complicated. Reduce complexity. Make strategies more general. No need to discuss exact position on board a piece needs to reach." And on the result: "Table looks good ... This simplified writing is what I want." For example, the French Advance: "White's plans are to gain space and attack on the kingside." / "Black's plans are to attack White's center and play on the queenside." The French Defense table in content/courses.json is the example.
 
 ## Lesson pages
 
@@ -63,6 +64,11 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 
 - No strings of moves in text that has no board beside it: the lines under a course title, "Why play it", the introductions of Key ideas pages, and the text of Introduction and overview pages. Say it in words: name the variation, the piece or the square. Kumar's example was the Ruy Lopez course header, "As White: the d3 system, with 5.d3 against 4...Nf6 and 4.d3 against the Berlin, then c3, Re1, Nbd2–f1–g3 and d4 later. As Black: the Berlin Defense, 3...Nf6, taking on e4 after 4.O-O." and "1.e4 e5 2.Nf3 Nc6 3.Bb5: the bishop hits the knight that guards e5." In his words: "Avoid writing like this since it is very difficult to follow without a board."
 - Notes beside a board keep their moves: lessons, Key ideas boards, puzzles and overview cards. Tables follow their own rule (see Tables): plain words, with one key move at most. Kumar asked for this rule in every course.
+
+## Move notation
+
+- Moves are written in letters (Nf3) by default, everywhere in the app. Figurines (♘f3) stay as a choice in Settings. In Kumar's words: "Could you make letters as default for moves like Nf3, instead of figurines. However keep the figurines in the settings in case user prefers that. This applies to whole chess app."
+- Write moves in letters in the course files too; the app adds figurines for learners who choose them.
 
 ## Drills
 

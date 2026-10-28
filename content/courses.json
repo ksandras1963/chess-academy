@@ -54,42 +54,42 @@
                             [
                                 "Giuoco Piano: 3...Bc5",
                                 "40% as White",
-                                "4.c3 and 5.d3, castle, Re1. Drop the bishop to b3 before ...Na5 or ...b5 can trade it."
+                                "White: Build slowly with c3 and d3, castle, and bring the queen's knight round to g3. Open the center with d4 only when your pieces are ready.\nBlack: Copy White's setup, keep the bishop safe on a7, and free the game with ...d5 once every piece is out."
                             ],
                             [
-                                "Two Knights: 3...Nf6",
+                                "Two Knights Defense: 3...Nf6",
                                 "29% as White",
-                                "4.d3, not 4.Ng5. 4...Bc5 5.c3 is the main line. Against ...Na5, Bb5, Ba4 and Bc2 keep the bishop."
+                                "White: Guard e4 with 4.d3 rather than attacking f7 at once, then follow the same slow plan as against 3...Bc5.\nBlack: Develop quickly, look to trade off White's Italian bishop with the knight, and gain space on the queenside."
                             ],
                             [
                                 "Castling first: 4.O-O",
                                 "24% as Black",
-                                "4...Nf6, then ...d6, ...a6 and ...Ba7. Against 5.d4, take with the bishop: 5...Bxd4."
+                                "White: Castle first and keep the choice between a slow build-up with c3 and d3, a quick d4, or Nc3.\nBlack: Develop the knight to f6 and use the usual setup. If White pushes d4 early, trade the bishop for the knight on d4."
                             ],
                             [
-                                "Center attack: 4.c3 Nf6 5.d4",
+                                "Center attack: 5.d4",
                                 "19% as Black",
-                                "5...exd4 6.cxd4 Bb4+, then ...d5. Against 7.Nc3, take the e4 pawn."
+                                "White: Open the center at once and aim for two strong pawns on d4 and e4.\nBlack: Take on d4, check with the bishop to gain time, and strike back in the center. White is often left with a weak lone pawn on d4."
                             ],
                             [
                                 "Quiet Variation: 4.d3",
                                 "14% as Black",
-                                "4...Nf6 and ...d6. Against 5.Bg5, ...h6 and, if needed, ...g5 before you castle."
+                                "White: Guard e4 calmly and keep every option open, sometimes pinning the f6 knight with the bishop.\nBlack: Use the same slow setup. Against the pin, push the bishop back with the h-pawn before you castle."
                             ],
                             [
-                                "Main line: 4.c3 Nf6 5.d3",
+                                "Giuoco Pianissimo: 5.d3",
                                 "14% as Black",
-                                "...d6, ...a6, ...Ba7, castle and ...h6. ...d5 only after ...Re8 and ...Be6."
+                                "White: Build behind the c3-d3-e4 pawns, bring the knight round to g3, and aim at Black's king.\nBlack: Copy the setup with the bishop on a7, keep White's pieces off g5, trade White's best bishop, and only then free the game with ...d5."
                             ],
                             [
                                 "Evans Gambit: 4.b4",
                                 "10% as Black",
-                                "4...Bxb4 5.c3 Ba5, then give the pawn back with ...d5."
+                                "White: Give a pawn to gain time for c3 and d4, and attack before Black is developed.\nBlack: Take the pawn, keep the bishop active, and give the pawn back at the right moment to finish developing."
                             ],
                             [
                                 "Italian Four Knights: 4.Nc3",
                                 "9% as Black",
-                                "4...Nf6, ...d6, ...a6 and ...Ba7. The fork trick 5.Nxe5? fails to 6...Nxc4!"
+                                "White: Develop fast with the knight on c3 instead of the c-pawn, and often pin the f6 knight.\nBlack: Use the usual setup and break the pin before castling. The fork trick 5.Nxe5? does not work here."
                             ]
                         ],
                         "note": "How often: the share of your Italian games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -267,32 +267,32 @@
                             [
                                 "Advance: 3.e5",
                                 "Your choice as White; 22% as Black",
-                                "Black hits d4 with ...c5, ...Nc6 and ...Qb6. Against 6.a3, Black locks the queenside with 6...c4 and later breaks with ...f6; White plays on the kingside."
+                                "White's plans are to gain space and attack on the kingside.\nBlack's plans are to attack White's center and play on the queenside."
                             ],
                             [
                                 "Exchange: 3.exd5 exd5",
                                 "Your choice as White; 30% as Black",
-                                "Symmetrical pawns and an open e-file. Black develops with ...Nc6, ...Bg4, ...Bd6 and ...Nge7 and castles short; White plays c3, castles and puts a rook on e1."
+                                "White's plans are to develop calmly, castle and use the open file.\nBlack's plans are to develop quickly, castle and keep the game equal."
                             ],
                             [
                                 "Winawer: 3.Nc3 Bb4",
                                 "19% as White, with 3.Nc3; your choice as Black",
-                                "After 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4 Qc7, White takes on g7 and h7 and Black takes the center pawns. Sharp for both sides; after 9...cxd4, 10.cxd4? Qc3+ forks White's king and rook."
+                                "White's plans are to win the two bishops and attack Black's king.\nBlack's plans are to damage White's pawns and counterattack in the center."
                             ],
                             [
                                 "Tarrasch: 3.Nd2",
                                 "Your choice as White; 6% as Black",
-                                "White supports d4 with c3. After 3...Nf6 4.e5 Nfd7, Black breaks with ...c5 and ...f6; after exf6 Nxf6, Black has the half-open f-file and a strong knight on e4, while White aims at e5."
+                                "White's plans are to keep a strong center and develop the knights.\nBlack's plans are to attack the center with pawns and open lines for the pieces."
                             ],
                             [
                                 "Steinitz: 3.Nc3 Nf6 4.e5",
                                 "28% as White, with 3.Nc3; your choice as Black",
-                                "White builds a big center with 4.e5 Nfd7 5.f4. Black hits d4 with ...c5 and ...Nc6, then plays ...a6, ...b5 and ...b4 on the queenside, and trades the c8 bishop with ...Ba6."
+                                "White's plans are to build a big pawn center and attack on the kingside.\nBlack's plans are to attack the center and gain space on the queenside."
                             ],
                             [
                                 "Rubinstein: 3.Nc3 dxe4",
                                 "16% as White, with 3.Nc3 or 3.Nd2; your choice as Black",
-                                "Black takes on e4 with the d-pawn, trades knights with ...Nd7 and ...Ngf6, then frees the game with ...c5. Solid for Black; White keeps a little more space."
+                                "White's plans are to develop quickly and keep a little more space.\nBlack's plans are to trade pieces and free the game with a pawn break."
                             ]
                         ],
                         "note": "How often: the share of your French games that reach the line, from the side that faces it, counting all its move orders; the side that chooses the line can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -351,34 +351,29 @@
                         ],
                         "rows": [
                             [
-                                "Exchange Variation: 3.Nc3 Nf6 4.cxd5 exd5",
-                                "47% as White",
-                                "Play Bg5, e3, Bd3 and Qc2, and castle. Then the minority attack (Rb1, b4, b5), or Nge2, f3 and e4."
+                                "Exchange Variation: 4.cxd5",
+                                "47% as White\n15% as Black",
+                                "White's plans are to pin the king's knight, castle, and then attack with the queenside pawns or push the e-pawn in the center.\nBlack's plans are to develop the freed light-squared bishop, guard the king with a knight on f8, and prevent White's queenside pawns from breaking through."
                             ],
                             [
-                                "Three Knights: 3.Nc3 Nf6 4.Nf3 (or 3.Nf3 Nf6 4.Nc3)",
+                                "Three Knights: 4.Nf3",
                                 "23% as Black",
-                                "Play ...Be7 and castle. Against 5.Bf4, hit the center with ...c5. Against 5.Bg5, play ...h6 and the Tartakower."
+                                "White's plans are to develop both knights first and keep the tension in the center.\nBlack's plans are to develop quickly, castle, and hit the center with the c-pawn."
                             ],
                             [
-                                "Main line: 3.Nc3 Nf6 4.Bg5",
+                                "Main line, Tartakower: 4.Bg5",
                                 "22% as Black",
-                                "The Tartakower: ...Be7, castle, ...h6 and ...b6, then ...Bb7, or ...Be6 after 8.cxd5 and the trades on d5. If White takes on f6, take back with the bishop."
+                                "White's plans are to pin the king's knight, develop calmly, castle, and later trade pawns on d5.\nBlack's plans are to break the pin, put the light-squared bishop on the long diagonal, and trade pieces to free the game."
                             ],
                             [
-                                "4...Nxd5 in the Exchange",
+                                "Exchange: 4...Nxd5",
                                 "15% as White",
-                                "5.e4 gains time on the knight and builds a full center."
+                                "White's plans are to chase the knight with the e-pawn and build a big pawn center.\nBlack's plans are to trade knights, hit the center with the c-pawn, and prevent White's center from rolling forward."
                             ],
                             [
-                                "Exchange Variation: 3.Nc3 Nf6 4.cxd5 (or 3.cxd5 exd5 4.Nc3 Nf6)",
-                                "15% as Black",
-                                "Against 5.Bg5, play 5...Nbd7, which sets the Elephant trap. Then ...c6, ...Be7, castle, ...Re8 and ...Nf8."
-                            ],
-                            [
-                                "3...c6 (Semi-Slav move order)",
+                                "Semi-Slav move order: 3...c6",
                                 "12% as White",
-                                "Take on d5 anyway. With no knight on f6 to pin, the bishop goes to f4."
+                                "White's plans are to take on d5, develop the dark-squared bishop to f4, and use the minority attack, as in the Exchange.\nBlack's plans are to keep d5 solid and trade off White's active dark-squared bishop."
                             ]
                         ],
                         "note": "How often: the share of your Queen's Gambit Declined games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -436,34 +431,34 @@
                         ],
                         "rows": [
                             [
-                                "Semi-Slav: ...e6 (3.Nf3 e6, or 3...Nf6 4.Nc3 e6)",
+                                "Semi-Slav: 4...e6",
                                 "33% as White",
-                                "Take on d5, then Bg5, Bd3, Qc2, castle and the minority attack, as in the Exchange Variation."
+                                "White's plans are to trade on d5 and play the minority attack, as in the Exchange Variation.\nBlack's plans are to keep d5 solid and bring the light-squared bishop to an active square."
                             ],
                             [
-                                "Both knights out: 3.Nc3 Nf6 4.Nf3 dxc4",
+                                "Main line, Czech Variation: 5.a4 Bf5",
                                 "31% as Black",
-                                "Take on c4. Against 5.a4, play the Czech Variation: ...Bf5, ...e6, ...Bb4 and castle. Against 5.e4 or 5.e3, keep the pawn with 5...b5."
+                                "White's plans are to win the c4 pawn back, castle, and push the e-pawn to take the center.\nBlack's plans are to give the pawn back for quick development, with the light-squared bishop out before the e-pawn moves."
                             ],
                             [
-                                "Early ...Bf5 (3...Bf5 or 4...Bf5)",
+                                "Early ...Bf5: 3...Bf5 or 4...Bf5",
                                 "24% as White",
-                                "Take on d5 and play Qb3, which hits b7. ...b6? and ...Qd7? lose material."
+                                "White's plans are to trade on d5 and attack the unguarded b7 pawn with the queen.\nBlack's plans are to develop the bishop early and defend b7 without losing material."
                             ],
                             [
-                                "Exchange Variation: cxd5 cxd5",
+                                "Exchange Variation: 3.cxd5",
                                 "19% as Black",
-                                "Copy White's setup: ...Nf6, ...Nc6, ...Bf5 and ...e6. Watch for Qb3 hitting b7."
+                                "White's plans are to keep a small, lasting edge in a symmetrical position.\nBlack's plans are to copy White's setup and prevent the queen from hitting b7."
                             ],
                             [
-                                "Quiet Variation: e3 lines",
+                                "Quiet Variation: 4.e3",
                                 "19% as Black",
-                                "Play ...Bf5 at once, then ...e6, ...Nbd7 and ...Be7, and castle."
+                                "White's plans are to develop quietly and castle, even though the dark-squared bishop is shut in.\nBlack's plans are to bring the light-squared bishop out first, build a solid pawn wall, and prevent the queen from hitting b7."
                             ],
                             [
-                                "Early bishop: 3.Nc3 Nf6 4.Bg5 or 4.Bf4",
+                                "Early bishop: 4.Bg5 or 4.Bf4",
                                 "15% as Black",
-                                "Take on c4 and hold the pawn with ...b5. After 4.Bg5 dxc4 5.e4 b5, 6.a4? loses material to 6...b4!"
+                                "White's plans are to develop the dark-squared bishop early and win the c4 pawn back with a big center.\nBlack's plans are to take on c4 and hold the extra pawn with the b-pawn."
                             ]
                         ],
                         "note": "How often: the share of your Slav games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -522,39 +517,34 @@
                         ],
                         "rows": [
                             [
-                                "3.Nc3 e5",
+                                "3.Nc3: 3...e5",
                                 "34% as Black",
-                                "Against 4.d5, play ...Nf6. After 5.e4, 5...b5! keeps the extra pawn. Never play ...Bb4 while Qa4+ is possible."
+                                "White's plans are to grab space with the center pawns and win the c4 pawn back later.\nBlack's plans are to hit the center at once with the e-pawn and keep the extra pawn when White's pawns block the long diagonal."
                             ],
                             [
-                                "Old Variation: 3.e3 e5",
-                                "29% as Black",
-                                "After 4.Bxc4 exd4 5.exd4, White has an isolated pawn: play ...Nf6, ...Bd6 and castle, then ...Nc6 and ...Bg4."
+                                "Old Variation: 3...e5",
+                                "29% as Black\n13% as White",
+                                "White's plans are to win the pawn back with the bishop, develop fast, and use the open e-file.\nBlack's plans are to strike at the center with the e-pawn, then press on White's isolated d-pawn with the pieces."
                             ],
                             [
-                                "Central Variation: 3.e4 e5",
+                                "Central Variation: 3.e4",
                                 "24% as Black",
-                                "Against 4.d5, play ...Nf6 and ...b5, as against 3.Nc3. Against 4.Nf3, take on d4, then ...Nc6 and ...Be6."
+                                "White's plans are to take the whole center with pawns and win the c4 pawn back.\nBlack's plans are to hit back with the e-pawn at once and prevent White's bishop on c4 from becoming dangerous."
                             ],
                             [
-                                "3.e3 Nf6",
+                                "3.e3: 3...Nf6",
                                 "21% as White",
-                                "4.Bxc4 and castle. Then trade queens for a safe endgame with slightly more active pieces, or keep them and push e4."
+                                "White's plans are to win the pawn back at once, castle, and later push the e-pawn to take the center.\nBlack's plans are to develop quietly and hit White's center with the c-pawn."
                             ],
                             [
-                                "3.e3 b5",
+                                "Trap: 3...b5 and 4.a4",
                                 "18% as White",
-                                "4.a4 hits the pawn chain. After 4...c6 5.axb5 cxb5, 6.Qf3 wins a piece."
-                            ],
-                            [
-                                "3.e3 e5",
-                                "13% as White",
-                                "After 4.Bxc4 exd4 5.exd4, play Nf3 and Nc3, castle, and use the open e-file."
+                                "White's plans are to hit Black's pawn chain with the a-pawn and use the long diagonal against the rook on a8.\nBlack's plans are to hold the extra pawn, but here it is best to give it back."
                             ],
                             [
                                 "Normal Variation: 3.Nf3",
                                 "10% as Black",
-                                "...e5 fails here, because Nxe5 takes the pawn. Play ...Nf6, ...e6, ...c5 and ...a6."
+                                "White's plans are to develop the king's knight, stop Black's e-pawn push, and win the pawn back quietly.\nBlack's plans are to develop calmly, hit the center with the c-pawn, and gain space on the queenside."
                             ]
                         ],
                         "note": "How often: the share of your Queen's Gambit Accepted games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -613,29 +603,24 @@
                         ],
                         "rows": [
                             [
-                                "Rubinstein System: 4.cxd5 exd5, then Nf3, g3 and Bg2",
-                                "73% as White",
-                                "The bishop on g2 hits d5, which becomes an isolated pawn once Black's c-pawn is traded. Castle and keep up the pressure."
+                                "Main line: 4.cxd5 exd5",
+                                "73% as White\n38% as Black",
+                                "White's plans are to put the bishop on g2, blockade Black's isolated d-pawn, and trade pieces.\nBlack's plans are to use free, active pieces in return for the isolated pawn and avoid needless trades."
                             ],
                             [
-                                "4.e3 or 4.Nf3",
+                                "Symmetrical Variation: 4.e3",
                                 "45% as Black",
-                                "Play ...Nc6 and ...Nf6. If White develops the f1 bishop before taking on d5, take on c4, then play ...a6, ...b5 and ...Bb7."
-                            ],
-                            [
-                                "4.cxd5 exd5",
-                                "38% as Black",
-                                "Develop with ...Nc6, ...Nf6 and ...Be7, and castle. Avoid needless trades."
+                                "White's plans are to keep the tension and develop the light-squared bishop first.\nBlack's plans are to develop both knights, take on c4 when it costs White time, and gain space on the queenside."
                             ],
                             [
                                 "Early dxc5: 4.dxc5 or 5.dxc5",
                                 "27% as Black",
-                                "Push ...d4! and win the pawn back later. Never 5...Bxc5?: 6.Qxd5 wins your d5 pawn."
+                                "White's plans are to take the c-pawn and attack Black's d5 pawn.\nBlack's plans are to push the d-pawn forward at once, win the c5 pawn back later, and prevent White's queen from taking on d5."
                             ],
                             [
-                                "Schara Gambit: 4.cxd5 cxd4",
+                                "Schara Gambit: 4...cxd4",
                                 "26% as White",
-                                "Take the pawn with Qxd4 and keep it."
+                                "White's plans are to take the gambit pawn with the queen and keep it.\nBlack's plans are to give up a pawn for quick development and open lines."
                             ]
                         ],
                         "note": "How often: the share of your Tarrasch games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -900,24 +885,24 @@
                         ],
                         "rows": [
                             [
-                                "QGD setup: 2...Nf6 3.e3 e6 (or 2...e6 3.e3 Nf6)",
+                                "QGD setup: 5.Bg3",
                                 "9% as White\n20% as Black",
-                                "As White: keep the bishop with Bg3, castle, and meet ...e5 with dxe5. As Black: ...Bd6, castle, ...c5, ...Qc7 and ...Nbd7, then ...e5."
+                                "White's plans are to build the solid pawn triangle, keep the f4 bishop, and castle.\nBlack's plans are to castle, keep White's knight off e5, and break in the center with the e-pawn."
                             ],
                             [
-                                "King's Indian setup: 1...Nf6 2.Bf4 g6",
+                                "King's Indian setup: 5.h3 and 5.Be2",
                                 "9% as White\n14% as Black",
-                                "As White: e3, Nf3, h3 and Be2, then c3 and Qb3 against ...c5 and ...Qb6. As Black: against Be2 and h3, ...c5 and ...Qb6; against Bd3, ...Nc6 and ...e5."
+                                "White's plans are to develop calmly behind the pawn triangle and trade queens if Black attacks b2.\nBlack's plans are to put the bishop on g7, castle, hit d4 with the c-pawn, and use the open a- and c-files."
                             ],
                             [
-                                "Symmetrical: 2...Bf5 (or 2...Nf6 3.e3 Bf5)",
+                                "Symmetrical: 2...Bf5",
                                 "10% as White",
-                                "Play e3, c4 and Nc3, then Qb3 against b7."
+                                "White's plans are to attack d5 with the c-pawn and hit the weak b7 pawn with the queen.\nBlack's plans are to copy White's setup and prevent the queen from winning b7."
                             ],
                             [
                                 "King's Indian setup, Rapport-Jobava: 3.Nc3",
                                 "4% as Black",
-                                "Stop e4 with 3...d5, meet h4 with ...h5, then castle and hit the center with ...c5."
+                                "White's plans are to push the e-pawn to e4 or attack with the h-pawn.\nBlack's plans are to prevent e4 and the h-pawn attack, castle, and hit the center with the c-pawn."
                             ]
                         ],
                         "note": "How often: the share of your games that reach the line, from the side you play in it, counting every move order. As White, of your 1.d4 games; as Black, of your games with 1...d5 or 1...Nf6. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Everything else is in Advanced."
