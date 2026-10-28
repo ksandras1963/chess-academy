@@ -905,7 +905,7 @@
             "name": "Jobava London System",
             "eco": "D01",
             "moves": "1. d4 d5 2. Nc3 Nf6 3. Bf4",
-            "summary": "White plays the London bishop move, Bf4, but puts the knight on c3 instead of the pawn. Sharper than the London, with Nb5 and h4 as its weapons.",
+            "summary": "White brings the dark-squared bishop out to f4, as in the London, but puts the queen's knight on c3, in front of the c-pawn. It is sharper than the London: the knight can jump to b5, and the h-pawn can march up the board.",
             "puzzles": "content/jobava-london-puzzles.pgn",
             "furtherStudy": [
                 {
@@ -938,10 +938,10 @@
                     "id": "jobava-london",
                     "side": "both",
                     "file": "content/jobava-london.pgn",
-                    "repertoire": "As White: Nb5 against 3...e6, Bd3 against ...Bf5, h4 against ...g6. As Black: 3...e6 and ...Bb4.",
-                    "summary": "1.d4 d5 2.Nc3 Nf6 3.Bf4, or 1.d4 Nf6 2.Nc3 d5 3.Bf4: the London bishop, with the knight on c3.",
+                    "repertoire": "As White: a quick knight jump to b5, a bishop trade on d3, and an h-pawn attack against a fianchetto. As Black: a pawn on e6 and the bishop on b4.",
+                    "summary": "The London bishop on f4, with the queen's knight on c3. White gets there whether Black starts with the d-pawn or the king's knight.",
                     "why": {
-                        "text": "As White, you play the same first moves against 1...d5 and 1...Nf6: d4, Nc3 and Bf4. The knight on c3 makes the system sharper than the ordinary London. It can jump to b5 and hit c7 as early as move 4, so Black has to answer threats from the start.\n\nAs Black, 3...e6 with ...Bb4 and ...c5 needs little theory. Stockfish rates Black equal or slightly better in this course's main lines, and ...Bb4 is Black's best-scoring answer at club level to White's two most common fourth moves."
+                        "text": "As White, you play the same first three moves whether Black starts with the d-pawn or the king's knight: the d-pawn two squares forward, the queen's knight to c3 and the dark-squared bishop to f4. The knight on c3 makes the system sharper than the ordinary London. It can jump to b5 and hit c7 as early as move 4, so Black has to answer threats from the start.\n\nAs Black, the plan needs little theory: a pawn on e6, the bishop on b4, and the c-pawn forward to hit White's center. Stockfish rates Black equal or slightly better in this course's main lines, and the bishop move to b4 is Black's best-scoring answer at club level to White's two most common fourth moves."
                     },
                     "table": {
                         "columns": [
