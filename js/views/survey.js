@@ -63,6 +63,25 @@ function courseOps(cat, ids) {
     return String(ids || "").split(/\s+/).filter(Boolean).map(id => cat.openings.find(o => o.id === id)).filter(Boolean)
 }
 
+/**
+ * A chapter's openings: its [Course], and for a [Page] chapter also the "course" of the page it opens.
+ * The Indian Defenses chapter on the 1.d4 page has no [Course] (the King's Indian has its own card),
+ * but its page lists the King's Indian, Nimzo-Indian and Grünfeld courses.
+ */
+function chapterOps(cat, ch) {
+    const page = ch.headers.Page && (cat.surveys || []).find(x => x.id === ch.headers.Page)
+    return [...new Set(courseOps(cat, [ch.headers.Course, page && page.course].join(" ")))]
+}
+
+const isBuilt = op => op.courses.some(m => m.available)
+
+/** "the Nimzo-Indian Defense and Grünfeld Defense courses are": openings in a sentence. */
+function courseNames(ops) {
+    const names = ops.map(op => op.name)
+    const list = names.length < 3 ? names.join(" and ") : `${names.slice(0, -1).join(", ")} and ${names.at(-1)}`
+    return `the ${list} ${names.length > 1 ? "courses are" : "course is"}`
+}
+
 /** "Slav Defense Course" for a course that teaches both sides, else "Italian Game Course for White". */
 const courseTitle = (op, m) => m.side === "both" ? `${op.name} Course` : `${op.name} Course for ${m.side === "white" ? "White" : "Black"}`
 
@@ -122,7 +141,8 @@ function courseLinks(cat, s, ch, lessons, spelled = new Set()) {
                 figText(spellOut(lessons[side].title, spelled)))))
     }
     // A family with its own page (the Queen's Gambit on the 1.d4 page) links to that page, which lists its courses.
-    if (ch.headers.Page && ops.length > 1 && ops.some(op => op.courses.some(m => m.available))) {
+    const family = chapterOps(cat, ch)
+    if (ch.headers.Page && family.length > 1 && family.some(isBuilt)) {
         return h("a", { class: "course-link", href: `#/survey/${ch.headers.Page}`, title: "Its courses are listed on its page" },
             h("span", { class: "side-chip both", "aria-hidden": "true" }), `${ch.title} Course`)
     }
@@ -141,12 +161,12 @@ function courseLinks(cat, s, ch, lessons, spelled = new Set()) {
  * With lesson links on the page, a second sentence tells the two kinds of link apart.
  */
 function courseBox(cat, s, hasLessons) {
-    // A [Page] chapter whose [Course] lists several openings (the Queen's Gambit on the 1.d4 page) is one
-    // link, to its own page, which lists those courses.
-    const families = s.chapters.filter(ch => ch.headers.Page && courseOps(cat, ch.headers.Course).length > 1)
-    const inFamily = new Set(families.flatMap(ch => courseOps(cat, ch.headers.Course)))
+    // A [Page] chapter with several openings (the Queen's Gambit and the Indian Defenses on the 1.d4 page)
+    // is one link, to its own page, which lists those courses.
+    const families = s.chapters.filter(ch => ch.headers.Page && chapterOps(cat, ch).length > 1)
+    const inFamily = new Set(families.flatMap(ch => chapterOps(cat, ch)))
     const ids = [s.course, ...s.chapters.flatMap(ch => [ch.headers.Course, ch.headers.WhiteCourse, ch.headers.BlackCourse])].join(" ")
-    const ops = [...new Set(courseOps(cat, ids))].filter(op => !inFamily.has(op) && op.courses.some(m => m.available))
+    const ops = [...new Set(courseOps(cat, ids))].filter(op => !inFamily.has(op) && isBuilt(op))
     const built = op => op.courses.filter(m => m.available)
     const groups = [
         ...families.map(ch => [{ href: `#/survey/${ch.headers.Page}`, text: `${ch.title} Course`, side: "both", tip: "Its courses are listed on its page" }]),
@@ -156,12 +176,23 @@ function courseBox(cat, s, hasLessons) {
     const bothSides = groups.every(g => g.every(it => it.side === "both"))
     const one = ops.length === 1 && !families.length ? ops[0] : null
     const plural = !one || built(one).length > 1
+    // Courses not written yet: the page's own ("The Nimzo-Indian Defense and Grünfeld Defense courses are
+    // coming soon."), and a family's, named with its page ("On the Indian Defenses page, ...").
+    const upper = text => text[0].toUpperCase() + text.slice(1)
+    const soon = courseOps(cat, s.course).filter(op => !isBuilt(op))
+    const coming = [
+        ...families.map(ch => {
+            const all = chapterOps(cat, ch), later = all.filter(op => !isBuilt(op)), ready = all.filter(isBuilt)
+            return later.length ? ` On the ${ch.title} page, ${ready.length ? `${courseNames(ready)} ready; ` : ""}${courseNames(later)} coming soon.` : ""
+        }),
+        soon.length ? ` ${upper(courseNames(soon))} coming soon.` : ""]
     return h("section", { class: "course-box" },
         h("h2", {}, one ? `The full ${one.name} course${plural ? "s" : ""}` : "The full courses"),
         h("p", {}, [
             one ? `${plural ? "These links open" : "This link opens"} the full ${built(one).map(m => courseTitle(one, m)).join(" and the ")}.`
                 : "These links open the full courses for the openings on this page.",
             bothSides ? (groups.flat().length > 1 ? " Each course teaches both sides, with a drill for each." : " The course teaches both sides, with a drill for each.") : "",
+            ...coming,
             hasLessons ? " The links under each variation below open only the lesson on that variation." : ""].join("")),
         boxRows(groups).map(row => h("div", { class: "course-box-links" }, row.map(it => h("a", { class: "btn course-box-link", href: it.href, title: it.tip },
             h("span", { class: `side-chip ${it.side}`, "aria-hidden": "true" }), it.text, h("span", { "aria-hidden": "true" }, "›"))))))
@@ -382,8 +413,8 @@ export async function surveyView(root, ctx, id) {
                 diagrams.push({ el, node, fen: ch.root.fen })
                 const paths = chapterPaths(ch)
                 const page = pageOf(ch)
-                // A compact page lists only built courses; "coming later" on every card would be noise.
-                const courses = s.compact && !courseOps(cat, ch.headers.Course).some(op => op.courses.some(m => m.available))
+                // A compact page lists only built and planned courses ("coming soon"); "coming later" on every card would be noise.
+                const courses = s.compact && !chapterOps(cat, ch).length
                     ? null : courseLinks(cat, s, ch, lessons.get(ch), spelled)
                 const card = h("section", { class: `chapter survey-chapter${s.compact ? " is-compact" : ""}` },
                     h("a", { class: "chapter-board", href: page ? `#/survey/${page.id}` : lineHref(s, ch, 0), title: page ? page.name : "Watch the moves" }, el,

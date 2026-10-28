@@ -24,6 +24,7 @@ Black: Let White have the center, fianchetto your bishop and castle. Then strike
 [Opening "Nimzo-Indian Defense"]
 [ECO "E20"]
 [Diagram "4...O-O"]
+[Course "nimzo-indian"]
 
 {White: 4.Qc2 lets you take back on c3 with the queen, so you avoid doubled pawns. Then a3 wins the bishop pair and e4 takes the center. Your two bishops pay off once the position opens.
 
@@ -36,6 +37,7 @@ Black: Pin the c3 knight so White can't play e4. Give up the bishop for the knig
 [Opening "Grünfeld Defense"]
 [ECO "D80"]
 [Diagram "4...Nxd5"]
+[Course "grunfeld"]
 
 {White: Take the whole center with e4, usually after 5.e4 Nxc3 6.bxc3, then back it up with Nf3, Be3 or Bc4. A center that holds cramps Black and supports an attack.
 
