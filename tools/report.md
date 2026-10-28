@@ -1,12 +1,12 @@
 # Content validation report
 
-Generated 2026-10-28 23:10 · engine Stockfish, depth 18
+Generated 2026-10-28 23:42 · engine Stockfish, depth 18
 
 **No errors.**
 
 ## Italian Game — both sides (`italian`)
 
-49 chapters, 78 drillable lines (basic 27, traps 28, advanced 23), 700 learner moves.
+58 chapters, 78 drillable lines (basic 8, traps 28, advanced 42), 700 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -16,18 +16,27 @@ Generated 2026-10-28 23:10 · engine Stockfish, depth 18
 | Two Knights: 3...Nf6 | 3...Nf6 | Italian Game: Two Knights Defense, Modern Bishop's Opening | C55 | ok |
 | Castling first: 4.O-O | 4.O-O | Italian Game: Giuoco Piano | C50 | ok |
 | Center attack: 5.d4 | 5.d4 | Italian Game: Classical Variation, Center Attack | C54 | ok |
-| Main line: 4.c3 Nf6 5.d3 | 5.d3 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Quiet Variation: 4.d3 | 4.d3 | Italian Game: Giuoco Pianissimo | C50 | ok |
+| Main line: 4.c3 Nf6 5.d3 | 5.d3 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Evans Gambit: 4.b4 | 4.b4 | Italian Game: Evans Gambit | C51 | ok |
 | Italian Four Knights: 4.Nc3 | 4.Nc3 | Italian Game: Giuoco Piano | C50 | ok |
+| Two Knights: 4...Bc5 and 4...h6 | 4...Bc5 | Italian Game: Two Knights Defense, Modern Bishop's Opening | C55 | ok |
 | Other third moves: 3...Be7 and 3...h6 | 3...Be7 | Italian Game: Hungarian Defense | C50 | ok |
+| Giuoco Piano: 4...d6 | 4...d6 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
+| Giuoco Piano: 5...O-O | 5...O-O | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
+| Castling first: White's fifth moves | 5.c3 | Italian Game: Giuoco Piano | C50 | ok |
 | Pianissimo: White's sixth moves | 6.h3 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Pianissimo: 6...a6 and 6...Bg4 | 6...Bg4 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Pianissimo: 7...Ng4 | 7...Ng4 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
+| Quiet Variation: White's fifth moves | 5.c3 | Italian Game: Giuoco Pianissimo | C50 | ok |
 | Center attack: 7.Nc3 and 6.e5 | 7.Nc3 | Italian Game: Classical Variation, Center Attack | C54 | ok |
 | Paris Defense: 3...d6 | 3...d6 | Italian Game: Paris Defense | C50 | ok |
+| Rosentreter Gambit: 4.d4 | 4.d4 | Italian Game: Rosentreter Gambit | C50 | ok |
 | Rousseau Gambit: 3...f5 | 3...f5 | Italian Game: Rousseau Gambit | C50 | ok |
+| Italian Four Knights: 5.O-O | 5.O-O | Four Knights Game: Italian Variation | C50 | ok |
+| Classical: 4.c3 Nf6 5.O-O | 5.O-O | Italian Game: Classical Variation | C54 | ok |
 | Evans Gambit: 6.O-O | 6.O-O | Italian Game: Evans Gambit, Lasker Defense | C52 | ok |
+| Canal Variation: 6.Bg5 | 6.Bg5 | Italian Game: Giuoco Pianissimo, Canal Variation | C50 | ok |
 | Trap: the Blackburne Shilling Gambit | 3...Nd4 | Italian Game: Blackburne-Kostić Gambit | C50 | ok |
 | Trap: 4...h6 and the b-pawn push | 4...h6 | Italian Game: Classical Variation | C53 | ok |
 | Trap: the early ...d5 and Qb3 | 5...d5 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
@@ -39,14 +48,15 @@ Generated 2026-10-28 23:10 · engine Stockfish, depth 18
 
 ### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
 
-None.
+| Line | Move | Engine prefers | Loss |
+|---|---|---|---|
+| Pianissimo: White's sixth moves (5.O-O) | 5...d6 | Nxe4 | 0.71 |
 
 ### Learner moves flagged but accepted with `[%engine ok]`
 
 | Line | Move | Engine prefers | Loss |
 |---|---|---|---|
-| Castling first: 4.O-O (5.c3) | 5...d6 | Nxe4 | 0.78 |
-| Main line: 4.c3 Nf6 5.d3 (5.O-O) | 5...d6 | Nxe4 | 0.71 |
+| Castling first: White's fifth moves (Main line) | 5...d6 | Nxe4 | 0.78 |
 | Center attack: 7.Nc3 and 6.e5 (Main line) | 13...h6 | O-O | 0.77 |
 
 ### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
@@ -58,34 +68,25 @@ None.
 | Line | Eval | Deepest named position |
 |---|---|---|
 | Main line: 3...Bc5 (Main line) | 0.16 | C54 Italian Game: Classical Variation, Giuoco Pianissimo, Main Line |
-| Main line: 3...Bc5 (5...O-O) | 0.33 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
-| Main line: 3...Bc5 (4...d6) | 0.13 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Two Knights: 3...Nf6 (Main line) | 0.09 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
-| Two Knights: 3...Nf6 (4...Bc5) | 0.17 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
-| Two Knights: 3...Nf6 (4...h6) | 0.00 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
 | Castling first: 4.O-O (Main line) | -0.28 | C50 Italian Game: Giuoco Piano |
-| Castling first: 4.O-O (5.c3) | -0.15 | C50 Italian Game: Classical Variation, Albin Gambit |
-| Castling first: 4.O-O (5.d4) | 0.40 | C50 Italian Game: Deutz Gambit |
-| Castling first: 4.O-O (5.d4 … 7.Bg5) | 0.20 | C50 Italian Game: Deutz Gambit |
-| Castling first: 4.O-O (5.Re1) | -0.22 | C50 Italian Game: Giuoco Piano |
-| Castling first: 4.O-O (5.Re1 … 6.h3) | -0.05 | C50 Italian Game: Giuoco Piano |
-| Castling first: 4.O-O (5.Nc3) | -0.16 | C50 Italian Game: Giuoco Piano |
 | Center attack: 5.d4 (Main line) | -0.26 | C54 Italian Game: Classical Variation, Greco Gambit, Traditional Line |
-| Center attack: 5.d4 (4.d4) | 0.37 | C50 Italian Game: Rosentreter Gambit |
-| Main line: 4.c3 Nf6 5.d3 (Main line) | -0.03 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
-| Main line: 4.c3 Nf6 5.d3 (5.O-O) | -0.19 | C50 Italian Game: Classical Variation, Albin Gambit |
 | Quiet Variation: 4.d3 (Main line) | -0.14 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
-| Quiet Variation: 4.d3 (5.c3) | -0.20 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
-| Quiet Variation: 4.d3 (5.Bg5) | 0.28 | C50 Italian Game: Giuoco Pianissimo, Normal |
-| Quiet Variation: 4.d3 (5.Nc3) | -0.11 | C50 Italian Game: Giuoco Pianissimo, Italian Four Knights Variation |
-| Quiet Variation: 4.d3 (5.Ng5) | 0.40 | C50 Italian Game: Giuoco Pianissimo, Normal |
+| Main line: 4.c3 Nf6 5.d3 (Main line) | -0.03 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Evans Gambit: 4.b4 (Main line) | 0.04 | C52 Italian Game: Evans Gambit, Mieses Defense |
 | Italian Four Knights: 4.Nc3 (Main line) | -0.17 | C50 Italian Game: Giuoco Pianissimo, Italian Four Knights Variation |
-| Italian Four Knights: 4.Nc3 (6.Bg5) | 0.22 | C50 Italian Game: Giuoco Pianissimo, Canal Variation |
-| Italian Four Knights: 4.Nc3 (6.Bg5 … 7.Bxf6) | -0.14 | C50 Italian Game: Giuoco Pianissimo, Canal Variation |
-| Italian Four Knights: 4.Nc3 (5.O-O) | -0.16 | C50 Four Knights Game: Italian Variation |
+| Two Knights: 4...Bc5 and 4...h6 (Main line) | 0.17 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
+| Two Knights: 4...Bc5 and 4...h6 (4...h6) | 0.00 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
 | Other third moves: 3...Be7 and 3...h6 (Main line) | 0.22 | C55 Italian Game: Two Knights Defense, Modern Bishop's Opening |
 | Other third moves: 3...Be7 and 3...h6 (3...h6) | 0.00 | C50 Italian Game: Anti-Fried Liver Defense |
+| Giuoco Piano: 4...d6 (Main line) | 0.13 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
+| Giuoco Piano: 5...O-O (Main line) | 0.33 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
+| Castling first: White's fifth moves (Main line) | -0.15 | C50 Italian Game: Classical Variation, Albin Gambit |
+| Castling first: White's fifth moves (5.d4) | 0.40 | C50 Italian Game: Deutz Gambit |
+| Castling first: White's fifth moves (5.d4 … 7.Bg5) | 0.20 | C50 Italian Game: Deutz Gambit |
+| Castling first: White's fifth moves (5.Re1) | -0.22 | C50 Italian Game: Giuoco Piano |
+| Castling first: White's fifth moves (5.Re1 … 6.h3) | -0.05 | C50 Italian Game: Giuoco Piano |
+| Castling first: White's fifth moves (5.Nc3) | -0.16 | C50 Italian Game: Giuoco Piano |
 | Pianissimo: White's sixth moves (Main line) | -0.15 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Pianissimo: White's sixth moves (6.Nbd2) | -0.20 | C54 Italian Game: Classical Variation, Giuoco Pianissimo, with a6 |
 | Pianissimo: White's sixth moves (6.b4) | 0.00 | C54 Italian Game: Classical Variation, Giuoco Pianissimo, Albin Variation |
@@ -98,15 +99,24 @@ None.
 | Pianissimo: 6...a6 and 6...Bg4 (13...Re8) | 5.28 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Pianissimo: 6...a6 and 6...Bg4 (6...a6) | 0.13 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
 | Pianissimo: 7...Ng4 (Main line) | 0.37 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
+| Quiet Variation: White's fifth moves (Main line) | -0.20 | C54 Italian Game: Classical Variation, Giuoco Pianissimo |
+| Quiet Variation: White's fifth moves (5.Bg5) | 0.28 | C50 Italian Game: Giuoco Pianissimo, Normal |
+| Quiet Variation: White's fifth moves (5.Nc3) | -0.11 | C50 Italian Game: Giuoco Pianissimo, Italian Four Knights Variation |
+| Quiet Variation: White's fifth moves (5.Ng5) | 0.40 | C50 Italian Game: Giuoco Pianissimo, Normal |
 | Center attack: 7.Nc3 and 6.e5 (Main line) | 0.26 | C54 Italian Game: Classical Variation, Greco Gambit, Moeller-Therkatz Attack |
 | Center attack: 7.Nc3 and 6.e5 (9.bxc3) | 0.55 | C54 Italian Game: Classical Variation, Greco Gambit, Main Line |
 | Center attack: 7.Nc3 and 6.e5 (6.e5) | -0.30 | C54 Italian Game: Classical Variation, Greco Gambit, Anderssen Variation |
 | Paris Defense: 3...d6 (Main line) | 1.24 | C50 Italian Game: Paris Defense |
 | Paris Defense: 3...d6 (6...Nxd5) | 3.55 | C50 Italian Game: Paris Defense |
 | Paris Defense: 3...d6 (4...Be7) | 0.43 | C50 Italian Game: Paris Defense |
+| Rosentreter Gambit: 4.d4 (Main line) | 0.37 | C50 Italian Game: Rosentreter Gambit |
 | Rousseau Gambit: 3...f5 (Main line) | 1.00 | C50 Italian Game: Rousseau Gambit |
 | Rousseau Gambit: 3...f5 (4...fxe4) | 1.35 | C50 Italian Game: Rousseau Gambit |
+| Italian Four Knights: 5.O-O (Main line) | -0.16 | C50 Four Knights Game: Italian Variation |
+| Classical: 4.c3 Nf6 5.O-O (Main line) | -0.19 | C50 Italian Game: Classical Variation, Albin Gambit |
 | Evans Gambit: 6.O-O (Main line) | -0.03 | C52 Italian Game: Evans Gambit, Lasker Defense |
+| Canal Variation: 6.Bg5 (Main line) | 0.22 | C50 Italian Game: Giuoco Pianissimo, Canal Variation |
+| Canal Variation: 6.Bg5 (7.Bxf6) | -0.14 | C50 Italian Game: Giuoco Pianissimo, Canal Variation |
 | Trap: the Blackburne Shilling Gambit (Main line) | 4.24 | C50 Italian Game: Blackburne-Kostić Gambit |
 | Trap: the Blackburne Shilling Gambit (7...Kf8) | 4.25 | C50 Italian Game: Blackburne-Kostić Gambit |
 | Trap: the Blackburne Shilling Gambit (5...Nf6) | 1.20 | C50 Italian Game: Blackburne-Kostić Gambit |
@@ -763,7 +773,7 @@ None.
 
 ## Ruy Lopez — both sides (`ruy-lopez`)
 
-57 chapters, 90 drillable lines (basic 24, traps 10, advanced 56), 784 learner moves.
+62 chapters, 91 drillable lines (basic 10, traps 10, advanced 71), 805 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -786,19 +796,24 @@ None.
 | Trap, Anti-Berlin Variation: 6.Nxe5? Qd4! | 6.Nxe5 | Ruy Lopez: Berlin Defense, Anti-Berlin Variation | C65 | ok |
 | Trap, Classical Variation: 4...d6? 5.d4! | 4...d6 | Ruy Lopez: Classical Variation, Central Variation | C64 | ok |
 | Morphy Defense: 4...b5 5.Bb3 | 4...b5 | Ruy Lopez: Morphy Defense, Caro Variation | C70 | ok |
+| Anderssen Variation: Black's other fifth moves | 5...Bc5 | Ruy Lopez: Morphy Defense, Anderssen Variation | C77 | ok |
 | Anderssen Variation: Black's sixth moves | 6...Bc5 | Ruy Lopez: Morphy Defense, Anderssen Variation | C77 | ok |
 | Modern Steinitz Defense: 4...d6 5.c3 | 4...d6 | Ruy Lopez: Morphy Defense, Modern Steinitz Defense | C74 | ok |
 | Classical Defense Deferred: 4...Bc5 5.c3 | 4...Bc5 | Ruy Lopez: Morphy Defense, Classical Defense Deferred | C70 | ok |
+| Steinitz Defense: Black's other fourth moves | 4...Bd7 | Ruy Lopez: Steinitz Defense | C62 | ok |
+| Anti-Berlin Variation: 5.O-O | 5.O-O | Ruy Lopez: Berlin Defense, Anti-Berlin Variation | C65 | ok |
 | Anti-Berlin Variation: White's other fifth moves | 5.Bxc6 | Ruy Lopez: Berlin Defense, Anti-Berlin Variation | C65 | ok |
-| Anti-Berlin Variation: 5.O-O d6, White's sixth moves | 6.h3 | Ruy Lopez: Berlin Defense, Anti-Berlin Variation | C65 | ok |
-| Anti-Berlin Variation: Black's other fourth moves | 4...Ne7 | Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Variation | C65 | ok |
+| Anti-Berlin Variation: Black's other fourth moves | 4...d6 | Ruy Lopez: Berlin Defense, Anti-Berlin Variation | C65 | ok |
+| Anti-Berlin Variation: 5...d6 | 5...d6 | Ruy Lopez: Berlin Defense, Anti-Berlin Variation | C65 | ok |
 | Berlin Defense, 4.O-O Nxe4: White's other fifth moves | 5.Bxc6 | Ruy Lopez: Berlin Defense, Rio Gambit Accepted | C67 | ok |
 | Berlin Defense, 5.Re1: White's other moves | 7.Rxe5+ | Ruy Lopez: Berlin Defense, Rio Gambit Accepted | C67 | ok |
 | Berlin Defense, 5.Re1: 6.Nxe5, White's seventh moves | 7.Nxc6 | Ruy Lopez: Berlin Defense, Rio Gambit Accepted | C67 | ok |
 | Berlin Endgame: White's ninth moves | 9.Bg5+ | Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense | C67 | ok |
 | Berlin Endgame: White's other sixth moves | 6.dxe5 | Ruy Lopez: Berlin Defense, l'Hermet Variation | C67 | ok |
+| Berlin Defense, 4.Bxc6: White's other fifth moves | 5.O-O | Ruy Lopez: Berlin Defense | C65 | ok |
+| Spanish Four Knights: White's other fifth moves | 5.d3 | Four Knights Game: Spanish Variation, Double Spanish | C49 | ok |
 | Berlin Defense: White's other fourth moves | 4.d4 | Ruy Lopez: Berlin Defense, Nyholm Attack | C65 | ok |
-| Classical Variation: Black's other fourth moves | 4...Qf6 | Ruy Lopez: Classical Variation, Central Variation | C64 | ok |
+| Classical Variation: Black's other fourth moves | 4...a6 | Ruy Lopez: Classical Variation | C64 | ok |
 | Bird Variation: 3...Nd4 | 3...Nd4 | Ruy Lopez: Bird Variation | C61 | ok |
 | Cozio Defense: 3...Nge7 | 3...Nge7 | Ruy Lopez: Cozio Defense | C60 | ok |
 | Schliemann Defense: 3...f5 | 3...f5 | Ruy Lopez: Schliemann Defense | C63 | ok |
@@ -817,29 +832,15 @@ None.
 | Line | Eval | Deepest named position |
 |---|---|---|
 | Anderssen Variation: 4...Nf6 5.d3 (Main line) | 0.39 | C90 Ruy Lopez: Closed, Pilnik Variation |
-| Anderssen Variation: 4...Nf6 5.d3 (5...Bc5) | 0.23 | C77 Ruy Lopez: Morphy Defense, Anderssen Variation |
-| Anderssen Variation: 4...Nf6 5.d3 (5...d6) | 0.39 | C77 Ruy Lopez: Morphy Defense, Anderssen Variation |
 | Steinitz Defense: 3...d6 (Main line) | 0.71 | C62 Ruy Lopez: Steinitz Defense |
-| Steinitz Defense: 3...d6 (4...Bd7) | 0.45 | C66 Ruy Lopez: Berlin Defense, Hedgehog Variation |
-| Steinitz Defense: 3...d6 (4...a6) | 1.66 | C62 Ruy Lopez: Steinitz Defense |
 | Berlin Defense, 5.Re1: 6.Bxc6 (Main line) | 0.29 | C67 Ruy Lopez: Berlin Defense, Rio Gambit Accepted |
 | Berlin Defense, 5.Re1: 6.Nxe5 (Main line) | -0.16 | C67 Ruy Lopez: Berlin Defense, Rio Gambit Accepted |
 | Berlin Endgame: 4.O-O Nxe4 5.d4 (Main line) | -0.29 | C67 Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense |
 | Anti-Berlin Variation: 4.d3 (Anti-Berlin Variation, as White) | 0.04 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
-| Anti-Berlin Variation: 4.d3 (5...d6, as White) | 0.20 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
-| Anti-Berlin Variation: 4.d3 (4...d6, as White) | 0.12 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
 | Anti-Berlin Variation: 4.d3 (Anti-Berlin Variation, as Black) | -0.04 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
-| Anti-Berlin Variation: 4.d3 (5.O-O, as Black) | -0.18 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
 | Berlin Defense: 4.Bxc6 (Main line) | 0.21 | C65 Ruy Lopez: Berlin Defense |
-| Berlin Defense: 4.Bxc6 (5.Nxe5) | 0.60 | C65 Ruy Lopez: Berlin Defense |
-| Berlin Defense: 4.Bxc6 (5.O-O) | 0.21 | C65 Ruy Lopez: Berlin Defense |
-| Berlin Defense: 4.Bxc6 (5.Nc3) | 0.14 | C65 Ruy Lopez: Berlin Defense |
 | Spanish Four Knights: 4.Nc3 (Main line) | -0.46 | C49 Four Knights Game: Spanish Variation, Symmetrical Variation, Metger Unpin |
-| Spanish Four Knights: 4.Nc3 (5.d3) | -0.13 | C49 Four Knights Game: Spanish Variation |
-| Spanish Four Knights: 4.Nc3 (5.Bxc6) | -0.01 | C49 Four Knights Game: Spanish Variation, Double Spanish |
 | Classical Variation: 3...Bc5 (Main line) | 0.22 | C64 Ruy Lopez: Classical Defense, Benelux Variation |
-| Classical Variation: 3...Bc5 (4...a6) | 0.72 | C64 Ruy Lopez: Classical Variation, Central Variation |
-| Classical Variation: 3...Bc5 (4...Nge7) | 1.10 | C64 Ruy Lopez: Classical Variation, Central Variation |
 | Trap, Anderssen Variation: 5...Be7? 6.Bxc6! (Main line) | 1.56 | C77 Ruy Lopez: Morphy Defense, Anderssen Variation |
 | Trap, Morphy Defense: 5...Nd4? 6.Nxd4! (Main line) | 2.25 | C70 Ruy Lopez: Morphy Defense, Caro Variation |
 | Trap, Steinitz Defense: 5...a6? 6.Bxc6! (Main line) | 1.98 | C62 Ruy Lopez: Steinitz Defense |
@@ -855,6 +856,8 @@ None.
 | Morphy Defense: 4...b5 5.Bb3 (5...Nf6) | 0.17 | C70 Ruy Lopez: Morphy Defense, Caro Variation |
 | Morphy Defense: 4...b5 5.Bb3 (5...d6) | 0.21 | C70 Ruy Lopez: Morphy Defense, Caro Variation |
 | Morphy Defense: 4...b5 5.Bb3 (5...Na5) | 0.67 | C70 Ruy Lopez: Morphy Defense, Norwegian Variation |
+| Anderssen Variation: Black's other fifth moves (Main line) | 0.23 | C77 Ruy Lopez: Morphy Defense, Anderssen Variation |
+| Anderssen Variation: Black's other fifth moves (5...d6) | 0.39 | C77 Ruy Lopez: Morphy Defense, Anderssen Variation |
 | Anderssen Variation: Black's sixth moves (Main line) | 0.02 | C77 Ruy Lopez: Morphy Defense, Anderssen Variation |
 | Anderssen Variation: Black's sixth moves (6...d6) | 0.21 | C77 Ruy Lopez: Morphy Defense, Anderssen Variation |
 | Anderssen Variation: Black's sixth moves (6...h6) | 0.28 | C77 Ruy Lopez: Morphy Defense, Anderssen Variation |
@@ -865,15 +868,21 @@ None.
 | Classical Defense Deferred: 4...Bc5 5.c3 (Main line) | 0.52 | C70 Ruy Lopez: Morphy Defense, Classical Defense Deferred |
 | Classical Defense Deferred: 4...Bc5 5.c3 (5...Nf6) | 0.72 | C70 Ruy Lopez: Morphy Defense, Classical Defense Deferred |
 | Classical Defense Deferred: 4...Bc5 5.c3 (5...d6) | 2.01 | C70 Ruy Lopez: Morphy Defense, Classical Defense Deferred |
+| Steinitz Defense: Black's other fourth moves (Main line) | 0.45 | C66 Ruy Lopez: Berlin Defense, Hedgehog Variation |
+| Steinitz Defense: Black's other fourth moves (4...a6) | 1.66 | C62 Ruy Lopez: Steinitz Defense |
+| Anti-Berlin Variation: 5.O-O (Main line) | -0.18 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
+| Anti-Berlin Variation: 5.O-O (6.h3) | -0.25 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
+| Anti-Berlin Variation: 5.O-O (6.Bg5) | -0.15 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
+| Anti-Berlin Variation: 5.O-O (6.Nc3) | -0.13 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
 | Anti-Berlin Variation: White's other fifth moves (Main line) | -0.02 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
 | Anti-Berlin Variation: White's other fifth moves (5.Bg5) | 0.13 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
 | Anti-Berlin Variation: White's other fifth moves (5.h3) | -0.25 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
 | Anti-Berlin Variation: White's other fifth moves (5.Be3) | 0.02 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Kaufmann Variation |
-| Anti-Berlin Variation: 5.O-O d6, White's sixth moves (Main line) | -0.25 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
-| Anti-Berlin Variation: 5.O-O d6, White's sixth moves (6.Bg5) | -0.15 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
-| Anti-Berlin Variation: 5.O-O d6, White's sixth moves (6.Nc3) | -0.13 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
-| Anti-Berlin Variation: Black's other fourth moves (Main line) | 0.34 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Variation |
-| Anti-Berlin Variation: Black's other fourth moves (4...Nd4) | 0.21 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
+| Anti-Berlin Variation: Black's other fourth moves (Main line) | 0.12 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
+| Anti-Berlin Variation: Black's other fourth moves (4...Ne7) | 0.34 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Variation |
+| Anti-Berlin Variation: Black's other fourth moves (4...Nd4) | 0.80 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
+| Anti-Berlin Variation: Black's other fourth moves (4...Nd4 … 7...cxb5) | 1.18 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
+| Anti-Berlin Variation: 5...d6 (Main line) | 0.20 | C65 Ruy Lopez: Berlin Defense, Anti-Berlin Variation |
 | Berlin Defense, 4.O-O Nxe4: White's other fifth moves (Main line) | 0.21 | C67 Ruy Lopez: Berlin Defense, Rio Gambit Accepted |
 | Berlin Defense, 4.O-O Nxe4: White's other fifth moves (5.Qe2) | 0.08 | C67 Ruy Lopez: Berlin Defense, Rio Gambit Accepted |
 | Berlin Defense, 5.Re1: White's other moves (Main line) | 0.30 | C67 Ruy Lopez: Berlin Defense, Rio Gambit Accepted |
@@ -887,10 +896,17 @@ None.
 | Berlin Endgame: White's ninth moves (9.h3) | -0.23 | C67 Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense |
 | Berlin Endgame: White's other sixth moves (Main line) | 0.00 | C67 Ruy Lopez: Open Berlin Defense, l'Hermet Variation |
 | Berlin Endgame: White's other sixth moves (6.Ba4) | 0.26 | C67 Ruy Lopez: Open Berlin Defense, Showalter Variation |
+| Berlin Defense, 4.Bxc6: White's other fifth moves (Main line) | 0.21 | C65 Ruy Lopez: Berlin Defense |
+| Berlin Defense, 4.Bxc6: White's other fifth moves (5.Nxe5) | 0.60 | C65 Ruy Lopez: Berlin Defense |
+| Berlin Defense, 4.Bxc6: White's other fifth moves (5.Nc3) | 0.14 | C65 Ruy Lopez: Berlin Defense |
+| Spanish Four Knights: White's other fifth moves (Main line) | -0.13 | C49 Four Knights Game: Spanish Variation |
+| Spanish Four Knights: White's other fifth moves (5.Bxc6) | -0.01 | C49 Four Knights Game: Spanish Variation, Double Spanish |
 | Berlin Defense: White's other fourth moves (Main line) | 0.11 | C65 Ruy Lopez: Berlin Defense, Nyholm Attack |
 | Berlin Defense: White's other fourth moves (4.Qe2) | 0.11 | C65 Ruy Lopez: Berlin Defense |
 | Berlin Defense: White's other fourth moves (4.c3) | 0.36 | C65 Ruy Lopez: Berlin Defense |
-| Classical Variation: Black's other fourth moves (Main line) | 1.38 | C64 Ruy Lopez: Classical Variation, Central Variation |
+| Classical Variation: Black's other fourth moves (Main line) | 0.90 | C64 Ruy Lopez: Classical Variation, Central Variation |
+| Classical Variation: Black's other fourth moves (4...Nge7) | 1.10 | C64 Ruy Lopez: Classical Variation, Central Variation |
+| Classical Variation: Black's other fourth moves (4...Qf6) | 1.38 | C64 Ruy Lopez: Classical Variation, Central Variation |
 | Classical Variation: Black's other fourth moves (4...Bb6) | 0.80 | C64 Ruy Lopez: Classical Variation, Charousek Variation |
 | Classical Variation: Black's other fourth moves (4...Qe7) | 0.95 | C64 Ruy Lopez: Classical Defense, Boden Variation |
 | Classical Variation: Black's other fourth moves (4...f5) | 0.60 | C64 Ruy Lopez: Classical Variation, Cordel Gambit |
@@ -1494,7 +1510,7 @@ None.
 
 ## Nimzo-Indian Defense — both sides (`nimzo-indian`)
 
-46 chapters, 71 drillable lines (basic 14, traps 9, advanced 48), 713 learner moves.
+47 chapters, 71 drillable lines (basic 10, traps 9, advanced 52), 713 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -1503,26 +1519,27 @@ None.
 | Classical, Keres Defense: 6...b6 | 4...O-O | Nimzo-Indian Defense: Classical Variation, Keres Defense | E32 | ok |
 | Classical, Noa Variation: 4...d5 | 4...d5 | Nimzo-Indian Defense: Classical Variation, Noa Variation | E35 | ok |
 | Classical, Berlin Variation: 4...c5 | 4...c5 | Nimzo-Indian Defense: Classical Variation, Berlin Variation | E38 | ok |
-| Classical: 4...b6 | 4...b6 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
 | Rubinstein, Gligorić System: 9...b6 | 4...O-O | Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation | E54 | ok |
 | Rubinstein, Hübner Variation: 4...c5 | 4...c5 | Nimzo-Indian Defense: Rubinstein System, Hübner Variation | E41 | ok |
 | Rubinstein, St. Petersburg Variation: 4...b6 | 4...b6 | Nimzo-Indian Defense: St. Petersburg Variation | E43 | ok |
 | Leningrad Variation: 4...c5 | 4...c5 | Nimzo-Indian Defense: Leningrad Variation | E30 | ok |
 | Bd2 Variation: 4...c5 | 4...c5 | Nimzo-Indian Defense | E20 | ok |
 | Three Knights Variation: 4...O-O | 4...O-O | Nimzo-Indian Defense: Three Knights Variation | E21 | ok |
-| Sämisch Variation: 5...c5 | 5...c5 | Nimzo-Indian Defense: Sämisch Variation | E24 | ok |
 | Classical, Keres Defense: 6...d5 and 6...Ne4 | 6...d5 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
 | Classical: White's fifth moves | 5.Nf3 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
 | Classical, Berlin Variation: 5...O-O, 5...Nc6 and 5...Na6 | 5...O-O | Nimzo-Indian Defense: Classical Variation, Berlin Variation, Pirc Variation | E39 | ok |
+| Classical: 4...b6 | 4...b6 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
 | Classical, other fourth moves: 4...Nc6 and 4...Bxc3+ | 4...Nc6 | Nimzo-Indian Defense: Classical Variation, Zurich Variation | E33 | ok |
 | Classical, Noa Variation: 5...Nxd5 and 5...Qxd5 | 5...Nxd5 | Nimzo-Indian Defense: Classical Variation, Noa Variation | E34 | ok |
-| Rubinstein, other fourth moves: 4...Bxc3+ and 4...Ne4 | 4...Bxc3+ | Nimzo-Indian Defense: Rubinstein System | E40 | ok |
+| Rubinstein, other fourth moves: 4...d5, 4...Bxc3+ and 4...Ne4 | 4...Bxc3+ | Nimzo-Indian Defense: Rubinstein System | E40 | ok |
 | Rubinstein, Normal Variation: 5...c5 and 5...b6 | 5...c5 | Nimzo-Indian Defense: Normal Variation | E47 | ok |
 | Rubinstein: White's fifth moves | 5.Nf3 | Nimzo-Indian Defense: Normal Variation, Ragozin Variation | E51 | ok |
+| Rubinstein, Gligorić System: 9...b6 | 4...O-O | Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation | E54 | ok |
 | Rubinstein, Gligorić System: 7...Nc6, 8...Nc6 and 9...Nc6 | 7...Nc6 | Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense | E56 | ok |
 | Leningrad: White's fifth moves | 5.a3 | Nimzo-Indian Defense: Leningrad Variation | E30 | ok |
 | Bd2 Variation: White's fifth moves | 5.a3 | Nimzo-Indian Defense | E20 | ok |
 | Three Knights: White's fifth moves | 5.e3 | Nimzo-Indian Defense: Three Knights Variation | E21 | ok |
+| Sämisch Variation: 5...c5 | 5...c5 | Nimzo-Indian Defense: Sämisch Variation | E24 | ok |
 | Sämisch: White's sixth moves | 6.e3 | Nimzo-Indian Defense: Sämisch Variation, O'Kelly Variation | E26 | ok |
 | Kmoch Variation: 4.f3 | 4.f3 | Nimzo-Indian Defense: Kmoch Variation | E20 | ok |
 | Spielmann Variation: 4.Qb3 | 4.Qb3 | Nimzo-Indian Defense: Spielmann Variation, Romanovsky Gambit | E23 | ok |
@@ -1547,16 +1564,12 @@ None.
 | Classical, Keres Defense: 6...b6 (Keres Defense, as Black) | 0.00 | E32 Nimzo-Indian Defense: Classical Variation, Keres Defense |
 | Classical, Noa Variation: 4...d5 (Main line) | 0.46 | E35 Nimzo-Indian Defense: Classical Variation, Noa Variation |
 | Classical, Berlin Variation: 4...c5 (Main line) | 0.27 | E38 Nimzo-Indian Defense: Classical Variation, Berlin Variation |
-| Classical: 4...b6 (Main line) | 1.75 | E32 Nimzo-Indian Defense: Classical Variation |
-| Rubinstein, Gligorić System: 9...b6 (Gligorić System, as White) | 0.12 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
-| Rubinstein, Gligorić System: 9...b6 (4...d5, as White) | 0.12 | E53 Nimzo-Indian Defense: Normal Variation, Gligoric System |
-| Rubinstein, Gligorić System: 9...b6 (Gligorić System, as Black) | -0.12 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
+| Rubinstein, Gligorić System: 9...b6 (Main line) | 0.12 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
 | Rubinstein, Hübner Variation: 4...c5 (Main line) | 0.00 | E41 Nimzo-Indian Defense: Rubinstein System, Hübner Variation |
 | Rubinstein, St. Petersburg Variation: 4...b6 (Main line) | 0.70 | E43 Nimzo-Indian Defense: St. Petersburg Variation |
 | Leningrad Variation: 4...c5 (Main line) | 0.36 | E30 Nimzo-Indian Defense: Leningrad Variation |
 | Bd2 Variation: 4...c5 (Main line) | 0.00 | E20 Nimzo-Indian Defense |
 | Three Knights Variation: 4...O-O (Main line) | -0.12 | E21 Nimzo-Indian Defense: Three Knights Variation |
-| Sämisch Variation: 5...c5 (Main line) | 0.48 | E24 Nimzo-Indian Defense: Sämisch Variation |
 | Classical, Keres Defense: 6...d5 and 6...Ne4 (Main line) | 0.67 | E32 Nimzo-Indian Defense: Classical Variation |
 | Classical, Keres Defense: 6...d5 and 6...Ne4 (7...dxc4) | 0.00 | E32 Nimzo-Indian Defense: Classical Variation |
 | Classical, Keres Defense: 6...d5 and 6...Ne4 (6...Ne4) | 0.75 | E32 Nimzo-Indian Defense: Classical Variation |
@@ -1566,13 +1579,15 @@ None.
 | Classical, Berlin Variation: 5...O-O, 5...Nc6 and 5...Na6 (Main line) | 0.52 | E39 Nimzo-Indian Defense: Classical Variation, Berlin Variation, Pirc Variation |
 | Classical, Berlin Variation: 5...O-O, 5...Nc6 and 5...Na6 (5...Nc6) | 0.28 | E38 Nimzo-Indian Defense: Classical Variation, Berlin Variation |
 | Classical, Berlin Variation: 5...O-O, 5...Nc6 and 5...Na6 (5...Na6) | 0.71 | E38 Nimzo-Indian Defense: Classical Variation, Berlin Variation |
+| Classical: 4...b6 (Main line) | 1.75 | E32 Nimzo-Indian Defense: Classical Variation |
 | Classical, other fourth moves: 4...Nc6 and 4...Bxc3+ (Main line) | 0.98 | E33 Nimzo-Indian Defense: Classical Variation, Zurich Variation |
 | Classical, other fourth moves: 4...Nc6 and 4...Bxc3+ (5...d6) | 0.49 | E33 Nimzo-Indian Defense: Classical Variation, Zurich Variation |
 | Classical, other fourth moves: 4...Nc6 and 4...Bxc3+ (4...Bxc3+) | 0.84 | E32 Nimzo-Indian Defense: Classical Variation |
 | Classical, Noa Variation: 5...Nxd5 and 5...Qxd5 (Main line) | 1.03 | E34 Nimzo-Indian Defense: Classical Variation, Noa Variation |
 | Classical, Noa Variation: 5...Nxd5 and 5...Qxd5 (5...Qxd5) | 0.12 | E34 Nimzo-Indian Defense: Classical Variation, Noa Variation |
-| Rubinstein, other fourth moves: 4...Bxc3+ and 4...Ne4 (Main line) | 1.52 | E40 Nimzo-Indian Defense: Rubinstein System |
-| Rubinstein, other fourth moves: 4...Bxc3+ and 4...Ne4 (4...Ne4) | 0.92 | E40 Nimzo-Indian Defense: Rubinstein System |
+| Rubinstein, other fourth moves: 4...d5, 4...Bxc3+ and 4...Ne4 (Main line) | 1.52 | E40 Nimzo-Indian Defense: Rubinstein System |
+| Rubinstein, other fourth moves: 4...d5, 4...Bxc3+ and 4...Ne4 (4...d5) | 0.12 | E53 Nimzo-Indian Defense: Normal Variation, Gligoric System |
+| Rubinstein, other fourth moves: 4...d5, 4...Bxc3+ and 4...Ne4 (4...Ne4) | 0.92 | E40 Nimzo-Indian Defense: Rubinstein System |
 | Rubinstein, Normal Variation: 5...c5 and 5...b6 (Main line) | 0.30 | E43 Nimzo-Indian Defense: St. Petersburg Variation |
 | Rubinstein, Normal Variation: 5...c5 and 5...b6 (6...d5) | 0.12 | E53 Nimzo-Indian Defense: Normal Variation, Gligoric System |
 | Rubinstein, Normal Variation: 5...c5 and 5...b6 (6...Nc6) | 0.35 | E56 Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense |
@@ -1582,6 +1597,7 @@ None.
 | Rubinstein: White's fifth moves (6.Bd3) | -0.12 | E53 Nimzo-Indian Defense: Normal Variation, Gligoric System |
 | Rubinstein: White's fifth moves (6.Bd2) | 0.00 | E51 Nimzo-Indian Defense: Normal Variation, Ragozin Variation |
 | Rubinstein: White's fifth moves (5.Ne2) | -0.10 | E46 Nimzo-Indian Defense: Reshevsky Variation |
+| Rubinstein, Gligorić System: 9...b6 (Main line) | -0.12 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
 | Rubinstein, Gligorić System: 7...Nc6, 8...Nc6 and 9...Nc6 (Main line) | 0.35 | E56 Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense |
 | Rubinstein, Gligorić System: 7...Nc6, 8...Nc6 and 9...Nc6 (7...dxc4) | 0.06 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
 | Rubinstein, Gligorić System: 7...Nc6, 8...Nc6 and 9...Nc6 (7...dxc4 … 8...cxd4) | 0.32 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
@@ -1597,6 +1613,7 @@ None.
 | Three Knights: White's fifth moves (5.Qc2) | 0.94 | E21 Nimzo-Indian Defense: Three Knights Variation |
 | Three Knights: White's fifth moves (5.a3) | 0.29 | E21 Nimzo-Indian Defense: Three Knights Variation |
 | Three Knights: White's fifth moves (5.g3) | 0.02 | E21 Nimzo-Indian Defense: Three Knights Variation |
+| Sämisch Variation: 5...c5 (Main line) | 0.48 | E24 Nimzo-Indian Defense: Sämisch Variation |
 | Sämisch: White's sixth moves (Main line) | 0.30 | E26 Nimzo-Indian Defense: Sämisch Variation, O'Kelly Variation |
 | Sämisch: White's sixth moves (6.Bg5) | 0.09 | E24 Nimzo-Indian Defense: Sämisch Variation |
 | Sämisch: White's sixth moves (6.d5) | 1.09 | E24 Nimzo-Indian Defense: Sämisch Variation |
@@ -1957,3 +1974,4 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 ## Lines with the same moves for both sides
 
 - jobava-london: white "Knight to b5: 4...Bd6 and 4...Bb4+" (4...Bb4+) has the same moves as black "Trap to avoid: 6...Bb6? 7.a5"; both are drilled
+- nimzo-indian: black "Rubinstein, Gligorić System: 9...b6" (Main line) has the same moves as white "Rubinstein, Gligorić System: 9...b6"; both are drilled

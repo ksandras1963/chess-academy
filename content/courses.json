@@ -1115,10 +1115,10 @@
                     "id": "nimzo-indian",
                     "side": "both",
                     "file": "content/nimzo-indian.pgn",
-                    "repertoire": "As White: the Classical (4.Qc2) and the Rubinstein (4.e3). As Black: castle against 4.Qc2, 4.e3 and 4.Nf3, and hit d4 with ...c5 against 4.Bg5, 4.Bd2 and 4.a3.",
-                    "summary": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4: Black pins the knight that supports e4.",
+                    "repertoire": "As White: the Classical Variation and the Rubinstein System. As Black: the main reply to each of White's most common fourth moves.",
+                    "summary": "Black's bishop pins White's queen's knight, which would otherwise support a big pawn center.",
                     "why": {
-                        "text": "As Black, the Nimzo-Indian develops two pieces and castles quickly, and the pin on c3 keeps White from building a big center with e4. Black chooses when to give the bishop for the knight, often in return for doubled c-pawns that last all game. The plans repeat from line to line, so there is less to memorize than in most main-line defenses.\n\nAs White, you choose the type of game. 4.Qc2 keeps the pawns whole and wins the two bishops after a3. 4.e3 develops quickly with Bd3, Nf3 and castling, and the same setup works against most of Black's replies."
+                        "text": "As Black, the Nimzo-Indian develops two pieces and castles quickly, and the pin keeps White from building a big pawn center. Black chooses when to give the bishop for the knight, often in return for doubled c-pawns that last all game. The plans repeat from line to line, so there is less to memorize than in most main-line defenses.\n\nAs White, you choose the type of game. The Classical Variation keeps the pawns whole and wins the two bishops. The Rubinstein System develops quickly and castles, and the same setup works against most of Black's replies."
                     },
                     "table": {
                         "columns": [
@@ -1143,13 +1143,8 @@
                                 "White: Develop smoothly and leave Black with a weak, isolated pawn.\nBlack: Develop fast and free the position with a central pawn break."
                             ],
                             [
-                                "Classical: 4...b6",
-                                "11% as White",
-                                "White: Take the whole center and use the two bishops.\nBlack: Give up a bishop for a knight and hold the center with pawns."
-                            ],
-                            [
                                 "Rubinstein, Gligorić System: 9...b6",
-                                "49% as White\n12% as Black",
+                                "49% as White",
                                 "White: Castle early and attack Black's king, using the isolated pawn as a spearhead.\nBlack: Stop the isolated pawn and leave White with weak pawns."
                             ],
                             [
@@ -1176,14 +1171,9 @@
                                 "Three Knights Variation: 4...O-O",
                                 "14% as Black",
                                 "White: Develop quickly and keep several setups open.\nBlack: Castle, strike in the center and leave White with an isolated pawn."
-                            ],
-                            [
-                                "Sämisch Variation: 5...c5",
-                                "11% as Black",
-                                "White: Win the two bishops and build a big pawn center.\nBlack: Fix White's doubled pawns, attack them and prevent the center from advancing."
                             ]
                         ],
-                        "note": "How often: the share of your Nimzo-Indian games that reach the line, from the side you play in it, counting all its move orders. As White, it is the share of your games with that fourth move (4.Qc2 or 4.e3). Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
+                        "note": "How often: the share of your Nimzo-Indian games that reach the line, from the side you play in it, counting all its move orders. As White, it is the share of your games in the Classical or the Rubinstein, whichever the line belongs to. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
                     }
                 }
             ]
