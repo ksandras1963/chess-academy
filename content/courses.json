@@ -900,24 +900,24 @@
                         ],
                         "rows": [
                             [
-                                "QGD setup: 2...Nf6 3.e3 e6 (or 2...e6 3.e3 Nf6)",
+                                "QGD setup: 5.Bg3",
                                 "9% as White\n20% as Black",
-                                "As White: keep the bishop with Bg3, castle, and meet ...e5 with dxe5. As Black: ...Bd6, castle, ...c5, ...Qc7 and ...Nbd7, then ...e5."
+                                "White's plans are to build the solid pawn triangle, keep the f4 bishop, and castle.\nBlack's plans are to castle, keep White's knight off e5, and break in the center with the e-pawn."
                             ],
                             [
-                                "King's Indian setup: 1...Nf6 2.Bf4 g6",
+                                "King's Indian setup: 5.h3 and 5.Be2",
                                 "9% as White\n14% as Black",
-                                "As White: e3, Nf3, h3 and Be2, then c3 and Qb3 against ...c5 and ...Qb6. As Black: against Be2 and h3, ...c5 and ...Qb6; against Bd3, ...Nc6 and ...e5."
+                                "White's plans are to develop calmly behind the pawn triangle and trade queens if Black attacks b2.\nBlack's plans are to put the bishop on g7, castle, hit d4 with the c-pawn, and use the open a- and c-files."
                             ],
                             [
-                                "Symmetrical: 2...Bf5 (or 2...Nf6 3.e3 Bf5)",
+                                "Symmetrical: 2...Bf5",
                                 "10% as White",
-                                "Play e3, c4 and Nc3, then Qb3 against b7."
+                                "White's plans are to attack d5 with the c-pawn and hit the weak b7 pawn with the queen.\nBlack's plans are to copy White's setup and prevent the queen from winning b7."
                             ],
                             [
                                 "King's Indian setup, Rapport-Jobava: 3.Nc3",
                                 "4% as Black",
-                                "Stop e4 with 3...d5, meet h4 with ...h5, then castle and hit the center with ...c5."
+                                "White's plans are to push the e-pawn to e4 or attack with the h-pawn.\nBlack's plans are to prevent e4 and the h-pawn attack, castle, and hit the center with the c-pawn."
                             ]
                         ],
                         "note": "How often: the share of your games that reach the line, from the side you play in it, counting every move order. As White, of your 1.d4 games; as Black, of your games with 1...d5 or 1...Nf6. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Everything else is in Advanced."
