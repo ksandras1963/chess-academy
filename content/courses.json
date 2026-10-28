@@ -267,32 +267,32 @@
                             [
                                 "Advance: 3.e5",
                                 "Your choice as White; 22% as Black",
-                                "Black hits d4 with ...c5, ...Nc6 and ...Qb6. Against 6.a3, Black locks the queenside with 6...c4 and later breaks with ...f6; White plays on the kingside."
+                                "White's plans are to gain space and attack on the kingside.\nBlack's plans are to attack White's center and play on the queenside."
                             ],
                             [
                                 "Exchange: 3.exd5 exd5",
                                 "Your choice as White; 30% as Black",
-                                "Symmetrical pawns and an open e-file. Black develops with ...Nc6, ...Bg4, ...Bd6 and ...Nge7 and castles short; White plays c3, castles and puts a rook on e1."
+                                "White's plans are to develop calmly, castle and use the open file.\nBlack's plans are to develop quickly, castle and keep the game equal."
                             ],
                             [
                                 "Winawer: 3.Nc3 Bb4",
                                 "19% as White, with 3.Nc3; your choice as Black",
-                                "After 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4 Qc7, White takes on g7 and h7 and Black takes the center pawns. Sharp for both sides; after 9...cxd4, 10.cxd4? Qc3+ forks White's king and rook."
+                                "White's plans are to win the two bishops and attack Black's king.\nBlack's plans are to damage White's pawns and counterattack in the center."
                             ],
                             [
                                 "Tarrasch: 3.Nd2",
                                 "Your choice as White; 6% as Black",
-                                "White supports d4 with c3. After 3...Nf6 4.e5 Nfd7, Black breaks with ...c5 and ...f6; after exf6 Nxf6, Black has the half-open f-file and a strong knight on e4, while White aims at e5."
+                                "White's plans are to keep a strong center and develop the knights.\nBlack's plans are to attack the center with pawns and open lines for the pieces."
                             ],
                             [
                                 "Steinitz: 3.Nc3 Nf6 4.e5",
                                 "28% as White, with 3.Nc3; your choice as Black",
-                                "White builds a big center with 4.e5 Nfd7 5.f4. Black hits d4 with ...c5 and ...Nc6, then plays ...a6, ...b5 and ...b4 on the queenside, and trades the c8 bishop with ...Ba6."
+                                "White's plans are to build a big pawn center and attack on the kingside.\nBlack's plans are to attack the center and gain space on the queenside."
                             ],
                             [
                                 "Rubinstein: 3.Nc3 dxe4",
                                 "16% as White, with 3.Nc3 or 3.Nd2; your choice as Black",
-                                "Black takes on e4 with the d-pawn, trades knights with ...Nd7 and ...Ngf6, then frees the game with ...c5. Solid for Black; White keeps a little more space."
+                                "White's plans are to develop quickly and keep a little more space.\nBlack's plans are to trade pieces and free the game with a pawn break."
                             ]
                         ],
                         "note": "How often: the share of your French games that reach the line, from the side that faces it, counting all its move orders; the side that chooses the line can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
