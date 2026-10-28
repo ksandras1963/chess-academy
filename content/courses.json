@@ -976,34 +976,34 @@
                         ],
                         "rows": [
                             [
-                                "Pin on c3: 4.e3 or 4.Nf3, then 4...Bb4",
+                                "Pin on c3: 4...Bb4",
                                 "60% as Black",
-                                "Pin the knight, then hit d4 with ...c5. If White plays a3, take on c3 and hit the doubled pawn with ...Qa5."
+                                "White's plans are to develop quietly, castle, and keep the queenside pawns healthy.\nBlack's plans are to pin the c3 knight, hit the center with the c-pawn, and prevent the knight from reaching b5."
                             ],
                             [
-                                "Check on b4: 4.Nb5 Bb4+",
+                                "Check on b4: 4...Bb4+",
                                 "24% as Black",
-                                "Check, then drop back to a5. Meet a4 with ...a6, never ...Bb6, and meet b4 with ...Nc6."
+                                "White's plans are to attack c7 with the knight and chase Black's bishop with the queenside pawns.\nBlack's plans are to check first, keep the bishop aimed at White's king, and prevent White's a-pawn from trapping it."
                             ],
                             [
-                                "Knight to b5: 3...e6 4.Nb5",
+                                "Knight to b5: 4.Nb5",
                                 "23% as White",
-                                "Jump to b5 at once. After 4...Na6 5.e3 c6 the knight goes back to c3; after 4...Bd6, take the bishop."
+                                "White's plans are to attack c7 with the knight and push Black's knight to the edge of the board.\nBlack's plans are to guard c7, chase the knight away, and bring the stray knight back to the center."
                             ],
                             [
                                 "Early bishop: 3...Bf5",
                                 "20% as White",
-                                "Play e3 and Bd3. If Black takes on d3, take back with the c-pawn; if the bishop drops back to g6, push h4."
+                                "White's plans are to trade off Black's active bishop, then use the open c-file and the queen against b7.\nBlack's plans are to develop the light-squared bishop early and keep a solid center."
                             ],
                             [
                                 "Guarding b5: 3...a6",
                                 "17% as White",
-                                "Play e3, Bd3 and Nf3. Offer the bishop trade against ...Bf5, and take on c5 against ...c5."
+                                "White's plans are to develop London style and trade off Black's bishop if it comes to f5.\nBlack's plans are to keep White's knight out of b5, then develop or hit the center with the c-pawn."
                             ],
                             [
                                 "Slav setup: 3...c6",
                                 "16% as White",
-                                "Play e3. Then Bd3 against ...Bf5, f3, g4 and h4 against ...Bg4, and h4 against ...g6."
+                                "White's plans are to develop quietly, trade off Black's light-squared bishop, and attack with the kingside pawns if it goes to g4.\nBlack's plans are to hold d5 with a solid pawn chain and bring the light-squared bishop out early."
                             ]
                         ],
                         "note": "How often: the share of your Jobava London games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -1064,22 +1064,22 @@
                             [
                                 "Fianchetto, Classical: 6...Nbd7",
                                 "18% as White\n5% as Black",
-                                "White: Fianchetto your bishop too, so your king stays safe, and take more of the center. Don't let Black's pieces settle on g4.\nBlack: Hit the center with the e-pawn and press on White's center pawns. Don't count on a kingside attack here: the fight is in the center."
+                                "White's plans are to fianchetto the bishop for a safe king, take more of the center, and keep Black's pieces off g4.\nBlack's plans are to hit the center with the e-pawn and press on White's center pawns."
                             ],
                             [
                                 "Fianchetto, Panno: 7...a6",
                                 "2% as White\n5% as Black",
-                                "White: Gain space in the center, and don't leave the c4 pawn loose: it is Black's target.\nBlack: Play on the queenside instead of in the center, and open lines there with the b-pawn and a rook on the b-file."
+                                "White's plans are to gain space in the center and guard the c4 pawn.\nBlack's plans are to play on the queenside and open lines against the c4 pawn."
                             ],
                             [
                                 "Four Pawns Attack, Main line: 6...c5",
                                 "20% as White\n6% as Black",
-                                "White: Build the widest center, keep it, and aim to push the e-pawn later. Finish developing before Black can hit the center.\nBlack: Don't wait: hit the center with the c-pawn at once. Then stop White's e-pawn from advancing and use your queenside pawns."
+                                "White's plans are to build a wide pawn center, finish developing, and push the e-pawn later.\nBlack's plans are to hit the center with the c-pawn at once and to prevent White's e-pawn from advancing."
                             ],
                             [
                                 "Mar del Plata, Main line: 9.Ne1",
                                 "21% as White\n3% as Black",
-                                "White: Close the center, hold the e4 pawn, and attack on the queenside to open the c-file.\nBlack: Free the f-pawn, push it, and attack on the kingside. Both sides race on opposite wings, so don't waste time."
+                                "White's plans are to close the center, hold e4, and attack on the queenside.\nBlack's plans are to free the f-pawn and attack on the kingside, in a race on opposite wings."
                             ],
                             [
                                 "Mar del Plata, Bayonet Attack: 9.b4",
@@ -1089,12 +1089,12 @@
                             [
                                 "Sämisch, Orthodox: 6...e5",
                                 "17% as White\n7% as Black",
-                                "White: The f-pawn guards e4. Close the center, and don't castle long once the c-file can open.\nBlack: Strike with the e-pawn, then open the c-file so castling long is risky for White. Then prepare the f-pawn push."
+                                "White's plans are to guard e4 with the f-pawn, close the center, and castle short.\nBlack's plans are to strike with the e-pawn and open the c-file, to make castling long risky for White."
                             ],
                             [
                                 "Sämisch Gambit: 6...c5",
                                 "6% as White\n7% as Black",
-                                "White: Keep the tension and finish developing: taking the pawn lets Black develop fast and equalize.\nBlack: Hit White's center with the c-pawn before White's attack starts. Then put a knight on a strong central square and expand on the queenside."
+                                "White's plans are to keep the tension and finish developing rather than take the pawn.\nBlack's plans are to hit the center with the c-pawn before White's attack starts, then expand on the queenside."
                             ]
                         ],
                         "note": "How often: the share of your King's Indian games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
