@@ -2,7 +2,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{The Queen's Gambit Accepted comes down to one rule for Black: take the pawn on c4, don't try to keep it, and use the time White spends winning it back to hit the center. Against most White moves that means ...e5 at once; against 3.Nf3, it means ...c5. Each board below shows one idea with the few moves that carry it out.}
+{The Queen's Gambit Accepted comes down to one rule for Black: take the pawn on c4, don't try to keep it, and use the time White spends winning it back to hit the center. Against most White moves that means the e-pawn push at once; against White's early king's knight, which stops it, it means the c-pawn push. Each board below shows one idea with the few moves that carry it out.}
 *
 
 [Chapter "Take the pawn, then hit back with ...e5"]
@@ -32,7 +32,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{Each board shows one plan with the few moves that carry it out. The first two come from the d5 chain (3.Nc3 e5 4.d5 and 3.e4 e5 4.d5, about a third of your games), where Black plays against White's king. Then come an early queen trade and the line 3.e4 e5 4.Nf3. The plans around White's isolated pawn are on the Pawn structures page.}
+{Each board shows one plan with the few moves that carry it out. The first two come from the d5 chain, where White pushes the d-pawn past Black's e-pawn (about a third of your games), and Black plays against White's king. Then come an early queen trade and the line where White develops the king's knight instead. The plans around White's isolated pawn are on the Pawn structures page.}
 *
 
 [Chapter "The d5 chain: take on e4"]
@@ -88,7 +88,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{An isolated pawn has no pawns of its own color on the files beside it, so only pieces can guard it. White gets one on d4 after 3.e3 e5 4.Bxc4 exd4 5.exd4, and after 3.Nc3 e5 4.e3: about one game in five. The first two boards show each side's plan with it, and the third shows the early queen trade after 4.dxe5. The d5 chain after 4.d5 is in Key ideas: Plans for both sides.}
+{An isolated pawn has no pawns of its own color on the files beside it, so only pieces can guard it. White gets one on d4 after the trades in the center of the Old Variation, which can also start with the queen's knight: about one game in five. The first two boards show each side's plan with it, and the third shows the early queen trade after White takes on e5. The d5 chain is in Key ideas: Plans for both sides.}
 *
 
 [Chapter "The isolated pawn: Black presses on d4"]

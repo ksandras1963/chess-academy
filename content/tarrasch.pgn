@@ -2,7 +2,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{The Tarrasch Defense is named after Siegbert Tarrasch, who held it to be the right answer to the Queen's Gambit. Boris Spassky played it in his 1969 world championship match, and Garry Kasparov in his Candidates matches of 1983 and 1984. The boards below show how 3...c5 frees Black's game, what it costs, and how other move orders reach it.}
+{The Tarrasch Defense is named after Siegbert Tarrasch, who held it to be the right answer to the Queen's Gambit. Boris Spassky played it in his 1969 world championship match, and Garry Kasparov in his Candidates matches of 1983 and 1984. The boards below show how the early c-pawn push frees Black's game, what it costs, and how other move orders reach it.}
 *
 
 [Chapter "3...c5 frees the c8 bishop"]
@@ -41,7 +41,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{In most lines of this course, Black's d-pawn ends up isolated on d5. White wants to blockade it and trade pieces; Black wants to keep pieces on and use the open lines. The first three boards come from the main line of the Rubinstein System, 1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 cxd4 10.Nxd4. In the lines with e3 instead, White has no bishop on g2 and the c1 bishop is shut in, so there is less pressure on d5, and Black's dark-squared bishop often goes to d6, where it aims at h2.}
+{In most lines of this course, Black's d-pawn ends up isolated on d5. White wants to blockade it and trade pieces; Black wants to keep pieces on and use the open lines. The first three boards come from the main line of the Rubinstein System, where White puts the king's bishop on the long diagonal, both sides castle, and White takes back on d4 with the knight. In the lines where White pushes the e-pawn one square instead, White has no bishop on g2 and the c1 bishop is shut in, so there is less pressure on d5, and Black's dark-squared bishop often goes to d6, where it aims at h2.}
 *
 
 [Chapter "Black's pieces take the open lines"]
