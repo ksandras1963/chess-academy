@@ -6,7 +6,7 @@ const DEFAULTS = {
     v: 1,
     lines: {},            // lineId -> { box, due, last, reps, lapses }
     puzzles: {},          // puzzleId -> { status: "solved" | "missed", tries, last }
-    settings: { theme: "dark", animation: "normal", coordinates: true, notation: "figurines" }
+    settings: { theme: "dark", animation: "normal", coordinates: true, notation: "letters" }
 }
 
 let state = null
@@ -19,6 +19,9 @@ function normalize(data) {
         if (data.lines && typeof data.lines === "object") s.lines = data.lines
         if (data.puzzles && typeof data.puzzles === "object") s.puzzles = data.puzzles
         if (data.settings) s.settings = { ...s.settings, ...data.settings }
+        // Letters became the default notation. Older saves hold "figurines" whether or not the learner
+        // picked it, so only a choice made in Settings since then (notationChosen) is kept.
+        if (!s.settings.notationChosen) s.settings.notation = "letters"
     }
     return s
 }

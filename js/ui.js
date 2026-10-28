@@ -21,15 +21,15 @@ export function h(tag, attrs = {}, ...children) {
 const FIG = { K: "♔", Q: "♕", R: "♖", B: "♗", N: "♘" }
 const VS15 = "︎" // text presentation, so no emoji pieces
 
-/** SAN with figurines (♘f3) unless the learner chose letters. */
+/** SAN in letters (Nf3), or with figurines (♘f3) when the learner chose them in Settings. */
 export function fig(san) {
-    if (settings().notation === "letters") return san
+    if (settings().notation !== "figurines") return san
     return san.replace(/^[KQRBN]/, m => FIG[m] + VS15).replace(/=([QRBN])/, (_, p) => "=" + FIG[p] + VS15)
 }
 
-/** Figurines inside free text: "3.Bc4" becomes "3.♗c4". */
+/** Figurines inside free text, when chosen: "3.Bc4" becomes "3.♗c4". */
 export function figText(text) {
-    if (settings().notation === "letters") return text
+    if (settings().notation !== "figurines") return text
     return text.replace(/(^|[\s(.…])([KQRBN])(?=[a-h]?[1-8]?x?[a-h][1-8]\b)/g, (_, pre, p) => pre + FIG[p] + VS15)
 }
 
@@ -66,7 +66,7 @@ export function backTrail(links) {
             h("a", { class: "btn btn-small btn-back", href: l.href }, h("span", { "aria-hidden": "true" }, "‹"), l.text)))
 }
 
-/** A note as paragraphs (a blank line in the PGN comment starts a new one), with figurines. */
+/** A note as paragraphs (a blank line in the PGN comment starts a new one), in the chosen notation. */
 export function paras(text, attrs = {}) {
     return String(text || "").split(/\n\n+/).filter(Boolean).map(p => h("p", attrs, figText(p)))
 }
@@ -75,7 +75,7 @@ export function label(node) {
     return node.color === "w" ? `${node.moveNumber}.${fig(node.san)}` : `${node.moveNumber}…${fig(node.san)}`
 }
 
-/** "1.e4 e5 2.Nf3" from a SAN movetext string, with figurines. */
+/** "1.e4 e5 2.Nf3" from a SAN movetext string, in the chosen notation. */
 export function figMoves(movetext) {
     return movetext.replace(/(\d+)\.\s+/g, "$1.").split(/\s+/).map(tok => {
         const m = /^(\d+\.)(.*)$/.exec(tok)
