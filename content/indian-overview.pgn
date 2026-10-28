@@ -2,7 +2,7 @@
 [Type "map"]
 
 1. d4 Nf6 2. c4 {Indian Defenses} g6
-(2... e6 {} 3. Nc3 (3. Nf3 b6 {Queen's Indian Defense}) Bb4 {Nimzo-Indian Defense})
+(2... e6 {} 3. Nc3 (3. Nf3 b6 {Queen's Indian Defense}) Bb4 {[%course both] Nimzo-Indian Defense})
 (2... c5 3. d5 {} e6 {Modern Benoni} (3... b5 {Benko Gambit}))
 3. Nc3 {} Bg7 (3... d5 {Grünfeld Defense}) 4. e4 d6 {[%course black] King's Indian Defense} 5. Nf3 O-O 6. Be2 {[%course white] Classical Variation} *
 
@@ -24,10 +24,11 @@ Black: Let White have the center, fianchetto your bishop and castle. Then strike
 [Opening "Nimzo-Indian Defense"]
 [ECO "E20"]
 [Diagram "4...O-O"]
+[Course "nimzo-indian"]
 
-{White: 4.Qc2 lets you take back on c3 with the queen, so you avoid doubled pawns. Then a3 wins the bishop pair and e4 takes the center. Your two bishops pay off once the position opens.
+{White: 4.Qc2 lets you take back on c3 with the queen, so you avoid doubled pawns; then a3 wins the bishop pair and e4 takes the center. Or play 4.e3 and develop quickly with Bd3, Nf3 and castling.
 
-Black: Pin the c3 knight so White can't play e4. Give up the bishop for the knight when it costs White time or doubles the c-pawns. Strike back with ...d5 or ...c5.}
+Black: Pin the c3 knight so White can't play e4. Give up the bishop for the knight when it doubles White's c-pawns or costs White time. Strike back with ...c5 or ...d5.}
 1. d4 Nf6 2. c4 e6 {Prepares ...d5 or ...Bb4.}
 3. Nc3 {Prepares e4.} Bb4 {This is the Nimzo-Indian Defense. The pinned knight can't support e4.}
 4. Qc2 {The Classical Variation. If Black takes on c3, the queen takes back and White's pawns stay whole.} O-O {Black castles and keeps ...d5, ...c5 and ...Bxc3 in reserve.} *
@@ -36,6 +37,7 @@ Black: Pin the c3 knight so White can't play e4. Give up the bishop for the knig
 [Opening "Grünfeld Defense"]
 [ECO "D80"]
 [Diagram "4...Nxd5"]
+[Course "grunfeld"]
 
 {White: Take the whole center with e4, usually after 5.e4 Nxc3 6.bxc3, then back it up with Nf3, Be3 or Bc4. A center that holds cramps Black and supports an attack.
 
