@@ -42,7 +42,7 @@ export function settingsView(root) {
                 updateSettings({ theme: v })
                 applyTheme()
             }),
-            choice("notation", "Move notation", [["figurines", "Figurines (♘f3)"], ["letters", "Letters (Nf3)"]], s.notation, v => updateSettings({ notation: v })),
+            choice("notation", "Move notation", [["letters", "Letters (Nf3)"], ["figurines", "Figurines (♘f3)"]], s.notation, v => updateSettings({ notation: v, notationChosen: true })),
             choice("animation", "Piece animation", [["normal", "Normal"], ["fast", "Fast"], ["off", "Off"]], s.animation, v => updateSettings({ animation: v })),
             choice("coordinates", "Board coordinates", [["on", "Show"], ["off", "Hide"]], s.coordinates ? "on" : "off", v => updateSettings({ coordinates: v === "on" }))),
         h("section", { class: "settings-group" },
