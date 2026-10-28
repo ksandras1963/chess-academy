@@ -34,6 +34,8 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 ## Tables
 
 - A course page's table of the variations has the columns Variation, How often, and What to do. The Caro-Kann is the exception: it keeps its own columns, by Kumar's choice.
+- Tables give general strategies, not lists of moves. In Kumar's words: "for all tables instead of giving a list of moves that are very difficult to understand give general strategies for that variant - white castles early and attack center with white-squared bishop, while black develops strong pawn structure and powerful King side knight."
+- So, by his choices: each row's What to do says in plain words what White aims for and what Black aims for. It names a move only when a learner must know it (a trap, say), and then one move at most. The Variation column gives the line's name and its key move, like the chapter titles: "Classical, Keres Defense: 6...b6", not the whole move order.
 
 ## Lesson pages
 

@@ -1153,59 +1153,59 @@
                         ],
                         "rows": [
                             [
-                                "Classical, Keres Defense: 4.Qc2 O-O 5.a3 Bxc3+ 6.Qxc3 b6",
+                                "Classical, Keres Defense: 6...b6",
                                 "33% as White\n21% as Black",
-                                "As White: Pin with Bg5, then play e3, f3 and Bd3 to prepare e4. As Black: Guard e4 with ...Bb7 and ...d6, then hit d4 with ...c5 and take the c-file with ...Rc8."
+                                "White: Keep the two bishops and the pawns whole. Pin the king's knight, castle, and slowly prepare a pawn push to e4.\nBlack: Castle early and put the queen's bishop on the long diagonal to watch e4. Then strike at White's center with the c-pawn and take the open c-file."
                             ],
                             [
-                                "Classical, Noa Variation: 4.Qc2 d5",
+                                "Classical, Noa Variation: 4...d5",
                                 "23% as White",
-                                "Take on d5 at once. Develop with Bg5, e3, Bd3 and Ne2, castle, then gain queenside space with a3 and b4."
+                                "White: Trade pawns on d5 at once, pin the king's knight, develop calmly and castle. Then gain space on the queenside.\nBlack: Keep a solid pawn on d5, put a rook on the open e-file, and bring the queen's knight round to guard the kingside."
                             ],
                             [
-                                "Classical, Berlin Variation: 4.Qc2 c5",
+                                "Classical, Berlin Variation: 4...c5",
                                 "22% as White",
-                                "Take with 5.dxc5, then play Nf3 before Bg5. Develop with e3 and Be2; Black often ends up with an isolated d-pawn."
+                                "White: Take the c-pawn at once, and develop the king's knight before the dark-squared bishop so the pawn on f2 stays safe. Trade pieces until Black is left with a weak isolated pawn.\nBlack: Win the pawn back with the bishop, develop fast, and free the game with a pawn break in the center."
                             ],
                             [
-                                "Classical: 4.Qc2 b6",
+                                "Classical: 4...b6",
                                 "11% as White",
-                                "Push 5.e4 at once: the queen guards it. Follow with Bd3 and f4 for a big center."
+                                "White: Take the whole center at once with the e-pawn, which the queen protects, and add the f-pawn for more space. The two bishops and the f-file give White the better game.\nBlack: Give up the bishop for the knight and hold the center with pawns. Castling early walks into a trap."
                             ],
                             [
-                                "Rubinstein, Gligorić System: 4.e3 O-O 5.Bd3 d5 6.Nf3 c5",
+                                "Rubinstein, Gligorić System: 9...b6",
                                 "49% as White\n12% as Black",
-                                "As White: Castle, then use the isolated d-pawn for an attack with Bg5, Qe2 and a knight on e5. As Black: Take on c4 and d4, put the bishop on b7, and give it up on c3 to press on the c-file."
+                                "White: Develop quickly and castle early. The isolated d-pawn is a spearhead: the pieces behind it aim at Black's king, and a knight can jump to e5.\nBlack: Trade pawns in the center, put the queen's bishop on the long diagonal, and give up the other bishop for the c3 knight to leave White with weak pawns on c3 and d4."
                             ],
                             [
-                                "Rubinstein, Hübner Variation: 4.e3 c5",
+                                "Rubinstein, Hübner Variation: 4...c5",
                                 "19% as White",
-                                "Keep the same setup. Answer ...Bxc3 and ...e5 with d5 and e4, then open lines for the bishops with Ne1 and f4."
+                                "White: Keep the same quick setup and castle. When Black closes the center, push the d-pawn forward for space, then open the kingside with the f-pawn so the bishops come alive.\nBlack: Give up the bishop to double White's c-pawns, then lock the center with pawns on dark squares so White's bishops have no open lines."
                             ],
                             [
-                                "Rubinstein, St. Petersburg Variation: 4.e3 b6",
+                                "Rubinstein, St. Petersburg Variation: 4...b6",
                                 "13% as White",
-                                "Keep the same setup: Bd3, Nf3 and castling. After ...Bxc3, play Nd2, e4 and f3."
+                                "White: Keep the same quick setup and castle. After Black takes on c3, bring the king's knight back toward the center and build a pawn center with the e- and f-pawns.\nBlack: Put the queen's bishop on the long diagonal to watch e4, trade on c3, and hold the center with pawns on dark squares."
                             ],
                             [
-                                "Leningrad Variation: 4.Bg5 c5",
+                                "Leningrad Variation: 4...c5",
                                 "16% as Black",
-                                "Against 5.d5, give up the bishop on c3, play ...h6, and put the pawns on dark squares with ...d6 and ...e5. Against 5.e3, play 5...Qa5."
+                                "White: Pin the king's knight and close the center with the d-pawn, hoping the bishops will count later.\nBlack: Give up the dark-squared bishop to double White's c-pawns, chase White's bishop with the h-pawn, and set the center pawns on dark squares. If White plays e3 while the bishop is on g5, the bishop is cut off from the queenside, and ...Qa5 wins material."
                             ],
                             [
-                                "Bd2 Variation: 4.Bd2 c5",
+                                "Bd2 Variation: 4...c5",
                                 "16% as Black",
-                                "Trade on d4, castle and play ...d5. Then trade White's dark-squared bishop with ...Bxc3 and ...Ne4, and attack the isolated d-pawn."
+                                "White: Avoid doubled pawns and develop quietly.\nBlack: Trade the c-pawn for White's d-pawn, castle, and strike in the center with the d-pawn. Then trade off White's dark-squared bishop and attack the isolated d-pawn."
                             ],
                             [
-                                "Three Knights Variation: 4.Nf3 O-O",
+                                "Three Knights Variation: 4...O-O",
                                 "14% as Black",
-                                "Against 5.Bg5, hit d4 with ...c5, take on d4 and c4, then play ...b6, ...Bb7 and ...Bxc3."
+                                "White: Develop the king's knight first and keep several setups open: pinning the knight, a quiet e-pawn move, or the queen to c2.\nBlack: Castle, hit the center with the c-pawn, and trade pawns so White gets an isolated d-pawn. Then use the plan of the Gligorić System: bishop on the long diagonal, and the other bishop for the c3 knight."
                             ],
                             [
-                                "Sämisch Variation: 4.a3 Bxc3+ 5.bxc3 c5",
+                                "Sämisch Variation: 5...c5",
                                 "11% as Black",
-                                "Fix the doubled pawns with ...c5, then attack c4 with ...Nc6–a5. Against Bg5, ...h6 and ...Qa5 pin the c3 pawn."
+                                "White: Spend a move to win the two bishops, then build a big pawn center to make use of them.\nBlack: Fix the doubled c-pawns, then attack the weak pawn on c4 with the knight, the bishop and the queen. If White pins the king's knight, ...Qa5 pins the c3 pawn in return."
                             ]
                         ],
                         "note": "How often: the share of your Nimzo-Indian games that reach the line, from the side you play in it, counting all its move orders. As White, it is the share of your games with that fourth move (4.Qc2 or 4.e3). Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
