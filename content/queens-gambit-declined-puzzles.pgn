@@ -7,7 +7,7 @@
 
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 c6 6. Qc2 Be7 7. e3 Nh5? 8. Bxe7 Qxe7? 9. Nxd5! {[%cal Gc2c8] Takes the pawn. If 9...cxd5, the c-file opens, and the queen takes the bishop on c8 with check.}
 (9. Nf3? {Develops, but the chance is gone.} 9... O-O 10. Bd3 g6 {Black has traded off White's good bishop and is fine. Stockfish: +0.2, equal.})
-9... Qd6 {The best defense: the queen hits the knight.}
+9... Qd6 {A good defense: the queen hits the knight.}
 (9... cxd5? 10. Qxc8+ Qd8 11. Bb5+ Nc6 12. Bxc6+ bxc6 13. Qxc6+ {White is two pawns up, and the queen attacks the rook on a8 too. Stockfish: +5.5, winning for White.})
 10. Nc3 O-O 11. Be2 Nf6 12. Nf3 {White is a pawn up, and the knight on h5 had to go back. Stockfish: +3.4, winning for White.}
 *
