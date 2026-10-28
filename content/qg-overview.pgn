@@ -91,7 +91,7 @@ Black: Take on c4 first, then bring the bishop out: after 5.a4, play 5...Bf5, ..
 4. Nf3 {The Three Knights Variation.} dxc4 {Black takes the pawn before bringing the bishop out. 4...Bf5?! at once lets White play cxd5 and Qb3, hitting b7.} *
 
 [Chapter "Marshall Defense"]
-[Group "Other variations"]
+[Group "Other uncommon variations"]
 [Opening "Queen's Gambit Declined: Marshall Defense"]
 [ECO "D06"]
 [Diagram "4...Nf6"]
@@ -107,7 +107,7 @@ Black: Take back with the knight. After 4.e4 Nf6 5.Nc3, strike at the center at 
 4. e4 {Hits the knight and takes the whole center.} Nf6 {Half of Black players retreat to f6, and almost as many to b6.} *
 
 [Chapter "Albin Countergambit"]
-[Group "Other variations"]
+[Group "Other uncommon variations"]
 [Opening "Queen's Gambit Declined: Albin Countergambit"]
 [ECO "D08"]
 [Diagram "4...Nc6"]
@@ -123,7 +123,7 @@ Black: Win back the e5-pawn with ...Nge7 and ...Ng6, after ...Nc6, while the d4-
 4. Nf3 {Develops and guards e5.} Nc6 {Attacks e5 and supports d4.} *
 
 [Chapter "Baltic Defense"]
-[Group "Other variations"]
+[Group "Other uncommon variations"]
 [Opening "Queen's Gambit Declined: Baltic Defense"]
 [ECO "D06"]
 [Diagram "4...Qxd5"]
@@ -139,7 +139,7 @@ Black: Against 3.cxd5, give up the bishop first: 3...Bxb1 4.Rxb1 Qxd5, then ...N
 4. Rxb1 Qxd5 {Material is level, and White has the two bishops.} *
 
 [Chapter "Austrian Defense"]
-[Group "Other variations"]
+[Group "Other uncommon variations"]
 [Opening "Queen's Gambit Declined: Austrian Defense"]
 [ECO "D06"]
 [Diagram "4...cxd4"]
@@ -155,7 +155,7 @@ Black: Take back with the queen and trade on d4. After 5.Nc3, step the queen out
 4. Nf3 {Develops and guards d4.} cxd4 {Takes the pawn. 5.Nc3 hits the queen, and White takes back on d4 next.} *
 
 [Chapter "Chigorin Defense"]
-[Group "Other variations"]
+[Group "Other uncommon variations"]
 [Opening "Queen's Gambit Declined: Chigorin Defense"]
 [ECO "D07"]
 [Diagram "4...Bxf3"]
@@ -171,7 +171,7 @@ Black: Pin the f3 knight with ...Bg4, and press on d4 with the knight and queen.
 4. cxd5 {Takes on d5 before Black can add more pressure.} Bxf3 {Stockfish's choice. 4...Qxd5, played more often, lets White gain time with 5.Nc3 (Stockfish +1.6, clearly better for White).} *
 
 [Chapter "Catalan Opening"]
-[Group "Other variations"]
+[Group "Other uncommon variations"]
 [Opening "Catalan Opening: Closed"]
 [ECO "E06"]
 [Diagram "5.Bg2"]
@@ -187,7 +187,7 @@ Black: Develop with ...Be7 and castle, then take on c4 once White has castled. B
 5. Bg2 {The bishop presses on d5 and on the long diagonal.} *
 
 [Chapter "Ragozin Defense"]
-[Group "Other variations"]
+[Group "Other uncommon variations"]
 [Opening "Queen's Gambit Declined: Ragozin Defense"]
 [ECO "D38"]
 [Diagram "4...Bb4"]
@@ -201,7 +201,7 @@ Black: Answer 5.Bg5 with ...h6, castle and take on c4, then hit the center with 
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Bb4 {This is the Ragozin Defense. The bishop pins the knight on c3.} *
 
 [Chapter "Semi-Slav: Moscow Variation"]
-[Group "Other variations"]
+[Group "Other uncommon variations"]
 [Opening "Semi-Slav Defense: Moscow Variation"]
 [ECO "D43"]
 [Diagram "6...Qxf6"]
