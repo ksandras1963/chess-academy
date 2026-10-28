@@ -700,10 +700,10 @@
                     "id": "ruy-lopez",
                     "side": "both",
                     "file": "content/ruy-lopez.pgn",
-                    "repertoire": "As White: the d3 system, with 5.d3 against 4...Nf6 and 4.d3 against the Berlin, then c3, Re1, Nbd2–f1–g3 and d4 later. As Black: the Berlin Defense, 3...Nf6, taking on e4 after 4.O-O.",
-                    "summary": "1.e4 e5 2.Nf3 Nc6 3.Bb5: the bishop hits the knight that guards e5.",
+                    "repertoire": "",
+                    "summary": "Ruy López de Segura was a Spanish priest from Zafra, born around 1530, who played chess at the court of King Philip II. In 1561 he published one of the first important books on chess, and in it he studied this opening closely. He did not invent the opening, but it took its names from his book: the Ruy Lopez after him, and the Spanish Game after his country.",
                     "why": {
-                        "text": "As White, the Ruy Lopez follows the opening principles: every move develops a piece or fights for the center, and the bishop on b5 keeps Black busy defending e5. It is one of the most popular openings at every level, from club players to world champions, and its plans teach a great deal about maneuvering. This course plays the d3 system: the same setup and plans as the main lines, with far less to learn by heart.\n\nAs Black, the Berlin Defense, 3...Nf6, hits e4 at once and gives a solid game. Vladimir Kramnik made it famous in his 2000 world title match against Garry Kasparov, who could not beat it, and top players have trusted it ever since. Against the common 4.O-O, Black takes the pawn and gets the two bishops, and the plans are few and clear."
+                        "text": "As White, the Ruy Lopez follows the opening principles: every move develops a piece or fights for the center, and the bishop on b5 keeps Black busy defending e5. It is one of the most popular openings at every level, from club players to world champions, and its plans teach a great deal about maneuvering. This course plays the d3 system: the same setup and plans as the main lines, with far less to learn by heart.\n\nAs Black, the Berlin Defense brings the king's knight out to hit e4 at once and gives a solid game. Vladimir Kramnik made it famous in his 2000 world title match against Garry Kasparov, who could not beat it, and top players have trusted it ever since. When White castles, as most players do, Black takes the pawn on e4 and gets the two bishops, and the plans are few and clear."
                     },
                     "table": {
                         "columns": [
@@ -1332,8 +1332,8 @@
             "count": "13 variations",
             "compact": true,
             "course": "ruy-lopez",
-            "subtitle": "1.e4 e5 2.Nf3 Nc6 3.Bb5: the main variations, and the lines the course teaches.",
-            "summary": "White's bishop pins the knight that guards e5, and both sides fight for the center in a long, maneuvering game. Black's main choices are 3...a6, which asks the bishop, and the Berlin Defense, 3...Nf6. The map shows how the variations branch, and the course teaches one repertoire for each side.\n\nThe opening is named after Ruy López de Segura, a Spanish priest who analyzed 3.Bb5 in his chess book of 1561, Libro de la invención liberal y arte del juego del axedrez. He did not invent the move, but he studied it closely, and in English the opening carries his name. Because López was Spanish, it is also called the Spanish Game or the Spanish Opening.",
+            "subtitle": "The main variations, and the lines the course teaches.",
+            "summary": "White's bishop attacks the knight that guards e5, and both sides fight for the center in a long, maneuvering game. Black's two main answers are the Morphy Defense, which asks the bishop at once with a pawn, and the Berlin Defense, which brings the king's knight out to hit e4. The map shows how the variations branch, and the course teaches one repertoire for each side.\n\nThe opening is named after Ruy López de Segura, a Spanish priest who studied it in his chess book of 1561, Libro de la invención liberal y arte del juego del axedrez. He did not invent the opening, but he analyzed it closely, and in English it carries his name. Because López was Spanish, it is also called the Spanish Game or the Spanish Opening.",
             "table": {
                 "after": "map",
                 "columns": [
