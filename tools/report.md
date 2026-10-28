@@ -2,14 +2,15 @@
 
 Generated 2026-10-28 19:31 · engine Stockfish, depth 18
 
-**4 error(s):**
+**3 error(s):**
 
 - other / Nimzo-Larsen Attack (1.b3): 1.b3 is 0.68 worse than e4
 - italian puzzle 9 (Rousseau: where does the knight go?): 5.Nd4: not unique, Nc3 is only 0.62 worse
 - slav puzzle 1 (Open the center): 7.e4: not unique, Bg5 is only 0.43 worse
-- jobava-london puzzle 3 (Bxg6 and Qd3): 8.Qd3: not unique, Nf3 is only 0.63 worse
 
 These four errors are in files the Ruy Lopez branch does not change. `other-overview.pgn` has not changed since main's run of 2026-10-28 00:12, which reported no errors, so its 0.68 is a borderline engine result that varies between runs. The Italian, Slav and Jobava London puzzle files were changed on main after that run. The Ruy Lopez course, its puzzles and its Introduction page have no errors and no flagged moves.
+
+Jobava London puzzle 3 now ends at 7.Bxg6 (8.Qd3 is follow-up), and its six puzzles were re-checked separately with Stockfish 17.1 at depth 18: all pass.
 
 The Nimzo-Indian sections (course and puzzles) were added on 2026-10-28 from separate runs with Stockfish 16 at depth 18; the other sections are from the run above.
 
@@ -1940,7 +1941,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 |---|---|---|---|---|---|---|
 | 1 | Nb5 and the fork on c7 | White | 5.Nb5 | 1 | 5...e5 (10 half-moves) | ok |
 | 2 | The overloaded queen | White | 6.Qxd5 | 1 | 6...Bf5 (4 half-moves) | ok |
-| 3 | Bxg6 and Qd3 | White | 7.Bxg6 | 2 | 8...Bd6 (3 half-moves) | **8.Qd3: not unique, Nf3 is only 0.63 worse** |
+| 3 | Bxg6 and Qd3 | White | 7.Bxg6 | 1 | 7...fxg6 (5 half-moves) | ok |
 | 4 | Trap the bishop | White | 7.a5 | 1 | 7...Bxa5 (2 half-moves) | ok |
 | 5 | ...Ne4 against Qd2 | Black | 8...Ne4 | 1 | 9.Qd3 (4 half-moves) | ok |
 | 6 | Take on c3 | Black | 6...Bxc3+ | 1 | 7.bxc3 (2 half-moves) | ok |
