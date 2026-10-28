@@ -1,0 +1,227 @@
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 {Ruy Lopez}
+3... a6 {Morphy Defense}
+(3... d6 {[%course white] Steinitz Defense})
+(3... Nf6 {Berlin Defense} 4. O-O (4. d3 {[%course both] Anti-Berlin Variation}) 4... Nxe4 {[%course black] Berlin Endgame})
+(3... Bc5 {[%course white] Classical Variation})
+(3... Nd4 {Bird Variation})
+(3... Nge7 {Cozio Defense})
+(3... f5 {Schliemann Defense})
+4. Ba4 (4. Bxc6 {Exchange Variation})
+4... Nf6
+5. O-O
+(5. d3 {[%course white] Anderssen Variation})
+5... Be7
+(5... Nxe4 {Open Ruy Lopez})
+(5... b5 6. Bb3 Bb7 {Arkhangelsk Variation})
+6. Re1 b5 7. Bb3 d6
+(7... O-O 8. c3 d5 {Marshall Attack})
+8. c3 O-O 9. h3 {Closed Ruy Lopez} *
+
+[Chapter "Closed Ruy Lopez"]
+[Group "3...a6: the Morphy Defense"]
+[Opening "Ruy Lopez: Closed, Breyer Defense"]
+[ECO "C94"]
+[Diagram "9...Nb8"]
+[Lines "Breyer Variation | Chigorin Variation"]
+[Course "none"]
+
+{The classical main line, still played at the top level. Both sides finish developing before the fight begins. This course reaches the same plans with 5.d3, the Anderssen Variation.
+
+White: Castle, Re1, c3 and h3, then push d4 for a big center. The queen's knight goes d2, f1, g3, toward Black's king, and the light-squared bishop drops back to c2.
+
+Black: Hold e5, then free the queenside. In the Breyer the knight goes back to b8 and on to d7, so the c-pawn can move; in the Chigorin ...Na5 hits the bishop, and ...c5 gains space.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 {This is the Closed Ruy Lopez: Black doesn't take on e4.}
+6. Re1 b5 7. Bb3 d6 8. c3 {Prepares d4 and makes room for the bishop on c2.} O-O
+9. h3 {Keeps Black's bishop off g4, so d4 can come.} Nb8 {This is the Breyer Variation. The knight heads for d7.}
+(9... Na5 {This is the Chigorin Variation. The knight hits the bishop.} 10. Bc2 c5 {Black gains space on the queenside.})
+10. d4 Nbd7 *
+
+[Chapter "Marshall Attack"]
+[Group "3...a6: the Morphy Defense"]
+[Opening "Ruy Lopez: Marshall Attack, Main Line"]
+[ECO "C89"]
+[Diagram "8...d5"]
+[Course "none"]
+
+{Black gives up a pawn for a fast attack on White's king. It is named after Frank Marshall, who played it against José Raúl Capablanca in New York in 1918 and lost; today it is a respected weapon, known for long forced lines. This course avoids it by playing 5.d3.
+
+White: Take the pawn, then defend accurately: g3 against ...Qh4, and develop the queenside pieces as fast as possible. Each trade helps the extra pawn count.
+
+Black: Use the lead in development. The bishop comes to d6, the queen to h4 and h3, and the bishop on c8 to g4: White's queenside pieces are still at home.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O {Black castles before ...d6, keeping ...d5 possible.}
+8. c3 d5 {[%engine ok] This is the Marshall Attack: a pawn sacrifice.}
+9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 {Guards the knight.} 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 {Black's pieces bear down on White's king. Stockfish: +0.3, slightly better for White.} *
+
+[Chapter "Open Ruy Lopez"]
+[Group "3...a6: the Morphy Defense"]
+[Opening "Ruy Lopez: Open"]
+[ECO "C80"]
+[Diagram "8...Be6"]
+[Course "none"]
+
+{Black takes the e4 pawn at once. The play is forcing, with about fifteen moves of theory to know. This course avoids it with 5.d3, which guards e4.
+
+White: Win the pawn back with d4 and dxe5, keep the pawn on e5, and aim at Black's knight on e4 and the c6 pawn.
+
+Black: Keep the knight in the center with ...b5 and ...d5, and develop quickly with ...Be6 and ...Be7 or ...Bc5.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 {This is the Open Ruy Lopez.}
+6. d4 b5 7. Bb3 d5 8. dxe5 Be6 {Black's knight stands well on e4, and White's pawn on e5 gives White space.} *
+
+[Chapter "Arkhangelsk Variation"]
+[Group "3...a6: the Morphy Defense"]
+[Opening "Ruy Lopez: Morphy Defense, Arkhangelsk Variation"]
+[ECO "C78"]
+[Diagram "6...Bb7"]
+[Lines "Arkhangelsk Variation | Møller Variation"]
+[Course "none"]
+
+{Instead of the quiet 5...Be7, Black develops the bishops actively at once: ...b5 and ...Bb7 hit e4, or ...Bc5 aims at f2. The king stays in the center a little longer.
+
+White: Guard e4 with d3 or Re1, then c3 and a4 against Black's queenside pawns.
+
+Black: Use the active bishops, put the other one on c5 or e7, and castle.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5
+(5... Bc5 {This is the Møller Variation. The bishop aims at f2.} 6. c3 b5 7. Bb3 d6)
+6. Bb3 Bb7 {This is the Arkhangelsk Variation. The bishop hits e4.} 7. d3 Be7 *
+
+[Chapter "Anderssen Variation"]
+[Group "3...a6: the Morphy Defense"]
+[Opening "Ruy Lopez: Morphy Defense, Anderssen Variation"]
+[ECO "C77"]
+[Diagram "5.d3"]
+[Course "ruy-lopez"]
+[WhiteLesson "Anderssen Variation: 4...Nf6 5.d3"]
+
+{This course's choice as White. The pawn on d3 guards e4, so the Open Ruy Lopez and the Marshall Attack can't arise, but the plans are those of the main lines.
+
+White: c3, castle, Re1, the knight trip d2–f1–g3 and h3, then d4. If e5 is guarded only by the knight, Bxc6 and Nxe5 win it.
+
+Black: Drive the bishop back with ...b5, guard e5 with ...d6 before ...Be7, then castle and play ...Na5 and ...c5.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. d3 {This is the Anderssen Variation.} b5 6. Bb3 Be7 7. O-O d6 8. c3 O-O {The same position arises from the Closed Ruy Lopez (the Pilnik Variation).} *
+
+[Chapter "Exchange Variation"]
+[Group "3...a6: the Morphy Defense"]
+[Opening "Ruy Lopez: Exchange Variation, Gligoric Variation"]
+[ECO "C69"]
+[Diagram "5...f6"]
+[Course "none"]
+
+{White gives up the bishop at once to double Black's c-pawns. It is simple to learn and leads to clear plans. This course doesn't play it as White, and as Black the Berlin Defense never meets it.
+
+White: Trade pieces. With four pawns against three on the kingside, White can make a passed pawn, and Black's doubled pawns can't do the same on the queenside. Don't take e5 too early: ...Qd4 wins it back.
+
+Black: Use the two bishops and play actively before the pieces come off, even with the king in the center.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 {This is the Exchange Variation.} dxc6 {Takes back toward the center.}
+5. O-O {Now White threatens Nxe5.} f6 {Guards e5.} 6. d4 exd4 7. Nxd4 c5 8. Nb3 Qxd1 9. Rxd1 *
+
+[Chapter "Berlin Defense"]
+[Group "3...Nf6: the Berlin Defense"]
+[Opening "Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense"]
+[ECO "C67"]
+[Diagram "8...Kxd8"]
+[Lines "Berlin Endgame | 5.Re1"]
+[Course "ruy-lopez"]
+[BlackLesson "Berlin Endgame: 4.O-O Nxe4 5.d4"]
+
+{This course's choice as Black. Black hits e4 at once and takes it after 4.O-O. Vladimir Kramnik made it famous in his 2000 world title match against Garry Kasparov.
+
+White: Win the pawn back. After 5.d4 the queens come off: use the extra kingside pawn and trade pieces. After 5.Re1, keep the game open.
+
+Black: Take back on c6 toward the center. Without queens the king is safe in the middle; use the two bishops and bring the rook into play with ...h5 and ...Rh6.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 {This is the Berlin Defense.} 4. O-O Nxe4 5. d4
+(5. Re1 Nd6 6. Nxe5 Be7 7. Bf1 Nxe5 8. Rxe5 O-O {Black is safe and has the two bishops.})
+5... Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8 {This is the Berlin endgame.} *
+
+[Chapter "Anti-Berlin Variation"]
+[Group "3...Nf6: the Berlin Defense"]
+[Opening "Ruy Lopez: Berlin Defense, Anti-Berlin Variation"]
+[ECO "C65"]
+[Diagram "6...d6"]
+[Course "ruy-lopez"]
+[WhiteLesson "Anti-Berlin Variation: 4.d3"]
+[BlackLesson "Anti-Berlin Variation: 4.d3"]
+
+{White guards e4 with 4.d3 and keeps the queens on. This course teaches it for both sides.
+
+White: c3, castle, Re1, the knight trip d2–f1–g3, then d4. Bxc6 and Nxe5 win e5 if only the knight guards it.
+
+Black: ...Bc5, castle and ...d6; then ...a6 and ...Ba7 keep the bishop, and the king's knight goes to g6 via e7.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 {This is the Anti-Berlin Variation.} Bc5 5. c3 O-O 6. O-O d6 *
+
+[Chapter "Steinitz Defense"]
+[Group "Other third moves"]
+[Opening "Ruy Lopez: Steinitz Defense"]
+[ECO "C62"]
+[Diagram "6...Nf6"]
+[Course "ruy-lopez"]
+[WhiteLesson "Steinitz Defense: 3...d6"]
+
+{Black guards e5 with a pawn at once. Solid, but the f8 bishop is shut in, and Black usually has to give up the center.
+
+White: 4.d4, take back with the knight on d4, and develop. Trading on c6 leaves Black with doubled pawns; then push f4.
+
+Black: Unpin with ...Bd7, develop with ...Nf6 and ...Be7, and castle. Don't castle too early: the Tarrasch Trap costs a pawn.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 {This is the Steinitz Defense.} 4. d4 exd4 5. Nxd4 Bd7 6. Nc3 Nf6 *
+
+[Chapter "Classical Variation"]
+[Group "Other third moves"]
+[Opening "Ruy Lopez: Classical Defense, Benelux Variation"]
+[ECO "C64"]
+[Diagram "6...Bb6"]
+[Course "ruy-lopez"]
+[WhiteLesson "Classical Variation: 3...Bc5"]
+
+{The bishop takes its most active diagonal, as in the Italian Game, and aims at f2.
+
+White: c3 and d4, which hit the bishop with gain of time; castle first. Then Re1 and h3 keep the center.
+
+Black: Keep the bishop with ...Bb6, develop with ...Nf6 and castle. Don't play ...d6 before White's d4: then d4 and d5 win the pinned knight.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 {This is the Classical Variation.} 4. c3 Nf6 5. O-O O-O 6. d4 Bb6 *
+
+[Chapter "Schliemann Defense"]
+[Group "Other third moves"]
+[Opening "Ruy Lopez: Schliemann Defense"]
+[ECO "C63"]
+[Diagram "6.O-O"]
+[Course "ruy-lopez"]
+[WhiteLesson "Schliemann Defense: 3...f5"]
+
+{A sharp gambit, also called the Jaenisch Gambit: Black hits e4 with the f-pawn. White players who don't know it often take on f5, which helps Black.
+
+White: Guard e4 with 4.d3, take back on e4 with the d-pawn, and castle. If Black puts the bishop on c5, Bxc6 and Nxe5 win a pawn.
+
+Black: Open the f-file, develop quickly and aim at f2.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 {This is the Schliemann Defense.} 4. d3 fxe4 5. dxe4 Nf6 6. O-O *
+
+[Chapter "Bird Variation"]
+[Group "Other third moves"]
+[Opening "Ruy Lopez: Bird Variation"]
+[ECO "C61"]
+[Diagram "5...c6"]
+[Course "ruy-lopez"]
+[WhiteLesson "Bird Variation: 3...Nd4"]
+
+{Black moves the knight a second time and offers a trade on d4. After 4...exd4 Black's pawn on d4 cramps White a little, but e5 is empty.
+
+White: Take on d4, castle, play d3 and push f4 to gain space on the kingside.
+
+Black: Chase the bishop with ...c6, develop, and keep the pawn on d4 well guarded.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 {This is the Bird Variation.} 4. Nxd4 exd4 5. O-O c6 *
+
+[Chapter "Cozio Defense"]
+[Group "Other third moves"]
+[Opening "Ruy Lopez: Cozio Defense"]
+[ECO "C60"]
+[Diagram "5...Ng6"]
+[Course "ruy-lopez"]
+[WhiteLesson "Cozio Defense: 3...Nge7"]
+
+{Black develops the king's knight behind the c6 knight, so the pin on c6 never matters. The knight often goes on to g6, or Black fianchettoes the bishop with ...g6.
+
+White: Castle, then c3 and d4 for a big center. When the knight leaves e7 for g6, open the center with d4 at once.
+
+Black: Develop the kingside with ...Ng6 or ...g6 and ...Bg7, and break with ...d5 or ...f5.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nge7 {This is the Cozio Defense.} 4. O-O a6 5. Ba4 Ng6 *
