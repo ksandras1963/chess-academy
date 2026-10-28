@@ -777,6 +777,92 @@
             ]
         },
         {
+            "id": "jobava-london",
+            "name": "Jobava London System",
+            "eco": "D01",
+            "moves": "1. d4 d5 2. Nc3 Nf6 3. Bf4",
+            "summary": "White plays the London bishop move, Bf4, but puts the knight on c3 instead of the pawn. Sharper than the London, with Nb5 and h4 as its weapons.",
+            "puzzles": "content/jobava-london-puzzles.pgn",
+            "furtherStudy": [
+                {
+                    "title": "Learn the Jobava London System Opening with ...d5 in five simple stages. Part One.",
+                    "by": "GM Simon Williams, GingerGM",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=bPLrXjQyNFQ"
+                },
+                {
+                    "title": "Introduction to the Jobava London System",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=8o5UitW0bRM"
+                },
+                {
+                    "title": "What to do when black avoids the Jobava London System",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=uh6OlaIEc_4"
+                },
+                {
+                    "title": "Mastering the Jobava London ft. Bortnyk | GM Naroditsky's Opening Lab",
+                    "by": "GM Daniel Naroditsky",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=qN8kNz0_c3s"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "jobava-london",
+                    "side": "both",
+                    "file": "content/jobava-london.pgn",
+                    "repertoire": "As White: Nb5 against 3...e6, Bd3 against ...Bf5, h4 against ...g6. As Black: 3...e6 and ...Bb4.",
+                    "summary": "1.d4 d5 2.Nc3 Nf6 3.Bf4, or 1.d4 Nf6 2.Nc3 d5 3.Bf4: the London bishop, with the knight on c3.",
+                    "why": {
+                        "text": "As White, you play the same first moves against 1...d5 and 1...Nf6: d4, Nc3 and Bf4. The knight on c3 makes the system sharper than the ordinary London. It can jump to b5 and hit c7 as early as move 4, so Black has to answer threats from the start.\n\nAs Black, 3...e6 with ...Bb4 and ...c5 needs little theory. Stockfish rates Black equal or slightly better in this course's main lines, and ...Bb4 is Black's best-scoring answer at club level to White's two most common fourth moves."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Pin on c3: 4.e3 or 4.Nf3, then 4...Bb4",
+                                "60% as Black",
+                                "Pin the knight, then hit d4 with ...c5. If White plays a3, take on c3 and hit the doubled pawn with ...Qa5."
+                            ],
+                            [
+                                "Check on b4: 4.Nb5 Bb4+",
+                                "24% as Black",
+                                "Check, then drop back to a5. Meet a4 with ...a6, never ...Bb6, and meet b4 with ...Nc6."
+                            ],
+                            [
+                                "Knight to b5: 3...e6 4.Nb5",
+                                "23% as White",
+                                "Jump to b5 at once. After 4...Na6 5.e3 c6 the knight goes back to c3; after 4...Bd6, take the bishop."
+                            ],
+                            [
+                                "Early bishop: 3...Bf5",
+                                "20% as White",
+                                "Play e3 and Bd3. If Black takes on d3, take back with the c-pawn; if the bishop drops back to g6, push h4."
+                            ],
+                            [
+                                "Guarding b5: 3...a6",
+                                "17% as White",
+                                "Play e3, Bd3 and Nf3. Offer the bishop trade against ...Bf5, and take on c5 against ...c5."
+                            ],
+                            [
+                                "Slav setup: 3...c6",
+                                "16% as White",
+                                "Play e3. Then Bd3 against ...Bf5, f3, g4 and h4 against ...Bg4, and h4 against ...g6."
+                            ]
+                        ],
+                        "note": "How often: the share of your Jobava London games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
+                }
+            ]
+        },
+        {
             "id": "kings-indian",
             "name": "King's Indian Defense",
             "eco": "E60",
@@ -1048,7 +1134,7 @@
             "eco": "A40–E99",
             "moves": "1. d4",
             "file": "content/d4-overview.pgn",
-            "count": "15 openings",
+            "count": "16 openings",
             "compact": true,
             "table": {
                 "after": "map",
@@ -1059,7 +1145,7 @@
                 ],
                 "rows": [
                     [
-                        "1...d5 (Queen's Gambit, London)",
+                        "1...d5 (Queen's Gambit, London, Jobava London)",
                         "43%",
                         "The closed games: Black stakes a claim with a pawn on d5 at once, so White can no longer play e4 for free."
                     ],
@@ -1082,7 +1168,7 @@
                 "note": "Share: how often each reply follows 1.d4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
             },
             "subtitle": "The Queen's Gambit, the Indian Defenses, and the other main replies.",
-            "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Against 1...d5, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level (and works against 1...Nf6 too); the Colle is much rarer and is listed with the uncommon replies. Against 1...Nf6 2.c4, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside."
+            "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Against 1...d5, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level (and works against 1...Nf6 too). The Jobava London, with the knight on c3, is a sharper version of it. The Colle is much rarer and is listed with the uncommon replies. Against 1...Nf6 2.c4, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside."
         },
         {
             "id": "qg",
