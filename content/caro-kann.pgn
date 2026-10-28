@@ -235,8 +235,7 @@
 5. Qe2 {[%cal Ge2e7] Guards the knight and pins Black's e-pawn: 5...Nbd7?? 6.Nd6 is mate.} Nxe4
 6. Qxe4 Nd7 {Aims for ...Nf6 with a gain of time on the queen.}
 7. Bc4 Nf6 {Hits the queen.}
-8. Ne5 {[%cal Gc4f7,Ge5f7] A trap: the queen is left hanging.} e6 {Blocks the bishop's line to f7.}
-(8... Nxe4?? 9. Bxf7# {The knight on e5 covers d7, so Black's king has no square.})
+8. Ne5 {[%cal Gc4f7,Ge5f7] A trap: the queen is left hanging, but 8...Nxe4?? 9.Bxf7# is mate (see the Traps section).} e6 {Blocks the bishop's line to f7.}
 9. Qe2 Bd6 10. d4 O-O 11. O-O {Black is solid; White's pieces are a little more active (Stockfish +0.4, slightly better for White).} *
 
 [Chapter "Maróczy Variation: 3...dxe4"]
@@ -246,13 +245,9 @@
 
 {After 3...dxe4 4.fxe4, White has two center pawns and the half-open f-file, but f3 has weakened the diagonals to White's king. Black takes on e4 and hits back with ...e5 at once.}
 1. e4 c6 2. d4 d5 3. f3 {This is the Maróczy Variation, also called the Fantasy.} dxe4 4. fxe4 e5 {[%cal Ge5d4,Rd8h4] Strikes at d4 before White is developed. 5.dxe5? runs into ...Qh4+: see the Traps section.}
-5. Nf3 {Attacks e5 and covers h4.}
-(5. Nc3? exd4 {Hits the knight.} 6. Nce2 Nf6 {Black is a clean pawn up, and e4 is weak too (Stockfish −1.6, clearly better for Black).})
-(5. Bc4 Qxd4 {With no knight on f3, the d4 pawn is simply loose.} 6. Qxd4 exd4 {Black is a pawn up in an early endgame (Stockfish −0.3, slightly better for Black).})
-(5. Be3 Qh4+ {The weakened diagonal.} 6. Bf2 Qxe4+ 7. Qe2 Qxe2+ 8. Nxe2 exd4 {Black is a pawn up in the endgame (Stockfish −0.8, slightly better for Black).})
+5. Nf3 {Attacks e5 and covers h4. White's other fifth moves are under Advanced.}
 5... Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
-6. Bc4 {Aims at f7.}
-(6. c3 Nd7 7. Be2 Ngf6 8. O-O Bd6 {The same setup: the e5 pawn holds (Stockfish +0.2, equal).})
+6. Bc4 {Aims at f7. 6.c3 is under Advanced.}
 6... Nd7 {Supports e5 and prepares ...Ngf6.}
 7. O-O Ngf6 {Not 7...Bxf3? 8.Qxf3, when f7 comes under fire.}
 8. c3 Bd6 {Black has developed all four minor pieces and keeps a strong pawn on e5 (Stockfish −0.2, equal).} *
@@ -293,6 +288,17 @@
 1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 Nf6
 5. Qe2 {[%cal Ge2e7] The queen pins Black's e-pawn.} Nbd7?? {Natural: Black wants to take back on f6 with a knight.}
 6. Nd6# {[%cal Ge4d6] Smothered mate. The e7 pawn is pinned, and Black's own pieces block every escape square.} *
+
+[Chapter "Trap, Two Knights Attack: 8...Nxe4?? 9.Bxf7#"]
+[Side "white"]
+[Type "trap"]
+[Opening "Caro-Kann Defense: Two Knights Attack"]
+[ECO "B10"]
+
+{In the main line of Two Knights Attack: 3...dxe4, 8.Ne5 leaves White's queen hanging on e4. Taking it loses at once, because the bishop and the knight both aim at f7.}
+1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 Nf6 5. Qe2 Nxe4 6. Qxe4 Nd7 7. Bc4 Nf6 {Hits the queen.}
+8. Ne5 {[%cal Gc4f7,Ge5f7] Leaves the queen hanging on purpose.} Nxe4?? {Takes the queen.}
+9. Bxf7# {The knight on e5 covers d7, so Black's king has no square.} *
 
 [Chapter "Trap, Two Knights Attack: 8...Bg4? 9.Ne5!"]
 [Side "white"]
@@ -788,6 +794,22 @@
 (6... Nd7 7. Be2 Ngf6 8. O-O Bd6 9. Bg5 {White's pieces are active, and the f-file is half-open (Stockfish +0.2, equal).})
 7. Bc4 {Aims at f7.} Bh5 8. O-O Nbd7
 9. Qe1 {[%cal Ge1h4] Unpins the knight, and the queen heads for h4 or g3 (Stockfish +0.4, slightly better for White).} *
+
+[Chapter "Maróczy Variation: White's other fifth and sixth moves"]
+[Side "black"]
+[Diagram "4...e5"]
+[Level "advanced"]
+[Opening "Caro-Kann Defense: Maróczy Variation"]
+[ECO "B12"]
+
+{White's rarer tries instead of 5.Nf3 Bg4 6.Bc4 in Maróczy Variation: 3...dxe4. Against 6.c3, develop the same way. Against the other fifth moves, d4 is loose or the queen check on h4 wins a pawn.}
+1. e4 c6 2. d4 d5 3. f3 {This is the Maróczy Variation, also called the Fantasy.} dxe4 4. fxe4 e5
+5. Nf3 {Attacks e5 and covers h4.}
+(5. Be3 Qh4+ {The weakened diagonal.} 6. Bf2 Qxe4+ 7. Qe2 Qxe2+ 8. Nxe2 exd4 {Black is a pawn up in the endgame (Stockfish −0.8, slightly better for Black).})
+(5. Bc4 Qxd4 {With no knight on f3, the d4 pawn is simply loose.} 6. Qxd4 exd4 {Black is a pawn up in an early endgame (Stockfish −0.3, slightly better for Black).})
+(5. Nc3? exd4 {Hits the knight.} 6. Nce2 Nf6 {Black is a clean pawn up, and e4 is weak too (Stockfish −1.6, clearly better for Black).})
+5... Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
+6. c3 {Supports d4, so Black can't win it.} Nd7 7. Be2 Ngf6 8. O-O Bd6 {Black develops as against 6.Bc4, and the e5 pawn holds (Stockfish +0.2, equal).} *
 
 [Chapter "Maróczy Variation, Maróczy Gambit: 5...exd4"]
 [Side "white"]
