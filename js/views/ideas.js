@@ -21,6 +21,13 @@ export function ideasPage(root, ctx, c, page, { trail, prev, next }) {
     for (const k of concepts) k.start()
 }
 
+/** Whose idea a board shows (Kumar's rule): "White's idea", "Black's idea" or "Both sides". */
+function ideaTag(idea) {
+    if (!idea) return null
+    const text = idea === "both" ? "Both sides" : `${idea === "white" ? "White" : "Black"}'s idea`
+    return h("span", { class: `tag side-tag is-${idea}` }, text)
+}
+
 function conceptSection(cp, i) {
     const nodes = mainPath(cp.root)
     // The position the idea is about: the [Diagram] move, or else, on a board that starts from the
@@ -53,7 +60,7 @@ function conceptSection(cp, i) {
         ? [move, h("div", { class: "nav-buttons" }, first, prev, ...(target ? [play] : []), next, last), movesLine, note, explain]
         : [explain]
     const el = h("section", { class: "concept", "aria-label": cp.title },
-        h("h2", { class: "concept-title" }, h("span", { class: "concept-num" }, String(i + 1)), spellOut(cp.title)),
+        h("h2", { class: "concept-title" }, h("span", { class: "concept-num" }, String(i + 1)), spellOut(cp.title), ideaTag(cp.idea)),
         h("div", { class: "concept-body" },
             h("div", { class: "concept-board" }, boardEl),
             h("div", { class: "concept-text" }, ...text)))

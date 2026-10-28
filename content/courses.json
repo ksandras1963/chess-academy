@@ -239,6 +239,12 @@
                     "by": "GM Igor Smirnov, Remote Chess Academy",
                     "kind": "Video",
                     "url": "https://www.youtube.com/watch?v=Xld_sJwdk8k"
+                },
+                {
+                    "title": "French Defense Opening Theory (Winawer, Tarrasch, Steinitz and more)",
+                    "by": "Stjepan, Hanging Pawns",
+                    "kind": "Video series",
+                    "url": "https://www.youtube.com/playlist?list=PLssNbVBYrGcAmDUgtbz4Du7_TLZfvTMye"
                 }
             ],
             "courses": [
@@ -246,10 +252,10 @@
                     "id": "french",
                     "side": "both",
                     "file": "content/french.pgn",
-                    "repertoire": "As White: the Advance (3.e5), with 6.a3 in the main line. As Black: ...c5 against the Advance, ...Nc6 and ...Bd6 in the Exchange, and the Rubinstein (3...dxe4) against 3.Nc3 and 3.Nd2.",
+                    "repertoire": "Six main lines, each drilled as White and as Black: the Advance, Exchange, Winawer, Tarrasch, Steinitz and Rubinstein.",
                     "summary": "1.e4 e6 2.d4 d5: Black builds a solid center and hits back with ...c5.",
                     "why": {
-                        "text": "As White, the Advance gives you space and one clear plan, with much less theory to learn than after 3.Nc3, where Black chooses between the Winawer, the Classical and the Rubinstein.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5."
+                        "text": "As White, you choose the game: the Advance (3.e5) gains space, the Exchange (3.exd5) keeps it simple, and 3.Nc3 or 3.Nd2 keep the tension in the center.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5. Against 3.Nc3 you choose between the sharp Winawer, 3...Nf6 (met by 4.e5, the Steinitz) and the solid Rubinstein."
                     },
                     "table": {
                         "columns": [
@@ -259,37 +265,37 @@
                         ],
                         "rows": [
                             [
-                                "Advance main line: 4.c3 Nc6 5.Nf3 Qb6 (also 4...Qb6 5.Nf3 Nc6)",
-                                "33% as White",
-                                "Play 6.a3 and b4. After 6...cxd4 7.cxd4, Nc3 and Na4 chase the queen. Count the attackers before Black takes on d4."
+                                "Advance: 3.e5",
+                                "Your choice as White; 22% as Black",
+                                "Black hits d4 with ...c5, ...Nc6 and ...Qb6. Against 6.a3, Black locks the queenside with 6...c4 and later breaks with ...f6; White plays on the kingside."
                             ],
                             [
-                                "Exchange Variation: 3.exd5 exd5 (also 2.Nf3 d5 3.exd5 exd5 4.d4)",
-                                "30% as Black",
-                                "Develop with ...Nc6, ...Bd6, ...Bg4 and ...Nge7, then castle short. Against 4.Nc3, put the knight on f6 to guard d5."
+                                "Exchange: 3.exd5 exd5",
+                                "Your choice as White; 30% as Black",
+                                "Symmetrical pawns and an open e-file. Black develops with ...Nc6, ...Bg4, ...Bd6 and ...Nge7 and castles short; White plays c3, castles and puts a rook on e1."
                             ],
                             [
-                                "Advance Variation: 3.e5",
-                                "22% as Black",
-                                "Hit d4 with ...c5, ...Nc6 and ...Qb6. Against 6.a3, lock the queenside with 6...c4. Against the Milner-Barry Gambit, 6.Bd3, play ...Bd7 before ...Nxd4."
+                                "Winawer: 3.Nc3 Bb4",
+                                "19% as White, with 3.Nc3; your choice as Black",
+                                "After 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4 Qc7, White takes on g7 and h7 and Black takes the center pawns. Sharp for both sides; after 9...cxd4, 10.cxd4? Qc3+ forks White's king and rook."
                             ],
                             [
-                                "Rubinstein Variation: 3.Nc3 or 3.Nd2 dxe4",
-                                "19% as Black",
-                                "Play ...Nd7 and ...Ngf6 to trade White's knight on e4, then free your game with ...c5."
+                                "Tarrasch: 3.Nd2",
+                                "Your choice as White; 6% as Black",
+                                "White supports d4 with c3. After 3...Nf6 4.e5 Nfd7, Black breaks with ...c5 and ...f6; after exf6 Nxf6, Black has the f-file and a strong knight on e4, while White aims at e5."
                             ],
                             [
-                                "Euwe Variation: 5...Bd7",
-                                "9% as White",
-                                "Play 6.Be2 and castle. Avoid 6.Bb5?, which runs into 6...Nxe5!"
+                                "Steinitz: 3.Nc3 Nf6 4.e5",
+                                "28% as White, with 3.Nc3; your choice as Black",
+                                "White builds a big center with 4.e5 Nfd7 5.f4. Black hits d4 with ...c5 and ...Nc6, then plays ...a6, ...b5 and ...b4 on the queenside, and trades the c8 bishop with ...Ba6."
                             ],
                             [
-                                "Early ...cxd4 and the Wade Variation: 4...cxd4, or 4...Qb6 5.Nf3 Bd7",
-                                "6% as White",
-                                "Against 5...Bb4+, block with 6.Nc3. Against the Wade, trade bishops with 6.Be2 Bb5 7.Bxb5+ Qxb5 and hit the queen with 8.Na3."
+                                "Rubinstein: 3.Nc3 dxe4",
+                                "16% as White, with 3.Nc3 or 3.Nd2; your choice as Black",
+                                "Black takes on e4 with the d-pawn, trades knights with ...Nd7 and ...Ngf6, then frees the game with ...c5. Solid for Black; White keeps a little more space."
                             ]
                         ],
-                        "note": "How often: the share of your French games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                        "note": "How often: the share of your French games that reach the line, from the side that faces it, counting all its move orders; the side that chooses the line can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
                     }
                 }
             ]
@@ -1148,7 +1154,7 @@
                 ],
                 "note": "Share: how often each defense comes up in games that reach 1.d4 Nf6 2.c4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. The King's Indian figure counts every 2...g6 game except the Grünfeld (3.Nc3 d5); the others are measured on the move order shown."
             },
-            "summary": "Black develops the knight first and keeps the choice of setup open. The map shows where each defense starts; the table below it shows how often each one comes up."
+            "summary": "Black develops the knight first and keeps the choice of setup open. The name is older than it looks: as early as 1884, writers called these openings the “Indian Defence” after Moheschunder Bannerjee, a Bengali player who met the Scottish master John Cochrane in hundreds of games in Calcutta between 1848 and 1860. Savielly Tartakower made the name popular in his 1924 book Die hypermoderne Schachpartie."
         },
         {
             "id": "d4-uncommon",

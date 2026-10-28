@@ -7,6 +7,7 @@
 
 [Chapter "The pawn triangle"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "3...c5"]
 
 {Black hits d4 at once. Answer with c3: with pawns on c3, d4 and e3, d4 is held by a pawn, and the f4 bishop stands outside the chain, so you have no bad bishop. The rule: c3 against ...c5, c4 against ...c6.}
@@ -17,6 +18,7 @@
 
 [Chapter "Keep the bishop with Bg3"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "6...Bd6"]
 
 {Black offers to trade the London bishop, your best minor piece. Step back to g3 and keep it. If Black takes, hxg3 opens the h-file for your rook, and e5 stays under control.}
@@ -33,6 +35,7 @@
 
 [Chapter "The knight on e5"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "8...Re8"]
 
 {Black's rook on e8 prepares ...e5. Jump in first: Black can remove a knight on e5 only by trading a piece for it, and the pawn that takes back on e5 cramps Black's kingside.}
@@ -43,6 +46,7 @@
 
 [Chapter "The e4 break"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "8...b6"]
 
 {Against 8...b6, open the center at once with e4, while Black's bishop is still on c8. The open lines help your pieces, which already point at Black's king.}
@@ -52,6 +56,7 @@
 
 [Chapter "Meet ...Qb6 with Qb3"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "5...Qb6"]
 
 {Once the bishop has left c1, b2 is loose, and ...Qb6 hits it. Meet the queen head-on with Qb3: if the queens are traded on b3, the a-file opens for your rook.}
@@ -69,6 +74,7 @@
 
 [Chapter "The reversed Carlsbad"]
 [Type "concept"]
+[Idea "both"]
 [Diagram "2...c5"]
 
 {When Black takes on d4 early, take back with the e-pawn. You get the pawn structure of the Exchange Caro-Kann: Black plays the minority attack with ...b5 and ...b4, and you play in the center and on the kingside with Bd3, castling, Re1 and Ne5.}
@@ -78,6 +84,7 @@
 
 [Chapter "Nh4 once the queen has left d8"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "7...Bd6"]
 
 {The f5 bishop is Black's best minor piece, and Nh4 chases it. With Black's queen on d8, though, Nh4?? drops the knight to ...Qxh4. Trade on d6 first: it pulls the queen away from h4.}
@@ -87,6 +94,7 @@
 
 [Chapter "c4 against ...c6"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "3...e6"]
 
 {Black copies the London, and its c-pawn will go to c6. Then play c4 and Nc3, not c3: you get a Queen's Gambit position with an extra tempo, and Qb3 hits b7, which the f5 bishop no longer guards.}
@@ -103,6 +111,7 @@
 
 [Chapter "The Greek gift with Qh4"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "13...Qc8"]
 
 {Black's queen has left d8, so nothing guards h4 any more. Bxh7+ opens the fourth rank: your queen reaches h4 with check, and Ng5 threatens mate on h7.}
@@ -112,6 +121,7 @@
 
 [Chapter "The Greek gift with Ne4"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "12...Qxc5"]
 
 {Black's f6 knight has been traded off, and the queen on c5 stands where a knight can hit it. Bxh7+ and Qh5+ bring your queen to the kingside with check, and Ne4 hits the queen and threatens Ng5 with mate.}
@@ -121,6 +131,7 @@
 
 [Chapter "Qxf5 against a late ...Bf5"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "7...Bf5"]
 
 {...Bf5 hits your queen, but the bishop is unguarded, so take it. With your knight on d2, b1 is free: after ...Qxb2, Qb1 guards the rook, and Black wins back only pawns. With the queen's knight still on b1, ...Qxb2 would win your rook, which is why the knight goes to d2 early.}
@@ -130,6 +141,7 @@
 
 [Chapter "Nxd5 against ...Qxb2"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "4...Qxb2"]
 
 {With a black pawn on d5 and no knight on f6, the b2 pawn is poisoned. Nxd5 threatens Nc7+, forking king and rook, and Rb1 traps the queen's retreat.}
@@ -146,6 +158,7 @@
 
 [Chapter "h3 and Be2"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "4...O-O"]
 
 {h3 gives the bishop a retreat on h2, so ...Nh5 can't trade it. The other bishop goes to e2, not d3, so the d-file holds no trap when the pawns are traded on e5.}
@@ -156,6 +169,7 @@
 
 [Chapter "Why not Bd3: the d-file trap"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "8.dxe5"]
 
 {This is what happens with the bishop on d3. With the knight on d2, your queen no longer guards d3, so after 8.dxe5?? the pawn hits f4 and the queen hits d3 at once.}
@@ -164,6 +178,7 @@
 
 [Chapter "Take on e5 when ...e5 is early"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "7...e5"]
 
 {With the knight on d7 and no rook on e8, ...e5 comes too early. After the trade on e5, your knight and the f4 bishop attack the pawn twice, and only the d7 knight guards it: the f6 knight blocks the g7 bishop.}
@@ -172,6 +187,7 @@
 
 [Chapter "4.Nc3! against ...Qb6"]
 [Type "concept"]
+[Idea "white"]
 [Diagram "3...Qb6"]
 
 {Against 2...c5 3.e3 Qb6, defend b2 with tactics. 4.Nc3! develops, and if the queen takes on b2, Nb5 hits c7, so Black's queen and king run short of squares.}
@@ -188,6 +204,7 @@
 
 [Chapter "Offer the bishop trade with ...Bd6"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "4.Nf3"]
 
 {The f4 bishop is White's best minor piece, so offer to trade it with ...Bd6. If White takes, your queen recaptures and already covers e5.}
@@ -196,6 +213,7 @@
 
 [Chapter "Three pieces watch e5"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "7.c3"]
 
 {If White keeps the bishop with Bg3, complete the setup with ...Qc7 and ...Nbd7. Then the knight, the bishop and the queen behind it all bear on e5, so White's knight can't settle there, and ...e5 is ready.}
@@ -204,6 +222,7 @@
 
 [Chapter "The King's Indian setup"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "5.h3"]
 
 {With 1...Nf6, keep the King's Indian setup. Against h3 and Be2, ...e5 is too early, so hit d4 with ...c5 and b2 with ...Qb6.}
@@ -220,6 +239,7 @@
 
 [Chapter "The ...e5 break"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "9.O-O"]
 
 {Once White has castled, break with ...e5. It threatens ...e4, forking the knight on f3 and the bishop on d3, so White has to react at once. After the trades, the London bishop has no targets.}
@@ -228,6 +248,7 @@
 
 [Chapter "If White plays e4 first"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "9.e4"]
 
 {If White breaks first with e4, trade on d4 and e4. White is left with an isolated pawn on d4, and your pieces aim at it.}
@@ -237,6 +258,7 @@
 
 [Chapter "Against Bd3: ...Nc6 and ...e5"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "6.c3"]
 
 {With White's bishop on d3, play ...Nc6 and ...e5. Once White's knight is on d2, it cuts the queen off from d3, so dxe5 would open the d-file against the bishop.}
@@ -252,6 +274,7 @@
 
 [Chapter "Open the e-file"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "10.Bc2"]
 
 {Against the King's Indian London, ...exd4 opens the e-file for your rook. With White's king still in the center, the pressure on e3 matters.}
@@ -260,6 +283,7 @@
 
 [Chapter "The a- and c-files"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "9.Qxb6"]
 
 {After the queen trade on b6, your b-pawns are doubled, but the a-file opens for your rook. Trade on d4 next, and the c-file opens too.}
@@ -276,6 +300,7 @@
 
 [Chapter "The ...e4 fork"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "10.Bh4"]
 
 {9...e5 threatens ...e4, forking the knight on f3 and the bishop on d3. 10.Bh4 ignores the threat.}
@@ -284,6 +309,7 @@
 
 [Chapter "The d-file trap"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "8.dxe5"]
 
 {With White's knight on d2, the queen can't guard d3. After 8.dxe5??, your pawn and queen hit both bishops at once.}
@@ -292,6 +318,7 @@
 
 [Chapter "...g5! breaks the pin"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "10.O-O"]
 
 {The bishop on h4 pins your f6 knight to the queen, so ...e4 doesn't work yet. Once White has castled, ...g5 breaks the pin, and ...e4 forks the knight and the bishop.}
@@ -300,6 +327,7 @@
 
 [Chapter "Keep the queen off c5"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "12.dxc5"]
 
 {This is White's trap in the ...c5 setup with ...Nc6, which the ...Qc7 and ...Nbd7 setup avoids. Your f6 knight is gone, so taking back with the queen loses to Bxh7+, Qh5+ and Ne4. Leave the pawn for now.}
@@ -308,6 +336,7 @@
 
 [Chapter "Keep h4 guarded"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "13.Qa4"]
 
 {White's other trap in the same setup. The queen on d8 guards h4: 13...Qc8?? lets it go, and Bxh7+ and Qh4+ win, so guard c6 with the rook instead.}
@@ -323,6 +352,7 @@
 
 [Chapter "2.Nf3 first: ...Bf5 with tempo"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "7.Qc2"]
 
 {With White's queen's knight still on b1, ...Bf5 hits the queen with tempo. Taking the bishop loses the rook on a1, so White has to retreat.}
@@ -331,6 +361,7 @@
 
 [Chapter "The Jobava London: pin with ...Bb4"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "3.Nc3"]
 
 {The knight on c3 aims at b5 and c7. Play ...e6 and pin it with ...Bb4, so Nb5 is off.}
@@ -339,6 +370,7 @@
 
 [Chapter "Guard c7 with ...Na6"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "4.Nb5"]
 
 {The knight on b5 and the f4 bishop both hit c7. Guard it at once with ...Na6: the natural ...Bg7 loses the rook to Nxc7+.}
@@ -347,6 +379,7 @@
 
 [Chapter "Meet h4 with ...h5"]
 [Type "concept"]
+[Idea "black"]
 [Diagram "5.h4"]
 
 {Against the King's Indian setup, the Jobava London often goes for h4 and h5. Stop it at once with ...h5: then White's h-pawn is just a weakness.}

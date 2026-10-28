@@ -2,53 +2,143 @@
 [Side "both"]
 [Type "ideas"]
 
-{Black lets White build a big center, castles behind the g7 bishop, then strikes with ...e5 or ...c5. When the center locks, each side attacks on its own wing: White on the queenside, Black on the kingside.
+{Black's first moves hardly change from game to game, and only two pawn breaks follow them. The boards below show the setup, then each break.}
+*
 
-Step through the moves to see the setup.}
-1. d4 Nf6 {Stops e4 for now and keeps every option open.}
-2. c4 g6 {Prepares ...Bg7.}
+[Chapter "Black's setup"]
+[Type "concept"]
+[Idea "black"]
+[Side "black"]
+
+{Black plays ...g6, ...Bg7, ...d6 and castles in almost every King's Indian, and lets White take the center with e4. Black castles first and only then picks a break, ...e5 or ...c5.}
+1. d4 Nf6 2. c4 {The idea starts from this position.}
+2... g6 {Prepares ...Bg7.}
 3. Nc3 Bg7 {[%cal Gg7d4] The bishop aims down the long diagonal. 3...d5 instead would be the Grünfeld, a different opening.}
-4. e4 d6 {[%cal Gd6e5,Gc7c5] Stops e5 and prepares Black's two breaks, ...e5 and ...c5.}
-5. Nf3 O-O {Black's king is safe behind the g7 bishop.}
-6. Be2 e5 {[%cal Ge5d4] This is the Classical. White now chooses between castling, Be3, d5 and dxe5.} *
+4. e4 d6 {[%cal Gd6e5] Stops e5 and prepares Black's breaks.}
+5. Nf3 O-O {Black's king is safe behind the g7 bishop.} *
+
+[Chapter "The ...e5 break"]
+[Type "concept"]
+[Idea "black"]
+[Side "black"]
+
+{Classical: 6...e5. Black's usual break is ...e5, which hits d4. White can keep the tension, take on e5 or close the center with d5. The Pawn structures page shows where each choice leads.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 {[%cal Ge7e5] The idea starts from this position.}
+6... e5 {[%cal Ge5d4] Hits d4. This is the Classical.}
+7. O-O Nc6 {[%cal Gc6d4] More pressure on d4.}
+8. d5 {Closes the center and gains space.} Ne7 {[%cal Gf7f5] The knight makes way for ...f5. This is the Mar del Plata.} *
+
+[Chapter "The ...c5 break"]
+[Type "concept"]
+[Idea "black"]
+[Side "black"]
+
+{Sämisch Gambit: 6...c5. Black's other break is ...c5, which also hits d4. The course plays it against the Four Pawns Attack and, as a gambit, against the Sämisch.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 {[%cal Gc7c5] The idea starts from this position.}
+6... c5 {[%cal Gc5d4] Hits d4 at once. This is the Sämisch Gambit.}
+7. Nge2 {White keeps the tension.} Nc6 {[%cal Gc6d4] More pressure on d4.}
+8. d5 Ne5 {[%csl Ge5] The knight takes a strong central square.} *
 
 [Chapter "Key ideas: Pawn structures"]
 [Side "both"]
 [Type "ideas"]
-[FEN "r1bq1rk1/pppnn1bp/3p4/3Pp1p1/2P1Pp2/2N2P2/PP2BBPP/R2QNRK1 w - - 0 13"]
 
-{[%cal Gc4c5,Gb2b4,Rg5g4,Rf4f3] [%csl Yd6] Four structures cover most King's Indian middlegames.
+{Four pawn structures come up again and again in the King's Indian. Each board shows how one arises in the course's lines and what each side aims for.}
+*
 
-The closed center (this position, from Mar del Plata, Main line). Each side attacks where its pawns point: White with c5 on the queenside (green), Black with ...g4 on the kingside (red).
+[Chapter "Closed center"]
+[Type "concept"]
+[Idea "both"]
 
-The open center (Classical, Open Center: 7...exd4). Black's g7 bishop and e8 rook press d4 and e4; White uses the extra space and holds e4 with f3.
+{Mar del Plata, Main line: 9.Ne1. The center is locked, so each side attacks where its pawns point: White with c5 on the queenside, Black with ...g4 on the kingside. Speed decides.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. Ne1 Nd7 10. Be3 f5 11. f3 f4 12. Bf2 g5 {[%cal Gc4c5,Rg5g4] The idea starts from this position.}
+13. Rc1 {[%cal Gc4c5] Prepares c5 to open the c-file.} Ng6 {The knight joins the kingside attack.}
+14. c5 {Opens the c-file at once.} Nxc5
+15. b4 Na6 {[%cal Gc1c7] White's pieces head for c7, while Black pushes on with ...g4. Stockfish: +0.6, slightly better for White.} *
 
-The Benoni (Four Pawns Attack, Main line, and Averbakh, Benoni Defense). White has a central majority and wants e5; Black has a queenside majority and wants ...b5.
+[Chapter "Open center"]
+[Type "concept"]
+[Idea "both"]
 
-The Exchange (Classical, Exchange Variation: 7.dxe5). The center is symmetrical and the queens often come off; d4 and d5 are the outposts.} *
+{Classical, Open Center: 7...exd4. Black gives up the center to open the g7 bishop's diagonal, and the e8 rook adds pressure on e4. White holds e4 with f3 and plays on the extra space.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O {[%cal Ge5d4] The idea starts from this position.}
+7... exd4 {[%cal Gg7d4] The g7 bishop's diagonal opens.}
+8. Nxd4 Re8 {[%cal Re8e4] Attacks e4.}
+9. f3 {[%csl Ge4] The solid way to hold e4.} c6 {[%cal Gd6d5] Prepares ...d5, Black's freeing break. Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "Benoni structure"]
+[Type "concept"]
+[Idea "both"]
+
+{Four Pawns Attack, Main line: 6...c5; Averbakh, Benoni Defense: 6...c5 leads to the same structure. After the trade on d5, White has a central majority and wants e5, and Black has a queenside majority and wants ...b5.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 {[%cal Gc7c5] The idea starts from this position.}
+6... c5 {[%cal Gc5d4] Hits the center.}
+7. d5 e6
+8. Be2 exd5
+9. cxd5 {[%cal Ge4e5,Gb7b5] White wants e5; Black wants ...b5. Stockfish: +0.2, equal.} *
+
+[Chapter "Exchange structure"]
+[Type "concept"]
+[Idea "both"]
+
+{Classical, Exchange Variation: 7.dxe5. The center becomes symmetrical and the queens come off at once, so the game is quiet. The fight is about the d4 and d5 squares, where the knights want to land.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 {[%cal Gd4e5] The idea starts from this position.}
+7. dxe5 dxe5
+8. Qxd8 Rxd8 {The queens are off.}
+9. Bg5 {[%cal Gc3d5] Pins the f6 knight to the rook. Next comes Nd5. Stockfish: −0.1, equal.} *
 
 [Chapter "Key ideas: Meeting the kingside attack"]
 [Type "ideas"]
 [Side "white"]
-[FEN "r1bq1rk1/ppp1n1bp/3p1np1/3PppN1/1PP1P3/2N2P2/P3B1PP/R1BQR1K1 b - - 0 12"]
 
-{[%cal Gg5e6,Gc4c5,Rf5f4,Rg6g5] [%csl Ye6] In the closed center, Black's whole game is the kingside attack: ...f5, ...f4, ...g5 and ...g4. It is slow, and you have defenders. This position comes from Mar del Plata, Bayonet Attack, with 12.f3 instead of 12.Bf3.
+{In the closed center, Black's whole game is the kingside attack with ...f5, ...f4, ...g5 and ...g4. It is slow, and you have defenders, but your queenside attack has to arrive first. Both boards come from Mar del Plata, Bayonet Attack: 9.b4.}
+*
 
-The knight on g5 eyes e6, a hole after ...f5. The pawn on f3 holds e4 and g4, so Black needs ...g5 and ...g4 to open lines.
+[Chapter "The hole on e6"]
+[Type "concept"]
+[Idea "white"]
 
-With a rook on e1, the bishop can drop to f1 and avoid a trade with a knight on f4. Your queenside attack, c5 with a4 and Ba3, has to arrive first.} *
+{Mar del Plata, Bayonet Attack: 9.b4, with 12.f3, Stockfish's first choice, instead of the course's 12.Bf3. After ...f5, no black pawn can guard e6. The knight on g5 eyes it, and the pawn on f3 holds e4 and g4, so Black needs ...g5 and ...g4 to open lines.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. b4 Nh5 10. Re1 f5 11. Ng5 Nf6 12. f3 {[%cal Gg5e6] [%csl Ye6] The idea starts from this position.}
+12... Kh8 13. Rb1 {[%cal Gb4b5] Supports the b-pawn's advance.} h6 {Chases the knight.}
+14. Ne6 {[%csl Ge6] The knight jumps into the hole.} Bxe6
+15. dxe6 {[%csl Ge6] White has the two bishops and a pawn on e6 that cramps Black. Stockfish: +0.4, slightly better for White.} *
+
+[Chapter "Keep your bishop"]
+[Type "concept"]
+[Idea "white"]
+
+{Mar del Plata, Bayonet Attack: 9.b4. Black's knight heads for f4, where it can take your e2 bishop. With a rook on e1, the bishop drops back to f1 instead of being traded.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. b4 Nh5 {[%cal Gh5f4] The idea starts from this position.}
+10. Re1 {Makes room on f1 for the bishop.} Nf4?! {The knight attacks the e2 bishop.}
+11. Bf1 {[%csl Gf1] The knight on f4 has nothing to take. Stockfish: +1.1, clearly better for White.} *
 
 [Chapter "Key ideas: Against the London and other second moves"]
 [Type "ideas"]
 [Side "black"]
 
-{After 1.d4 Nf6, Lichess players rated 1800 to 2199 choose 2.c4 in only about half their games. 2.Bf4 (the London) and 2.Nf3 each come up about one game in six.
+{After 1.d4 Nf6, White plays 2.c4 in only about half of Lichess games between players averaging 1800 to 2199. 2.Bf4 (the London) and 2.Nf3 each come up about one game in six. You need no new theory: the same setup works. The London System Course covers White's other plans and the traps.}
+*
 
-You need no new theory: play ...g6, ...Bg7, ...O-O and ...d6, then strike with ...e5 or ...c5. Without a white pawn on c4, ...e5 is even stronger. The London System Course covers White's other plans and the traps.}
-1. d4 Nf6 2. Bf4 {This is the London System.} g6 3. e3 Bg7 4. Nf3 O-O
-5. Bd3 d6 {[%cal Gd6e5] Stops Ne5 and prepares ...e5.}
-6. c3 Nc6 {Supports ...e5.}
-7. Nbd2 e5 {[%cal Ge5f4,Gd8d3] Equal (Stockfish 0.0). White should keep the tension with 8.Bg5: 8.dxe5?? dxe5 loses a piece, because the pawn hits f4 and the queen hits d3 (Stockfish −6.4, winning for Black).} *
+[Chapter "The same setup against the London"]
+[Type "concept"]
+[Idea "black"]
+
+{Against 2.Bf4, the London System, play ...g6, ...Bg7, ...O-O and ...d6, as against 2.c4. Then strike with ...e5 or ...c5.}
+1. d4 Nf6 2. Bf4 {The idea starts from this position.}
+2... g6 3. e3 Bg7
+4. Nf3 O-O
+5. Bd3 d6 {[%cal Gd6e5] Stops Ne5 and prepares ...e5. Stockfish: 0.0, equal.} *
+
+[Chapter "The ...e5 break, and a trap"]
+[Type "concept"]
+[Idea "black"]
+
+{Black prepares ...e5 with ...Nc6. Once it comes, White must keep the tension: taking on e5 loses a piece.}
+1. d4 Nf6 2. Bf4 g6 3. e3 Bg7 4. Nf3 O-O 5. Bd3 d6 6. c3 {[%cal Gb8c6,Ge7e5] The idea starts from this position.}
+6... Nc6 {Supports ...e5.}
+7. Nbd2 e5 {[%cal Ge5d4] Stockfish: −0.3, about equal. White should keep the tension with 8.Bg5.}
+8. dxe5?? dxe5 {[%cal Ge5f4,Gd8d3] The pawn hits the f4 bishop and the queen hits the d3 bishop: one of them falls. Stockfish: −4.8, winning for Black.} *
 
 [Chapter "Mar del Plata, Main line: 9.Ne1"]
 [Side "both"]

@@ -1,12 +1,12 @@
 # Content validation report
 
-Generated 2026-10-27 23:44 · engine Stockfish, depth 18
+Generated 2026-10-28 00:12 · engine Stockfish, depth 18
 
 **No errors.**
 
 ## Italian Game — both sides (`italian`)
 
-31 chapters, 78 drillable lines (basic 27, traps 28, advanced 23), 700 learner moves.
+49 chapters, 78 drillable lines (basic 27, traps 28, advanced 23), 700 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -141,7 +141,7 @@ Generated 2026-10-27 23:44 · engine Stockfish, depth 18
 
 ## Caro-Kann Defense — both sides (`caro-kann`)
 
-58 chapters, 114 drillable lines (basic 23, traps 11, advanced 80), 957 learner moves.
+70 chapters, 114 drillable lines (basic 23, traps 11, advanced 80), 957 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -332,20 +332,22 @@ None.
 
 ## French Defense — both sides (`french`)
 
-40 chapters, 70 drillable lines (basic 17, traps 17, advanced 36), 598 learner moves.
+67 chapters, 90 drillable lines (basic 12, traps 17, advanced 61), 850 learner moves.
 
 ### Opening names and course-page diagrams
 
 | Chapter | Diagram | Opening header | ECO | Check |
 |---|---|---|---|---|
-| Advance: main line, 5...Qb6 | 5...Qb6 | French Defense: Advance Variation, Main Line | C02 | ok |
+| Advance: 3.e5 | 3...c5 | French Defense: Advance Variation, Main Line | C02 | ok |
+| Exchange: 3.exd5 | 3...exd5 | French Defense: Exchange Variation | C01 | ok |
+| Winawer: 3.Nc3 Bb4 | 3...Bb4 | French Defense: Winawer Variation, Poisoned Pawn Variation, Main Line | C18 | ok |
+| Tarrasch: 3.Nd2 | 3...Nf6 | French Defense: Tarrasch Variation, Closed Variation, Main Line | C06 | ok |
+| Steinitz: 3.Nc3 Nf6 4.e5 | 3...Nf6 | French Defense: Classical Variation, Steinitz Variation | C11 | ok |
+| Rubinstein: 3.Nc3 dxe4 | 3...dxe4 | French Defense: Rubinstein Variation, Blackburne Defense | C10 | ok |
 | Advance: 4...Qb6 and 4...cxd4 | 4...Qb6 | French Defense: Advance Variation, Wade Variation | C02 | ok |
-| Rubinstein: 3...dxe4 | 3...dxe4 | French Defense: Rubinstein Variation, Blackburne Defense | C10 | ok |
-| Advance: 6.a3 | 5...Qb6 | French Defense: Advance Variation, Main Line | C02 | ok |
-| Advance: 5...Bd7 | 5...Bd7 | French Defense: Advance Variation, Euwe Variation | C02 | ok |
-| Exchange: 4.Nf3 | 4.Nf3 | French Defense: Exchange Variation | C01 | ok |
-| Exchange: 4.Bd3 and 4.Nc3 | 4.Bd3 | French Defense: Exchange Variation | C01 | ok |
 | Advance: Black's other sixth moves after 6.a3 | 6...Bd7 | French Defense: Advance Variation, Main Line | C02 | ok |
+| Advance: 5...Bd7 | 5...Bd7 | French Defense: Advance Variation, Euwe Variation | C02 | ok |
+| Advance: 6.a3 cxd4 | 6...cxd4 | French Defense: Advance Variation, Main Line | C02 | ok |
 | Advance: 5...cxd4 | 5...cxd4 | French Defense: Advance Variation, Paulsen Attack | C02 | ok |
 | Advance: 5...Nge7 | 5...Nge7 | French Defense: Advance Variation, Paulsen Attack | C02 | ok |
 | Advance: Black's other third moves | 3...Nc6 | French Defense: Advance Variation | C02 | ok |
@@ -353,9 +355,16 @@ None.
 | Advance: White's other fourth and fifth moves | 5.Bb5 | French Defense: Advance Variation | C02 | ok |
 | Advance: sixth moves after 5...cxd4, 5...Bd7 or 5...Nge7 | 6...Bb4+ | French Defense: Advance Variation, Paulsen Attack | C02 | ok |
 | Advance: Black's other fourth and fifth moves | 4...c4 | French Defense: Advance Variation | C02 | ok |
-| Franco-Sicilian: 2...c5 and other second moves | 2...c5 | French Defense: Franco-Sicilian Defense | C00 | ok |
+| Exchange: 4.Bd3, 4.Nc3 and 5.Bb5 | 4.Bd3 | French Defense: Exchange Variation | C01 | ok |
+| Winawer: 7...O-O | 7...O-O | French Defense: Winawer Variation, Warsaw Variation | C18 | ok |
+| Tarrasch: 3...c5 | 3...c5 | French Defense: Tarrasch Variation, Chistyakov Defense, Modern Line | C07 | ok |
+| Steinitz: 7...Qb6 | 7...Qb6 | French Defense: Steinitz Variation, Boleslavsky Variation | C11 | ok |
+| Steinitz: 7...cxd4 | 7...cxd4 | French Defense: Steinitz Variation, Boleslavsky Variation | C11 | ok |
+| Steinitz: 7...Be7 | 7...Be7 | French Defense: Steinitz Variation, Boleslavsky Variation | C11 | ok |
+| Burn Variation: 4.Bg5 dxe4 | 4...dxe4 | French Defense: Classical Variation, Burn Variation, Morozevich Line | C13 | ok |
 | Rubinstein: 4...Nf6 and ...gxf6 | 4...Nf6 | French Defense: Rubinstein Variation | C10 | ok |
-| Rubinstein: other sixth moves | 6.Bg5 | French Defense: Rubinstein Variation, Blackburne Defense | C10 | ok |
+| Rubinstein: 3.Nd2, 5.Bd3 and other sixth moves | 6.Bg5 | French Defense: Rubinstein Variation, Blackburne Defense | C10 | ok |
+| Franco-Sicilian: 2...c5 and other second moves | 2...c5 | French Defense: Franco-Sicilian Defense | C00 | ok |
 | Knight Variation: other third moves | 3.e5 | French Defense: Knight Variation | C00 | ok |
 | Rare second moves: 2.Bc4, 2.c4 and 2.d3 | 2.Bc4 | French Defense | C00 | ok |
 | La Bourdonnais Variation: 2.f4 | 2.f4 | French Defense: La Bourdonnais Variation | C00 | ok |
@@ -370,7 +379,10 @@ None.
 
 ### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
 
-None.
+| Line | Move | Engine prefers | Loss |
+|---|---|---|---|
+| Steinitz: 7...Qb6 (Steinitz, as Black) | 13...O-O | b6 | 0.92 |
+| Steinitz: 7...Qb6 (Steinitz, as Black) | (line end) | — | ends at -3.09 |
 
 ### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
 
@@ -380,27 +392,27 @@ None.
 
 | Line | Eval | Deepest named position |
 |---|---|---|
-| Advance: main line, 5...Qb6 (Main line) | 0.90 | C02 French Defense: Advance Variation, Main Line |
+| Advance: 3.e5 (Advance, as White) | 0.32 | C02 French Defense: Advance Variation, Main Line |
+| Advance: 3.e5 (Advance, as Black) | -0.32 | C02 French Defense: Advance Variation, Main Line |
+| Exchange: 3.exd5 (Exchange, as White) | 0.32 | C01 French Defense: Exchange Variation |
+| Exchange: 3.exd5 (Exchange, as Black) | -0.32 | C01 French Defense: Exchange Variation |
+| Winawer: 3.Nc3 Bb4 (Winawer, as White) | 0.61 | C18 French Defense: Winawer Variation, Poisoned Pawn Variation, Main Line |
+| Winawer: 3.Nc3 Bb4 (Winawer, as Black) | -0.61 | C18 French Defense: Winawer Variation, Poisoned Pawn Variation, Main Line |
+| Tarrasch: 3.Nd2 (Tarrasch, as White) | 0.23 | C06 French Defense: Tarrasch Variation, Closed Variation, Main Line |
+| Tarrasch: 3.Nd2 (Tarrasch, as Black) | -0.23 | C06 French Defense: Tarrasch Variation, Closed Variation, Main Line |
+| Steinitz: 3.Nc3 Nf6 4.e5 (Steinitz, as White) | 0.02 | C11 French Defense: Steinitz Variation, Boleslavsky Variation |
+| Steinitz: 3.Nc3 Nf6 4.e5 (Steinitz, as Black) | -0.02 | C11 French Defense: Steinitz Variation, Boleslavsky Variation |
+| Rubinstein: 3.Nc3 dxe4 (Rubinstein, as White) | 0.02 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Rubinstein: 3.Nc3 dxe4 (Rubinstein, as Black) | -0.02 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
 | Advance: 4...Qb6 and 4...cxd4 (Main line) | 0.44 | C02 French Defense: Advance Variation, Wade Variation |
 | Advance: 4...Qb6 and 4...cxd4 (5...Nc6) | 0.43 | C02 French Defense: Advance Variation |
 | Advance: 4...Qb6 and 4...cxd4 (4...cxd4) | 0.55 | C02 French Defense: Advance Variation |
 | Advance: 4...Qb6 and 4...cxd4 (4...cxd4 … 5...Bb4+) | 0.96 | C02 French Defense: Advance Variation |
-| Rubinstein: 3...dxe4 (Main line) | -0.02 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
-| Rubinstein: 3...dxe4 (5.Bd3) | -0.35 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
-| Rubinstein: 3...dxe4 (3.Nd2) | -0.48 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
-| Advance: 6.a3 (Main line) | -0.32 | C02 French Defense: Advance Variation, Main Line |
-| Advance: 6.a3 (4.Nf3) | -0.39 | C02 French Defense: Advance Variation, Paulsen Attack |
-| Advance: 5...Bd7 (Main line) | 0.58 | C02 French Defense: Advance Variation, Euwe Variation |
-| Exchange: 4.Nf3 (Main line) | -0.32 | C01 French Defense: Exchange Variation |
-| Exchange: 4.Nf3 (5.Bb5) | -0.21 | C01 French Defense: Exchange Variation |
-| Exchange: 4.Nf3 (2.Nf3) | -0.29 | C01 French Defense: Exchange Variation |
-| Exchange: 4.Bd3 and 4.Nc3 (Main line) | -0.07 | C01 French Defense: Exchange Variation |
-| Exchange: 4.Bd3 and 4.Nc3 (4.Nc3) | -0.32 | C01 French Defense: Exchange Variation |
-| Exchange: 4.Bd3 and 4.Nc3 (2.Nc3) | -0.30 | C01 French Defense: Exchange Variation |
 | Advance: Black's other sixth moves after 6.a3 (Main line) | 0.46 | C02 French Defense: Advance Variation, Main Line |
 | Advance: Black's other sixth moves after 6.a3 (6...Nge7) | 0.14 | C02 French Defense: Advance Variation, Main Line |
-| Advance: Black's other sixth moves after 6.a3 (6...c4) | 0.32 | C02 French Defense: Advance Variation, Main Line |
 | Advance: Black's other sixth moves after 6.a3 (6...Nh6) | 0.14 | C02 French Defense: Advance Variation, Lputian Variation |
+| Advance: 5...Bd7 (Main line) | 0.58 | C02 French Defense: Advance Variation, Euwe Variation |
+| Advance: 6.a3 cxd4 (Main line) | 0.90 | C02 French Defense: Advance Variation, Main Line |
 | Advance: 5...cxd4 (Main line) | 0.56 | C02 French Defense: Advance Variation, Paulsen Attack |
 | Advance: 5...Nge7 (Main line) | 1.40 | C02 French Defense: Advance Variation, Paulsen Attack |
 | Advance: Black's other third moves (Main line) | 1.06 | C02 French Defense: Advance Variation |
@@ -410,18 +422,38 @@ None.
 | Advance: White's other fourth and fifth moves (Main line) | 0.00 | C02 French Defense: Advance Variation |
 | Advance: White's other fourth and fifth moves (6.Nf3) | 1.54 | C02 French Defense: Advance Variation |
 | Advance: White's other fourth and fifth moves (4.Bb5+) | 0.25 | C02 French Defense: Advance Variation |
+| Advance: White's other fourth and fifth moves (4.Nf3) | -0.39 | C02 French Defense: Advance Variation, Paulsen Attack |
 | Advance: sixth moves after 5...cxd4, 5...Bd7 or 5...Nge7 (Main line) | 1.20 | C02 French Defense: Advance Variation, Paulsen Attack |
 | Advance: sixth moves after 5...cxd4, 5...Bd7 or 5...Nge7 (5...Bd7) | 0.34 | C02 French Defense: Advance Variation, Euwe Variation |
 | Advance: sixth moves after 5...cxd4, 5...Bd7 or 5...Nge7 (5...Nge7) | 0.32 | C02 French Defense: Advance Variation, Paulsen Attack |
 | Advance: Black's other fourth and fifth moves (Main line) | 0.92 | C02 French Defense: Advance Variation |
+| Exchange: 4.Bd3, 4.Nc3 and 5.Bb5 (Main line) | -0.07 | C01 French Defense: Exchange Variation |
+| Exchange: 4.Bd3, 4.Nc3 and 5.Bb5 (4.Nf3) | -0.21 | C01 French Defense: Exchange Variation |
+| Exchange: 4.Bd3, 4.Nc3 and 5.Bb5 (4.Nc3) | -0.32 | C01 French Defense: Exchange Variation |
+| Exchange: 4.Bd3, 4.Nc3 and 5.Bb5 (2.Nc3) | -0.30 | C01 French Defense: Exchange Variation |
+| Exchange: 4.Bd3, 4.Nc3 and 5.Bb5 (2.Nf3) | -0.29 | C01 French Defense: Exchange Variation |
+| Winawer: 7...O-O (Winawer, as White) | 0.55 | C18 French Defense: Winawer Variation, Warsaw Variation |
+| Winawer: 7...O-O (Winawer, as Black) | -0.55 | C18 French Defense: Winawer Variation, Warsaw Variation |
+| Tarrasch: 3...c5 (Tarrasch, as White) | 0.19 | C07 French Defense: Tarrasch Variation, Chistyakov Defense, Modern Line |
+| Tarrasch: 3...c5 (Tarrasch, as Black) | -0.19 | C07 French Defense: Tarrasch Variation, Chistyakov Defense, Modern Line |
+| Steinitz: 7...Qb6 (Steinitz, as White) | 3.09 | C11 French Defense: Steinitz Variation, Boleslavsky Variation |
+| Steinitz: 7...Qb6 (Steinitz, as Black) | -3.09 **flag** | C11 French Defense: Steinitz Variation, Boleslavsky Variation |
+| Steinitz: 7...cxd4 (Steinitz, as White) | 0.27 | C11 French Defense: Steinitz Variation, Boleslavsky Variation |
+| Steinitz: 7...cxd4 (Steinitz, as Black) | -0.27 | C11 French Defense: Steinitz Variation, Boleslavsky Variation |
+| Steinitz: 7...Be7 (Steinitz, as White) | 0.22 | C11 French Defense: Steinitz Variation, Boleslavsky Variation |
+| Steinitz: 7...Be7 (Steinitz, as Black) | -0.22 | C11 French Defense: Steinitz Variation, Boleslavsky Variation |
+| Burn Variation: 4.Bg5 dxe4 (Burn Variation, as White) | 0.13 | C13 French Defense: Classical Variation, Burn Variation, Morozevich Line |
+| Burn Variation: 4.Bg5 dxe4 (Burn Variation, as Black) | -0.13 | C13 French Defense: Classical Variation, Burn Variation, Morozevich Line |
+| Rubinstein: 4...Nf6 and ...gxf6 (Main line) | -0.98 | C10 French Defense: Rubinstein Variation |
+| Rubinstein: 3.Nd2, 5.Bd3 and other sixth moves (Main line) | -0.20 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Rubinstein: 3.Nd2, 5.Bd3 and other sixth moves (6.Nxf6+) | -0.37 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Rubinstein: 3.Nd2, 5.Bd3 and other sixth moves (6.Ng3) | 0.10 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Rubinstein: 3.Nd2, 5.Bd3 and other sixth moves (5.Bd3) | -0.35 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
+| Rubinstein: 3.Nd2, 5.Bd3 and other sixth moves (3.Nd2) | -0.48 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
 | Franco-Sicilian: 2...c5 and other second moves (Main line) | 0.70 | A43 Benoni Defense: French Benoni |
 | Franco-Sicilian: 2...c5 and other second moves (2...b6) | 0.98 | C00 French Defense: Normal Variation |
 | Franco-Sicilian: 2...c5 and other second moves (2...d6) | 0.96 | C00 Rat Defense: Small Center Defense |
 | Franco-Sicilian: 2...c5 and other second moves (2...c6) | 0.72 | C00 French Defense: Normal Variation |
-| Rubinstein: 4...Nf6 and ...gxf6 (Main line) | -0.98 | C10 French Defense: Rubinstein Variation |
-| Rubinstein: other sixth moves (Main line) | -0.20 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
-| Rubinstein: other sixth moves (6.Nxf6+) | -0.37 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
-| Rubinstein: other sixth moves (6.Ng3) | 0.10 | C10 French Defense: Rubinstein Variation, Blackburne Defense |
 | Knight Variation: other third moves (Main line) | -0.39 | C02 French Defense: Advance Variation, Paulsen Attack |
 | Knight Variation: other third moves (4.d4) | -0.30 | C02 French Defense: Advance Variation, Nimzowitsch System |
 | Knight Variation: other third moves (4.b4) | 0.36 | C00 French Defense: Wing Gambit |
@@ -453,7 +485,7 @@ None.
 
 ## Queen's Gambit Declined — both sides (`queens-gambit-declined`)
 
-35 chapters, 45 drillable lines (basic 7, traps 4, advanced 34), 395 learner moves.
+65 chapters, 45 drillable lines (basic 7, traps 4, advanced 34), 395 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -487,7 +519,9 @@ None.
 
 ### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
 
-None.
+| Line | Move | Engine prefers | Loss |
+|---|---|---|---|
+| f3 and e4 | 12.Rae1 | Bh4 | 0.65 |
 
 ### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
 
@@ -545,7 +579,7 @@ None.
 
 ## Slav Defense — both sides (`slav`)
 
-25 chapters, 30 drillable lines (basic 6, traps 8, advanced 16), 270 learner moves.
+37 chapters, 30 drillable lines (basic 6, traps 8, advanced 16), 270 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -619,7 +653,7 @@ None.
 
 ## Queen's Gambit Accepted — both sides (`queens-gambit-accepted`)
 
-20 chapters, 28 drillable lines (basic 10, traps 13, advanced 5), 221 learner moves.
+33 chapters, 28 drillable lines (basic 10, traps 13, advanced 5), 221 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -686,7 +720,7 @@ None.
 
 ## Tarrasch Defense — both sides (`tarrasch`)
 
-17 chapters, 20 drillable lines (basic 6, traps 9, advanced 5), 164 learner moves.
+32 chapters, 20 drillable lines (basic 6, traps 9, advanced 5), 164 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -869,7 +903,7 @@ None.
 
 ## King's Indian Defense — both sides (`kings-indian`)
 
-62 chapters, 126 drillable lines (basic 15, traps 18, advanced 93), 1374 learner moves.
+73 chapters, 126 drillable lines (basic 15, traps 18, advanced 93), 1374 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -937,9 +971,9 @@ None.
 
 | Line | Move | Engine prefers | Loss |
 |---|---|---|---|
+| Exchange structure | 7.dxe5 | O-O | 1.06 |
 | Mar del Plata, Bayonet Attack: 9.b4 (Bayonet Attack, as White) | 12.Bf3 | exf5 | 0.81 |
 | Classical, Petrosian System: 7.d5 (Petrosian System, as White) | 7.d5 | O-O | 0.62 |
-| Classical, Exchange Variation: 7.dxe5 (Exchange Variation, as White) | 7.dxe5 | O-O | 1.06 |
 | Classical, Gligorić System: 7.Be3 (Gligorić System, as White) | 7.Be3 | O-O | 1.02 |
 | Classical, Open Center: 7...exd4 (Open Center, as White) | 10.Kh1 | Nc2 | 0.70 |
 | Mar del Plata, Modern System: 9.Nd2 (Modern System, as White) | 9.Nd2 | b4 | 0.73 |
