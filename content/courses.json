@@ -801,32 +801,32 @@
                             [
                                 "Main Line: 3...Qa5",
                                 "26% as White\n60% as Black, with 2...Qxd5",
-                                "White: Develop with gain of time on the queen and keep a pawn on d4. Put the dark-squared bishop behind the c3 knight, so a knight jump uncovers an attack on the queen. Castle long and open the center while Black's king is still in the middle.\nBlack: Build a wall of pawns on c6 and e6, with the light-squared bishop developed outside it first. Watch for knight jumps that uncover an attack on your queen, and castle once your pieces are out."
+                                "White: Develop with tempo, since Black's queen has to move several times, and attack before Black has castled.\nBlack: Build a solid pawn wall, develop calmly and keep the queen safe."
                             ],
                             [
                                 "Valencian Variation: 3...Qd8",
                                 "21% as White",
-                                "White: Take the center with the d-pawn and develop: the queen's long retreat gives you an extra move. If Black pins your knight, ask the bishop with h3 and keep the two bishops.\nBlack: Develop solidly with pawns on c6 and e6 and pieces on the dark squares, for a compact position without weaknesses."
+                                "White: Take the center, develop quickly and win the two bishops.\nBlack: Build a compact, solid position without weaknesses."
                             ],
                             [
                                 "Avoiding the main line: 3.Nf3 Bg4",
                                 "10% as Black, with 2...Qxd5",
-                                "White: Develop the king's knight first, so the queen is not chased yet, and castle.\nBlack: Pin the knight, bring out the queen's knight, castle long and aim every piece at the d-file. Then take the center with the e-pawn."
+                                "White: Develop quickly and castle.\nBlack: Pin White's knight, castle long and attack the center with every piece."
                             ],
                             [
                                 "Marshall Variation: 3.d4 Nxd5",
                                 "19% as White\n18% as Black, with 2...Nf6",
-                                "White: Chase the knight with the c-pawn and build a big pawn center, then develop calmly behind it.\nBlack: Strike at that center at once with 5...e5: the queens come off, and your active pieces make up for White's space."
+                                "White: Chase the knight and build a big pawn center.\nBlack: Strike at the center at once and trade queens."
                             ],
                             [
                                 "Modern Variation: 3.Nc3 Nxd5",
                                 "23% as Black, with 2...Nf6",
-                                "White: Trade knights on d5 and develop, but no White knight is left to chase Black's queen.\nBlack: Take back on d5, and your queen stands safely in the center. Develop fast and gain space with the e-pawn; if White pushes the d-pawn, castle long and aim your pieces at d4."
+                                "White: Trade knights and develop quickly.\nBlack: Take back with the knight, develop fast and use the queen in the center."
                             ],
                             [
                                 "Panov Transfer: 3.c4 c6",
                                 "19% as Black, with 2...Nf6",
-                                "White: Try to keep the extra pawn by guarding it with the c-pawn.\nBlack: Hit the pawn at once with the c-pawn. You are a pawn down for a while, but develop fast, then push the e-pawn to open the d-file toward White's king and win the pawn back."
+                                "White: Hold on to the extra pawn.\nBlack: Develop fast, win the pawn back and keep White's king from castling."
                             ]
                         ],
                         "note": "How often: the share of your Scandinavian games that reach the line, from the side that faces it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Lasker Variation (...Bg4 met by h3, about 11% as White) and the Advance Variation (2.e5, 11% as Black) are in Advanced by choice, with the rarer lines."
@@ -887,22 +887,22 @@
                             [
                                 "QGD setup: 5.Bg3",
                                 "9% as White\n20% as Black",
-                                "White's plans are to build the solid pawn triangle, keep the f4 bishop, and castle.\nBlack's plans are to castle, keep White's knight off e5, and break in the center with the e-pawn."
+                                "White: Build a solid pawn triangle, keep the London bishop and castle.\nBlack: Castle, control the center and break with a central pawn."
                             ],
                             [
                                 "King's Indian setup: 5.h3 and 5.Be2",
                                 "9% as White\n14% as Black",
-                                "White's plans are to develop calmly behind the pawn triangle and trade queens if Black attacks b2.\nBlack's plans are to put the bishop on g7, castle, hit d4 with the c-pawn, and use the open a- and c-files."
+                                "White: Develop calmly and trade queens when Black attacks.\nBlack: Castle, hit back in the center and use the open files."
                             ],
                             [
                                 "Symmetrical: 2...Bf5",
                                 "10% as White",
-                                "White's plans are to attack d5 with the c-pawn and hit the weak b7 pawn with the queen.\nBlack's plans are to copy White's setup and prevent the queen from winning b7."
+                                "White: Attack Black's center and the weak queenside.\nBlack: Copy White's setup and keep the queenside safe."
                             ],
                             [
                                 "King's Indian setup, Rapport-Jobava: 3.Nc3",
                                 "4% as Black",
-                                "White's plans are to push the e-pawn to e4 or attack with the h-pawn.\nBlack's plans are to prevent e4 and the h-pawn attack, castle, and hit the center with the c-pawn."
+                                "White: Grab the center and attack with the kingside pawns.\nBlack: Stop White's center and pawn attack, then hit back in the center."
                             ]
                         ],
                         "note": "How often: the share of your games that reach the line, from the side you play in it, counting every move order. As White, of your 1.d4 games; as Black, of your games with 1...d5 or 1...Nf6. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Everything else is in Advanced."
@@ -963,32 +963,32 @@
                             [
                                 "Pin on c3: 4...Bb4",
                                 "60% as Black",
-                                "White's plans are to develop quietly, castle, and keep the queenside pawns healthy.\nBlack's plans are to pin the c3 knight, hit the center with the c-pawn, and prevent the knight from reaching b5."
+                                "White: Develop quietly, castle and keep the pawns healthy.\nBlack: Pin White's knight and hit back in the center."
                             ],
                             [
                                 "Check on b4: 4...Bb4+",
                                 "24% as Black",
-                                "White's plans are to attack c7 with the knight and chase Black's bishop with the queenside pawns.\nBlack's plans are to check first, keep the bishop aimed at White's king, and prevent White's a-pawn from trapping it."
+                                "White: Attack early with the knight and chase Black's bishop.\nBlack: Check first, drive the knight back and keep the bishop safe."
                             ],
                             [
                                 "Knight to b5: 4.Nb5",
                                 "23% as White",
-                                "White's plans are to attack c7 with the knight and push Black's knight to the edge of the board.\nBlack's plans are to guard c7, chase the knight away, and bring the stray knight back to the center."
+                                "White: Attack early with the knight and push Black's pieces back.\nBlack: Defend calmly, chase the knight away and regroup."
                             ],
                             [
                                 "Early bishop: 3...Bf5",
                                 "20% as White",
-                                "White's plans are to trade off Black's active bishop, then use the open c-file and the queen against b7.\nBlack's plans are to develop the light-squared bishop early and keep a solid center."
+                                "White: Trade off Black's active bishop and press on the queenside.\nBlack: Develop the bishop early and keep a solid center."
                             ],
                             [
                                 "Guarding b5: 3...a6",
                                 "17% as White",
-                                "White's plans are to develop London style and trade off Black's bishop if it comes to f5.\nBlack's plans are to keep White's knight out of b5, then develop or hit the center with the c-pawn."
+                                "White: Develop London style and trade off Black's active bishop.\nBlack: Stop White's knight jumps, then develop and hit back in the center."
                             ],
                             [
                                 "Slav setup: 3...c6",
                                 "16% as White",
-                                "White's plans are to develop quietly, trade off Black's light-squared bishop, and attack with the kingside pawns if it goes to g4.\nBlack's plans are to hold d5 with a solid pawn chain and bring the light-squared bishop out early."
+                                "White: Develop quietly and attack with the kingside pawns.\nBlack: Build a solid pawn chain and develop the bishop early."
                             ]
                         ],
                         "note": "How often: the share of your Jobava London games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
