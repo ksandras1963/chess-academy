@@ -717,7 +717,7 @@ Qxb2 {[%cal Gb2a1] Hits the rook on a1, and the bishop on h6 is still hanging.}
 8. O-O Nxd4 9. Nxd4 Qxd4
 10. Nc3 {White has two pieces out and wants Nb5 or Re1.} a6 {[%cal Ga6b5] Stops Nb5, which would hit the queen and c7.}
 (10... Qxe5?! {Greedy.} 11. Re1 Qd6 12. Nb5 Qb6 {The only move: 12...Bxb5? 13.Bxb5+ and 12...Qb8? 13.Qf3 leave White clearly better. After 13.Be3 Qa5 14.Bd2 Qb6, White can repeat moves, so Black gets nothing. Stockfish 0.0.})
-11. Re1 {After 11.Qe2, play 11...Ne7 too.} Ne7 12. g3 Qb6 13. a3 Rc8 {Black is a pawn up with a solid position. Slightly better for Black (Stockfish −0.6).} *
+11. Re1 {After 11.Qe2, play 11...Ne7 too.} Ne7 12. g3 Qb6 13. a3 Rc8 {Black is a pawn up with a solid position.} 14. Na4 {Hits the queen.} Qd4 {The queen steps aside and stays in the center, where it also hits the knight on a4. Slightly better for Black (Stockfish −0.8).} *
 
 [Chapter "Trap: the e5 pawn grab"]
 [Side "white"]

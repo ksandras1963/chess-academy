@@ -26,6 +26,7 @@ const opt = (name, fallback) => {
 const useEngine = !args.includes("--no-engine")
 const depth = Number(opt("--depth", 18))
 const onlyCourse = opt("--course", null)
+const sharedNotes = []
 
 // Thresholds, in centipawns from the mover's point of view.
 const LEARNER_LOSS = 60 // learner move this much worse than best -> flag
@@ -130,6 +131,11 @@ for (const meta of courses) {
     section.push(`${chapters.length} chapters, ${course.lines.length} drillable lines ` +
         `(basic ${bySection("basic")}, traps ${bySection("traps")}, advanced ${bySection("advanced")}), ` +
         `${course.lines.reduce((s, l) => s + l.learnerMoves, 0)} learner moves.`, "")
+    // A White and a Black line with the same moves used to collide, and the later one vanished from its
+    // drill. They now get separate ids; list them so the author knows both sides drill the same moves.
+    for (const { line, other } of course.sharedMoves || []) {
+        sharedNotes.push(`${meta.id}: ${line.side} "${line.chapter.title}" (${line.variation}) has the same moves as ${other.side} "${other.chapter.title}"; both are drilled`)
+    }
 
     // Course-page diagrams: every lesson chapter must point at a position on its main line
     for (const ch of chapters.filter(c => c.type === "concept" && c.diagram?.error)) errors.push(`${meta.id} / ${ch.title}: ${ch.diagram.error}`)
@@ -380,6 +386,7 @@ for (const op of catalog.openings) for (const m of op.courses || []) {
     } catch { /* reported above */ }
 }
 if (untagged.length) report.push("## Key ideas boards without an [Idea] tag", "", untagged.map(u => `- ${u}`).join("\n"), "")
+if (sharedNotes.length) report.push("## Lines with the same moves for both sides", "", sharedNotes.map(s => `- ${s}`).join("\n"), "")
 const header = [
     "# Content validation report", "",
     `Generated ${new Date().toISOString().slice(0, 16).replace("T", " ")} · engine ${engine ? `Stockfish, depth ${depth}` : "skipped"}`, "",
@@ -387,6 +394,7 @@ const header = [
 ]
 await writeFile(path.join(root, "tools", "report.md"), header.concat(report).join("\n"))
 console.log(`\n${errors.length ? errors.join("\n") : "No errors."}\nReport: tools/report.md`)
+if (sharedNotes.length) console.log(`Note: lines with the same moves for both sides (each now drilled):\n  ${sharedNotes.join("\n  ")}`)
 if (untagged.length) console.log(`Note: Key ideas boards without an [Idea] tag: ${untagged.join(", ")}`)
 if (!errors.length && !onlyCourse) {
     const b = await buildStandalone()
