@@ -21,7 +21,7 @@
 [Diagram "2...dxc4"]
 
 {If Black takes the pawn (the Queen's Gambit Accepted), Black's d-pawn leaves the center. White doesn't need to hurry: the f1 bishop wins the pawn back. Trying to keep it with ...b5 runs into a tactic on the long diagonal (see Typical tactics).}
-1. d4 d5 2. c4 dxc4 {[%cal Gf1c4] [%csl Yc4]}
+1. d4 d5 2. c4 dxc4 {[%cal Ge2e3] [%csl Yc4]}
 3. e3 {[%cal Gf1c4] Opens the diagonal of the f1 bishop.} Nf6 {The most common reply.}
 4. Bxc4 {[%csl Yd4] The pawn is back. White has a pawn on d4, and Black's d-pawn is gone. Stockfish: +0.2, equal.} *
 
@@ -40,7 +40,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{The Exchange Variation gives almost the same pawn structure in every game, so the plans repeat too. The boards below start from the main position of this course: 1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 c6 6.Qc2 Be7 7.e3 O-O 8.Bd3 Nbd7 9.Nge2 Re8 10.O-O Nf8. Stockfish rates it as equal (+0.2). Each board shows one plan with the few moves that carry it out.}
+{The Exchange Variation gives almost the same pawn structure in every game, so the plans repeat too. The boards below play to the main position of this course: 1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 c6 6.Qc2 Be7 7.e3 O-O 8.Bd3 Nbd7 9.Nge2 Re8 10.O-O Nf8. Stockfish rates it as equal (+0.2). Each board then shows one plan with the few moves that carry it out.}
 *
 
 [Chapter "The minority attack"]
@@ -72,8 +72,8 @@
 
 {White's other plan uses the knight on e2, not f3, which leaves the f-pawn free. f3 takes the e4 square away from Black's knights and prepares e4, which opens the center.}
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 c6 6. Qc2 Be7 7. e3 O-O 8. Bd3 Nbd7 9. Nge2 Re8 10. O-O Nf8 {[%cal Gf2f3,Ge3e4] [%csl Ye4]}
-11. f3 {[%csl Ye4] No black knight can come to e4 now.} g6
-12. Rae1 {[%cal Ge1e4,Ge3e4] The rook backs up the e-pawn. Push e4 only when your pieces are ready: played too early, Black takes on e4 and Stockfish then slightly prefers Black.} *
+11. f3 {[%csl Ye4] Now a pawn guards e4, so no black knight can settle there.} g6
+12. Rae1 {[%cal Ge3e4] The rook comes to the e-file, ready for e4. Once the e2 knight moves on, it backs up the pawn. Push e4 only when your pieces are ready: played too early, Black takes on e4 and Stockfish then slightly prefers Black.} *
 
 [Chapter "Key ideas: Three pawn structures"]
 [Side "white"]
@@ -127,10 +127,10 @@
 [Idea "white"]
 [Diagram "5.axb5"]
 
-{From the Queen's Gambit Accepted: 1.d4 d5 2.c4 dxc4 3.e3 b5 4.a4 c6 5.axb5. Almost one Accepted player in five tries to keep the extra pawn with 3...b5. Now the natural recapture opens the long diagonal from f3 to a8.}
+{From the Queen's Gambit Accepted: 1.d4 d5 2.c4 dxc4 3.e3 b5 4.a4 c6 5.axb5. After 3.e3, almost one Black player in five tries to keep the extra pawn with 3...b5. Now the natural recapture opens the long diagonal from f3 to a8.}
 1. d4 d5 2. c4 dxc4 3. e3 b5?! 4. a4 c6?! 5. axb5 {[%cal Rf3a8]}
 5... cxb5? {[%cal Gd1f3,Gf3a8] Opens the diagonal. Nothing stands between f3 and the rook on a8.}
-6. Qf3 {[%cal Gf3a8] Hits the rook. Black can't save it without losing a piece.} Nc6 {The best try: the knight blocks.}
+6. Qf3 {[%cal Gf3a8] Hits the rook. Black can't save it without losing a piece.} Nc6 {The knight blocks. Giving up the rook instead is no better.}
 7. Qxc6+ {Nothing guards the knight, so the queen takes it with check.} Bd7
 8. Qa6 {White has won a knight for a pawn. Stockfish: +5.6, winning for White.} *
 
@@ -151,7 +151,7 @@
 [Idea "white"]
 [Diagram "7.e3"]
 
-{From the Exchange Variation: 1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 c6 6.Qc2 Be7 7.e3. White's queen and Black's c8 bishop stand on the same file, with only the knight on c3 and the pawn on c6 between them. While Black's knight is still on b8, only the queen on d8 guards c8. If the queen leaves d8, Nxd5 wins a pawn, because cxd5 would open the c-file.}
+{From the Exchange Variation: 1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 c6 6.Qc2 Be7 7.e3. White's queen and Black's c8 bishop stand on the same file, with only the knight on c3 and the pawn on c6 between them. While Black's knight is still on b8, it blocks the a8 rook, so only the queen on d8 guards c8. If the queen leaves d8, Nxd5 wins a pawn, because cxd5 would open the c-file.}
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 c6 6. Qc2 Be7 7. e3 {[%cal Gc2c8]}
 7... Nh5? {Makes way for ...Bxg5, to trade White's good bishop.}
 8. Bxe7 Qxe7? {The natural recapture, but now nothing guards c8. 8...Kxe7 keeps the queen on d8, and Black loses no material (Stockfish +1.0, clearly better for White).}
@@ -250,7 +250,7 @@
 11... Ne4 {[%cal Ge4c3,Ge7h4] The knight offers a trade, and the e7 bishop now attacks h4.}
 12. Bxe7 Qxe7 {One pair of bishops is gone.}
 13. cxd5 Nxc3 {[%cal Gc3e2,Gc3d1] Before taking back on d5, Black trades knights. The knight on c3 attacks White's queen and rook, so White has to take it.}
-14. bxc3 exd5 {Two pairs of minor pieces are gone, and Black's pieces have room. Stockfish: 0.0, equal.} *
+14. bxc3 exd5 {Two pairs of minor pieces are gone, and Black's pieces have room. Stockfish: +0.1, equal.} *
 
 [Chapter "Key ideas: The hanging pawns"]
 [Side "black"]
@@ -289,14 +289,14 @@
 {The same structure after 14.O-O Nd7. Push a hanging pawn only with a purpose. When White attacks d5 with e4, ...d4 is the answer: the pawn becomes a passed pawn, and the pawn on c5 guards it.}
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. Bh4 b6 8. cxd5 Nxd5 9. Bxe7 Qxe7 10. Nxd5 exd5 11. Rc1 Be6 12. Bd3 c5 13. dxc5 bxc5 14. O-O Nd7
 15. e4 {[%cal Re4d5] Attacks d5.} d4 {[%csl Yd4] A passed pawn, guarded by c5. White's bishop on d3 now bites on its own pawn on e4.}
-16. b3 Rfd8 {The rook comes to the d-file, behind the passed pawn. Stockfish: −0.1, equal.} *
+16. b3 Rfd8 {The rook comes to the d-file. Once the d7 knight moves, it backs up the passed pawn. Stockfish: −0.1, equal.} *
 
 [Chapter "...c4 gains space"]
 [Type "concept"]
 [Idea "black"]
 [Diagram "13.Rc1"]
 
-{In the main line, after 10...exd5 11.Bd3 Be6 12.O-O c5 13.Rc1, White has not taken on c5. Here ...c4 pushes with a purpose: it drives White's bishop back and gains space on the queenside. The pawns are no longer hanging, since d5 guards c4.}
+{In the main line, after 10...exd5 11.Bd3 Be6 12.O-O c5 13.Rc1, White has not taken on c5. Here ...c4 pushes with a purpose: it drives White's bishop back and gains space on the queenside. White can no longer take on c5 to give Black hanging pawns, and the pawn on d5 guards c4.}
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. Bh4 b6 8. cxd5 Nxd5 9. Bxe7 Qxe7 10. Nxd5 exd5 11. Bd3 Be6 12. O-O c5 13. Rc1
 13... c4 {[%cal Gc4d3] Hits the bishop.}
 14. Bb1 Nc6 {The last minor piece comes out. Stockfish: 0.0, equal.} *
@@ -305,7 +305,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{Four tactics to know. In the first, White grabs a pawn and loses a piece. In the other three, Black takes back with the wrong piece and pays for it. Each board starts just before the mistake.}
+{Four tactics to know. In the first, White grabs a pawn and loses a piece. In the other three, Black answers a capture the wrong way and pays for it. Each board stops just before the mistake.}
 *
 
 [Chapter "The Elephant trap"]
@@ -317,7 +317,7 @@
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 Nbd7 {[%csl Yd5] [%cal Rg5f6]}
 6. Nxd5?? {Grabs the pawn, and loses a piece.} Nxd5! {Gives up the queen.}
 7. Bxd8 Bb4+ {[%cal Gb4e1] Check, and White has only one way to block.}
-8. Qd2 Kxd8 {[%cal Gb4d2] Black takes the bishop back. White's queen is pinned to the king and can't escape, so Black wins it next and ends up a knight ahead for a pawn. Stockfish: −5.6, winning for Black.} *
+8. Qd2 Kxd8 {[%cal Gb4d2] Black takes the bishop back. White's queen is pinned to the king, so it is lost, at best for the bishop on b4. Black ends up a knight ahead for a pawn. Stockfish: −5.6, winning for Black.} *
 
 [Chapter "Take back with the bishop"]
 [Type "concept"]
@@ -348,13 +348,13 @@
 {In the Tartakower, after 8.cxd5 Nxd5 9.Bxe7 Qxe7 10.Nxd5 exd5 11.Rc1 Be6 12.Bd3 c5 13.dxc5, take back with the pawn: 13...bxc5 gives Black hanging pawns. Before you take back with a piece, check which White pieces see the square. Here the rook on c1 does.}
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. Bh4 b6 8. cxd5 Nxd5 9. Bxe7 Qxe7 10. Nxd5 exd5 11. Rc1 Be6 12. Bd3 c5 13. dxc5
 13... Qxc5?? {[%cal Rc1c5] The queen takes back on the c-file, where White's rook stands.}
-14. Rxc5 bxc5 {White has won the queen for a rook. Stockfish: +7.5, winning for White.} *
+14. Rxc5 bxc5 {White has won the queen for a rook. Stockfish: +7.1, winning for White.} *
 
 [Chapter "Key ideas: Meeting the Exchange"]
 [Side "black"]
 [Type "ideas"]
 
-{After 4.cxd5 exd5 the pawns are fixed: White's d4 and e3 against Black's d5 and c6. The trade frees your c8 bishop and gives you the half-open e-file. Your setup is ...Nbd7, ...c6, ...Be7, castling, ...Re8 and ...Nf8, where the knight guards h7 and can go on to e6 or g6. Stockfish rates the position on the first two boards as equal (+0.2).}
+{After 4.cxd5 exd5, and then e3 and ...c6, the pawns are fixed: White's d4 and e3 against Black's d5 and c6. The trade frees your c8 bishop and gives you the half-open e-file. Your setup is ...Nbd7, ...c6, ...Be7, castling, ...Re8 and ...Nf8, where the knight guards h7 and can go on to e6 or g6. Stockfish rates the position on the first two boards as equal (+0.2).}
 *
 
 [Chapter "Against f3 and e4"]
