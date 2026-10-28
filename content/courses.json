@@ -329,9 +329,9 @@
                     "side": "both",
                     "file": "content/queens-gambit-declined.pgn",
                     "repertoire": "As White: the Exchange Variation and the minority attack. As Black: the Tartakower Variation.",
-                    "summary": "1.d4 d5 2.c4 e6: Black declines the pawn and holds d5 with the e-pawn.",
+                    "summary": "Black declines the pawn and holds d5 with the e-pawn.",
                     "why": {
-                        "text": "As Black, 2...e6 holds the center with a pawn and keeps the position solid. The cost is the c8 bishop, shut in behind e6, so Black's plans are about freeing it.\n\nAs White, taking on d5 early fixes the pawn structure. You know your plans in advance, and there are few early tactics to calculate."
+                        "text": "As Black, the e-pawn holds the center and keeps the position solid. The cost is the light-squared bishop, shut in behind the e-pawn, so Black's plans are about freeing it.\n\nAs White, trading pawns on d5 early fixes the pawn structure. You know your plans in advance, and there are few early tactics to calculate."
                     },
                     "table": {
                         "columns": [
@@ -408,10 +408,10 @@
                     "id": "slav",
                     "side": "both",
                     "file": "content/slav.pgn",
-                    "repertoire": "As White: 3.Nf3 and 4.Nc3, then cxd5 and Bg5 against ...e6. As Black: the Czech Variation (4...dxc4 5.a4 Bf5).",
-                    "summary": "1.d4 d5 2.c4 c6: Black guards d5 with the c-pawn.",
+                    "repertoire": "As White: both knights out, and against the Semi-Slav a trade on d5 and a pin on Black's knight. As Black: the Czech Variation.",
+                    "summary": "Black guards d5 with the c-pawn.",
                     "why": {
-                        "text": "As Black, ...c6 guards d5 and keeps the c8 bishop's diagonal open, so the bishop can come out before ...e6 shuts it in. Solid, with a few exact lines to know.\n\nAs White, the Slav often turns into positions you know from the Declined, so the same plans work."
+                        "text": "As Black, the c-pawn guards d5 and keeps the light-squared bishop's diagonal open, so the bishop can come out before the e-pawn shuts it in. Solid, with a few exact lines to know.\n\nAs White, the Slav often turns into positions you know from the Declined, so the same plans work."
                     },
                     "table": {
                         "columns": [
@@ -494,8 +494,8 @@
                     "id": "queens-gambit-accepted",
                     "side": "both",
                     "file": "content/queens-gambit-accepted.pgn",
-                    "repertoire": "As White: 3.e3 and Bxc4. As Black: ...e5 at once, and the Classical setup against 3.Nf3.",
-                    "summary": "1.d4 d5 2.c4 dxc4: Black takes the pawn and gives up the center for a moment.",
+                    "repertoire": "As White: the Old Variation, winning the pawn back at once with the bishop. As Black: an early strike in the center with the e-pawn, and the Classical setup against the Normal Variation.",
+                    "summary": "Black takes the pawn and gives up the center for a moment.",
                     "why": {
                         "text": "As Black, giving up the center for a moment frees your pieces, and you get to hit back at White's center early. White wins the pawn back, but you develop quickly.\n\nAs White, you win the pawn back at once and keep the center, with a small, safe edge."
                     },
@@ -580,10 +580,10 @@
                     "id": "tarrasch",
                     "side": "both",
                     "file": "content/tarrasch.pgn",
-                    "repertoire": "As White: the Rubinstein System (4.cxd5, Nf3, g3 and Bg2). As Black: the Classical Tarrasch.",
-                    "summary": "1.d4 d5 2.c4 e6 3.Nc3 c5: Black hits White's center at once.",
+                    "repertoire": "As White: the Rubinstein System, with the king's bishop on the long diagonal. As Black: the Classical Tarrasch.",
+                    "summary": "Black hits White's center at once with the c-pawn.",
                     "why": {
-                        "text": "As Black, 3...c5 fights for the center at once. You accept a weak pawn in return for quick, active development.\n\nAs White, you get a lasting target: Black's isolated pawn on d5, which only pieces can guard."
+                        "text": "As Black, the early c-pawn push fights for the center at once. You accept a weak pawn in return for quick, active development.\n\nAs White, you get a lasting target: Black's isolated pawn on d5, which only pieces can guard."
                     },
                     "table": {
                         "columns": [
@@ -1455,7 +1455,7 @@
                 "note": "Share: how often each reply follows 1.d4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
             },
             "subtitle": "The Queen's Gambit, the Indian Defenses, and the other main replies.",
-            "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Against 1...d5, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level (and works against 1...Nf6 too). The Jobava London, with the knight on c3, is a sharper version of it. The Colle is much rarer and is listed with the uncommon replies. Against 1...Nf6 2.c4, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside."
+            "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. When Black answers with the d-pawn, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level, and it works against the knight move too. The Jobava London, with the knight on c3, is a sharper version of it. The Colle is much rarer and is listed with the uncommon replies. When Black answers with the king's knight and White adds the c-pawn, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with a pawn and attacks on the kingside."
         },
         {
             "id": "qg",
@@ -1468,8 +1468,8 @@
             "count": "13 variations",
             "compact": true,
             "course": "queens-gambit-declined queens-gambit-accepted slav tarrasch",
-            "subtitle": "1.d4 d5 2.c4: the main ways to decline it or take the pawn.",
-            "summary": "White offers the c-pawn to lure Black's d-pawn away from the center. Black declines with 2...e6 or 2...c6, or takes it with 2...dxc4. The map shows how the variations branch, and the courses below teach a full repertoire for each side.",
+            "subtitle": "The main ways to decline the gambit or take the pawn.",
+            "summary": "White offers the c-pawn to lure Black's d-pawn away from the center. Black declines by guarding d5 with the e-pawn or the c-pawn, or takes the pawn. The map shows how the variations branch, and the courses below teach a full repertoire for each side.",
             "table": {
                 "after": "map",
                 "columns": [
