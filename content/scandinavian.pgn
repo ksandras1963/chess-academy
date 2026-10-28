@@ -196,7 +196,7 @@
 5. O-O {After 5.Nc3, play 5...Qd7 and ...O-O-O, then ...e5 (Stockfish −1.1). After 5.d4, castle at once: 5...O-O-O 6.c3 e5 7.O-O exd4 8.cxd4 Nxd4 wins a pawn (Stockfish −0.6).} O-O-O {[%cal Gd8d1] Black's king is safe, and the rook joins the queen on the d-file.}
 6. Nc3 Qf5 {The queen steps aside and eyes f3 and c2.}
 7. d3 Nf6 8. Be3 e5 {[%cal Ge5e4] Takes the center.}
-9. Nh4 {Hits the queen.} Qe6 10. Bxg4 Nxg4 {Black's pieces are active, and the knight hits the bishop on e3. Stockfish −1.0, slightly better for Black.} *
+9. Nh4 {Hits the queen.} Qe6 10. Bxg4 Nxg4 {Black's pieces are active, and the knight hits the bishop on e3. Stockfish −1.0, clearly better for Black.} *
 
 [Chapter "Marshall Variation: 3.d4 Nxd5"]
 [Side "both"]
@@ -229,7 +229,7 @@
 6. Be2 {After 6.d4, play 6...Bg4 and ...O-O-O, as against 5.d4.} e5 {[%cal Ge5e4] Takes the center. Black has more space.}
 7. O-O {After 7.d3, play 7...Bf5 and ...O-O-O (Stockfish −0.6).} e4 {Chases the knight.}
 8. Ne1 {8.Re1? is a mistake: after 8...Be7 the knight on f3 has no safe square (Stockfish −2.8). Against 8.c4, retreat with 8...Qd8.} Nd4 {[%cal Gd4e2] Hits the bishop on e2.}
-9. d3 Bf5 {Guards the pawn on e4 again.} 10. dxe4 Nxe2+ {Takes the bishop with check first.} 11. Qxe2 Qxe4 {Black wins back the pawn and has the more active pieces. 11...Qe5? 12.Nd3 leaves Black's king stuck in the center (Stockfish +1.9). Stockfish −0.9, slightly better for Black.} *
+9. d3 Bf5 {Guards the pawn on e4 again.} 10. dxe4 Nxe2+ {Takes the bishop with check first.} 11. Qxe2 Qxe4 {Black wins back the pawn and has the more active pieces. Stockfish −0.9, slightly better for Black. 11...Qe5? 12.Nd3 leaves Black's king stuck in the center (Stockfish +1.9).} *
 
 [Chapter "Panov Transfer: 3.c4 c6"]
 [Side "black"]
@@ -262,7 +262,7 @@
 6. Nf3 {Develops.} Bg4? {Natural, but now nothing guards b7.}
 (6... Nf6 {The best move: the bishop stays on c8 and guards b7.} 7. d4 g6 8. g3 Bg7 9. Bg2 O-O 10. O-O {White has active pieces for the pawn. Equal (Stockfish 0.0).})
 7. Rxb7 {[%cal Gb7c7,Gb7b8] Takes the pawn: the rook on b7 hits c7 and the knight on b8.} Qc6? {Played in a quarter of club games: it attacks the rook.}
-(7... Qe6+ {The best defense.} 8. Qe2 Qxe2+ 9. Bxe2 {White has won back the pawn, and the rook on b7 is very strong. Stockfish +2.9, winning for White.})
+(7... Qe6+ {The best defense.} 8. Qe2 Qxe2+ 9. Bxe2 {White has won back the pawn, and the rook on b7 is very strong. Stockfish +2.6, winning for White.})
 8. Bb5! {[%cal Gb5e8] Pins the queen to the king: Black has to give it up for the bishop.} Bxf3 9. Qxf3 {The queen is still pinned, and now White's queen hits it too. Stockfish +9.5, winning for White.} *
 
 [Chapter "Trap to avoid, Leonhardt Gambit: 6...Bg4? 7.Rxb7!"]
@@ -347,7 +347,7 @@
 7. c3? {Chases the knight, but it is too late.}
 (7. a3! {The best answer: White chases the knight first.} Qe4+ 8. Kd2! {The king guards c2.} Nc6 9. Bd3 Qe6 10. c3 {White's king is safe enough on d2. Stockfish +0.5, slightly better for White.})
 7... Qe4+ 8. Be2?? {Blocks the check, but leaves c2 unguarded.}
-(8. Kd2 {The only move.} Qf4+ 9. Ke2 Qe4+ 10. Kd2 {Black repeats the checks: a draw.})
+(8. Kd2 {The only move.} Qf4+ 9. Ke2 Qe4+ 10. Kd2 {Black repeats the checks: a draw. Stockfish 0.0, equal.})
 8... Nc2+ 9. Kf1 Nxa1 {Black has won a rook. The knight on a1 may be lost later, but Black stays well ahead. Stockfish −2.7, winning for Black.} *
 
 [Chapter "Trap, Panov Transfer: 8.Qe2? Nd4!"]
@@ -384,10 +384,10 @@
 5. d4 {The most common move. Against 5.Nf3, 5...Qe7 is Stockfish's choice, and Black soon wins back the pawn on c4.} Bb4+
 6. Nc3 Ne4 {[%cal Ge4c3,Ge4f2] Piles up on c3 and eyes f2.}
 7. Bd2? {The natural move: it guards c3. Played in a fifth of club games.}
-(7. Ne2 {The best move: now c3 is guarded twice.} Bxc4 {Black has won back the pawn. Stockfish −0.3, equal.})
+(7. Ne2 {The best move: now c3 is guarded twice.} Bxc4 {Black has won back the pawn. Stockfish −0.4, slightly better for Black.})
 7... Qxd4! {[%cal Gd4f2,Ge4f2] Takes the pawn: now f2 is attacked twice.}
 8. Nf3?? {Hits the queen, and is played in a third of club games. But f2 is still attacked twice.}
-(8. Nxe4 {The best defense.} Qxe4+ 9. Ne2 Bxd2+ 10. Qxd2 Nc6 {Black has won back the pawn and is ahead in development. Stockfish −1.7, clearly better for Black.})
+(8. Nxe4 {The best defense.} Qxe4+ 9. Ne2 Bxd2+ 10. Qxd2 Nc6 {Black has won back the pawn and is ahead in development. Stockfish −1.9, clearly better for Black.})
 8... Qxf2# {Mate: the knight on e4 protects the queen, and White's own pieces on d1 and d2 block the king.} *
 
 [Chapter "Trap to avoid, Tennison Gambit: 5...h6?? 6.Nxf7!"]
@@ -402,8 +402,8 @@
 2. Nf3 {Develops and leaves the e-pawn hanging.} dxe4 {Takes the pawn.}
 3. Ng5 {This is the Tennison Gambit. The knight hits e4 and eyes f7.} Nf6 {Guards e4. The most common move.}
 4. d3 {Offers a second pawn to open lines.}
-(4. Bc4 e6 {Blocks the bishop's path to f7.} 5. Nc3 Nc6 {Black is a pawn up. Stockfish −0.6, slightly better for Black.})
-(4. Nc3 Bf5 {Guards e4 again. Stockfish −0.7, slightly better for Black.})
+(4. Bc4 e6 {Blocks the bishop's path to f7.} 5. Nc3 Nc6 {Black is a pawn up. Stockfish −0.3, slightly better for Black.})
+(4. Nc3 Bf5 {Guards e4 again. Stockfish −1.2, clearly better for Black.})
 4... exd3 5. Bxd3 {[%cal Gd3h7,Gg5f7] The bishop and the knight aim at Black's kingside.} Nc6! {Develops. Black is a pawn up.}
 (5... h6?? {Chases the knight: the most common move at club level.} 6. Nxf7! Kxf7 7. Bg6+! {[%cal Gd1d8] The bishop checks and uncovers the queen's attack on d8.} Kxg6 8. Qxd8 {White has won the queen for two pieces. Stockfish +2.9, winning for White.})
 6. O-O Bg4 {[%cal Gg4d1] Develops with gain of time on the queen.}
@@ -552,7 +552,7 @@
 (4. c3 e5 {[%cal Ge5d4] Hits d4 again. Stockfish −0.2, equal.})
 4... e5 {[%cal Ge5d4] Hits d4 a third time.}
 5. Nc3 {Develops with gain of time on the queen.}
-(5. c4 Qe4+ {Checks first.} 6. Be2 Nxd4 {Takes the pawn on d4. Stockfish −0.5, slightly better for Black.})
+(5. c4 Qe4+ {Checks first.} 6. Be2 Nxd4 {Takes the pawn on d4. Stockfish −0.8, slightly better for Black.})
 (5. dxe5 Qxd1+ 6. Kxd1 Bg4 {[%cal Gg4f3] Pins the knight. White's king can no longer castle. Stockfish −0.4, slightly better for Black.})
 5... Bb4 {[%cal Gb4c3] Pins the knight, so Black's queen is safe on d5.}
 6. Bd2 Bxc3 7. Bxc3 e4 {Chases the knight from f3.}
@@ -675,7 +675,7 @@
 {Against 3.c4 c6, White can guard d5 with 4.Nc3 or 4.d4 instead of taking on c6. Black takes on d5, and the game becomes a fight against White's isolated d-pawn or a Caro-Kann Panov Attack.}
 1. e4 d5 2. exd5 Nf6 3. c4 c6
 4. Nc3 {Guards d5 once more.}
-(4. d4 cxd5 {This is the Caro-Kann Panov Attack, which the Caro-Kann course also teaches.} 5. Nc3 Nc6 6. Nf3 Bg4 {[%cal Gg4f3] Pins the knight that guards d4. Stockfish +0.4, slightly better for White.})
+(4. d4 cxd5 {This is the Caro-Kann Panov Attack, which the Caro-Kann course also teaches.} 5. Nc3 Nc6 6. Nf3 Bg4 {[%cal Gg4f3] Pins the knight that guards d4. Stockfish +0.1, equal.})
 4... cxd5 5. cxd5 Nxd5 {Black has won back the pawn.}
 6. Bc4 {[%cal Gc4d5] Hits the knight.} Nb6 7. Bb3 Nc6 {Black develops and keeps an eye on d4. Stockfish 0.0, equal.} *
 
@@ -690,7 +690,7 @@
 {After 4.dxc6 Nxc6, White sometimes develops with Nc3 and d3 before Nf3. Black plays ...e5 and ...Bf5 as in the main line. If White pins the knight on f6 with Bg5, ...Qb6 hits b2, and Black gets active play for the pawn.}
 1. e4 d5 2. exd5 Nf6 3. c4 c6 4. dxc6 Nxc6
 5. Nc3 {Develops. After 5...e5 6.Nf3 e4 7.Ng5 Bf5, a trap is under Traps.}
-(5. d3 e5 6. Nc3 Bf5 {The same position as in the main line.})
+(5. d3 e5 6. Nc3 Bf5 {The same position as in the main line. Stockfish −0.1, equal.})
 5... e5 {[%cal Ge5e4] Takes the center.}
 6. d3 Bf5 {Develops and keeps an eye on d3.}
 7. Bg5 {Pins the knight.}
@@ -699,7 +699,7 @@
 8. Bxf6 {Takes the knight.} Qxb2 {[%cal Gb2c3,Gb2a1] Takes the pawn and hits the knight on c3 and the rook on a1. 8...gxf6 is also good.}
 9. Nd5 {The most common move.}
 (9. Nge2 {The best move: it guards c3.} Bb4 {[%cal Gb4c3] Piles up on c3.} 10. Bg5 Bxc3+ {Black wins back the piece with a check. Stockfish −1.3, clearly better for Black.})
-9... Bb4+ {Checks with gain of time.} 10. Nxb4 Qc3+ {[%cal Gc3a1,Gc3b4] The queen checks and will take the rook on a1 or the knight on b4 next. Stockfish −4.1, winning for Black.} *
+9... Bb4+ {Checks with gain of time.} 10. Nxb4 Qc3+ {[%cal Gc3a1,Gc3b4] The queen checks and will take the rook on a1 or the knight on b4 next. Stockfish −4.4, winning for Black.} *
 
 [Chapter "Advance Variation: 2.e5 c5"]
 [Side "black"]
