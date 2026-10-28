@@ -930,7 +930,7 @@
                             [
                                 "Mar del Plata, Main line: 9.Ne1",
                                 "21% as White\n3% as Black",
-                                "As White: Close the center with d5, hold e4 with Ne1, Be3 and f3, then open the c-file with c5. As Black: Bring the knight to e7, then storm the kingside with ...f5, ...f4 and ...g5."
+                                "As White: Close the center with d5. Play Ne1, Be3 and f3, which holds e4, then open the c-file with c5. As Black: Bring the knight to e7, then storm the kingside with ...f5, ...f4 and ...g5."
                             ],
                             [
                                 "Mar del Plata, Bayonet Attack: 9.b4",
@@ -1061,7 +1061,7 @@
             "compact": true,
             "course": "caro-kann",
             "subtitle": "1.e4 c6: the main systems and the nine lines to learn first.",
-            "summary": "Black supports ...d5 with the c-pawn and brings the c8 bishop out before ...e6 shuts it in. White's main tries, the Advance, the Exchange and 3.Nc3, all aim to cramp Black's pieces.",
+            "summary": "Black supports ...d5 with the c-pawn and brings the c8 bishop out before ...e6 shuts it in. White's main tries are the Advance (3.e5), the Exchange (3.exd5) and 3.Nc3.",
             "table": {
                 "columns": [
                     "Line",
