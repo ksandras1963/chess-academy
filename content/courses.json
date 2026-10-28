@@ -700,47 +700,47 @@
                             [
                                 "Anderssen Variation: 5.d3",
                                 "20% as White",
-                                "White's plans are to protect the center, build up slowly and attack on the kingside.\nBlack's plans are to chase the bishop and gain space on the queenside."
+                                "White: Protect the center, build up slowly and attack on the kingside.\nBlack: Chase the bishop and gain space on the queenside."
                             ],
                             [
                                 "Steinitz Defense: 3...d6",
                                 "22% as White",
-                                "White's plans are to open the center, give Black doubled pawns and attack on the kingside.\nBlack's plans are to stay solid and finish developing."
+                                "White: Open the center, give Black doubled pawns and attack on the kingside.\nBlack: Stay solid and finish developing."
                             ],
                             [
                                 "Berlin Defense, 5.Re1: 6.Bxc6",
                                 "15% as Black",
-                                "White's plans are to win back the pawn and finish developing.\nBlack's plans are to castle quickly and use the two bishops."
+                                "White: Win back the pawn and finish developing.\nBlack: Castle quickly and use the two bishops."
                             ],
                             [
                                 "Berlin Defense, 5.Re1: 6.Nxe5",
                                 "13% as Black",
-                                "White's plans are to win back the pawn at once and keep both bishops.\nBlack's plans are to castle and trade pieces for an equal game."
+                                "White: Win back the pawn at once and keep both bishops.\nBlack: Castle and trade pieces for an equal game."
                             ],
                             [
                                 "Berlin Endgame: 5.d4",
                                 "18% as Black",
-                                "White's plans are to trade pieces and use the extra pawn on the kingside.\nBlack's plans are to keep pieces on and use the two bishops."
+                                "White: Trade pieces and use the extra pawn on the kingside.\nBlack: Keep pieces on and use the two bishops."
                             ],
                             [
                                 "Anti-Berlin Variation: 4.d3",
                                 "16% as White\n24% as Black",
-                                "White's plans are to keep the queens on, build up slowly and strike in the center later.\nBlack's plans are to develop actively, castle and keep the bishops active."
+                                "White: Keep the queens on, build up slowly and strike in the center later.\nBlack: Develop actively, castle and keep the bishops active."
                             ],
                             [
                                 "Berlin Defense: 4.Bxc6",
                                 "11% as Black",
-                                "White's plans are to trade pieces and reach an endgame with the better pawns.\nBlack's plans are to use the two bishops and the open lines."
+                                "White: Trade pieces and reach an endgame with the better pawns.\nBlack: Use the two bishops and the open lines."
                             ],
                             [
                                 "Spanish Four Knights: 4.Nc3",
                                 "10% as Black",
-                                "White's plans are to develop quickly, castle and pin Black's knight.\nBlack's plans are to double White's pawns and break the pin."
+                                "White: Develop quickly, castle and pin Black's knight.\nBlack: Double White's pawns and break the pin."
                             ],
                             [
                                 "Classical Variation: 3...Bc5",
                                 "12% as White",
-                                "White's plans are to castle and build a pawn center that chases the bishop.\nBlack's plans are to keep the bishop active and develop quickly."
+                                "White: Castle and build a pawn center that chases the bishop.\nBlack: Keep the bishop active and develop quickly."
                             ]
                         ],
                         "note": "How often: the share of your Ruy Lopez games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -1330,27 +1330,27 @@
                     [
                         "Morphy Defense: 3...a6",
                         "33%",
-                        "White's plans are to keep up the pressure and build up slowly in the center.\nBlack's plans are to chase the bishop and gain space on the queenside."
+                        "White: Keep up the pressure and build up slowly in the center.\nBlack: Chase the bishop and gain space on the queenside."
                     ],
                     [
                         "Steinitz Defense: 3...d6",
                         "22%",
-                        "White's plans are to take the center and develop freely.\nBlack's plans are to stay solid and hold the center."
+                        "White: Take the center and develop freely.\nBlack: Stay solid and hold the center."
                     ],
                     [
                         "Berlin Defense: 3...Nf6",
                         "16%",
-                        "White's plans are to win back the center pawn, or keep the queens on.\nBlack's plans are to attack White's center at once and reach a solid game."
+                        "White: Win back the center pawn, or keep the queens on.\nBlack: Attack White's center at once and reach a solid game."
                     ],
                     [
                         "Classical Variation: 3...Bc5",
                         "12%",
-                        "White's plans are to gain time against the bishop with a pawn center.\nBlack's plans are to keep the bishop active, as in the Italian Game."
+                        "White: Gain time against the bishop with a pawn center.\nBlack: Keep the bishop active, as in the Italian Game."
                     ],
                     [
                         "Others: Bird Variation (5%), Cozio Defense (5%), Schliemann Defense (2%)",
                         "17% in all",
-                        "Rarer defenses, including a sharp gambit.\nWhite's plans are to develop, castle and take the center calmly."
+                        "White: Develop, castle and take the center calmly.\nBlack: Try a rarer defense, from a quiet knight move to a sharp gambit."
                     ]
                 ],
                 "note": "Share: how often each reply follows 3.Bb5 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
