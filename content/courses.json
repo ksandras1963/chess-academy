@@ -203,7 +203,7 @@
             "name": "French Defense",
             "eco": "C00",
             "moves": "1. e4 e6",
-            "summary": "Black builds a solid pawn chain and counterattacks White's center with ...c5 and ...f6.",
+            "summary": "Black builds a solid pawn chain and counterattacks White's center with the c- and f-pawns.",
             "puzzles": "content/french-puzzles.pgn",
             "furtherStudy": [
                 {
@@ -243,9 +243,9 @@
                     "side": "both",
                     "file": "content/french.pgn",
                     "repertoire": "Six main lines, each drilled as White and as Black: the Advance, Exchange, Winawer, Tarrasch, Steinitz and Rubinstein.",
-                    "summary": "1.e4 e6 2.d4 d5: Black builds a solid center and hits back with ...c5.",
+                    "summary": "Black builds a solid center and hits back at it from the side with the c-pawn.",
                     "why": {
-                        "text": "As White, you choose the game: the Advance (3.e5) gains space, the Exchange (3.exd5) keeps it simple, and 3.Nc3 or 3.Nd2 keep the tension in the center.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5. Against 3.Nc3 you choose between the sharp Winawer, 3...Nf6 (the Steinitz after 4.e5; 4.Bg5 is under Advanced) and the solid Rubinstein."
+                        "text": "As White, you choose the game: push the e-pawn to gain space (the Advance), trade pawns to keep it simple (the Exchange), or defend the e-pawn with a knight to keep the tension (the Tarrasch, and the knight to c3).\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with the c-pawn. When White's knight comes to c3, you choose between the sharp Winawer, the classical knight move (the Steinitz, if White then pushes the e-pawn) and the solid Rubinstein."
                     },
                     "table": {
                         "columns": [
