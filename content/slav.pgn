@@ -457,7 +457,7 @@ Against 6.Be2, develop with 6...Nbd7 or 6...h6, and answer Nh4 with ...Bg6 (Stoc
 [Opening "Slav Defense"]
 [ECO "D10"]
 
-{A trap you set. After 4.Bg5 dxc4 5.e4 b5, about one White player in four hits the chain with 6.a4?. With a knight on f3 instead of a bishop on g5 (the Geller Gambit), that idea is fine for White, but here it fails: after 6...b4!, the knight on c3 has to move, and it was guarding e4. Then ...Nxe4 also hits the bishop on g5. Two Black players in three find 6...b4, but the follow-up is tricky: against 7.Bxf6, take the knight on c3 first. White's best try is 7.Nb1, but after 7...Nxe4 Black has two extra pawns (Stockfish −2.1, winning for Black).}
+{A trap you set: after 4.Bg5 dxc4 5.e4 b5, about one White player in four hits the chain with 6.a4?. With a knight on f3 instead of a bishop on g5 (the Geller Gambit), that idea is fine for White, but here it fails: after 6...b4!, the knight on c3 has to move, and it was guarding e4. Then ...Nxe4 also hits the bishop on g5. Two Black players in three find 6...b4, but the follow-up is tricky: against 7.Bxf6, take the knight on c3 first. White's best try is 7.Nb1, but after 7...Nxe4 Black has two extra pawns (Stockfish −2.1, winning for Black).}
 1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. Bg5 dxc4 5. e4 b5
 6. a4? {Hits b5, but leaves the knight on c3 without a safe square.} b4! {[%cal Gb4c3] Hits the knight, which guards e4.}
 7. Na2?! {The most common reply, about half the time.}

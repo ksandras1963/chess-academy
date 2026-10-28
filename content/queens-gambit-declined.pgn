@@ -95,7 +95,7 @@
 
 [Chapter "The isolated queen's pawn"]
 [Type "concept"]
-[Idea "both"]
+[Idea "white"]
 [Diagram "6.O-O"]
 
 {From the Queen's Gambit Accepted: 1.d4 d5 2.c4 dxc4 3.e3 Nf6 4.Bxc4 e6 5.Nf3 c5 6.O-O. If Black takes on d4 and White takes back with the e-pawn, White's d-pawn has no pawn beside it, so only pieces can guard it. In return White gets open lines, more space and the e5 square for a knight.}
@@ -107,7 +107,7 @@
 
 [Chapter "The Slav center"]
 [Type "concept"]
-[Idea "both"]
+[Idea "white"]
 [Diagram "8...O-O"]
 
 {From the Slav: 1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.e3 e6 7.Bxc4 Bb4 8.O-O O-O. Black's pawns on c6 and e6 make a solid wall. White has won the c4 pawn back, and a4 stopped ...b5. Now White plays for e4, to get the bigger center.}
@@ -401,9 +401,9 @@
 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 Be7 {Breaks the pin, so the knight on f6 can move again.}
 6. e3 {Opens the diagonal of the f1 bishop.
 
-6...Bf5?! develops the bishop, but it leaves b7 without a guard. 7.Bxf6 Bxf6 8.Qb3 hits b7 and d5 together. After 8...c6 9.Qxb7 Qb6 10.Qxb6 axb6, White is a pawn up with the queens off (Stockfish +0.9, slightly better for White).
+6...Bf5?! develops the bishop but leaves b7 without a guard: 7.Bxf6 Bxf6 8.Qb3 hits b7 and d5 together. After 8...c6 9.Qxb7 Qb6 10.Qxb6 axb6, White is a pawn up with the queens off (Stockfish +0.9, slightly better for White).
 
-Two common replies lead back to familiar positions. 6...c6 7.Qc2 is Exchange: 5...c6 after its 7.e3 (Stockfish +0.2, equal). 6...h6 7.Bh4 keeps the bishop on its diagonal (Stockfish +0.2, equal): after 7...O-O 8.Bd3 you are back in this line, and after 7...c6, develop the same way with Bd3, Qc2, Nge2 and castling.} O-O
+6...c6 7.Qc2 leads back to Exchange: 5...c6 after its 7.e3 (Stockfish +0.2, equal). 6...h6 7.Bh4 keeps the bishop on its diagonal (Stockfish +0.2, equal): after 7...O-O 8.Bd3 you are back in this line, and after 7...c6, develop the same way with Bd3, Qc2, Nge2 and castling.} O-O
 7. Bd3 {[%cal Gd3h7,Gd3f5] The bishop aims at h7 and covers f5, the best square for Black's c8 bishop.
 
 Against 7...c5, play 8.Nge2. After 8...cxd4 9.Nxd4, Black is left with an isolated pawn on d5 (Stockfish +0.3, slightly better for White).} h6 {Asks the bishop to decide. Against Black's other seventh moves, keep developing with Qc2, Nge2 and castling.}

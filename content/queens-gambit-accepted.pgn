@@ -400,7 +400,7 @@ Compare 3.Nc3 e5 4.d5 Nf6 5.e4 b5!, where ...b5 works: there White's own pawns o
 [Opening "Queen's Gambit Accepted: Old Variation"]
 [ECO "D20"]
 
-{Almost one Accepted player in five tries to keep the pawn with 3...b5. It doesn't work. 4.a4 attacks the chain at its base, and the long diagonal from f3 to a8 becomes a weapon. Black's best is 4...b4, which gives the pawn back for a slightly worse game. The natural 4...c6 and 4...a6 lose material if Black takes back on b5 with the pawn. 4...Bd7, the second most common reply, fails too: after 5.axb5 Bxb5 6.Nc3 c6 7.b3!, White wins the pawn back with a big advantage, and the natural 7...cxb3? loses more.}
+{After 3.e3, almost one Black player in five tries to keep the pawn with 3...b5, and it doesn't work. 4.a4 attacks the chain at its base, and the long diagonal from f3 to a8 becomes a weapon. Black's best is 4...b4, which gives the pawn back for a slightly worse game. The natural 4...c6 and 4...a6 lose material if Black takes back on b5 with the pawn. 4...Bd7, the second most common reply, fails too: after 5.axb5 Bxb5 6.Nc3 c6 7.b3!, White wins the pawn back with a big advantage, and the natural 7...cxb3? loses more.}
 1. d4 d5 2. c4 dxc4 3. e3 b5?! {Holds the pawn on c4, but the pawns on b5 and c4 can be attacked.}
 4. a4 {[%cal Ga4b5] Hits b5, the base of the chain. 4...bxa4 5.Qxa4+ checks and wins the c4 pawn next (Stockfish +1.0, clearly better for White). 4...Ba6 5.axb5 Bxb5 reaches the 4...Bd7 line below.} c6?! {The natural way to hold b5, and the most common.}
 (4... b4 {The best defense: Black gives the pawn back and keeps the queenside closed.} 5. Bxc4 {White has the pawn back and a free hand in the center. Stockfish: +0.8, slightly better for White.})
