@@ -142,68 +142,58 @@
                     },
                     "table": {
                         "columns": [
-                            "Line",
-                            "Share",
-                            "At its branch",
-                            "What happens"
+                            "Variation",
+                            "How often",
+                            "What to do"
                         ],
                         "rows": [
                             [
-                                "Advance, Short Variation: 3.e5 Bf5 4.Nf3",
-                                "20%",
-                                "25%",
-                                "White develops quietly: Nf3, Be2 and castling before anything sharp. Black answers ...e6, ...c5 and ...Nc6, then brings a knight to f5."
+                                "Advance, Main line, Short Variation: 4.Nf3",
+                                "White's choice\n5% as Black",
+                                "White: Keep the pawn on e5 for space, develop quietly and castle before anything sharp. Above all, keep d4, the base of the pawn chain, well defended.\nBlack: Bring the light-squared bishop out before the e-pawn shuts it in, then attack d4 with the c-pawn and both knights."
                             ],
                             [
-                                "Advance, 4.Bd3: 3.e5 Bf5 4.Bd3",
-                                "20%",
-                                "24%",
-                                "White trades the light-squared bishops at once. Black then plays ...e6, ...c5 and ...Nc6, and ...Qb6 also hits b2."
+                                "Advance, Main line: 4.Bd3",
+                                "White's choice\n5% as Black",
+                                "White: Trade off Black's active light-squared bishop at once, then keep the extra space and support d4.\nBlack: Take the trade: then Black has no bad bishop left. Attack d4 with the c-pawn, the knights and the queen, which also eyes b2."
                             ],
                             [
-                                "Advance, Botvinnik-Carls Defense: 3.e5 c5",
-                                "20%",
-                                "26%",
-                                "Black plays ...c5 before developing the bishop. After c3 and ...cxd4, ...Bg4 pins the knight that guards d4."
+                                "Advance, Botvinnik-Carls Defense: 3...c5",
+                                "24% as White\nBlack's choice",
+                                "White: Support d4 with the c-pawn and develop the kingside, so the center holds.\nBlack: Hit the base of White's pawn chain at once, trade pawns on d4, pin the knight that guards it and bring a knight to f5."
                             ],
                             [
-                                "Panov Attack: 3.exd5 cxd5 4.c4",
-                                "15%",
-                                "23%",
-                                "White plays c4 and, after the trades on d5, keeps an isolated d-pawn. Black develops with ...Nf6, ...Nc6 and ...Bg4."
+                                "Panov Attack: 4.c4",
+                                "White's choice\n3% as Black",
+                                "White: Accept an isolated d-pawn in return for active pieces. Keep the pieces on and play for an attack, because the pawn is weak in the endgame.\nBlack: Put a knight in front of the isolated pawn and trade pieces: every trade brings Black closer to a good endgame."
                             ],
                             [
-                                "Classical Variation: 3.Nc3 dxe4 4.Nxe4 Bf5",
-                                "11%",
-                                "48%",
-                                "4...Bf5 develops the bishop at once and lets White chase it with Ng3. Club players then often play Nf3, Bd3 and a bishop trade instead of the sharp h4."
+                                "Classical Variation: 4...Bf5",
+                                "37% as White\nBlack's choice",
+                                "White: Chase the bishop with the knight, develop calmly and trade the light-squared bishops. White keeps a little more space.\nBlack: Develop the bishop before closing the pawn chain, stay solid with no weak pawns, and free the game later with a break by the c-pawn or the e-pawn."
                             ],
                             [
-                                "Tartakower Variation: 4.Nxe4 Nf6 5.Nxf6+ exf6",
-                                "11%",
-                                "38%",
-                                "Black accepts doubled f-pawns for quick development: ...Bd6, castling and ...Bg4."
+                                "Tartakower Variation: 5...exf6",
+                                "27% as White\nBlack's choice",
+                                "White: Develop, castle and aim for an endgame, where White's healthier pawns count most.\nBlack: Take back with the e-pawn to open lines: the bishops come out at once, a rook takes the open e-file, and the king is safe behind the f-pawns."
                             ],
                             [
-                                "Two Knights Attack: 2.Nc3 d5 3.Nf3 dxe4",
-                                "5%",
-                                "54%",
-                                "White develops before playing d4. With the queen on e2 and a bishop on c4, White sets traps on e7 and f7."
+                                "Two Knights Attack: 3...dxe4",
+                                "49% as White\nBlack's choice",
+                                "White: Develop both knights before the d-pawn, then aim the queen and the light-squared bishop at e7 and f7, where the traps are.\nBlack: Trade a pair of knights and develop the other with a gain of time on White's queen. Watch out for the smothered mate on d6."
                             ],
                             [
-                                "Maróczy Variation (Fantasy): 3.f3 dxe4",
-                                "2%",
-                                "50%",
-                                "After 4.fxe4 White has two center pawns but a weaker king. Black hits back with ...e5 at once."
+                                "Maróczy Variation: 3...dxe4",
+                                "46% as White\nBlack's choice",
+                                "White: Take back with the f-pawn for two center pawns and the half-open f-file, but develop and castle quickly, because f3 has weakened the king.\nBlack: Hit back in the center with ...e5 at once and aim at the weakened dark squares around White's king."
                             ],
                             [
-                                "Maróczy Variation (Fantasy): 3.f3 e6",
-                                "2%",
-                                "21%",
-                                "Black keeps the center closed and pins the c3 knight with ...Bb4. White answers with a3 and Bd3."
+                                "Maróczy Variation: 3...e6",
+                                "19% as White\nBlack's choice",
+                                "White: Keep the big center and defend e4 with the knight and the bishop.\nBlack: Keep the center closed with a French-style pawn chain, pin the c3 knight with the bishop and develop calmly."
                             ]
                         ],
-                        "note": "Share: of all Caro-Kann games (after 1.e4 c6), the share that reach the variation (3.e5, 3...cxd5, 4.Nxe4, 2.Nc3 d5 3.Nf3 or 3.f3), by any move order. At its branch: how often the line's own move is chosen where it branches off. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the Exchange with 4.Bd3 or 4.Nf3, the Tal Variation and the Karpov Variation, is in the Advanced section."
+                        "note": "How often: the share of your Caro-Kann games that reach the line, from the side that faces it. As White, it counts your games with the system the line belongs to (3.e5, 3.exd5, 3.Nc3, 2.Nc3 or 3.f3). \"White's choice\" or \"Black's choice\": that side picks the line, so it can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the Exchange with 4.Bd3 or 4.Nf3, the Tal Variation and the Karpov Variation, is in the Advanced section."
                     }
                 }
             ]
@@ -1386,68 +1376,58 @@
             "summary": "Black supports ...d5 with the c-pawn and brings the c8 bishop out before ...e6 shuts it in. White's main tries are the Advance (3.e5), the Exchange (3.exd5) and 3.Nc3.",
             "table": {
                 "columns": [
-                    "Line",
-                    "Share",
-                    "At its branch",
-                    "What happens"
+                    "Variation",
+                    "How often",
+                    "What to do"
                 ],
                 "rows": [
                     [
-                        "Advance, Short Variation: 3.e5 Bf5 4.Nf3",
-                        "20%",
-                        "25%",
-                        "White develops quietly: Nf3, Be2 and castling before anything sharp. Black answers ...e6, ...c5 and ...Nc6, then brings a knight to f5."
+                        "Advance, Main line, Short Variation: 4.Nf3",
+                        "White's choice\n5% as Black",
+                        "White: Keep the pawn on e5 for space, develop quietly and castle before anything sharp. Above all, keep d4, the base of the pawn chain, well defended.\nBlack: Bring the light-squared bishop out before the e-pawn shuts it in, then attack d4 with the c-pawn and both knights."
                     ],
                     [
-                        "Advance, 4.Bd3: 3.e5 Bf5 4.Bd3",
-                        "20%",
-                        "24%",
-                        "White trades the light-squared bishops at once. Black then plays ...e6, ...c5 and ...Nc6, and ...Qb6 also hits b2."
+                        "Advance, Main line: 4.Bd3",
+                        "White's choice\n5% as Black",
+                        "White: Trade off Black's active light-squared bishop at once, then keep the extra space and support d4.\nBlack: Take the trade: then Black has no bad bishop left. Attack d4 with the c-pawn, the knights and the queen, which also eyes b2."
                     ],
                     [
-                        "Advance, Botvinnik-Carls Defense: 3.e5 c5",
-                        "20%",
-                        "26%",
-                        "Black plays ...c5 before developing the bishop. After c3 and ...cxd4, ...Bg4 pins the knight that guards d4."
+                        "Advance, Botvinnik-Carls Defense: 3...c5",
+                        "24% as White\nBlack's choice",
+                        "White: Support d4 with the c-pawn and develop the kingside, so the center holds.\nBlack: Hit the base of White's pawn chain at once, trade pawns on d4, pin the knight that guards it and bring a knight to f5."
                     ],
                     [
-                        "Panov Attack: 3.exd5 cxd5 4.c4",
-                        "15%",
-                        "23%",
-                        "White plays c4 and, after the trades on d5, keeps an isolated d-pawn. Black develops with ...Nf6, ...Nc6 and ...Bg4."
+                        "Panov Attack: 4.c4",
+                        "White's choice\n3% as Black",
+                        "White: Accept an isolated d-pawn in return for active pieces. Keep the pieces on and play for an attack, because the pawn is weak in the endgame.\nBlack: Put a knight in front of the isolated pawn and trade pieces: every trade brings Black closer to a good endgame."
                     ],
                     [
-                        "Classical Variation: 3.Nc3 dxe4 4.Nxe4 Bf5",
-                        "11%",
-                        "48%",
-                        "4...Bf5 develops the bishop at once and lets White chase it with Ng3. Club players then often play Nf3, Bd3 and a bishop trade instead of the sharp h4."
+                        "Classical Variation: 4...Bf5",
+                        "37% as White\nBlack's choice",
+                        "White: Chase the bishop with the knight, develop calmly and trade the light-squared bishops. White keeps a little more space.\nBlack: Develop the bishop before closing the pawn chain, stay solid with no weak pawns, and free the game later with a break by the c-pawn or the e-pawn."
                     ],
                     [
-                        "Tartakower Variation: 4.Nxe4 Nf6 5.Nxf6+ exf6",
-                        "11%",
-                        "38%",
-                        "Black accepts doubled f-pawns for quick development: ...Bd6, castling and ...Bg4."
+                        "Tartakower Variation: 5...exf6",
+                        "27% as White\nBlack's choice",
+                        "White: Develop, castle and aim for an endgame, where White's healthier pawns count most.\nBlack: Take back with the e-pawn to open lines: the bishops come out at once, a rook takes the open e-file, and the king is safe behind the f-pawns."
                     ],
                     [
-                        "Two Knights Attack: 2.Nc3 d5 3.Nf3 dxe4",
-                        "5%",
-                        "54%",
-                        "White develops before playing d4. With the queen on e2 and a bishop on c4, White sets traps on e7 and f7."
+                        "Two Knights Attack: 3...dxe4",
+                        "49% as White\nBlack's choice",
+                        "White: Develop both knights before the d-pawn, then aim the queen and the light-squared bishop at e7 and f7, where the traps are.\nBlack: Trade a pair of knights and develop the other with a gain of time on White's queen. Watch out for the smothered mate on d6."
                     ],
                     [
-                        "Maróczy Variation (Fantasy): 3.f3 dxe4",
-                        "2%",
-                        "50%",
-                        "After 4.fxe4 White has two center pawns but a weaker king. Black hits back with ...e5 at once."
+                        "Maróczy Variation: 3...dxe4",
+                        "46% as White\nBlack's choice",
+                        "White: Take back with the f-pawn for two center pawns and the half-open f-file, but develop and castle quickly, because f3 has weakened the king.\nBlack: Hit back in the center with ...e5 at once and aim at the weakened dark squares around White's king."
                     ],
                     [
-                        "Maróczy Variation (Fantasy): 3.f3 e6",
-                        "2%",
-                        "21%",
-                        "Black keeps the center closed and pins the c3 knight with ...Bb4. White answers with a3 and Bd3."
+                        "Maróczy Variation: 3...e6",
+                        "19% as White\nBlack's choice",
+                        "White: Keep the big center and defend e4 with the knight and the bishop.\nBlack: Keep the center closed with a French-style pawn chain, pin the c3 knight with the bishop and develop calmly."
                     ]
                 ],
-                "note": "Share: of all Caro-Kann games (after 1.e4 c6), the share that reach the variation (3.e5, 3...cxd5, 4.Nxe4, 2.Nc3 d5 3.Nf3 or 3.f3), by any move order. At its branch: how often the line's own move is chosen where it branches off. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the Exchange with 4.Bd3 or 4.Nf3, the Tal Variation and the Karpov Variation, is in the Advanced section."
+                "note": "How often: the share of your Caro-Kann games that reach the line, from the side that faces it. As White, it counts your games with the system the line belongs to (3.e5, 3.exd5, 3.Nc3, 2.Nc3 or 3.f3). \"White's choice\" or \"Black's choice\": that side picks the line, so it can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the Exchange with 4.Bd3 or 4.Nf3, the Tal Variation and the Karpov Variation, is in the Advanced section."
             }
         },
         {

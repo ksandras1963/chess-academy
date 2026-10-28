@@ -28,12 +28,12 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 
 ## Basic lines and "How often"
 
-- Basic holds only the lines played in about 10% or more of your games (9.5% and up): about 4 to 6 lines, the very core. Everything else goes to Advanced, grouped by variation name, most common first. Kumar makes exceptions himself (the King's Indian has 7 Basic lines; the Caro-Kann keeps its 9 Basic lines and its own table, by his choice, so leave them as they are).
+- Basic holds only the lines played in about 10% or more of your games (9.5% and up): about 4 to 6 lines, the very core. Everything else goes to Advanced, grouped by variation name, most common first. Kumar makes exceptions himself (the King's Indian has 7 Basic lines; the Caro-Kann keeps its 9 Basic lines, by his choice, so leave them as they are).
 - "How often", in tables and chapter bars, is the share of your games in the opening that reach the line, from the side you play in it: the product of the opponent's move frequencies from the course start, in Lichess rated rapid and classical games between players averaging 1800 to 2199 (`content/opening-stats.json`). A table counts all of the line's move orders.
 
 ## Tables
 
-- A course page's table of the variations has the columns Variation, How often, and What to do. The Caro-Kann is the exception: it keeps its own columns, by Kumar's choice.
+- A course page's table of the variations has the columns Variation, How often, and What to do, in every course. The Caro-Kann uses them too, on its course page and its Introduction page: Kumar chose "Standard columns too" when the strategies rule came in.
 - Tables give general strategies, not lists of moves. In Kumar's words: "for all tables instead of giving a list of moves that are very difficult to understand give general strategies for that variant - white castles early and attack center with white-squared bishop, while black develops strong pawn structure and powerful King side knight."
 - So, by his choices: each row's What to do says in plain words what White aims for and what Black aims for. It names a move only when a learner must know it (a trap, say), and then one move at most. The Variation column gives the line's name and its key move, like the chapter titles: "Classical, Keres Defense: 6...b6", not the whole move order.
 
