@@ -668,16 +668,98 @@
             "eco": "C60",
             "moves": "1. e4 e5 2. Nf3 Nc6 3. Bb5",
             "summary": "White's bishop pressures the knight that defends e5, for a long strategic fight over the center.",
-            "courses": [
+            "puzzles": "content/ruy-lopez-puzzles.pgn",
+            "furtherStudy": [
                 {
-                    "id": "ruy-lopez-white",
-                    "side": "white",
-                    "repertoire": "To be written"
+                    "title": "Ruy Lopez - Ideas, Principles and Common Variations (the first video of his series on the opening)",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video series",
+                    "url": "https://www.youtube.com/watch?v=GFWI3gkizZg"
                 },
                 {
-                    "id": "ruy-lopez-black",
-                    "side": "black",
-                    "repertoire": "To be written"
+                    "title": "A complete Spanish Opening Repertoire for White",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=uT0d4oNck8s"
+                },
+                {
+                    "title": "Ruy Lopez - Berlin Defense",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=eM1yKnw2g2w"
+                },
+                {
+                    "title": "Ruy Lopez - Exchange Variation",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=W72Vw-DxvA0"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "ruy-lopez",
+                    "side": "both",
+                    "file": "content/ruy-lopez.pgn",
+                    "repertoire": "As White: the d3 system, with 5.d3 against 4...Nf6 and 4.d3 against the Berlin, then c3, Re1, Nbd2–f1–g3 and d4 later. As Black: the Berlin Defense, 3...Nf6, taking on e4 after 4.O-O.",
+                    "summary": "1.e4 e5 2.Nf3 Nc6 3.Bb5: the bishop hits the knight that guards e5.",
+                    "why": {
+                        "text": "As White, the Ruy Lopez follows the opening principles: every move develops a piece or fights for the center, and the bishop on b5 keeps Black busy defending e5. It is one of the most popular openings at every level, from club players to world champions, and its plans teach a great deal about maneuvering. This course plays the d3 system: the same setup and plans as the main lines, with far less to learn by heart.\n\nAs Black, the Berlin Defense, 3...Nf6, hits e4 at once and gives a solid game. Vladimir Kramnik made it famous in his 2000 world title match against Garry Kasparov, who could not beat it, and top players have trusted it ever since. Against the common 4.O-O, Black takes the pawn and gets the two bishops, and the plans are few and clear."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Anderssen Variation: 4...Nf6 5.d3",
+                                "20% as White",
+                                "c3, castle, Re1, then Nbd2–f1–g3 and h3. Push d4 when the setup is ready. Against ...Na5, the bishop drops back to c2."
+                            ],
+                            [
+                                "Steinitz Defense: 3...d6",
+                                "22% as White",
+                                "4.d4 and take back on d4 with the knight. Trade on c6 to double Black's pawns, then b3, Bb2 and f4."
+                            ],
+                            [
+                                "Berlin Defense, 5.Re1: 6.Bxc6",
+                                "15% as Black",
+                                "Take back with the d-pawn. After 7.Nxe5 Be7 and castling, Black has the two bishops and active pieces."
+                            ],
+                            [
+                                "Berlin Defense, 5.Re1: 6.Nxe5",
+                                "13% as Black",
+                                "...Be7, trade knights on e5 and castle. Then ...Bf6 hits the rook, and the rooks come off on the e-file."
+                            ],
+                            [
+                                "Berlin Endgame: 4.O-O Nxe4 5.d4",
+                                "18% as Black",
+                                "...Nd6, and take back on c6 with the d-pawn. After the queen trade, the king goes to e8, then ...h5 and ...Rh6. Keep pieces on."
+                            ],
+                            [
+                                "Anti-Berlin Variation: 4.d3",
+                                "16% as White\n24% as Black",
+                                "As White: c3, castle, Re1, Nbd2–f1–g3, then d4. If e5 is guarded only by the knight, Bxc6 and Nxe5 win it.\nAs Black: ...Bc5, castle, ...d6, then ...a6, ...Ba7 and ...Ne7–g6."
+                            ],
+                            [
+                                "Berlin Defense: 4.Bxc6",
+                                "11% as Black",
+                                "Take back with the d-pawn, play ...Bd6 and castle. Against 5.Nxe5, ...Qd4 wins the pawn back."
+                            ],
+                            [
+                                "Spanish Four Knights: 4.Nc3",
+                                "10% as Black",
+                                "4...Bb4, castle, and take on c3 to double White's pawns. Against the pin Bg5, ...Qe7 and ...Nd8–e6."
+                            ],
+                            [
+                                "Classical Variation: 3...Bc5",
+                                "12% as White",
+                                "4.c3, castle, then d4 hits the bishop. Re1 and h3 keep the center safe. Against 4...d6?, 5.d4 wins material."
+                            ]
+                        ],
+                        "note": "How often: the share of your Ruy Lopez games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
                 }
             ]
         },
@@ -1086,7 +1168,7 @@
                 ],
                 "note": "Share: how often each reply follows 1.e4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
             },
-            "summary": "Under each board, press ▶︎ Watch the moves to step through the first four moves. The Italian, French, Caro-Kann and Scandinavian link to their courses in this app. Rarer openings, such as the Pirc and the King's Gambit, have a page of their own, linked at the bottom."
+            "summary": "Under each board, press ▶︎ Watch the moves to step through the first four moves. The Ruy Lopez, Italian, French, Caro-Kann and Scandinavian link to their courses in this app. Rarer openings, such as the Pirc and the King's Gambit, have a page of their own, linked at the bottom."
         },
         {
             "id": "e4-uncommon",
@@ -1139,6 +1221,56 @@
                 "note": "Share: how often each opening comes up in games that start with 1.e4, in rated rapid and classical Lichess games between players averaging 1800 to 2199. In the King's Gambit and the Scotch, White chooses the opening; in the others, Black does."
             },
             "summary": "Each board shows the position after four moves of a main line. Press Watch to see the moves played out. Under each board, three lines give White's plan and three give Black's."
+        },
+        {
+            "id": "ruy",
+            "parent": "e4",
+            "name": "Ruy Lopez",
+            "heading": "Ruy Lopez Introduction",
+            "eco": "C60–C99",
+            "moves": "1. e4 e5 2. Nf3 Nc6 3. Bb5",
+            "file": "content/ruy-overview.pgn",
+            "count": "13 variations",
+            "compact": true,
+            "course": "ruy-lopez",
+            "subtitle": "1.e4 e5 2.Nf3 Nc6 3.Bb5: the main variations, and the lines the course teaches.",
+            "summary": "White's bishop pins the knight that guards e5, and both sides fight for the center in a long, maneuvering game. Black's main choices are 3...a6, which asks the bishop, and the Berlin Defense, 3...Nf6. The map shows how the variations branch, and the course teaches one repertoire for each side.\n\nThe opening is named after Ruy López de Segura, a Spanish priest who analyzed 3.Bb5 in his chess book of 1561, Libro de la invención liberal y arte del juego del axedrez. He did not invent the move, but he studied it closely, and in English the opening carries his name. Because López was Spanish, it is also called the Spanish Game or the Spanish Opening.",
+            "table": {
+                "after": "map",
+                "columns": [
+                    "Black's reply",
+                    "Share",
+                    "What kind of game"
+                ],
+                "rows": [
+                    [
+                        "3...a6 (Morphy Defense)",
+                        "33%",
+                        "The main line. After 4.Ba4 Nf6 5.O-O come the Closed Ruy Lopez, the Open Ruy Lopez and the Marshall Attack, each with long theory; this course plays 5.d3 instead. 4.Bxc6 is the Exchange Variation."
+                    ],
+                    [
+                        "3...d6 (Steinitz Defense)",
+                        "22%",
+                        "Solid but passive: a pawn holds e5 and shuts in the f8 bishop. White takes the center with 4.d4."
+                    ],
+                    [
+                        "3...Nf6 (Berlin Defense)",
+                        "16%",
+                        "Black hits e4 at once. After 4.O-O Nxe4 the queens often come off early, in the Berlin endgame; 4.d3, the Anti-Berlin, keeps them on."
+                    ],
+                    [
+                        "3...Bc5 (Classical Variation)",
+                        "12%",
+                        "The bishop takes its best diagonal, as in the Italian Game. White gains time against it with c3 and d4."
+                    ],
+                    [
+                        "Others: 3...Nd4 (5%), 3...Nge7 (5%), 3...f5 (2%)",
+                        "17% in all",
+                        "Rarer defenses: the Bird Variation offers a knight trade on d4, the Cozio Defense develops the knight behind the c6 knight, and the Schliemann Defense is a sharp gambit. 3...Qf6 and 3...Bd6 make up the rest."
+                    ]
+                ],
+                "note": "Share: how often each reply follows 3.Bb5 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
+            }
         },
         {
             "id": "ck",
