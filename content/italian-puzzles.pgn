@@ -35,7 +35,7 @@
 [Hint "In puzzle 1 Black's h-pawn was on h6. Here it is still on h7. What does that change?"]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 a6?! {Gives the bishop on c5 a retreat on a7 and covers b5, so b4-b5 can be met by ...axb5. But it develops nothing. Stockfish: +1.2 after 5.d4, against +0.1 after 4...Nf6.}
-5. b4 {Gains space, but with ...a6 played the bishop can drop back to a7. Stockfish: +0.2, so 5.d4 was stronger.}
+5. b4 {Gains space, but with ...a6 played the bishop can drop back to a7. Stockfish: +0.4, so 5.d4 was stronger.}
 (5. d4! {White's best: the center pawns advance while Black is a move behind.} 5... exd4 6. cxd4 Ba7 7. O-O d6 8. h3 {White has a big center and easy development. Stockfish: +1.4, clearly better for White.})
 5... Bb6 {Fine, though 5...Ba7 is a touch better.}
 6. b5? {Chases the knight, but the pawn on a6 can take on b5.}
@@ -96,7 +96,7 @@
 9. g6 {Sets the trap: if Black grabs on f2, 10.Nxe5! wins.}
 9... d5! {[%cal Gd5c4] Blocks the bishop's line to f7 (c4, d5, e6, f7) and attacks the bishop at the same time. Only now is ...Nxf2 safe.}
 (9... Nxf2? {Grabs the pawn and forks queen and rook, but it walks into the trap: see the next puzzle.} 10. Nxe5! Nxh1 11. gxf7+ Rxf7 12. Bxf7+ Kf8 13. Qh5 {Stockfish: +5.4, winning for White.})
-(9... d6!? {Also keeps the win: it guards e5, so the Nxe5 trick no longer works. 9...d5 is stronger because it also hits the bishop.} 10. Bxf7+ Rxf7 11. gxf7+ Kxf7 12. Rf1 {Stockfish: −1.6, clearly better for Black.})
+(9... d6!? {Also keeps the win: it guards e5, so the Nxe5 trick no longer works. 9...d5 is stronger because it also hits the bishop.} 10. Bxf7+ Rxf7 11. gxf7+ Kxf7 12. Rf1 {Stockfish: −2.1, winning for Black.})
 (9... Bxf2+!? {Also wins for Black, though 9...d5 is cleaner.} 10. Ke2 Nd4+ 11. Nxd4 exd4 12. gxf7+ Rxf7 13. Bxf7+ {Stockfish: −4.5, winning for Black.})
 10. Nxd5 Nxf2 11. Nxe5 Nxd1 12. gxf7+ Rxf7 13. Rh8+ Kxh8 14. Nxf7+ Kh7 15. Nxd8 Nxd8 {The checks run out, and Black has an extra piece for two pawns. Stockfish: −4.5, winning for Black.}
 *
