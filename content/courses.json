@@ -686,17 +686,83 @@
             "name": "Scandinavian Defense",
             "eco": "B01",
             "moves": "1. e4 d5",
-            "summary": "Black challenges e4 at once and takes back with the queen, for quick development and a solid pawn structure.",
-            "courses": [
+            "summary": "Black challenges e4 at once and takes back on d5 with the queen or the knight, for quick development and a solid pawn structure.",
+            "furtherStudy": [
                 {
-                    "id": "scandinavian-white",
-                    "side": "white",
-                    "repertoire": "To be written"
+                    "title": "Scandinavian Defense | Ideas, Principles and Common Variations (the first of six videos on the opening)",
+                    "by": "Stjepan Tomic, Hanging Pawns",
+                    "kind": "Video series",
+                    "url": "https://www.youtube.com/watch?v=Wpd8jcVKcJw"
                 },
                 {
-                    "id": "scandinavian-black",
-                    "side": "black",
-                    "repertoire": "To be written"
+                    "title": "Learn the Scandinavian Defense in 15 Minutes [Chess Opening Crash Course]",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=sKoBj-kL0hg"
+                },
+                {
+                    "title": "WIN Against the Scandinavian Defense [Winning Plan for White]",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=QxFGBtOncdw"
+                },
+                {
+                    "title": "Crush the Scandinavian Defense with Hikaru's Secret Gambit",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=sCWPC1Q61V0"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "scandinavian",
+                    "side": "both",
+                    "file": "content/scandinavian.pgn",
+                    "repertoire": "As Black: 2...Qxd5 3.Nc3 Qa5, or the Modern Variation, 2...Nf6. As White: 2.exd5 and 3.Nc3, and 3.d4 against the Modern.",
+                    "summary": "1.e4 d5: Black challenges e4 at once and takes back on d5 with the queen or the knight.",
+                    "why": {
+                        "text": "As Black, 1...d5 makes the game a Scandinavian from the first move, whatever White had prepared, and its plans are few and easy to learn. After 2...Qxd5 and 3...Qa5 you get a solid position with no weak pawns, like a Caro-Kann. The Modern Variation, 2...Nf6, takes the pawn back with the knight instead, so your queen is not chased.\n\nAs White, you meet the Scandinavian in about 7% of your 1.e4 games. Black's queen comes out early, so you develop with gain of time and keep a pawn on d4 and more space."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Main Line: 3.Nc3 Qa5",
+                                "26% as White; 60% as Black, with 2...Qxd5",
+                                "As White: d4, Nf3, Bc4 and Bd2, then 8.Nd5 trades the c3 knight with gain of time; castle long and push d5.\nAs Black: ...Nf6, ...c6, ...Bf5 and ...e6; after 8.Nd5 Qd8 9.Nxf6+, take back with the queen."
+                            ],
+                            [
+                                "Marshall Variation: 2...Nf6 3.d4 Nxd5",
+                                "19% as White; 18% as Black, with 2...Nf6",
+                                "As White: 4.c4 chases the knight, then Nc3, Nf3 and Bd3 build a big center.\nAs Black: 4...Nf6, then ...e6 and ...c5 against the center; against 4.Nf3, 4...Bf5 offers to trade the light-squared bishops."
+                            ],
+                            [
+                                "Valencian Variation: 3.Nc3 Qd8",
+                                "21% as White",
+                                "Play d4 and Nf3. Against 5...Bg4, 6.h3 makes Black take on f3, and you keep the two bishops; then Be3, Bd3 and castle."
+                            ],
+                            [
+                                "Modern Variation: 2...Nf6 3.Nc3 Nxd5",
+                                "23% as Black, with 2...Nf6",
+                                "Take back on d5 with the knight. After 4.Nxd5 Qxd5 no White knight can chase your queen: play ...Nc6, ...Bg4 and ...O-O-O against d4."
+                            ],
+                            [
+                                "Panov Transfer: 2...Nf6 3.c4 c6",
+                                "19% as Black, with 2...Nf6",
+                                "Hit d5 at once. After 4.dxc6 Nxc6 you are a pawn down but develop fast with ...e5 and ...Bc5; after 4.d4 cxd5 you reach a Caro-Kann Panov."
+                            ],
+                            [
+                                "Avoiding the main line: 3.Nf3 Bg4",
+                                "10% as Black, with 2...Qxd5",
+                                "Pin the knight, then play ...Nc6 and ...O-O-O: the knight, queen and rook all aim at d4 before White has castled."
+                            ]
+                        ],
+                        "note": "How often: the share of your Scandinavian games that reach the line, from the side that faces it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Lasker Variation (...Bg4 met by h3, about 13% as White) and the Advance Variation (2.e5, 10% as Black) are in Advanced by choice, with the rarer lines."
+                    }
                 }
             ]
         },

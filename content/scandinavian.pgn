@@ -1,0 +1,146 @@
+[Chapter "Key ideas: The Scandinavian structure"]
+[Side "both"]
+[Type "ideas"]
+
+{After 2...Qxd5 3.Nc3 and d4, White has a pawn on d4 and more space. Black builds a wall of pawns on c6 and e6, the same shape as in the Caro-Kann, after first bringing the c8 bishop out in front of it. Each board shows one idea.}
+*
+
+[Chapter "Bishop out, then ...e6"]
+[Type "concept"]
+[Idea "black"]
+
+{Black's light-squared bishop comes out before ...e6 closes its diagonal. With pawns on c6 and e6, Black has no weak pawns, and White's pieces find few targets. This is the setup of the main line.}
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 Nf6 5. Nf3 c6 {[%cal Gc8f5] The idea starts from this position.} 6. Bc4 Bf5 {The bishop gets out first.} 7. Bd2 e6 {[%csl Gc6,Ge6] The wall is complete, and the bishop on f5 stands outside it. Stockfish +0.8, slightly better for White, but Black has no weak pawns.} *
+
+[Chapter "The knight blocks the c-pawn"]
+[Type "concept"]
+[Idea "black"]
+
+{After 3.Nc3, White's knight stands in front of the c-pawn, so White can't guard d4 with c3. Black can hit d4 with ...c5 and free the game. Here Black has played 3...Qd8, the Valencian Variation.}
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8 4. d4 Nf6 5. Nf3 e6 6. Bd3 {[%csl Yd4] [%cal Rc2c3] The idea starts from this position.} 6... c5 {[%cal Gc5d4] Hits d4. White can't support it with c3.} 7. dxc5 Bxc5 {Black's bishop comes out, and the d-file is open for Black's queen. Stockfish +0.7, slightly better for White.} *
+
+[Chapter "The d5 break"]
+[Type "concept"]
+[Idea "white"]
+
+{White's pawn on d4 gives more space, and pushed to d5 it opens the center while Black's king is still on e8. In the main line White castles long first, so the rook on d1 is ready. Black gives up the bishop pair to stop it, and White's bishop lands on d5.}
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 Nf6 5. Nf3 c6 6. Bc4 Bf5 7. Bd2 e6 8. Nd5 Qd8 9. Nxf6+ Qxf6 10. Qe2 Nd7 11. O-O-O Bg4 {[%cal Gd4d5,Gd1d8] The idea starts from this position.} 12. d5 {Opens the center.} 12... Bxf3 13. gxf3 cxd5 14. Bxd5 {[%cal Gd5b7,Gd1d7] White's bishop and rook bear down on the center. White's f-pawns are doubled, but Black's king is still in the middle. Stockfish +0.8, slightly better for White.} *
+
+[Chapter "Key ideas: The queen and lost time"]
+[Side "both"]
+[Type "ideas"]
+
+{After 2...Qxd5, Black's queen stands in the center early, and White develops by attacking it. Black accepts the lost time: the queen goes to a safe square, and ...c6 gives it a way back. Each board shows one side of this fight.}
+*
+
+[Chapter "Nc3 hits the queen"]
+[Type "concept"]
+[Idea "white"]
+
+{3.Nc3 develops a piece and attacks the queen, so Black has to move it again. On a5 the queen is safe, and once White plays d4 it pins the knight to White's king. White breaks the pin later with Bd2.}
+1. e4 d5 2. exd5 Qxd5 {[%cal Gb1c3] The idea starts from this position.} 3. Nc3 {Develops and attacks the queen.} 3... Qa5 {The queen steps aside to a safe square.} 4. d4 {[%cal Ra5e1] Now the queen pins the knight on c3 to White's king. Stockfish +0.7, slightly better for White.} *
+
+[Chapter "Bd2 and Nd5: the discovered attack"]
+[Type "concept"]
+[Idea "white"]
+
+{With the bishop on d2 behind the knight on c3, a knight move uncovers an attack on Black's queen. 8.Nd5 also hits the knight on f6, so Black has no time to take on d5. White trades the knight that blocked the c-pawn for Black's best defender.}
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 Nf6 5. Nf3 c6 6. Bc4 Bf5 7. Bd2 e6 {[%cal Gd2a5] The idea starts from this position.} 8. Nd5 {[%cal Gd2a5,Gd5f6] Uncovers the bishop's attack on the queen and hits f6.} 8... Qd8 {The only good move. 8...cxd5? 9.Bxa5 wins the queen.} 9. Nxf6+ Qxf6 {White has traded the knight on c3, so the c-pawn is free. Stockfish +0.6, slightly better for White.} *
+
+[Chapter "...c6 and the way back"]
+[Type "concept"]
+[Idea "black"]
+
+{The pawn on c6 opens c7 for Black's queen. When White's bishop comes to d2, Black steps the queen back to c7 at once, so a knight move no longer hits it. Here White has played Bc4 and d3, the kingside push setup.}
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. Bc4 Nf6 5. d3 c6 {[%csl Gc7] The idea starts from this position.} 6. Bd2 {[%cal Gd2a5] Lines up on the queen.} 6... Qc7 {The queen steps back before White's knight can jump. Stockfish +0.5, slightly better for White.} *
+
+[Chapter "Key ideas: The light-squared bishop"]
+[Side "both"]
+[Type "ideas"]
+
+{Black develops the c8 bishop before ...e6, often to g4 to pin White's knight. White answers with h3: Black then usually takes on f3, and White gets the two bishops. Each board shows one side of this trade.}
+*
+
+[Chapter "h3 and the two bishops"]
+[Type "concept"]
+[Idea "white"]
+
+{Against ...Bg4, h3 asks the bishop to decide. Black usually takes on f3, and White's queen recaptures. White keeps both bishops, and the queen on f3 eyes b7.}
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8 4. d4 Nf6 5. Nf3 Bg4 {[%cal Gh2h3] The idea starts from this position.} 6. h3 {Asks the bishop to take or retreat.} 6... Bxf3 7. Qxf3 {[%csl Gc1,Gf1] [%cal Gf3b7] White has the two bishops. Stockfish +0.9, slightly better for White.} *
+
+[Chapter "Keeping the bishop costs time"]
+[Type "concept"]
+[Idea "white"]
+
+{If Black keeps the bishop with ...Bh5, White chases it with g4 and gains space on the kingside with gain of time. Then Ne5 hits the bishop on g6 again. This is why Black usually takes on f3.}
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 Nf6 5. Nf3 Bg4 {[%cal Gh2h3,Gg2g4] The idea starts from this position.} 6. h3 Bh5 7. g4 {Chases the bishop.} 7... Bg6 8. Ne5 {[%cal Ge5g6] Hits the bishop again. Stockfish +1.1, clearly better for White.} *
+
+[Chapter "Black's pieces on the dark squares"]
+[Type "concept"]
+[Idea "black"]
+
+{Black doesn't mind giving up the light-squared bishop. Black's pawns on c6 and e6 stand on light squares, so the dark-squared bishop and the knights are the pieces that matter. Black develops with ...Nbd7 and ...Bd6 and castles, with a solid position.}
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8 4. d4 Nf6 5. Nf3 Bg4 6. h3 Bxf3 7. Qxf3 c6 8. Be3 e6 {[%csl Gc6,Ge6] The idea starts from this position.} 9. Bd3 Nbd7 {The knight heads for b6 or supports ...e5 or ...c5.} 10. O-O Bd6 {[%cal Gd6h2] The bishop takes the best diagonal. Stockfish +0.8, slightly better for White, but Black's position is solid.} *
+
+[Chapter "Key ideas: The Modern Variation"]
+[Side "both"]
+[Type "ideas"]
+
+{In the Modern Variation, 2...Nf6, Black takes the pawn back with the knight instead of the queen, so the queen is not chased. White chooses between developing quickly and letting the pawn go, or keeping it for a while with c4. Each board shows one plan.}
+*
+
+[Chapter "The knight takes back"]
+[Type "concept"]
+[Idea "black"]
+
+{After 3.Nc3, the pawn on d5 is not really guarded: Black takes it with the knight. If White trades knights, Black's queen recaptures, and no White knight is left to chase it. Black develops quickly with ...Nc6, ...Bg4 and long castling.}
+1. e4 d5 2. exd5 Nf6 3. Nc3 {[%cal Gf6d5] The idea starts from this position.} 3... Nxd5 {Takes the pawn back.} 4. Nxd5 Qxd5 {No White knight can hit the queen now.} 5. d4 Nc6 6. Nf3 Bg4 7. Be2 O-O-O {[%cal Gc6d4,Gd5d4,Gg4f3] The knight and queen hit d4, the rook backs up the queen, and the pin on f3 takes away a defender. Equal (Stockfish −0.2).} *
+
+[Chapter "c4 and the pawn center"]
+[Type "concept"]
+[Idea "white"]
+
+{Against 3.d4 Nxd5, White's c-pawn chases the knight away with gain of time. White gets two pawns in the center, on c4 and d4, and develops behind them with Nc3, Nf3 and Bd3.}
+1. e4 d5 2. exd5 Nf6 3. d4 Nxd5 {[%cal Gc2c4] The idea starts from this position.} 4. c4 {Hits the knight.} 4... Nf6 5. Nc3 {[%csl Gc4,Gd4] White has a broad center. Black hits it with ...e5, or with ...e6 and ...c5. Stockfish +0.4, slightly better for White.} *
+
+[Chapter "...c6 against 3.c4"]
+[Type "concept"]
+[Idea "black"]
+
+{If White keeps the pawn with 3.c4, Black strikes at it at once with ...c6. After 4.dxc6 Nxc6 White is a pawn up, but Black's pieces come out fast and White's d-pawn is still at home. Black then takes the center with ...e5.}
+1. e4 d5 2. exd5 Nf6 3. c4 {[%cal Gc7c6] The idea starts from this position.} 3... c6 {Hits d5 at once.} 4. dxc6 Nxc6 {[%csl Yd4] Black has two pieces out and an eye on d4.} 5. Nf3 e5 {[%cal Ge5e4] Black takes the center, and ...e4 can chase the knight. Stockfish −0.6, slightly better for Black.} *
+
+[Chapter "Key ideas: Tricks and traps"]
+[Side "both"]
+[Type "ideas"]
+
+{A few tactical patterns come up again and again in the Scandinavian. Each board shows one, with the moves that make it work.}
+*
+
+[Chapter "Bxf7# against an early ...Bg4"]
+[Type "concept"]
+[Idea "white"]
+
+{With White's bishop on c4 and knight on f3, pinning the knight with ...Bg4 before ...e6 is a mistake. Ne5! breaks the pin by offering the queen. If Black takes it, Bxf7 is mate, because the knight on e5 guards f7 and d7.}
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8 4. Nf3 Nf6 5. Bc4 {[%cal Gc4f7] The idea starts from this position.} 5... Bg4? {Pins the knight, but f7 is weak.} 6. Ne5! {Offers the queen.} 6... Bxd1?? {6...Be6 is better, but after 7.Bxe6 fxe6 White is winning (Stockfish +2.6).} 7. Bxf7# {Checkmate.} *
+
+[Chapter "g4 and f4 trap the bishop"]
+[Type "concept"]
+[Idea "white"]
+
+{When White has not played Nf3, ...Bg4 has no knight to pin. White chases the bishop with f3 and g4, and then f4 threatens f5, trapping it on g6. White's pawns gain space with every move.}
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. Bc4 Nf6 5. d3 c6 6. Bd2 {[%cal Gf2f3,Gg2g4] The idea starts from this position.} 6... Bg4? {The bishop has nothing to pin.} 7. f3 Bh5 8. g4 Bg6 9. f4 {[%cal Gf4f5] Threatens f5, trapping the bishop. Stockfish +1.7, clearly better for White.} *
+
+[Chapter "The pin on the e-file: ...Qe4"]
+[Type "concept"]
+[Idea "black"]
+
+{In the Modern after 3.Nc3, Black's queen often stands on d5, with the bishop on g4 and the king castled long. If White opens the e-file with dxe5, ...Qe4 pins the bishop on e2 to White's king. White's knight on f3 can't move, because ...Qxe2 would be mate.}
+1. e4 d5 2. exd5 Nf6 3. Nc3 Nxd5 4. Nxd5 Qxd5 5. d4 Nc6 6. Nf3 Bg4 7. Be2 O-O-O 8. c3 {[%cal Ge7e5] The idea starts from this position.} 8... e5 {Offers a pawn to open the e-file.} 9. dxe5? Qe4! {[%cal Ge4e2,Gg4f3] Pins the bishop on e2 and threatens ...Bxf3. Stockfish −2.3, winning for Black.} *
+
+[Chapter "Qxf2#: when Bd2 blocks the d-file"]
+[Type "concept"]
+[Idea "black"]
+
+{In the Icelandic Gambit, 3.c4 e6, Black gives a pawn for quick development. If White blocks the bishop's check with Bd2, White's queen no longer guards d4. ...Qxd4 then hits f2, and Nf3?? allows mate.}
+1. e4 d5 2. exd5 Nf6 3. c4 e6 4. dxe6 Bxe6 5. d4?! Bb4+ 6. Nc3?! Ne4 {[%cal Gb4c3,Ge4c3] The idea starts from this position.} 7. Bd2? {Natural, but it cuts the queen off from d4.} 7... Qxd4 {[%cal Gd4f2] Takes the pawn and threatens ...Qxf2 mate. After the best defense, 8.Nxe4 Qxe4+, Black is clearly better (Stockfish −1.7).} 8. Nf3?? Qxf2# {Checkmate.} *
