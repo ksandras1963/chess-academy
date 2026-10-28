@@ -28,7 +28,7 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 
 ## Basic lines and "How often"
 
-- Basic holds only the lines played in about 10% or more of your games (9.5% and up): about 4 to 6 lines, the very core. Everything else goes to Advanced, grouped by variation name, most common first. Kumar makes exceptions himself (the King's Indian has 7 Basic lines; the Caro-Kann keeps its 9 Basic lines, by his choice, so leave them as they are).
+- Basic holds about 10 lines in all: only the main line of each variation played in about 10% or more of your games (9.5% and up). Their side lines, and everything else, go to Advanced, grouped by variation name, most common first. In Kumar's words: "In general keep Basic lines to about 10. All else goes into Advanced." For the Ruy Lopez he kept only each variation's main line, with the Anti-Berlin's main line for both White and Black: 10 lines. He asked for every course to be cut to this now. Kumar makes exceptions himself (the King's Indian has 7 Basic lines; the Caro-Kann keeps its 9 Basic lines, by his choice, so leave them as they are).
 - "How often", in tables and chapter bars, is the share of your games in the opening that reach the line, from the side you play in it: the product of the opponent's move frequencies from the course start, in Lichess rated rapid and classical games between players averaging 1800 to 2199 (`content/opening-stats.json`). A table counts all of the line's move orders.
 
 ## Tables
@@ -60,6 +60,11 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 
 - Spell out an abbreviation the first time a page uses it, then use the short form: "Queen's Gambit Declined (QGD)", then "QGD".
 - No colour in course titles: "Caro-Kann Defense Course", not "Caro-Kann Defense Course for White".
+
+## Moves in text
+
+- No strings of moves in text that has no board beside it: the lines under a course title, "Why play it", the introductions of Key ideas pages, and the text of Introduction and overview pages. Say it in words: name the variation, the piece or the square. Kumar's example was the Ruy Lopez course header, "As White: the d3 system, with 5.d3 against 4...Nf6 and 4.d3 against the Berlin, then c3, Re1, Nbd2–f1–g3 and d4 later. As Black: the Berlin Defense, 3...Nf6, taking on e4 after 4.O-O." and "1.e4 e5 2.Nf3 Nc6 3.Bb5: the bishop hits the knight that guards e5." In his words: "Avoid writing like this since it is very difficult to follow without a board."
+- Notes beside a board keep their moves: lessons, Key ideas boards, puzzles and overview cards. Tables follow their own rule (see Tables): plain words, with one key move at most. Kumar asked for this rule in every course.
 
 ## Move notation
 
