@@ -38,6 +38,7 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - So, by his choices: each row's What to do says in plain words what White aims for and what Black aims for. It names a move only when a learner must know it (a trap, say), and then one move at most. The Variation column gives the line's name and its key move, like the chapter titles: "Classical, Keres Defense: 6...b6", not the whole move order.
 - A table gives the flavor of each variation, not a detailed description. In Kumar's words: "Tables are there to give a flavor of each variation - not a detailed description which comes later with basic and advanced variation in the course. The maximum 5 sentences for black and white strategies. Concentrate on what to do, what not to do, what to prevent in general terms. If more than one variation have the same strategies can combine the cells for these (they need to be next to each other in the table)."
 - Keep What to do easy to read and general, in under five sentences. In Kumar's words: "The 'what to do' though in words is still difficult to read. Could you make it easier and more general - e.g. whites plans are to develop xxx and do xx. Blacks plans are to do xx and prevent xx. Keep strategies to under 5 sentences." So each cell reads "White's plans are to ..." and then, on a new line, "Black's plans are to ... and to prevent ...", in short, everyday words, under five sentences in the whole cell. And, on the first table in this style: "Table looks good but may be a bit too detailed. See general rules." So keep it general and short, as the general rules ask: about one short sentence for each side, like his first example, with no conditions or side lines.
+- Simpler still: no squares, files or piece destinations. In Kumar's words: "what to do is a bit too long and complicated. Reduce complexity. Make strategies more general. No need to discuss exact position on board a piece needs to reach." And on the result: "Table looks good ... This simplified writing is what I want." For example, the French Advance: "White's plans are to gain space and attack on the kingside." / "Black's plans are to attack White's center and play on the queenside." The French Defense table in content/courses.json is the example.
 - So: rows next to each other whose strategies are the same share one What to do cell (the King's Indian's two Mar del Plata lines); each keeps its own How often. The format is in CONTENT-GUIDE.md.
 
 ## Lesson pages
@@ -60,6 +61,11 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 
 - Spell out an abbreviation the first time a page uses it, then use the short form: "Queen's Gambit Declined (QGD)", then "QGD".
 - No colour in course titles: "Caro-Kann Defense Course", not "Caro-Kann Defense Course for White".
+
+## Move notation
+
+- Moves are written in letters (Nf3) by default, everywhere in the app. Figurines (♘f3) stay as a choice in Settings. In Kumar's words: "Could you make letters as default for moves like Nf3, instead of figurines. However keep the figurines in the settings in case user prefers that. This applies to whole chess app."
+- Write moves in letters in the course files too; the app adds figurines for learners who choose them.
 
 ## Drills
 
