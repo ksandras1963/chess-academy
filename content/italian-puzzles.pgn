@@ -131,6 +131,7 @@
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4 4. Nxe5? Qg5 5. O-O! {Castling protects g2 and brings the rook toward the center. Black wins the knight on e5, but White gains time against Black's queen and wins the piece back later.}
 (5. Bxf7+!? {Playable, but castling is better. Here White gets only two pawns for the knight, while after 5.O-O White wins the piece back. Stockfish: −0.8, against −0.5 for 5.O-O; slightly better for Black either way.} 5... Kd8 6. O-O Qxe5 7. c3 Ne6 8. d3 {White has two pawns for the knight, and Black's king can no longer castle. But Black still has the extra piece. Stockfish: −0.6, slightly better for Black.})
+(5. d3!? {Playable: it avoids the trap, but Black takes the pawn on g2 and stays a pawn up. Stockfish: −1.3, against −0.5 for 5.O-O.} 5... Qxg2 6. Rf1 d6 7. c3 dxe5 8. cxd4 {Stockfish: −1.3, clearly better for Black.})
 (5. Nxf7? {Forks queen and rook, but walks into the trap.} 5... Qxg2 {Ignores the fork and hits the rook on h1.} 6. Rf1 {Saves the rook, but now the king has no room.} (6. Ng5 {Avoids the mate, but after 6...Qxh1+ 7.Bf1 Black has won the rook.} 6... Qxh1+ 7. Bf1 {Stockfish: −8.7, winning for Black.}) 6... Qxe4+ {Check. White must block on e2, and 7.Qe2 would lose the queen.} 7. Be2 Nf3# {White's own pieces take every square the king could use.})
 5... Qxe5 {Black wins the knight.}
 6. c3 {Kicks the knight away from d4.}
@@ -218,9 +219,9 @@
 [Puzzle "Ng5 punishes 4...Nf6"]
 [Type "puzzle"]
 [Theme "Punish the mistake"]
-[Solve "5.Ng5"]
-[End "7.Bb5+"]
-[Hint "Count the attackers and defenders of f7."]
+[Solve "6.exd5"]
+[End "6.exd5"]
+[Hint "The pawn on d5 attacks your bishop. Which capture keeps the pressure on f7?"]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. Nc3 Nf6? {Natural, but with ...d6 already played, the bishop on f8 is shut in and f7 is short of defenders. Black's sensible fourth moves, such as 4...Be7, 4...Be6 or 4...Bg4, keep White's edge to about +0.3 to +0.6.}
 5. Ng5! {[%cal Gg5f7,Gc4f7] Two attackers on f7, and only the king defends it. Black's best is to block the bishop with ...d5, and that costs a pawn.}
@@ -229,12 +230,12 @@
 5... d5 {The best defense: it blocks the bishop's line to f7.}
 (5... Be6 {Covers f7 with the bishop, but the bishop is taken.} 6. Nxe6 fxe6 7. Bxe6 {White has won a pawn, and Black's king has lost its shelter. Stockfish: +1.8, clearly better for White.})
 (5... Qe7 {Defends f7 with the queen, but it isn't enough.} 6. Bxf7+ Kd7 7. Be6+ Ke8 8. Bxc8 Rxc8 {White has won a pawn, and Black can no longer castle. Stockfish: +2.9, winning for White.})
-6. exd5 {[%hint The pawn on d5 attacks your bishop. Which capture keeps the pressure on f7?] Takes the pawn and keeps the bishop aimed at f7.}
+6. exd5 {Takes the pawn and keeps the bishop aimed at f7.}
 (6. Nxd5? {Trades off the attacker on d5, but Black's pieces come alive.} 6... Nxd5 7. d3 Bb4+ 8. c3 {Stockfish: −0.4, slightly better for Black.})
 6... Na5 {Attacks the bishop. This is Black's best try to win the pawn back.}
 (6... Nd4 {Also possible, but White simply castles and stays a pawn up.} 7. O-O Bg4 8. f3 Bh5 {Stockfish: +1.7, clearly better for White.})
 (6... Nxd5? {Takes the pawn back, but it walks into the Fried Liver: see the next puzzle.} 7. Nxf7! Kxf7 8. Bxd5+ {Stockfish: +5.6, winning for White.})
-7. Bb5+! {[%hint The bishop is attacked. Can you move it with gain of time?] Check first. Black blocks, and White keeps the extra pawn.}
+7. Bb5+! {Check first. Black blocks, and White keeps the extra pawn.}
 (7. d3!? {Playable: it saves the bishop, but without check Black gets time to hit back.} 7... h6 8. Nge4 Nxe4 9. Nxe4 Nxc4 10. dxc4 {White has given up the bishop pair. Stockfish: +0.6, slightly better for White, against +1.4 after 7.Bb5+.})
 7... c6 8. dxc6 bxc6 9. Bd3 {White is a pawn up with a solid position. Stockfish: +1.5, clearly better for White.}
 *

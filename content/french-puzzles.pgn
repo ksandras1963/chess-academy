@@ -138,7 +138,7 @@
 [Hint "Before you recapture on e3, look at f7. Your rook on f1 is behind the f-pawn."]
 
 1. e4 e6 2. d4 d5 3. exd5 exd5 4. c4 Bb4+ 5. Nc3 Nf6 6. Nf3 O-O 7. Bd3 dxc4 8. Bxc4 Re8+ 9. Be3 Ng4 10. O-O Nxe3? 11. Bxf7+! {[%cal Gc4f7,Gf1f7] Checks first. After ...Kxf7, fxe3 comes with check from the rook on f1.}
-(11. fxe3?! {Natural, but Black gets time to trade.} 11... Be6 12. Bxe6 Rxe6 13. Ne5 Bxc3 14. bxc3 {White is better, but far less than after the sacrifice. Stockfish: +0.9, slightly better for White.})
+(11. fxe3!? {Playable: the natural recapture, but Black gets time to trade.} 11... Be6 12. Bxe6 Rxe6 13. Ne5 Bxc3 14. bxc3 {White is better, but far less than after the sacrifice. Stockfish: +0.9, slightly better for White.})
 11... Kxf7 12. fxe3+ Kg8 13. Qb3+ Be6 14. Qxb4 {White has won back the piece and is a pawn up, and Qxb7 comes next. Black's king is exposed. Stockfish: +1.8, clearly better for White.}
 *
 

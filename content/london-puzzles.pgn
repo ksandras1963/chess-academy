@@ -18,6 +18,8 @@
 [Hint "Your knight on c6 is attacked. Is there something bigger to take first?"]
 
 1. d4 Nf6 2. Bf4 g6 3. e3 Bg7 4. Nf3 O-O 5. Bd3 d6 6. c3 Nc6 7. Nbd2 e5 8. d5?? exf4! {[%cal Ge5f4] Takes the bishop. If White takes the knight, you take on e3 and stay a piece up.}
+(8... Nxd5! {Also good: takes the pawn, and the bishop on f4 is still attacked.} 9. Bg5 Nde7 10. e4 f6 11. Bh4 {Black has won a pawn. Stockfish: −2.2, winning for Black.})
+(8... Ne7!? {Playable: the knight steps away, and Black wins the pawn on d5 next.} 9. Bg3 Nfxd5 10. e4 Nf6 11. O-O {Stockfish: −2.0, winning for Black.})
 (8... Nb8? {Saves the knight, but now White's bishop escapes.} 9. Bg5 h6 10. Bxf6 Qxf6 11. O-O c6 12. c4 Qd8 {Stockfish: −0.5, slightly better for Black.})
 9. dxc6 fxe3 10. fxe3 Qe8 {[%cal Ge8e3,Ge8c6] The queen hits e3 and c6, and White's king is stuck in the center. Stockfish: −4.7, winning for Black.}
 *

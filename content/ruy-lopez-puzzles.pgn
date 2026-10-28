@@ -1,13 +1,15 @@
 [Puzzle "Bxc6 and Nxe5: the loose e5 pawn"]
 [Type "puzzle"]
 [Theme "Win a pawn"]
-[Solve "6.Bxc6"]
-[End "6.Bxc6"]
-[Hint "Your pawn on d3 guards e4. What guards Black's pawn on e5?"]
+[Solve "7.Nxe5"]
+[End "7.Nxe5"]
+[Hint "Black's pawn on e5 has lost its defender. Your pawn on d3 guards e4. Is the pawn on e5 safe to take?"]
 
 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. d3 Be7? 6. Bxc6! {[%cal Gc6e5] Removes the only defender of e5.}
 (6. O-O? {Natural, but now Black guards e5 in time.} 6... b5 7. Bb3 d6 {Stockfish: +0.3, slightly better for White.})
-6... dxc6 7. Nxe5 {[%csl Ge4] Wins the pawn. With e4 guarded, ...Qd4 no longer wins it back.} Qd4 8. Nf3 Qd8 9. O-O {White is a clean pawn up. Stockfish: +1.8, clearly better for White.}
+6... dxc6 7. Nxe5! {[%csl Ge4] Wins the pawn. With e4 guarded, ...Qd4 no longer wins it back.}
+(7. O-O?! {Too slow: Black guards e5 again.} 7... Nd7 8. a4 O-O {Stockfish: +0.1, equal.})
+7... Qd4 8. Nf3 Qd8 9. O-O {White is a clean pawn up. Stockfish: +1.8, clearly better for White.}
 *
 
 [Puzzle "Take first, then sacrifice"]
