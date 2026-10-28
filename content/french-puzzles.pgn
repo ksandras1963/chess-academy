@@ -91,13 +91,13 @@
 [Puzzle "Check on the open diagonal"]
 [Type "puzzle"]
 [Theme "Attack the king"]
-[Solve "5.Qh5+"]
+[Solve "6.Bxg6+"]
 [End "6.Bxg6+"]
-[Hint "Black's f-pawn has left f7. Which diagonal leads to Black's king now?"]
+[Hint "Count the defenders of g6. If the h-pawn takes, what happens to the rook on h8?"]
 
-1. e4 e6 2. d4 d5 3. e5 f6 4. Bd3 fxe5? 5. Qh5+! {[%cal Gh5e8] The diagonal from h5 to e8 is open.}
-(5. dxe5?! {Takes back, but lets Black cover the king.} 5... Ne7 6. Bg5 Nbc6 7. Qh5+ Kd7 {Black's king walks to safety. Stockfish: +0.6, slightly better for White.})
-5... g6 6. Bxg6+! {[%hint Count the defenders of g6. If the h-pawn takes, what happens to the rook on h8?] Takes the pawn with check.}
+1. e4 e6 2. d4 d5 3. e5 f6 4. Bd3 fxe5? 5. Qh5+ {[%cal Gh5e8] The diagonal from h5 to e8 is open.} g6
+6. Bxg6+! {[%cal Gd3g6] Takes the pawn with check.}
+(6. Qxe5?! {Wins back the pawn, but Black's king is safe again.} 6... Nf6 7. Nf3 c5 8. dxc5 Nc6 9. Qg5 {Stockfish: +0.3, slightly better for White.})
 6... Kd7 {The only safe move.}
 (6... hxg6?? 7. Qxh8 {The h-file opened, and the rook on h8 falls. Stockfish: +4.0, winning for White.})
 7. Nf3 Nc6 8. Nxe5+ Nxe5 9. Qxe5 {White is a pawn up, and Black's king is stuck in the center. Stockfish: +1.3, clearly better for White.}
@@ -125,6 +125,7 @@
 
 1. e4 e6 2. d4 d5 3. exd5 exd5 4. c4 Nf6 5. Nc3 Bb4 6. Nf3 O-O 7. Bd3 Re8+ 8. Be3 Ng4 9. O-O Nxe3 10. fxe3 Rxe3? 11. Nxd5! {[%cal Gd5e3,Gd5b4] The knight takes the pawn and forks the rook and the bishop. This is GM Igor Smirnov's trap in the Monte Carlo.}
 (11. Ne5!? {Also good. Whether Black's rook takes the bishop or the knight, White wins the exchange.} 11... Rxd3 (11... Rxe5 12. dxe5 {White is the exchange ahead. Stockfish: +3.8, winning for White.}) 12. Qxd3 Nc6 13. Nxd5 {White wins the pawn on d5 too and is the exchange ahead. Stockfish: +3.0, winning for White. The fork 11.Nxd5 is stronger.})
+(11. Bxh7+!? {Playable: it wins a pawn with check, and 12.Nxd5 forks the rook and bishop anyway.} 11... Kxh7 12. Nxd5 Re6 13. Nxb4 {Stockfish: +2.6, winning for White. The fork at once is stronger.})
 (11. Qd2?! {Attacks the rook, but Black gives it up for a bishop.} 11... Rxd3 12. Qxd3 Be6 {White is ahead, but far less than after the fork. Stockfish: +1.7, clearly better for White.})
 11... Rxd3 12. Qxd3 a5 13. Nxb4 {White wins the bishop on b4 as well and stays at least the exchange ahead, with an attack on Black's king. Stockfish: +4.4, winning for White.}
 *

@@ -160,24 +160,17 @@
 9... Qd6 10. Re1+ Be6 11. Qxb7 {Material is level, but Black's king is stuck in the middle and the pawn on f6 cramps Black's position. Stockfish: +5.2, winning for White.}
 *
 
-[Puzzle "Rousseau: where does the knight go?"]
+[Puzzle "Check on b5 wins the bishop"]
 [Type "puzzle"]
-[Theme "Save the piece"]
-[Solve "5.Nd4"]
-[End "5.Nd4"]
-[Hint "Your knight on f3 is attacked. Find a square that is safe from Black's queen and pawns."]
+[Theme "Fork"]
+[Solve "8.Qb5+"]
+[End "8.Qb5+"]
+[Hint "Black's knight has left c6. Which diagonal leads to Black's king now?"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bc4 f5?! {The Rousseau Gambit: Black attacks e4.}
-4. exf5 {Takes the pawn. Declining with 4.d3 is simpler, as in the course's Rousseau Gambit chapter.}
-4... e4 {Hits the knight on f3.}
-5. Nd4! {[%cal Gd4c6,Gd4f5] The knight goes to the center, attacks the knight on c6 and guards the pawn on f5.}
-(5. Ng1!? {Playable: the retreat is safe, but it costs time. Stockfish: −0.4, slightly better for Black.})
-(5. Ng5?? {[%cal Rd8g5] Black's queen has an open line to g5.} 5... Qxg5 6. O-O Qxf5 7. Nc3 {Black has won the knight. Stockfish: −5.1, winning for Black.})
-(5. Nh4?? {[%cal Rd8h4] The same diagonal reaches h4.} 5... Qxh4 6. d3 Nf6 7. Nc3 {Black has won the knight. Stockfish: −6.1, winning for Black.})
-(5. Nc3? {Lets the knight be taken for a pawn.} 5... exf3 6. Qxf3 Qh4 7. Bxg8 Rxg8 {Stockfish: −1.4, clearly better for Black.})
-5... Nf6 {Black's best: develops and leaves the knight on c6 where it is.}
-(5... Nxd4? {Takes the knight, but leaves h5 unguarded, so White's queen checks there: see the next puzzle.} 6. Qh5+ g6 7. fxg6 {Stockfish: +3.2, winning for White.})
-6. Nxc6 bxc6 7. d4 d5 8. Be2 {The position is balanced: Black has pawns in the center for the gambit pawn. Stockfish: −0.1, equal.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d5?! {Strikes in the center before Black has castled.} 6. exd5 Nxd5 7. Qb3 {[%cal Gb3d5,Gc4f7] Hits the knight on d5 twice, as in the course's trap "the early ...d5 and Qb3".} Nce7? {Guards d5 again, but the knight no longer blocks the diagonal from b5 to Black's king.}
+8. Qb5+! {[%cal Gb5e8,Gb5c5] Check, and the queen also attacks the bishop on c5, which has no guard.}
+(8. O-O?! {Natural, but it misses the check.} 8... c6 9. Nxe5 Bd6 10. Re1 O-O {White is better, but 8.Qb5+ wins a whole piece. Stockfish: +1.2, clearly better for White.})
+8... c6 {Blocks the check.} 9. Qxc5 O-O 10. Bxd5 Nxd5 11. O-O {White has won the bishop. Stockfish: +3.9, winning for White.}
 *
 
 [Puzzle "Promote with a discovered check"]
