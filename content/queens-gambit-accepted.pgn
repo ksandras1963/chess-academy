@@ -288,7 +288,7 @@ White's best is 9.Qe2: answer 9...Nf6 (Stockfish −1.6, clearly better for Blac
 [Opening "Queen's Gambit Accepted: Classical Defense, Rubinstein Variation"]
 [ECO "D27"]
 
-{Against 3.Nf3, one game in ten, ...e5 is impossible: the knight would take the pawn. Play the classical setup instead: ...Nf6, ...e6, ...c5 and ...a6, then ...Nc6, ...Be7 and castle. White wins the c4 pawn back, and the game is quiet and equal. Black scores 57% after 8...Be7 at this level.}
+{Against 3.Nf3, one game in ten, ...e5 fails: the knight would take the pawn. Play the classical setup instead: ...Nf6, ...e6, ...c5 and ...a6, then ...Nc6, ...Be7 and castle. White wins the c4 pawn back, and the game is quiet and equal. Black scores 57% after 8...Be7 at this level.}
 1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 {Develops and stops e4.}
 4. e3 {40% of White players.
 
