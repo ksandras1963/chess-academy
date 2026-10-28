@@ -736,32 +736,32 @@
                                 "As White: d4, Nf3, Bc4 and Bd2, then 8.Nd5 trades the c3 knight with gain of time; castle long and push d5.\nAs Black: ...Nf6, ...c6, ...Bf5 and ...e6; after 8.Nd5 Qd8 9.Nxf6+, take back with the queen."
                             ],
                             [
-                                "Marshall Variation: 2...Nf6 3.d4 Nxd5",
-                                "19% as White; 18% as Black, with 2...Nf6",
-                                "As White: 4.c4 chases the knight, then Nc3, Nf3 and Bd3 build a big center.\nAs Black: 4...Nf6, then ...e6 and ...c5 against the center; against 4.Nf3, 4...Bf5 offers to trade the light-squared bishops."
-                            ],
-                            [
                                 "Valencian Variation: 3.Nc3 Qd8",
                                 "21% as White",
                                 "Play d4 and Nf3. Against 5...Bg4, 6.h3 makes Black take on f3, and you keep the two bishops; then Be3, Bd3 and castle."
                             ],
                             [
+                                "Avoiding the main line: 3.Nf3 Bg4",
+                                "10% as Black, with 2...Qxd5",
+                                "Pin the knight, then play ...Nc6 and ...O-O-O: the knight, queen and rook all aim at d4 before White has castled."
+                            ],
+                            [
+                                "Marshall Variation: 2...Nf6 3.d4 Nxd5",
+                                "19% as White; 18% as Black, with 2...Nf6",
+                                "As White: 4.c4 chases the knight, then Nc3, Nf3 and Bd3 build a big center.\nAs Black: 4...Nf6 and 5...e5 strike at the center; the queens come off, and your pieces are active. Against 4.Nf3, play 4...Bf5."
+                            ],
+                            [
                                 "Modern Variation: 2...Nf6 3.Nc3 Nxd5",
                                 "23% as Black, with 2...Nf6",
-                                "Take back on d5 with the knight. After 4.Nxd5 Qxd5 no White knight can chase your queen: play ...Nc6, ...Bg4 and ...O-O-O against d4."
+                                "Take back on d5 with the knight. After 4.Nxd5 Qxd5 no White knight can chase your queen: play ...Nc6 and ...e5, or ...Bg4 and ...O-O-O if White plays d4."
                             ],
                             [
                                 "Panov Transfer: 2...Nf6 3.c4 c6",
                                 "19% as Black, with 2...Nf6",
-                                "Hit d5 at once. After 4.dxc6 Nxc6 you are a pawn down but develop fast with ...e5 and ...Bc5; after 4.d4 cxd5 you reach a Caro-Kann Panov."
-                            ],
-                            [
-                                "Avoiding the main line: 3.Nf3 Bg4",
-                                "10% as Black, with 2...Qxd5",
-                                "Pin the knight, then play ...Nc6 and ...O-O-O: the knight, queen and rook all aim at d4 before White has castled."
+                                "Hit d5 at once. After 4.dxc6 Nxc6 you are a pawn down, but ...e5 and ...e4 open the d-file toward White's king, and you win the pawn back."
                             ]
                         ],
-                        "note": "How often: the share of your Scandinavian games that reach the line, from the side that faces it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Lasker Variation (...Bg4 met by h3, about 13% as White) and the Advance Variation (2.e5, 10% as Black) are in Advanced by choice, with the rarer lines."
+                        "note": "How often: the share of your Scandinavian games that reach the line, from the side that faces it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Lasker Variation (...Bg4 met by h3, about 11% as White) and the Advance Variation (2.e5, 11% as Black) are in Advanced by choice, with the rarer lines."
                     }
                 }
             ]
