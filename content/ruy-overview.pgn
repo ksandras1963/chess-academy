@@ -53,7 +53,7 @@ White: Take the pawn, then defend accurately: g3 against ...Qh4, and develop the
 Black: Use the lead in development. The bishop comes to d6, the queen to h4 and h3, and the bishop on c8 to g4: White's queenside pieces are still at home.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O {Black castles before ...d6, keeping ...d5 possible.}
 8. c3 d5 {[%engine ok] This is the Marshall Attack: a pawn sacrifice.}
-9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 {Guards the knight.} 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 {Black's pieces bear down on White's king. Stockfish: +0.3, slightly better for White.} *
+9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 {Guards the knight.} 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 {Black's pieces bear down on White's king. Stockfish: +0.1, equal.} *
 
 [Chapter "Open Ruy Lopez"]
 [Group "3...a6: the Morphy Defense"]
@@ -62,9 +62,9 @@ Black: Use the lead in development. The bishop comes to d6, the queen to h4 and 
 [Diagram "8...Be6"]
 [Course "none"]
 
-{Black takes the e4 pawn at once. The play is forcing, with about fifteen moves of theory to know. This course avoids it with 5.d3, which guards e4.
+{Black takes the e4 pawn at once. The play is forcing, with a lot of theory to know. This course avoids it with 5.d3, which guards e4.
 
-White: Win the pawn back with d4 and dxe5, keep the pawn on e5, and aim at Black's knight on e4 and the c6 pawn.
+White: Win the pawn back with d4 and dxe5, keep the pawn on e5, and aim at Black's knight on e4 and the pawn on d5.
 
 Black: Keep the knight in the center with ...b5 and ...d5, and develop quickly with ...Be6 and ...Be7 or ...Bc5.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 {This is the Open Ruy Lopez.}
@@ -78,14 +78,14 @@ Black: Keep the knight in the center with ...b5 and ...d5, and develop quickly w
 [Lines "Arkhangelsk Variation | Møller Variation"]
 [Course "none"]
 
-{Instead of the quiet 5...Be7, Black develops the bishops actively at once: ...b5 and ...Bb7 hit e4, or ...Bc5 aims at f2. The king stays in the center a little longer.
+{Instead of the quiet 5...Be7, Black develops the bishops actively at once: ...b5 and ...Bb7 aim at e4, or ...Bc5 aims at f2. The king stays in the center a little longer.
 
 White: Guard e4 with d3 or Re1, then c3 and a4 against Black's queenside pawns.
 
 Black: Use the active bishops, put the other one on c5 or e7, and castle.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5
 (5... Bc5 {This is the Møller Variation. The bishop aims at f2.} 6. c3 b5 7. Bb3 d6)
-6. Bb3 Bb7 {This is the Arkhangelsk Variation. The bishop hits e4.} 7. d3 Be7 *
+6. Bb3 Bb7 {This is the Arkhangelsk Variation. The bishop aims at e4, behind the knight on c6.} 7. d3 Be7 *
 
 [Chapter "Anderssen Variation"]
 [Group "3...a6: the Morphy Defense"]
@@ -100,7 +100,7 @@ Black: Use the active bishops, put the other one on c5 or e7, and castle.}
 White: c3, castle, Re1, the knight trip d2–f1–g3 and h3, then d4. If e5 is guarded only by the knight, Bxc6 and Nxe5 win it.
 
 Black: Drive the bishop back with ...b5, guard e5 with ...d6 before ...Be7, then castle and play ...Na5 and ...c5.}
-1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. d3 {This is the Anderssen Variation.} b5 6. Bb3 Be7 7. O-O d6 8. c3 O-O {The same position arises from the Closed Ruy Lopez (the Pilnik Variation).} *
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. d3 {This is the Anderssen Variation.} b5 6. Bb3 Be7 7. O-O d6 8. c3 O-O {After Re1, the position is the same as in the Closed Ruy Lopez (the Pilnik Variation).} *
 
 [Chapter "Exchange Variation"]
 [Group "3...a6: the Morphy Defense"]
@@ -219,7 +219,7 @@ Black: Chase the bishop with ...c6, develop, and keep the pawn on d4 well guarde
 [Course "ruy-lopez"]
 [WhiteLesson "Cozio Defense: 3...Nge7"]
 
-{Black develops the king's knight behind the c6 knight, so the pin on c6 never matters. The knight often goes on to g6, or Black fianchettoes the bishop with ...g6.
+{Black develops the king's knight behind the c6 knight, so if White takes on c6, the other knight takes back and Black's pawns stay whole. The knight often goes on to g6, or Black fianchettoes the bishop with ...g6.
 
 White: Castle, then c3 and d4 for a big center. When the knight leaves e7 for g6, open the center with d4 at once.
 
