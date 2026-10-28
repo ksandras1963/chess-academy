@@ -1025,10 +1025,109 @@
             "name": "Nimzo-Indian Defense",
             "eco": "E20",
             "moves": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4",
+            "summary": "Black pins the c3 knight to fight for e4, and is ready to give the bishop for the knight to double White's c-pawns.",
+            "puzzles": "content/nimzo-indian-puzzles.pgn",
+            "furtherStudy": [
+                {
+                    "title": "Introduction to the Nimzo-Indian Defense",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=xX_bnk7nKNg"
+                },
+                {
+                    "title": "Main Line of the Nimzo-Indian Defense",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=04208aqgKMc"
+                },
+                {
+                    "title": "Qc2 (Classical) Nimzo-Indian Opening Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=F76JoIqy3Cg"
+                },
+                {
+                    "title": "Complete Nimzo-Indian Repertoire for Black",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=jk9Qv7-HCSU"
+                }
+            ],
             "courses": [
                 {
                     "id": "nimzo-indian",
-                    "side": "both"
+                    "side": "both",
+                    "file": "content/nimzo-indian.pgn",
+                    "repertoire": "As White: the Classical (4.Qc2) and the Rubinstein (4.e3). As Black: castle against 4.Qc2, 4.e3 and 4.Nf3, and hit d4 with ...c5 against 4.Bg5, 4.Bd2 and 4.a3.",
+                    "summary": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4: Black pins the knight that supports e4.",
+                    "why": {
+                        "text": "As Black, the Nimzo-Indian develops two pieces and castles quickly, and the pin on c3 keeps White from building a big center with e4. Black chooses when to give the bishop for the knight, often in return for doubled c-pawns that last all game. The plans repeat from line to line, so there is less to memorize than in most main-line defenses.\n\nAs White, you choose the type of game. 4.Qc2 keeps the pawns whole and wins the two bishops after a3. 4.e3 develops quickly with Bd3, Nf3 and castling, and the same setup works against most of Black's replies."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Classical, Keres Defense: 4.Qc2 O-O 5.a3 Bxc3+ 6.Qxc3 b6",
+                                "33% as White\n21% as Black",
+                                "As White: Pin with Bg5, then play e3, f3 and Bd3 to prepare e4. As Black: Guard e4 with ...Bb7 and ...d6, then hit d4 with ...c5 and take the c-file with ...Rc8."
+                            ],
+                            [
+                                "Classical, Noa Variation: 4.Qc2 d5",
+                                "23% as White",
+                                "Take on d5 at once. Develop with Bg5, e3, Bd3 and Ne2, castle, then gain queenside space with a3 and b4."
+                            ],
+                            [
+                                "Classical, Berlin Variation: 4.Qc2 c5",
+                                "22% as White",
+                                "Take with 5.dxc5, then play Nf3 before Bg5. Develop with e3 and Be2; Black often ends up with an isolated d-pawn."
+                            ],
+                            [
+                                "Classical: 4.Qc2 b6",
+                                "11% as White",
+                                "Push 5.e4 at once: the queen guards it. Follow with Bd3 and f4 for a big center."
+                            ],
+                            [
+                                "Rubinstein, Gligorić System: 4.e3 O-O 5.Bd3 d5 6.Nf3 c5",
+                                "49% as White\n12% as Black",
+                                "As White: Castle, then use the isolated d-pawn for an attack with Bg5, Qe2 and a knight on e5. As Black: Take on c4 and d4, put the bishop on b7, and give it up on c3 to press on the c-file."
+                            ],
+                            [
+                                "Rubinstein, Hübner Variation: 4.e3 c5",
+                                "19% as White",
+                                "Keep the same setup. Answer ...Bxc3 and ...e5 with d5 and e4, then open lines for the bishops with Ne1 and f4."
+                            ],
+                            [
+                                "Rubinstein, St. Petersburg Variation: 4.e3 b6",
+                                "13% as White",
+                                "Keep the same setup: Bd3, Nf3 and castling. After ...Bxc3, play Nd2, e4 and f3."
+                            ],
+                            [
+                                "Leningrad Variation: 4.Bg5 c5",
+                                "16% as Black",
+                                "Against 5.d5, give up the bishop on c3, play ...h6, and put the pawns on dark squares with ...d6 and ...e5. Against 5.e3, play 5...Qa5."
+                            ],
+                            [
+                                "Bd2 Variation: 4.Bd2 c5",
+                                "16% as Black",
+                                "Trade on d4, castle and play ...d5. Then trade White's dark-squared bishop with ...Bxc3 and ...Ne4, and attack the isolated d-pawn."
+                            ],
+                            [
+                                "Three Knights Variation: 4.Nf3 O-O",
+                                "14% as Black",
+                                "Against 5.Bg5, hit d4 with ...c5, take on d4 and c4, then play ...b6, ...Bb7 and ...Bxc3."
+                            ],
+                            [
+                                "Sämisch Variation: 4.a3 Bxc3+ 5.bxc3 c5",
+                                "11% as Black",
+                                "Fix the doubled pawns with ...c5, then attack c4 with ...Nc6–a5. Against Bg5, ...h6 and ...Qa5 pin the c3 pawn."
+                            ]
+                        ],
+                        "note": "How often: the share of your Nimzo-Indian games that reach the line, from the side you play in it, counting all its move orders. As White, it is the share of your games with that fourth move (4.Qc2 or 4.e3). Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
+                    }
                 }
             ]
         },
