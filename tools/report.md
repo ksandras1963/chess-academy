@@ -4,7 +4,7 @@ Generated 2026-10-28 00:12 · engine Stockfish, depth 18
 
 **No errors.**
 
-The Jobava London sections (course, puzzles, and its card on Replies to 1.d4) were added on 2026-10-28 from a separate run with Stockfish 17.1 at depth 18; the other sections are from the run above.
+The Jobava London sections (course, puzzles, and its card on Replies to 1.d4) were added on 2026-10-28 from a separate run with Stockfish 17.1 at depth 18; the other sections are from the run above. The London line Rapport-Jobava: 3.Nc3 (4.Nb5) now plays 4...Bb4+, re-checked separately at depth 18.
 
 ## Italian Game — both sides (`italian`)
 
@@ -899,7 +899,7 @@ None.
 | Sidelines, third moves: 3...Bg4 and 3...g6 (Main line) | 0.06 | D00 Queen's Pawn Game: Accelerated London System |
 | Sidelines, third moves: 3...Bg4 and 3...g6 (3...g6) | 0.09 | D00 Queen's Pawn Game: Accelerated London System |
 | Rapport-Jobava: 3.Nc3 (Main line) | 0.25 | D01 Rapport-Jobava System |
-| Rapport-Jobava: 3.Nc3 (4.Nb5) | 0.19 | D01 Rapport-Jobava System |
+| Rapport-Jobava: 3.Nc3 (4.Nb5) | 0.14 | D01 Rapport-Jobava System |
 | Dutch Defense: 1...f5 (Main line) | 0.87 | A80 Dutch Defense |
 | Dutch Defense: 1...f5 (3...e6) | 0.91 | A80 Dutch Defense |
 

@@ -364,7 +364,7 @@
 [Idea "black"]
 [Diagram "3.Nc3"]
 
-{The knight on c3 aims at b5 and c7. Play ...e6 and pin it with ...Bb4, so Nb5 is off.}
+{The knight on c3 aims at b5 and c7. Play ...e6 and pin it with ...Bb4, so Nb5 is off. If the knight jumps to b5 first, check with ...Bb4+ all the same.}
 1. d4 d5 2. Bf4 Nf6 3. Nc3 {[%cal Rc3b5,Rb5c7]}
 3... e6 4. e3 Bb4 {[%cal Gb4c3] Pins the knight.} 5. Nf3 O-O 6. Bd3 c5 {[%cal Gc5d4] Hits the center.} *
 
@@ -499,7 +499,7 @@
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{In the Jobava London, White's knight on c3 and bishop on f4 both aim at c7. When the knight jumps to b5, guard c7 at once with ...Na6.}
+{In the Jobava London, White's knight on c3 and bishop on f4 both aim at c7. In the King's Indian setup, the pawn on e7 blocks the f8 bishop, so ...Bb4+ isn't possible: when the knight jumps to b5, guard c7 at once with ...Na6.}
 1. d4 Nf6 2. Bf4 g6 3. Nc3 d5
 4. Nb5 {[%cal Rb5c7,Rf4c7] Two pieces hit c7.}
 (4. e3 Bg7 5. Nb5 {The same idea a move later.} Na6! {[%cal Ga6c7] Guards c7.} (5... O-O?? 6. Nxc7 {The knight hits the rook on a8 and wins the exchange. Stockfish: +5.5, winning for White.}) 6. Nc3 Nb8 {The knights go back, and the game is level. Stockfish: +0.1, equal.})
@@ -887,10 +887,10 @@
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{White's knight goes to c3 instead of d2 and threatens Nb5 and Nxc7+. Keep the ...e6 setup: pin with ...Bb4 against e3, and guard c7 with ...Na6 against Nb5.}
+{White's knight goes to c3 instead of d2 and threatens Nb5 and Nxc7+. Keep the ...e6 setup: pin with ...Bb4 against e3, and check with ...Bb4+ against Nb5, as in the Jobava London System Course.}
 1. d4 d5 2. Bf4 Nf6 3. Nc3 {This is the Rapport-Jobava System.} e6 {Opens the way for ...Bb4.}
 4. e3 {Against 4.Nf3, 4...c5 5.e3 a6 keeps the knight off b5 (Stockfish 0.0, equal).}
-(4. Nb5 {[%cal Rb5c7] Threatens Nxc7+.} Na6 {[%cal Ga6c7] Guards c7.} 5. e3 Be7 6. Nf3 O-O 7. Bd3 c6 {Chases the knight from b5.} 8. Nc3 c5 {Now ...c5 hits the center, and the a6 knight comes back via c7. Stockfish: −0.2, equal.})
+(4. Nb5 {[%cal Rb5c7] Threatens Nxc7+.} Bb4+ {[%cal Gb4e1] Check first.} 5. c3 Ba5 {[%cal Ga5e1] Keeps the bishop on the a5–e1 diagonal.} 6. a4 {[%cal Gb2b4] Prepares b4, which hits the bishop. White's other sixth moves are in the Jobava London System Course.} a6 {[%cal Ga6b5] Hits the knight. 6...Bb6? loses the bishop to 7.a5.} 7. b4 Nc6! {[%cal Gc6b4] Develops and hits b4 a second time.} 8. bxa5 axb5 9. axb5 Nxa5 {Each side has taken a minor piece. Stockfish: 0.0, equal.})
 4... Bb4 {[%cal Gb4c3] Pins the knight, so Nb5 is off for now.}
 5. Nf3 O-O 6. Bd3 c5 {[%cal Gc5d4] Hits the center.} 7. dxc5 Nbd7 {Win the pawn back with the knight.}
 8. O-O Bxc3 9. bxc3 Nxc5 {Material is level, and White's c-pawns are doubled. Stockfish: −0.1, equal.} *
