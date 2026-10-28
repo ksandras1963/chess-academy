@@ -1,11 +1,12 @@
 // Learn mode: step through a line (or a key-ideas chapter) with the explanation for each move.
 
-import { h, figText, paras, label, sideName, spellOut } from "../ui.js"
+import { h, figText, paras, label, sideName, spellOut, ideasTitle } from "../ui.js"
 import { course as loadCourse } from "../content.js"
 import { mainPath, sideNotes, siblingBranches } from "../course-model.js"
 import { Board } from "../board.js"
 import { trainerLayout, renderSheet, mergedNote, furtherStudy } from "./layout.js"
 import { sideLabel, sectionLink } from "./course.js"
+import { ideasPage } from "./ideas.js"
 
 export async function learnView(root, ctx, courseId, lineKey, startAt) {
     const c = await loadCourse(courseId)
@@ -14,7 +15,7 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
     if (lineKey.startsWith("ideas-")) {
         const ch = c.chapters[Number(lineKey.slice(6))]
         if (!ch || ch.type !== "ideas") throw new Error("This key-ideas page no longer exists. Go back to the course.")
-        base = { nodes: mainPath(ch.root), start: ch.root, title: ch.title, sub: "", line: null }
+        base = { nodes: mainPath(ch.root), start: ch.root, title: ideasTitle(ch), sub: "", line: null }
     } else {
         const line = c.lines.find(l => l.id === lineKey)
         if (!line) throw new Error("This line no longer exists; it may have been edited. Go back to the course to see the current lines.")
@@ -36,6 +37,9 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
     const coursePage = { href: `#/course/${c.id}`, text: sideLabel(c) }
     const section = base.line ? sectionLink(c, base.line) : coursePage
     const trail = section.href === coursePage.href ? [coursePage] : [section, coursePage]
+    // A Key ideas page made of concepts shows one board per concept instead of the single trainer board.
+    const page = base.line ? null : c.chapters[Number(lineKey.slice(6))]
+    if (page && page.concepts.length) return ideasPage(root, ctx, c, page, { trail, ...steps })
     const L = trainerLayout(root, { trail, ...steps })
     L.setTitle(spellOut(base.title), base.sub)
     // A line's introduction stays in view while the moves are played; a Key ideas page shows its text

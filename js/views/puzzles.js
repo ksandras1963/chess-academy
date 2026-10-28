@@ -59,7 +59,7 @@ export async function puzzlesView(root, ctx, openingId) {
         h("header", { class: "course-head" },
             h("h1", {}, `${op.name} puzzles`),
             h("p", { class: "course-summary" },
-                `${set.items.length} positions from the ${op.name} courses. Find the best move: some punish a trap, some escape one, and a few finish the game.`),
+                `${set.items.length} positions from the ${op.name} ${built.length === 1 ? "course" : "courses"}. Find the best move: some punish a trap, some escape one, and a few finish the game.`),
             h("p", { class: "muted" },
                 "Stockfish scores read + for White and − for Black. They measure winning chances, not material: about ±1 is a clear edge, and ±2 or more usually wins.")),
         h("div", { class: "course-actions" },
@@ -105,6 +105,7 @@ export async function puzzleView(root, ctx, openingId, number, mode) {
     const linkTo = p => (p ? { href: `#/puzzle/${op.id}/${p.number}${retryMode ? "/retry" : ""}`, text: `Puzzle ${p.number}` } : null)
     const L = trainerLayout(root, { backHref: `#/puzzles/${op.id}`, backText: `${op.name} puzzles`, prev: linkTo(prevUp), next: linkTo(nextUp) })
     L.setTitle(`Puzzle ${pz.number} of ${set.items.length}`, `${sideName(learner)} to move. ${pz.theme}.`)
+    L.setMove(null) // the move buttons come straight under the title; the notes go below them
     const last = lastSetup(pz)
     const board = new Board(L.boardEl, { fen: last ? last.fenBefore : pz.first.fenBefore, orientation: learner })
     ctx.onLeave(() => board.destroy())

@@ -4,7 +4,8 @@
 import { Chess, DEFAULT_POSITION } from "../vendor/chess.js/chess.js"
 import { parsePgn, parseComment } from "./pgn.js"
 
-export const CHAPTER_TYPES = ["line", "trap", "ideas", "puzzle", "map"] // "map": an overview's flowchart
+// "map": an overview's flowchart. "concept": one board on the Key ideas page ("ideas") before it.
+export const CHAPTER_TYPES = ["line", "trap", "ideas", "concept", "puzzle", "map"]
 export const LEVELS = ["basic", "advanced"]
 export const SIDES = ["white", "black"]
 
@@ -22,7 +23,7 @@ export const SECTIONS = [
 function sectionOf(type, level) {
     if (type === "trap") return "traps"
     if (type === "line") return level === "advanced" ? "advanced" : "basic"
-    return type // ideas, puzzle
+    return type // ideas, concept, puzzle
 }
 
 export class ContentError extends Error {}
@@ -88,7 +89,7 @@ function buildChapter(game, index, course) {
     const title = h.Chapter || h.Event || `Chapter ${index + 1}`
     const type = (h.Type || "line").toLowerCase()
     if (!CHAPTER_TYPES.includes(type)) {
-        throw new ContentError(`${course.id} / ${title}: unknown Type "${h.Type}" (use line, trap or ideas)`)
+        throw new ContentError(`${course.id} / ${title}: unknown Type "${h.Type}" (use line, trap, ideas or concept)`)
     }
     const level = (h.Level || "basic").toLowerCase()
     if (!LEVELS.includes(level)) {
@@ -98,7 +99,8 @@ function buildChapter(game, index, course) {
     // There, [Side "both"] makes a chapter that is drilled from each side: every line exists twice.
     const side = (h.Side || (SIDES.includes(course.side) ? course.side : "")).toLowerCase()
     const allowed = course.side === "both" ? [...SIDES, "both"] : SIDES
-    if (course.side && !["map", "puzzle"].includes(type) && !allowed.includes(side)) {
+    // A concept without [Side] takes its Key ideas page's (attachConcepts).
+    if (course.side && !["map", "puzzle"].includes(type) && !(type === "concept" && !h.Side) && !allowed.includes(side)) {
         throw new ContentError(`${course.id} / ${title}: ${h.Side ? `unknown Side "${h.Side}"` : "no [Side] header"} (use ${allowed.join(", ")})`)
     }
     const root = game.root
@@ -127,8 +129,31 @@ function buildChapter(game, index, course) {
         headers: h,
         root
     }
-    chapter.diagram = type === "ideas" || type === "puzzle" || type === "map" ? null : chapterDiagram(chapter)
+    // A concept names the position its idea is about with [Diagram "10...Nf8"] (never from its title).
+    chapter.diagram = type === "concept" ? (h.Diagram ? chapterDiagram(chapter) : null)
+        : ["ideas", "puzzle", "map"].includes(type) ? null : chapterDiagram(chapter)
     return chapter
+}
+
+/**
+ * Gives each Key ideas page the concept chapters that follow it: one board per idea, each set up for
+ * that idea with the few moves that show it. A concept without [Side] faces its page's side.
+ */
+function attachConcepts(chapters, course) {
+    let page = null
+    for (const ch of chapters) {
+        if (ch.type === "ideas") {
+            page = ch
+            ch.concepts = []
+        } else if (ch.type === "concept") {
+            if (!page) throw new ContentError(`${course.id} / ${ch.title}: a concept must follow a Key ideas page ([Type "ideas"])`)
+            if (!ch.headers.Side) Object.assign(ch, { side: page.side, learner: page.learner })
+            ch.page = page
+            page.concepts.push(ch)
+        } else {
+            page = null
+        }
+    }
 }
 
 /** Main-line path of a chapter (first child at every node). */
@@ -302,10 +327,11 @@ export function buildCourse(meta, pgnText) {
         throw new ContentError(`${meta.id}: ${e.message}`)
     }
     const chapters = games.map((g, i) => buildChapter(g, i, meta))
+    attachConcepts(chapters, meta)
     const seen = new Set()
     const lines = []
     for (const ch of chapters) {
-        if (ch.type === "ideas" || ch.type === "map") continue
+        if (ch.type === "ideas" || ch.type === "concept" || ch.type === "map") continue
         for (const line of extractLines(ch, meta)) {
             if (seen.has(line.id)) continue
             seen.add(line.id)

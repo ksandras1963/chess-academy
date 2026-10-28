@@ -132,7 +132,8 @@ for (const meta of courses) {
         `${course.lines.reduce((s, l) => s + l.learnerMoves, 0)} learner moves.`, "")
 
     // Course-page diagrams: every lesson chapter must point at a position on its main line
-    for (const ch of chapters.filter(c => c.type !== "ideas" && c.type !== "map")) {
+    for (const ch of chapters.filter(c => c.type === "concept" && c.diagram?.error)) errors.push(`${meta.id} / ${ch.title}: ${ch.diagram.error}`)
+    for (const ch of chapters.filter(c => !["ideas", "concept", "map"].includes(c.type))) {
         if (!ch.diagram) errors.push(`${meta.id} / ${ch.title}: no diagram. Name a move in the title (e.g. "3...Bc5") or add a [Diagram "3...Nd4"] header`)
         else if (ch.diagram.error) errors.push(`${meta.id} / ${ch.title}: ${ch.diagram.error}`)
     }
@@ -141,7 +142,7 @@ for (const meta of courses) {
     const nameRows = []
     for (const ch of chapters) {
         if (!ch.opening) {
-            if (ch.type !== "ideas" && ch.type !== "map") nameRows.push(`| ${ch.title} | ${diagramLabel(ch)} | — | — | no Opening header |`)
+            if (!["ideas", "concept", "map"].includes(ch.type)) nameRows.push(`| ${ch.title} | ${diagramLabel(ch)} | — | — | no Opening header |`)
             continue
         }
         const entries = openings.byName.get(ch.opening)
@@ -182,8 +183,8 @@ for (const meta of courses) {
             }
             process.stdout.write(".")
         }
-        // Moves shown on Key ideas pages are checked too, though they are never drilled.
-        for (const ch of chapters.filter(c => c.type === "ideas")) {
+        // Moves shown on Key ideas pages (and their concepts' boards) are checked too, though never drilled.
+        for (const ch of chapters.filter(c => c.type === "ideas" || c.type === "concept")) {
             for (const node of mainPath(ch.root)) await checkMove(node, ch.title, ch.learner)
         }
         for (const line of course.lines) {

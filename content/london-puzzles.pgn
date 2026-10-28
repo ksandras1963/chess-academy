@@ -1,0 +1,127 @@
+[Puzzle "The ...e4 fork"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "10...e4"]
+[End "10...e4"]
+[Hint "White's last move ignored the threat you made with 9...e5. What was it?"]
+
+1. d4 d5 2. Bf4 Nf6 3. e3 e6 4. Nf3 Bd6 5. Bg3 O-O 6. Nbd2 c5 7. c3 Qc7 8. Bd3 Nbd7 9. O-O e5 10. Bh4?? e4! {[%cal Ge4f3,Ge4d3] Forks the knight on f3 and the bishop on d3, and White can't save both.}
+(10... exd4? {Opens the center, but lets White off the hook.} 11. exd4 Re8 12. Re1 Rxe1+ 13. Qxe1 b6 14. Bg3 Bb7 {Stockfish: +0.2, equal.})
+11. dxc5 {White's best try: it grabs a pawn.} Bxc5 12. Bc2 exf3 {You have won a piece for a pawn. Stockfish: −5.9, winning for Black.}
+*
+
+[Puzzle "Take the bishop first"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "8...exf4"]
+[End "8...exf4"]
+[Hint "Your knight on c6 is attacked. Is there something bigger to take first?"]
+
+1. d4 Nf6 2. Bf4 g6 3. e3 Bg7 4. Nf3 O-O 5. Bd3 d6 6. c3 Nc6 7. Nbd2 e5 8. d5?? exf4! {[%cal Ge5f4] Takes the bishop. If White takes the knight, you take on e3 and stay a piece up.}
+(8... Nb8? {Saves the knight, but now White's bishop escapes.} 9. Bg5 h6 10. Bxf6 Qxf6 11. O-O c6 12. c4 Qd8 {Stockfish: −0.5, slightly better for Black.})
+9. dxc6 fxe3 10. fxe3 Qe8 {[%cal Ge8e3,Ge8c6] The queen hits e3 and c6, and White's king is stuck in the center. Stockfish: −4.7, winning for Black.}
+*
+
+[Puzzle "Break the pin"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "10...g5"]
+[End "10...g5"]
+[Hint "Your f6 knight is pinned to the queen. How can you chase the bishop away?"]
+
+1. d4 Nf6 2. Bf4 g6 3. e3 Bg7 4. Nf3 O-O 5. Bd3 d6 6. c3 Nc6 7. Nbd2 e5 8. Bg5 h6 9. Bh4 Qe7 10. O-O? g5! {[%cal Gg5h4] Hits the bishop and breaks the pin. Now ...e4 threatens to fork the knight on f3 and the bishop on d3.}
+(10... e4? {Too early: the f6 knight is still pinned.} 11. Nxe4 g5 12. Nxf6+ Qxf6 13. Bg3 Ne7 {White has won a pawn, and your kingside is loose. Stockfish: +3.1, winning for White.})
+11. Nxg5 {White's best: a knight for two pawns.}
+(11. Bg3? e4! 12. Nxg5 exd3 {You have won a piece for a pawn. Stockfish: −4.6, winning for Black.})
+11... hxg5 12. Bxg5 d5! {[%cal Gd5e4] Takes e4 away from White. You have a knight for two pawns. Stockfish: −1.5, clearly better for Black.}
+*
+
+[Puzzle "The Greek gift with Ne4"]
+[Type "puzzle"]
+[Theme "Attack the king"]
+[Solve "13.Bxh7+"]
+[End "15.Ne4"]
+[Hint "Black's knight has left f6. What is guarding h7 now?"]
+
+1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Nc6 5. Nd2 e6 6. Ngf3 Bd6 7. Bg3 O-O 8. Bd3 Qe7 9. Ne5 Nd7 10. Nxd7 Bxd7 11. Bxd6 Qxd6 12. dxc5 Qxc5? 13. Bxh7+! {[%cal Gd3h7] The Greek gift: only the king guards h7.}
+(13. O-O? {Natural, but the chance is gone.} Rfd8 14. Qh5 g6 15. Qg5 Kg7 16. Rfd1 {Stockfish: −0.1, equal.})
+13... Kxh7 14. Qh5+ {[%hint Bring the queen to the kingside with check.] With check, so Black has no time for anything else.} Kg8
+15. Ne4 {[%hint Which piece can hit the queen on c5 and head for g5 at the same time?] [%cal Ge4c5,Ge4g5] Hits the queen and threatens Ng5 with mate on h7. 15...dxe4 opens the fifth rank, and 16.Qxc5 wins the queen.}
+15... g6 {The best defense: it stops mate, and the queens come off.} 16. Nxc5 gxh5 17. Nxd7 Rfc8 18. Nf6+ Kf8 19. Nxh5 {You are two pawns up, and Black's kingside is wrecked. Stockfish: +3.1, winning for White.}
+*
+
+[Puzzle "The Greek gift with Qh4"]
+[Type "puzzle"]
+[Theme "Attack the king"]
+[Solve "14.Bxh7+"]
+[End "16.Ng5"]
+[Hint "Black's queen has just left d8. Which square did it guard there?"]
+
+1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Nc6 5. Nd2 e6 6. Ngf3 Bd6 7. Bg3 O-O 8. Bd3 b6 9. e4 dxe4 10. Nxe4 Nxe4 11. Bxe4 Bb7 12. dxc5 Bxc5 13. Qa4 Qc8?? 14. Bxh7+! {[%cal Ge4h7] The bishop leaves e4, and the fourth rank opens for your queen.}
+(14. O-O? {Natural, but Black gets time to cover h4 again.} h6 15. Rad1 a5 16. Bc2 Ne7 17. Ne5 {Stockfish: +0.3, slightly better for White.})
+14... Kxh7 15. Qh4+ {[%hint Your queen can reach the kingside along the fourth rank.] With check.} Kg8
+16. Ng5 {[%hint Which knight move threatens mate on h7?] [%cal Gh4h7] Threatens Qh7#.}
+16... Rd8 17. Qh7+ Kf8 18. Qh8+ Ke7 19. Qxg7 {[%cal Gg7f7] You have two pawns for the bishop, Black's king is stuck in the center, and more material will fall. Stockfish: +6.4, winning for White.}
+*
+
+[Puzzle "Save the rook"]
+[Type "puzzle"]
+[Theme "Keep the extra piece"]
+[Solve "9.Qb1"]
+[End "9.Qb1"]
+[Hint "Black's queen attacks your rook on a1. Your knight has already left b1."]
+
+1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Nc6 5. Nd2 Qb6 6. Qb3 c4 7. Qc2 Bf5?? 8. Qxf5 Qxb2 9. Qb1! {[%cal Gb1b2] Guards the rook and offers a queen trade. You keep the extra piece.}
+(9. Rb1? {Saves the rook, but after 9...Qxc3 the knight on d2 is pinned, and Black's pawns and active queen make up for the piece.} Qxc3 10. Ne2 Qa5 11. Qc2 e6 12. Nc3 Bb4 {Stockfish: 0.0, equal.})
+9... Qxc3 10. Nf3 Qb4 11. Be2 {You have a piece for two pawns, and Black's queen will be chased. Stockfish: +3.2, winning for White.}
+*
+
+[Puzzle "The poisoned b-pawn"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "5.Nxd5"]
+[End "5.Nxd5"]
+[Hint "Nothing guards d5 now. What would a knight on c7 attack?"]
+
+1. d4 d5 2. Bf4 c5 3. e3 Qb6 4. Nc3 Qxb2?? 5. Nxd5! {[%cal Gd5c7,Ga1b1] Threatens Nc7+, forking king and rook, and Rb1 to trap the queen.}
+(5. Rb1?? {Chases the queen, but it takes the knight with check.} Qxc3+ 6. Qd2 Qxd2+ 7. Kxd2 Nf6 {Black is a piece up. Stockfish: −6.9, winning for Black.})
+5... Nf6 6. Rb1 Qxa2 7. Nc7+ Kd8 8. Nxa8 {You have won a rook. Stockfish: +7.0, winning for White.}
+*
+
+[Puzzle "The knight blocks the queen"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "9...Bxd3"]
+[End "9...Bxd3"]
+[Hint "Is White's bishop on d3 really protected?"]
+
+1. d4 d5 2. Bf4 c5 3. e3 cxd4 4. exd4 Nc6 5. c3 Bf5 6. Nf3 e6 7. Nbd2 Bd6 8. Bxd6 Qxd6 9. Bd3?? Bxd3! {[%cal Gf5d3] [%csl Rd2] The knight on d2 cuts White's queen off from d3, so the bishop can't be taken back.}
+(9... Nxd4? {Grabs a pawn, but misses the piece.} 10. Qa4+ Nc6 11. Bxf5 exf5 12. O-O {Stockfish: −0.2, equal.})
+10. Nb3 Bf5 11. Nh4 Nh6 12. O-O Qe7 13. Nxf5 Nxf5 {You have won a piece. Stockfish: −6.3, winning for Black.}
+*
+
+[Puzzle "Trap the bishop"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "3...e5"]
+[End "3...e5"]
+[Hint "White's bishop on f4 has few squares left. Which pawn move attacks it?"]
+
+1. d4 d5 2. Bf4 h5 3. e3?? e5! {[%cal Ge5f4] Hits the bishop. Next ...g5 and ...h4 trap it.}
+(3... Bf5? {Natural, but it lets White off the hook.} 4. Bd3 Bxd3 5. Qxd3 e6 {Stockfish: +0.4, slightly better for White.})
+4. Bxe5 {White's best: give up the bishop for pawns at once.}
+(4. dxe5? g5! 5. Bg3 h4 {The bishop is trapped. Stockfish: −4.7, winning for Black.})
+4... f6 5. Bf4 g5 6. Be2 gxf4 7. Bxh5+ Kd7 8. Bg4+ Ke8 {You have won the bishop for two pawns. Stockfish: −1.7, clearly better for Black.}
+*
+
+[Puzzle "The Englund trap"]
+[Type "puzzle"]
+[Theme "Escape the trap"]
+[Solve "6.Nc3"]
+[End "6.Nc3"]
+[Hint "Black's queen hits your rook on a1, and Bc3 walks into a trap. Look for a developing move that frees your first rank."]
+
+1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. Bd2 Qxb2 6. Nc3! {[%cal Gd1a1] Develops, guards a2, and clears b1, so your queen now guards a1. Rb1 comes next.}
+(6. Bc3?? {Hits the queen, but walks into a mate.} Bb4! 7. Qd2 Bxc3 8. Qxc3 Qc1#)
+6... Bb4 7. Rb1 Qa3 8. Nd5 {[%cal Gd5c7] Threatens Nxc7+, forking the king and rook.} Bxd2+ 9. Qxd2 Kd8 10. e4 {Material is level, but you are far ahead in development, and Black's king can no longer castle. Stockfish: +3.4, winning for White.}
+*

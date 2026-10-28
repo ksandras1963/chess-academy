@@ -10,11 +10,7 @@ export function trainerLayout(root, { backHref, backText, trail = null, prev = n
     const boardEl = h("div", { class: "board-frame" })
     const back = trail ? backTrail(trail)
         : backBar(backHref && backHref !== "#/" ? { href: backHref, text: backText } : null)
-    const steps = prev || next ? h("nav", { class: "stepbar", "aria-label": "Previous and next" },
-        prev ? h("a", { class: "btn btn-small btn-step", href: prev.href, "aria-label": `Previous: ${prev.text}` },
-            h("span", { "aria-hidden": "true" }, "‹"), h("span", { class: "step-text" }, prev.text)) : h("span"),
-        next ? h("a", { class: "btn btn-small btn-step", href: next.href, "aria-label": `Next: ${next.text}` },
-            h("span", { class: "step-text" }, next.text), h("span", { "aria-hidden": "true" }, "›")) : null) : null
+    const steps = stepBar(prev, next)
     const title = h("h1", { class: "tp-title" })
     const sub = h("p", { class: "tp-sub" })
     const sheet = h("div", { class: "scoresheet" })
@@ -55,6 +51,15 @@ export function trainerLayout(root, { backHref, backText, trail = null, prev = n
             sub.hidden = !s
         }
     }
+}
+
+/** Links to the previous and next page in a series (Key ideas, puzzles), or null when there are none. */
+export function stepBar(prev, next) {
+    return prev || next ? h("nav", { class: "stepbar", "aria-label": "Previous and next" },
+        prev ? h("a", { class: "btn btn-small btn-step", href: prev.href, "aria-label": `Previous: ${prev.text}` },
+            h("span", { "aria-hidden": "true" }, "‹"), h("span", { class: "step-text" }, prev.text)) : h("span"),
+        next ? h("a", { class: "btn btn-small btn-step", href: next.href, "aria-label": `Next: ${next.text}` },
+            h("span", { class: "step-text" }, next.text), h("span", { "aria-hidden": "true" }, "›")) : null) : null
 }
 
 /**

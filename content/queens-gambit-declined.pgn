@@ -222,7 +222,7 @@ Against 7...c5, play 8.Nge2. After 8...cxd4 9.Nxd4, Black is left with an isolat
 [Opening "Queen's Gambit Declined"]
 [ECO "D30"]
 
-{Rarer third moves. Against 3.a3, which stops ...Bb4, play 3...Nf6 and the usual setup. After 3.cxd5 exd5 4.Nf3, develop the same way. 3.e3 usually reaches Three Knights: 5.e3. Against 3.g3, 3...Nf6 4.Bg2 Be7 5.Nf3 O-O reaches the Catalan; against 3.Bf4, 3...Nf6 4.e3 c5 hits the center (Stockfish 0.0, equal).}
+{Rarer third moves. Against 3.a3, which stops ...Bb4, play 3...Nf6 and the usual setup. After 3.cxd5 exd5 4.Nf3, develop the same way. 3.e3 usually reaches Three Knights: 5.e3. Against 3.g3, 3...Nf6 4.Bg2 Be7 5.Nf3 O-O reaches the Catalan; against 3.Bf4, 3...Nf6 4.e3 c5 hits the center (Stockfish 0.0, equal), as it does against the London.}
 1. d4 d5 2. c4 e6 3. a3
 (3. cxd5 exd5 4. Nf3 Nf6 {Develop with ...Be7 or ...Bd6, ...c6 and castle. Stockfish: +0.1, equal.})
 3... Nf6 4. e3 Be7 {Castle next, as usual. Stockfish: +0.1, equal.} *
@@ -346,7 +346,7 @@ Black can prepare ...Bf5 with ...g6. After 6...g6 7.e3 Bf5 8.Bd3 Bxd3 9.Qxd3, or
 [Opening "Queen's Gambit Declined: Harrwitz Attack"]
 [ECO "D37"]
 
-{After 4.Nf3 Be7, about three White players in ten put the bishop on f4 instead of g5. Without a pin, Black can hit the center at once with ...c5. Against 7.cxd5, take back with the knight and trade into an equal position with no weaknesses. Against 5.Bg5, play 5...O-O 6.e3 h6 and the Tartakower chapters.}
+{After 4.Nf3 Be7, about three White players in ten put the bishop on f4 instead of g5. Without a pin, Black can hit the center at once with ...c5. Against 7.cxd5, take back with the knight and trade into an equal position with no weaknesses. Against 5.Bg5, play 5...O-O 6.e3 h6 and the Tartakower chapters. Without c4 (1.d4 d5 2.Bf4), this is the London System: see the London System Course.}
 1. d4 d5 2. c4 e6 3. Nc3
 (3. Nf3 Nf6 4. Nc3 Be7 {The same position as after 4.Nf3 Be7 in the main line. Stockfish: +0.3, slightly better for White.})
 3... Nf6 4. Nf3 {Against 4.Bf4, play 4...Be7 and castle. After 5.Nf3 O-O, or 5.e3 O-O 6.Nf3 c5, you are in this chapter. Against 5.c5, see Harrwitz Attack: 4.Bf4.} Be7 5. Bf4 {This is the Harrwitz Attack.} O-O
