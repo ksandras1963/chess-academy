@@ -84,8 +84,9 @@ export async function survey(id) {
 export async function overviewBack(opening) {
     const all = (await catalog()).surveys || []
     // The closest one: the Queen's Gambit page (1.d4 d5 2.c4) before Replies to 1.d4. An opening's own
-    // Introduction page (the Caro-Kann's, 1.e4 c6) is skipped: its course page repeats its map and table.
-    const s = all.filter(s => s.moves && opening.moves.startsWith(s.moves) && s.moves !== opening.moves)
+    // Introduction page (the Caro-Kann's, 1.e4 c6, whose "course" is the Caro-Kann) is skipped: its course
+    // page repeats its map and table. The London starts at 1.d4 itself, so it goes back to Replies to 1.d4.
+    const s = all.filter(s => s.moves && opening.moves.startsWith(s.moves) && s.course !== opening.id)
         .sort((a, b) => b.moves.length - a.moves.length)[0] ||
         all.find(s => !s.moves)
     return s ? { href: `#/survey/${s.id}`, text: s.name } : null

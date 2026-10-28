@@ -255,7 +255,7 @@
                     "repertoire": "Six main lines, each drilled as White and as Black: the Advance, Exchange, Winawer, Tarrasch, Steinitz and Rubinstein.",
                     "summary": "1.e4 e6 2.d4 d5: Black builds a solid center and hits back with ...c5.",
                     "why": {
-                        "text": "As White, you choose the game: the Advance (3.e5) gains space, the Exchange (3.exd5) keeps it simple, and 3.Nc3 or 3.Nd2 keep the tension in the center.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5. Against 3.Nc3 you choose between the sharp Winawer, 3...Nf6 (met by 4.e5, the Steinitz) and the solid Rubinstein."
+                        "text": "As White, you choose the game: the Advance (3.e5) gains space, the Exchange (3.exd5) keeps it simple, and 3.Nc3 or 3.Nd2 keep the tension in the center.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5. Against 3.Nc3 you choose between the sharp Winawer, 3...Nf6 (the Steinitz after 4.e5; 4.Bg5 is under Advanced) and the solid Rubinstein."
                     },
                     "table": {
                         "columns": [
@@ -282,7 +282,7 @@
                             [
                                 "Tarrasch: 3.Nd2",
                                 "Your choice as White; 6% as Black",
-                                "White supports d4 with c3. After 3...Nf6 4.e5 Nfd7, Black breaks with ...c5 and ...f6; after exf6 Nxf6, Black has the f-file and a strong knight on e4, while White aims at e5."
+                                "White supports d4 with c3. After 3...Nf6 4.e5 Nfd7, Black breaks with ...c5 and ...f6; after exf6 Nxf6, Black has the half-open f-file and a strong knight on e4, while White aims at e5."
                             ],
                             [
                                 "Steinitz: 3.Nc3 Nf6 4.e5",
@@ -363,7 +363,7 @@
                             [
                                 "Main line: 3.Nc3 Nf6 4.Bg5",
                                 "22% as Black",
-                                "The Tartakower: ...Be7, castle, ...h6, then ...b6 and ...Bb7. If White takes on f6, take back with the bishop."
+                                "The Tartakower: ...Be7, castle, ...h6 and ...b6, then ...Bb7, or ...Be6 after 8.cxd5 and the trades on d5. If White takes on f6, take back with the bishop."
                             ],
                             [
                                 "4...Nxd5 in the Exchange",
@@ -371,14 +371,14 @@
                                 "5.e4 gains time on the knight and builds a full center."
                             ],
                             [
+                                "Exchange Variation: 3.Nc3 Nf6 4.cxd5 (or 3.cxd5 exd5 4.Nc3 Nf6)",
+                                "15% as Black",
+                                "Against 5.Bg5, play 5...Nbd7, which sets the Elephant trap. Then ...c6, ...Be7, castle, ...Re8 and ...Nf8."
+                            ],
+                            [
                                 "3...c6 (Semi-Slav move order)",
                                 "12% as White",
                                 "Take on d5 anyway. With no knight on f6 to pin, the bishop goes to f4."
-                            ],
-                            [
-                                "Exchange Variation: 3.Nc3 Nf6 4.cxd5",
-                                "10% as Black",
-                                "Play 5...Nbd7, which sets the Elephant trap. Then ...c6, ...Be7, castle, ...Re8 and ...Nf8."
                             ]
                         ],
                         "note": "How often: the share of your Queen's Gambit Declined games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -457,7 +457,7 @@
                             ],
                             [
                                 "Quiet Variation: e3 lines",
-                                "17% as Black",
+                                "19% as Black",
                                 "Play ...Bf5 at once, then ...e6, ...Nbd7 and ...Be7, and castle."
                             ],
                             [
@@ -554,7 +554,7 @@
                             [
                                 "Normal Variation: 3.Nf3",
                                 "10% as Black",
-                                "...e5 is impossible here: play ...Nf6, ...e6, ...c5 and ...a6."
+                                "...e5 fails here, because Nxe5 takes the pawn. Play ...Nf6, ...e6, ...c5 and ...a6."
                             ]
                         ],
                         "note": "How often: the share of your Queen's Gambit Accepted games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -615,7 +615,7 @@
                             [
                                 "Rubinstein System: 4.cxd5 exd5, then Nf3, g3 and Bg2",
                                 "73% as White",
-                                "The bishop on g2 hits d5, the isolated pawn. Castle and keep up the pressure."
+                                "The bishop on g2 hits d5, which becomes an isolated pawn once Black's c-pawn is traded. Castle and keep up the pressure."
                             ],
                             [
                                 "4.e3 or 4.Nf3",
@@ -770,14 +770,162 @@
         {
             "id": "london",
             "name": "London System",
-            "eco": "D00",
-            "moves": "1. d4 d5 2. Bf4",
+            "eco": "A40",
+            "moves": "1. d4",
             "summary": "White develops the bishop to f4 before e3 can shut it in, then builds the same solid setup in almost every game.",
+            "puzzles": "content/london-puzzles.pgn",
+            "furtherStudy": [
+                {
+                    "title": "A Complete London System Repertoire for White",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=9aOJZBDgdwY"
+                },
+                {
+                    "title": "London System against 1...d5",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=9z0NuNeDU6M"
+                },
+                {
+                    "title": "London System against the King's Indian setup",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=8riYW7EC1lQ"
+                },
+                {
+                    "title": "9 London System Traps",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=dDeJMfDkwTY"
+                }
+            ],
             "courses": [
                 {
-                    "id": "london-white",
-                    "side": "white",
-                    "repertoire": "London System"
+                    "id": "london",
+                    "side": "both",
+                    "file": "content/london.pgn",
+                    "repertoire": "As White: 2.Bf4 and the same setup against every reply. As Black: the Queen's Gambit Declined setup after 1...d5, the King's Indian setup after 1...Nf6.",
+                    "summary": "White builds the c3–d4–e3 triangle behind the f4 bishop. Black meets it with the setup used against 1.d4 and aims at the f4 bishop, d4 and b2.",
+                    "why": {
+                        "text": "As White, the London is a system: you play the same setup against almost every defense, so you learn one set of plans instead of a book of theory. The c3–d4–e3 triangle is hard to break, the f4 bishop stays active outside it, and Black is the one who has to know what to do.\n\nAs Black, you need no new opening: the Queen's Gambit Declined pieces after 1...d5, or the King's Indian after 1...Nf6, meet it well. White's setup is solid but slow, so you can develop in peace and play for ...e5 or ...c5."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "QGD setup: 2...Nf6 3.e3 e6 (or 2...e6 3.e3 Nf6)",
+                                "9% as White\n20% as Black",
+                                "As White: keep the bishop with Bg3, castle, and meet ...e5 with dxe5. As Black: ...Bd6, castle, ...c5, ...Qc7 and ...Nbd7, then ...e5."
+                            ],
+                            [
+                                "King's Indian setup: 1...Nf6 2.Bf4 g6",
+                                "9% as White\n14% as Black",
+                                "As White: e3, Nf3, h3 and Be2, then c3 and Qb3 against ...c5 and ...Qb6. As Black: against Be2 and h3, ...c5 and ...Qb6; against Bd3, ...Nc6 and ...e5."
+                            ],
+                            [
+                                "Symmetrical: 2...Bf5 (or 2...Nf6 3.e3 Bf5)",
+                                "10% as White",
+                                "Play e3, c4 and Nc3, then Qb3 against b7."
+                            ],
+                            [
+                                "King's Indian setup, Rapport-Jobava: 3.Nc3",
+                                "4% as Black",
+                                "Stop e4 with 3...d5, meet h4 with ...h5, then castle and hit the center with ...c5."
+                            ]
+                        ],
+                        "note": "How often: the share of your games that reach the line, from the side you play in it, counting every move order. As White, of your 1.d4 games; as Black, of your games with 1...d5 or 1...Nf6. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Everything else is in Advanced."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "jobava-london",
+            "name": "Jobava London System",
+            "eco": "D01",
+            "moves": "1. d4 d5 2. Nc3 Nf6 3. Bf4",
+            "summary": "White plays the London bishop move, Bf4, but puts the knight on c3 instead of the pawn. Sharper than the London, with Nb5 and h4 as its weapons.",
+            "puzzles": "content/jobava-london-puzzles.pgn",
+            "furtherStudy": [
+                {
+                    "title": "Learn the Jobava London System Opening with ...d5 in five simple stages. Part One.",
+                    "by": "GM Simon Williams, GingerGM",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=bPLrXjQyNFQ"
+                },
+                {
+                    "title": "Introduction to the Jobava London System",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=8o5UitW0bRM"
+                },
+                {
+                    "title": "What to do when black avoids the Jobava London System",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=uh6OlaIEc_4"
+                },
+                {
+                    "title": "Mastering the Jobava London ft. Bortnyk | GM Naroditsky's Opening Lab",
+                    "by": "GM Daniel Naroditsky",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=qN8kNz0_c3s"
+                }
+            ],
+            "courses": [
+                {
+                    "id": "jobava-london",
+                    "side": "both",
+                    "file": "content/jobava-london.pgn",
+                    "repertoire": "As White: Nb5 against 3...e6, Bd3 against ...Bf5, h4 against ...g6. As Black: 3...e6 and ...Bb4.",
+                    "summary": "1.d4 d5 2.Nc3 Nf6 3.Bf4, or 1.d4 Nf6 2.Nc3 d5 3.Bf4: the London bishop, with the knight on c3.",
+                    "why": {
+                        "text": "As White, you play the same first moves against 1...d5 and 1...Nf6: d4, Nc3 and Bf4. The knight on c3 makes the system sharper than the ordinary London. It can jump to b5 and hit c7 as early as move 4, so Black has to answer threats from the start.\n\nAs Black, 3...e6 with ...Bb4 and ...c5 needs little theory. Stockfish rates Black equal or slightly better in this course's main lines, and ...Bb4 is Black's best-scoring answer at club level to White's two most common fourth moves."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Pin on c3: 4.e3 or 4.Nf3, then 4...Bb4",
+                                "60% as Black",
+                                "Pin the knight, then hit d4 with ...c5. If White plays a3, take on c3 and hit the doubled pawn with ...Qa5."
+                            ],
+                            [
+                                "Check on b4: 4.Nb5 Bb4+",
+                                "24% as Black",
+                                "Check, then drop back to a5. Meet a4 with ...a6, never ...Bb6, and meet b4 with ...Nc6."
+                            ],
+                            [
+                                "Knight to b5: 3...e6 4.Nb5",
+                                "23% as White",
+                                "Jump to b5 at once. After 4...Na6 5.e3 c6 the knight goes back to c3; after 4...Bd6, take the bishop."
+                            ],
+                            [
+                                "Early bishop: 3...Bf5",
+                                "20% as White",
+                                "Play e3 and Bd3. If Black takes on d3, take back with the c-pawn; if the bishop drops back to g6, push h4."
+                            ],
+                            [
+                                "Guarding b5: 3...a6",
+                                "17% as White",
+                                "Play e3, Bd3 and Nf3. Offer the bishop trade against ...Bf5, and take on c5 against ...c5."
+                            ],
+                            [
+                                "Slav setup: 3...c6",
+                                "16% as White",
+                                "Play e3. Then Bd3 against ...Bf5, f3, g4 and h4 against ...Bg4, and h4 against ...g6."
+                            ]
+                        ],
+                        "note": "How often: the share of your Jobava London games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
                 }
             ]
         },
@@ -849,7 +997,7 @@
                             [
                                 "Mar del Plata, Main line: 9.Ne1",
                                 "21% as White\n3% as Black",
-                                "As White: Close the center with d5, hold e4 with Ne1, Be3 and f3, then open the c-file with c5. As Black: Bring the knight to e7, then storm the kingside with ...f5, ...f4 and ...g5."
+                                "As White: Close the center with d5. Play Ne1, Be3 and f3, which holds e4, then open the c-file with c5. As Black: Bring the knight to e7, then storm the kingside with ...f5, ...f4 and ...g5."
                             ],
                             [
                                 "Mar del Plata, Bayonet Attack: 9.b4",
@@ -980,7 +1128,7 @@
             "compact": true,
             "course": "caro-kann",
             "subtitle": "1.e4 c6: the main systems and the nine lines to learn first.",
-            "summary": "Black supports ...d5 with the c-pawn and brings the c8 bishop out before ...e6 shuts it in. White's main tries, the Advance, the Exchange and 3.Nc3, all aim to cramp Black's pieces.",
+            "summary": "Black supports ...d5 with the c-pawn and brings the c8 bishop out before ...e6 shuts it in. White's main tries are the Advance (3.e5), the Exchange (3.exd5) and 3.Nc3.",
             "table": {
                 "columns": [
                     "Line",
@@ -1053,7 +1201,7 @@
             "eco": "A40–E99",
             "moves": "1. d4",
             "file": "content/d4-overview.pgn",
-            "count": "15 openings",
+            "count": "16 openings",
             "compact": true,
             "table": {
                 "after": "map",
@@ -1064,7 +1212,7 @@
                 ],
                 "rows": [
                     [
-                        "1...d5 (Queen's Gambit, London)",
+                        "1...d5 (Queen's Gambit, London, Jobava London)",
                         "43%",
                         "The closed games: Black stakes a claim with a pawn on d5 at once, so White can no longer play e4 for free."
                     ],
@@ -1087,7 +1235,7 @@
                 "note": "Share: how often each reply follows 1.d4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
             },
             "subtitle": "The Queen's Gambit, the Indian Defenses, and the other main replies.",
-            "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Against 1...d5, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level (and works against 1...Nf6 too); the Colle is much rarer and is listed with the uncommon replies. Against 1...Nf6 2.c4, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside."
+            "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Against 1...d5, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level (and works against 1...Nf6 too). The Jobava London, with the knight on c3, is a sharper version of it. The Colle is much rarer and is listed with the uncommon replies. Against 1...Nf6 2.c4, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside."
         },
         {
             "id": "qg",

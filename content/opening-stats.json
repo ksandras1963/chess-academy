@@ -28571,6 +28571,3916 @@
     "f6e4": 57
    }
   },
+  "rnbqkbnr/ppp1pppp/8/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR b KQkq -": {
+   "games": 5220000,
+   "moves": {
+    "g8f6": 1630000,
+    "e7e6": 955000,
+    "c8f5": 824000,
+    "b8c6": 795000,
+    "c7c5": 398000,
+    "c7c6": 314000,
+    "g7g6": 70400,
+    "f7f6": 41200,
+    "c8g4": 38200,
+    "h7h6": 34200,
+    "a7a6": 30100,
+    "f7f5": 27800
+   }
+  },
+  "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/4P3/PPP2PPP/RN1QKBNR b KQkq -": {
+   "games": 1560000,
+   "moves": {
+    "e7e6": 470000,
+    "c8f5": 345000,
+    "c7c5": 272000,
+    "b8c6": 125000,
+    "g7g6": 97100,
+    "c7c6": 83600,
+    "a7a6": 63000,
+    "c8g4": 56700,
+    "b8d7": 18900,
+    "h7h6": 14100,
+    "b7b6": 5710,
+    "f6h5": 3860
+   }
+  },
+  "rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/2P1P3/PP3PPP/RN1QKBNR b KQkq -": {
+   "games": 219000,
+   "moves": {
+    "b8c6": 137000,
+    "d8b6": 28100,
+    "e7e6": 23200,
+    "c5d4": 12200,
+    "c8f5": 10400,
+    "c5c4": 2830,
+    "c8g4": 1710,
+    "a7a6": 1060,
+    "g7g6": 960,
+    "b8d7": 579,
+    "b7b6": 261
+   }
+  },
+  "r1bqkb1r/pp2pppp/2n2n2/2pp4/3P1B2/2P1P3/PP1N1PPP/R2QKBNR b KQkq -": {
+   "games": 62300,
+   "moves": {
+    "c8f5": 21600,
+    "d8b6": 15600,
+    "e7e6": 11500,
+    "c5d4": 5070,
+    "c8g4": 3940,
+    "g7g6": 1450,
+    "c5c4": 1010,
+    "a7a6": 798,
+    "h7h6": 494,
+    "f6h5": 260,
+    "b7b6": 148,
+    "e7e5": 133
+   }
+  },
+  "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq -": {
+   "games": 2320000,
+   "moves": {
+    "e2e3": 1560000,
+    "g1f3": 506000,
+    "b1c3": 103000,
+    "h2h3": 72000,
+    "b1d2": 22100,
+    "c2c4": 20300,
+    "c2c3": 18700,
+    "f2f3": 4200
+   }
+  },
+  "rnbqkb1r/ppp2ppp/4pn2/3p4/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq -": {
+   "games": 937000,
+   "moves": {
+    "g1f3": 442000,
+    "f1d3": 153000,
+    "b1d2": 128000,
+    "c2c3": 93800,
+    "c2c4": 39600,
+    "h2h3": 28500,
+    "a2a3": 20600,
+    "b1c3": 15500,
+    "f1e2": 7240,
+    "f1b5": 2100,
+    "f4g5": 1860,
+    "f4g3": 1250
+   }
+  },
+  "rnbqk2r/ppp2ppp/3bpn2/3p4/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq -": {
+   "games": 353000,
+   "moves": {
+    "f4g3": 156000,
+    "f3e5": 89100,
+    "f4d6": 33500,
+    "f4g5": 29100,
+    "f1d3": 16200,
+    "b1d2": 13200,
+    "c2c3": 8930,
+    "f4e5": 2200,
+    "c2c4": 1690,
+    "f1e2": 967,
+    "b1c3": 678,
+    "g2g3": 589
+   }
+  },
+  "rnbqkb1r/pppppp1p/5np1/8/3P1B2/4P3/PPP2PPP/RN1QKBNR b KQkq -": {
+   "games": 343000,
+   "moves": {
+    "f8g7": 305000,
+    "d7d6": 18800,
+    "d7d5": 11800,
+    "f6h5": 2870,
+    "c7c5": 2460,
+    "c7c6": 636,
+    "b7b6": 469,
+    "e7e6": 381
+   }
+  },
+  "rnbqk2r/ppppppbp/5np1/8/3P1B2/4PN2/PPP2PPP/RN1QKB1R b KQkq -": {
+   "games": 352000,
+   "moves": {
+    "e8g8": 178000,
+    "d7d6": 121000,
+    "d7d5": 21900,
+    "c7c5": 9130,
+    "f6h5": 7980,
+    "b7b6": 4170,
+    "c7c6": 2520,
+    "e7e6": 1640,
+    "b8c6": 1610,
+    "f6d5": 1380,
+    "a7a6": 847,
+    "h7h6": 843
+   }
+  },
+  "rnbq1rk1/ppppppbp/5np1/8/3P1B2/4PN1P/PPP2PP1/RN1QKB1R b KQ -": {
+   "games": 58000,
+   "moves": {
+    "d7d6": 38900,
+    "d7d5": 7380,
+    "c7c5": 4930,
+    "b7b6": 2410,
+    "f8e8": 937,
+    "b8c6": 826,
+    "c7c6": 809,
+    "e7e6": 388,
+    "f6d5": 376,
+    "a7a6": 256,
+    "f6h5": 254,
+    "h7h6": 235
+   }
+  },
+  "rnbqk2r/ppppppbp/5np1/8/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq -": {
+   "games": 340000,
+   "moves": {
+    "g1f3": 136000,
+    "c2c3": 39600,
+    "f1d3": 38700,
+    "h2h3": 32700,
+    "f1e2": 30300,
+    "c2c4": 16900,
+    "b1d2": 16200,
+    "b1c3": 14900,
+    "h2h4": 6420,
+    "f1c4": 5000,
+    "g2g4": 475,
+    "a2a3": 468
+   }
+  },
+  "rnbq1rk1/ppppppbp/5np1/8/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQ -": {
+   "games": 178000,
+   "moves": {
+    "f1d3": 41000,
+    "f1e2": 36500,
+    "h2h3": 24700,
+    "b1d2": 21400,
+    "c2c3": 20800,
+    "c2c4": 17000,
+    "f1c4": 8400,
+    "b1c3": 3800,
+    "h2h4": 2940,
+    "a2a3": 462,
+    "a2a4": 374
+   }
+  },
+  "rnbqkbnr/pp2pppp/8/2pp4/3P1B2/4P3/PPP2PPP/RN1QKBNR b KQkq -": {
+   "games": 248000,
+   "moves": {
+    "b8c6": 140000,
+    "c5d4": 39100,
+    "g8f6": 20700,
+    "e7e6": 18300,
+    "d8b6": 9870,
+    "c8f5": 6490,
+    "a7a6": 6180,
+    "c5c4": 5000,
+    "f7f6": 605,
+    "d8a5": 298,
+    "g7g6": 271
+   }
+  },
+  "rnbqkb1r/ppp2ppp/4pn2/3p4/3P1B2/2N5/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 251000,
+   "moves": {
+    "e2e3": 120000,
+    "c3b5": 59600,
+    "g1f3": 29800,
+    "a2a3": 22400,
+    "f2f3": 7110,
+    "d1d2": 4570,
+    "d1d3": 2390,
+    "h2h3": 2150,
+    "e2e4": 1070,
+    "f4g5": 496,
+    "g2g3": 412,
+    "h2h4": 282
+   }
+  },
+  "rnbqkb1r/ppp1pp1p/5np1/3p4/3P1B2/2N5/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 74200,
+   "moves": {
+    "e2e3": 35200,
+    "d1d2": 16400,
+    "g1f3": 7940,
+    "c3b5": 5950,
+    "f2f3": 4430,
+    "h2h4": 1520,
+    "h2h3": 1280,
+    "e2e4": 587,
+    "f4e5": 286,
+    "d1d3": 261,
+    "a2a3": 171,
+    "g2g3": 161
+   }
+  },
+  "rnbqk2r/ppp1ppbp/5np1/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 46600,
+   "moves": {
+    "h2h4": 14600,
+    "g1f3": 9280,
+    "f1d3": 6480,
+    "f1e2": 5150,
+    "c3b5": 4620,
+    "d1d2": 2280,
+    "h2h3": 1800,
+    "f2f3": 1110,
+    "f1b5": 273,
+    "a2a3": 266,
+    "d1f3": 225,
+    "f4e5": 129
+   }
+  },
+  "r1bqkb1r/pp3ppp/2n1pn2/2pp4/3P1B2/2P1PN2/PP1N1PPP/R2QKB1R b KQkq -": {
+   "games": 195000,
+   "moves": {
+    "f8d6": 60000,
+    "f8e7": 35100,
+    "c5d4": 28700,
+    "d8b6": 15900,
+    "a7a6": 11400,
+    "c5c4": 10200,
+    "f6h5": 9390,
+    "c8d7": 9320,
+    "h7h6": 7200,
+    "b7b6": 6160,
+    "f6e4": 693,
+    "g7g6": 507
+   }
+  },
+  "r1bqk2r/pp3ppp/2nbpn2/2pp4/3P4/2P1PNB1/PP1N1PPP/R2QKB1R b KQkq -": {
+   "games": 44400,
+   "moves": {
+    "e8g8": 24000,
+    "d6g3": 5050,
+    "c5d4": 3800,
+    "b7b6": 2730,
+    "d8c7": 2320,
+    "c5c4": 1420,
+    "a7a6": 1190,
+    "d8e7": 1060,
+    "f6e4": 713,
+    "f6h5": 663,
+    "h7h6": 565,
+    "h7h5": 248
+   }
+  },
+  "r1bq1rk1/pp3ppp/2nbpn2/2pp4/3P4/2PBPNB1/PP1N1PPP/R2QK2R b KQ -": {
+   "games": 49500,
+   "moves": {
+    "b7b6": 14400,
+    "f8e8": 10400,
+    "c5d4": 5470,
+    "c5c4": 5420,
+    "h7h6": 3100,
+    "a7a6": 3030,
+    "d8c7": 2880,
+    "d8e7": 1900,
+    "d6g3": 973,
+    "f6h5": 424,
+    "c6e7": 318,
+    "a7a5": 240
+   }
+  },
+  "r1b2rk1/pp2qppp/2nbpn2/2ppN3/3P4/2PBP1B1/PP1N1PPP/R2QK2R b KQ -": {
+   "games": 1540,
+   "moves": {
+    "f6d7": 677,
+    "d6e5": 378,
+    "c5d4": 145,
+    "c8d7": 90,
+    "e7c7": 84,
+    "c5c4": 49,
+    "h7h6": 32,
+    "f8d8": 21,
+    "g7g6": 15,
+    "c6e5": 13,
+    "f8e8": 11,
+    "a7a6": 9
+   }
+  },
+  "r1b2rk1/pp1Nqppp/2nbp3/2pp4/3P4/2PBP1B1/PP1N1PPP/R2QK2R b KQ -": {
+   "games": 187,
+   "moves": {
+    "c8d7": 113,
+    "e7d7": 74
+   }
+  },
+  "r4rk1/pp1bqppp/2nBp3/2pp4/3P4/2PBP3/PP1N1PPP/R2QK2R b KQ -": {
+   "games": 102,
+   "moves": {
+    "e7d6": 102
+   }
+  },
+  "r4rk1/pp1b1ppp/2nqp3/2Pp4/8/2PBP3/PP1N1PPP/R2QK2R b KQ -": {
+   "games": 102,
+   "moves": {
+    "d6c5": 96,
+    "d6c7": 3,
+    "d6e7": 3
+   }
+  },
+  "r4rk1/pp1b1ppB/2n1p3/2qp4/8/2P1P3/PP1N1PPP/R2QK2R b KQ -": {
+   "games": 96,
+   "moves": {
+    "g8h7": 96
+   }
+  },
+  "r4r2/pp1b1ppk/2n1p3/2qp3Q/8/2P1P3/PP1N1PPP/R3K2R b KQ -": {
+   "games": 98,
+   "moves": {
+    "h7g8": 98
+   }
+  },
+  "r4rk1/pp1b1pp1/2n1p3/2qp3Q/4N3/2P1P3/PP3PPP/R3K2R b KQ -": {
+   "games": 95,
+   "moves": {
+    "c5c4": 35,
+    "g7g6": 25,
+    "c5b5": 13,
+    "c5e7": 12,
+    "c5b6": 6,
+    "d5e4": 2,
+    "f7f6": 1,
+    "f8d8": 1
+   }
+  },
+  "r1bq1rk1/p4ppp/1pnbpn2/2pp4/3PP3/2PB1NB1/PP1N1PPP/R2QK2R b KQ -": {
+   "games": 1500,
+   "moves": {
+    "d5e4": 1020,
+    "d6e7": 283,
+    "d6g3": 100,
+    "c5d4": 32,
+    "f6e4": 14,
+    "c8b7": 12,
+    "f6h5": 11,
+    "c5c4": 5,
+    "f8e8": 5,
+    "e6e5": 4,
+    "d6c7": 3,
+    "f6e8": 2
+   }
+  },
+  "r1bq1rk1/p4ppp/1pnbpn2/2p5/3PN3/2PB1NB1/PP3PPP/R2QK2R b KQ -": {
+   "games": 1010,
+   "moves": {
+    "f6e4": 788,
+    "d6g3": 115,
+    "d6e7": 86,
+    "c5d4": 12,
+    "c8b7": 7,
+    "d6c7": 2
+   }
+  },
+  "r1bq1rk1/p4ppp/1pnbp3/2p5/3PB3/2P2NB1/PP3PPP/R2QK2R b KQ -": {
+   "games": 802,
+   "moves": {
+    "c8b7": 768,
+    "d8c7": 20,
+    "c5d4": 8,
+    "f7f5": 2,
+    "d6g3": 2,
+    "c8a6": 1,
+    "c8d7": 1
+   }
+  },
+  "r2q1rk1/pb3ppp/1pnbp3/2P5/4B3/2P2NB1/PP3PPP/R2QK2R b KQ -": {
+   "games": 416,
+   "moves": {
+    "d6c5": 389,
+    "d6g3": 20,
+    "b6c5": 6,
+    "d6e7": 1
+   }
+  },
+  "r2q1rk1/pb3ppp/1pn1p3/2b5/Q3B3/2P2NB1/PP3PPP/R3K2R b KQ -": {
+   "games": 296,
+   "moves": {
+    "c6a5": 112,
+    "a8c8": 92,
+    "d8c8": 69,
+    "d8e8": 17,
+    "d8c7": 4,
+    "d8d7": 2
+   }
+  },
+  "r1b1kb1r/pp2pppp/1qn2n2/2pp4/3P1B2/1QP1P3/PP1N1PPP/R3KBNR b KQkq -": {
+   "games": 11300,
+   "moves": {
+    "c5c4": 9030,
+    "c8f5": 1010,
+    "e7e6": 523,
+    "b6b3": 329,
+    "c5d4": 189,
+    "g7g6": 83,
+    "f6h5": 57,
+    "b6d8": 29,
+    "c6a5": 19,
+    "c8d7": 17
+   }
+  },
+  "r1b1kb1r/pp2pppp/1qn2n2/3p4/2pP1B2/2P1P3/PPQN1PPP/R3KBNR b KQkq -": {
+   "games": 8910,
+   "moves": {
+    "g7g6": 4520,
+    "c8g4": 2130,
+    "f6h5": 696,
+    "e7e6": 657,
+    "c8f5": 533,
+    "h7h6": 97,
+    "b6d8": 79,
+    "a7a5": 64,
+    "c8d7": 63,
+    "b6a5": 21,
+    "f6e4": 15,
+    "e7e5": 11
+   }
+  },
+  "rnb1kbnr/pp2pppp/1q6/2pp4/3P1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 4080,
+   "moves": {
+    "g8f6": 1310,
+    "b6b2": 1010,
+    "e7e6": 807,
+    "c5d4": 331,
+    "a7a6": 306,
+    "b8c6": 111,
+    "c8d7": 77,
+    "c5c4": 56,
+    "c8f5": 46,
+    "b6a5": 6
+   }
+  },
+  "rn1qkb1r/ppp1pppp/5n2/3p1b2/2PP1B2/4P3/PP3PPP/RN1QKBNR b KQkq -": {
+   "games": 116000,
+   "moves": {
+    "e7e6": 72300,
+    "c7c6": 30800,
+    "d5c4": 5540,
+    "b8c6": 2010,
+    "c7c5": 1620,
+    "f5b1": 1340,
+    "b8d7": 517,
+    "h7h6": 405,
+    "a7a6": 392,
+    "f6h5": 171,
+    "g7g6": 168
+   }
+  },
+  "rn1qkb1r/ppp2ppp/4pn2/3p1b2/2PP1B2/2N1P3/PP3PPP/R2QKBNR b KQkq -": {
+   "games": 50600,
+   "moves": {
+    "f8b4": 15200,
+    "c7c6": 12000,
+    "f8d6": 7640,
+    "c7c5": 4390,
+    "f8e7": 3110,
+    "a7a6": 2490,
+    "b8c6": 2080,
+    "b8d7": 1610,
+    "d5c4": 825,
+    "h7h6": 644,
+    "f6e4": 260,
+    "f6h5": 120
+   }
+  },
+  "rn1qkb1r/pp3ppp/2p1pn2/3p1b2/2PP1B2/1QN1P3/PP3PPP/R3KBNR b KQkq -": {
+   "games": 25800,
+   "moves": {
+    "d8b6": 12400,
+    "b7b6": 5500,
+    "d8c8": 4350,
+    "d8d7": 2800,
+    "b8d7": 196,
+    "f8d6": 143,
+    "d5c4": 126,
+    "b8a6": 94,
+    "f8e7": 61,
+    "d8c7": 46,
+    "d8e7": 26
+   }
+  },
+  "rn2kb1r/pp3ppp/1qp1pn2/2Pp1b2/3P1B2/1QN1P3/PP3PPP/R3KBNR b KQkq -": {
+   "games": 12000,
+   "moves": {
+    "b6b3": 11900,
+    "b6d8": 38,
+    "b6a5": 27,
+    "b6c7": 13
+   }
+  },
+  "rnbqkbnr/pppp1ppp/8/4P3/8/8/PPP1PPPP/RNBQKBNR b KQkq -": {
+   "games": 1730000,
+   "moves": {
+    "b8c6": 850000,
+    "d7d6": 461000,
+    "f8c5": 204000,
+    "f7f6": 105000,
+    "d8e7": 69400,
+    "d7d5": 28300,
+    "c7c6": 3570,
+    "f8b4": 2610,
+    "g8e7": 2120
+   }
+  },
+  "r1bqkbnr/pppp1ppp/2n5/4P3/8/5N2/PPP1PPPP/RNBQKB1R b KQkq -": {
+   "games": 642000,
+   "moves": {
+    "d8e7": 492000,
+    "d7d6": 54900,
+    "f8c5": 37400,
+    "g8e7": 19000,
+    "f7f6": 13400,
+    "d7d5": 11900,
+    "f8b4": 4410,
+    "h7h6": 2180,
+    "g7g6": 2030,
+    "b7b6": 1310,
+    "c6e5": 755,
+    "f8e7": 722
+   }
+  },
+  "r1b1kbnr/ppppqppp/2n5/4P3/5B2/5N2/PPP1PPPP/RN1QKB1R b KQkq -": {
+   "games": 198000,
+   "moves": {
+    "e7b4": 193000,
+    "h7h6": 1460,
+    "f7f6": 972,
+    "d7d6": 753,
+    "g7g6": 431,
+    "b7b6": 290,
+    "c6e5": 199
+   }
+  },
+  "r1b1kbnr/pppp1ppp/2n5/4P3/1q6/5N2/PPPBPPPP/RN1QKB1R b KQkq -": {
+   "games": 166000,
+   "moves": {
+    "b4b2": 164000,
+    "b4e7": 1040,
+    "b4c5": 309
+   }
+  },
+  "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/4PNB1/PPP2PPP/RN1QKB1R w KQ -": {
+   "games": 86000,
+   "moves": {
+    "f1d3": 42100,
+    "b1d2": 19900,
+    "c2c3": 11000,
+    "c2c4": 5860,
+    "f3e5": 3690,
+    "f1e2": 1840,
+    "b1c3": 665,
+    "a2a3": 464,
+    "g3h4": 223,
+    "g3d6": 91
+   }
+  },
+  "rnbq1rk1/pp3ppp/3bpn2/2pp4/3P4/4PNB1/PPPN1PPP/R2QKB1R w KQ -": {
+   "games": 14200,
+   "moves": {
+    "c2c3": 12800,
+    "c2c4": 410,
+    "d4c5": 326,
+    "f3e5": 273,
+    "f1d3": 127,
+    "f1e2": 86,
+    "g3d6": 73,
+    "b2b3": 20
+   }
+  },
+  "rnb2rk1/ppq2ppp/3bpn2/2pp4/3P4/2P1PNB1/PP1N1PPP/R2QKB1R w KQ -": {
+   "games": 5520,
+   "moves": {
+    "f1d3": 2840,
+    "f3e5": 1350,
+    "d4c5": 333,
+    "f1e2": 298,
+    "g3d6": 225,
+    "d1c2": 187,
+    "a1c1": 179,
+    "d2b3": 25,
+    "a2a4": 16,
+    "a2a3": 14,
+    "g3h4": 14,
+    "b2b3": 13
+   }
+  },
+  "r1b2rk1/ppqn1ppp/3bpn2/2pp4/3P4/2PBPNB1/PP1N1PPP/R2QK2R w KQ -": {
+   "games": 9430,
+   "moves": {
+    "e1g1": 2080,
+    "d1e2": 1940,
+    "a1c1": 1000,
+    "d1c2": 997,
+    "g3d6": 835,
+    "e3e4": 588,
+    "d4c5": 500,
+    "f3e5": 357,
+    "d3c2": 165,
+    "f3g5": 156,
+    "g3h4": 150,
+    "d1b1": 144
+   }
+  },
+  "r1b2rk1/ppqn1ppp/3b1n2/2ppp3/3P4/2PBPNB1/PP1N1PPP/R2Q1RK1 w - -": {
+   "games": 684,
+   "moves": {
+    "d4e5": 587,
+    "e3e4": 43,
+    "d4c5": 19,
+    "f3e5": 17,
+    "d3c2": 11,
+    "d3f5": 3,
+    "g3e5": 1,
+    "f3e1": 1,
+    "d3e2": 1,
+    "a1c1": 1
+   }
+  },
+  "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -": {
+   "games": 2910000,
+   "moves": {
+    "c1f4": 705000,
+    "e2e3": 653000,
+    "c2c4": 627000,
+    "g2g3": 352000,
+    "c1g5": 219000,
+    "b1c3": 113000,
+    "c2c3": 74700,
+    "h2h3": 71000,
+    "b1d2": 47200,
+    "b2b3": 20600,
+    "a2a3": 13800,
+    "f3e5": 5710
+   }
+  },
+  "rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq -": {
+   "games": 202000,
+   "moves": {
+    "e2e3": 133000,
+    "c2c3": 52400,
+    "d4c5": 8460,
+    "c2c4": 2210,
+    "b1c3": 1890,
+    "h2h3": 1220,
+    "b1d2": 1070,
+    "f4b8": 965,
+    "a2a3": 281
+   }
+  },
+  "r1bqkb1r/pp2pppp/2n2n2/2pp4/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq -": {
+   "games": 138000,
+   "moves": {
+    "c2c3": 78700,
+    "b1d2": 18600,
+    "f1b5": 11800,
+    "c2c4": 7120,
+    "b1c3": 6860,
+    "f1e2": 4310,
+    "h2h3": 3730,
+    "d4c5": 2610,
+    "f1d3": 1990,
+    "a2a3": 1240,
+    "f3e5": 496,
+    "b2b3": 170
+   }
+  },
+  "r1b1kb1r/pp2pppp/1qn2n2/2pp4/3P1B2/2P1PN2/PP3PPP/RN1QKB1R w KQkq -": {
+   "games": 83000,
+   "moves": {
+    "d1b3": 35900,
+    "d1c2": 20200,
+    "d1c1": 10800,
+    "b2b3": 9690,
+    "b1a3": 4060,
+    "d4c5": 628,
+    "d1d2": 576,
+    "b1d2": 576,
+    "f1d3": 228
+   }
+  },
+  "r1b1kb1r/pp2pppp/1qn2n2/3p4/2pP1B2/1QP1PN2/PP3PPP/RN2KB1R w KQkq -": {
+   "games": 33500,
+   "moves": {
+    "b3b6": 20700,
+    "b3c2": 12600,
+    "b3a3": 45
+   }
+  },
+  "r3kb1r/pp2pppp/1qn2n2/3p1b2/2pP1B2/2P1PN2/PPQ2PPP/RN2KB1R w KQkq -": {
+   "games": 11900,
+   "moves": {
+    "c2c1": 10100,
+    "c2d2": 883,
+    "c2f5": 759,
+    "c2e2": 76,
+    "c2d1": 27,
+    "c2a4": 17
+   }
+  },
+  "rnbqkbnr/ppp1ppp1/8/3p3p/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq -": {
+   "games": 26800,
+   "moves": {
+    "e2e3": 10100,
+    "g1f3": 5980,
+    "h2h3": 5800,
+    "h2h4": 3010,
+    "b1c3": 1180,
+    "c2c4": 330,
+    "c2c3": 190,
+    "b1d2": 154,
+    "f2f3": 27
+   }
+  },
+  "rnbq1rk1/ppp1ppbp/3p1np1/8/3P1B2/3BPN2/PPP2PPP/RN1QK2R w KQ -": {
+   "games": 75500,
+   "moves": {
+    "b1d2": 22000,
+    "c2c3": 19500,
+    "e1g1": 17500,
+    "h2h3": 5350,
+    "h2h4": 3690,
+    "c2c4": 2770,
+    "b1c3": 2090,
+    "f4g3": 745,
+    "e3e4": 524,
+    "d1d2": 298,
+    "f4g5": 294,
+    "d1e2": 266
+   }
+  },
+  "r1bq1rk1/ppp1ppbp/2np1np1/8/3P1B2/2PBPN2/PP3PPP/RN1QK2R w KQ -": {
+   "games": 9490,
+   "moves": {
+    "b1d2": 5030,
+    "d1c2": 1730,
+    "e1g1": 1320,
+    "h2h3": 391,
+    "h2h4": 369,
+    "d3c2": 150,
+    "f4g3": 146,
+    "e3e4": 119,
+    "d1e2": 56,
+    "f4g5": 49,
+    "d1d2": 42,
+    "d1b3": 14
+   }
+  },
+  "r1bq1rk1/ppp2pbp/2np1np1/4p3/3P1B2/2PBPN2/PP1N1PPP/R2QK2R w KQ -": {
+   "games": 1930,
+   "moves": {
+    "d4e5": 1020,
+    "f4g5": 504,
+    "f4g3": 384,
+    "d1c2": 7,
+    "d4d5": 5,
+    "d3c2": 2,
+    "h2h3": 2,
+    "e1g1": 2
+   }
+  },
+  "r1bq1rk1/ppp2pb1/2np1npp/4p1B1/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQ -": {
+   "games": 219,
+   "moves": {
+    "g5h4": 116,
+    "g5f6": 99,
+    "d4e5": 3,
+    "d4d5": 1
+   }
+  },
+  "r1b2rk1/ppp1qpb1/2np1npp/4p3/3P3B/2PBPN2/PP1N1PPP/R2QK2R w KQ -": {
+   "games": 4,
+   "moves": {
+    "d1c2": 1,
+    "d2e4": 1,
+    "h4f6": 1,
+    "d1b3": 1
+   }
+  },
+  "r1b2rk1/ppp1qpb1/2np1n1p/4p1p1/3P3B/2PBPN2/PP1N1PPP/R2Q1RK1 w - -": {
+   "games": 0,
+   "moves": {}
+  },
+  "rnbq1rk1/ppp1ppbp/3p1np1/8/3P1B2/4PN1P/PPP1BPP1/RN1QK2R b KQ -": {
+   "games": 67400,
+   "moves": {
+    "b8d7": 25400,
+    "b8c6": 10900,
+    "c7c5": 10700,
+    "b7b6": 4870,
+    "f8e8": 4810,
+    "c7c6": 3040,
+    "f6d7": 1610,
+    "c8f5": 1260,
+    "f6h5": 848,
+    "a7a6": 800,
+    "f6d5": 484,
+    "h7h6": 477
+   }
+  },
+  "rnbq1rk1/ppp1ppbp/3p1np1/8/3P1B2/4PN2/PPP1BPPP/RN1QK2R w KQ -": {
+   "games": 61200,
+   "moves": {
+    "e1g1": 24500,
+    "h2h3": 16900,
+    "b1d2": 8210,
+    "c2c3": 4670,
+    "c2c4": 3150,
+    "h2h4": 1830,
+    "b1c3": 1150,
+    "a2a3": 160,
+    "f3d2": 147,
+    "f3g5": 114,
+    "f4g3": 110,
+    "a2a4": 74
+   }
+  },
+  "rnbqkbnr/ppp2ppp/4p3/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq -": {
+   "games": 1370000,
+   "moves": {
+    "e2e3": 854000,
+    "g1f3": 391000,
+    "b1c3": 43300,
+    "a2a3": 25400,
+    "c2c3": 15300,
+    "c2c4": 11600,
+    "h2h3": 10700,
+    "b1d2": 9510
+   }
+  },
+  "rnbqkbnr/ppp2ppp/4p3/3p4/3P1B2/4P3/PPP2PPP/RN1QKBNR b KQkq -": {
+   "games": 854000,
+   "moves": {
+    "f8d6": 245000,
+    "g8f6": 227000,
+    "c7c5": 215000,
+    "a7a6": 42200,
+    "b8c6": 25000,
+    "c7c6": 19400,
+    "f7f5": 19100,
+    "h7h6": 14500,
+    "f8e7": 13200,
+    "b8d7": 5910,
+    "g8e7": 4470,
+    "h7h5": 4220
+   }
+  },
+  "rn1qkbnr/ppp1pppp/8/3p1b2/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq -": {
+   "games": 824000,
+   "moves": {
+    "e2e3": 518000,
+    "g1f3": 183000,
+    "c2c4": 46900,
+    "b1c3": 40200,
+    "c2c3": 12500,
+    "h2h3": 8770,
+    "b1d2": 7960,
+    "f2f3": 2780,
+    "a2a3": 1290
+   }
+  },
+  "rn1qkbnr/ppp1pppp/8/3p1b2/3P1B2/4P3/PPP2PPP/RN1QKBNR b KQkq -": {
+   "games": 518000,
+   "moves": {
+    "e7e6": 288000,
+    "g8f6": 103000,
+    "a7a6": 37300,
+    "b8c6": 36100,
+    "c7c6": 27500,
+    "h7h6": 7520,
+    "c7c5": 5940,
+    "b8d7": 5360,
+    "f7f6": 4520,
+    "h7h5": 1010,
+    "g7g6": 841
+   }
+  },
+  "r1bqkbnr/ppp1pppp/2n5/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq -": {
+   "games": 804000,
+   "moves": {
+    "e2e3": 519000,
+    "g1f3": 194000,
+    "b1c3": 43700,
+    "c2c3": 28900,
+    "h2h3": 7320,
+    "c2c4": 5820,
+    "a2a3": 2600,
+    "b1d2": 956
+   }
+  },
+  "r1bqkbnr/ppp1pppp/2n5/3p4/3P1B2/4P3/PPP2PPP/RN1QKBNR b KQkq -": {
+   "games": 519000,
+   "moves": {
+    "c8f5": 160000,
+    "g8f6": 157000,
+    "a7a6": 80600,
+    "e7e6": 46900,
+    "f7f6": 33600,
+    "g7g6": 12400,
+    "h7h6": 9770,
+    "e7e5": 7410,
+    "c8d7": 4060,
+    "h7h5": 2760,
+    "f7f5": 1340,
+    "b7b6": 933
+   }
+  },
+  "rnbqkbnr/pp2pppp/2p5/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq -": {
+   "games": 530000,
+   "moves": {
+    "e2e3": 329000,
+    "g1f3": 129000,
+    "c2c3": 26100,
+    "b1c3": 16500,
+    "c2c4": 7810,
+    "b1d2": 7330,
+    "h2h3": 6360,
+    "f4b8": 4960,
+    "a2a3": 1260,
+    "e2e4": 647,
+    "f2f3": 561
+   }
+  },
+  "rnbqkb1r/pppp1ppp/4pn2/8/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq -": {
+   "games": 751000,
+   "moves": {
+    "e2e3": 487000,
+    "g1f3": 175000,
+    "b1c3": 31900,
+    "h2h3": 14500,
+    "c2c4": 11800,
+    "b1d2": 9630,
+    "a2a3": 9010,
+    "c2c3": 7040,
+    "f2f3": 1200,
+    "e2e4": 1180,
+    "f4g5": 1020
+   }
+  },
+  "rnbqkb1r/pppp1ppp/4pn2/8/3P1B2/4P3/PPP2PPP/RN1QKBNR b KQkq -": {
+   "games": 487000,
+   "moves": {
+    "d7d5": 240000,
+    "c7c5": 107000,
+    "b7b6": 54100,
+    "f8e7": 27500,
+    "b8c6": 10600,
+    "d7d6": 9990,
+    "f8b4": 9020,
+    "f8d6": 6500,
+    "g7g6": 4820,
+    "a7a6": 4760,
+    "f6d5": 3920,
+    "h7h6": 3460
+   }
+  },
+  "rnbqkb1r/ppp1pppp/3p1n2/8/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq -": {
+   "games": 531000,
+   "moves": {
+    "e2e3": 285000,
+    "g1f3": 127000,
+    "b1c3": 81100,
+    "h2h3": 15100,
+    "c2c4": 8740,
+    "b1d2": 5840,
+    "c2c3": 4380,
+    "e2e4": 1150,
+    "f2f3": 1080
+   }
+  },
+  "rnbqkb1r/ppp1pppp/3p1n2/8/3P1B2/4P3/PPP2PPP/RN1QKBNR b KQkq -": {
+   "games": 284000,
+   "moves": {
+    "g7g6": 144000,
+    "b8d7": 43100,
+    "c7c6": 19500,
+    "b8c6": 18600,
+    "c8f5": 18500,
+    "e7e6": 7000,
+    "h7h6": 5650,
+    "c8g4": 5600,
+    "c7c5": 5220,
+    "b7b6": 4960,
+    "a7a6": 3670,
+    "e7e5": 2550
+   }
+  },
+  "rnbqkbnr/pppp1ppp/4p3/8/3P1B2/8/PPP1PPPP/RN1QKBNR b KQkq -": {
+   "games": 889000,
+   "moves": {
+    "d7d5": 412000,
+    "c7c5": 101000,
+    "g8f6": 94600,
+    "d7d6": 69200,
+    "b7b6": 55700,
+    "f7f5": 38500,
+    "c7c6": 20500,
+    "b8c6": 16600,
+    "g8e7": 16000,
+    "g7g6": 9880,
+    "f8e7": 9730,
+    "h7h6": 9560
+   }
+  },
+  "rnbqkbnr/ppp1pppp/8/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq -": {
+   "games": 5710000,
+   "moves": {
+    "g8f6": 2020000,
+    "e7e6": 884000,
+    "b8c6": 864000,
+    "c8f5": 631000,
+    "c7c6": 389000,
+    "c7c5": 347000,
+    "c8g4": 281000,
+    "g7g6": 103000,
+    "h7h6": 67700,
+    "f7f5": 35600,
+    "f7f6": 27500,
+    "a7a6": 21000
+   }
+  },
+  "rn1qkb1r/ppp1pppp/5n2/3p1b2/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq -": {
+   "games": 447000,
+   "moves": {
+    "g1f3": 131000,
+    "c2c4": 111000,
+    "f1d3": 93500,
+    "c2c3": 39400,
+    "b1d2": 31200,
+    "h2h3": 16600,
+    "b1c3": 11900,
+    "f1e2": 4480,
+    "f2f3": 3230,
+    "a2a3": 2640,
+    "h2h4": 1210,
+    "f1b5": 831
+   }
+  },
+  "rn1qkbnr/ppp2ppp/4p3/3p1b2/2PP1B2/4P3/PP3PPP/RN1QKBNR b KQkq -": {
+   "games": 59300,
+   "moves": {
+    "c7c6": 20500,
+    "g8f6": 11300,
+    "f8d6": 6860,
+    "f8b4": 4840,
+    "d5c4": 4780,
+    "c7c5": 4340,
+    "f5b1": 3440,
+    "b8c6": 1200,
+    "a7a6": 671,
+    "h7h6": 365,
+    "b8d7": 278,
+    "h7h5": 145
+   }
+  },
+  "rnbqkb1r/ppp2ppp/4pn2/3p4/3P1B2/4PN2/PPP2PPP/RN1QKB1R b KQkq -": {
+   "games": 1040000,
+   "moves": {
+    "c7c5": 347000,
+    "f8d6": 346000,
+    "f8e7": 125000,
+    "b8d7": 44000,
+    "b8c6": 38500,
+    "a7a6": 35700,
+    "c7c6": 23700,
+    "h7h6": 21700,
+    "f6h5": 16600,
+    "b7b6": 14700,
+    "f8b4": 12400,
+    "g7g6": 6530
+   }
+  },
+  "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/2N5/PPP1PPPP/R2QKBNR b KQkq -": {
+   "games": 654000,
+   "moves": {
+    "e7e6": 149000,
+    "c8f5": 130000,
+    "a7a6": 111000,
+    "c7c6": 107000,
+    "c7c5": 57700,
+    "b8c6": 44700,
+    "g7g6": 32900,
+    "c8g4": 6990,
+    "c8d7": 4190,
+    "h7h6": 2710,
+    "b8d7": 2630,
+    "f6h5": 2300
+   }
+  },
+  "rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 53000,
+   "moves": {
+    "b8c6": 17800,
+    "c5d4": 11800,
+    "a7a6": 9940,
+    "e7e6": 5790,
+    "c8f5": 2780,
+    "d8b6": 2150,
+    "c8g4": 940,
+    "c5c4": 940,
+    "g7g6": 254,
+    "d8a5": 219,
+    "c8d7": 205,
+    "b8d7": 63
+   }
+  },
+  "r1bqkb1r/ppp2ppp/2n2n2/1N1pP3/5B2/8/PPP1PPPP/R2QKBNR b KQkq -": {
+   "games": 31400,
+   "moves": {
+    "f6h5": 18600,
+    "f6e4": 4930,
+    "f6d7": 2460,
+    "a7a6": 2180,
+    "c6e5": 2140,
+    "f6g4": 715,
+    "f8b4": 176,
+    "f6g8": 37,
+    "d8e7": 35,
+    "c8e6": 31,
+    "g7g5": 29,
+    "f8d6": 21
+   }
+  },
+  "r1bqkb1r/ppp1pppp/2n2n2/1N1p4/3P1B2/8/PPP1PPPP/R2QKBNR b KQkq -": {
+   "games": 46100,
+   "moves": {
+    "e7e5": 42900,
+    "c8f5": 553,
+    "e7e6": 550,
+    "a7a6": 447,
+    "f6h5": 363,
+    "a8b8": 345,
+    "e8d7": 248,
+    "c8d7": 182,
+    "d8d7": 139,
+    "c6d4": 73,
+    "f6e4": 59,
+    "c6a5": 37
+   }
+  },
+  "rn1qkb1r/ppp2ppp/4pnb1/3p4/3P1B1P/2NBP3/PPP2PP1/R2QK1NR b KQkq -": {
+   "games": 584,
+   "moves": {
+    "f8d6": 173,
+    "c7c5": 67,
+    "f8b4": 66,
+    "g6d3": 50,
+    "h7h6": 43,
+    "f6h5": 33,
+    "h7h5": 31,
+    "g6h5": 24,
+    "b8d7": 23,
+    "b8c6": 18,
+    "a7a6": 16,
+    "c7c6": 15
+   }
+  },
+  "rn1qkb1r/ppp2ppp/4pn2/3p1b2/3P1B2/2NBP3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 10800,
+   "moves": {
+    "f5d3": 4210,
+    "f5g6": 3420,
+    "f6e4": 780,
+    "f8b4": 584,
+    "f5g4": 535,
+    "f8d6": 534,
+    "c7c6": 174,
+    "c7c5": 145,
+    "b8c6": 82,
+    "f8e7": 79,
+    "b8d7": 71,
+    "a7a6": 60
+   }
+  },
+  "rn1qkb1r/ppp1pppp/5n2/3p1b2/3P1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 80900,
+   "moves": {
+    "e7e6": 54000,
+    "a7a6": 9260,
+    "c7c6": 9000,
+    "b8c6": 4190,
+    "c7c5": 1420,
+    "b8d7": 1260,
+    "h7h6": 923,
+    "g7g6": 237,
+    "f6h5": 160,
+    "f6e4": 149,
+    "e7e5": 65,
+    "h7h5": 52
+   }
+  },
+  "rnb1k2r/pp3ppp/4pn2/q1pp4/3P1B2/P1P1PN2/2P2PPP/R2QKB1R w KQkq -": {
+   "games": 390,
+   "moves": {
+    "d1d2": 122,
+    "d4c5": 58,
+    "f1d3": 55,
+    "d1d3": 47,
+    "f3d2": 42,
+    "f1e2": 39,
+    "a1b1": 9,
+    "f4e5": 5,
+    "f4b8": 5,
+    "f3e5": 2,
+    "a3a4": 2,
+    "a1c1": 1
+   }
+  },
+  "rnbqk2r/pp3ppp/4pn2/2pp4/3P1B2/P1P1P3/2P2PPP/R2QKBNR w KQkq -": {
+   "games": 712,
+   "moves": {
+    "g1f3": 210,
+    "d4c5": 124,
+    "c3c4": 120,
+    "f1b5": 78,
+    "f1d3": 38,
+    "f4b8": 37,
+    "f2f3": 34,
+    "f4g5": 14,
+    "g1e2": 11,
+    "a1b1": 10,
+    "h2h3": 8,
+    "f1e2": 8
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/3P1B2/P1b1P3/1PP2PPP/R2QKBNR w KQkq -": {
+   "games": 2730,
+   "moves": {
+    "b2c3": 2730
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/1b1P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 27500,
+   "moves": {
+    "f1d3": 13300,
+    "g1e2": 4590,
+    "a2a3": 4170,
+    "g1f3": 2200,
+    "d1d3": 1270,
+    "f2f3": 664,
+    "d1d2": 423,
+    "f1b5": 327,
+    "g2g4": 181,
+    "d1f3": 110,
+    "h2h3": 91,
+    "f1e2": 55
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/bN1p4/3P1B2/2P5/PP2PPPP/R2QKBNR w KQkq -": {
+   "games": 2450,
+   "moves": {
+    "a2a4": 748,
+    "b2b4": 742,
+    "e2e3": 473,
+    "d1a4": 262,
+    "g1f3": 195,
+    "b5a3": 8,
+    "f2f3": 8,
+    "f4g5": 5,
+    "h2h4": 2,
+    "a2a3": 1,
+    "d1b3": 1,
+    "b2b3": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/1N1p4/1b1P1B2/8/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 2670,
+   "moves": {
+    "c2c3": 2650,
+    "f4d2": 8,
+    "b5c3": 7,
+    "d1d2": 1
+   }
+  },
+  "rnbqk2r/pp3ppp/4pn2/2pp4/1b1P1B2/2NBP3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 3320,
+   "moves": {
+    "d4c5": 2420,
+    "a2a3": 491,
+    "g1f3": 219,
+    "d3b5": 70,
+    "g1e2": 62,
+    "f2f3": 15,
+    "f4b8": 15,
+    "d1f3": 9,
+    "f4g5": 7,
+    "g2g4": 5,
+    "h2h3": 2,
+    "d1d2": 2
+   }
+  },
+  "rnbqkb1r/ppp2ppp/4pn2/1N1p4/3P1B2/8/PPP1PPPP/R2QKBNR b KQkq -": {
+   "games": 59600,
+   "moves": {
+    "b8a6": 37000,
+    "f8d6": 18800,
+    "f8b4": 2670,
+    "c7c6": 349,
+    "a7a6": 209,
+    "c7c5": 185,
+    "f8e7": 141,
+    "e6e5": 116,
+    "b8c6": 39,
+    "c8d7": 29,
+    "b8d7": 12,
+    "h7h6": 11
+   }
+  },
+  "r1bqkb1r/pp3ppp/n1p1pn2/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 22200,
+   "moves": {
+    "a6c7": 8260,
+    "f8d6": 5220,
+    "f8b4": 3740,
+    "a6b8": 1150,
+    "b7b5": 960,
+    "f8e7": 834,
+    "b7b6": 573,
+    "d8b6": 505,
+    "d8a5": 377,
+    "c6c5": 199,
+    "h7h6": 148,
+    "c8d7": 83
+   }
+  },
+  "r1bqkb1r/ppp2ppp/n3pn2/1N1p4/3P1B2/4P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 30900,
+   "moves": {
+    "c7c6": 22400,
+    "f8e7": 2700,
+    "c8d7": 2520,
+    "c7c5": 1220,
+    "f8b4": 1050,
+    "f8d6": 640,
+    "f6e4": 128,
+    "f6h5": 68,
+    "b7b6": 68,
+    "h7h6": 62,
+    "g7g6": 25,
+    "d8e7": 7
+   }
+  },
+  "rnbqkb1r/1pp1pppp/p4n2/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 82400,
+   "moves": {
+    "c8f5": 23600,
+    "e7e6": 23100,
+    "b8c6": 12200,
+    "c7c5": 8730,
+    "c8g4": 4020,
+    "g7g6": 3550,
+    "h7h6": 2480,
+    "b7b5": 1550,
+    "b8d7": 1230,
+    "c7c6": 1110,
+    "c8d7": 278,
+    "b7b6": 270
+   }
+  },
+  "rnbqkb1r/pp2pppp/2p2n2/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 115000,
+   "moves": {
+    "c8f5": 54100,
+    "e7e6": 19400,
+    "c8g4": 13100,
+    "g7g6": 12200,
+    "b8d7": 7690,
+    "d8b6": 3030,
+    "h7h6": 2400,
+    "a7a6": 1030,
+    "d8a5": 377,
+    "f6h5": 281,
+    "f6e4": 261,
+    "b7b5": 238
+   }
+  },
+  "rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq -": {
+   "games": 1420000,
+   "moves": {
+    "g8f6": 657000,
+    "e7e6": 299000,
+    "c7c6": 161000,
+    "c8f5": 125000,
+    "b8c6": 71000,
+    "c7c5": 47500,
+    "g7g6": 15200,
+    "f7f5": 8680,
+    "c8g4": 8330,
+    "a7a6": 7790,
+    "e7e5": 6670,
+    "h7h6": 6140
+   }
+  },
+  "r1bqkb1r/ppp2ppp/n3pn2/1N1p4/3P1B2/8/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 37000,
+   "moves": {
+    "e2e3": 30900,
+    "a2a3": 2380,
+    "g1f3": 1770,
+    "c2c3": 490,
+    "b5c3": 357,
+    "a2a4": 302,
+    "c2c4": 209,
+    "f2f3": 200,
+    "h2h3": 98,
+    "d1d3": 76,
+    "d1d2": 59,
+    "e2e4": 50
+   }
+  },
+  "r1bqkb1r/pp3ppp/n1p1pn2/1N1p4/3P1B2/4P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 22400,
+   "moves": {
+    "b5c3": 22200,
+    "b5a3": 138,
+    "b5d6": 59,
+    "c2c3": 12,
+    "c2c4": 4,
+    "g1f3": 4,
+    "b5c7": 3,
+    "f4g5": 1,
+    "h2h3": 1,
+    "a2a4": 1,
+    "f4c7": 1,
+    "d1d3": 1
+   }
+  },
+  "r1bqkb1r/ppn2ppp/2p1pn2/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 8260,
+   "moves": {
+    "g1f3": 5360,
+    "f1d3": 1420,
+    "a2a3": 602,
+    "g2g4": 284,
+    "d1f3": 120,
+    "h2h3": 116,
+    "h2h4": 63,
+    "f2f3": 57,
+    "a2a4": 48,
+    "d1d2": 46,
+    "f4c7": 41,
+    "f1e2": 37
+   }
+  },
+  "rn1qkb1r/ppp1pppp/5n2/3p1b2/3P1B2/2N5/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 146000,
+   "moves": {
+    "e2e3": 69000,
+    "f2f3": 37100,
+    "c3b5": 16500,
+    "g1f3": 16400,
+    "h2h3": 2510,
+    "d1d2": 2050,
+    "a2a3": 1310,
+    "h2h4": 419,
+    "g2g3": 280,
+    "e2e4": 187,
+    "f4e5": 58,
+    "d1b1": 37
+   }
+  },
+  "rn1qkb1r/ppp2ppp/4pn2/3p1b2/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 59000,
+   "moves": {
+    "g1f3": 15400,
+    "f2f3": 13200,
+    "f1d3": 10600,
+    "a2a3": 9260,
+    "c3b5": 6410,
+    "h2h3": 1430,
+    "f1e2": 772,
+    "f1b5": 607,
+    "h2h4": 587,
+    "d1d2": 176,
+    "g1e2": 133,
+    "d1f3": 72
+   }
+  },
+  "rn1qkb1r/ppp2ppp/4pn2/3p4/3P1B2/2NbP3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 4210,
+   "moves": {
+    "d1d3": 2910,
+    "c2d3": 1300,
+    "d1d2": 2,
+    "b2b3": 1
+   }
+  },
+  "rn1qkb1r/ppp2ppp/4pn2/3p4/3P1B2/2NPP3/PP3PPP/R2QK1NR b KQkq -": {
+   "games": 2990,
+   "moves": {
+    "f8d6": 992,
+    "f8b4": 428,
+    "c7c5": 419,
+    "c7c6": 358,
+    "a7a6": 258,
+    "f8e7": 180,
+    "b8c6": 154,
+    "b8d7": 152,
+    "h7h6": 31,
+    "f6h5": 13,
+    "b7b6": 2,
+    "g7g6": 1
+   }
+  },
+  "rn1qk2r/ppp2ppp/3bpn2/3p4/3P1B2/2NPP3/PP3PPP/R2QK1NR w KQkq -": {
+   "games": 993,
+   "moves": {
+    "f4g3": 383,
+    "f4d6": 171,
+    "g1e2": 130,
+    "f4g5": 122,
+    "f4e5": 52,
+    "d1b3": 50,
+    "g1f3": 37,
+    "d1f3": 28,
+    "g2g3": 5,
+    "d1a4": 4,
+    "g1h3": 4,
+    "c3e2": 2
+   }
+  },
+  "rn1qk2r/ppp2ppp/3bpn2/3p4/3P1B2/1QNPP3/PP3PPP/R3K1NR b KQkq -": {
+   "games": 50,
+   "moves": {
+    "b7b6": 26,
+    "d6f4": 18,
+    "d8c8": 2,
+    "b8d7": 1,
+    "b8c6": 1,
+    "e8h8": 1,
+    "c7c6": 1
+   }
+  },
+  "rnq1k2r/ppp2ppp/3bpn2/3p4/3P1B2/1QNPP3/PP3PPP/R3K1NR w KQkq -": {
+   "games": 5,
+   "moves": {
+    "f4d6": 3,
+    "f4g3": 2
+   }
+  },
+  "rnq1k2r/ppp2ppp/3bpn2/3p4/3P4/1QNPP1B1/PP3PPP/R3K1NR b KQkq -": {
+   "games": 2,
+   "moves": {
+    "e8h8": 2
+   }
+  },
+  "rnbqkb1r/1pp1pppp/p4n2/3p4/3P1B2/2N5/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 112000,
+   "moves": {
+    "e2e3": 81200,
+    "g1f3": 17300,
+    "f2f3": 4570,
+    "h2h3": 2360,
+    "d1d2": 1980,
+    "a2a3": 1540,
+    "d1d3": 1150,
+    "e2e4": 653,
+    "g2g3": 559,
+    "a2a4": 332,
+    "h2h4": 254,
+    "f4e5": 138
+   }
+  },
+  "rn1qkb1r/1pp1pppp/p4n2/3p1b2/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 34400,
+   "moves": {
+    "f2f3": 14000,
+    "g1f3": 9170,
+    "f1d3": 7700,
+    "h2h3": 1250,
+    "a2a3": 841,
+    "f1e2": 698,
+    "h2h4": 266,
+    "g1e2": 92,
+    "d1d2": 82,
+    "d1f3": 64,
+    "a2a4": 45,
+    "g2g4": 31
+   }
+  },
+  "rn1qkb1r/1pp1pppp/p4n2/3p1b2/3P1B2/2NBP3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 7720,
+   "moves": {
+    "f5d3": 3540,
+    "f5g6": 2170,
+    "e7e6": 536,
+    "f6e4": 495,
+    "f5g4": 446,
+    "d8d7": 319,
+    "f5d7": 71,
+    "f5e4": 67,
+    "g7g6": 20,
+    "f5e6": 19,
+    "b8c6": 17,
+    "b8d7": 9
+   }
+  },
+  "rn1qkb1r/1pp1pppp/p4n2/3p4/3P1B2/2NbP3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 3540,
+   "moves": {
+    "d1d3": 2420,
+    "c2d3": 1120
+   }
+  },
+  "rn1qkb1r/1pp1pppp/p4n2/3p4/3P1B2/2NPP3/PP3PPP/R2QK1NR b KQkq -": {
+   "games": 1190,
+   "moves": {
+    "e7e6": 950,
+    "b8c6": 138,
+    "b8d7": 31,
+    "h7h6": 29,
+    "c7c6": 24,
+    "c7c5": 13,
+    "g7g6": 4,
+    "f6h5": 4,
+    "e7e5": 1
+   }
+  },
+  "rn1qkb1r/1pp2ppp/p3pn2/3p4/3P1B2/2NPP3/PP3PPP/R2QK1NR w KQkq -": {
+   "games": 1300,
+   "moves": {
+    "g1f3": 718,
+    "d1b3": 137,
+    "a2a3": 108,
+    "h2h3": 71,
+    "e3e4": 71,
+    "g1e2": 69,
+    "a1c1": 58,
+    "d1f3": 15,
+    "d1a4": 14,
+    "g2g4": 13,
+    "f4g5": 6,
+    "a2a4": 5
+   }
+  },
+  "rnbqkb1r/pp2pppp/2p2n2/3p4/3P1B2/2N5/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 157000,
+   "moves": {
+    "e2e3": 111000,
+    "g1f3": 24000,
+    "f2f3": 8180,
+    "h2h3": 3760,
+    "d1d2": 3730,
+    "d1d3": 1680,
+    "a2a3": 1390,
+    "f4b8": 1010,
+    "e2e4": 834,
+    "g2g3": 456,
+    "h2h4": 422,
+    "f4e5": 120
+   }
+  },
+  "rn1qkb1r/pp2pppp/2p2n2/3p1b2/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 71200,
+   "moves": {
+    "f2f3": 32000,
+    "g1f3": 17200,
+    "f1d3": 15400,
+    "h2h3": 2400,
+    "f1e2": 1560,
+    "a2a3": 1110,
+    "h2h4": 549,
+    "d1d2": 285,
+    "g1e2": 172,
+    "d1f3": 95,
+    "f4b8": 80,
+    "b2b4": 47
+   }
+  },
+  "rn1qkb1r/pp2pppp/2p2n2/3p1b2/3P1B2/2NBP3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 15500,
+   "moves": {
+    "f5d3": 7340,
+    "f5g6": 4330,
+    "e7e6": 1610,
+    "f5g4": 739,
+    "f6e4": 702,
+    "d8d7": 489,
+    "d8c8": 85,
+    "g7g6": 54,
+    "f5e4": 46,
+    "b8d7": 45,
+    "f5d7": 28,
+    "f5e6": 18
+   }
+  },
+  "rn1qkb1r/pp2pppp/2p2n2/3p4/3P1B2/2NbP3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 7340,
+   "moves": {
+    "d1d3": 5120,
+    "c2d3": 2210,
+    "d1d2": 3,
+    "g1f3": 1,
+    "f4b8": 1,
+    "d1c1": 1
+   }
+  },
+  "rn1qkb1r/pp2pppp/2p2n2/3p4/3P1B2/2NPP3/PP3PPP/R2QK1NR b KQkq -": {
+   "games": 2740,
+   "moves": {
+    "e7e6": 2040,
+    "b8d7": 518,
+    "d8b6": 65,
+    "h7h6": 46,
+    "g7g6": 45,
+    "f6h5": 7,
+    "e7e5": 5,
+    "b8a6": 5,
+    "a7a6": 4,
+    "d8a5": 4,
+    "b7b5": 3,
+    "g7g5": 2
+   }
+  },
+  "rn1qkb1r/pp3ppp/2p1pn2/3p4/3P1B2/2NPP3/PP3PPP/R2QK1NR w KQkq -": {
+   "games": 2730,
+   "moves": {
+    "g1f3": 1550,
+    "h2h3": 230,
+    "a2a3": 229,
+    "d1b3": 216,
+    "e3e4": 151,
+    "g1e2": 149,
+    "a1c1": 50,
+    "g2g4": 34,
+    "d1f3": 31,
+    "h2h4": 25,
+    "f4g5": 11,
+    "f4b8": 11
+   }
+  },
+  "rnbqkb1r/ppp2ppp/4pn2/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 136000,
+   "moves": {
+    "f8d6": 38900,
+    "c7c5": 29300,
+    "f8b4": 22300,
+    "a7a6": 17000,
+    "f8e7": 11200,
+    "c7c6": 6360,
+    "b8c6": 2940,
+    "b8d7": 2370,
+    "h7h6": 1600,
+    "c8d7": 1170,
+    "b7b6": 1120,
+    "g7g6": 791
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/1b1P1B2/2NBP3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 13300,
+   "moves": {
+    "e8h8": 4460,
+    "c7c5": 3300,
+    "b4c3": 1310,
+    "b8c6": 1110,
+    "b8d7": 822,
+    "f6e4": 582,
+    "h7h6": 504,
+    "c7c6": 458,
+    "b7b6": 269,
+    "a7a6": 188,
+    "c8d7": 175,
+    "f6h5": 33
+   }
+  },
+  "rnbqk2r/pp3ppp/4pn2/2Pp4/1b3B2/2NBP3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 2420,
+   "moves": {
+    "b8d7": 824,
+    "b4c5": 640,
+    "d8a5": 285,
+    "b4c3": 273,
+    "b8c6": 220,
+    "e8h8": 139,
+    "d5d4": 19,
+    "b8a6": 7,
+    "a7a6": 4,
+    "f6e4": 3,
+    "b7b6": 2,
+    "c8d7": 1
+   }
+  },
+  "r1bqk2r/pp1n1ppp/4pn2/2Pp4/1b3B2/2NBP3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 823,
+   "moves": {
+    "g1e2": 315,
+    "g1f3": 209,
+    "a2a3": 103,
+    "f4d6": 90,
+    "d3b5": 54,
+    "c5c6": 32,
+    "g2g4": 7,
+    "d1d2": 4,
+    "d1f3": 3,
+    "f4g3": 2,
+    "d1e2": 1,
+    "h2h4": 1
+   }
+  },
+  "r1bqk2r/pp1n1ppp/4pn2/2Pp4/1b3B2/2NBP3/PPP1NPPP/R2QK2R b KQkq -": {
+   "games": 432,
+   "moves": {
+    "d7c5": 163,
+    "b4c5": 118,
+    "a7a6": 110,
+    "e8h8": 23,
+    "e6e5": 14,
+    "f6h5": 2,
+    "b4c3": 1,
+    "a7a5": 1
+   }
+  },
+  "r1bqk2r/pp1n1ppp/4pn2/2bp4/5B2/2NBP3/PPP1NPPP/R2QK2R w KQkq -": {
+   "games": 126,
+   "moves": {
+    "e1h1": 66,
+    "c3b5": 14,
+    "h2h3": 11,
+    "e3e4": 10,
+    "a2a3": 8,
+    "f4g5": 5,
+    "d1d2": 4,
+    "f4g3": 3,
+    "e2c1": 1,
+    "d3b5": 1,
+    "f2f3": 1,
+    "c3a4": 1
+   }
+  },
+  "r1bqk2r/pp1n1ppp/4pn2/2bp4/5B2/2NBP3/PPP1NPPP/R2Q1RK1 b kq -": {
+   "games": 66,
+   "moves": {
+    "e8h8": 29,
+    "f6h5": 24,
+    "a7a6": 9,
+    "e6e5": 3,
+    "h7h6": 1
+   }
+  },
+  "rnbqkb1r/ppp2ppp/4pn2/3p4/3P1B2/2N2N2/PPP1PPPP/R2QKB1R b KQkq -": {
+   "games": 70700,
+   "moves": {
+    "f8d6": 18000,
+    "c7c5": 16700,
+    "f8b4": 10600,
+    "a7a6": 9050,
+    "f8e7": 6190,
+    "c7c6": 3780,
+    "b8c6": 2190,
+    "b8d7": 1490,
+    "h7h6": 940,
+    "b7b6": 597,
+    "c8d7": 456,
+    "g7g6": 371
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/1b1P1B2/2N2N2/PPP1PPPP/R2QKB1R w KQkq -": {
+   "games": 11800,
+   "moves": {
+    "a2a3": 4460,
+    "e2e3": 3940,
+    "d1d3": 1370,
+    "f4d2": 855,
+    "d1d2": 401,
+    "f4g5": 204,
+    "h2h3": 140,
+    "f3e5": 130,
+    "f3d2": 99,
+    "g2g3": 67,
+    "f4e5": 24,
+    "e2e4": 15
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/1b1P1B2/P1N2N2/1PP1PPPP/R2QKB1R b KQkq -": {
+   "games": 4460,
+   "moves": {
+    "b4c3": 3050,
+    "b4a5": 1130,
+    "b4d6": 198,
+    "b4e7": 72,
+    "e8h8": 8,
+    "c7c6": 1,
+    "f6e4": 1,
+    "b8c6": 1,
+    "b4a3": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/3P1B2/P1b2N2/1PP1PPPP/R2QKB1R w KQkq -": {
+   "games": 3050,
+   "moves": {
+    "b2c3": 3050,
+    "f4d2": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/3P1B2/P1P2N2/2P1PPPP/R2QKB1R b KQkq -": {
+   "games": 3490,
+   "moves": {
+    "e8h8": 1330,
+    "f6e4": 698,
+    "c7c5": 625,
+    "b8c6": 245,
+    "b8d7": 196,
+    "c7c6": 135,
+    "h7h6": 99,
+    "b7b6": 87,
+    "c8d7": 24,
+    "f6h5": 14,
+    "a7a6": 12,
+    "b7b5": 8
+   }
+  },
+  "rnbqk2r/pp3ppp/4pn2/2pp4/3P1B2/P1P2N2/2P1PPPP/R2QKB1R w KQkq -": {
+   "games": 645,
+   "moves": {
+    "e2e3": 350,
+    "d4c5": 161,
+    "f4g5": 27,
+    "c3c4": 24,
+    "f3e5": 16,
+    "a1b1": 12,
+    "h2h3": 9,
+    "d1b1": 7,
+    "f4d2": 7,
+    "f4b8": 7,
+    "g2g3": 7,
+    "f4e5": 7
+   }
+  },
+  "rnbqk2r/pp3ppp/4pn2/2pp4/3P1B2/P1P1PN2/2P2PPP/R2QKB1R b KQkq -": {
+   "games": 661,
+   "moves": {
+    "d8a5": 390,
+    "b8c6": 79,
+    "c5c4": 72,
+    "e8h8": 56,
+    "f6e4": 25,
+    "c5d4": 21,
+    "b8d7": 10,
+    "b7b6": 3,
+    "h7h6": 2,
+    "a7a5": 1,
+    "f6h5": 1,
+    "d8b6": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/1N1p4/1b1P1B2/2P5/PP2PPPP/R2QKBNR b KQkq -": {
+   "games": 2650,
+   "moves": {
+    "b4a5": 2450,
+    "b4d6": 190,
+    "a7a6": 2,
+    "e8h8": 2,
+    "c7c6": 1,
+    "f6h5": 1,
+    "b4e7": 1,
+    "b4c3": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/bN1p4/P2P1B2/2P5/1P2PPPP/R2QKBNR b KQkq -": {
+   "games": 747,
+   "moves": {
+    "a7a6": 580,
+    "c7c6": 80,
+    "e8h8": 37,
+    "a5b6": 32,
+    "c8d7": 8,
+    "b8c6": 4,
+    "f6h5": 3,
+    "b8a6": 2,
+    "b8d7": 1
+   }
+  },
+  "rnbqk2r/1pp2ppp/p3pn2/bN1p4/P2P1B2/2P5/1P2PPPP/R2QKBNR w KQkq -": {
+   "games": 580,
+   "moves": {
+    "b2b4": 462,
+    "b5a3": 112,
+    "e2e3": 6
+   }
+  },
+  "rnbqk2r/1pp2ppp/p3pn2/bN1p4/PP1P1B2/2P5/4PPPP/R2QKBNR b KQkq -": {
+   "games": 479,
+   "moves": {
+    "a6b5": 259,
+    "a5b4": 103,
+    "a5b6": 65,
+    "b8c6": 48,
+    "e8h8": 2,
+    "c8d7": 1,
+    "b7b6": 1
+   }
+  },
+  "r1bqk2r/1pp2ppp/p1n1pn2/bN1p4/PP1P1B2/2P5/4PPPP/R2QKBNR w KQkq -": {
+   "games": 50,
+   "moves": {
+    "b4a5": 45,
+    "e2e3": 3,
+    "g1f3": 1,
+    "b5a3": 1
+   }
+  },
+  "r1bqk2r/1pp2ppp/p1n1pn2/PN1p4/P2P1B2/2P5/4PPPP/R2QKBNR b KQkq -": {
+   "games": 45,
+   "moves": {
+    "a6b5": 43,
+    "c6a5": 2
+   }
+  },
+  "rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/2N5/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 60200,
+   "moves": {
+    "e2e3": 40600,
+    "d4c5": 6570,
+    "e2e4": 6380,
+    "c3b5": 2950,
+    "g1f3": 2550,
+    "f4b8": 262,
+    "f2f3": 239,
+    "d1d2": 226,
+    "h2h3": 116,
+    "a2a3": 103,
+    "f4e5": 68,
+    "d1d3": 56
+   }
+  },
+  "r1bqkb1r/pp2pppp/2n2n2/2pp4/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 21800,
+   "moves": {
+    "c3b5": 16500,
+    "g1f3": 2620,
+    "f1b5": 1100,
+    "d4c5": 553,
+    "a2a3": 229,
+    "d1d2": 217,
+    "h2h3": 166,
+    "f2f3": 152,
+    "f1e2": 69,
+    "f1d3": 59,
+    "g1e2": 42,
+    "d1f3": 14
+   }
+  },
+  "r1bqkb1r/pp2pppp/2n2n2/1Npp4/3P1B2/4P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 16200,
+   "moves": {
+    "e7e5": 9370,
+    "d8a5": 6320,
+    "c8g4": 120,
+    "c5d4": 90,
+    "c8f5": 69,
+    "e7e6": 53,
+    "e8d7": 53,
+    "a7a6": 51,
+    "d8b6": 30,
+    "a8b8": 18,
+    "g7g5": 16,
+    "f6h5": 15
+   }
+  },
+  "r1bqkb1r/pp3ppp/2n2n2/1Nppp3/3P1B2/4P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 9370,
+   "moves": {
+    "d4e5": 7220,
+    "f4e5": 2140,
+    "f4g3": 3,
+    "h2h3": 1,
+    "f4g5": 1,
+    "b5c7": 1
+   }
+  },
+  "r1bqkb1r/pp3ppp/2n2n2/1NppP3/5B2/4P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 7150,
+   "moves": {
+    "f6e4": 2170,
+    "a7a6": 1440,
+    "f6h5": 1170,
+    "d8a5": 862,
+    "f6d7": 752,
+    "f6g4": 477,
+    "c6e5": 139,
+    "c8g4": 47,
+    "c5c4": 40,
+    "f6g8": 22,
+    "g7g5": 21,
+    "c8e6": 2
+   }
+  },
+  "r1bqkb1r/pp3ppp/2n5/1NppP3/4nB2/4P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 2160,
+   "moves": {
+    "e5e6": 948,
+    "d1d5": 810,
+    "f2f3": 280,
+    "g1f3": 38,
+    "f1d3": 32,
+    "c2c3": 20,
+    "b5d6": 12,
+    "b5c7": 6,
+    "g1e2": 6,
+    "a2a4": 3,
+    "h2h4": 2,
+    "c2c4": 2
+   }
+  },
+  "r1bqkb1r/pp3ppp/2n5/1NpQP3/4nB2/4P3/PPP2PPP/R3KBNR b KQkq -": {
+   "games": 770,
+   "moves": {
+    "d8d5": 364,
+    "d8a5": 331,
+    "c8f5": 41,
+    "a7a6": 14,
+    "c6b4": 5,
+    "e4f2": 5,
+    "c8e6": 3,
+    "g7g5": 2,
+    "f7f5": 1,
+    "f8e7": 1,
+    "e4g5": 1,
+    "d8d6": 1
+   }
+  },
+  "r1b1kb1r/pp3ppp/2n5/qNpQP3/4nB2/4P3/PPP2PPP/R3KBNR w KQkq -": {
+   "games": 331,
+   "moves": {
+    "c2c3": 331
+   }
+  },
+  "r1b1kb1r/pp3ppp/2n5/qNpQP3/4nB2/2P1P3/PP3PPP/R3KBNR b KQkq -": {
+   "games": 787,
+   "moves": {
+    "c8f5": 388,
+    "a7a6": 151,
+    "e4c3": 105,
+    "c8e6": 43,
+    "e4f2": 40,
+    "g7g5": 23,
+    "f7f5": 14,
+    "c6b4": 8,
+    "a5b5": 7,
+    "c5c4": 4,
+    "f8e7": 2,
+    "f7f6": 1
+   }
+  },
+  "r1bqkb1r/1p3ppp/p1n2n2/1NppP3/5B2/4P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 1440,
+   "moves": {
+    "e5f6": 761,
+    "b5c3": 314,
+    "b5c7": 231,
+    "b5d6": 126,
+    "d1d5": 3,
+    "b5a3": 3,
+    "e5e6": 1,
+    "a2a4": 1
+   }
+  },
+  "r1bqkb1r/1p3ppp/p1n2n2/2ppP3/5B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 311,
+   "moves": {
+    "d5d4": 180,
+    "f6g4": 49,
+    "f6d7": 41,
+    "f6e4": 32,
+    "f6h5": 3,
+    "d8a5": 2,
+    "b7b6": 1,
+    "c8e6": 1,
+    "f6g8": 1,
+    "d8b6": 1
+   }
+  },
+  "r1bqkb1r/1p3ppp/p1n2n2/2p1P3/3p1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 180,
+   "moves": {
+    "e5f6": 100,
+    "e3d4": 75,
+    "c3e2": 5
+   }
+  },
+  "r1bqkb1r/1p3ppp/p1n2P2/2p5/3p1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 100,
+   "moves": {
+    "d4c3": 95,
+    "d8a5": 4,
+    "d8f6": 1
+   }
+  },
+  "r1bqkb1r/pp3ppp/2n5/1NppP2n/5B2/4P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 1100,
+   "moves": {
+    "d1h5": 945,
+    "d1d5": 93,
+    "e5e6": 35,
+    "g1f3": 11,
+    "f4g5": 6,
+    "b5d6": 5,
+    "b5c3": 2,
+    "f1e2": 1,
+    "f4g3": 1,
+    "c2c3": 1,
+    "c2c4": 1,
+    "g1e2": 1
+   }
+  },
+  "r1b1kb1r/pp2pppp/2n2n2/qNpp4/3P1B2/4P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 6310,
+   "moves": {
+    "c2c3": 6060,
+    "b5c3": 163,
+    "b2b4": 58,
+    "d1d2": 32
+   }
+  },
+  "r1b1kb1r/pp2pppp/2n2n2/qNpp4/3P1B2/2P1P3/PP3PPP/R2QKBNR b KQkq -": {
+   "games": 5940,
+   "moves": {
+    "e7e5": 4420,
+    "c5d4": 552,
+    "e8d7": 360,
+    "e8d8": 127,
+    "c8g4": 105,
+    "f6e4": 68,
+    "a5b5": 64,
+    "c5c4": 63,
+    "a8b8": 41,
+    "e7e6": 28,
+    "a7a6": 27,
+    "c8f5": 26
+   }
+  },
+  "r1b1kb1r/pp3ppp/2n2n2/qNppp3/3P1B2/2P1P3/PP3PPP/R2QKBNR w KQkq -": {
+   "games": 4410,
+   "moves": {
+    "d4e5": 3640,
+    "f4e5": 763,
+    "f4g5": 3,
+    "b5c7": 2,
+    "f4g3": 1,
+    "b2b4": 1
+   }
+  },
+  "r1b1kb1r/pp3ppp/2n2n2/qNppB3/3P4/2P1P3/PP3PPP/R2QKBNR b KQkq -": {
+   "games": 788,
+   "moves": {
+    "c6e5": 772,
+    "f6d7": 3,
+    "f6e4": 3,
+    "c5d4": 2,
+    "c8g4": 2,
+    "e8d8": 2,
+    "c8f5": 1,
+    "c8d7": 1,
+    "e8d7": 1,
+    "c5c4": 1
+   }
+  },
+  "r1b1kb1r/pp3ppp/5n2/qNppn3/3P4/2P1P3/PP3PPP/R2QKBNR w KQkq -": {
+   "games": 772,
+   "moves": {
+    "d4e5": 772
+   }
+  },
+  "r1bqkb1r/ppp1pppp/2n2n2/3p4/3P1B2/2N5/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 72500,
+   "moves": {
+    "c3b5": 46300,
+    "e2e3": 17500,
+    "g1f3": 4510,
+    "f2f3": 1270,
+    "d1d2": 861,
+    "h2h3": 727,
+    "a2a3": 627,
+    "d1d3": 240,
+    "e2e4": 168,
+    "g2g3": 96,
+    "h2h4": 41,
+    "f4g5": 24
+   }
+  },
+  "r1bqkb1r/ppp2ppp/2n2n2/1N1pp3/3P1B2/8/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 42900,
+   "moves": {
+    "d4e5": 31400,
+    "f4e5": 11400,
+    "f4g5": 24,
+    "f4g3": 17,
+    "b5c7": 3,
+    "f4e3": 1,
+    "b2b3": 1,
+    "f4h6": 1,
+    "e2e3": 1
+   }
+  },
+  "r1bqkb1r/ppp2ppp/2n5/1N1pP3/4nB2/8/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 4930,
+   "moves": {
+    "e5e6": 2900,
+    "d1d5": 1450,
+    "f2f3": 312,
+    "g1f3": 99,
+    "e2e3": 85,
+    "c2c3": 24,
+    "a2a3": 19,
+    "b5c7": 6,
+    "g2g3": 6,
+    "g1h3": 4,
+    "f4g3": 3,
+    "h2h4": 3
+   }
+  },
+  "r1bqkb1r/ppp2ppp/2n5/1N1QP3/4nB2/8/PPP1PPPP/R3KBNR b KQkq -": {
+   "games": 1440,
+   "moves": {
+    "d8d5": 1070,
+    "f8b4": 202,
+    "c8f5": 80,
+    "e4c5": 23,
+    "a7a6": 22,
+    "e4f2": 21,
+    "c6b4": 5,
+    "c8d7": 4,
+    "c8e6": 3,
+    "f7f5": 2,
+    "d8e7": 1,
+    "g7g5": 1
+   }
+  },
+  "r2qkb1r/ppp2ppp/2n5/1N1QPb2/4nB2/8/PPP1PPPP/R3KBNR w KQkq -": {
+   "games": 82,
+   "moves": {
+    "d5d8": 49,
+    "f2f3": 16,
+    "e5e6": 8,
+    "e1a1": 6,
+    "g2g4": 1,
+    "f4g5": 1,
+    "a1d1": 1
+   }
+  },
+  "r2Qkb1r/ppp2ppp/2n5/1N2Pb2/4nB2/8/PPP1PPPP/R3KBNR b KQkq -": {
+   "games": 49,
+   "moves": {
+    "a8d8": 32,
+    "e8d8": 15,
+    "c6d8": 2
+   }
+  },
+  "3rkb1r/ppp2ppp/2n5/1N2Pb2/4nB2/8/PPP1PPPP/R3KBNR w KQk -": {
+   "games": 32,
+   "moves": {
+    "b5c7": 21,
+    "f2f3": 7,
+    "a2a3": 1,
+    "e2e3": 1,
+    "c2c3": 1,
+    "e5e6": 1
+   }
+  },
+  "r1b1kb1r/ppp2ppp/2n5/1N1qP3/4nB2/8/PPP1PPPP/R3KBNR w KQkq -": {
+   "games": 1070,
+   "moves": {
+    "b5c7": 1070,
+    "f2f3": 1
+   }
+  },
+  "r1b1kb1r/ppN2ppp/2n5/3qP3/4nB2/8/PPP1PPPP/R3KBNR b KQkq -": {
+   "games": 1050,
+   "moves": {
+    "e8d7": 565,
+    "e8d8": 414,
+    "e8e7": 72
+   }
+  },
+  "r1bk1b1r/ppN2ppp/2n5/3qP3/4nB2/8/PPP1PPPP/R3KBNR w KQ -": {
+   "games": 414,
+   "moves": {
+    "c7d5": 413,
+    "c7a8": 1
+   }
+  },
+  "r1bqkb1r/ppp2ppp/5n2/1N1pn3/5B2/8/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 2140,
+   "moves": {
+    "f4e5": 2110,
+    "d1d4": 14,
+    "g1f3": 9,
+    "d1d5": 5,
+    "e2e3": 4,
+    "f4g5": 1,
+    "d1d2": 1
+   }
+  },
+  "rn1qkb1r/ppp2ppp/4pnb1/3p4/3P1B2/2NBP3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 4070,
+   "moves": {
+    "g1f3": 1830,
+    "d3g6": 585,
+    "h2h4": 578,
+    "g1e2": 256,
+    "c3b5": 249,
+    "a2a3": 242,
+    "h2h3": 96,
+    "f2f3": 75,
+    "g2g4": 30,
+    "d1d2": 28,
+    "d1f3": 25,
+    "d1e2": 23
+   }
+  },
+  "rn1qkb1r/ppp2pp1/4pnb1/3p3p/3P1B1P/2NBP3/PPP2PP1/R2QK1NR w KQkq -": {
+   "games": 33,
+   "moves": {
+    "d3g6": 27,
+    "f2f3": 2,
+    "f4g5": 2,
+    "a2a3": 1,
+    "d1d2": 1
+   }
+  },
+  "rn1qkb1r/ppp2pp1/4pnB1/3p3p/3P1B1P/2N1P3/PPP2PP1/R2QK1NR b KQkq -": {
+   "games": 27,
+   "moves": {
+    "f7g6": 27
+   }
+  },
+  "rn1qkb1r/ppp3p1/4pnp1/3p3p/3P1B1P/2N1P3/PPP2PP1/R2QK1NR w KQkq -": {
+   "games": 28,
+   "moves": {
+    "d1d3": 26,
+    "f4g5": 1,
+    "d1e2": 1
+   }
+  },
+  "rn1qkb1r/ppp3p1/4pnp1/3p3p/3P1B1P/2NQP3/PPP2PP1/R3K1NR b KQkq -": {
+   "games": 26,
+   "moves": {
+    "e8f7": 20,
+    "f6e4": 4,
+    "b8c6": 2
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/1b1P1B2/P1N1P3/1PP2PPP/R2QKBNR b KQkq -": {
+   "games": 4170,
+   "moves": {
+    "b4c3": 2730,
+    "b4a5": 1120,
+    "b4d6": 229,
+    "b4e7": 74,
+    "b8c6": 3,
+    "e8h8": 2,
+    "b8d7": 2,
+    "a7a6": 1,
+    "e8f8": 1,
+    "f6e4": 1,
+    "c7c6": 1,
+    "c7c5": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/3P1B2/P1P1P3/2P2PPP/R2QKBNR b KQkq -": {
+   "games": 3740,
+   "moves": {
+    "e8h8": 1460,
+    "f6e4": 674,
+    "c7c5": 668,
+    "b8d7": 238,
+    "b8c6": 202,
+    "c7c6": 171,
+    "h7h6": 109,
+    "b7b6": 85,
+    "a7a6": 53,
+    "c8d7": 43,
+    "d8e7": 13,
+    "f6h5": 11
+   }
+  },
+  "rnb1k2r/pp3ppp/4pn2/q1pp4/3P1B2/P1P1PN2/2PQ1PPP/R3KB1R b KQkq -": {
+   "games": 122,
+   "moves": {
+    "f6e4": 115,
+    "e8h8": 3,
+    "b8c6": 2,
+    "b8d7": 1,
+    "c5c4": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/1b1P1B2/2N1P3/PPPQ1PPP/R3KBNR b KQkq -": {
+   "games": 492,
+   "moves": {
+    "f6e4": 328,
+    "e8h8": 82,
+    "c7c5": 22,
+    "b8c6": 21,
+    "b4c3": 9,
+    "b8d7": 7,
+    "a7a6": 5,
+    "c8d7": 4,
+    "h7h6": 4,
+    "b7b6": 3,
+    "a7a5": 3,
+    "f6h5": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4p3/3p4/1b1PnB2/2N1P3/PPPQ1PPP/R3KBNR w KQkq -": {
+   "games": 325,
+   "moves": {
+    "d2d3": 288,
+    "d2e2": 11,
+    "d2d1": 7,
+    "a2a3": 4,
+    "g1e2": 3,
+    "f1d3": 3,
+    "d2c1": 3,
+    "c3e4": 2,
+    "f2f3": 2,
+    "f4e5": 1,
+    "e1a1": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4p3/3p4/1b1PnB2/2NQP3/PPP2PPP/R3KBNR b KQkq -": {
+   "games": 308,
+   "moves": {
+    "e8h8": 61,
+    "b4c3": 59,
+    "c7c5": 48,
+    "b7b6": 43,
+    "b8c6": 22,
+    "e4c3": 21,
+    "c7c6": 14,
+    "d8h4": 11,
+    "c8d7": 9,
+    "a7a6": 6,
+    "b8d7": 5,
+    "d8f6": 2
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/1b1P1B2/2N1P3/PPP1NPPP/R2QKB1R b KQkq -": {
+   "games": 4590,
+   "moves": {
+    "e8h8": 2210,
+    "f6e4": 706,
+    "c7c5": 496,
+    "b8c6": 345,
+    "b8d7": 199,
+    "c7c6": 160,
+    "h7h6": 135,
+    "a7a6": 73,
+    "f6h5": 70,
+    "b7b6": 59,
+    "c8d7": 57,
+    "b4c3": 39
+   }
+  },
+  "rnbq1rk1/ppp2ppp/4pn2/3p4/1b1P1B2/2N1P3/PPP1NPPP/R2QKB1R w KQ -": {
+   "games": 2290,
+   "moves": {
+    "a2a3": 1850,
+    "f2f3": 132,
+    "d1d3": 81,
+    "g2g3": 64,
+    "h2h3": 60,
+    "g2g4": 26,
+    "f4g5": 23,
+    "h2h4": 15,
+    "e2g3": 10,
+    "d1d2": 10,
+    "a2a4": 4,
+    "f4g3": 4
+   }
+  },
+  "rnbq1rk1/ppp2ppp/4pn2/3p4/1b1P1B2/P1N1P3/1PP1NPPP/R2QKB1R b KQ -": {
+   "games": 1850,
+   "moves": {
+    "b4a5": 627,
+    "b4d6": 481,
+    "b4e7": 452,
+    "b4c3": 288,
+    "a7a5": 1,
+    "f6e4": 1,
+    "b7b6": 1,
+    "c7c6": 1,
+    "b4a3": 1,
+    "b4c5": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/3p4/1b1P1B2/2N1PN2/PPP2PPP/R2QKB1R b KQkq -": {
+   "games": 6250,
+   "moves": {
+    "f6e4": 2590,
+    "e8h8": 1620,
+    "b4c3": 561,
+    "c7c5": 464,
+    "b8c6": 325,
+    "c7c6": 161,
+    "b8d7": 153,
+    "a7a6": 117,
+    "h7h6": 104,
+    "b7b6": 61,
+    "c8d7": 40,
+    "f6h5": 30
+   }
+  },
+  "rnbqk2r/pp3ppp/4pn2/2pp4/1b1P1B2/2N1PN2/PPP2PPP/R2QKB1R w KQkq -": {
+   "games": 500,
+   "moves": {
+    "d4c5": 149,
+    "a2a3": 145,
+    "f1e2": 68,
+    "f1b5": 67,
+    "f1d3": 37,
+    "f3e5": 15,
+    "f4g5": 5,
+    "f4b8": 3,
+    "d1d2": 3,
+    "h2h3": 3,
+    "f3d2": 2,
+    "b2b3": 1
+   }
+  },
+  "rnbqk2r/pp3ppp/4pn2/2Pp4/1b3B2/2N1PN2/PPP2PPP/R2QKB1R b KQkq -": {
+   "games": 150,
+   "moves": {
+    "b4c5": 61,
+    "d8a5": 23,
+    "b4c3": 19,
+    "f6e4": 18,
+    "b8d7": 13,
+    "b8c6": 11,
+    "e8h8": 5
+   }
+  },
+  "rnbqk2r/pp3ppp/4pn2/2pp4/1b1P1B2/P1NBP3/1PP2PPP/R2QK1NR b KQkq -": {
+   "games": 491,
+   "moves": {
+    "b4c3": 391,
+    "c5d4": 51,
+    "b4a5": 46,
+    "c5c4": 2,
+    "b8c6": 1
+   }
+  },
+  "rnbqk2r/pp3ppp/4pn2/2pp4/3P1B2/P1bBP3/1PP2PPP/R2QK1NR w KQkq -": {
+   "games": 391,
+   "moves": {
+    "b2c3": 391
+   }
+  },
+  "rnbqk2r/pp3ppp/4pn2/2pp4/3P1B2/P1PBP3/2P2PPP/R2QK1NR b KQkq -": {
+   "games": 429,
+   "moves": {
+    "c5c4": 196,
+    "d8a5": 157,
+    "b8c6": 35,
+    "c5d4": 18,
+    "e8h8": 15,
+    "b8d7": 6,
+    "b7b6": 2
+   }
+  },
+  "r1bqk2r/pp1n1ppp/4pn2/2Pp4/1b3B2/2NBPN2/PPP2PPP/R2QK2R b KQkq -": {
+   "games": 326,
+   "moves": {
+    "d7c5": 179,
+    "b4c3": 101,
+    "e8h8": 18,
+    "b4c5": 14,
+    "d8a5": 8,
+    "a7a6": 5,
+    "d8e7": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/bN1p4/1P1P1B2/2P5/P3PPPP/R2QKBNR b KQkq -": {
+   "games": 741,
+   "moves": {
+    "a5b6": 696,
+    "a7a6": 43,
+    "c8d7": 2
+   }
+  },
+  "rnbqk2r/ppp2ppp/1b2pn2/1N1p4/1P1P1B2/2P5/P3PPPP/R2QKBNR w KQkq -": {
+   "games": 696,
+   "moves": {
+    "a2a4": 599,
+    "e2e3": 42,
+    "g1f3": 24,
+    "d1a4": 18,
+    "b5a3": 5,
+    "f2f3": 3,
+    "a2a3": 2,
+    "c3c4": 1,
+    "f4g5": 1,
+    "h2h3": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/1b2pn2/1N1p4/PP1P1B2/2P5/4PPPP/R2QKBNR b KQkq -": {
+   "games": 601,
+   "moves": {
+    "a7a6": 329,
+    "a7a5": 185,
+    "c7c6": 73,
+    "c8d7": 10,
+    "b8a6": 1,
+    "b8c6": 1,
+    "f6e4": 1,
+    "f6h5": 1
+   }
+  },
+  "rnbqk2r/1pp2ppp/1b2pn2/pN1p4/PP1P1B2/2P5/4PPPP/R2QKBNR w KQkq -": {
+   "games": 185,
+   "moves": {
+    "e2e3": 126,
+    "g1f3": 36,
+    "b4a5": 17,
+    "b5a3": 3,
+    "c3c4": 1,
+    "d1b3": 1,
+    "a1b1": 1
+   }
+  },
+  "rnbqk2r/1pp2ppp/1b2pn2/pN1p4/PP1P1B2/2P1P3/5PPP/R2QKBNR b KQkq -": {
+   "games": 126,
+   "moves": {
+    "e8h8": 85,
+    "a5b4": 12,
+    "c7c6": 10,
+    "b8c6": 10,
+    "c8d7": 5,
+    "d8e7": 2,
+    "b8a6": 1,
+    "b8d7": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/bN1p4/3P1B2/2P1P3/PP3PPP/R2QKBNR b KQkq -": {
+   "games": 473,
+   "moves": {
+    "a7a6": 287,
+    "e8h8": 103,
+    "c7c6": 55,
+    "b8d7": 8,
+    "c8d7": 7,
+    "b8c6": 5,
+    "a5b6": 3,
+    "f6h5": 2,
+    "h7h6": 1,
+    "d8e7": 1,
+    "f6e4": 1
+   }
+  },
+  "rnbq1rk1/ppp2ppp/4pn2/bN1p4/3P1B2/2P1P3/PP3PPP/R2QKBNR w KQ -": {
+   "games": 103,
+   "moves": {
+    "g1f3": 56,
+    "f1d3": 28,
+    "a2a4": 7,
+    "h2h4": 3,
+    "b2b4": 2,
+    "b5a3": 2,
+    "f1e2": 2,
+    "h2h3": 1,
+    "f4g5": 1,
+    "d1a4": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/bN1p4/Q2P1B2/2P5/PP2PPPP/R3KBNR b KQkq -": {
+   "games": 262,
+   "moves": {
+    "b8c6": 162,
+    "c7c6": 71,
+    "a5b6": 27,
+    "c8d7": 1,
+    "a5c3": 1
+   }
+  },
+  "rnbqk2r/ppp2ppp/4pn2/bN1p4/3P1B2/2P2N2/PP2PPPP/R2QKB1R b KQkq -": {
+   "games": 195,
+   "moves": {
+    "a7a6": 116,
+    "e8h8": 41,
+    "c7c6": 19,
+    "c8d7": 6,
+    "b8c6": 4,
+    "b8d7": 3,
+    "f6e4": 2,
+    "d8e7": 2,
+    "h7h6": 1,
+    "f6h5": 1
+   }
+  },
+  "rnbq1rk1/ppp2ppp/4pn2/bN1p4/3P1B2/2P2N2/PP2PPPP/R2QKB1R w KQ -": {
+   "games": 42,
+   "moves": {
+    "e2e3": 30,
+    "f4g5": 4,
+    "d1a4": 3,
+    "a2a4": 2,
+    "f3e5": 1,
+    "b2b4": 1,
+    "h2h4": 1
+   }
+  },
+  "rnbqk2r/1pp2ppp/p3pn2/b2p4/P2P1B2/N1P5/1P2PPPP/R2QKBNR b KQkq -": {
+   "games": 112,
+   "moves": {
+    "e8h8": 47,
+    "c7c6": 24,
+    "b8d7": 12,
+    "c7c5": 11,
+    "b8c6": 8,
+    "f6e4": 6,
+    "c8d7": 2,
+    "a5b6": 2
+   }
+  },
+  "rnbqk2r/ppp2ppp/3bpn2/1N1p4/3P1B2/8/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 18800,
+   "moves": {
+    "b5d6": 16800,
+    "f4d6": 1020,
+    "d1d2": 350,
+    "f4g3": 197,
+    "e2e3": 192,
+    "f4g5": 147,
+    "d1c1": 34,
+    "f4e5": 25,
+    "g1h3": 8,
+    "a2a3": 4,
+    "g1f3": 4,
+    "f4e3": 3
+   }
+  },
+  "rnbqk2r/ppp2ppp/3Npn2/3p4/3P1B2/8/PPP1PPPP/R2QKBNR b KQkq -": {
+   "games": 16800,
+   "moves": {
+    "c7d6": 16700,
+    "d8d6": 12
+   }
+  },
+  "rnbqk2r/pp3ppp/3ppn2/3p4/3P1B2/8/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 16700,
+   "moves": {
+    "e2e3": 11000,
+    "g1f3": 3580,
+    "c2c3": 810,
+    "h2h3": 505,
+    "f4g5": 275,
+    "f2f3": 151,
+    "d1d3": 127,
+    "d1d2": 83,
+    "h2h4": 36,
+    "c2c4": 35,
+    "f4g3": 31,
+    "a2a3": 14
+   }
+  },
+  "rnbqk2r/pp3ppp/3ppn2/3p4/3P1B2/4P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 11000,
+   "moves": {
+    "e8h8": 4590,
+    "b8c6": 4330,
+    "e6e5": 482,
+    "a7a6": 388,
+    "h7h6": 320,
+    "b8d7": 236,
+    "d8a5": 140,
+    "f6e4": 126,
+    "d8b6": 124,
+    "c8d7": 90,
+    "f6h5": 78,
+    "d8e7": 49
+   }
+  },
+  "rnbq1rk1/pp3ppp/3ppn2/3p4/3P1B2/4P3/PPP2PPP/R2QKBNR w KQ -": {
+   "games": 4610,
+   "moves": {
+    "g1f3": 2280,
+    "f1d3": 1020,
+    "c2c3": 505,
+    "h2h3": 336,
+    "f1e2": 102,
+    "f4g5": 83,
+    "g2g4": 75,
+    "h2h4": 71,
+    "c2c4": 40,
+    "d1f3": 26,
+    "d1d2": 17,
+    "f2f3": 17
+   }
+  },
+  "r1bqk2r/pp3ppp/n1pbpn2/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 5220,
+   "moves": {
+    "f1a6": 2020,
+    "f4d6": 1320,
+    "g1f3": 714,
+    "f4g3": 474,
+    "f4g5": 327,
+    "d1f3": 108,
+    "f1d3": 82,
+    "g1e2": 81,
+    "g1h3": 33,
+    "g2g4": 23,
+    "f4e5": 15,
+    "a2a3": 11
+   }
+  },
+  "r1bqk2r/pp3ppp/B1pbpn2/3p4/3P1B2/2N1P3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 2020,
+   "moves": {
+    "b7a6": 1170,
+    "d6f4": 848,
+    "b7b6": 5,
+    "d6e5": 1,
+    "d6c5": 1
+   }
+  },
+  "r1bqk2r/p4ppp/p1pbpn2/3p4/3P1B2/2N1P3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 1170,
+   "moves": {
+    "g1f3": 538,
+    "f4d6": 343,
+    "g1e2": 95,
+    "f4g3": 52,
+    "f4g5": 43,
+    "c3a4": 40,
+    "d1f3": 30,
+    "c3e2": 6,
+    "g2g4": 5,
+    "d1d3": 4,
+    "g1h3": 4,
+    "f4e5": 3
+   }
+  },
+  "r1bqk2r/pp3ppp/n1p1pn2/3p4/1b1P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 3740,
+   "moves": {
+    "f1a6": 2030,
+    "f1d3": 494,
+    "a2a3": 389,
+    "g1e2": 308,
+    "g1f3": 264,
+    "d1d3": 120,
+    "d1d2": 62,
+    "f2f3": 40,
+    "g2g4": 12,
+    "f4g5": 6,
+    "f1e2": 6,
+    "h2h4": 5
+   }
+  },
+  "r1bqk2r/pp3ppp/B1p1pn2/3p4/1b1P1B2/2N1P3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 2030,
+   "moves": {
+    "b7a6": 1610,
+    "b4c3": 385,
+    "f6e4": 13,
+    "b7b6": 11,
+    "d8a5": 6,
+    "b4a5": 1,
+    "b7b5": 1
+   }
+  },
+  "r1bqk2r/p4ppp/p1p1pn2/3p4/1b1P1B2/2N1P3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 1610,
+   "moves": {
+    "g1e2": 769,
+    "g1f3": 489,
+    "d1d3": 153,
+    "a2a3": 143,
+    "f2f3": 21,
+    "d1d2": 16,
+    "g2g4": 6,
+    "h2h3": 6,
+    "f4g5": 4,
+    "d1f3": 3,
+    "a2a4": 1,
+    "h2h4": 1
+   }
+  },
+  "r1bqk2r/ppp1bppp/n3pn2/1N1p4/3P1B2/4P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 4340,
+   "moves": {
+    "g1f3": 2550,
+    "f1d3": 398,
+    "b5c3": 262,
+    "a2a3": 236,
+    "c2c3": 195,
+    "a2a4": 185,
+    "c2c4": 135,
+    "g2g4": 99,
+    "h2h3": 77,
+    "h2h4": 68,
+    "f1e2": 47,
+    "f2f3": 24
+   }
+  },
+  "r1bqk2r/ppp1bppp/n3pn2/1N1p4/3P1B2/4PN2/PPP2PPP/R2QKB1R b KQkq -": {
+   "games": 3120,
+   "moves": {
+    "e8h8": 2080,
+    "c7c6": 816,
+    "c8d7": 93,
+    "f6h5": 58,
+    "b7b6": 18,
+    "c7c5": 18,
+    "f6e4": 13,
+    "h7h6": 11,
+    "e7b4": 8,
+    "e7d6": 2,
+    "d8d7": 2,
+    "h7h5": 1
+   }
+  },
+  "r1bq1rk1/ppp1bppp/n3pn2/1N1p4/3P1B2/4PN2/PPP2PPP/R2QKB1R w KQ -": {
+   "games": 2480,
+   "moves": {
+    "f1d3": 931,
+    "f3e5": 483,
+    "b5c3": 197,
+    "f1e2": 190,
+    "h2h4": 184,
+    "a2a3": 157,
+    "h2h3": 93,
+    "c2c4": 80,
+    "a2a4": 58,
+    "c2c3": 55,
+    "d1d2": 17,
+    "g2g4": 16
+   }
+  },
+  "r2qkb1r/pppb1ppp/n3pn2/1N1p4/3P1B2/4P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 2570,
+   "moves": {
+    "g1f3": 1100,
+    "a2a4": 624,
+    "b5c3": 587,
+    "a2a3": 81,
+    "c2c3": 67,
+    "g2g4": 29,
+    "c2c4": 25,
+    "f1d3": 15,
+    "h2h3": 14,
+    "f2f3": 10,
+    "d1f3": 5,
+    "d1d3": 4
+   }
+  },
+  "rnbqkb1r/ppp2ppp/4pn2/3p4/3P1B2/P1N5/1PP1PPPP/R2QKBNR b KQkq -": {
+   "games": 36300,
+   "moves": {
+    "f8d6": 12000,
+    "c7c5": 9880,
+    "a7a6": 5120,
+    "f8e7": 3530,
+    "b8c6": 1630,
+    "c7c6": 1620,
+    "b8d7": 764,
+    "h7h6": 494,
+    "b7b6": 408,
+    "c8d7": 364,
+    "g7g6": 260,
+    "f6h5": 141
+   }
+  },
+  "rnbqkb1r/pp3ppp/4pn2/2pp4/3P1B2/P1N5/1PP1PPPP/R2QKBNR w KQkq -": {
+   "games": 10300,
+   "moves": {
+    "e2e3": 6730,
+    "d4c5": 1560,
+    "g1f3": 888,
+    "c3b5": 534,
+    "f4b8": 128,
+    "d1d2": 116,
+    "e2e4": 98,
+    "h2h3": 75,
+    "f2f3": 48,
+    "b2b3": 19,
+    "d1d3": 17,
+    "f4g5": 16
+   }
+  },
+  "rnbqkb1r/pp3ppp/4pn2/2pp4/3P1B2/P1N1P3/1PP2PPP/R2QKBNR b KQkq -": {
+   "games": 9580,
+   "moves": {
+    "b8c6": 4050,
+    "c5d4": 1780,
+    "a7a6": 1420,
+    "f8d6": 683,
+    "c5c4": 675,
+    "f8e7": 351,
+    "d8b6": 193,
+    "c8d7": 141,
+    "b8d7": 127,
+    "b7b6": 69,
+    "d8a5": 29,
+    "h7h6": 29
+   }
+  },
+  "rnbqkb1r/ppp2ppp/4pn2/3p4/3P1B2/2N2P2/PPP1P1PP/R2QKBNR b KQkq -": {
+   "games": 8400,
+   "moves": {
+    "f8d6": 2380,
+    "c7c5": 2070,
+    "f8b4": 1300,
+    "a7a6": 778,
+    "f8e7": 630,
+    "c7c6": 336,
+    "b8c6": 253,
+    "f6h5": 231,
+    "b8d7": 122,
+    "h7h6": 105,
+    "b7b6": 88,
+    "g7g6": 58
+   }
+  },
+  "rnbqkb1r/ppp2ppp/4pn2/3p4/3P1B2/2N5/PPPQPPPP/R3KBNR b KQkq -": {
+   "games": 4720,
+   "moves": {
+    "f8d6": 1180,
+    "f8b4": 1050,
+    "c7c5": 1040,
+    "a7a6": 471,
+    "f8e7": 352,
+    "c7c6": 205,
+    "b8c6": 148,
+    "b8d7": 80,
+    "h7h6": 79,
+    "b7b6": 32,
+    "c8d7": 30,
+    "g7g6": 18
+   }
+  },
+  "rnbqkb1r/ppp2ppp/4pn2/3p4/3P1B2/2NQ4/PPP1PPPP/R3KBNR b KQkq -": {
+   "games": 3470,
+   "moves": {
+    "f8d6": 847,
+    "c7c5": 725,
+    "a7a6": 497,
+    "f8b4": 345,
+    "f8e7": 324,
+    "b8c6": 245,
+    "c7c6": 201,
+    "b8d7": 88,
+    "c8d7": 56,
+    "b7b6": 43,
+    "h7h6": 38,
+    "b8a6": 23
+   }
+  },
+  "rnbqkb1r/1pp2ppp/p3pn2/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 50000,
+   "moves": {
+    "g1f3": 18900,
+    "f1d3": 17400,
+    "a2a3": 5220,
+    "g2g4": 4500,
+    "h2h3": 870,
+    "f2f3": 859,
+    "d1f3": 645,
+    "f1e2": 497,
+    "h2h4": 391,
+    "d1d2": 240,
+    "a2a4": 153,
+    "g1e2": 96
+   }
+  },
+  "rnbqkb1r/1pp2ppp/p3pn2/3p4/3P1B2/2NBP3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 17500,
+   "moves": {
+    "c7c5": 6550,
+    "f8d6": 3540,
+    "f8e7": 1910,
+    "f8b4": 1860,
+    "h7h6": 956,
+    "b8d7": 906,
+    "b8c6": 798,
+    "b7b5": 425,
+    "b7b6": 168,
+    "g7g6": 124,
+    "c8d7": 104,
+    "c7c6": 62
+   }
+  },
+  "rnbqkb1r/1p3ppp/p3pn2/2pp4/3P1B2/2NBP3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 6810,
+   "moves": {
+    "d4c5": 4190,
+    "g1f3": 1850,
+    "a2a3": 134,
+    "b2b3": 127,
+    "g2g4": 78,
+    "g1e2": 62,
+    "d1f3": 56,
+    "f2f3": 49,
+    "h2h4": 44,
+    "h2h3": 41,
+    "d1d2": 35,
+    "c3e2": 29
+   }
+  },
+  "rnbqkb1r/1p3ppp/p3pn2/2Pp4/5B2/2NBP3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 4350,
+   "moves": {
+    "f8c5": 4240,
+    "b8c6": 104,
+    "b8d7": 8,
+    "d8a5": 3,
+    "c8d7": 1
+   }
+  },
+  "rnbqk2r/1p3ppp/p3pn2/2bp4/5B2/2NBP3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 4980,
+   "moves": {
+    "g1f3": 3740,
+    "g1e2": 360,
+    "a2a3": 137,
+    "c3a4": 116,
+    "d1e2": 113,
+    "f4g5": 99,
+    "g2g4": 96,
+    "d1f3": 93,
+    "h2h3": 57,
+    "d1d2": 43,
+    "f2f3": 38,
+    "e3e4": 27
+   }
+  },
+  "r1bqkb1r/1pp1pppp/p1n2n2/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 23100,
+   "moves": {
+    "g1f3": 8720,
+    "f1d3": 6810,
+    "a2a3": 3820,
+    "h2h3": 1290,
+    "f2f3": 715,
+    "f1e2": 574,
+    "d1f3": 324,
+    "d1d2": 229,
+    "h2h4": 222,
+    "g2g4": 150,
+    "g1e2": 53,
+    "g2g3": 51
+   }
+  },
+  "r1bqkb1r/1pp1pppp/p1n2n2/3p4/3P1B2/2NBP3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 6980,
+   "moves": {
+    "e7e6": 2410,
+    "c8g4": 1990,
+    "h7h6": 1020,
+    "g7g6": 558,
+    "c6b4": 365,
+    "c8d7": 250,
+    "e7e5": 179,
+    "f6h5": 57,
+    "b7b5": 49,
+    "c8e6": 46,
+    "c8f5": 13,
+    "f6d7": 9
+   }
+  },
+  "r1bqkb1r/1pp2ppp/p1n1pn2/3p4/3P1B2/2NBP3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 3720,
+   "moves": {
+    "g1f3": 2190,
+    "a2a3": 775,
+    "g1e2": 192,
+    "g2g4": 158,
+    "h2h3": 104,
+    "d1f3": 81,
+    "f2f3": 59,
+    "d1d2": 35,
+    "h2h4": 31,
+    "f4g5": 29,
+    "c3e2": 22,
+    "d1e2": 18
+   }
+  },
+  "rnbqkb1r/1p2pppp/p4n2/2pp4/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 18800,
+   "moves": {
+    "g1f3": 7900,
+    "d4c5": 7200,
+    "a2a3": 636,
+    "f1d3": 540,
+    "h2h3": 461,
+    "f1e2": 444,
+    "a2a4": 389,
+    "f2f3": 315,
+    "d1d2": 197,
+    "d1f3": 158,
+    "h2h4": 95,
+    "f4b8": 87
+   }
+  },
+  "rnbqkb1r/1p2pppp/p4n2/2Pp4/5B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 7290,
+   "moves": {
+    "b8c6": 5400,
+    "e7e6": 1310,
+    "d8a5": 351,
+    "c8f5": 106,
+    "e7e5": 43,
+    "c8g4": 40,
+    "b8d7": 27,
+    "g7g6": 6,
+    "f6h5": 1,
+    "f6d7": 1,
+    "d8b6": 1,
+    "c8e6": 1
+   }
+  },
+  "r1bqkb1r/1p2pppp/p1n2n2/2Pp4/5B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 5580,
+   "moves": {
+    "g1f3": 2130,
+    "a2a3": 2080,
+    "f1d3": 493,
+    "c3a4": 408,
+    "f4g5": 211,
+    "h2h3": 49,
+    "f1e2": 37,
+    "d1d2": 31,
+    "e3e4": 21,
+    "d1f3": 21,
+    "g1e2": 16,
+    "b2b4": 15
+   }
+  },
+  "rnbqkb1r/pp2pppp/5n2/3p4/3p1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 11800,
+   "moves": {
+    "e3d4": 10600,
+    "d1d4": 826,
+    "c3b5": 317,
+    "f1b5": 19,
+    "e3e4": 8,
+    "f4b8": 6,
+    "d1d2": 2,
+    "g1f3": 1,
+    "g1e2": 1,
+    "c3e2": 1
+   }
+  },
+  "rnbqkb1r/pp2pppp/5n2/3p4/3P1B2/2N5/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 30800,
+   "moves": {
+    "a7a6": 12000,
+    "b8c6": 7920,
+    "c8f5": 3890,
+    "c8g4": 3400,
+    "e7e6": 2320,
+    "g7g6": 468,
+    "d8b6": 345,
+    "c8d7": 227,
+    "d8a5": 61,
+    "b8d7": 50,
+    "h7h6": 38,
+    "f6e4": 16
+   }
+  },
+  "rnbqkb1r/1p2pppp/p4n2/3p4/3P1B2/2N5/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 12700,
+   "moves": {
+    "g1f3": 7190,
+    "f1d3": 2980,
+    "h2h3": 668,
+    "d1d2": 323,
+    "d1f3": 292,
+    "a2a3": 239,
+    "f1e2": 239,
+    "f4b8": 151,
+    "f2f3": 147,
+    "a2a4": 131,
+    "g2g3": 106,
+    "d1d3": 52
+   }
+  },
+  "rnbqkb1r/1p2pppp/p4n2/3p4/3P1B2/2N2N2/PPP2PPP/R2QKB1R b KQkq -": {
+   "games": 9800,
+   "moves": {
+    "b8c6": 4700,
+    "c8g4": 3120,
+    "c8f5": 954,
+    "e7e6": 651,
+    "g7g6": 158,
+    "d8b6": 71,
+    "h7h6": 48,
+    "b8d7": 43,
+    "b7b5": 33,
+    "c8d7": 7,
+    "f6h5": 6,
+    "b7b6": 4
+   }
+  },
+  "r1bqkb1r/1p2pppp/p1n2n2/3p4/3P1B2/2N2N2/PPP2PPP/R2QKB1R w KQkq -": {
+   "games": 11400,
+   "moves": {
+    "f1d3": 4460,
+    "f1e2": 2460,
+    "f3e5": 1400,
+    "a2a3": 1160,
+    "h2h3": 1020,
+    "d1d2": 363,
+    "g2g3": 153,
+    "a2a4": 116,
+    "d1e2": 46,
+    "d1d3": 39,
+    "f4e5": 31,
+    "c3e2": 30
+   }
+  },
+  "rnbqkb1r/1p3ppp/p3pn2/2Pp4/5B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 1360,
+   "moves": {
+    "b2b4": 432,
+    "c3a4": 353,
+    "g1f3": 259,
+    "f1d3": 167,
+    "a2a3": 35,
+    "f4b8": 23,
+    "f4d6": 20,
+    "g2g4": 15,
+    "f4g5": 15,
+    "d1f3": 11,
+    "d1d4": 8,
+    "e3e4": 8
+   }
+  },
+  "rnbqkb1r/pp3ppp/4pn2/2pp4/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 41000,
+   "moves": {
+    "c3b5": 17600,
+    "g1f3": 12100,
+    "d4c5": 4150,
+    "f1b5": 1780,
+    "a2a3": 1000,
+    "f1d3": 722,
+    "g2g4": 621,
+    "f1e2": 557,
+    "h2h3": 539,
+    "f2f3": 424,
+    "d1d2": 330,
+    "d1f3": 315
+   }
+  },
+  "rnbqkb1r/pp3ppp/4pn2/1Npp4/3P1B2/4P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 17600,
+   "moves": {
+    "b8a6": 13200,
+    "d8a5": 3740,
+    "a7a6": 258,
+    "b8c6": 133,
+    "c5d4": 69,
+    "e6e5": 61,
+    "c5c4": 47,
+    "c8d7": 36,
+    "f8d6": 27,
+    "d8b6": 21,
+    "f8e7": 16,
+    "e8d7": 7
+   }
+  },
+  "r1bqkb1r/pp3ppp/n3pn2/1Npp4/3P1B2/4P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 14600,
+   "moves": {
+    "c2c3": 6630,
+    "g1f3": 3800,
+    "a2a4": 1930,
+    "d4c5": 736,
+    "b5c3": 406,
+    "a2a3": 395,
+    "c2c4": 177,
+    "h2h3": 147,
+    "f1e2": 95,
+    "g2g4": 77,
+    "f1d3": 53,
+    "f2f3": 40
+   }
+  },
+  "rnbqkb1r/pp3ppp/2p1pn2/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 33100,
+   "moves": {
+    "g1f3": 13100,
+    "f1d3": 12000,
+    "a2a3": 2890,
+    "g2g4": 2170,
+    "h2h3": 693,
+    "f2f3": 626,
+    "d1f3": 441,
+    "f1e2": 346,
+    "h2h4": 275,
+    "d1d2": 188,
+    "f4b8": 74,
+    "g1e2": 55
+   }
+  },
+  "rnbqkb1r/pp3ppp/2p1pn2/3p4/3P1B2/2NBP3/PPP2PPP/R2QK1NR b KQkq -": {
+   "games": 12200,
+   "moves": {
+    "f8d6": 5990,
+    "f8e7": 1880,
+    "f8b4": 1480,
+    "b8d7": 1380,
+    "h7h6": 572,
+    "d8b6": 193,
+    "c6c5": 161,
+    "g7g6": 137,
+    "a7a6": 108,
+    "b7b6": 85,
+    "d8a5": 67,
+    "b7b5": 56
+   }
+  },
+  "rnbqk2r/pp3ppp/2pbpn2/3p4/3P1B2/2NBP3/PPP2PPP/R2QK1NR w KQkq -": {
+   "games": 6400,
+   "moves": {
+    "g1f3": 2670,
+    "f4g3": 1400,
+    "g1e2": 704,
+    "d1f3": 495,
+    "f4d6": 426,
+    "f4g5": 405,
+    "g2g4": 65,
+    "c3e2": 52,
+    "f4e5": 43,
+    "g1h3": 31,
+    "f2f3": 27,
+    "g2g3": 25
+   }
+  },
+  "rn1qkb1r/pp2pppp/2p2n2/3p4/3P1Bb1/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 13100,
+   "moves": {
+    "f2f3": 8960,
+    "f1e2": 2210,
+    "g1f3": 1580,
+    "d1d2": 122,
+    "g1e2": 75,
+    "f1d3": 45,
+    "h2h3": 30,
+    "d1d3": 15,
+    "c3e2": 6,
+    "a2a3": 3,
+    "h2h4": 3,
+    "d1c1": 3
+   }
+  },
+  "rn1qkb1r/pp2pppp/2p2n2/3p4/3P1Bb1/2N1PP2/PPP3PP/R2QKBNR b KQkq -": {
+   "games": 8960,
+   "moves": {
+    "g4h5": 5630,
+    "g4f5": 2690,
+    "g4d7": 359,
+    "g4c8": 224,
+    "g4e6": 45,
+    "e7e6": 5,
+    "b8d7": 1
+   }
+  },
+  "rn1qkb1r/pp2pppp/2p2n2/3p3b/3P1B2/2N1PP2/PPP3PP/R2QKBNR w KQkq -": {
+   "games": 5740,
+   "moves": {
+    "g2g4": 4720,
+    "h2h4": 448,
+    "f1d3": 425,
+    "d1d2": 60,
+    "g1e2": 28,
+    "f1e2": 13,
+    "h2h3": 7,
+    "g1h3": 7,
+    "g2g3": 5,
+    "b2b4": 4,
+    "f4g3": 4,
+    "d1e2": 3
+   }
+  },
+  "rn1qkb1r/pp2pppp/2p2n2/3p3b/3P1BP1/2N1PP2/PPP4P/R2QKBNR b KQkq -": {
+   "games": 4720,
+   "moves": {
+    "h5g6": 4720,
+    "f6g4": 2,
+    "e7e5": 2,
+    "h7h6": 1,
+    "b8d7": 1,
+    "g7g6": 1
+   }
+  },
+  "rn1qkb1r/pp2pppp/2p2nb1/3p4/3P1BP1/2N1PP2/PPP4P/R2QKBNR w KQkq -": {
+   "games": 6740,
+   "moves": {
+    "h2h4": 6430,
+    "f1d3": 229,
+    "g4g5": 30,
+    "d1d2": 13,
+    "d1e2": 7,
+    "g1e2": 6,
+    "h2h3": 6,
+    "f4g3": 5,
+    "g1h3": 4,
+    "a2a3": 3,
+    "e3e4": 2,
+    "f1g2": 2
+   }
+  },
+  "rnbqkb1r/pp2pp1p/2p2np1/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 16100,
+   "moves": {
+    "g1f3": 4210,
+    "f1d3": 3960,
+    "h2h4": 3420,
+    "f1e2": 1970,
+    "h2h3": 873,
+    "d1d2": 668,
+    "f2f3": 505,
+    "a2a3": 145,
+    "d1f3": 118,
+    "f4e5": 51,
+    "g1e2": 27,
+    "g2g4": 22
+   }
+  },
+  "rnbqkb1r/pp2pp1p/2p2np1/3p4/3P1B1P/2N1P3/PPP2PP1/R2QKBNR b KQkq -": {
+   "games": 3480,
+   "moves": {
+    "f8g7": 1680,
+    "h7h5": 1220,
+    "f6h5": 169,
+    "h7h6": 107,
+    "c8g4": 74,
+    "b8d7": 72,
+    "c8f5": 57,
+    "d8b6": 48,
+    "e7e6": 24,
+    "d8a5": 9,
+    "b7b5": 9,
+    "a7a5": 5
+   }
+  },
+  "rnbqk2r/pp2ppbp/2p2np1/3p4/3P1B1P/2N1P3/PPP2PP1/R2QKBNR w KQkq -": {
+   "games": 3500,
+   "moves": {
+    "h4h5": 1120,
+    "f1e2": 994,
+    "f1d3": 748,
+    "g1f3": 388,
+    "d1d2": 106,
+    "f2f3": 85,
+    "a2a3": 15,
+    "g2g4": 9,
+    "a2a4": 6,
+    "d1f3": 5,
+    "f4e5": 4,
+    "g1e2": 4
+   }
+  },
+  "r1bqkb1r/ppp2ppp/2n5/1N1pP2n/5B2/8/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 18600,
+   "moves": {
+    "e2e3": 9090,
+    "d1d2": 5090,
+    "f4g3": 1980,
+    "f4g5": 817,
+    "d1d5": 300,
+    "g2g3": 257,
+    "f4d2": 249,
+    "f4e3": 244,
+    "f4c1": 239,
+    "e5e6": 209,
+    "d1c1": 51,
+    "g1h3": 23
+   }
+  },
+  "r1bqkb1r/ppp2ppp/2n5/1N1pP2n/5B2/4P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 9080,
+   "moves": {
+    "h5f4": 7930,
+    "a7a6": 703,
+    "g7g5": 138,
+    "f8b4": 87,
+    "c8e6": 47,
+    "f8c5": 41,
+    "g7g6": 39,
+    "c8f5": 25,
+    "d8e7": 21,
+    "d5d4": 15,
+    "c8d7": 13,
+    "f8e7": 7
+   }
+  },
+  "r1bqkb1r/ppp2ppp/2n5/1N1pP3/5n2/4P3/PPP2PPP/R2QKBNR w KQkq -": {
+   "games": 7930,
+   "moves": {
+    "e3f4": 7920,
+    "e3e4": 9
+   }
+  },
+  "r1bqkb1r/1pp2ppp/p1n2n2/1N1pP3/5B2/8/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 2180,
+   "moves": {
+    "e5f6": 1490,
+    "b5c3": 350,
+    "b5d4": 254,
+    "b5c7": 58,
+    "b5d6": 10,
+    "e2e3": 5,
+    "e5e6": 4,
+    "d1d5": 4,
+    "f4g5": 2,
+    "e2e4": 1,
+    "b5a3": 1
+   }
+  },
+  "r1bqkb1r/1pp2ppp/p1n2n2/3pP3/5B2/2N5/PPP1PPPP/R2QKBNR b KQkq -": {
+   "games": 350,
+   "moves": {
+    "f6h5": 172,
+    "d5d4": 69,
+    "f6e4": 36,
+    "f6d7": 31,
+    "f6g4": 30,
+    "f8b4": 10,
+    "f6g8": 2
+   }
+  },
+  "r1bqkb1r/1pp2ppp/p1n5/3pP2n/5B2/2N5/PPP1PPPP/R2QKBNR w KQkq -": {
+   "games": 172,
+   "moves": {
+    "e2e3": 71,
+    "c3d5": 70,
+    "f4g3": 14,
+    "d1d2": 7,
+    "f4c1": 6,
+    "d1d5": 2,
+    "f4e3": 2
+   }
+  },
+  "rnbqkb1r/ppp1pp1p/5np1/3p4/3P1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq -": {
+   "games": 47200,
+   "moves": {
+    "f8g7": 39300,
+    "c7c6": 3490,
+    "a7a6": 2080,
+    "f6h5": 701,
+    "c7c5": 521,
+    "e7e6": 338,
+    "c8f5": 233,
+    "b8c6": 174,
+    "b8d7": 109,
+    "c8g4": 54,
+    "b7b6": 42,
+    "c8d7": 24
+   }
+  },
+  "rnbqk2r/ppp1ppbp/5np1/3p4/3P1B1P/2N1P3/PPP2PP1/R2QKBNR b KQkq -": {
+   "games": 15600,
+   "moves": {
+    "h7h5": 5620,
+    "e8h8": 3090,
+    "c7c5": 1380,
+    "c7c6": 1320,
+    "f6h5": 750,
+    "a7a6": 591,
+    "b8c6": 546,
+    "c8f5": 502,
+    "h7h6": 490,
+    "b8d7": 469,
+    "c8g4": 383,
+    "b7b6": 193
+   }
+  },
+  "rnbq1rk1/ppp1ppbp/5np1/3p4/3P1B1P/2N1P3/PPP2PP1/R2QKBNR w KQ -": {
+   "games": 3440,
+   "moves": {
+    "h4h5": 2800,
+    "f1e2": 320,
+    "f1d3": 119,
+    "g1f3": 86,
+    "f2f3": 41,
+    "d1d2": 34,
+    "c3b5": 19,
+    "g2g4": 8,
+    "d1f3": 3,
+    "e1e2": 1,
+    "g1e2": 1,
+    "d1e2": 1
+   }
+  },
+  "rnbq1rk1/ppp1ppbp/5np1/3p3P/3P1B2/2N1P3/PPP2PP1/R2QKBNR b KQ -": {
+   "games": 2800,
+   "moves": {
+    "f6h5": 1570,
+    "c8g4": 456,
+    "c7c5": 321,
+    "g6h5": 123,
+    "c8f5": 75,
+    "c7c6": 71,
+    "b8d7": 61,
+    "b8c6": 41,
+    "f8e8": 26,
+    "f6e4": 17,
+    "b7b6": 14,
+    "a7a6": 10
+   }
+  },
+  "rnbq1rk1/pp2ppbp/5np1/2pp3P/3P1B2/2N1P3/PPP2PP1/R2QKBNR w KQ -": {
+   "games": 337,
+   "moves": {
+    "h5g6": 270,
+    "c3b5": 21,
+    "d4c5": 18,
+    "h5h6": 12,
+    "g1f3": 4,
+    "f1e2": 4,
+    "d1d2": 3,
+    "f1d3": 2,
+    "h1h4": 1,
+    "g2g4": 1,
+    "f2f3": 1
+   }
+  },
+  "rnbq1rk1/pp2ppbp/5nP1/2pp4/3P1B2/2N1P3/PPP2PP1/R2QKBNR b KQ -": {
+   "games": 270,
+   "moves": {
+    "f7g6": 148,
+    "h7g6": 121,
+    "c5d4": 1
+   }
+  },
+  "rn1qk2r/ppp2ppp/3bpnb1/3p4/3P1B1P/2NBP3/PPP2PP1/R2QK1NR w KQkq -": {
+   "games": 175,
+   "moves": {
+    "h4h5": 53,
+    "f4e5": 31,
+    "f4d6": 30,
+    "g1e2": 22,
+    "f4g5": 16,
+    "g2g4": 9,
+    "g1f3": 5,
+    "g1h3": 4,
+    "d1f3": 2,
+    "d1d2": 1,
+    "c3e2": 1,
+    "f2f3": 1
+   }
+  },
+  "rn1qk2r/ppp2ppp/3bpnb1/3p3P/3P1B2/2NBP3/PPP2PP1/R2QK1NR b KQkq -": {
+   "games": 53,
+   "moves": {
+    "g6d3": 50,
+    "f6h5": 2,
+    "g6h5": 1
+   }
+  },
+  "rn1qk2r/ppp2ppp/3bpn2/3p3P/3P1B2/2NbP3/PPP2PP1/R2QK1NR w KQkq -": {
+   "games": 50,
+   "moves": {
+    "d1d3": 41,
+    "c2d3": 8,
+    "f4d6": 1
+   }
+  },
   "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -": {
    "games": 10500000,
    "moves": {

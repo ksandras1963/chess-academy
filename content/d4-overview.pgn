@@ -20,10 +20,27 @@
 
 White: Play the same setup almost every game: d4, Bf4, e3, Nf3, c3, Nbd2, Bd3 and castling. The c3–d4–e3 pawn triangle is hard to break. Later, Ne5 and a kingside attack are typical.
 
-Black: Hit d4 with ...c5 and ...Nc6, and use ...Qb6 against the b2-pawn the f4 bishop left behind. Trade off White's good bishop with ...Bd6, or chase it with ...Nh5.}
+Black: Keep the setup you play against the Queen's Gambit: ...Nf6, ...e6, ...c5 and ...Bd6 to offer a trade of the London bishop, then ...Qc7, ...Nbd7 and the break ...e5. After 1...Nf6, the King's Indian setup works too.}
 1. d4 d5 2. Bf4 {This is the London System. The bishop comes out before e3 can shut it in.} Nf6
 3. e3 {Builds the pawn triangle.} e6
 4. Nf3 c5 {The most active answer: Black hits d4 at once.} *
+
+[Chapter "Jobava London System"]
+[Map "Jobava London"]
+[Course "jobava-london"]
+[Group "1...d5: the London System"]
+[Opening "Rapport-Jobava System"]
+[ECO "D01"]
+[Diagram "4...Na6"]
+
+{A sharper London: the knight goes to c3 instead of the c-pawn, and the bishop to f4. The knight can jump to b5, and White's h-pawn often joins the attack.
+
+White: Play d4, Nc3 and Bf4 against both 1...d5 and 1...Nf6, then e3. Against ...e6, jump to b5 to hit c7. Trade off Black's bishop with Bd3 if it comes to f5, and push h4 against ...Bg6 or ...g6.
+
+Black: Guard d5 with ...e6, pin the c3 knight with ...Bb4, and hit d4 with ...c5. If White plays a3, take on c3 and hit the doubled pawn with ...Qa5. Against Nb5, check on b4 first.}
+1. d4 d5 2. Nc3 {The knight comes out in front of the c-pawn.} Nf6
+3. Bf4 {This is the Jobava London. Lichess calls it the Rapport–Jobava System.} e6
+4. Nb5 {[%cal Gb5c7] The knight and the bishop both hit c7.} Na6 {The most common answer: the knight guards c7.} *
 
 [Chapter "King's Indian Defense"]
 [Map "King's Indian"]
