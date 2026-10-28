@@ -182,7 +182,7 @@
 [Diagram "8.Bg3"]
 
 {Breaking the Bg5 pin with ...h6 and ...g5 is fine. But the g5 pawn needs the h-pawn's support, so don't push ...h5. Play 8...a6 and ...Ba7 instead.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. Bg5 h6 7. Bh4 g5 8. Bg3 {[%csl Yg5] The idea starts from this position.} 8... h5? {[%engine ok] Too ambitious: now nothing guards g5.} 9. Nxg5 {[%cal Gf3g5] White grabs the pawn, and Black's kingside is broken. Stockfish: +1.9, clearly better for White.} *
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. Bg5 h6 7. Bh4 g5 8. Bg3 {[%csl Yg5] The idea starts from this position.} 8... h5? {[%engine ok] Too ambitious: now nothing guards g5.} 9. Nxg5 {[%cal Gf3g5] White grabs the pawn, and Black's kingside is broken. Stockfish: +2.1, winning for White.} *
 
 [Chapter "Main line: 3...Bc5"]
 [Side "white"]
@@ -374,7 +374,7 @@
 (6. b4 {This is the Albin Variation. Gains space and chases the bishop.} Bb6 7. a4 a5! {Stops White's queenside pawns from rolling on.} 8. b5 Ne7 {The knight reroutes toward g6 and the kingside.} 9. O-O O-O)
 (6. a4 {Stops ...b5 and gains space on the queenside.} a6 {Same plan: make room for ...Ba7, where the bishop is safe from b4 and d4.} 7. O-O Ba7 {Back in the main line by a different move order.})
 (6. Bb3 a6 7. Nbd2 Ba7 8. Nf1 O-O 9. Ng3 h6)
-(6. Bg5 {Premature. Black hasn't castled, so the pin can be broken at no risk.} h6 7. Bh4 g5 8. Bg3 a6 {Calm. Now the pawns on g5 and h6 keep White's bishop and knight off g5.} (8... h5? {Too ambitious.} 9. Nxg5! {[%cal Gf3g5] With the h-pawn gone from h6, nothing guards g5. White grabs it, and Black's kingside is broken: Stockfish +1.9, clearly better for White.}) 9. O-O Ba7)
+(6. Bg5 {Premature. Black hasn't castled, so the pin can be broken at no risk.} h6 7. Bh4 g5 8. Bg3 a6 {Calm. Now the pawns on g5 and h6 keep White's bishop and knight off g5.} (8... h5? {Too ambitious.} 9. Nxg5! {[%cal Gf3g5] With the h-pawn gone from h6, nothing guards g5. White grabs it, and Black's kingside is broken: Stockfish +2.1, winning for White.}) 9. O-O Ba7)
 6... a6 {Same plan as against 6.O-O: make room for ...Ba7. With ...Bg4 ruled out, the c8 bishop will go to e6.} 7. O-O Ba7 8. Re1 O-O 9. a4 h6 {Back in the main line by a different move order.} *
 
 [Chapter "Pianissimo: 6...a6 and 6...Bg4"]
