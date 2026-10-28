@@ -45,13 +45,21 @@ function planBlocks(ch, fold = false, withIntro = true) {
     ]
 }
 
+/** A table cell's text, with "White:" and "Black:" in bold where a line starts with them (Kumar's rule). */
+function cellText(text) {
+    return figText(text).split("\n").flatMap((line, i) => {
+        const m = /^(White|Black):/.exec(line)
+        return [i ? "\n" : null, m ? [h("strong", {}, m[0]), line.slice(m[0].length)] : line]
+    })
+}
+
 /** A page's table from courses.json ("table": { columns, rows, note }), under its title: the replies to 1.e4 at a glance. */
 export function introTable(t) {
     return h("figure", { class: "survey-table" },
         h("table", {},
             h("thead", {}, h("tr", {}, t.columns.map(c => h("th", { scope: "col" }, c)))),
             h("tbody", {}, t.rows.map(r => h("tr", {},
-                r.map((cell, i) => i ? h("td", {}, figText(cell)) : h("th", { scope: "row" }, figText(cell))))))),
+                r.map((cell, i) => i ? h("td", {}, cellText(cell)) : h("th", { scope: "row" }, figText(cell))))))),
         t.note ? h("figcaption", { class: "muted" }, t.note) : null)
 }
 
