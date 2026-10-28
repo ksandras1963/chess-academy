@@ -755,7 +755,7 @@
                             [
                                 "Classical Variation: 3...Bc5",
                                 "12% as White",
-                                "4.c3, castle, then d4 hits the bishop. Re1 and h3 keep the center safe. Against 4...d6?, 5.d4 wins material."
+                                "4.c3, castle, then d4 hits the bishop. Re1 and h3 keep the center safe. Against 4...d6?, 5.d4 wins material. Against 4...a6, Bxc6 and Nxe5."
                             ]
                         ],
                         "note": "How often: the share of your Ruy Lopez games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
