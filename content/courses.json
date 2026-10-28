@@ -715,47 +715,47 @@
                             [
                                 "Anderssen Variation: 5.d3",
                                 "20% as White",
-                                "White: Guard e4 with a pawn so it never hangs, then build slowly: castle, put a rook on e1 and bring the queen's knight round to g3, toward Black's king. Push in the center only when everything is ready.\nBlack: Drive the bishop back with the b-pawn, guard e5, then gain space on the queenside. Guard e5 before developing the king's bishop, or the pawn can be lost."
+                                "White's plans are to guard e4 with a pawn, build up slowly behind it, and bring the queen's knight round to the kingside.\nBlack's plans are to drive the bishop back and gain space on the queenside, and to prevent White from winning the e5 pawn."
                             ],
                             [
                                 "Steinitz Defense: 3...d6",
                                 "22% as White",
-                                "White: Strike in the center with the d-pawn at once and take back with the knight. Trade on c6 to leave Black with doubled pawns, aim the dark-squared bishop at the kingside, and push the f-pawn.\nBlack: Stay solid: unpin the knight with the bishop, develop the kingside and castle. The position is sound but passive."
+                                "White's plans are to open the center at once, double Black's c-pawns, and attack on the kingside.\nBlack's plans are to stay solid and finish developing, and to prevent White from breaking through in the center."
                             ],
                             [
                                 "Berlin Defense, 5.Re1: 6.Bxc6",
                                 "15% as Black",
-                                "White: Win back the pawn by taking on e5 with the knight, then finish developing.\nBlack: Take back toward the center with the d-pawn, develop the king's bishop and castle. The two bishops and open lines give Black an easy game."
+                                "White's plans are to win back the pawn with the knight and finish developing.\nBlack's plans are to castle quickly and use the two bishops, and to prevent White's pieces from taking over the e-file."
                             ],
                             [
                                 "Berlin Defense, 5.Re1: 6.Nxe5",
                                 "13% as Black",
-                                "White: Take back the pawn at once with the knight and keep the bishop by dropping it back.\nBlack: Develop the king's bishop, trade knights on e5 and castle, then trade rooks on the open e-file. The game is level."
+                                "White's plans are to win back the pawn at once and keep both bishops.\nBlack's plans are to castle and trade pieces on the open e-file, and to prevent White from using that file."
                             ],
                             [
                                 "Berlin Endgame: 5.d4",
                                 "18% as Black",
-                                "White: Trade queens early, then use the extra pawn on the kingside to make a passed pawn. Trades suit White.\nBlack: Take back toward the center. Without queens the king is safe in the middle: use the two bishops, push the h-pawn and bring a rook out along the sixth rank. Keep pieces on."
+                                "White's plans are to trade queens and pieces, and use the extra kingside pawn to make a passed pawn.\nBlack's plans are to keep pieces on and use the two bishops, and to prevent the extra pawn from advancing."
                             ],
                             [
                                 "Anti-Berlin Variation: 4.d3",
                                 "16% as White\n24% as Black",
-                                "White: Guard e4 with a pawn and keep the queens on. Build the same slow setup as in the Anderssen Variation, then push in the center. If only the knight guards e5, taking on c6 wins the pawn.\nBlack: Put the king's bishop on its most active diagonal, aiming at f2, castle and guard e5. Keep the bishop out of reach of White's pawns, and bring the queen's knight round to g6."
+                                "White's plans are to keep the queens on, build up slowly as in the Anderssen Variation, and later push in the center.\nBlack's plans are to aim the bishop at f2 and castle, and to prevent White's pawns from chasing the bishop with gain of time."
                             ],
                             [
                                 "Berlin Defense: 4.Bxc6",
                                 "11% as Black",
-                                "White: Give up the bishop at once for the better pawns, and aim for an endgame where the extra kingside pawn counts.\nBlack: Take back with the d-pawn toward the center, develop the dark-squared bishop and castle. The two bishops make up for the doubled pawns, and if White grabs e5 early, Black's queen wins it back."
+                                "White's plans are to give up the bishop for the better pawns and aim for an endgame.\nBlack's plans are to use the two bishops and the open lines, and to prevent White from winning the e5 pawn."
                             ],
                             [
                                 "Spanish Four Knights: 4.Nc3",
                                 "10% as Black",
-                                "White: Develop quickly, castle, and pin Black's king's knight with the dark-squared bishop.\nBlack: Copy White: pin the knight on c3, castle, and give up the bishop to double White's pawns. Then break the pin on the king's knight by moving the queen off the line and bringing the other knight round to e6."
+                                "White's plans are to develop quickly, castle, and pin Black's king's knight.\nBlack's plans are to double White's pawns, and to prevent the pin on the king's knight from becoming dangerous."
                             ],
                             [
                                 "Classical Variation: 3...Bc5",
                                 "12% as White",
-                                "White: Castle, then build a pawn center that hits the bishop with gain of time. A rook on e1 and a pawn on h3 keep the center safe.\nBlack: Keep the bishop on its active diagonal toward f2, develop and castle. Don't guard e5 with the d-pawn too early: then White's pawn push to d5 wins a piece."
+                                "White's plans are to castle and build a pawn center that chases the bishop.\nBlack's plans are to keep the bishop aimed at f2, and to prevent White's center push from winning a piece."
                             ]
                         ],
                         "note": "How often: the share of your Ruy Lopez games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -1345,27 +1345,27 @@
                     [
                         "Morphy Defense: 3...a6",
                         "33%",
-                        "White: Drop the bishop back and keep the pressure on e5. Most players then castle and enter the main lines, which carry a lot of theory; this course guards e4 with a pawn first and builds slowly.\nBlack: Chase the bishop with pawns and gain space on the queenside."
+                        "White's plans are to keep the pressure on e5 and build up slowly in the center.\nBlack's plans are to chase the bishop with pawns and gain space on the queenside."
                     ],
                     [
                         "Steinitz Defense: 3...d6",
                         "22%",
-                        "White: Take the center with the d-pawn and develop freely.\nBlack: Hold e5 with a pawn and stay solid, though the king's bishop is shut in."
+                        "White's plans are to take the center and develop freely.\nBlack's plans are to hold e5 with a pawn and stay solid."
                     ],
                     [
                         "Berlin Defense: 3...Nf6",
                         "16%",
-                        "White: Castle and win back the e4 pawn, or guard e4 with a pawn and keep the queens on: the Anti-Berlin.\nBlack: Hit e4 at once and take it when White castles. If the queens come off early, the king is safe in the center: the Berlin endgame."
+                        "White's plans are to win back the e4 pawn, or guard it and keep the queens on.\nBlack's plans are to hit e4 at once and reach a solid, simple game."
                     ],
                     [
                         "Classical Variation: 3...Bc5",
                         "12%",
-                        "White: Gain time against the bishop with a pawn center.\nBlack: Put the bishop on its best diagonal, aiming at f2, as in the Italian Game."
+                        "White's plans are to gain time against the bishop with a pawn center.\nBlack's plans are to aim the bishop at f2, as in the Italian Game."
                     ],
                     [
                         "Others: Bird Variation (5%), Cozio Defense (5%), Schliemann Defense (2%)",
                         "17% in all",
-                        "Rarer defenses. The Bird offers a knight trade in the center, the Cozio develops the king's knight behind the other knight, and the Schliemann is a sharp gambit with the f-pawn. Two other rare queen and bishop moves make up the rest.\nWhite: Develop, castle and take the center calmly."
+                        "Rarer defenses: the Bird offers a knight trade, the Cozio tucks the king's knight behind the other knight, and the Schliemann is a gambit.\nWhite's plans are to develop, castle and take the center calmly."
                     ]
                 ],
                 "note": "Share: how often each reply follows 3.Bb5 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
