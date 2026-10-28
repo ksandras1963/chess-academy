@@ -2,7 +2,7 @@
 [Side "both"]
 [Type "ideas"]
 
-{After 2...Qxd5 3.Nc3 and d4, White has a pawn on d4 and more space. Black builds a wall of pawns on c6 and e6, the same shape as in the Caro-Kann, after first bringing the c8 bishop out in front of it. Each board shows one idea.}
+{When White chases Black's queen and takes the center with the d-pawn, White has more space. Black builds a wall of pawns on c6 and e6, the same shape as in the Caro-Kann, after first bringing the light-squared bishop out in front of it. Each board shows one idea.}
 *
 
 [Chapter "Bishop out, then ...e6"]
@@ -30,7 +30,7 @@
 [Side "both"]
 [Type "ideas"]
 
-{After 2...Qxd5, Black's queen stands in the center early, and White develops by attacking it. Black accepts the lost time: the queen goes to a safe square, and ...c6 gives it a way back. Each board shows one side of this fight.}
+{When Black takes back on d5 with the queen, the queen stands in the center early, and White develops by attacking it. Black accepts the lost time: the queen goes to a safe square, and a pawn on c6 gives it a way back. Each board shows one side of this fight.}
 *
 
 [Chapter "Nc3 hits the queen"]
@@ -58,7 +58,7 @@
 [Side "both"]
 [Type "ideas"]
 
-{Black develops the c8 bishop before ...e6, often to g4 to pin White's knight. White answers with h3: Black then usually takes on f3, and White gets the two bishops. Each board shows one side of this trade.}
+{Black develops the light-squared bishop before moving the e-pawn, often to g4 to pin White's knight. White attacks the bishop with the h-pawn: Black then usually takes the knight, and White gets the two bishops. Each board shows one side of this trade.}
 *
 
 [Chapter "h3 and the two bishops"]
@@ -86,7 +86,7 @@
 [Side "both"]
 [Type "ideas"]
 
-{In the Modern Variation, 2...Nf6, Black takes the pawn back with the knight instead of the queen, so the queen is not chased. White chooses between developing quickly and letting the pawn go, or keeping it for a while with c4. Each board shows one plan.}
+{In the Modern Variation, Black takes the pawn back with the knight instead of the queen, so the queen is not chased. White chooses between developing quickly and letting the pawn go, or keeping it for a while with the c-pawn. Each board shows one plan.}
 *
 
 [Chapter "The knight takes back"]
