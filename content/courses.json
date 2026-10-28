@@ -54,42 +54,42 @@
                             [
                                 "Giuoco Piano: 3...Bc5",
                                 "40% as White",
-                                "White: Build slowly with c3 and d3, castle, and bring the queen's knight round to g3. Open the center with d4 only when your pieces are ready.\nBlack: Copy White's setup, keep the bishop safe on a7, and free the game with ...d5 once every piece is out."
+                                "White's plans are to build slowly behind the c- and d-pawns, castle, and bring a knight round to the kingside.\nBlack's plans are to copy that setup, keep the bishop safe, and prevent White's central push from gaining space."
                             ],
                             [
                                 "Two Knights Defense: 3...Nf6",
                                 "29% as White",
-                                "White: Guard e4 with 4.d3 rather than attacking f7 at once, then follow the same slow plan as against 3...Bc5.\nBlack: Develop quickly, look to trade off White's Italian bishop with the knight, and gain space on the queenside."
+                                "White's plans are to guard the e4 pawn calmly and then follow the same slow build-up.\nBlack's plans are to develop fast, trade off White's best bishop, and prevent a quick attack on f7."
                             ],
                             [
                                 "Castling first: 4.O-O",
                                 "24% as Black",
-                                "White: Castle first and keep the choice between a slow build-up with c3 and d3, a quick d4, or Nc3.\nBlack: Develop the knight to f6 and use the usual setup. If White pushes d4 early, trade the bishop for the knight on d4."
+                                "White's plans are to castle first and keep the choice of a slow build-up or a quick central push.\nBlack's plans are to develop the usual way and prevent an early central push by trading pieces."
                             ],
                             [
                                 "Center attack: 5.d4",
                                 "19% as Black",
-                                "White: Open the center at once and aim for two strong pawns on d4 and e4.\nBlack: Take on d4, check with the bishop to gain time, and strike back in the center. White is often left with a weak lone pawn on d4."
+                                "White's plans are to open the center at once and build two strong central pawns.\nBlack's plans are to trade pawns in the center, check to gain time, and prevent White from keeping a big pawn center."
                             ],
                             [
                                 "Quiet Variation: 4.d3",
                                 "14% as Black",
-                                "White: Guard e4 calmly and keep every option open, sometimes pinning the f6 knight with the bishop.\nBlack: Use the same slow setup. Against the pin, push the bishop back with the h-pawn before you castle."
+                                "White's plans are to guard e4 calmly, keep every option open, and sometimes pin Black's knight.\nBlack's plans are to use the same slow setup and prevent any pin on the knight from lasting."
                             ],
                             [
                                 "Giuoco Pianissimo: 5.d3",
                                 "14% as Black",
-                                "White: Build behind the c3-d3-e4 pawns, bring the knight round to g3, and aim at Black's king.\nBlack: Copy the setup with the bishop on a7, keep White's pieces off g5, trade White's best bishop, and only then free the game with ...d5."
+                                "White's plans are to build slowly, bring the knight round to the kingside, and aim at Black's king.\nBlack's plans are to copy the setup, trade off White's best bishop, and prevent White's pieces from landing on g5."
                             ],
                             [
                                 "Evans Gambit: 4.b4",
                                 "10% as Black",
-                                "White: Give a pawn to gain time for c3 and d4, and attack before Black is developed.\nBlack: Take the pawn, keep the bishop active, and give the pawn back at the right moment to finish developing."
+                                "White's plans are to give a pawn to gain time and attack before Black is developed.\nBlack's plans are to take the pawn, finish developing, and prevent the attack by giving the pawn back at the right moment."
                             ],
                             [
                                 "Italian Four Knights: 4.Nc3",
                                 "9% as Black",
-                                "White: Develop fast with the knight on c3 instead of the c-pawn, and often pin the f6 knight.\nBlack: Use the usual setup and break the pin before castling. The fork trick 5.Nxe5? does not work here."
+                                "White's plans are to develop fast and often pin Black's knight.\nBlack's plans are to use the usual setup and prevent the pin from lasting. The fork trick 5.Nxe5? fails here."
                             ]
                         ],
                         "note": "How often: the share of your Italian games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -801,32 +801,32 @@
                             [
                                 "Main Line: 3...Qa5",
                                 "26% as White\n60% as Black, with 2...Qxd5",
-                                "White's plans are to develop quickly while chasing the queen, castle long and open the center.\nBlack's plans are to build a solid pawn wall on c6 and e6, bring the light-squared bishop out first, and prevent White's knights from attacking the queen."
+                                "White's plans are to develop with gain of time on the queen and attack before Black has castled.\nBlack's plans are to build a solid pawn wall, develop calmly and keep the queen safe."
                             ],
                             [
                                 "Valencian Variation: 3...Qd8",
                                 "21% as White",
-                                "White's plans are to take the center with the d-pawn, use the extra move to develop, and win the two bishops.\nBlack's plans are to build a compact position with pawns on c6 and e6 and to prevent White from finding any weak point."
+                                "White's plans are to take the center, develop quickly and win the two bishops.\nBlack's plans are to build a compact, solid position without weaknesses."
                             ],
                             [
                                 "Avoiding the main line: 3.Nf3 Bg4",
                                 "10% as Black, with 2...Qxd5",
-                                "White's plans are to develop the knight first and castle before chasing the queen.\nBlack's plans are to pin the knight, castle long, aim every piece at the d-file, and prevent White from building a pawn center."
+                                "White's plans are to develop quickly and castle.\nBlack's plans are to pin White's knight, castle long and attack the center with every piece."
                             ],
                             [
                                 "Marshall Variation: 3.d4 Nxd5",
                                 "19% as White\n18% as Black, with 2...Nf6",
-                                "White's plans are to chase the knight with the c-pawn and build a big pawn center.\nBlack's plans are to strike at that center at once with 5...e5 and to prevent White from keeping it."
+                                "White's plans are to chase the knight and build a big pawn center.\nBlack's plans are to strike at the center at once and trade queens."
                             ],
                             [
                                 "Modern Variation: 3.Nc3 Nxd5",
                                 "23% as Black, with 2...Nf6",
-                                "White's plans are to trade knights on d5 and develop quickly.\nBlack's plans are to take back with the knight, develop fast with the queen in the center, and prevent White from gaining time against her."
+                                "White's plans are to trade knights and develop quickly.\nBlack's plans are to take back with the knight, develop fast and use the queen in the center."
                             ],
                             [
                                 "Panov Transfer: 3.c4 c6",
                                 "19% as Black, with 2...Nf6",
-                                "White's plans are to keep the extra pawn on d5 with the c-pawn.\nBlack's plans are to hit d5 at once, develop fast, win the pawn back with the e-pawn, and prevent White's king from castling."
+                                "White's plans are to hold on to the extra pawn.\nBlack's plans are to develop fast, win the pawn back and keep White's king from castling."
                             ]
                         ],
                         "note": "How often: the share of your Scandinavian games that reach the line, from the side that faces it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Lasker Variation (...Bg4 met by h3, about 11% as White) and the Advance Variation (2.e5, 11% as Black) are in Advanced by choice, with the rarer lines."
