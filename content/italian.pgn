@@ -2,7 +2,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{One slow plan works against almost every Black setup in this course. Finish developing behind the c3-d3-e4 pawn chain, then open the center with d4 when your pieces are ready. Each board shows one part of the plan.}
+{One slow plan works against almost every Black setup in this course. Finish developing behind the pawns on c3, d3 and e4, then open the center with the d-pawn when your pieces are ready. Each board shows one part of the plan.}
 *
 
 [Chapter "The knight's trip to g3"]
@@ -33,7 +33,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{Pawn breaks decide this opening. White's is d4 (see White's plan). Black's is ...d5, and it only works once Black has finished developing.}
+{Pawn breaks decide this opening. White's is the d-pawn push to d4 (see White's plan). Black's is the d-pawn push to d5, and it only works once Black has finished developing.}
 *
 
 [Chapter "Black's ...d5, played in time"]
@@ -103,7 +103,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{Match White's patience, then choose the right moment for ...d5. Each board shows one step of the setup.}
+{Match White's patience, then choose the right moment to push the d-pawn to d5. Each board shows one step of the setup.}
 *
 
 [Chapter "...a6 and ...Ba7 keep the bishop"]
@@ -142,7 +142,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{When White opens the center early with c3 and d4, you free your game with ...d5 (see Center attack: 5.d4). The board shows the pawn structure that follows. It decides the plans.}
+{When White opens the center early, you free your game by pushing your d-pawn to d5 (see the Center attack chapter). The board shows the pawn structure that follows. It decides the plans.}
 *
 
 [Chapter "A pawn with no neighbors"]

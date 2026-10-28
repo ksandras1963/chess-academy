@@ -39,10 +39,10 @@
                     "id": "italian",
                     "side": "both",
                     "file": "content/italian.pgn",
-                    "repertoire": "As White: the Giuoco Pianissimo, with c3, d3 and a slow build-up. As Black: 3...Bc5, then ...Nf6, ...d6, ...a6 and ...Ba7.",
-                    "summary": "1.e4 e5 2.Nf3 Nc6 3.Bc4: the bishop aims at f7, the weakest square near Black's king.",
+                    "repertoire": "As White: the Giuoco Pianissimo, a slow build-up behind the c- and d-pawns. As Black: the bishop to c5, then the same quiet setup as White.",
+                    "summary": "The Italian Game: White's bishop aims at f7, the weakest square near Black's king.",
                     "why": {
-                        "text": "As White, the Italian follows the opening principles: develop quickly, castle early, and aim the bishop at f7, the square only Black's king defends. The slow Giuoco Pianissimo taught here avoids the long forcing lines of the open game, so one plan works against almost everything. The opening goes back to Greco in the 1620s, and top players have favored it since the Berlin Defense blunted the Ruy Lopez in Kramnik's 2000 world title match.\n\nAs Black, 3...Bc5 is the most natural reply: the bishop takes its best diagonal and aims at f2, just as White's aims at f7. It avoids the sharp 4.Ng5 lines of the Two Knights Defense, and in most games you can copy White's quiet setup. Only the Center attack and the Evans Gambit need exact moves."
+                        "text": "As White, the Italian follows the opening principles: develop quickly, castle early, and aim the bishop at f7, the square only Black's king defends. The slow Giuoco Pianissimo taught here avoids the long forcing lines of the open game, so one plan works against almost everything. The opening goes back to Greco in the 1620s, and top players have favored it since the Berlin Defense blunted the Ruy Lopez in Kramnik's 2000 world title match.\n\nAs Black, putting the bishop on c5 is the most natural reply: it takes its best diagonal and aims at f2, just as White's aims at f7. It avoids the sharp knight attacks on f7 that the Two Knights Defense allows, and in most games you can copy White's quiet setup. Only the Center attack and the Evans Gambit need exact moves."
                     },
                     "table": {
                         "columns": [
