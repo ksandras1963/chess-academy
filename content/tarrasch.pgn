@@ -343,7 +343,7 @@ Against 7.dxc5, take back: 7...Bxc5 (Stockfish −0.1, equal). Against 7.Be2, ta
 {After 4.cxd5 exd5 5.dxc5, the d5 pawn has lost its partner on c5, and White's queen and knight both hit it. Four Black players in ten take back with 5...Bxc5? and lose the pawn to 6.Qxd5. Push it instead: 5...d4!. Then watch for the check 6.Qa4+, and block with the knight, not the bishop. At this level White scores 60% after 5...Bxc5, but only 41% after 5...d4.}
 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. dxc5 d4! {[%cal Gd4c3] Saves the pawn by pushing it, and kicks the knight.}
 (5... Bxc5? {Natural, but now only the queen guards d5.} 6. Qxd5 {White has won a pawn, and the queen hits the bishop on c5.} Nd7 {The best defense: the knight guards the bishop and comes into play. Black is still a pawn down. Stockfish: +0.6, slightly better for White.}
-(6... Qxd5?? {More than half of Black players trade queens here.} 7. Nxd5 {[%cal Gd5c7] Now the knight threatens Nc7+, forking king and rook. Black can cover c7, for example with 7...Bd6, but stays a pawn down with no queens left for counterplay. Stockfish: +1.8, clearly better for White.}))
+(6... Qxd5? {More than half of Black players trade queens here.} 7. Nxd5 {[%cal Gd5c7] Now the knight threatens Nc7+, forking king and rook. Black can cover c7, for example with 7...Bd6, but stays a pawn down with no queens left for counterplay. Stockfish: +1.8, clearly better for White.}))
 6. Qa4+ {About one White player in eleven checks. Most play 6.Ne4 (see 5.dxc5: 5...d4).} Nc6! {Blocks with the knight, which also guards d4.}
 (6... Bd7? {Blocks with the wrong piece: d4 is now unguarded.} 7. Qxd4 {White has won a pawn. Stockfish: +0.9, slightly better for White.})
 7. Ne4 {Two White players in three.}
