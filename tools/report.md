@@ -1,12 +1,12 @@
 # Content validation report
 
-Generated 2026-10-27 15:00 · engine skipped
+Generated 2026-10-28 02:42 · engine skipped
 
 **No errors.**
 
-## Italian Game — as White (`italian-white`)
+## Italian Game — both sides (`italian`)
 
-17 chapters, 42 drillable lines (basic 6, traps 24, advanced 12), 403 learner moves.
+49 chapters, 78 drillable lines (basic 27, traps 28, advanced 23), 700 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -14,112 +14,109 @@ Generated 2026-10-27 15:00 · engine skipped
 |---|---|---|---|---|
 | Main line: 3...Bc5 | 3...Bc5 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Two Knights: 3...Nf6 | 3...Nf6 | Italian Game: Two Knights Defense, Modern Bishop's Opening | C55 | ok |
+| Castling first: 4.O-O | 4.O-O | Italian Game: Giuoco Piano | C50 | ok |
+| Center attack: 5.d4 | 5.d4 | Italian Game: Classical Variation, Center Attack | C54 | ok |
+| Main line: 4.c3 Nf6 5.d3 | 5.d3 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
+| Quiet Variation: 4.d3 | 4.d3 | Italian Game: Giuoco Pianissimo | C50 | ok |
+| Evans Gambit: 4.b4 | 4.b4 | Italian Game: Evans Gambit | C51 | ok |
+| Italian Four Knights: 4.Nc3 | 4.Nc3 | Italian Game: Giuoco Piano | C50 | ok |
+| Other third moves: 3...Be7 and 3...h6 | 3...Be7 | Italian Game: Hungarian Defense | C50 | ok |
+| Pianissimo: White's sixth moves | 6.h3 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Pianissimo: 6...a6 and 6...Bg4 | 6...Bg4 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Pianissimo: 7...Ng4 | 7...Ng4 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
-| Other third moves | 3...Be7 | Italian Game: Hungarian Defense | C50 | ok |
+| Center attack: 7.Nc3 and 6.e5 | 7.Nc3 | Italian Game: Classical Variation, Center Attack | C54 | ok |
 | Paris Defense: 3...d6 | 3...d6 | Italian Game: Paris Defense | C50 | ok |
 | Rousseau Gambit: 3...f5 | 3...f5 | Italian Game: Rousseau Gambit | C50 | ok |
+| Evans Gambit: 6.O-O | 6.O-O | Italian Game: Evans Gambit, Lasker Defense | C52 | ok |
 | Trap: the Blackburne Shilling Gambit | 3...Nd4 | Italian Game: Blackburne-Kostić Gambit | C50 | ok |
 | Trap: 4...h6 and the b-pawn push | 4...h6 | Italian Game: Classical Variation | C53 | ok |
 | Trap: the early ...d5 and Qb3 | 5...d5 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Trap: the early ...Ng4 | 5...Ng4 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Trap: the Fishing Pole | 7...h5 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
 | Trap: Légal's mate | 5...Bh5 | Italian Game: Paris Defense | C50 | ok |
-
-## Italian Game — as Black (`italian-black`)
-
-13 chapters, 25 drillable lines (basic 10, traps 4, advanced 11), 218 learner moves.
-
-### Opening names and course-page diagrams
-
-| Chapter | Diagram | Opening header | ECO | Check |
-|---|---|---|---|---|
-| Main line: 4.c3 Nf6 5.d3 | 5.d3 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
-| Center attack: 5.d4 | 5.d4 | Italian Game: Classical Variation, Center Attack | C54 | ok |
-| Quiet fourth moves | 4.O-O | Italian Game: Giuoco Piano | C50 | ok |
-| Evans Gambit: 4.b4 | 4.b4 | Italian Game: Evans Gambit | C51 | ok |
-| Pianissimo: White's sixth moves | 6.h3 | Italian Game: Classical Variation, Giuoco Pianissimo | C54 | ok |
-| Center attack: 7.Nc3 and 6.e5 | 7.Nc3 | Italian Game: Classical Variation, Center Attack | C54 | ok |
-| Evans Gambit: 6.O-O | 6.O-O | Italian Game: Evans Gambit, Lasker Defense | C52 | ok |
 | Trap: 5.Ng5 and f7 | 5.Ng5 | Italian Game: Giuoco Pianissimo | C50 | ok |
 | Trap: a fork trick that fails | 5.Nxe5 | Four Knights Game: Italian Variation | C50 | ok |
 
-## Caro-Kann Defense — as White (`caro-kann-white`)
+## Caro-Kann Defense — both sides (`caro-kann`)
 
-26 chapters, 39 drillable lines (basic 11, traps 6, advanced 22), 314 learner moves.
-
-### Opening names and course-page diagrams
-
-| Chapter | Diagram | Opening header | ECO | Check |
-|---|---|---|---|---|
-| Main line: 5...c5 | 5...c5 | Caro-Kann Defense: Advance Variation, Short Variation | B12 | ok |
-| Advance: 3...c5 | 3...c5 | Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense | B12 | ok |
-| Two Knights: 3...Bg4 | 3...Bg4 | Caro-Kann Defense: Two Knights Attack, Mindeno Variation, Exchange Line | B11 | ok |
-| Two Knights: 4...Nf6 | 4...Nf6 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Two Knights: 4...Bf5 | 4...Bf5 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Two Knights: 3...d4 | 3...d4 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Fantasy: 3...dxe4 | 3...dxe4 | Caro-Kann Defense: Maróczy Variation, Maróczy Gambit | B12 | ok |
-| Fantasy: 3...e6 | 3...e6 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
-| Advance: Black's other tries | 4...Nd7 | Caro-Kann Defense: Advance Variation, Short Variation | B12 | ok |
-| Two Knights: 3...Bg4 sidelines | 5...dxe4 | Caro-Kann Defense: Two Knights Attack, Mindeno Variation, Exchange Line | B11 | ok |
-| Two Knights: 4...Nf6 sidelines | 6...Qd5 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Two Knights: 4...Bf5 5.Ng3 Bg4 | 5...Bg4 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Two Knights: 4...Nd7 and 4...Bg4 | 4...Nd7 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Two Knights: 3...Nf6 and 3...g6 | 3...Nf6 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Fantasy: 5...Bg4 and 5...Be6 | 5...Bg4 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
-| Fantasy: 3...g6 and 3...Qb6 | 3...g6 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
-| Trap: 5.Qe2 and the smothered mate | 5.Qe2 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Trap: 9.Ne5 against ...Bg4 | 9.Ne5 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Trap: hunting the bishop | 8.Qh5 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Trap: the sacrifice on f7 | 8.Nxf7 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
-| Trap: the ...Qxb2 grab | 7...Qxb2 | Caro-Kann Defense: Advance Variation, Short Variation | B12 | ok |
-| Trap: the 3...e5 gambit | 3...e5 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
-
-## Caro-Kann Defense — as Black (`caro-kann-black`)
-
-24 chapters, 35 drillable lines (basic 10, traps 6, advanced 19), 261 learner moves.
+70 chapters, 114 drillable lines (basic 23, traps 11, advanced 80), 957 learner moves.
 
 ### Opening names and course-page diagrams
 
 | Chapter | Diagram | Opening header | ECO | Check |
 |---|---|---|---|---|
-| Main line: 4...Bf5 | 4...Bf5 | Caro-Kann Defense: Classical Variation, Main Line | B18 | ok |
-| Advance: 3...c5 | 3...c5 | Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense | B12 | ok |
-| Advance: 4.c3 | 4.c3 | Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense | B12 | ok |
-| Exchange: 4.Bd3 and 4.Nf3 | 4.Bd3 | Caro-Kann Defense: Exchange Variation, Rubinstein Variation | B13 | ok |
-| Panov: 4.c4 | 4.c4 | Caro-Kann Defense: Panov Attack | B13 | ok |
-| 2.Nf3: 3.exd5 | 3.exd5 | Caro-Kann Defense | B10 | ok |
-| 2.Nf3: 3.e5 | 3.e5 | Caro-Kann Defense | B10 | ok |
-| Other second moves: 2.Bc4 and 2.c4 | 2.Bc4 | Caro-Kann Defense: Hillbilly Attack | B10 | ok |
-| Karpov: 4...Nd7 | 4...Nd7 | Caro-Kann Defense: Karpov Variation | B17 | ok |
-| Classical: 3.Nd2 | 3.Nd2 | Caro-Kann Defense: Classical Variation | B18 | ok |
-| Advance: other fourth moves | 4.Nf3 | Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense | B12 | ok |
-| Exchange: 4.Bf4 | 4.Bf4 | Caro-Kann Defense: Exchange Variation, Rubinstein Variation | B13 | ok |
-| Two Knights: 3...Bg4 | 3...Bg4 | Caro-Kann Defense: Two Knights Attack, Mindeno Variation, Exchange Line | B11 | ok |
-| Fantasy: 3...dxe4 | 3...dxe4 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
-| Other second moves: 2.d3 | 2.d3 | Caro-Kann Defense: Breyer Variation | B10 | ok |
-| Hillbilly: 3.Bb3 | 3.Bb3 | Caro-Kann Defense: Hillbilly Attack, Schaeffer Gambit | B10 | ok |
-| Trap: 5.Qe2 and the smothered mate | 5.Qe2 | Caro-Kann Defense: Karpov Variation | B17 | ok |
-| Trap: 5.dxe5 and ...Qh4+ | 5.dxe5 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
-| Trap: the 3...e5 gambit | 3...e5 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
-| Trap: the 4.f3 gambit | 4.f3 | Caro-Kann Defense: Rasa-Studier Gambit | B15 | ok |
+| Advance, Main line, Short Variation: 4.Nf3 | 4.Nf3 | Caro-Kann Defense: Advance Variation, Short Variation | B12 | ok |
+| Advance, Main line: 4.Bd3 | 4.Bd3 | Caro-Kann Defense: Advance Variation | B12 | ok |
+| Advance, Botvinnik-Carls Defense: 3...c5 | 3...c5 | Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense | B12 | ok |
+| Panov Attack: 4.c4 | 4.c4 | Caro-Kann Defense: Panov Attack | B13 | ok |
+| Classical Variation: 4...Bf5 | 4...Bf5 | Caro-Kann Defense: Classical Variation | B18 | ok |
+| Tartakower Variation: 5...exf6 | 5...exf6 | Caro-Kann Defense: Tartakower Variation | B15 | ok |
+| Two Knights Attack: 3...dxe4 | 3...dxe4 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Maróczy Variation: 3...dxe4 | 3...dxe4 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
+| Maróczy Variation: 3...e6 | 3...e6 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
+| Trap, Short Variation: 7...Qxb2? 8.Qb1! | 7...Qxb2 | Caro-Kann Defense: Advance Variation, Short Variation | B12 | ok |
+| Trap, Two Knights Attack: 5...Nbd7?? 6.Nd6# | 6.Nd6# | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Trap, Two Knights Attack: 8...Bg4? 9.Ne5! | 9.Ne5 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Trap, Two Knights Attack: 7...Bh7? 8.Qh5! | 8.Qh5 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Trap, Two Knights Attack: 7...h6?? 8.Nxf7! | 8.Nxf7 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Trap to avoid, Maróczy Variation: 5.exd5? against 3...e5 | 3...e5 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
+| Trap to avoid, Karpov Variation: 5...Ngf6?? 6.Nd6# | 5.Qe2 | Caro-Kann Defense: Karpov Variation | B17 | ok |
+| Trap to avoid, Rasa-Studier Gambit: 6...Nf6? 7.Bxf7+ | 4.f3 | Caro-Kann Defense: Rasa-Studier Gambit | B15 | ok |
+| Trap, Maróczy Variation: 5.dxe5? Qh4+ | 5.dxe5 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
+| Trap, Maróczy Variation: 6.Ne2?? Qe3# | 6.Ne2 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
+| Advance, Main line, Tal Variation: 4.h4 | 4.h4 | Caro-Kann Defense: Advance Variation, Tal Variation | B12 | ok |
+| Advance, Main line: 4.f4 | 4.f4 | Caro-Kann Defense: Advance Variation | B12 | ok |
+| Advance, Main line, Bayonet Attack: 4.g4 | 4.g4 | Caro-Kann Defense: Advance Variation, Bayonet Attack | B12 | ok |
+| Advance, Main line: 4.c3 | 4.c3 | Caro-Kann Defense: Advance Variation | B12 | ok |
+| Advance, Main line, Van der Wiel Attack: 4.Nc3 | 4.Nc3 | Caro-Kann Defense: Advance Variation, Van der Wiel Attack | B12 | ok |
+| Advance, Main line, Short Variation: 6.Be3 | 6.Be3 | Caro-Kann Defense: Advance Variation, Short Variation | B12 | ok |
+| Advance, Botvinnik-Carls Defense: 4.dxc5 | 4.dxc5 | Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense | B12 | ok |
+| Advance, Botvinnik-Carls Defense: White's other fourth moves | 4.Nf3 | Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense | B12 | ok |
+| Advance, Botvinnik-Carls Defense: 5.Bb5 | 5.Bb5 | Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense | B12 | ok |
+| Advance, Black's other tries | 4...Nd7 | Caro-Kann Defense: Advance Variation, Short Variation | B12 | ok |
+| Exchange Variation: 2.Nf3 and 4.d4 | 4.d4 | Caro-Kann Defense: Exchange Variation | B13 | ok |
+| Exchange Variation: 4.Bd3 | 4.Bd3 | Caro-Kann Defense: Exchange Variation, Rubinstein Variation | B13 | ok |
+| Exchange Variation: 4.Nc3 | 4.Nc3 | Caro-Kann Defense: Exchange Variation | B13 | ok |
+| Exchange Variation: 4.Bf4 | 4.Bf4 | Caro-Kann Defense: Exchange Variation, Rubinstein Variation | B13 | ok |
+| Modern Variation: 3.Nd2 | 3.Nd2 | Caro-Kann Defense: Classical Variation | B18 | ok |
+| Classical Variation, Main Line: 6.h4 | 6.h4 | Caro-Kann Defense: Classical Variation, Lobron System | B19 | ok |
+| Karpov Variation: 4...Nd7 | 4...Nd7 | Caro-Kann Defense: Karpov Variation | B17 | ok |
+| Bronstein-Larsen Variation: 5...gxf6 | 5...gxf6 | Caro-Kann Defense: Bronstein-Larsen Variation | B16 | ok |
+| Two Knights Attack, Mindeno Variation: 3...Bg4 | 3...Bg4 | Caro-Kann Defense: Two Knights Attack, Mindeno Variation, Exchange Line | B11 | ok |
+| Two Knights Attack, Mindeno Variation: Black's fifth moves | 5...dxe4 | Caro-Kann Defense: Two Knights Attack, Mindeno Variation, Exchange Line | B11 | ok |
+| Two Knights Attack: 4...Bf5 5.Ng3 Bg6?! | 5.Ng3 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Two Knights Attack: 4...Bf5 5.Ng3 Bg4 | 5.Ng3 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Two Knights Attack: 4...Nd7 and 4...Bg4 | 4...Nd7 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Two Knights Attack: 3...d4?! | 3...d4 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Two Knights Attack: 5.Qe2, Black's other moves | 6...Qd5 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Two Knights Attack: 3...Nf6 and 3...g6 | 3...Nf6 | Caro-Kann Defense: Two Knights Attack | B10 | ok |
+| Maróczy Variation: 5...Bg4 6.c3 | 5...Bg4 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
+| Maróczy Variation, Maróczy Gambit: 5...exd4 | 5...exd4 | Caro-Kann Defense: Maróczy Variation, Maróczy Gambit | B12 | ok |
+| Maróczy Variation: 3...g6 and 3...Qb6 | 3...g6 | Caro-Kann Defense: Maróczy Variation | B12 | ok |
+| Sidelines: Hillbilly Attack 2.Bc4 and Accelerated Panov 2.c4 | 2.Bc4 | Caro-Kann Defense: Hillbilly Attack | B10 | ok |
+| Sidelines, Schaeffer Gambit: 3.Bb3 | 3.Bb3 | Caro-Kann Defense: Hillbilly Attack, Schaeffer Gambit | B10 | ok |
+| Sidelines: 2.f4 | 2.f4 | Caro-Kann Defense | B10 | ok |
+| Sidelines: 2.Nf3 and 3.e5 | 3.e5 | Caro-Kann Defense | B10 | ok |
+| Sidelines, Breyer Variation: 2.d3 | 2.d3 | Caro-Kann Defense: Breyer Variation | B10 | ok |
 
 ## French Defense — both sides (`french`)
 
-40 chapters, 70 drillable lines (basic 17, traps 17, advanced 36), 598 learner moves.
+67 chapters, 90 drillable lines (basic 12, traps 17, advanced 61), 850 learner moves.
 
 ### Opening names and course-page diagrams
 
 | Chapter | Diagram | Opening header | ECO | Check |
 |---|---|---|---|---|
-| Advance: main line, 5...Qb6 | 5...Qb6 | French Defense: Advance Variation, Main Line | C02 | ok |
+| Advance: 3.e5 | 3...c5 | French Defense: Advance Variation, Main Line | C02 | ok |
+| Exchange: 3.exd5 | 3...exd5 | French Defense: Exchange Variation | C01 | ok |
+| Winawer: 3.Nc3 Bb4 | 3...Bb4 | French Defense: Winawer Variation, Poisoned Pawn Variation, Main Line | C18 | ok |
+| Tarrasch: 3.Nd2 | 3...Nf6 | French Defense: Tarrasch Variation, Closed Variation, Main Line | C06 | ok |
+| Steinitz: 3.Nc3 Nf6 4.e5 | 3...Nf6 | French Defense: Classical Variation, Steinitz Variation | C11 | ok |
+| Rubinstein: 3.Nc3 dxe4 | 3...dxe4 | French Defense: Rubinstein Variation, Blackburne Defense | C10 | ok |
 | Advance: 4...Qb6 and 4...cxd4 | 4...Qb6 | French Defense: Advance Variation, Wade Variation | C02 | ok |
-| Rubinstein: 3...dxe4 | 3...dxe4 | French Defense: Rubinstein Variation, Blackburne Defense | C10 | ok |
-| Advance: 6.a3 | 5...Qb6 | French Defense: Advance Variation, Main Line | C02 | ok |
-| Advance: 5...Bd7 | 5...Bd7 | French Defense: Advance Variation, Euwe Variation | C02 | ok |
-| Exchange: 4.Nf3 | 4.Nf3 | French Defense: Exchange Variation | C01 | ok |
-| Exchange: 4.Bd3 and 4.Nc3 | 4.Bd3 | French Defense: Exchange Variation | C01 | ok |
 | Advance: Black's other sixth moves after 6.a3 | 6...Bd7 | French Defense: Advance Variation, Main Line | C02 | ok |
+| Advance: 5...Bd7 | 5...Bd7 | French Defense: Advance Variation, Euwe Variation | C02 | ok |
+| Advance: 6.a3 cxd4 | 6...cxd4 | French Defense: Advance Variation, Main Line | C02 | ok |
 | Advance: 5...cxd4 | 5...cxd4 | French Defense: Advance Variation, Paulsen Attack | C02 | ok |
 | Advance: 5...Nge7 | 5...Nge7 | French Defense: Advance Variation, Paulsen Attack | C02 | ok |
 | Advance: Black's other third moves | 3...Nc6 | French Defense: Advance Variation | C02 | ok |
@@ -127,12 +124,19 @@ Generated 2026-10-27 15:00 · engine skipped
 | Advance: White's other fourth and fifth moves | 5.Bb5 | French Defense: Advance Variation | C02 | ok |
 | Advance: sixth moves after 5...cxd4, 5...Bd7 or 5...Nge7 | 6...Bb4+ | French Defense: Advance Variation, Paulsen Attack | C02 | ok |
 | Advance: Black's other fourth and fifth moves | 4...c4 | French Defense: Advance Variation | C02 | ok |
-| Black's second-move sidelines | 2...c5 | French Defense: Franco-Sicilian Defense | C00 | ok |
+| Exchange: 4.Bd3, 4.Nc3 and 5.Bb5 | 4.Bd3 | French Defense: Exchange Variation | C01 | ok |
+| Winawer: 7...O-O | 7...O-O | French Defense: Winawer Variation, Warsaw Variation | C18 | ok |
+| Tarrasch: 3...c5 | 3...c5 | French Defense: Tarrasch Variation, Chistyakov Defense, Modern Line | C07 | ok |
+| Steinitz: 7...Qb6 | 7...Qb6 | French Defense: Steinitz Variation, Boleslavsky Variation | C11 | ok |
+| Steinitz: 7...cxd4 | 7...cxd4 | French Defense: Steinitz Variation, Boleslavsky Variation | C11 | ok |
+| Steinitz: 7...Be7 | 7...Be7 | French Defense: Steinitz Variation, Boleslavsky Variation | C11 | ok |
+| Burn Variation: 4.Bg5 dxe4 | 4...dxe4 | French Defense: Classical Variation, Burn Variation, Morozevich Line | C13 | ok |
 | Rubinstein: 4...Nf6 and ...gxf6 | 4...Nf6 | French Defense: Rubinstein Variation | C10 | ok |
-| Rubinstein: other sixth moves | 6.Bg5 | French Defense: Rubinstein Variation, Blackburne Defense | C10 | ok |
-| 2.Nf3: other third moves | 3.e5 | French Defense: Knight Variation | C00 | ok |
-| White's other second moves | 2.Bc4 | French Defense | C00 | ok |
-| 2.f4 | 2.f4 | French Defense: La Bourdonnais Variation | C00 | ok |
+| Rubinstein: 3.Nd2, 5.Bd3 and other sixth moves | 6.Bg5 | French Defense: Rubinstein Variation, Blackburne Defense | C10 | ok |
+| Franco-Sicilian: 2...c5 and other second moves | 2...c5 | French Defense: Franco-Sicilian Defense | C00 | ok |
+| Knight Variation: other third moves | 3.e5 | French Defense: Knight Variation | C00 | ok |
+| Rare second moves: 2.Bc4, 2.c4 and 2.d3 | 2.Bc4 | French Defense | C00 | ok |
+| La Bourdonnais Variation: 2.f4 | 2.f4 | French Defense: La Bourdonnais Variation | C00 | ok |
 | Horwitz: 2.b3 | 2.b3 | French Defense: Horwitz Attack | C00 | ok |
 | Trap: the Milner-Barry Gambit | 6.Bd3 | French Defense: Advance Variation, Milner-Barry Gambit, Main Line | C02 | ok |
 | Trap: defusing the Milner-Barry Gambit | 6.Bd3 | French Defense: Advance Variation, Milner-Barry Gambit, Main Line | C02 | ok |
@@ -144,7 +148,7 @@ Generated 2026-10-27 15:00 · engine skipped
 
 ## Queen's Gambit Declined — both sides (`queens-gambit-declined`)
 
-35 chapters, 45 drillable lines (basic 7, traps 4, advanced 34), 395 learner moves.
+65 chapters, 45 drillable lines (basic 7, traps 4, advanced 34), 395 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -178,7 +182,7 @@ Generated 2026-10-27 15:00 · engine skipped
 
 ## Slav Defense — both sides (`slav`)
 
-25 chapters, 30 drillable lines (basic 6, traps 8, advanced 16), 270 learner moves.
+37 chapters, 30 drillable lines (basic 6, traps 8, advanced 16), 270 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -207,7 +211,7 @@ Generated 2026-10-27 15:00 · engine skipped
 
 ## Queen's Gambit Accepted — both sides (`queens-gambit-accepted`)
 
-20 chapters, 28 drillable lines (basic 10, traps 13, advanced 5), 221 learner moves.
+33 chapters, 28 drillable lines (basic 10, traps 13, advanced 5), 221 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -231,7 +235,7 @@ Generated 2026-10-27 15:00 · engine skipped
 
 ## Tarrasch Defense — both sides (`tarrasch`)
 
-17 chapters, 20 drillable lines (basic 6, traps 9, advanced 5), 164 learner moves.
+32 chapters, 20 drillable lines (basic 6, traps 9, advanced 5), 164 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -250,56 +254,106 @@ Generated 2026-10-27 15:00 · engine skipped
 | Trap: 6.Bg5 and the d5 pawn | 6.Bg5 | Queen's Gambit Declined: Tarrasch Defense | D32 | ok |
 | Trap: 6.Nb5? and ...Qa5+ | 6.Nb5 | Queen's Gambit Declined: Tarrasch Defense | D32 | ok |
 
-## King's Indian Defense — both sides (`kings-indian`)
+## Jobava London System — both sides (`jobava-london`)
 
-52 chapters, 68 drillable lines (basic 18, traps 18, advanced 32), 714 learner moves.
+45 chapters, 58 drillable lines (basic 7, traps 11, advanced 40), 388 learner moves.
 
 ### Opening names and course-page diagrams
 
 | Chapter | Diagram | Opening header | ECO | Check |
 |---|---|---|---|---|
-| Mar del Plata: 9.b4 | 9.b4 | King's Indian Defense: Orthodox Variation, Bayonet Attack | E97 | ok |
-| 6...Nbd7 | 6...Nbd7 | King's Indian Defense: Orthodox Variation | E91 | ok |
-| Classical: 6...Na6 | 6...Na6 | King's Indian Defense: Kazakh Variation | E91 | ok |
-| Classical: 6.Bd3 | 6.Bd3 | King's Indian Defense: Normal Variation | E70 | ok |
-| 6...Nc6 | 6...Nc6 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Knight to b5: 3...e6 4.Nb5 | 4.Nb5 | Rapport-Jobava System | D01 | ok |
+| Early bishop: 3...Bf5 | 3...Bf5 | Rapport-Jobava System | D01 | ok |
+| Guarding b5: 3...a6 | 3...a6 | Rapport-Jobava System | D01 | ok |
+| Slav setup: 3...c6 | 3...c6 | Rapport-Jobava System | D01 | ok |
+| Pin on c3: 4.e3 and 4.Nf3 | 4.e3 | Rapport-Jobava System | D01 | ok |
+| Check on b4: 4.Nb5 Bb4+ | 4.Nb5 | Rapport-Jobava System | D01 | ok |
+| Trap: 4...Nc6? and Nb5! | 5.Nb5 | Rapport-Jobava System | D01 | ok |
+| Trap: 5...Ne4? and Qxd5! | 5...Ne4 | Rapport-Jobava System | D01 | ok |
+| Trap: 6...h5? and Bxg6 | 6...h5 | Rapport-Jobava System | D01 | ok |
+| Trap: 8.Qd2? and ...Ne4 | 8.Qd2 | Rapport-Jobava System | D01 | ok |
+| Trap to avoid: 6...Bb6? 7.a5 | 6.a4 | Rapport-Jobava System | D01 | ok |
+| Pin on c3: White's fifth moves | 5.Ne2 | Rapport-Jobava System | D01 | ok |
+| Pin on c3: White's sixth moves | 6.a3 | Rapport-Jobava System | D01 | ok |
+| Check on b4: White's sixth moves | 6.b4 | Rapport-Jobava System | D01 | ok |
+| Knight to b5: 4...Bd6 and 4...Bb4+ | 4...Bd6 | Rapport-Jobava System | D01 | ok |
+| Knight to b5: other fifth and sixth moves | 6...Bd6 | Rapport-Jobava System | D01 | ok |
+| White's other fourth moves | 4.a3 | Rapport-Jobava System | D01 | ok |
+| Guarding b5: other fourth moves | 4...e6 | Rapport-Jobava System | D01 | ok |
+| Hitting d4: 3...c5 | 3...c5 | Rapport-Jobava System | D01 | ok |
+| Slav setup: other fourth moves | 4...e6 | Rapport-Jobava System | D01 | ok |
+| Knight to c6: 3...Nc6 | 3...Nc6 | Rapport-Jobava System | D01 | ok |
+| Fianchetto: 3...g6 | 3...g6 | Rapport-Jobava System | D01 | ok |
+| Early bishop: 5...Bg6 | 5...Bg6 | Rapport-Jobava System | D01 | ok |
+| Move orders: 2...e6 | 2...e6 | Rapport-Jobava System, with e6 | D01 | ok |
+| Move orders: 2...c6 and 2...Bf5 | 2...c6 | Queen's Pawn Game: Chigorin Variation | D00 | ok |
+| Move orders: 1...Nf6 2.Nc3 | 2...g6 | Indian Defense | A45 | ok |
+
+## King's Indian Defense — both sides (`kings-indian`)
+
+73 chapters, 126 drillable lines (basic 15, traps 18, advanced 93), 1374 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Mar del Plata, Main line: 9.Ne1 | 9.Ne1 | King's Indian Defense: Orthodox Variation, Classical System, Kozul Gambit | E98 | ok |
+| Mar del Plata, Bayonet Attack: 9.b4 | 9.b4 | King's Indian Defense: Orthodox Variation, Bayonet Attack, Sokolov's Line | E97 | ok |
+| Fianchetto, Classical: 6...Nbd7 | 6...Nbd7 | King's Indian Defense: Fianchetto Variation, Classical Main Line | E69 | ok |
+| Fianchetto, Panno: 7...a6 | 7...a6 | King's Indian Defense: Fianchetto Variation, Panno Variation | E63 | ok |
+| Four Pawns Attack, Main line: 6...c5 | 6...c5 | Benoni Defense: Four Pawns Attack | A68 | ok |
+| Sämisch, Orthodox: 6...e5 | 6...e5 | King's Indian Defense: Sämisch Variation, Closed Variation | E88 | ok |
+| Sämisch Gambit: 6...c5 | 6...c5 | King's Indian Defense: Sämisch Variation, Sämisch Gambit | E81 | ok |
+| Trap, Bayonet Attack: 10...Nf4?! 11.Bf1 | 10...Nf4 | King's Indian Defense: Orthodox Variation, Bayonet Attack, Sokolov's Line | E97 | ok |
+| Trap, Open Center: 10...b6?? 11.Nc6 | 9...Nbd7 | King's Indian Defense: Orthodox Variation | E94 | ok |
+| Trap, Positional Defense: 8...e5? 9.dxe6 | 8...e5 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Trap, Classical: 5...e5?! and 5...Nb4? | 5...e5 | King's Indian Defense: Normal Variation, Rare Defenses | E90 | ok |
+| Trap, Sämisch Gambit: 10.Bh6? Nxe4! | 9...Re8 | King's Indian Defense: Sämisch Variation, Sämisch Gambit | E81 | ok |
+| Trap to avoid, Averbakh: 6...e5? | 6.Bg5 | King's Indian Defense: Averbakh Variation, Modern Defense | E73 | ok |
+| Trap, Four Pawns Attack: 10.Qc2? Nxe4! | 6...c5 | King's Indian Defense: Four Pawns Attack, Normal Attack | E77 | ok |
+| Trap, Classical 6.Bd3: 10.Ne2?? Nce5! | 6...Bg4 | King's Indian Defense: Normal Variation | E70 | ok |
+| Classical, 6.h3 | 6.h3 | King's Indian Defense: Normal Variation | E70 | ok |
+| Classical, 6.Bd3 | 6.Bd3 | King's Indian Defense: Normal Variation | E70 | ok |
+| Classical, 6.Bd3: White's seventh moves | 7.O-O | King's Indian Defense: Normal Variation | E70 | ok |
+| Classical, 6...Nc6 | 6...Nc6 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Classical, Positional Defense: 7...Nbd7 | 7...Nbd7 | King's Indian Defense: Orthodox Variation, Positional Defense | E94 | ok |
+| Classical, Positional Defense: 7...c5 | 7...c5 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Classical, Positional Defense: 8...Ng4 | 8...Ng4 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Classical, Petrosian System: 7.d5 | 7.d5 | King's Indian Defense: Petrosian Variation, Stein Defense | E92 | ok |
+| Classical, 6...Bg4 | 6...Bg4 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Classical, 6...Bg4: Black's seventh moves | 7...Nc6 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Classical, Maroczy Bind: 6...c5 | 6...c5 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Classical, Black's other sixth moves | 6...c6 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Classical, Exchange Variation: 7.dxe5 | 7.dxe5 | King's Indian Defense: Exchange Variation | E92 | ok |
+| Classical, Black's fifth-move alternatives | 5...Nc6 | King's Indian Defense: Normal Variation, Rare Defenses | E90 | ok |
+| Classical, Gligorić System: 7.Be3 | 7.Be3 | King's Indian Defense: Orthodox Variation, Gligoric-Taimanov System | E92 | ok |
+| Classical, Kazakh: 6...Na6 | 6...Na6 | King's Indian Defense: Kazakh Variation | E91 | ok |
+| Classical, Kazakh: White's seventh moves | 7.a3 | King's Indian Defense: Kazakh Variation | E91 | ok |
+| Classical, Kazakh: White's eighth moves | 8.dxe5 | King's Indian Defense: Kazakh Variation | E91 | ok |
+| Classical, Open Center: 7...exd4 | 7...exd4 | King's Indian Defense: Orthodox Variation | E94 | ok |
+| Classical, Open Center: Black's ninth moves | 9...Nc6 | King's Indian Defense: Orthodox Variation | E94 | ok |
+| Classical, Open Center: 10.Nc2 | 10.Nc2 | King's Indian Defense: Orthodox Variation | E94 | ok |
+| Sämisch, Panno: 6...Nc6 | 6...Nc6 | King's Indian Defense: Sämisch Variation, Panno Main Line | E84 | ok |
+| Sämisch, White's sixth moves | 6.Bd3 | King's Indian Defense: Sämisch Variation, Normal Defense | E81 | ok |
+| Sämisch Gambit, 7.d5 | 7.d5 | King's Indian Defense: Sämisch Variation, Sämisch Gambit | E81 | ok |
+| Four Pawns Attack, White's sixth moves | 6.e5 | King's Indian Defense: Four Pawns Attack | E76 | ok |
+| Four Pawns Attack, 8.Bd3 | 8.Bd3 | King's Indian Defense: Four Pawns Attack, Dynamic Attack | E76 | ok |
+| Four Pawns Attack, 9...Re8 | 9...Re8 | King's Indian Defense: Four Pawns Attack, Normal Attack | E77 | ok |
+| Four Pawns Attack, 6...Na6 | 6...Na6 | King's Indian Defense: Four Pawns Attack | E76 | ok |
 | Makogonov: 5.h3 | 5.h3 | King's Indian Defense: Makogonov Variation | E71 | ok |
-| Sämisch: 6...c5 | 6...c5 | King's Indian Defense: Sämisch Variation, Sämisch Gambit | E81 | ok |
-| Four Pawns: 6...c5 | 6...c5 | King's Indian Defense: Four Pawns Attack, Normal Attack | E77 | ok |
-| 5.Be2: the Averbakh | 5.Be2 | King's Indian Defense: Averbakh Variation, Modern Defense | E73 | ok |
-| 5.Bd3 | 5.Bd3 | King's Indian Defense: Normal Variation | E70 | ok |
-| 6...c5: the Maroczy Bind | 6...c5 | King's Indian Defense: Orthodox Variation | E91 | ok |
-| 6...Bg4 | 6...Bg4 | King's Indian Defense: Orthodox Variation | E91 | ok |
-| Open center: 7...exd4 | 7...exd4 | King's Indian Defense: Orthodox Variation | E94 | ok |
-| Bayonet: Black's ninth moves | 9...a5 | King's Indian Defense: Orthodox Variation, Bayonet Attack | E97 | ok |
-| Fourth-move sidelines | 4.Bg5 | King's Indian Defense | E61 | ok |
-| Black's other sixth moves | 6...c6 | King's Indian Defense: Orthodox Variation | E91 | ok |
-| Sämisch: 7.Nge2 and 7.dxc5 | 7.Nge2 | King's Indian Defense: Sämisch Variation, Sämisch Gambit | E81 | ok |
-| Sämisch: White's sixth moves | 6.Bd3 | King's Indian Defense: Sämisch Variation, Normal Defense | E81 | ok |
-| Classical: White's eighth moves | 8.dxe5 | King's Indian Defense: Kazakh Variation | E91 | ok |
-| Classical: 6.h3 | 6.h3 | King's Indian Defense: Normal Variation | E70 | ok |
-| Classical: White's seventh moves | 7.a3 | King's Indian Defense: Kazakh Variation | E91 | ok |
-| 4.Nf3 | 5.Bg5 | King's Indian Defense | E61 | ok |
-| Fifth-move sidelines | 5.Bg5 | King's Indian Defense: Accelerated Averbakh Variation | E70 | ok |
-| 6...Nbd7: 7...c5 | 7...c5 | King's Indian Defense: Orthodox Variation | E91 | ok |
-| Fianchetto: 3.Nf3 and 4.g3 | 4.g3 | King's Indian Defense: Fianchetto Variation | E60 | ok |
-| Four Pawns: 8.Bd3 | 8.Bd3 | King's Indian Defense: Four Pawns Attack, Dynamic Attack | E76 | ok |
-| Four Pawns: White's other tries | 6.e5 | King's Indian Defense: Four Pawns Attack | E76 | ok |
-| 6.Bd3: White's seventh moves | 7.O-O | King's Indian Defense: Normal Variation | E70 | ok |
-| Black's fifth-move alternatives | 5...Nc6 | King's Indian Defense: Normal Variation, Rare Defenses | E90 | ok |
-| Makogonov: the Karpov System | 6.Be3 | King's Indian Defense: Karpov System | E71 | ok |
-| 6...Bg4: Black's seventh moves | 7...Nc6 | King's Indian Defense: Orthodox Variation | E91 | ok |
-| Kazakh: 6...Na6 | 6...Na6 | King's Indian Defense: Kazakh Variation | E91 | ok |
-| 5.Be2: the Semi-Averbakh | 6.Be3 | King's Indian Defense: Semi-Averbakh System | E73 | ok |
-| Open center: Black's ninth moves | 9...Nc6 | King's Indian Defense: Orthodox Variation | E94 | ok |
-| Trap: ...Nxe4 in the Four Pawns | 6...c5 | King's Indian Defense: Four Pawns Attack, Normal Attack | E77 | ok |
-| Trap: ...Nce5 against 6.Bd3 | 6...Bg4 | King's Indian Defense: Normal Variation | E70 | ok |
-| Trap to avoid: ...e5 against the Averbakh | 6.Bg5 | King's Indian Defense: Averbakh Variation, Modern Defense | E73 | ok |
-| Trap: Bh6? in the Sämisch | 9...Re8 | King's Indian Defense: Sämisch Variation, Sämisch Gambit | E81 | ok |
-| Trap: loose knights in the Mar del Plata | 10...Nf4 | King's Indian Defense: Orthodox Variation, Bayonet Attack, Sokolov's Line | E97 | ok |
-| Trap: mistakes on move 5 | 5...e5 | King's Indian Defense: Normal Variation, Rare Defenses | E90 | ok |
-| Trap: tactics in the open center | 9...Nbd7 | King's Indian Defense: Orthodox Variation | E94 | ok |
-| Trap: ...e5 or ...e6 after 8.d5 | 8...e5 | King's Indian Defense: Orthodox Variation | E91 | ok |
+| Makogonov, Karpov System: 6.Be3 | 6.Be3 | King's Indian Defense: Karpov System | E71 | ok |
+| Fianchetto, Yugoslav: 6...c5 | 6...c5 | King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Exchange Line | E65 | ok |
+| Averbakh, Semi-Averbakh: 6.Be3 | 6.Be3 | King's Indian Defense: Semi-Averbakh System | E73 | ok |
+| Averbakh, Flexible Defense: 6...h6 | 6...h6 | King's Indian Defense: Averbakh Variation, Flexible Defense | E73 | ok |
+| Averbakh, Benoni Defense: 6...c5 | 6...c5 | King's Indian Defense: Averbakh Variation, Benoni Defense, Advance Variation | E74 | ok |
+| Averbakh, Modern Defense: 6...Na6 | 6...Na6 | King's Indian Defense: Averbakh Variation, Modern Defense | E73 | ok |
+| Mar del Plata, Bayonet Attack: 9...Ne8 | 9...Ne8 | King's Indian Defense: Orthodox Variation, Bayonet Attack | E97 | ok |
+| Mar del Plata, Bayonet Attack: 9...a5 | 9...a5 | King's Indian Defense: Orthodox Variation, Bayonet Attack | E97 | ok |
+| Mar del Plata, Modern System: 9.Nd2 | 9.Nd2 | King's Indian Defense: Orthodox Variation, Modern System | E97 | ok |
+| Sidelines, 5.Bd3 | 5.Bd3 | King's Indian Defense: Normal Variation | E70 | ok |
+| Sidelines, fourth moves: 4.Bg5 | 4.Bg5 | King's Indian Defense | E61 | ok |
+| Sidelines, 4.Nf3 | 5.Bg5 | King's Indian Defense | E61 | ok |
+| Sidelines, fifth moves: 5.Bg5 | 5.Bg5 | King's Indian Defense: Accelerated Averbakh Variation | E70 | ok |
 
 ## Overview: Replies to 1.e4 (`content/e4-overview.pgn`)
 
@@ -328,14 +382,24 @@ Generated 2026-10-27 15:00 · engine skipped
 | Modern Defense (1...g6) | 4...a6 | Modern Defense: Standard Defense | B06 | 4...a6 | ok |
 | Alekhine Defense (1...Nf6) | 4...Bg4 | Alekhine Defense: Modern Variation, Main Line | B05 | 4...Bg4 | ok |
 
+## Overview: Caro-Kann Defense (`content/ck-overview.pgn`)
+
+0 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+
+| Chapter | Board after | Opening header | ECO | Line ends | Check |
+|---|---|---|---|---|---|
+| Map of the variations (flowchart) | — | — | — | — | ok |
+
 ## Overview: Replies to 1.d4 (`content/d4-overview.pgn`)
 
-4 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
+6 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
 
 | Chapter | Board after | Opening header | ECO | Line ends | Check |
 |---|---|---|---|---|---|
 | Queen's Gambit | 2.c4 | Queen's Gambit | D06 | 2.c4 | ok |
 | London System | 4...c5 | Queen's Pawn Game: Accelerated London System | D00 | 4...c5 | ok |
+| Jobava London System | 4...Na6 | Rapport-Jobava System | D01 | 4...Na6 | ok |
+| King's Indian Defense | 4...d6 | King's Indian Defense | E61 | 4...d6 | ok |
 | Indian Defenses | 2.c4 | Indian Defense: Normal Variation | A50 | 2.c4 | ok |
 | Uncommon replies to 1.d4 | 1.d4 | Queen's Pawn Game | A40 | 1.d4 | ok |
 
@@ -390,27 +454,25 @@ Generated 2026-10-27 15:00 · engine skipped
 
 ## Puzzles: Italian Game (`content/italian-puzzles.pgn`)
 
-15 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+13 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
 
 Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
 
 | # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
 |---|---|---|---|---|---|---|
-| 1 | The b-pawn push pays off | White | 7.Bxf7+ | 5 | 11...Kf8 (5 half-moves) | not checked |
+| 1 | The b-pawn push pays off | White | 7.Bxf7+ | 1 | 7...Kf8 (13 half-moves) | not checked |
 | 2 | Same sacrifice, no fork | Black | 7...Kxf7 | 2 | 9.d4 (4 half-moves) | not checked |
 | 3 | Escape the Møller trap | Black | 9...d5 | 2 | none | not checked |
 | 4 | Refute the fork trick | Black | 6...Nxc4 | 1 | 7.dxc5 (2 half-moves) | not checked |
 | 5 | Refute the h4 gambit | Black | 9...d5 | 1 | 10.Nxd5 (12 half-moves) | not checked |
 | 6 | The h4 trap springs | White | 10.Nxe5 | 4 | 13...Qh4+ (8 half-moves) | not checked |
 | 7 | Escape the Blackburne trap | White | 5.O-O | 1 | 5...Qxe5 (10 half-moves) | not checked |
-| 8 | Punish ...exd4 with e5 | White | 7.e5 | 3 | 9...Qd6 (4 half-moves) | not checked |
+| 8 | Punish ...exd4 with e5 | White | 7.e5 | 2 | 8...dxc4 (6 half-moves) | not checked |
 | 9 | Rousseau: where does the knight go? | White | 5.Nd4 | 1 | 5...Nf6 (6 half-moves) | not checked |
 | 10 | Promote with a discovered check | White | 8.g7+ | 2 | 9...Qf6 (4 half-moves) | not checked |
-| 11 | Sidestep Légal's trap | Black | 5...Bxf3 | 1 | 6.Qxf3 (2 half-moves) | not checked |
-| 12 | Légal's knight jump | White | 6.Nxe5 | 3 | 8...c6 (4 half-moves) | not checked |
-| 13 | Don't take the queen | Black | 6...Nxe5 | 1 | 7.Qxh5 (5 half-moves) | not checked |
-| 14 | Ng5 punishes 4...Nf6 | White | 5.Ng5 | 3 | 7...c6 (4 half-moves) | not checked |
-| 15 | Fried Liver in the Paris | White | 7.Nxf7 | 2 | 8...Ke8 (8 half-moves) | not checked |
+| 11 | Légal's knight jump | White | 6.Nxe5 | 3 | 8...c6 (4 half-moves) | not checked |
+| 12 | Ng5 punishes 4...Nf6 | White | 5.Ng5 | 3 | 7...c6 (4 half-moves) | not checked |
+| 13 | Fried Liver in the Paris | White | 7.Nxf7 | 1 | 7...Kxf7 (10 half-moves) | not checked |
 
 ## Puzzles: Caro-Kann Defense (`content/caro-kann-puzzles.pgn`)
 
@@ -420,18 +482,18 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 
 | # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
 |---|---|---|---|---|---|---|
-| 1 | Punish the pawn grab | White | 8.Qb1 | 1 | 8...Qxb1+ (4 half-moves) | not checked |
-| 2 | The knight jumps to b5 | White | 11.Nb5 | 1 | 11...Qa4 (4 half-moves) | not checked |
+| 1 | Punish the pawn grab | White | 9.dxc5 | 1 | 9...Bxc5 (7 half-moves) | not checked |
+| 2 | Bishop check, knight fork | White | 7.Bxf7+ | 2 | 8...Kg8 (2 half-moves) | not checked |
 | 3 | Save the bishop | Black | 6...h6 | 1 | 7.Nf3 (4 half-moves) | not checked |
 | 4 | Trade first | Black | 8...Bxd3 | 1 | 9.Qxd3 (2 half-moves) | not checked |
 | 5 | Shut the diagonal | Black | 6...e6 | 1 | 7.O-O (4 half-moves) | not checked |
 | 6 | Kick the knight | White | 5.e5 | 1 | 5...Nd5 (4 half-moves) | not checked |
 | 7 | Check on the weak diagonal | Black | 5...Qh4+ | 1 | 6.Kd2 (6 half-moves) | not checked |
-| 8 | Escape the gambit trap | White | 6.Nh3 | 1 | 6...Bxh3 (5 half-moves) | not checked |
+| 8 | Mate on f7 | White | 9.Bxf7# | 1 | none | not checked |
 | 9 | Mate on the dark squares | Black | 6...Bf2+ | 2 | none | not checked |
 | 10 | The smothered mate | White | 6.Nd6# | 1 | none | not checked |
 | 11 | A pinned knight jumps | White | 9.Ne5 | 1 | 9...Be6 (4 half-moves) | not checked |
-| 12 | Queen to h5 | White | 8.Qh5 | 2 | 9...Nf6 (6 half-moves) | not checked |
+| 12 | Queen to h5 | White | 8.Qh5 | 1 | 8...g6 (8 half-moves) | not checked |
 | 13 | The sacrifice on f7 | White | 8.Nxf7 | 1 | 8...Qc7 (2 half-moves) | not checked |
 | 14 | Block the queen | Black | 4...g6 | 1 | 5.Qe2 (3 half-moves) | not checked |
 
@@ -489,6 +551,21 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 1 | The long diagonal | White | 6.Qf3 | 1 | 6...Nc6 (4 half-moves) | not checked |
 | 2 | Give up b7 | Black | 6...e6 | 1 | 7.Qxb7 (1 half-move) | not checked |
 | 3 | Mate in two | White | 7.Bxf7+ | 2 | none | not checked |
+
+## Puzzles: Jobava London System (`content/jobava-london-puzzles.pgn`)
+
+6 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Nb5 and the fork on c7 | White | 5.Nb5 | 1 | 5...e5 (10 half-moves) | not checked |
+| 2 | The overloaded queen | White | 6.Qxd5 | 1 | 6...Bf5 (4 half-moves) | not checked |
+| 3 | Bxg6 and Qd3 | White | 7.Bxg6 | 2 | 8...Bd6 (3 half-moves) | not checked |
+| 4 | Trap the bishop | White | 7.a5 | 1 | 7...Bxa5 (2 half-moves) | not checked |
+| 5 | ...Ne4 against Qd2 | Black | 8...Ne4 | 1 | 9.Qd3 (4 half-moves) | not checked |
+| 6 | Take on c3 | Black | 6...Bxc3+ | 1 | 7.bxc3 (2 half-moves) | not checked |
 
 ## Puzzles: King's Indian Defense (`content/kings-indian-puzzles.pgn`)
 
