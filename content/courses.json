@@ -54,42 +54,42 @@
                             [
                                 "Giuoco Piano: 3...Bc5",
                                 "40% as White",
-                                "White's plans are to build slowly behind the c- and d-pawns, castle, and bring a knight round to the kingside.\nBlack's plans are to copy that setup, keep the bishop safe, and prevent White's central push from gaining space."
+                                "White's plans are to build up slowly, castle and bring more pieces toward Black's king.\nBlack's plans are to copy White's setup and prevent White from taking over the center."
                             ],
                             [
                                 "Two Knights Defense: 3...Nf6",
                                 "29% as White",
-                                "White's plans are to guard the e4 pawn calmly and then follow the same slow build-up.\nBlack's plans are to develop fast, trade off White's best bishop, and prevent a quick attack on f7."
+                                "White's plans are to defend the center calmly and build up slowly.\nBlack's plans are to develop quickly, trade off White's best bishop and prevent an early attack on the king."
                             ],
                             [
                                 "Castling first: 4.O-O",
                                 "24% as Black",
-                                "White's plans are to castle first and keep the choice of a slow build-up or a quick central push.\nBlack's plans are to develop the usual way and prevent an early central push by trading pieces."
+                                "White's plans are to castle early and keep every option open.\nBlack's plans are to develop as usual and prevent White's center from growing."
                             ],
                             [
                                 "Center attack: 5.d4",
                                 "19% as Black",
-                                "White's plans are to open the center at once and build two strong central pawns.\nBlack's plans are to trade pawns in the center, check to gain time, and prevent White from keeping a big pawn center."
+                                "White's plans are to open the center at once and build a big pawn center.\nBlack's plans are to hit back in the center quickly and prevent White from keeping the big center."
                             ],
                             [
                                 "Quiet Variation: 4.d3",
                                 "14% as Black",
-                                "White's plans are to guard e4 calmly, keep every option open, and sometimes pin Black's knight.\nBlack's plans are to use the same slow setup and prevent any pin on the knight from lasting."
+                                "White's plans are to defend calmly and keep every option open.\nBlack's plans are to use the same slow setup and prevent White's pins from causing trouble."
                             ],
                             [
                                 "Giuoco Pianissimo: 5.d3",
                                 "14% as Black",
-                                "White's plans are to build slowly, bring the knight round to the kingside, and aim at Black's king.\nBlack's plans are to copy the setup, trade off White's best bishop, and prevent White's pieces from landing on g5."
+                                "White's plans are to build up slowly and then attack on the kingside.\nBlack's plans are to copy the setup, trade off White's best bishop and prevent a kingside attack."
                             ],
                             [
                                 "Evans Gambit: 4.b4",
                                 "10% as Black",
-                                "White's plans are to give a pawn to gain time and attack before Black is developed.\nBlack's plans are to take the pawn, finish developing, and prevent the attack by giving the pawn back at the right moment."
+                                "White's plans are to give up a pawn to develop quickly and attack.\nBlack's plans are to take the pawn and prevent the attack by developing quickly."
                             ],
                             [
                                 "Italian Four Knights: 4.Nc3",
                                 "9% as Black",
-                                "White's plans are to develop fast and often pin Black's knight.\nBlack's plans are to use the usual setup and prevent the pin from lasting. The fork trick 5.Nxe5? fails here."
+                                "White's plans are to develop quickly and pin Black's pieces.\nBlack's plans are to develop as usual and prevent the pins from causing trouble."
                             ]
                         ],
                         "note": "How often: the share of your Italian games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
