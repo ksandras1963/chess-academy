@@ -52,7 +52,7 @@
 [Theme "Punish the mistake"]
 [Solve "5...Qa5"]
 [End "5...Qa5"]
-[Hint "White's bishop on g5 has no guard, and the knight on c3 is pinned. One queen move uses both."]
+[Hint "The pawn on e3 has cut White's bishop off from d2, so it can't help the pinned knight on c3. Which queen move adds to the pin?"]
 
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Bg5 c5 5. e3? Qa5! {[%cal Ga5c3,Gf6e4] Pins the knight on c3. Next, ...Ne4 hits c3 and g5.}
 (5... cxd4?! {Lets White take back and develop.} 6. exd4 h6 7. Bh4 Nc6 8. Rc1 {Stockfish: +0.1, equal.})

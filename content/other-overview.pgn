@@ -63,7 +63,7 @@ Black: Take the center with ...d5 and develop quickly with ...Nf6, ...Nc6 and ..
 {White: Fianchetto the queen's bishop with b3 and Bb2, aiming at e5 and Black's kingside. Add pressure on e5 with e3, Bb5 and Nf3, and be ready to take the c6 knight that defends it. Attack Black's center from the side rather than occupying it.
 
 Black: Build a big center with ...e5 and ...d5, and defend e5 with ...Nc6 and ...Bd6. The center gives you space, but it is a target, so keep it protected. Or contest the long diagonal with your own fianchetto: ...Nf6, ...g6 and ...Bg7.}
-1. b3 {This is the Nimzo-Larsen Attack. The bishop will go to b2.} e5 {The most common reply (37%): the Modern Variation. The e-pawn stands in the bishop's path.}
+1. b3 {[%engine ok] This is the Nimzo-Larsen Attack. The bishop will go to b2.} e5 {The most common reply (37%): the Modern Variation. The e-pawn stands in the bishop's path.}
 (1... d5 {The Classical Variation.} 2. Bb2 c5 3. e3 Nc6 4. Bb5 {Pins the knight.} Bd7 {Breaks the pin. The pawns on c5 and d5 give Black space in the center.})
 (1... Nf6 {The Indian Variation.} 2. Bb2 g6 3. e3 Bg7 4. Nf3 O-O {The two fianchettoed bishops face each other on the long diagonal, with the f6 knight between them.})
 2. Bb2 {Attacks e5 at once.} Nc6 {Defends e5.}
