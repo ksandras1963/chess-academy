@@ -829,7 +829,7 @@
             "name": "London System",
             "eco": "A40",
             "moves": "1. d4",
-            "summary": "White develops the bishop to f4 before e3 can shut it in, then builds the same solid setup in almost every game.",
+            "summary": "White develops the dark-squared bishop to f4 before the e-pawn moves and shuts it in, then builds the same solid setup in almost every game.",
             "puzzles": "content/london-puzzles.pgn",
             "furtherStudy": [
                 {
@@ -862,10 +862,10 @@
                     "id": "london",
                     "side": "both",
                     "file": "content/london.pgn",
-                    "repertoire": "As White: 2.Bf4 and the same setup against every reply. As Black: the Queen's Gambit Declined setup after 1...d5, the King's Indian setup after 1...Nf6.",
-                    "summary": "White builds the c3–d4–e3 triangle behind the f4 bishop. Black meets it with the setup used against 1.d4 and aims at the f4 bishop, d4 and b2.",
+                    "repertoire": "As White: the bishop out to f4 at once, and the same setup against every reply. As Black: the Queen's Gambit Declined setup when you start with the d-pawn, the King's Indian setup when you start with the king's knight.",
+                    "summary": "White builds a triangle of pawns on c3, d4 and e3 behind the bishop on f4. Black meets it with the setup Black already uses against the queen's pawn, and aims at the bishop on f4 and the pawns on d4 and b2.",
                     "why": {
-                        "text": "As White, the London is a system: you play the same setup against almost every defense, so you learn one set of plans instead of a book of theory. The c3–d4–e3 triangle is hard to break, the f4 bishop stays active outside it, and Black is the one who has to know what to do.\n\nAs Black, you need no new opening: the Queen's Gambit Declined pieces after 1...d5, or the King's Indian after 1...Nf6, meet it well. White's setup is solid but slow, so you can develop in peace and play for ...e5 or ...c5."
+                        "text": "As White, the London is a system: you play the same setup against almost every defense, so you learn one set of plans instead of a book of theory. The triangle of pawns on c3, d4 and e3 is hard to break, the bishop on f4 stays active outside it, and Black is the one who has to know what to do.\n\nAs Black, you need no new opening: the Queen's Gambit Declined setup when you start with the d-pawn, or the King's Indian setup when you start with the king's knight, meets it well. White's setup is solid but slow, so you can develop in peace and then hit the center with the e-pawn or the c-pawn."
                     },
                     "table": {
                         "columns": [

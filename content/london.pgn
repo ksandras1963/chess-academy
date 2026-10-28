@@ -2,7 +2,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{The bishop goes to f4 on move 2, before Nf3: this keeps c3 and Qb3 ready against ...c5 and ...Qb6, and it keeps a trick against a late ...Bf5 (see Typical tactics). James Mason played the setup in the 1880s, and the name comes from the London tournament of 1922. Each board below shows one part of the setup.}
+{The bishop goes to f4 on move 2, before the king's knight comes out. This keeps the pawn move to c3 and the queen's move to b3 ready for when Black's c-pawn and queen hit d4 and b2, and it keeps a trick ready if Black's light-squared bishop comes to f5 late (see Typical tactics). James Mason played the setup in the 1880s, and the name comes from the London tournament of 1922. Each board below shows one part of the setup.}
 *
 
 [Chapter "The pawn triangle"]
@@ -30,7 +30,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{The key square is e5. Your plans are Ne5, often with f4, and the break e4, which opens lines toward Black's king. Black hits d4 and b2 with ...c5, ...Nc6 and ...Qb6, trades the London bishop with ...Bd6, or breaks with ...e5. Each board below shows one plan.}
+{The key square is e5. Your plans are a knight on e5, often backed by the f-pawn, and the central break with the e-pawn, which opens lines toward Black's king. Black hits d4 and b2 with the c-pawn, the queen's knight and the queen, trades off the London bishop with the dark-squared bishop, or breaks in the center with the e-pawn. Each board below shows one plan.}
 *
 
 [Chapter "The knight on e5"]
@@ -69,7 +69,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{When Black takes on d4, take back with the e-pawn, so the e-file opens for your rook. The first two boards show the structure this gives, the reversed Carlsbad, and how to chase Black's f5 bishop in it; the third shows c4 against Black's own London.}
+{When Black takes on d4, take back with the e-pawn, so the e-file opens for your rook. The first two boards show the structure this gives, the reversed Carlsbad, and how to chase Black's bishop on f5 in it; the third shows the c-pawn push against Black's own London setup.}
 *
 
 [Chapter "The reversed Carlsbad"]
@@ -153,7 +153,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{After 1.d4 Nf6 2.Bf4, Black's main setups are ...g6, ...e6 and ...c5 (2...d5 is the same as 1...d5). Each needs a small change to your usual setup, and each board below shows one of them.}
+{When Black starts with the king's knight, Black's main setups are a fianchetto of the dark-squared bishop, a pawn on e6, and an early push of the c-pawn. Each needs a small change to your usual setup, and each board below shows one of them. If Black puts a pawn on d5 instead, the positions are the same as when Black starts with the d-pawn.}
 *
 
 [Chapter "h3 and Be2"]
@@ -199,7 +199,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{Against the London you keep the setup you already play against 1.d4. White's setup gives you three targets: the bishop on f4, the pawn on d4, and the b2 pawn the bishop left behind. Each board below shows one part of the setup.}
+{Against the London you keep the setup you already play against the queen's pawn. White's setup gives you three targets: the bishop on f4, the pawn on d4, and the pawn on b2 that the bishop left behind. Each board below shows one part of the setup.}
 *
 
 [Chapter "Offer the bishop trade with ...Bd6"]
@@ -234,7 +234,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{The square e5 is the battleground. Once you control it three times, break with ...e5; if White breaks first with e4, open the center and aim at White's d-pawn. With 1...Nf6, the square of White's bishop decides your plan. Each board below shows one plan.}
+{The square e5 is the battleground. Once you control it three times, push your e-pawn there; if White's e-pawn moves up first, open the center and aim at White's d-pawn. When you start with the king's knight, the square of White's bishop decides your plan. Each board below shows one plan.}
 *
 
 [Chapter "The ...e5 break"]
@@ -347,7 +347,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{White can reach the London by several move orders, and your setup stays the same. With 2.Nf3 first, you also have a sharp option with ...Qb6. The Jobava London (the Rapport-Jobava System) puts the knight on c3 and threatens Nb5 and Nxc7+. Each board below shows one idea.}
+{White can reach the London by several move orders, and your setup stays the same. When White brings the king's knight out before the bishop, you also have a sharp option: the queen comes out to b6. The Jobava London (the Rapport-Jobava System) puts the queen's knight on c3, and it threatens to jump to b5 and then take on c7 with check. Each board below shows one idea.}
 *
 
 [Chapter "2.Nf3 first: ...Bf5 with tempo"]
