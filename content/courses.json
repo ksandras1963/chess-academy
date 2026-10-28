@@ -1064,40 +1064,40 @@
                             [
                                 "Fianchetto, Classical: 6...Nbd7",
                                 "18% as White\n5% as Black",
-                                "As White: The g2 bishop guards your king. Take more center with e4, and stop ...Ng4 with h3. As Black: Play ...Nbd7 and ...e5, then hit d4 and e4 with ...c6, ...Qb6 and ...exd4."
+                                "White: Fianchetto your bishop too, so your king is safe and Black's kingside attack has little to aim at. Then take more of the center with the e-pawn, and push the h-pawn one square to keep Black's pieces off g4.\nBlack: Strike at the center with the e-pawn, then press on White's d- and e-pawns with the queen and a rook on the e-file."
                             ],
                             [
                                 "Fianchetto, Panno: 7...a6",
                                 "2% as White\n5% as Black",
-                                "As White: Gain space with d5, and protect c4 with Nd2 and b3. As Black: Open lines on the queenside with ...Nc6, ...a6, ...Rb8 and ...b5."
+                                "White: Push the d-pawn forward to gain space and chase Black's knight, then guard the c4 pawn with a knight and the b-pawn.\nBlack: Play on the queenside instead of in the center. Put a rook on the b-file and push the b-pawn to open lines against White's c4 pawn."
                             ],
                             [
                                 "Four Pawns Attack, Main line: 6...c5",
                                 "20% as White\n6% as Black",
-                                "As White: Push d5 and keep your central majority. As Black: Hit the center at once with ...c5, trade the f3 knight with ...Bg4, and press e4 with ...Re8."
+                                "White: Build the widest possible center with four pawns, then close it with the d-pawn. Keep the central pawn majority and aim to push the e-pawn.\nBlack: Hit the center at once with the c-pawn, before White finishes developing. Then trade off the knight that supports White's e-pawn push, and keep a rook aimed at e4. Black's own chance is the queenside pawn majority."
                             ],
                             [
                                 "Mar del Plata, Main line: 9.Ne1",
                                 "21% as White\n3% as Black",
-                                "As White: Close the center with d5. Play Ne1, Be3 and f3, which holds e4, then open the c-file with c5. As Black: Bring the knight to e7, then storm the kingside with ...f5, ...f4 and ...g5."
+                                "White: Close the center with the d-pawn and attack on the queenside. Retreat the king's knight so the f-pawn can hold e4, then push the c-pawn to open the c-file.\nBlack: Send the queen's knight to the kingside and storm there with the f-pawn, then the g-pawn. Both sides race on opposite wings."
                             ],
                             [
                                 "Mar del Plata, Bayonet Attack: 9.b4",
                                 "21% as White\n2% as Black",
-                                "As White: Skip Ne1 and race on the queenside at once with b4 and c5. As Black: Free the f-pawn with ...Nh5, play ...f5, and hit d5 with ...c6."
+                                "White: Skip the knight retreat and attack on the queenside at once with the b- and c-pawns. Aim a knight at e6, the square that Black's f-pawn push leaves weak.\nBlack: Move the king's knight to the edge to free the f-pawn, then push it. Challenge White's pawn on d5 with the c-pawn."
                             ],
                             [
                                 "Sämisch, Orthodox: 6...e5",
                                 "17% as White\n7% as Black",
-                                "As White: f3 holds e4. After d5, castle short once the c-file opens. As Black: Answer d5 with ...c6 to open the c-file, then play ...Nh5 and ...f5."
+                                "White: The f-pawn guards e4 and keeps Black's knight off g4. Close the center with the d-pawn, and once the c-file opens, castle short: a king on the queenside would face the open file.\nBlack: Strike with the e-pawn, then open the c-file with the c-pawn so White can't safely castle long. Then move the king's knight to the edge and push the f-pawn."
                             ],
                             [
                                 "Sämisch Gambit: 6...c5",
                                 "6% as White\n7% as Black",
-                                "As White: Keep the tension with Nge2. Taking on c5 gives Black fast development for the pawn. As Black: Hit d4 at once with ...c5, put a knight on e5, then play ...e6 and ...a6 to prepare ...b5."
+                                "White: Keep the tension with a knight move instead of taking the c-pawn. If you take it, Black gets fast development for the pawn while your kingside pieces are still at home.\nBlack: Hit White's d-pawn at once with the c-pawn, before White's attack begins. Put a knight on the strong central square e5, open the center with the e-pawn, and prepare to push the b-pawn."
                             ]
                         ],
-                        "note": "How often: the share of your King's Indian games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. The Fianchetto starts 4.Nf3 d6 5.g3 O-O 6.Bg2, the Four Pawns Attack 4.e4 d6 5.f4, the Mar del Plata 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7, and the Sämisch 4.e4 d6 5.f3 O-O 6.Be3, all after 1.d4 Nf6 2.c4 g6 3.Nc3 Bg7. Rarer lines are in Advanced."
+                        "note": "How often: the share of your King's Indian games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
                     }
                 }
             ]
