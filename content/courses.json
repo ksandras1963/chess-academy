@@ -978,32 +978,32 @@
                             [
                                 "Pin on c3: 4...Bb4",
                                 "60% as Black",
-                                "White: Develop calmly with the e-pawn, the light-squared bishop and the king's knight, and castle. Asking the bishop with the a-pawn too early lets Black double White's c-pawns.\nBlack: Pin the c3 knight with the bishop, castle, and strike at White's center with the c-pawn. If White's a-pawn asks the bishop, take the knight and attack the doubled c-pawns with the queen."
+                                "White's plans are to develop the pieces quietly, castle, and keep the c-pawns from being doubled.\nBlack's plans are to pin the c3 knight, castle, and hit White's center with the c-pawn, and to prevent the knight from jumping to b5. If White's c-pawns end up doubled, Black attacks them with the queen."
                             ],
                             [
                                 "Check on b4: 4...Bb4+",
                                 "24% as Black",
-                                "White: Jump the knight to b5 to hit c7, then chase Black's bishop with the queenside pawns.\nBlack: Check with the bishop first, keep it on the a5–e1 diagonal, and drive the knight back with the a-pawn. Whenever the bishop is on b6, stop White's a-pawn from reaching a5, which would trap it."
+                                "White's plans are to attack c7 with the knight and chase Black's bishop with the queenside pawns.\nBlack's plans are to give check, keep the bishop aimed at White's king, and drive the knight back with the a-pawn. Black must prevent White's a-pawn from trapping the bishop."
                             ],
                             [
                                 "Knight to b5: 4.Nb5",
                                 "23% as White",
-                                "White: Jump the knight to b5 at once: with the f4 bishop it hits c7. When Black's c-pawn chases it, the knight goes back to c3, and Black's knight is left on the edge. If Black's bishop comes to d6 instead, take it and keep the bishop pair.\nBlack: Guard c7, drive the knight away with the c-pawn, and bring the stray knight back toward the center."
+                                "White's plans are to jump the knight to b5 to attack c7, then bring it back to c3 when chased, leaving Black's knight stuck on the edge. If Black's bishop comes to d6, White takes it and keeps both bishops.\nBlack's plans are to guard c7, chase the knight away with the c-pawn, and bring the stray knight back to the center."
                             ],
                             [
                                 "Early bishop: 3...Bf5",
                                 "20% as White",
-                                "White: Offer to trade the light-squared bishops on d3, and take back with the c-pawn: it guards e4, the c-file opens for a rook, and the queen can hit the b7 pawn. If Black's bishop steps back to g6, push the h-pawn to drive it off its diagonal.\nBlack: Bring the light-squared bishop out before the e-pawn shuts it in, then develop the other bishop and castle."
+                                "White's plans are to trade off Black's active light-squared bishop, open the c-file for a rook, and attack the b7 pawn with the queen. If the bishop steps back to g6, White pushes the h-pawn to chase it.\nBlack's plans are to bring the light-squared bishop out early, keep a solid pawn on d5, and prevent White from winning the b7 pawn."
                             ],
                             [
                                 "Guarding b5: 3...a6",
                                 "17% as White",
-                                "White: Develop London style: the e-pawn, the bishop to d3, the king's knight, and castle. If Black's bishop comes to f5, offer the trade on d3, as against the early bishop.\nBlack: Take b5 away from White's knight first, then bring the light-squared bishop out or strike at the center with the c-pawn."
+                                "White's plans are to develop London style, with the pawn on e3, the bishop on d3 and the knight on f3, castle, and trade off Black's bishop if it comes to f5.\nBlack's plans are to keep White's knight out of b5, then bring the light-squared bishop out or attack the center with the c-pawn."
                             ],
                             [
                                 "Slav setup: 3...c6",
                                 "16% as White",
-                                "White: Play the e-pawn and offer the bishop trade on d3 when Black's bishop comes to f5. If it goes to g4 instead, chase it with the f-, g- and h-pawns, and against a fianchetto push the h-pawn.\nBlack: Guard d5 with the c-pawn, so the light-squared bishop can come out before the e-pawn moves, and keep a solid pawn chain."
+                                "White's plans are to develop quietly and trade off Black's light-squared bishop. If the bishop goes to g4, or Black puts the other bishop on g7, White attacks with the kingside pawns.\nBlack's plans are to guard d5 with the c-pawn, bring the light-squared bishop out early, and keep a solid pawn chain."
                             ]
                         ],
                         "note": "How often: the share of your Jobava London games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
