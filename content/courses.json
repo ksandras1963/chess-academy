@@ -1019,6 +1019,30 @@
                     }
                 }
             ]
+        },
+        {
+            "id": "nimzo-indian",
+            "name": "Nimzo-Indian Defense",
+            "eco": "E20",
+            "moves": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4",
+            "courses": [
+                {
+                    "id": "nimzo-indian",
+                    "side": "both"
+                }
+            ]
+        },
+        {
+            "id": "grunfeld",
+            "name": "Grünfeld Defense",
+            "eco": "D80",
+            "moves": "1. d4 Nf6 2. c4 g6 3. Nc3 d5",
+            "courses": [
+                {
+                    "id": "grunfeld",
+                    "side": "both"
+                }
+            ]
         }
     ],
     "surveys": [
@@ -1260,6 +1284,7 @@
             "file": "content/indian-overview.pgn",
             "count": "5 defenses",
             "compact": true,
+            "course": "kings-indian nimzo-indian grunfeld",
             "subtitle": "1.d4 Nf6 2.c4: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
             "table": {
                 "after": "map",
