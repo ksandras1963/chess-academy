@@ -363,7 +363,7 @@
                             [
                                 "Main line: 3.Nc3 Nf6 4.Bg5",
                                 "22% as Black",
-                                "The Tartakower: ...Be7, castle, ...h6, then ...b6 and ...Bb7. If White takes on f6, take back with the bishop."
+                                "The Tartakower: ...Be7, castle, ...h6 and ...b6, then ...Bb7, or ...Be6 after 8.cxd5 and the trades on d5. If White takes on f6, take back with the bishop."
                             ],
                             [
                                 "4...Nxd5 in the Exchange",
@@ -371,14 +371,14 @@
                                 "5.e4 gains time on the knight and builds a full center."
                             ],
                             [
+                                "Exchange Variation: 3.Nc3 Nf6 4.cxd5 (or 3.cxd5 exd5 4.Nc3 Nf6)",
+                                "15% as Black",
+                                "Against 5.Bg5, play 5...Nbd7, which sets the Elephant trap. Then ...c6, ...Be7, castle, ...Re8 and ...Nf8."
+                            ],
+                            [
                                 "3...c6 (Semi-Slav move order)",
                                 "12% as White",
                                 "Take on d5 anyway. With no knight on f6 to pin, the bishop goes to f4."
-                            ],
-                            [
-                                "Exchange Variation: 3.Nc3 Nf6 4.cxd5",
-                                "10% as Black",
-                                "Play 5...Nbd7, which sets the Elephant trap. Then ...c6, ...Be7, castle, ...Re8 and ...Nf8."
                             ]
                         ],
                         "note": "How often: the share of your Queen's Gambit Declined games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -457,7 +457,7 @@
                             ],
                             [
                                 "Quiet Variation: e3 lines",
-                                "17% as Black",
+                                "19% as Black",
                                 "Play ...Bf5 at once, then ...e6, ...Nbd7 and ...Be7, and castle."
                             ],
                             [
@@ -554,7 +554,7 @@
                             [
                                 "Normal Variation: 3.Nf3",
                                 "10% as Black",
-                                "...e5 is impossible here: play ...Nf6, ...e6, ...c5 and ...a6."
+                                "...e5 fails here, because Nxe5 takes the pawn. Play ...Nf6, ...e6, ...c5 and ...a6."
                             ]
                         ],
                         "note": "How often: the share of your Queen's Gambit Accepted games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -615,7 +615,7 @@
                             [
                                 "Rubinstein System: 4.cxd5 exd5, then Nf3, g3 and Bg2",
                                 "73% as White",
-                                "The bishop on g2 hits d5, the isolated pawn. Castle and keep up the pressure."
+                                "The bishop on g2 hits d5, which becomes an isolated pawn once Black's c-pawn is traded. Castle and keep up the pressure."
                             ],
                             [
                                 "4.e3 or 4.Nf3",
