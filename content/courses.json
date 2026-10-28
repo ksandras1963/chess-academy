@@ -687,6 +687,7 @@
             "eco": "B01",
             "moves": "1. e4 d5",
             "summary": "Black challenges e4 at once and takes back on d5 with the queen or the knight, for quick development and a solid pawn structure.",
+            "puzzles": "content/scandinavian-puzzles.pgn",
             "furtherStudy": [
                 {
                     "title": "Scandinavian Defense | Ideas, Principles and Common Variations (the first of six videos on the opening)",
