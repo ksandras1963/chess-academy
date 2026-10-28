@@ -145,7 +145,7 @@
 [Theme "Punish the mistake"]
 [Solve "7.e5"]
 [End "8.exf6"]
-[Hint "Black's knight on f6 is the only piece guarding Black's king. Can you chase it with tempo?"]
+[Hint "Black's knight on f6 is Black's only developed piece, and Black's king is still in the center. Can you chase the knight with tempo?"]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4 4. O-O Nxf3+ 5. Qxf3 Nf6?! {Develops, but lets White open the center with 6.d4 (Stockfish: +1.7).}
 6. d4 exd4? {Grabs a pawn, but lets White hit the knight with e5 while Black's king is still in the center. 6...d5! was the move (+1.7).}
