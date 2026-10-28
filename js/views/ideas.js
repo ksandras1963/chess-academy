@@ -14,6 +14,7 @@ export function ideasPage(root, ctx, c, page, { trail, prev, next }) {
         h("header", { class: "ideas-head" },
             backTrail(trail), stepBar(prev, next),
             h("h1", {}, spellOut(ideasTitle(page))),
+            pageSideTag(page.side),
             ...paras(page.root.note.text, { class: "lede" })),
         ...concepts.map(k => k.el),
         furtherStudy(c.opening.furtherStudy)))
@@ -25,7 +26,15 @@ export function ideasPage(root, ctx, c, page, { trail, prev, next }) {
 function ideaTag(idea) {
     if (!idea) return null
     const text = idea === "both" ? "Both sides" : `${idea === "white" ? "White" : "Black"}'s idea`
-    return h("span", { class: `tag side-tag is-${idea}` }, text)
+    return h("span", { class: `tag side-tag idea-tag is-${idea}` }, h("span", { class: `side-chip ${idea}`, "aria-hidden": "true" }), text)
+}
+
+/** The side a Key ideas page is written for, under its title: "You play White", "You play Black" or "Both sides". */
+function pageSideTag(side) {
+    if (!["white", "black", "both"].includes(side)) return null
+    const text = side === "both" ? "Both sides" : `You play ${side === "white" ? "White" : "Black"}`
+    return h("p", { class: "ideas-side" },
+        h("span", { class: `tag side-tag idea-tag is-${side}` }, h("span", { class: `side-chip ${side}`, "aria-hidden": "true" }), text))
 }
 
 function conceptSection(cp, i) {
