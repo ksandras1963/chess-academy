@@ -1,6 +1,6 @@
 # Content validation report
 
-Generated 2026-10-28 22:31 · engine Stockfish, depth 18
+Generated 2026-10-28 23:10 · engine Stockfish, depth 18
 
 **No errors.**
 
@@ -1759,7 +1759,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 9 | Check on b5 wins the bishop | White | 8.Qb5+ | 1 | 8...c6 (6 half-moves) | ok |
 | 10 | Promote with a discovered check | White | 8.g7+ | 2 | 9...Qf6 (4 half-moves) | ok |
 | 11 | Légal's knight jump | White | 6.Nxe5 | 3 | 8...c6 (4 half-moves) | ok |
-| 12 | Ng5 punishes 4...Nf6 | White | 5.Ng5 | 3 | 7...c6 (4 half-moves) | ok |
+| 12 | Ng5 punishes 4...Nf6 | White | 6.exd5 | 1 | 6...Na5 (6 half-moves) | ok |
 | 13 | Fried Liver in the Paris | White | 7.Nxf7 | 1 | 7...Kxf7 (10 half-moves) | ok |
 
 ## Puzzles: Caro-Kann Defense (`content/caro-kann-puzzles.pgn`)
@@ -1848,7 +1848,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 
 | # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
 |---|---|---|---|---|---|---|
-| 1 | Bxc6 and Nxe5: the loose e5 pawn | White | 6.Bxc6 | 1 | 6...dxc6 (6 half-moves) | ok |
+| 1 | Bxc6 and Nxe5: the loose e5 pawn | White | 7.Nxe5 | 1 | 7...Qd4 (4 half-moves) | ok |
 | 2 | Take first, then sacrifice | White | 6.Nxd4 | 1 | 6...exd4 (8 half-moves) | ok |
 | 3 | The Noah's Ark Trap | Black | 8...c5 | 1 | 9.Qd5 (6 half-moves) | ok |
 | 4 | A smothered mate | Black | 11...Qxf2+ | 3 | none | ok |
@@ -1869,7 +1869,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
 |---|---|---|---|---|---|---|
 | 1 | Pin the queen to the king | White | 8.Bb5 | 1 | 8...Bxf3 (2 half-moves) | ok |
-| 2 | The knight uncovers the bishop | White | 12.Nd5 | 1 | 12...Qd8 (4 half-moves) | ok |
+| 2 | The only safe square | White | 8.Kd2 | 1 | 8...Nc6 (4 half-moves) | ok |
 | 3 | The queen offer | White | 6.Ne5 | 1 | 6...Be6 (4 half-moves) | ok |
 | 4 | A second queen offer | White | 8.Nxe5 | 1 | 8...Bxd1 (10 half-moves) | ok |
 | 5 | The loose bishop | White | 8.Ne5 | 1 | 8...e6 (2 half-moves) | ok |
