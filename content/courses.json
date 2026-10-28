@@ -150,47 +150,47 @@
                             [
                                 "Advance, Main line, Short Variation: 4.Nf3",
                                 "White's choice\n5% as Black",
-                                "White's plans are to keep the space the e5 pawn gives, develop quietly and castle.\nBlack's plans are to get the light-squared bishop out early and to attack d4, the base of White's pawn chain."
+                                "White's plans are to keep the extra space, develop quietly and castle.\nBlack's plans are to develop the light-squared bishop early and attack White's center."
                             ],
                             [
                                 "Advance, Main line: 4.Bd3",
                                 "White's choice\n5% as Black",
-                                "White's plans are to trade off Black's good bishop at once and to keep the extra space.\nBlack's plans are to take the trade and to attack d4 with pawns and pieces."
+                                "White's plans are to trade off Black's best bishop and keep the extra space.\nBlack's plans are to accept the trade and attack White's center."
                             ],
                             [
                                 "Advance, Botvinnik-Carls Defense: 3...c5",
                                 "24% as White\nBlack's choice",
-                                "White's plans are to support d4 with the c-pawn and to develop the kingside.\nBlack's plans are to hit d4 at once and to pile up pieces against it."
+                                "White's plans are to hold the center and develop quickly.\nBlack's plans are to attack White's center at once with pawns and pieces."
                             ],
                             [
                                 "Panov Attack: 4.c4",
                                 "White's choice\n3% as Black",
-                                "White's plans are to play actively with the isolated d-pawn and to attack before pieces come off.\nBlack's plans are to block the isolated pawn, trade pieces and prevent White's attack."
+                                "White's plans are to use the active pieces to attack before they are traded.\nBlack's plans are to block the isolated pawn and trade pieces toward a good endgame."
                             ],
                             [
                                 "Classical Variation: 4...Bf5",
                                 "37% as White\nBlack's choice",
-                                "White's plans are to chase the bishop, develop calmly and keep a little more space.\nBlack's plans are to develop the bishop early, stay solid and free the game later with a pawn break."
+                                "White's plans are to develop calmly and keep a little more space.\nBlack's plans are to develop smoothly, stay solid and free the game later."
                             ],
                             [
                                 "Tartakower Variation: 5...exf6",
                                 "27% as White\nBlack's choice",
-                                "White's plans are to develop, castle and head for an endgame, where White's better pawns count.\nBlack's plans are to develop fast, use the open e-file and avoid an early endgame."
+                                "White's plans are to develop, castle and aim for an endgame with the better pawns.\nBlack's plans are to develop quickly and use the open lines to get active."
                             ],
                             [
                                 "Two Knights Attack: 3...dxe4",
                                 "49% as White\nBlack's choice",
-                                "White's plans are to develop the knights first and to set traps against e7 and f7.\nBlack's plans are to trade a pair of knights, gain time on White's queen and avoid the traps."
+                                "White's plans are to develop fast and set traps against Black's king.\nBlack's plans are to trade pieces, develop with gain of time and avoid the traps."
                             ],
                             [
                                 "Maróczy Variation: 3...dxe4",
                                 "46% as White\nBlack's choice",
-                                "White's plans are to keep two center pawns, develop quickly and castle.\nBlack's plans are to hit back in the center with ...e5 and to aim at White's weakened king."
+                                "White's plans are to build a big center and castle quickly to keep the king safe.\nBlack's plans are to hit back in the center at once and attack White's weakened king."
                             ],
                             [
                                 "Maróczy Variation: 3...e6",
                                 "19% as White\nBlack's choice",
-                                "White's plans are to hold e4 with pieces and to keep the big center.\nBlack's plans are to keep the center closed, pin the c3 knight and develop calmly."
+                                "White's plans are to keep the big center and develop calmly.\nBlack's plans are to keep the center closed and develop solidly."
                             ]
                         ],
                         "note": "How often: the share of your Caro-Kann games that reach the line, from the side that faces it. As White, it counts your games with the system the line belongs to (3.e5, 3.exd5, 3.Nc3, 2.Nc3 or 3.f3). \"White's choice\" or \"Black's choice\": that side picks the line, so it can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the Exchange with 4.Bd3 or 4.Nf3, the Tal Variation and the Karpov Variation, is in the Advanced section."
@@ -1369,47 +1369,47 @@
                     [
                         "Advance, Main line, Short Variation: 4.Nf3",
                         "White's choice\n5% as Black",
-                        "White's plans are to keep the space the e5 pawn gives, develop quietly and castle.\nBlack's plans are to get the light-squared bishop out early and to attack d4, the base of White's pawn chain."
+                        "White's plans are to keep the extra space, develop quietly and castle.\nBlack's plans are to develop the light-squared bishop early and attack White's center."
                     ],
                     [
                         "Advance, Main line: 4.Bd3",
                         "White's choice\n5% as Black",
-                        "White's plans are to trade off Black's good bishop at once and to keep the extra space.\nBlack's plans are to take the trade and to attack d4 with pawns and pieces."
+                        "White's plans are to trade off Black's best bishop and keep the extra space.\nBlack's plans are to accept the trade and attack White's center."
                     ],
                     [
                         "Advance, Botvinnik-Carls Defense: 3...c5",
                         "24% as White\nBlack's choice",
-                        "White's plans are to support d4 with the c-pawn and to develop the kingside.\nBlack's plans are to hit d4 at once and to pile up pieces against it."
+                        "White's plans are to hold the center and develop quickly.\nBlack's plans are to attack White's center at once with pawns and pieces."
                     ],
                     [
                         "Panov Attack: 4.c4",
                         "White's choice\n3% as Black",
-                        "White's plans are to play actively with the isolated d-pawn and to attack before pieces come off.\nBlack's plans are to block the isolated pawn, trade pieces and prevent White's attack."
+                        "White's plans are to use the active pieces to attack before they are traded.\nBlack's plans are to block the isolated pawn and trade pieces toward a good endgame."
                     ],
                     [
                         "Classical Variation: 4...Bf5",
                         "37% as White\nBlack's choice",
-                        "White's plans are to chase the bishop, develop calmly and keep a little more space.\nBlack's plans are to develop the bishop early, stay solid and free the game later with a pawn break."
+                        "White's plans are to develop calmly and keep a little more space.\nBlack's plans are to develop smoothly, stay solid and free the game later."
                     ],
                     [
                         "Tartakower Variation: 5...exf6",
                         "27% as White\nBlack's choice",
-                        "White's plans are to develop, castle and head for an endgame, where White's better pawns count.\nBlack's plans are to develop fast, use the open e-file and avoid an early endgame."
+                        "White's plans are to develop, castle and aim for an endgame with the better pawns.\nBlack's plans are to develop quickly and use the open lines to get active."
                     ],
                     [
                         "Two Knights Attack: 3...dxe4",
                         "49% as White\nBlack's choice",
-                        "White's plans are to develop the knights first and to set traps against e7 and f7.\nBlack's plans are to trade a pair of knights, gain time on White's queen and avoid the traps."
+                        "White's plans are to develop fast and set traps against Black's king.\nBlack's plans are to trade pieces, develop with gain of time and avoid the traps."
                     ],
                     [
                         "Maróczy Variation: 3...dxe4",
                         "46% as White\nBlack's choice",
-                        "White's plans are to keep two center pawns, develop quickly and castle.\nBlack's plans are to hit back in the center with ...e5 and to aim at White's weakened king."
+                        "White's plans are to build a big center and castle quickly to keep the king safe.\nBlack's plans are to hit back in the center at once and attack White's weakened king."
                     ],
                     [
                         "Maróczy Variation: 3...e6",
                         "19% as White\nBlack's choice",
-                        "White's plans are to hold e4 with pieces and to keep the big center.\nBlack's plans are to keep the center closed, pin the c3 knight and develop calmly."
+                        "White's plans are to keep the big center and develop calmly.\nBlack's plans are to keep the center closed and develop solidly."
                     ]
                 ],
                 "note": "How often: the share of your Caro-Kann games that reach the line, from the side that faces it. As White, it counts your games with the system the line belongs to (3.e5, 3.exd5, 3.Nc3, 2.Nc3 or 3.f3). \"White's choice\" or \"Black's choice\": that side picks the line, so it can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the Exchange with 4.Bd3 or 4.Nf3, the Tal Variation and the Karpov Variation, is in the Advanced section."
