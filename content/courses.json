@@ -267,32 +267,32 @@
                             [
                                 "Advance: 3.e5",
                                 "Your choice as White; 22% as Black",
-                                "White's plans are to gain space and attack on the kingside.\nBlack's plans are to attack White's center and play on the queenside."
+                                "White: Gain space and attack on the kingside.\nBlack: Attack White's center and play on the queenside."
                             ],
                             [
                                 "Exchange: 3.exd5 exd5",
                                 "Your choice as White; 30% as Black",
-                                "White's plans are to develop calmly, castle and use the open file.\nBlack's plans are to develop quickly, castle and keep the game equal."
+                                "White: Develop calmly, castle and use the open file.\nBlack: Develop quickly, castle and keep the game equal."
                             ],
                             [
                                 "Winawer: 3.Nc3 Bb4",
                                 "19% as White, with 3.Nc3; your choice as Black",
-                                "White's plans are to win the two bishops and attack Black's king.\nBlack's plans are to damage White's pawns and counterattack in the center."
+                                "White: Win the two bishops and attack Black's king.\nBlack: Damage White's pawns and counterattack in the center."
                             ],
                             [
                                 "Tarrasch: 3.Nd2",
                                 "Your choice as White; 6% as Black",
-                                "White's plans are to keep a strong center and develop the knights.\nBlack's plans are to attack the center with pawns and open lines for the pieces."
+                                "White: Keep a strong center and develop the knights.\nBlack: Attack the center with pawns and open lines for the pieces."
                             ],
                             [
                                 "Steinitz: 3.Nc3 Nf6 4.e5",
                                 "28% as White, with 3.Nc3; your choice as Black",
-                                "White's plans are to build a big pawn center and attack on the kingside.\nBlack's plans are to attack the center and gain space on the queenside."
+                                "White: Build a big pawn center and attack on the kingside.\nBlack: Attack the center and gain space on the queenside."
                             ],
                             [
                                 "Rubinstein: 3.Nc3 dxe4",
                                 "16% as White, with 3.Nc3 or 3.Nd2; your choice as Black",
-                                "White's plans are to develop quickly and keep a little more space.\nBlack's plans are to trade pieces and free the game with a pawn break."
+                                "White: Develop quickly and keep a little more space.\nBlack: Trade pieces and free the game with a pawn break."
                             ]
                         ],
                         "note": "How often: the share of your French games that reach the line, from the side that faces it, counting all its move orders; the side that chooses the line can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -1049,22 +1049,22 @@
                             [
                                 "Fianchetto, Classical: 6...Nbd7",
                                 "18% as White\n5% as Black",
-                                "White's plans are to keep the king safe and build a strong center.\nBlack's plans are to attack White's center with pawns and pieces."
+                                "White: Keep the king safe and build a strong center.\nBlack: Attack White's center with pawns and pieces."
                             ],
                             [
                                 "Fianchetto, Panno: 7...a6",
                                 "2% as White\n5% as Black",
-                                "White's plans are to gain space in the center and protect the queenside pawns.\nBlack's plans are to play on the queenside and open lines there."
+                                "White: Gain space in the center and protect the queenside pawns.\nBlack: Play on the queenside and open lines there."
                             ],
                             [
                                 "Four Pawns Attack, Main line: 6...c5",
                                 "20% as White\n6% as Black",
-                                "White's plans are to build a big pawn center and push it forward later.\nBlack's plans are to attack the center at once and to prevent White's pawns from advancing."
+                                "White: Build a big pawn center and push it forward later.\nBlack: Attack the center at once and prevent White's pawns from advancing."
                             ],
                             [
                                 "Mar del Plata, Main line: 9.Ne1",
                                 "21% as White\n3% as Black",
-                                "White's plans are to close the center and attack on the queenside.\nBlack's plans are to attack on the kingside with pawns, in a race on opposite wings."
+                                "White: Close the center and attack on the queenside.\nBlack: Attack on the kingside with pawns, in a race on opposite wings."
                             ],
                             [
                                 "Mar del Plata, Bayonet Attack: 9.b4",
@@ -1074,12 +1074,12 @@
                             [
                                 "Sämisch, Orthodox: 6...e5",
                                 "17% as White\n7% as Black",
-                                "White's plans are to keep a solid center, close it, and keep the king safe.\nBlack's plans are to strike at the center and open the queenside, so White's king is not safe there."
+                                "White: Keep a solid center, close it, and keep the king safe.\nBlack: Strike at the center and open the queenside, so White's king is not safe there."
                             ],
                             [
                                 "Sämisch Gambit: 6...c5",
                                 "6% as White\n7% as Black",
-                                "White's plans are to keep the center and finish developing rather than take the pawn.\nBlack's plans are to attack the center before White can attack, then play on the queenside."
+                                "White: Keep the center and finish developing rather than take the pawn.\nBlack: Attack the center before White can attack, then play on the queenside."
                             ]
                         ],
                         "note": "How often: the share of your King's Indian games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
