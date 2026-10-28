@@ -54,42 +54,42 @@
                             [
                                 "Giuoco Piano: 3...Bc5",
                                 "40% as White",
-                                "4.c3 and 5.d3, castle, Re1. Drop the bishop to b3 before ...Na5 or ...b5 can trade it."
+                                "White: Build slowly with c3 and d3, castle, and bring the queen's knight round to g3. Open the center with d4 only when your pieces are ready.\nBlack: Copy White's setup, keep the bishop safe on a7, and free the game with ...d5 once every piece is out."
                             ],
                             [
-                                "Two Knights: 3...Nf6",
+                                "Two Knights Defense: 3...Nf6",
                                 "29% as White",
-                                "4.d3, not 4.Ng5. 4...Bc5 5.c3 is the main line. Against ...Na5, Bb5, Ba4 and Bc2 keep the bishop."
+                                "White: Guard e4 with 4.d3 rather than attacking f7 at once, then follow the same slow plan as against 3...Bc5.\nBlack: Develop quickly, look to trade off White's Italian bishop with the knight, and gain space on the queenside."
                             ],
                             [
                                 "Castling first: 4.O-O",
                                 "24% as Black",
-                                "4...Nf6, then ...d6, ...a6 and ...Ba7. Against 5.d4, take with the bishop: 5...Bxd4."
+                                "White: Castle first and keep the choice between a slow build-up with c3 and d3, a quick d4, or Nc3.\nBlack: Develop the knight to f6 and use the usual setup. If White pushes d4 early, trade the bishop for the knight on d4."
                             ],
                             [
-                                "Center attack: 4.c3 Nf6 5.d4",
+                                "Center attack: 5.d4",
                                 "19% as Black",
-                                "5...exd4 6.cxd4 Bb4+, then ...d5. Against 7.Nc3, take the e4 pawn."
+                                "White: Open the center at once and aim for two strong pawns on d4 and e4.\nBlack: Take on d4, check with the bishop to gain time, and strike back in the center. White is often left with a weak lone pawn on d4."
                             ],
                             [
                                 "Quiet Variation: 4.d3",
                                 "14% as Black",
-                                "4...Nf6 and ...d6. Against 5.Bg5, ...h6 and, if needed, ...g5 before you castle."
+                                "White: Guard e4 calmly and keep every option open, sometimes pinning the f6 knight with the bishop.\nBlack: Use the same slow setup. Against the pin, push the bishop back with the h-pawn before you castle."
                             ],
                             [
-                                "Main line: 4.c3 Nf6 5.d3",
+                                "Giuoco Pianissimo: 5.d3",
                                 "14% as Black",
-                                "...d6, ...a6, ...Ba7, castle and ...h6. ...d5 only after ...Re8 and ...Be6."
+                                "White: Build behind the c3-d3-e4 pawns, bring the knight round to g3, and aim at Black's king.\nBlack: Copy the setup with the bishop on a7, keep White's pieces off g5, trade White's best bishop, and only then free the game with ...d5."
                             ],
                             [
                                 "Evans Gambit: 4.b4",
                                 "10% as Black",
-                                "4...Bxb4 5.c3 Ba5, then give the pawn back with ...d5."
+                                "White: Give a pawn to gain time for c3 and d4, and attack before Black is developed.\nBlack: Take the pawn, keep the bishop active, and give the pawn back at the right moment to finish developing."
                             ],
                             [
                                 "Italian Four Knights: 4.Nc3",
                                 "9% as Black",
-                                "4...Nf6, ...d6, ...a6 and ...Ba7. The fork trick 5.Nxe5? fails to 6...Nxc4!"
+                                "White: Develop fast with the knight on c3 instead of the c-pawn, and often pin the f6 knight.\nBlack: Use the usual setup and break the pin before castling. The fork trick 5.Nxe5? does not work here."
                             ]
                         ],
                         "note": "How often: the share of your Italian games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -887,22 +887,22 @@
                             [
                                 "QGD setup: 5.Bg3",
                                 "9% as White\n20% as Black",
-                                "White's plans are to keep the dark-squared bishop, castle, and meet Black's e-pawn break calmly.\nBlack's plans are to develop as in the Queen's Gambit Declined, hit d4 with the c-pawn, and break with the e-pawn."
+                                "White's plans are to build the solid pawn triangle, keep the f4 bishop, and castle.\nBlack's plans are to castle, keep White's knight off e5, and break in the center with the e-pawn."
                             ],
                             [
                                 "King's Indian setup: 5.h3 and 5.Be2",
                                 "9% as White\n14% as Black",
-                                "White's plans are to build the London setup, castle, and guard b2 against Black's queen.\nBlack's plans are to fianchetto, castle, and hit d4 with the c-pawn and b2 with the queen."
+                                "White's plans are to develop calmly behind the pawn triangle and trade queens if Black attacks b2.\nBlack's plans are to put the bishop on g7, castle, hit d4 with the c-pawn, and use the open a- and c-files."
                             ],
                             [
                                 "Symmetrical: 2...Bf5",
                                 "10% as White",
-                                "White's plans are to add the c-pawn and attack b7 with the queen.\nBlack's plans are to copy White's setup and keep b7 guarded."
+                                "White's plans are to attack d5 with the c-pawn and hit the weak b7 pawn with the queen.\nBlack's plans are to copy White's setup and prevent the queen from winning b7."
                             ],
                             [
                                 "King's Indian setup, Rapport-Jobava: 3.Nc3",
                                 "4% as Black",
-                                "White's plans are to push the e-pawn, jump the knight to b5, or attack with the h-pawn.\nBlack's plans are to stop the e-pawn push with the d-pawn, castle, and hit the center with the c-pawn."
+                                "White's plans are to push the e-pawn to e4 or attack with the h-pawn.\nBlack's plans are to prevent e4 and the h-pawn attack, castle, and hit the center with the c-pawn."
                             ]
                         ],
                         "note": "How often: the share of your games that reach the line, from the side you play in it, counting every move order. As White, of your 1.d4 games; as Black, of your games with 1...d5 or 1...Nf6. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Everything else is in Advanced."
