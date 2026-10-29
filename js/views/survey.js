@@ -185,14 +185,14 @@ function courseBox(cat, s, hasLessons) {
         ...families.map(ch => [{ href: `#/survey/${ch.headers.Page}`, text: `${ch.title} Course`, side: "both", tip: "Its courses are listed on its page" }]),
         ...ops.map(op => built(op).map(m => ({ href: `#/course/${m.id}`, text: courseTitle(op, m), side: m.side, tip: m.repertoire }))),
     ]
-    if (!groups.length) return null
-    const bothSides = groups.every(g => g.every(it => it.side === "both"))
-    const one = ops.length === 1 && !families.length ? ops[0] : null
-    const plural = !one || built(one).length > 1
     // Courses not written yet: the page's own ("The Nimzo-Indian Defense and Grünfeld Defense courses are
     // coming soon."), and a family's, named with its page ("On the Indian Defenses page, ...").
     const upper = text => text[0].toUpperCase() + text.slice(1)
     const soon = courseOps(cat, s.course).filter(op => !isBuilt(op))
+    if (!groups.length) return soon.length ? plannedBox(soon) : null
+    const bothSides = groups.every(g => g.every(it => it.side === "both"))
+    const one = ops.length === 1 && !families.length ? ops[0] : null
+    const plural = !one || built(one).length > 1
     const coming = [
         ...families.map(ch => {
             const all = chapterOps(cat, ch), later = all.filter(op => !isBuilt(op)), ready = all.filter(isBuilt)
@@ -209,6 +209,19 @@ function courseBox(cat, s, hasLessons) {
             hasLessons ? " The links under each variation below open only the lesson on that variation." : ""].join("")),
         boxRows(groups).map(row => h("div", { class: "course-box-links" }, row.map(it => h("a", { class: "btn course-box-link", href: it.href, title: it.tip },
             h("span", { class: `side-chip ${it.side}`, "aria-hidden": "true" }), it.text, h("span", { "aria-hidden": "true" }, "›"))))))
+}
+
+/**
+ * The yellow box of a page whose courses are all still being written (the Sicilian's six): each
+ * course as a dashed, unlinked button, in the page's "course" order, so the plan shows before the first is built.
+ */
+function plannedBox(ops) {
+    const items = ops.map(op => ({ text: `${op.name} Course`, side: "both" }))
+    return h("section", { class: "course-box" },
+        h("h2", {}, "The full courses"),
+        h("p", {}, `${ops.length > 1 ? "These courses" : "This course"} will teach the opening from both sides, with a drill for each. ${ops.length > 1 ? "They are" : "It is"} coming soon.`),
+        boxRows([items]).map(row => h("div", { class: "course-box-links" }, row.map(it => h("span", { class: "btn course-box-link is-soon", title: "Coming soon" },
+            h("span", { class: `side-chip ${it.side}`, "aria-hidden": "true" }), it.text)))))
 }
 
 /**

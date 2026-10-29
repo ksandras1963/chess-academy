@@ -34,7 +34,8 @@ Black: Develop the same way, with ...Bc5, ...Nf6, ...d6 and castling. Keep the c
 [Opening "Sicilian Defense: Modern Variations, Main Line"]
 [ECO "B54"]
 [Diagram "4...Nf6"]
-[Course "sicilian"]
+[Course "anti-sicilian-1 sicilian-dragon sicilian-najdorf sicilian-taimanov-kan sicilian-sveshnikov-kalashnikov anti-sicilian-2"]
+[Page "sicilian"]
 
 {White: Open the center with Nf3 and d4. After ...cxd4 and Nxd4 you lead in development and have more space. Attack the king, often by castling long and pushing the kingside pawns, because Black's counterplay on the queenside comes fast.
 

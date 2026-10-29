@@ -1,0 +1,258 @@
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. e4 c5 {Sicilian Defense}
+2. Nf3
+(2. Bc4 {Bowdler Attack})
+(2. Nc3 Nc6 {} 3. f4 {Grand Prix Attack} (3. g3 {Closed Sicilian}))
+(2. c3 {Alapin Variation})
+(2. d4 cxd4 3. c3 {Smith-Morra Gambit})
+(2. f4 {McDonnell Attack})
+2... Nc6 {}
+(2... d6 {} 3. d4 (3. Bb5+ {Moscow Variation}) cxd4 4. Nxd4 Nf6 5. Nc3 {} a6 {Najdorf Variation} (5... g6 {Dragon Variation}) (5... Nc6 {Classical Variation}) (5... e6 {Scheveningen Variation}))
+(2... e6 {} 3. d4 cxd4 4. Nxd4 {} Nc6 {Taimanov Variation} (4... a6 {Kan Variation}))
+(2... g6 {Hyperaccelerated Dragon})
+3. d4 (3. Bb5 {Rossolimo Attack}) cxd4 4. Nxd4 {} g6 {Accelerated Dragon}
+(4... Nf6 5. Nc3 e5 {Sveshnikov Variation})
+(4... e5 5. Nb5 d6 {Kalashnikov Variation}) *
+
+[Chapter "Bowdler Attack"]
+[Group "Anti-Sicilians: White avoids the Open Sicilian"]
+[Opening "Sicilian Defense: Bowdler Attack"]
+[ECO "B20"]
+[Diagram "4...exd5"]
+[Course "anti-sicilian-1"]
+
+{The bishop comes to c4 at once, aiming at f7. It is one of the most common anti-Sicilians at club level, but it is not dangerous: after ...e6 the bishop hits a wall, and ...d5 gains time on it. White often plays the same bishop move one move later, after 2.Nf3.
+
+White: Develop quickly with Nf3 or Nc3 and castle. If Black plays ...d5, take on d5 and check with Bb5+; if Black chases the bishop with ...a6 and ...b5, drop it back to b3.
+
+Black: Blunt the bishop with ...e6, then take the center with ...d5, or chase the bishop with ...a6 and ...b5. Develop with ...Nc6 and ...Nf6, and you have an easy game.}
+1. e4 c5 2. Bc4 {This is the Bowdler Attack. The bishop aims at f7.} e6 {The most common reply. The bishop now hits a wall on e6, and ...d5 is ready.}
+3. Nf3 {Develops and prepares to castle.} d5 {Black takes the center and attacks the bishop.}
+4. exd5 exd5 {Black has a free, open game, and the bishop has to move again.} *
+
+[Chapter "Alapin Variation"]
+[Group "Anti-Sicilians: White avoids the Open Sicilian"]
+[Opening "Sicilian Defense: Alapin Variation, Barmen Defense"]
+[ECO "B22"]
+[Diagram "4...Nf6"]
+[Lines "2...d5 | 2...Nf6"]
+[Course "anti-sicilian-1"]
+
+{White plays the c-pawn to c3, so that a pawn, not the knight, can take back on d4. The game is calmer than in the Open Sicilian, and Black's main systems never come up. White often plays the same pawn move one move later, after 2.Nf3.
+
+White: Push d4 next and build a full pawn center. After ...d5, take on d5, then play d4, Nf3 and Be2 or Bd3, and castle. After ...Nf6, push e5 to chase the knight, then play d4.
+
+Black: Hit e4 at once with ...d5 or ...Nf6, before White can support d4. After ...Qxd5, develop with ...Nf6, ...e6 and ...Nc6; without a knight on c3, White can't easily chase the queen.}
+1. e4 c5 2. c3 {This is the Alapin Variation. The pawn prepares d4.} d5 {Hits e4 at once, before White can play d4.}
+(2... Nf6 {Hits e4 with the knight.} 3. e5 Nd5 {The knight is safe in the center.} 4. d4 cxd4 5. Nf3 {White develops before taking back on d4.})
+3. exd5 Qxd5 {The queen takes back. With no knight on c3, White can't gain time on it.}
+4. d4 Nf6 {Black develops and hits the center.} 5. Nf3 *
+
+[Chapter "Grand Prix Attack"]
+[Group "Anti-Sicilians: White avoids the Open Sicilian"]
+[Opening "Sicilian Defense: Grand Prix Attack"]
+[ECO "B23"]
+[Diagram "4...Bg7"]
+[Lines "Grand Prix Attack | McDonnell Attack"]
+[Course "anti-sicilian-1"]
+
+{White pushes the f-pawn early for a quick attack on the kingside. The plan is simple and the attack comes fast, so it is popular at club level. 2.f4, the McDonnell Attack, often leads to the same positions.
+
+White: Develop with Nf3 and Bb5 or Bc4, castle, then attack with f5, or with Qe1 and Qh4. With Bb5, White is happy to give the bishop for the c6 knight.
+
+Black: Fianchetto with ...g6 and ...Bg7, then strike in the center with ...d5, or with ...e6 and ...d5. Against Bc4, ...e6 blunts the bishop.}
+1. e4 c5 2. Nc3 {Prepares f4.} (2. f4 {This is the McDonnell Attack: the f-pawn goes first.} Nc6 3. Nf3 g6 {Black's setup is the same as against the Grand Prix Attack.}) Nc6
+3. f4 {This is the Grand Prix Attack. The f-pawn supports an attack with f5.} g6 {Black puts the bishop on the long diagonal.}
+4. Nf3 Bg7 {White's bishop goes to b5 or c4 next.} *
+
+[Chapter "Smith-Morra Gambit"]
+[Group "Anti-Sicilians: White avoids the Open Sicilian"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation"]
+[ECO "B21"]
+[Diagram "6...e6"]
+[Course "anti-sicilian-1"]
+
+{White gives a pawn for quick development and open lines. If Black is careless, the attack comes fast; if Black defends well, the extra pawn counts later.
+
+White: Take back on c3 with the knight, then play Nf3, Bc4, castle, Qe2 and Rd1. Use the open c- and d-files, and watch for knight jumps to b5 and d5.
+
+Black: Take the pawn, then develop carefully with ...Nc6, ...d6 or ...e6, ...a6 and ...Nf6, keeping White's knights off b5 and d5, and castle quickly. To avoid the gambit, decline it with ...Nf6 or ...d3.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok] This is the Smith-Morra Gambit. White offers a pawn.} dxc3 {Seven Black players in ten take it.}
+4. Nxc3 {White has given a pawn for fast development.} Nc6 5. Nf3 d6 6. Bc4 e6 {Blunts the c4 bishop and guards d5.} *
+
+[Chapter "Closed Sicilian"]
+[Group "Anti-Sicilians: White avoids the Open Sicilian"]
+[Opening "Sicilian Defense: Closed"]
+[ECO "B25"]
+[Diagram "5...d6"]
+[Course "anti-sicilian-1"]
+
+{White keeps the center closed and builds up slowly, with a pawn on d3 instead of d4. The play is strategic, much like the King's Indian Attack.
+
+White: Fianchetto with g3 and Bg2, then play d3, Be3, Qd2, f4 and Nf3 or Nge2, and castle. Attack on the kingside with f5, or with Qd2 and Bh6.
+
+Black: Copy the fianchetto with ...g6 and ...Bg7, then play on the queenside with ...Rb8, ...b5 and ...b4, or in the center with ...e6 and ...Nge7.}
+1. e4 c5 2. Nc3 {Develops and keeps the center closed.} Nc6
+3. g3 {This is the Closed Sicilian. The bishop goes to g2.} g6 4. Bg2 Bg7
+5. d3 d6 {Both sides have the same setup. White will play on the kingside, Black on the queenside.} *
+
+[Chapter "Rossolimo Attack"]
+[Group "Anti-Sicilians: White avoids the Open Sicilian"]
+[Opening "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation"]
+[ECO "B31"]
+[Diagram "4...Bg7"]
+[Course "anti-sicilian-2"]
+
+{White pins the c6 knight instead of opening the center. White often gives up the bishop for the knight to double Black's pawns, then plays a slow game.
+
+White: Castle, then play Re1 and c3 to prepare d4, or take on c6 and play d3 and h3 for a slow game against the doubled pawns.
+
+Black: Fianchetto with ...g6 and ...Bg7, or play ...e6 and ...Nge7, so that a piece can take back on c6. If White gives up the bishop, use your two bishops and open the position.}
+1. e4 c5 2. Nf3 Nc6 3. Bb5 {This is the Rossolimo Attack (in full, the Nyezhmetdinov-Rossolimo Attack). The bishop pins the knight on c6.} g6 {The most common reply. Black prepares ...Bg7.}
+4. O-O Bg7 {White plays Re1 and c3 next, or takes on c6.} *
+
+[Chapter "Moscow Variation"]
+[Group "Anti-Sicilians: White avoids the Open Sicilian"]
+[Opening "Sicilian Defense: Moscow Variation, Main Line"]
+[ECO "B52"]
+[Diagram "4...Qxd7"]
+[Course "anti-sicilian-2"]
+
+{White checks with the bishop and trades it off, avoiding the Najdorf and the Dragon. The game is calm and positional.
+
+White: Trade the bishops, castle, then build a center with c4, or with c3 and d4.
+
+Black: Take back with the queen, then develop with ...Nc6 and ...Nf6, play ...g6 or ...e6, and castle. With the light-squared bishops gone, Black has an easy game.}
+1. e4 c5 2. Nf3 d6 3. Bb5+ {This is the Moscow Variation. The bishop gives check.} Bd7 {Six Black players in ten block with the bishop.}
+4. Bxd7+ Qxd7 {The light-squared bishops are traded.} *
+
+[Chapter "Najdorf Variation"]
+[Group "The Open Sicilian: White plays 2.Nf3 and 3.d4"]
+[Opening "Sicilian Defense: Najdorf Variation"]
+[ECO "B90"]
+[Diagram "5...a6"]
+[Course "sicilian-najdorf"]
+
+{Black's most popular Open Sicilian, played by the world champions Bobby Fischer and Garry Kasparov. The pawn on a6 keeps White's pieces off b5 and prepares ...e5 or ...e6, and ...b5.
+
+White: Choose an attacking setup and castle on the other side: Be3, f3 and Qd2 with long castling (the English Attack), or Bg5 and f4. Then push the kingside pawns.
+
+Black: Play ...e5 or ...e6, then ...b5, ...Bb7 and ...Nbd7, and counterattack on the queenside and down the c-file. Keep control of d5.}
+1. e4 c5 2. Nf3 d6 {Stops e4–e5 and prepares ...Nf6.} 3. d4 {This is the Open Sicilian.} cxd4 {Black trades a wing pawn for a center pawn.}
+4. Nxd4 Nf6 {Hits e4.} 5. Nc3 a6 {This is the Najdorf Variation: a quiet pawn move with many ideas.} *
+
+[Chapter "Taimanov Variation"]
+[Group "The Open Sicilian: White plays 2.Nf3 and 3.d4"]
+[Opening "Sicilian Defense: Taimanov Variation"]
+[ECO "B44"]
+[Diagram "6...a6"]
+[Lines "Taimanov Variation | Four Knights Variation"]
+[Course "sicilian-taimanov-kan"]
+
+{Black plays ...e6 and ...Nc6 and keeps the other pieces flexible: the queen often goes to c7, the bishop to e7 or b4. With ...Nf6, it becomes the Four Knights Variation.
+
+White: Develop with Nc3 and Be3 or Be2, castle, and often play f4, or Qd2 or Qf3 with long castling. Keep Black's pieces out of d4 and b4.
+
+Black: Play ...Qc7, ...a6, ...Nf6 and ...b5, and press on the d4 knight. Break with ...d5 when it is safe.}
+1. e4 c5 2. Nf3 e6 {Opens the f8 bishop's diagonal and prepares ...d5.} 3. d4 cxd4 4. Nxd4 Nc6 {This is the Taimanov Variation.}
+5. Nc3 Qc7 {The queen watches e5 and the c-file.} (5... Nf6 {This is the Four Knights Variation.} 6. Ndb5 Bb4 {The bishop pins the c3 knight.})
+6. Be3 a6 {Keeps White's knights off b5.} *
+
+[Chapter "Kan Variation"]
+[Group "The Open Sicilian: White plays 2.Nf3 and 3.d4"]
+[Opening "Sicilian Defense: Kan Variation"]
+[ECO "B41"]
+[Diagram "6...Nf6"]
+[Course "sicilian-taimanov-kan"]
+
+{Black plays ...e6 and ...a6 and keeps the knights at home for now: the most flexible Sicilian. It often becomes a Hedgehog, with Black's pawns on a6, b6, d6 and e6.
+
+White: Develop with Nc3 and Bd3, castle, and gain space. The c-pawn to c4 gives a Maróczy setup that cramps Black.
+
+Black: Develop with ...Qc7, ...Nf6, ...b5 or ...b6 and ...Bb7, and wait for the right moment to break with ...d5 or ...b5.}
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 {This is the Kan Variation. The pawn keeps White's pieces off b5.}
+5. Nc3 {The most common move.} Qc7 {The queen watches e5 and the c-file.} 6. Bd3 Nf6 {Black develops and hits e4.} *
+
+[Chapter "Accelerated Dragon"]
+[Group "The Open Sicilian: White plays 2.Nf3 and 3.d4"]
+[Opening "Sicilian Defense: Accelerated Dragon"]
+[ECO "B32"]
+[Diagram "6...Nf6"]
+[Lines "Accelerated Dragon | Maróczy Bind | Hyperaccelerated Dragon"]
+[Course "sicilian-dragon"]
+
+{Black fianchettoes before playing ...d6, so that ...d5 can come in one move. White's sharpest attack against the Dragon works less well here, but White can play c4 to stop ...d5: the Maróczy Bind. The Hyperaccelerated Dragon, with ...g6 on move 2, often reaches the same position.
+
+White: Play c4 (the Maróczy Bind) to keep a firm grip on d5, or develop with Nc3, Be3 and Bc4, and castle.
+
+Black: Develop with ...Bg7, ...Nf6 and castling, and aim for ...d5 in one go. Against the Maróczy Bind, be patient: trade pieces and look for the breaks ...b5 or ...f5.}
+1. e4 c5 2. Nf3 Nc6 (2... g6 {This is the Hyperaccelerated Dragon.} 3. d4 cxd4 4. Nxd4 Nc6 {The same position as the Accelerated Dragon.})
+3. d4 cxd4 4. Nxd4 g6 {This is the Accelerated Dragon. Black fianchettoes before playing ...d6.}
+5. Nc3 (5. c4 {This is the Maróczy Bind. The c- and e-pawns grip d5.} Bg7 6. Be3 Nf6 7. Nc3 O-O)
+5... Bg7 6. Be3 Nf6 {White plays Bc4 next and castles.} *
+
+[Chapter "Dragon Variation"]
+[Group "The Open Sicilian: White plays 2.Nf3 and 3.d4"]
+[Opening "Sicilian Defense: Dragon Variation"]
+[ECO "B70"]
+[Diagram "8...Nc6"]
+[Course "sicilian-dragon"]
+
+{Black fianchettoes the bishop on g7, where it aims along the long diagonal at White's queenside. The sharpest Sicilian: the kings often castle on opposite sides, and both sides attack.
+
+White: Play the Yugoslav Attack: Be3, f3, Qd2 and Bc4 or long castling, then h4–h5 to open the h-file, and Bh6 to trade Black's best bishop.
+
+Black: Castle, then play ...Nc6, ...Bd7, ...Rc8 and ...Ne5, and attack down the c-file, often by giving up the exchange on c3. Keep the g7 bishop.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 {This is the Dragon Variation. The bishop goes to g7.}
+6. Be3 Bg7 7. f3 {This is the Yugoslav Attack. White prepares Qd2, long castling and h4–h5.} O-O
+8. Qd2 Nc6 {Both sides are ready: White attacks on the kingside, Black on the queenside.} *
+
+[Chapter "Classical Variation"]
+[Group "The Open Sicilian: White plays 2.Nf3 and 3.d4"]
+[Opening "Sicilian Defense: Classical Variation"]
+[ECO "B56"]
+[Diagram "7.Qd2"]
+[Lines "Classical Variation | Scheveningen Variation"]
+[Course "sicilian-najdorf"]
+
+{Black develops naturally with ...Nc6 (the Classical Variation) or builds a small center with ...e6 (the Scheveningen Variation). Both are rarer than the Najdorf at club level.
+
+White: Against the Classical, pin with Bg5, play Qd2 and castle long: the Richter-Rauzer Attack. Against the Scheveningen, attack with g4–g5 (the Keres Attack), or with Be3, f3 and Qd2.
+
+Black: Develop with ...e6, ...Be7 and castling, then play ...a6 and ...b5 on the queenside. Free the game with ...d5 when it works.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 {This is the Classical Variation.}
+(5... e6 {This is the Scheveningen Variation. The d- and e-pawns form a small center.} 6. g4 {This is the Keres Attack.} h6 {Slows down g4–g5.})
+6. Bg5 {This is the Richter-Rauzer Attack. The bishop pins the knight.} e6 7. Qd2 {White will castle long.} *
+
+[Chapter "Sveshnikov Variation"]
+[Group "The Open Sicilian: White plays 2.Nf3 and 3.d4"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation"]
+[ECO "B33"]
+[Diagram "8...b5"]
+[Course "sicilian-sveshnikov-kalashnikov"]
+
+{Black pushes ...e5 to chase the d4 knight with gain of time. In return, Black accepts a hole on d5 and a backward d-pawn, and gets active pieces and often the two bishops. It is named after Evgeny Sveshnikov, who made it popular in the 1970s.
+
+White: Fight for the d5 square: Bg5 and Bxf6 remove a defender, then the knights come to d5.
+
+Black: Chase the knights with ...a6 and ...b5. If White takes on f6, take back with the g-pawn, then attack with ...f5 and the two bishops.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 {This is the Lasker-Pelikan Variation. The knight on d4 must move.}
+6. Ndb5 {The knight heads for d6.} d6 {Keeps the knight out of d6.} 7. Bg5 a6 8. Na3 b5 {This is the Sveshnikov Variation. Black gains space and keeps the a3 knight out of play.} *
+
+[Chapter "Kalashnikov Variation"]
+[Group "The Open Sicilian: White plays 2.Nf3 and 3.d4"]
+[Opening "Sicilian Defense: Kalashnikov Variation"]
+[ECO "B32"]
+[Diagram "8...Nge7"]
+[Course "sicilian-sveshnikov-kalashnikov"]
+
+{Like the Sveshnikov, but Black plays ...e5 before ...Nf6: the d4 knight is chased at once, and the king's knight can still go to e7. The same hole on d5 and backward d-pawn appear.
+
+White: Clamp d5 with c4, or bring the knights to d5 with N1c3, Na3 and Nd5. Aim at the hole and the backward pawn.
+
+Black: Chase the knights with ...a6 and ...b5, develop with ...Be7 or ...Nge7 and castle, then break with ...f5.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 {This is the Löwenthal Variation. The knight must move at once.}
+5. Nb5 d6 {This is the Kalashnikov Variation. The pawn keeps the knight out of d6.}
+6. N1c3 a6 7. Na3 b5 {Black gains space and keeps the a3 knight out of play.} 8. Nd5 Nge7 {Black will challenge the d5 knight.} *

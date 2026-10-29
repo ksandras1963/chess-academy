@@ -559,6 +559,7 @@ a.om-box:hover, a.om-box:focus-visible { border-color: var(--tone); }
 }
 .course-box-link:hover { border-color: var(--yellow); background: var(--felt-high); }
 .course-box-link .side-chip.white { border-color: var(--ink-dim); } /* visible on a white button too */
+.course-box-link.is-soon, .course-box-link.is-soon:hover { color: var(--ink-dim); border-style: dashed; border-color: var(--ink-dim); background: transparent; cursor: default; }
 
 /* Compact overview cards: the plans fold away under a button. */
 .plans-more { margin-top: 10px; max-width: 40rem; }
