@@ -95,6 +95,12 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - Usually 4 per course; 5 at most, only when needed.
 - No Wikipedia.
 - No source whose author is unknown: a video must name its presenter, not only its channel.
+- The References need not credit every presenter whose videos were used. In Kumar's words: "No need to acknowledge each presenter. Maximum 5 refs per subject."
+
+## Presenters, Stockfish and Lichess
+
+- When writing a course from Kumar's video transcripts (his Dropbox folder for the opening), read all of them first, especially for traps, and give the presenters' views at least as much weight as Stockfish and the Lichess statistics. In Kumar's words: "Give equal or more weight to what the presenters are saying as their opinion - compared to stockfish / lichess results."
+- So a move or plan the presenters recommend can stay even when Stockfish slightly prefers another (mark it `[%engine ok]` for the checker), and a line they teach can be taught even when Lichess shows it is rarer. Stockfish still checks that no line loses material by mistake.
 
 ## Back buttons
 
