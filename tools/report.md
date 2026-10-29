@@ -1821,7 +1821,7 @@ None.
 | Map of the variations (flowchart) | — | — | — | — | ok |
 | Bowdler Attack | 4...exd5 | Sicilian Defense: Bowdler Attack | B20 | 4...exd5 | ok |
 | Alapin Variation | 4...Nf6 | Sicilian Defense: Alapin Variation, Barmen Defense | B22 | 5.Nf3; 5.Nf3 | ok |
-| Grand Prix Attack | 4...Bg7 | Sicilian Defense: Grand Prix Attack | B23 | 4...Bg7 | ok |
+| Grand Prix Attack | 4...Bg7 | Sicilian Defense: Grand Prix Attack | B23 | 4...Bg7; 3...g6 | ok |
 | Smith-Morra Gambit | 6...e6 | Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation | B21 | 6...e6 | ok |
 | Closed Sicilian | 5...d6 | Sicilian Defense: Closed | B25 | 5...d6 | ok |
 | Rossolimo Attack | 4...Bg7 | Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation | B31 | 4...Bg7 | ok |

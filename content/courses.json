@@ -1553,6 +1553,11 @@
                         "White: Build a full pawn center, then develop calmly.\nBlack: Attack White's center at once, before it is complete."
                     ],
                     [
+                        "Grand Prix Attack: 2.f4, or 2.Nc3 and 3.f4",
+                        "White's choice\n8% as Black",
+                        "White: Push the kingside pawns and attack the king.\nBlack: Develop quickly and strike back in the center."
+                    ],
+                    [
                         "Najdorf Variation: 5...a6",
                         "18% as White\n29% as Black",
                         "White: Castle on the other side and attack with the kingside pawns.\nBlack: Counterattack on the queenside and keep control of the center."
@@ -1596,11 +1601,6 @@
                         "Closed Sicilian: 2.Nc3",
                         "White's choice\n4% as Black",
                         "White: Keep the center closed and attack slowly on the kingside.\nBlack: Copy White's setup and play on the queenside."
-                    ],
-                    [
-                        "Grand Prix Attack: 2.Nc3 and 3.f4",
-                        "White's choice\n2% as Black",
-                        "White: Push the kingside pawns and attack the king.\nBlack: Develop quickly and strike back in the center."
                     ],
                     [
                         "Sveshnikov Variation: 5...e5",
