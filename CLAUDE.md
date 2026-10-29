@@ -80,6 +80,7 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - The White and Black drills can both be done on the same day.
 - A drill takes the Basic lines (and traps) first. Before the Advanced variations it stops with an alert that they come next, so a learner can stop at the Basic lines.
 - A line played incorrectly (a wrong move, or a hint) comes back in the next drill.
+- A drill page has no Main menu button. Its buttons are the way back (the section for one line, the course page for a drill session), then Previous drill and Next drill. In Kumar's words: "On drills the following buttons are useful: Remove Main menu (no one will go from drill to main menu). Instead have buttons for next drill and previous drill." For one line, Previous drill and Next drill open the lines before and after it on its section page; in a session, Next drill skips the current line (it stays due) and Previous drill goes back to drill the one before again. The Review page, which starts from the main menu, keeps Main menu as its way back.
 
 ## No repetition
 
