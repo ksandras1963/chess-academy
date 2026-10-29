@@ -1,9 +1,8 @@
 // Home: the core opening principles, then the first moves (1.e4, 1.d4, others) beside a preview board.
 // Each first move opens its overview page, which links on to the courses.
 
-import { h, figMoves, figText, plural } from "../ui.js"
-import { catalog, availableCourses, survey as loadSurvey } from "../content.js"
-import { buildQueue } from "../srs.js"
+import { h, figMoves, figText } from "../ui.js"
+import { catalog, survey as loadSurvey } from "../content.js"
 import { Board } from "../board.js"
 
 /** "Italian Game (1...e5)" becomes "Italian": the short names for a first move's card. */
@@ -11,14 +10,12 @@ const shortName = title => title.replace(/\s*\(.*\)\s*$/, "").replace(/ (Defense
 
 export async function homeView(root, ctx) {
     const cat = await catalog()
-    const built = await availableCourses()
     // The first-move overviews only: the Queen's Gambit and Indian Defenses pages ("parent": "d4")
     // are reached from the 1.d4 page.
     const firsts = (cat.surveys || []).filter(s => !s.parent)
     // A missing overview file shouldn't take the home page down: its card then shows the subtitle only.
     const overviews = await Promise.all(firsts.map(s => loadSurvey(s.id).catch(() => null)))
     if (!ctx.alive()) return
-    const due = built.reduce((n, c) => n + buildQueue(c.lines, { includeNew: false }).length, 0)
 
     const boardEl = h("div", { class: "board-frame" })
     const caption = h("p", { class: "board-caption" })
@@ -74,10 +71,7 @@ export async function homeView(root, ctx) {
             ["Don't bring the queen out too soon", "Early queen moves invite opponent pieces to gain time (tempi) by attacking it."]
         ].map(([term, text]) => h("li", {}, h("strong", {}, `${term}: `), text))),
         h("h2", { class: "principles-title" }, "Basic and Advanced variations"),
-        h("p", { class: "home-levels" }, "Each course has Basic and Advanced variations. Learn the Basic variations first: they are the lines you will meet most often. The Advanced variations are worth learning for the openings you play all the time, or when you want to go beyond a 2000 rating."),
-        due ? h("p", { class: "review-strip" },
-            h("span", {}, `${plural(due, "line")} ready for review.`),
-            h("a", { class: "btn btn-primary", href: "#/review" }, "Review now")) : null)
+        h("p", { class: "home-levels" }, "Each course has Basic and Advanced variations. Learn the Basic variations first: they are the lines you will meet most often. The Advanced variations are worth learning for the openings you play all the time, or when you want to go beyond a 2000 rating."))
 
     root.append(h("section", { class: "home" },
         intro,

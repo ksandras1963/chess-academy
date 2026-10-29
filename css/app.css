@@ -208,10 +208,6 @@ main { outline: none; }
 .principles { margin: 10px 0 0; padding-left: 1.5rem; display: grid; gap: 8px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
 .principles strong { font-weight: 600; }
 .home-levels { margin-top: 10px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
-.review-strip {
-    margin-top: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px;
-    padding: 12px 16px; border: 1px solid var(--brass); border-radius: 8px;
-}
 .home-board { grid-area: board; width: min(100%, 280px); justify-self: center; }
 .home-board .board-frame { touch-action: manipulation; } /* display only: let the page scroll over it */
 .board-caption { margin-top: 10px; font-family: var(--serif); font-size: 0.9375rem; color: var(--ink-dim); text-align: center; }
