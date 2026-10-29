@@ -135,10 +135,10 @@
                     "id": "caro-kann",
                     "side": "both",
                     "file": "content/caro-kann.pgn",
-                    "repertoire": "One repertoire for both sides: nine Basic lines, plus traps and rarer lines.",
-                    "summary": "1.e4 c6: the c-pawn supports ...d5, which attacks e4.",
+                    "repertoire": "One repertoire for both sides: nine Basic variations, plus traps and rarer lines.",
+                    "summary": "The c-pawn supports Black's d-pawn on d5, which attacks White's pawn on e4.",
                     "why": {
-                        "text": "As Black, you get a solid position with no weak pawns, so trades suit you. Unlike in the French, your light-squared bishop gets out before ...e6.\n\nAs White, you meet the Caro-Kann in about 9% of your 1.e4 games. You can choose the kind of game you want, from a space advantage to sharp sidelines full of traps."
+                        "text": "As Black, you get a solid position with no weak pawns, so trades suit you. Unlike in the French, your light-squared bishop gets out before your e-pawn moves and shuts it in.\n\nAs White, you meet the Caro-Kann in about 9% of your 1.e4 games. You can choose the kind of game you want, from a space advantage to sharp sidelines full of traps."
                     },
                     "table": {
                         "columns": [
@@ -193,7 +193,7 @@
                                 "White: Keep the big center and develop calmly.\nBlack: Keep the center closed and develop solidly."
                             ]
                         ],
-                        "note": "How often: the share of your Caro-Kann games that reach the line, from the side that faces it. As White, it counts your games with the system the line belongs to (3.e5, 3.exd5, 3.Nc3, 2.Nc3 or 3.f3). \"White's choice\" or \"Black's choice\": that side picks the line, so it can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the Exchange with 4.Bd3 or 4.Nf3, the Tal Variation and the Karpov Variation, is in the Advanced section."
+                        "note": "How often: the share of your Caro-Kann games that reach the line, from the side that faces it. As White, it counts your games with the system the line belongs to: the Advance, the Exchange, the Main Line, the Two Knights or the Maróczy. \"White's choice\" or \"Black's choice\": that side picks the line, so it can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the quiet Exchange lines, the Tal Variation and the Karpov Variation, is in the Advanced section."
                     }
                 }
             ]
@@ -1334,11 +1334,11 @@
             "eco": "B10–B19",
             "moves": "1. e4 c6",
             "file": "content/ck-overview.pgn",
-            "count": "9 basic lines",
+            "count": "9 basic variations",
             "compact": true,
             "course": "caro-kann",
-            "subtitle": "1.e4 c6: the main systems and the nine lines to learn first.",
-            "summary": "Black supports ...d5 with the c-pawn and brings the c8 bishop out before ...e6 shuts it in. White's main tries are the Advance (3.e5), the Exchange (3.exd5) and 3.Nc3.",
+            "subtitle": "The main systems, and the nine variations to learn first.",
+            "summary": "The c-pawn supports Black's d-pawn on d5, and Black's light-squared bishop comes out before the e-pawn moves and shuts it in. White's main tries are the Advance Variation, which gains space with the e-pawn, the Exchange Variation, which trades pawns on d5, and the Main Line, which defends the e-pawn with the queen's knight.",
             "table": {
                 "columns": [
                     "Variation",
@@ -1392,7 +1392,7 @@
                         "White: Keep the big center and develop calmly.\nBlack: Keep the center closed and develop solidly."
                     ]
                 ],
-                "note": "How often: the share of your Caro-Kann games that reach the line, from the side that faces it. As White, it counts your games with the system the line belongs to (3.e5, 3.exd5, 3.Nc3, 2.Nc3 or 3.f3). \"White's choice\" or \"Black's choice\": that side picks the line, so it can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the Exchange with 4.Bd3 or 4.Nf3, the Tal Variation and the Karpov Variation, is in the Advanced section."
+                "note": "How often: the share of your Caro-Kann games that reach the line, from the side that faces it. As White, it counts your games with the system the line belongs to: the Advance, the Exchange, the Main Line, the Two Knights or the Maróczy. \"White's choice\" or \"Black's choice\": that side picks the line, so it can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the quiet Exchange lines, the Tal Variation and the Karpov Variation, is in the Advanced section."
             }
         },
         {
