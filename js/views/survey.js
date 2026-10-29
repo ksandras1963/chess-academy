@@ -53,13 +53,18 @@ function cellText(text) {
     })
 }
 
-/** A page's table from courses.json ("table": { columns, rows, note }), under its title: the replies to 1.e4 at a glance. */
+/**
+ * A page's table from courses.json ("table": { columns, rows, note }), under its title: the replies to 1.e4 at a glance.
+ * A null cell joins the cell above it, so neighbouring lines with the same strategy share one What to do cell.
+ */
 export function introTable(t) {
+    const span = (i, j) => { let n = 1; while (t.rows[i + n] && t.rows[i + n][j] === null) n++; return n > 1 ? n : null }
     return h("figure", { class: "survey-table" },
         h("table", {},
             h("thead", {}, h("tr", {}, t.columns.map(c => h("th", { scope: "col" }, c)))),
-            h("tbody", {}, t.rows.map(r => h("tr", {},
-                r.map((cell, i) => i ? h("td", {}, cellText(cell)) : h("th", { scope: "row" }, figText(cell))))))),
+            h("tbody", {}, t.rows.map((r, i) => h("tr", {},
+                r.map((cell, j) => cell === null ? null
+                    : j ? h("td", { rowspan: span(i, j) }, cellText(cell)) : h("th", { scope: "row", rowspan: span(i, j) }, figText(cell))))))),
         t.note ? h("figcaption", { class: "muted" }, t.note) : null)
 }
 

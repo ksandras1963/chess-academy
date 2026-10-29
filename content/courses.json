@@ -991,7 +991,7 @@
             "name": "King's Indian Defense",
             "eco": "E60",
             "moves": "1. d4 Nf6 2. c4 g6",
-            "summary": "Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside.",
+            "summary": "Black lets White build a big center, then hits it with a pawn and attacks on the kingside.",
             "puzzles": "content/kings-indian-puzzles.pgn",
             "furtherStudy": [
                 {
@@ -1024,8 +1024,8 @@
                     "id": "kings-indian",
                     "side": "both",
                     "file": "content/kings-indian.pgn",
-                    "repertoire": "Seven Basic lines for both sides: the Mar del Plata, the Fianchetto, the Four Pawns Attack and the Sämisch.",
-                    "summary": "Black lets White build a big center, castles behind the g7 bishop, then strikes with ...e5 or ...c5. When the center locks, White attacks on the queenside and Black on the kingside.",
+                    "repertoire": "Five Basic lines for both sides: the Fianchetto, the Four Pawns Attack, the Mar del Plata and the Sämisch.",
+                    "summary": "Black lets White build a big center, castles behind the fianchettoed bishop, then strikes at the center with a pawn. When the center locks, White attacks on the queenside and Black on the kingside.",
                     "why": {
                         "text": "As Black, the King's Indian lets White take the center, then fights back against it, so the game stays unbalanced, with chances for both sides.\n\nAs White, the big center gives extra space, and White chooses the system: the Classical, the Fianchetto, the Four Pawns Attack or the Sämisch."
                     },
@@ -1039,37 +1039,27 @@
                             [
                                 "Fianchetto, Classical: 6...Nbd7",
                                 "18% as White\n5% as Black",
-                                "White: Fianchetto your bishop too, so your king is safe and Black's kingside attack has little to aim at. Then take more of the center with the e-pawn, and push the h-pawn one square to keep Black's pieces off g4.\nBlack: Strike at the center with the e-pawn, then press on White's d- and e-pawns with the queen and a rook on the e-file."
-                            ],
-                            [
-                                "Fianchetto, Panno: 7...a6",
-                                "2% as White\n5% as Black",
-                                "White: Push the d-pawn forward to gain space and chase Black's knight, then guard the c4 pawn with a knight and the b-pawn.\nBlack: Play on the queenside instead of in the center. Put a rook on the b-file and push the b-pawn to open lines against White's c4 pawn."
+                                "White: Keep the king safe and build a strong center.\nBlack: Attack White's center with pawns and pieces."
                             ],
                             [
                                 "Four Pawns Attack, Main line: 6...c5",
                                 "20% as White\n6% as Black",
-                                "White: Build the widest possible center with four pawns, then close it with the d-pawn. Keep the central pawn majority and aim to push the e-pawn.\nBlack: Hit the center at once with the c-pawn, before White finishes developing. Then trade off the knight that supports White's e-pawn push, and keep a rook aimed at e4. Black's own chance is the queenside pawn majority."
+                                "White: Build a big pawn center and push it forward later.\nBlack: Attack the center at once and prevent White's pawns from advancing."
                             ],
                             [
                                 "Mar del Plata, Main line: 9.Ne1",
                                 "21% as White\n3% as Black",
-                                "White: Close the center with the d-pawn and attack on the queenside. Retreat the king's knight so the f-pawn can hold e4, then push the c-pawn to open the c-file.\nBlack: Send the queen's knight to the kingside and storm there with the f-pawn, then the g-pawn. Both sides race on opposite wings."
+                                "White: Close the center and attack on the queenside.\nBlack: Attack on the kingside with pawns, in a race on opposite wings."
                             ],
                             [
                                 "Mar del Plata, Bayonet Attack: 9.b4",
                                 "21% as White\n2% as Black",
-                                "White: Skip the knight retreat and attack on the queenside at once with the b- and c-pawns. Aim a knight at e6, the square that Black's f-pawn push leaves weak.\nBlack: Move the king's knight to the edge to free the f-pawn, then push it. Challenge White's pawn on d5 with the c-pawn."
+                                null
                             ],
                             [
                                 "Sämisch, Orthodox: 6...e5",
                                 "17% as White\n7% as Black",
-                                "White: The f-pawn guards e4 and keeps Black's knight off g4. Close the center with the d-pawn, and once the c-file opens, castle short: a king on the queenside would face the open file.\nBlack: Strike with the e-pawn, then open the c-file with the c-pawn so White can't safely castle long. Then move the king's knight to the edge and push the f-pawn."
-                            ],
-                            [
-                                "Sämisch Gambit: 6...c5",
-                                "6% as White\n7% as Black",
-                                "White: Keep the tension with a knight move instead of taking the c-pawn. If you take it, Black gets fast development for the pawn while your kingside pieces are still at home.\nBlack: Hit White's d-pawn at once with the c-pawn, before White's attack begins. Put a knight on the strong central square e5, open the center with the e-pawn, and prepare to push the b-pawn."
+                                "White: Keep a solid center, close it, and keep the king safe.\nBlack: Strike at the center and open the queenside, so White's king is not safe there."
                             ]
                         ],
                         "note": "How often: the share of your King's Indian games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
@@ -1115,10 +1105,10 @@
                     "id": "nimzo-indian",
                     "side": "both",
                     "file": "content/nimzo-indian.pgn",
-                    "repertoire": "As White: the Classical (4.Qc2) and the Rubinstein (4.e3). As Black: castle against 4.Qc2, 4.e3 and 4.Nf3, and hit d4 with ...c5 against 4.Bg5, 4.Bd2 and 4.a3.",
-                    "summary": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4: Black pins the knight that supports e4.",
+                    "repertoire": "As White: the Classical Variation and the Rubinstein System. As Black: the main reply to each of White's most common fourth moves.",
+                    "summary": "Black's bishop pins White's queen's knight, which would otherwise support a big pawn center.",
                     "why": {
-                        "text": "As Black, the Nimzo-Indian develops two pieces and castles quickly, and the pin on c3 keeps White from building a big center with e4. Black chooses when to give the bishop for the knight, often in return for doubled c-pawns that last all game. The plans repeat from line to line, so there is less to memorize than in most main-line defenses.\n\nAs White, you choose the type of game. 4.Qc2 keeps the pawns whole and wins the two bishops after a3. 4.e3 develops quickly with Bd3, Nf3 and castling, and the same setup works against most of Black's replies."
+                        "text": "As Black, the Nimzo-Indian develops two pieces and castles quickly, and the pin keeps White from building a big pawn center. Black chooses when to give the bishop for the knight, often in return for doubled c-pawns that last all game. The plans repeat from line to line, so there is less to memorize than in most main-line defenses.\n\nAs White, you choose the type of game. The Classical Variation keeps the pawns whole and wins the two bishops. The Rubinstein System develops quickly and castles, and the same setup works against most of Black's replies."
                     },
                     "table": {
                         "columns": [
@@ -1130,60 +1120,50 @@
                             [
                                 "Classical, Keres Defense: 6...b6",
                                 "33% as White\n21% as Black",
-                                "White: Keep the two bishops and the pawns whole. Pin the king's knight, castle, and slowly prepare a pawn push to e4.\nBlack: Castle early and put the queen's bishop on the long diagonal to watch e4. Then strike at White's center with the c-pawn and take the open c-file."
+                                "White: Keep the two bishops and build a strong center.\nBlack: Develop quickly, strike at the center and prevent White's central advance."
                             ],
                             [
                                 "Classical, Noa Variation: 4...d5",
                                 "23% as White",
-                                "White: Trade pawns on d5 at once, pin the king's knight, develop calmly and castle. Then gain space on the queenside.\nBlack: Keep a solid pawn on d5, put a rook on the open e-file, and bring the queen's knight round to guard the kingside."
+                                "White: Develop calmly, castle and gain space on the queenside.\nBlack: Keep a solid center and keep the king safe."
                             ],
                             [
                                 "Classical, Berlin Variation: 4...c5",
                                 "22% as White",
-                                "White: Take the c-pawn at once, and develop the king's knight before the dark-squared bishop so the pawn on f2 stays safe. Trade pieces until Black is left with a weak isolated pawn.\nBlack: Win the pawn back with the bishop, develop fast, and free the game with a pawn break in the center."
-                            ],
-                            [
-                                "Classical: 4...b6",
-                                "11% as White",
-                                "White: Take the whole center at once with the e-pawn, which the queen protects, and add the f-pawn for more space. The two bishops and the f-file give White the better game.\nBlack: Give up the bishop for the knight and hold the center with pawns. Castling early walks into a trap."
+                                "White: Develop smoothly and leave Black with a weak, isolated pawn.\nBlack: Develop fast and free the position with a central pawn break."
                             ],
                             [
                                 "Rubinstein, Gligorić System: 9...b6",
-                                "49% as White\n12% as Black",
-                                "White: Develop quickly and castle early. The isolated d-pawn is a spearhead: the pieces behind it aim at Black's king, and a knight can jump to e5.\nBlack: Trade pawns in the center, put the queen's bishop on the long diagonal, and give up the other bishop for the c3 knight to leave White with weak pawns on c3 and d4."
+                                "49% as White",
+                                "White: Castle early and attack Black's king, using the isolated pawn as a spearhead.\nBlack: Stop the isolated pawn and leave White with weak pawns."
                             ],
                             [
                                 "Rubinstein, Hübner Variation: 4...c5",
                                 "19% as White",
-                                "White: Keep the same quick setup and castle. When Black closes the center, push the d-pawn forward for space, then open the kingside with the f-pawn so the bishops come alive.\nBlack: Give up the bishop to double White's c-pawns, then lock the center with pawns on dark squares so White's bishops have no open lines."
+                                "White: Gain space and later open the position for the two bishops.\nBlack: Double White's pawns, keep the position closed and prevent the bishops from becoming active."
                             ],
                             [
                                 "Rubinstein, St. Petersburg Variation: 4...b6",
                                 "13% as White",
-                                "White: Keep the same quick setup and castle. After Black takes on c3, bring the king's knight back toward the center and build a pawn center with the e- and f-pawns.\nBlack: Put the queen's bishop on the long diagonal to watch e4, trade on c3, and hold the center with pawns on dark squares."
+                                "White: Develop quickly, castle and build a big pawn center.\nBlack: Give up a bishop for a knight and prevent White's central advance."
                             ],
                             [
                                 "Leningrad Variation: 4...c5",
                                 "16% as Black",
-                                "White: Pin the king's knight and close the center with the d-pawn, hoping the bishops will count later.\nBlack: Give up the dark-squared bishop to double White's c-pawns, chase White's bishop with the h-pawn, and set the center pawns on dark squares. If White plays e3 while the bishop is on g5, the bishop is cut off from the queenside, and ...Qa5 wins material."
+                                "White: Pin Black's knight, close the center and use the two bishops later.\nBlack: Double White's pawns and keep the position closed so the bishops stay passive."
                             ],
                             [
                                 "Bd2 Variation: 4...c5",
                                 "16% as Black",
-                                "White: Avoid doubled pawns and develop quietly.\nBlack: Trade the c-pawn for White's d-pawn, castle, and strike in the center with the d-pawn. Then trade off White's dark-squared bishop and attack the isolated d-pawn."
+                                "White: Avoid doubled pawns and develop quietly.\nBlack: Strike in the center and attack the isolated pawn White is left with."
                             ],
                             [
                                 "Three Knights Variation: 4...O-O",
                                 "14% as Black",
-                                "White: Develop the king's knight first and keep several setups open: pinning the knight, a quiet e-pawn move, or the queen to c2.\nBlack: Castle, hit the center with the c-pawn, and trade pawns so White gets an isolated d-pawn. Then use the plan of the Gligorić System: bishop on the long diagonal, and the other bishop for the c3 knight."
-                            ],
-                            [
-                                "Sämisch Variation: 5...c5",
-                                "11% as Black",
-                                "White: Spend a move to win the two bishops, then build a big pawn center to make use of them.\nBlack: Fix the doubled c-pawns, then attack the weak pawn on c4 with the knight, the bishop and the queen. If White pins the king's knight, ...Qa5 pins the c3 pawn in return."
+                                "White: Develop quickly and keep several setups open.\nBlack: Castle, strike in the center and leave White with an isolated pawn."
                             ]
                         ],
-                        "note": "How often: the share of your Nimzo-Indian games that reach the line, from the side you play in it, counting all its move orders. As White, it is the share of your games with that fourth move (4.Qc2 or 4.e3). Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
+                        "note": "How often: the share of your Nimzo-Indian games that reach the line, from the side you play in it, counting all its move orders. As White, it is the share of your games in the Classical or the Rubinstein, whichever the line belongs to. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
                     }
                 }
             ]
@@ -1522,7 +1502,7 @@
             "count": "5 defenses",
             "compact": true,
             "course": "kings-indian nimzo-indian grunfeld",
-            "subtitle": "1.d4 Nf6 2.c4: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
+            "subtitle": "Black's knight-first defenses: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
             "table": {
                 "after": "map",
                 "columns": [
