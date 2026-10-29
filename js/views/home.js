@@ -1,12 +1,33 @@
-// Home: the core opening principles, then the first moves (1.e4, 1.d4, others) beside a preview board.
-// Each first move opens its overview page, which links on to the courses.
+// Home: the core opening principles, then the first moves (1.e4, 1.d4, others) beside the learner's
+// progress in each course. Each first move opens its overview page, which links on to the courses.
 
-import { h, figMoves, figText } from "../ui.js"
-import { catalog, survey as loadSurvey } from "../content.js"
-import { Board } from "../board.js"
+import { h } from "../ui.js"
+import { catalog, course as loadCourse, puzzles as loadPuzzles, survey as loadSurvey } from "../content.js"
+import { lineRecord, lessonRead } from "../storage.js"
+import { puzzleStats } from "./puzzles.js"
 
 /** "Italian Game (1...e5)" becomes "Italian": the short names for a first move's card. */
 const shortName = title => title.replace(/\s*\(.*\)\s*$/, "").replace(/ (Defense|Game|Opening)$/, "")
+
+/**
+ * How much of a course is done, from 0 to 100: the average of its parts, each counting the same however
+ * many items it has. The parts are the Basic lessons read to their last move, the Basic lines drilled
+ * without a mistake (a line missed since then counts again once it is drilled cleanly), the traps read
+ * and drilled (half each), and the puzzles solved. Advanced lines and Key ideas pages are not counted.
+ */
+function completion(c, set) {
+    const drilled = l => (lineRecord(l.id)?.box || 0) >= 1
+    const read = l => lessonRead(l.id)
+    const share = (items, score) => items.reduce((n, x) => n + Number(score(x)), 0) / items.length
+    const basic = c.lines.filter(l => l.section === "basic")
+    const traps = c.lines.filter(l => l.section === "traps")
+    const parts = []
+    if (basic.length) parts.push(share(basic, read), share(basic, drilled))
+    if (traps.length) parts.push(share(traps, l => (read(l) + drilled(l)) / 2))
+    if (set && set.items.length) parts.push(puzzleStats(set).solved / set.items.length)
+    // Rounded down, so 100% means everything is done.
+    return parts.length ? Math.floor(100 * parts.reduce((a, b) => a + b, 0) / parts.length + 1e-9) : 0
+}
 
 export async function homeView(root, ctx) {
     const cat = await catalog()
@@ -17,8 +38,6 @@ export async function homeView(root, ctx) {
     const overviews = await Promise.all(firsts.map(s => loadSurvey(s.id).catch(() => null)))
     if (!ctx.alive()) return
 
-    const boardEl = h("div", { class: "board-frame" })
-    const caption = h("p", { class: "board-caption" })
     const openingIds = new Set(cat.openings.map(op => op.id))
     // A chapter's courses: its [Course], and for a [Page] chapter also its page's "course" list
     // (the Indian Defenses page lists the King's Indian, Nimzo-Indian and Grünfeld courses).
@@ -27,35 +46,54 @@ export async function homeView(root, ctx) {
         return `${ch.headers.Course || ""} ${(page && page.course) || ""}`.split(/\s+/).filter(Boolean)
     }
 
-    const firstMoves = firsts.map((s, i) => {
+    const list = h("ul", { class: "index" }, firsts.map((s, i) => {
         const chapters = overviews[i] ? overviews[i].chapters : []
-        // "Other first moves" starts from the initial position, so its board shows the most common one (1.c4).
-        const lead = !s.moves && chapters[0] && chapters[0].root.children[0]
-        const fen = lead ? lead.fen : s.fen
-        const shown = s.moves ? `After ${figMoves(s.moves)}` : lead ? figText(chapters[0].title) : s.name
         // The openings on the page, the ones with a course in full ink: "Italian · Sicilian · French …".
         // A [Page] chapter stands for the chapters whose courses its page lists: the Indian Defenses for the King's Indian.
         const inPage = new Set(chapters.filter(ch => ch.headers.Page).flatMap(courseIds))
         const listed = chapters.filter(ch => ch.headers.Page || !courseIds(ch).length || !courseIds(ch).every(id => inPage.has(id)))
         const names = listed.map((ch, k) => [k ? " · " : "",
             h("span", { class: courseIds(ch).some(id => openingIds.has(id)) ? "fm-taught" : null }, shortName(ch.title))])
-        const li = h("li", { class: "opening first-move", tabindex: "-1" },
+        return h("li", { class: "opening first-move" },
             h("div", { class: "op-head" }, h("h2", {}, s.name), h("span", { class: "eco", title: "ECO codes" }, s.eco)),
             names.length ? h("p", { class: "fm-names" }, names) : h("p", { class: "op-summary" }, s.subtitle),
             h("div", { class: "op-courses" },
                 h("a", { class: "course-link", href: `#/survey/${s.id}` }, "See the openings",
                     h("span", { class: "course-meta" }, s.count))))
-        const preview = () => {
-            list.querySelectorAll(".opening.is-shown").forEach(e => e.classList.remove("is-shown"))
-            li.classList.add("is-shown")
-            board.show(fen, { animate: true })
-            caption.textContent = shown
-        }
-        li.addEventListener("pointerenter", preview)
-        li.addEventListener("focusin", preview)
-        return { li, preview }
+    }))
+
+    // The progress box: every course with content, under its first move, in the order of the cards.
+    const groups = firsts.map((s, i) => {
+        const ids = [...new Set((overviews[i] ? overviews[i].chapters : []).flatMap(courseIds))]
+        const metas = ids.flatMap(id => (cat.openings.find(op => op.id === id)?.courses || []).filter(m => m.available))
+        return { name: s.name, metas }
     })
-    const list = h("ul", { class: "index" }, firstMoves.map(f => f.li))
+    const shown = new Set(groups.flatMap(g => g.metas))
+    const rest = [...cat.courseById.values()].filter(m => m.available && !shown.has(m))
+    if (rest.length) groups.push({ name: "Other courses", metas: rest })
+    const progress = h("aside", { class: "home-progress", "aria-labelledby": "progress-title" },
+        h("h2", { id: "progress-title" }, "Your progress"),
+        h("p", { class: "progress-note" }, "Basic lessons, drills, traps and puzzles in each course. Advanced variations are not counted. Progress is saved on this device."),
+        groups.filter(g => g.metas.length).map(g => [
+            h("h3", {}, g.name),
+            h("ul", { class: "progress-list" }, g.metas.map(meta => {
+                const name = shortName(meta.opening.name) + (meta.side === "both" ? "" : ` as ${meta.side === "white" ? "White" : "Black"}`)
+                const bar = h("span")
+                const pctText = h("span", { class: "progress-pct" })
+                const row = h("a", { class: "progress-row", href: `#/course/${meta.id}` },
+                    h("span", { class: "progress-name" }, name),
+                    h("span", { class: "meter", "aria-hidden": "true" }, bar), pctText)
+                // Each course's file loads in the background, so the page doesn't wait for all of them.
+                Promise.all([loadCourse(meta.id), loadPuzzles(meta.opening.id).catch(() => null)]).then(([c, set]) => {
+                    if (!ctx.alive()) return
+                    const p = completion(c, set)
+                    bar.style.width = `${p}%`
+                    pctText.textContent = `${p}%`
+                    row.setAttribute("aria-label", `${name}: ${p}% done`)
+                }).catch(() => { pctText.textContent = "–" })
+                return h("li", {}, row)
+            }))
+        ]))
 
     const intro = h("div", { class: "home-intro" },
         h("p", { class: "home-brand" },
@@ -75,11 +113,7 @@ export async function homeView(root, ctx) {
 
     root.append(h("section", { class: "home" },
         intro,
-        h("div", { class: "home-board" }, boardEl, caption),
+        progress,
         h("div", { class: "home-index" }, list,
             h("p", { class: "stats-note" }, "Openings in bold have a course in this app."))))
-
-    const board = new Board(boardEl, { fen: cat.surveys && cat.surveys[0] ? cat.surveys[0].fen : cat.openings[0].fen })
-    ctx.onLeave(() => board.destroy())
-    if (firstMoves[0]) firstMoves[0].preview()
 }

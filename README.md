@@ -9,6 +9,7 @@ Version 1 covers the Italian Game, Sicilian, French, Caro-Kann, Scandinavian and
 - **Learn:** step through a line and read why each move is played.
 - **Drill:** you play your side and the app plays the other. A wrong move shows the right one with its reason. A drill takes the Basic lines first and asks before it goes on to the Advanced ones.
 - **Review:** spaced repetition. Lines you know come back less often. A line you miss, or need a hint for, comes back in your next drill. There is no daily limit: you decide how many lines to drill.
+- **Progress:** the home page shows how far you are in each course. Four parts count the same: the Basic lessons read to the last move, the Basic lines drilled without a mistake, the traps read and drilled, and the puzzles solved. Advanced lines and Key ideas pages are not counted.
 
 ## Open it
 

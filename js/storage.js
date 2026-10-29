@@ -6,6 +6,7 @@ const DEFAULTS = {
     v: 1,
     lines: {},            // lineId -> { box, due, last, reps, lapses }
     puzzles: {},          // puzzleId -> { status: "solved" | "missed", tries, last }
+    lessons: {},          // lineId -> { last }: the lesson was stepped through to its last move
     settings: { theme: "dark", animation: "normal", coordinates: true, notation: "letters" }
 }
 
@@ -18,6 +19,7 @@ function normalize(data) {
     if (data && typeof data === "object") {
         if (data.lines && typeof data.lines === "object") s.lines = data.lines
         if (data.puzzles && typeof data.puzzles === "object") s.puzzles = data.puzzles
+        if (data.lessons && typeof data.lessons === "object") s.lessons = data.lessons
         if (data.settings) s.settings = { ...s.settings, ...data.settings }
         // Letters became the default notation. Older saves hold "figurines" whether or not the learner
         // picked it, so only a choice made in Settings since then (notationChosen) is kept.
@@ -65,10 +67,19 @@ export function setPuzzleRecord(id, rec) {
     save()
 }
 
+/** Whether a line's lesson has been read to its last move. */
+export function lessonRead(id) { return Boolean(load().lessons[id]) }
+
+export function setLessonRead(id) {
+    load().lessons[id] = { last: Date.now() }
+    save()
+}
+
 export function resetProgress() {
     const s = load()
     s.lines = {}
     s.puzzles = {}
+    s.lessons = {}
     save()
 }
 

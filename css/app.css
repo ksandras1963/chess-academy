@@ -190,7 +190,7 @@ main { outline: none; }
 .home {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "intro" "board" "index";
+    grid-template-areas: "intro" "progress" "index";
     gap: 24px;
 }
 .home-intro { grid-area: intro; max-width: 34rem; }
@@ -208,9 +208,29 @@ main { outline: none; }
 .principles { margin: 10px 0 0; padding-left: 1.5rem; display: grid; gap: 8px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
 .principles strong { font-weight: 600; }
 .home-levels { margin-top: 10px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
-.home-board { grid-area: board; width: min(100%, 280px); justify-self: center; }
-.home-board .board-frame { touch-action: manipulation; } /* display only: let the page scroll over it */
-.board-caption { margin-top: 10px; font-family: var(--serif); font-size: 0.9375rem; color: var(--ink-dim); text-align: center; }
+/* Home: the learner's progress in each course (js/views/home.js). */
+.home-progress {
+    grid-area: progress; padding: 18px 20px;
+    border: 1px solid var(--rule); border-radius: 8px; background: var(--felt-raised);
+}
+.home-progress h2 { font-size: 1.375rem; }
+.progress-note { margin-top: 6px; font-size: 0.875rem; line-height: 1.45; color: var(--ink-dim); }
+.home-progress h3 { margin-top: 16px; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-dim); }
+.progress-list { list-style: none; margin: 6px 0 0; padding: 0; }
+.progress-row {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(64px, 120px) 3.25em; align-items: center; gap: 12px;
+    padding: 6px 0; border-bottom: 1px solid var(--rule); color: inherit; text-decoration: none;
+}
+.progress-list li:last-child .progress-row { border-bottom: 0; }
+.progress-row:hover .progress-name, .progress-row:focus-visible .progress-name { color: var(--brass); }
+.progress-name { font-family: var(--serif); font-size: 1.0625rem; }
+.progress-row .meter { width: 100%; height: 6px; border-radius: 3px; }
+.progress-row .meter > span { width: 0; }
+.progress-pct { font-size: 0.875rem; color: var(--ink-dim); text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 480px) {
+    .progress-row { grid-template-columns: minmax(0, 1fr) 56px 3em; gap: 10px; }
+    .progress-name { font-size: 1rem; }
+}
 .home-index { grid-area: index; }
 
 .index { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
@@ -220,7 +240,6 @@ main { outline: none; }
     border-left: 3px solid transparent;
     outline: none;
 }
-.opening.is-shown { border-left-color: var(--brass); }
 .op-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
 .op-head h2 { font-size: 1.625rem; }
 .eco { font-size: 0.8125rem; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
@@ -259,13 +278,12 @@ a.course-link:hover { border-color: var(--brass); }
 @media (min-width: 900px) {
     .home {
         grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
-        grid-template-areas: "board intro" "board index";
+        grid-template-areas: "progress intro" "progress index";
         grid-template-rows: auto 1fr;
         column-gap: 48px;
         align-items: start;
     }
-    .home-board { position: sticky; top: calc(var(--topbar) + 24px); width: 100%; max-width: 560px; justify-self: stretch; }
-    .board-caption { text-align: left; }
+    .home-progress { position: sticky; top: calc(var(--topbar) + 24px); }
 }
 
 /* ---------- course ---------- */
