@@ -439,7 +439,9 @@ export async function surveyView(root, ctx, id) {
                         ...planBlocks(ch, s.compact || s.foldPlans)),
                     h("div", { class: "survey-actions" }, page
                         // "Queen's Gambit: 6 variations", "Uncommon replies to 1.d4: 2 openings": the page and what it holds.
-                        ? h("a", { class: "btn btn-small btn-primary", href: `#/survey/${page.id}` }, page.count ? `${page.name}: ${page.count}` : page.name, h("span", { "aria-hidden": "true" }, "›"))
+                        // An opening with one course (the Ruy Lopez, the Caro-Kann) also links its course beside it.
+                        ? [h("a", { class: "btn btn-small btn-primary", href: `#/survey/${page.id}` }, page.count ? `${page.name}: ${page.count}` : page.name, h("span", { "aria-hidden": "true" }, "›")),
+                            chapterOps(cat, ch).length === 1 ? courses : null]
                         : [paths.map((p, i) => h("a", { class: `btn btn-small${i ? "" : " btn-primary"}`, href: lineHref(s, ch, i) },
                             h("span", { "aria-hidden": "true" }, "▶︎"), paths.length > 1 ? `Watch: ${p.name}` : "Watch the moves")),
                         courses]))
