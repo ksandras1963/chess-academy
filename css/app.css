@@ -190,7 +190,7 @@ main { outline: none; }
 .home {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "intro" "progress" "index";
+    grid-template-areas: "intro" "side" "index";
     gap: 24px;
 }
 .home-intro { grid-area: intro; max-width: 34rem; }
@@ -208,9 +208,19 @@ main { outline: none; }
 .principles { margin: 10px 0 0; padding-left: 1.5rem; display: grid; gap: 8px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
 .principles strong { font-weight: 600; }
 .home-levels { margin-top: 10px; font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; }
-/* Home: the learner's progress in each course (js/views/home.js). */
+/* Home: a board that plays each course's opening, above the learner's progress in each course (js/views/home.js). */
+.home-side { grid-area: side; display: grid; gap: 20px; align-content: start; }
+.showcase { margin: 0; width: min(100%, 360px); justify-self: center; }
+.showcase .board-frame { touch-action: manipulation; cursor: pointer; } /* display only: let the page scroll over it */
+/* Two lines kept for the moves, so the list below never moves as they are written out. */
+.showcase-caption { display: block; margin-top: 10px; min-height: 4.4em; text-align: center; color: inherit; text-decoration: none; }
+.showcase-name { display: block; font-family: var(--serif); font-size: 1.125rem; }
+.showcase-moves { display: block; margin-top: 2px; font-size: 0.9375rem; line-height: 1.45; color: var(--ink-dim); }
+.showcase-caption:hover .showcase-name { color: var(--brass); }
+.progress-row.is-playing .progress-name { font-weight: 700; color: var(--brass); }
+.progress-row.is-playing .progress-pct { color: var(--brass); }
 .home-progress {
-    grid-area: progress; padding: 18px 20px;
+    padding: 18px 20px;
     border: 1px solid var(--rule); border-radius: 8px; background: var(--felt-raised);
 }
 .home-progress h2 { font-size: 1.375rem; }
@@ -278,12 +288,11 @@ a.course-link:hover { border-color: var(--brass); }
 @media (min-width: 900px) {
     .home {
         grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
-        grid-template-areas: "progress intro" "progress index";
+        grid-template-areas: "side intro" "side index";
         grid-template-rows: auto 1fr;
         column-gap: 48px;
         align-items: start;
     }
-    .home-progress { position: sticky; top: calc(var(--topbar) + 24px); }
 }
 
 /* ---------- course ---------- */

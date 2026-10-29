@@ -1,9 +1,11 @@
-// Home: the core opening principles, then the first moves (1.e4, 1.d4, others) beside the learner's
-// progress in each course. Each first move opens its overview page, which links on to the courses.
+// Home: the core opening principles, then the first moves (1.e4, 1.d4, others) beside a board that plays
+// each course's opening and the learner's progress in each course. Each first move opens its overview
+// page, which links on to the courses.
 
-import { h } from "../ui.js"
+import { h, fig } from "../ui.js"
 import { catalog, course as loadCourse, puzzles as loadPuzzles, survey as loadSurvey } from "../content.js"
 import { lineRecord, lessonRead } from "../storage.js"
+import { Board } from "../board.js"
 import { puzzleStats } from "./puzzles.js"
 
 /** "Italian Game (1...e5)" becomes "Italian": the short names for a first move's card. */
@@ -27,6 +29,88 @@ function completion(c, set) {
     if (set && set.items.length) parts.push(puzzleStats(set).solved / set.items.length)
     // Rounded down, so 100% means everything is done.
     return parts.length ? Math.floor(100 * parts.reduce((a, b) => a + b, 0) / parts.length + 1e-9) : 0
+}
+
+/** "1.e4 e5 2.Nf3": a line's moves so far, in the chosen notation. */
+const moveText = nodes => nodes.map((n, i) => n.color === "w" ? `${n.moveNumber}.${fig(n.san)}`
+    : i === 0 ? `${n.moveNumber}…${fig(n.san)}` : fig(n.san)).join(" ")
+
+function shuffled(items) {
+    const out = [...items]
+    for (let i = out.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [out[i], out[j]] = [out[j], out[i]]
+    }
+    return out
+}
+
+/**
+ * The board above the progress list. It plays each course's first Basic line (its most common
+ * variation) for 5 moves a side, one half-move a second, holds the position for 2 seconds, then
+ * starts the next course: 12 seconds a course. The courses come in a random order, each once a round
+ * and never twice in a row. The course playing is named under the board with its moves, and its row
+ * in the progress list is lit. Clicking the board or the name opens the course. Resting the pointer on
+ * the board pauses it; it waits while the page is hidden and stops when the learner leaves the page.
+ * entries: [{ meta, name, row, load }], load being the course's promise.
+ */
+function showcase(ctx, entries) {
+    const START = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    const boardEl = h("div", { class: "board-frame" })
+    const name = h("strong", { class: "showcase-name" })
+    const moves = h("span", { class: "showcase-moves" })
+    const caption = h("a", { class: "showcase-caption", href: "#/" }, name, moves)
+    let current = null
+    let paused = false
+    boardEl.addEventListener("click", () => { if (current) location.hash = `#/course/${current.meta.id}` })
+    boardEl.addEventListener("pointerenter", e => { if (e.pointerType === "mouse") paused = true })
+    boardEl.addEventListener("pointerleave", () => { paused = false })
+    const board = new Board(boardEl, { fen: START })
+    ctx.onLeave(() => board.destroy())
+    const animate = !matchMedia("(prefers-reduced-motion: reduce)").matches
+
+    // Waits ms of time with the page shown and not paused; false once the learner has left the page.
+    const wait = async ms => {
+        for (let left = ms; left > 0;) {
+            await new Promise(r => setTimeout(r, 100))
+            if (!ctx.alive()) return false
+            if (!paused && !document.hidden) left -= 100
+        }
+        return true
+    }
+
+    const play = async () => {
+        let round = []
+        let last = null
+        const failed = new Set()
+        while (failed.size < entries.length) {
+            if (!round.length) {
+                round = shuffled(entries)
+                if (round.length > 1 && round[0] === last) round.push(round.shift())
+            }
+            const e = round.shift()
+            last = e
+            const line = await e.load.then(c => c.lines.find(l => l.section === "basic"), () => null)
+            if (!ctx.alive()) return
+            if (!line) { failed.add(e); continue }
+            const nodes = line.nodes.slice(0, 10)
+            current = e
+            entries.forEach(x => x.row.classList.toggle("is-playing", x === e))
+            name.textContent = e.name
+            moves.textContent = ""
+            caption.href = `#/course/${e.meta.id}`
+            caption.setAttribute("aria-label", `Open the ${e.name} course`)
+            board.show(line.chapter.root.fen, { animate: false })
+            for (let i = 0; i < nodes.length; i++) {
+                if (!await wait(1000)) return
+                const n = nodes[i]
+                board.show(n.fen, { animate, lastMove: { from: n.from, to: n.to } })
+                moves.textContent = moveText(nodes.slice(0, i + 1))
+            }
+            if (!await wait(2000)) return
+        }
+    }
+    play()
+    return h("figure", { class: "showcase" }, boardEl, h("figcaption", {}, caption))
 }
 
 export async function homeView(root, ctx) {
@@ -71,6 +155,7 @@ export async function homeView(root, ctx) {
     const shown = new Set(groups.flatMap(g => g.metas))
     const rest = [...cat.courseById.values()].filter(m => m.available && !shown.has(m))
     if (rest.length) groups.push({ name: "Other courses", metas: rest })
+    const entries = []
     const progress = h("aside", { class: "home-progress", "aria-labelledby": "progress-title" },
         h("h2", { id: "progress-title" }, "Your progress"),
         h("p", { class: "progress-note" }, "Basic lessons, drills, traps and puzzles in each course. Advanced variations are not counted. Progress is saved on this device."),
@@ -84,7 +169,9 @@ export async function homeView(root, ctx) {
                     h("span", { class: "progress-name" }, name),
                     h("span", { class: "meter", "aria-hidden": "true" }, bar), pctText)
                 // Each course's file loads in the background, so the page doesn't wait for all of them.
-                Promise.all([loadCourse(meta.id), loadPuzzles(meta.opening.id).catch(() => null)]).then(([c, set]) => {
+                const load = loadCourse(meta.id)
+                entries.push({ meta, name, row, load })
+                Promise.all([load, loadPuzzles(meta.opening.id).catch(() => null)]).then(([c, set]) => {
                     if (!ctx.alive()) return
                     const p = completion(c, set)
                     bar.style.width = `${p}%`
@@ -113,7 +200,7 @@ export async function homeView(root, ctx) {
 
     root.append(h("section", { class: "home" },
         intro,
-        progress,
+        h("div", { class: "home-side" }, showcase(ctx, entries), progress),
         h("div", { class: "home-index" }, list,
             h("p", { class: "stats-note" }, "Openings in bold have a course in this app."))))
 }
