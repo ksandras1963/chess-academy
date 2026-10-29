@@ -1,0 +1,796 @@
+[Chapter "Key ideas: The Alapin"]
+[Side "white"]
+[Type "ideas"]
+
+{The Alapin is White's simplest way to avoid the Open Sicilian. White prepares the d-pawn's advance with the c-pawn, so a pawn, not a knight, takes back in the center. Stjepan Tomić and GM Igor Smirnov both recommend it: the plans are the same in almost every line, and Black's natural moves often lead into trouble. Each board below shows one idea and how it works.}
+*
+
+[Chapter "Take back with the c-pawn"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "3...cxd4"]
+
+{When Black takes on d4, White always takes back with the c-pawn. White then has two pawns side by side in the center, and the queen's knight can come out to c3 at last. Stjepan Tomić: "That's why you played c3 in the first place. So always capture with the pawn, remember that."}
+1. e4 c5 2. c3 Nc6 3. d4 cxd4 {[%csl Rd4] The idea starts from this position.}
+4. cxd4 {[%csl Gd4,Ge4] Two pawns in the center, and the c3 square is free for the knight.} d6
+5. Nc3 {[%cal Gc3d5,Gc3e4] The knight develops to its natural square and guards e4 and d5. Stockfish: +1.0, clearly better for White.} *
+
+[Chapter "The d5 push"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "4...e6"]
+
+{The pawn on d4 can advance to d5 and chase the knight from c6. Even when Black's e-pawn guards d5, the push works: after the trades, the e-file is open against Black's king, and the queen can pin a knight on e5.}
+1. e4 c5 2. c3 Nc6 3. d4 cxd4 4. cxd4 e6 {[%cal Re6d5] The idea starts from this position.}
+5. d5 {[%cal Gd5c6] The pawn attacks the knight.} exd5 6. exd5 {[%cal Ge1e8] The e-file is open, and Black's king is still on e8.} Ne5
+7. Qe2 {[%engine ok] [%cal Ge2e5,Ge5e8] The queen pins the knight to the king. Black has to block with ...Qe7. Stockfish: 0.0, equal.} *
+
+[Chapter "Play with the isolated pawn"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "10...Qd6"]
+
+{After an early ...d5, White often ends up with an isolated pawn on d4. It is a weakness in an endgame, but in the middlegame it gives White space and open lines for the pieces. White's plan is to develop fast, keep the queens on and attack before Black can blockade the pawn.}
+1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 Nf6 5. Nf3 Bg4 6. Be2 e6 7. O-O Nc6 8. Be3 cxd4 9. cxd4 Be7 10. Nc3 Qd6 {[%csl Yd4] The idea starts from this position.}
+11. h3 {Asks the bishop to decide.} Bh5 12. Qb3 {[%cal Gb3b7,Gf1d1] The queen hits b7, and a rook comes to the d-file next. White has active pieces for the weak pawn. Stockfish: +0.2, equal.} *
+
+[Chapter "Key ideas: The Grand Prix"]
+[Side "white"]
+[Type "ideas"]
+
+{In the Grand Prix, White pushes the f-pawn early and attacks on the kingside. White's plan is the same against almost every Black set-up: develop the king's knight, castle, then bring the queen across to the kingside. Stjepan Tomić calls it "perhaps the most fun way for White to play against the Sicilian" and a weapon for any level.}
+*
+
+[Chapter "Trade the light-squared bishop"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "5.Bb5"]
+
+{With White's pawns on light squares, the light-squared bishop is White's worst piece. So White is glad to give it up for the c6 knight, which is Black's best defender of the center. Stjepan Tomić: "Always exchange your light-squared bishop if you can for the knight on c6. That's always a good idea in the Grand Prix."}
+1. e4 c5 2. Nc3 Nc6 3. f4 e6 4. Nf3 d5 5. Bb5 {[%cal Gb5c6] The idea starts from this position.}
+5... d4 6. Bxc6+ {White gives up the bishop at once.} bxc6
+7. Ne2 {[%csl Rc5,Rc6] Black has the bishop pair, but the c-pawns are doubled and the queenside is weak. White plays d3, castles and attacks. Stockfish: 0.0, equal.} *
+
+[Chapter "The queen goes to h4"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "8...O-O"]
+
+{The most famous idea of the Grand Prix: the queen goes from d1 to e1 and on to h4, next to Black's castled king. There it supports Bh6, f5 and Ng5.}
+1. e4 c5 2. Nc3 Nc6 3. f4 d6 4. Nf3 g6 5. Bb5 Bd7 6. O-O Bg7 7. d3 Nf6 8. Qe1 O-O {[%cal Ge1h4] The idea starts from this position.}
+9. Qh4 {[%cal Gc1h6,Gf4f5] The queen joins the attack. Next come Bh6, to trade Black's best defender, and f5. Stockfish: −0.2, equal.} *
+
+[Chapter "The f5 push"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "9...Bb7"]
+
+{The f-pawn is White's spearhead. Pushed to f5, it opens the f-file for the rook on f1 and attacks the pawn shield in front of Black's king.}
+1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bb5 Nd4 6. O-O Nxb5 7. Nxb5 a6 8. Nc3 b5 9. d3 Bb7 {[%cal Gf4f5] The idea starts from this position.}
+10. f5 {[%cal Gf1f8,Gf5g6] The pawn hits g6. If Black takes on f5, the f-file opens for White's rook. Stockfish: −0.2, equal.} *
+
+[Chapter "Key ideas: The Smith-Morra"]
+[Side "white"]
+[Type "ideas"]
+
+{In the Smith-Morra Gambit White gives up a pawn for fast development and open lines. White's set-up is the same in almost every game: the king's knight, the bishop to c4, castling, the queen to e2 and a rook to d1. Then White looks for the pawn break in the center, or for a knight jump into Black's position.}
+*
+
+[Chapter "Three pieces for a pawn"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "6.Bc4"]
+
+{After the gambit, White develops a piece with every move, while Black has spent moves taking pawns. Stjepan Tomić: "Even though White has given up a pawn, White has three pieces developed, Black has only one."}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok]} dxc3 4. Nxc3 {[%csl Gc3] The idea starts from this position.}
+4... Nc6 5. Nf3 d6 6. Bc4 {[%cal Gc4f7] Three White pieces are out, and White castles next. Black has one piece out and is a pawn up. Stockfish: −0.2, equal.} *
+
+[Chapter "The queen and rook on the d-file"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "9.Rd1"]
+
+{The queen goes to e2 and a rook to d1. The rook lines up against Black's d6 pawn and, behind it, Black's queen. Now the pawn push e4–e5 is a threat, because ...dxe5 would open the d-file and lose the queen.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok]} dxc3 4. Nxc3 Nc6 5. Nf3 d6 6. Bc4 e6 7. O-O Nf6 8. Qe2 Be7 {[%cal Ge2e5] The idea starts from this position.}
+9. Rd1 {[%cal Gd1d8,Ge4e5] The rook x-rays Black's queen. Black has to move the queen or block the d-file before castling. Stockfish: 0.0, equal.} *
+
+[Chapter "The knight jump to b5"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "11.Nb5"]
+
+{With Black's c-pawn gone, the squares b5, c7 and d6 are weak. A knight on b5 hits the queen on c7 and the pawn on d6 at the same time.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok]} dxc3 4. Nxc3 Nc6 5. Nf3 d6 6. Bc4 e6 7. O-O Nf6 8. Qe2 Be7 9. Rd1 Qc7 10. Bf4 e5 {[%cal Gc3b5] The idea starts from this position.}
+11. Nb5 {[%cal Gb5c7,Gb5d6] The knight hits the queen and the d6 pawn.} Qb8 12. Bg5 O-O 13. Bxf6 Bxf6 14. Nxd6 {White wins the pawn back. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "Key ideas: Against the bishop on c4"]
+[Side "black"]
+[Type "ideas"]
+
+{The early bishop to c4 is the most common anti-Sicilian at club level, but all the presenters call it weak. Black's answer is simple and always the same: block the bishop with the e-pawn, then hit it with the d-pawn. Stockfish agrees: the position is equal at once, where the usual knight move keeps White's small edge.}
+*
+
+[Chapter "The e-pawn blocks the bishop"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "2...e6"]
+
+{The bishop on c4 aims at f7. One pawn move closes that diagonal for good. GM Igor Smirnov: "Totally barricade the bishop. It has no future."}
+1. e4 c5 2. Bc4 {[%cal Rc4f7] The idea starts from this position.}
+2... e6 {[%cal Ge6d5] The bishop now hits a wall on e6, and ...d5 is ready. Stockfish: 0.0, equal.} *
+
+[Chapter "The d-pawn gains time"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "5...d5"]
+
+{After ...e6, Black prepares ...d5 with the knights. The pawn takes the center and attacks the bishop, so White has to move it a second time.}
+1. e4 c5 2. Bc4 e6 3. Nc3 Nc6 4. Nf3 Nf6 5. d3 {[%cal Gd7d5] The idea starts from this position.}
+5... d5 {[%cal Gd5c4] The pawn attacks the bishop.} 6. exd5 exd5 {[%cal Gc8g4,Gf8d6] The bishop is attacked again, and both of Black's bishops have open diagonals. Stockfish: −0.4, slightly better for Black.} *
+
+[Chapter "The pawn on e5 becomes a target"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "4...Nf6"]
+
+{If White pushes the e-pawn to e5 to chase the knight, the pawn moves away from White's other pawns and has to be defended by pieces. Black's knight jumps to g4 and the queen joins the attack on e5.}
+1. e4 c5 2. Bc4 e6 3. Nc3 Nc6 4. Nf3 Nf6 {[%cal Ge4e5] The idea starts from this position.}
+5. e5 {Chases the knight.} Ng4 {[%cal Gg4e5] The knight attacks the pawn instead of retreating.} 6. Qe2 Qc7 {[%cal Gc7e5,Gc6e5] Black attacks e5 three times. Stockfish: −0.3, slightly better for Black.} *
+
+[Chapter "Key ideas: Against the Alapin"]
+[Side "black"]
+[Type "ideas"]
+
+{Against the Alapin, Black strikes at the center at once, before White's d-pawn can advance with a pawn behind it. This course plays Stjepan Tomić's set-up: the d-pawn forward, the queen takes back, the light-squared bishop comes out, and only then the e-pawn. Black then plays against White's isolated d-pawn.}
+*
+
+[Chapter "Strike before d4"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "3...Qxd5"]
+
+{White's c-pawn on c3 takes the knight's best square. So after the trade on d5, Black's queen can take back and stay in the center: no knight comes to c3 to chase it.}
+1. e4 c5 2. c3 {[%cal Gd2d4] The idea starts from this position.}
+2... d5 3. exd5 Qxd5 {[%csl Gc3] The queen is safe on d5: the c3 square is blocked by White's own pawn. Stockfish: +0.2, equal.} *
+
+[Chapter "The bishop comes out first"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "6...e6"]
+
+{Black develops the light-squared bishop before playing ...e6, so it isn't shut in. On g4 it also pins the knight that guards d4. Stjepan Tomić: "Especially if you're a beginner, you should choose this... you aren't closing down your bishop on c8."}
+1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 Nf6 5. Nf3 {[%cal Gc8g4] The idea starts from this position.}
+5... Bg4 {[%cal Gg4f3] The bishop pins the knight.} 6. Be2 e6 {[%csl Gg4] Now ...e6 doesn't block the bishop. Stockfish: +0.2, equal.} *
+
+[Chapter "Blockade the isolated pawn"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "10...Qd6"]
+
+{When White takes back on d4 with the c-pawn, White's d-pawn is isolated. Black wants to blockade it with a piece on d5, trade queens and reach an endgame, where the weak pawn decides. Stjepan Tomić: "When you're defending against an isolated queen's pawn, you want to trade queens."}
+1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 Nf6 5. Nf3 Bg4 6. Be2 e6 7. O-O Nc6 8. Be3 cxd4 9. cxd4 Be7 10. Nc3 Qd6 {[%csl Rd4] The idea starts from this position.}
+11. Qb3 O-O 12. Rfd1 Rfd8 13. Rac1 Qb4 {[%cal Gb4b3] Black offers a queen trade. After the trade, the knight goes to d5 and blockades the pawn. Stockfish: +0.1, equal.} *
+
+[Chapter "Key ideas: Against the Grand Prix"]
+[Side "black"]
+[Type "ideas"]
+
+{Against the f-pawn systems Black has a clear answer for each move order. Against the f-pawn first, strike at once in the center. Against the knight first, put the king's bishop on the long diagonal and trade White's light-squared bishop with the knight. Stjepan Tomić: the Grand Prix is "really not a big deal for a Sicilian player."}
+*
+
+[Chapter "Strike at once against the f-pawn"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "4...Bg4"]
+
+{When White pushes the f-pawn before bringing out the queen's knight, nothing guards e4 well. Black hits it with the d-pawn. If White pushes past, Black brings the light-squared bishop out before playing ...e6.}
+1. e4 c5 2. f4 {[%cal Gd7d5] The idea starts from this position.}
+2... d5 3. e5 Nc6 4. Nf3 Bg4 {[%cal Gg4f3] The bishop is outside the pawn chain, and White's f-pawn blocks White's own dark-squared bishop. Stockfish: −0.4, slightly better for Black.} *
+
+[Chapter "The knight hits the bishop on b5"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "5...Nd4"]
+
+{White's bishop on b5 wants to take the c6 knight. Black doesn't wait: the knight jumps to d4 and takes the bishop when White castles. Black gets the bishop pair.}
+1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bb5 {[%cal Gc6d4] The idea starts from this position.}
+5... Nd4 {[%cal Gd4b5] The knight attacks the bishop.} 6. O-O Nxb5 7. Nxb5 a6 {Black has the two bishops, and the knight on b5 has to go back. Stockfish: 0.0, equal.} *
+
+[Chapter "The e-pawn and d-pawn against Bc4"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "5...e6"]
+
+{When White's bishop goes to c4 instead, Black uses the same plan as against the Bowdler: block it with ...e6, then prepare ...d5. Stjepan Tomić: "Whenever White plays Bc4 in the Sicilian, our repertoire is to play for e6 and d5."}
+1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bc4 {[%cal Rc4f7] The idea starts from this position.}
+5... e6 {[%cal Ge6d5] Blocks the bishop.} 6. O-O Nge7 7. d3 O-O 8. Qe1 d5 {[%cal Gd5c4] Black takes the center and hits the bishop. Stockfish: −0.6, slightly better for Black.} *
+
+[Chapter "Key ideas: The safe Smith-Morra set-up"]
+[Side "black"]
+[Type "ideas"]
+
+{Against the Smith-Morra, this course takes the pawn and plays a set-up in which White's usual tricks don't work. Every Black move takes away a square or a line that White's pieces need. Stjepan Tomić: "We have extinguished any tricky attacking chances for White."}
+*
+
+[Chapter "Cover the squares White's pieces want"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "7...d6"]
+
+{White's knights and bishop want b5, d5 and d6, and the e-pawn wants to advance. Black covers d5 with the e-pawn, b5 with the a-pawn and e5 with the d-pawn.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok]} dxc3 4. Nxc3 Nc6 5. Nf3 {[%csl Rb5,Rd5] The idea starts from this position.}
+5... e6 {[%cal Ge6d5] Covers d5 and blunts the bishop that comes to c4.} 6. Bc4 a6 {[%cal Ga6b5] Covers b5.} 7. O-O d6 {[%cal Gd6e5] Stops e5. Stockfish: −0.2, equal.} *
+
+[Chapter "Off the d-file, then off the c-file"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "12...Qb8"]
+
+{White's rooks come to d1 and c1, and each one lines up against Black's queen. Black moves the queen away before any pin can happen: first to c7, then to b8, where it still watches e5.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok]} dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 a6 7. O-O d6 8. Qe2 Be7 9. Rd1 {[%cal Rd1d8] The idea starts from this position.}
+9... Qc7 {Off the d-file.} 10. Bf4 Nf6 11. Rac1 O-O 12. Bb3 {[%cal Rc1c7] Now the c-file is open against the queen.} Qb8 {[%cal Gb8e5] Off the c-file, and still guarding e5. Stockfish: −0.1, equal.} *
+
+[Chapter "Bowdler Attack: 2...e6"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Bowdler Attack"]
+[ECO "B20"]
+
+{White brings the bishop to c4 at once, aiming at f7. It is the most common anti-Sicilian at club level, but the presenters call it weak, and Stockfish agrees. Black blocks the bishop with ...e6, then hits it with ...d5 and gets a free, comfortable game. The traps show what happens when White plays on as if nothing had changed.}
+1. e4 c5 2. Bc4 {This is the Bowdler Attack. The bishop aims at f7, but nothing is there to attack yet.} e6 {[%cal Ge6d5] Blocks the bishop's diagonal and prepares ...d5.}
+3. Nc3 {The most common move. Against 3.Nf3, see Advanced.} Nc6 {Develops toward the center.}
+4. Nf3 {Against 4.d3 Nf6 5.Bg5, ask the bishop with ...h6 first: see the trap with ...Nxe4.} Nf6 {[%cal Gf6e4] Hits e4 and prepares ...d5. If White pushes 5.e5, the knight goes to g4, and the pawn on e5 becomes a target.}
+5. d3 {Guards e4.} d5 {[%cal Gd5c4] Black takes the center and attacks the bishop.}
+6. exd5 {Nine White players in ten take.} exd5 {[%cal Gc8g4,Gf8d6] Black has a free center pawn, and both bishops have open diagonals.}
+7. Bb5 {The most common retreat. The bishop pins the knight on c6. Against 7.Bb3, play ...Be7 and castle.} Bd6 {[%cal Gd6h2] The bishop develops actively and aims at White's kingside.}
+8. O-O {8.Bg5 is just as common: castle too.} O-O {Black has the freer game, with a pawn in the center and active pieces. Stockfish: −0.7, slightly better for Black.} *
+
+[Chapter "Alapin, Barmen Defense: 2...d5"]
+[Side "both"]
+[Type "line"]
+[Opening "Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line"]
+[ECO "B22"]
+
+{Black hits e4 at once, before White can play d4 with a pawn behind it. After the trade on d5 the queen takes back, and White can't chase it with Nc3, because the pawn stands on c3. Black develops the light-squared bishop to g4 before playing ...e6, then accepts a position in which White has an isolated d-pawn. Stjepan Tomić plays this against the Alapin, and he would "rather have Black".}
+1. e4 c5 2. c3 d5 {This is the Barmen Defense. Black strikes at e4 before d4 comes.}
+3. exd5 {Seven White players in ten take. Against 3.e5, see Advanced.} Qxd5 {With no knight on c3, the queen is safe in the center.}
+4. d4 Nf6 5. Nf3 Bg4 {[%cal Gg4f3] The bishop comes out before ...e6 can shut it in, and it pins the knight that guards d4.}
+6. Be2 {Breaks the pin.} e6 {Now ...e6 doesn't block the bishop.}
+7. O-O {The most common move. 7.h3 Bh5 usually leads to the same position.} Nc6 {[%cal Gc6d4] A third piece hits d4.}
+8. Be3 {Guards d4, and also threatens dxc5.} cxd4 {Stjepan Tomić's rule: when White plays Be3, take on d4.}
+9. cxd4 {White is left with an isolated pawn on d4. In return White has more space and quick development.} Be7
+10. Nc3 {Gains time on the queen.} Qd6 {[%cal Gd6d4] The queen steps back but keeps an eye on d4. Black castles next, blockades the pawn and trades pieces; White attacks before that happens. Stockfish: +0.1, equal.} *
+
+[Chapter "Alapin, 2...Nc6: 5.Nc3"]
+[Side "white"]
+[Type "line"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[ECO "B22"]
+
+{Against the Alapin, one club player in four answers 2...Nc6. It does nothing against White's plan: White takes the center with d4 and takes back with the c-pawn. GM Igor Smirnov then recommends 5.Nc3, keeping the pressure on d5, and the d-pawn chases Black's knight. The line is full of traps: at move 9, half of club players lose at once.}
+1. e4 c5 2. c3 {This is the Alapin Variation. The pawn prepares d4, so White can take back on d4 with a pawn.} Nc6 {Develops, but does nothing against d4.}
+3. d4 {Takes the center at once.} cxd4
+4. cxd4 {Always take back with the c-pawn: that is why White played c3. White keeps two pawns in the center.} d5 {[%cal Rd5e4] The most common move: Black hits e4. Against 4...e6, see Advanced.}
+5. Nc3 {[%cal Gc3e4] Smirnov's idea: keep the tension and add a defender of e4, instead of trading. Most club players play 5.e5 or 5.exd5, which are good too.} dxe4 {Six Black players in ten take.}
+6. d5 {[%cal Gd5c6] Chases the knight. It can't go to d4, which the queen guards, and 6...Nb4? loses to Qa4+: see the traps.} Ne5 {The most common square.}
+7. Qa4+ {Check first, so the queen comes out with gain of time.} Bd7 {Nine Black players in ten block with the bishop.}
+8. Qxe4 {[%cal Ge4e5] White wins the pawn back and hits the knight again.} Ng6 {The knight drops back.}
+9. Nb5 {[%engine ok] [%cal Gb5d6,Gb5c7] Threatens Nd6, a smothered mate, and Nc7+, a fork. Stockfish prefers 9.Bc4, but 9.Nb5 sets the traps: half of club players answer with a move that loses at once (see the smothered mate in the traps).} e6 {The only good defence: the bishop on f8 now guards d6.}
+10. d6 {[%cal Gd6c7,Gd6e7] The pawn cramps Black. The bishop on f8 can't come out, and Nc7+ is still in the air. Stockfish: +0.1, equal.} *
+
+[Chapter "Grand Prix Attack: 3...g6"]
+[Side "both"]
+[Type "line"]
+[Opening "Sicilian Defense: Grand Prix Attack"]
+[ECO "B23"]
+
+{White pushes the f-pawn early and plans an attack on Black's king. Against ...g6, White brings the bishop to b5, ready to give it up for the c6 knight; Black answers with ...Nd4 and takes the bishop on Black's terms. Then White attacks on the kingside with the queen and the f-pawn, while Black expands on the queenside.}
+1. e4 c5 2. Nc3 {Prepares f4. Playing the knight first stops ...d5, Black's best answer to the f-pawn first: see McDonnell Attack: 2...d5.} Nc6
+3. f4 {This is the Grand Prix Attack.} g6 {Black puts the bishop on the long diagonal. 3...e6 and 3...d6 are just as common: see Advanced.}
+4. Nf3 Bg7
+5. Bb5 {[%cal Gb5c6] The bishop eyes the c6 knight. In this structure the light-squared bishop is White's worst piece, so White is glad to trade it. Against 5.Bc4, see Advanced.} Nd4 {[%cal Gd4b5] Black doesn't wait: the knight hits the bishop.}
+6. O-O {Half of White players castle. Against 6.Nxd4, see Advanced.} Nxb5 {Black wins the bishop pair.}
+7. Nxb5 a6 {[%cal Ga6b5] Chases the knight back.}
+8. Nc3 b5 {[%cal Gb5b4] Black gains space on the queenside, and ...b4 will chase the c3 knight.}
+9. d3 Bb7 {[%cal Gb7e4] Both sides have finished the first stage. White plays Qe1–h4 and f5 against Black's king; Black plays ...d6, ...Nf6 and ...b4. Stockfish: −0.2, equal.} *
+
+[Chapter "McDonnell Attack: 2...d5"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: McDonnell Attack"]
+[ECO "B21"]
+
+{White pushes the f-pawn before bringing out the queen's knight, so Black can strike at once with ...d5. Half of club players then push e5, which gives a French-like center with a weak f-pawn. Black brings the light-squared bishop out first and stands better. Stjepan Tomić: "f4 is bad, and we play d5."}
+1. e4 c5 2. f4 {This is the McDonnell Attack.} d5 {Strikes in the center at once: no knight on c3 guards e4.}
+3. e5 {Half of White players push. Against 3.exd5, see the Tal Gambit in Advanced.} Nc6
+4. Nf3 Bg4 {[%cal Gg4f3] The bishop comes out before ...e6, and it pins the knight.}
+5. Be2 e6 {A French-type center, with the bishop already outside the pawn chain.}
+6. O-O Nge7 {[%cal Ge7f5] The knight heads for f5.}
+7. c3 {The most common move: White wants d4.} Nf5 {[%cal Gf5d4] The knight hits d4, so White's pawn can't easily get there.}
+8. d3 Be7 {Black has easy development and a good grip on the center. Stockfish: −0.5, slightly better for Black.} *
+
+[Chapter "Smith-Morra Gambit: 5...d6"]
+[Side "white"]
+[Type "line"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation"]
+[ECO "B21"]
+
+{White gives a pawn for quick development. The set-up is always the same: Nf3, Bc4, castling, Qe2 and Rd1. The rook presses on the d6 pawn and on Black's queen behind it, and White watches for the e5 break. At club level this set-up wins many games: see the traps.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok] This is the Smith-Morra Gambit. White offers a pawn.} dxc3 {Seven Black players in ten take.}
+4. Nxc3 {White has a lead in development for the pawn.} Nc6
+5. Nf3 d6 {Stops e5. 5...e6 is just as common: see Advanced.}
+6. Bc4 {[%cal Gc4f7] The bishop aims at f7.} e6
+7. O-O Nf6 8. Qe2 {Prepares Rd1 and supports e5.} Be7
+9. Rd1 {[%cal Gd1d8] The rook lines up against the d6 pawn and Black's queen. Now 9...O-O? 10.e5! wins: see the traps.} Qc7 {The most common move: the queen leaves the d-file. Against 9...e5, see Advanced.}
+10. Bf4 {[%cal Gf4d6] More pressure on d6, and e5 is threatened.} e5 {Closes the bishop's diagonal.}
+11. Nb5 {[%cal Gb5c7,Gb5d6] The knight hits the queen and the d6 pawn.} Qb8
+12. Bg5 {[%cal Gg5f6] Takes aim at the knight that guards d5.} O-O
+13. Bxf6 Bxf6 14. Nxd6 {White has won the pawn back and keeps the more active pieces. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "Smith-Morra, Paulsen Formation: 6...a6"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation"]
+[ECO "B21"]
+
+{Black takes the pawn and builds a set-up with no weak points. ...Nc6, ...e6 and ...a6 keep White's pieces off b5 and d5, ...d6 stops e5, and the queen steps off the d-file and the c-file before White's rooks arrive. Stjepan Tomić used to lose to the Smith-Morra until he found it: "There are no tricks." Black keeps the extra pawn in a solid position.}
+1. e4 c5 2. d4 cxd4 3. c3 dxc3 {Take the pawn.}
+4. Nxc3 Nc6 5. Nf3 e6 {[%cal Ge6d5] Covers d5 and blunts the bishop that comes to c4.}
+6. Bc4 a6 {[%cal Ga6b5] Keeps White's knight and bishop off b5.}
+7. O-O d6 {[%cal Gd6e5] Stops e5 and guards d6.}
+8. Qe2 Be7
+9. Rd1 {[%cal Gd1d8] The rook x-rays the queen, so e5 is a threat.} Qc7 {The queen leaves the d-file.}
+10. Bf4 Nf6 {Now e5 is no longer a threat.}
+11. Rac1 O-O
+12. Bb3 {[%cal Gc1c7] The c-file opens against the queen.} Qb8 {[%cal Gb8e5] The queen leaves the c-file and still watches e5. Stjepan Tomić: "At this point, there are no more tricks." Stockfish: 0.0, equal.} *
+
+[Chapter "Bowdler Attack: 3.Nf3"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Bowdler Attack"]
+[ECO "B20"]
+
+{The same position comes from 2.Nf3 Nc6 3.Bc4 e6 and from 2.Nf3 e6 3.Bc4 Nc6, so this chapter also covers the bishop to c4 on move 3. Black follows the same plan as in the Basic line: ...Nf6, then ...d5.}
+1. e4 c5 2. Bc4 e6 3. Nf3 Nc6 4. O-O {The most common move.} Nf6 {[%cal Gf6e4] Hits e4. Against 5.e5, play 5...Ng4: the pawn on e5 becomes a target.}
+5. d3 d5 6. exd5 exd5 7. Bb5 Bd6 {The same set-up as in the Basic line. Stockfish: −0.2, equal.} *
+
+[Chapter "Bowdler Attack: 2...d6 3.Bc4"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Modern Variations"]
+[ECO "B50"]
+
+{If you answer 2.Nf3 with 2...d6, White can still put the bishop on c4. Black develops quietly: ...Nf6, ...e6 to blunt the bishop, ...Be7 and castling.}
+1. e4 c5 2. Nf3 d6 3. Bc4 Nf6 4. d3 e6 {[%cal Re6f7] The bishop hits a wall on e6.}
+5. O-O Be7 6. c3 {White prepares d4.} O-O 7. Re1 Nc6 {Black is solid, and ...a6 and ...b5 can follow. Stockfish: +0.1, equal.} *
+
+[Chapter "Alapin, 2...Nc6: 4...e6"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[ECO "B22"]
+
+{Three Black players in ten answer the d4 center with ...e6. GM Igor Smirnov's answer is 5.d5 at once: the pawn chases the knight, and after the trades on d5 the e-file is open against Black's king.}
+1. e4 c5 2. c3 Nc6 3. d4 cxd4 4. cxd4 e6 5. d5 {[%cal Gd5c6] Chases the knight, even though e6 guards d5.} exd5
+6. exd5 {Against 6...Nce7, 7.d6 cramps Black, and Qe2+ comes next.} Ne5 {The most common move.}
+7. Qe2 {[%engine ok] [%cal Ge2e8] Pins the knight to the king. Now 7...d6? loses a piece to 8.f4: see the traps.} Qe7 {The right answer: Black blocks the pin.}
+8. Be3 {White develops and can castle on either side. Stockfish: +1.1, clearly better for White.} *
+
+[Chapter "Alapin: 2...d6"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[ECO "B22"]
+
+{Black prepares ...Nf6 without allowing e5. White takes the center with d4, takes back with the c-pawn and develops.}
+1. e4 c5 2. c3 d6 3. d4 cxd4 4. cxd4 Nf6 5. Nc3 g6 6. Nf3 Bg7 7. Be2 O-O 8. O-O {White has a big center and easy development. Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "Alapin: 2...e6"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[ECO "B22"]
+
+{Black prepares ...d5. After the trade on d4, White pushes e5: a French Defense pawn structure, but a better one for White, because the knight can still come to c3.}
+1. e4 c5 2. c3 e6 3. d4 cxd4 4. cxd4 d5 5. e5 Nc6 6. Nf3 Bb4+ 7. Nc3 Nge7
+8. Bd3 {[%cal Gd3h7] The bishop aims at h7. If Black castles now, 9.Bxh7+! wins: see the Greek gift in the traps. Stockfish: +0.9, slightly better for White.} *
+
+[Chapter "Alapin: 2...Nf6"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Alapin Variation, Smith-Morra Declined"]
+[ECO "B22"]
+
+{Black attacks e4 at once, as in the Alekhine Defense. White pushes e5 and takes the center with d4. Stjepan Tomić's rules: take back on d4 with the c-pawn, and play Bb5 only after Black has played ...d6, when it pins the knight.}
+1. e4 c5 2. c3 Nf6 3. e5 Nd5 4. d4 cxd4 5. Nf3 {Develops first. 5...dxc3? loses the knight on d5 to 6.Qxd5.} Nc6
+6. cxd4 d6 7. Bc4 {[%cal Gc4d5] Hits the knight.} Nb6
+8. Bb5 {Now that ...d6 has been played, the bishop pins the knight on c6.} dxe5 9. Nxe5 Bd7
+10. Nxd7 Qxd7 {Black must take back with the queen. 10...Nxd7? 11.d5! gives White a big lead in development.}
+11. Nc3 e6 12. O-O Be7 {Another isolated d-pawn position: White has active pieces, and Black aims for the endgame. Stockfish: +0.3, slightly better for White.} *
+
+[Chapter "Alapin, Barmen Defense: 3.e5"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[ECO "B22"]
+
+{One White player in five pushes past d5. Black gets a French Advance pawn structure, but with the light-squared bishop free: develop it to f5 before playing ...e6.}
+1. e4 c5 2. c3 d5 3. e5 Nc6 4. d4 cxd4 5. cxd4 Bf5 {[%cal Gf5b1] The bishop comes out before ...e6.}
+6. Nc3 e6 7. Nf3 Nge7 {Black develops and castles next; the d4 pawn is the target. Stockfish: 0.0, equal.} *
+
+[Chapter "Delayed Alapin: 2...Nc6 3.c3"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Alapin Variation, Barmen Defense"]
+[ECO "B22"]
+
+{After 2.Nf3 Nc6, White can still play c3. Answer it as you answer 2.c3: ...d5 at once, the bishop to g4, then ...e6. Stjepan Tomić: "The delayed Alapin and the Alapin are the same thing for us, since we play d5."}
+1. e4 c5 2. Nf3 Nc6 3. c3 d5 4. exd5 Qxd5 5. d4 Bg4 6. Be2 e6 7. O-O Nf6 8. h3 Bh5 9. Be3 cxd4 10. cxd4 Be7 {The same kind of position as in the Barmen Defense. Stockfish: +0.2, equal.} *
+
+[Chapter "Delayed Alapin: 2...d6 3.c3"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Delayed Alapin Variation, with d6"]
+[ECO "B50"]
+
+{After 2.Nf3 d6 3.c3, don't take on e4: 4...Nxe4?? 5.Qa4+ wins the knight. GM Igor Smirnov also shows that ...Nc6 runs into d4–d5 and Qa4+ tricks. Fianchetto instead: ...g6, ...Bg7 and castling, a Dragon-type set-up.}
+1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. Be2 g6 5. O-O Bg7 6. Re1 O-O {Black is safely castled and ready for ...Nc6 and ...e5. Stockfish: −0.1, equal.} *
+
+[Chapter "Delayed Alapin: 2...e6 3.c3"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Delayed Alapin Variation, with e6"]
+[ECO "B40"]
+
+{After 2.Nf3 e6 3.c3, strike at once with ...d5. After the trades Black has an isolated d-pawn, but free development and active pieces.}
+1. e4 c5 2. Nf3 e6 3. c3 d5 4. exd5 exd5 5. d4 Nc6 6. Bb5 Bd6 7. dxc5 Bxc5 8. O-O Nge7 {Black castles next and plays ...Bg4. Stockfish: +0.3, slightly better for White.} *
+
+[Chapter "Grand Prix Attack: 3...e6"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Closed"]
+[ECO "B23"]
+
+{The most common reply at club level. Black prepares ...d5. White puts the bishop on b5 and gives it up for the knight, then plays the usual plan: d3, castling and the queen to the kingside.}
+1. e4 c5 2. Nc3 Nc6 3. f4 e6 4. Nf3 d5 5. Bb5 d4 {The most common reply.}
+6. Bxc6+ bxc6 7. Ne2 {The knight heads for g3, near Black's king.} Nf6 8. d3 Be7 9. O-O {[%engine ok]} O-O {White has the better pawns, and Black's queenside is weak. Stockfish: +1.4, clearly better for White.} *
+
+[Chapter "Grand Prix Attack: 3...d6"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Grand Prix Attack"]
+[ECO "B23"]
+
+{Black prepares ...g6 and ...Bg7. White uses the same plan: the bishop to b5, castling, d3 and the queen to h4.}
+1. e4 c5 2. Nc3 Nc6 3. f4 d6 4. Nf3 g6 5. Bb5 Bd7 6. O-O Bg7 7. d3 Nf6 8. Qe1 O-O
+9. Qh4 {[%cal Gc1h6] The queen is next to Black's king. Bh6 and f5 come next. Stockfish: −0.3, slightly better for Black.} *
+
+[Chapter "Grand Prix Attack: 5.Bc4"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Grand Prix Attack"]
+[ECO "B23"]
+
+{Almost four White players in ten put the bishop on c4 instead of b5. Black blocks it with ...e6 and prepares ...d5, the same plan as against the Bowdler.}
+1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bc4 e6 {[%cal Ge6d5] Blocks the bishop and prepares ...d5.}
+6. O-O {Against 6.f5, see the traps: 7.exf5? runs into ...d5.} (6. e5 {Gains space.} d6 {Stjepan Tomić: "Do not play d5 if they play e5. You play d6." Black breaks up White's center.} 7. exd6 Qxd6 {Black's pieces are active, and White's f-pawn is useless. Stockfish: −0.4, slightly better for Black.})
+6... Nge7 7. d3 O-O 8. Qe1 d5 {[%cal Gd5c4] Black takes the center and hits the bishop.}
+9. Bb3 Na5 {[%cal Ga5b3] The knight goes after the bishop. Stockfish: −0.1, equal.} *
+
+[Chapter "Grand Prix Attack: 6.Nxd4"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Grand Prix Attack"]
+[ECO "B23"]
+
+{Two White players in ten take the knight on d4. This helps Black: the pawn on d4 gains space, and White's knights lose their best squares.}
+1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bb5 Nd4 6. Nxd4 cxd4
+7. Ne2 {Against 7...e6 8.d3??, see the trap with ...Qa5+.} Nh6 {Stjepan Tomić: "the best move for Black, which is slightly counterintuitive". The knight heads for f5.}
+8. O-O O-O 9. d3 d5 {Black hits the center. Stockfish: −0.8, slightly better for Black.} *
+
+[Chapter "McDonnell Attack, Tal Gambit: 3.exd5"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: McDonnell Attack, Tal Gambit"]
+[ECO "B21"]
+
+{Against 3.exd5, don't take back with the queen at once: 3...Qxd5?! 4.Nc3 gains time on it. 3...Nf6 is the Tal Gambit: Black gives the pawn for quick development, and White's f-pawn leaves holes in White's position.}
+1. e4 c5 2. f4 d5 3. exd5 Nf6 4. c4 {The most common move: White holds on to the pawn.} e6 {Gives a second pawn to open lines.}
+5. dxe6 Bxe6 6. Nf3 Nc6 7. d3 g6 {Black develops fast: ...Bg7, castling and ...Re8 come next, with pressure on the e-file and the d4 square. Stockfish: −0.6, slightly better for Black.} *
+
+[Chapter "Smith-Morra Gambit: 5...e6"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation"]
+[ECO "B21"]
+
+{Stjepan Tomić's main line. Black covers b5 with ...a6 and develops the knight to e7, out of the way of e5. White pins it with Bg5 and then plays f4 and f5 against Black's king.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok]} dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 a6 7. O-O Nge7
+8. Bg5 {Forces a weakness. Against 8...h6, the bishop drops back to e3.} f6 {Gives Black's king an escape square.}
+9. Be3 b5 10. Bb3 Ng6 11. Nd4 {[%engine ok] Stjepan Tomić's move: White trades knights and plans f4.} Nxd4 12. Qxd4 Be7
+13. f4 {[%cal Gf4f5] White plays for f5 and an attack on the king. Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "Smith-Morra Gambit: 9...e5"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation"]
+[ECO "B21"]
+
+{One Black player in four answers Rd1 with ...e5. Stjepan Tomić calls it "Black's best choice, and probably the only move", even though it weakens d5. White develops the last pieces and gets the rooks to the open files.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok]} dxc3 4. Nxc3 Nc6 5. Nf3 d6 6. Bc4 e6 7. O-O Nf6 8. Qe2 Be7 9. Rd1 e5
+10. Be3 O-O 11. Rac1 {Stjepan Tomić: "Every single piece on the board for White is perfect." The knight comes to d5 next. Stockfish: −0.1, equal.} *
+
+[Chapter "Smith-Morra Gambit Declined: 3...d3 and 3...Nf6"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Diagram "3...d3"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Declined, Push Variation"]
+[ECO "B21"]
+
+{Three Black players in ten decline the gambit. Against ...d3, White takes the pawn and builds a big center with c4. Against ...Nf6, White pushes e5 and reaches the Alapin with 2...Nf6.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok]} d3 {Black gives the pawn back at once, to keep the c-file closed.}
+(3... Nf6 {Hits e4.} 4. e5 Nd5 5. cxd4 d6 6. Nf3 Nc6 7. Bc4 Nb6 8. Bb5 {The same position as in the Alapin with 2...Nf6. Stockfish: +0.1, equal.})
+4. Bxd3 Nc6 5. Nf3 d6 6. O-O Nf6 7. c4 {[%csl Gc4,Ge4] White has a big center and more space. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "Smith-Morra, Paulsen Formation: 13.Na4 and 13.e5"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Diagram "13.Na4"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation"]
+[ECO "B21"]
+
+{After Black's safe set-up, White still tries two ideas. Against the knight jump to a4, Black gives a pawn back with ...b5 and gets a slightly better game. Against e5, the knight jumps to h5 and Black wins a second pawn.}
+1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 a6 7. O-O d6 8. Qe2 Be7 9. Rd1 Qc7 10. Bf4 Nf6 11. Rac1 O-O 12. Bb3 Qb8
+13. Na4 {The knight eyes b6.} (13. e5 Nh5 {Chases the bishop.} 14. Be3 dxe5 {Black has won a second pawn. Stockfish: −0.8, slightly better for Black.})
+13... b5 {[%cal Gb5a4] Attacks the knight and leaves the c6 knight hanging.} 14. Rxc6 bxa4 15. Bxa4 Bd7 16. Rc4 Bb5 17. Bxb5 axb5 {Black has given back a pawn, but the material is level and Black's position is slightly better. Stockfish: −0.1, equal.} *
+
+[Chapter "Closed Sicilian: 3.g3"]
+[Side "both"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Closed"]
+[ECO "B26"]
+
+{White keeps the center closed, with a pawn on d3 instead of d4. The play is like a King's Indian Defense with colors reversed: White attacks on the kingside, Black on the queenside. Stjepan Tomić: Black puts the rook on b8 early "so that the bishop could not be exchanged before Black starts the attack".}
+1. e4 c5 2. Nc3 Nc6 3. g3 {This is the Closed Sicilian.} g6 4. Bg2 Bg7 5. d3 d6
+6. Be3 {With Qd2 and Bh6, White wants to trade Black's best bishop.} Rb8 {[%cal Gb7b5] Prepares ...b5 and ...b4.}
+7. Qd2 b5 8. Nge2 b4 {[%cal Gb4c3] Chases the knight.}
+9. Nd1 {Not 9.Na4?, which loses the rook on a1 to ...Qa5 and ...Bxa1.} Nd4 {[%cal Gd4c2] The knight lands on d4, where it is hard to remove. White attacks on the kingside, Black on the queenside. Stockfish: −0.3, slightly better for Black.} *
+
+[Chapter "Closed Sicilian with 3.Bb5: 3...Nd4"]
+[Side "both"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Closed, Traditional"]
+[ECO "B23"]
+
+{Stjepan Tomić's weapon with White: the bishop comes out before the knight, so f4 is still possible later. Black answers with ...Nd4, ...e6 and ...Nf6. The key moment is move 6: Black must play ...a6 before ...d5, or a famous trap wins for White (see the traps).}
+1. e4 c5 2. Nc3 Nc6 3. Bb5 Nd4 {[%cal Gd4b5] Hits the bishop.}
+4. Bc4 e6 {[%cal Ge6d5] Blocks the bishop and prepares ...d5.}
+5. Nf3 Nf6 6. O-O a6 {[%cal Ga6b5] Black prepares ...d5 and takes the b5 square from White's bishop. 6...d5? at once loses to a famous trap.}
+7. a4 d5 8. exd5 exd5 {Now the d5 pawn is immune.}
+9. Ba2 {White keeps the bishop. Black has easy development and a free game. Stockfish: −0.5, slightly better for Black.} *
+
+[Chapter "Other second moves: 2.c4 and more"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Staunton-Cochrane Variation"]
+[ECO "B20"]
+
+{White has a few rarer second moves. None of them is dangerous if Black knows the main idea: develop, and hit the center with ...e5 or ...d5 at the right moment.}
+1. e4 c5 2. c4 {The Staunton–Cochrane Variation. White grips d5, but gives up d4.} (2. d3 {The King's Indian Attack set-up.} Nc6 3. g3 g6 4. Bg2 Bg7 5. f4 d6 6. Nf3 e6 {Black is solid and ready for ...Nge7. Stockfish: +0.1, equal.}) (2. b4 {The Wing Gambit.} cxb4 3. a3 d5 {Strikes in the center.} 4. exd5 Qxd5 5. Nf3 e5 6. axb4 Bxb4 {Black is a pawn up with active pieces. Stockfish: −0.3, slightly better for Black.}) (2. a3 {Prepares b4.} Nc6 3. b4 e5 {GM Igor Smirnov's antidote: don't take the pawn, take the center.} 4. b5 Nd4 5. c3 Ne6 {The knight is safe on e6. Stockfish: −0.2, equal.}) (2. g3 {Allows ...d5 at once.} d5 3. exd5 Qxd5 4. Nf3 Bg4 5. Bg2 Qe6+ {The check gains time. Stockfish: 0.0, equal.}) (2. b3 {The Snyder Variation: a Dutch Defense with colors reversed.} Nc6 3. Bb2 e6 4. Nf3 d6 5. d4 cxd4 6. Nxd4 Nf6 {An Open Sicilian with White's bishop on b2. Stockfish: +0.4, slightly better for White.})
+2... Nc6 3. Nc3 g6 4. g3 Bg7 5. Bg2 d6 6. Nge2 e5 {[%csl Gd4] Black takes d4 for the knight. Stockfish: 0.0, equal.} *
+
+[Chapter "Trap: ...h6 and ...Nxe4"]
+[Side "black"]
+[Type "trap"]
+[Diagram "7...Nxe4"]
+[Opening "Sicilian Defense: Bowdler Attack"]
+[ECO "B20"]
+
+{Stjepan Tomić's "very, very common trick" against the Bowdler. White pins the f6 knight with Bg5; Black first asks the bishop with ...h6, then breaks the pin with ...Be7. If White now plays the natural Nf3, as half of club players do, ...Nxe4! wins at least a pawn.}
+1. e4 c5 2. Bc4 e6 3. Nc3 Nc6 4. d3 Nf6 5. Bg5 h6 {Ask the bishop first. Don't play ...Be7 at once.}
+6. Bh4 Be7 7. Nf3? {Natural, but now the h4 bishop is loose.} Nxe4! {The knight takes: the e7 bishop now attacks the bishop on h4.}
+8. Bxe7 {Most White players take.} (8. dxe4 Bxh4 9. Nxh4 Qxh4 {Black is a pawn up. Stockfish: −0.7, slightly better for Black.})
+8... Nxc3! {An in-between move: the knight takes again first.} 9. Bxd8 Nxd1 10. Rxd1 {Two White players in three take back.} Kxd8 {The queens are off, and Black is a pawn up. Stockfish: −1.8, clearly better for Black.} *
+
+[Chapter "Trap: the check on e7 and ...d4"]
+[Side "black"]
+[Type "trap"]
+[Diagram "8...d4"]
+[Opening "Sicilian Defense: Bowdler Attack"]
+[ECO "B20"]
+
+{GM Igor Smirnov's trick against the Bowdler. After ...d5 and the trade, the queen checks on e7. If White blocks with the bishop, the d-pawn advances and wins it, because it is pinned. White's best is to trade queens with Qe2, and the king move Kf1 costs White the right to castle.}
+1. e4 c5 2. Bc4 e6 3. Nf3 a6 4. a4 Nf6 5. d3 d5 6. exd5 exd5 7. Bb3 Qe7+! {[%cal Ge7e1] Check on the open e-file.}
+8. Be3? {Blocks the check, but the bishop is pinned.} d4! {[%cal Gd4e3] The pawn attacks the pinned bishop, and White loses a piece. Stockfish: −3.6, winning for Black.} *
+
+[Chapter "Trap: the bishop shut in on b3"]
+[Side "black"]
+[Type "trap"]
+[Diagram "5...c4"]
+[Opening "Sicilian Defense: Bowdler Attack"]
+[ECO "B20"]
+
+{If White's bishop goes back to b3 after ...a6 and ...b5, Black's c-pawn shuts it in. The bishop has no safe square, and White loses it for two pawns.}
+1. e4 c5 2. Bc4 e6 3. Nf3 a6 4. O-O b5 {[%cal Gb5c4] The pawn chases the bishop.}
+5. Bb3? {Nine White players in ten play 5.Be2, which is safe.} c4! {[%csl Rb3] The bishop is trapped: a4 and c4 are both attacked. Stockfish: −2.6, winning for Black.} *
+
+[Chapter "Trap: the smothered mate on d6"]
+[Side "white"]
+[Type "trap"]
+[Diagram "9...Nf6"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[ECO "B22"]
+
+{GM Igor Smirnov's title trap: "you can checkmate Black in the Sicilian Defense in just 10 moves." After 9.Nb5 the e7 pawn is pinned by the queen, so nothing can take a knight on d6. On Lichess, half of club players answer 9.Nb5 with ...Nf6 or ...a6, and both lose to a smothered mate.}
+1. e4 c5 2. c3 Nc6 3. d4 cxd4 4. cxd4 d5 5. Nc3 dxe4 6. d5 Ne5 7. Qa4+ Bd7 8. Qxe4 Ng6
+9. Nb5 {[%engine ok] [%cal Gb5d6]} Nf6?? {The most common reply: Black attacks the queen.}
+(9... a6? {Chases the knight.} 10. Nd6# {The same smothered mate.})
+(9... Qa5+? {The second most common reply.} 10. Bd2 {Covers the king and hits the queen.} Qb6 11. Be3 Qa5+ 12. b4 {The queen can no longer guard d6 and c7.} Qd8?? 13. Nd6# {Mate again.})
+(9... Bxb5?? {Takes the knight.} 10. Bxb5+ Qd7 {The only move.} 11. Bxd7+ Kxd7 {Black has given the queen for a knight. Stockfish: +9.3, winning for White.})
+10. Nd6# {Smothered mate: the e7 pawn is pinned, and Black's own pieces block the king.} *
+
+[Chapter "Trap: 6...Nb4? and Qa4+"]
+[Side "white"]
+[Type "trap"]
+[Diagram "6...Nb4"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[ECO "B22"]
+
+{When the d-pawn chases Black's knight, a quarter of club players put it on b4. The queen check on a4 then hits the king and the knight at once.}
+1. e4 c5 2. c3 Nc6 3. d4 cxd4 4. cxd4 d5 5. Nc3 dxe4 6. d5 Nb4? {The knight looks active on b4.}
+7. Qa4+! {[%cal Ga4e8,Ga4b4] Check, and the knight is attacked.} Bd7 8. Qxb4 {White has won a piece. Stockfish: +4.1, winning for White.} *
+
+[Chapter "Trap: the queen sacrifice on e5"]
+[Side "white"]
+[Type "trap"]
+[Diagram "7.Nxe5"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[ECO "B22"]
+
+{GM Igor Smirnov's "winning combo", which also appears in the delayed Alapin and the Wing Gambit. Black pins the f3 knight with ...Bg4, and after d5 the c6 knight jumps to e5. White gives the queen: after Bb5+, Black has to give it back, and White comes out a rook up.}
+1. e4 c5 2. c3 Nc6 3. d4 cxd4 4. cxd4 d6 5. Nf3 {[%engine ok]} Bg4? {The pin looks strong.}
+6. d5 {Chases the knight anyway.} Ne5? {Most club players choose this square, but it loses.}
+7. Nxe5! {Gives the queen.} Bxd1 {Two Black players in three take it.}
+8. Bb5+ {Black's only way to block the check is with the queen.} Qd7 9. Bxd7+ Kd8
+10. Nxf7+ Kxd7 11. Kxd1 {White takes the rook on h8 next. Stockfish: +6.8, winning for White.} *
+
+[Chapter "Trap: 7...d6? and f4"]
+[Side "white"]
+[Type "trap"]
+[Diagram "8.f4"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[ECO "B22"]
+
+{In the Alapin with 4...e6, the queen pins the knight on e5 to Black's king. Most players defend the knight with ...d6, but the knight is still pinned, and the f-pawn attacks it.}
+1. e4 c5 2. c3 Nc6 3. d4 cxd4 4. cxd4 e6 5. d5 exd5 6. exd5 Ne5
+7. Qe2 {[%engine ok] [%cal Ge2e8] The pin.} d6? {Defends the knight but doesn't break the pin. 7...Qe7 is the right move.}
+8. f4! {[%cal Gf4e5] The knight can't move, and White wins it. Stockfish: +3.2, winning for White.} *
+
+[Chapter "Trap: the Greek gift"]
+[Side "white"]
+[Type "trap"]
+[Diagram "9.Bxh7+"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[ECO "B22"]
+
+{In the Alapin's French-type structure, the pawn on e5 keeps Black's knight off f6. If Black castles, nothing guards h7, and the classic bishop sacrifice on h7 wins: the knight checks on g5 and the queen comes to h5.}
+1. e4 c5 2. c3 e6 3. d4 cxd4 4. cxd4 d5 5. e5 Nc6 6. Nf3 Bb4+ 7. Nc3 Nge7 8. Bd3 O-O? {Castles into the attack.}
+9. Bxh7+! Kxh7 10. Ng5+ {[%cal Gd1h5] The queen comes to h5 next.} Kg8 (10... Kg6 {The king steps forward.} 11. h4 {[%cal Gh4h5] The h-pawn joins in with h5+. Stockfish: +4.6, winning for White.})
+11. Qh5 {[%cal Gh5h7] Qh7 mate is threatened, and Black can only delay it. Stockfish: +5.5, winning for White.} *
+
+[Chapter "Trap: 8.d3?? and Qa5+"]
+[Side "black"]
+[Type "trap"]
+[Diagram "8...Qa5+"]
+[Opening "Sicilian Defense: Grand Prix Attack"]
+[ECO "B23"]
+
+{In the Grand Prix, after White takes on d4, the bishop on b5 is loose. If White plays d3 before castling, the queen check on a5 hits the king and the bishop at once.}
+1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bb5 Nd4 6. Nxd4 cxd4 7. Ne2 e6
+8. d3?? {White should castle first.} Qa5+! {[%cal Ga5e1,Ga5b5] Check, and the queen attacks the bishop. Stockfish: −3.1, winning for Black.} *
+
+[Chapter "Trap: 7.exf5? and ...d5"]
+[Side "black"]
+[Type "trap"]
+[Diagram "7...d5"]
+[Opening "Sicilian Defense: Grand Prix Attack, Schofman Variation"]
+[ECO "B23"]
+
+{In the Grand Prix with the bishop on c4, White often pushes f5 to open lines. If White takes back on f5 with the e-pawn, ...d5 hits the bishop and opens the center while White's king is still in the middle. Stjepan Tomić: "almost winning for Black".}
+1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bc4 e6 6. f5 gxf5
+7. exf5? {7.d3 is better.} d5! {[%cal Gd5c4] The pawn hits the bishop, and Black's bishops and queen come to life. Stockfish: −0.8, slightly better for Black.} *
+
+[Chapter "Trap: 9...O-O? and e5"]
+[Side "white"]
+[Type "trap"]
+[Diagram "10.e5"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation"]
+[ECO "B21"]
+
+{The best-known Smith-Morra trap, shown by both Stjepan Tomić and Remote Chess Academy. The rook on d1 x-rays Black's queen through the d6 pawn. If Black castles, the e-pawn advances, and ...dxe5 loses the queen.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok]} dxc3 4. Nxc3 Nc6 5. Nf3 d6 6. Bc4 e6 7. O-O Nf6 8. Qe2 Be7 9. Rd1 O-O? {Natural, but it loses.}
+10. e5! {[%cal Ge5f6,Gd1d8] Attacks the knight.} Ne8 {The knight can't take or go anywhere else without loss.}
+(10... dxe5?? 11. Rxd8 {Black loses the queen.})
+11. exd6 Nxd6? {Taking with the bishop was better.} 12. Bf4 {[%cal Gf4d6,Gd1d6] The knight on d6 is pinned and attacked twice.} Qc7? {The most common move in the database: the queen gets off the d-file, but walks into a new pin.}
+13. Nb5! {[%engine ok] [%cal Gb5d6,Gb5c7] Black loses the knight or the queen. Stockfish: +3.1, winning for White.} *
+
+[Chapter "Trap: 6...Nf6? and Bxf7+"]
+[Side "white"]
+[Type "trap"]
+[Diagram "7.e5"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted"]
+[ECO "B21"]
+
+{A "must-know" trap from Remote Chess Academy. When the queens face each other on the open d-file and Black's king is still on e8, the e-pawn advances. If Black takes it, the bishop sacrifice on f7 drags the king away from the queen.}
+1. e4 c5 2. d4 cxd4 3. c3 {[%engine ok]} dxc3 4. Nxc3 Nc6 5. Nf3 d6 6. Bc4 Nf6? {Natural development, but too early.}
+7. e5! {[%cal Ge5f6] Attacks the knight.} Nxe5? {Black grabs the pawn.} (7... dxe5 8. Qxd8+ Nxd8 9. Nb5 {[%cal Gb5c7] Even without queens, Nc7+ is a threat. Stockfish: +0.8, slightly better for White.})
+8. Nxe5 dxe5?? 9. Bxf7+! {[%cal Gd1d8] The bishop drags the king away from the queen.} Kxf7 10. Qxd8 {White has won the queen. Stockfish: +6.1, winning for White.} *
+
+[Chapter "Trap: 6...d5? and Qh5"]
+[Side "white"]
+[Type "trap"]
+[Diagram "10.Qh5"]
+[Opening "Sicilian Defense: Closed, Traditional"]
+[ECO "B23"]
+
+{Stjepan Tomić's favourite trap, "the trickiest of all", in the Closed Sicilian with 3.Bb5. If Black pushes ...d5 before ...a6, White sacrifices a knight on d5 and attacks f7 and the d5 knight at once. Black is a piece up for a moment, but completely lost.}
+1. e4 c5 2. Nc3 Nc6 3. Bb5 Nd4 4. Bc4 e6 5. Nf3 Nf6 6. O-O d5? {Black should play ...a6 first.}
+7. exd5 exd5 8. Nxd5! Nxd5 9. Nxd4! {Clears the way for the queen.} cxd4
+10. Qh5! {[%cal Gh5f7,Gh5d5] The queen hits f7 and the d5 knight.} Be6 {The only defence.} (10... Nf6?? 11. Qxf7# {Mate.})
+11. Re1 {[%cal Ge1e6] The bishop on e6 is pinned, and so is the f7 pawn.} Be7 12. Rxe6 {White wins the piece back, with a winning attack. Stockfish: +1.0, clearly better for White.} *
+
+[Chapter "Trap: 6...a6 first, then ...Nf4"]
+[Side "black"]
+[Type "trap"]
+[Diagram "12...Nf4"]
+[Opening "Sicilian Defense: Closed, Traditional"]
+[ECO "B23"]
+
+{The reverse side of the famous Closed Sicilian trap. With ...a6 played first, White's bishop check on b5 is gone, and the knight sacrifice on d5 no longer works. Stjepan Tomić's friend tried it anyway in blitz, and lost a piece.}
+1. e4 c5 2. Nc3 Nc6 3. Bb5 Nd4 4. Bc4 e6 5. Nf3 Nf6 6. O-O a6 7. a4 d5 8. exd5 exd5
+9. Nxd5? {The trick doesn't work now.} Nxd5 10. Nxd4 cxd4 11. Qh5 Be6 12. Re1 Nf4! {[%cal Gf4h5] The knight hits the queen and guards e6. Black stays a piece up. Stockfish: −1.2, clearly better for Black.} *
+
+[Chapter "Trap: the Wing Gambit and ...Qe5+"]
+[Side "black"]
+[Type "trap"]
+[Diagram "5...Qe5+"]
+[Opening "Sicilian Defense: Wing Gambit, Marshall Variation"]
+[ECO "B20"]
+
+{A simple trick against the Wing Gambit. White's a-pawn has moved to a3, so if it takes on b4, the rook on a1 is loose. The queen check on e5 hits the king and the rook.}
+1. e4 c5 2. b4 cxb4 3. a3 d5 4. exd5 Qxd5 5. axb4?? {5.Nf3 is the main move.} Qe5+! {[%cal Ge5e1,Ge5a1] The check, and the rook on a1 falls next. Stockfish: −3.7, winning for Black.} *
+
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. e4 c5
+2. Bc4 {Bowdler Attack}
+(2. c3 {Alapin Variation} d5 {[%course both] Barmen Defense} (2... Nc6 3. d4 cxd4 4. cxd4 d5 (4... e6 {}) 5. Nc3 {[%course white]}) (2... d6 {}) (2... e6 {}) (2... Nf6 {}))
+(2. Nc3 Nc6 {} 3. f4 {Grand Prix Attack} (3. g3 {Closed Sicilian}) (3. Bb5 {Closed Sicilian with 3.Bb5}) g6 {[%course both]} (3... e6 {}) (3... d6 {}))
+(2. f4 d5 {[%course black] McDonnell Attack})
+(2. d4 cxd4 3. c3 {Smith-Morra Gambit} dxc3 (3... d3 {Declined}) 4. Nxc3 Nc6 5. Nf3 d6 {[%course white]} (5... e6 6. Bc4 a6 {[%course black]}))
+(2. Nf3 {} Nc6 3. c3 {Delayed Alapin} (3. Bc4 {Bowdler on move 3}))
+(2. c4 {Other second moves})
+2... e6 {[%course black]} *
