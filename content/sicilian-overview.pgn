@@ -7,11 +7,9 @@
 (2. Nc3 Nc6 {} 3. f4 {Grand Prix Attack} (3. g3 {Closed Sicilian}))
 (2. c3 {Alapin Variation})
 (2. d4 cxd4 3. c3 {Smith-Morra Gambit})
-(2. f4 {McDonnell Attack})
 2... Nc6 {}
-(2... d6 {} 3. d4 (3. Bb5+ {Moscow Variation}) cxd4 4. Nxd4 Nf6 5. Nc3 {} a6 {Najdorf Variation} (5... g6 {Dragon Variation}) (5... Nc6 {Classical Variation}) (5... e6 {Scheveningen Variation}))
+(2... d6 {} 3. d4 (3. Bb5+ {Moscow Variation}) cxd4 4. Nxd4 Nf6 5. Nc3 {} a6 {Najdorf Variation} (5... g6 {Dragon Variation}))
 (2... e6 {} 3. d4 cxd4 4. Nxd4 {} Nc6 {Taimanov Variation} (4... a6 {Kan Variation}))
-(2... g6 {Hyperaccelerated Dragon})
 3. d4 (3. Bb5 {Rossolimo Attack}) cxd4 4. Nxd4 {} g6 {Accelerated Dragon}
 (4... Nf6 5. Nc3 e5 {Sveshnikov Variation})
 (4... e5 5. Nb5 d6 {Kalashnikov Variation}) *
@@ -55,15 +53,14 @@ Black: Hit e4 at once with ...d5 or ...Nf6, before White can support d4. After .
 [Opening "Sicilian Defense: Grand Prix Attack"]
 [ECO "B23"]
 [Diagram "4...Bg7"]
-[Lines "Grand Prix Attack | McDonnell Attack"]
 [Course "anti-sicilian"]
 
-{White pushes the f-pawn early for a quick attack on the kingside. The plan is simple and the attack comes fast, so it is popular at club level. 2.f4, the McDonnell Attack, often leads to the same positions.
+{White pushes the f-pawn early for a quick attack on the kingside. The plan is simple and the attack comes fast, so it is popular at club level.
 
 White: Develop with Nf3 and Bb5 or Bc4, castle, then attack with f5, or with Qe1 and Qh4. With Bb5, White is happy to give the bishop for the c6 knight.
 
 Black: Fianchetto with ...g6 and ...Bg7, then strike in the center with ...d5, or with ...e6 and ...d5. Against Bc4, ...e6 blunts the bishop.}
-1. e4 c5 2. Nc3 {Prepares f4.} (2. f4 {This is the McDonnell Attack: the f-pawn goes first.} Nc6 3. Nf3 g6 {Black's setup is the same as against the Grand Prix Attack.}) Nc6
+1. e4 c5 2. Nc3 {Prepares f4.} Nc6
 3. f4 {This is the Grand Prix Attack. The f-pawn supports an attack with f5.} g6 {Black puts the bishop on the long diagonal.}
 4. Nf3 Bg7 {White's bishop goes to b5 or c4 next.} *
 
