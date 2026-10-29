@@ -293,6 +293,7 @@ a.course-link:hover { border-color: var(--brass); }
         column-gap: 48px;
         align-items: start;
     }
+    .showcase { width: min(100%, 432px); } /* 20% bigger on computers */
 }
 
 /* ---------- course ---------- */
