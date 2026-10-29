@@ -991,7 +991,7 @@
             "name": "King's Indian Defense",
             "eco": "E60",
             "moves": "1. d4 Nf6 2. c4 g6",
-            "summary": "Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside.",
+            "summary": "Black lets White build a big center, then hits it with a pawn and attacks on the kingside.",
             "puzzles": "content/kings-indian-puzzles.pgn",
             "furtherStudy": [
                 {
@@ -1024,8 +1024,8 @@
                     "id": "kings-indian",
                     "side": "both",
                     "file": "content/kings-indian.pgn",
-                    "repertoire": "Seven Basic lines for both sides: the Mar del Plata, the Fianchetto, the Four Pawns Attack and the Sämisch.",
-                    "summary": "Black lets White build a big center, castles behind the g7 bishop, then strikes with ...e5 or ...c5. When the center locks, White attacks on the queenside and Black on the kingside.",
+                    "repertoire": "Five Basic lines for both sides: the Fianchetto, the Four Pawns Attack, the Mar del Plata and the Sämisch.",
+                    "summary": "Black lets White build a big center, castles behind the fianchettoed bishop, then strikes at the center with a pawn. When the center locks, White attacks on the queenside and Black on the kingside.",
                     "why": {
                         "text": "As Black, the King's Indian lets White take the center, then fights back against it, so the game stays unbalanced, with chances for both sides.\n\nAs White, the big center gives extra space, and White chooses the system: the Classical, the Fianchetto, the Four Pawns Attack or the Sämisch."
                     },
@@ -1040,11 +1040,6 @@
                                 "Fianchetto, Classical: 6...Nbd7",
                                 "18% as White\n5% as Black",
                                 "White: Keep the king safe and build a strong center.\nBlack: Attack White's center with pawns and pieces."
-                            ],
-                            [
-                                "Fianchetto, Panno: 7...a6",
-                                "2% as White\n5% as Black",
-                                "White: Gain space in the center and protect the queenside pawns.\nBlack: Play on the queenside and open lines there."
                             ],
                             [
                                 "Four Pawns Attack, Main line: 6...c5",
@@ -1065,11 +1060,6 @@
                                 "Sämisch, Orthodox: 6...e5",
                                 "17% as White\n7% as Black",
                                 "White: Keep a solid center, close it, and keep the king safe.\nBlack: Strike at the center and open the queenside, so White's king is not safe there."
-                            ],
-                            [
-                                "Sämisch Gambit: 6...c5",
-                                "6% as White\n7% as Black",
-                                "White: Keep the center and finish developing rather than take the pawn.\nBlack: Attack the center before White can attack, then play on the queenside."
                             ]
                         ],
                         "note": "How often: the share of your King's Indian games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
@@ -1522,7 +1512,7 @@
             "count": "5 defenses",
             "compact": true,
             "course": "kings-indian nimzo-indian grunfeld",
-            "subtitle": "1.d4 Nf6 2.c4: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
+            "subtitle": "Black's knight-first defenses: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
             "table": {
                 "after": "map",
                 "columns": [

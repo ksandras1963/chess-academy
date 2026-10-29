@@ -91,7 +91,7 @@
 [Type "ideas"]
 [Side "white"]
 
-{In the closed center, Black's whole game is the kingside attack with ...f5, ...f4, ...g5 and ...g4. It is slow, and you have defenders, but your queenside attack has to arrive first. Both boards come from Mar del Plata, Bayonet Attack: 9.b4.}
+{In the closed center, Black's whole game is the kingside attack, a storm with the f- and g-pawns. It is slow, and you have defenders, but your queenside attack has to arrive first. Both boards come from the Bayonet Attack in the Mar del Plata.}
 *
 
 [Chapter "The hole on e6"]
@@ -117,7 +117,7 @@
 [Type "ideas"]
 [Side "black"]
 
-{After 1.d4 Nf6, White plays 2.c4 in only about half of Lichess games between players averaging 1800 to 2199. 2.Bf4 (the London) and 2.Nf3 each come up about one game in six. You need no new theory: the same setup works. The London System Course covers White's other plans and the traps.}
+{After White opens with the queen's pawn and Black answers with the king's knight, White pushes the c-pawn next in only about half of Lichess games between players averaging 1800 to 2199. The London, with the queen's bishop out early, and a quiet king's knight move each come up about one game in six. You need no new theory: the same setup works. The London System Course covers White's other plans and the traps.}
 *
 
 [Chapter "The same setup against the London"]
@@ -188,19 +188,6 @@
 10. Re1 {[%engine ok] The most common move. Stockfish slightly prefers 10.c5.} exd4 11. Nxd4 Re8 {[%cal Re8e4] Pressure on e4.}
 12. Nc2 {The knight steps away from the queen's pressure and covers e3 and b4 (Stockfish +0.8, slightly better for White).} *
 
-[Chapter "Fianchetto, Panno: 7...a6"]
-[Side "both"]
-[Opening "King's Indian Defense: Fianchetto Variation, Panno Variation"]
-[ECO "E63"]
-
-{Instead of ...e5, Black plays on the queenside with ...a6, ...Rb8 and ...b5.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 d6 5. g3 O-O
-6. Bg2 Nc6 {[%cal Gc6d4] Hits d4.}
-7. O-O a6 {This is the Panno. Black prepares ...Rb8 and ...b5.}
-8. d5 {Gains space with tempo.} Na5 {[%cal Ga5c4] The knight hits c4.}
-9. Nd2 {Protects c4.} c5 10. Qc2 Rb8 11. b3 b5 {Black strikes at c4 to open lines on the queenside.}
-12. Bb2 {White develops. The fight is about the b-file and the c4 pawn (Stockfish +0.5, slightly better for White).} *
-
 [Chapter "Four Pawns Attack, Main line: 6...c5"]
 [Side "both"]
 [Opening "Benoni Defense: Four Pawns Attack"]
@@ -229,22 +216,6 @@
 10. Nge2 f5 11. exf5 {Opens e4 for White's pieces.} gxf5 {Black keeps more central pawns.}
 12. O-O {With the c-file open, White castles short.} Nd7 {[%cal Gd7c5,Gd7f6] The knight heads for c5 or f6.}
 13. Rc1 {White takes the open c-file (Stockfish +0.7, slightly better for White).} *
-
-[Chapter "Sämisch Gambit: 6...c5"]
-[Side "both"]
-[Opening "King's Indian Defense: Sämisch Variation, Sämisch Gambit"]
-[ECO "E81"]
-
-{Against the Sämisch, Black strikes at d4 before White's kingside attack begins. If White takes the pawn, Black gets fast development in return.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O
-6. Be3 c5 {[%cal Gc5d4] This is the Sämisch Gambit: Black hits d4 at once.}
-7. Nge2 {The second most common reply, after 7.d5: White keeps the tension.}
-(7. dxc5 {Accepts the gambit.} dxc5 8. Qxd8 Rxd8 9. Bxc5 Nc6 {[%cal Gc6d4,Gc6b4,Gg7b2] Black is a pawn down, but every piece is active while White's kingside is still undeveloped (Stockfish +0.2, equal).})
-7... Nc6 {[%cal Gc6d4] Adds pressure on d4.}
-8. d5 Ne5 {[%csl Ge5] The knight takes a strong central square.}
-9. Ng3 {Covers e4 and f5.} e6 {[%cal Ge6d5] Opens the center.}
-10. Be2 exd5 11. cxd5 a6 {[%cal Gb7b5] Prepares ...b5.}
-12. a4 {Stops ...b5.} h5 {[%cal Gh5h4] Threatens ...h4 to chase the g3 knight (Stockfish +0.5, slightly better for White).} *
 
 [Chapter "Trap, Bayonet Attack: 10...Nf4?! 11.Bf1"]
 [Side "white"]
@@ -723,6 +694,24 @@ If 10...d5, take twice: 11.cxd5 cxd5 12.exd5, and you are a pawn up (Stockfish +
 6... c5 {[%cal Gc5d4] Hits d4.}
 7. d5 e6 8. Nge2 exd5 9. cxd5 Nbd7 {[%cal Gd7e5] Heads for e5. Equal (Stockfish 0.0).} *
 
+[Chapter "Sämisch Gambit: 6...c5"]
+[Side "both"]
+[Opening "King's Indian Defense: Sämisch Variation, Sämisch Gambit"]
+[ECO "E81"]
+[Type "line"]
+[Level "advanced"]
+
+{Against the Sämisch, Black strikes at d4 before White's kingside attack begins. If White takes the pawn, Black gets fast development in return.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O
+6. Be3 c5 {[%cal Gc5d4] This is the Sämisch Gambit: Black hits d4 at once.}
+7. Nge2 {The second most common reply, after 7.d5: White keeps the tension.}
+(7. dxc5 {Accepts the gambit.} dxc5 8. Qxd8 Rxd8 9. Bxc5 Nc6 {[%cal Gc6d4,Gc6b4,Gg7b2] Black is a pawn down, but every piece is active while White's kingside is still undeveloped (Stockfish +0.2, equal).})
+7... Nc6 {[%cal Gc6d4] Adds pressure on d4.}
+8. d5 Ne5 {[%csl Ge5] The knight takes a strong central square.}
+9. Ng3 {Covers e4 and f5.} e6 {[%cal Ge6d5] Opens the center.}
+10. Be2 exd5 11. cxd5 a6 {[%cal Gb7b5] Prepares ...b5.}
+12. a4 {Stops ...b5.} h5 {[%cal Gh5h4] Threatens ...h4 to chase the g3 knight (Stockfish +0.5, slightly better for White).} *
+
 [Chapter "Sämisch Gambit, 7.d5"]
 [Side "black"]
 [Level "advanced"]
@@ -734,7 +723,7 @@ If 10...d5, take twice: 11.cxd5 cxd5 12.exd5, and you are a pawn up (Stockfish +
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6
 5. f3 {This is the Sämisch Variation.} O-O
 6. Be3 c5 {This is the Sämisch Gambit. White's sixth-move alternatives are under Advanced variations.}
-7. d5 {Closes the center, the most common reply. 7.Nge2 and 7.dxc5 are in Sämisch Gambit: 6...c5, under Basic variations.} e6 {[%cal Ge6d5] Undermines d5.}
+7. d5 {Closes the center, the most common reply. 7.Nge2 and 7.dxc5 are in Sämisch Gambit: 6...c5, the chapter before this one.} e6 {[%cal Ge6d5] Undermines d5.}
 8. Qd2 {Against 8.Bd3, take on d5 and play ...Nbd7 and ...Ne5.} exd5 9. cxd5 Re8 {[%cal Re8e4] Pressure on e4. The natural 10.Bh6? loses a pawn to 10...Nxe4!: see the trap chapter.
 
 Against the calmer 10.Bd3 or 10.Nge2, play 10...Nbd7 and ...Ne5; the knight on e5 is Black's best piece in this structure. Against 10.Bb5, which hits the rook, block with 10...Bd7.}
@@ -836,6 +825,21 @@ The common 10.Qc2? loses to 10...Nxe4! (see the trap chapter). 10.Nd2 is solid: 
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. h3 O-O
 6. Be3 {This is the Karpov System.} e5 7. d5 Na6 {[%cal Ga6c5] Heads for c5.}
 8. g4 Nc5 9. f3 a5 10. Qd2 c6 {[%cal Gc6d5,Gb7b5] With White's pawns on the kingside, Black opens the queenside with ...cxd5 and ...b5 (Stockfish +0.6, slightly better for White).} *
+
+[Chapter "Fianchetto, Panno: 7...a6"]
+[Side "both"]
+[Opening "King's Indian Defense: Fianchetto Variation, Panno Variation"]
+[ECO "E63"]
+[Type "line"]
+[Level "advanced"]
+
+{Instead of ...e5, Black plays on the queenside with ...a6, ...Rb8 and ...b5.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 d6 5. g3 O-O
+6. Bg2 Nc6 {[%cal Gc6d4] Hits d4.}
+7. O-O a6 {This is the Panno. Black prepares ...Rb8 and ...b5.}
+8. d5 {Gains space with tempo.} Na5 {[%cal Ga5c4] The knight hits c4.}
+9. Nd2 {Protects c4.} c5 10. Qc2 Rb8 11. b3 b5 {Black strikes at c4 to open lines on the queenside.}
+12. Bb2 {White develops. The fight is about the b-file and the c4 pawn (Stockfish +0.5, slightly better for White).} *
 
 [Chapter "Fianchetto, Yugoslav: 6...c5"]
 [Side "both"]
@@ -1018,10 +1022,10 @@ a5 {[%cal Ga5b4] Opens the a-file before White plays c5.}
 (4. Nf3 d6 5. g3 O-O 6. Bg2 {[%order 1] Fianchetto} Nc6
 (6... Nbd7 {[%course both] [%order 1] Classical})
 (6... c5 {[%order 3] Yugoslav})
-7. O-O a6 {[%course both] [%order 2] Panno})
+7. O-O a6 {[%order 2] Panno})
 4... d6
 5. Nf3
-(5. f3 O-O 6. Be3 {[%order 4] Sämisch} c5 {[%course both] [%order 2] Gambit}
+(5. f3 O-O 6. Be3 {[%order 4] Sämisch} c5 {[%order 2] Gambit}
 (6... e5 {[%course both] [%order 1] Orthodox})
 (6... Nc6 {[%order 3] Panno}))
 (5. Be2 O-O 6. Bg5 {[%order 5] Averbakh} c5 {[%order 2] Benoni Defense}
