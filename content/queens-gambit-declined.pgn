@@ -431,18 +431,6 @@ Against 7...c5, play 8.Nge2. After 8...cxd4 9.Nxd4, Black is left with an isolat
 11. f3 {[%cal Ge3e4] White's most common plan: prepare e4. Against 11.Rab1 and the minority attack, see Key ideas: Meeting the Exchange.} g6 {[%cal Gf8e6] Prepares ...Ne6.}
 12. Bh4 Ne6 {[%cal Ge6d4,Ge6g5] The knight hits d4 and g5, and Black is ready to meet e4. Stockfish: +0.2, equal.} *
 
-[Chapter "Other third moves"]
-[Side "black"]
-[Diagram "3.a3"]
-[Type "line"]
-[Opening "Queen's Gambit Declined"]
-[ECO "D30"]
-
-{Rarer third moves. Against 3.a3, which stops ...Bb4, play 3...Nf6 and the usual setup. After 3.cxd5 exd5 4.Nf3, develop the same way. 3.e3 often reaches Three Knights: 5.e3. Against 3.g3, 3...Nf6 4.Bg2 Be7 5.Nf3 O-O reaches the Catalan; against 3.Bf4, 3...Nf6 4.e3 c5 hits the center (Stockfish 0.0, equal), as it does against the London.}
-1. d4 d5 2. c4 e6 3. a3
-(3. cxd5 exd5 4. Nf3 Nf6 {Develop with ...Be7 or ...Bd6, ...c6 and castle. Stockfish: +0.1, equal.})
-3... Nf6 4. e3 Be7 {Castle next, as usual. Stockfish: +0.1, equal.} *
-
 [Chapter "Tartakower: 8.cxd5"]
 [Side "black"]
 [Type "line"]
@@ -617,6 +605,19 @@ Black can prepare ...Bf5 with ...g6. After 6...g6 7.e3 Bf5 8.Bd3 Bxd3 9.Qxd3, or
 7... c6 {[%cal Gc6d5] Guards d5 for good. The pawns now stand as in the Exchange Variation (see Key ideas: Meeting the Exchange), but here the c8 bishop can still come out.}
 8. O-O {Two White players in three. Against 8.h3, which takes g4 away from the bishop, or 8.Qc2, play 8...Re8 and ...Bd6 (Stockfish 0.0, equal).} Bg4 {[%cal Gg4f3] Pins the knight on f3. The bishop is active outside the pawn chain, and half of club players choose this move. Quiet moves such as 8...Nbd7 or 8...Re8 are just as good (Stockfish +0.1, equal).}
 9. h3 {Two White players in three.} Bh5 {[%cal Gh5f3] Keeps the pin. If 10.Qb3 hits b7, 10...Bxf3 11.gxf3 Qd7 guards it, and the pawns in front of White's king are doubled. Stockfish: 0.0, equal.} *
+
+[Chapter "Other third moves"]
+[Side "black"]
+[Level "advanced"]
+[Diagram "3.a3"]
+[Type "line"]
+[Opening "Queen's Gambit Declined"]
+[ECO "D30"]
+
+{Rarer third moves. Against 3.a3, which stops ...Bb4, play 3...Nf6 and the usual setup. After 3.cxd5 exd5 4.Nf3, develop the same way. 3.e3 often reaches Three Knights: 5.e3. Against 3.g3, 3...Nf6 4.Bg2 Be7 5.Nf3 O-O reaches the Catalan; against 3.Bf4, 3...Nf6 4.e3 c5 hits the center (Stockfish 0.0, equal), as it does against the London.}
+1. d4 d5 2. c4 e6 3. a3
+(3. cxd5 exd5 4. Nf3 Nf6 {Develop with ...Be7 or ...Bd6, ...c6 and castle. Stockfish: +0.1, equal.})
+3... Nf6 4. e3 Be7 {Castle next, as usual. Stockfish: +0.1, equal.} *
 
 [Chapter "Catalan: 4.g3"]
 [Side "black"]
@@ -798,7 +799,7 @@ Against 8.cxd5, take back with the e-pawn: 8...exd5, then ...c6, ...Be6 and ...N
 [Type "map"]
 
 1. d4 d5 2. c4 e6 {Queen's Gambit Declined}
-3. Nc3 (3. Nf3 Nf6 4. g3 {Catalan}) (3. a3 {[%course black] Other third moves})
+3. Nc3 (3. Nf3 Nf6 4. g3 {Catalan}) (3. a3 {Other third moves})
 3... Nf6 (3... c6 {Semi-Slav move order}) (3... Bb4 {})
 4. cxd5 {[%course black] Exchange Variation} (4. Bg5 {Main line} Be7 5. e3 O-O 6. Nf3 h6 7. Bh4 b6 {Tartakower} 8. cxd5 {[%course black]}) (4. Nf3 {Three Knights}) (4. Bf4 {Harrwitz Attack})
 4... exd5 (4... Nxd5 {})
