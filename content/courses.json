@@ -991,7 +991,7 @@
             "name": "King's Indian Defense",
             "eco": "E60",
             "moves": "1. d4 Nf6 2. c4 g6",
-            "summary": "Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside.",
+            "summary": "Black lets White build a big center, then hits it with a pawn and attacks on the kingside.",
             "puzzles": "content/kings-indian-puzzles.pgn",
             "furtherStudy": [
                 {
@@ -1024,8 +1024,8 @@
                     "id": "kings-indian",
                     "side": "both",
                     "file": "content/kings-indian.pgn",
-                    "repertoire": "Seven Basic lines for both sides: the Mar del Plata, the Fianchetto, the Four Pawns Attack and the Sämisch.",
-                    "summary": "Black lets White build a big center, castles behind the g7 bishop, then strikes with ...e5 or ...c5. When the center locks, White attacks on the queenside and Black on the kingside.",
+                    "repertoire": "Five Basic lines for both sides: the Fianchetto, the Four Pawns Attack, the Mar del Plata and the Sämisch.",
+                    "summary": "Black lets White build a big center, castles behind the fianchettoed bishop, then strikes at the center with a pawn. When the center locks, White attacks on the queenside and Black on the kingside.",
                     "why": {
                         "text": "As Black, the King's Indian lets White take the center, then fights back against it, so the game stays unbalanced, with chances for both sides.\n\nAs White, the big center gives extra space, and White chooses the system: the Classical, the Fianchetto, the Four Pawns Attack or the Sämisch."
                     },
@@ -1039,37 +1039,27 @@
                             [
                                 "Fianchetto, Classical: 6...Nbd7",
                                 "18% as White\n5% as Black",
-                                "White: Fianchetto your bishop too, so your king is safe and Black's kingside attack has little to aim at. Then take more of the center with the e-pawn, and push the h-pawn one square to keep Black's pieces off g4.\nBlack: Strike at the center with the e-pawn, then press on White's d- and e-pawns with the queen and a rook on the e-file."
-                            ],
-                            [
-                                "Fianchetto, Panno: 7...a6",
-                                "2% as White\n5% as Black",
-                                "White: Push the d-pawn forward to gain space and chase Black's knight, then guard the c4 pawn with a knight and the b-pawn.\nBlack: Play on the queenside instead of in the center. Put a rook on the b-file and push the b-pawn to open lines against White's c4 pawn."
+                                "White: Keep the king safe and build a strong center.\nBlack: Attack White's center with pawns and pieces."
                             ],
                             [
                                 "Four Pawns Attack, Main line: 6...c5",
                                 "20% as White\n6% as Black",
-                                "White: Build the widest possible center with four pawns, then close it with the d-pawn. Keep the central pawn majority and aim to push the e-pawn.\nBlack: Hit the center at once with the c-pawn, before White finishes developing. Then trade off the knight that supports White's e-pawn push, and keep a rook aimed at e4. Black's own chance is the queenside pawn majority."
+                                "White: Build a big pawn center and push it forward later.\nBlack: Attack the center at once and prevent White's pawns from advancing."
                             ],
                             [
                                 "Mar del Plata, Main line: 9.Ne1",
                                 "21% as White\n3% as Black",
-                                "White: Close the center with the d-pawn and attack on the queenside. Retreat the king's knight so the f-pawn can hold e4, then push the c-pawn to open the c-file.\nBlack: Send the queen's knight to the kingside and storm there with the f-pawn, then the g-pawn. Both sides race on opposite wings."
+                                "White: Close the center and attack on the queenside.\nBlack: Attack on the kingside with pawns, in a race on opposite wings."
                             ],
                             [
                                 "Mar del Plata, Bayonet Attack: 9.b4",
                                 "21% as White\n2% as Black",
-                                "White: Skip the knight retreat and attack on the queenside at once with the b- and c-pawns. Aim a knight at e6, the square that Black's f-pawn push leaves weak.\nBlack: Move the king's knight to the edge to free the f-pawn, then push it. Challenge White's pawn on d5 with the c-pawn."
+                                null
                             ],
                             [
                                 "Sämisch, Orthodox: 6...e5",
                                 "17% as White\n7% as Black",
-                                "White: The f-pawn guards e4 and keeps Black's knight off g4. Close the center with the d-pawn, and once the c-file opens, castle short: a king on the queenside would face the open file.\nBlack: Strike with the e-pawn, then open the c-file with the c-pawn so White can't safely castle long. Then move the king's knight to the edge and push the f-pawn."
-                            ],
-                            [
-                                "Sämisch Gambit: 6...c5",
-                                "6% as White\n7% as Black",
-                                "White: Keep the tension with a knight move instead of taking the c-pawn. If you take it, Black gets fast development for the pawn while your kingside pieces are still at home.\nBlack: Hit White's d-pawn at once with the c-pawn, before White's attack begins. Put a knight on the strong central square e5, open the center with the e-pawn, and prepare to push the b-pawn."
+                                "White: Keep a solid center, close it, and keep the king safe.\nBlack: Strike at the center and open the queenside, so White's king is not safe there."
                             ]
                         ],
                         "note": "How often: the share of your King's Indian games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
@@ -1512,7 +1502,7 @@
             "count": "5 defenses",
             "compact": true,
             "course": "kings-indian nimzo-indian grunfeld",
-            "subtitle": "1.d4 Nf6 2.c4: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
+            "subtitle": "Black's knight-first defenses: the King's Indian, Nimzo-Indian, Grünfeld, Queen's Indian and Benoni.",
             "table": {
                 "after": "map",
                 "columns": [
