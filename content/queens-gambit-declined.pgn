@@ -2,7 +2,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{The Queen's Gambit fights for the center from the side. Black answers 2.c4 with 2...e6 in a third of your games, 2...c6 in a quarter and 2...dxc4 in about one in six. This course covers 2...e6; the Slav and Queen's Gambit Accepted courses cover the other two. Each board below shows one idea behind White's play.}
+{The Queen's Gambit fights for the center from the side. Black declines it with the e-pawn in a third of your games and with the c-pawn in a quarter, and takes the pawn in about one in six. This course covers the e-pawn reply; the Slav and Queen's Gambit Accepted courses cover the other two. Each board below shows one idea behind White's play.}
 *
 
 [Chapter "Pressure on d5"]
@@ -40,7 +40,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{The Exchange Variation gives almost the same pawn structure in every game, so the plans repeat too. The boards below play to the main position of this course: 1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 c6 6.Qc2 Be7 7.e3 O-O 8.Bd3 Nbd7 9.Nge2 Re8 10.O-O Nf8. Stockfish rates it as equal (+0.2). Each board then shows one plan with the few moves that carry it out.}
+{The Exchange Variation gives almost the same pawn structure in every game, so the plans repeat too. The boards below play to the main position of this course, where both sides have castled, White's knight stands on e2 and Black's knight has come round to f8. Stockfish rates it as equal (+0.2). Each board then shows one plan with the few moves that carry it out.}
 *
 
 [Chapter "The minority attack"]
@@ -174,7 +174,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{Black's setup in this course is the Tartakower Variation, also called the Tartakower–Makogonov–Bondarevsky system: ...Nf6, ...Be7, castle, ...h6, then ...b6 and ...Bb7. It was a regular guest in the world championship matches between Anatoly Karpov and Garry Kasparov, and nearly every game of the 1927 match between José Raúl Capablanca and Alexander Alekhine began with the Queen's Gambit Declined. Each board below shows one step of the setup and why Black plays it.}
+{Black's setup in this course is the Tartakower Variation, also called the Tartakower–Makogonov–Bondarevsky system: develop the king's knight and bishop, castle, push the h-pawn one square, then put the queen's bishop on the long diagonal. It was a regular guest in the world championship matches between Anatoly Karpov and Garry Kasparov, and nearly every game of the 1927 match between José Raúl Capablanca and Alexander Alekhine began with the Queen's Gambit Declined. Each board below shows one step of the setup and why Black plays it.}
 *
 
 [Chapter "A pawn holds d5"]
@@ -214,7 +214,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{The Tartakower comes after 1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 b6. Black has less space, so the plan is to trade pieces, bring out the c8 bishop and free the game with ...c5. Stockfish rates the position as equal (+0.1). Each board shows one way to carry out the plan.}
+{In the Tartakower, White pins Black's knight, and Black castles, asks the bishop to decide with the h-pawn and prepares the queen's bishop for the long diagonal. Black has less space, so the plan is to trade pieces, bring out the light-squared bishop and free the game with the c-pawn. Stockfish rates the position as equal (+0.1). Each board shows one way to carry out the plan.}
 *
 
 [Chapter "Trade on d5"]
@@ -256,7 +256,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{Hanging pawns are two pawns side by side, here on c5 and d5, with no pawns of their own on the files next to them. Black often gets them in the Tartakower, after the trades on d5 and ...c5. They can't guard each other, so Black's pieces must, but they control the center and can advance. Each board shows one way to handle them.}
+{Hanging pawns are two pawns side by side, here on c5 and d5, with no pawns of their own on the files next to them. Black often gets them in the Tartakower, after the trades on d5 and the c-pawn push. They can't guard each other, so Black's pieces must, but they control the center and can advance. Each board shows one way to handle them.}
 *
 
 [Chapter "...c5 and ...bxc5"]
@@ -354,7 +354,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{After 4.cxd5 exd5, and then e3 and ...c6, the pawns are fixed: White's d4 and e3 against Black's d5 and c6. The trade frees your c8 bishop and gives you the half-open e-file. Your setup is ...Nbd7, ...c6, ...Be7, castling, ...Re8 and ...Nf8, where the knight guards h7 and can go on to e6 or g6. Stockfish rates the position on the first two boards as equal (+0.2).}
+{When White trades pawns on d5 and you take back with the e-pawn, the pawns soon become fixed: White's d4 and e3 against Black's d5 and c6. The trade frees your light-squared bishop and gives you the half-open e-file. Your setup is the queen's knight to d7, the c-pawn to c6, the bishop to e7, castling, a rook to e8 and the knight round to f8, where it guards h7 and can go on to e6 or g6. Stockfish rates the position on the first two boards as equal (+0.2).}
 *
 
 [Chapter "Against f3 and e4"]
