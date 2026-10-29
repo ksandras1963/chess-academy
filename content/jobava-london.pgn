@@ -2,7 +2,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{The Jobava London is named after the Georgian grandmaster Baadur Jobava. Lichess calls it the Rapport–Jobava System, after Jobava and the grandmaster Richárd Rapport. As in the London System, the c1 bishop comes out to f4 before e3 shuts it in. The difference is the b1 knight: it goes to c3, in front of the c-pawn. Each board below shows what the knight on c3 adds.}
+{The Jobava London is named after the Georgian grandmaster Baadur Jobava. Lichess calls it the Rapport–Jobava System, after Jobava and the grandmaster Richárd Rapport. As in the London System, the dark-squared bishop comes out to f4 before the e-pawn moves and shuts it in. The difference is the queen's knight: it goes to c3, in front of the c-pawn. Each board below shows what the knight on c3 adds.}
 *
 
 [Chapter "Nb5 hits c7"]
@@ -35,11 +35,11 @@
 6. h5 {[%cal Gh5g6] Hits g6.} c5 {[%cal Gc5d4] Black hits back in the center.}
 7. hxg6 hxg6 {[%cal Gh1h8] The h-file is open for White's rook. Stockfish: +0.3, slightly better for White.} *
 
-[Chapter "Key ideas: Plans against ...Bf5"]
+[Chapter "Key ideas: Plans against the bishop on f5"]
 [Side "white"]
 [Type "ideas"]
 
-{Black's light-squared bishop often comes to f5, after 3...Bf5, 3...a6 4.e3 Bf5 or 3...c6 4.e3 Bf5. There it is active and stops a free Bd3. This course meets it the same way in every line: Bd3, to trade it off. The boards show what follows the trade and what to do if the bishop steps back to g6.}
+{Black's light-squared bishop often comes to f5: at once, or one move later, after a pawn move to a6 or c6. There it is active and watches d3, where White's own light-squared bishop wants to go. This course meets it the same way in every line: White's bishop goes to d3 anyway, to trade it off. The boards show what follows the trade and what to do if Black's bishop steps back to g6.}
 *
 
 [Chapter "Take back with the c-pawn"]
@@ -72,11 +72,11 @@
 6. g4 {[%cal Gg4h5] Hits it again.} Bg6
 7. h4 {[%cal Gh4h5] Threatens h5, which would trap the bishop. Black has to make room with ...h6 or ...h5. Stockfish: +0.8, slightly better for White.} *
 
-[Chapter "Key ideas: Why 3...e6 and ...Bb4"]
+[Chapter "Key ideas: Why the bishop goes to b4"]
 [Side "black"]
 [Type "ideas"]
 
-{This course meets the Jobava with 3...e6, the most common reply. The pawn guards d5 a second time and opens the f8 bishop's diagonal. Then the bishop goes to b4 whenever White allows it, and ...c5 hits the center. The boards show why the bishop belongs on b4.}
+{This course meets the Jobava with a pawn move to e6, the most common reply. The pawn guards d5 a second time and opens a diagonal for the dark-squared bishop. Then the bishop goes to b4 whenever White allows it, and the c-pawn moves up to hit White's center. The boards show why the bishop belongs on b4.}
 *
 
 [Chapter "...Bb4 pins White's best piece"]
@@ -192,7 +192,7 @@
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{One Black player in five brings the bishop out at once. Develop with e3, then offer the trade with Bd3. If Black takes, take back with the c-pawn: it guards e4 and opens the c-file (see Key ideas: Plans against ...Bf5). Three Black players in ten keep the bishop with 5...Bg6 instead: push the h-pawn (see Early bishop: 5...Bg6).}
+{One Black player in five brings the bishop out at once. Develop with e3, then offer the trade with Bd3. If Black takes, take back with the c-pawn: it guards e4 and opens the c-file (see Key ideas: Plans against the bishop on f5). Three Black players in ten keep the bishop with 5...Bg6 instead: push the h-pawn (see Early bishop: 5...Bg6).}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 Bf5
 4. e3 {Opens the diagonal of the f1 bishop. 4.f3 is also popular, but Stockfish prefers 4.e3.} e6 {Two Black players in three. After 4...a6 or 4...c6, the position is the same as in Guarding b5: 3...a6 and Slav setup: 3...c6.}
 5. Bd3 {[%cal Gd3f5] Offers the trade of light-squared bishops.} Bxd3 {Four Black players in ten take.}
@@ -209,7 +209,7 @@
 {About one Black player in six plays 3...a6, which takes b5 away from White's knight. Develop London style with e3, Bd3 and Nf3. Three Black players in ten then bring the bishop to f5: offer the trade with Bd3, as against 3...Bf5. Black's other fourth moves are in Advanced variations.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 a6
 4. e3 {Seven White players in ten.} Bf5 {About three Black players in ten. Against 4...e6, 4...Nc6 and 4...c5, see Guarding b5: other fourth moves.}
-5. Bd3 {Offers the trade, as against 3...Bf5.} Bxd3 {Almost half of Black players take. After 5...Bg6, push the h-pawn: 6.h4 e6 7.h5 Bxd3 8.cxd3 (Stockfish +0.1, equal), as on Key ideas: Plans against ...Bf5.}
+5. Bd3 {Offers the trade, as against 3...Bf5.} Bxd3 {Almost half of Black players take. After 5...Bg6, push the h-pawn: 6.h4 e6 7.h5 Bxd3 8.cxd3 (Stockfish +0.1, equal), as on Key ideas: Plans against the bishop on f5.}
 6. cxd3 e6 {Eight Black players in ten.}
 7. Nf3 {[%cal Ga1c1,Gd1b3] Next come Rc1, Qb3 and castling. Stockfish: +0.3, slightly better for White.} *
 
@@ -461,7 +461,7 @@
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{After 3...c6 4.e3, Black's main alternatives to 4...Bf5 each have a clear answer. Against 4...e6, develop with Bd3 and Nf3. Against 4...Bg4, chase the bishop with f3, g4 and h4 (see Key ideas: Plans against ...Bf5). Against 4...g6, push the h-pawn.}
+{After 3...c6 4.e3, Black's main alternatives to 4...Bf5 each have a clear answer. Against 4...e6, develop with Bd3 and Nf3. Against 4...Bg4, chase the bishop with f3, g4 and h4 (see Key ideas: Plans against the bishop on f5). Against 4...g6, push the h-pawn.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 c6 4. e3 e6 {One Black player in six.}
 (4... Bg4 {One in nine.} 5. f3 {[%cal Gf3g4] Gains time on the bishop.} Bh5 6. g4 Bg6 7. h4 {[%cal Gh4h5] Threatens h5, which would trap the bishop. Stockfish: +0.8, slightly better for White.})
 (4... g6 {One in nine.} 5. h4 {[%cal Gh4h5] The Jobava answer to a fianchetto: the h-pawn heads for h5.} Bg7 6. Nf3 {Develops, ready for h5 or Ne5. Stockfish: +0.1, equal.})

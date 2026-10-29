@@ -2,7 +2,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{2...c6 guards d5, as 2...e6 does in the Queen's Gambit Declined, but it leaves the c8 bishop's diagonal open. The price: the b8 knight can't use c6, and once the bishop has left c8, nothing guards b7. The first board shows the bishop coming out before ...e6; the second shows the move order that keeps b7 safe in the main line.}
+{The c-pawn guards d5, as the e-pawn does in the Queen's Gambit Declined, but it leaves the light-squared bishop's diagonal open. The price: the queen's knight can't use c6, and once the bishop has left c8, nothing guards b7. The first board shows the bishop coming out before the e-pawn moves; the second shows the move order that keeps b7 safe in the main line.}
 *
 
 [Chapter "The bishop comes out first"]
@@ -79,7 +79,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{Take on c4 when White's f1 bishop can't take back at once: after both knights are out, or after an early Bg5 or Bf4. If White hasn't played a4, Black can hold the pawn with ...b5, and when a4 comes, ...b4 drives the knight from c3. In these ...b5 lines, the c8 bishop goes to b7 instead of f5.}
+{Take on c4 when White's king's bishop can't take back at once: after both knights are out, or after White's dark-squared bishop comes out early. If White hasn't pushed the a-pawn, Black can hold the pawn with the b-pawn, and when the a-pawn comes, the b-pawn moves on and drives the knight from c3. In these lines, the light-squared bishop goes to b7 instead of f5.}
 *
 
 [Chapter "Geller Gambit: 5...b5 and ...b4"]
