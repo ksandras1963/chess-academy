@@ -619,22 +619,22 @@
             ]
         },
         {
-            "id": "anti-sicilian-1",
-            "name": "Anti-Sicilian I",
+            "id": "anti-sicilian",
+            "name": "Anti-Sicilian",
             "eco": "B20",
             "moves": "1. e4 c5",
             "games": "Sicilian",
-            "puzzles": "content/anti-sicilian-1-puzzles.pgn",
-            "summary": "White avoids the Open Sicilian on move 2: the early bishop to c4, the Alapin, the Grand Prix, the Smith-Morra Gambit and the Closed Sicilian.",
+            "puzzles": "content/anti-sicilian-puzzles.pgn",
+            "summary": "White avoids the Open Sicilian: the early bishop to c4, the Grand Prix, the Closed Sicilian, the Alapin, the Smith-Morra Gambit, and after the knight move the Rossolimo and the Moscow.",
             "courses": [
                 {
-                    "id": "anti-sicilian-1",
+                    "id": "anti-sicilian",
                     "side": "both",
-                    "file": "content/anti-sicilian-1.pgn",
-                    "repertoire": "As White: the Alapin, the Grand Prix and the Smith-Morra Gambit. As Black: the e-pawn and d-pawn against the early bishop, an early d-pawn strike against the Alapin and the f-pawn, a fianchetto against the Grand Prix, and a safe set-up against the Smith-Morra.",
-                    "summary": "Why the name: the main line of the Sicilian is the Open Sicilian, in which White develops the king's knight, opens the center with the d-pawn and takes back on d4 with the knight. Black's best-known systems, such as the Najdorf and the Dragon, all come from it. An anti-Sicilian is any other White system: it avoids the Open Sicilian, and with it the long, well-studied lines that Sicilian players prepare. This course teaches the most common ones; Anti-Sicilian II teaches the rest.",
+                    "file": "content/anti-sicilian.pgn",
+                    "repertoire": "As White: the Grand Prix, the Closed Sicilian, the Alapin and the Smith-Morra Gambit. As Black: the e-pawn and d-pawn against the early bishop, a fianchetto against the Grand Prix and the Closed Sicilian, an early d-pawn strike against the Alapin, and a safe set-up against the Smith-Morra.",
+                    "summary": "Why the name: the main line of the Sicilian is the Open Sicilian, in which White develops the king's knight, opens the center with the d-pawn and takes back on d4 with the knight. Black's best-known systems, such as the Najdorf and the Dragon, all come from it. An anti-Sicilian is any other White system: it avoids the Open Sicilian, and with it the long, well-studied lines that Sicilian players prepare. This course teaches the ones club players meet most often.",
                     "why": {
-                        "text": "As White, an anti-Sicilian lets you choose the battlefield. The Alapin and the Smith-Morra Gambit fight for the center at once, and the Grand Prix aims straight at Black's king. Each has one set of plans that you use in almost every game, so there is far less to learn than in the Open Sicilian, and Black's natural moves often run into traps.\n\nAs Black, about two of every three Sicilian games against club players are anti-Sicilians. This course answers White's common second moves, and the same ideas on move 3. Each answer is simple, safe and quick to learn, and against the weaker tries, such as the early bishop to c4 or the early f-pawn push, Black is at least equal at once."
+                        "text": "As White, an anti-Sicilian lets you choose the battlefield. The Alapin and the Smith-Morra Gambit fight for the center at once, the Grand Prix aims straight at Black's king, and the Closed Sicilian keeps the center shut for a slow kingside attack. Each has one set of plans that you use in almost every game, so there is far less to learn than in the Open Sicilian, and Black's natural moves often run into traps.\n\nAs Black, about two of every three Sicilian games against club players are anti-Sicilians. This course answers White's most common second moves, and Advanced adds the Rossolimo and the Moscow, which come after the knight move. Each answer is simple, safe and quick to learn, and against the weakest of them, the early bishop to c4, Black is equal at once."
                     },
                     "table": {
                         "columns": [
@@ -649,24 +649,19 @@
                                 "White: Develop quickly and castle.\nBlack: Block the bishop with a pawn, then chase it and take the center."
                             ],
                             [
-                                "Alapin, Barmen Defense: 2...d5",
-                                "20% as White\n7% as Black",
-                                "White: Develop fast and use the extra space before Black blockades the center pawn.\nBlack: Bring the bishop out early, then blockade White's weak center pawn and trade queens."
-                            ],
-                            [
-                                "Alapin, 2...Nc6: 5.Nc3",
-                                "8% as White",
-                                "White: Build a big center and chase Black's knight with the pawns.\nBlack: Develop calmly and don't grab pawns while the king is in the center."
-                            ],
-                            [
                                 "Grand Prix Attack: 3...g6",
                                 "12% as White\n2% as Black",
                                 "White: Trade the light-squared bishop for a knight, then attack on the kingside.\nBlack: Keep the bishop pair and gain space on the queenside."
                             ],
                             [
-                                "McDonnell Attack: 2...d5",
-                                "6% as Black",
-                                "White: Push past Black's pawn and hold the center.\nBlack: Strike in the center at once and develop the light-squared bishop early."
+                                "Closed Sicilian: 3.g3",
+                                "43% as White\n1% as Black",
+                                "White: Keep the center closed and attack on the kingside.\nBlack: Fianchetto, then push the b-pawn and attack on the queenside."
+                            ],
+                            [
+                                "Alapin, Barmen Defense: 2...d5",
+                                "20% as White\n7% as Black",
+                                "White: Develop fast and use the extra space before Black blockades the center pawn.\nBlack: Bring the bishop out early, then blockade White's weak center pawn and trade queens."
                             ],
                             [
                                 "Smith-Morra Gambit: 5...d6",
@@ -679,7 +674,7 @@
                                 "White: Develop fast and look for tactics in the center.\nBlack: Take the pawn and keep White's pieces out with careful pawn moves."
                             ]
                         ],
-                        "note": "How often: the share of your Sicilian games that reach the line, from the side you play in it, counting every move order. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced: the Closed Sicilian, the same anti-Sicilians played on move 3, and White's other second moves."
+                        "note": "How often: the share of your Sicilian games that reach the line, from the side you play in it, counting every move order. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The common side lines are in Advanced, with the Rossolimo and the Moscow."
                     }
                 }
             ],
@@ -764,19 +759,6 @@
             "courses": [
                 {
                     "id": "sicilian-sveshnikov-kalashnikov",
-                    "side": "both"
-                }
-            ]
-        },
-        {
-            "id": "anti-sicilian-2",
-            "name": "Anti-Sicilian II",
-            "eco": "B27",
-            "moves": "1. e4 c5 2. Nf3",
-            "summary": "White avoids the Open Sicilian on move 3, after the knight move: the Rossolimo Attack, the Moscow Variation and the rarer third moves.",
-            "courses": [
-                {
-                    "id": "anti-sicilian-2",
                     "side": "both"
                 }
             ]
@@ -1549,8 +1531,8 @@
             "file": "content/sicilian-overview.pgn",
             "count": "15 variations",
             "compact": true,
-            "course": "anti-sicilian-1 sicilian-dragon sicilian-najdorf sicilian-taimanov-kan sicilian-sveshnikov-kalashnikov anti-sicilian-2",
-            "subtitle": "The main variations, and the six courses that teach them.",
+            "course": "anti-sicilian sicilian-dragon sicilian-najdorf sicilian-taimanov-kan sicilian-sveshnikov-kalashnikov",
+            "subtitle": "The main variations, and the five courses that teach them.",
             "summary": "Black answers the king's pawn with the c-pawn and fights for the center from the side: the second most common reply at club level, after the e-pawn. When White opens the center, Black trades the c-pawn for White's d-pawn, keeping an extra center pawn for the long run, while White gets a lead in development for an early attack. In about two games in three, though, White avoids this Open Sicilian with an anti-Sicilian, such as the early bishop to c4, the Alapin or the Grand Prix.",
             "table": {
                 "after": "map",

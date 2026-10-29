@@ -781,58 +781,43 @@ None.
 | Trap: 6.Nb5? and ...Qa5+ (7.Bd2) | 3.03 | D32 Queen's Gambit Declined: Tarrasch Defense |
 | Trap: 6.Nb5? and ...Qa5+ (7.Nc3) | 4.81 | D32 Queen's Gambit Declined: Tarrasch Defense |
 
-## Anti-Sicilian I — both sides (`anti-sicilian-1`)
+## Anti-Sicilian — both sides (`anti-sicilian`)
 
-72 chapters, 64 drillable lines (basic 9, traps 23, advanced 32), 583 learner moves.
+54 chapters, 42 drillable lines (basic 9, traps 16, advanced 17), 416 learner moves.
 
 ### Opening names and course-page diagrams
 
 | Chapter | Diagram | Opening header | ECO | Check |
 |---|---|---|---|---|
 | Bowdler Attack: 2...e6 | 2...e6 | Sicilian Defense: Bowdler Attack | B20 | ok |
-| Alapin, Barmen Defense: 2...d5 | 2...d5 | Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line | B22 | ok |
-| Alapin, 2...Nc6: 5.Nc3 | 5.Nc3 | Sicilian Defense: Alapin Variation | B22 | ok |
 | Grand Prix Attack: 3...g6 | 3...g6 | Sicilian Defense: Grand Prix Attack | B23 | ok |
-| McDonnell Attack: 2...d5 | 2...d5 | Sicilian Defense: McDonnell Attack | B21 | ok |
+| Closed Sicilian: 3.g3 | 3.g3 | Sicilian Defense: Closed | B26 | ok |
+| Alapin, Barmen Defense: 2...d5 | 2...d5 | Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line | B22 | ok |
 | Smith-Morra Gambit: 5...d6 | 5...d6 | Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation | B21 | ok |
 | Smith-Morra, Paulsen Formation: 6...a6 | 6...a6 | Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation | B21 | ok |
 | Bowdler Attack: 3.Nf3 | 3.Nf3 | Sicilian Defense: Bowdler Attack | B20 | ok |
-| Bowdler Attack: 2...d6 3.Bc4 | 3.Bc4 | Sicilian Defense: Modern Variations | B50 | ok |
-| Alapin, 2...Nc6: 4...e6 | 4...e6 | Sicilian Defense: Alapin Variation | B22 | ok |
-| Alapin: 2...d6 | 2...d6 | Sicilian Defense: Alapin Variation | B22 | ok |
-| Alapin: 2...e6 | 2...e6 | Sicilian Defense: Alapin Variation | B22 | ok |
-| Alapin: 2...Nf6 | 2...Nf6 | Sicilian Defense: Alapin Variation, Smith-Morra Declined | B22 | ok |
-| Alapin, Barmen Defense: 3.e5 | 3.e5 | Sicilian Defense: Alapin Variation | B22 | ok |
-| Delayed Alapin: 2...Nc6 3.c3 | 3.c3 | Sicilian Defense: Alapin Variation, Barmen Defense | B22 | ok |
-| Delayed Alapin: 2...d6 3.c3 | 3.c3 | Sicilian Defense: Delayed Alapin Variation, with d6 | B50 | ok |
-| Delayed Alapin: 2...e6 3.c3 | 3.c3 | Sicilian Defense: Delayed Alapin Variation, with e6 | B40 | ok |
-| Grand Prix Attack: 3...e6 | 3...e6 | Sicilian Defense: Closed | B23 | ok |
-| Grand Prix Attack: 3...d6 | 3...d6 | Sicilian Defense: Grand Prix Attack | B23 | ok |
 | Grand Prix Attack: 5.Bc4 | 5.Bc4 | Sicilian Defense: Grand Prix Attack | B23 | ok |
 | Grand Prix Attack: 6.Nxd4 | 6.Nxd4 | Sicilian Defense: Grand Prix Attack | B23 | ok |
-| McDonnell Attack, Tal Gambit: 3.exd5 | 3.exd5 | Sicilian Defense: McDonnell Attack, Tal Gambit | B21 | ok |
+| Alapin, 2...Nc6: 5.Nc3 | 5.Nc3 | Sicilian Defense: Alapin Variation | B22 | ok |
+| Alapin, Barmen Defense: 3.e5 | 3.e5 | Sicilian Defense: Alapin Variation | B22 | ok |
 | Smith-Morra Gambit: 5...e6 | 5...e6 | Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation | B21 | ok |
 | Smith-Morra Gambit: 9...e5 | 9...e5 | Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation | B21 | ok |
 | Smith-Morra Gambit Declined: 3...d3 and 3...Nf6 | 3...d3 | Sicilian Defense: Smith-Morra Gambit Declined, Push Variation | B21 | ok |
 | Smith-Morra, Paulsen Formation: 13.Na4 and 13.e5 | 13.Na4 | Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation | B21 | ok |
-| Closed Sicilian: 3.g3 | 3.g3 | Sicilian Defense: Closed | B26 | ok |
-| Closed Sicilian with 3.Bb5: 3...Nd4 | 3...Nd4 | Sicilian Defense: Closed, Traditional | B23 | ok |
-| Other second moves: 2.c4 and more | 2.c4 | Sicilian Defense: Staunton-Cochrane Variation | B20 | ok |
+| Rossolimo Attack: 4.Bxc6 | 4.Bxc6 | Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation | B31 | ok |
+| Rossolimo Attack: 4.O-O | 4.O-O | Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation | B31 | ok |
+| Moscow Variation: 3...Bd7 | 3...Bd7 | Sicilian Defense: Moscow Variation, Sokolsky Variation | B52 | ok |
+| Moscow Variation: 5.O-O | 5.O-O | Sicilian Defense: Moscow Variation, Main Line | B52 | ok |
 | Trap: ...h6 and ...Nxe4 | 7...Nxe4 | Sicilian Defense: Bowdler Attack | B20 | ok |
 | Trap: the check on e7 and ...d4 | 8...d4 | Sicilian Defense: Bowdler Attack | B20 | ok |
 | Trap: the bishop shut in on b3 | 5...c4 | Sicilian Defense: Bowdler Attack | B20 | ok |
+| Trap: 8.d3?? and Qa5+ | 8...Qa5+ | Sicilian Defense: Grand Prix Attack | B23 | ok |
+| Trap: 7.exf5? and ...d5 | 7...d5 | Sicilian Defense: Grand Prix Attack, Schofman Variation | B23 | ok |
 | Trap: the smothered mate on d6 | 9...Nf6 | Sicilian Defense: Alapin Variation | B22 | ok |
 | Trap: 6...Nb4? and Qa4+ | 6...Nb4 | Sicilian Defense: Alapin Variation | B22 | ok |
 | Trap: the queen sacrifice on e5 | 7.Nxe5 | Sicilian Defense: Alapin Variation | B22 | ok |
-| Trap: 7...d6? and f4 | 8.f4 | Sicilian Defense: Alapin Variation | B22 | ok |
-| Trap: the Greek gift | 9.Bxh7+ | Sicilian Defense: Alapin Variation | B22 | ok |
-| Trap: 8.d3?? and Qa5+ | 8...Qa5+ | Sicilian Defense: Grand Prix Attack | B23 | ok |
-| Trap: 7.exf5? and ...d5 | 7...d5 | Sicilian Defense: Grand Prix Attack, Schofman Variation | B23 | ok |
 | Trap: 9...O-O? and e5 | 10.e5 | Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation | B21 | ok |
 | Trap: 6...Nf6? and Bxf7+ | 7.e5 | Sicilian Defense: Smith-Morra Gambit Accepted | B21 | ok |
-| Trap: 6...d5? and Qh5 | 10.Qh5 | Sicilian Defense: Closed, Traditional | B23 | ok |
-| Trap: 6...a6 first, then ...Nf4 | 12...Nf4 | Sicilian Defense: Closed, Traditional | B23 | ok |
-| Trap: the Wing Gambit and ...Qe5+ | 5...Qe5+ | Sicilian Defense: Wing Gambit, Marshall Variation | B20 | ok |
 
 ### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
 
@@ -843,7 +828,6 @@ None.
 | Line | Move | Engine prefers | Loss |
 |---|---|---|---|
 | Alapin, 2...Nc6: 5.Nc3 (Main line) | 9.Nb5 | Bc4 | 0.96 |
-| Grand Prix Attack: 3...e6 (Main line) | 9.O-O | b3 | 0.61 |
 | Trap: the queen sacrifice on e5 (Main line) | 5.Nf3 | d5 | 0.65 |
 | Trap: 9...O-O? and e5 (Main line) | 13.Nb5 | Bxd6 | 0.75 |
 
@@ -856,69 +840,47 @@ None.
 | Line | Eval | Deepest named position |
 |---|---|---|
 | Bowdler Attack: 2...e6 (Main line) | 0.60 | B20 Sicilian Defense: Bowdler Attack |
-| Alapin, Barmen Defense: 2...d5 (Barmen Defense, as White) | 0.05 | B22 Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line |
-| Alapin, Barmen Defense: 2...d5 (Barmen Defense, as Black) | -0.05 | B22 Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line |
-| Alapin, 2...Nc6: 5.Nc3 (Main line) | 0.18 | B22 Sicilian Defense: Alapin Variation |
 | Grand Prix Attack: 3...g6 (Grand Prix Attack, as White) | -0.14 | B23 Sicilian Defense: Grand Prix Attack |
 | Grand Prix Attack: 3...g6 (Grand Prix Attack, as Black) | 0.14 | B23 Sicilian Defense: Grand Prix Attack |
-| McDonnell Attack: 2...d5 (Main line) | 0.52 | B21 Sicilian Defense: McDonnell Attack |
+| Closed Sicilian: 3.g3 (Closed Sicilian, as White) | -0.31 | B26 Sicilian Defense: Closed |
+| Closed Sicilian: 3.g3 (Closed Sicilian, as Black) | 0.31 | B26 Sicilian Defense: Closed |
+| Alapin, Barmen Defense: 2...d5 (Barmen Defense, as White) | 0.05 | B22 Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line |
+| Alapin, Barmen Defense: 2...d5 (Barmen Defense, as Black) | -0.05 | B22 Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line |
 | Smith-Morra Gambit: 5...d6 (Main line) | 0.54 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation |
 | Smith-Morra, Paulsen Formation: 6...a6 (Main line) | 0.01 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation |
 | Bowdler Attack: 3.Nf3 (Main line) | 0.16 | B20 Sicilian Defense: Bowdler Attack |
-| Bowdler Attack: 2...d6 3.Bc4 (Main line) | -0.04 | B50 Sicilian Defense: Modern Variations |
-| Alapin, 2...Nc6: 4...e6 (Main line) | 0.92 | B22 Sicilian Defense: Alapin Variation |
-| Alapin: 2...d6 (Main line) | 0.82 | B22 Sicilian Defense: Alapin Variation |
-| Alapin: 2...e6 (Main line) | 0.95 | B22 Sicilian Defense: Alapin Variation |
-| Alapin: 2...Nf6 (Main line) | 0.32 | B22 Sicilian Defense: Alapin Variation, Smith-Morra Declined |
-| Alapin, Barmen Defense: 3.e5 (Main line) | 0.11 | B22 Sicilian Defense: Alapin Variation |
-| Delayed Alapin: 2...Nc6 3.c3 (Main line) | -0.14 | B22 Sicilian Defense: Alapin Variation, Barmen Defense |
-| Delayed Alapin: 2...d6 3.c3 (Main line) | 0.00 | B50 Sicilian Defense: Delayed Alapin Variation, with d6 |
-| Delayed Alapin: 2...e6 3.c3 (Main line) | -0.24 | B40 Sicilian Defense: Delayed Alapin Variation, with e6 |
-| Grand Prix Attack: 3...e6 (Main line) | 1.41 | B23 Sicilian Defense: Closed |
-| Grand Prix Attack: 3...d6 (Main line) | -0.10 | B23 Sicilian Defense: Grand Prix Attack |
 | Grand Prix Attack: 5.Bc4 (Main line) | 0.17 | B23 Sicilian Defense: Grand Prix Attack |
 | Grand Prix Attack: 5.Bc4 (6.e5) | 0.34 | B23 Sicilian Defense: Grand Prix Attack |
 | Grand Prix Attack: 6.Nxd4 (Main line) | 0.89 | B23 Sicilian Defense: Grand Prix Attack |
-| McDonnell Attack, Tal Gambit: 3.exd5 (Main line) | 0.52 | B21 Sicilian Defense: McDonnell Attack, Tal Gambit |
+| Alapin, 2...Nc6: 5.Nc3 (Main line) | 0.18 | B22 Sicilian Defense: Alapin Variation |
+| Alapin, Barmen Defense: 3.e5 (Main line) | 0.11 | B22 Sicilian Defense: Alapin Variation |
 | Smith-Morra Gambit: 5...e6 (Main line) | 0.62 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation |
 | Smith-Morra Gambit: 9...e5 (Main line) | 0.00 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation |
 | Smith-Morra Gambit Declined: 3...d3 and 3...Nf6 (Main line) | 0.52 | B21 Sicilian Defense: Smith-Morra Gambit Declined, Push Variation |
 | Smith-Morra Gambit Declined: 3...d3 and 3...Nf6 (3...Nf6) | 0.14 | B22 Sicilian Defense: Alapin Variation, Smith-Morra Declined |
 | Smith-Morra, Paulsen Formation: 13.Na4 and 13.e5 (Main line) | 0.03 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation |
 | Smith-Morra, Paulsen Formation: 13.Na4 and 13.e5 (13.e5) | 0.84 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation |
-| Closed Sicilian: 3.g3 (Closed Sicilian, as White) | -0.31 | B26 Sicilian Defense: Closed |
-| Closed Sicilian: 3.g3 (Closed Sicilian, as Black) | 0.31 | B26 Sicilian Defense: Closed |
-| Closed Sicilian with 3.Bb5: 3...Nd4 (Closed Sicilian with 3.Bb5, as White) | -0.71 | B23 Sicilian Defense: Closed, Traditional |
-| Closed Sicilian with 3.Bb5: 3...Nd4 (Closed Sicilian with 3.Bb5, as Black) | 0.71 | B23 Sicilian Defense: Closed, Traditional |
-| Other second moves: 2.c4 and more (Main line) | -0.06 | A36 English Opening: Symmetrical Variation, Botvinnik System |
-| Other second moves: 2.c4 and more (2.d3) | -0.14 | B20 Sicilian Defense |
-| Other second moves: 2.c4 and more (2.b4) | 0.32 | B20 Sicilian Defense: Wing Gambit, Marshall Variation |
-| Other second moves: 2.c4 and more (2.a3) | 0.09 | B20 Sicilian Defense: Mengarini Variation |
-| Other second moves: 2.c4 and more (2.g3) | 0.00 | B20 Sicilian Defense: Lasker-Dunne Attack |
-| Other second moves: 2.c4 and more (2.b3) | -0.49 | B20 Sicilian Defense: Czerniak Attack |
+| Rossolimo Attack: 4.Bxc6 (Main line) | -0.03 | B31 Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation |
+| Rossolimo Attack: 4.O-O (Main line) | -0.03 | B31 Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation |
+| Moscow Variation: 3...Bd7 (Moscow Variation, as White) | 0.31 | B52 Sicilian Defense: Moscow Variation, Sokolsky Variation |
+| Moscow Variation: 3...Bd7 (Moscow Variation, as Black) | -0.31 | B52 Sicilian Defense: Moscow Variation, Sokolsky Variation |
+| Moscow Variation: 5.O-O (Main line) | -0.10 | B52 Sicilian Defense: Moscow Variation, Main Line |
 | Trap: ...h6 and ...Nxe4 (Main line) | 1.84 | B20 Sicilian Defense: Bowdler Attack |
 | Trap: ...h6 and ...Nxe4 (8.dxe4) | 0.82 | B20 Sicilian Defense: Bowdler Attack |
 | Trap: the check on e7 and ...d4 (Main line) | 3.27 | B20 Sicilian Defense: Bowdler Attack |
 | Trap: the bishop shut in on b3 (Main line) | 2.62 | B20 Sicilian Defense: Bowdler Attack |
+| Trap: 8.d3?? and Qa5+ (Main line) | 3.07 | B23 Sicilian Defense: Grand Prix Attack |
+| Trap: 7.exf5? and ...d5 (Main line) | 0.91 | B23 Sicilian Defense: Grand Prix Attack, Schofman Variation |
 | Trap: the smothered mate on d6 (Main line) | 100.00 | B22 Sicilian Defense: Alapin Variation |
 | Trap: the smothered mate on d6 (9...a6) | 100.00 | B22 Sicilian Defense: Alapin Variation |
 | Trap: the smothered mate on d6 (9...Qa5+) | 100.00 | B22 Sicilian Defense: Alapin Variation |
 | Trap: the smothered mate on d6 (9...Bxb5) | 10.14 | B22 Sicilian Defense: Alapin Variation |
 | Trap: 6...Nb4? and Qa4+ (Main line) | 3.99 | B22 Sicilian Defense: Alapin Variation |
 | Trap: the queen sacrifice on e5 (Main line) | 6.82 | B22 Sicilian Defense: Alapin Variation |
-| Trap: 7...d6? and f4 (Main line) | 3.02 | B22 Sicilian Defense: Alapin Variation |
-| Trap: the Greek gift (Main line) | 5.51 | B22 Sicilian Defense: Alapin Variation |
-| Trap: the Greek gift (10...Kg6) | 4.48 | B22 Sicilian Defense: Alapin Variation |
-| Trap: 8.d3?? and Qa5+ (Main line) | 3.07 | B23 Sicilian Defense: Grand Prix Attack |
-| Trap: 7.exf5? and ...d5 (Main line) | 0.91 | B23 Sicilian Defense: Grand Prix Attack, Schofman Variation |
 | Trap: 9...O-O? and e5 (Main line) | 3.21 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation |
 | Trap: 9...O-O? and e5 (10...dxe5) | 4.19 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation |
 | Trap: 6...Nf6? and Bxf7+ (Main line) | 6.06 | B21 Sicilian Defense: Smith-Morra Gambit Accepted |
 | Trap: 6...Nf6? and Bxf7+ (7...dxe5) | 0.70 | B21 Sicilian Defense: Smith-Morra Gambit Accepted |
-| Trap: 6...d5? and Qh5 (Main line) | 1.26 | B23 Sicilian Defense: Closed, Traditional |
-| Trap: 6...d5? and Qh5 (10...Nf6) | 100.00 | B23 Sicilian Defense: Closed, Traditional |
-| Trap: 6...a6 first, then ...Nf4 (Main line) | 0.96 | B23 Sicilian Defense: Closed, Traditional |
-| Trap: the Wing Gambit and ...Qe5+ (Main line) | 3.82 | B20 Sicilian Defense: Wing Gambit, Marshall Variation |
 ## Ruy Lopez — both sides (`ruy-lopez`)
 
 62 chapters, 91 drillable lines (basic 10, traps 10, advanced 71), 805 learner moves.
@@ -2042,7 +2004,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 2 | Give up b7 | Black | 6...e6 | 1 | 7.Qxb7 (1 half-move) | ok |
 | 3 | Mate in two | White | 7.Bxf7+ | 2 | none | ok |
 
-## Puzzles: Anti-Sicilian I (`content/anti-sicilian-1-puzzles.pgn`)
+## Puzzles: Anti-Sicilian (`content/anti-sicilian-puzzles.pgn`)
 
 14 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
 
@@ -2053,16 +2015,16 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 1 | Bowdler: take first with the knight | Black | 8...Nxc3 | 1 | 9.Bxd8 (4 half-moves) | ok |
 | 2 | Bowdler: the pinned bishop | Black | 8...d4 | 1 | 9.O-O (5 half-moves) | ok |
 | 3 | Bowdler: shut the bishop in | Black | 5...c4 | 1 | 6.d4 (3 half-moves) | ok |
-| 4 | Alapin: the smothered mate | White | 10.Nd6# | 1 | none | ok |
-| 5 | Alapin: check before you take | White | 9.Bxc6+ | 2 | none | ok |
-| 6 | Alapin: the Greek gift | White | 9.Bxh7+ | 2 | 10...Kg6 (2 half-moves) | ok |
-| 7 | Delayed Alapin: the knight on e4 | White | 5.Qa4+ | 1 | 5...Nc6 (2 half-moves) | ok |
-| 8 | Delayed Alapin: give the queen | White | 6.Nxe5 | 1 | 6...Bxd1 (8 half-moves) | ok |
-| 9 | Grand Prix: the queen check on a5 | Black | 8...Qa5+ | 1 | 9.c3 (2 half-moves) | ok |
-| 10 | Grand Prix: the rook sacrifice on f7 | White | 13.Rxf7 | 1 | 13...Bd4+ (10 half-moves) | ok |
-| 11 | Smith-Morra: the bishop on f7 | White | 7.Bxf7+ | 2 | none | ok |
-| 12 | Closed Sicilian: the knight sacrifice on d5 | White | 8.Nxd5 | 3 | 10...Be6 (4 half-moves) | ok |
-| 13 | Closed Sicilian: the knight check on f3 | Black | 6...Nf3# | 1 | none | ok |
+| 4 | Grand Prix: the queen check on a5 | Black | 8...Qa5+ | 1 | 9.c3 (2 half-moves) | ok |
+| 5 | Grand Prix: the rook sacrifice on f7 | White | 13.Rxf7 | 1 | 13...Bd4+ (10 half-moves) | ok |
+| 6 | Closed Sicilian: the knight check on f3 | Black | 6...Nf3# | 1 | none | ok |
+| 7 | Closed Sicilian: the knight sacrifice on d5 | White | 8.Nxd5 | 3 | 10...Be6 (4 half-moves) | ok |
+| 8 | Alapin: the smothered mate | White | 10.Nd6# | 1 | none | ok |
+| 9 | Alapin: check before you take | White | 9.Bxc6+ | 2 | none | ok |
+| 10 | Alapin: give the queen | White | 7.Nxe5 | 1 | 7...Bxd1 (8 half-moves) | ok |
+| 11 | Alapin: the Greek gift | White | 9.Bxh7+ | 2 | 10...Kg6 (2 half-moves) | ok |
+| 12 | Delayed Alapin: the knight on e4 | White | 5.Qa4+ | 1 | 5...Nc6 (2 half-moves) | ok |
+| 13 | Smith-Morra: the bishop on f7 | White | 7.Bxf7+ | 2 | none | ok |
 | 14 | Wing Gambit: the check on e5 | Black | 5...Qe5+ | 1 | 6.Be2 (2 half-moves) | ok |
 ## Puzzles: Ruy Lopez (`content/ruy-lopez-puzzles.pgn`)
 

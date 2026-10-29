@@ -21,7 +21,7 @@
 [Opening "Sicilian Defense: Bowdler Attack"]
 [ECO "B20"]
 [Diagram "4...exd5"]
-[Course "anti-sicilian-1"]
+[Course "anti-sicilian"]
 
 {The bishop comes to c4 at once, aiming at f7. It is one of the most common anti-Sicilians at club level, but it is not dangerous: after ...e6 the bishop hits a wall, and ...d5 gains time on it. White often plays the same bishop move one move later, after 2.Nf3.
 
@@ -38,7 +38,7 @@ Black: Blunt the bishop with ...e6, then take the center with ...d5, or chase th
 [ECO "B22"]
 [Diagram "4...Nf6"]
 [Lines "2...d5 | 2...Nf6"]
-[Course "anti-sicilian-1"]
+[Course "anti-sicilian"]
 
 {White plays the c-pawn to c3, so that a pawn, not the knight, can take back on d4. The game is calmer than in the Open Sicilian, and Black's main systems never come up. White often plays the same pawn move one move later, after 2.Nf3.
 
@@ -56,7 +56,7 @@ Black: Hit e4 at once with ...d5 or ...Nf6, before White can support d4. After .
 [ECO "B23"]
 [Diagram "4...Bg7"]
 [Lines "Grand Prix Attack | McDonnell Attack"]
-[Course "anti-sicilian-1"]
+[Course "anti-sicilian"]
 
 {White pushes the f-pawn early for a quick attack on the kingside. The plan is simple and the attack comes fast, so it is popular at club level. 2.f4, the McDonnell Attack, often leads to the same positions.
 
@@ -72,7 +72,7 @@ Black: Fianchetto with ...g6 and ...Bg7, then strike in the center with ...d5, o
 [Opening "Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation"]
 [ECO "B21"]
 [Diagram "6...e6"]
-[Course "anti-sicilian-1"]
+[Course "anti-sicilian"]
 
 {White gives a pawn for quick development and open lines. If Black is careless, the attack comes fast; if Black defends well, the extra pawn counts later.
 
@@ -87,7 +87,7 @@ Black: Take the pawn, then develop carefully with ...Nc6, ...d6 or ...e6, ...a6 
 [Opening "Sicilian Defense: Closed"]
 [ECO "B25"]
 [Diagram "5...d6"]
-[Course "anti-sicilian-1"]
+[Course "anti-sicilian"]
 
 {White keeps the center closed and builds up slowly, with a pawn on d3 instead of d4. The play is strategic, much like the King's Indian Attack.
 
@@ -103,7 +103,7 @@ Black: Copy the fianchetto with ...g6 and ...Bg7, then play on the queenside wit
 [Opening "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation"]
 [ECO "B31"]
 [Diagram "4...Bg7"]
-[Course "anti-sicilian-2"]
+[Course "anti-sicilian"]
 
 {White pins the c6 knight instead of opening the center. White often gives up the bishop for the knight to double Black's pawns, then plays a slow game.
 
@@ -118,7 +118,7 @@ Black: Fianchetto with ...g6 and ...Bg7, or play ...e6 and ...Nge7, so that a pi
 [Opening "Sicilian Defense: Moscow Variation, Main Line"]
 [ECO "B52"]
 [Diagram "4...Qxd7"]
-[Course "anti-sicilian-2"]
+[Course "anti-sicilian"]
 
 {White checks with the bishop and trades it off, avoiding the Najdorf and the Dragon. The game is calm and positional.
 
