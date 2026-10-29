@@ -6,10 +6,11 @@ import { h, fig, backBar, backTrail } from "../ui.js"
  * prev / next: optional { href, text } links shown under the back buttons (next idea, next puzzle).
  * trail: optional back links, nearest first, shown before Main menu in place of backHref (lesson pages).
  */
-export function trainerLayout(root, { backHref, backText, trail = null, prev = null, next = null }) {
+export function trainerLayout(root, { backHref, backText, trail = null, prev = null, next = null, nav = null }) {
     const boardEl = h("div", { class: "board-frame" })
-    const back = trail ? backTrail(trail)
-        : backBar(backHref && backHref !== "#/" ? { href: backHref, text: backText } : null)
+    // nav: a page's own button row in place of the back buttons (drills: back, Previous drill, Next drill).
+    const back = nav || (trail ? backTrail(trail)
+        : backBar(backHref && backHref !== "#/" ? { href: backHref, text: backText } : null))
     const steps = stepBar(prev, next)
     const title = h("h1", { class: "tp-title" })
     const sub = h("p", { class: "tp-sub" })

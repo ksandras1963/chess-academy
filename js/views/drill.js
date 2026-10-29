@@ -10,6 +10,7 @@ import { trainerLayout, renderSheet } from "./layout.js"
 import { sideLabel, sectionLink } from "./course.js"
 
 const ABORT = Symbol("abort")
+const JUMP = Symbol("jump") // Previous drill or Next drill was pressed during a session
 
 export async function drillView(root, ctx, courseId, lineId) {
     const c = await loadCourse(courseId)
@@ -18,10 +19,14 @@ export async function drillView(root, ctx, courseId, lineId) {
     const side = /^as-(white|black)$/.exec(lineId || "")?.[1]
     let lines
     let pool = null // the lines today's drill draws from; a single line or a practice session has none
+    let neighbours = null // a single line: the lines before and after it, in its section page's order
     if (lineId && !side) {
         const line = c.lines.find(l => l.id === lineId)
         if (!line) throw new Error("This line no longer exists; it may have been edited. Go back to the course to see the current lines.")
         lines = [line]
+        const order = c.chapters.filter(ch => ch.section === line.section).flatMap(ch => c.lines.filter(l => l.chapter === ch))
+        const i = order.indexOf(line)
+        neighbours = { prev: order[i - 1] || null, next: order[i + 1] || null }
     } else {
         pool = side ? c.lines.filter(l => l.side === side) : c.lines
         lines = buildQueue(pool)
@@ -33,7 +38,7 @@ export async function drillView(root, ctx, courseId, lineId) {
     // A single line returns to its section; a session returns to the course hub.
     const back = lineId && !side ? sectionLink(c, lines[0]) : { href: `#/course/${c.id}`, text: sideLabel(c) }
     await runSession(root, ctx, lines.map(line => ({ course: c, line })), {
-        backHref: back.href, backText: back.text, pool
+        backHref: back.href, backText: back.text, pool, neighbours
     })
 }
 
@@ -53,7 +58,7 @@ export async function reviewView(root, ctx) {
     await runSession(root, ctx, items, { backHref: "#/", backText: "All openings" })
 }
 
-async function runSession(root, ctx, items, { backHref, backText, pool = null }) {
+async function runSession(root, ctx, items, { backHref, backText, pool = null, neighbours = null }) {
     if (!items.length) {
         root.append(h("section", { class: "empty" },
             backBar(backHref !== "#/" ? { href: backHref, text: backText } : null),
@@ -62,10 +67,45 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null })
             h("a", { class: "btn btn-primary", href: backHref }, "Back")))
         return
     }
-    const L = trainerLayout(root, { backHref, backText })
+    // No Main menu on a drill page (Kumar's rule): the way back, then Previous drill and Next drill. For a
+    // single line they open the lines before and after it on its section page; in a session, Next drill
+    // skips the current line (it stays due) and Previous drill goes back to drill the one before again.
+    let jump = 0 // a pending press in a session: -1 or +1
+    let wake = null // ends whatever the session is waiting for, so a press takes effect at once
+    const go = d => {
+        jump = d
+        const w = wake
+        wake = null
+        if (w) w()
+    }
+    const stepEl = (text, dir, target) => {
+        const kids = dir < 0
+            ? [h("span", { "aria-hidden": "true" }, "‹"), h("span", { class: "step-text" }, text)]
+            : [h("span", { class: "step-text" }, text), h("span", { "aria-hidden": "true" }, "›")]
+        if (neighbours) {
+            return target
+                ? h("a", { class: "btn btn-small btn-step", href: `#/drill/${items[0].course.id}/${target.id}` }, ...kids)
+                : h("button", { class: "btn btn-small btn-step", type: "button", disabled: true }, ...kids)
+        }
+        return h("button", { class: "btn btn-small btn-step", type: "button", onclick: () => go(dir) }, ...kids)
+    }
+    const prevEl = stepEl("Previous drill", -1, neighbours && neighbours.prev)
+    const nextEl = stepEl("Next drill", 1, neighbours && neighbours.next)
+    const setNav = k => {
+        if (neighbours) return
+        prevEl.disabled = k <= 0
+        nextEl.disabled = k < 0 || k >= items.length - 1
+    }
+    const nav = h("nav", { class: "backbar", "aria-label": "Drill navigation" },
+        h("a", { class: "btn btn-small btn-back", href: backHref }, h("span", { "aria-hidden": "true" }, "‹"), backHref === "#/" ? "Main menu" : backText),
+        prevEl, nextEl)
+    const L = trainerLayout(root, { backHref, backText, nav })
     const board = new Board(L.boardEl, { orientation: items[0].line.learner })
     ctx.onLeave(() => board.destroy())
-    const check = () => { if (!ctx.alive()) throw ABORT }
+    const check = () => {
+        if (!ctx.alive()) throw ABORT
+        if (jump) throw JUMP
+    }
     const results = []
     // Today's drill takes the Basic lines and traps first. Before the first Advanced line it stops to say
     // that they come next and are optional, and the learner can stop there.
@@ -73,33 +113,49 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null })
 
     try {
         for (let k = 0; k < items.length; k++) {
-            if (k === advancedFrom) {
-                // With no Basic line due, the pause also offers the weakest Basic lines instead.
-                const weakest = k === 0 ? practiceQueue(pool.filter(l => l.section !== "advanced")) : []
-                const choice = await advancedNext(k, weakest.length > 0)
-                if (choice === "stop") break
-                if (choice === "practice") {
-                    items = weakest.map(line => ({ course: items[0].course, line }))
-                    advancedFrom = -1
-                    k = -1
-                    continue
+            try {
+                setNav(k)
+                if (k === advancedFrom) {
+                    // With no Basic line due, the pause also offers the weakest Basic lines instead.
+                    const weakest = k === 0 ? practiceQueue(pool.filter(l => l.section !== "advanced")) : []
+                    let choice = await advancedNext(k, weakest.length > 0)
+                    if (choice === "jump" && jump > 0) {
+                        jump = 0 // Next drill on the pause goes on to the first Advanced line
+                        choice = "go"
+                    }
+                    if (choice === "jump") throw JUMP
+                    if (choice === "stop") break
+                    advancedFrom = -1 // the pause comes once, even if Previous drill goes back past it
+                    if (choice === "practice") {
+                        items = weakest.map(line => ({ course: items[0].course, line }))
+                        k = -1
+                        continue
+                    }
                 }
+                let action
+                do {
+                    const result = await drillLine(items[k], k, items.length)
+                    results[k] = result
+                    action = await showResult(items[k], result, k, items.length)
+                } while (action === "retry")
+                if (action === "jump") throw JUMP
+                if (action === "stop") break
+            } catch (e) {
+                if (e !== JUMP) throw e
+                const d = jump
+                jump = 0
+                k = Math.min(Math.max(k + d, 0), items.length - 1) - 1 // the loop's k++ lands on the target
             }
-            let action
-            do {
-                const result = await drillLine(items[k], k, items.length)
-                results[k] = result
-                action = await showResult(items[k], result, k, items.length)
-            } while (action === "retry")
-            if (action === "stop") break
         }
         check()
-        const clean = results.filter(r => r === "clean").length
+        setNav(-1)
+        const drilled = results.filter(Boolean)
+        const clean = drilled.filter(r => r === "clean").length
         L.setTitle("Session complete", "")
         L.extra.replaceChildren()
         L.commentary.replaceChildren(
-            h("h2", { class: "cm-move" }, `${plural(results.length, "line")} drilled`),
-            h("p", {}, clean === results.length ? "Every line without a mistake. Well played."
+            h("h2", { class: "cm-move" }, `${plural(drilled.length, "line")} drilled`),
+            h("p", {}, clean === drilled.length ? "Every line without a mistake. Well played."
                 : `${clean} without a mistake. The others come back in your next drill.`))
         L.controls.replaceChildren(h("a", { class: "btn btn-primary", href: backHref }, "Done"))
     } catch (e) {
@@ -178,6 +234,11 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null })
                 clearInterval(timer)
                 reject(ABORT)
             }, 500)
+            wake = () => {
+                clearInterval(timer)
+                board.disableInput()
+                reject(JUMP)
+            }
 
             board.enableInput(learner, (from, to) => {
                 if (answered) return false
@@ -190,6 +251,7 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null })
                 }
                 if (mv.san === node.san) {
                     answered = true
+                    wake = null
                     clearInterval(timer)
                     board.disableInput()
                     setTimeout(async () => {
@@ -238,6 +300,7 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null })
                 k ? h("button", { class: "btn", type: "button", onclick: () => resolve("stop") }, "Stop here")
                     : h("a", { class: "btn", href: backHref }, "Stop here")))
             const timer = setInterval(() => { if (!ctx.alive()) { clearInterval(timer); resolve("stop") } }, 500)
+            wake = () => { clearInterval(timer); resolve("jump") }
         })
     }
 
@@ -260,6 +323,7 @@ async function runSession(root, ctx, items, { backHref, backText, pool = null })
                 h("button", { class: "btn", type: "button", onclick: () => resolve("retry") }, "Try again"),
                 h("a", { class: "btn", href: `#/learn/${course.id}/${line.id}` }, "Learn this line")))
             const timer = setInterval(() => { if (!ctx.alive()) { clearInterval(timer); resolve("stop") } }, 500)
+            wake = () => { clearInterval(timer); resolve("jump") }
         })
     }
 }
