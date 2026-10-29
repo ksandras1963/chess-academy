@@ -755,11 +755,11 @@
 [Opening "Sicilian Defense: Closed, Traditional"]
 [ECO "B23"]
 
-{Stjepan Tomić's favourite trap, "the trickiest of all", in the Closed Sicilian with 3.Bb5. If Black pushes ...d5 before ...a6, White sacrifices a knight on d5 and attacks f7 and the d5 knight at once. Black is a piece up for a moment, but completely lost.}
+{Stjepan Tomić's favorite trap, "the trickiest of all", in the Closed Sicilian with 3.Bb5. If Black pushes ...d5 before ...a6, White sacrifices a knight on d5 and attacks f7 and the d5 knight at once. Black is a piece up for a moment, but White wins it back with a pawn more and a strong attack.}
 1. e4 c5 2. Nc3 Nc6 3. Bb5 Nd4 4. Bc4 e6 5. Nf3 Nf6 6. O-O d5? {Black should play ...a6 first.}
 7. exd5 exd5 8. Nxd5! Nxd5 9. Nxd4! {Clears the way for the queen.} cxd4
 10. Qh5! {[%cal Gh5f7,Gh5d5] The queen hits f7 and the d5 knight.} Be6 {The only defence.} (10... Nf6?? 11. Qxf7# {Mate.})
-11. Re1 {[%cal Ge1e6] The bishop on e6 is pinned, and so is the f7 pawn.} Be7 12. Rxe6 {White wins the piece back, with a winning attack. Stockfish: +1.0, clearly better for White.} *
+11. Re1 {[%cal Ge1e6] The bishop on e6 is pinned, and so is the f7 pawn.} Be7 12. Rxe6 {White has won back the piece, with a pawn more and a strong attack. Stockfish: +1.0, clearly better for White.} *
 
 [Chapter "Trap: 6...a6 first, then ...Nf4"]
 [Side "black"]

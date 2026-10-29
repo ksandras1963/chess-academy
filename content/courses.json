@@ -624,6 +624,7 @@
             "eco": "B20",
             "moves": "1. e4 c5",
             "games": "Sicilian",
+            "puzzles": "content/anti-sicilian-1-puzzles.pgn",
             "summary": "White avoids the Open Sicilian on move 2: the early bishop to c4, the Alapin, the Grand Prix, the Smith-Morra Gambit and the Closed Sicilian.",
             "courses": [
                 {
@@ -631,7 +632,7 @@
                     "side": "both",
                     "file": "content/anti-sicilian-1.pgn",
                     "repertoire": "As White: the Alapin, the Grand Prix and the Smith-Morra Gambit. As Black: the e-pawn and d-pawn against the early bishop, an early d-pawn strike against the Alapin and the f-pawn, a fianchetto against the Grand Prix, and a safe set-up against the Smith-Morra.",
-                    "summary": "White avoids the Open Sicilian on move 2.",
+                    "summary": "Why the name: the main line of the Sicilian is the Open Sicilian, in which White develops the king's knight, opens the center with the d-pawn and takes back on d4 with the knight. Black's best-known systems, such as the Najdorf and the Dragon, all come from it. An anti-Sicilian is any other White system: it avoids the Open Sicilian, and with it the long, well-studied lines that Sicilian players prepare. This course teaches the most common ones; Anti-Sicilian II teaches the rest.",
                     "why": {
                         "text": "As White, an anti-Sicilian lets you choose the battlefield. The Alapin and the Smith-Morra Gambit fight for the center at once, and the Grand Prix aims straight at Black's king. Each has one set of plans that you use in almost every game, so there is far less to learn than in the Open Sicilian, and Black's natural moves often run into traps.\n\nAs Black, about two of every three Sicilian games against club players are anti-Sicilians. This course answers White's common second moves, and the same ideas on move 3. Each answer is simple, safe and quick to learn, and against the weaker tries, such as the early bishop to c4 or the early f-pawn push, Black is at least equal at once."
                     },

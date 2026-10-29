@@ -2042,6 +2042,28 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 2 | Give up b7 | Black | 6...e6 | 1 | 7.Qxb7 (1 half-move) | ok |
 | 3 | Mate in two | White | 7.Bxf7+ | 2 | none | ok |
 
+## Puzzles: Anti-Sicilian I (`content/anti-sicilian-1-puzzles.pgn`)
+
+14 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Bowdler: take first with the knight | Black | 8...Nxc3 | 1 | 9.Bxd8 (4 half-moves) | ok |
+| 2 | Bowdler: the pinned bishop | Black | 8...d4 | 1 | 9.O-O (5 half-moves) | ok |
+| 3 | Bowdler: shut the bishop in | Black | 5...c4 | 1 | 6.d4 (3 half-moves) | ok |
+| 4 | Alapin: the smothered mate | White | 10.Nd6# | 1 | none | ok |
+| 5 | Alapin: check before you take | White | 9.Bxc6+ | 2 | none | ok |
+| 6 | Alapin: the Greek gift | White | 9.Bxh7+ | 2 | 10...Kg6 (2 half-moves) | ok |
+| 7 | Delayed Alapin: the knight on e4 | White | 5.Qa4+ | 1 | 5...Nc6 (2 half-moves) | ok |
+| 8 | Delayed Alapin: give the queen | White | 6.Nxe5 | 1 | 6...Bxd1 (8 half-moves) | ok |
+| 9 | Grand Prix: the queen check on a5 | Black | 8...Qa5+ | 1 | 9.c3 (2 half-moves) | ok |
+| 10 | Grand Prix: the rook sacrifice on f7 | White | 13.Rxf7 | 1 | 13...Bd4+ (10 half-moves) | ok |
+| 11 | Smith-Morra: the bishop on f7 | White | 7.Bxf7+ | 2 | none | ok |
+| 12 | Closed Sicilian: the knight sacrifice on d5 | White | 8.Nxd5 | 3 | 10...Be6 (4 half-moves) | ok |
+| 13 | Closed Sicilian: the knight check on f3 | Black | 6...Nf3# | 1 | none | ok |
+| 14 | Wing Gambit: the check on e5 | Black | 5...Qe5+ | 1 | 6.Be2 (2 half-moves) | ok |
 ## Puzzles: Ruy Lopez (`content/ruy-lopez-puzzles.pgn`)
 
 11 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
