@@ -68,7 +68,7 @@
 [End "13.Nd3"]
 [Hint "Black's knight on e4 stands in front of the bishop on e7, on your rook's file. How do you keep it pinned?"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 Nf6 6. O-O Be7 7. Re1 O-O? 8. Bxc6 Bxc6 9. dxe5 dxe5 10. Qxd8 Raxd8 11. Nxe5 Bxe4? 12. Nxe4 Nxe4 13. Nd3! {[%cal Ge1e7] The knight steps back, and now f3 will win the pinned knight on e4.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 Nf6 6. O-O Be7 7. Re1 O-O? 8. Bxc6 Bxc6 9. dxe5 dxe5 10. Qxd8 Raxd8 11. Nxe5 Bxe4? 12. Nxe4 Nxe4 13. Nd3! {[%cal Ge1e7] The knight steps back, and f3 next threatens the pinned knight on e4.}
 (13. Bf4? {Develops, but Black's knight gets away.} 13... f5 14. Nd3 Rfe8 {Stockfish: +0.1, equal.})
 13... f5 14. f3 Bc5+ 15. Nxc5 Nxc5 16. Bg5 {[%cal Gg5d8,Gg5e7] The bishop hits the rook on d8 and comes to e7, winning the exchange. Stockfish: +4.1, winning for White.}
 *
@@ -94,7 +94,7 @@
 
 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 Bc5 5. Bxc6 dxc6 6. Nxe5? Qd4! {[%cal Gd4e5,Gd4f2,Gc5f2] Hits the knight and threatens mate on f2.}
 (6... Bxf2+? {Wins the pawn back, but nothing more.} 7. Kxf2 Qd4+ 8. Ke1 Qxe5 {Stockfish: +0.1, equal.})
-7. Qe2 {The only way to stop mate on f2.}
+7. Qe2 {Stops the mate on f2, but the knight on e5 is lost anyway.}
 (7. Nf3?? Qxf2# {Checkmate.})
 7... Qxe5 {Black has won a knight for a pawn. Stockfish: −4.0, winning for Black.}
 *
@@ -121,7 +121,7 @@
 [Hint "The h-file is open, and your rook on h8 already stands on it."]
 
 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Ng4?! 5. h3 h5 6. hxg4? hxg4 7. Ne1? Qh4! {[%cal Gh4h1,Gh8h1] The queen and rook line up on the h-file. White can't stop mate.}
-8. f4 g3 {[%cal Gh4h2] Threatens ...Qh2#.} 9. Qh5 Qxh5 10. d4 Qh2# {Checkmate. 4...Ng4 is a risky trap: after 5.h3 h5, 6.d4 or 6.c3 leaves White winning (Stockfish +2.0).}
+8. f4 g3 {[%cal Gh4h2] Threatens ...Qh2#.} 9. Qh5 Qxh5 10. d4 Qh2# {Checkmate. 4...Ng4 is a risky trap: after 5.h3 h5, 6.d4 or 6.c3 leaves White clearly better (Stockfish +1.8).}
 *
 
 [Puzzle "Hit the bishop with the pawn"]

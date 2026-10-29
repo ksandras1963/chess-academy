@@ -39,10 +39,10 @@
                     "id": "italian",
                     "side": "both",
                     "file": "content/italian.pgn",
-                    "repertoire": "As White: the Giuoco Pianissimo, with c3, d3 and a slow build-up. As Black: 3...Bc5, then ...Nf6, ...d6, ...a6 and ...Ba7.",
-                    "summary": "1.e4 e5 2.Nf3 Nc6 3.Bc4: the bishop aims at f7, the weakest square near Black's king.",
+                    "repertoire": "As White: the Giuoco Pianissimo, a slow build-up behind the c- and d-pawns. As Black: the bishop to c5, then the same quiet setup as White.",
+                    "summary": "The Italian Game: White's bishop aims at f7, the weakest square near Black's king.",
                     "why": {
-                        "text": "As White, the Italian follows the opening principles: develop quickly, castle early, and aim the bishop at f7, the square only Black's king defends. The slow Giuoco Pianissimo taught here avoids the long forcing lines of the open game, so one plan works against almost everything. The opening goes back to Greco in the 1620s, and top players have favored it since the Berlin Defense blunted the Ruy Lopez in Kramnik's 2000 world title match.\n\nAs Black, 3...Bc5 is the most natural reply: the bishop takes its best diagonal and aims at f2, just as White's aims at f7. It avoids the sharp 4.Ng5 lines of the Two Knights Defense, and in most games you can copy White's quiet setup. Only the Center attack and the Evans Gambit need exact moves."
+                        "text": "As White, the Italian follows the opening principles: develop quickly, castle early, and aim the bishop at f7, the square only Black's king defends. The slow Giuoco Pianissimo taught here avoids the long forcing lines of the open game, so one plan works against almost everything. The opening goes back to Greco in the 1620s, and top players have favored it since the Berlin Defense blunted the Ruy Lopez in Kramnik's 2000 world title match.\n\nAs Black, putting the bishop on c5 is the most natural reply: it takes its best diagonal and aims at f2, just as White's aims at f7. It avoids the sharp knight attacks on f7 that the Two Knights Defense allows, and in most games you can copy White's quiet setup. Only the Center attack and the Evans Gambit need exact moves."
                     },
                     "table": {
                         "columns": [
@@ -52,44 +52,44 @@
                         ],
                         "rows": [
                             [
-                                "Giuoco Piano: 3...Bc5",
+                                "Main line: 3...Bc5",
                                 "40% as White",
-                                "White's plans are to build slowly behind the c- and d-pawns, castle, and bring a knight round to the kingside.\nBlack's plans are to copy that setup, keep the bishop safe, and prevent White's central push from gaining space."
+                                "White: Build a solid pawn center slowly, aim the light-squared bishop at Black's king and open the center later.\nBlack: Put the dark-squared bishop on its best diagonal, aimed at White's king, and copy White's quiet setup."
                             ],
                             [
-                                "Two Knights Defense: 3...Nf6",
+                                "Two Knights: 3...Nf6",
                                 "29% as White",
-                                "White's plans are to guard the e4 pawn calmly and then follow the same slow build-up.\nBlack's plans are to develop fast, trade off White's best bishop, and prevent a quick attack on f7."
+                                "White: Protect the center calmly, keep the light-squared bishop and bring the queen's knight over to the kingside.\nBlack: Chase White's light-squared bishop with a knight and gain space on the queenside."
                             ],
                             [
                                 "Castling first: 4.O-O",
                                 "24% as Black",
-                                "White's plans are to castle first and keep the choice of a slow build-up or a quick central push.\nBlack's plans are to develop the usual way and prevent an early central push by trading pieces."
+                                "White: Make the king safe early and wait before choosing a pawn setup.\nBlack: Attack White's center pawn with the knight and steer into the main-line setup."
                             ],
                             [
                                 "Center attack: 5.d4",
                                 "19% as Black",
-                                "White's plans are to open the center at once and build two strong central pawns.\nBlack's plans are to trade pawns in the center, check to gain time, and prevent White from keeping a big pawn center."
+                                "White: Build a big pawn center and attack quickly with the pieces.\nBlack: Trade pawns in the center, free your game with a pawn break and attack White's lone center pawn."
                             ],
                             [
                                 "Quiet Variation: 4.d3",
                                 "14% as Black",
-                                "White's plans are to guard e4 calmly, keep every option open, and sometimes pin Black's knight.\nBlack's plans are to use the same slow setup and prevent any pin on the knight from lasting."
+                                "White: Protect the center calmly and pin Black's king's knight with the dark-squared bishop.\nBlack: Use the main-line setup and chase the pinning bishop away with pawns before you castle."
                             ],
                             [
-                                "Giuoco Pianissimo: 5.d3",
+                                "Main line: 4.c3 Nf6 5.d3",
                                 "14% as Black",
-                                "White's plans are to build slowly, bring the knight round to the kingside, and aim at Black's king.\nBlack's plans are to copy the setup, trade off White's best bishop, and prevent White's pieces from landing on g5."
+                                "White: Build up slowly, bring the queen's knight toward Black's king and open the center later.\nBlack: Keep the dark-squared bishop safe, offer to trade White's light-squared bishop and free your game with a center pawn break."
                             ],
                             [
                                 "Evans Gambit: 4.b4",
                                 "10% as Black",
-                                "White's plans are to give a pawn to gain time and attack before Black is developed.\nBlack's plans are to take the pawn, finish developing, and prevent the attack by giving the pawn back at the right moment."
+                                "White: Give up a pawn to build a big center, develop quickly and attack.\nBlack: Take the pawn, keep the bishop out of reach and give the pawn back to free your game."
                             ],
                             [
                                 "Italian Four Knights: 4.Nc3",
                                 "9% as Black",
-                                "White's plans are to develop fast and often pin Black's knight.\nBlack's plans are to use the usual setup and prevent the pin from lasting. The fork trick 5.Nxe5? fails here."
+                                "White: Develop the pieces quickly and pin Black's king's knight with the dark-squared bishop.\nBlack: Use the usual setup and chase the pinning bishop away before you castle."
                             ]
                         ],
                         "note": "How often: the share of your Italian games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -203,7 +203,7 @@
             "name": "French Defense",
             "eco": "C00",
             "moves": "1. e4 e6",
-            "summary": "Black builds a solid pawn chain and counterattacks White's center with ...c5 and ...f6.",
+            "summary": "Black builds a solid pawn chain and counterattacks White's center with the c- and f-pawns.",
             "puzzles": "content/french-puzzles.pgn",
             "furtherStudy": [
                 {
@@ -243,9 +243,9 @@
                     "side": "both",
                     "file": "content/french.pgn",
                     "repertoire": "Six main lines, each drilled as White and as Black: the Advance, Exchange, Winawer, Tarrasch, Steinitz and Rubinstein.",
-                    "summary": "1.e4 e6 2.d4 d5: Black builds a solid center and hits back with ...c5.",
+                    "summary": "Black builds a solid center and hits back at it from the side with the c-pawn.",
                     "why": {
-                        "text": "As White, you choose the game: the Advance (3.e5) gains space, the Exchange (3.exd5) keeps it simple, and 3.Nc3 or 3.Nd2 keep the tension in the center.\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with ...c5. Against 3.Nc3 you choose between the sharp Winawer, 3...Nf6 (the Steinitz after 4.e5; 4.Bg5 is under Advanced) and the solid Rubinstein."
+                        "text": "As White, you choose the game: push the e-pawn to gain space (the Advance), trade pawns to keep it simple (the Exchange), or defend the e-pawn with a knight to keep the tension (the Tarrasch, and the knight to c3).\n\nAs Black, the French gives you a solid position and the same counterattack against almost every White setup: hit White's center from the side with the c-pawn. When White's knight comes to c3, you choose between the sharp Winawer, the classical knight move (the Steinitz, if White then pushes the e-pawn) and the solid Rubinstein."
                     },
                     "table": {
                         "columns": [
@@ -329,9 +329,9 @@
                     "side": "both",
                     "file": "content/queens-gambit-declined.pgn",
                     "repertoire": "As White: the Exchange Variation and the minority attack. As Black: the Tartakower Variation.",
-                    "summary": "1.d4 d5 2.c4 e6: Black declines the pawn and holds d5 with the e-pawn.",
+                    "summary": "Black declines the pawn and holds d5 with the e-pawn.",
                     "why": {
-                        "text": "As Black, 2...e6 holds the center with a pawn and keeps the position solid. The cost is the c8 bishop, shut in behind e6, so Black's plans are about freeing it.\n\nAs White, taking on d5 early fixes the pawn structure. You know your plans in advance, and there are few early tactics to calculate."
+                        "text": "As Black, the e-pawn holds the center and keeps the position solid. The cost is the light-squared bishop, shut in behind the e-pawn, so Black's plans are about freeing it.\n\nAs White, trading pawns on d5 early fixes the pawn structure. You know your plans in advance, and there are few early tactics to calculate."
                     },
                     "table": {
                         "columns": [
@@ -343,27 +343,27 @@
                             [
                                 "Exchange Variation: 4.cxd5",
                                 "47% as White\n15% as Black",
-                                "White's plans are to pin the king's knight, castle, and then attack with the queenside pawns or push the e-pawn in the center.\nBlack's plans are to develop the freed light-squared bishop, guard the king with a knight on f8, and prevent White's queenside pawns from breaking through."
+                                "White: Develop calmly, castle and attack with the queenside pawns.\nBlack: Develop freely, guard the king and hold the center."
                             ],
                             [
                                 "Three Knights: 4.Nf3",
                                 "23% as Black",
-                                "White's plans are to develop both knights first and keep the tension in the center.\nBlack's plans are to develop quickly, castle, and hit the center with the c-pawn."
+                                "White: Develop the knights and keep the tension in the center.\nBlack: Develop quickly, castle and strike at the center."
                             ],
                             [
                                 "Main line, Tartakower: 4.Bg5",
                                 "22% as Black",
-                                "White's plans are to pin the king's knight, develop calmly, castle, and later trade pawns on d5.\nBlack's plans are to break the pin, put the light-squared bishop on the long diagonal, and trade pieces to free the game."
+                                "White: Pin a knight, develop calmly and press on the center.\nBlack: Break the pin, trade pieces and free the game."
                             ],
                             [
                                 "Exchange: 4...Nxd5",
                                 "15% as White",
-                                "White's plans are to chase the knight with the e-pawn and build a big pawn center.\nBlack's plans are to trade knights, hit the center with the c-pawn, and prevent White's center from rolling forward."
+                                "White: Chase the knight and build a big pawn center.\nBlack: Trade pieces and attack the center."
                             ],
                             [
                                 "Semi-Slav move order: 3...c6",
                                 "12% as White",
-                                "White's plans are to take on d5, develop the dark-squared bishop to f4, and use the minority attack, as in the Exchange.\nBlack's plans are to keep d5 solid and trade off White's active dark-squared bishop."
+                                "White: Fix the pawns and attack on the queenside, as in the Exchange.\nBlack: Keep the center solid and trade off White's active bishop."
                             ]
                         ],
                         "note": "How often: the share of your Queen's Gambit Declined games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -408,10 +408,10 @@
                     "id": "slav",
                     "side": "both",
                     "file": "content/slav.pgn",
-                    "repertoire": "As White: 3.Nf3 and 4.Nc3, then cxd5 and Bg5 against ...e6. As Black: the Czech Variation (4...dxc4 5.a4 Bf5).",
-                    "summary": "1.d4 d5 2.c4 c6: Black guards d5 with the c-pawn.",
+                    "repertoire": "As White: both knights out, and against the Semi-Slav a trade on d5 and a pin on Black's knight. As Black: the Czech Variation.",
+                    "summary": "Black guards d5 with the c-pawn.",
                     "why": {
-                        "text": "As Black, ...c6 guards d5 and keeps the c8 bishop's diagonal open, so the bishop can come out before ...e6 shuts it in. Solid, with a few exact lines to know.\n\nAs White, the Slav often turns into positions you know from the Declined, so the same plans work."
+                        "text": "As Black, the c-pawn guards d5 and keeps the light-squared bishop's diagonal open, so the bishop can come out before the e-pawn shuts it in. Solid, with a few exact lines to know.\n\nAs White, the Slav often turns into positions you know from the Declined, so the same plans work."
                     },
                     "table": {
                         "columns": [
@@ -423,32 +423,32 @@
                             [
                                 "Semi-Slav: 4...e6",
                                 "33% as White",
-                                "White's plans are to trade on d5 and play the minority attack, as in the Exchange Variation.\nBlack's plans are to keep d5 solid and bring the light-squared bishop to an active square."
+                                "White: Fix the pawns and attack on the queenside.\nBlack: Keep the center solid and bring the light-squared bishop into play."
                             ],
                             [
                                 "Main line, Czech Variation: 5.a4 Bf5",
                                 "31% as Black",
-                                "White's plans are to win the c4 pawn back, castle, and push the e-pawn to take the center.\nBlack's plans are to give the pawn back for quick development, with the light-squared bishop out before the e-pawn moves."
+                                "White: Win the pawn back, castle and take the center.\nBlack: Develop quickly and keep a solid center."
                             ],
                             [
                                 "Early ...Bf5: 3...Bf5 or 4...Bf5",
                                 "24% as White",
-                                "White's plans are to trade on d5 and attack the unguarded b7 pawn with the queen.\nBlack's plans are to develop the bishop early and defend b7 without losing material."
+                                "White: Attack Black's weakened queenside with the queen.\nBlack: Develop the bishop early without losing a pawn."
                             ],
                             [
                                 "Exchange Variation: 3.cxd5",
                                 "19% as Black",
-                                "White's plans are to keep a small, lasting edge in a symmetrical position.\nBlack's plans are to copy White's setup and prevent the queen from hitting b7."
+                                "White: Keep a small, safe edge in a balanced position.\nBlack: Copy White's setup and keep the queenside safe."
                             ],
                             [
                                 "Quiet Variation: 4.e3",
                                 "19% as Black",
-                                "White's plans are to develop quietly and castle, even though the dark-squared bishop is shut in.\nBlack's plans are to bring the light-squared bishop out first, build a solid pawn wall, and prevent the queen from hitting b7."
+                                "White: Develop quietly and castle.\nBlack: Develop the light-squared bishop first and build a solid center."
                             ],
                             [
                                 "Early bishop: 4.Bg5 or 4.Bf4",
                                 "15% as Black",
-                                "White's plans are to develop the dark-squared bishop early and win the c4 pawn back with a big center.\nBlack's plans are to take on c4 and hold the extra pawn with the b-pawn."
+                                "White: Develop quickly and build a big center.\nBlack: Take a pawn and hold on to it."
                             ]
                         ],
                         "note": "How often: the share of your Slav games that reach the line, from the side you play in it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -494,8 +494,8 @@
                     "id": "queens-gambit-accepted",
                     "side": "both",
                     "file": "content/queens-gambit-accepted.pgn",
-                    "repertoire": "As White: 3.e3 and Bxc4. As Black: ...e5 at once, and the Classical setup against 3.Nf3.",
-                    "summary": "1.d4 d5 2.c4 dxc4: Black takes the pawn and gives up the center for a moment.",
+                    "repertoire": "As White: the Old Variation, winning the pawn back at once with the bishop. As Black: an early strike in the center with the e-pawn, and the Classical setup against the Normal Variation.",
+                    "summary": "Black takes the pawn and gives up the center for a moment.",
                     "why": {
                         "text": "As Black, giving up the center for a moment frees your pieces, and you get to hit back at White's center early. White wins the pawn back, but you develop quickly.\n\nAs White, you win the pawn back at once and keep the center, with a small, safe edge."
                     },
@@ -509,32 +509,32 @@
                             [
                                 "3.Nc3: 3...e5",
                                 "34% as Black",
-                                "White's plans are to grab space with the center pawns and win the c4 pawn back later.\nBlack's plans are to hit the center at once with the e-pawn and keep the extra pawn when White's pawns block the long diagonal."
+                                "White: Gain space in the center and win the pawn back later.\nBlack: Hit the center at once and keep the extra pawn when it is safe."
                             ],
                             [
                                 "Old Variation: 3...e5",
                                 "29% as Black\n13% as White",
-                                "White's plans are to win the pawn back with the bishop, develop fast, and use the open e-file.\nBlack's plans are to strike at the center with the e-pawn, then press on White's isolated d-pawn with the pieces."
+                                "White: Win the pawn back, develop fast and use the open lines.\nBlack: Strike at the center and attack White's isolated pawn."
                             ],
                             [
                                 "Central Variation: 3.e4",
                                 "24% as Black",
-                                "White's plans are to take the whole center with pawns and win the c4 pawn back.\nBlack's plans are to hit back with the e-pawn at once and prevent White's bishop on c4 from becoming dangerous."
+                                "White: Take the whole center and win the pawn back.\nBlack: Hit back in the center at once and trade off White's best attacker."
                             ],
                             [
                                 "3.e3: 3...Nf6",
                                 "21% as White",
-                                "White's plans are to win the pawn back at once, castle, and later push the e-pawn to take the center.\nBlack's plans are to develop quietly and hit White's center with the c-pawn."
+                                "White: Win the pawn back at once, castle and take the center later.\nBlack: Develop quietly and attack the center."
                             ],
                             [
                                 "Trap: 3...b5 and 4.a4",
                                 "18% as White",
-                                "White's plans are to hit Black's pawn chain with the a-pawn and use the long diagonal against the rook on a8.\nBlack's plans are to hold the extra pawn, but here it is best to give it back."
+                                "White: Break up Black's queenside pawns and win material.\nBlack: Give the extra pawn back: holding it doesn't work here."
                             ],
                             [
                                 "Normal Variation: 3.Nf3",
                                 "10% as Black",
-                                "White's plans are to develop the king's knight, stop Black's e-pawn push, and win the pawn back quietly.\nBlack's plans are to develop calmly, hit the center with the c-pawn, and gain space on the queenside."
+                                "White: Develop quietly and win the pawn back.\nBlack: Develop calmly, attack the center and gain space on the queenside."
                             ]
                         ],
                         "note": "How often: the share of your Queen's Gambit Accepted games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -580,10 +580,10 @@
                     "id": "tarrasch",
                     "side": "both",
                     "file": "content/tarrasch.pgn",
-                    "repertoire": "As White: the Rubinstein System (4.cxd5, Nf3, g3 and Bg2). As Black: the Classical Tarrasch.",
-                    "summary": "1.d4 d5 2.c4 e6 3.Nc3 c5: Black hits White's center at once.",
+                    "repertoire": "As White: the Rubinstein System, with the king's bishop on the long diagonal. As Black: the Classical Tarrasch.",
+                    "summary": "Black hits White's center at once with the c-pawn.",
                     "why": {
-                        "text": "As Black, 3...c5 fights for the center at once. You accept a weak pawn in return for quick, active development.\n\nAs White, you get a lasting target: Black's isolated pawn on d5, which only pieces can guard."
+                        "text": "As Black, the early c-pawn push fights for the center at once. You accept a weak pawn in return for quick, active development.\n\nAs White, you get a lasting target: Black's isolated pawn on d5, which only pieces can guard."
                     },
                     "table": {
                         "columns": [
@@ -595,22 +595,22 @@
                             [
                                 "Main line: 4.cxd5 exd5",
                                 "73% as White\n38% as Black",
-                                "White's plans are to put the bishop on g2, blockade Black's isolated d-pawn, and trade pieces.\nBlack's plans are to use free, active pieces in return for the isolated pawn and avoid needless trades."
+                                "White: Attack Black's isolated pawn and trade pieces.\nBlack: Use active pieces and avoid trades."
                             ],
                             [
                                 "Symmetrical Variation: 4.e3",
                                 "45% as Black",
-                                "White's plans are to keep the tension and develop the light-squared bishop first.\nBlack's plans are to develop both knights, take on c4 when it costs White time, and gain space on the queenside."
+                                "White: Keep the tension and develop quietly.\nBlack: Develop quickly and gain space on the queenside."
                             ],
                             [
                                 "Early dxc5: 4.dxc5 or 5.dxc5",
                                 "27% as Black",
-                                "White's plans are to take the c-pawn and attack Black's d5 pawn.\nBlack's plans are to push the d-pawn forward at once, win the c5 pawn back later, and prevent White's queen from taking on d5."
+                                "White: Grab a pawn and attack Black's center.\nBlack: Push the center pawn forward and win the pawn back later."
                             ],
                             [
                                 "Schara Gambit: 4...cxd4",
                                 "26% as White",
-                                "White's plans are to take the gambit pawn with the queen and keep it.\nBlack's plans are to give up a pawn for quick development and open lines."
+                                "White: Take the gambit pawn and keep it.\nBlack: Develop quickly and open lines for the pieces."
                             ]
                         ],
                         "note": "How often: the share of your Tarrasch games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
@@ -776,10 +776,10 @@
                     "id": "scandinavian",
                     "side": "both",
                     "file": "content/scandinavian.pgn",
-                    "repertoire": "As Black: 2...Qxd5 3.Nc3 Qa5, or the Modern Variation, 2...Nf6. As White: 2.exd5 and 3.Nc3, and 3.d4 against the Modern.",
-                    "summary": "1.e4 d5: Black challenges e4 at once and takes back on d5 with the queen or the knight.",
+                    "repertoire": "As Black: the main line, with the queen taking back and going to a5, or the Modern Variation, taking back with the knight. As White: take the pawn and chase the queen with the knight, and take the center with the d-pawn against the Modern.",
+                    "summary": "Black challenges e4 at once and takes back on d5 with the queen or the knight.",
                     "why": {
-                        "text": "As Black, 1...d5 makes the game a Scandinavian from the first move, whatever White had prepared, and its plans are few and easy to learn. After 2...Qxd5 and 3...Qa5 you get a solid position with no weak pawns, like a Caro-Kann. The Modern Variation, 2...Nf6, takes the pawn back with the knight instead, so your queen is not chased.\n\nAs White, you meet the Scandinavian in about 7% of your 1.e4 games. Black's queen comes out early, so you develop with gain of time and keep a pawn on d4 and more space."
+                        "text": "As Black, the Scandinavian starts on your very first move, whatever White had prepared, and its plans are few and easy to learn. When the queen takes back and goes to a5, you get a solid position with no weak pawns, like a Caro-Kann. The Modern Variation takes the pawn back with the knight instead, so your queen is not chased.\n\nAs White, you meet the Scandinavian in about 7% of your games that start with the king's pawn. Black's queen comes out early, so you develop with gain of time and keep a pawn on d4 and more space."
                     },
                     "table": {
                         "columns": [
@@ -819,7 +819,7 @@
                                 "White: Hold on to the extra pawn.\nBlack: Develop fast, win the pawn back and keep White's king from castling."
                             ]
                         ],
-                        "note": "How often: the share of your Scandinavian games that reach the line, from the side that faces it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Lasker Variation (...Bg4 met by h3, about 11% as White) and the Advance Variation (2.e5, 11% as Black) are in Advanced by choice, with the rarer lines."
+                        "note": "How often: the share of your Scandinavian games that reach the line, from the side that faces it, counting all its move orders. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Lasker Variation (Black pins the knight early and White chases the bishop with the h-pawn, about 11% as White) and the Advance Variation (White pushes the e-pawn past Black's pawn, 11% as Black) are in Advanced by choice, with the rarer lines."
                     }
                 }
             ]
@@ -829,7 +829,7 @@
             "name": "London System",
             "eco": "A40",
             "moves": "1. d4",
-            "summary": "White develops the bishop to f4 before e3 can shut it in, then builds the same solid setup in almost every game.",
+            "summary": "White develops the dark-squared bishop to f4 before the e-pawn moves and shuts it in, then builds the same solid setup in almost every game.",
             "puzzles": "content/london-puzzles.pgn",
             "furtherStudy": [
                 {
@@ -862,10 +862,10 @@
                     "id": "london",
                     "side": "both",
                     "file": "content/london.pgn",
-                    "repertoire": "As White: 2.Bf4 and the same setup against every reply. As Black: the Queen's Gambit Declined setup after 1...d5, the King's Indian setup after 1...Nf6.",
-                    "summary": "White builds the c3–d4–e3 triangle behind the f4 bishop. Black meets it with the setup used against 1.d4 and aims at the f4 bishop, d4 and b2.",
+                    "repertoire": "As White: the bishop out to f4 at once, and the same setup against every reply. As Black: the Queen's Gambit Declined setup when you start with the d-pawn, the King's Indian setup when you start with the king's knight.",
+                    "summary": "White builds a triangle of pawns on c3, d4 and e3 behind the bishop on f4. Black meets it with the setup Black already uses against the queen's pawn, and aims at the bishop on f4 and the pawns on d4 and b2.",
                     "why": {
-                        "text": "As White, the London is a system: you play the same setup against almost every defense, so you learn one set of plans instead of a book of theory. The c3–d4–e3 triangle is hard to break, the f4 bishop stays active outside it, and Black is the one who has to know what to do.\n\nAs Black, you need no new opening: the Queen's Gambit Declined pieces after 1...d5, or the King's Indian after 1...Nf6, meet it well. White's setup is solid but slow, so you can develop in peace and play for ...e5 or ...c5."
+                        "text": "As White, the London is a system: you play the same setup against almost every defense, so you learn one set of plans instead of a book of theory. The triangle of pawns on c3, d4 and e3 is hard to break, the bishop on f4 stays active outside it, and Black is the one who has to know what to do.\n\nAs Black, you need no new opening: the Queen's Gambit Declined setup when you start with the d-pawn, or the King's Indian setup when you start with the king's knight, meets it well. White's setup is solid but slow, so you can develop in peace and then hit the center with the e-pawn or the c-pawn."
                     },
                     "table": {
                         "columns": [
@@ -905,7 +905,7 @@
             "name": "Jobava London System",
             "eco": "D01",
             "moves": "1. d4 d5 2. Nc3 Nf6 3. Bf4",
-            "summary": "White plays the London bishop move, Bf4, but puts the knight on c3 instead of the pawn. Sharper than the London, with Nb5 and h4 as its weapons.",
+            "summary": "White brings the dark-squared bishop out to f4, as in the London, but puts the queen's knight on c3, in front of the c-pawn. It is sharper than the London: the knight can jump to b5, and the h-pawn can march up the board.",
             "puzzles": "content/jobava-london-puzzles.pgn",
             "furtherStudy": [
                 {
@@ -938,10 +938,10 @@
                     "id": "jobava-london",
                     "side": "both",
                     "file": "content/jobava-london.pgn",
-                    "repertoire": "As White: Nb5 against 3...e6, Bd3 against ...Bf5, h4 against ...g6. As Black: 3...e6 and ...Bb4.",
-                    "summary": "1.d4 d5 2.Nc3 Nf6 3.Bf4, or 1.d4 Nf6 2.Nc3 d5 3.Bf4: the London bishop, with the knight on c3.",
+                    "repertoire": "As White: a quick knight jump to b5, a bishop trade on d3, and an h-pawn attack against a fianchetto. As Black: a pawn on e6 and the bishop on b4.",
+                    "summary": "The London bishop on f4, with the queen's knight on c3. White gets there whether Black starts with the d-pawn or the king's knight.",
                     "why": {
-                        "text": "As White, you play the same first moves against 1...d5 and 1...Nf6: d4, Nc3 and Bf4. The knight on c3 makes the system sharper than the ordinary London. It can jump to b5 and hit c7 as early as move 4, so Black has to answer threats from the start.\n\nAs Black, 3...e6 with ...Bb4 and ...c5 needs little theory. Stockfish rates Black equal or slightly better in this course's main lines, and ...Bb4 is Black's best-scoring answer at club level to White's two most common fourth moves."
+                        "text": "As White, you play the same first three moves whether Black starts with the d-pawn or the king's knight: the d-pawn two squares forward, the queen's knight to c3 and the dark-squared bishop to f4. The knight on c3 makes the system sharper than the ordinary London. It can jump to b5 and hit c7 as early as move 4, so Black has to answer threats from the start.\n\nAs Black, the plan needs little theory: a pawn on e6, the bishop on b4, and the c-pawn forward to hit White's center. Stockfish rates Black equal or slightly better in this course's main lines, and the bishop move to b4 is Black's best-scoring answer at club level to White's two most common fourth moves."
                     },
                     "table": {
                         "columns": [
@@ -1445,7 +1445,7 @@
                 "note": "Share: how often each reply follows 1.d4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
             },
             "subtitle": "The Queen's Gambit, the Indian Defenses, and the other main replies.",
-            "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. Against 1...d5, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level (and works against 1...Nf6 too). The Jobava London, with the knight on c3, is a sharper version of it. The Colle is much rarer and is listed with the uncommon replies. Against 1...Nf6 2.c4, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with ...e5 or ...c5 and attacks on the kingside."
+            "summary": "1.d4 usually leads to slower, more strategic games than 1.e4. When Black answers with the d-pawn, White can skip the Queen's Gambit and play a system such as the London or the Colle: the same setup in almost every game, so they are easy to remember. The London is one of the most popular choices at club level, and it works against the knight move too. The Jobava London, with the knight on c3, is a sharper version of it. The Colle is much rarer and is listed with the uncommon replies. When Black answers with the king's knight and White adds the c-pawn, Black plays the King's Indian in about a quarter of club games: Black lets White build a big center, then hits it with a pawn and attacks on the kingside."
         },
         {
             "id": "qg",
@@ -1458,8 +1458,8 @@
             "count": "13 variations",
             "compact": true,
             "course": "queens-gambit-declined queens-gambit-accepted slav tarrasch",
-            "subtitle": "1.d4 d5 2.c4: the main ways to decline it or take the pawn.",
-            "summary": "White offers the c-pawn to lure Black's d-pawn away from the center. Black declines with 2...e6 or 2...c6, or takes it with 2...dxc4. The map shows how the variations branch, and the courses below teach a full repertoire for each side.",
+            "subtitle": "The main ways to decline the gambit or take the pawn.",
+            "summary": "White offers the c-pawn to lure Black's d-pawn away from the center. Black declines by guarding d5 with the e-pawn or the c-pawn, or takes the pawn. The map shows how the variations branch, and the courses below teach a full repertoire for each side.",
             "table": {
                 "after": "map",
                 "columns": [
