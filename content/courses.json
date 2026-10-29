@@ -1471,67 +1471,87 @@
                 "after": "map",
                 "columns": [
                     "Variation",
-                    "Share",
+                    "How often",
                     "What to do"
                 ],
                 "rows": [
                     [
                         "Bowdler Attack: 2.Bc4 (or 3.Bc4)",
-                        "17%",
+                        "White's choice\n17% as Black",
                         "White: Develop quickly and castle.\nBlack: Block the bishop with a pawn, then chase it and take the center."
                     ],
                     [
                         "Alapin Variation: 2.c3 (or 3.c3)",
-                        "13%",
+                        "White's choice\n13% as Black",
                         "White: Build a full pawn center, then develop calmly.\nBlack: Attack White's center at once, before it is complete."
                     ],
                     [
                         "Grand Prix Attack: 2.f4, or 2.Nc3 and 3.f4",
-                        "7.7%",
+                        "White's choice\n8% as Black",
                         "White: Push the kingside pawns and attack the king.\nBlack: Develop quickly and strike back in the center."
                     ],
                     [
                         "Najdorf Variation: 5...a6",
-                        "5.2%",
+                        "18% as White\n29% as Black",
                         "White: Castle on the other side and attack with the kingside pawns.\nBlack: Counterattack on the queenside and keep control of the center."
                     ],
                     [
-                        "Rossolimo and Moscow: 3.Bb5 or 3.Bb5+",
-                        "4.5%",
+                        "Rossolimo Attack: 3.Bb5",
+                        "White's choice\n8% as Black",
                         "White: Pin or trade a defender with the bishop, then build the center slowly.\nBlack: Develop calmly and keep the position flexible."
                     ],
                     [
-                        "Taimanov and Kan: 4...Nc6 or 4...a6",
-                        "4.4%",
+                        "Moscow Variation: 3.Bb5+",
+                        "White's choice\n4% as Black",
+                        null
+                    ],
+                    [
+                        "Taimanov Variation: 4...Nc6",
+                        "8% as White\n30% as Black",
                         "White: Gain space and keep Black cramped.\nBlack: Keep the pieces flexible and strike back in the center later."
                     ],
                     [
+                        "Kan Variation: 4...a6",
+                        "5% as White\n30% as Black",
+                        null
+                    ],
+                    [
                         "Smith-Morra Gambit: 3.c3",
-                        "4.1%",
+                        "White's choice\n4% as Black",
                         "White: Give a pawn for fast development and open lines.\nBlack: Take the pawn, develop carefully and castle quickly."
                     ],
                     [
-                        "Dragon and Accelerated Dragon: 5...g6 or 4...g6",
-                        "4.1%",
+                        "Accelerated Dragon: 4...g6",
+                        "9% as White\n27% as Black",
                         "White: Attack the king, or cramp Black with a pawn grip on the center.\nBlack: Use the long-diagonal bishop and counterattack on the queenside."
                     ],
                     [
-                        "Sveshnikov and Kalashnikov: 5...e5 or 4...e5",
-                        "3.8%",
-                        "White: Put a knight in the hole in Black's center.\nBlack: Accept the hole in return for active pieces and quick pawn breaks."
+                        "Dragon Variation: 5...g6",
+                        "6% as White\n29% as Black",
+                        null
                     ],
                     [
                         "Closed Sicilian: 2.Nc3",
-                        "3.6%",
+                        "White's choice\n4% as Black",
                         "White: Keep the center closed and attack slowly on the kingside.\nBlack: Copy White's setup and play on the queenside."
                     ],
                     [
-                        "Others: Classical (1.3%), Four Knights (1.0%), Scheveningen (0.4%)",
-                        "2.7% in all",
+                        "Sveshnikov Variation: 5...e5",
+                        "4% as White\n25% as Black",
+                        "White: Put a knight in the hole in Black's center.\nBlack: Accept the hole in return for active pieces and quick pawn breaks."
+                    ],
+                    [
+                        "Kalashnikov Variation: 5...d6",
+                        "7% as White\n11% as Black",
+                        null
+                    ],
+                    [
+                        "Others: Classical, Four Knights, Scheveningen",
+                        "1–5% as White\n26–29% as Black",
                         "White: Develop quickly and attack on the kingside.\nBlack: Develop solidly, then counterattack on the queenside."
                     ]
                 ],
-                "note": "Share: how often each variation comes up in games that start 1.e4 c5, in rated rapid and classical Lichess games between players averaging 1800 to 2199. Anti-Sicilians are counted by White's second or third move: the Bowdler and Alapin rows include the same move played one move later, after 2.Nf3, the Grand Prix includes 2.Nc3 followed by 3.f4, and the Closed Sicilian row counts the other 2.Nc3 games, except 3.Nf3, which usually transposes. The Open Sicilian lines are counted by the position reached, whatever the move order."
+                "note": "How often: the share of your Sicilian games that reach the line, from the side you play, counting every move order. As White, it is how often Black's moves lead there when you steer toward it; as Black, how often White's moves do. \"White's choice\": White picks the anti-Sicilian, so it can play it in any game. As Black, the Bowdler and Alapin rows count White's move on move 2 or, after 2.Nf3, on move 3, averaged over Black's usual second moves; the Rossolimo counts the games of players who answer 2.Nf3 with 2...Nc6, and the Moscow those who play 2...d6. The Closed Sicilian row counts the 2.Nc3 games that go on with neither 3.f4 (the Grand Prix) nor 3.Nf3 (which usually transposes). Source: Lichess rated rapid and classical games between players averaging 1800 to 2199."
             }
         },
         {
