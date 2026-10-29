@@ -2,6 +2,7 @@
 
 import { h, figText, paras, label, sideName, spellOut } from "../ui.js"
 import { course as loadCourse } from "../content.js"
+import { setLessonRead } from "../storage.js"
 import { mainPath, sideNotes, siblingBranches } from "../course-model.js"
 import { Board } from "../board.js"
 import { trainerLayout, renderSheet, mergedNote, furtherStudy } from "./layout.js"
@@ -53,6 +54,8 @@ export async function learnView(root, ctx, courseId, lineKey, startAt) {
 
     function go(i, animate = true) {
         state.idx = Math.max(0, Math.min(i, state.nodes.length))
+        // Stepping to the line's last move marks its lesson read (the home page's progress box).
+        if (base.line && !state.explore && state.idx === base.line.nodes.length) setLessonRead(base.line.id)
         render(animate)
     }
 
