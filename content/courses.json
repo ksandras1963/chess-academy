@@ -1369,9 +1369,9 @@
                                 "White: Avoid doubled pawns and develop quietly.\nBlack: Strike in the center and attack the isolated pawn White is left with."
                             ],
                             [
-                                "Three Knights Variation: 4...O-O",
+                                "Three Knights Variation: 4...b6",
                                 "14% as Black",
-                                "White: Develop quickly and keep several setups open.\nBlack: Castle, strike in the center and leave White with an isolated pawn."
+                                "White: Pin Black's knight and develop quickly.\nBlack: Control the center with pieces, double White's pawns and play actively on the kingside."
                             ]
                         ],
                         "note": "How often: the share of your Nimzo-Indian games that reach the line, from the side you play in it, counting all its move orders. As White, it is the share of your games in the Classical or the Rubinstein, whichever the line belongs to. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
