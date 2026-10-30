@@ -337,19 +337,6 @@ e5?! {Too early: Black hasn't castled.}
 11. dxe5 Nxe5 {[%cal Ge5f3,Ge5d3] The second fork.}
 12. Qg3 Nxd3+ 13. Kf1 Nxb2 {Black has two extra pawns, and White's king can no longer castle (Stockfish −3.2, winning for Black).} *
 
-[Chapter "Classical, 6.h3"]
-[Side "both"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Normal Variation"]
-[ECO "E70"]
-[Diagram "6.h3"]
-
-{6.h3 is the Makogonov setup with the knight already on f3. It leads straight into the Makogonov chapter. Two rarer sixth moves: against 6.Bg5, the Zinnowitz Variation, ask the bishop with 6...h6; against 6.Be3, the Larsen Variation, hit it with 6...Ng4 (Stockfish +0.3 and +0.4).}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O
-6. h3 {Stops ...Bg4 and ...Ng4.} e5 {Strikes at once, as usual.}
-7. d5 a5 {The same position as in the Makogonov chapter after 5.h3 O-O 6.Nf3 e5 7.d5 a5. Continue with ...Na6, ...Nc5 and ...f5 (Stockfish +0.6, slightly better for White).} *
-
 [Chapter "Classical, 6.Bd3"]
 [Side "both"]
 [Level "advanced"]
@@ -361,7 +348,7 @@ e5?! {Too early: Black hasn't castled.}
 {With the bishop on d3, the queen no longer guards d4, so Black aims everything at that pawn.}
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O
 6. Bd3 {[%csl Yd4] Natural, but the bishop blocks the queen's guard of d4.} Bg4 {[%cal Gg4f3] Pins the knight that defends d4. We will take it and pile up on d4.}
-7. h3 {Asks the bishop. White's other seventh moves are under Advanced variations. One of them, 7.O-O Nc6 8.h3?, drops the d4 pawn: see the trap chapter.} Bxf3 {Removes the defender.}
+7. h3 {Asks the bishop. Against White's other seventh moves, keep the same plan: ...Bxf3, then ...Nc6 and ...Nd7 against d4. One of them, 7.O-O Nc6 8.h3?, drops the d4 pawn: see the trap chapter.} Bxf3 {Removes the defender.}
 8. Qxf3 Nc6 {[%cal Gc6d4] Hits d4 with the knight. The g7 bishop joins once the f6 knight moves.}
 9. Be3 {The natural defense. Against 9.d5, jump to d4 anyway: 9...Nd4 10.Qd1 Nd7, with ...c5 next, and the position is equal.} Nd7 {[%cal Gg7d4] Opens the g7 bishop. Now d4 is attacked twice and defended only once.
 
@@ -370,22 +357,6 @@ White must find 10.d5. The natural 10.Ne2?? loses to 10...Nce5!, and 10.O-O? Nxd
 11. Qd1 c5 {[%cal Gc5d4] Supports the knight with a pawn. If White ever takes it, Black recaptures with the c-pawn and keeps a strong pawn on d4.}
 12. O-O Rb8 {Prepares ...b5 to open lines on the queenside.}
 13. Ne2 e6 {[%cal Ge6d5] Black challenges the d5 pawn. The position is equal (Stockfish 0.0).} *
-
-[Chapter "Classical, 6.Bd3: White's seventh moves"]
-[Side "both"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Normal Variation"]
-[ECO "E70"]
-[Diagram "7.O-O"]
-
-{After 6.Bd3 Bg4, White doesn't have to play h3. Keep the plan: ...Nc6 and ...Nd7 against d4. Against 7.Be2, take on f3 and play ...Nfd7 and ...Nc6. Against 7.d5, play 7...Nbd7 and ...c6.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Bd3 Bg4
-7. O-O
-(7. Be3 c5 {[%cal Gc5d4] Hits d4 from the side.} 8. d5 e6 9. O-O exd5 10. cxd5 Nbd7 {A Benoni structure with the light-squared bishops still on. Equal (Stockfish 0.0).})
-7... Nc6 {[%cal Gc6d4] Hits d4.}
-8. Be3 {The best defense. 8.h3? Bxf3 9.Qxf3 Nxd4 drops the pawn (see the trap chapter). Against 8.d5, play 8...Nd4.} Nd7 {[%cal Gg7d4] Opens the bishop, attacking d4 again.}
-9. Be2 {The bishop returns, so the queen guards d4.} e5 10. d5 Bxf3 11. Bxf3 Nd4 {The knight settles on d4 (Stockfish +0.2).} *
 
 [Chapter "Classical, 6...Nc6"]
 [Side "both"]
@@ -398,50 +369,6 @@ White must find 10.d5. The natural 10.Ne2?? loses to 10...Nce5!, and 10.O-O? Nxd
 {6...Nc6 adds pressure on d4 before ...e5. After 7.O-O e5 8.d5 Ne7 the game is back in the Mar del Plata.}
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 Nc6 {[%cal Gc6d4] Hits d4.}
 7. O-O {Against 7...Bg4, play 8.Be3; if 8...Bxf3, recapture with the bishop.} e5 8. d5 {Gains space with tempo.} Ne7 {The Mar del Plata Variation: continue with 9.b4, as in Mar del Plata, Bayonet Attack: 9.b4 (Stockfish +0.6, slightly better for White).} *
-
-[Chapter "Classical, Positional Defense: 7...Nbd7"]
-[Side "both"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Orthodox Variation, Positional Defense"]
-[ECO "E94"]
-
-{Black keeps the tension with the knight on d7. When White closes the center, the queenside locks, and Black prepares ...f5.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5
-7. O-O Nbd7 {This is the Positional Defense. The knight supports e5 and keeps ...exd4 in reserve.}
-8. Be3 {Guards d4 and keeps the tension.} c6 {[%cal Gc6d5] Controls d5 and b5.}
-9. d5 {Closes the center.} c5 {Black locks the queenside, so White's b4 break needs preparation.}
-10. Ne1 {[%cal Gf2f4] The knight heads for d3, and the f-pawn is free to advance.} Ne8 {[%cal Gf7f5] Clears the way for ...f5.}
-11. Nd3 {[%cal Gb2b4,Gf2f4] Supports both of White's breaks, b4 and f4.} f5 {Black's break. Each side now plays on its own wing (Stockfish +0.7, slightly better for White).} *
-
-[Chapter "Classical, Positional Defense: 7...c5"]
-[Side "white"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Orthodox Variation"]
-[ECO "E91"]
-[Diagram "7...c5"]
-
-{7...c5 is the Benoni-style alternative to 7...e5. Close the center with 8.d5. Black's d6 pawn and the knight on d7 then get in each other's way: ...e5 or ...e6 drops d6 (see the trap chapter).}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 Nbd7 7. O-O c5
-8. d5 {[%cal Gd5d6] Gains space.} a6 {[%cal Gb7b5] Prepares ...b5.}
-9. a4 {Stops ...b5.} b6 10. h3 Re8 11. Bf4 {[%cal Gf4d6] Your bishop presses on d6, and Black has no good break (Stockfish +1.2, clearly better for White).} *
-
-[Chapter "Classical, Positional Defense: 8...Ng4"]
-[Side "both"]
-[Level "advanced"]
-[Type "line"]
-[Opening "King's Indian Defense: Orthodox Variation"]
-[ECO "E91"]
-
-{Black hits the bishop at once instead of playing 8...c6. After 9.Bg5 Bf6 10.Bxf6, Black's dark squares around the king are weak.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O
-(5... Nbd7 6. Be2 O-O {The same position as the main line after 6...Nbd7 (Stockfish +0.8, slightly better for White). If 6...e5 instead, castle: 7.O-O O-O leads there too.})
-6. Be2 Nbd7 7. O-O e5 {The position is also reached by 6...e5 7.O-O Nbd7.}
-8. Be3 {[%cal Ge3d4] Guards d4 and develops. If 8...exd4, take back with the knight and guard e4 with f3, as in the open-center chapter.} Ng4 {The most common reply: Black hits the bishop.}
-9. Bg5 {The right square. The bishop keeps an eye on d8 and e7.}
-(9. Bd2?! exd4 {[%cal Gg7d4] Now d4 falls, because the bishop no longer guards it. Equal (Stockfish −0.2).})
-9... Bf6 {Offers to trade the dark-squared bishops.}
-10. Bxf6 Ngxf6 11. Qd2 {[%csl Yh6,Yf6] Without its g7 bishop, Black's dark squares around the king are weak, and you have more space (Stockfish +0.7, slightly better for White).} *
 
 [Chapter "Classical, Petrosian System: 7.d5"]
 [Side "both"]
@@ -472,49 +399,6 @@ White must find 10.d5. The natural 10.Ne2?? loses to 10...Nce5!, and 10.O-O? Nxd
 8. Qc2 {Clears the back rank and guards e4. You can castle on either side.} e5 {[%cal Ge5d4] The usual break.}
 9. d5 {[%cal Gc4c5] Closes the center. Now the bishop on g4 has little to do.} c6 10. h3 {Asks the bishop.} Bxf3 11. Bxf3 cxd5 12. cxd5 Rc8 13. Qd2 {You have the bishop pair and more space; Black has no clear plan (Stockfish +0.8, slightly better for White).} *
 
-[Chapter "Classical, 6...Bg4: Black's seventh moves"]
-[Side "white"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Orthodox Variation"]
-[ECO "E91"]
-[Diagram "7...Nc6"]
-
-{Against 7.Be3, Black can also hit d4 with the knight, or trade on f3 at once. Close the center with d5 against ...Nc6, and take back with the bishop against ...Bxf3.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 Bg4 7. Be3
-Nc6 {[%cal Gc6d4] Hits d4.}
-(7... Bxf3 8. Bxf3 Nbd7 9. Be2 {You have the bishop pair and a big center (Stockfish +1.0, clearly better for White).})
-8. d5 {Gains space with tempo.} Bxf3 9. Bxf3 {[%engine ok] The natural recapture. Stockfish prefers 9.gxf3 by about half a pawn, but the bishop recapture keeps your pawns intact.} Ne5 10. Be2 {[%cal Gf2f4] Next f4 chases the knight (Stockfish +1.0, clearly better for White).} *
-
-[Chapter "Classical, Maroczy Bind: 6...c5"]
-[Side "both"]
-[Level "advanced"]
-[Type "line"]
-[Opening "King's Indian Defense: Orthodox Variation"]
-[ECO "E91"]
-[Diagram "6...c5"]
-
-{6...c5 hits d4 from the side. After ...cxd4 and Nxd4, White's pawns on c4 and e4 form the Maroczy Bind, which clamps d5.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 c5
-7. O-O {If 7...Nc6, play 8.d5: after 8...Ne5 9.Nxe5 dxe5 you have more space and a well-protected pawn on d5 (Stockfish +1.2).} cxd4 {The usual reply.}
-8. Nxd4 {The Maroczy Bind.} Nc6 {[%cal Gc6d4] Challenges the knight.}
-9. Be3 {Guards the knight. Against 9...a6, keep the same setup; 9...Ng4?? loses a piece to 10.Bxg4 Bxg4 11.Nxc6.} Bd7
-10. Nc2 {[%cal Gc2e3,Gc2b4] Avoids the exchange. With less space, Black wants to trade pieces; you keep them on. Next Qd2, Rac1 and f3 or f4 (Stockfish +0.6, slightly better for White).} *
-
-[Chapter "Classical, Black's other sixth moves"]
-[Side "both"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Orthodox Variation"]
-[ECO "E91"]
-[Diagram "6...c6"]
-
-{Quieter sixth moves. Castle and meet ...e5 with d5: you gain space, and Black's pieces have fewer good squares. Against 6...b6 or 6...a6, castle and play Be3.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2
-c6 {Prepares ...e5 or ...b5. 5...c6 6.Be2 O-O reaches the same position.}
-(6... Re8 7. O-O e5 8. d5 {The rook on e8 is misplaced once the center is closed.} a5 9. h3 {Stops ...Ng4 and ...Bg4 (Stockfish +0.5, slightly better for White).})
-7. O-O e5 8. d5 a5 9. Bg5 h6 10. Be3 {The pawn on h6 can become a target, and you have more space (Stockfish +0.7, slightly better for White).} *
-
 [Chapter "Classical, Exchange Variation: 7.dxe5"]
 [Side "both"]
 [Level "advanced"]
@@ -529,33 +413,24 @@ c6 {Prepares ...e5 or ...b5. 5...c6 6.Be2 O-O reaches the same position.}
 12. Bc4 cxd5 13. Bxd5 Nd7 {[%cal Gd7c5,Gd7f6] The knight heads for c5 or f6.}
 14. Nd2 {Both sides finish developing (Stockfish 0.0, equal).} *
 
-[Chapter "Classical, Black's fifth-move alternatives"]
-[Side "white"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Normal Variation, Rare Defenses"]
-[ECO "E90"]
-[Diagram "5...Nc6"]
-
-{Black sometimes delays castling. Against 5...Nc6, gain space with 6.d5. Against 5...c6, play 6.Be2 and castle; you reach the other-sixth-moves chapter. Against 5...c5, 6.Be2 cxd4 7.Nxd4 leads to the Maroczy Bind.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3
-Nc6 {[%cal Gc6d4] Hits d4.}
-6. d5 {Gains space with tempo. 6...Nb4? loses to 7.Qa4+: see the trap chapter.} Nb8
-(6... Ne5 7. Nxe5 dxe5 {You have a well-protected pawn on d5 and more space (Stockfish +1.1, clearly better for White).})
-7. Be2 O-O 8. Bg5 h6 9. Be3 {Black's knight has lost two moves going back to b8 (Stockfish +0.8, slightly better for White).} *
-
 [Chapter "Classical, Gligorić System: 7.Be3"]
 [Side "both"]
 [Level "advanced"]
 [Opening "King's Indian Defense: Orthodox Variation, Gligoric-Taimanov System"]
 [ECO "E92"]
 
-{White develops the bishop before castling and keeps the choice of d5 or dxe5. Black hits the bishop at once with ...Ng4.}
+{White develops the bishop before castling and keeps the choice of d5 or dxe5. Black hits the bishop with ...Ng4, then gains space on the kingside with ...f6 and ...g5.}
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5
 7. Be3 {This is the Gligorić System. The bishop guards d4, and castling waits.} Ng4 {Hits the bishop.}
-8. Bg5 f6 {Gains time on the bishop.}
-9. Bh4 Nc6 {[%cal Gc6d4] More pressure on d4.}
-10. d5 Ne7 11. Nd2 {[%cal Ge2g4] Clears f3, so the bishop on e2 now hits the g4 knight (Stockfish +0.6, slightly better for White).} *
+8. Bg5 {The only good square.} f6 {Gains time on the bishop.}
+9. Bh4 g5 {[%cal Gg5h4] Chases the bishop again and takes space on the kingside.}
+10. Bg3 Nh6 {[%cal Gf6f5] The knight drops back, ready for ...f5.}
+11. d5 {Closes the center.}
+(11. dxe5 dxe5 12. Qd5+ Kh8 13. O-O Qe7 14. Qa5 c6 {[%cal Gb7b6,Gc6c5] Black follows with ...b6, ...Bd7 and ...c5, then a knight to d4 and ...f5 (Stockfish −0.2, equal).})
+11... f5 {[%cal Gf5e4] Hits e4 at once.}
+12. exf5 Nxf5 {The knight comes back into play.}
+13. Nd2 Nd7 14. Nde4 b6 {[%cal Gd7c5] Makes room for the knight on c5.}
+15. Bg4 Nc5 {The knight is well placed on c5 (Stockfish +0.3, slightly better for White).} *
 
 [Chapter "Classical, Kazakh: 6...Na6"]
 [Side "both"]
@@ -570,7 +445,7 @@ Nc6 {[%cal Gc6d4] Hits d4.}
 (3. Nf3 Bg7 4. Nc3 {If 4.g3, see Fianchetto, Classical: 6...Nbd7 under Basic variations.} O-O 5. e4 d6 {The same position as the main line after 5.Nf3 O-O. Continue with 6.Be2 Na6 (Stockfish +0.5, slightly better for White).})
 3... Bg7
 4. e4
-(4. Nf3 O-O 5. e4 d6 {The main line again (Stockfish +0.5, slightly better for White). White's other fifth moves are in the 4.Nf3 chapter under Advanced variations.})
+(4. Nf3 O-O 5. e4 d6 {The main line again (Stockfish +0.5, slightly better for White).})
 4... d6 5. Nf3 O-O
 6. Be2 {Develops and prepares to castle. White keeps every option open.} Na6 {This is the Kazakh Variation. The knight prepares ...e5 and waits for White to push d5, when c5 becomes its square. Compared with the usual 6...e5, it keeps the theory light: the same maneuver works against most of White's systems.}
 7. O-O {About two games in three.} e5 {[%cal Ge5d4] The King's Indian strike at the center. This position is also known as the Glek Defense, after 6...e5 7.O-O Na6.
@@ -585,20 +460,6 @@ Other tenth moves: against 10.Bg5, play 10...h6 11.Be3 b6, the same setup. Again
 12. Bxg4 Bxg4 {Black has the bishop pair, and the light-squared bishop is out.}
 13. f3 Bd7 {The bishop steps back. It covers b5 and stays ready to support the kingside.}
 14. b3 f5 {[%cal Gf5f4,Gg6g5] Black has carried out the King's Indian plan: ...f5, then ...f4 and ...g5 on the kingside, while the knight on c5 and the pawn on a5 hold White's queenside. The position is equal (Stockfish +0.1).} *
-
-[Chapter "Classical, Kazakh: White's seventh moves"]
-[Side "both"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Kazakh Variation"]
-[ECO "E91"]
-[Diagram "7.a3"]
-
-{White can delay castling. 7.a3 prepares b4 to keep the knight out of c5; 7.Be3 develops first. Against 7.h3, play 7...e5 8.d5 Nc5 9.Qc2 a5, as in the main line.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 Na6
-7. a3 {Prepares b4.}
-(7. Be3 e5 {If 8.O-O, play 8...Qe7: the same position as 8.Be3 in the next chapter, Classical, Kazakh: White's eighth moves.} 8. d5 Ng4 {[%cal Gg4e3] Hits the bishop.} 9. Bg5 f6 10. Bh4 g5 11. Bg3 Nh6 {[%cal Gh6f7,Gf6f5] The knight comes back via f7, and ...f5 follows (Stockfish +0.3, slightly better for White).})
-7... e5 8. d5 Nc5 9. Qc2 a5 10. Bg5 a4 {[%cal Ga4b3] Fixes the queenside: if b4, Black takes en passant. The knight on c5 is there for good (Stockfish +0.3, slightly better for White).} *
 
 [Chapter "Classical, Kazakh: White's eighth moves"]
 [Side "both"]
@@ -647,25 +508,6 @@ Nc6 {[%cal Gc6d4] Challenges the knight.}
 10. Be3 Nh5 {[%cal Gh5f4] Eyes f4.}
 11. Nc2 {Keeps the knight away from trades. After 11.Qd2 Nxd4 12.Bxd4 Nf4, Black trades pieces and comes close to equal (Stockfish +0.4).} f5 12. Qd2 {You are ready for Rad1 and Bg5 (Stockfish +0.5, slightly better for White).} *
 
-[Chapter "Classical, Open Center: 10.Nc2"]
-[Side "both"]
-[Level "advanced"]
-[Type "line"]
-[Opening "King's Indian Defense: Orthodox Variation"]
-[ECO "E94"]
-
-{Instead of 10.Kh1, White can step away from the g7 bishop with 10.Nc2. The bishop then drops back to f1, so the rook on e1 guards e4.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5
-7. O-O exd4 {[%cal Gg7d4] The e5 pawn is gone, so only the f6 knight still blocks the bishop's diagonal.}
-8. Nxd4 Re8 {[%cal Re8e4,Rf6e4] Attacks e4 twice. Against 8...Nc6, play 9.Be3 Re8 10.f3, the same setup.}
-9. f3 {[%csl Ge4] The only good way to hold e4. Moving the c1 bishop now drops the pawn.}
-(9. Bg5? {Natural, but it leaves e4 to its fate.} h6 10. Be3 Nxe4! 11. Nxe4 Rxe4 {Black has won the center pawn (Stockfish −0.4, slightly better for Black).})
-9... c6 {[%cal Gd6d5] Prepares ...d5, Black's freeing break.}
-10. Nc2 {Steps away from the g7 bishop's diagonal and covers e3 and b4. With more space, you avoid trades.
-
-If 10...d5, take twice: 11.cxd5 cxd5 12.exd5, and you are a pawn up (Stockfish +0.6). Against 10...Be6, play 11.Be3 (+0.9). 10...Nbd7? drops the d6 pawn: see the trap chapter.} Na6 {[%cal Ga6c7] Heads for c7, where it supports ...d5.}
-11. Re1 Nc7 12. Bf1 {[%cal Gc4d5,Ge4d5] The standard setup: the bishop clears the e-file so the rook guards e4 from behind, and the pawns on c4 and e4 hold d5. Next Be3 or Bg5 and Qd2 (Stockfish +0.4, slightly better for White).} *
-
 [Chapter "Sämisch, Panno: 6...Nc6"]
 [Side "both"]
 [Level "advanced"]
@@ -678,21 +520,6 @@ If 10...d5, take twice: 11.cxd5 cxd5 12.exd5, and you are a pawn up (Stockfish +
 7. Nge2 a6 8. Qd2 Rb8 {[%cal Gb7b5] Prepares ...b5.}
 9. h4 {[%cal Gh4h5] White starts the kingside attack.} h5 {Stops h5.}
 10. O-O-O b5 11. Bh6 {[%cal Gh6g7] Offers to trade Black's best defender (Stockfish +0.1, equal).} *
-
-[Chapter "Sämisch, White's sixth moves"]
-[Side "both"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Sämisch Variation, Normal Defense"]
-[ECO "E81"]
-[Diagram "6.Bd3"]
-
-{Whatever White's sixth move in the Sämisch, the answer is 6...c5. After 6.Nge2 c5 7.Be3 you are in the main chapter's 7.Nge2 line.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O
-6. Bd3
-(6. Bg5 c5 7. d5 e6 8. Qd2 exd5 9. cxd5 a6 {[%cal Gb7b5] Prepares ...b5 (Stockfish +0.2).})
-6... c5 {[%cal Gc5d4] Hits d4.}
-7. d5 e6 8. Nge2 exd5 9. cxd5 Nbd7 {[%cal Gd7e5] Heads for e5. Equal (Stockfish 0.0).} *
 
 [Chapter "Sämisch Gambit: 6...c5"]
 [Side "both"]
@@ -708,9 +535,8 @@ If 10...d5, take twice: 11.cxd5 cxd5 12.exd5, and you are a pawn up (Stockfish +
 (7. dxc5 {Accepts the gambit.} dxc5 8. Qxd8 Rxd8 9. Bxc5 Nc6 {[%cal Gc6d4,Gc6b4,Gg7b2] Black is a pawn down, but every piece is active while White's kingside is still undeveloped (Stockfish +0.2, equal).})
 7... Nc6 {[%cal Gc6d4] Adds pressure on d4.}
 8. d5 Ne5 {[%csl Ge5] The knight takes a strong central square.}
-9. Ng3 {Covers e4 and f5.} e6 {[%cal Ge6d5] Opens the center.}
-10. Be2 exd5 11. cxd5 a6 {[%cal Gb7b5] Prepares ...b5.}
-12. a4 {Stops ...b5.} h5 {[%cal Gh5h4] Threatens ...h4 to chase the g3 knight (Stockfish +0.5, slightly better for White).} *
+9. Ng3 {Covers e4 and f5.} h5 {[%cal Gh5h4] Threatens ...h4 to chase the knight away at once.}
+10. Be2 h4 11. Nf1 {The knight has to go back.} e6 {[%cal Ge6d5] Now Black opens the center while White's knight is out of play (Stockfish +0.5, slightly better for White).} *
 
 [Chapter "Sämisch Gambit, 7.d5"]
 [Side "black"]
@@ -722,7 +548,7 @@ If 10...d5, take twice: 11.cxd5 cxd5 12.exd5, and you are a pawn up (Stockfish +
 {If White closes the center with 7.d5, Black gets a Benoni structure with play against e4. After the common 10.O-O-O?!, Black's queenside pawns roll toward White's king.}
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6
 5. f3 {This is the Sämisch Variation.} O-O
-6. Be3 c5 {This is the Sämisch Gambit. White's sixth-move alternatives are under Advanced variations.}
+6. Be3 c5 {This is the Sämisch Gambit.}
 7. d5 {Closes the center, the most common reply. 7.Nge2 and 7.dxc5 are in Sämisch Gambit: 6...c5, the chapter before this one.} e6 {[%cal Ge6d5] Undermines d5.}
 8. Qd2 {Against 8.Bd3, take on d5 and play ...Nbd7 and ...Ne5.} exd5 9. cxd5 Re8 {[%cal Re8e4] Pressure on e4. The natural 10.Bh6? loses a pawn to 10...Nxe4!: see the trap chapter.
 
@@ -861,10 +687,13 @@ The common 10.Qc2? loses to 10...Nxe4! (see the trap chapter). 10.Nd2 is solid: 
 [ECO "E73"]
 [Diagram "6.Be3"]
 
-{6.Be3 prepares g4 and Qd2. Black strikes with ...e5 and brings the knight to c5, as in the Kazakh, then hits g4 with ...h5.}
+{6.Be3 prepares g4 and Qd2. Black strikes with ...e5 and brings the knight to c5, then meets g4 with ...h5 and breaks with ...f6.}
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O
 6. Be3 {This is the Semi-Averbakh System.} e5 7. d5 Na6 {[%cal Ga6c5] Heads for c5.}
-8. g4 Nc5 9. f3 a5 10. Qd2 h5 {[%cal Gh5g4] Hits the g4 pawn before White's kingside attack gets going (Stockfish +0.7, slightly better for White).} *
+8. g4 Nc5 9. f3 h5 {[%cal Gh5g4] Hits g4 at once, before White's attack gets going.}
+10. g5 Nh7 {[%cal Gf7f6] The knight steps back and prepares ...f6.}
+11. h4 f6 {[%cal Gf6g5] Breaks at g5.}
+12. Qd2 fxg5 13. hxg5 Rf4 {[%csl Rf4] Offers the exchange. After 14.Bxf4 exf4 15.Qxf4 Nxg5, Black has a pawn and the dark squares for it, and the game is equal (Stockfish 0.0). White's best is to ignore the rook and play 14.b4 on the queenside (Stockfish +0.8, slightly better for White).} *
 
 [Chapter "Averbakh, Flexible Defense: 6...h6"]
 [Side "both"]
@@ -899,35 +728,14 @@ The common 10.Qc2? loses to 10...Nxe4! (see the trap chapter). 10.Nd2 is solid: 
 [Opening "King's Indian Defense: Averbakh Variation, Modern Defense"]
 [ECO "E73"]
 
-{Black guards c7 with the knight before playing ...e5. After d5, Black opens the c-file and meets White's kingside expansion with ...h5.}
+{Black guards c7 with the knight before playing ...e5. After d5, the knight comes to c5, and Black meets White's long castling with play on the queenside.}
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O
 6. Bg5 Na6 {[%cal Ga6c7] This is the Modern Defense. The knight guards c7 in advance, so ...e5 no longer runs into Nd5.}
 7. Qd2 {Supports the bishop and prepares Bh6 or castling long.} e5 {Now the strike works.}
-8. d5 c6 {[%cal Gc6d5] Hits d5 from the side and opens the c-file.}
-9. f3 cxd5 10. cxd5 Bd7 {[%cal Ga8c8,Ga6c5] Black follows with ...Rc8 and ...Nc5.}
-11. g4 {White gains space on the kingside.} h6 12. Be3 h5 {[%cal Gh5g4] Black hits g4 before White's attack gets going.}
-13. h3 {Holds g4 (Stockfish +0.4, slightly better for White).} *
-
-[Chapter "Mar del Plata, Bayonet Attack: 9...Ne8"]
-[Side "white"]
-[Level "advanced"]
-[Type "line"]
-[Opening "King's Indian Defense: Orthodox Variation, Bayonet Attack"]
-[ECO "E97"]
-
-{Against 9...Ne8, push 10.c5 at once. White's queenside attack arrives before Black's ...f5 and ...f4.}
-1. d4 Nf6 2. c4 g6
-3. Nc3 {3...d5 is the Grünfeld Defense, a different opening; it is not covered in this course. After 3...d6, play 4.e4 Bg7 5.Nf3: the same position.} Bg7
-4. e4 d6
-(4... O-O 5. Nf3 d6 {The same position as the main line after 5...O-O. Continue with 6.Be2 (Stockfish +0.5, slightly better for White).})
-5. Nf3 O-O 6. Be2 e5 {6...Nc6 usually leads here too: see Classical, 6...Nc6.}
-7. O-O {Castle first. Black's other seventh moves: 7...exd4 and 7...Na6 have their own chapters; against 7...Bg4, play 8.d5; against 7...a5, play 8.Be3.} Nc6 {This is the Aronin-Taimanov Defense. The knight adds pressure on d4 and almost forces White's hand.}
-8. d5 {[%cal Gc4c5,Gb2b4] Closes the center and gains space on the queenside, where you will attack.} Ne7 {This is the Mar del Plata Variation. The knight heads for the kingside to support ...f5.}
-9. b4 {This is the Bayonet Attack. You start the queenside attack at once, with c5 next, and don't spend time on defensive knight moves.} Ne8 {[%cal Gf7f5] Clears the way for ...f5.}
-10. c5 {[%cal Gc5d6] Strikes first: the pawn hits d6 and opens the c-file.} f5 {Black's break.}
-11. Nd2 {Covers e4 and heads for c4, where it will hit d6.} Nf6 {Brings the knight back toward the kingside.}
-12. f3 {[%csl Ge4] Holds e4. Now Black's attack needs ...f4, ...g5 and ...g4, which takes time.} f4 {Closes the f-file and prepares ...g5.}
-13. Nc4 g5 14. a4 {[%cal Gc5d6,Ga4a5,Gc4d6] Your attack on the queenside is a step ahead: cxd6 and Nb5 or a5 come next (Stockfish +1.1, clearly better for White).} *
+8. d5 Nc5 {[%cal Gc5e4] The knight takes c5 and hits e4.}
+9. f3 a5 {[%cal Ga5b4] Stops b4, so the knight stays on c5.}
+10. O-O-O {White castles long and gets ready for g4 and h4.} a4 {[%cal Ga4a3] Black's queenside pawns go after White's king.}
+11. g4 c6 {[%cal Gb7b5] Opens the c-file and prepares ...b5 (Stockfish +0.4, slightly better for White).} *
 
 [Chapter "Mar del Plata, Bayonet Attack: 9...a5"]
 [Side "both"]
@@ -950,12 +758,13 @@ a5 {[%cal Ga5b4] Opens the a-file before White plays c5.}
 [Opening "King's Indian Defense: Orthodox Variation, Modern System"]
 [ECO "E97"]
 
-{White's knight can go to c4 or b3 to support c5, and it leaves room for f3. Black slows b4 with ...a5, then plays ...f5.}
+{White's knight heads for c4 to support c5, and it leaves room for f3. Black answers with ...Ne8 and ...f5, then storms the kingside as in the main line.}
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7
-9. Nd2 {This is the Modern System.} a5 {[%cal Ga5b4] Slows b4.}
-10. a3 {Prepares b4 anyway.} Nd7 {[%cal Gf7f5] Clears the way for ...f5.}
-11. Rb1 f5 12. b4 Kh8 {Takes the king off the g8–a2 diagonal before the center opens.}
-13. Qc2 {Both sides are ready for the queenside and kingside races (Stockfish +0.2, equal).} *
+9. Nd2 {This is the Modern System.} Ne8 {[%cal Gf7f5] Clears the way for ...f5.}
+10. b4 f5 11. c5 Nf6 {[%cal Gf6e4] Brings the knight back to hit e4.}
+12. f3 f4 {[%cal Gg6g5,Gg5g4] Closes the kingside and prepares ...g5.}
+13. Nc4 g5 14. a4 {The same position arises from the Bayonet Attack, 9.b4 Ne8.} Ng6 {The knight joins the kingside attack.}
+15. Ba3 Rf7 {[%cal Gg7f8] The rook guards the seventh rank, and the bishop can drop back to f8 to defend d6 (Stockfish +0.7, slightly better for White).} *
 
 [Chapter "Sidelines, 5.Bd3"]
 [Side "both"]
@@ -972,47 +781,6 @@ a5 {[%cal Ga5b4] Opens the a-file before White plays c5.}
 7. O-O {Against 7.a3 or 7.f3, play 7...e5 8.d5 Nd4, the same idea.} e5 8. d5 Nd4 {[%csl Gd4] The knight lands on d4, where no white pawn can attack it. If White takes it, Black recaptures with the e-pawn and gets a strong pawn on d4 that hits the c3 knight.}
 9. Bg5 c5 {Supports the knight with a pawn.}
 10. Qd2 a6 {[%cal Gb7b5] Prepares ...b5. Black has a fine game (Stockfish +0.3, slightly better for White).} *
-
-[Chapter "Sidelines, fourth moves: 4.Bg5"]
-[Side "both"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense"]
-[ECO "E61"]
-[Diagram "4.Bg5"]
-
-{4.Bg5, 4.Bf4 and 4.e3 keep the e-pawn back. Castle, play ...d6, and break with ...c5 or ...e5. Against 4.Bf4, ...d6, ...O-O and ...Nbd7 or ...c5 work well; if White plays e4 later, you are back in the main chapters.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7
-4. Bg5 O-O 5. e3 d6 6. Nf3 h6 7. Bh4 c5 {[%cal Gc5d4] Hits d4 now that the e-pawn is on e3.}
-8. d5 g5 {Gains space and chases the bishop off the h4–d8 diagonal (Stockfish +0.3).} *
-
-[Chapter "Sidelines, 4.Nf3"]
-[Side "both"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense"]
-[ECO "E61"]
-[Diagram "5.Bg5"]
-
-{4.Nf3 usually transposes: after 4...O-O 5.e4 d6 you are in the main chapters, and 6.Be2 Na6 is the Kazakh. Against 5.Bf4 or 5.e3, play ...d6 and ...Nbd7 or ...c5. Against 5.g3, play ...d6 and see the Fianchetto chapter.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O
-5. Bg5 d6 {The bishop on g5 is less dangerous here than in the Averbakh, because White's pawn is still on e2.}
-6. e3 c5 {[%cal Gc5d4] With White's pawn on e3 instead of e4, ...c5 is the natural break.}
-7. Be2 h6 8. Bh4 g5 9. Bg3 Nh5 {[%cal Gh5g3] Black wins the bishop pair (Stockfish +0.4, slightly better for White).} *
-
-[Chapter "Sidelines, fifth moves: 5.Bg5"]
-[Side "both"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Accelerated Averbakh Variation"]
-[ECO "E70"]
-[Diagram "5.Bg5"]
-
-{Two rarer fifth moves. 5.Bg5 develops the bishop early, aiming at the f6 knight. After 5.Be3, White most often plays 6.f3, the Sämisch; against 6.Bd3?!, 6...Ng4! hits the bishop and wins the bishop pair (Stockfish −0.7).}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6
-5. Bg5 {This is the Accelerated Averbakh Variation.} O-O {If 6.Be2, play 6...Na6: the Averbakh.}
-6. Nf3 {This is the Zinnowitz Variation, reached by another move order.} h6 {Asks the bishop at once.}
-7. Be3 Ng4 {[%cal Gg4e3] Hits the bishop again.} 8. Bd2 e5 9. d5 f5 {[%cal Gf5e4] Black has the f-pawn break in early. Equal (Stockfish +0.1).} *
 
 [Chapter "Map of the variations"]
 [Type "map"]
@@ -1040,7 +808,6 @@ a5 {[%cal Ga5b4] Opens the a-file before White plays c5.}
 (7. d5 {[%order 3] Petrosian System})
 (7. dxe5 {[%order 4] Exchange Variation})
 7... Nc6
-(7... Nbd7 {[%order 2] Positional Defense})
 (7... exd4 {[%order 7] Open Center})
 (7... Na6 {[%order 6] Glek Defense})
 8. d5 Ne7 {[%order 1] Mar del Plata}
