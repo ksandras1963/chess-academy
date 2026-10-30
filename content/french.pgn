@@ -131,13 +131,6 @@
 {Black's c8 bishop is shut in by its own pawns on e6 and d5, so it is often called the bad French bishop. Handling it well is half the battle for Black; for White, it is a target. Each board shows one way to solve it.}
 *
 
-[Chapter "Trade it: ...Bd7 and ...Bb5"]
-[Type "concept"]
-[Idea "black"]
-
-{In the Advance, Black can offer to trade the bad bishop for White's good one with ...Bd7 and ...Bb5. This is the Wade Variation. White takes and gains time on the queen.}
-1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Qb6 5. Nf3 {[%cal Gc8d7,Gd7b5] The idea starts from this position.} 5... Bd7 6. Be2 Bb5 {[%cal Gb5e2] Offers the trade.} 7. Bxb5+ Qxb5 8. Na3 {[%cal Ga3b5] Gains time on the queen. Stockfish +0.2.} *
-
 [Chapter "Trade it: ...b5 and ...Ba6"]
 [Type "concept"]
 [Idea "black"]
@@ -179,13 +172,6 @@
 
 {Count the defenders before taking on d4. Here White's queen still sees d4, so taking the pawn leaves Black a piece down.}
 1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Qb6 6. a3 cxd4 7. cxd4 {[%cal Gd1d4] The idea starts from this position.} 7... Nxd4? 8. Nxd4 {[%cal Gd1d4] Now 8...Qxd4?? 9.Qxd4 loses the queen, so Black is simply a knight down for a pawn. Stockfish +3.6, winning for White.} *
-
-[Chapter "Qh5+ against an early ...f6"]
-[Type "concept"]
-[Idea "white"]
-
-{Breaking with ...f6 too early loosens the diagonal from h5 to Black's king. If Black also takes on e5, the queen check wins material.}
-1. e4 e6 2. d4 d5 3. e5 f6 {[%cal Gd1h5,Gh5e8] The idea starts from this position.} 4. Bd3 {Prepares Qh5+.} 4... fxe5? 5. Qh5+ g6 6. Bxg6+ {6...hxg6?? 7.Qxh8 loses the rook.} 6... Kd7 {Black's king is stuck in the center. Stockfish +1.7, clearly better for White.} *
 
 [Chapter "Qh4+ against 3.f3"]
 [Type "concept"]
@@ -304,17 +290,15 @@ Watch for White's mistakes here. 6.h3? Bxf3 7.Qxf3 Nxd4 wins the d4 pawn (Stockf
 [Diagram "4...Qb6"]
 [Type "line"]
 [Level "advanced"]
-[Opening "French Defense: Advance Variation, Wade Variation"]
+[Opening "French Defense: Advance Variation"]
 [ECO "C02"]
 
-{Black can play ...Qb6 or ...cxd4 before ...Nc6. Most of the time it comes back to the lines you already know, but there are two ideas to learn: the Wade Variation, where Black trades the French bishop with ...Bd7 and ...Bb5, and the check 5...Bb4+, which is a mistake.}
+{Black can play ...Qb6 or ...cxd4 before ...Nc6. Both usually come back to the lines you already know. One thing to learn: the check 5...Bb4+ is a mistake.}
 1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Qb6
 (4... cxd4 5. cxd4 Nc6
 (5... Bb4+? {Checks without a purpose.} 6. Nc3 {Blocks with a developing move.} Nc6 7. Nf3 Bd7 8. Bd3 Nge7 9. O-O {White develops quickly; a3 will drive the bishop back. Stockfish +0.9, slightly better for White.})
 6. Nf3 {The same position as the 5...cxd4 chapter.})
-5. Nf3 Bd7
-(5... Nc6 {The main line of the Advance after 5...Qb6.}) {The Wade Variation. Black wants ...Bb5 to trade off the French bishop.}
-6. Be2 Bb5 7. Bxb5+ {Trade at once: after ...Qxb5, Na3 hits the queen.} Qxb5 8. Na3 Qd7 9. Nc2 {[%cal Gc2d4,Gc2e3] The knight reroutes to support d4.} cxd4 10. cxd4 Nc6 11. O-O Nge7 {White keeps the space advantage. Stockfish +0.3, slightly better for White.} *
+5. Nf3 Nc6 {The main line of the Advance after 5...Qb6, by another move order: play 6.a3, as in the Advance lesson.} *
 
 [Chapter "Advance: Black's other sixth moves after 6.a3"]
 [Side "white"]
@@ -390,20 +374,6 @@ Count before Black takes. 7...Nxd4? 8.Nxd4 leaves Black a knight down, because W
 7. h4! {[%cal Gh4h5] Threatens h5, which drives the knight away from e5.} Nge7 {7...h5 weakens g5 and g6.}
 8. h5 {Gains space on the kingside. Black's knights have few squares.} Nf5 9. dxc5 {Now White gives up the base of the chain: Black's pieces are not ready to win e5.} Bxc5 10. Qe2 {Guards e5 and prepares b4 or Bf4. Stockfish +0.9, slightly better for White.} *
 
-[Chapter "Advance: Black's other third moves"]
-[Side "white"]
-[Diagram "3...Nc6"]
-[Type "line"]
-[Level "advanced"]
-[Opening "French Defense: Advance Variation"]
-[ECO "C02"]
-
-{Black's rarer third moves. Most of them come back to the main lines after ...c5. Against 3...Bd7, play 4.Nf3 and 5.c3. Against 3...f6, see the trap chapter.}
-1. e4 e6 2. d4 d5 3. e5 Nc6 {The knight blocks Black's c-pawn, so ...c5 is not coming.}
-(3... Ne7 4. c3 c5 5. Nf3 Nbc6 {The same position as the 5...Nge7 chapter.})
-(3... a6 4. c3 c5 5. Nf3 Nc6 6. Bd3 {Develop and castle. Stockfish +0.4, slightly better for White.})
-4. Nf3 f6 {Black has to break with ...f6, since ...c5 is blocked.} 5. c3 fxe5 6. Nxe5 Nxe5 7. dxe5 Ne7 8. Bd3 {[%cal Gd3h7] White's e5 pawn cramps Black, and the bishop aims at h7. Stockfish +0.9, slightly better for White.} *
-
 [Chapter "Advance: 6.Be2 and other sixth moves"]
 [Side "black"]
 [Diagram "6.Be2"]
@@ -457,18 +427,6 @@ Qxb2 {[%cal Gb2a1] Hits the rook on a1, and the bishop on h6 is still hanging.}
 (5... Nge7 6. Bd3 cxd4 7. cxd4 Nf5 8. Bxf5 {Removes the knight that attacks d4.} exf5 9. Nc3 h6 10. h4 {[%csl Yf5] Black's doubled f-pawns block the bishop on c8. Stockfish +0.2, equal.})
 6. cxd4 Bb4+ {The check looks active, but it helps White develop.}
 7. Nc3 f6 {Black tries to undermine e5.} 8. Bd3 fxe5 9. dxe5 {White's pieces are more active, and Black's e6 pawn is weak. Stockfish +1.1, clearly better for White.} *
-
-[Chapter "Advance: Black's other fourth and fifth moves"]
-[Side "white"]
-[Diagram "4...c4"]
-[Type "line"]
-[Level "advanced"]
-[Opening "French Defense: Advance Variation"]
-[ECO "C02"]
-
-{Rarer tries by Black after 4.c3. Against 4...Bd7, play 5.Nf3: after 5...Nc6 you are in the 5...Bd7 chapter. Against 5...a6, play 6.Bd3 and castle. Against 5...Qa5, take on c5 with gain of time: 6.dxc5 Qxc5 7.Bd3 and castle (Stockfish +0.8).}
-1. e4 e6 2. d4 d5 3. e5 c5 4. c3 c4 {Locks the queenside early, but takes the pressure off d4.}
-5. b3 {[%cal Gb3c4] Attacks the chain at once.} b5 6. a4 Qa5 7. Bb2 Nc6 8. axb5 Qxb5 9. Nd2 {The b-file opens and Black's pawn on c4 becomes a target. Stockfish +0.9, slightly better for White.} *
 
 [Chapter "Exchange: 4.Bd3, 4.Nc3 and 5.Bb5"]
 [Side "black"]
@@ -607,21 +565,6 @@ Qxb2 {[%cal Gb2a1] Hits the rook on a1, and the bishop on h6 is still hanging.}
 8. h4 {Supports the bishop on g5 and prepares long castling.} O-O 9. Qd2 e5! {[%cal Ge6e5] The second freeing break. It hits d4 and opens the diagonal of the c8 bishop.}
 10. Bxf6 Qxf6 11. O-O-O exd4 12. Qxd4 Qxd4 13. Rxd4 Nf6 {Nearly equal endgame (Stockfish +0.3). Black's bishop is no longer bad.} *
 
-[Chapter "Franco-Sicilian: 2...c5 and other second moves"]
-[Side "white"]
-[Diagram "2...c5"]
-[Type "line"]
-[Level "advanced"]
-[Opening "French Defense: Franco-Sicilian Defense"]
-[ECO "C00"]
-
-{Some players answer 2.d4 without 2...d5. Together these moves come up in about one game in six. Take the center and develop; White is better against all of them.}
-1. e4 e6 2. d4 c5 {This is the Franco-Sicilian Defense. A Sicilian-like move.}
-(2... b6 {The bishop goes to b7.} 3. Nf3 Bb7 4. Bd3 c5 5. c3 {Keeps the pawn chain on c3 and d4.} Nf6 6. Qe2 {Guards e4. Stockfish +0.9, slightly better for White.})
-(2... d6 3. Nf3 Nf6 4. Bd3 c5 5. c3 {White has the center and easy development. Stockfish +0.9, slightly better for White.})
-(2... c6 3. Nf3 d5 4. e5 c5 5. c3 Nc6 {The Advance French, but Black has spent two moves on the c-pawn.} 6. Bd3 Nge7 7. O-O {An extra tempo for White in a known structure. Stockfish +0.6, slightly better for White.})
-3. d5 {Gains space. The pawn on d5 cramps Black.} Nf6 4. Nc3 d6 5. dxe6 Bxe6 6. Nge2 {Heads for f4 to hit the bishop on e6.} Nc6 7. Nf4 {Black's d6 pawn is weak. Stockfish +0.7, slightly better for White.} *
-
 [Chapter "Knight Variation: other third moves"]
 [Side "black"]
 [Diagram "3.e5"]
@@ -637,38 +580,7 @@ Qxb2 {[%cal Gb2a1] Hits the rook on a1, and the bishop on h6 is still hanging.}
 3... c5
 4. c3 {Prepares d4.}
 (4. d4 {This is the Nimzowitsch System.} Nc6 {The Advance with 4.Nf3: after 5.c3 Qb6 we are in the main line.})
-(4. b4 {The Wing Gambit. White offers the b-pawn to pull Black's c-pawn away from d4.} cxb4 {Take it.} 5. d4 {After 5.a3, take again with 5...bxa3 and develop.} Bd7 {[%cal Gd7b5] Heads for b5 to trade the French bishop.} 6. a3 Qa5 7. Bd3 Bb5 {Trades the bishops and keeps the extra pawn. Slightly better for Black (Stockfish −0.4).})
 4... Nc6 5. d4 {This is the Paulsen Attack. After 5.Bb5, play 5...Bd7.} Qb6 {The main line of the Advance after 5...Qb6, by another move order.} *
-
-[Chapter "Rare second moves: 2.Bc4, 2.c4 and 2.d3"]
-[Side "black"]
-[Diagram "2.Bc4"]
-[Type "line"]
-[Level "advanced"]
-[Opening "French Defense"]
-[ECO "C00"]
-
-{Against White's rarer second moves, play ...d5 and develop: most lead to open positions where Black's pieces come out easily. After 2.Nc3 d5 3.exd5 exd5 4.d4, you are in the Exchange with 4.Nc3. After 2.e5, play 2...d5, and if 3.d4 c5, it is the Advance. Against 2.Qe2, play 2...c5 and ...Nc6, keeping the queen's pawn back.}
-1. e4 e6
-2. Bc4 {Aims at f7.}
-(2. c4 {The Steiner Variation.} d5 3. cxd5 {After 3.exd5 exd5, develop with ...Nf6; against 4.Qb3, play 4...Qe7+ 5.Be2 dxc4 (Stockfish −1.1). Against 3.e5, play 3...d4 (equal).} exd5 4. exd5 Nf6 5. Nc3 Nxd5 {Black wins back the pawn with an easy game. Equal (Stockfish 0.0).})
-(2. d3 {The King's Indian Attack. White plans Nd2, Ngf3, g3, Bg2 and O-O, then e5 or a kingside attack.} d5 3. Nd2 c5 4. Ngf3 Nc6 5. g3 Nf6 6. Bg2 Be7 7. O-O O-O {Black has a good share of the center. The plan is ...b5 and ...b4 on the queenside. Equal (Stockfish 0.0).})
-2... d5 {Attacks the bishop: White has to take or retreat.}
-3. exd5 exd5 4. Bb3 Nf6 5. d4 Bd6 6. Nf3 O-O 7. O-O h6 {Black has an easy game. Equal (Stockfish −0.1).} *
-
-[Chapter "La Bourdonnais Variation: 2.f4"]
-[Side "black"]
-[Type "line"]
-[Level "advanced"]
-[Opening "French Defense: La Bourdonnais Variation"]
-[ECO "C00"]
-
-{2.f4 supports a later e5 push and prepares Nf3. It also weakens White's kingside. Play 2...d5. Against 3.e5, use the Advance plan: ...c5, ...Nc6 and a knight on f5. Against 3.exd5, recapture and develop; Black is already slightly better.}
-1. e4 e6 2. f4 {This is the La Bourdonnais Variation.} d5
-3. e5
-(3. exd5 exd5 4. Nf3 Nf6 {Black develops freely, and f4 has weakened e4 and the diagonal to White's king. Slightly better for Black (Stockfish −0.6).})
-3... c5 4. Nf3 Nc6 5. c3 {After 5.Bb5, play 5...Bd7.} Nge7 {[%cal Ge7f5] Heads for f5. White's pawn on f4 can't kick it from there.}
-6. d4 cxd4 7. cxd4 Nf5 {[%cal Gf5d4,Gc6d4] Two knights hit d4. Slightly better for Black (Stockfish −0.4).} *
 
 [Chapter "Horwitz: 2.b3"]
 [Side "black"]
@@ -764,18 +676,6 @@ Qxb2 {[%cal Gb2a1] Hits the rook on a1, and the bishop on h6 is still hanging.}
 {After 6.a3 c4, Black's knight heads for b3. Jumping in too early drops a pawn: White trades on b3, and the pawn that recaptures there falls.}
 1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 {This is the Paulsen Attack.} Qb6 6. a3 c4 7. Nbd2 Na5 8. Rb1 Nb3? {Looks strong: the knight hits the bishop on c1, the knight on d2 and the pawn on d4. But White can simply take it.}
 9. Nxb3 Qxb3 10. Qxb3 cxb3 11. Nd2 {[%csl Rb3] The pawn on b3 has no support.} Bd7 12. Nxb3 {White is a pawn up. Stockfish +1.7, clearly better for White.} *
-
-[Chapter "Trap: 3...f6 and Qh5+"]
-[Side "white"]
-[Diagram "3...f6"]
-[Type "trap"]
-[Opening "French Defense: Advance Variation"]
-[ECO "C02"]
-
-{Some players break at e5 with 3...f6 at once. 4.Bd3 aims at g6 and prepares Qh5+. If Black takes on e5, the queen check wins material.}
-1. e4 e6 2. d4 d5 3. e5 f6 4. Bd3 {[%cal Gd1h5,Gd3g6] Prepares Qh5+.} fxe5?
-(4... g6 {Stops Qh5+, but weakens the dark squares.} 5. h4 {Attacks the g6 pawn with h5. Stockfish +1.1, clearly better for White.})
-5. Qh5+ g6 6. Bxg6+ {6...hxg6?? 7.Qxh8 wins the rook.} Kd7 7. Nf3 Nc6 8. Nxe5+ Nxe5 9. Qxe5 {White is a pawn up and Black's king is stuck in the center. Stockfish +1.3, clearly better for White.} *
 
 [Chapter "Trap: 3.f3 and ...Qh4+"]
 [Side "black"]
