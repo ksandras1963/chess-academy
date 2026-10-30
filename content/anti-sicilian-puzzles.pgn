@@ -1,0 +1,156 @@
+[Puzzle "Bowdler: take first with the knight"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "8...Nxc3"]
+[End "8...Nxc3"]
+[Hint "Before you take back on e7, look at what your knight on e4 can take first."]
+
+1. e4 c5 2. Bc4 e6 3. Nc3 Nc6 4. d3 Nf6 5. Bg5 h6 6. Bh4 Be7 7. Nf3? Nxe4! 8. Bxe7 Nxc3! {[%cal Gc3d1] An in-between move: the knight takes first, and now it hits White's queen.}
+(8... Qxe7? {Takes back at once.} 9. dxe4 {White has won a piece for a pawn. Stockfish: +3.6, winning for White.})
+9. Bxd8 Nxd1 10. Rxd1 Kxd8 {The queens are off, and Black is a pawn up. Stockfish: −1.8, clearly better for Black.}
+*
+
+[Puzzle "Bowdler: the pinned bishop"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "8...d4"]
+[End "8...d4"]
+[Hint "White's bishop on e3 can't move: your queen pins it to the king. Which pawn can attack it?"]
+
+1. e4 c5 2. Bc4 e6 3. Nf3 a6 4. a4 Nf6 5. d3 d5 6. exd5 exd5 7. Bb3 Qe7+ 8. Be3? d4! {[%cal Gd4e3] The pawn attacks the pinned bishop, and White can't save it.}
+9. O-O dxe3 10. Re1 exf2+ 11. Kxf2 {Black is a piece up. Stockfish: −3.8, winning for Black.}
+*
+
+[Puzzle "Bowdler: shut the bishop in"]
+[Type "puzzle"]
+[Theme "Trap a piece"]
+[Solve "5...c4"]
+[End "5...c4"]
+[Hint "White's bishop on b3 has few squares. Can one of your pawns take them away?"]
+
+1. e4 c5 2. Bc4 e6 3. Nf3 a6 4. O-O b5 5. Bb3? c4! {[%csl Rb3] The bishop is trapped: your pawns cover a4 and c4.}
+6. d4 cxb3 7. axb3 {White has only a pawn for the bishop. Stockfish: −2.6, winning for Black.}
+*
+
+[Puzzle "Grand Prix: the queen check on a5"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "8...Qa5+"]
+[End "8...Qa5+"]
+[Hint "White's bishop on b5 has no defender, and White hasn't castled. Can you hit both?"]
+
+1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bb5 Nd4 6. Nxd4 cxd4 7. Ne2 e6 8. d3?? Qa5+! {[%cal Ga5e1,Ga5b5] Check, and the queen hits the bishop.}
+9. c3 Qxb5 {Black has won a piece. Stockfish: −3.2, winning for Black.}
+*
+
+[Puzzle "Grand Prix: the rook sacrifice on f7"]
+[Type "puzzle"]
+[Theme "Checkmating attack"]
+[Solve "13.Rxf7"]
+[End "13.Rxf7"]
+[Hint "Your bishop on c4 and rook on f1 both aim at f7. What if Black's queen takes yours?"]
+
+1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bc4 d6 6. O-O e6 7. f5 exf5 8. d3 Nge7 9. Qe1 O-O 10. Qh4 Qd7 11. Bh6 fxe4 12. Ng5 Qg4 13. Rxf7!! {White leaves the queen hanging. If Black takes it, the rook gives mate on the seventh rank.}
+13... Bd4+ (13... Qxh4 14. Rxg7+ {A double check, from the rook and the bishop on c4.} Kh8 15. Rxh7# {Mate.})
+14. Kh1 Rxf7 15. Bxf7+ Kh8 16. Bg7+! Kxg7 17. Qxh7+ Kf8 18. Rf1 {White wins Black's queen for a rook and keeps attacking. Stockfish: +6.0, winning for White.}
+*
+
+[Puzzle "Closed Sicilian: the knight check on f3"]
+[Type "puzzle"]
+[Theme "Checkmate in 1"]
+[Solve "6...Nf3#"]
+[Hint "White's last pawn move stopped guarding a square next to the king. Can your knight check from there?"]
+
+1. e4 c5 2. Nc3 Nc6 3. Nge2 g6 4. d3 Bg7 5. Be3 Nd4 6. g3?? Nf3# {Mate: the g-pawn no longer guards f3, and White's own pieces block the king.}
+*
+
+[Puzzle "Closed Sicilian: the knight sacrifice on d5"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "8.Nxd5"]
+[End "10.Qh5"]
+[Hint "Black played ...d5 before ...a6. Can you take on d5, even though it looks like a piece goes?"]
+
+1. e4 c5 2. Nc3 Nc6 3. Bb5 Nd4 4. Bc4 e6 5. Nf3 Nf6 6. O-O d5? 7. exd5 exd5 8. Nxd5! {Gives a knight.} Nxd5
+9. Nxd4! {[%hint Clear the way for your queen.] Clears the way for the queen.} cxd4
+10. Qh5! {[%hint Find a double attack.] [%cal Gh5f7,Gh5d5] The queen hits f7 and the knight on d5.} Be6 11. Re1 {[%cal Ge1e6] The bishop on e6 is pinned, and so is the f7 pawn.} Be7 12. Rxe6 {White has won back the piece, with a pawn more and a strong attack. Stockfish: +1.0, clearly better for White.}
+*
+
+[Puzzle "Alapin: the smothered mate"]
+[Type "puzzle"]
+[Theme "Checkmate in 1"]
+[Solve "10.Nd6#"]
+[Hint "The pawn on e7 can't move: your queen pins it. Where can your knight give check?"]
+
+1. e4 c5 2. c3 Nc6 3. d4 cxd4 4. cxd4 d5 5. Nc3 dxe4 6. d5 Ne5 7. Qa4+ Bd7 8. Qxe4 Ng6 9. Nb5 a6?? 10. Nd6# {Smothered mate: the pinned pawn on e7 can't take the knight, and Black's own pieces box in the king.}
+*
+
+[Puzzle "Alapin: check before you take"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "9.Bxc6+"]
+[End "10.Qxd4"]
+[Hint "Black's queen on d4 is guarded only by the knight on c6. Can you remove it with check?"]
+
+1. e4 c5 2. c3 Nc6 3. d4 d5 4. exd5 Qxd5 5. Nf3 cxd4 6. cxd4 Bg4 7. Be2 Bxf3 8. Bxf3 Qxd4?? 9. Bxc6+! {[%cal Gd1d4] An in-between check: it removes the queen's only defender.}
+(9. Qxd4? {Takes back at once.} 9... Nxd4 {Black has won a pawn, but White's lead in development and the two bishops make up for it. Stockfish: −0.1, equal.})
+9... bxc6 10. Qxd4 {White has won the queen for a bishop. Stockfish: +7.2, winning for White.}
+*
+
+[Puzzle "Alapin: give the queen"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "7.Nxe5"]
+[End "7.Nxe5"]
+[Hint "Black's bishop pins your knight to your queen. Is the pin real? Count the checks you would have."]
+
+1. e4 c5 2. c3 Nc6 3. d4 cxd4 4. cxd4 d6 5. Nf3 Bg4 6. d5 Ne5? 7. Nxe5! {Gives the queen: after the bishop check on b5, Black has to give it back.}
+(7. Be2? {Breaks the pin, but the chance to win material is gone.} 7... Nxf3+ 8. Bxf3 Bxf3 9. Qxf3 {Stockfish: +0.2, equal.})
+7... Bxd1 (7... dxe5 8. Qxg4 {White is a piece up. Stockfish: +5.7, winning for White.})
+8. Bb5+ Qd7 9. Bxd7+ Kd8 10. Nxf7+ Kxd7 11. Kxd1 {White is a piece and a pawn up, and the knight takes the rook on h8 next. Stockfish: +6.8, winning for White.}
+*
+
+[Puzzle "Alapin: the Greek gift"]
+[Type "puzzle"]
+[Theme "Attack the king"]
+[Solve "9.Bxh7+"]
+[End "10.Ng5+"]
+[Hint "Black has castled, and the pawn on e5 keeps Black's knight off f6. What guards h7?"]
+
+1. e4 c5 2. c3 e6 3. d4 cxd4 4. cxd4 d5 5. e5 Nc6 6. Nf3 Bb4+ 7. Nc3 Nge7 8. Bd3 O-O? 9. Bxh7+! {The bishop sacrifice on h7.} Kxh7
+10. Ng5+! {[%hint The king is out in the open. Check it again.] [%cal Gd1h5] The queen comes to h5 next.} Kg6
+(10... Kg8 11. Qh5 {[%cal Gh5h7] Qh7 mate is threatened, and Black can only delay it. Stockfish: +5.4, winning for White.})
+11. h4 {[%cal Gh4h5] The h-pawn joins in with h5+, and the king has no shelter. Stockfish: +4.5, winning for White.}
+*
+
+[Puzzle "Delayed Alapin: the knight on e4"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "5.Qa4+"]
+[End "5.Qa4+"]
+[Hint "Black's knight on e4 has no defender. Look for a check."]
+
+1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. h3 Nxe4?? 5. Qa4+! {[%cal Ga4e8,Ga4e4] Check, and the queen hits the knight. Your pawn on c3 opened the way for the queen.}
+5... Nc6 6. Qxe4 {White has won a piece for a pawn. Stockfish: +2.7, winning for White.}
+*
+
+[Puzzle "Smith-Morra: the bishop on f7"]
+[Type "puzzle"]
+[Theme "Win the queen"]
+[Solve "7.Bxf7+"]
+[End "8.Qxd8"]
+[Hint "The queens face each other on the open d-file. Can you pull Black's king away from its queen?"]
+
+1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 d6 5. Bc4 Nf6 6. e5 dxe5?? 7. Bxf7+! {[%cal Gd1d8] The bishop drags the king away from the queen.} Kxf7 8. Qxd8 {White has won the queen for a bishop. Stockfish: +5.9, winning for White.}
+*
+
+[Puzzle "Wing Gambit: the check on e5"]
+[Type "puzzle"]
+[Theme "Win a rook"]
+[Solve "5...Qe5+"]
+[End "5...Qe5+"]
+[Hint "White's pawn left a3, so the rook on a1 is loose. Can your queen give check and hit it?"]
+
+1. e4 c5 2. b4 cxb4 3. a3 d5 4. exd5 Qxd5 5. axb4?? Qe5+! {[%cal Ge5e1,Ge5a1] Check, and the queen hits the rook on a1.}
+6. Be2 Qxa1 {Black has won a rook. Stockfish: −3.9, winning for Black.}
+*

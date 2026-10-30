@@ -71,7 +71,7 @@ export function pct(share) {
     return "under 0.1%"
 }
 
-/** "Italian" from "Italian Game", "Sicilian" from "Sicilian Defense". */
+/** "Italian" from "Italian Game", "Sicilian" from "Sicilian Defense", or the opening's `games` name. */
 export function shortName(opening) {
-    return opening.name.replace(/\s+(Game|Defense|Defence)$/, "")
+    return opening.games || opening.name.replace(/\s+(Game|Defense|Defence)$/, "")
 }

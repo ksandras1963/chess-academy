@@ -1,0 +1,113 @@
+[Puzzle "Dragon: the knight on g4"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "7.Bb5+"]
+[End "7.Bb5+"]
+[Hint "Black's knight hits your bishop on e3. Can you check first, so that the knight loses its defender?"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Ng4? 7. Bb5+! {[%cal Gb5e8] Every block leaves the knight on g4 without help.}
+7... Bd7 {The bishop is now pinned.} (7... Nd7 8. Qxg4 {The knight on d7 blocks the c8 bishop. Stockfish: +5.0, winning for White.}) 8. Qxg4 {White has won a piece. Stockfish: +5.3, winning for White.}
+*
+
+[Puzzle "Yugoslav: the loose bishop on c4"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "11...Nxd4"]
+[End "11...Nxd4"]
+[Hint "Your rook on c8 aims at White's bishop on c4. How many pieces defend it?"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7 10. O-O-O Rc8 11. h4? Nxd4! {[%cal Gc8c4] Removes the knight, and the bishop on c4 is left hanging.}
+12. Bxd4 (12. Qxd4 Ng4 {[%cal Gg4e3,Gg7d4] The knight hits e3 and uncovers the bishop on the queen. Stockfish: −3.6, winning for Black.}) 12... Rxc4 {Black has won a piece. Stockfish: −4.5, winning for Black.}
+*
+
+[Puzzle "Yugoslav: the poisoned rook"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "14...Bf5"]
+[End "14...Bf5"]
+[Hint "White's queen took your rook. Find a move that threatens mate and hits the queen at the same time."]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. O-O-O d5 10. exd5 Nxd5 11. Nxc6 bxc6 12. Nxd5 cxd5 13. Qxd5 Qc7 14. Qxa8? Bf5! {[%cal Gc7c2,Gf8a8] Threatens ...Qxc2 mate, and the rook on f8 now hits the queen.}
+15. Qxf8+ Kxf8 16. Bd3 {Black's queen and bishops are stronger than White's rooks. Stockfish: −1.7, clearly better for Black.}
+*
+
+[Puzzle "Yugoslav: the knight jump to d5"]
+[Type "puzzle"]
+[Theme "Win a pawn"]
+[Solve "12.Nd5"]
+[End "12.Nd5"]
+[Hint "Your king has left c1. If the queens are traded now, is it with check?"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. O-O-O Nxd4 10. Bxd4 Be6 11. Kb1 Qa5? 12. Nd5! {[%cal Gd5e7,Gd2a5] The knight hits e7 and blocks the queen's way, while the queens face each other.}
+12... Qxd2 13. Nxe7+ {An in-between check: White wins a pawn before taking back.} Kh8 14. Rxd2 {IM Asaf Givon: "this is not a check anymore, so that's why the move Kb1 was extremely important." Stockfish: +1.7, clearly better for White.}
+*
+
+[Puzzle "Levenfish: the bishop check"]
+[Type "puzzle"]
+[Theme "Attack the king"]
+[Solve "9.Bb5+"]
+[End "9.Bb5+"]
+[Hint "Black's knight on g4 is loose, and Black's king is still in the center. Look for a check."]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. f4 Bg7 7. e5 dxe5 8. fxe5 Ng4 9. Bb5+! {[%cal Gb5e8] GM Igor Smirnov's evergreen trap.}
+9... Kf8 {Saves the knight, but walks into a discovered attack.} (9... Bd7 10. Qxg4 {The bishop on d7 is pinned. Stockfish: +3.7, winning for White.})
+10. Ne6+ {[%cal Gd1d8] Check, and the queen on d1 hits the queen on d8.} Bxe6 11. Qxd8# {Mate.}
+*
+
+[Puzzle "Levenfish: the knight on d5"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "9.Bb5+"]
+[End "9.Bb5+"]
+[Hint "Black's knight on d5 is defended only by the queen. Can a check cut that defence?"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. f4 Bg7 7. e5 dxe5 8. fxe5 Nd5 9. Bb5+! {[%cal Gb5e8] Check.}
+9... Bd7 {The bishop blocks the queen's defence of d5.} (9... Kf8 10. O-O {[%cal Gf1f8] The rook joins the attack on the f-file. Stockfish: +3.0, winning for White.})
+10. Nxd5 {White has won a piece. Stockfish: +4.0, winning for White.}
+*
+
+[Puzzle "Levenfish: the fork on f4"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "8...Nxf4"]
+[End "8...Nxf4"]
+[Hint "White's g-pawn attacks your knight. But is the pawn on f4 really safe?"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. f4 Bg7 7. e5 Nh5 8. g4? Nxf4! {The knight takes the pawn.}
+9. Bxf4 dxe5 {[%cal Ge5f4,Ge5d4] The pawn forks the bishop and the knight. Stockfish: −1.7, clearly better for Black.}
+*
+
+[Puzzle "Hyperaccelerated: the knight with no square"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "7.e5"]
+[End "7.e5"]
+[Hint "Black's d-pawn is pinned by your queen. Where can the knight on f6 go if you chase it?"]
+
+1. e4 c5 2. Nf3 g6 3. d4 cxd4 4. Qxd4 Nf6 5. Nc3 Nc6 6. Qa4 Bg7? 7. e5! {[%cal Ge5f6] Chases the knight.}
+7... Ng8 {The knight has to go home.} (7... Ng4 8. Qxg4 {Stockfish: +4.0, winning for White.}) (7... Nh5 8. g4 {[%cal Gg4h5] The knight is trapped. Stockfish: +3.3, winning for White.})
+8. Bf4 {White has a big lead in development. Stockfish: +1.0, clearly better for White.}
+*
+
+[Puzzle "Hyperaccelerated: the poisoned bishop"]
+[Type "puzzle"]
+[Theme "Win the queen"]
+[Solve "9.Bxf7+"]
+[End "9.Bxf7+"]
+[Hint "Black's queen is on e4 and the king is still on e8. Can a sacrifice open the way for a knight check?"]
+
+1. e4 c5 2. Nf3 g6 3. c3 d5 4. exd5 Qxd5 5. d4 Bg7 6. Na3 cxd4 7. Bc4 Qe4+ 8. Be3 dxe3?? 9. Bxf7+! {[%cal Gf7e8] Drags the king to f7.}
+9... Kxf7 (9... Kf8 10. Qd8+ Kxf7 11. Ng5+ {[%cal Gg5e4] Check, and the knight hits the queen. Stockfish: +8.6, winning for White.})
+10. Ng5+ {[%cal Gg5e4] Check, and the knight hits the queen. Stockfish: +4.8, winning for White.}
+*
+
+[Puzzle "Hyperaccelerated: take the bishop"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "6...axb5"]
+[End "6...axb5"]
+[Hint "White pushed the e-pawn to chase your knight. Is the bishop on b5 safe?"]
+
+1. e4 c5 2. Nf3 g6 3. d4 cxd4 4. Qxd4 Nf6 5. Bb5 a6 6. e5? axb5! {Take the bishop: the knight can wait.}
+7. exf6 Nc6 {Stjepan Tomić: don't take back on f6, gain time on the queen first.} 8. fxe7 Qxe7+ 9. Qe3 Qxe3+ 10. Bxe3 b4 {Black has the bishop pair and play on the queenside. Stockfish: −0.4, slightly better for Black.}
+*

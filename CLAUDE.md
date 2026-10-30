@@ -9,6 +9,11 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - One course teaches both sides. There are no separate White and Black courses, only separate drills: "Drill as White" and "Drill as Black".
 - Keep text short and concrete. No list of abstract points ("What you need to know"); what a reader needs about each variation goes in the table.
 
+## Who the courses are for
+
+- Every course is for players rated under 2000. In Kumar's words: "General rule for all courses: this must be for those < 2000. No need to go into uncommon variations even in Advanced. Primarily rely on the variations discussed on videos and transcripts."
+- So Advanced holds the common side lines that the presenters' videos discuss, not every line the database or the engine offers. A line no presenter discusses goes in only when club players meet it often. The map shows only the variations the course teaches. On the first Anti-Sicilian map, which showed every side line, Kumar wrote: "This is way too much for < 2000 player."
+
 ## Introduction page (an opening's overview page), in this order
 
 1. Short text
@@ -28,7 +33,7 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 
 ## Basic lines and "How often"
 
-- Basic holds about 10 lines in all: only the main line of each variation played in about 10% or more of your games (9.5% and up). Their side lines, and everything else, go to Advanced, grouped by variation name, most common first. In Kumar's words: "In general keep Basic lines to about 10. All else goes into Advanced." For the Ruy Lopez he kept only each variation's main line, with the Anti-Berlin's main line for both White and Black: 10 lines. He asked for every course to be cut to this now. Kumar makes exceptions himself (the Caro-Kann keeps its 9 Basic variations, but only each one's main line for White and for Black, 18 lines in all, in his words "Remove the other 5 lines to Advanced"; the French keeps its 12, the main lines of its six variations for both sides, in his words "Basic lines re fine as is"; by his choice, so leave them as they are). The King's Indian was cut to 10 lines too, by his choice: its Panno and Sämisch Gambit moved to Advanced.
+- Basic holds about 10 lines in all: only the main line of each variation played in about 10% or more of your games (9.5% and up). Their side lines, and everything else, go to Advanced, grouped by variation name, most common first. In Kumar's words: "In general keep Basic lines to about 10. All else goes into Advanced." For the Ruy Lopez he kept only each variation's main line, with the Anti-Berlin's main line for both White and Black: 10 lines. He asked for every course to be cut to this now. Kumar makes exceptions himself (the Caro-Kann keeps its 9 Basic variations, but only each one's main line for White and for Black, 18 lines in all, in his words "Remove the other 5 lines to Advanced"; the French keeps its 12, the main lines of its six variations for both sides, in his words "Basic lines re fine as is"; by his choice, so leave them as they are). The King's Indian was cut to 10 lines too, by his choice: its Panno and Sämisch Gambit moved to Advanced. The Sicilian's anti-Sicilians are one course, the Anti-Sicilian Course, with Basic chosen by Kumar: "Only Bowdler 1 line, Grand Prix 1 line, Closed 1 line, Alapin 1 line, Smith Morra 2 lines in Basic. Everything else (up to 40 lines in Advanced)."
 - Every Basic variation is played "as White" or "as Black": its "How often" says so ("40% as White", "9% as Black"). A variation with neither goes to Advanced. In Kumar's words: "Remove any variation that does not have either 'as white' or 'as black' from the basic variations and move them to the advanced variations." He asked for this in every course.
 - "How often", in tables and chapter bars, is the share of your games in the opening that reach the line, from the side you play in it: the product of the opponent's move frequencies from the course start, in Lichess rated rapid and classical games between players averaging 1800 to 2199 (`content/opening-stats.json`). A table counts all of the line's move orders.
 
@@ -74,6 +79,10 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - Moves are written in letters (Nf3) by default, everywhere in the app. Figurines (♘f3) stay as a choice in Settings. In Kumar's words: "Could you make letters as default for moves like Nf3, instead of figurines. However keep the figurines in the settings in case user prefers that. This applies to whole chess app."
 - Write moves in letters in the course files too; the app adds figurines for learners who choose them.
 
+## Puzzles
+
+- A puzzle can come from a line the course does not teach. In Kumar's words: "General rule for all courses: puzzles can have moves not covered in courses."
+
 ## Drills
 
 - No daily limit: every line is in the drill from the start, and the learner decides how many to drill.
@@ -95,6 +104,12 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - Usually 4 per course; 5 at most, only when needed.
 - No Wikipedia.
 - No source whose author is unknown: a video must name its presenter, not only its channel.
+- The References need not credit every presenter whose videos were used. In Kumar's words: "No need to acknowledge each presenter. Maximum 5 refs per subject."
+
+## Presenters, Stockfish and Lichess
+
+- When writing a course from Kumar's video transcripts (his Dropbox folder for the opening), read all of them first, especially for traps, and give the presenters' views at least as much weight as Stockfish and the Lichess statistics. In Kumar's words: "Give equal or more weight to what the presenters are saying as their opinion - compared to stockfish / lichess results."
+- So a move or plan the presenters recommend can stay even when Stockfish slightly prefers another (mark it `[%engine ok]` for the checker), and a line they teach can be taught even when Lichess shows it is rarer. Stockfish still checks that no line loses material by mistake.
 
 ## Back buttons
 

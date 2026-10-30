@@ -619,21 +619,232 @@
             ]
         },
         {
-            "id": "sicilian",
-            "name": "Sicilian Defense",
+            "id": "anti-sicilian",
+            "name": "Anti-Sicilian",
             "eco": "B20",
             "moves": "1. e4 c5",
-            "summary": "Black fights for d4 from the side, accepting an unbalanced game in return for winning chances.",
+            "games": "Sicilian",
+            "puzzles": "content/anti-sicilian-puzzles.pgn",
+            "summary": "White avoids the Open Sicilian: the early bishop to c4, the Grand Prix, the Closed Sicilian, the Alapin, the Smith-Morra Gambit, and after the knight move the Rossolimo and the Moscow.",
             "courses": [
                 {
-                    "id": "sicilian-white",
-                    "side": "white",
-                    "repertoire": "Alapin (2.c3)"
+                    "id": "anti-sicilian",
+                    "side": "both",
+                    "file": "content/anti-sicilian.pgn",
+                    "repertoire": "As White: the Grand Prix, the Closed Sicilian, the Alapin and the Smith-Morra Gambit. As Black: the e-pawn and d-pawn against the early bishop, a fianchetto against the Grand Prix and the Closed Sicilian, an early d-pawn strike against the Alapin, and a safe set-up against the Smith-Morra.",
+                    "summary": "Why the name: the main line of the Sicilian is the Open Sicilian, in which White develops the king's knight, opens the center with the d-pawn and takes back on d4 with the knight. Black's best-known systems, such as the Najdorf and the Dragon, all come from it. An anti-Sicilian is any other White system: it avoids the Open Sicilian, and with it the long, well-studied lines that Sicilian players prepare. This course teaches the ones club players meet most often.",
+                    "why": {
+                        "text": "As White, an anti-Sicilian lets you choose the battlefield. The Alapin and the Smith-Morra Gambit fight for the center at once, the Grand Prix aims straight at Black's king, and the Closed Sicilian keeps the center shut for a slow kingside attack. Each has one set of plans that you use in almost every game, so there is far less to learn than in the Open Sicilian, and Black's natural moves often run into traps.\n\nAs Black, about two of every three Sicilian games against club players are anti-Sicilians. This course answers White's most common second moves, and Advanced adds the Rossolimo and the Moscow, which come after the knight move. Each answer is simple, safe and quick to learn, and against the weakest of them, the early bishop to c4, Black is equal at once."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Bowdler Attack: 2...e6",
+                                "9% as Black",
+                                "White: Develop quickly and castle.\nBlack: Block the bishop with a pawn, then chase it and take the center."
+                            ],
+                            [
+                                "Grand Prix Attack: 3...g6",
+                                "12% as White\n2% as Black",
+                                "White: Trade the light-squared bishop for a knight, then attack on the kingside.\nBlack: Keep the bishop pair and gain space on the queenside."
+                            ],
+                            [
+                                "Closed Sicilian: 3.g3",
+                                "43% as White\n1% as Black",
+                                "White: Keep the center closed and attack on the kingside.\nBlack: Fianchetto, then push the b-pawn and attack on the queenside."
+                            ],
+                            [
+                                "Alapin, Barmen Defense: 2...d5",
+                                "20% as White\n7% as Black",
+                                "White: Develop fast and use the extra space before Black blockades the center pawn.\nBlack: Bring the bishop out early, then blockade White's weak center pawn and trade queens."
+                            ],
+                            [
+                                "Smith-Morra Gambit: 5...d6",
+                                "13% as White",
+                                "White: Develop every piece quickly and break open the center.\nBlack: Develop carefully and get the king safe before the center opens."
+                            ],
+                            [
+                                "Smith-Morra, Paulsen Formation: 6...a6",
+                                "4% as Black",
+                                "White: Develop fast and look for tactics in the center.\nBlack: Take the pawn and keep White's pieces out with careful pawn moves."
+                            ]
+                        ],
+                        "note": "How often: the share of your Sicilian games that reach the line, from the side you play in it, counting every move order. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The common side lines are in Advanced, with the Rossolimo and the Moscow."
+                    }
+                }
+            ],
+            "furtherStudy": [
+                {
+                    "title": "The Alapin (c3) ⎸Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=VGP0qWscORM"
                 },
                 {
-                    "id": "sicilian-black",
-                    "side": "black",
-                    "repertoire": "Accelerated Dragon"
+                    "title": "DESTROY the Sicilian Defense in 10 Moves | The Alapin Variation",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=WisFv1fkRy4"
+                },
+                {
+                    "title": "Grand Prix Attack ⎸Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=hqJOyV9_Bms"
+                },
+                {
+                    "title": "Smith-Morra Gambit ⎸Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=OTcd3onnOWA"
+                },
+                {
+                    "title": "A Simple Sicilian Defense Repertoire for Black",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=DxHul74NsDY"
+                }
+            ]
+        },
+        {
+            "id": "sicilian-dragon",
+            "name": "Sicilian Dragon",
+            "eco": "B20",
+            "moves": "1. e4 c5",
+            "games": "Sicilian",
+            "puzzles": "content/sicilian-dragon-puzzles.pgn",
+            "summary": "Black puts the king's bishop on the long diagonal, aimed at White's queenside: the Dragon, the Accelerated Dragon and the Hyperaccelerated Dragon.",
+            "courses": [
+                {
+                    "id": "sicilian-dragon",
+                    "side": "both",
+                    "file": "content/sicilian-dragon.pgn",
+                    "repertoire": "As White: the Yugoslav Attack against the Dragon, the Maróczy Bind against the Accelerated Dragon, and the queen recapture against the Hyperaccelerated Dragon. As Black: the Dragon, with the central pawn break against early queenside castling, and the Accelerated and Hyperaccelerated move orders.",
+                    "summary": "Three move orders, one idea: Black fianchettoes the king's bishop on g7. In the Dragon, Black moves the d-pawn one square and brings out the king's knight before the fianchetto, so White can castle long and storm the kingside in the Yugoslav Attack. In the Accelerated Dragon, Black brings out the queen's knight and fianchettoes before moving the d-pawn; the pawn can then reach d5 in one move, which spoils the Yugoslav Attack, and White's best answer is the Maróczy Bind, with pawns on c4 and e4. In the Hyperaccelerated Dragon, Black fianchettoes on move 2: most games turn into the Accelerated Dragon, and White's one try of its own is to take back on d4 with the queen. The name comes from Fyodor Dus-Chotimirsky, to whom the pawn shape looked like the Draco constellation.",
+                    "why": {
+                        "text": "As White, the Dragon gives you a clear plan: castle on the queenside, push the kingside pawns and trade off Black's best bishop. Against the Accelerated Dragon, the Maróczy Bind gives you a lasting edge in space at almost no risk. Club players often go wrong against both, and the traps in this course punish the most common mistakes.\n\nAs Black, the Dragon is one of the sharpest ways to play for a win against the king's pawn: the bishop on g7 and the open c-file give real counterattacking chances. Stjepan Tomić calls it \"probably one of the best ways for black to fight for an advantage against e4 players\". The Accelerated and Hyperaccelerated move orders avoid the Yugoslav Attack, at the price of allowing the Maróczy Bind."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Yugoslav Attack, 9.O-O-O: 9...d5",
+                                "4% as Black",
+                                "White: Castle long and attack the king with the kingside pawns.\nBlack: Strike in the center at once and counterattack on the queenside."
+                            ],
+                            [
+                                "Yugoslav Attack: 9.Bc4",
+                                "4% as White",
+                                null
+                            ],
+                            [
+                                "Dragon Variation: 6.Bc4",
+                                "5% as Black",
+                                "White: Castle short and use the bishop against f7.\nBlack: Develop as usual and press on the c-file."
+                            ],
+                            [
+                                "Classical Variation: 6.Be2",
+                                "3% as Black",
+                                "White: Castle short and play slowly in the center.\nBlack: Win the bishop pair and play on the queenside."
+                            ],
+                            [
+                                "Levenfish Variation: 6.f4",
+                                "1% as Black",
+                                "White: Push the e-pawn to chase Black's knight.\nBlack: Stop the e-pawn and build a strong pawn center."
+                            ],
+                            [
+                                "Accelerated Dragon, Maróczy Bind: 5.c4",
+                                "9% as White\n3% as Black",
+                                "White: Hold the center with pawns and keep Black cramped.\nBlack: Trade a pair of knights and stay solid; don't wait passively."
+                            ],
+                            [
+                                "Hyperaccelerated Dragon: 4.Qxd4",
+                                "4% as White\n6% as Black",
+                                "White: Gain time on Black's pieces and push the e-pawn.\nBlack: Develop with gain of time and don't move the f6 knight too early."
+                            ]
+                        ],
+                        "note": "How often: the share of your Sicilian games that reach the line, from the side you play in it, counting every move order. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced: the Topalov Variation, the Fianchetto, and the Accelerated and Hyperaccelerated Dragon's other lines."
+                    }
+                }
+            ],
+            "furtherStudy": [
+                {
+                    "title": "Sicilian Dragon (part 1), Yugoslav Attack | Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=Q4_OTquKti0"
+                },
+                {
+                    "title": "Sicilian Dragon (part 2), Levenfish, Fianchetto, Classical | Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=Up_bhR0McTQ"
+                },
+                {
+                    "title": "Accelerated Dragon · Basics, Strategy, Theory, Maroczy Bind and all the sidelines",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=9uBJtJY96Pw"
+                },
+                {
+                    "title": "Hyperaccelerated Dragon · Basics, Strategy, Theory, Transpositions",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=TfEVReirrtI"
+                },
+                {
+                    "title": "How to play the Sicilian Dragon variation?",
+                    "by": "IM Asaf Givon",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=am6LTtJqntw"
+                }
+            ]
+        },
+        {
+            "id": "sicilian-najdorf",
+            "name": "Sicilian Najdorf",
+            "eco": "B90",
+            "moves": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6",
+            "summary": "Black's most popular Open Sicilian: a quiet pawn move that keeps White's pieces off b5 and prepares play in the center and on the queenside. With the Classical and Scheveningen Variations.",
+            "courses": [
+                {
+                    "id": "sicilian-najdorf",
+                    "side": "both"
+                }
+            ]
+        },
+        {
+            "id": "sicilian-taimanov-kan",
+            "name": "Sicilian Taimanov and Kan",
+            "eco": "B40",
+            "moves": "1. e4 c5 2. Nf3 e6",
+            "summary": "Black moves the e-pawn one square and keeps the pieces flexible, ready to strike back in the center later. With the Four Knights Variation.",
+            "courses": [
+                {
+                    "id": "sicilian-taimanov-kan",
+                    "side": "both"
+                }
+            ]
+        },
+        {
+            "id": "sicilian-sveshnikov-kalashnikov",
+            "name": "Sicilian Sveshnikov and Kalashnikov",
+            "eco": "B32",
+            "moves": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4",
+            "summary": "Black pushes the e-pawn two squares to chase White's knight, accepting a hole in the center in return for active pieces.",
+            "courses": [
+                {
+                    "id": "sicilian-sveshnikov-kalashnikov",
+                    "side": "both"
                 }
             ]
         },
@@ -1393,6 +1604,106 @@
                     ]
                 ],
                 "note": "How often: the share of your Caro-Kann games that reach the line, from the side that faces it. As White, it counts your games with the system the line belongs to: the Advance, the Exchange, the Main Line, the Two Knights or the Maróczy. \"White's choice\" or \"Black's choice\": that side picks the line, so it can play it in any game. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. The Maróczy (Fantasy) is rarer, but it is in Basic by choice. Everything else, such as the quiet Exchange lines, the Tal Variation and the Karpov Variation, is in the Advanced section."
+            }
+        },
+        {
+            "id": "sicilian",
+            "parent": "e4",
+            "name": "Sicilian Defense",
+            "heading": "Sicilian Defense Introduction",
+            "eco": "B20–B99",
+            "moves": "1. e4 c5",
+            "file": "content/sicilian-overview.pgn",
+            "count": "15 variations",
+            "compact": true,
+            "course": "anti-sicilian sicilian-dragon sicilian-najdorf sicilian-taimanov-kan sicilian-sveshnikov-kalashnikov",
+            "subtitle": "The main variations, and the five courses that teach them.",
+            "summary": "Black answers the king's pawn with the c-pawn and fights for the center from the side: the second most common reply at club level, after the e-pawn. When White opens the center, Black trades the c-pawn for White's d-pawn, keeping an extra center pawn for the long run, while White gets a lead in development for an early attack. In about two games in three, though, White avoids this Open Sicilian with an anti-Sicilian, such as the early bishop to c4, the Alapin or the Grand Prix.",
+            "table": {
+                "after": "map",
+                "columns": [
+                    "Variation",
+                    "How often",
+                    "What to do"
+                ],
+                "rows": [
+                    [
+                        "Bowdler Attack: 2.Bc4 (or 3.Bc4)",
+                        "White's choice\n17% as Black",
+                        "White: Develop quickly and castle.\nBlack: Block the bishop with a pawn, then chase it and take the center."
+                    ],
+                    [
+                        "Alapin Variation: 2.c3 (or 3.c3)",
+                        "White's choice\n13% as Black",
+                        "White: Build a full pawn center, then develop calmly.\nBlack: Attack White's center at once, before it is complete."
+                    ],
+                    [
+                        "Grand Prix Attack: 2.f4, or 2.Nc3 and 3.f4",
+                        "White's choice\n8% as Black",
+                        "White: Push the kingside pawns and attack the king.\nBlack: Develop quickly and strike back in the center."
+                    ],
+                    [
+                        "Najdorf Variation: 5...a6",
+                        "18% as White\n29% as Black",
+                        "White: Castle on the other side and attack with the kingside pawns.\nBlack: Counterattack on the queenside and keep control of the center."
+                    ],
+                    [
+                        "Rossolimo Attack: 3.Bb5",
+                        "White's choice\n8% as Black",
+                        "White: Pin or trade a defender with the bishop, then build the center slowly.\nBlack: Develop calmly and keep the position flexible."
+                    ],
+                    [
+                        "Moscow Variation: 3.Bb5+",
+                        "White's choice\n4% as Black",
+                        null
+                    ],
+                    [
+                        "Taimanov Variation: 4...Nc6",
+                        "8% as White\n30% as Black",
+                        "White: Gain space and keep Black cramped.\nBlack: Keep the pieces flexible and strike back in the center later."
+                    ],
+                    [
+                        "Kan Variation: 4...a6",
+                        "5% as White\n30% as Black",
+                        null
+                    ],
+                    [
+                        "Smith-Morra Gambit: 3.c3",
+                        "White's choice\n4% as Black",
+                        "White: Give a pawn for fast development and open lines.\nBlack: Take the pawn, develop carefully and castle quickly."
+                    ],
+                    [
+                        "Accelerated Dragon: 4...g6",
+                        "9% as White\n27% as Black",
+                        "White: Attack the king, or cramp Black with a pawn grip on the center.\nBlack: Use the long-diagonal bishop and counterattack on the queenside."
+                    ],
+                    [
+                        "Dragon Variation: 5...g6",
+                        "6% as White\n29% as Black",
+                        null
+                    ],
+                    [
+                        "Closed Sicilian: 2.Nc3",
+                        "White's choice\n4% as Black",
+                        "White: Keep the center closed and attack slowly on the kingside.\nBlack: Copy White's setup and play on the queenside."
+                    ],
+                    [
+                        "Sveshnikov Variation: 5...e5",
+                        "4% as White\n25% as Black",
+                        "White: Put a knight in the hole in Black's center.\nBlack: Accept the hole in return for active pieces and quick pawn breaks."
+                    ],
+                    [
+                        "Kalashnikov Variation: 5...d6",
+                        "7% as White\n11% as Black",
+                        null
+                    ],
+                    [
+                        "Others: Classical, Four Knights, Scheveningen",
+                        "1–5% as White\n26–29% as Black",
+                        "White: Develop quickly and attack on the kingside.\nBlack: Develop solidly, then counterattack on the queenside."
+                    ]
+                ],
+                "note": "How often: the share of your Sicilian games that reach the line, from the side you play, counting every move order. As White, it is how often Black's moves lead there when you steer toward it; as Black, how often White's moves do. \"White's choice\": White picks the anti-Sicilian, so it can play it in any game. As Black, the Bowdler and Alapin rows count White's move on move 2 or, after 2.Nf3, on move 3, averaged over Black's usual second moves; the Rossolimo counts the games of players who answer 2.Nf3 with 2...Nc6, and the Moscow those who play 2...d6. The Closed Sicilian row counts the 2.Nc3 games that go on with neither 3.f4 (the Grand Prix) nor 3.Nf3 (which usually transposes). Source: Lichess rated rapid and classical games between players averaging 1800 to 2199."
             }
         },
         {
