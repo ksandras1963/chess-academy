@@ -4,7 +4,7 @@ Generated 2026-10-28 23:54 · engine Stockfish, depth 18
 
 **No errors.**
 
-The Nimzo-Indian course section is from a separate run on 2026-10-29 with Stockfish 16 at depth 18 (no errors), after its Basic lines were cut to 10.
+The Nimzo-Indian course section is from a separate run on 2026-10-30 with Stockfish 16 at depth 18 (no errors), after its Advanced side lines under 5% that no video discusses were removed.
 
 ## Italian Game — both sides (`italian`)
 
@@ -783,7 +783,7 @@ None.
 
 ## Anti-Sicilian — both sides (`anti-sicilian`)
 
-54 chapters, 42 drillable lines (basic 9, traps 16, advanced 17), 416 learner moves.
+53 chapters, 41 drillable lines (basic 9, traps 16, advanced 16), 409 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -799,7 +799,6 @@ None.
 | Grand Prix Attack: 5.Bc4 | 5.Bc4 | Sicilian Defense: Grand Prix Attack | B23 | ok |
 | Grand Prix Attack: 6.Nxd4 | 6.Nxd4 | Sicilian Defense: Grand Prix Attack | B23 | ok |
 | Alapin, 2...Nc6: 5.Nc3 | 5.Nc3 | Sicilian Defense: Alapin Variation | B22 | ok |
-| Alapin, Barmen Defense: 3.e5 | 3.e5 | Sicilian Defense: Alapin Variation | B22 | ok |
 | Smith-Morra Gambit: 5...e6 | 5...e6 | Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation | B21 | ok |
 | Smith-Morra Gambit: 9...e5 | 9...e5 | Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation | B21 | ok |
 | Smith-Morra Gambit Declined: 3...d3 and 3...Nf6 | 3...d3 | Sicilian Defense: Smith-Morra Gambit Declined, Push Variation | B21 | ok |
@@ -853,7 +852,6 @@ None.
 | Grand Prix Attack: 5.Bc4 (6.e5) | 0.34 | B23 Sicilian Defense: Grand Prix Attack |
 | Grand Prix Attack: 6.Nxd4 (Main line) | 0.89 | B23 Sicilian Defense: Grand Prix Attack |
 | Alapin, 2...Nc6: 5.Nc3 (Main line) | 0.18 | B22 Sicilian Defense: Alapin Variation |
-| Alapin, Barmen Defense: 3.e5 (Main line) | 0.11 | B22 Sicilian Defense: Alapin Variation |
 | Smith-Morra Gambit: 5...e6 (Main line) | 0.62 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation |
 | Smith-Morra Gambit: 9...e5 (Main line) | 0.00 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation |
 | Smith-Morra Gambit Declined: 3...d3 and 3...Nf6 (Main line) | 0.52 | B21 Sicilian Defense: Smith-Morra Gambit Declined, Push Variation |
@@ -1017,7 +1015,7 @@ None.
 
 ## Sicilian Taimanov and Kan — both sides (`sicilian-taimanov-kan`)
 
-36 chapters, 32 drillable lines (basic 9, traps 6, advanced 17), 323 learner moves.
+28 chapters, 22 drillable lines (basic 9, traps 6, advanced 7), 230 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -1030,19 +1028,11 @@ None.
 | Kan, Maróczy Bind: 5.c4 | 5.c4 | Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation | B41 | ok |
 | Kan, Modern Variation: 5.Bd3 | 5.Bd3 | Sicilian Defense: Kan Variation, Modern Variation | B42 | ok |
 | Four Knights: 6.Ndb5 | 6.Ndb5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation | B33 | ok |
-| Taimanov: 6.Ndb5 | 6.Ndb5 | Sicilian Defense: Taimanov Variation, Bastrikov Variation | B47 | ok |
-| Taimanov: 7.Be2 | 7.Be2 | Sicilian Defense: Scheveningen Variation, Classical Main Line | B85 | ok |
 | Taimanov: 5.c4 | 5.c4 | Sicilian Defense: Taimanov Variation | B44 | ok |
-| Taimanov: 5.Be3 | 5.Be3 | Sicilian Defense: Taimanov Variation | B44 | ok |
 | Taimanov, Szén Variation: 5.Nb5 | 5.Nb5 | Sicilian Defense: Taimanov Variation, Szén Variation | B44 | ok |
-| Taimanov: 5.Nxc6 bxc6 6.Bd3 | 6.Bd3 | Sicilian Defense: Taimanov Variation | B44 | ok |
 | Taimanov, English Attack: 9...O-O | 9...O-O | Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack | B48 | ok |
-| Kan: 6.Be2 | 6.Be2 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
 | Kan: 6.Be3 Bb4 7.Bd2 | 7.Bd2 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
-| Kan, Maróczy Bind: 6...Bb4 | 6...Bb4 | Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation | B41 | ok |
-| Kan, Maróczy Bind: 7.Be2 | 7.Be2 | Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation | B41 | ok |
 | Kan, 6.Be3 Bb4: 9.exd5 | 9.exd5 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
-| Four Knights: 6...Bb4 | 6...Bb4 | Sicilian Defense: Four Knights Variation | B45 | ok |
 | Pin Variation: 5...Bb4 | 5...Bb4 | Sicilian Defense: Pin Variation, Koch Variation | B40 | ok |
 | Trap: 9.Bd3? and ...e5 in the Kan | 9...e5 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
 | Trap: 8.a3? and ...Nxe4 in the Kan | 8...Nxe4 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
@@ -1071,21 +1061,11 @@ None.
 | Kan, Maróczy Bind: 5.c4 (Maróczy Bind, as Black) | -0.51 | B41 Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation |
 | Kan, Modern Variation: 5.Bd3 (Main line) | -0.60 | B42 Sicilian Defense: Kan Variation, Modern Variation |
 | Four Knights: 6.Ndb5 (Main line) | 0.25 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation |
-| Taimanov: 6.Ndb5 (Main line) | -0.25 | B47 Sicilian Defense: Taimanov Variation, Bastrikov Variation |
-| Taimanov: 6.Ndb5 (7.Be3) | -0.35 | B47 Sicilian Defense: Taimanov Variation, Bastrikov Variation |
-| Taimanov: 7.Be2 (Main line) | -0.23 | B85 Sicilian Defense: Scheveningen Variation, Classical Main Line |
 | Taimanov: 5.c4 (Main line) | -0.17 | B44 Sicilian Defense: Taimanov Variation |
-| Taimanov: 5.Be3 (Main line) | 0.00 | B44 Sicilian Defense: Taimanov Variation |
-| Taimanov: 5.Be3 (7.f3) | 0.36 | B44 Sicilian Defense: Taimanov Variation |
 | Taimanov, Szén Variation: 5.Nb5 (Main line) | -0.32 | B44 Sicilian Defense: Taimanov Variation, Szén Variation |
-| Taimanov: 5.Nxc6 bxc6 6.Bd3 (Main line) | 0.00 | B44 Sicilian Defense: Taimanov Variation |
 | Taimanov, English Attack: 9...O-O (Main line) | 0.58 | B48 Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack |
-| Kan: 6.Be2 (Main line) | -0.43 | B43 Sicilian Defense: Kan Variation, Knight Variation |
 | Kan: 6.Be3 Bb4 7.Bd2 (Main line) | -0.16 | B43 Sicilian Defense: Kan Variation, Knight Variation |
-| Kan, Maróczy Bind: 6...Bb4 (Main line) | 0.20 | B41 Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation |
-| Kan, Maróczy Bind: 7.Be2 (Main line) | -0.53 | B41 Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation |
 | Kan, 6.Be3 Bb4: 9.exd5 (Main line) | 0.87 | B43 Sicilian Defense: Kan Variation, Knight Variation |
-| Four Knights: 6...Bb4 (Main line) | 0.40 | B45 Sicilian Defense: Four Knights Variation |
 | Pin Variation: 5...Bb4 (Main line) | 1.04 | B40 Sicilian Defense: Pin Variation, Koch Variation |
 | Pin Variation: 5...Bb4 (9...O-O) | 1.32 | B40 Sicilian Defense: Pin Variation, Koch Variation |
 | Trap: 9.Bd3? and ...e5 in the Kan (Main line) | 2.74 | B43 Sicilian Defense: Kan Variation, Knight Variation |
@@ -1094,6 +1074,66 @@ None.
 | Trap: 5.Bf4? and ...e5 in the Kan (Main line) | 2.46 | B41 Sicilian Defense: Kan Variation |
 | Trap: 6.e5? and ...Qa5+ in the Kan (Main line) | 1.21 | B42 Sicilian Defense: Kan Variation, Modern Variation |
 | Trap: 6...a6? and 7.Nd6+ in the Four Knights (Main line) | 1.29 | B45 Sicilian Defense: Four Knights Variation |
+
+## Sicilian Sveshnikov and Kalashnikov — both sides (`sicilian-sveshnikov-kalashnikov`)
+
+27 chapters, 21 drillable lines (basic 9, traps 7, advanced 5), 249 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Sveshnikov Main Line: 9.Nd5 | 9.Nd5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation | B33 | ok |
+| Sveshnikov: 6.Nxc6 | 6.Nxc6 | Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation | B33 | ok |
+| Sveshnikov: 6.Nb3 | 6.Nb3 | Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation | B33 | ok |
+| Kalashnikov Main Line: 8.Nd5 | 8.Nd5 | Sicilian Defense: Kalashnikov Variation | B32 | ok |
+| Kalashnikov: 5.Nxc6 | 5.Nxc6 | Sicilian Defense: Löwenthal Variation | B32 | ok |
+| Kalashnikov: 5.Nb3 | 5.Nb3 | Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation | B33 | ok |
+| Löwenthal: 6.Nd6+ | 6.Nd6+ | Sicilian Defense: Löwenthal Variation | B32 | ok |
+| Sveshnikov: 8.Bxf6 | 8.Bxf6 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation | B33 | ok |
+| Sveshnikov: 7.Nd5 | 7.Nd5 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Sveshnikov: 6.Nf3 | 6.Nf3 | Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation | B33 | ok |
+| Sveshnikov: 6.Nf5 | 6.Nf5 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Sveshnikov, Bird Variation: 8...Be6 | 8...Be6 | Sicilian Defense: Lasker-Pelikan Variation, Bird Variation | B33 | ok |
+| Trap: 9...Qxf6? and 10.Nd5 | 10.Nd5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation | B33 | ok |
+| Trap: 7...h6? and 8.Bxf6 | 8.Bxf6 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Trap: 9...a6? and 10.Qa4 | 10.Qa4 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Trap: 6...Be7? and 7.Nd6+ | 7.Nd6+ | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Trap to avoid: 14...axb5? and 15.Bxb5+ | 14.Nxb5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation | B33 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Sveshnikov Main Line: 9.Nd5 (Sveshnikov Main Line, as White) | 0.31 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation |
+| Sveshnikov Main Line: 9.Nd5 (Sveshnikov Main Line, as Black) | -0.31 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation |
+| Sveshnikov: 6.Nxc6 (Main line) | 0.05 | B33 Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation |
+| Sveshnikov: 6.Nb3 (Main line) | 0.42 | B33 Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation |
+| Kalashnikov Main Line: 8.Nd5 (Kalashnikov Main Line, as White) | 0.43 | B32 Sicilian Defense: Kalashnikov Variation |
+| Kalashnikov Main Line: 8.Nd5 (Kalashnikov Main Line, as Black) | -0.43 | B32 Sicilian Defense: Kalashnikov Variation |
+| Kalashnikov: 5.Nxc6 (Main line) | 0.05 | B32 Sicilian Defense: Löwenthal Variation |
+| Kalashnikov: 5.Nb3 (Main line) | 0.42 | B33 Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation |
+| Löwenthal: 6.Nd6+ (Main line) | 0.50 | B32 Sicilian Defense: Löwenthal Variation |
+| Sveshnikov: 8.Bxf6 (Main line) | -0.02 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation |
+| Sveshnikov: 7.Nd5 (Main line) | -0.43 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Sveshnikov: 6.Nf3 (Main line) | 0.15 | B33 Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation |
+| Sveshnikov: 6.Nf5 (Main line) | -0.28 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Sveshnikov, Bird Variation: 8...Be6 (Main line) | 0.94 | B33 Sicilian Defense: Lasker-Pelikan Variation, Bird Variation |
+| Trap: 9...Qxf6? and 10.Nd5 (Main line) | 1.51 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation |
+| Trap: 7...h6? and 8.Bxf6 (Main line) | 4.10 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 7...h6? and 8.Bxf6 (8...Qxf6) | 5.01 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 9...a6? and 10.Qa4 (Main line) | 100.00 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 9...a6? and 10.Qa4 (10...axb5) | 2.01 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 6...Be7? and 7.Nd6+ (Main line) | 1.67 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap to avoid: 14...axb5? and 15.Bxb5+ (Main line) | -0.16 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation |
 
 ## Ruy Lopez — both sides (`ruy-lopez`)
 
@@ -1811,7 +1851,7 @@ None.
 
 ## Nimzo-Indian Defense — both sides (`nimzo-indian`)
 
-47 chapters, 63 drillable lines (basic 10, traps 9, advanced 44), 639 learner moves.
+47 chapters, 50 drillable lines (basic 10, traps 9, advanced 31), 526 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -1826,22 +1866,22 @@ None.
 | Leningrad Variation: 4...c5 | 4...c5 | Nimzo-Indian Defense: Leningrad Variation | E30 | ok |
 | Bd2 Variation: 4...c5 | 4...c5 | Nimzo-Indian Defense | E20 | ok |
 | Three Knights Variation: 4...b6 | 4...b6 | Nimzo-Indian Defense: Three Knights Variation | E21 | ok |
-| Classical, Keres Defense: 6...d5 and 6...Ne4 | 6...d5 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
-| Classical: White's fifth moves | 5.Nf3 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
-| Classical, Berlin Variation: 5...O-O, 5...Nc6 and 5...Na6 | 5...O-O | Nimzo-Indian Defense: Classical Variation, Berlin Variation, Pirc Variation | E39 | ok |
+| Classical, Keres Defense: 6...d5 | 6...d5 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
+| Classical: 5.Nf3 | 5.Nf3 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
+| Classical, Berlin Variation: 5...O-O | 5...O-O | Nimzo-Indian Defense: Classical Variation, Berlin Variation, Pirc Variation | E39 | ok |
 | Classical: 4...b6 | 4...b6 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
 | Classical, other fourth moves: 4...Nc6 and 4...Bxc3+ | 4...Nc6 | Nimzo-Indian Defense: Classical Variation, Zurich Variation | E33 | ok |
 | Classical, Noa Variation: 5...Nxd5 and 5...Qxd5 | 5...Nxd5 | Nimzo-Indian Defense: Classical Variation, Noa Variation | E34 | ok |
 | Rubinstein, other fourth moves: 4...d5, 4...Bxc3+ and 4...Ne4 | 4...Bxc3+ | Nimzo-Indian Defense: Rubinstein System | E40 | ok |
 | Rubinstein, Normal Variation: 5...c5 and 5...b6 | 5...c5 | Nimzo-Indian Defense: Normal Variation | E47 | ok |
-| Rubinstein: White's fifth moves | 5.Nf3 | Nimzo-Indian Defense: Normal Variation, Ragozin Variation | E51 | ok |
+| Rubinstein, Reshevsky Variation: 5.Ne2 | 5.Ne2 | Nimzo-Indian Defense: Reshevsky Variation | E46 | ok |
 | Rubinstein, Gligorić System: 9...b6 | 4...O-O | Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation | E54 | ok |
 | Rubinstein, Gligorić System: 7...Nc6 | 7...Nc6 | Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense | E56 | ok |
 | Leningrad: White's fifth moves | 5.Nf3 | Nimzo-Indian Defense: Leningrad Variation | E30 | ok |
 | Bd2 Variation: White's fifth moves | 5.a3 | Nimzo-Indian Defense | E20 | ok |
 | Three Knights: White's fifth moves | 5.e3 | Nimzo-Indian Defense: Three Knights Variation | E21 | ok |
 | Sämisch Variation: 5...c5 | 5...c5 | Nimzo-Indian Defense: Sämisch Variation | E24 | ok |
-| Sämisch: White's sixth moves | 6.e3 | Nimzo-Indian Defense: Sämisch Variation, O'Kelly Variation | E26 | ok |
+| Sämisch: 6.e3 and 6.f3 | 6.e3 | Nimzo-Indian Defense: Sämisch Variation, O'Kelly Variation | E26 | ok |
 | Kmoch Variation: 4.f3 | 4.f3 | Nimzo-Indian Defense: Kmoch Variation | E20 | ok |
 | Spielmann Variation: 4.Qb3 | 4.Qb3 | Nimzo-Indian Defense: Spielmann Variation, Romanovsky Gambit | E23 | ok |
 | Trap, Leningrad: 5.e3? Qa5! | 5...Qa5 | Nimzo-Indian Defense: Leningrad Variation | E30 | ok |
@@ -1871,15 +1911,10 @@ None.
 | Leningrad Variation: 4...c5 (Main line) | 0.36 | E30 Nimzo-Indian Defense: Leningrad Variation |
 | Bd2 Variation: 4...c5 (Main line) | 0.00 | E20 Nimzo-Indian Defense |
 | Three Knights Variation: 4...b6 (Main line) | 0.00 | E13 Queen's Indian Defense: Kasparov Variation |
-| Classical, Keres Defense: 6...d5 and 6...Ne4 (Main line) | 0.67 | E32 Nimzo-Indian Defense: Classical Variation |
-| Classical, Keres Defense: 6...d5 and 6...Ne4 (7...dxc4) | 0.00 | E32 Nimzo-Indian Defense: Classical Variation |
-| Classical, Keres Defense: 6...d5 and 6...Ne4 (6...Ne4) | 0.75 | E32 Nimzo-Indian Defense: Classical Variation |
-| Classical: White's fifth moves (Main line) | 0.94 | E32 Nimzo-Indian Defense: Classical Variation |
-| Classical: White's fifth moves (5.e4) | -0.19 | E32 Nimzo-Indian Defense: Classical Variation |
-| Classical: White's fifth moves (5.Bg5) | 0.94 | E32 Nimzo-Indian Defense: Classical Variation |
-| Classical, Berlin Variation: 5...O-O, 5...Nc6 and 5...Na6 (Main line) | 0.52 | E39 Nimzo-Indian Defense: Classical Variation, Berlin Variation, Pirc Variation |
-| Classical, Berlin Variation: 5...O-O, 5...Nc6 and 5...Na6 (5...Nc6) | 0.28 | E38 Nimzo-Indian Defense: Classical Variation, Berlin Variation |
-| Classical, Berlin Variation: 5...O-O, 5...Nc6 and 5...Na6 (5...Na6) | 0.71 | E38 Nimzo-Indian Defense: Classical Variation, Berlin Variation |
+| Classical, Keres Defense: 6...d5 (Main line) | 0.67 | E32 Nimzo-Indian Defense: Classical Variation |
+| Classical, Keres Defense: 6...d5 (7...dxc4) | 0.00 | E32 Nimzo-Indian Defense: Classical Variation |
+| Classical: 5.Nf3 (Main line) | 0.94 | E32 Nimzo-Indian Defense: Classical Variation |
+| Classical, Berlin Variation: 5...O-O (Main line) | 0.52 | E39 Nimzo-Indian Defense: Classical Variation, Berlin Variation, Pirc Variation |
 | Classical: 4...b6 (Main line) | 1.75 | E32 Nimzo-Indian Defense: Classical Variation |
 | Classical, other fourth moves: 4...Nc6 and 4...Bxc3+ (Main line) | 0.98 | E33 Nimzo-Indian Defense: Classical Variation, Zurich Variation |
 | Classical, other fourth moves: 4...Nc6 and 4...Bxc3+ (5...d6) | 0.49 | E33 Nimzo-Indian Defense: Classical Variation, Zurich Variation |
@@ -1891,13 +1926,8 @@ None.
 | Rubinstein, other fourth moves: 4...d5, 4...Bxc3+ and 4...Ne4 (4...Ne4) | 0.92 | E40 Nimzo-Indian Defense: Rubinstein System |
 | Rubinstein, Normal Variation: 5...c5 and 5...b6 (Main line) | 0.30 | E43 Nimzo-Indian Defense: St. Petersburg Variation |
 | Rubinstein, Normal Variation: 5...c5 and 5...b6 (6...d5) | 0.12 | E53 Nimzo-Indian Defense: Normal Variation, Gligoric System |
-| Rubinstein, Normal Variation: 5...c5 and 5...b6 (6...Nc6) | 0.35 | E56 Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense |
-| Rubinstein, Normal Variation: 5...c5 and 5...b6 (6...cxd4) | 0.22 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
 | Rubinstein, Normal Variation: 5...c5 and 5...b6 (5...b6) | 0.21 | E43 Nimzo-Indian Defense: St. Petersburg Variation |
-| Rubinstein: White's fifth moves (Main line) | 0.39 | E51 Nimzo-Indian Defense: Normal Variation, Sämisch Deferred |
-| Rubinstein: White's fifth moves (6.Bd3) | -0.12 | E53 Nimzo-Indian Defense: Normal Variation, Gligoric System |
-| Rubinstein: White's fifth moves (6.Bd2) | 0.00 | E51 Nimzo-Indian Defense: Normal Variation, Ragozin Variation |
-| Rubinstein: White's fifth moves (5.Ne2) | -0.10 | E46 Nimzo-Indian Defense: Reshevsky Variation |
+| Rubinstein, Reshevsky Variation: 5.Ne2 (Main line) | -0.10 | E46 Nimzo-Indian Defense: Reshevsky Variation |
 | Rubinstein, Gligorić System: 9...b6 (Main line) | -0.12 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
 | Rubinstein, Gligorić System: 7...Nc6 (Main line) | 0.35 | E56 Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense |
 | Leningrad: White's fifth moves (Main line) | 1.69 | E30 Nimzo-Indian Defense: Leningrad Variation |
@@ -1907,11 +1937,8 @@ None.
 | Three Knights: White's fifth moves (Main line) | -0.26 | E43 Nimzo-Indian Defense: St. Petersburg Variation |
 | Three Knights: White's fifth moves (5.Qc2) | -0.27 | E21 Nimzo-Indian Defense: Three Knights Variation |
 | Sämisch Variation: 5...c5 (Main line) | 0.48 | E24 Nimzo-Indian Defense: Sämisch Variation |
-| Sämisch: White's sixth moves (Main line) | 0.30 | E26 Nimzo-Indian Defense: Sämisch Variation, O'Kelly Variation |
-| Sämisch: White's sixth moves (6.Bg5) | 0.09 | E24 Nimzo-Indian Defense: Sämisch Variation |
-| Sämisch: White's sixth moves (6.d5) | 1.09 | E24 Nimzo-Indian Defense: Sämisch Variation |
-| Sämisch: White's sixth moves (6.Qc2) | 0.45 | E24 Nimzo-Indian Defense: Sämisch Variation |
-| Sämisch: White's sixth moves (6.f3) | 0.19 | E24 Nimzo-Indian Defense: Sämisch Variation |
+| Sämisch: 6.e3 and 6.f3 (Main line) | 0.30 | E26 Nimzo-Indian Defense: Sämisch Variation, O'Kelly Variation |
+| Sämisch: 6.e3 and 6.f3 (6.f3) | 0.19 | E24 Nimzo-Indian Defense: Sämisch Variation |
 | Kmoch Variation: 4.f3 (Main line) | -0.32 | E25 Nimzo-Indian Defense: Sämisch Variation, Keres Variation |
 | Kmoch Variation: 4.f3 (5.cxd5) | 1.89 | E20 Nimzo-Indian Defense: Kmoch Variation |
 | Spielmann Variation: 4.Qb3 (Main line) | 0.20 | E23 Nimzo-Indian Defense: Spielmann Variation, Carlsbad Variation |
@@ -2170,7 +2197,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
 |---|---|---|---|---|---|---|
 | 1 | The long diagonal | White | 6.Qf3 | 1 | 6...Nc6 (4 half-moves) | ok |
-| 2 | Give up b7 | Black | 6...e6 | 1 | 7.Qxb7 (1 half-move) | ok |
+| 2 | The pinned knight on c3 | Black | 8...Nxc3 | 2 | 10.Bd2 (3 half-moves) | ok |
 | 3 | Mate in two | White | 7.Bxf7+ | 2 | none | ok |
 
 ## Puzzles: Anti-Sicilian (`content/anti-sicilian-puzzles.pgn`)
@@ -2195,6 +2222,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 12 | Delayed Alapin: the knight on e4 | White | 5.Qa4+ | 1 | 5...Nc6 (2 half-moves) | ok |
 | 13 | Smith-Morra: the bishop on f7 | White | 7.Bxf7+ | 2 | none | ok |
 | 14 | Wing Gambit: the check on e5 | Black | 5...Qe5+ | 1 | 6.Be2 (2 half-moves) | ok |
+
 ## Puzzles: Sicilian Dragon (`content/sicilian-dragon-puzzles.pgn`)
 
 10 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
@@ -2247,6 +2275,23 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 6 | Four Knights: the pin on c3 | Black | 7...Nxe4 | 1 | 8.Bxd8 (6 half-moves) | ok |
 | 7 | Kan: the pawn fork | Black | 10...d4 | 1 | none | ok |
 | 8 | Four Knights: the knight check on d6 | White | 7.Nd6+ | 1 | 7...Bxd6 (2 half-moves) | ok |
+
+## Puzzles: Sicilian Sveshnikov and Kalashnikov (`content/sicilian-sveshnikov-kalashnikov-puzzles.pgn`)
+
+8 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Sveshnikov: the fork on c7 | White | 9.Nc7+ | 1 | 9...Kd8 (2 half-moves) | ok |
+| 2 | Sveshnikov: two knights against c7 | White | 10.Nbc7+ | 1 | 10...Kf8 (2 half-moves) | ok |
+| 3 | Sveshnikov: the pawn on e5 | White | 9.Qxe5+ | 1 | 9...Ne6 (2 half-moves) | ok |
+| 4 | Sveshnikov: the loose bishop on f5 | White | 10.Qxf5 | 1 | none | ok |
+| 5 | Sveshnikov: the rook takes b2 | Black | 10...Rxb2 | 1 | 11.Rxb2 (4 half-moves) | ok |
+| 6 | Bird Variation: the queen takes b2 | Black | 14...Qxb2 | 1 | 15.Kf2 (2 half-moves) | ok |
+| 7 | Sveshnikov: mate on g2 | Black | 16...Qxg2# | 1 | none | ok |
+| 8 | Sveshnikov: the queen backs up the knight | White | 10.Qa4 | 1 | 10...Bd7 (2 half-moves) | ok |
 
 ## Puzzles: Ruy Lopez (`content/ruy-lopez-puzzles.pgn`)
 
@@ -2333,9 +2378,9 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 
 | # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
 |---|---|---|---|---|---|---|
-| 1 | Trade queens with check | White | 6.dxe5 | 3 | 8...Be6 (3 half-moves) | ok |
+| 1 | Trade queens with check | White | 6.dxe5 | 2 | 7...Kxd8 (5 half-moves) | ok |
 | 2 | The queen check | White | 7.Qa4+ | 1 | 7...Nc6 (5 half-moves) | ok |
-| 3 | The loose knight on d4 | White | 9.Nxd4 | 2 | 10...Nd7 (2 half-moves) | ok |
+| 3 | Win the d4 pawn | White | 10.Qxd4 | 1 | 10...Nd7 (2 half-moves) | ok |
 | 4 | The knight fork on c6 | White | 11.Nc6 | 1 | 11...Rxe4 (4 half-moves) | ok |
 | 5 | The weak d6 pawn | White | 11.Qxd6 | 1 | 11...Bf8 (2 half-moves) | ok |
 | 6 | Take en passant | White | 9.dxe6 | 2 | 10...Qb6 (4 half-moves) | ok |

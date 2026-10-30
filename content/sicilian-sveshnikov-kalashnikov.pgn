@@ -1,0 +1,282 @@
+[Chapter "Key ideas: White's plans"]
+[Side "white"]
+[Type "ideas"]
+
+{Both openings push Black's e-pawn two squares, which leaves a hole on d5 that no Black pawn can ever cover. White's plan is simple: take off the pieces that guard d5 and put a knight there. A knight on b5 also eyes the d6 square, and if Black is careless it checks there.}
+*
+
+[Chapter "The hole on d5"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "9.Nd5"]
+
+{The knight lands on d5, and the bishop takes the knight on f6, which guards d5. Then the c-pawn keeps Black's pieces off b4 and d4. Stjepan Tomić: "This is probably the most thematic Sicilian variation there is, because all lines and all variations revolve around the d5 square."}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Nd5 {[%csl Gd5] The idea starts from this position.}
+9... Be7 10. Bxf6 {Removes a defender of d5.} Bxf6 11. c3 {[%csl Gb4,Gd4] Keeps Black's pieces off b4 and d4. Stockfish: +0.4, slightly better for White.} *
+
+[Chapter "The knight's road to d5"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "11...O-O"]
+
+{The knight on a3 looks out of play, but it comes back through c2 and e3. From e3 it guards d5 and f5, ready to replace the other knight on d5. Stjepan Tomić calls the knight move to c2 "the thematic maneuver".}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Nd5 Be7 10. Bxf6 Bxf6 11. c3 O-O {The idea starts from this position.}
+12. Nc2 {[%cal Gc2e3,Ge3d5]} Bg5 13. a4 bxa4 14. Rxa4 a5 15. Bc4 {[%cal Gc4d5] A second guard of d5.} Rb8 16. b3 Kh8 17. Nce3 {[%csl Gd5,Gf5] The knight now guards d5 and f5. Stockfish: +0.3, slightly better for White.} *
+
+[Chapter "The check on d6"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "5...a6"]
+
+{In the Kalashnikov move order the knight on b5 eyes d6. If Black chases it with the a-pawn before guarding d6, the knight checks there and White wins the bishop pair. Stjepan Tomić: "if you allow Nd6+, Bxd6, Qxd6, then white is simply better."}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 a6 {[%cal Gb5d6] The idea starts from this position.}
+6. Nd6+ Bxd6 7. Qxd6 {[%csl Gd6] The queen sits on d6, and White has the bishop pair. Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "Key ideas: Black's plans"]
+[Side "black"]
+[Type "ideas"]
+
+{Black accepts a hole on d5 and a backward pawn on d6 in return for space and quick development. The pawns chase White's knights to the edge, the f-pawn attacks White's center, and a trade on d5 can make the hole harmless.}
+*
+
+[Chapter "The knight on the edge"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "8.Na3"]
+
+{After ...a6 the knight on b5 has to go back to a3. Black follows with ...b5, gaining space, and the knight stays on the edge for a while. Igor Smirnov: the knight on a3 "has no future at all".}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 {[%csl Ga3] The idea starts from this position.}
+8... b5 {[%cal Gb5b4] Black gains space, and ...b4 would hit the knight on c3.} 9. Nd5 Be7 {Stockfish: +0.2, equal.} *
+
+[Chapter "The push of the f-pawn"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "16...Kh8"]
+
+{Black's counterplay is the push of the f-pawn against White's center. First the king steps into the corner and the g-pawn supports the push; pushing at once runs into the bishop on c4. Stjepan Tomić: Black is "playing for a King's Indian type of position, pushing through on the kingside".}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Nd5 Be7 10. Bxf6 Bxf6 11. c3 O-O 12. Nc2 Bg5 13. a4 bxa4 14. Rxa4 a5 15. Bc4 Rb8 16. b3 Kh8 {[%cal Gg8h8] The idea starts from this position.}
+17. Nce3 g6 {[%cal Gg6f5]} 18. O-O f5 {[%cal Gf5e4] The push hits e4 and opens the f-file. Stockfish: +0.4, slightly better for White.} *
+
+[Chapter "The trade on d5"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "11...Be6"]
+
+{When a White piece sits on d5, Black can trade it off so that a pawn has to take back. Then the hole on d5 and the backward pawn on d6 stop mattering. Stjepan Tomić: "if a pawn occupies the square, then the weakness is dampened".}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Bxf6 gxf6 9. Na3 b5 10. Nd5 f5 11. Bd3 Be6 {The idea starts from this position.}
+12. O-O Bxd5 13. exd5 {[%csl Gd5] A White pawn now sits on d5.} Ne7 {Stockfish: +0.3, slightly better for White.} *
+
+[Chapter "Take back toward the center"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "5...bxc6"]
+
+{When White trades knights on c6, Black takes back with the b-pawn. The pawn moves toward the center, where it guards d5, and the b-file opens for the rook. Igor Smirnov: the trade is "basically never a good idea for white".}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 {[%cal Gc6d5] The idea starts from this position.}
+6. Nc3 Nf6 7. Bc4 Bb4 {[%cal Gb4c3] Black develops quickly and pins the knight. Stockfish: 0.0, equal.} *
+
+[Chapter "Sveshnikov Main Line: 9.Nd5"]
+[Side "both"]
+[Type "line"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation"]
+[ECO "B33"]
+
+{The main line of the Sveshnikov. White takes the knight on f6 and fights for d5; Black puts the bishop on g5, castles and prepares the push of the f-pawn. Stjepan Tomić: "you have to learn about 20 moves of theory. Fortunately, there aren't that many variations."}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 {This is the Sveshnikov Variation: the knight on d4 must move.}
+6. Ndb5 {[%cal Gb5d6] Half of White players choose this: the knight eyes d6.} d6 {[%csl Gd6] Guards d6: the only good move.} 7. Bg5 {The bishop pins the knight that guards d5.} a6 8. Na3 b5 {[%cal Gb5b4] Black gains space.}
+9. Nd5 {Eight White players in ten put the knight on d5.} Be7 10. Bxf6 Bxf6 11. c3 {[%csl Gb4,Gd4] Keeps Black's pieces off b4 and d4.} O-O
+12. Nc2 {"The thematic maneuver": the knight heads for e3.} Bg5 {The bishop moves to "a more active diagonal", out of reach of the knight on d5.}
+13. a4 {Pressure on Black's queenside.} bxa4 {Stjepan Tomić: "always take".} 14. Rxa4 a5 15. Bc4 {[%cal Gc4d5] A second guard of d5.} Rb8 16. b3 Kh8 {"Getting away from the diagonal, and preparing to play f5."}
+17. Nce3 g6 18. O-O f5 {[%cal Gf5e4] The push.} 19. Qd3 {Guards e4: White doesn't take on f5, which would free Black's bishop.} Be6 20. Rd1 Qd7 {Stjepan Tomić: "The position is completely equal." Stockfish: +0.3, slightly better for White.}
+*
+
+[Chapter "Sveshnikov: 6.Nxc6"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation"]
+[ECO "B33"]
+
+{One White player in seven trades knights on c6. That helps Black: the b-pawn takes back toward the center and supports the push of the d-pawn.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nxc6 bxc6 {[%cal Gc6d5] Take toward the center.}
+7. Bc4 {A third of White players put the bishop here.} Bb4 {[%cal Gb4c3] Pins the knight.} 8. O-O O-O 9. Qf3 d5 {[%csl Gd5] The push.} 10. exd5 Bxc3 11. bxc3 cxd5 {Black has a strong center. Stockfish: −0.2, equal.}
+*
+
+[Chapter "Sveshnikov: 6.Nb3"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation"]
+[ECO "B33"]
+
+{The knight retreats to b3. Black pins the knight on c3 and pushes the d-pawn at once. Stjepan Tomić: "You're threatening to go d5 because the knight is pinned".}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nb3 Bb4 {[%cal Gb4c3] Eight Black players in ten pin the knight.}
+7. Bd3 {Four White players in ten guard e4 with the bishop.} d5 {[%cal Gd5e4] Hits e4 again.} 8. exd5 Nxd5 9. Bd2 Nxc3 10. bxc3 Be7 {White's pawns are split, and Black is comfortable. Stockfish: −0.4, slightly better for Black.}
+*
+
+[Chapter "Kalashnikov Main Line: 8.Nd5"]
+[Side "both"]
+[Type "line"]
+[Opening "Sicilian Defense: Kalashnikov Variation"]
+[ECO "B32"]
+
+{Black pushes the e-pawn at once. White's knight goes to b5 and then a3, and Black chases it with the a-pawn and b-pawn. Stjepan Tomić: "Nb5 is the best move. You have to play d6, which is now controlling the square d6".}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 {The knight on d4 must move at once.} 5. Nb5 {[%cal Gb5d6] Eyes d6.} d6 {This is the Kalashnikov Variation.}
+6. N1c3 a6 7. Na3 b5 8. Nd5 {[%csl Gd5]} Nge7 {Stjepan Tomić's choice: the knight trades the one on d5. Half of Black players play 8...Nf6, which reaches the Sveshnikov main line after 9.Bg5 Be7.}
+9. c4 {Hits the pawn on b5.} Nxd5 10. cxb5 {White takes the pawn first.} Nd4 {[%csl Gd4] The knight finds a strong square.} 11. exd5 Bd7 12. Bd3 axb5 13. O-O {Stockfish: +0.5, slightly better for White.}
+*
+
+[Chapter "Kalashnikov: 5.Nxc6"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Löwenthal Variation"]
+[ECO "B32"]
+
+{One White player in four trades on c6 at once. As in the Sveshnikov, Black takes back toward the center, develops quickly and pins the knight from b4. After 6.Nc3 Nf6 the position is the Sveshnikov with 6.Nxc6.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 {[%cal Gc6d5] Take toward the center.} 6. Nc3 Nf6
+7. Bc4 Bb4 {[%cal Gb4c3] Pins the knight.} 8. O-O O-O 9. Qf3 d5 {[%csl Gd5] The push.} 10. exd5 Bxc3 11. bxc3 cxd5 {Black has a strong center. Stockfish: −0.1, equal.}
+*
+
+[Chapter "Kalashnikov: 5.Nb3"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation"]
+[ECO "B33"]
+
+{The knight retreats to b3. Black brings out the king's knight, and after 6.Nc3 the position is the Sveshnikov with 6.Nb3: Black pins the knight on c3 and pushes the d-pawn.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb3 Nf6 6. Nc3 Bb4 {[%cal Gb4c3]} 7. Bd3 d5 {[%cal Gd5e4]} 8. exd5 Nxd5 9. Bd2 Nxc3 10. bxc3 Be7 {Stockfish: −0.3, slightly better for Black.}
+*
+
+[Chapter "Löwenthal: 6.Nd6+"]
+[Side "white"]
+[Type "line"]
+[Diagram "6.Nd6+"]
+[Opening "Sicilian Defense: Löwenthal Variation"]
+[ECO "B32"]
+
+{Black chases the knight with the a-pawn before guarding d6. The knight checks on d6, and White gets the bishop pair and the dark squares.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 a6 {This is the Löwenthal Variation.} 6. Nd6+ {Nearly nine White players in ten give the check.} Bxd6 7. Qxd6 Qe7 {Half of Black players offer a queen trade.}
+8. Qd3 {Keeps the queens on.} Nf6 9. Nc3 {White has the bishop pair. Stockfish: +0.4, slightly better for White.}
+*
+
+[Chapter "Sveshnikov: 8.Bxf6"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation"]
+[ECO "B33"]
+
+{One White player in four takes the knight at once. Black takes back with the g-pawn, never the queen, and then pushes the f-pawn. Stjepan Tomić: "If you take with the pawn, you're generally slightly better." The same position comes from 8.Na3 b5 9.Bxf6 gxf6 10.Nd5.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Bxf6 gxf6 {Take with the g-pawn.} 9. Na3 b5 10. Nd5 f5 {[%cal Gf5e4] "Undermining the center straight away."}
+11. Bd3 Be6 {Now exf5 would drop the knight on d5.} 12. O-O Bxd5 13. exd5 Ne7 {[%csl Gd5] A pawn sits on d5: both of Black's weaknesses are gone.} 14. c3 Bg7 {Stockfish: 0.0, equal.}
+*
+
+[Chapter "Sveshnikov: 7.Nd5"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation"]
+[ECO "B33"]
+
+{Two White players in ten jump to d5 at once. After the trade a White pawn sits on d5, so the hole is gone. Black brings the knight back to b8 and then d7, and pushes the f-pawn.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Nd5 Nxd5 8. exd5 Nb8 {The knight heads for d7. Not 8...Ne7 followed by ...a6: see the traps.}
+9. a4 Be7 10. Be2 O-O 11. O-O f5 12. f4 a6 13. Na3 Nd7 {Stockfish: +0.4, slightly better for White.}
+*
+
+[Chapter "Sveshnikov: 6.Nf3"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation"]
+[ECO "B33"]
+
+{The knight retreats to f3. As against the retreat to b3, Black pins the knight on c3 and pushes the d-pawn. Kalashnikov players reach this after 5.Nf3 Nf6 6.Nc3.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nf3 Bb4 {[%cal Gb4c3]} 7. Bd3 d5 8. exd5 Nxd5 9. Bd2 Nxc3 10. bxc3 Bd6 {Stockfish: −0.2, equal.}
+*
+
+[Chapter "Sveshnikov: 6.Nf5"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation"]
+[ECO "B33"]
+
+{The knight jumps to f5. Black strikes in the center at once: Stjepan Tomić says the push of the d-pawn "would solve both of his problems". White's knight on f5 is taken, and Black gets rid of the backward pawn.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nf5 d5 7. exd5 Bxf5 8. dxc6 bxc6 9. Qf3 Qc8 {Stockfish: +0.3, slightly better for White.}
+*
+
+[Chapter "Sveshnikov, Bird Variation: 8...Be6"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation, Bird Variation"]
+[ECO "B33"]
+
+{Black develops the bishop to guard d5. Stjepan Tomić: "As White, you need to be prepared for Be6". The knight comes to c4 and b6, and White takes on f6 to win control of d5.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 Be6 9. Nc4 Rc8 10. Bxf6 {"White's best and only move ... to remove the defender of d5."} Qxf6
+11. Nb6 Rb8 12. Ncd5 Qd8 13. c3 Be7 {White has a grip on d5. Stockfish: +1.0, clearly better for White.}
+*
+
+[Chapter "Trap: 9...Qxf6? and 10.Nd5"]
+[Side "white"]
+[Type "trap"]
+[Diagram "10.Nd5"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation"]
+[ECO "B33"]
+
+{When White takes on f6, Black must take back with the g-pawn. If the queen takes, the knight jumps to d5 with two threats: the queen and a fork on c7. Stjepan Tomić: "you never take with the queen here, because of Nd5".}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Bxf6 Qxf6? 10. Nd5! {[%cal Gd5f6,Gd5c7] Hits the queen and threatens a fork on c7.}
+10... Qd8 {The only move.} 11. Bxb5! {[%cal Ga3b5] The bishop opens the way for the other knight.} axb5 12. Nxb5 {[%cal Gb5c7,Gd5c7] Both knights hit c7. Stockfish: +1.4, clearly better for White.}
+*
+
+[Chapter "Trap: 7...h6? and 8.Bxf6"]
+[Side "white"]
+[Type "trap"]
+[Diagram "8.Bxf6"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation"]
+[ECO "B33"]
+
+{Black chases the bishop before playing ...a6. The bishop takes on f6, and the knight on b5 is still free to jump to c7.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 h6? 8. Bxf6! gxf6 {Seven Black players in ten take with the pawn.} (8... Qxf6 9. Nc7+ {Forks the king and the rook. Stockfish: +4.7, winning for White.})
+9. Nd5 {[%cal Gb5c7,Gd5c7] Both knights hit c7, and Black can't defend it. Stockfish: +4.1, winning for White.}
+*
+
+[Chapter "Trap: 9...a6? and 10.Qa4"]
+[Side "white"]
+[Type "trap"]
+[Diagram "10.Qa4"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation"]
+[ECO "B33"]
+
+{A third of Black players chase the knight on b5 with the a-pawn. But the queen comes to a4 and backs it up, and the pawn on d6 has no defender: the bishop on f8 is blocked by the knight on e7.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Nd5 Nxd5 8. exd5 Ne7 9. c4 a6? 10. Qa4! {[%cal Ga4b5,Gb5d6] Backs up the knight, which threatens d6.}
+10... Bd7?? (10... axb5 11. Qxa8 {White has won the rook. Stockfish: +2.3, winning for White.}) 11. Nxd6# {Mate.}
+*
+
+[Chapter "Trap: 6...Be7? and 7.Nd6+"]
+[Side "white"]
+[Type "trap"]
+[Diagram "7.Nd6+"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation"]
+[ECO "B33"]
+
+{Black develops the bishop but forgets the d6 square. The knight checks there, and White gets a bind on the position. Stjepan Tomić: "If White manages to check on d6, then bishop takes, queen takes, White has too much of a bind on the position."}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 Be7? 7. Nd6+! {[%cal Gd6e8] Check.} Bxd6 8. Qxd6 {[%csl Gd6] The queen sits on d6. Stockfish: +1.6, clearly better for White.}
+*
+
+[Chapter "Trap to avoid: 14...axb5? and 15.Bxb5+"]
+[Side "black"]
+[Type "trap"]
+[Diagram "14.Nxb5"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation"]
+[ECO "B33"]
+
+{White's knight grabs the pawn on b5. Taking it back loses at once: the bishop checks on b5, and Black has to block with the knight or the queen. Stjepan Tomić: "you just lose the game". Leave the knight and develop the bishop to g7.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Bxf6 gxf6 9. Na3 b5 10. Nd5 f5 11. Bd3 Be6 12. O-O Bxd5 13. exd5 Ne7 14. Nxb5 Bg7! {[%cal Gg7b2] The bishop comes to life on the long diagonal.}
+(14... axb5? 15. Bxb5+ {[%cal Gb5e8] Check: blocking with the knight or the queen loses material. Stockfish: +5.3, winning for White.}) 15. Nc3 {White is a pawn up, but Black's bishop and center give full value for it. Stockfish: +0.2, equal.}
+*
+
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6
+(4... e5 {} 5. Nb5 {} (5. Nxc6 {[%course black]}) (5. Nb3 {[%course black]}) 5... d6 {Kalashnikov Variation} (5... a6 {[%course white] Löwenthal Variation}) 6. N1c3 a6 7. Na3 b5 8. Nd5 {[%course both] Main Line})
+5. Nc3 e5 {Sveshnikov Variation} 6. Ndb5 (6. Nxc6 {[%course black]}) (6. Nb3 {[%course black]}) 6... d6 7. Bg5 a6 8. Na3 b5 9. Nd5 {[%course both] Main Line} *
