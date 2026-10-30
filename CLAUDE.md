@@ -79,9 +79,10 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - Moves are written in letters (Nf3) by default, everywhere in the app. Figurines (♘f3) stay as a choice in Settings. In Kumar's words: "Could you make letters as default for moves like Nf3, instead of figurines. However keep the figurines in the settings in case user prefers that. This applies to whole chess app."
 - Write moves in letters in the course files too; the app adds figurines for learners who choose them.
 
-## Puzzles
+## Traps and puzzles
 
 - A puzzle can come from a line the course does not teach. In Kumar's words: "General rule for all courses: puzzles can have moves not covered in courses."
+- A trap can too: its moves need not be part of any Basic or Advanced line. In Kumar's words: "General rule: Traps and puzzles may occur with moves that are not part of basic or Advanced lines." So a trap stays when the Advanced line it starts from is removed.
 
 ## Drills
 
