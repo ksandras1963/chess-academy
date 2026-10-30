@@ -1,0 +1,87 @@
+[Puzzle "6.Bg5: the long diagonal"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "10.e5"]
+[End "10.e5"]
+[Hint "Black pushed the b-pawn before playing ...Qc7. If your e-pawn moves, what can your queen on f3 see?"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7 8. Qf3 Nbd7 9. O-O-O b5? 10. e5! {[%cal Gf3a8,Ge5f6] The e-pawn hits the knight on f6, and the queen now sees the rook on a8. This is why Black plays ...Qc7 first in the course line.}
+10... Nd5 {Six Black players in ten jump to d5.} (10... dxe5 11. fxe5 {[%cal Ge5f6,Gf3a8] Both threats are still there. Stockfish: +4.4, winning for White.}) 11. Bxe7 Nxe7 12. exd6 {[%cal Gd6e7,Gf3a8] The pawn hits the knight, and the queen still hits the rook.} Rb8 13. dxe7 {White has won a piece and a pawn. Stockfish: +5.8, winning for White.}
+*
+
+[Puzzle "6.Bg5 and Bc4: the sacrifice on e6"]
+[Type "puzzle"]
+[Theme "Attack the king"]
+[Solve "9.Bxe6"]
+[End "9.Bxe6"]
+[Hint "Black's knight on d7 has taken a square from the queen. Look at the pawn on e6 and the pawn on g7."]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. Bc4 Be7 8. O-O Nbd7? 9. Bxe6! {[%cal Gd4e6] The knight on d4 backs up the bishop.}
+9... fxe6 {Three Black players in four take the bishop.} (9... O-O 10. Bb3 {Black is just a pawn down. Stockfish: +2.0, winning for White.}) 10. Nxe6 {[%cal Ge6d8,Ge6g7] The knight hits the queen and the pawn on g7.} Qa5 11. Nxg7+ Kf7 12. Nf5 {White has three pawns for the bishop, and Black's king is out in the open. Stockfish: +2.3, winning for White.}
+*
+
+[Puzzle "6.Bg5 e5: the trade on d5"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "8...Nxd5"]
+[End "8...Nxd5"]
+[Hint "White's bishop on g5 is guarded only by the knight on f3. Take on d5 first, then look at g5."]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e5 7. Nf3 Be7 8. Nd5? Nxd5! {[%cal Ge7g5] Takes the knight, and the bishop on e7 now faces the bishop on g5.}
+9. Qxd5 {Half of White players take back with the queen.} (9. Bxe7 Nxe7! {Take back with the knight, not the queen: Black stays a piece up. Stockfish: −4.3, winning for Black.}) 9... Bxg5 {Black has won a piece. Stockfish: −4.6, winning for Black.}
+*
+
+[Puzzle "6.Bc4 e5: two pieces against f7"]
+[Type "puzzle"]
+[Theme "Win a pawn"]
+[Solve "8.Ng5"]
+[End "8.Ng5"]
+[Hint "Black's last move did nothing for the pawn on f7. Which two of your pieces can aim at it?"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4 e5 7. Nf3 Nc6? 8. Ng5! {[%cal Gc4f7,Gg5f7] The bishop and the knight both hit f7.}
+8... Be6 {Half of Black players block with the bishop.} (8... d5 9. Nxd5 {[%cal Gc4f7,Gg5f7] The knight takes the pawn, and f7 is still under attack. Stockfish: +2.6, winning for White.}) 9. Nxe6 fxe6 10. Bxe6 {White has won a pawn, and the bishop stops Black from castling short. Stockfish: +2.8, winning for White.}
+*
+
+[Puzzle "6.Bc4 e5: the bishop check"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "8.Bxf7+"]
+[End "8.Bxf7+"]
+[Hint "Black's bishop on g4 pins your knight to the queen. But a check comes first."]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4 e5 7. Nf3 Bg4? 8. Bxf7+! {[%cal Gc4f7] Check: the bishop pulls the king forward.}
+8... Kxf7 9. Nxe5+ {[%cal Ge5g4] Check, and the knight hits the bishop on g4.} Ke8 (9... dxe5 10. Qxd8 {The d-file opened: White wins the queen. Stockfish: +5.0, winning for White.}) 10. Nxg4 Nxg4 11. Qxg4 {White has won two pawns, and Black's king is stuck in the center. Stockfish: +4.9, winning for White.}
+*
+
+[Puzzle "Scheveningen: the loose queen"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "8...Nxd4"]
+[End "8...Nxd4"]
+[Hint "White's queen has left d1. Who guards the knight on d4 now?"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e6 6. Bg5 Be7 7. f4 Nc6 8. Qf3? Nxd4! {[%cal Gd4f3] Takes the knight, and hits the queen.}
+9. Qd3 {Three White players in four move the queen to d3.} e5 {[%cal Ge5d4] The pawn guards the knight. Black is a piece up. Stockfish: −4.1, winning for Black.}
+*
+
+[Puzzle "6.Bg5 with Bd3: the pin on the diagonal"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "9...Qb6"]
+[End "9...Qb6"]
+[Hint "White's f-pawn has left f2. Look at the diagonal from b6 to White's king on g1."]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. Bd3 Be7 8. O-O O-O 9. f4? Qb6! {[%cal Gb6g1] The queen pins the knight on d4 to White's king: the f-pawn no longer guards the diagonal.}
+10. Ne2 {Four White players in ten guard the knight with the other knight.} (10. Kh1 Qxd4 {Black has won a knight. Stockfish: −2.9, winning for Black.}) 10... e5! {[%cal Ge5d4] Eight Black players in ten hit the pinned knight again.} 11. c3 Nc6 12. fxe5 dxe5 13. Kh1 exd4 {White can take back only a pawn: Black has won a knight for a pawn. Stockfish: −3.5, winning for Black.}
+*
+
+[Puzzle "6.Be3 e5: the open diagonal to a8"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "9.Bd5"]
+[End "9.Bd5"]
+[Hint "Black's b-pawn has just left b7. Which black piece now stands on an open diagonal?"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e5 7. Nf3 Be7 8. Bc4 b5? 9. Bd5! {[%cal Gd5a8] With the b-pawn gone, the bishop hits the rook on a8.}
+9... Nxd5 {Nine Black players in ten take the bishop.} 10. Qxd5 {[%cal Gd5a8] Now the queen hits the rook.} Qc7 11. Qxa8 {White is a whole rook up. Stockfish: +4.8, winning for White.}
+*
