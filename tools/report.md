@@ -2343,7 +2343,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 10 | The Englund trap | White | 6.Nc3 | 1 | 6...Bb4 (8 half-moves) | ok |
 | 11 | Take the bishop, then hit the queen | White | 12.Nxg4 | 2 | 13...Qe7 (2 half-moves) | ok |
 | 12 | The fork on c7 | White | 6.Nb5 | 1 | 6...Kd7 (2 half-moves) | ok |
-| 13 | The knight jump to e5 | White | 7.Nce5 | 1 | 7...Bd6 (4 half-moves) | ok |
+| 13 | Ng5 and the fork on f7 | White | 8.Ng5 | 1 | 8...Rg8 (4 half-moves) | ok |
 
 ## Puzzles: Jobava London System (`content/jobava-london-puzzles.pgn`)
 
