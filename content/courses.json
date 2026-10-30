@@ -1861,6 +1861,17 @@
             "count": "15 variations",
             "compact": true,
             "course": "anti-sicilian sicilian-dragon sicilian-najdorf sicilian-taimanov-kan sicilian-sveshnikov-kalashnikov",
+            "boxRows": [
+                [
+                    "anti-sicilian",
+                    "sicilian-dragon",
+                    "sicilian-najdorf"
+                ],
+                [
+                    "sicilian-taimanov-kan",
+                    "sicilian-sveshnikov-kalashnikov"
+                ]
+            ],
             "subtitle": "The main variations, and the five courses that teach them.",
             "summary": "Black answers the king's pawn with the c-pawn and fights for the center from the side: the second most common reply at club level, after the e-pawn. When White opens the center, Black trades the c-pawn for White's d-pawn, keeping an extra center pawn for the long run, while White gets a lead in development for an early attack. In about two games in three, though, White avoids this Open Sicilian with an anti-Sicilian, such as the early bishop to c4, the Alapin or the Grand Prix.",
             "table": {
