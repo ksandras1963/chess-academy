@@ -207,7 +207,7 @@
 [Opening "French Defense: Exchange Variation"]
 [ECO "C01"]
 
-{After 3.exd5 exd5 the pawns are symmetrical and the e-file is open. Black develops with ...Nc6, ...Bg4 and ...Bd6, puts the king's knight on e7, where it keeps the f-pawn free and can go to f5 or g6, and castles short. White keeps the game quiet with c3, castling and Re1. 2.Nf3 d5 3.exd5 exd5 4.d4 reaches the same position; White's 5.Bb5 is under Advanced.}
+{After 3.exd5 exd5 the pawns are symmetrical and the e-file is open. Black develops with ...Nc6, ...Bg4 and ...Bd6, puts the king's knight on e7, where it keeps the f-pawn free and can go to f5 or g6, and castles short. White keeps the game quiet with c3, castling and Re1. 2.Nf3 d5 3.exd5 exd5 4.d4 reaches the same position.}
 1. e4 e6 2. d4
 2... d5 3. exd5 {The Exchange. White releases the tension and frees Black's c8 bishop.} exd5 {Recapture toward the center. The c8 bishop now has an open diagonal.}
 4. Nf3 Nc6 {[%cal Gc6d4] Develops and hits d4, ready for ...Bg4 to pin the knight that defends it.}
@@ -388,20 +388,6 @@ Qxb2 {[%cal Gb2a1] Hits the rook on a1, and the bishop on h6 is still hanging.}
 1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 {This is the Paulsen Attack.} Bd7 {This is the Euwe Variation.}
 (5... Nge7 6. Bd3 cxd4 7. cxd4 Nf5 8. Bxf5 {Removes the knight that attacks d4.} exf5 9. Nc3 h6 10. h4 {[%csl Yf5] Black's doubled f-pawns block the bishop on c8. Stockfish +0.2, equal.})
 6. Be2 Nge7 7. O-O Ng6 8. Be3 {Guards d4 a fourth time.} Be7 9. Nbd2 {White has a comfortable space advantage. Stockfish +0.2, equal.} *
-
-
-[Chapter "Exchange: 5.Bb5"]
-[Side "black"]
-[Diagram "5.Bb5"]
-[Type "line"]
-[Level "advanced"]
-[Opening "French Defense: Exchange Variation"]
-[ECO "C01"]
-
-{Instead of the bishop to d3, White can pin the knight with 5.Bb5. The plan doesn't change: ...Bd6, a knight on e7, and short castling. If White takes on c6, the pawn that recaptures supports d5.}
-1. e4 e6 2. d4
-(2. Nf3 {After 2.d4, the most common second move.} d5 3. exd5 {Most players at this level take at once.} exd5 4. d4 Nc6 {The same position as the Exchange main line after 4.Nf3 Nc6. White's other tries after 2.Nf3 are under Knight Variation.})
-2... d5 3. exd5 exd5 4. Nf3 Nc6 5. Bb5 {Pins the knight and threatens to double Black's pawns.} Bd6 {Develops and prepares to castle. If White takes on c6, the pawn on c6 supports d5.} 6. O-O Nge7 7. c3 O-O 8. Re1 Ng6 {Next ...Bg4 or ...Bf5. Equal (Stockfish +0.1).} *
 
 
 [Chapter "Winawer: 7...O-O"]
