@@ -1253,7 +1253,7 @@ None.
 
 ## London System — both sides (`london`)
 
-79 chapters, 67 drillable lines (basic 6, traps 23, advanced 38), 639 learner moves.
+68 chapters, 39 drillable lines (basic 6, traps 23, advanced 10), 384 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -1277,35 +1277,22 @@ None.
 | Trap, 2...h5!?: 3.e3?? e5! | 2...h5 | Queen's Pawn Game: Accelerated London System | D00 | ok |
 | Trap, Englund Gambit: 6.Nc3! | 5...Qxb2 | Englund Gambit: Main Line | A40 | ok |
 | Steinitz Countergambit: 2...c5 | 2...c5 | Queen's Pawn Game: Accelerated London System, Steinitz Countergambit | D00 | ok |
-| ...c5 setup: 5...e6 | 5...e6 | Queen's Pawn Game: London System | D02 | ok |
-| ...c5 setup: 5...Bf5 and 5...Qb6 | 5...Bf5 | Queen's Pawn Game: Accelerated London System | D00 | ok |
-| ...c5 setup: Black's eighth moves | 8...Qe7 | Queen's Pawn Game: London System | D02 | ok |
+| ...c5 setup: 3...c5 | 3...c5 | Queen's Pawn Game: London System | D02 | ok |
 | Indian setups: 2...c5 | 2...c5 | Indian Defense: Accelerated London System | A45 | ok |
 | Chigorin setup: 2...Nc6 | 2...Nc6 | Queen's Pawn Game: Accelerated London System | D00 | ok |
 | Queen's Indian setup: 2...e6 | 2...e6 | Indian Defense: Accelerated London System | A45 | ok |
-| QGD setup, fifth moves: 5.Bxd6 and 5.Bd3 | 5.Bxd6 | Queen's Pawn Game: Accelerated London System | D00 | ok |
-| QGD setup: White's ninth moves | 9.e4 | Queen's Pawn Game: Accelerated London System | D00 | ok |
-| QGD setup: 3.c4 and 4.c4 | 4.c4 | Queen's Pawn Game: Accelerated London System | D00 | ok |
-| King's Indian setup: 5.Bd3 | 5.Bd3 | London System | A48 | ok |
-| King's Indian setup: White's sixth moves | 6.O-O | London System, with Be2 | A48 | ok |
-| King's Indian setup, ...e5: 6...Nbd7 and 6...Nc6 | 6...Nbd7 | London System | A48 | ok |
-| King's Indian setup, Rapport-Jobava: 5.Nf3 | 5.Nf3 | Rapport-Jobava System | D01 | ok |
 | Sidelines, first moves: 1...e6, 1...g6 and 1...c5 | 1...e6 | Horwitz Defense | A40 | ok |
-| Sidelines, third moves: 3...Bg4 and 3...g6 | 3...Bg4 | Queen's Pawn Game: Accelerated London System | D00 | ok |
-| Rapport-Jobava: 3.Nc3 | 3.Nc3 | Rapport-Jobava System | D01 | ok |
 | Dutch Defense: 1...f5 | 1...f5 | Dutch Defense | A80 | ok |
 
 ### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
 
-| Line | Move | Engine prefers | Loss |
-|---|---|---|---|
-| Nxd5 against ...Qxb2 | 7.Nc7+ | Bb5+ | 0.65 |
+None.
 
 ### Learner moves flagged but accepted with `[%engine ok]`
 
 | Line | Move | Engine prefers | Loss |
 |---|---|---|---|
-| Trap, 2...h5!?: 3.e3?? e5! (Main line) | 2...h5 | c5 | 0.86 |
+| Trap, 2...h5!?: 3.e3?? e5! (Main line) | 2...h5 | c5 | 0.62 |
 
 ### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
 
@@ -1315,77 +1302,49 @@ None.
 
 | Line | Eval | Deepest named position |
 |---|---|---|
-| QGD setup: 5.Bg3 (QGD setup, as White) | -0.06 | D00 Queen's Pawn Game: Accelerated London System |
-| QGD setup: 5.Bg3 (QGD setup, as Black) | 0.06 | D00 Queen's Pawn Game: Accelerated London System |
-| King's Indian setup: 5.h3 and 5.Be2 (King's Indian setup, as White) | 0.00 | A48 London System |
-| King's Indian setup: 5.h3 and 5.Be2 (King's Indian setup, as Black) | 0.00 | A48 London System |
-| King's Indian setup, Rapport-Jobava: 3.Nc3 (Main line) | 0.15 | D01 Rapport-Jobava System |
-| Symmetrical: 2...Bf5 (Main line) | 0.42 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, QGD setup: 10.Bh4?? and ...e4 (Main line) | 3.83 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, King's Indian setup: 8.dxe5?? dxe5 (Main line) | 4.83 | A48 London System |
-| Trap, King's Indian setup: 8.dxe5?? dxe5 (8.d5) | 2.99 | A48 London System |
-| Trap, King's Indian setup: 10.O-O? g5! (Main line) | 3.29 | A48 London System |
-| Trap, King's Indian setup: 10.O-O? g5! (11.Nxg5) | 0.98 | A48 London System |
-| Trap to avoid, Rapport-Jobava: Nb5 and Nxc7+ (Main line) | -0.12 | D01 Rapport-Jobava System |
+| QGD setup: 5.Bg3 (QGD setup, as White) | -0.08 | D00 Queen's Pawn Game: Accelerated London System |
+| QGD setup: 5.Bg3 (QGD setup, as Black) | 0.08 | D00 Queen's Pawn Game: Accelerated London System |
+| King's Indian setup: 5.h3 and 5.Be2 (King's Indian setup, as White) | -0.07 | A48 London System |
+| King's Indian setup: 5.h3 and 5.Be2 (King's Indian setup, as Black) | 0.07 | A48 London System |
+| King's Indian setup, Rapport-Jobava: 3.Nc3 (Main line) | 0.00 | D01 Rapport-Jobava System |
+| Symmetrical: 2...Bf5 (Main line) | 0.53 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, QGD setup: 10.Bh4?? and ...e4 (Main line) | 3.75 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, King's Indian setup: 8.dxe5?? dxe5 (Main line) | 4.69 | A48 London System |
+| Trap, King's Indian setup: 8.dxe5?? dxe5 (8.d5) | 2.92 | A48 London System |
+| Trap, King's Indian setup: 10.O-O? g5! (Main line) | 3.39 | A48 London System |
+| Trap, King's Indian setup: 10.O-O? g5! (11.Nxg5) | 1.37 | A48 London System |
+| Trap to avoid, Rapport-Jobava: Nb5 and Nxc7+ (Main line) | -0.13 | D01 Rapport-Jobava System |
 | Trap to avoid, Rapport-Jobava: Nb5 and Nxc7+ (4.e3) | -0.15 | D01 Rapport-Jobava System |
-| Trap, Symmetrical: 6...Qb6? and c5! (Main line) | 1.06 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, Symmetrical: 6...Qb6? and c5! (7...Bxc5) | 3.55 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (Main line) | 3.59 | D02 Queen's Pawn Game: London System |
-| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (15...g6) | 2.18 | D02 Queen's Pawn Game: London System |
-| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (12...Qc7) | 0.47 | D02 Queen's Pawn Game: London System |
-| Trap, ...c5 setup: 13...Qc8?? and Bxh7+ (Main line) | 3.82 | D02 Queen's Pawn Game: London System |
-| Trap, ...c5 setup: 13...Qc8?? and Bxh7+ (13...Rc8) | 2.34 | D02 Queen's Pawn Game: London System |
-| Trap, ...c5 setup: 7...Bf5?? and Qxf5 (Main line) | 2.56 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, ...c5 setup: 7...Bf5?? and Qxf5 (7...Bg4) | 0.67 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, 2.Nf3 move order: ...Bf5! against Qc2 (Main line) | 3.25 | D02 Queen's Pawn Game: London System |
-| Trap, 2.Nf3 move order: ...Bf5! against Qc2 (8.Qc1) | 0.25 | D02 Queen's Pawn Game: London System |
-| Trap, Steinitz Countergambit: 4...Qxb2?? and Nxd5 (Main line) | 4.10 | D00 Queen's Pawn Game: Accelerated London System, Steinitz Countergambit |
-| Trap to avoid, 2...h5: 3.e3?? (Main line) | 0.76 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, 2...h5!?: 3.e3?? e5! (Main line) | 2.94 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, 2...h5!?: 3.e3?? e5! (3.Nf3) | -0.74 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, Englund Gambit: 6.Nc3! (Main line) | 2.41 | A40 Englund Gambit: Main Line |
-| Steinitz Countergambit: 2...c5 (Main line) | 0.04 | B13 Caro-Kann Defense: Exchange Variation |
-| Steinitz Countergambit: 2...c5 (3...Qb6) | 0.71 | D00 Queen's Pawn Game: Accelerated London System, Steinitz Countergambit |
-| Steinitz Countergambit: 2...c5 (3...Nc6) | -0.18 | D00 Queen's Pawn Game: Accelerated London System, Steinitz Countergambit |
-| ...c5 setup: 5...e6 (Main line) | 0.85 | D02 Queen's Pawn Game: London System |
-| ...c5 setup: 5...Bf5 and 5...Qb6 (Main line) | 0.03 | D00 Queen's Pawn Game: Accelerated London System |
-| ...c5 setup: 5...Bf5 and 5...Qb6 (5...Qb6) | 0.33 | D00 Queen's Pawn Game: Accelerated London System |
-| ...c5 setup: Black's eighth moves (Main line) | 0.46 | D02 Queen's Pawn Game: London System |
-| ...c5 setup: Black's eighth moves (8...Re8) | 0.80 | D02 Queen's Pawn Game: London System |
-| ...c5 setup: Black's eighth moves (8...Qc7) | 0.62 | D02 Queen's Pawn Game: London System |
-| Indian setups: 2...c5 (Main line) | 0.26 | A45 Indian Defense: Accelerated London System |
-| Indian setups: 2...c5 (4...cxd4) | 0.37 | A45 Indian Defense: Accelerated London System |
-| Chigorin setup: 2...Nc6 (Main line) | 0.48 | D00 Queen's Pawn Game: Accelerated London System |
-| Chigorin setup: 2...Nc6 (2...c6) | 0.46 | D00 Queen's Pawn Game: Accelerated London System |
-| Queen's Indian setup: 2...e6 (Main line) | 0.44 | A45 Indian Defense: Accelerated London System |
-| QGD setup, fifth moves: 5.Bxd6 and 5.Bd3 (Main line) | -0.04 | D00 Queen's Pawn Game: Accelerated London System |
-| QGD setup, fifth moves: 5.Bxd6 and 5.Bd3 (5.Bd3) | -0.26 | D00 Queen's Pawn Game: Accelerated London System |
-| QGD setup: White's ninth moves (Main line) | 0.36 | D00 Queen's Pawn Game: Accelerated London System |
-| QGD setup: White's ninth moves (9.Bxd6) | 0.00 | D00 Queen's Pawn Game: Accelerated London System |
-| QGD setup: White's ninth moves (9.Qe2) | 0.09 | D00 Queen's Pawn Game: Accelerated London System |
-| QGD setup: White's ninth moves (9.c4) | -0.26 | D00 Queen's Pawn Game: Accelerated London System |
-| QGD setup: 3.c4 and 4.c4 (Main line) | -0.17 | D00 Queen's Pawn Game: Accelerated London System |
-| QGD setup: 3.c4 and 4.c4 (3.c4) | -0.12 | D00 Queen's Pawn Game: Accelerated London System |
-| King's Indian setup: 5.Bd3 (Main line) | 0.15 | A48 London System |
-| King's Indian setup: White's sixth moves (Main line) | 0.04 | A48 London System, with Be2 |
-| King's Indian setup: White's sixth moves (5.Bd3) | -0.21 | A48 London System |
-| King's Indian setup, ...e5: 6...Nbd7 and 6...Nc6 (Main line) | 1.10 | A48 London System |
-| King's Indian setup, ...e5: 6...Nbd7 and 6...Nc6 (6...Nc6) | 0.19 | A48 London System |
-| King's Indian setup, Rapport-Jobava: 5.Nf3 (Main line) | -0.15 | A48 Queen's Pawn Game: Barry Attack, Grünfeld Variation |
-| Sidelines, first moves: 1...e6, 1...g6 and 1...c5 (Main line) | 0.17 | A40 Horwitz Defense |
-| Sidelines, first moves: 1...e6, 1...g6 and 1...c5 (1...g6) | 0.26 | A40 Queen's Pawn Game: Modern Defense |
-| Sidelines, first moves: 1...e6, 1...g6 and 1...c5 (1...c5) | 0.67 | A43 Benoni Defense: Benoni-Indian Defense |
-| Sidelines, third moves: 3...Bg4 and 3...g6 (Main line) | 0.32 | D00 Queen's Pawn Game: Accelerated London System |
-| Sidelines, third moves: 3...Bg4 and 3...g6 (3...g6) | 0.30 | D00 Queen's Pawn Game: Accelerated London System |
-| Rapport-Jobava: 3.Nc3 (Main line) | 0.28 | D01 Rapport-Jobava System |
-| Rapport-Jobava: 3.Nc3 (4.Nb5) | -0.12 | D01 Rapport-Jobava System |
-| Rapport-Jobava: 3.Nc3 (4.Nf3) | 0.87 | D01 Rapport-Jobava System |
-| Dutch Defense: 1...f5 (Main line) | 0.98 | A80 Dutch Defense |
-| Dutch Defense: 1...f5 (3...e6) | 0.98 | A80 Dutch Defense |
+| Trap, Symmetrical: 6...Qb6? and c5! (Main line) | 1.10 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, Symmetrical: 6...Qb6? and c5! (7...Bxc5) | 3.51 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (Main line) | 3.07 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (15...g6) | 2.30 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (12...Qc7) | 0.48 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 13...Qc8?? and Bxh7+ (Main line) | 3.75 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 13...Qc8?? and Bxh7+ (13...Rc8) | 2.09 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 7...Bf5?? and Qxf5 (Main line) | 2.17 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, ...c5 setup: 7...Bf5?? and Qxf5 (7...Bg4) | 0.54 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, 2.Nf3 move order: ...Bf5! against Qc2 (Main line) | 3.29 | D02 Queen's Pawn Game: London System |
+| Trap, 2.Nf3 move order: ...Bf5! against Qc2 (8.Qc1) | 0.27 | D02 Queen's Pawn Game: London System |
+| Trap, Steinitz Countergambit: 4...Qxb2?? and Nxd5 (Main line) | 4.03 | D00 Queen's Pawn Game: Accelerated London System, Steinitz Countergambit |
+| Trap to avoid, 2...h5: 3.e3?? (Main line) | 0.71 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, 2...h5!?: 3.e3?? e5! (Main line) | 2.82 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, 2...h5!?: 3.e3?? e5! (3.Nf3) | -0.77 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, Englund Gambit: 6.Nc3! (Main line) | 2.27 | A40 Englund Gambit: Main Line |
+| Steinitz Countergambit: 2...c5 (Main line) | 0.08 | B13 Caro-Kann Defense: Exchange Variation |
+| ...c5 setup: 3...c5 (Main line) | 0.93 | D02 Queen's Pawn Game: London System |
+| Indian setups: 2...c5 (Main line) | 0.36 | A45 Indian Defense: Accelerated London System |
+| Chigorin setup: 2...Nc6 (Main line) | 0.51 | D00 Queen's Pawn Game: Accelerated London System |
+| Chigorin setup: 2...Nc6 (2...c6) | 0.55 | D00 Queen's Pawn Game: Accelerated London System |
+| Queen's Indian setup: 2...e6 (Main line) | 0.39 | A45 Indian Defense: Accelerated London System |
+| Sidelines, first moves: 1...e6, 1...g6 and 1...c5 (Main line) | 0.09 | A40 Horwitz Defense |
+| Sidelines, first moves: 1...e6, 1...g6 and 1...c5 (1...g6) | 0.22 | A40 Queen's Pawn Game: Modern Defense |
+| Sidelines, first moves: 1...e6, 1...g6 and 1...c5 (1...c5) | 0.52 | A43 Benoni Defense: Benoni-Indian Defense |
+| Dutch Defense: 1...f5 (Main line) | 1.08 | A80 Dutch Defense |
 
 ## Jobava London System — both sides (`jobava-london`)
 
-45 chapters, 59 drillable lines (basic 7, traps 11, advanced 41), 395 learner moves.
+45 chapters, 42 drillable lines (basic 7, traps 11, advanced 24), 293 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -1426,7 +1385,7 @@ None.
 
 | Line | Move | Engine prefers | Loss |
 |---|---|---|---|
-| Move orders: 1...Nf6 2.Nc3 (Main line) | 3.Bf4 | e4 | 0.62 |
+| Move orders: 1...Nf6 2.Nc3 (Main line) | 3.Bf4 | e4 | 0.67 |
 
 ### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
 
@@ -1436,65 +1395,48 @@ None.
 
 | Line | Eval | Deepest named position |
 |---|---|---|
-| Knight to b5: 3...e6 4.Nb5 (Main line) | 0.35 | D01 Rapport-Jobava System |
-| Early bishop: 3...Bf5 (Main line) | 0.29 | D01 Rapport-Jobava System |
-| Guarding b5: 3...a6 (Main line) | 0.27 | D01 Rapport-Jobava System |
-| Slav setup: 3...c6 (Main line) | 0.35 | D01 Rapport-Jobava System |
-| Pin on c3: 4.e3 and 4.Nf3 (Main line) | 0.27 | D01 Rapport-Jobava System |
-| Pin on c3: 4.e3 and 4.Nf3 (4.Nf3) | 0.87 | D01 Rapport-Jobava System |
-| Check on b4: 4.Nb5 Bb4+ (Main line) | -0.12 | D01 Rapport-Jobava System |
-| Trap: 4...Nc6? and Nb5! (Main line) | 2.91 | D01 Rapport-Jobava System |
-| Trap: 4...Nc6? and Nb5! (6...a6) | 2.10 | D01 Rapport-Jobava System |
-| Trap: 4...Nc6? and Nb5! (6...Nh5) | 4.28 | D01 Rapport-Jobava System |
-| Trap: 4...Nc6? and Nb5! (5...Qa5+) | 2.45 | D01 Rapport-Jobava System |
-| Trap: 5...Ne4? and Qxd5! (Main line) | 3.30 | D01 Rapport-Jobava System |
-| Trap: 5...Ne4? and Qxd5! (6...Qxd5) | 3.39 | D01 Rapport-Jobava System |
-| Trap: 5...Ne4? and Qxd5! (5...Nxe5) | 4.99 | D01 Rapport-Jobava System |
-| Trap: 6...h5? and Bxg6 (Main line) | 3.10 | D01 Rapport-Jobava System |
-| Trap: 8.Qd2? and ...Ne4 (Main line) | 3.87 | D01 Rapport-Jobava System |
-| Trap: 8.Qd2? and ...Ne4 (5.Qd2) | 1.08 | D01 Rapport-Jobava System |
-| Trap to avoid: 6...Bb6? 7.a5 (Main line) | 0.13 | D01 Rapport-Jobava System |
+| Knight to b5: 3...e6 4.Nb5 (Main line) | 0.24 | D01 Rapport-Jobava System |
+| Early bishop: 3...Bf5 (Main line) | 0.24 | D01 Rapport-Jobava System |
+| Guarding b5: 3...a6 (Main line) | 0.25 | D01 Rapport-Jobava System |
+| Slav setup: 3...c6 (Main line) | 0.23 | D01 Rapport-Jobava System |
+| Pin on c3: 4.e3 and 4.Nf3 (Main line) | 0.22 | D01 Rapport-Jobava System |
+| Pin on c3: 4.e3 and 4.Nf3 (4.Nf3) | 1.35 | D01 Rapport-Jobava System |
+| Check on b4: 4.Nb5 Bb4+ (Main line) | 0.15 | D01 Rapport-Jobava System |
+| Trap: 4...Nc6? and Nb5! (Main line) | 2.81 | D01 Rapport-Jobava System |
+| Trap: 4...Nc6? and Nb5! (6...a6) | 1.97 | D01 Rapport-Jobava System |
+| Trap: 4...Nc6? and Nb5! (6...Nh5) | 4.14 | D01 Rapport-Jobava System |
+| Trap: 4...Nc6? and Nb5! (5...Qa5+) | 2.26 | D01 Rapport-Jobava System |
+| Trap: 5...Ne4? and Qxd5! (Main line) | 3.26 | D01 Rapport-Jobava System |
+| Trap: 5...Ne4? and Qxd5! (6...Qxd5) | 3.41 | D01 Rapport-Jobava System |
+| Trap: 5...Ne4? and Qxd5! (5...Nxe5) | 4.95 | D01 Rapport-Jobava System |
+| Trap: 6...h5? and Bxg6 (Main line) | 3.08 | D01 Rapport-Jobava System |
+| Trap: 8.Qd2? and ...Ne4 (Main line) | 3.91 | D01 Rapport-Jobava System |
+| Trap: 8.Qd2? and ...Ne4 (5.Qd2) | 1.11 | D01 Rapport-Jobava System |
+| Trap to avoid: 6...Bb6? 7.a5 (Main line) | 0.20 | D01 Rapport-Jobava System |
 | Pin on c3: White's fifth moves (Main line) | 0.24 | D01 Rapport-Jobava System |
-| Pin on c3: White's fifth moves (5.a3) | 0.91 | D01 Rapport-Jobava System |
-| Pin on c3: White's fifth moves (5.Nf3) | 0.18 | D01 Rapport-Jobava System |
-| Pin on c3: White's sixth moves (Main line) | 0.89 | D01 Rapport-Jobava System |
-| Pin on c3: White's sixth moves (6.dxc5) | 0.24 | D01 Rapport-Jobava System |
-| Check on b4: White's sixth moves (Main line) | 0.57 | D01 Rapport-Jobava System |
+| Pin on c3: White's fifth moves (5.a3) | 1.19 | D01 Rapport-Jobava System |
+| Pin on c3: White's fifth moves (5.Nf3) | 0.21 | D01 Rapport-Jobava System |
+| Pin on c3: White's sixth moves (Main line) | 0.99 | D01 Rapport-Jobava System |
+| Pin on c3: White's sixth moves (6.dxc5) | 0.22 | D01 Rapport-Jobava System |
+| Check on b4: White's sixth moves (Main line) | 0.61 | D01 Rapport-Jobava System |
 | Check on b4: White's sixth moves (6.e3) | -0.19 | D01 Rapport-Jobava System |
-| Check on b4: White's sixth moves (6.Qa4) | 0.53 | D01 Rapport-Jobava System |
-| Check on b4: White's sixth moves (6.Nf3) | -0.20 | D01 Rapport-Jobava System |
-| Check on b4: White's sixth moves (6.a4) | 0.15 | D01 Rapport-Jobava System |
-| Knight to b5: 4...Bd6 and 4...Bb4+ (Main line) | 0.28 | D01 Rapport-Jobava System |
-| Knight to b5: 4...Bd6 and 4...Bb4+ (4...Bb4+) | -0.13 | D01 Rapport-Jobava System |
-| Knight to b5: other fifth and sixth moves (Main line) | 0.60 | D01 Rapport-Jobava System |
-| Knight to b5: other fifth and sixth moves (6...Bb4) | 0.35 | D01 Rapport-Jobava System |
-| Knight to b5: other fifth and sixth moves (5...Be7) | 0.00 | D01 Rapport-Jobava System |
-| Knight to b5: other fifth and sixth moves (5...Bd7) | 0.31 | D01 Rapport-Jobava System |
-| White's other fourth moves (Main line) | 0.24 | D01 Rapport-Jobava System |
-| White's other fourth moves (4.f3) | 0.73 | D01 Rapport-Jobava System |
-| White's other fourth moves (4.Qd2) | 0.45 | D01 Rapport-Jobava System |
-| White's other fourth moves (4.Qd3) | 0.48 | D01 Rapport-Jobava System |
-| Guarding b5: other fourth moves (Main line) | -0.18 | D01 Rapport-Jobava System |
-| Guarding b5: other fourth moves (4...Nc6) | 0.36 | D01 Rapport-Jobava System |
-| Guarding b5: other fourth moves (4...c5) | 0.39 | D01 Rapport-Jobava System |
-| Hitting d4: 3...c5 (Main line) | 0.07 | D01 Rapport-Jobava System |
-| Hitting d4: 3...c5 (4...a6) | 0.33 | D01 Rapport-Jobava System |
-| Hitting d4: 3...c5 (4...e6) | 0.40 | D01 Rapport-Jobava System |
-| Slav setup: other fourth moves (Main line) | 0.32 | D01 Rapport-Jobava System |
-| Slav setup: other fourth moves (4...Bg4) | 0.84 | D01 Rapport-Jobava System |
-| Slav setup: other fourth moves (4...g6) | 0.14 | D01 Rapport-Jobava System |
-| Knight to c6: 3...Nc6 (Main line) | 0.99 | D01 Rapport-Jobava System |
-| Knight to c6: 3...Nc6 (5...a6) | 0.49 | D01 Rapport-Jobava System |
-| Fianchetto: 3...g6 (Main line) | 0.42 | D01 Rapport-Jobava System |
-| Fianchetto: 3...g6 (5...c6) | 0.19 | D01 Rapport-Jobava System |
-| Early bishop: 5...Bg6 (Main line) | 0.09 | D01 Rapport-Jobava System |
-| Move orders: 2...e6 (Main line) | 0.34 | D01 Rapport-Jobava System, with e6 |
-| Move orders: 2...e6 (3...Bb4) | 0.21 | D01 Rapport-Jobava System, with e6 |
-| Move orders: 2...e6 (3...c5) | 0.52 | D01 Rapport-Jobava System, with e6 |
-| Move orders: 2...c6 and 2...Bf5 (Main line) | 0.20 | D00 Queen's Pawn Game: Chigorin Variation |
-| Move orders: 2...c6 and 2...Bf5 (2...Bf5) | 0.12 | D00 Queen's Pawn Game: Chigorin Variation, Alburt Defense |
-| Move orders: 1...Nf6 2.Nc3 (Main line) | 0.09 | A45 Indian Defense |
-| Move orders: 1...Nf6 2.Nc3 (2...e6) | 0.18 | A45 Indian Defense |
+| Check on b4: White's sixth moves (6.Qa4) | 0.47 | D01 Rapport-Jobava System |
+| Knight to b5: 4...Bd6 and 4...Bb4+ (Main line) | 0.31 | D01 Rapport-Jobava System |
+| Knight to b5: other fifth and sixth moves (Main line) | 0.52 | D01 Rapport-Jobava System |
+| White's other fourth moves (Main line) | 0.22 | D01 Rapport-Jobava System |
+| White's other fourth moves (4.f3) | 0.77 | D01 Rapport-Jobava System |
+| Guarding b5: other fourth moves (Main line) | 0.05 | D01 Rapport-Jobava System |
+| Guarding b5: other fourth moves (4...Nc6) | 0.34 | D01 Rapport-Jobava System |
+| Hitting d4: 3...c5 (Main line) | 0.15 | D01 Rapport-Jobava System |
+| Slav setup: other fourth moves (Main line) | 0.25 | D01 Rapport-Jobava System |
+| Knight to c6: 3...Nc6 (Main line) | 0.89 | D01 Rapport-Jobava System |
+| Fianchetto: 3...g6 (Main line) | 0.41 | D01 Rapport-Jobava System |
+| Early bishop: 5...Bg6 (Main line) | 0.11 | D01 Rapport-Jobava System |
+| Move orders: 2...e6 (Main line) | 0.31 | D01 Rapport-Jobava System, with e6 |
+| Move orders: 2...c6 and 2...Bf5 (Main line) | 0.06 | D00 Queen's Pawn Game: Chigorin Variation |
+| Move orders: 2...c6 and 2...Bf5 (2...Bf5) | 0.11 | D00 Queen's Pawn Game: Chigorin Variation, Alburt Defense |
+| Move orders: 1...Nf6 2.Nc3 (Main line) | 0.08 | A45 Indian Defense |
+| Move orders: 1...Nf6 2.Nc3 (2...e6) | 0.11 | A45 Indian Defense |
 
 ## King's Indian Defense — both sides (`kings-indian`)
 
@@ -2227,4 +2169,4 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 
 ## Lines with the same moves for both sides
 
-- jobava-london: white "Knight to b5: 4...Bd6 and 4...Bb4+" (4...Bb4+) has the same moves as black "Trap to avoid: 6...Bb6? 7.a5"; both are drilled
+- nimzo-indian: black "Rubinstein, Gligorić System: 9...b6" (Main line) has the same moves as white "Rubinstein, Gligorić System: 9...b6"; both are drilled
