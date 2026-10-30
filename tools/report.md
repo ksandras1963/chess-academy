@@ -6,6 +6,8 @@ Generated 2026-10-28 23:54 · engine Stockfish, depth 18
 
 The Nimzo-Indian course section is from a separate run on 2026-10-30 with Stockfish 16 at depth 18 (no errors), after its Advanced side lines under 5% that no video discusses were removed.
 
+The Grünfeld Defense course and its puzzles are from a separate run on 2026-10-30 with Stockfish 16 at depth 18 (no errors).
+
 ## Italian Game — both sides (`italian`)
 
 58 chapters, 78 drillable lines (basic 8, traps 28, advanced 42), 700 learner moves.
@@ -1942,6 +1944,103 @@ None.
 | Trap, Sämisch: 9.Qc2? cxd4! (Main line) | 1.97 | E24 Nimzo-Indian Defense: Sämisch Variation |
 | Trap, Sämisch: 9.Qc2? cxd4! (9.Qd2) | 1.67 | E24 Nimzo-Indian Defense: Sämisch Variation |
 
+## Grünfeld Defense — both sides (`grunfeld`)
+
+43 chapters, 47 drillable lines (basic 8, traps 7, advanced 32), 550 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Classical Exchange, main line: 14.d5 | 10.O-O | Grünfeld Defense: Exchange Variation, Sokolsky Variation | D89 | ok |
+| Classical Exchange: 7.Bc4 | 7.Bc4 | Grünfeld Defense: Exchange Variation, Classical Variation | D86 | ok |
+| Modern Exchange: 7.Nf3 | 7.Nf3 | Grünfeld Defense: Exchange Variation, Modern Exchange Variation | D85 | ok |
+| Closed System: 4.e3 | 4.e3 | Grünfeld Defense: Three Knights Variation, Burille Variation | D94 | ok |
+| Stockholm Variation: 4.Bg5 | 4.Bg5 | Grünfeld Defense: Stockholm Variation | D80 | ok |
+| Classical Exchange, 10...Qc7: 11.Rc1 | 10...Qc7 | Grünfeld Defense: Exchange Variation, Classical Variation | D86 | ok |
+| Classical Exchange, 10...Bg4: 11...Bd7 | 11.f3 | Grünfeld Defense: Exchange Variation, Classical Variation | D86 | ok |
+| Classical Exchange: 9...cxd4 | 9...cxd4 | Grünfeld Defense: Exchange Variation, Classical Variation | D86 | ok |
+| Classical Exchange, 10...b6: 11.dxc5 | 11.dxc5 | Grünfeld Defense: Exchange Variation, Classical Variation | D86 | ok |
+| Exchange: 5...Nb6, 5...Nf6 and 6...c5 | 5...Nb6 | Grünfeld Defense: Exchange Variation | D85 | ok |
+| Exchange: 7.Be3 | 7.Be3 | Grünfeld Defense: Exchange Variation | D85 | ok |
+| Exchange: 5.Bd2 | 5.Bd2 | Grünfeld Defense: Exchange Variation | D85 | ok |
+| Exchange: 7.Qa4+ and 7.Bb5+ | 7.Qa4+ | Grünfeld Defense: Exchange Variation | D85 | ok |
+| Modern Exchange: 8.Bb5+ | 8.Bb5+ | Grünfeld Defense: Exchange Variation, Modern Exchange Variation | D85 | ok |
+| Modern Exchange: 8.Rb1 | 8.Rb1 | Grünfeld Defense: Exchange Variation, Modern Exchange Variation | D85 | ok |
+| Modern Exchange: 8.Be2 | 8.Be2 | Grünfeld Defense: Exchange Variation, Modern Exchange Variation | D85 | ok |
+| Brinckmann Attack: 4.Bf4 | 4.Bf4 | Grünfeld Defense: Brinckmann Attack | D82 | ok |
+| Petrosian System: 5.Bg5 | 5.Bg5 | Grünfeld Defense: Three Knights Variation, Petrosian System | D91 | ok |
+| Closed System: 6.cxd5 | 6.cxd5 | Grünfeld Defense: Three Knights Variation, Burille Variation | D94 | ok |
+| Stockholm Variation: 5.Bh4 and 5.Bf4 | 5.Bh4 | Grünfeld Defense: Stockholm Variation | D80 | ok |
+| Russian System: 5.Qb3 | 5.Qb3 | Grünfeld Defense: Russian Variation, Byrne Variation | D97 | ok |
+| Accelerated Russian: 4.Qb3 | 4.Qb3 | Grünfeld Defense: Russian Variation, Accelerated Variation | D81 | ok |
+| Neo-Grünfeld: 3.g3 | 3.g3 | Neo-Grünfeld Defense: with g3 | D70 | ok |
+| f3 Anti-Grünfeld: 3.f3 | 3.f3 | Neo-Grünfeld Defense: Goglidze Attack | D70 | ok |
+| Trap, Petrosian: 6.Nxe4? dxe4 | 6.Nxe4 | Grünfeld Defense: Three Knights Variation, Petrosian System | D91 | ok |
+| Trap, Modern Exchange: 10.O-O? Bxf3 | 10.O-O | Grünfeld Defense: Exchange Variation, Modern Exchange Variation | D85 | ok |
+| Trap, Modern Exchange: 9.d5? Qa5! | 9.d5 | Grünfeld Defense: Exchange Variation, Modern Exchange Variation | D85 | ok |
+| Trap, Stockholm: 8.Bg2? Qa5+ | 8.Bg2 | Grünfeld Defense: Stockholm Variation | D80 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Classical Exchange, main line: 14.d5 (Main line) | 0.10 | D89 Grünfeld Defense: Exchange Variation, Sokolsky Variation |
+| Classical Exchange, main line: 14.d5 (10...cxd4) | -0.02 | D89 Grünfeld Defense: Exchange Variation, Spassky Variation |
+| Classical Exchange, main line: 14.d5 (7...O-O) | 0.27 | D87 Grünfeld Defense: Exchange Variation, Spassky Variation |
+| Classical Exchange, main line: 14.d5 (7...O-O … 9...cxd4) | -0.02 | D89 Grünfeld Defense: Exchange Variation, Spassky Variation |
+| Classical Exchange: 7.Bc4 (Main line) | -0.08 | D86 Grünfeld Defense: Exchange Variation, Classical Variation |
+| Modern Exchange: 7.Nf3 (Main line) | 0.06 | D85 Grünfeld Defense: Exchange Variation, Modern Exchange Variation |
+| Closed System: 4.e3 (Main line) | 0.03 | A56 Grünfeld Defense: Three Knights Variation, Burille Variation, Reversed Tarrasch |
+| Stockholm Variation: 4.Bg5 (Main line) | -0.04 | D80 Grünfeld Defense: Stockholm Variation |
+| Classical Exchange, 10...Qc7: 11.Rc1 (Main line) | 0.95 | D86 Grünfeld Defense: Exchange Variation, Classical Variation |
+| Classical Exchange, 10...Qc7: 11.Rc1 (12...Qd7) | 0.39 | D86 Grünfeld Defense: Exchange Variation, Classical Variation |
+| Classical Exchange, 10...Bg4: 11...Bd7 (Main line) | 0.17 | D86 Grünfeld Defense: Exchange Variation, Classical Variation |
+| Classical Exchange: 9...cxd4 (Main line) | 0.12 | D86 Grünfeld Defense: Exchange Variation, Classical Variation |
+| Classical Exchange, 10...b6: 11.dxc5 (Main line) | -0.02 | D86 Grünfeld Defense: Exchange Variation, Classical Variation |
+| Classical Exchange, 10...b6: 11.dxc5 (13.Bd4) | 4.77 | D86 Grünfeld Defense: Exchange Variation, Classical Variation |
+| Classical Exchange, 10...b6: 11.dxc5 (11.Qd2) | -0.24 | D86 Grünfeld Defense: Exchange Variation, Classical Variation |
+| Exchange: 5...Nb6, 5...Nf6 and 6...c5 (Main line) | 1.08 | D85 Grünfeld Defense: Exchange Variation |
+| Exchange: 5...Nb6, 5...Nf6 and 6...c5 (5...Nf6) | 1.15 | D85 Grünfeld Defense: Exchange Variation |
+| Exchange: 5...Nb6, 5...Nf6 and 6...c5 (5...Nxc3) | 0.24 | D85 Grünfeld Defense: Exchange Variation |
+| Exchange: 7.Be3 (Main line) | -0.11 | D85 Grünfeld Defense: Exchange Variation |
+| Exchange: 5.Bd2 (Main line) | -0.24 | D85 Grünfeld Defense: Exchange Variation |
+| Exchange: 7.Qa4+ and 7.Bb5+ (Main line) | -0.81 | D85 Grünfeld Defense: Exchange Variation |
+| Exchange: 7.Qa4+ and 7.Bb5+ (7.Bb5+) | -0.19 | D85 Grünfeld Defense: Exchange Variation |
+| Modern Exchange: 8.Bb5+ (Main line) | 0.01 | D85 Grünfeld Defense: Exchange Variation, Modern Exchange Variation |
+| Modern Exchange: 8.Rb1 (Main line) | 0.00 | D85 Grünfeld Defense: Exchange Variation, Modern Exchange Variation |
+| Modern Exchange: 8.Rb1 (11.Qd2) | -0.06 | D85 Grünfeld Defense: Exchange Variation, Modern Exchange Variation |
+| Modern Exchange: 8.Be2 (Main line) | -0.27 | D85 Grünfeld Defense: Exchange Variation, Modern Exchange Variation |
+| Brinckmann Attack: 4.Bf4 (Main line) | -0.50 | D82 Grünfeld Defense: Brinckmann Attack |
+| Brinckmann Attack: 4.Bf4 (7.h3) | -0.28 | D82 Grünfeld Defense: Brinckmann Attack |
+| Petrosian System: 5.Bg5 (Main line) | 0.00 | D91 Grünfeld Defense: Three Knights Variation, Petrosian System |
+| Petrosian System: 5.Bg5 (8.Nf3) | 0.22 | D91 Grünfeld Defense: Three Knights Variation, Petrosian System |
+| Petrosian System: 5.Bg5 (6.Bh4) | 0.07 | D91 Grünfeld Defense: Three Knights Variation, Petrosian System |
+| Petrosian System: 5.Bg5 (6.Bf4) | -0.20 | D91 Grünfeld Defense: Three Knights Variation, Petrosian System |
+| Closed System: 6.cxd5 (Main line) | -0.22 | D94 Grünfeld Defense: Three Knights Variation, Burille Variation |
+| Stockholm Variation: 5.Bh4 and 5.Bf4 (Main line) | -0.22 | D80 Grünfeld Defense: Stockholm Variation |
+| Stockholm Variation: 5.Bh4 and 5.Bf4 (5.Bf4) | -0.21 | D80 Grünfeld Defense: Stockholm Variation |
+| Russian System: 5.Qb3 (Main line) | -0.64 | D97 Grünfeld Defense: Russian Variation, Byrne Variation |
+| Accelerated Russian: 4.Qb3 (Main line) | -0.54 | D81 Grünfeld Defense: Russian Variation, Accelerated Variation |
+| Neo-Grünfeld: 3.g3 (Main line) | -0.44 | D72 Neo-Grünfeld Defense: with g3 |
+| Neo-Grünfeld: 3.g3 (6.Nf3) | -0.25 | D71 Neo-Grünfeld Defense: Exchange Variation |
+| f3 Anti-Grünfeld: 3.f3 (Main line) | -0.60 | D70 Neo-Grünfeld Defense: Goglidze Attack |
+| Trap, Petrosian: 6.Nxe4? dxe4 (Main line) | 2.04 | D91 Grünfeld Defense: Three Knights Variation, Petrosian System |
+| Trap, Petrosian: 6.Nxe4? dxe4 (7.Ne5) | 3.95 | D91 Grünfeld Defense: Three Knights Variation, Petrosian System |
+| Trap, Petrosian: 6.Nxe4? dxe4 (6.Nxd5) | 3.53 | D91 Grünfeld Defense: Three Knights Variation, Petrosian System |
+| Trap, Modern Exchange: 10.O-O? Bxf3 (Main line) | 0.44 | D85 Grünfeld Defense: Exchange Variation, Modern Exchange Variation |
+| Trap, Modern Exchange: 9.d5? Qa5! (Main line) | 2.08 | D85 Grünfeld Defense: Exchange Variation, Modern Exchange Variation |
+| Trap, Modern Exchange: 9.d5? Qa5! (10.Rb1) | -0.09 | D85 Grünfeld Defense: Exchange Variation, Modern Exchange Variation |
+| Trap, Stockholm: 8.Bg2? Qa5+ (Main line) | 2.61 | D80 Grünfeld Defense: Stockholm Variation |
+
 ## Overview: Replies to 1.e4 (`content/e4-overview.pgn`)
 
 7 chapters. Every move of both sides must be within 0.60 pawns of Stockfish's choice (depth 18), unless its note says `[%engine ok]`. Line ends are scored for White.
@@ -2402,6 +2501,25 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 8 | Bishop takes f2 | Black | 6...Bxf2+ | 2 | 8.Kg3 (5 half-moves) | ok |
 | 9 | Take the pawn on e3 | Black | 12...Rxe3 | 1 | 13.f4 (4 half-moves) | ok |
 | 10 | Check on h4 | Black | 6...Qh4+ | 1 | 7.g3 (4 half-moves) | ok |
+
+## Puzzles: Grünfeld Defense (`content/grunfeld-puzzles.pgn`)
+
+10 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Fork on c2 | Black | 7...Nxd4 | 1 | 8.Bd2 (4 half-moves) | ok |
+| 2 | The bishop behind the knight | Black | 9...Ne3 | 1 | 10.Nd5 (8 half-moves) | ok |
+| 3 | Pin the queen | Black | 12...Bc3 | 1 | 13.O-O (4 half-moves) | ok |
+| 4 | Two knights, one pawn | Black | 6...Nxg5 | 2 | 8.Nxc7+ (3 half-moves) | ok |
+| 5 | Rook lift and queen trap | White | 11.Qc2 | 1 | 11...c4 (4 half-moves) | ok |
+| 6 | Hit the rook | White | 10.Bd5 | 1 | 10...b4 (6 half-moves) | ok |
+| 7 | Trap the bishop | Black | 8...Qa5+ | 1 | 9.Qd2 (10 half-moves) | ok |
+| 8 | Check and take | White | 11.Nxd5+ | 1 | 11...Kd6 (2 half-moves) | ok |
+| 9 | The knight in the corner | Black | 12...Bxg5 | 1 | 13.Nxc7 (4 half-moves) | ok |
+| 10 | Rook sacrifice on a1 | Black | 17...Ra1+ | 1 | 18.Kxa1 (10 half-moves) | ok |
 
 ## Lines with the same moves for both sides
 

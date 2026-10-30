@@ -252,7 +252,8 @@ function gamesLabel(c, learner) {
     return ch => {
         const start = key(c.opening.fen)
         for (let n = ch.diagram && ch.diagram.node; n && key(n.fen) !== start; n = n.parent) {
-            if (n.color === learner && choices.get(key(n.fenBefore))?.size > 1) return `${base} with ${label(n)}`
+            // A chapter that starts before the opening's position (3.f3 against the Grünfeld) reaches the root.
+            if (n.color === learner && n.fenBefore && choices.get(key(n.fenBefore))?.size > 1) return `${base} with ${label(n)}`
         }
         return base
     }
