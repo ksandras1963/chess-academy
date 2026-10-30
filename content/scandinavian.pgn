@@ -209,7 +209,7 @@
 1. e4 d5 2. exd5 Nf6 {This is the Modern Variation. Black will take the pawn back with the knight.}
 3. d4 {Takes the center. After 3.Nf3 Nxd5 4.d4 the play is the same.} Nxd5 {This is the Marshall Variation. The Portuguese Gambit, 3...Bg4, is under Advanced.}
 4. c4 {Hits the knight with gain of time. 4.Nf3 is just as good: see Advanced.} Nf6 {The best retreat: the knight guards d5 and e4.}
-5. Nc3 {Develops and guards d5 and e4.} e5 {[%cal Ge5d4] Strikes at the center before White has finished developing. Only one club player in twenty finds it; the more common 5...Bf5, 5...e6 and 5...c6 are under Advanced.}
+5. Nc3 {Develops and guards d5 and e4.} e5 {[%cal Ge5d4] Strikes at the center before White has finished developing. Only one club player in twenty finds it.}
 6. dxe5 {The best answer. After 6.d5, play 6...c6, also with an equal game.} Qxd1+ 7. Nxd1 {Takes back with the knight, so the king keeps the right to castle. 7.Kxd1? Ng4 wins back the pawn with the better game for Black.} Ne4 {The knight comes to the center and eyes f2.}
 8. Ne3 {Guards f2 against tricks and eyes d5 and f5.} Be6 9. Nd5 Na6 {The knight heads for c5 and covers c7.}
 10. a3 {Keeps Black's knight off b4.} Bc5 11. Be3 Bxe3 12. Nxe3 O-O-O {Black is fully developed. White's pawns on the queenside look strong, but Black's pieces are active. Stockfish +0.3, slightly better for White.} *
@@ -221,10 +221,10 @@
 [Opening "Scandinavian Defense: Modern Variation"]
 [ECO "B01"]
 
-{After 3.Nc3 the pawn on d5 is not really guarded, so Black takes it back with the knight. If White trades knights, Black's queen recaptures, and no White knight is left to chase it. Black develops with ...Nc6 and gains space with ...e5. White's other fourth moves are under Advanced; a trap after 5.d4 is under Traps.}
+{After 3.Nc3 the pawn on d5 is not really guarded, so Black takes it back with the knight. If White trades knights, Black's queen recaptures, and no White knight is left to chase it. Black develops with ...Nc6 and gains space with ...e5. A trap after 5.d4 is under Traps.}
 1. e4 d5 2. exd5 Nf6 {This is the Modern Variation. Black will take the pawn back with the knight, so the queen is not chased.}
 3. Nc3 {Develops, but doesn't really guard d5.} Nxd5 {Takes the pawn back.}
-4. Nxd5 {The most common move. 4.Bc4, 4.Nf3 and 4.d4 are under Advanced.} Qxd5 {Now no White knight can chase the queen, and Black is fully equal.}
+4. Nxd5 {The most common move.} Qxd5 {Now no White knight can chase the queen, and Black is fully equal.}
 5. Nf3 {After 5.d4, play 5...Nc6 6.Nf3 Bg4 7.Be2 O-O-O: Black's knight, queen and rook all aim at d4.} Nc6 {Develops and prepares ...e5. 5...Bg4, the most common move at club level, is also fine.}
 6. Be2 {After 6.d4, play 6...Bg4 and ...O-O-O, as against 5.d4.} e5 {[%cal Ge5e4] Takes the center. Black has more space.}
 7. O-O {After 7.d3, play 7...Bf5 and ...O-O-O (Stockfish −0.6).} e4 {Chases the knight.}
@@ -238,11 +238,11 @@
 [Opening "Scandinavian Defense: Panov Transfer"]
 [ECO "B01"]
 
-{3.c4 keeps the extra pawn for now, and Black hits it at once with ...c6. After 4.dxc6 Nxc6 Black is a pawn down, but has two pieces out and takes the center with ...e5. In this main line the queens come off and White's king is stuck on d1. White's other fifth moves are under Advanced; a trap after 6.Nc3 is under Traps.}
+{3.c4 keeps the extra pawn for now, and Black hits it at once with ...c6. After 4.dxc6 Nxc6 Black is a pawn down, but has two pieces out and takes the center with ...e5. In this main line the queens come off and White's king is stuck on d1. A trap after 6.Nc3 is under Traps.}
 1. e4 d5 2. exd5 Nf6 {This is the Modern Variation. Black will take the pawn back with the knight.}
 3. c4 {Guards d5 with a pawn, so White keeps the extra pawn for now.} c6 {This is the Panov Transfer. Black strikes at d5 at once.}
 4. dxc6 {The most common move. 4.d4 cxd5 reaches the Caro-Kann Panov Attack. Against 4.Nc3, take twice on d5: 4...cxd5 5.cxd5 Nxd5 (equal).} Nxc6 {Black is a pawn down, but has two pieces out, and White's d-pawn is still at home.}
-5. Nf3 {The most common move. 5.Nc3 and 5.d3 are under Advanced.} e5 {[%cal Ge5e4] Takes the center and threatens ...e4 to chase the knight.}
+5. Nf3 {The most common move.} e5 {[%cal Ge5e4] Takes the center and threatens ...e4 to chase the knight.}
 6. d3 {Prepares to meet ...e4 with dxe4. After 6.Nc3, 6...e4 7.Ng5 Bf5 sets a trap (see Traps). Against 6.Be2, 6...e4 7.Ng5 Qa5! hits the knight along the fifth rank.} e4 {[%cal Gd8d1] Opens the d-file toward White's king.}
 7. dxe4 {7.Ng5 Bf5 is also good for Black (Stockfish −0.8). 7.Qe2? is a mistake: 7...Bb4+ 8.Bd2 Bf5 leaves Black winning (Stockfish −4.9).} Qxd1+ 8. Kxd1 Nxe4 {Black has won back the pawn, and White's king can no longer castle.}
 9. Be3 Bf5 {Develops and guards the knight on e4.} 10. Nbd2 O-O-O {[%cal Gd8d1] Black castles with a pin: the knight on d2 can't move without exposing White's king. Stockfish −1.3, clearly better for Black.} *
@@ -523,36 +523,6 @@
 8. Ne5 Nxe5 9. dxe5 Ne7 {Heads for g6 or c6, where it adds pressure on e5.}
 10. Be2 Bf5 {Black is fully developed and will castle long or short. Stockfish +0.2, equal.} *
 
-[Chapter "Marshall Variation: Black's other fifth moves"]
-[Side "white"]
-[Diagram "5...Bf5"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Scandinavian Defense: Marshall Variation"]
-[ECO "B01"]
-
-{After 4.c4 Nf6 5.Nc3, only one club player in twenty finds 5...e5 (Basic). The usual moves let White keep the big center and develop calmly with Nf3, Be2 or Bd3 and castling.}
-1. e4 d5 2. exd5 Nf6 3. d4 Nxd5 4. c4 Nf6 5. Nc3 Bf5 {The most common move.}
-(5... e6 6. Nf3 Be7 7. Bd3 O-O 8. O-O {White has more space and an easy game. Stockfish +0.9, slightly better for White.})
-(5... c6 6. Nf3 Bg4 7. Be2 e6 8. h3 {Asks the bishop to decide.} Bh5 9. O-O {Stockfish +1.0, clearly better for White.})
-6. Nf3 e6 7. Be2 Bb4 8. Qb3 {[%cal Gb3b4] Hits the bishop, which has no support.} Bxc3+ 9. Qxc3 {White has the two bishops and a big center. Stockfish +1.3, clearly better for White.} *
-
-[Chapter "Marshall Variation: Black's other fourth moves"]
-[Side "white"]
-[Diagram "4...Nb6"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Scandinavian Defense: Marshall Variation"]
-[ECO "B01"]
-
-{After 4.c4, the knight can also go to b6 or b4. Against both, White develops with Nf3 and keeps the extra space. After 4...Nb6 5.Nf3 Bg4, 6.c5! drives the knight to d5, and 7.Qb3 hits b7 and d5 at once.}
-1. e4 d5 2. exd5 Nf6 3. d4 Nxd5 4. c4 Nb6
-(4... Nb4 5. a3 {[%cal Ga3b4] Chases the knight away. 5...N4a6 also leaves White with a big center (Stockfish +1.5).} N4c6 6. Nf3 Bg4 7. d5 {Chases the other knight with gain of time.} Ne5 8. Be2 Bxf3 9. Bxf3 Nxf3+ {9...Nxc4? loses a piece to 10.Qa4+, which checks and hits the knight.} 10. Qxf3 {White has more space and is ahead in development. Stockfish +1.7, clearly better for White.})
-5. Nf3 Bg4 {The most common move.}
-6. c5! {[%cal Gc5b6] Drives the knight to d5.} Nd5
-7. Qb3 {[%cal Gb3b7,Gb3d5] Hits b7 and the knight on d5. If 7...b6?, then 8.Ne5! is even stronger (Stockfish +6.3).} Bxf3
-8. Qxb7 {Takes the pawn and hits the rook on a8.} Nd7 9. gxf3 {White is a pawn up and Black's queenside is weak. Stockfish +2.3, winning for White.} *
-
 [Chapter "Marshall Variation: 4.Nf3 Bf5"]
 [Side "black"]
 [Diagram "4.Nf3"]
@@ -571,24 +541,6 @@
 6... e6 7. Be2 c5 {[%cal Gc5d4] Hits the center at once.}
 8. O-O N8c6 {[%cal Gc6d4,Gc5d4] Black's pieces aim at d4. Stockfish −0.2, equal.} *
 
-[Chapter "Modern Variation: 3.Nc3, White's other fourth moves"]
-[Side "black"]
-[Diagram "4.Bc4"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Scandinavian Defense: Modern Variation"]
-[ECO "B01"]
-
-{After 3.Nc3 Nxd5, White can keep the knights on with 4.Bc4, 4.Nf3 or 4.d4. Black trades on c3 at once. Against 4.Bc4, Black's knight then hunts the bishop with ...Nc6 and ...Na5; against Nf3 and d4, Black's bishop goes to g7, where it hits the pawns on c3 and d4.}
-1. e4 d5 2. exd5 Nf6 3. Nc3 Nxd5
-4. Bc4 {[%cal Gc4f7] Develops and eyes f7.}
-(4. Nf3 Nxc3 5. bxc3 g6 {The bishop goes to g7.} 6. d4 Bg7 {Black will castle short. Stockfish +0.2, equal.})
-(4. d4 Nxc3 5. bxc3 g6 6. Nf3 Bg7 {The same position as after 4.Nf3. Stockfish +0.2, equal.})
-4... Nxc3 {Trades knights at once.}
-5. bxc3 {The most common move.}
-5... Nc6 6. Nf3 Na5 {[%cal Ga5c4] Hunts the bishop.}
-7. Bb3 Nxb3 {Black has the two bishops. Stockfish +0.1, equal.} *
-
 [Chapter "Modern Variation: White's other third moves"]
 [Side "black"]
 [Diagram "3.Nf3"]
@@ -606,39 +558,6 @@
 3... Nxd5
 4. Bc4 {[%cal Gc4d5] Hits the knight.} Bf5 {Develops. The queen guards the knight on d5.}
 5. O-O e6 6. Re1 Be7 {Black will castle short. Stockfish +0.2, equal.} *
-
-[Chapter "Modern Variation: Black's other third moves"]
-[Side "white"]
-[Diagram "3...c6"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Scandinavian Defense: Modern Variation"]
-[ECO "B01"]
-
-{After 2...Nf6 3.d4, Black's main moves are 3...Nxd5 and the Portuguese Gambit, 3...Bg4. The other third moves give up the d5 pawn for development, and White keeps the extra pawn. After 3...Qxd5 4.Nc3 the queen is chased as in the main lines: 4...Qa5 5.Nf3 reaches the Main Line, and 4...Qd8 5.Nf3 the Valencian.}
-1. e4 d5 2. exd5 Nf6 {This is the Modern Variation.} 3. d4 c6 {Offers a pawn for quick development.}
-(3... e6 4. Bb5+ {Checks first.} c6 5. dxc6 bxc6 6. Be2 {White is a pawn up, and Black's c-pawn is weak. Stockfish +1.4, clearly better for White.})
-4. dxc6 Nxc6 5. Nf3 Bg4 6. c3 {[%csl Gd4] Guards d4. White is a pawn up and has a solid center. Stockfish +0.7, slightly better for White.} *
-
-[Chapter "Panov Transfer: White's other fifth moves"]
-[Side "black"]
-[Diagram "5.Nc3"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Scandinavian Defense: Panov Transfer"]
-[ECO "B01"]
-
-{After 4.dxc6 Nxc6, White sometimes develops with Nc3 and d3 before Nf3. Black plays ...e5 and ...Bf5 as in the main line. If White pins the knight on f6 with Bg5, ...Qb6 hits b2, and Black gets active play for the pawn.}
-1. e4 d5 2. exd5 Nf6 3. c4 c6 4. dxc6 Nxc6
-5. Nc3 {Develops. After 5...e5 6.Nf3 e4 7.Ng5 Bf5, a trap is under Traps.}
-(5. d3 e5 6. Nc3 Bf5 {The same position as in the main line. Stockfish −0.1, equal.})
-5... e5 {[%cal Ge5e4] Takes the center.}
-6. d3 Bf5 {Develops and keeps an eye on d3.}
-7. Bg5 {Pins the knight.}
-7... Qb6 {[%cal Gb6b2,Gb6f2] Hits b2 and f2.}
-8. Bxf6 {Takes the knight.} Qxb2 {[%cal Gb2c3,Gb2a1] Takes the pawn and hits the knight on c3 and the rook on a1. 8...gxf6 is also good.}
-9. Nd5? {The most common move, but a mistake. 9.Nge2 is better, guarding c3; then 9...Bb4 and ...Bxc3+ win back the piece.}
-9... Bb4+ {Checks with gain of time.} 10. Nxb4 Qc3+ {[%cal Gc3a1,Gc3b4] The queen checks and will take the rook on a1 or the knight on b4 next. Stockfish −6.4, winning for Black.} *
 
 [Chapter "Advance Variation: 2.e5 c5"]
 [Side "black"]
@@ -702,20 +621,6 @@
 6. Bc4 {The most active square for the bishop.}
 (6. Nb5 {Hits the queen and eyes c7.} Qd8 7. Bf4 Nd5 {Hits the bishop and covers c7.} 8. Be5 {White has more space. Stockfish +0.7, slightly better for White.})
 6... Bg7 7. O-O O-O 8. h3 {Keeps Black's bishop off g4.} Nc6 {[%cal Gc6d4,Gd6d4] Black's knight and queen hit d4.} 9. Re1 {White is a little better, with more space. Stockfish +0.6, slightly better for White.} *
-
-[Chapter "Blackburne-Kloosterboer Gambit: 2...c6"]
-[Side "white"]
-[Diagram "2...c6"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Scandinavian Defense: Blackburne Gambit"]
-[ECO "B01"]
-
-{Instead of taking back on d5, Black offers a second pawn for quick development. Take it: with 3.dxc6 White is a pawn up, and calm development keeps the extra pawn. The same goes for 2...e6.}
-1. e4 d5 2. exd5 c6 {This is the Blackburne-Kloosterboer Gambit.}
-(2... e6 3. Bb5+ c6 4. dxc6 bxc6 {White's bishop must move, but White is a pawn up. Stockfish +1.1, clearly better for White.})
-3. dxc6 Nxc6 {This is the Blackburne Gambit.}
-4. Nc3 Nf6 5. Nf3 e5 {Black has the center and quick development for the pawn. Stockfish +0.8, slightly better for White.} *
 
 [Chapter "Map of the variations"]
 [Type "map"]

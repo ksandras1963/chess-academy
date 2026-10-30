@@ -191,7 +191,7 @@
 [ECO "C54"]
 
 {3...Bc5 is the Giuoco Piano: Black copies White and puts the bishop on its best diagonal, aimed at f2. We answer with the Giuoco Pianissimo, a slow build-up that keeps every option open.}
-1. e4 {Takes the center and opens lines for the bishop and queen.} 1... e5 2. Nf3 {Develops with an attack on e5.} 2... Nc6 {Defends e5.} 3. Bc4 {[%cal Gc4f7] The Italian bishop targets f7, the weakest point near Black's king, and controls d5.} 3... Bc5 {Black's bishop mirrors ours. From c5 it controls d4 and eyes f2.} 4. c3 {[%cal Gc3d4] The key move of the Italian. c3 supports a later d4, so White can build a pawn center that Black's pieces can't easily attack. It also frees c2 as a retreat square for the bishop. The cost is that the knight can no longer go to c3.} 4... Nf6 {Counterattacks e4 at once, before White is ready for d4.} 5. d3 {Guards e4 calmly. The older 5.d4 opens the game at once and leads to sharp theory in which Black equalizes with an early ...d5. With 5.d3 we keep d4 in reserve and play it later, when it gains more.} 5... d6 {Supports e5 and opens the diagonal for the c8 bishop. Both sides now build slowly.} 6. O-O O-O {Black's other sixth moves, 6...a6 and the pin 6...Bg4, are under Advanced variations.} 7. Re1 {Protects e4 a second time and gets ready for the center to open after d4.} 7... a6 {Gives the bishop a retreat on a7, so d4 or b4 won't gain time against it. It also prepares ...b5. The knight raid 7...Ng4 is under Advanced variations.} 8. Bb3 {Steps back before ...b5 or ...Na5 can hit the bishop. On b3 it still aims at f7.} 8... Ba7 9. h3 {[%csl Yg4] Takes g4 from Black's bishop and knight: no pin on f3 and no ...Ng4 raid. Now the knight on f3 and the bishop on c1 can move freely.} 9... h6 {Black mirrors the idea and takes g5 from our bishop and knight.} 10. Nbd2 Re8 11. Nf1 {[%cal Gf1g3] The classic Italian knight route, b1-d2-f1-g3. The knight couldn't use c3, so it travels to the kingside, where it eyes f5 and h5.} 11... Be6 {Offers to trade off our best bishop.} 12. Bc2 {Keeps the bishop. On c2 it waits behind the d3 pawn and points at Black's king once d4 is played.} 12... d5 {The freeing break. Black is fully developed, so ...d5 is safe now.} 13. exd5 Bxd5 14. Ng3 {[%cal Gg3f5,Gf3h4] Development is complete. Next comes Nh4 and Nf5, or the d4 break, depending on Black's setup.} *
+1. e4 {Takes the center and opens lines for the bishop and queen.} 1... e5 2. Nf3 {Develops with an attack on e5.} 2... Nc6 {Defends e5.} 3. Bc4 {[%cal Gc4f7] The Italian bishop targets f7, the weakest point near Black's king, and controls d5.} 3... Bc5 {Black's bishop mirrors ours. From c5 it controls d4 and eyes f2.} 4. c3 {[%cal Gc3d4] The key move of the Italian. c3 supports a later d4, so White can build a pawn center that Black's pieces can't easily attack. It also frees c2 as a retreat square for the bishop. The cost is that the knight can no longer go to c3.} 4... Nf6 {Counterattacks e4 at once, before White is ready for d4.} 5. d3 {Guards e4 calmly. The older 5.d4 opens the game at once and leads to sharp theory in which Black equalizes with an early ...d5. With 5.d3 we keep d4 in reserve and play it later, when it gains more.} 5... d6 {Supports e5 and opens the diagonal for the c8 bishop. Both sides now build slowly.} 6. O-O O-O {Black's other sixth moves, 6...a6 and the pin 6...Bg4, are under Advanced variations.} 7. Re1 {Protects e4 a second time and gets ready for the center to open after d4.} 7... a6 {Gives the bishop a retreat on a7, so d4 or b4 won't gain time against it. It also prepares ...b5.} 8. Bb3 {Steps back before ...b5 or ...Na5 can hit the bishop. On b3 it still aims at f7.} 8... Ba7 9. h3 {[%csl Yg4] Takes g4 from Black's bishop and knight: no pin on f3 and no ...Ng4 raid. Now the knight on f3 and the bishop on c1 can move freely.} 9... h6 {Black mirrors the idea and takes g5 from our bishop and knight.} 10. Nbd2 Re8 11. Nf1 {[%cal Gf1g3] The classic Italian knight route, b1-d2-f1-g3. The knight couldn't use c3, so it travels to the kingside, where it eyes f5 and h5.} 11... Be6 {Offers to trade off our best bishop.} 12. Bc2 {Keeps the bishop. On c2 it waits behind the d3 pawn and points at Black's king once d4 is played.} 12... d5 {The freeing break. Black is fully developed, so ...d5 is safe now.} 13. exd5 Bxd5 14. Ng3 {[%cal Gg3f5,Gf3h4] Development is complete. Next comes Nh4 and Nf5, or the d4 break, depending on Black's setup.} *
 
 [Chapter "Two Knights: 3...Nf6"]
 [Side "white"]
@@ -247,7 +247,7 @@
 {The Evans Gambit was a favorite of 19th-century attackers; Anderssen's famous Evergreen Game of 1852 began with it. White gives a pawn to gain time for c3 and d4. Take it, retreat to a5, and give the pawn back with ...d5 at the right moment.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 {Accept: the pawn is free for now.}
 5. c3 {Gains time on the bishop and prepares d4.} Ba5 {The bishop stays active and out of reach of White's d-pawn.}
-6. d4 {6.O-O is under Advanced variations.}
+6. d4
 6... exd4 {This is the Pierce Defense.} 7. O-O Nge7 {This is the Mieses Defense. Develops and prepares ...d5.}
 8. cxd4 d5! {[%cal Gd7d5] Gives the pawn back to free the position and blunt White's bishop.}
 9. exd5 Nxd5 {Black's pieces are active. Castle next.} *
@@ -259,9 +259,9 @@
 [ECO "C50"]
 
 {4.Nc3 develops quickly but gives up White's c3 and d4 plan, about one game in eleven. Play 4...Nf6, ...d6, ...a6 and ...Ba7. Against the pin Bg5, ask the bishop with ...h6 and break the pin with ...g5 before you castle. The fork trick 5.Nxe5? does not work here: see the trap chapter.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. d3 {About half of White players. 5.O-O is the other common move: see Italian Four Knights: 5.O-O, under Advanced variations.} 5... d6 6. h3 {Takes g4 away from Black's bishop and knight.} 6... a6 {Prepares ...Ba7 as usual.} 7. a3 Ba7 8. O-O O-O {Both sides have castled. Next ...h6 and ...Be6.} *
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. d3 {About half of White players.} 5... d6 6. h3 {Takes g4 away from Black's bishop and knight.} 6... a6 {Prepares ...Ba7 as usual.} 7. a3 Ba7 8. O-O O-O {Both sides have castled. Next ...h6 and ...Be6.} *
 
-[Chapter "Two Knights: 4...Bc5 and 4...h6"]
+[Chapter "Two Knights: 4...Bc5"]
 [Side "white"]
 [Diagram "4...Bc5"]
 [Type "line"]
@@ -269,8 +269,8 @@
 [Opening "Italian Game: Two Knights Defense, Modern Bishop's Opening"]
 [ECO "C55"]
 
-{Black's other fourth moves after 4.d3. 4...Bc5 goes back to the main line with 5.c3. Against 4...h6, play the same setup: castle, c3, Re1 and the knight to f1.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 (4... h6 {Rules out Ng5 and Bg5 ideas, at the cost of a move.} 5. O-O d6 6. c3 g6 {Black fianchettoes, so the bishop on g7 will press on d4.} 7. Re1 Bg7 8. Nbd2 O-O 9. Nf1 {Same plan: Ng3, h3, then d4.}) 5. c3 {Transposes to the main line.} *
+{4...Bc5, Black's main alternative after 4.d3, goes back to the main line with 5.c3.}
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. c3 {Transposes to the main line.} *
 
 [Chapter "Other third moves: 3...Be7 and 3...h6"]
 [Side "white"]
@@ -332,7 +332,6 @@
 5... d6
 6. h3 {Takes g4 away from Black's bishop and knight, so there is no pin on f3.}
 (6. Nbd2 a6 7. O-O Ba7 8. Re1 O-O 9. Nf1 h6 {Takes g5 away from White's pieces.} 10. h3 Re8)
-(6. b4 {This is the Albin Variation. Gains space and chases the bishop.} Bb6 7. a4 a5! {Stops White's queenside pawns from rolling on.} 8. b5 Ne7 {The knight reroutes toward g6 and the kingside.} 9. O-O O-O)
 (6. a4 {Stops ...b5 and gains space on the queenside.} a6 {Same plan: make room for ...Ba7, where the bishop is safe from b4 and d4.} 7. O-O Ba7 {Back in the main line by a different move order.})
 (6. Bb3 a6 7. Nbd2 Ba7 8. Nf1 O-O 9. Ng3 h6)
 (6. Bg5 {Premature. Black hasn't castled, so the pin can be broken at no risk.} h6 7. Bh4 g5 8. Bg3 a6 {Calm. Now the pawns on g5 and h6 keep White's bishop and knight off g5.} (8... h5? {Too ambitious.} 9. Nxg5! {[%cal Gf3g5] With the h-pawn gone from h6, nothing guards g5. White grabs it, and Black's kingside is broken: Stockfish +2.1, winning for White.}) 9. O-O Ba7)
@@ -350,17 +349,6 @@
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O Bg4 {The tempting pin. Here it does little: with our pawn on c3, Black can never add ...Nd4 to attack the pinned knight again.}
 (6... a6 7. a4 {Gains queenside space and stops ...b5, which would chase our bishop.} Ba7 8. Re1 O-O 9. h3 h6 10. Nbd2 Re8 11. Nf1 {Same setup as the main line: the knight heads for g3.})
 7. h3 {Asks the bishop to decide.} Bh5 {Keeps the pin.} 8. Nbd2 {Guards f3 once more, so the pin is harmless.} O-O 9. Re1 a6 10. Bb3 {Steps back before ...Na5 can trade it off.} Ba7 11. Nf1 h6 12. Ng3 {[%cal Gg3h5] The knight arrives with tempo on the bishop.} Bg6 13. Nh4 {[%cal Gh4g6,Gb3g8] Now Nxg6 is a real threat. Our bishop pins the f7 pawn, and after ...h6 the h-pawn can't recapture either.} Bh7 {The most common reply: the bishop steps out of the knight's reach.} (13... Kh8 {Unpins f7, so Nxg6 can now be met by ...fxg6.}) (13... Re8? 14. Nxg6 {Wins the bishop: neither pawn can recapture.}) 14. Nhf5 {[%cal Gg3f5] The knight lands on f5, near Black's king, and the other knight backs it up. Stockfish rates White slightly better.} Bxf5 15. Nxf5 {Recapture with the knight, not the pawn: the knight on f5 is strong, and White keeps the two bishops.} *
-
-[Chapter "Pianissimo: 7...Ng4"]
-[Side "white"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Italian Game: Classical Variation, Giuoco Pianissimo"]
-[ECO "C54"]
-
-{After 6...O-O 7.Re1, the knight raid 7...Ng4 eyes f2. Cover it calmly; the knight soon has to go back.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O O-O 7. Re1 Ng4 {Eyes f2, but a lone knight can't do much.}
-8. Re2 {Covers f2 calmly.} Kh8 9. h3 Nf6 10. Nbd2 {The knight has gone back, and h3 is a useful move for us anyway.} *
 
 [Chapter "Quiet Variation: White's fifth moves"]
 [Side "black"]
@@ -405,17 +393,6 @@
 8. dxc6 bxc6 9. Ba4 {The bishop stays on the a4-e8 diagonal and pins the c6 pawn.} h6 {Kicks the knight.}
 10. Nf3 {White is a pawn up. Black has some activity in return, so finish developing with castling and d3.} Bd6 11. O-O O-O 12. d3 *
 
-[Chapter "Rosentreter Gambit: 4.d4"]
-[Side "black"]
-[Diagram "4.d4"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Italian Game: Rosentreter Gambit"]
-[ECO "C50"]
-
-{White opens the center at once, without c3 to support it. Take with the bishop, and Black's knight lands on d4.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d4 {This is the Rosentreter Gambit. Opens the center at once, without c3 to support it.} 4... Bxd4 {Simplest: Black gives up the bishop for the knight and gets a strong knight on d4. 4...exd4 5.c3 Nf6 also reaches this chapter's main line.} 5. Nxd4 Nxd4 {If c3 kicks the knight, it simply drops back to c6 or e6.} 6. O-O {White's usual plan is f4, opening the f-file against e5.} 6... d6 {Guards e5 and frees the c8 bishop. Black is comfortable.} *
-
 [Chapter "Rousseau Gambit: 3...f5"]
 [Side "white"]
 [Type "line"]
@@ -430,17 +407,6 @@
 5. O-O {Castle first, keeping the king safe before the position opens.} Bc5 6. Nc3 d6
 7. Bg5 {[%cal Gg5f6,Gc4g8] Pins the knight. Note that Black can't castle kingside: with Black's f-pawn no longer on f7, our bishop on c4 covers g8. White is clearly better.} *
 
-[Chapter "Italian Four Knights: 5.O-O"]
-[Side "black"]
-[Diagram "5.O-O"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Four Knights Game: Italian Variation"]
-[ECO "C50"]
-
-{White castles before d3. Use the same setup: ...d6, ...a6 and ...Ba7.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. O-O d6 6. h3 a6 7. d3 Ba7 {The same setup. Castle next.} *
-
 [Chapter "Classical: 4.c3 Nf6 5.O-O"]
 [Side "black"]
 [Diagram "5.O-O"]
@@ -451,17 +417,6 @@
 
 {White castles first and keeps both d3 and d4 in reserve. Play 5...d6, and meet 6.d4 with ...Bb6.}
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. O-O {Castles first, keeping both d3 and d4 in reserve.} 5... d6 {[%engine ok] Keeps our usual setup. Stockfish prefers 5...Nxe4, but after 6.d4 d5 the game turns sharp.} 6. d4 {Hits the bishop and e5 at once. White's usual move here; 6.d3 goes back to the main line (see Advanced variations).} 6... Bb6 {On b6 the bishop is safe and still aims at f2. Taking on d4 would give White a big pawn center after cxd4.} *
-
-[Chapter "Evans Gambit: 6.O-O"]
-[Side "black"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Italian Game: Evans Gambit, Lasker Defense"]
-[ECO "C52"]
-
-{If White castles before d4, use Lasker's simple defense: support e5 with ...d6 and give the pawn back on your own terms.}
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5
-6. O-O d6 {Lasker's simple defense: support e5 and return the pawn on Black's terms.} 7. d4 Bb6 8. dxe5 dxe5 9. Qxd8+ Nxd8 {The queens are off, and with them White's attack.} 10. Nxe5 Be6 {White has the pawn back, but Black has an easy game, and the Italian bishop will be traded.} *
 
 [Chapter "Canal Variation: 6.Bg5"]
 [Side "black"]
