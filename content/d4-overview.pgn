@@ -9,6 +9,35 @@
 {White offers the c-pawn to lure Black's d-pawn away from the center. Black declines it with 2...e6 or 2...c6, or accepts it with 2...dxc4.}
 1. d4 d5 2. c4 {This is the Queen's Gambit.} *
 
+[Chapter "King's Indian Defense"]
+[Map "King's Indian"]
+[MapReply "Indian Defenses"]
+[Course "kings-indian"]
+[Group "1...Nf6: the Indian Defenses"]
+[Opening "King's Indian Defense"]
+[ECO "E61"]
+[Diagram "4...d6"]
+
+{White: Build a big center with c4, d4 and e4, develop calmly with Nf3 and Be2, and castle. When the center closes with d5, attack on the queenside with c5, b4 and the c-file.
+
+Black: Let White have the center, fianchetto your bishop and castle. Then strike at the center with ...e5 or ...c5. Once the center is closed, attack the king with ...f5, ...f4 and ...g5: the game becomes a race.}
+1. d4 Nf6 {Stops e4 and keeps Black's options open: the start of the Indian defenses.}
+2. c4 g6 {Prepares to fianchetto the bishop.}
+3. Nc3 Bg7 {This is the King's Indian Defense. The bishop will press on the long diagonal.}
+4. e4 {White takes the whole center.} d6 {Stops e5 and prepares ...e5 or ...c5.} *
+
+[Chapter "Indian Defenses"]
+[Map "Other Indian Defenses"]
+[MapReply "Indian Defenses"]
+[Group "1...Nf6: the Indian Defenses"]
+[Opening "Indian Defense: Normal Variation"]
+[ECO "A50"]
+[Diagram "2.c4"]
+[Page "indian"]
+
+{Black develops the knight first and keeps the choice of setup open: the King's Indian, Nimzo-Indian, Queen's Indian, Grünfeld or Benoni.}
+1. d4 Nf6 {Black stops e4 and waits to choose a setup.} 2. c4 {The most common reply. White takes more of the center.} *
+
 [Chapter "London System"]
 [Course "london"]
 [Group "1...d5: the London System"]
@@ -41,35 +70,6 @@ Black: Guard d5 with ...e6, pin the c3 knight with ...Bb4, and hit d4 with ...c5
 1. d4 d5 2. Nc3 {The knight comes out in front of the c-pawn.} Nf6
 3. Bf4 {This is the Jobava London. Lichess calls it the Rapport–Jobava System.} e6
 4. Nb5 {[%cal Gb5c7] The knight and the bishop both hit c7.} Na6 {The most common answer: the knight guards c7.} *
-
-[Chapter "King's Indian Defense"]
-[Map "King's Indian"]
-[MapReply "Indian Defenses"]
-[Course "kings-indian"]
-[Group "1...Nf6: the Indian Defenses"]
-[Opening "King's Indian Defense"]
-[ECO "E61"]
-[Diagram "4...d6"]
-
-{White: Build a big center with c4, d4 and e4, develop calmly with Nf3 and Be2, and castle. When the center closes with d5, attack on the queenside with c5, b4 and the c-file.
-
-Black: Let White have the center, fianchetto your bishop and castle. Then strike at the center with ...e5 or ...c5. Once the center is closed, attack the king with ...f5, ...f4 and ...g5: the game becomes a race.}
-1. d4 Nf6 {Stops e4 and keeps Black's options open: the start of the Indian defenses.}
-2. c4 g6 {Prepares to fianchetto the bishop.}
-3. Nc3 Bg7 {This is the King's Indian Defense. The bishop will press on the long diagonal.}
-4. e4 {White takes the whole center.} d6 {Stops e5 and prepares ...e5 or ...c5.} *
-
-[Chapter "Indian Defenses"]
-[Map "Other Indian Defenses"]
-[MapReply "Indian Defenses"]
-[Group "1...Nf6: the Indian Defenses"]
-[Opening "Indian Defense: Normal Variation"]
-[ECO "A50"]
-[Diagram "2.c4"]
-[Page "indian"]
-
-{Black develops the knight first and keeps the choice of setup open: the King's Indian, Nimzo-Indian, Queen's Indian, Grünfeld or Benoni.}
-1. d4 Nf6 {Black stops e4 and waits to choose a setup.} 2. c4 {The most common reply. White takes more of the center.} *
 
 [Chapter "Uncommon replies to 1.d4"]
 [Group "Uncommon replies"]
