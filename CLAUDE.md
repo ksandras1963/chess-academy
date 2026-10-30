@@ -13,6 +13,8 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 
 - Every course is for players rated under 2000. In Kumar's words: "General rule for all courses: this must be for those < 2000. No need to go into uncommon variations even in Advanced. Primarily rely on the variations discussed on videos and transcripts."
 - So Advanced holds the common side lines that the presenters' videos discuss, not every line the database or the engine offers. A line no presenter discusses goes in only when club players meet it often. The map shows only the variations the course teaches. On the first Anti-Sicilian map, which showed every side line, Kumar wrote: "This is way too much for < 2000 player."
+- Advanced holds only lines that come up in more than 5% of games or that a presenter's video discusses. In Kumar's words: "General rule to all courses: Advanced only coniums lines that are either >5% in frequency or are in the transcripts." The frequency is measured as "How often" is, from the side that faces the line: the share of its games that reach the line's defining move (the move its title or branch names). A line is in the transcripts when a video discusses that move in that position, or in the same position reached by another move order; a video that only touches the idea without naming the move does not count (in the Caro-Kann, Kumar chose to remove such lines too). Any other line leaves Advanced.
+- Anything removed from a course is also removed from its map, on the course page and on the Introduction page. In Kumar's words: "General rule: Anything removed form course also is removed from Map".
 
 ## Introduction page (an opening's overview page), in this order
 
@@ -79,9 +81,10 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 - Moves are written in letters (Nf3) by default, everywhere in the app. Figurines (♘f3) stay as a choice in Settings. In Kumar's words: "Could you make letters as default for moves like Nf3, instead of figurines. However keep the figurines in the settings in case user prefers that. This applies to whole chess app."
 - Write moves in letters in the course files too; the app adds figurines for learners who choose them.
 
-## Puzzles
+## Traps and puzzles
 
 - A puzzle can come from a line the course does not teach. In Kumar's words: "General rule for all courses: puzzles can have moves not covered in courses."
+- A trap can too: its moves need not be part of any Basic or Advanced line. In Kumar's words: "General rule: Traps and puzzles may occur with moves that are not part of basic or Advanced lines." So a trap stays when the Advanced line it starts from is removed.
 
 ## Drills
 

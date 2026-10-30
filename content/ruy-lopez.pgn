@@ -197,7 +197,7 @@
 4. O-O {The most common reply: half of White players castle.} Nxe4 {Takes the pawn. White wins it back, but Black's pieces come out quickly.}
 5. Re1 {[%cal Ge1e4] Hits the knight.} Nd6 {[%cal Gd6b5] Hits the bishop.}
 6. Bxc6 {Half of White players take at once. 6.Nxe5 has its own lesson.} dxc6 {[%cal Gc8h3,Gd8d1] Take back toward the center: the c8 bishop and the queen get open lines.}
-7. Nxe5 {Wins the pawn back. 7.Rxe5+ is under Advanced.} Be7 {[%cal Ge7f6] Prepares to castle.}
+7. Nxe5 {Wins the pawn back.} Be7 {[%cal Ge7f6] Prepares to castle.}
 8. d4 {The most common move.} O-O 9. Bf4 Be6 10. Nd2 Re8 {[%cal Ge8e5] Black has the two bishops and active pieces. Stockfish: −0.3, slightly better for Black.} *
 
 [Chapter "Berlin Defense, 5.Re1: 6.Nxe5"]
@@ -379,13 +379,11 @@
 [Opening "Ruy Lopez: Morphy Defense, Caro Variation"]
 [ECO "C70"]
 
-{One Black player in five drives the bishop back with 4...b5 before developing the king's knight. Against 5...Nf6, 6.d3 reaches the Anderssen Variation. Against 5...Bc5, play 6.c3 and d4, which hits the bishop. Against 5...Na5, castle and strike in the center with d4: Black wins the bishop pair, but loses time. 5...Nd4? loses material: see Traps.}
+{One Black player in five drives the bishop back with 4...b5 before developing the king's knight. Against 5...Nf6, 6.d3 reaches the Anderssen Variation. Against 5...Bc5, play 6.c3 and d4, which hits the bishop. 5...Nd4? loses material: see Traps.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 {This is the Caro Variation.} 5. Bb3 Bc5 {This is the Graz Variation, the most common move after 5...Nf6.}
 (5... Nf6 6. d3 {The same position as in Anderssen Variation: 4...Nf6 5.d3 after 6.Bb3. Stockfish: +0.2, equal.})
 (5... d6 6. c3 {Gives the bishop c2 before ...Na5 can trade it.} Nf6 7. d3 Be7 8. O-O O-O {The same position as in the Anderssen Variation after 8...O-O. Stockfish: +0.3, slightly better for White.})
-(5... Na5 {This is the Norwegian Variation. The knight goes after the bishop at once.} 6. O-O d6 7. d4 {[%cal Gd4e5] Opens the center while Black's king is still on e8.} exd4 8. Qxd4 Nxb3 9. axb3 {White has lost the bishop pair but leads in development. Stockfish: +0.5, slightly better for White.})
 6. c3 {[%cal Gd2d4] Prepares d4, which will hit the bishop.} d6 {Guards e5.}
-(6... Nf6? {Natural, but now d4 comes with gain of time, before Black has castled.} 7. d4 {[%cal Gd4c5,Gd4e5] Hits the bishop and the e5 pawn. After 7...Bb6 8.dxe5 the knight on f6 has to move. Stockfish: +1.3, clearly better for White.})
 7. d4 {[%cal Gd4c5] Takes the center with gain of time.} exd4 8. cxd4 Bb6 9. O-O {White has two center pawns and the safer king. Stockfish: +0.6, slightly better for White.} *
 
 [Chapter "Anderssen Variation: Black's other fifth moves"]
@@ -412,7 +410,6 @@
 {After 5.d3 b5 6.Bb3, a third of Black players put the bishop on c5 instead of e7. Answer with c3, so that d4 will hit the bishop, then castle, play h3 and Re1, and bring the knight to g3 as usual. The bishop goes to c2 when it is attacked.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. d3 b5 6. Bb3 Bc5 {[%cal Gc5f2] The bishop aims at f2.}
 (6... d6 7. c3 Be7 8. O-O O-O {The same position as in the main line of the Anderssen Variation after 8...O-O. Stockfish: +0.3, slightly better for White.})
-(6... h6 {Stops Bg5 and Ng5.} 7. c3 d6 8. O-O Be7 9. Re1 O-O 10. h3 {White's usual setup. Stockfish: +0.3, slightly better for White.})
 7. c3 {[%cal Gd3d4] Prepares d4.} d6 8. O-O O-O 9. h3 {Keeps Black's bishop off g4.} h6 10. Re1 Re8 11. Nbd2 Be6 12. Bc2 {[%cal Gd2f1,Gf1g3] The bishop avoids the trade, and the knight is ready for f1 and g3. Stockfish: 0.0, equal.} *
 
 [Chapter "Modern Steinitz Defense: 4...d6 5.c3"]
@@ -426,9 +423,6 @@
 {4...d6 guards e5 first. Play 5.c3, which gives the bishop c2 and prepares d4. Avoid 5.d4?!: after 5...b5 6.Bb3 Nxd4 7.Nxd4 exd4, the natural 8.Qxd4?? loses the bishop to 8...c5 and ...c4, the Noah's Ark Trap (see Key ideas: Tricks and traps).}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 {This is the Modern Steinitz Defense.}
 5. c3 {Gives the bishop c2 and prepares d4.} b5 {The most common reply.}
-(5... Nf6 6. d4 Be7 7. O-O O-O 8. Re1 {White has the center. Stockfish: +0.4, slightly better for White.})
-(5... Bd7 6. d4 Nf6 7. O-O Be7 8. Re1 O-O 9. Nbd2 {The usual setup. Stockfish: +0.5, slightly better for White.})
-(5... f5 {The Siesta Variation: a sharp counterattack.} 6. exf5 Bxf5 7. O-O Be7 8. d4 {White opens the center before Black's king is safe. Stockfish: +1.1, clearly better for White.})
 6. Bc2 Nf6 7. d4 Bd7 8. O-O Be7 9. Re1 O-O 10. Nbd2 {White has a strong center and the usual knight trip to f1 and g3. Stockfish: +0.5, slightly better for White.} *
 
 [Chapter "Classical Defense Deferred: 4...Bc5 5.c3"]
@@ -443,10 +437,9 @@
 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Bc5
 5. c3 {[%cal Gd2d4] Prepares d4.} b5 {Half of club players chase the bishop at once.}
 (5... Nf6 6. O-O O-O 7. d4 Ba7 8. Bg5 {[%cal Gg5f6] Pins the knight. White has the center. Stockfish: +0.7, slightly better for White.})
-(5... d6?! {Natural, but now d4 hits the bishop, and Black must take care.} 6. d4 exd4 7. cxd4 Bb6? {Natural, but now d5 wins the pinned knight. 7...Ba7 or 7...Bb4+ keeps the material level (Stockfish +0.9 and +1.1).} 8. d5 {[%cal Gd5c6,Ga4e8] The knight on c6 is pinned.} Ba5+ 9. Nbd2 b5 10. dxc6 bxa4 11. Qxa4 {White has won a piece for two pawns. Stockfish: +2.2, winning for White.})
 6. Bc2 {The bishop guards e4 and points toward Black's king.} d6 7. d4 Bb6 8. h3 Nge7 9. O-O O-O {White has the center and a safe position. Stockfish: +0.5, slightly better for White.} *
 
-[Chapter "Steinitz Defense: Black's other fourth moves"]
+[Chapter "Steinitz Defense: 4...Bd7"]
 [Side "white"]
 [Diagram "4...Bd7"]
 [Type "line"]
@@ -454,9 +447,8 @@
 [Opening "Ruy Lopez: Steinitz Defense"]
 [ECO "C62"]
 
-{After 4.d4, about three Black players in ten keep the pawn on e5 with 4...Bd7, and one in ten plays 4...a6?. Against 4...Bd7, develop with Nc3, castle and guard e4 with Re1; after the trade on d4, the plans are those of the Basic line. 4...a6? comes too late: Bxc6 and dxe5 win a pawn.}
+{After 4.d4, about three Black players in ten keep the pawn on e5 with 4...Bd7. Develop with Nc3, castle and guard e4 with Re1; after the trade on d4, the plans are those of the Basic line.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 {Unpins the knight and keeps the pawn on e5 for now.}
-(4... a6? {Too late to ask the bishop.} 5. Bxc6+ bxc6 6. dxe5 {[%csl Ye5] Wins a pawn: 6...dxe5? 7.Qxd8+ Kxd8 8.Nxe5 leaves White a clean pawn up.} f6 7. exd6 Bxd6 {White is a pawn up. Stockfish: +1.6, clearly better for White.})
 5. Nc3 {Develops. After 5...exd4 6.Nxd4 the Basic line is reached. 5...a6? loses a pawn: see Traps.} Nf6 6. O-O Be7 7. Re1 {[%cal Ge1e4] Guards e4, so White is ready for Bxc6 and dxe5. 7...O-O? falls into the Tarrasch Trap: see Traps.} exd4 8. Nxd4 O-O 9. Nxc6 Bxc6 10. Bxc6 bxc6 11. b3 {[%cal Gc1b2] Black's c-pawns are doubled, and White plays Bb2 and f4, as in the Basic line. Stockfish: +0.4, slightly better for White.} *
 
 [Chapter "Anti-Berlin Variation: 5.O-O"]
@@ -467,14 +459,13 @@
 [Opening "Ruy Lopez: Berlin Defense, Anti-Berlin Variation"]
 [ECO "C65"]
 
-{After 4.d3 Bc5, more club players castle at once than play c3. Guard e5 with ...d6: after 6.c3 O-O the position is the same as in the Basic line. Almost as many White players play 6.h3. The plan doesn't change: castle, bring the knight to g6 via e7, and keep the bishop safe from d4 on b6. Against 6.Bg5, castle first.}
+{After 4.d3 Bc5, more club players castle at once than play c3. Guard e5 with ...d6: after 6.c3 O-O the position is the same as in the Basic line. Almost as many White players play 6.h3. The plan doesn't change: castle, bring the knight to g6 via e7, and keep the bishop safe from d4 on b6.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 Bc5 5. O-O {The most common move at club level.} d6 {Guards e5.}
 6. c3
 (6. h3 {Keeps Black's bishop off g4.} O-O 7. c3 Ne7 {[%cal Ge7g6] The knight heads for g6.} 8. d4 Bb6 {[%cal Gb6f2] The bishop is safe, and still aims at f2. Stockfish: +0.2, equal.})
-(6. Bg5 O-O {Castle first: ...h6 can come later.} 7. c3 h6 8. Bh4 g5 {Breaks the pin at once. It weakens Black's kingside, but Stockfish rates it as Black's best move here.} 9. Bg3 Nh5 {[%cal Gh5g3] The knight goes after the bishop: Black will win the bishop pair. Stockfish: 0.0, equal.})
 6... O-O {The same position as in the Basic line. Stockfish: +0.2, equal.} *
 
-[Chapter "Anti-Berlin Variation: White's other fifth moves"]
+[Chapter "Anti-Berlin Variation: 5.Bxc6"]
 [Side "black"]
 [Diagram "5.Bxc6"]
 [Type "line"]
@@ -482,11 +473,9 @@
 [Opening "Ruy Lopez: Berlin Defense, Anti-Berlin Variation"]
 [ECO "C65"]
 
-{After 4.d3 Bc5, White's rarer fifth moves. Against 5.Bxc6, take back with the d-pawn: 6.Nxe5? Qd4! wins a piece (see Traps). Against 5.Bg5, ask the bishop with ...h6. Against 5.h3, castle and bring the knight to g6 via e7, with ...Bb6 ready for d4.}
+{After 4.d3 Bc5, some White players give up the bishop at once with 5.Bxc6. Take back with the d-pawn: 6.Nxe5? Qd4! wins a piece (see Traps). Then castle and play with the two bishops.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 Bc5
 5. Bxc6 {Gives up the bishop at once.}
-(5. Bg5 h6 {Asks the bishop.} 6. Bh4 {6.Bxf6 Qxf6 gives Black the two bishops and an easy game (Stockfish −0.6).} Ne7 {[%cal Ge7g6] The knight heads for g6 and breaks the pin.} 7. d4 exd4 8. Bxf6 gxf6 9. O-O c6 {Black has the two bishops. Stockfish: −0.2, equal.})
-(5. h3 d6 6. O-O O-O 7. c3 Ne7 8. d4 Bb6 {[%cal Ge7g6] The bishop stands safe from d4, and the knight goes to g6. Stockfish: +0.2, equal.})
 5... dxc6 {[%cal Gc8h3,Gd8d1] Take back toward the center.}
 6. O-O {6.Nxe5? Qd4! wins a piece: see Traps.} Nd7 {[%cal Gd7f8] The knight heads for f8 and g6 or e6, and the f-pawn can guard e5.} 7. Nbd2 O-O 8. Nc4 Re8 {Black has the two bishops and a solid position. Stockfish: +0.1, equal.} *
 
@@ -498,10 +487,9 @@
 [Opening "Ruy Lopez: Berlin Defense, Anti-Berlin Variation"]
 [ECO "C65"]
 
-{Against 4.d3, a third of Black players choose the solid 4...d6: play c3, castle, Re1 and the knight trip to g3, as usual. Most other fourth moves leave e5 guarded only by the knight, and Bxc6 with Nxe5 wins it: see Traps. Two moves are different. 4...Ne7, the Mortimer Variation, moves the knight away first; don't take on e5, because ...c6 and ...Qa5+ win a piece (see Key ideas: Tricks and traps). After 4...Nd4, take the knight and castle; when Black plays ...c6, push e5 to hit the knight on f6.}
+{Against 4.d3, a third of Black players choose the solid 4...d6: play c3, castle, Re1 and the knight trip to g3, as usual. Most other fourth moves leave e5 guarded only by the knight, and Bxc6 with Nxe5 wins it: see Traps. 4...Ne7, the Mortimer Variation, is different: it moves the knight away first. Don't take on e5, because ...c6 and ...Qa5+ win a piece (see Key ideas: Tricks and traps).}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 d6 {A third of club players choose this solid move.}
 (4... Ne7 {The knight heads for g6, and ...c6 is coming.} 5. O-O {5.Nxe5? c6! is the Mortimer Trap.} c6 6. Ba4 Ng6 7. d4 {[%cal Gd4e5] With Black's knight away from c6, White takes the center. Stockfish: +0.2, equal.})
-(4... Nd4 5. Nxd4 exd4 6. O-O c6 7. e5 {[%cal Ge5f6] Black's pawn hits the bishop, but White hits the knight first.} Ng8 {The knight has no better square.} (7... cxb5 {Takes the bishop, but White wins the piece back.} 8. Bg5 Be7 9. exf6 Bxf6 10. Re1+ Kf8 11. Bxf6 Qxf6 12. Qh5 b6 13. Qxb5 {Material is level again, and Black's king can't castle. Stockfish: +1.1, clearly better for White.}) 8. Bc4 d5 9. exd6 {Takes en passant.} Bxd6 10. Qf3 {[%cal Gc4f7,Gf3f7] The queen and bishop aim at f7.} Nf6 11. Re1+ Be7 12. Qe2 {[%cal Ge2e7] The bishop on e7 is pinned, so Black can't castle yet. Stockfish: +0.9, slightly better for White.})
 5. c3 {Prepares d4 and gives the bishop a way back to c2.} g6 6. O-O Bg7 7. Re1 O-O 8. Nbd2 {The knight heads for f1 and g3, as usual. Stockfish: +0.2, equal.} *
 
 [Chapter "Anti-Berlin Variation: 5...d6"]
@@ -515,114 +503,19 @@
 {After 4.d3 Bc5 5.c3, more Black players guard e5 with 5...d6 than castle. Castle: after 6...O-O the position is the same as in the Basic line.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 Bc5 5. c3 d6 {Guards e5 first.} 6. O-O O-O {The same position as in the Basic line. Stockfish: +0.3, slightly better for White.} *
 
-[Chapter "Berlin Defense, 4.O-O Nxe4: 5.Bxc6"]
-[Side "black"]
-[Diagram "5.Bxc6"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Ruy Lopez: Berlin Defense, Rio Gambit Accepted"]
-[ECO "C67"]
-
-{After 4.O-O Nxe4, some White players take on c6 at once. Take back with the d-pawn and bring the knight to d6: the play is as in the 5.Re1 lines.}
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4
-5. Bxc6 dxc6 6. Re1 Nd6 {[%cal Gd6f5] The knight steps back.} 7. Nxe5 Be7 {The same position as in Berlin Defense, 5.Re1: 6.Bxc6 after 7...Be7. Stockfish: −0.3, slightly better for Black.} *
-
-[Chapter "Berlin Defense, 5.Re1: 7.Rxe5+"]
-[Side "black"]
-[Diagram "7.Rxe5+"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Ruy Lopez: Berlin Defense, Rio Gambit Accepted"]
-[ECO "C67"]
-
-{After 5.Re1 Nd6 6.Bxc6 dxc6, some White players take back on e5 with the rook and check. Block the check with ...Be7, castle, and use the two bishops.}
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. Re1 Nd6
-6. Bxc6 dxc6 7. Rxe5+ {Takes back with the rook and check.} Be7 8. Nc3 O-O 9. h3 Re8 {[%cal Ge8e5] Black has the two bishops and an easy game. Stockfish: −0.3, slightly better for Black.} *
-
-[Chapter "Berlin Defense, 5.Re1: 6.Nxe5, White's seventh moves"]
-[Side "black"]
-[Diagram "7.Nxc6"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Ruy Lopez: Berlin Defense, Rio Gambit Accepted"]
-[ECO "C67"]
-
-{After 6.Nxe5 Be7, a third of club players trade knights on c6 instead of retreating the bishop. Take back with the d-pawn, never with the knight: 7...Nxb5?? 8.Nxd8 wins the queen. The bishop on b5 is then attacked twice and has to go back.}
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. Re1 Nd6 6. Nxe5 Be7
-7. Nxc6 {The most common move.}
-(7. Bxc6 dxc6 {The same position as in Berlin Defense, 5.Re1: 6.Bxc6 after 7...Be7. Stockfish: −0.3, slightly better for Black.})
-(7. Ba4 Nxe5 8. Rxe5 O-O 9. Re1 Nf5 {[%cal Gd7d5] Black is safe and ready for ...d5. Stockfish: 0.0, equal.})
-7... dxc6 {[%cal Gd6b5,Gc6b5] Opens lines for the c8 bishop and the queen, and the b5 bishop is attacked twice.} 8. Bf1 Be6 9. c3 Nf5 10. d3 O-O {Black's pieces develop easily. Stockfish: +0.1, equal.} *
-
 [Chapter "Berlin Endgame: White's ninth moves"]
 [Side "black"]
-[Diagram "9.Bg5+"]
+[Diagram "9.Rd1+"]
 [Type "line"]
 [Level "advanced"]
 [Opening "Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense"]
 [ECO "C67"]
 
-{In the Berlin endgame, White's other ninth moves. Against a check, step the king back to e8: it is safe there, and it frees d8 for a rook. Then develop with ...Be6 or ...Be7, and use ...h6 or ...h5 against White's kingside pawns.}
+{In the Berlin endgame, White's other ninth moves. Against the rook check, step the king back to e8: it is safe there. Then develop with ...Be7 and ...Be6, and use ...a5 or ...h5 to gain space.}
 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8
-9. Bg5+ {Checks the king and develops.}
-(9. Rd1+ {The rook takes the open file with check.} Ke8 10. Nc3 Be7 11. h3 a5 {[%cal Ga5a4] Gains space on the queenside. Stockfish: +0.2, equal.})
+9. Rd1+ {The rook takes the open file with check.}
 (9. h3 Ke8 10. Nc3 {The same position as in Berlin Endgame: 4.O-O Nxe4 5.d4 after 10.h3. Stockfish: +0.3, slightly better for White.})
-9... Ke8 10. Nc3 Be6 11. h3 h6 {[%cal Gh6g5] Asks the bishop.} 12. Bd2 Rd8 {Black has the two bishops and active rooks. Stockfish: −0.2, equal.} *
-
-[Chapter "Berlin Endgame: 6.dxe5"]
-[Side "black"]
-[Diagram "6.dxe5"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Ruy Lopez: Berlin Defense, l'Hermet Variation"]
-[ECO "C67"]
-
-{After 5.d4 Nd6, one White player in six avoids the endgame, most often with 6.dxe5. Take the bishop: White wins the knight back with a4, but Black's ...d5 frees the game.}
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6
-6. dxe5 {Hits the knight.} Nxb5 {Takes the bishop.} 7. a4 {Attacks the knight.} Nbd4 {[%cal Gd4f3] The knight comes back to the center.} 8. Nxd4 d5 {[%cal Gd5d6] Frees the c8 bishop. White can take en passant.} 9. exd6 Nxd4 10. Qxd4 Qxd6 11. Qe4+ Qe6 {Offers to trade queens. The game is level. Stockfish: 0.0, equal.} *
-
-[Chapter "Berlin Defense, 4.Bxc6: White's other fifth moves"]
-[Side "black"]
-[Diagram "5.O-O"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Ruy Lopez: Berlin Defense"]
-[ECO "C65"]
-
-{After 4.Bxc6 dxc6, three White players in five choose something other than 5.d3. Against 5.O-O, take the pawn: after 6.Re1 Nd6 7.Nxe5 Be7 the position is the same as in the Berlin Defense with 5.Re1 and 6.Bxc6. Against 5.Nxe5, ...Qd4 hits the knight and e4 at once and wins the pawn back. Against 5.Nc3, ...Bd6 and ...Bb4 pin the knight and hit e4.}
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. Bxc6 dxc6 {Take back toward the center.}
-5. O-O
-(5. Nxe5 Qd4 {[%cal Gd4e5,Gd4e4] Hits the knight and the e4 pawn at once.} 6. Nf3 Qxe4+ 7. Qe2 Qxe2+ 8. Kxe2 Nd5 {The pawns are level, and Black has the two bishops. Stockfish: −0.6, slightly better for Black.})
-(5. Nc3 Bd6 6. d4 Bb4 {Pins the knight and hits e4 again. Stockfish: −0.1, equal.})
-5... Nxe4 {Takes the pawn, as in the main line of the Berlin.} 6. Re1 Nd6 7. Nxe5 Be7 {The same position as in Berlin Defense: 4.O-O Nxe4 5.Re1 after 7...Be7. Stockfish: −0.2, equal.} *
-
-[Chapter "Spanish Four Knights: White's other fifth moves"]
-[Side "black"]
-[Diagram "5.d3"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Four Knights Game: Spanish Variation, Double Spanish"]
-[ECO "C49"]
-
-{After 4.Nc3 Bb4, a third of White players play 5.d3 instead of castling, and one in five takes on c6 at once. Against 5.d3, castle and take on c3, as in the Basic line. Against 5.Bxc6, take back with the d-pawn: after Nxe5 Black takes on c3 and e4, and the pawns are level.}
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. Nc3 Bb4
-5. d3
-(5. Bxc6 dxc6 {Take back toward the center.} 6. Nxe5 Bxc3 7. dxc3 Qxd1+ 8. Kxd1 Nxe4 {The pawns are level again. Stockfish: +0.1, equal.})
-5... O-O 6. O-O Bxc3 7. bxc3 d6 {The same position as in the Basic line. Stockfish: +0.3, slightly better for White.} *
-
-[Chapter "Classical Variation: Black's other fourth moves"]
-[Side "white"]
-[Diagram "4...a6"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Ruy Lopez: Classical Variation"]
-[ECO "C64"]
-
-{Against 4.c3, Black's other fourth moves. 4...a6 asks the bishop, but then e5 is guarded only by the knight, and Bxc6 with Nxe5 gives White the better game. Against 4...Nge7, castle and push d4. Against 4...Qf6, push d4 at once, and e5 chases the queen.}
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. c3 a6 {Asks the bishop, but now e5 is guarded only by the knight.}
-(4... Nge7 {The knight develops behind the c6 knight, ready for ...d5.} 5. O-O Bb6 6. d4 exd4 7. cxd4 d5 8. exd5 Nxd5 9. Re1+ {White's pieces are active, and Black's king is still in the center. Stockfish: +0.9, slightly better for White.})
-(4... Qf6 {The queen guards e5 and eyes f2.} 5. d4 {[%cal Gd4c5] Hits the bishop at once.} exd4 6. e5 {[%cal Ge5f6] Chases the queen.} Qg6 7. cxd4 Bb4+ 8. Nc3 {White has a big center, and Black's queen is out of play. Stockfish: +1.6, clearly better for White.})
-5. Bxc6 {[%cal Gc6e5] Takes the defender of e5.} dxc6 6. Nxe5 Qe7 {Hits the knight.} 7. O-O {Lets Black take it: the next move wins the piece back.} Qxe5 8. d4 {[%cal Gd4e5,Gd4c5] The pawn hits the queen and the bishop at once.} Qd6 9. dxc5 Qxc5 10. Be3 Qd6 11. Qxd6 cxd6 {Material is level, but White is ahead in development, and Black's pawn on d6 is weak. Stockfish: +1.0, clearly better for White.} *
+9... Ke8 10. Nc3 Be7 11. h3 a5 {[%cal Ga5a4] Gains space on the queenside. Stockfish: +0.2, equal.} *
 
 [Chapter "Bird Variation: 3...Nd4"]
 [Side "white"]
