@@ -2149,7 +2149,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
 |---|---|---|---|---|---|---|
 | 1 | The long diagonal | White | 6.Qf3 | 1 | 6...Nc6 (4 half-moves) | ok |
-| 2 | Give up b7 | Black | 6...e6 | 1 | 7.Qxb7 (1 half-move) | ok |
+| 2 | The pinned knight on c3 | Black | 8...Nxc3 | 2 | 10.Bd2 (3 half-moves) | ok |
 | 3 | Mate in two | White | 7.Bxf7+ | 2 | none | ok |
 
 ## Puzzles: Anti-Sicilian (`content/anti-sicilian-puzzles.pgn`)
@@ -2174,6 +2174,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 12 | Delayed Alapin: the knight on e4 | White | 5.Qa4+ | 1 | 5...Nc6 (2 half-moves) | ok |
 | 13 | Smith-Morra: the bishop on f7 | White | 7.Bxf7+ | 2 | none | ok |
 | 14 | Wing Gambit: the check on e5 | Black | 5...Qe5+ | 1 | 6.Be2 (2 half-moves) | ok |
+
 ## Puzzles: Sicilian Dragon (`content/sicilian-dragon-puzzles.pgn`)
 
 10 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
@@ -2309,9 +2310,9 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 
 | # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
 |---|---|---|---|---|---|---|
-| 1 | Trade queens with check | White | 6.dxe5 | 3 | 8...Be6 (3 half-moves) | ok |
+| 1 | Trade queens with check | White | 6.dxe5 | 2 | 7...Kxd8 (5 half-moves) | ok |
 | 2 | The queen check | White | 7.Qa4+ | 1 | 7...Nc6 (5 half-moves) | ok |
-| 3 | The loose knight on d4 | White | 9.Nxd4 | 2 | 10...Nd7 (2 half-moves) | ok |
+| 3 | Win the d4 pawn | White | 10.Qxd4 | 1 | 10...Nd7 (2 half-moves) | ok |
 | 4 | The knight fork on c6 | White | 11.Nc6 | 1 | 11...Rxe4 (4 half-moves) | ok |
 | 5 | The weak d6 pawn | White | 11.Qxd6 | 1 | 11...Bf8 (2 half-moves) | ok |
 | 6 | Take en passant | White | 9.dxe6 | 2 | 10...Qb6 (4 half-moves) | ok |
