@@ -5,7 +5,7 @@
 2. d4 (2. Nc3 d5 3. Nf3 {Two Knights Attack (also 2.Nf3 d5 3.Nc3)} dxe4 {[%course both]} (3... Bg4 {Mindeno Variation}))
 2... d5 {Caro-Kann Defense}
 3. e5 {Advance Variation}
-(3. exd5 cxd5 {Exchange Variation} 4. c4 {[%course both] Panov Attack} (4. Nf3 {Also 2.Nf3 d5 3.exd5 cxd5 4.d4}) (4. Bd3 {}) (4. Nc3 {}))
+(3. exd5 cxd5 {Exchange Variation} 4. c4 {[%course both] Panov Attack} (4. Nf3 {Also 2.Nf3 d5 3.exd5 cxd5 4.d4}) (4. Bd3 {}))
 (3. Nc3 dxe4 4. Nxe4 {Main Line (3.Nc3 or 3.Nd2)} Bf5 {[%course both] Classical Variation} (4... Nf6 5. Nxf6+ exf6 {[%course both] Tartakower Variation} (5... gxf6 {[%engine ok] Bronstein-Larsen Variation})) (4... Nd7 {Karpov Variation}))
 (3. f3 {Maróczy Variation (Fantasy)} dxe4 {[%course both]} (3... e6 {[%course both]}))
 3... Bf5 {Main line} (3... c5 {[%course both] Botvinnik-Carls Defense})
