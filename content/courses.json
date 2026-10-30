@@ -1986,6 +1986,7 @@
             "id": "indian",
             "parent": "d4",
             "name": "Indian Defenses",
+            "heading": "Indian Defenses Introduction",
             "eco": "A56–E99",
             "moves": "1. d4 Nf6 2. c4",
             "file": "content/indian-overview.pgn",
