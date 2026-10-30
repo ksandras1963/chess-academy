@@ -2347,7 +2347,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 
 ## Puzzles: Jobava London System (`content/jobava-london-puzzles.pgn`)
 
-6 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+9 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
 
 Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
 
@@ -2357,8 +2357,11 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 2 | The overloaded queen | White | 6.Qxd5 | 1 | 6...Bf5 (4 half-moves) | ok |
 | 3 | Bxg6 and Qd3 | White | 7.Bxg6 | 1 | 7...fxg6 (5 half-moves) | ok |
 | 4 | Trap the bishop | White | 7.a5 | 1 | 7...Bxa5 (2 half-moves) | ok |
-| 5 | ...Ne4 against Qd2 | Black | 8...Ne4 | 1 | 9.Qd3 (4 half-moves) | ok |
-| 6 | Take on c3 | Black | 6...Bxc3+ | 1 | 7.bxc3 (2 half-moves) | ok |
+| 5 | Bb5+ and the queen on d4 | White | 9.Bb5+ | 1 | 9...Qd7 (3 half-moves) | ok |
+| 6 | Take the knight on d4 | White | 10.Nxd4 | 1 | 10...Bb4 (4 half-moves) | ok |
+| 7 | ...Ne4 against Qd2 | Black | 8...Ne4 | 1 | 9.Qd3 (4 half-moves) | ok |
+| 8 | Take on c3 | Black | 6...Bxc3+ | 1 | 7.bxc3 (2 half-moves) | ok |
+| 9 | ...cxd4 against h5 | Black | 7...cxd4 | 1 | 8.Nb1 (10 half-moves) | ok |
 
 ## Puzzles: King's Indian Defense (`content/kings-indian-puzzles.pgn`)
 
