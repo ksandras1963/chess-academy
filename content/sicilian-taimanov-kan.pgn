@@ -165,30 +165,6 @@
 8. Bg5 a6 9. Na3 b5 10. Nd5 {[%csl Gd5] The knight lands on d5, the hole in Black's position. Stockfish: +0.3, slightly better for White.}
 *
 
-[Chapter "Taimanov: 6.Ndb5"]
-[Side "black"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Sicilian Defense: Taimanov Variation, Bastrikov Variation"]
-[ECO "B47"]
-
-{The knight hits the queen and eyes d6. The queen steps back to b8, where it still covers d6 and e5, and after ...a6 the knight has to go back.}
-1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Ndb5 Qb8 {Nineteen Black players in twenty go back to b8.}
-7. g3 (7. Be3 a6 8. Nd4 Nf6 {Stockfish: +0.3, slightly better for White.}) 7... a6 8. Nd4 Be7 9. Bg2 Nf6 10. O-O O-O {Stockfish: +0.2, equal.}
-*
-
-[Chapter "Taimanov: 7.Be2"]
-[Side "black"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Sicilian Defense: Scheveningen Variation, Classical Main Line"]
-[ECO "B85"]
-
-{The most common seventh move at club level: White castles short instead of long. Black develops and sets up pawns on e6 and d6, as in the Scheveningen.}
-1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be3 a6 7. Be2 Nf6 8. O-O Be7 9. f4 d6
-10. Qe1 O-O 11. Qg3 Nxd4 12. Bxd4 b5 {Black's queenside play is under way. Stockfish: +0.3, slightly better for White.}
-*
-
 [Chapter "Taimanov: 5.c4"]
 [Side "black"]
 [Type "line"]
@@ -198,18 +174,6 @@
 
 {White takes space with the c-pawn first. Black pins the knight from b4 and, after the trade on c6, pushes the e-pawn.}
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. c4 Nf6 6. Nc3 Bb4 {[%cal Gb4c3]} 7. Nxc6 bxc6 8. Bd3 e5 9. O-O O-O {Stockfish: +0.3, slightly better for White.}
-*
-
-[Chapter "Taimanov: 5.Be3"]
-[Side "black"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Sicilian Defense: Taimanov Variation"]
-[ECO "B44"]
-
-{The bishop comes out before the knight. Black brings the knight to f6 and pins the knight on c3, then pushes the d-pawn.}
-1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Be3 Nf6 6. Nc3 Bb4 {[%cal Gb4c3] Three Black players in four pin the knight.}
-7. Bd3 (7. f3 d5 {[%cal Gd5e4] Stockfish: −0.3, slightly better for Black.}) 7... d5 8. exd5 Nxd5 9. Nxc6 Nxe3 10. fxe3 bxc6 {Stockfish: +0.1, equal.}
 *
 
 [Chapter "Taimanov, Szén Variation: 5.Nb5"]
@@ -224,17 +188,6 @@
 9. Be2 O-O 10. O-O {Stockfish: +0.3, slightly better for White.}
 *
 
-[Chapter "Taimanov: 5.Nxc6 bxc6 6.Bd3"]
-[Side "black"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Sicilian Defense: Taimanov Variation"]
-[ECO "B44"]
-
-{Three White players in ten put the bishop on d3 before the knight comes out. Black still pushes the d-pawn and develops.}
-1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nxc6 bxc6 6. Bd3 d5 {[%csl Gd5]} 7. exd5 cxd5 8. O-O Nf6 {Black has two pawns in the center. Stockfish: 0.0, equal.}
-*
-
 [Chapter "Taimanov, English Attack: 9...O-O"]
 [Side "white"]
 [Type "line"]
@@ -245,17 +198,6 @@
 {A third of Black players castle at once instead of jumping to e5 with the knight. Then White's g-pawn gains time on the knight on f6.}
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be3 a6 7. Qd2 Nf6 8. O-O-O Bb4 9. f3 O-O {A third of Black players castle here.}
 10. g4 {[%cal Gg4g5] The knight on f6 will have to move. Stockfish: +0.7, slightly better for White.}
-*
-
-[Chapter "Kan: 6.Be2"]
-[Side "black"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Sicilian Defense: Kan Variation, Knight Variation"]
-[ECO "B43"]
-
-{White develops quietly and castles short. Black pins the knight from b4 again.}
-1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Qc7 6. Be2 Nf6 7. O-O Bb4 {[%cal Gb4c3]} 8. Qd3 Nc6 9. Nxc6 bxc6 {Stockfish: +0.4, slightly better for White.}
 *
 
 [Chapter "Kan: 6.Be3 Bb4 7.Bd2"]
@@ -269,28 +211,6 @@
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Qc7 6. Be3 Bb4 7. Bd2 Nf6 8. Bd3 O-O {The bishop has used two moves to reach d2. Stockfish: +0.3, slightly better for White.}
 *
 
-[Chapter "Kan, Maróczy Bind: 6...Bb4"]
-[Side "white"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation"]
-[ECO "B41"]
-
-{Four Black players in ten pin the knight at once, before White has time for the a-pawn. White guards e4 with the bishop and castles.}
-1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. c4 Nf6 6. Nc3 Bb4 {[%cal Gb4c3] The pin.} 7. Bd3 {[%csl Ge4] Guards e4 and gets ready to castle.} Nc6 8. Be3 Ne5 9. O-O {Stockfish: +0.2, equal.}
-*
-
-[Chapter "Kan, Maróczy Bind: 7.Be2"]
-[Side "black"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation"]
-[ECO "B41"]
-
-{Most White players develop the bishop instead of pushing the a-pawn. Then Black can pin the knight from b4.}
-1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. c4 Nf6 6. Nc3 Qc7 7. Be2 Bb4 {[%cal Gb4c3] The pin.} 8. Qd3 O-O 9. O-O Bxc3 10. bxc3 d6 {Stockfish: +0.4, slightly better for White.}
-*
-
 [Chapter "Kan, 6.Be3 Bb4: 9.exd5"]
 [Side "black"]
 [Type "line"]
@@ -300,17 +220,6 @@
 
 {One White player in five opens the center at once. Black takes back with the knight, which hits the knight on c3 again.}
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Qc7 6. Be3 Bb4 7. Qd2 Nf6 8. f3 d5 9. exd5 Nxd5 {[%cal Gd5c3,Gb4c3,Gc7c3]} 10. a3 Bxc3 11. bxc3 Nxe3 12. Qxe3 O-O {White's pawns are split. Stockfish: −0.8, slightly better for Black.}
-*
-
-[Chapter "Four Knights: 6...Bb4"]
-[Side "white"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Sicilian Defense: Four Knights Variation"]
-[ECO "B45"]
-
-{A third of Black players pin the knight instead of guarding d6. Most club players then check on d6, but pushing the a-pawn is stronger: White gets the bishop pair.}
-1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Ndb5 Bb4 {[%cal Gb4c3] The pin.} 7. a3 {Asks the bishop to decide.} Bxc3+ 8. Nxc3 d5 9. exd5 exd5 10. Bd3 O-O {White has the bishop pair. Stockfish: +0.4, slightly better for White.}
 *
 
 [Chapter "Pin Variation: 5...Bb4"]
