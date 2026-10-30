@@ -899,13 +899,92 @@
         {
             "id": "sicilian-taimanov-kan",
             "name": "Sicilian Taimanov and Kan",
-            "eco": "B40",
-            "moves": "1. e4 c5 2. Nf3 e6",
+            "eco": "B20",
+            "moves": "1. e4 c5",
+            "games": "Sicilian",
             "summary": "Black moves the e-pawn one square and keeps the pieces flexible, ready to strike back in the center later. With the Four Knights Variation.",
+            "puzzles": "content/sicilian-taimanov-kan-puzzles.pgn",
             "courses": [
                 {
                     "id": "sicilian-taimanov-kan",
-                    "side": "both"
+                    "side": "both",
+                    "file": "content/sicilian-taimanov-kan.pgn",
+                    "repertoire": "The Taimanov and the Kan, with the Four Knights, from both sides.",
+                    "summary": "The Taimanov is named after Mark Taimanov, a Soviet grandmaster who was among the world's top 20 players from the 1940s to the 1970s, and who was also a concert pianist. The Kan is named after Ilya Kan, a Soviet master.",
+                    "why": {
+                        "text": "As White, each of Black's set-ups with the e-pawn on e6 has one clear answer, so there is little to learn: a quick attack with long castling against the Taimanov, a grip on the center against the Kan, and a knight jump against the Four Knights.\n\nAs Black, the e-pawn on e6 and the queen on c7 make a flexible set-up with less theory than the Najdorf, and White's most natural attacking set-up often walks into a pin. Stjepan Tomić says the Kan \"might be an easier choice for beginner Sicilian players\"."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Taimanov, English Attack: 6.Be3",
+                                "2% as White\n8% as Black",
+                                "White: Castle long and storm the kingside with the pawns.\nBlack: Pin White's knight and race on the queenside."
+                            ],
+                            [
+                                "Taimanov: 5.Nxc6",
+                                "4% as Black",
+                                "White: Trade knights early and develop quickly.\nBlack: Take back toward the center and push the d-pawn."
+                            ],
+                            [
+                                "Kan: 6.Be3 Bb4",
+                                "7% as Black",
+                                "White: Defend the center pawn and watch out for the pin.\nBlack: Pin White's knight, attack the center and win a pawn."
+                            ],
+                            [
+                                "Kan: 6.Bd3",
+                                "4% as Black",
+                                "White: Castle short and push the kingside pawns.\nBlack: Develop calmly and gain space on the queenside."
+                            ],
+                            [
+                                "Kan, Maróczy Bind: 5.c4",
+                                "5% as White\n5% as Black",
+                                "White: Hold the center with pawns and keep Black cramped.\nBlack: Build a solid wall of pawns and wait for a pawn break."
+                            ],
+                            [
+                                "Kan, Modern Variation: 5.Bd3",
+                                "3% as Black",
+                                "White: Castle short and build up slowly.\nBlack: Fianchetto the bishop, castle quickly and keep the center covered."
+                            ],
+                            [
+                                "Four Knights: 6.Ndb5",
+                                "4% as White",
+                                "White: Jump in with the knight and press on Black's weak square.\nBlack: Guard the weak square and chase the knights away."
+                            ]
+                        ],
+                        "note": "How often: the share of your Sicilian games that reach the line, from the side you play in it, counting every move order. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced, with the Szén and Pin Variations."
+                    }
+                }
+            ],
+            "furtherStudy": [
+                {
+                    "title": "Taimanov Variation ⎸Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=4QYD_MEUmt4"
+                },
+                {
+                    "title": "Sicilian Kan ⎸Chess Openings",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=9CxgfDX44Ug"
+                },
+                {
+                    "title": "Sicilian Defense (introduction, ideas & variations) ⎸Chess Openings",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=impkeLfyyVM"
+                },
+                {
+                    "title": "Sicilian Defense · Strategy, All Variations, Structures, Plans, Endgames, Resources",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=UQlQjco7Mc8"
                 }
             ]
         },

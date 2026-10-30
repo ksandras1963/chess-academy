@@ -1015,6 +1015,86 @@ None.
 | Trap: 11.Bg2! and the knight on d4 (11...Qxd4) | 5.56 | B81 Sicilian Defense: Scheveningen Variation, Keres Attack |
 | Trap: 7...g5? in the Keres Attack (Main line) | 7.80 | B81 Sicilian Defense: Scheveningen Variation, Keres Attack |
 
+## Sicilian Taimanov and Kan — both sides (`sicilian-taimanov-kan`)
+
+36 chapters, 32 drillable lines (basic 9, traps 6, advanced 17), 323 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Taimanov, English Attack: 6.Be3 | 6.Be3 | Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack | B48 | ok |
+| Taimanov: 5.Nxc6 | 5.Nxc6 | Sicilian Defense: Taimanov Variation | B44 | ok |
+| Kan: 6.Be3 Bb4 | 6...Bb4 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
+| Kan: 6.Bd3 | 6.Bd3 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
+| Kan, Maróczy Bind: 5.c4 | 5.c4 | Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation | B41 | ok |
+| Kan, Modern Variation: 5.Bd3 | 5.Bd3 | Sicilian Defense: Kan Variation, Modern Variation | B42 | ok |
+| Four Knights: 6.Ndb5 | 6.Ndb5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation | B33 | ok |
+| Taimanov: 6.Ndb5 | 6.Ndb5 | Sicilian Defense: Taimanov Variation, Bastrikov Variation | B47 | ok |
+| Taimanov: 7.Be2 | 7.Be2 | Sicilian Defense: Scheveningen Variation, Classical Main Line | B85 | ok |
+| Taimanov: 5.c4 | 5.c4 | Sicilian Defense: Taimanov Variation | B44 | ok |
+| Taimanov: 5.Be3 | 5.Be3 | Sicilian Defense: Taimanov Variation | B44 | ok |
+| Taimanov, Szén Variation: 5.Nb5 | 5.Nb5 | Sicilian Defense: Taimanov Variation, Szén Variation | B44 | ok |
+| Taimanov: 5.Nxc6 bxc6 6.Bd3 | 6.Bd3 | Sicilian Defense: Taimanov Variation | B44 | ok |
+| Taimanov, English Attack: 9...O-O | 9...O-O | Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack | B48 | ok |
+| Kan: 6.Be2 | 6.Be2 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
+| Kan: 6.Be3 Bb4 7.Bd2 | 7.Bd2 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
+| Kan, Maróczy Bind: 6...Bb4 | 6...Bb4 | Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation | B41 | ok |
+| Kan, Maróczy Bind: 7.Be2 | 7.Be2 | Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation | B41 | ok |
+| Kan, 6.Be3 Bb4: 9.exd5 | 9.exd5 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
+| Four Knights: 6...Bb4 | 6...Bb4 | Sicilian Defense: Four Knights Variation | B45 | ok |
+| Pin Variation: 5...Bb4 | 5...Bb4 | Sicilian Defense: Pin Variation, Koch Variation | B40 | ok |
+| Trap: 9.Bd3? and ...e5 in the Kan | 9...e5 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
+| Trap: 8.a3? and ...Nxe4 in the Kan | 8...Nxe4 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
+| Trap: 5.Bf4? and ...e5 in the Kan | 5...e5 | Sicilian Defense: Kan Variation | B41 | ok |
+| Trap: 6.e5? and ...Qa5+ in the Kan | 6...Qa5+ | Sicilian Defense: Kan Variation, Modern Variation | B42 | ok |
+| Trap: 6...a6? and 7.Nd6+ in the Four Knights | 7.Nd6+ | Sicilian Defense: Four Knights Variation | B45 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Taimanov, English Attack: 6.Be3 (English Attack, as White) | 0.50 | B48 Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack |
+| Taimanov, English Attack: 6.Be3 (English Attack, as Black) | -0.50 | B48 Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack |
+| Taimanov: 5.Nxc6 (Main line) | 0.59 | B44 Sicilian Defense: Taimanov Variation |
+| Kan: 6.Be3 Bb4 (Main line) | 0.52 | B43 Sicilian Defense: Kan Variation, Knight Variation |
+| Kan: 6.Bd3 (Main line) | -0.10 | B43 Sicilian Defense: Kan Variation, Knight Variation |
+| Kan, Maróczy Bind: 5.c4 (Maróczy Bind, as White) | 0.51 | B41 Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation |
+| Kan, Maróczy Bind: 5.c4 (Maróczy Bind, as Black) | -0.51 | B41 Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation |
+| Kan, Modern Variation: 5.Bd3 (Main line) | -0.60 | B42 Sicilian Defense: Kan Variation, Modern Variation |
+| Four Knights: 6.Ndb5 (Main line) | 0.25 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation |
+| Taimanov: 6.Ndb5 (Main line) | -0.25 | B47 Sicilian Defense: Taimanov Variation, Bastrikov Variation |
+| Taimanov: 6.Ndb5 (7.Be3) | -0.35 | B47 Sicilian Defense: Taimanov Variation, Bastrikov Variation |
+| Taimanov: 7.Be2 (Main line) | -0.23 | B85 Sicilian Defense: Scheveningen Variation, Classical Main Line |
+| Taimanov: 5.c4 (Main line) | -0.17 | B44 Sicilian Defense: Taimanov Variation |
+| Taimanov: 5.Be3 (Main line) | 0.00 | B44 Sicilian Defense: Taimanov Variation |
+| Taimanov: 5.Be3 (7.f3) | 0.36 | B44 Sicilian Defense: Taimanov Variation |
+| Taimanov, Szén Variation: 5.Nb5 (Main line) | -0.32 | B44 Sicilian Defense: Taimanov Variation, Szén Variation |
+| Taimanov: 5.Nxc6 bxc6 6.Bd3 (Main line) | 0.00 | B44 Sicilian Defense: Taimanov Variation |
+| Taimanov, English Attack: 9...O-O (Main line) | 0.58 | B48 Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack |
+| Kan: 6.Be2 (Main line) | -0.43 | B43 Sicilian Defense: Kan Variation, Knight Variation |
+| Kan: 6.Be3 Bb4 7.Bd2 (Main line) | -0.16 | B43 Sicilian Defense: Kan Variation, Knight Variation |
+| Kan, Maróczy Bind: 6...Bb4 (Main line) | 0.20 | B41 Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation |
+| Kan, Maróczy Bind: 7.Be2 (Main line) | -0.53 | B41 Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation |
+| Kan, 6.Be3 Bb4: 9.exd5 (Main line) | 0.87 | B43 Sicilian Defense: Kan Variation, Knight Variation |
+| Four Knights: 6...Bb4 (Main line) | 0.40 | B45 Sicilian Defense: Four Knights Variation |
+| Pin Variation: 5...Bb4 (Main line) | 1.04 | B40 Sicilian Defense: Pin Variation, Koch Variation |
+| Pin Variation: 5...Bb4 (9...O-O) | 1.32 | B40 Sicilian Defense: Pin Variation, Koch Variation |
+| Trap: 9.Bd3? and ...e5 in the Kan (Main line) | 2.74 | B43 Sicilian Defense: Kan Variation, Knight Variation |
+| Trap: 9.Bd3? and ...e5 in the Kan (10.exd5) | 2.36 | B43 Sicilian Defense: Kan Variation, Knight Variation |
+| Trap: 8.a3? and ...Nxe4 in the Kan (Main line) | 2.09 | B43 Sicilian Defense: Kan Variation, Knight Variation |
+| Trap: 5.Bf4? and ...e5 in the Kan (Main line) | 2.46 | B41 Sicilian Defense: Kan Variation |
+| Trap: 6.e5? and ...Qa5+ in the Kan (Main line) | 1.21 | B42 Sicilian Defense: Kan Variation, Modern Variation |
+| Trap: 6...a6? and 7.Nd6+ in the Four Knights (Main line) | 1.29 | B45 Sicilian Defense: Four Knights Variation |
+
 ## Ruy Lopez — both sides (`ruy-lopez`)
 
 62 chapters, 91 drillable lines (basic 10, traps 10, advanced 71), 805 learner moves.
@@ -2136,6 +2216,23 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 6 | Scheveningen: the loose queen | Black | 8...Nxd4 | 1 | 9.Qd3 (2 half-moves) | ok |
 | 7 | 6.Bg5 with Bd3: the pin on the diagonal | Black | 9...Qb6 | 1 | 10.Ne2 (8 half-moves) | ok |
 | 8 | 6.Be3 e5: the open diagonal to a8 | White | 9.Bd5 | 1 | 9...Nxd5 (4 half-moves) | ok |
+
+## Puzzles: Sicilian Taimanov and Kan (`content/sicilian-taimanov-kan-puzzles.pgn`)
+
+8 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Kan: the pinned knight can't guard e4 | Black | 8...Nxe4 | 1 | 9.Qd3 (7 half-moves) | ok |
+| 2 | Kan: the check on c3 | Black | 7...Bxc3+ | 1 | 8.bxc3 (4 half-moves) | ok |
+| 3 | Pin Variation: the queen hits g7 | White | 7.Qg4 | 1 | 7...Nxc3 (4 half-moves) | ok |
+| 4 | Four Knights: the early d-pawn push | White | 7.exd5 | 1 | 7...exd5 (6 half-moves) | ok |
+| 5 | Kan: the knight takes b5 | White | 9.Ncxb5 | 1 | 9...axb5 (2 half-moves) | ok |
+| 6 | Four Knights: the pin on c3 | Black | 7...Nxe4 | 1 | 8.Bxd8 (6 half-moves) | ok |
+| 7 | Kan: the pawn fork | Black | 10...d4 | 1 | none | ok |
+| 8 | Four Knights: the knight check on d6 | White | 7.Nd6+ | 1 | 7...Bxd6 (2 half-moves) | ok |
 
 ## Puzzles: Ruy Lopez (`content/ruy-lopez-puzzles.pgn`)
 
