@@ -102,17 +102,19 @@
 10. Qd1 e5 {Black is a clean pawn up. Stockfish: −1.4, clearly better for Black.}
 *
 
-[Puzzle "The pin on the e4 knight"]
+[Puzzle "The knight sacrifice and the pin"]
 [Type "puzzle"]
 [Theme "Punish the mistake"]
-[Solve "11...Bf5"]
+[Solve "10...Nfxe4"]
 [End "11...Bf5"]
-[Hint "White's queen has stepped onto the b1–h7 diagonal. Can you use that?"]
+[Hint "White's queen has stepped onto the b1–h7 diagonal to guard e4. Can you use that?"]
 
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Be2 exd5 9. cxd5 Re8 10. Qc2? Nxe4! {Gives the knight for a pawn, for a moment.} 11. Nxe4
-11... Bf5! {[%cal Gf5c2] The knight on e4 is pinned to the queen: if it moves, ...Bxc2.}
-(11... c4? {Too slow: the knight on e4 simply retreats.} 12. Ng3 Qb6 13. Qxc4 {White keeps the extra knight. Stockfish: +2.0, winning for White.})
-12. Nfd2 Na6 {[%cal Ga6b4] The knight heads for b4 to chase the queen away from e4. Black should win the knight back and end up a pawn ahead. Stockfish: −1.1, clearly better for Black.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 Na6 7. Be2 e5 8. fxe5 dxe5 9. d5 Nc5 10. Qc2? Nfxe4! {[%cal Gf6e4] Gives the knight for a pawn, for a moment.}
+(10... Ncxe4? {The wrong knight.} 11. Nxe4 Nxe4 12. Qxe4 f5 13. Qh4 {White is a knight up for a pawn. Stockfish: +2.4, winning for White.})
+(10... a5?! {A normal move, but it lets the chance pass.} 11. Bg5 h6 12. Bh4 {Stockfish: +0.4, slightly better for White.})
+11. Nxe4 Bf5! {[%hint The knight on e4 shields White's queen. Pin it.] [%cal Gf5e4,Re4c2] The knight on e4 is pinned to the queen: if it moves, ...Bxc2. The c5 knight attacks it too.}
+(11... Nxe4? 12. Qxe4 f5 13. Qh4 {Black has only a pawn for the knight. Stockfish: +2.4, winning for White.})
+12. Bd3 {Adds a defender.} Bxe4 13. Bxe4 f5 {[%cal Gf5e4] Attacks the bishop.} 14. Bxf5 Rxf5 15. O-O e4 {[%cal Ge4f3] Material is level again, and the e-pawn chases the f3 knight. Stockfish: −0.9, slightly better for Black.}
 *
 
 [Puzzle "The pinned c3 knight"]
