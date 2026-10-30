@@ -1432,7 +1432,7 @@ None.
 
 ## London System — both sides (`london`)
 
-68 chapters, 39 drillable lines (basic 6, traps 23, advanced 10), 384 learner moves.
+71 chapters, 53 drillable lines (basic 7, traps 23, advanced 23), 517 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -1442,6 +1442,7 @@ None.
 | King's Indian setup: 5.h3 and 5.Be2 | 2...g6 | London System | A48 | ok |
 | King's Indian setup, Rapport-Jobava: 3.Nc3 | 3.Nc3 | Rapport-Jobava System | D01 | ok |
 | Symmetrical: 2...Bf5 | 2...Bf5 | Queen's Pawn Game: Accelerated London System | D00 | ok |
+| ...c5 setup: 3...c5 | 3...c5 | Queen's Pawn Game: London System | D02 | ok |
 | Trap, QGD setup: 10.Bh4?? and ...e4 | 10.Bh4 | Queen's Pawn Game: Accelerated London System | D00 | ok |
 | Trap, King's Indian setup: 8.dxe5?? dxe5 | 8.dxe5 | London System | A48 | ok |
 | Trap, King's Indian setup: 10.O-O? g5! | 10.O-O | London System | A48 | ok |
@@ -1454,72 +1455,92 @@ None.
 | Trap, Steinitz Countergambit: 4...Qxb2?? and Nxd5 | 4...Qxb2 | Queen's Pawn Game: Accelerated London System, Steinitz Countergambit | D00 | ok |
 | Trap to avoid, 2...h5: 3.e3?? | 2...h5 | Queen's Pawn Game: Accelerated London System | D00 | ok |
 | Trap, 2...h5!?: 3.e3?? e5! | 2...h5 | Queen's Pawn Game: Accelerated London System | D00 | ok |
-| Trap, Englund Gambit: 6.Nc3! | 5...Qxb2 | Englund Gambit: Main Line | A40 | ok |
 | Steinitz Countergambit: 2...c5 | 2...c5 | Queen's Pawn Game: Accelerated London System, Steinitz Countergambit | D00 | ok |
-| ...c5 setup: 3...c5 | 3...c5 | Queen's Pawn Game: London System | D02 | ok |
+| ...c5 setup: 5...Bf5 and 5...Qb6 | 5...Bf5 | Queen's Pawn Game: Accelerated London System | D00 | ok |
+| ...c5 setup: Black's eighth moves | 8...Qe7 | Queen's Pawn Game: London System | D02 | ok |
+| ...c5 setup: 9...Be7 | 9...Be7 | Queen's Pawn Game: London System | D02 | ok |
 | Indian setups: 2...c5 | 2...c5 | Indian Defense: Accelerated London System | A45 | ok |
 | Chigorin setup: 2...Nc6 | 2...Nc6 | Queen's Pawn Game: Accelerated London System | D00 | ok |
 | Queen's Indian setup: 2...e6 | 2...e6 | Indian Defense: Accelerated London System | A45 | ok |
-| Sidelines, first moves: 1...e6, 1...g6 and 1...c5 | 1...e6 | Horwitz Defense | A40 | ok |
+| Sidelines, first moves: 1...e6 and 1...c5 | 1...e6 | Horwitz Defense | A40 | ok |
+| Sidelines, third moves: 3...Bg4 and 3...g6 | 3...Bg4 | Queen's Pawn Game: Accelerated London System | D00 | ok |
 | Dutch Defense: 1...f5 | 1...f5 | Dutch Defense | A80 | ok |
 
 ### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
 
-None.
+| Line | Move | Engine prefers | Loss |
+|---|---|---|---|
+| Keep the queen off c5 | 12...Qc7 | Qxc5 | 0.80 |
 
 ### Learner moves flagged but accepted with `[%engine ok]`
 
 | Line | Move | Engine prefers | Loss |
 |---|---|---|---|
-| Trap, 2...h5!?: 3.e3?? e5! (Main line) | 2...h5 | c5 | 0.62 |
+| Trap, 2...h5!?: 3.e3?? e5! (Main line) | 2...h5 | c5 | 0.92 |
 
 ### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
 
-None.
+| Line | Move | Engine prefers | Loss |
+|---|---|---|---|
+| Trap, ...c5 setup: 13...Qc8?? and Bxh7+ (13...Rc8 … 14...Qe8) | 15...Kxh7 | Kh8 | 89.41 |
 
 ### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
 
 | Line | Eval | Deepest named position |
 |---|---|---|
-| QGD setup: 5.Bg3 (QGD setup, as White) | -0.08 | D00 Queen's Pawn Game: Accelerated London System |
-| QGD setup: 5.Bg3 (QGD setup, as Black) | 0.08 | D00 Queen's Pawn Game: Accelerated London System |
-| King's Indian setup: 5.h3 and 5.Be2 (King's Indian setup, as White) | -0.07 | A48 London System |
-| King's Indian setup: 5.h3 and 5.Be2 (King's Indian setup, as Black) | 0.07 | A48 London System |
+| QGD setup: 5.Bg3 (QGD setup, as White) | -0.10 | D00 Queen's Pawn Game: Accelerated London System |
+| QGD setup: 5.Bg3 (QGD setup, as Black) | 0.10 | D00 Queen's Pawn Game: Accelerated London System |
+| King's Indian setup: 5.h3 and 5.Be2 (King's Indian setup, as White) | -0.10 | A48 London System |
+| King's Indian setup: 5.h3 and 5.Be2 (King's Indian setup, as Black) | 0.10 | A48 London System |
 | King's Indian setup, Rapport-Jobava: 3.Nc3 (Main line) | 0.00 | D01 Rapport-Jobava System |
-| Symmetrical: 2...Bf5 (Main line) | 0.53 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, QGD setup: 10.Bh4?? and ...e4 (Main line) | 3.75 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, King's Indian setup: 8.dxe5?? dxe5 (Main line) | 4.69 | A48 London System |
-| Trap, King's Indian setup: 8.dxe5?? dxe5 (8.d5) | 2.92 | A48 London System |
-| Trap, King's Indian setup: 10.O-O? g5! (Main line) | 3.39 | A48 London System |
-| Trap, King's Indian setup: 10.O-O? g5! (11.Nxg5) | 1.37 | A48 London System |
-| Trap to avoid, Rapport-Jobava: Nb5 and Nxc7+ (Main line) | -0.13 | D01 Rapport-Jobava System |
-| Trap to avoid, Rapport-Jobava: Nb5 and Nxc7+ (4.e3) | -0.15 | D01 Rapport-Jobava System |
-| Trap, Symmetrical: 6...Qb6? and c5! (Main line) | 1.10 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, Symmetrical: 6...Qb6? and c5! (7...Bxc5) | 3.51 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (Main line) | 3.07 | D02 Queen's Pawn Game: London System |
-| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (15...g6) | 2.30 | D02 Queen's Pawn Game: London System |
-| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (12...Qc7) | 0.48 | D02 Queen's Pawn Game: London System |
-| Trap, ...c5 setup: 13...Qc8?? and Bxh7+ (Main line) | 3.75 | D02 Queen's Pawn Game: London System |
-| Trap, ...c5 setup: 13...Qc8?? and Bxh7+ (13...Rc8) | 2.09 | D02 Queen's Pawn Game: London System |
-| Trap, ...c5 setup: 7...Bf5?? and Qxf5 (Main line) | 2.17 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, ...c5 setup: 7...Bf5?? and Qxf5 (7...Bg4) | 0.54 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, 2.Nf3 move order: ...Bf5! against Qc2 (Main line) | 3.29 | D02 Queen's Pawn Game: London System |
-| Trap, 2.Nf3 move order: ...Bf5! against Qc2 (8.Qc1) | 0.27 | D02 Queen's Pawn Game: London System |
-| Trap, Steinitz Countergambit: 4...Qxb2?? and Nxd5 (Main line) | 4.03 | D00 Queen's Pawn Game: Accelerated London System, Steinitz Countergambit |
-| Trap to avoid, 2...h5: 3.e3?? (Main line) | 0.71 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, 2...h5!?: 3.e3?? e5! (Main line) | 2.82 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, 2...h5!?: 3.e3?? e5! (3.Nf3) | -0.77 | D00 Queen's Pawn Game: Accelerated London System |
-| Trap, Englund Gambit: 6.Nc3! (Main line) | 2.27 | A40 Englund Gambit: Main Line |
-| Steinitz Countergambit: 2...c5 (Main line) | 0.08 | B13 Caro-Kann Defense: Exchange Variation |
-| ...c5 setup: 3...c5 (Main line) | 0.93 | D02 Queen's Pawn Game: London System |
-| Indian setups: 2...c5 (Main line) | 0.36 | A45 Indian Defense: Accelerated London System |
-| Chigorin setup: 2...Nc6 (Main line) | 0.51 | D00 Queen's Pawn Game: Accelerated London System |
-| Chigorin setup: 2...Nc6 (2...c6) | 0.55 | D00 Queen's Pawn Game: Accelerated London System |
-| Queen's Indian setup: 2...e6 (Main line) | 0.39 | A45 Indian Defense: Accelerated London System |
-| Sidelines, first moves: 1...e6, 1...g6 and 1...c5 (Main line) | 0.09 | A40 Horwitz Defense |
-| Sidelines, first moves: 1...e6, 1...g6 and 1...c5 (1...g6) | 0.22 | A40 Queen's Pawn Game: Modern Defense |
-| Sidelines, first moves: 1...e6, 1...g6 and 1...c5 (1...c5) | 0.52 | A43 Benoni Defense: Benoni-Indian Defense |
-| Dutch Defense: 1...f5 (Main line) | 1.08 | A80 Dutch Defense |
+| Symmetrical: 2...Bf5 (Main line) | 0.54 | D00 Queen's Pawn Game: Accelerated London System |
+| ...c5 setup: 3...c5 (Main line) | 0.89 | D02 Queen's Pawn Game: London System |
+| Trap, QGD setup: 10.Bh4?? and ...e4 (Main line) | 4.06 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, King's Indian setup: 8.dxe5?? dxe5 (Main line) | 4.88 | A48 London System |
+| Trap, King's Indian setup: 8.dxe5?? dxe5 (8.d5) | 2.91 | A48 London System |
+| Trap, King's Indian setup: 10.O-O? g5! (Main line) | 3.35 | A48 London System |
+| Trap, King's Indian setup: 10.O-O? g5! (11.Nxg5) | 1.14 | A48 London System |
+| Trap to avoid, Rapport-Jobava: Nb5 and Nxc7+ (Main line) | -0.12 | D01 Rapport-Jobava System |
+| Trap to avoid, Rapport-Jobava: Nb5 and Nxc7+ (4.e3) | -0.11 | D01 Rapport-Jobava System |
+| Trap, Symmetrical: 6...Qb6? and c5! (Main line) | 1.11 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, Symmetrical: 6...Qb6? and c5! (7...Bxc5) | 3.47 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (Main line) | 4.03 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (15...g6) | 2.31 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 12...Qxc5? and Bxh7+ (12...Qc7) | 0.61 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 13...Qc8?? and Bxh7+ (Main line) | 4.01 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 13...Qc8?? and Bxh7+ (13...Rc8) | 2.26 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 13...Qc8?? and Bxh7+ (13...Rc8 … 14...Qe8) | 99.98 | D02 Queen's Pawn Game: London System |
+| Trap, ...c5 setup: 7...Bf5?? and Qxf5 (Main line) | 2.53 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, ...c5 setup: 7...Bf5?? and Qxf5 (7...Bg4) | 0.90 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, 2.Nf3 move order: ...Bf5! against Qc2 (Main line) | 2.84 | D02 Queen's Pawn Game: London System |
+| Trap, 2.Nf3 move order: ...Bf5! against Qc2 (8.Qc1) | -0.23 | D02 Queen's Pawn Game: London System |
+| Trap, Steinitz Countergambit: 4...Qxb2?? and Nxd5 (Main line) | 4.13 | D00 Queen's Pawn Game: Accelerated London System, Steinitz Countergambit |
+| Trap to avoid, 2...h5: 3.e3?? (Main line) | 1.00 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, 2...h5!?: 3.e3?? e5! (Main line) | 2.76 | D00 Queen's Pawn Game: Accelerated London System |
+| Trap, 2...h5!?: 3.e3?? e5! (3.Nf3) | -0.91 | D00 Queen's Pawn Game: Accelerated London System |
+| Steinitz Countergambit: 2...c5 (Main line) | 0.40 | B13 Caro-Kann Defense: Exchange Variation |
+| Steinitz Countergambit: 2...c5 (3...Qb6) | 0.94 | D00 Queen's Pawn Game: Accelerated London System, Steinitz Countergambit |
+| Steinitz Countergambit: 2...c5 (3...Nc6) | -0.11 | D00 Queen's Pawn Game: Accelerated London System, Steinitz Countergambit |
+| ...c5 setup: 5...Bf5 and 5...Qb6 (Main line) | 0.37 | D00 Queen's Pawn Game: Accelerated London System |
+| ...c5 setup: 5...Bf5 and 5...Qb6 (5...Qb6) | 0.53 | D00 Queen's Pawn Game: Accelerated London System |
+| ...c5 setup: Black's eighth moves (Main line) | 0.63 | D02 Queen's Pawn Game: London System |
+| ...c5 setup: Black's eighth moves (9...Qc7) | 0.48 | D02 Queen's Pawn Game: London System |
+| ...c5 setup: Black's eighth moves (8...Re8) | 1.05 | D02 Queen's Pawn Game: London System |
+| ...c5 setup: 9...Be7 (Main line) | 0.93 | D02 Queen's Pawn Game: London System |
+| ...c5 setup: 9...Be7 (11...Nxg3) | 5.25 | D02 Queen's Pawn Game: London System |
+| Indian setups: 2...c5 (Main line) | 0.37 | A45 Indian Defense: Accelerated London System |
+| Indian setups: 2...c5 (4...cxd4) | 0.57 | A45 Indian Defense: Accelerated London System |
+| Chigorin setup: 2...Nc6 (Main line) | 0.69 | D00 Queen's Pawn Game: Accelerated London System |
+| Chigorin setup: 2...Nc6 (2...c6) | 0.68 | D00 Queen's Pawn Game: Accelerated London System |
+| Queen's Indian setup: 2...e6 (Main line) | 0.59 | A45 Indian Defense: Accelerated London System |
+| Sidelines, first moves: 1...e6 and 1...c5 (Main line) | 0.38 | A40 Horwitz Defense |
+| Sidelines, first moves: 1...e6 and 1...c5 (1...c5) | 0.88 | A43 Benoni Defense: Benoni-Indian Defense |
+| Sidelines, third moves: 3...Bg4 and 3...g6 (Main line) | 0.40 | D00 Queen's Pawn Game: Accelerated London System |
+| Sidelines, third moves: 3...Bg4 and 3...g6 (4...Bd7) | 0.32 | D00 Queen's Pawn Game: Accelerated London System |
+| Sidelines, third moves: 3...Bg4 and 3...g6 (4...Bf5) | 0.54 | D00 Queen's Pawn Game: Accelerated London System |
+| Sidelines, third moves: 3...Bg4 and 3...g6 (3...g6) | 0.54 | D00 Queen's Pawn Game: Accelerated London System |
+| Dutch Defense: 1...f5 (Main line) | 1.02 | A80 Dutch Defense |
+| Dutch Defense: 1...f5 (3...e6) | 1.10 | A80 Dutch Defense |
 
 ## Jobava London System — both sides (`jobava-london`)
 
@@ -2314,7 +2335,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 
 ## Puzzles: London System (`content/london-puzzles.pgn`)
 
-10 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+13 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
 
 Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
 
@@ -2330,6 +2351,9 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 8 | The knight blocks the queen | Black | 9...Bxd3 | 1 | 10.Nb3 (8 half-moves) | ok |
 | 9 | Trap the bishop | Black | 3...e5 | 1 | 4.Bxe5 (10 half-moves) | ok |
 | 10 | The Englund trap | White | 6.Nc3 | 1 | 6...Bb4 (8 half-moves) | ok |
+| 11 | Take the bishop, then hit the queen | White | 12.Nxg4 | 2 | 13...Qe7 (2 half-moves) | ok |
+| 12 | The fork on c7 | White | 6.Nb5 | 1 | 6...Kd7 (2 half-moves) | ok |
+| 13 | The knight jump to e5 | White | 7.Nce5 | 1 | 7...Bd6 (4 half-moves) | ok |
 
 ## Puzzles: Jobava London System (`content/jobava-london-puzzles.pgn`)
 
