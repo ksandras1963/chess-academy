@@ -1254,6 +1254,11 @@
                                 "White: Attack Black's center and the weak queenside.\nBlack: Copy White's setup and keep the queenside safe."
                             ],
                             [
+                                "...c5 setup: 3...c5",
+                                "4% as White",
+                                "White: Finish the usual setup, then open the center and attack the king.\nBlack: Press on White's center and keep the king safe."
+                            ],
+                            [
                                 "King's Indian setup, Rapport-Jobava: 3.Nc3",
                                 "4% as Black",
                                 "White: Grab the center and attack with the kingside pawns.\nBlack: Stop White's center and pawn attack, then hit back in the center."
