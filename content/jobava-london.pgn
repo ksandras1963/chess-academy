@@ -39,38 +39,36 @@
 [Side "white"]
 [Type "ideas"]
 
-{Black's light-squared bishop often comes to f5: at once, or one move later, after a pawn move to a6 or c6. There it is active and watches d3, where White's own light-squared bishop wants to go. This course meets it the same way in every line: White's bishop goes to d3 anyway, to trade it off. The boards show what follows the trade and what to do if Black's bishop steps back to g6.}
+{Black's light-squared bishop often comes to f5: at once, or one move later, after a pawn move to a6 or c6. There it is active, and a quiet trade of bishops gives White nothing. So this course chases it with pawns: the f-, g- and h-pawns gain space and push the bishop back, White castles long, and the attack on the kingside follows. Each board shows one step.}
 *
 
-[Chapter "Take back with the c-pawn"]
+[Chapter "f3 and g4 chase the bishop"]
 [Type "concept"]
 [Idea "white"]
 
-{After ...Bxd3, take back with the c-pawn. The pawn on d3 guards e4 and c4, and the c-file opens for a rook. With the light-squared bishops gone, Black's b7 pawn has lost a defender, so Qb3 hits it at once.}
-1. d4 d5 2. Nc3 Nf6 3. Bf4 Bf5 4. e3 e6 5. Bd3 Bxd3 {The idea starts from this position.}
-6. cxd3 {[%cal Gd3e4,Gd3c4,Ga1c1] The pawn guards e4 and c4, and the c-file is open for a rook.} Bd6 {A third of Black players offer a trade of the dark-squared bishops.}
-7. Qb3 {[%cal Gb3b7] Hits b7, which the c8 bishop used to guard.} Qc8 {Guards b7.}
-8. Bg3 {[%cal Gh1h3] If Black takes on g3, take back with the h-pawn: the h-file opens for White's rook. Stockfish: +0.3, slightly better for White.} *
+{f3 prepares g4, which hits the bishop. After ...Bg6, h4 threatens h5, which would trap it, so Black has to spend a move on the h-pawn.}
+1. d4 d5 2. Nc3 Nf6 3. Bf4 Bf5 {The idea starts from this position.}
+4. f3 {[%cal Gf3g4] Prepares g4.} e6
+5. g4 {[%cal Gg4f5] Hits the bishop.} Bg6
+6. h4 {[%cal Gh4h5] Threatens h5, which would trap the bishop on g6. Black has to answer with ...h6 or ...h5. Stockfish: −0.2, equal.} *
 
-[Chapter "h4 against ...Bg6"]
+[Chapter "g5 drives the knight away"]
 [Type "concept"]
 [Idea "white"]
 
-{If Black keeps the bishop with ...Bg6, push the h-pawn. h4 threatens h5, which drives the bishop off the diagonal. Black's usual answer is to trade on d3 after all, and White's h-pawn has gained space for free.}
-1. d4 d5 2. Nc3 Nf6 3. Bf4 a6 4. e3 Bf5 5. Bd3 Bg6 {[%cal Gd3g6] The idea starts from this position.}
-6. h4 {[%cal Gh4h5] Threatens h5 and h6.} e6
-7. h5 {[%cal Gh5g6] Hits the bishop.} Bxd3 {The bishop has nowhere better to go.}
-8. cxd3 {[%cal Gh5h6] White has the same structure as after an early trade on d3, plus a pawn on h5 that cramps Black's kingside. Stockfish: +0.1, equal.} *
+{If Black stops the h-pawn with ...h5, the g-pawn goes on instead. g5 drives the knight from f6, its best defensive square.}
+1. d4 d5 2. Nc3 Nf6 3. Bf4 Bf5 4. f3 e6 5. g4 Bg6 6. h4 {The idea starts from this position.} h5 {Stops h5.}
+7. g5 {[%cal Gg5f6] Hits the knight.} Nfd7 {[%csl Rf6] The knight has to leave f6. Stockfish: −0.2, equal.} *
 
-[Chapter "f3 and g4 against ...Bg4"]
+[Chapter "Trade on d3, then castle long"]
 [Type "concept"]
 [Idea "white"]
 
-{When Black's bishop comes to g4 instead, it has no retreat to the queenside. White chases it with f3, g4 and h4, gaining space on the kingside with every move. The bishop ends up shut in on h7 or g6, where it hits only White's pawns.}
-1. d4 d5 2. Nc3 Nf6 3. Bf4 c6 4. e3 Bg4 {[%csl Yg4] The idea starts from this position.}
-5. f3 {[%cal Gf3g4] Hits the bishop.} Bh5
-6. g4 {[%cal Gg4h5] Hits it again.} Bg6
-7. h4 {[%cal Gh4h5] Threatens h5, which would trap the bishop. Black has to make room with ...h6 or ...h5. Stockfish: +0.8, slightly better for White.} *
+{Once the pawns have pushed Black's bishop to g6, offer the trade with Bd3 and take back with the queen. The queen leaves d1, so White can castle long, and the kingside pawns keep pushing.}
+1. d4 d5 2. Nc3 Nf6 3. Bf4 a6 4. e3 Bf5 5. f3 e6 6. g4 Bg6 7. h4 h6 {The idea starts from this position.}
+8. Bd3 {[%cal Gd3g6] Offers the trade.} Bxd3
+9. Qxd3 {Take back with the queen.} c5 10. Nge2 Nc6
+11. O-O-O {[%cal Gg4g5] White's king goes to the queenside, and g5 comes next. Stockfish: −0.2, equal.} *
 
 [Chapter "Key ideas: Why the bishop goes to b4"]
 [Side "black"]
@@ -183,7 +181,7 @@
 1. d4 d5 2. Nc3 Nf6 3. Bf4 e6
 4. Nb5 {[%cal Gb5c7,Gf4c7] Threatens Nxc7+, forking king and rook.} Na6 {Guards c7, but the knight stands on the edge of the board.}
 5. e3 {[%cal Gf1a6] Opens the f1 bishop's diagonal, which runs to a6.} c6 {[%cal Gc6b5] Seven Black players in ten kick the knight. Against 5...Be7 or 5...Bd7, keep developing with Nf3 or c3.}
-6. Nc3 {The knight comes back. It has moved three times, but Black's knight on a6 needs two more moves to reach the center.} Nc7 {[%cal Gc7e6,Gc7b5] The most common move, in almost four games in ten. Against 6...Bd6 or 6...Bb4, take on a6 (see Knight to b5: other fifth and sixth moves).}
+6. Nc3 {The knight comes back. It has moved three times, but Black's knight on a6 needs two more moves to reach the center.} Nc7 {[%cal Gc7e6,Gc7b5] The most common move, in almost four games in ten. Against 6...Bd6 or 6...Bb4, take on a6: Black's a-pawns end up doubled.}
 7. Bd3 {[%cal Gd3h7] The bishop aims at h7. Next come Nf3 and castling. Stockfish: +0.2, equal.} *
 
 [Chapter "Early bishop: 3...Bf5"]
@@ -192,13 +190,14 @@
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{One Black player in five brings the bishop out at once. Develop with e3, then offer the trade with Bd3. If Black takes, take back with the c-pawn: it guards e4 and opens the c-file (see Key ideas: Plans against the bishop on f5). Three Black players in ten keep the bishop with 5...Bg6 instead: push the h-pawn (see Early bishop: 5...Bg6).}
+{One Black player in five brings the bishop out at once. Chase it with f3, g4 and h4: the pawns gain space, and Black's bishop ends up on g6, where it hits only pawns (see Key ideas: Plans against the bishop on f5). Then develop with e3 and Nh3, castle long, and push on the kingside.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 Bf5
-4. e3 {Opens the diagonal of the f1 bishop. 4.f3 is also popular, but Stockfish prefers 4.e3.} e6 {Two Black players in three. After 4...a6 or 4...c6, the position is the same as in Guarding b5: 3...a6 and Slav setup: 3...c6.}
-5. Bd3 {[%cal Gd3f5] Offers the trade of light-squared bishops.} Bxd3 {Four Black players in ten take.}
-6. cxd3 {[%cal Gd3e4,Ga1c1] Take back with the c-pawn. It guards e4, and the c-file opens for a rook.} Bd6 {A third of Black players offer a trade of the dark-squared bishops.}
-7. Qb3 {[%cal Gb3b7] With the light-squared bishops gone, b7 has lost a defender.} Qc8 {Guards b7.}
-8. Bg3 {If Black takes on g3, take back with the h-pawn, and the h-file opens for your rook.} O-O 9. Nf3 {[%cal Ga1c1] Next come Rc1 and castling. Stockfish: +0.2, equal.} *
+4. f3 {[%cal Gf3g4] Prepares g4. One White player in four plays it at this level, and White scores better with it than with 4.e3.} e6 {Two Black players in three.}
+5. g4 {[%cal Gg4f5] Hits the bishop.} Bg6 {Almost every Black player.}
+6. h4 {[%cal Gh4h5] Threatens h5, which traps the bishop.} h6 {Six Black players in ten make room for the bishop. Against 6...h5, see Early bishop: 6...h5.}
+7. e3 {Opens the f1 bishop's diagonal.} Bd6 {Four Black players in ten offer a trade of bishops.}
+8. Nh3 {[%cal Gh3f4] If Black takes on f4, take back with the knight.} a6 {The best reply. 8...Bxf4? 9.Nxf4 hits the bishop on g6, and White is clearly better (Stockfish +1.1).}
+9. Qd2 c5 10. O-O-O {[%cal Gg4g5] White's king is safe on the queenside, and g5 comes next. Stockfish: +0.2, equal.} *
 
 [Chapter "Guarding b5: 3...a6"]
 [Side "white"]
@@ -206,12 +205,13 @@
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{About one Black player in six plays 3...a6, which takes b5 away from White's knight. Develop London style with e3, Bd3 and Nf3. Three Black players in ten then bring the bishop to f5: offer the trade with Bd3, as against 3...Bf5. Black's other fourth moves are in Advanced variations.}
+{About one Black player in six plays 3...a6, which takes b5 away from White's knight. Develop with e3. Three Black players in ten then bring the bishop to f5: chase it with f3, g4 and h4, as against 3...Bf5. Then trade the bishops on d3, take back with the queen, and castle long.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 a6
-4. e3 {Seven White players in ten.} Bf5 {About three Black players in ten. Against 4...e6, 4...Nc6 and 4...c5, see Guarding b5: other fourth moves.}
-5. Bd3 {Offers the trade, as against 3...Bf5.} Bxd3 {Almost half of Black players take. After 5...Bg6, push the h-pawn: 6.h4 e6 7.h5 Bxd3 8.cxd3 (Stockfish +0.1, equal), as on Key ideas: Plans against the bishop on f5.}
-6. cxd3 e6 {Eight Black players in ten.}
-7. Nf3 {[%cal Ga1c1,Gd1b3] Next come Rc1, Qb3 and castling. Stockfish: +0.3, slightly better for White.} *
+4. e3 {Seven White players in ten.} Bf5 {About three Black players in ten. Against 4...e6, see Guarding b5: other fourth moves.}
+5. f3 {[%cal Gf3g4] Prepares g4, as against 3...Bf5.} e6 {Six Black players in ten.}
+6. g4 Bg6 7. h4 {[%cal Gh4h5] Threatens h5, which traps the bishop.} h6 {Six Black players in ten. Against 7...h5, play 8.g5, as in Early bishop: 6...h5.}
+8. Bd3 {[%cal Gd3g6] Offers the trade.} Bxd3 9. Qxd3 {Take back with the queen, so the king can go to the queenside.} c5 10. Nge2 Nc6
+11. O-O-O {[%cal Gg4g5] Next g5. Stockfish: −0.2, equal.} *
 
 [Chapter "Slav setup: 3...c6"]
 [Side "white"]
@@ -219,12 +219,28 @@
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{About one Black player in six plays 3...c6, as in the Slav Defense: the pawn guards d5, and the c8 bishop can still come out. After 4.e3, almost half bring it to f5. Offer the trade with Bd3, as against 3...Bf5. Black's other fourth moves are in Advanced variations.}
+{About one Black player in six plays 3...c6, as in the Slav Defense: the pawn guards d5, and the c8 bishop can still come out. After 4.e3, almost half bring it to f5. Chase it with f3, g4 and h4, then trade the bishops on d3, take back with the queen, and castle long.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 c6
-4. e3 Bf5 {Almost half of Black players. Against 4...e6, 4...Bg4 and 4...g6, see Slav setup: other fourth moves.}
-5. Bd3 {Offers the trade.} Bxd3 {Half of Black players take. After 5...Bg6, push the h-pawn: 6.h4 e6 7.h5 Bxd3 8.cxd3 (Stockfish +0.3, slightly better for White).}
-6. cxd3 e6
-7. Nf3 {[%cal Gd1b3,Ga1c1] Qb3 hits b7, and Rc1 follows. Stockfish: +0.3, slightly better for White.} *
+4. e3 Bf5 {Almost half of Black players. Against 4...Bg4, chase the bishop with f3, g4 and h4 too.}
+5. f3 {[%cal Gf3g4] Prepares g4. Stockfish's first choice here.} e6 {Six Black players in ten.}
+6. g4 Bg6 7. h4 {[%cal Gh4h5] Threatens h5.} h6 {Half of Black players. Against 7...h5, play 8.g5.}
+8. Bd3 Bxd3 9. Qxd3 Nbd7
+10. Nge2 {[%cal Ge1c1] Long castling comes next. Stockfish: +0.4, slightly better for White.} *
+
+[Chapter "Hitting d4: 3...c5"]
+[Side "white"]
+[Type "line"]
+[Opening "Rapport-Jobava System"]
+[ECO "D01"]
+
+{About one Black player in eleven hits d4 at once with 3...c5, and it is one of Black's best setups. Play 4.e3. Against 4...cxd4, take back with the e-pawn: the e-file opens, and the f4 bishop stays active. After ...a6 and ...Nc6, jump to e5 with the knight, and if Black's bishop comes to f5, chase it with the g-pawn. Against 4...e6, jump to b5 at once. Against 4...Nc6?, see Trap: 4...Nc6? and Nb5!.}
+1. d4 d5 2. Nc3 Nf6 3. Bf4 c5
+4. e3 cxd4 {One Black player in five.}
+5. exd4 {[%cal Ge1e8] The e-file opens.} a6 {Four Black players in ten. It takes b5 away from White's knight.}
+6. Nf3 Nc6 {Half of Black players.}
+7. Ne5 {[%cal Ge5c6] Hits the knight on c6.} Bf5 {Four Black players in ten.}
+8. g4! {[%cal Gg4f5] Hits the bishop.} Nxe5 9. dxe5 Nxg4 {Black takes a pawn, but d5 falls next.}
+10. h3 Nh6 11. Qxd5 Qxd5 12. Nxd5 {[%cal Gd5c7] Threatens Nc7+. Stockfish: +0.8, slightly better for White.} *
 
 [Chapter "Pin on c3: 4.e3 and 4.Nf3"]
 [Side "black"]
@@ -238,8 +254,8 @@
 4. e3 {Half of White players.}
 (4. Nf3 {One White player in eight.} Bb4 5. a3 {Almost four in ten. After 5.e3, play 5...c5: the position is the same as after 4.e3 Bb4 5.Nf3 c5.} Bxc3+ 6. bxc3 c5 {[%cal Gc5d4] Hits d4.} 7. e3 Qa5 {[%cal Ga5c3] The queen hits the doubled pawn on c3. 8.Qd2? loses to 8...Ne4! (see Trap: 8.Qd2? and ...Ne4). Stockfish: −1.2, clearly better for Black.})
 4... Bb4 {[%cal Gb4c3] Pins the knight on c3.}
-5. Bd3 {Half of White players. Against 5.Ne2, 5.a3 and 5.Nf3, see Pin on c3: White's fifth moves.} c5 {[%cal Gc5d4] Hits d4 at once.}
-6. dxc5 {Seven White players in ten. Against 6.a3, take on c3 and play ...Qa5 (see Pin on c3: White's sixth moves).} Nbd7 {[%cal Gd7c5] Develops and takes back on c5 next. Black scores 73% from here at this level.}
+5. Bd3 {Half of White players. Against 5.Ne2 and 5.a3, see Pin on c3: White's fifth moves. Against 5.Nf3, hit d4 with ...c5.} c5 {[%cal Gc5d4] Hits d4 at once.}
+6. dxc5 {Seven White players in ten. Against 6.a3, take on c3 and play ...Qa5.} Nbd7 {[%cal Gd7c5] Develops and takes back on c5 next. Black scores 73% from here at this level.}
 7. Ne2 {Four White players in ten.} Bxc5 {Takes back with the bishop. The knight stays on d7, ready for ...Nf6 or ...b6.}
 8. O-O O-O {Stockfish: −0.3, slightly better for Black.} *
 
@@ -339,22 +355,7 @@
 1. d4 d5 2. Nc3 Nf6 3. Bf4 e6 4. e3 Bb4
 5. Ne2 {One White player in six. The knight is ready to take back on c3, so the pin does less.}
 (5. a3 {One in seven.} Bxc3+ 6. bxc3 c5 {Black scores 77% from here at this level.} 7. Nf3 Qa5 {[%cal Ga5c3] The queen hits the doubled pawn on c3. 8.Qd2? loses to 8...Ne4! (see Trap: 8.Qd2? and ...Ne4). Stockfish: −1.2, clearly better for Black.})
-(5. Nf3 {One in twelve.} c5 6. dxc5 {Three White players in ten. Against 6.a3, take on c3: 6...Bxc3+ 7.bxc3 Qa5 (Stockfish −1.2, clearly better for Black).} Nbd7 {[%cal Gd7c5] Takes back on c5 with the knight next. Stockfish: −0.3, slightly better for Black.})
 5... O-O 6. a3 {Eight White players in ten.} Be7 {[%cal Gc7c5] The bishop drops back, and ...c5 comes next. Stockfish: −0.3, slightly better for Black.} *
-
-[Chapter "Pin on c3: White's sixth moves"]
-[Side "black"]
-[Diagram "6.a3"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Rapport-Jobava System"]
-[ECO "D01"]
-
-{After 4.e3 Bb4 5.Bd3 c5, about one White player in seven asks the bishop with 6.a3. Take on c3 and hit the doubled pawn with ...Qa5, as against 5.a3. Black scores 72% after 6...Bxc3+ at this level. After 6.dxc5 Nbd7 7.Nf3, take back with the knight.}
-1. d4 d5 2. Nc3 Nf6 3. Bf4 e6 4. e3 Bb4 5. Bd3 c5
-6. a3 {One White player in seven.}
-(6. dxc5 Nbd7 7. Nf3 {One White player in four.} Nxc5 {[%cal Gc5d3] Takes back and hits the bishop on d3. Stockfish: −0.3, slightly better for Black.})
-6... Bxc3+ 7. bxc3 Qa5 {[%cal Ga5c3] Hits c3. Stockfish: −1.0, clearly better for Black.} *
 
 [Chapter "Check on b4: White's sixth moves"]
 [Side "black"]
@@ -367,8 +368,6 @@
 {After 4.Nb5 Bb4+ 5.c3 Ba5, White's sixth moves split four ways. Against 6.b4, three White players in ten, drop back to b6, and meet 7.a4 with 7...a5!: the natural 7...a6? loses the bishop to 8.a5. Against 6.e3 and 6.Nf3, castle. Against 6.Qa4, which hits the bishop, guard it with 6...Nc6. After 6.a4 a6 7.Na3, hit the center with ...c5.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 e6 4. Nb5 Bb4+ 5. c3 Ba5
 6. b4 {Three White players in ten.}
-(6. e3 {One in five.} O-O 7. Nf3 {Stockfish: +0.1, equal.})
-(6. Qa4 {One in ten. The queen hits the bishop on a5.} Nc6 {[%cal Gc6a5] The knight guards the bishop. Black scores 61% from here at this level. Stockfish: −0.5, slightly better for Black.})
 6... Bb6 {[%cal Gb6f2] The bishop drops back while White's a-pawn is still on a2.}
 7. a4 {[%cal Ga4a5] Nine White players in ten. White threatens a5, trapping the bishop.} a5! {[%cal Ga5b4] Stops a5 for good and hits b4. Black scores 70% from here at this level.}
 (7... a6? {More than half of Black players. It looks natural, but the knight on b5 covers a7.} 8. a5 {[%cal Ga5b6,Gb5a7] Hits the bishop: on a7 the knight would take it. Stockfish: +1.0, clearly better for White.})
@@ -387,19 +386,6 @@
 5. Nxd6+ {Take the bishop. White gets the bishop pair.} cxd6 6. e3 O-O {Against 6...Nc6, almost as common, play 7.Nf3 just the same.}
 7. Nf3 {[%cal Gf1d3,Gc2c3] Next come Bd3, c3 and castling. Stockfish: +0.3, slightly better for White.} *
 
-[Chapter "Knight to b5: other fifth and sixth moves"]
-[Side "white"]
-[Diagram "6...Bd6"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Rapport-Jobava System"]
-[ECO "D01"]
-
-{After 4.Nb5 Na6 5.e3 c6 6.Nc3, about four Black players in ten develop the f8 bishop before bringing the knight back with ...Nc7. Then the knight on a6 has only the b7 pawn to guard it. Take it: Bxa6 bxa6 leaves Black with doubled a-pawns for the rest of the game. Against 5...Be7 or 5...Bd7, keep developing with Nf3 or c3.}
-1. d4 d5 2. Nc3 Nf6 3. Bf4 e6 4. Nb5 Na6 5. e3 c6
-6. Nc3 Bd6 {About one Black player in four.}
-7. Bxa6 {Takes the knight before it can go back.} bxa6 8. Na4 {[%cal Ga4c5] The knight heads for c5, the hole in front of the c6 pawn. Stockfish: +0.6, slightly better for White.} *
-
 [Chapter "White's other fourth moves"]
 [Side "black"]
 [Diagram "4.a3"]
@@ -411,7 +397,6 @@
 {About one White player in eleven plays 4.a3, which stops ...Bb4. Hit the center with ...c5 instead. Rarer fourth moves, 4.f3, 4.Qd2 and 4.Qd3, are answered the same way: 4...c5, and Black is slightly better in each.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 e6
 4. a3 {One White player in eleven.}
-(4. f3 c5 {[%cal Gc5d4] Hits d4. Stockfish: −0.9, slightly better for Black.})
 4... c5 {[%cal Gc5d4] Hits d4.}
 5. e3 {Two White players in three.} a6 {[%cal Gb7b5] Prepares ...b5 and keeps White's knight off b5. Stockfish: −0.2, equal.} *
 
@@ -423,37 +408,11 @@
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{After 3...a6 4.e3, Black's moves other than 4...Bf5 call for the same London setup: Bd3, Nf3 and castling. Against 4...e6 5.Bd3 c5, take on c5 and develop. Against 4...Nc6, develop the same way, and chase ...Bg4 with f3 and g4. Against 4...c5, take on c5 and prepare b4 to hold the pawn.}
+{After 3...a6 4.e3 e6, push the g-pawn at once: g4 gains space, and g5 drives the knight from f6. Then develop the king's knight, castle long and push the h-pawn. Against 4...Nc6, develop with Bd3 and Nf3; against 4...c5, take on c5 and prepare b4 to hold the pawn.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 a6 4. e3 e6 {Almost three Black players in ten.}
-(4... Nc6 {One Black player in seven.} 5. Bd3 e6 6. Nf3 {[%cal Ge1g1] Castle next. Against 5...Bg4, play 6.f3 and chase the bishop with g4. Stockfish: +0.3, slightly better for White.})
-5. Bd3 c5 {[%cal Gc5d4] Almost four in ten hit the center.}
-6. dxc5 {Six White players in ten take. White gives up the center for quick development.} Bxc5 7. Nf3 {Castling and e4 come next. Stockfish: −0.1, equal.} *
-
-[Chapter "Hitting d4: 3...c5"]
-[Side "white"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Rapport-Jobava System"]
-[ECO "D01"]
-
-{About one Black player in eleven hits d4 at once with 3...c5. Play 4.e3, and keep the knight ready for b5. Against 4...cxd4, take back with the e-pawn: the e-file opens, and the f4 bishop stays active. Against 4...e6, jump to b5 at once. Against 4...Nc6?, see Trap: 4...Nc6? and Nb5!.}
-1. d4 d5 2. Nc3 Nf6 3. Bf4 c5
-4. e3 cxd4 {One Black player in five.}
-5. exd4 {[%cal Ge1e8] The e-file opens.} a6 {Four Black players in ten. It takes b5 away from White's knight.}
-6. Nf3 Nc6 7. Ne5 {[%cal Ge5c6] Hits the knight on c6. Stockfish: +0.1, equal.} *
-
-[Chapter "Slav setup: other fourth moves"]
-[Side "white"]
-[Diagram "4...e6"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Rapport-Jobava System"]
-[ECO "D01"]
-
-{After 3...c6 4.e3, Black's main alternatives to 4...Bf5 each have a clear answer. Against 4...e6, develop with Bd3 and Nf3. Against 4...Bg4, chase the bishop with f3, g4 and h4 (see Key ideas: Plans against the bishop on f5). Against 4...g6, push the h-pawn.}
-1. d4 d5 2. Nc3 Nf6 3. Bf4 c6 4. e3 e6 {One Black player in six.}
-5. Bd3 Bd6 {Half of Black players offer the trade.}
-6. Nf3 {[%cal Gf4d6] If Black takes on f4, take back with the e-pawn: it controls e5, and the e-file opens for your rook. Stockfish: +0.2, equal.} *
+5. g4 {[%cal Gg4g5] Stockfish's first choice. The pawn heads for g5.} c5 {[%cal Gc5d4] Hits the center.}
+6. g5 Nfd7 7. Nf3 Nc6
+8. a3 {[%cal Ga3b4] Keeps Black's pieces off b4. Next come h4, Bh3 and long castling. Stockfish: +0.4, slightly better for White.} *
 
 [Chapter "Knight to c6: 3...Nc6"]
 [Side "white"]
@@ -475,24 +434,29 @@
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{One Black player in twenty fianchettoes the f8 bishop. Develop with e3, then push the h-pawn: h4 and h5 aim at the g6 pawn and open the h-file. Three White players in ten choose 5.h4 at this level, and it scores best.}
+{One Black player in twenty fianchettoes the f8 bishop. Develop with e3, then push the h-pawn. Most Black players stop it with ...h5: develop with Nf3 and Be2, and if Black hits the center with ...c5, take on c5. If Black castles instead, h5 opens the h-file at once.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 g6
 4. e3 Bg7 {Eight Black players in ten.}
-5. h4 {[%cal Gh4h5] The h-pawn heads for h5.} O-O
-6. h5 {[%cal Gh5g6] Hits g6. If Black takes on h5, the h-file opens.} c5 {[%cal Gc5d4] Black hits back in the center.}
-7. hxg6 hxg6 {[%cal Gh1h8] The h-file is open for White's rook. Stockfish: +0.3, slightly better for White.} *
+5. h4 {[%cal Gh4h5] The h-pawn heads for h5.} h5 {Almost four Black players in ten stop it.}
+(5... O-O {Two in ten castle into the attack.} 6. h5 {[%cal Gh5g6] Hits g6. If Black takes on h5, the h-file opens.} c5 {[%cal Gc5d4] Black hits back in the center.} 7. hxg6 hxg6 {[%cal Gh1h8] The h-file is open for White's rook. Stockfish: +0.3, slightly better for White.})
+6. Nf3 O-O {Four Black players in ten.}
+(6... Bg4 {Almost three in ten.} 7. Qd2 {Unpins the knight.} Bxf3 8. gxf3 c6 9. O-O-O Nbd7 10. e4 {[%cal Ge4d5] White has the center, and Black has given up the bishop pair. Stockfish: +1.0, clearly better for White.})
+7. Be2 c5 8. dxc5 {Takes the pawn.} Qa5 9. O-O {Stockfish: −0.2, equal.} *
 
-[Chapter "Early bishop: 5...Bg6"]
+[Chapter "Early bishop: 6...h5"]
 [Side "white"]
+[Diagram "6...h5"]
 [Type "line"]
 [Level "advanced"]
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{After 3...Bf5 4.e3 e6 5.Bd3, three Black players in ten keep the bishop with 5...Bg6. Push the h-pawn: h4 threatens h5, which drives the bishop off the diagonal, and Black usually trades on d3 after all. Never fear 6...h5?: it loses a pawn (see Trap: 6...h5? and Bxg6).}
-1. d4 d5 2. Nc3 Nf6 3. Bf4 Bf5 4. e3 e6 5. Bd3 Bg6
-6. h4 {[%cal Gh4h5] Threatens h5.} Bd6 {[%cal Gd6f4] The most common reply: Black offers a trade of the dark-squared bishops.}
-7. h5 {Gains space and hits the bishop.} Bxd3 8. cxd3 {Take back with the c-pawn, as usual. Stockfish: +0.2, equal.} *
+{Four Black players in ten stop the h-pawn with 6...h5. Then 7.g5 drives the knight from f6. Trade the light-squared bishops on d3, taking back with the queen, and push g6 as soon as Black plays ...c5: it breaks up Black's kingside pawns. Then castle long and open the center with e4.}
+1. d4 d5 2. Nc3 Nf6 3. Bf4 Bf5 4. f3 e6 5. g4 Bg6 6. h4 h5
+7. g5 {[%cal Gg5f6] Drives the knight from f6, its best square.} Nfd7 {Most Black players.}
+8. e3 a6 9. Bd3 Bxd3 10. Qxd3 {Take back with the queen, ready for long castling.} c5
+11. g6! {[%cal Gg6f7] Hits f7 and breaks up Black's kingside pawns.} f6 {The best reply.}
+12. Nge2 Nc6 13. O-O-O {[%cal Ge3e4] Next e4 opens the center. Stockfish: +0.1, equal.} *
 
 [Chapter "Move orders: 2...e6"]
 [Side "white"]
@@ -502,12 +466,11 @@
 [Opening "Rapport-Jobava System, with e6"]
 [ECO "D01"]
 
-{About one Black player in five answers 2.Nc3 with 2...e6, keeping the knight on g8 for now. Play 3.Bf4 all the same. After 3...Nf6 you are in Knight to b5: 3...e6 4.Nb5, and after 3...a6 4.e3 Nf6 in Guarding b5: 3...a6. Against an early ...Bd6, play e3 and let Black take on f4: the pawn that takes back controls e5. Against an early ...Bb4, guard c3 with the queen.}
+{About one Black player in five answers 2.Nc3 with 2...e6, keeping the knight on g8 for now. Play 3.Bf4 all the same. After 3...Nf6 you are in Knight to b5: 3...e6 4.Nb5, and after 3...a6 4.e3 Nf6 in Guarding b5: other fourth moves. Against an early ...Bd6, take the bishop, then push e4. Against an early ...Bb4, guard c3 with the queen.}
 1. d4 d5 2. Nc3 e6
 3. Bf4 Bd6 {One Black player in six offers the trade of bishops at once.}
-4. e3 {[%cal Gf4d6] Lets Black take on f4.} Bxf4 {Two Black players in three take at once. After 4...Nf6, the position is the same as after 3...e6 4.e3 Bd6: develop with Bd3 and Nf3.}
-5. exf4 {[%cal Ge1e8,Gf4e5] The pawn on f4 controls e5, and the e-file opens for a rook.} Nf6 {More than half of Black players.}
-6. Nf3 {[%cal Gf3e5] The knight heads for e5. Bd3 and castling come next. Stockfish: +0.3, slightly better for White.} *
+4. Bxd6 {Take it: putting the bishop back loses time.} Qxd6 {Eight Black players in ten.}
+5. e4 {[%cal Ge4d5] Hits the center at once.} dxe4 6. Nxe4 {[%cal Ge4d6] Hits the queen. Stockfish: +0.1, equal.} *
 
 [Chapter "Move orders: 2...c6 and 2...Bf5"]
 [Side "white"]
@@ -517,11 +480,12 @@
 [Opening "Queen's Pawn Game: Chigorin Variation"]
 [ECO "D00"]
 
-{One Black player in nine answers 2.Nc3 with 2...c6, and about one in eleven with 2...Bf5. Play 3.Bf4 and 4.e3. Most games then transpose to a chapter of this course once Black plays ...Nf6: to Slav setup: 3...c6 or Early bishop: 3...Bf5. Against ...Bf5, the plan is the same as always: Bd3 to trade the bishop.}
+{One Black player in nine answers 2.Nc3 with 2...c6, and about one in eleven with 2...Bf5. While Black's knight is still on g8, the e-pawn can join in: play f3, then push e4. Once Black plays ...Nf6, the game usually transposes to Slav setup: 3...c6 or Early bishop: 3...Bf5.}
 1. d4 d5 2. Nc3 c6
-(2... Bf5 3. Bf4 e6 {Half of Black players.} 4. e3 {After 4...Nf6, the position is the same as in Early bishop: 3...Bf5 after 4...e6.} Nf6 5. Bd3 {Offers the trade, as in that chapter. Stockfish: +0.1, equal.})
+(2... Bf5 3. f3 {[%cal Ge2e4] Prepares e4. The bishop stays on c1 for now: it may go to e3.} e6 {Half of Black players.} 4. e4 dxe4 {Eight Black players in ten.} 5. fxe4 Bg6 6. Nf3 {White has a big center. Stockfish: +0.8, slightly better for White.})
 3. Bf4 Bf5 {A third of Black players. After 3...Nf6 4.e3, you are in Slav setup: 3...c6.}
-4. e3 e6 5. Bd3 {[%cal Gd3f5] Offers the trade. Stockfish: 0.0, equal.} *
+4. f3 {[%cal Ge2e4] Prepares e4.} e6 {Half of Black players.} 5. e4 dxe4
+6. fxe4 {[%cal Ge4d5] White has a big center. Stockfish: +0.9, slightly better for White.} *
 
 [Chapter "Move orders: 1...Nf6 2.Nc3"]
 [Side "white"]
@@ -545,7 +509,7 @@
 (3... Bf5 {[%course white] Early bishop})
 (3... a6 {[%course white] Guarding b5})
 (3... c6 {[%course white] Slav setup})
-(3... c5 {Hitting d4})
+(3... c5 {[%course white] Hitting d4})
 (3... Nc6 {Knight to c6})
 (3... g6 {Fianchetto})
 4. e3 {} (4. Nb5 {[%course white] Knight to b5} Bb4+ {[%course black] Check on b4}) (4. Nf3 Bb4 {[%course black]}) (4. a3 {Other fourth moves})

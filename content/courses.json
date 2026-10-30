@@ -1386,7 +1386,7 @@
                     "id": "jobava-london",
                     "side": "both",
                     "file": "content/jobava-london.pgn",
-                    "repertoire": "As White: a quick knight jump to b5, a bishop trade on d3, and an h-pawn attack against a fianchetto. As Black: a pawn on e6 and the bishop on b4.",
+                    "repertoire": "As White: a quick knight jump to b5, a pawn storm against Black's bishop on f5, and an h-pawn attack against a fianchetto. As Black: a pawn on e6 and the bishop on b4.",
                     "summary": "The London bishop on f4, with the queen's knight on c3. White gets there whether Black starts with the d-pawn or the king's knight.",
                     "why": {
                         "text": "As White, you play the same first three moves whether Black starts with the d-pawn or the king's knight: the d-pawn two squares forward, the queen's knight to c3 and the dark-squared bishop to f4. The knight on c3 makes the system sharper than the ordinary London. It can jump to b5 and hit c7 as early as move 4, so Black has to answer threats from the start.\n\nAs Black, the plan needs little theory: a pawn on e6, the bishop on b4, and the c-pawn forward to hit White's center. Stockfish rates Black equal or slightly better in this course's main lines, and the bishop move to b4 is Black's best-scoring answer at club level to White's two most common fourth moves."
@@ -1416,17 +1416,22 @@
                             [
                                 "Early bishop: 3...Bf5",
                                 "20% as White",
-                                "White: Trade off Black's active bishop and press on the queenside.\nBlack: Develop the bishop early and keep a solid center."
+                                "White: Chase Black's bishop with the kingside pawns, castle long and attack.\nBlack: Keep the bishop safe and hit back in the center."
                             ],
                             [
                                 "Guarding b5: 3...a6",
                                 "17% as White",
-                                "White: Develop London style and trade off Black's active bishop.\nBlack: Stop White's knight jumps, then develop and hit back in the center."
+                                "White: Develop, then chase Black's bishop with the kingside pawns and castle long.\nBlack: Stop White's knight jumps, then develop and hit back in the center."
                             ],
                             [
                                 "Slav setup: 3...c6",
                                 "16% as White",
-                                "White: Develop quietly and attack with the kingside pawns.\nBlack: Build a solid pawn chain and develop the bishop early."
+                                "White: Chase Black's bishop with the kingside pawns and castle long.\nBlack: Build a solid pawn chain and keep the bishop safe."
+                            ],
+                            [
+                                "Hitting d4: 3...c5",
+                                "9% as White",
+                                "White: Develop quickly, then use the knights to hit Black's center.\nBlack: Trade in the center and attack on the queenside."
                             ]
                         ],
                         "note": "How often: the share of your Jobava London games that reach the line, from the side you play in it. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."

@@ -1544,7 +1544,7 @@ None.
 
 ## Jobava London System — both sides (`jobava-london`)
 
-45 chapters, 42 drillable lines (basic 7, traps 11, advanced 24), 293 learner moves.
+42 chapters, 35 drillable lines (basic 8, traps 11, advanced 16), 277 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -1554,6 +1554,7 @@ None.
 | Early bishop: 3...Bf5 | 3...Bf5 | Rapport-Jobava System | D01 | ok |
 | Guarding b5: 3...a6 | 3...a6 | Rapport-Jobava System | D01 | ok |
 | Slav setup: 3...c6 | 3...c6 | Rapport-Jobava System | D01 | ok |
+| Hitting d4: 3...c5 | 3...c5 | Rapport-Jobava System | D01 | ok |
 | Pin on c3: 4.e3 and 4.Nf3 | 4.e3 | Rapport-Jobava System | D01 | ok |
 | Check on b4: 4.Nb5 Bb4+ | 4.Nb5 | Rapport-Jobava System | D01 | ok |
 | Trap: 4...Nc6? and Nb5! | 5.Nb5 | Rapport-Jobava System | D01 | ok |
@@ -1562,17 +1563,13 @@ None.
 | Trap: 8.Qd2? and ...Ne4 | 8.Qd2 | Rapport-Jobava System | D01 | ok |
 | Trap to avoid: 6...Bb6? 7.a5 | 6.a4 | Rapport-Jobava System | D01 | ok |
 | Pin on c3: White's fifth moves | 5.Ne2 | Rapport-Jobava System | D01 | ok |
-| Pin on c3: White's sixth moves | 6.a3 | Rapport-Jobava System | D01 | ok |
 | Check on b4: White's sixth moves | 6.b4 | Rapport-Jobava System | D01 | ok |
 | Knight to b5: 4...Bd6 and 4...Bb4+ | 4...Bd6 | Rapport-Jobava System | D01 | ok |
-| Knight to b5: other fifth and sixth moves | 6...Bd6 | Rapport-Jobava System | D01 | ok |
 | White's other fourth moves | 4.a3 | Rapport-Jobava System | D01 | ok |
 | Guarding b5: other fourth moves | 4...e6 | Rapport-Jobava System | D01 | ok |
-| Hitting d4: 3...c5 | 3...c5 | Rapport-Jobava System | D01 | ok |
-| Slav setup: other fourth moves | 4...e6 | Rapport-Jobava System | D01 | ok |
 | Knight to c6: 3...Nc6 | 3...Nc6 | Rapport-Jobava System | D01 | ok |
 | Fianchetto: 3...g6 | 3...g6 | Rapport-Jobava System | D01 | ok |
-| Early bishop: 5...Bg6 | 5...Bg6 | Rapport-Jobava System | D01 | ok |
+| Early bishop: 6...h5 | 6...h5 | Rapport-Jobava System | D01 | ok |
 | Move orders: 2...e6 | 2...e6 | Rapport-Jobava System, with e6 | D01 | ok |
 | Move orders: 2...c6 and 2...Bf5 | 2...c6 | Queen's Pawn Game: Chigorin Variation | D00 | ok |
 | Move orders: 1...Nf6 2.Nc3 | 2...g6 | Indian Defense | A45 | ok |
@@ -1596,9 +1593,10 @@ None.
 | Line | Eval | Deepest named position |
 |---|---|---|
 | Knight to b5: 3...e6 4.Nb5 (Main line) | 0.24 | D01 Rapport-Jobava System |
-| Early bishop: 3...Bf5 (Main line) | 0.24 | D01 Rapport-Jobava System |
-| Guarding b5: 3...a6 (Main line) | 0.25 | D01 Rapport-Jobava System |
-| Slav setup: 3...c6 (Main line) | 0.23 | D01 Rapport-Jobava System |
+| Early bishop: 3...Bf5 (Main line) | 0.12 | D01 Rapport-Jobava System |
+| Guarding b5: 3...a6 (Main line) | -0.24 | D01 Rapport-Jobava System |
+| Slav setup: 3...c6 (Main line) | 0.30 | D01 Rapport-Jobava System |
+| Hitting d4: 3...c5 (Main line) | 0.85 | D01 Rapport-Jobava System |
 | Pin on c3: 4.e3 and 4.Nf3 (Main line) | 0.22 | D01 Rapport-Jobava System |
 | Pin on c3: 4.e3 and 4.Nf3 (4.Nf3) | 1.35 | D01 Rapport-Jobava System |
 | Check on b4: 4.Nb5 Bb4+ (Main line) | 0.15 | D01 Rapport-Jobava System |
@@ -1615,26 +1613,18 @@ None.
 | Trap to avoid: 6...Bb6? 7.a5 (Main line) | 0.20 | D01 Rapport-Jobava System |
 | Pin on c3: White's fifth moves (Main line) | 0.24 | D01 Rapport-Jobava System |
 | Pin on c3: White's fifth moves (5.a3) | 1.19 | D01 Rapport-Jobava System |
-| Pin on c3: White's fifth moves (5.Nf3) | 0.21 | D01 Rapport-Jobava System |
-| Pin on c3: White's sixth moves (Main line) | 0.99 | D01 Rapport-Jobava System |
-| Pin on c3: White's sixth moves (6.dxc5) | 0.22 | D01 Rapport-Jobava System |
-| Check on b4: White's sixth moves (Main line) | 0.61 | D01 Rapport-Jobava System |
-| Check on b4: White's sixth moves (6.e3) | -0.19 | D01 Rapport-Jobava System |
-| Check on b4: White's sixth moves (6.Qa4) | 0.47 | D01 Rapport-Jobava System |
+| Check on b4: White's sixth moves (Main line) | 0.68 | D01 Rapport-Jobava System |
 | Knight to b5: 4...Bd6 and 4...Bb4+ (Main line) | 0.31 | D01 Rapport-Jobava System |
-| Knight to b5: other fifth and sixth moves (Main line) | 0.52 | D01 Rapport-Jobava System |
 | White's other fourth moves (Main line) | 0.22 | D01 Rapport-Jobava System |
-| White's other fourth moves (4.f3) | 0.77 | D01 Rapport-Jobava System |
-| Guarding b5: other fourth moves (Main line) | 0.05 | D01 Rapport-Jobava System |
-| Guarding b5: other fourth moves (4...Nc6) | 0.34 | D01 Rapport-Jobava System |
-| Hitting d4: 3...c5 (Main line) | 0.15 | D01 Rapport-Jobava System |
-| Slav setup: other fourth moves (Main line) | 0.25 | D01 Rapport-Jobava System |
+| Guarding b5: other fourth moves (Main line) | 0.49 | D01 Rapport-Jobava System |
 | Knight to c6: 3...Nc6 (Main line) | 0.89 | D01 Rapport-Jobava System |
-| Fianchetto: 3...g6 (Main line) | 0.41 | D01 Rapport-Jobava System |
-| Early bishop: 5...Bg6 (Main line) | 0.11 | D01 Rapport-Jobava System |
-| Move orders: 2...e6 (Main line) | 0.31 | D01 Rapport-Jobava System, with e6 |
-| Move orders: 2...c6 and 2...Bf5 (Main line) | 0.06 | D00 Queen's Pawn Game: Chigorin Variation |
-| Move orders: 2...c6 and 2...Bf5 (2...Bf5) | 0.11 | D00 Queen's Pawn Game: Chigorin Variation, Alburt Defense |
+| Fianchetto: 3...g6 (Main line) | -0.19 | D01 Rapport-Jobava System |
+| Fianchetto: 3...g6 (6...Bg4) | 0.96 | D01 Rapport-Jobava System |
+| Fianchetto: 3...g6 (5...O-O) | 0.41 | D01 Rapport-Jobava System |
+| Early bishop: 6...h5 (Main line) | 0.17 | D01 Rapport-Jobava System |
+| Move orders: 2...e6 (Main line) | -0.14 | D01 Rapport-Jobava System, with e6 |
+| Move orders: 2...c6 and 2...Bf5 (Main line) | 0.91 | D00 Queen's Pawn Game: Chigorin Variation |
+| Move orders: 2...c6 and 2...Bf5 (2...Bf5) | 0.81 | D00 Queen's Pawn Game: Chigorin Variation, Alburt Defense |
 | Move orders: 1...Nf6 2.Nc3 (Main line) | 0.08 | A45 Indian Defense |
 | Move orders: 1...Nf6 2.Nc3 (2...e6) | 0.11 | A45 Indian Defense |
 
