@@ -611,6 +611,18 @@ Qxb2 {[%cal Gb2a1] Hits the rook on a1, and the bishop on h6 is still hanging.}
 1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 {This is the Paulsen Attack.} Qb6 6. a3 c4 7. Nbd2 Na5 8. Rb1 Nb3? {Looks strong: the knight hits the bishop on c1, the knight on d2 and the pawn on d4. But White can simply take it.}
 9. Nxb3 Qxb3 10. Qxb3 cxb3 11. Nd2 {[%csl Rb3] The pawn on b3 has no support.} Bd7 12. Nxb3 {White is a pawn up. Stockfish +1.7, clearly better for White.} *
 
+[Chapter "Trap: 3...f6 and Qh5+"]
+[Side "white"]
+[Diagram "3...f6"]
+[Type "trap"]
+[Opening "French Defense: Advance Variation"]
+[ECO "C02"]
+
+{Some players break at e5 with 3...f6 at once. 4.Bd3 aims at g6 and prepares Qh5+. If Black takes on e5, the queen check wins material.}
+1. e4 e6 2. d4 d5 3. e5 f6 4. Bd3 {[%cal Gd1h5,Gd3g6] Prepares Qh5+.} fxe5?
+(4... g6 {Stops Qh5+, but weakens the dark squares.} 5. h4 {Attacks the g6 pawn with h5. Stockfish +1.1, clearly better for White.})
+5. Qh5+ g6 6. Bxg6+ {6...hxg6?? 7.Qxh8 wins the rook.} Kd7 7. Nf3 Nc6 8. Nxe5+ Nxe5 9. Qxe5 {White is a pawn up and Black's king is stuck in the center. Stockfish +1.3, clearly better for White.} *
+
 [Chapter "Trap: 3.f3 and ...Qh4+"]
 [Side "black"]
 [Diagram "3.f3"]
