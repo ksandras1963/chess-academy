@@ -174,15 +174,15 @@
 [Opening "Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense"]
 [ECO "B12"]
 
-{Black hits the base of White's chain at once. White supports d4 with c3; Black takes on d4, pins with ...Bg4 and brings a knight to f5, so Black's pieces gang up on d4.}
+{Black hits the base of White's chain at once. White supports d4 with c3; Black pins the f3 knight with ...Bg4, plays ...e6 and ...Nge7, then takes on d4 and brings a knight to f5, so Black's pieces gang up on d4.}
 1. e4 c6 2. d4 d5
 3. e5 {This is the Advance: White gains space and takes f6 away from Black's knight.} c5 {[%cal Gc5d4] This is the Botvinnik-Carls Defense: Black hits d4 at once.}
 4. c3 {Supports the chain. 4.dxc5 is under Advanced variations.} Nc6 {Adds pressure on d4.}
-5. Nf3 {The most common move.} cxd4 {Takes first: 5...Bg4 at once allows 6.dxc5 (Stockfish +0.5).}
-6. cxd4 {Now no White pawn can defend d4.} Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
-7. Be2 e6 {With the bishop outside the chain, the e-pawn can move.}
-8. O-O Nge7 {[%cal Ge7f5] Heads for f5.}
-9. Nbd2 Nf5 {[%cal Gf5d4,Gc6d4] Two knights hit d4, and Black's plan is easy to follow (Stockfish +0.4, slightly better for White).} *
+5. Nf3 {The most common move.} Bg4 {[%cal Gg4f3] Pins the knight that guards d4.}
+6. Be2 {Breaks the pin.} e6 {With the bishop outside the chain, the e-pawn can move.}
+7. O-O Nge7 {[%cal Ge7f5] Heads for f5.}
+8. Nbd2 {Develops, so that ...Bxf3 can be met by Nxf3. The common 8.h3? and 8.Bg5? let Black take on f3 and d4 and hit d4 and b2 with ...Qb6 (Stockfish −0.9, slightly better for Black).} cxd4
+9. Nxd4 Bxe2 10. Qxe2 Nxd4 11. cxd4 Nf5 {[%cal Gf5d4] Hits d4, and ...Qb6 and ...Rc8 come next. The position is level (Stockfish +0.1, equal).} *
 
 [Chapter "Panov Attack: 4.c4"]
 [Side "both"]
@@ -235,8 +235,9 @@
 5. Qe2 {[%cal Ge2e7] Guards the knight and pins Black's e-pawn: 5...Nbd7?? 6.Nd6 is mate.} Nxe4
 6. Qxe4 Nd7 {Aims for ...Nf6 with a gain of time on the queen.}
 7. Bc4 Nf6 {Hits the queen.}
-8. Ne5 {[%cal Gc4f7,Ge5f7] A trap: the queen is left hanging, but 8...Nxe4?? 9.Bxf7# is mate.} e6 {Blocks the bishop's line to f7.}
-9. Qe2 Bd6 10. d4 O-O 11. O-O {Black is solid; White's pieces are a little more active (Stockfish +0.4, slightly better for White).} *
+8. Qe2 {[%engine ok] Steps back and sets a trap: 8...Bg4? 9.Ne5! (see the Traps section).} Bf5 {Develops the bishop outside the pawn chain, where Ne5 can't hit it.}
+9. d3 {Opens the c1 bishop.} e6 {Blocks the bishop's line to f7.}
+10. O-O Bd6 {Black has developed calmly and is ready to castle (Stockfish +0.2, equal).} *
 
 [Chapter "Maróczy Variation: 3...dxe4"]
 [Side "both"]
@@ -295,7 +296,7 @@
 [Opening "Caro-Kann Defense: Two Knights Attack"]
 [ECO "B10"]
 
-{This comes after 8.Qe2, White's main alternative to 8.Ne5 in Two Knights Attack: 3...dxe4. With Black's king on e8 and the bishop on g4, the pinned knight can still jump to e5, because it threatens mate on f7.}
+{This comes after 8.Qe2 in Two Knights Attack: 3...dxe4, where 8...Bg4 is Black's most common reply. With Black's king on e8 and the bishop on g4, the pinned knight can still jump to e5, because it threatens mate on f7.}
 1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 Nf6 5. Qe2 Nxe4 6. Qxe4 Nd7 7. Bc4 Nf6 8. Qe2 Bg4? {Pins the knight, but f7 is weak. 8...Bf5 is correct.}
 9. Ne5! {[%cal Ge5g4,Gc4f7] Hits the bishop and threatens Bxf7 mate, since the knight covers d7.} Be6 {The only way to stop the mate and keep the bishop. 9...Qd4? 10.Bxf7+ Kd8 11.f3 traps the bishop on g4 (Stockfish +3.9, winning for White).}
 10. Bxe6 fxe6 11. O-O {Black's e-pawns are weak, and the king is stuck in the center (Stockfish +2.6, winning for White).} *
