@@ -10,17 +10,16 @@
 6... Nc6 7. Qxc6+ Bd7 8. Qa6 {White is a piece up, and the b5 pawn is next. Stockfish: +5.5, winning for White.}
 *
 
-[Puzzle "Give up b7"]
+[Puzzle "The pinned knight on c3"]
 [Type "puzzle"]
-[Theme "Escape the trap"]
-[Solve "6...e6"]
-[End "6...e6"]
-[Hint "Taking the knight on f3 looks free. What happens to f7?"]
+[Theme "Win material"]
+[Solve "8...Nxc3"]
+[End "9...Bxc3+"]
+[Hint "White's knight on c3 is pinned to the king. How many times can you take it?"]
 
-1. d4 d5 2. c4 dxc4 3. e3 Nf6 4. Bxc4 Nc6 5. Nf3 Bg4? 6. Qb3 e6! {Shuts the c4 bishop off from f7. Black loses the b7 pawn, but nothing worse.}
-(6... Bxf3?? 7. Bxf7+ Kd7 8. Qe6#)
-(6... Bh5? 7. Qxb7 {White has won b7, and the knight on c6 is hit too. Stockfish: +3.9, winning for White.})
-7. Qxb7 {White is a pawn up, but Black's pieces are active. Stockfish: +1.7, clearly better for White.}
+1. d4 d5 2. c4 dxc4 3. Nc3 e5 4. d5 Nf6 5. e4 b5 6. Nxb5 Nxe4 7. Bxc4 Bb4+ 8. Nc3?? Nxc3! {[%cal Gc3d1] Takes the pinned knight and hits the queen.}
+9. bxc3 Bxc3+! {[%hint The bishop can take back with check. What else does it hit?] [%cal Gc3a1] Check, and the bishop hits the rook on a1.}
+10. Bd2 Bxa1 11. Qxa1 {Black has won a rook and a pawn for a bishop. Stockfish: −3.7, winning for Black.}
 *
 
 [Puzzle "Mate in two"]
