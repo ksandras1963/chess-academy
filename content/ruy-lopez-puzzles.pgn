@@ -124,14 +124,14 @@
 8. f4 g3 {[%cal Gh4h2] Threatens ...Qh2#.} 9. Qh5 Qxh5 10. d4 Qh2# {Checkmate. 4...Ng4 is a risky trap: after 5.h3 h5, 6.d4 or 6.c3 leaves White clearly better (Stockfish +1.8).}
 *
 
-[Puzzle "Hit the bishop with the pawn"]
+[Puzzle "The pinned knight on c6"]
 [Type "puzzle"]
 [Theme "Win a piece"]
-[Solve "5.d4"]
-[End "5.d4"]
-[Hint "Black's bishop on c5 has lost its way back to e7 and f8. Attack it."]
+[Solve "6.d5"]
+[End "6.d5"]
+[Hint "Black's knight on c6 is pinned to the king by your bishop on b5. Attack it."]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. c3 d6? 5. d4! {[%cal Gd4c5] Hits the bishop. After the trade on d4, d5 will hit the pinned knight.}
-(5. O-O? {Too slow: Black makes room for the bishop with ...a6 and ...Ba7.} 5... a6 6. Ba4 Bg4 {Stockfish: +0.4, slightly better for White.})
-5... exd4 6. cxd4 Bb6 7. d5 {[%cal Gd5c6,Gb5e8] The knight on c6 is pinned, so it can't move.} a6 8. Ba4 Ba5+ 9. Nbd2 b5 10. dxc6 bxa4 11. Qxa4 {White has won a piece for two pawns. Stockfish: +2.2, winning for White.}
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. c3 d6 5. d4 Bb6? 6. d5! {[%cal Gd5c6,Gb5e8] Hits the knight, and it can't move away: it is pinned to the king.}
+(6. dxe5?! {Wins a pawn, but d5 wins a whole piece.} 6... a6 7. Bxc6+ bxc6 8. Bf4 {Stockfish: +1.5, clearly better for White, against +3.1 after 6.d5.})
+6... Ne7 {The other knight comes out to guard c6, but it is too late.} 7. dxc6 bxc6 8. Be2 {White has won a knight for a pawn. Stockfish: +3.0, winning for White.}
 *
