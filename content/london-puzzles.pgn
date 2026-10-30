@@ -87,6 +87,7 @@
 [Hint "Nothing guards d5 now. What would a knight on c7 attack?"]
 
 1. d4 d5 2. Bf4 c5 3. e3 Qb6 4. Nc3 Qxb2?? 5. Nxd5! {[%cal Gd5c7,Ga1b1] Threatens Nc7+, forking king and rook, and Rb1 to trap the queen.}
+(5. Bb5+! {Also good.} Kd8 6. Nge2 {Black's king can no longer castle. Stockfish: +2.9, winning for White.})
 (5. Rb1?? {Chases the queen, but it takes the knight with check.} Qxc3+ 6. Qd2 Qxd2+ 7. Kxd2 Nf6 {Black is a piece up. Stockfish: −6.9, winning for Black.})
 5... Nf6 6. Rb1 Qxa2 7. Nc7+ Kd8 8. Nxa8 {You have won a rook. Stockfish: +7.0, winning for White.}
 *
@@ -127,4 +128,40 @@
 1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. Bd2 Qxb2 6. Nc3! {[%cal Gd1a1] Develops, guards a2, and clears b1, so your queen now guards a1. Rb1 comes next.}
 (6. Bc3?? {Hits the queen, but walks into a mate.} Bb4! 7. Qd2 Bxc3 8. Qxc3 Qc1#)
 6... Bb4 7. Rb1 Qa3 8. Nd5 {[%cal Gd5c7] Threatens Nxc7+, forking the king and rook.} Bxd2+ 9. Qxd2 Kd8 10. e4 {Material is level, but you are far ahead in development, and Black's king can no longer castle. Stockfish: +3.4, winning for White.}
+*
+
+[Puzzle "Take the bishop, then hit the queen"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "12.Nxg4"]
+[End "13.dxc5"]
+[Hint "Black's bishop on g4 has only the knight to guard it. Take it, then look for a move that hits Black's queen."]
+
+1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Nc6 5. Nf3 Bg4 6. Nbd2 e6 7. Bb5 Bd6 8. Qa4 O-O 9. Bxc6 bxc6 10. Bxd6 Qxd6 11. Ne5 Rfc8? 12. Nxg4! {[%cal Ge5g4] Takes the bishop. The knight that takes back will be left without a guard.}
+(12. Nb3? {Guards d4, but the bishop on g4 gets away.} 12... cxd4 13. cxd4 Bh5 {Stockfish: +1.0, clearly better for White.})
+12... Nxg4 13. dxc5! {[%hint Black's queen is on d6, and the knight on g4 has no guard.] [%cal Gc5d6,Ga4g4] Hits the queen. When it moves, your queen takes the knight on g4.} Qe7 14. Qxg4 {You have won a piece. Stockfish: +4.3, winning for White.}
+*
+
+[Puzzle "The fork on c7"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "6.Nb5"]
+[End "6.Nb5"]
+[Hint "The c7 square is empty, and Black's king and rook stand on e8 and a8. Which knight can reach c7?"]
+
+1. d4 Nf6 2. Nf3 e6 3. Bf4 c5 4. e3 Nc6 5. Nc3 d5? 6. Nb5! {[%cal Gb5c7,Gf4c7] Threatens Nc7+, forking the king and the rook on a8. The bishop on f4 hits c7 too.}
+(6. Be2? {Develops, but Black gets time to cover c7.} 6... a6 {Stockfish: 0.0, equal.})
+6... Kd7 {Black's best, but the king is stuck in the middle.} 7. Ng5 {[%cal Gg5f7] The other knight joins in, aiming at f7. Stockfish: +2.0, winning for White.}
+*
+
+[Puzzle "The knight jump to e5"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "7.Nce5"]
+[End "7.Nce5"]
+[Hint "Your bishop wants to give check on b5. Which knight jump makes every block of that check lose a piece?"]
+
+1. d4 Nf6 2. Nf3 e6 3. Bf4 c5 4. e3 b6 5. Nbd2 Bb7 6. Nc4 d5? 7. Nce5! {[%cal Ge5d7,Ge5f7,Gf1b5] Eyes d7 and f7, and Bb5+ comes next: a knight on d7 would be taken.}
+(7. Ncd2? {Retreats, and the chance is gone.} 7... Bd6 {Stockfish: 0.0, equal.})
+7... Bd6 {Black's best try.} 8. Bb5+ Ke7 {Every block loses a piece, so the king has to move.} 9. c3 {Black can no longer castle. Stockfish: +0.8, slightly better for White.}
 *

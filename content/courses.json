@@ -724,7 +724,7 @@
                     "id": "sicilian-dragon",
                     "side": "both",
                     "file": "content/sicilian-dragon.pgn",
-                    "repertoire": "The Dragon, the Accelerated Dragon and the Hyperaccelerated Dragon, from both sides.",
+                    "repertoire": "",
                     "summary": "The name comes from Fyodor Dus-Chotimirsky, to whom the pawn shape looked like the Draco constellation. Henry Bird played it in London tournaments in the 1880s, and White's sharpest answer, the Yugoslav Attack, is named after the Yugoslav players who made it famous in the 1950s and 1960s. Garry Kasparov and Magnus Carlsen have both played the Dragon.",
                     "why": {
                         "text": "As White, the Dragon gives you a clear plan: castle on the queenside, push the kingside pawns and trade off Black's best bishop. Against the Accelerated Dragon, the Maróczy Bind gives you a lasting edge in space at almost no risk. Club players often go wrong against both, and the traps in this course punish the most common mistakes.\n\nAs Black, the Dragon is one of the sharpest ways to play for a win against the king's pawn: the bishop on g7 and the open c-file give real counterattacking chances. Stjepan Tomić calls it \"probably one of the best ways for black to fight for an advantage against e4 players\". The Accelerated and Hyperaccelerated move orders avoid the Yugoslav Attack, at the price of allowing the Maróczy Bind."
@@ -821,7 +821,7 @@
                     "id": "sicilian-najdorf",
                     "side": "both",
                     "file": "content/sicilian-najdorf.pgn",
-                    "repertoire": "The Najdorf, with the Scheveningen, from both sides.",
+                    "repertoire": "",
                     "summary": "Named after Miguel Najdorf, the Polish-Argentine grandmaster. Bobby Fischer played it throughout his career, and Garry Kasparov after him.",
                     "why": {
                         "text": "As White, the English Attack gives you one clear plan against the Najdorf, as the Yugoslav Attack does against the Dragon: castle on the queenside and storm the kingside with the pawns.\n\nAs Black, the Najdorf is flexible: against each White set-up you choose where the e-pawn goes, then counterattack on the queenside. It is sharp and full of theory, so this course keeps to the main ideas and the lines club players meet most. Stjepan Tomić's advice holds for both sides: \"You have to be quick, and if you play this position too slow, you are basically going to lose.\""
@@ -909,7 +909,7 @@
                     "id": "sicilian-taimanov-kan",
                     "side": "both",
                     "file": "content/sicilian-taimanov-kan.pgn",
-                    "repertoire": "The Taimanov and the Kan, with the Four Knights, from both sides.",
+                    "repertoire": "",
                     "summary": "The Taimanov is named after Mark Taimanov, a Soviet grandmaster who was among the world's top 20 players from the 1940s to the 1970s, and who was also a concert pianist. The Kan is named after Ilya Kan, a Soviet master.",
                     "why": {
                         "text": "As White, each of Black's set-ups with the e-pawn on e6 has one clear answer, so there is little to learn: a quick attack with long castling against the Taimanov, a grip on the center against the Kan, and a knight jump against the Four Knights.\n\nAs Black, the e-pawn on e6 and the queen on c7 make a flexible set-up with less theory than the Najdorf, and White's most natural attacking set-up often walks into a pin. Stjepan Tomić says the Kan \"might be an easier choice for beginner Sicilian players\"."
@@ -1001,7 +1001,7 @@
                     "id": "sicilian-sveshnikov-kalashnikov",
                     "side": "both",
                     "file": "content/sicilian-sveshnikov-kalashnikov.pgn",
-                    "repertoire": "The Sveshnikov and the Kalashnikov, from both sides.",
+                    "repertoire": "",
                     "summary": "The Sveshnikov used to be called the Lasker-Pelikan, after Emanuel Lasker, who played it early in the 20th century, and Jorge Pelikan, who played it in the 1950s. Evgeny Sveshnikov made it popular in the 1970s.",
                     "why": {
                         "text": "As White, both openings leave a hole in Black's center, and White's plan is always the same: trade off its defenders and put a knight there. One Black player in five also chases the knight from b5 too early, and a knight check punishes it.\n\nAs Black, you get quick development and active pieces in return for that hole. Stjepan Tomić calls the Sveshnikov \"really straightforward and easy to learn. Much easier than, let's say, the Najdorf, because most lines are forcing\". Of the Kalashnikov move order he says \"most players with white don't know that much theory in this line\"."
@@ -1331,6 +1331,11 @@
                                 "Symmetrical: 2...Bf5",
                                 "10% as White",
                                 "White: Attack Black's center and the weak queenside.\nBlack: Copy White's setup and keep the queenside safe."
+                            ],
+                            [
+                                "...c5 setup: 3...c5",
+                                "4% as White",
+                                "White: Finish the usual setup, then open the center and attack the king.\nBlack: Press on White's center and keep the king safe."
                             ],
                             [
                                 "King's Indian setup, Rapport-Jobava: 3.Nc3",
@@ -1861,94 +1866,19 @@
             "count": "15 variations",
             "compact": true,
             "course": "anti-sicilian sicilian-dragon sicilian-najdorf sicilian-taimanov-kan sicilian-sveshnikov-kalashnikov",
+            "boxRows": [
+                [
+                    "anti-sicilian",
+                    "sicilian-dragon",
+                    "sicilian-najdorf"
+                ],
+                [
+                    "sicilian-taimanov-kan",
+                    "sicilian-sveshnikov-kalashnikov"
+                ]
+            ],
             "subtitle": "The main variations, and the five courses that teach them.",
-            "summary": "Black answers the king's pawn with the c-pawn and fights for the center from the side: the second most common reply at club level, after the e-pawn. When White opens the center, Black trades the c-pawn for White's d-pawn, keeping an extra center pawn for the long run, while White gets a lead in development for an early attack. In about two games in three, though, White avoids this Open Sicilian with an anti-Sicilian, such as the early bishop to c4, the Alapin or the Grand Prix.",
-            "table": {
-                "after": "map",
-                "columns": [
-                    "Variation",
-                    "How often",
-                    "What to do"
-                ],
-                "rows": [
-                    [
-                        "Bowdler Attack: 2.Bc4 (or 3.Bc4)",
-                        "White's choice\n17% as Black",
-                        "White: Develop quickly and castle.\nBlack: Block the bishop with a pawn, then chase it and take the center."
-                    ],
-                    [
-                        "Alapin Variation: 2.c3 (or 3.c3)",
-                        "White's choice\n13% as Black",
-                        "White: Build a full pawn center, then develop calmly.\nBlack: Attack White's center at once, before it is complete."
-                    ],
-                    [
-                        "Grand Prix Attack: 2.f4, or 2.Nc3 and 3.f4",
-                        "White's choice\n8% as Black",
-                        "White: Push the kingside pawns and attack the king.\nBlack: Develop quickly and strike back in the center."
-                    ],
-                    [
-                        "Najdorf Variation: 5...a6",
-                        "18% as White\n29% as Black",
-                        "White: Castle on the other side and attack with the kingside pawns.\nBlack: Counterattack on the queenside and keep control of the center."
-                    ],
-                    [
-                        "Rossolimo Attack: 3.Bb5",
-                        "White's choice\n8% as Black",
-                        "White: Pin or trade a defender with the bishop, then build the center slowly.\nBlack: Develop calmly and keep the position flexible."
-                    ],
-                    [
-                        "Moscow Variation: 3.Bb5+",
-                        "White's choice\n4% as Black",
-                        null
-                    ],
-                    [
-                        "Taimanov Variation: 4...Nc6",
-                        "8% as White\n30% as Black",
-                        "White: Gain space and keep Black cramped.\nBlack: Keep the pieces flexible and strike back in the center later."
-                    ],
-                    [
-                        "Kan Variation: 4...a6",
-                        "5% as White\n30% as Black",
-                        null
-                    ],
-                    [
-                        "Smith-Morra Gambit: 3.c3",
-                        "White's choice\n4% as Black",
-                        "White: Give a pawn for fast development and open lines.\nBlack: Take the pawn, develop carefully and castle quickly."
-                    ],
-                    [
-                        "Accelerated Dragon: 4...g6",
-                        "9% as White\n27% as Black",
-                        "White: Attack the king, or cramp Black with a pawn grip on the center.\nBlack: Use the long-diagonal bishop and counterattack on the queenside."
-                    ],
-                    [
-                        "Dragon Variation: 5...g6",
-                        "6% as White\n29% as Black",
-                        null
-                    ],
-                    [
-                        "Closed Sicilian: 2.Nc3",
-                        "White's choice\n4% as Black",
-                        "White: Keep the center closed and attack slowly on the kingside.\nBlack: Copy White's setup and play on the queenside."
-                    ],
-                    [
-                        "Sveshnikov Variation: 5...e5",
-                        "4% as White\n25% as Black",
-                        "White: Put a knight in the hole in Black's center.\nBlack: Accept the hole in return for active pieces and quick pawn breaks."
-                    ],
-                    [
-                        "Kalashnikov Variation: 5...d6",
-                        "7% as White\n11% as Black",
-                        null
-                    ],
-                    [
-                        "Others: Classical, Four Knights, Scheveningen",
-                        "1–5% as White\n26–29% as Black",
-                        "White: Develop quickly and attack on the kingside.\nBlack: Develop solidly, then counterattack on the queenside."
-                    ]
-                ],
-                "note": "How often: the share of your Sicilian games that reach the line, from the side you play, counting every move order. As White, it is how often Black's moves lead there when you steer toward it; as Black, how often White's moves do. \"White's choice\": White picks the anti-Sicilian, so it can play it in any game. As Black, the Bowdler and Alapin rows count White's move on move 2 or, after 2.Nf3, on move 3, averaged over Black's usual second moves; the Rossolimo counts the games of players who answer 2.Nf3 with 2...Nc6, and the Moscow those who play 2...d6. The Closed Sicilian row counts the 2.Nc3 games that go on with neither 3.f4 (the Grand Prix) nor 3.Nf3 (which usually transposes). Source: Lichess rated rapid and classical games between players averaging 1800 to 2199."
-            }
+            "summary": "Black answers the king's pawn with the c-pawn and fights for the center from the side: the second most common reply at club level, after the e-pawn. When White opens the center, Black trades the c-pawn for White's d-pawn, keeping an extra center pawn for the long run, while White gets a lead in development for an early attack. In about two games in three, though, White avoids this Open Sicilian with an anti-Sicilian, such as the early bishop to c4, the Alapin or the Grand Prix."
         },
         {
             "id": "d4",
