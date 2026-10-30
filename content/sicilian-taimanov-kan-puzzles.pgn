@@ -1,0 +1,86 @@
+[Puzzle "Kan: the pinned knight can't guard e4"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "8...Nxe4"]
+[End "8...Nxe4"]
+[Hint "White's knight on c3 is pinned to the queen by your bishop. Who really guards the pawn on e4?"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Qc7 6. Be3 Nf6 7. Be2 Bb4 8. Qd2? Nxe4! {[%cal Gb4c3,Ge4d2] The knight takes the pawn and hits the queen. The knight on c3 can't take back: it is pinned to the queen.}
+9. Qd3 {Eight White players in ten move the queen to d3.} Nxc3 10. a3 Nxe2+ {[%cal Gb4e1] A discovered check from the bishop on b4.} 11. axb4 Nxd4 12. Bxd4 {Black is a piece and a pawn up. Stockfish: −4.6, winning for Black.}
+*
+
+[Puzzle "Kan: the check on c3"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "7...Bxc3+"]
+[End "7...Bxc3+"]
+[Hint "White's knight on c3 stands in front of the rook on a1 and the knight on d4. Can you take it with check?"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Qc7 6. g3 Bb4 7. Bg2? Bxc3+! {Takes the knight with check.}
+8. bxc3 Qxc3+ {[%cal Gc3a1,Gc3d4] Check, and the queen hits the rook on a1 and the knight on d4.} 9. Qd2 Qxa1 {Black has won a rook, though the queen now has to get out of the corner. Stockfish: −1.7, clearly better for Black.}
+*
+
+[Puzzle "Pin Variation: the queen hits g7"]
+[Type "puzzle"]
+[Theme "Attack the king"]
+[Solve "7.Qg4"]
+[End "7.Qg4"]
+[Hint "Black's knight on e4 has no pawn to guard it, and the pawn on g7 is weak. Which queen move hits both?"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Bb4 6. e5 Ne4? 7. Qg4! {[%cal Gg4g7,Gg4e4] Hits the pawn on g7 and the knight on e4.}
+7... Nxc3 {Nine Black players in ten take on c3.} 8. Qxg7 Rf8 9. a3 {[%cal Ga3b4] The bishop on b4 is attacked, and the knight on c3 needs it. Black's king has no safe home. Stockfish: +1.8, clearly better for White.}
+*
+
+[Puzzle "Four Knights: the early d-pawn push"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "7.exd5"]
+[End "7.exd5"]
+[Hint "Black's d-pawn push left the c7 square weak. Open the center and look at your knight on b5."]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Ndb5 d5? 7. exd5! {Opens the center.} (7. Bf4! {Also good: it threatens the knight check on c7 at once.} Bb4 8. Nc7+ Kf8 9. exd5 Nxd5 10. Nxa8 {Stockfish: +2.2, winning for White.})
+7... exd5 {Six Black players in ten take back with the pawn.} 8. Bf4 {[%cal Gb5c7,Gf4c7] Threatens a knight check on c7, forking the king and the rook.} Bb4 9. Nc7+ Kf8 10. Nxa8 {White has won the rook. Stockfish: +2.7, winning for White.}
+*
+
+[Puzzle "Kan: the knight takes b5"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "9.Ncxb5"]
+[End "9.Ncxb5"]
+[Hint "Your bishop on d2 has freed the knight on c3 from the pin. Is Black's pawn on b5 really guarded?"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Qc7 6. Bd3 Nf6 7. O-O Bb4 8. Bd2 b5? 9. Ncxb5! {[%cal Gb5c7,Gd2b4] The knight hits the queen, and the bishop on d2 now hits the bishop on b4.}
+9... axb5 10. Bxb4 {White has won a pawn, and Black's king can't castle for now. Stockfish: +3.8, winning for White.}
+*
+
+[Puzzle "Four Knights: the pin on c3"]
+[Type "puzzle"]
+[Theme "Win a pawn"]
+[Solve "7...Nxe4"]
+[End "7...Nxe4"]
+[Hint "White's knight on c3 is pinned to the queen. Take a pawn: if White takes your queen, you take White's."]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Nf6 6. Bg5 Bb4 7. Qd2? Nxe4! {[%cal Ge4d2,Ge4g5] Takes the pawn and hits the queen.}
+8. Bxd8 {Most White players take the queen.} Nxd2 {Black takes White's queen too.} 9. Bh4 Nxd4 10. Kxd2 Nf5 {[%cal Gf5h4] Black is a pawn up, and the bishop on h4 is attacked. Stockfish: −2.2, winning for Black.}
+*
+
+[Puzzle "Kan: the pawn fork"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "10...d4"]
+[End "10...d4"]
+[Hint "White's knight on c3 is pinned, and the bishop on e3 is in front of it. Which pawn can hit both?"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Qc7 6. Be3 Bb4 7. Qd2 Nf6 8. f3 d5 9. Bd3? e5 10. Nde2 d4! {[%cal Gd4c3,Gd4e3] The pawn forks the bishop and the pinned knight. Black wins a piece. Stockfish: −2.6, winning for Black.}
+*
+
+[Puzzle "Four Knights: the knight check on d6"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "7.Nd6+"]
+[End "7.Nd6+"]
+[Hint "Black's a-pawn chases your knight, but the d6 square is no longer guarded. Where can the knight go with check?"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Ndb5 a6? 7. Nd6+! {[%cal Gd6e8] Check.}
+7... Bxd6 8. Qxd6 {[%csl Gd6] White has the bishop pair, and the queen on d6 cramps Black's game. Stockfish: +1.1, clearly better for White.}
+*
