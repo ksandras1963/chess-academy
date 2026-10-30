@@ -517,29 +517,6 @@
 (9. h3 Ke8 10. Nc3 {The same position as in Berlin Endgame: 4.O-O Nxe4 5.d4 after 10.h3. Stockfish: +0.3, slightly better for White.})
 9... Ke8 10. Nc3 Be7 11. h3 a5 {[%cal Ga5a4] Gains space on the queenside. Stockfish: +0.2, equal.} *
 
-[Chapter "Berlin Defense, 4.Bxc6: 5.Nxe5"]
-[Side "black"]
-[Diagram "5.Nxe5"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Ruy Lopez: Berlin Defense"]
-[ECO "C65"]
-
-{After 4.Bxc6 dxc6, the e5 pawn looks free, but it is not: after 5.Nxe5, ...Qd4 hits the knight and e4 at once and wins the pawn back. It is the same trick as in the Exchange Variation.}
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. Bxc6 dxc6 {Take back toward the center.}
-5. Nxe5 Qd4 {[%cal Gd4e5,Gd4e4] Hits the knight and the e4 pawn at once.} 6. Nf3 Qxe4+ 7. Qe2 Qxe2+ 8. Kxe2 Nd5 {The pawns are level, and Black has the two bishops. Stockfish: −0.6, slightly better for Black.} *
-
-[Chapter "Classical Variation: 4...Qf6"]
-[Side "white"]
-[Diagram "4...Qf6"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Ruy Lopez: Classical Variation"]
-[ECO "C64"]
-
-{Against 4.c3, a few Black players guard e5 with the queen. Push d4 at once: it hits the bishop, and e5 then chases the queen.}
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. c3 Qf6 {The queen guards e5 and eyes f2.} 5. d4 {[%cal Gd4c5] Hits the bishop at once.} exd4 6. e5 {[%cal Ge5f6] Chases the queen.} Qg6 7. cxd4 Bb4+ 8. Nc3 {White has a big center, and Black's queen is out of play. Stockfish: +1.6, clearly better for White.} *
-
 [Chapter "Bird Variation: 3...Nd4"]
 [Side "white"]
 [Diagram "3...Nd4"]
