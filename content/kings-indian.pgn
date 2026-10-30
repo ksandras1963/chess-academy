@@ -317,7 +317,7 @@ e5?! {Too early: Black hasn't castled.}
 7... e6 8. Be2 exd5 9. cxd5 Re8 {[%cal Re8e4] Pressure on e4.}
 10. Qc2? {Natural, but the queen steps onto the b1–h7 diagonal, where ...Bf5 can pin a knight on e4.} Nxe4! {Gives the knight for the pawn, for a moment.}
 11. Nxe4 Bf5 {[%cal Gf5e4,Re4c2] The knight on e4 is pinned to the queen: if it moves, ...Bxc2.}
-12. Nfd2 {The best defense: a second guard for e4.} Na6! {[%cal Ga6b4,Gb4c2] The knight heads for b4 to chase the queen off the e4 knight's defense. Black should win the knight back and end up a pawn ahead (Stockfish −1.8, clearly better for Black).} *
+12. Nfd2 {The best defense: a second guard for e4.} Na6! {[%cal Ga6b4,Gb4c2] The knight heads for b4 to chase the queen off the e4 knight's defense. Black should win the knight back and end up a pawn ahead (Stockfish −1.7, clearly better for Black).} *
 
 [Chapter "Trap, Classical 6.Bd3: 10.Ne2?? Nce5!"]
 [Side "black"]
