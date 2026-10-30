@@ -2,12 +2,13 @@
 [Type "puzzle"]
 [Theme "Punish the mistake"]
 [Solve "6.dxe5"]
-[End "8.Nxe5"]
+[End "7.Qxd8+"]
 [Hint "Black played ...e5 before castling. What happens if the queens come off with check?"]
 
 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 e5?! 6. dxe5! {[%cal Gd1d8] Opens the d-file while Black's king is still on e8.}
-(6. d5?! {Closes the center and lets Black castle in peace.} O-O 7. h3 Nh5 8. g3 Na6 {A normal King's Indian. Stockfish: +0.5, slightly better for White.})
-6... dxe5 7. Qxd8+ {[%hint The queens are facing each other. Trade with check.] With check, so Black has no time for tricks.} Kxd8 8. Nxe5 {[%hint Which black pawn has lost its defender?] Wins the pawn, and Black's king can no longer castle.}
+(6. d5!? {Playable: it closes the center, but Black castles in peace.} O-O 7. h3 Nh5 8. g3 Na6 {A normal King's Indian. Stockfish: +0.5, slightly better for White.})
+(6. Be2!? {Playable: natural, but Black castles next and the chance is gone.} 6... O-O 7. O-O Nc6 8. d5 Ne7 {A normal King's Indian. Stockfish: +0.7, slightly better for White.})
+6... dxe5 7. Qxd8+ {[%hint The queens are facing each other. Trade with check.] With check, so Black has no time for tricks.} Kxd8 8. Nxe5 {Wins the pawn, and Black's king can no longer castle.}
 (8. Be3!? {Keeps White better, but gives Black time to guard e5. Taking the pawn at once is stronger.} 8... Nc6 9. O-O-O+ Bd7 {Black has guarded e5, so no pawn is won. Stockfish: +0.8, slightly better for White.})
 8... Be6 9. Nf3 Nc6 {White is a pawn up, and Black's king is stuck in the center. Stockfish: +1.9, clearly better for White.}
 *
@@ -24,16 +25,15 @@
 7... Nc6 {Blocks with the knight, but it is pinned and the d5 pawn takes it.} 8. dxc6 O-O 9. cxb7 Bxb7 {White is a whole piece up. Stockfish: +4.0, winning for White.}
 *
 
-[Puzzle "The loose knight on d4"]
+[Puzzle "Win the d4 pawn"]
 [Type "puzzle"]
 [Theme "Win a pawn"]
-[Solve "9.Nxd4"]
+[Solve "10.Qxd4"]
 [End "10.Qxd4"]
-[Hint "The knight on d4 looks strong. What happens if you take it?"]
+[Hint "Black's pawn on d4 hits your knight on c3. Can you save the knight and win a pawn at the same time?"]
 
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Nd4?! 9. Nxd4! {Takes the knight before it settles.}
-(9. Be3?! {Lets Black trade the knight for your bishop.} Nxe2+ 10. Qxe2 Ng4 11. Bg5 f6 {Black has the bishop pair. Stockfish: −0.2, equal.})
-9... exd4 10. Qxd4 {[%hint After the recapture, the pawn on d4 has only one defender.] Takes the pawn. The g7 bishop's diagonal is open, but Black has nothing for it.}
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Nd4?! 9. Nxd4 exd4 10. Qxd4! {[%cal Gd1d4] Takes the pawn, and the knight on c3 is safe. The g7 bishop's diagonal is open, but Black has nothing for the pawn.}
+(10. Nb5?! {Saves the knight, but Black takes on e4 and wins the pawn back.} 10... Nxe4 11. Nxd4 {Stockfish: −0.3, slightly better for Black.})
 10... Nd7 11. Qd1 {White is a clean pawn up. Stockfish: +1.1, clearly better for White.}
 *
 

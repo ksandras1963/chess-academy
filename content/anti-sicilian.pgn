@@ -349,17 +349,6 @@
 9. Nb5 {[%engine ok] [%cal Gb5d6,Gb5c7] Threatens Nd6, a smothered mate, and Nc7+, a fork. Stockfish prefers 9.Bc4, but 9.Nb5 sets the traps: half of club players answer with a move that loses at once (see the smothered mate in the traps).} e6 {The only good defence: the bishop on f8 now guards d6.}
 10. d6 {[%cal Gd6c7,Gd6e7] The pawn cramps Black. The bishop on f8 can't come out, and Nc7+ is still in the air. Stockfish: +0.1, equal.} *
 
-[Chapter "Alapin, Barmen Defense: 3.e5"]
-[Side "black"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Sicilian Defense: Alapin Variation"]
-[ECO "B22"]
-
-{One White player in five pushes past d5. Black gets a French Advance pawn structure, but with the light-squared bishop free: develop it to f5 before playing ...e6.}
-1. e4 c5 2. c3 d5 3. e5 Nc6 4. d4 cxd4 5. cxd4 Bf5 {[%cal Gf5b1] The bishop comes out before ...e6.}
-6. Nc3 e6 7. Nf3 Nge7 {Black develops and castles next; the d4 pawn is the target. Stockfish: 0.0, equal.} *
-
 [Chapter "Smith-Morra Gambit: 5...e6"]
 [Side "white"]
 [Type "line"]

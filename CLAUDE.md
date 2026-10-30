@@ -23,6 +23,8 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 3. Map of the variations
 4. Table of the variations
 
+The Sicilian Introduction has no table, by Kumar's choice: "Remove Table on Sicilian Intro page. These are discussed in the subsequent course pages."
+
 ## Course page, in this order
 
 1. Short text: "Why play it"
