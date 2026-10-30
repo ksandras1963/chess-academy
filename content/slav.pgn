@@ -79,7 +79,7 @@
 [Side "black"]
 [Type "ideas"]
 
-{Take on c4 when White's king's bishop can't take back at once: after both knights are out, or after White's dark-squared bishop comes out early. If White hasn't pushed the a-pawn, Black can hold the pawn with the b-pawn, and when the a-pawn comes, the b-pawn moves on and drives the knight from c3. In these lines, the light-squared bishop goes to b7 instead of f5.}
+{Take on c4 when White's king's bishop can't take back at once: after both knights are out, or after White's dark-squared bishop comes out early. If White hasn't pushed the a-pawn, Black can hold the pawn with the b-pawn, and when the a-pawn comes, the b-pawn moves on and drives the knight from c3.}
 *
 
 [Chapter "Geller Gambit: 5...b5 and ...b4"]
@@ -93,17 +93,6 @@
 6. a4 {[%cal Ga4b5] Hits the base of the chain.} b4 {[%cal Gb4c3] Hits the knight, which guards e4.}
 7. Na2 {The knight leaves c3, and e4 loses its guard.} Nxe4 {Takes a second pawn.}
 8. Bxc4 e6 {[%cal Gf8b4] White has won one pawn back, so Black is a pawn up, and White's pieces are more active. ...e6 opens the f8 bishop's diagonal, so 9.Nxb4? Bxb4+ wins the knight. Stockfish: −0.1, equal.} *
-
-[Chapter "Alekhine Variation: the queenside majority"]
-[Type "concept"]
-[Idea "black"]
-[Diagram "5.e3"]
-
-{The Alekhine Variation: 1.d4 d5 2.c4 c6 3.Nc3 Nf6 4.Nf3 dxc4 5.e3. The same ...b5 and ...b4, but this time White wins the c4-pawn back. What Black keeps is a queenside majority: three pawns (a, b and c) against two. The c8 bishop goes to b7, on the long diagonal.}
-1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. Nf3 dxc4 5. e3 {[%cal Gb7b5,Gc8b7]}
-5... b5 {[%cal Gb5c4] Holds c4 for now.} 6. a4 b4 {[%cal Gb4c3] Hits the knight.}
-7. Na2 e6 {[%cal Gf8e7] Opens the f8 bishop's diagonal.}
-8. Bxc4 {The pawn is back.} Bb7 {[%cal Gc6c5] [%csl Ya7,Yb4,Yc6] The bishop goes to the long diagonal, which opens when the c-pawn moves on. Black has three pawns against two on the queenside. Next ...Nbd7, ...Be7, castle, and ...c5 to free the game. Stockfish: −0.2, equal.} *
 
 [Chapter "Key ideas: Tricks and traps"]
 [Side "black"]
@@ -163,7 +152,7 @@
 
 {The Slav (2...c6) comes up in a quarter of your Queen's Gambit games. Play 3.Nf3 and 4.Nc3. Against 4...e6, the most common reply, take on d5. After 5.cxd5 exd5 6.Bg5 the pawns are the same as in the Exchange Variation, with Black's pawn already on c6 and White's knight on f3. The plans are the same too: Bd3, Qc2, castle, and the minority attack.}
 1. d4 d5 2. c4 c6 {The Slav. The c-pawn guards d5 and keeps the c8 bishop's diagonal open.}
-3. Nf3 {Develops and guards d4.} Nf6 4. Nc3 {This is the Three Knights Variation.} e6 {The Semi-Slav. Black shuts in the c8 bishop again, but d5 is very solid.}
+3. Nf3 {Develops and guards d4.} Nf6 4. Nc3 {This is the Three Knights Variation. Against 4...a6, the Chebanenko Variation, play 5.a4, which stops ...b5, and develop normally (Stockfish +0.2, equal).} e6 {The Semi-Slav. Black shuts in the c8 bishop again, but d5 is very solid.}
 5. cxd5 {[%cal Gc4d5] Fixes the pawns and steers the game into a structure you already know.
 
 5...cxd5, about three games in ten, is under Advanced variations. 5...Nxd5 gives White the center after 6.e4 (Stockfish +1.1, clearly better for White).} exd5
@@ -226,7 +215,7 @@ Against 8.Bd3, trade bishops: 8...Bxd3 9.Qxd3 Bb4 (Stockfish 0.0, equal). Agains
 {Black's main line in this course. With both White knights out, take on c4 first. After 5.a4, which stops ...b5, don't try to keep the pawn: develop with ...Bf5, ...e6, ...Bb4 and castle while White wins it back. White then aims for e4. Meet it with ...Bg6 and ...Bh5, and meet e5 with ...Nd5. Against the Krause Attack, 6.Ne5, see the branch.}
 1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. Nf3 {3.Nf3 Nf6 4.Nc3 reaches the same position. Against White's other fourth moves, see the other chapters.} dxc4 {[%csl Yc4] Take the pawn first. There is no pawn left on d5 for cxd5 and Qb3, and White needs time to win c4 back.}
 (4... Bf5?! {Brings the bishop out, but now nothing guards b7.} 5. cxd5 cxd5 6. Qb3 {[%cal Gb3b7,Gb3d5] Hits b7 and d5.} Bc8 {Black's best: the bishop goes back to guard b7.} 7. Bg5 e6 8. e3 {The bishop is shut in after all, and White has gained time. Stockfish: +0.5, slightly better for White.})
-5. a4 {[%cal Ga4b5] This is the Alapin Variation. It stops ...b5, so Black can't hold the extra pawn. About half of White players choose it. Against 5.e4 and 5.e3, see Geller Gambit: 5.e4 and Alekhine Variation: 5.e3. Against the rare 5.Bg5, play 5...h6, and after 6.Bh4 keep the pawn with ...b5 (Stockfish −0.4, slightly better for Black).} Bf5 {[%cal Gf5b1] This is the Czech Variation. The bishop comes out before ...e6 can shut it in.}
+5. a4 {[%cal Ga4b5] This is the Alapin Variation. It stops ...b5, so Black can't hold the extra pawn. About half of White players choose it. Against 5.e4, see Geller Gambit: 5.e4. Against 5.e3, keep the pawn with 5...b5 (Stockfish 0.0, equal). Against the rare 5.Bg5, play 5...h6, and after 6.Bh4 keep the pawn with ...b5 (Stockfish −0.4, slightly better for Black).} Bf5 {[%cal Gf5b1] This is the Czech Variation. The bishop comes out before ...e6 can shut it in.}
 6. e3 {The most common move, six games in ten. It opens the f1 bishop's path to c4.
 
 Against 6.Bg5, about one game in eight, play 6...Ne4!, which hits the bishop and the knight on c3 (Stockfish −0.1, equal). The natural 6...e6?! allows 7.e4!, which hits the bishop and threatens e5 (Stockfish +0.6, slightly better for White). Against 6.Bf4, play 6...e6 and ...Bb4 (Stockfish −0.2, equal). Against 6.Nh4, which chases the bishop, both 6...e6 and 6...Bg6 keep the balance (Stockfish +0.2, equal).}
@@ -250,17 +239,11 @@ Against 9.Qb3, play 9...a5 (Stockfish +0.2, equal). Against 9.Nh4, play 9...Nbd7
 [Opening "Semi-Slav Defense: Noteboom Variation"]
 [ECO "D31"]
 
-{About one Slav player in seven plays 3...e6 before ...Nf6. Answer with 4.Nc3, as in the rest of the Slav. The most common reply, 4...Nf6, brings back Semi-Slav: 4...e6. This chapter shows the three replies that don't: the Noteboom Variation (4...dxc4), the Stonewall setup (4...f5) and 4...Bd6.}
-1. d4 d5 2. c4 c6 3. Nf3 e6 {Black holds d5 and keeps the knight on g8 for now, so ...dxc4 and ...f5 are both possible.}
+{About one Slav player in seven plays 3...e6 before ...Nf6. Answer with 4.Nc3, as in the rest of the Slav. The most common reply, 4...Nf6, brings back Semi-Slav: 4...e6. This chapter shows the most common reply that doesn't: the Noteboom Variation (4...dxc4).}
+1. d4 d5 2. c4 c6 3. Nf3 e6 {Black holds d5 and keeps the knight on g8 for now.}
 4. Nc3 {Develops and adds a second attacker on d5.
 
 4...Nf6 5.cxd5 exd5 6.Bg5 is Semi-Slav: 4...e6, reached by another move order. Against 4...Bb4, play 5.Qb3: after 5...Bxc3+ 6.Qxc3, White has the two bishops (Stockfish +0.6, slightly better for White).} dxc4 {This is the Noteboom Variation. Black takes on c4 and wants to keep the pawn with ...b5 and ...Bb4.}
-(4... f5?! {Black builds a Stonewall: pawns on c6, d5, e6 and f5. They hold e4, but no pawn can ever guard e5, and the c8 bishop is shut in.} 5. Bf4 {[%cal Gf4b8] The bishop comes out before ...Bd6 can offer a trade. 5...Bd6 6.e3 Nf6 reaches the same position as this line.} Nf6 6. e3 Bd6 {6...Be7 7.Bd3 O-O 8.O-O (Stockfish +1.1, clearly better for White). 6...Bb4 7.Bd3 (Stockfish +1.3, clearly better for White).}
-7. Bd3 {Against 7...Bxf4 8.exf4, White's knight gets the e5 square (Stockfish +1.5, clearly better for White).} O-O 8. O-O Ne4 {[%csl Ye4] The knight takes the square the Stonewall holds.}
-9. Rc1 {[%cal Gc4c5] Next Qc2 or Qb3, and c5 to gain space on the queenside. Stockfish: +1.3, clearly better for White.})
-(4... Bd6?! {The bishop doesn't stop e4, and it can be hit there.} 5. e4! {Takes the center with gain of time. Against 5...Ne7, play 6.Bd3 (Stockfish +1.5, clearly better for White).} dxe4 6. Nxe4 {Hits the bishop.
-
-6...Nf6 7.Nxf6+ Qxf6 8.c5 Bc7 9.Bd3 (Stockfish +1.3, clearly better for White). 6...Bb4+ 7.Bd2 Bxd2+ 8.Qxd2 (Stockfish +1.6, clearly better for White). 6...Be7 7.Bd3 (Stockfish +1.6, clearly better for White).} Bc7 7. Bd3 {White has the center and quicker development. Castle next. Stockfish: +1.9, clearly better for White.})
 5. a4 {[%cal Ga4b5] Stops ...b5 for now.
 
 5...Nf6 6.e3 c5 7.Bxc4 reaches the position from the note at 5.a4 in Czech Variation: 4...dxc4 (Stockfish +0.3, slightly better for White). Against 5...Bd7, take the center with 6.e4 (Stockfish +1.0, clearly better for White).} Bb4 {[%cal Rb4c3] Pins the knight, so that ...b5 can follow.}
@@ -410,32 +393,6 @@ Against 6.Be2, develop with 6...Nbd7 or 6...h6, and answer Nh4 with ...Bg6 (Stoc
 5. a4 {[%cal Ga4b5] Hits the base of the chain.} e6 6. axb5 cxb5 7. b3 {[%cal Gb3c4] Hits the head of the chain.} Nf6 8. bxc4 bxc4
 9. Bxc4 {White has the pawn back and the better center. Stockfish: +0.4, slightly better for White.} *
 
-[Chapter "Schlechter: 4...g6"]
-[Side "white"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Slav Defense: Schlechter Variation"]
-[ECO "D15"]
-
-{4...g6 comes up in about one Slav game in thirteen, and 4...a6, the Chebanenko Variation, in about one in twenty. Against 4...g6, take on d5 and put the bishop on f4, the diagonal that Black's fianchetto leaves alone. Against 4...a6, play 5.a4, which stops ...b5, and develop normally (Stockfish +0.2, equal).}
-1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 g6 {This is the Schlechter Variation. Black prepares ...Bg7.}
-5. cxd5 {Against 5...Nxd5, 6.e4 takes the full center (Stockfish +1.0, clearly better for White).} cxd5
-6. Bf4 {[%cal Gf4b8] The bishop takes the open diagonal.} Nc6 7. e3 {Next Bd3 or Be2, castle, and Rc1. Stockfish: +0.4, slightly better for White.} *
-
-[Chapter "Alekhine Variation: 5.e3"]
-[Side "black"]
-[Type "line"]
-[Level "advanced"]
-[Opening "Slav Defense: Alekhine Variation"]
-[ECO "D15"]
-
-{About one White player in eight plays the quiet 5.e3, getting ready for Bxc4. Keep the pawn with 5...b5. After 6.a4 b4, the knight has to leave c3, and White has to work to win c4 back. Then develop with ...e6, ...Bb7 and ...Nbd7, and break with ...c5.}
-1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. Nf3 dxc4 5. e3 {This is the Alekhine Variation.} b5 {[%cal Gb5c4] Holds c4. 5...Bf5?! 6.Bxc4 gives White an easy game (Stockfish +0.6, slightly better for White).}
-6. a4 {[%cal Ga4b5] Three White players in four hit b5 at once. Against 6.Ne5, 6...e6 keeps the pawn and opens the bishop's diagonal (Stockfish −0.3, slightly better for Black).} b4 {[%cal Gb4c3] Hits the knight.}
-7. Na2 {The most common move. Against 7.Nb1, 7...Ba6 guards c4 (Stockfish −0.1, equal). Against 7.Ne2, 7...a5 guards b4 (Stockfish −0.3, slightly better for Black).} e6 {[%cal Gf8e7,Gf8d6] Opens the f8 bishop's diagonal.}
-8. Bxc4 Bb7 {[%cal Gc6c5] The bishop goes to the long diagonal. The pawn on c6 still blocks it, until Black plays ...c5.}
-9. O-O {Against 9.Bd2, about four games in ten, the bishop and the knight both hit b4: guard it with 9...a5 (Stockfish −0.2, equal). The natural 9...Nbd7? drops the pawn to 10.Nxb4 (Stockfish +0.8, slightly better for White).} Nbd7 {Next ...Be7 or ...Bd6, castle, and ...c5 to free the game. If White's bishop comes to d2 later, guard b4 with ...a5. Stockfish: −0.2, equal.} *
-
 [Chapter "Trap: ...b6? and ...Qd7? against Qb3"]
 [Side "white"]
 [Diagram "6...b6"]
@@ -521,4 +478,4 @@ Against 6.Be2, develop with 6...Nbd7 or 6...h6, and answer Nh4 with ...Bg6 (Stoc
 3... Nf6 (3... e6 {}) (3... Bf5 {Early ...Bf5})
 4. Nc3 {Both knights out}
 4... dxc4 {Main line} (4... e6 {[%course white] Semi-Slav}) (4... Bf5 {Early ...Bf5})
-5. a4 (5. e4 {Geller Gambit}) (5. e3 {Alekhine Variation}) 5... Bf5 {[%course black] Czech Variation} *
+5. a4 (5. e4 {Geller Gambit}) 5... Bf5 {[%course black] Czech Variation} *

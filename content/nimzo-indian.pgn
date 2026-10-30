@@ -229,7 +229,7 @@
 6. Nf3 {Against 6.Ne2, as common as 6.Nf3 on Lichess, Black plays 6...dxc4 7.Bxc4 c5.} c5 {[%cal Gc5d4] Both of Black's center pawns hit White's. This is the Gligorić System.}
 7. O-O {7...Nc6, the Bernstein Defense, is under Advanced variations. 7...cxd4 8.exd4 dxc4 9.Bxc4 reaches the main line.} dxc4 {Takes on c4 now that White's bishop has moved, so it has to move again.}
 8. Bxc4 cxd4
-9. exd4 {[%csl Yd4] White has an isolated pawn on d4. In return White gets open lines and the e5 square for a knight.} b6 {[%cal Gc8b7] The bishop goes to b7 to watch d5, the square in front of the pawn. Against 9...Nc6, see Advanced variations.}
+9. exd4 {[%csl Yd4] White has an isolated pawn on d4. In return White gets open lines and the e5 square for a knight.} b6 {[%cal Gc8b7] The bishop goes to b7 to watch d5, the square in front of the pawn.}
 10. Bg5 {[%cal Gg5f6] Pins the knight that guards d5 and h7.} Bb7
 11. Qe2 {Connects the rooks. 11.Ne5, the most common move, is just as good.} Bxc3 {Gives up the bishop to double White's pawns. 11...Nbd7 is also good.}
 12. bxc3 Nbd7 {[%csl Yc3,Yd4] White's c- and d-pawns stand alone, with no pawn beside them. Black will press on c3 down the c-file; White wants c4 and d5 to free them. Stockfish: +0.1, equal.} *
@@ -242,7 +242,7 @@
 
 {One Black player in five hits d4 at once with 4...c5. Keep the same setup: Bd3, Nf3 and castling. In the Hübner Variation, Black gives up the bishop and closes the center with ...d6 and ...e5, so White's bishops have no open lines. White gains space with d5 and e4, then opens the kingside with f4.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5
-5. Bd3 {After 5...O-O 6.Nf3 d5 7.O-O, you are in the Gligorić System.} Nc6 {[%cal Gc6d4] More pressure on d4. Against 5...d5 or 5...cxd4, keep developing with Nf3 and castling (Stockfish +0.2 and +0.3).}
+5. Bd3 {After 5...O-O 6.Nf3 d5 7.O-O, you are in the Gligorić System. 5.Ne2 is also good (Stockfish +0.3): the knight can take back on c3, so White avoids doubled pawns.} Nc6 {[%cal Gc6d4] More pressure on d4. Against 5...d5 or 5...cxd4, keep developing with Nf3 and castling (Stockfish +0.2 and +0.3).}
 6. Nf3 Bxc3+ {Against 6...d5 or 6...O-O, castle: you reach the Gligorić System or positions like it.}
 7. bxc3 d6 {[%cal Gd6e5] This is the Hübner Variation. Black plans ...e5 to close the center.}
 8. O-O {Castle first. 8.dxc5? dxc5 leaves the c4 pawn weak: Black attacks it with ...Na5 and ...b6 (Stockfish −0.5).} e5
@@ -260,7 +260,7 @@
 
 {One Black player in eight plays 4...b6, to put the bishop on b7 and fight for e4. Keep the same setup: Bd3, Nf3 and castling. When Black takes on c3, the pawn on c3 supports d4, and White aims for e4 with Nd2 and f3.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 b6 {This is the St. Petersburg Variation.}
-5. Bd3 Bb7 {[%cal Gb7e4] The bishop watches e4.}
+5. Bd3 {5.Ne2 is also good (Stockfish +0.4): the knight can take back on c3, so White avoids doubled pawns.} Bb7 {[%cal Gb7e4] The bishop watches e4.}
 6. Nf3 O-O {Against 6...Ne4, 7.Qc2 guards c3 and hits the knight (Stockfish +0.3).}
 7. O-O Bxc3 {Four Black players in ten take on c3 here. Against 7...d5, take with 8.cxd5 exd5 and play a3 and b4 (Stockfish +0.2). Against 7...c5, 8.Na4! threatens a3, trapping the bishop (see Key ideas: Typical tactics).}
 8. bxc3 d6 {Against 8...Ne4, play 9.Qc2 f5 10.Nd2 to challenge the knight (Stockfish +0.3).}
@@ -303,22 +303,21 @@
 11. Bd3 Nxc3 {Black trades off White's dark-squared bishop, the guard of the dark squares around d4.}
 12. Rxc3 dxc4 13. Bxc4 Qf6 {[%cal Gf6d4,Gf8d8] The queen and a rook on d8 will attack the isolated pawn. Stockfish: 0.0, equal.} *
 
-[Chapter "Three Knights Variation: 4...O-O"]
+[Chapter "Three Knights Variation: 4...b6"]
 [Side "black"]
 [Type "line"]
 [Opening "Nimzo-Indian Defense: Three Knights Variation"]
 [ECO "E21"]
 
-{4.Nf3 is the Three Knights Variation, also called the Kasparov Variation. Black castles, and against 5.Bg5, the most common move, hits d4 with ...c5. After ...cxd4, ...d5 and ...dxc4, White has an isolated pawn on d4, and Black uses the plan of the Gligorić System: ...b6, ...Bb7 and ...Bxc3.}
-1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Nf3 {This is the Three Knights Variation.} O-O
-5. Bg5 {The most common move. Other fifth moves are under Advanced variations.} c5 {[%cal Gc5d4] Hits d4 at once. Black scores better with it than with 5...h6 on Lichess.}
-6. e3 cxd4
-7. exd4 {[%csl Yd4] White has an isolated pawn on d4. 7.Nxd4 lets Black hit c3 with 7...Qa5 (Stockfish −0.4).} d5 {[%cal Gd5c4] Black scores six games in ten after this move on Lichess.}
-8. Bd3 {Against 8.cxd5, take back with 8...exd5. Against 8.Be2, play 8...dxc4 9.Bxc4 just the same.} dxc4
-9. Bxc4 b6 {[%cal Gc8b7] The bishop goes to b7 to watch d5.}
-10. O-O Bb7
-11. Qe2 Bxc3 {Doubles White's pawns.}
-12. bxc3 Nbd7 {This is the same position as in Rubinstein, Gligorić System: 9...b6. Black presses on c3 down the c-file. Stockfish: +0.1, equal.} *
+{4.Nf3 is the Three Knights Variation, also called the Kasparov Variation. Black answers 4...b6, a Queen's Indian setup that fights for e4. Against 5.Bg5, Black asks the bishop with ...h6 and ...g5, puts a knight on e4 and gives up the bishop on c3. The rule to remember: when White plays Bd3, answer ...f5.}
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Nf3 {This is the Three Knights Variation. White develops and keeps every option open.} b6 {[%cal Gc8b7] The bishop goes to b7 to fight for e4.}
+5. Bg5 {The most common move, played in three games in ten. It pins the knight that guards e4.} h6 {Asks the bishop at once. 5...Bb7 usually comes to the same thing.}
+6. Bh4 {Keeps the pin. Against 6.Bxf6, take on c3 first: 6...Bxc3+ 7.bxc3 Qxf6, and White's pawns are doubled (Stockfish −0.1).} Bb7
+7. e3 {Against 7.a3, take on c3 at once: 7...Bxc3+ 8.bxc3 g5 (Stockfish −0.4).} g5 {[%cal Gg5h4] Breaks the pin for good, at the cost of loosening Black's kingside.}
+8. Bg3 Ne4 {[%cal Ge4c3,Ge4g3] The knight lands on e4 and hits c3 and g3.}
+9. Qc2 {Guards c3 and hits the knight. Against 9.Rc1, the second most common move, play the same way: 9...Bxc3+ 10.bxc3 d6 (Stockfish −0.4).} Bxc3+ {[%csl Yc3,Yc4] Gives up the bishop to double White's pawns.}
+10. bxc3 d6 {[%cal Gd6e5] Keeps White's knight out of e5.}
+11. Bd3 {Hits the knight on e4.} f5 {[%cal Gf5e4] When Bd3 comes, answer ...f5: the knight stays on e4, and Black holds the light squares, as in a Dutch Defense. Stockfish: −0.1, equal.} *
 
 [Chapter "Classical, Keres Defense: 6...d5 and 6...Ne4"]
 [Side "white"]
@@ -501,12 +500,12 @@
 6. Nf3 {Against 6.Ne2, as common as 6.Nf3 on Lichess, Black plays 6...dxc4 7.Bxc4 c5.} c5 {[%cal Gc5d4] Both of Black's center pawns hit White's. This is the Gligorić System.}
 7. O-O {7...Nc6, the Bernstein Defense, is under Advanced variations. 7...cxd4 8.exd4 dxc4 9.Bxc4 reaches the main line.} dxc4 {Takes on c4 now that White's bishop has moved, so it has to move again.}
 8. Bxc4 cxd4
-9. exd4 {[%csl Yd4] White has an isolated pawn on d4. In return White gets open lines and the e5 square for a knight.} b6 {[%cal Gc8b7] The bishop goes to b7 to watch d5, the square in front of the pawn. Against 9...Nc6, see Advanced variations.}
+9. exd4 {[%csl Yd4] White has an isolated pawn on d4. In return White gets open lines and the e5 square for a knight.} b6 {[%cal Gc8b7] The bishop goes to b7 to watch d5, the square in front of the pawn.}
 10. Bg5 {[%cal Gg5f6] Pins the knight that guards d5 and h7.} Bb7
 11. Qe2 {Connects the rooks. 11.Ne5, the most common move, is just as good.} Bxc3 {Gives up the bishop to double White's pawns. 11...Nbd7 is also good.}
 12. bxc3 Nbd7 {[%csl Yc3,Yd4] White's c- and d-pawns stand alone, with no pawn beside them. Black will press on c3 down the c-file; White wants c4 and d5 to free them. Stockfish: +0.1, equal.} *
 
-[Chapter "Rubinstein, Gligorić System: 7...Nc6, 8...Nc6 and 9...Nc6"]
+[Chapter "Rubinstein, Gligorić System: 7...Nc6"]
 [Side "white"]
 [Diagram "7...Nc6"]
 [Type "line"]
@@ -514,11 +513,8 @@
 [Opening "Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense"]
 [ECO "E56"]
 
-{In the Gligorić System, the knight often comes to c6 instead of ...b6. On move 7 this is the Bernstein Defense: take on d5 and c5, and Black is the one with the isolated pawn. On moves 8 and 9, the same development and White's isolated pawn give a small edge.}
+{In the Gligorić System, Black's knight sometimes comes to c6 at move 7: the Bernstein Defense. Take on d5 and then on c5, and Black is the one left with an isolated pawn.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. Nf3 c5 7. O-O Nc6 {This is the Bernstein Defense.}
-(7... dxc4 8. Bxc4 Nc6
-(8... cxd4 9. exd4 Nc6 {[%cal Gc6d4] Hits the isolated pawn.} 10. a3 Be7 11. Bf4 a6 12. Rc1 b5 13. d5 {[%cal Gd4d5] The freeing break.} exd5 14. Bxd5 Bb7 {White's pieces are active. Stockfish: +0.2, equal.})
-9. dxc5 Bxc5 10. Qc2 {[%cal Gc2h7] The queen and the bishop will aim at h7.} a6 11. a3 b5 12. Bd3 Bb7 {White's pieces are a little more active. Stockfish: +0.2, equal.})
 8. cxd5 exd5 {[%csl Yd5] Now Black's d-pawn will be isolated.}
 9. dxc5 Bxc5
 10. h3 {Takes g4 away from Black's bishop and knight.} Re8
@@ -526,23 +522,17 @@
 
 [Chapter "Leningrad: White's fifth moves"]
 [Side "black"]
-[Diagram "5.a3"]
+[Diagram "5.Nf3"]
 [Type "line"]
 [Level "advanced"]
 [Opening "Nimzo-Indian Defense: Leningrad Variation"]
 [ECO "E30"]
 
-{Against 4.Bg5 c5, White has several fifth moves besides 5.d5 and 5.e3. In each of them the bishop on g5 is loose, and ...h6 and ...Qa5 make use of it.}
+{Against 4.Bg5 c5, White's other fifth moves are 5.Nf3 and 5.dxc5. In both the bishop on g5 is loose, and ...h6, ...g5 or ...Qa5 make use of it.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Bg5 c5
-5. a3
-(5. Nf3 h6 6. Bh4 g5 7. Bg3 g4 {[%cal Gg4f3] Kicks the knight.} 8. Ne5 Ne4 {[%cal Ge4c3,Ge4g3] Hits c3 and g3.} 9. Qc2 Nxg3 10. hxg3 {Black has the two bishops and pressure on d4. Stockfish: −1.7, clearly better for Black.})
+5. Nf3
 (5. dxc5 Bxc3+ 6. bxc3 Qa5 {[%cal Ga5c3,Ga5g5] Hits c3 and g5.} 7. Bxf6 gxf6 8. Qd4 e5 9. Qe3 Na6 {[%cal Ga6c5] The knight takes the c5 pawn next, and White's c-pawns stay weak. Stockfish: −0.3, slightly better for Black.})
-(5. Bxf6 Qxf6 6. e3 b6 7. Nf3 Bb7 8. Be2 cxd4 9. exd4 Bxc3+ 10. bxc3 {White's c-pawns are doubled, and Black's bishop rules the long diagonal. Stockfish: −0.4, slightly better for Black.})
-5... Bxc3+ 6. bxc3 h6 {[%cal Gh6g5] Asks the bishop to decide.}
-7. Bh4 Qa5 {[%cal Ga5c3,Ga5e1] Pins the c3 pawn to the king, as in the Sämisch.}
-8. Qc2? {The most common move, but the c3 pawn is still pinned.} cxd4 {The pinned pawn can't take back.}
-9. Bxf6 gxf6
-10. Nf3 {Black is a pawn up and keeps pressing on c3. Stockfish: −2.3, winning for Black.} *
+5... h6 6. Bh4 g5 7. Bg3 g4 {[%cal Gg4f3] Kicks the knight.} 8. Ne5 Ne4 {[%cal Ge4c3,Ge4g3] Hits c3 and g3.} 9. Qc2 Nxg3 10. hxg3 {Black has the two bishops and pressure on d4. Stockfish: −1.7, clearly better for Black.} *
 
 [Chapter "Bd2 Variation: White's fifth moves"]
 [Side "black"]
@@ -552,12 +542,10 @@
 [Opening "Nimzo-Indian Defense"]
 [ECO "E20"]
 
-{Against 4.Bd2 c5, White has several fifth moves besides 5.e3. None of them is dangerous: Black trades on c3 or d4, castles and plays ...d5.}
+{Against 4.Bd2 c5, White's other fifth moves are 5.a3 and 5.dxc5. Neither is dangerous: Black trades on c3 or d4, castles and plays ...d5.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Bd2 c5
 5. a3
 (5. dxc5 Bxc5 6. e3 O-O 7. Nf3 d5 8. cxd5 exd5 {[%csl Yd5] This time Black has the isolated pawn, with active pieces behind it.} 9. Be2 Nc6 10. O-O {Stockfish: −0.1, equal.})
-(5. d5 exd5 6. cxd5 O-O 7. a3 Bxc3 8. Bxc3 Ne4 {[%cal Ge4c3] Hits the bishop.} 9. e3 d6 10. Bd3 {Stockfish: 0.0, equal.})
-(5. Nf3 cxd4 6. Nxd4 O-O 7. e3 Nc6 8. Bd3 d5 9. cxd5 Nxd4 10. exd4 {Black takes back on d5 next. Stockfish: 0.0, equal.})
 5... Bxc3 6. Bxc3 Ne4 {[%cal Ge4c3] Hits the bishop.}
 7. Qc2 Nxc3 8. Qxc3 cxd4
 9. Qxd4 O-O {Black has castled, and White has gained nothing from the opening. Stockfish: 0.0, equal.} *
@@ -570,15 +558,14 @@
 [Opening "Nimzo-Indian Defense: Three Knights Variation"]
 [ECO "E21"]
 
-{After 4.Nf3 O-O, four White players in ten play 5.Bg5, the main line. The other fifth moves mostly lead to positions from other chapters: 5.e3 to the Gligorić System, 5.Qc2 to the Classical. Black hits the center with ...c5 or ...d5.}
-1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Nf3 O-O
-5. e3
-(5. Qc2 d5 6. Bg5 c5 7. e3 cxd4 8. exd4 h6 9. Bh4 Nc6 10. cxd5 exd5 {The same position as in Classical: White's fifth moves, after 10...exd5. Stockfish: −0.9, slightly better for Black.})
-(5. a3 Bxc3+ 6. bxc3 c5 7. Bg5 Qa5 {[%cal Ga5c3] Pins the c3 pawn.} 8. Qc2 Ne4 9. Bd2 Nxd2 10. Qxd2 {Stockfish: −0.3, slightly better for Black.})
-(5. g3 Bxc3+ 6. bxc3 b6 7. Bg2 Bb7 {[%cal Gb7g2] The bishops face each other on the long diagonal.} 8. O-O Re8 9. Bg5 d6 {Stockfish: 0.0, equal.})
-5... c5 6. Bd3 d5
-7. O-O {The same position as in Rubinstein, Gligorić System: 9...b6 after 7.O-O.} dxc4
-8. Bxc4 cxd4 9. exd4 b6 {This is the Gligorić System's main line: ...Bb7 and ...Bxc3 come next. Stockfish: +0.2, equal.} *
+{After 4.Nf3 b6, White's main move is 5.Bg5, in the Basic chapter. Against 5.e3 and 5.Qc2, Black uses the same pieces: the bishop on b7, a knight on e4 and the f-pawn on f5, a Dutch-style setup aimed at White's king.}
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Nf3 b6
+5. e3 {Solid, but it shuts in White's dark-squared bishop.}
+(5. Qc2 {Keeps the pawns whole: after ...Bxc3, the queen takes back.} Bb7 6. a3 Bxc3+ 7. Qxc3 O-O 8. e3 {Against 8.Bg5, the most common move, play 8...d6 and ...Nbd7 (Stockfish −0.1).} d6 9. Be2 Nbd7 10. O-O Ne4 {[%cal Ge4c3] Hits the queen.} 11. Qc2 f5 {The same setup as against 5.e3: a knight on e4 backed by the f-pawn. Black keeps ...c5, ...e5 or ...d5 in reserve. Stockfish: +0.4, slightly better for White.})
+5... Ne4 {[%cal Ge4c3] Jumps in at once, before White can play Bd3.}
+6. Qc2 {Guards c3 and hits the knight. Against 6.Bd2, take on c3 twice (Stockfish −0.2).} Bb7
+7. Bd3 {Against 7.Be2, play 7...Bxc3+ 8.bxc3 d6 (Stockfish +0.1).} f5 {[%cal Gf5e4] Supports the knight. If White ever takes on e4, the f-pawn takes back and opens the f-file.}
+8. O-O Bxc3 9. bxc3 O-O {[%cal Gd8h4,Gf8f6] Black's queen and rooks can swing to the kingside: ...Qh4, or a rook to f6 and then g6 or h6. Stockfish: +0.3, slightly better for White.} *
 
 [Chapter "Sämisch Variation: 5...c5"]
 [Side "black"]
@@ -617,7 +604,7 @@
 7. Nf3 O-O 8. Bd3 Bb7
 9. O-O Ne4 {[%cal Ge4c3] Hits the weak pawn on c3.}
 10. Qc2 f5 {[%cal Gf5e4] Supports the knight.}
-11. Nd2 {Stockfish: −0.5, slightly better for Black.} *
+11. Nd2 {Stockfish: −0.3, slightly better for Black.} *
 
 [Chapter "Kmoch Variation: 4.f3"]
 [Side "black"]
@@ -627,13 +614,18 @@
 [Opening "Nimzo-Indian Defense: Kmoch Variation"]
 [ECO "E20"]
 
-{4.f3 prepares e4, to build a big center. Black stops it at once with 4...d5. Then castle and hit the center with ...c5. Watch for ...Qh4+: f3 has opened the diagonal to White's king.}
+{4.f3 prepares e4, to build a big center. Black stops it at once with 4...d5, and after 5.a3 Bxc3+ 6.bxc3 hits the center straight away with ...c5. Take back on d5 with the knight, which eyes the weak pawn on c3. Watch for ...Qh4+: f3 has opened the diagonal to White's king.}
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 {This is the Kmoch Variation.} d5 {[%cal Gd5e4] Stops e4.}
 5. a3 {The most common move.}
 (5. cxd5 Nxd5 6. Bd2? {Natural, but the bishop blocks the queen's guard of d4. 6.Qd2 was needed.} Qh4+ {[%cal Gh4e1,Gh4d4] Check, and d4 is attacked.} 7. g3 Qxd4 8. Nxd5 exd5 {Black has won a pawn. Stockfish: −2.0, winning for Black.})
-5... Bxc3+ 6. bxc3 O-O
-7. cxd5 exd5 8. e3 c5 {[%cal Gc5d4] Hits the center.}
-9. Bd3 {Next come ...Nc6 and ...Re8. Stockfish: +0.1, equal.} *
+5... Bxc3+ 6. bxc3 c5 {[%cal Gc5d4] Hits White's center at once, before e4 comes.}
+7. cxd5 {Against 7.e3, castle first: 7...O-O (Stockfish −0.1).} Nxd5 {[%cal Gd5c3] Takes back with the knight, which eyes the weak pawn on c3.}
+8. dxc5 Qa5 {[%cal Ga5c3] Hits c3, and Black wins the c5 pawn back later.}
+9. e4 {Kicks the knight.} Ne7
+10. Be3 {Guards the pawn on c5.} O-O
+11. Qb3 {[%cal Gb3b7] Hits b7.} Qc7 {Guards b7 and keeps an eye on c5.}
+12. Bb5 Nec6 13. Ne2 Na5 {[%cal Ga5b3] Hits the queen.}
+14. Qb4 e5 {[%cal Gc8e6] Frees the c8 bishop, which goes to e6 next. Stockfish: +0.4, slightly better for White.} *
 
 [Chapter "Spielmann Variation: 4.Qb3"]
 [Side "black"]
@@ -721,7 +713,7 @@
 4. Qc2 {[%order 1] Classical}
 (4. Bg5 c5 {[%course black] [%order 2] Leningrad})
 (4. Bd2 c5 {[%course black] [%order 3] Bd2 Variation})
-(4. Nf3 O-O {[%course black] [%order 4] Three Knights})
+(4. Nf3 b6 {[%course black] [%order 4] Three Knights})
 (4. e3 {[%order 5] Rubinstein} O-O
 (4... c5 5. Bd3 Nc6 6. Nf3 Bxc3+ 7. bxc3 d6 {[%course white] [%order 2] Hübner})
 (4... b6 {[%course white] [%order 3] St. Petersburg})

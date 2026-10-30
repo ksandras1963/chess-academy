@@ -1,0 +1,268 @@
+[Chapter "Key ideas: The English Attack"]
+[Side "white"]
+[Type "ideas"]
+
+{Against the Najdorf, White uses the same set-up as against the Dragon: bishop to e3, f-pawn to f3, queen to d2, castle long, then storm the kingside with the g-pawn and h-pawn. Stjepan Tomić calls the English Attack the best and most analyzed answer to the Najdorf: "designed to put a lot of pressure on Black's position".}
+*
+
+[Chapter "The English set-up"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "6...e5"]
+
+{When Black hits the knight, it drops back to b3. Then the f-pawn guards e4 and g4, the queen comes to d2 and White castles on the queenside. The king is safe enough, and the kingside pawns are free to attack.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e5 {[%cal Ge5d4] The idea starts from this position.}
+7. Nb3 Be6 8. f3 {[%csl Ge4,Gg4] Guards e4 and prepares g4.} Be7 9. Qd2 O-O 10. O-O-O {Both kings are safe for now; the race begins. Stockfish: +0.4, slightly better for White.} *
+
+[Chapter "The pawn storm"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "10...Nbd7"]
+
+{With the king on the queenside, White throws the g-pawn and later the f-pawn at Black's king. The g-pawn chases the knight on f6, the piece that guards d5 and the king. Stjepan Tomić: "the side that gets their attack in faster is most commonly going to win."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e5 7. Nb3 Be6 8. f3 Be7 9. Qd2 O-O 10. O-O-O Nbd7 {[%cal Gg2g4,Gg4g5] The idea starts from this position.}
+11. g4 b5 12. g5 {[%cal Gg5f6] Chases the knight.} b4 13. Ne2 Ne8 {The knight had to go back. White pushes the f-pawn next. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "Key ideas: The Najdorf"]
+[Side "black"]
+[Type "ideas"]
+
+{The Najdorf starts with a quiet pawn move, a6, that keeps White's knights and bishop off b5. Then Black usually puts a pawn on e5, gaining time on the knight, and fights for the d5 square. Stjepan Tomić: "probably one of the sharpest and most heavily analyzed openings in all of chess", but its main ideas are simple.}
+*
+
+[Chapter "The a-pawn guards b5"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "5...a6"]
+
+{The a-pawn takes the b5 square from White's knights and bishop. Stjepan Tomić: "Black is simply preventing all of White's pieces from coming to b5." Now Black can push the e-pawn to e5 and chase the knight, which can't jump to b5.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 {[%csl Gb5] The idea starts from this position.}
+6. Be2 e5 {[%cal Ge5d4] Hits the knight with gain of time.} 7. Nb3 {The knight drops back: b5 is covered. Stockfish: +0.3, slightly better for White.} *
+
+[Chapter "The fight for d5"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "9...Be6"]
+
+{The pawn on e5 leaves a hole on d5. Black covers it with the knight on f6, the bishop on e6 and later a knight from d7. If White's knight lands on d5, Black trades it, so that a pawn has to take back and the hole is gone. Stjepan Tomić: "As long as white's able to keep recapturing with pieces they have a useful hole on d5."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. O-O O-O 9. Be3 Be6 {[%csl Gd5] The idea starts from this position.}
+10. Nd5 Nxd5 11. exd5 Bf5 {[%csl Gd5] A pawn sits on d5 now, and Black's pieces are free. Stockfish: +0.2, equal.} *
+
+[Chapter "The counterattack on the queenside"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "11.g4"]
+
+{When White castles long, Black races on the other wing: the b-pawn and a-pawn run at White's king, and the rook joins on the c-file. In the English Attack, Black's pawns chase White's knights away from the king.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e5 7. Nb3 Be6 8. f3 Be7 9. Qd2 O-O 10. O-O-O Nbd7 11. g4 {[%cal Gb7b5,Gb5b4] The idea starts from this position.}
+11... b5 12. g5 b4 {[%cal Gb4c3] Chases the knight on c3.} 13. Ne2 Ne8 14. f4 a5 {[%cal Ga5a4] The a-pawn joins: ...a4 will hit the knight on b3. Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "English Attack: 6...e5"]
+[Side "both"]
+[Type "line"]
+[Opening "Sicilian Defense: Najdorf Variation, English Attack"]
+[ECO "B90"]
+
+{The main line of the English Attack, and "one of the most heavily analyzed variations in chess", says Stjepan Tomić. White castles long and storms the kingside; Black castles short and storms the queenside. "If you play this position too slow, you are basically going to lose."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 {This is the Najdorf Variation.}
+6. Be3 {This is the English Attack. Against 6.f3, the same moves usually follow.} e5 {Half of Black players hit the knight at once.}
+7. Nb3 Be6 8. f3 {[%csl Ge4,Gg4] Guards e4 and prepares g4.} Be7 9. Qd2 O-O 10. O-O-O Nbd7
+11. g4 b5 {Both sides attack.} 12. g5 b4 {[%cal Gb4c3] Hits the knight.}
+13. Ne2 {Stjepan Tomić: "don't take the knight on f6, just retreat."} Ne8 {[%cal Ge8c7] The knight guards d6 and can come to c7 and b5 later.}
+14. f4 a5 {Black ignores the threat of f5 and races on.} 15. f5 a4
+16. Nbd4! {"A very hard move to spot in a game": not 16.fxe6?!, see the traps.} exd4 17. Nxd4 {White gives a piece back for a dangerous attack. Stjepan Tomić: White keeps the better chances. Stockfish: +0.4, slightly better for White.}
+*
+
+[Chapter "English Attack: 6...e6"]
+[Side "white"]
+[Type "line"]
+[Opening "Sicilian Defense: Scheveningen Variation, English Attack, with f3"]
+[ECO "B90"]
+
+{A quarter of Black players answer the English Attack with ...e6, a Scheveningen set-up. White uses the same plan: f-pawn, queen to d2, castle long, and the g-pawn and h-pawn against Black's king.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e6
+7. f3 Be7 {Six Black players in ten develop the bishop.} 8. Qd2 O-O 9. O-O-O b5
+10. g4 {[%cal Gg4g5] The attack starts.} Bb7 11. g5 Nfd7 {The knight has to retreat.}
+12. h4 {[%cal Gh4h5] The h-pawn joins. White's attack comes first. Stockfish: +1.2, clearly better for White.}
+*
+
+[Chapter "6.Bg5 Main Line: 7...Be7"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Najdorf Variation, Main Line"]
+[ECO "B99"]
+
+{The most common White move at club level: the bishop pins the knight, and White plans the f-pawn push, the queen to f3 and long castling. Stjepan Tomić recommends 7...Be7, "the best move in this line... especially for novice players". Black gets a solid position and counterattacks with the b-pawn.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 {The bishop pins the knight.} e6 {Not ...e5, which leaves the pin in place.}
+7. f4 Be7 {Seven Black players in ten develop the bishop.} 8. Qf3 Qc7 9. O-O-O Nbd7
+10. g4 b5 {[%cal Gb5b4] The counterattack starts.} 11. Bxf6 Nxf6 12. g5 Nd7
+13. f5 O-O {[%cal Gb5b4,Ge6e5] Black castles. The knight on d7 and the bishop on e7 guard the king, and ...b4 and ...e5 come next. Stockfish: +0.5, slightly better for White.}
+*
+
+[Chapter "Fischer–Sozin Attack: 6.Bc4"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Najdorf Variation, Lipnitsky Attack"]
+[ECO "B90"]
+
+{The bishop aims at e6 and f7. Black blocks it with the e-pawn, not ...e5, and gains space at once with the b-pawn. Stjepan Tomić: after castling, play ...Be7, and against the queen on g3, the knight goes back to e8.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4 {This is the Fischer–Sozin Attack.} e6 {[%cal Ge6f7] Blocks the bishop.}
+7. O-O {The most common move.} b5 {[%cal Gb5c4] Chases the bishop.} 8. Bb3 Be7 9. Qf3 Qc7 {[%cal Gc7e5] Stops e5.}
+10. Qg3 {[%cal Gg3g7] Hits g7.} O-O 11. Bh6 Ne8 {The knight guards g7.}
+12. Rad1 Bd7 {Black's position is solid, and ...Nc6 and ...b4 come next. Stockfish: +0.1, equal.}
+*
+
+[Chapter "Opočenský Variation: 6.Be2"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Najdorf Variation, Opocensky Variation, Traditional Line"]
+[ECO "B92"]
+
+{The calmest answer to the Najdorf: White castles short. Black hits the knight with the e-pawn, develops quickly and aims for the break in the center, ...d5. Stjepan Tomić: "equal, perhaps even slightly better for black."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. O-O O-O 9. Be3 Be6
+10. f4 {The most common move.} exf4 11. Bxf4 Nc6 12. Kh1 d5 {[%csl Gd5] Black breaks in the center, "the dream move for black in all Sicilians". Stockfish: 0.0, equal.}
+*
+
+[Chapter "Najdorf with 6.Bd3"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Najdorf Variation, Yates Variation"]
+[ECO "B90"]
+
+{White puts the bishop on d3 and castles short. Stjepan Tomić: "nothing spectacular... not scary." Black plays ...e5, develops and puts pressure on the c-file, as in the Sveshnikov.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bd3 e5
+7. Nf3 {The most common move.} Be7 8. O-O O-O 9. h3 Be6 10. Re1 Nbd7 {[%cal Ga8c8] Black follows with ...Rc8 and ...b5. Stockfish: 0.0, equal.}
+*
+
+[Chapter "English Attack: 7.Nf3"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Najdorf Variation, English Attack"]
+[ECO "B90"]
+
+{One White player in five drops the knight back to f3, not b3. That stops the f-pawn plan, so White's attack is slower. Stjepan Tomić: after the trade on e6, cover the b6 square with the knight from f6.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e5 7. Nf3 Be7 8. Bc4 O-O 9. O-O Be6
+10. Bxe6 fxe6 {[%csl Gd5] The pawn on e6 now covers d5. Next comes ...Nfd7, to guard b6. Stockfish: +0.2, equal.}
+*
+
+[Chapter "English Attack: 6...Ng4"]
+[Side "white"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Najdorf Variation, English Attack, Anti-English"]
+[ECO "B90"]
+
+{The knight jumps to g4 to hit the bishop. Stjepan Tomić: 7.Bg5 is "a much better move" than retreating the bishop, because Black has to weaken the kingside to chase it. "White is slightly better... this is the downside of playing Ng4."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 Ng4 7. Bg5 h6 8. Bh4 g5 {"Basically the only move."}
+9. Bg3 Bg7 10. h3 Ne5 {Black's kingside pawns are loose, and White's knights are better. Stockfish: +0.4, slightly better for White.}
+*
+
+[Chapter "Scheveningen, Keres Attack: 6.g4"]
+[Side "both"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Scheveningen Variation, Keres Attack"]
+[ECO "B81"]
+
+{In the Scheveningen Black plays ...e6 instead of ...a6. Stjepan Tomić calls the Keres Attack "by far the best way for white to play", and warns Black players that it is hard to face. Black's only good defence is to hit back in the center with ...d5.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e6 {This is the Scheveningen Variation.}
+6. g4 {This is the Keres Attack. White threatens g5.} h6 {Slows the g-pawn.} 7. h4 Nc6 {Develop: don't try to stop g5 (see the traps).}
+8. Rg1 d5 {"Should always be played on move 8."} 9. exd5 Nxd5 10. Nxd5 Qxd5
+11. Bg2! {The knight on d4 can't be taken: see the traps.} Qe5+ {The only move.} 12. Be3 Bd7
+13. Nxc6 Bxc6 14. Bxc6+ bxc6 {White has the better pawns; Black is solid. Stockfish: +0.7, slightly better for White.}
+*
+
+[Chapter "Scheveningen, Classical: 6.Be2"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Scheveningen Variation, Classical Variation"]
+[ECO "B83"]
+
+{Against the bishop on e2, Stjepan Tomić advises Black not to waste a move on ...a6, but to develop and strike with ...e5 when White pushes the f-pawn: "e5 equalizes by force."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e6 6. Be2 Be7 7. O-O O-O 8. f4 e5 {[%cal Ge5f4] Hits the f-pawn and the knight.}
+9. Nb3 b6 {[%cal Gc8b7] Prepares ...Bb7 against e4.} 10. Bc4 Bb7 11. Qe2 Nbd7 12. Ba6 Bxa6 13. Qxa6 Qc7 {[%cal Gc7c2] Black has pressure on the c-file. Stockfish: −0.4, slightly better for Black.}
+*
+
+[Chapter "Trap: 16.fxe6?! and ...axb3"]
+[Side "black"]
+[Type "trap"]
+[Diagram "16...axb3"]
+[Opening "Sicilian Defense: Najdorf Variation, English Attack"]
+[ECO "B90"]
+
+{In the English Attack main line, White's natural capture on e6 gives Black a chance. Black takes the knight on b3, and now White must take back with the c-pawn. Taking the knight on d7 instead loses at once. Stjepan Tomić: "Taking on d7 is just losing... this is going to be over really quickly."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e5 7. Nb3 Be6 8. f3 Be7 9. Qd2 O-O 10. O-O-O Nbd7 11. g4 b5 12. g5 b4 13. Ne2 Ne8 14. f4 a5 15. f5 a4
+16. fxe6?! {Takes the bishop.} axb3! {[%cal Ga8a2] Takes the knight, and the a-file opens.}
+17. exd7? {Takes the knight back, but leaves the pawn on b3.} (17. cxb3 {White's best: "your best move is to take with the c-pawn".} fxe6 {Stockfish: +0.5, slightly better for White.}) 17... bxa2 {[%cal Ga2b1,Ga8a1] The pawn heads for b1 and the rook comes down the a-file. White's king can't escape. Stockfish: −6.4, winning for Black.}
+*
+
+[Chapter "Trap: 13...Nfxe4! in the Fischer–Sozin"]
+[Side "black"]
+[Type "trap"]
+[Diagram "13...Nfxe4"]
+[Opening "Sicilian Defense: Najdorf Variation, Lipnitsky Attack"]
+[ECO "B90"]
+
+{When White pushes the g-pawn to chase Black's knight, Black doesn't retreat: the knight takes on e4. After the bishop comes to b7, the knight on e4 is pinned to White's queen. Stjepan Tomić: "If your opponent doesn't know this, when you reach move 13, then you are basically going to win." Only a queen sacrifice saves White.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4 e6 7. Bb3 Nbd7 8. f4 Nc5 9. Qf3 Be7 10. Be3 O-O 11. O-O Qc7 12. g4 b5 13. g5 Nfxe4! {Takes the pawn.}
+14. Nxe4 Bb7! {[%cal Gb7f3] The knight on e4 is pinned to the queen.}
+15. Qh3? {Natural, but it loses.} (15. Nxe6! {The only good move.} fxe6 16. Nxc5 Bxf3 17. Nxe6 {[%cal Ge6c7,Ge6f8] White has given up the queen, but the knight hits Black's queen and rook, with checks from the bishop on b3 to come.} Qc8 18. Rxf3 {Stockfish: 0.0, equal.}) 15... Bxe4 {Black has won a pawn and has the better pieces. Stockfish: −1.8, clearly better for Black.}
+*
+
+[Chapter "Trap: ...b4 and ...Nxe4? in the Fischer–Sozin"]
+[Side "white"]
+[Type "trap"]
+[Diagram "10.Re1"]
+[Opening "Sicilian Defense: Sozin Attack, Flank Variation"]
+[ECO "B87"]
+
+{When Black pushes the b-pawn to b4, the knight goes to a4, and the e4 pawn looks free. Nine Black players in ten take it. But the rook comes to e1, the knight on e4 has to retreat, and White's pieces pour in. Stjepan Tomić: "the engine evaluation is almost plus two."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4 e6 7. Bb3 b5 8. O-O b4 9. Na4 Nxe4? {Grabs the pawn.}
+10. Re1! {[%cal Ge1e4,Ge1e6] Hits the knight, and the e-file opens toward Black's king.} Nf6 11. Bg5 {[%cal Gg5f6] The pin adds to the pressure. White is much more active. Stockfish: +1.8, clearly better for White.}
+*
+
+[Chapter "Trap: 13.Na4? and ...Qxc2"]
+[Side "black"]
+[Type "trap"]
+[Diagram "13...Qxc2"]
+[Opening "Sicilian Defense: Najdorf Variation, Opocensky Variation, Traditional Line"]
+[ECO "B92"]
+
+{In the Opočenský, White pushes the a-pawn to a5 and wants the knight on b6. But with Black's queen on the c-file, the knight jump leaves c2 hanging. Stjepan Tomić: "I'm just gonna take on c2."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. O-O O-O 9. Be3 Be6 10. Qd2 Nbd7 11. a4 Rc8 12. a5 Qc7 13. Na4? {Heads for b6.} Qxc2! {[%cal Gc2d2] Black wins a pawn and offers a queen trade. Stockfish: −2.2, winning for Black.}
+*
+
+[Chapter "Trap: 11.Bg2! and the knight on d4"]
+[Side "white"]
+[Type "trap"]
+[Diagram "11.Bg2"]
+[Opening "Sicilian Defense: Scheveningen Variation, Keres Attack"]
+[ECO "B81"]
+
+{In the Keres Attack line with ...d5, the knight on d4 looks loose. But taking it opens the long diagonal, and the bishop on g2 wins Black's queen or knight. Stjepan Tomić: "Remember the move Bg2, don't forget about that, the knight can't be taken."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e6 6. g4 h6 7. h4 Nc6 8. Rg1 d5 9. exd5 Nxd5 10. Nxd5 Qxd5
+11. Bg2! {[%cal Gg2d5] The bishop aims at the queen.} Nxd4? {Takes the knight.} (11... Qxd4? 12. Bxc6+ {[%cal Gc6e8] Check, and the queen on d4 falls next. Stockfish: +5.5, winning for White.})
+12. Bxd5 {White has won the queen for a knight. Stockfish: +5.7, winning for White.}
+*
+
+[Chapter "Trap: 7...g5? in the Keres Attack"]
+[Side "white"]
+[Type "trap"]
+[Diagram "9.Rxh8"]
+[Opening "Sicilian Defense: Scheveningen Variation, Keres Attack"]
+[ECO "B81"]
+
+{Black tries to stop the g-pawn with a pawn of its own. But the h6 pawn is pinned to the rook on h8: if it takes on g5, White's rook takes the rook. Stjepan Tomić: "Remember that Nh7 or ideas of stopping g5 just don't work."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e6 6. g4 h6 7. h4 g5? {Stops the g-pawn.}
+8. hxg5 hxg5?? {Takes back.} 9. Rxh8 {[%cal Gh1h8] The rook on h8 falls. Stockfish: +8.1, winning for White.}
+*
+
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 {Najdorf Variation}
+(5... e6 {Scheveningen Variation} 6. g4 {Keres Attack} (6. Be2 {Classical Variation}))
+6. Be3 {English Attack} (6. Bg5 {[%course black] Main Line}) (6. Bc4 {[%course black] Fischer–Sozin Attack}) (6. Be2 {[%course black] Opočenský Variation}) (6. Bd3 {[%course black]})
+6... e5 {[%course both]} (6... e6 {[%course white]}) (6... Ng4 {}) *
