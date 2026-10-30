@@ -783,7 +783,7 @@ None.
 
 ## Anti-Sicilian — both sides (`anti-sicilian`)
 
-54 chapters, 42 drillable lines (basic 9, traps 16, advanced 17), 416 learner moves.
+53 chapters, 41 drillable lines (basic 9, traps 16, advanced 16), 409 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -799,7 +799,6 @@ None.
 | Grand Prix Attack: 5.Bc4 | 5.Bc4 | Sicilian Defense: Grand Prix Attack | B23 | ok |
 | Grand Prix Attack: 6.Nxd4 | 6.Nxd4 | Sicilian Defense: Grand Prix Attack | B23 | ok |
 | Alapin, 2...Nc6: 5.Nc3 | 5.Nc3 | Sicilian Defense: Alapin Variation | B22 | ok |
-| Alapin, Barmen Defense: 3.e5 | 3.e5 | Sicilian Defense: Alapin Variation | B22 | ok |
 | Smith-Morra Gambit: 5...e6 | 5...e6 | Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation | B21 | ok |
 | Smith-Morra Gambit: 9...e5 | 9...e5 | Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation | B21 | ok |
 | Smith-Morra Gambit Declined: 3...d3 and 3...Nf6 | 3...d3 | Sicilian Defense: Smith-Morra Gambit Declined, Push Variation | B21 | ok |
@@ -853,7 +852,6 @@ None.
 | Grand Prix Attack: 5.Bc4 (6.e5) | 0.34 | B23 Sicilian Defense: Grand Prix Attack |
 | Grand Prix Attack: 6.Nxd4 (Main line) | 0.89 | B23 Sicilian Defense: Grand Prix Attack |
 | Alapin, 2...Nc6: 5.Nc3 (Main line) | 0.18 | B22 Sicilian Defense: Alapin Variation |
-| Alapin, Barmen Defense: 3.e5 (Main line) | 0.11 | B22 Sicilian Defense: Alapin Variation |
 | Smith-Morra Gambit: 5...e6 (Main line) | 0.62 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation |
 | Smith-Morra Gambit: 9...e5 (Main line) | 0.00 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation |
 | Smith-Morra Gambit Declined: 3...d3 and 3...Nf6 (Main line) | 0.52 | B21 Sicilian Defense: Smith-Morra Gambit Declined, Push Variation |
@@ -1017,7 +1015,7 @@ None.
 
 ## Sicilian Taimanov and Kan — both sides (`sicilian-taimanov-kan`)
 
-36 chapters, 32 drillable lines (basic 9, traps 6, advanced 17), 323 learner moves.
+28 chapters, 22 drillable lines (basic 9, traps 6, advanced 7), 230 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -1030,19 +1028,11 @@ None.
 | Kan, Maróczy Bind: 5.c4 | 5.c4 | Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation | B41 | ok |
 | Kan, Modern Variation: 5.Bd3 | 5.Bd3 | Sicilian Defense: Kan Variation, Modern Variation | B42 | ok |
 | Four Knights: 6.Ndb5 | 6.Ndb5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation | B33 | ok |
-| Taimanov: 6.Ndb5 | 6.Ndb5 | Sicilian Defense: Taimanov Variation, Bastrikov Variation | B47 | ok |
-| Taimanov: 7.Be2 | 7.Be2 | Sicilian Defense: Scheveningen Variation, Classical Main Line | B85 | ok |
 | Taimanov: 5.c4 | 5.c4 | Sicilian Defense: Taimanov Variation | B44 | ok |
-| Taimanov: 5.Be3 | 5.Be3 | Sicilian Defense: Taimanov Variation | B44 | ok |
 | Taimanov, Szén Variation: 5.Nb5 | 5.Nb5 | Sicilian Defense: Taimanov Variation, Szén Variation | B44 | ok |
-| Taimanov: 5.Nxc6 bxc6 6.Bd3 | 6.Bd3 | Sicilian Defense: Taimanov Variation | B44 | ok |
 | Taimanov, English Attack: 9...O-O | 9...O-O | Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack | B48 | ok |
-| Kan: 6.Be2 | 6.Be2 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
 | Kan: 6.Be3 Bb4 7.Bd2 | 7.Bd2 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
-| Kan, Maróczy Bind: 6...Bb4 | 6...Bb4 | Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation | B41 | ok |
-| Kan, Maróczy Bind: 7.Be2 | 7.Be2 | Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation | B41 | ok |
 | Kan, 6.Be3 Bb4: 9.exd5 | 9.exd5 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
-| Four Knights: 6...Bb4 | 6...Bb4 | Sicilian Defense: Four Knights Variation | B45 | ok |
 | Pin Variation: 5...Bb4 | 5...Bb4 | Sicilian Defense: Pin Variation, Koch Variation | B40 | ok |
 | Trap: 9.Bd3? and ...e5 in the Kan | 9...e5 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
 | Trap: 8.a3? and ...Nxe4 in the Kan | 8...Nxe4 | Sicilian Defense: Kan Variation, Knight Variation | B43 | ok |
@@ -1071,21 +1061,11 @@ None.
 | Kan, Maróczy Bind: 5.c4 (Maróczy Bind, as Black) | -0.51 | B41 Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation |
 | Kan, Modern Variation: 5.Bd3 (Main line) | -0.60 | B42 Sicilian Defense: Kan Variation, Modern Variation |
 | Four Knights: 6.Ndb5 (Main line) | 0.25 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation |
-| Taimanov: 6.Ndb5 (Main line) | -0.25 | B47 Sicilian Defense: Taimanov Variation, Bastrikov Variation |
-| Taimanov: 6.Ndb5 (7.Be3) | -0.35 | B47 Sicilian Defense: Taimanov Variation, Bastrikov Variation |
-| Taimanov: 7.Be2 (Main line) | -0.23 | B85 Sicilian Defense: Scheveningen Variation, Classical Main Line |
 | Taimanov: 5.c4 (Main line) | -0.17 | B44 Sicilian Defense: Taimanov Variation |
-| Taimanov: 5.Be3 (Main line) | 0.00 | B44 Sicilian Defense: Taimanov Variation |
-| Taimanov: 5.Be3 (7.f3) | 0.36 | B44 Sicilian Defense: Taimanov Variation |
 | Taimanov, Szén Variation: 5.Nb5 (Main line) | -0.32 | B44 Sicilian Defense: Taimanov Variation, Szén Variation |
-| Taimanov: 5.Nxc6 bxc6 6.Bd3 (Main line) | 0.00 | B44 Sicilian Defense: Taimanov Variation |
 | Taimanov, English Attack: 9...O-O (Main line) | 0.58 | B48 Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack |
-| Kan: 6.Be2 (Main line) | -0.43 | B43 Sicilian Defense: Kan Variation, Knight Variation |
 | Kan: 6.Be3 Bb4 7.Bd2 (Main line) | -0.16 | B43 Sicilian Defense: Kan Variation, Knight Variation |
-| Kan, Maróczy Bind: 6...Bb4 (Main line) | 0.20 | B41 Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation |
-| Kan, Maróczy Bind: 7.Be2 (Main line) | -0.53 | B41 Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation |
 | Kan, 6.Be3 Bb4: 9.exd5 (Main line) | 0.87 | B43 Sicilian Defense: Kan Variation, Knight Variation |
-| Four Knights: 6...Bb4 (Main line) | 0.40 | B45 Sicilian Defense: Four Knights Variation |
 | Pin Variation: 5...Bb4 (Main line) | 1.04 | B40 Sicilian Defense: Pin Variation, Koch Variation |
 | Pin Variation: 5...Bb4 (9...O-O) | 1.32 | B40 Sicilian Defense: Pin Variation, Koch Variation |
 | Trap: 9.Bd3? and ...e5 in the Kan (Main line) | 2.74 | B43 Sicilian Defense: Kan Variation, Knight Variation |
@@ -1094,6 +1074,66 @@ None.
 | Trap: 5.Bf4? and ...e5 in the Kan (Main line) | 2.46 | B41 Sicilian Defense: Kan Variation |
 | Trap: 6.e5? and ...Qa5+ in the Kan (Main line) | 1.21 | B42 Sicilian Defense: Kan Variation, Modern Variation |
 | Trap: 6...a6? and 7.Nd6+ in the Four Knights (Main line) | 1.29 | B45 Sicilian Defense: Four Knights Variation |
+
+## Sicilian Sveshnikov and Kalashnikov — both sides (`sicilian-sveshnikov-kalashnikov`)
+
+27 chapters, 21 drillable lines (basic 9, traps 7, advanced 5), 249 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Sveshnikov Main Line: 9.Nd5 | 9.Nd5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation | B33 | ok |
+| Sveshnikov: 6.Nxc6 | 6.Nxc6 | Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation | B33 | ok |
+| Sveshnikov: 6.Nb3 | 6.Nb3 | Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation | B33 | ok |
+| Kalashnikov Main Line: 8.Nd5 | 8.Nd5 | Sicilian Defense: Kalashnikov Variation | B32 | ok |
+| Kalashnikov: 5.Nxc6 | 5.Nxc6 | Sicilian Defense: Löwenthal Variation | B32 | ok |
+| Kalashnikov: 5.Nb3 | 5.Nb3 | Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation | B33 | ok |
+| Löwenthal: 6.Nd6+ | 6.Nd6+ | Sicilian Defense: Löwenthal Variation | B32 | ok |
+| Sveshnikov: 8.Bxf6 | 8.Bxf6 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation | B33 | ok |
+| Sveshnikov: 7.Nd5 | 7.Nd5 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Sveshnikov: 6.Nf3 | 6.Nf3 | Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation | B33 | ok |
+| Sveshnikov: 6.Nf5 | 6.Nf5 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Sveshnikov, Bird Variation: 8...Be6 | 8...Be6 | Sicilian Defense: Lasker-Pelikan Variation, Bird Variation | B33 | ok |
+| Trap: 9...Qxf6? and 10.Nd5 | 10.Nd5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation | B33 | ok |
+| Trap: 7...h6? and 8.Bxf6 | 8.Bxf6 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Trap: 9...a6? and 10.Qa4 | 10.Qa4 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Trap: 6...Be7? and 7.Nd6+ | 7.Nd6+ | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Trap to avoid: 14...axb5? and 15.Bxb5+ | 14.Nxb5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation | B33 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Sveshnikov Main Line: 9.Nd5 (Sveshnikov Main Line, as White) | 0.31 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation |
+| Sveshnikov Main Line: 9.Nd5 (Sveshnikov Main Line, as Black) | -0.31 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation |
+| Sveshnikov: 6.Nxc6 (Main line) | 0.05 | B33 Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation |
+| Sveshnikov: 6.Nb3 (Main line) | 0.42 | B33 Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation |
+| Kalashnikov Main Line: 8.Nd5 (Kalashnikov Main Line, as White) | 0.43 | B32 Sicilian Defense: Kalashnikov Variation |
+| Kalashnikov Main Line: 8.Nd5 (Kalashnikov Main Line, as Black) | -0.43 | B32 Sicilian Defense: Kalashnikov Variation |
+| Kalashnikov: 5.Nxc6 (Main line) | 0.05 | B32 Sicilian Defense: Löwenthal Variation |
+| Kalashnikov: 5.Nb3 (Main line) | 0.42 | B33 Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation |
+| Löwenthal: 6.Nd6+ (Main line) | 0.50 | B32 Sicilian Defense: Löwenthal Variation |
+| Sveshnikov: 8.Bxf6 (Main line) | -0.02 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation |
+| Sveshnikov: 7.Nd5 (Main line) | -0.43 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Sveshnikov: 6.Nf3 (Main line) | 0.15 | B33 Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation |
+| Sveshnikov: 6.Nf5 (Main line) | -0.28 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Sveshnikov, Bird Variation: 8...Be6 (Main line) | 0.94 | B33 Sicilian Defense: Lasker-Pelikan Variation, Bird Variation |
+| Trap: 9...Qxf6? and 10.Nd5 (Main line) | 1.51 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation |
+| Trap: 7...h6? and 8.Bxf6 (Main line) | 4.10 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 7...h6? and 8.Bxf6 (8...Qxf6) | 5.01 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 9...a6? and 10.Qa4 (Main line) | 100.00 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 9...a6? and 10.Qa4 (10...axb5) | 2.01 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 6...Be7? and 7.Nd6+ (Main line) | 1.67 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap to avoid: 14...axb5? and 15.Bxb5+ (Main line) | -0.16 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation |
 
 ## Ruy Lopez — both sides (`ruy-lopez`)
 
@@ -2226,6 +2266,23 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 6 | Four Knights: the pin on c3 | Black | 7...Nxe4 | 1 | 8.Bxd8 (6 half-moves) | ok |
 | 7 | Kan: the pawn fork | Black | 10...d4 | 1 | none | ok |
 | 8 | Four Knights: the knight check on d6 | White | 7.Nd6+ | 1 | 7...Bxd6 (2 half-moves) | ok |
+
+## Puzzles: Sicilian Sveshnikov and Kalashnikov (`content/sicilian-sveshnikov-kalashnikov-puzzles.pgn`)
+
+8 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Sveshnikov: the fork on c7 | White | 9.Nc7+ | 1 | 9...Kd8 (2 half-moves) | ok |
+| 2 | Sveshnikov: two knights against c7 | White | 10.Nbc7+ | 1 | 10...Kf8 (2 half-moves) | ok |
+| 3 | Sveshnikov: the pawn on e5 | White | 9.Qxe5+ | 1 | 9...Ne6 (2 half-moves) | ok |
+| 4 | Sveshnikov: the loose bishop on f5 | White | 10.Qxf5 | 1 | none | ok |
+| 5 | Sveshnikov: the rook takes b2 | Black | 10...Rxb2 | 1 | 11.Rxb2 (4 half-moves) | ok |
+| 6 | Bird Variation: the queen takes b2 | Black | 14...Qxb2 | 1 | 15.Kf2 (2 half-moves) | ok |
+| 7 | Sveshnikov: mate on g2 | Black | 16...Qxg2# | 1 | none | ok |
+| 8 | Sveshnikov: the queen backs up the knight | White | 10.Qa4 | 1 | 10...Bd7 (2 half-moves) | ok |
 
 ## Puzzles: Ruy Lopez (`content/ruy-lopez-puzzles.pgn`)
 

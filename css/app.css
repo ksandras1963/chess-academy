@@ -553,8 +553,13 @@ a.om-box:hover, a.om-box:focus-visible { border-color: var(--tone); }
 .course-box h2 { font-size: 1.375rem; color: var(--yellow); }
 .course-box p { margin-top: 6px; max-width: 40rem; font-family: var(--serif); font-size: 1.1875rem; line-height: 1.5; }
 .course-box-links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px; }
+/* On a phone, one course to a line, in the same order. */
+@media (max-width: 520px) {
+    .course-box-links { flex-direction: column; align-items: stretch; }
+    .course-box-link { justify-content: flex-start; }
+}
 .course-box-link {
-    min-height: 52px; padding: 0 18px; border: 2px solid var(--yellow); color: var(--yellow);
+    min-height: 52px; padding: 0 14px; border: 2px solid var(--yellow); color: var(--yellow);
     font-size: 1.125rem; font-weight: 600; white-space: normal; text-align: left;
 }
 .course-box-link:hover { border-color: var(--yellow); background: var(--felt-high); }
