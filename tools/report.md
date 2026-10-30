@@ -1095,6 +1095,71 @@ None.
 | Trap: 6.e5? and ...Qa5+ in the Kan (Main line) | 1.21 | B42 Sicilian Defense: Kan Variation, Modern Variation |
 | Trap: 6...a6? and 7.Nd6+ in the Four Knights (Main line) | 1.29 | B45 Sicilian Defense: Four Knights Variation |
 
+## Sicilian Sveshnikov and Kalashnikov — both sides (`sicilian-sveshnikov-kalashnikov`)
+
+29 chapters, 24 drillable lines (basic 9, traps 7, advanced 8), 283 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Sveshnikov Main Line: 9.Nd5 | 9.Nd5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation | B33 | ok |
+| Sveshnikov: 6.Nxc6 | 6.Nxc6 | Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation | B33 | ok |
+| Sveshnikov: 6.Nb3 | 6.Nb3 | Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation | B33 | ok |
+| Kalashnikov Main Line: 8.Nd5 | 8.Nd5 | Sicilian Defense: Kalashnikov Variation | B32 | ok |
+| Kalashnikov: 5.Nxc6 | 5.Nxc6 | Sicilian Defense: Löwenthal Variation | B32 | ok |
+| Kalashnikov: 5.Nb3 | 5.Nb3 | Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation | B33 | ok |
+| Löwenthal: 6.Nd6+ | 6.Nd6+ | Sicilian Defense: Löwenthal Variation | B32 | ok |
+| Sveshnikov: 8.Bxf6 | 8.Bxf6 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation | B33 | ok |
+| Sveshnikov: 7.Nd5 | 7.Nd5 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Sveshnikov: 6.Nf3 | 6.Nf3 | Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation | B33 | ok |
+| Sveshnikov: 6.Nf5 | 6.Nf5 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Sveshnikov: 8...Be7 | 8...Be7 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Sveshnikov, Bird Variation: 8...Be6 | 8...Be6 | Sicilian Defense: Lasker-Pelikan Variation, Bird Variation | B33 | ok |
+| Kalashnikov: 6.c4 | 6.c4 | Sicilian Defense: Kalashnikov Variation | B32 | ok |
+| Trap: 9...Qxf6? and 10.Nd5 | 10.Nd5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation | B33 | ok |
+| Trap: 7...h6? and 8.Bxf6 | 8.Bxf6 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Trap: 9...a6? and 10.Qa4 | 10.Qa4 | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Trap: 6...Be7? and 7.Nd6+ | 7.Nd6+ | Sicilian Defense: Lasker-Pelikan Variation | B33 | ok |
+| Trap to avoid: 14...axb5? and 15.Bxb5+ | 14.Nxb5 | Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation | B33 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Sveshnikov Main Line: 9.Nd5 (Sveshnikov Main Line, as White) | 0.31 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation |
+| Sveshnikov Main Line: 9.Nd5 (Sveshnikov Main Line, as Black) | -0.31 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation |
+| Sveshnikov: 6.Nxc6 (Main line) | 0.05 | B33 Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation |
+| Sveshnikov: 6.Nb3 (Main line) | 0.42 | B33 Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation |
+| Kalashnikov Main Line: 8.Nd5 (Kalashnikov Main Line, as White) | 0.43 | B32 Sicilian Defense: Kalashnikov Variation |
+| Kalashnikov Main Line: 8.Nd5 (Kalashnikov Main Line, as Black) | -0.43 | B32 Sicilian Defense: Kalashnikov Variation |
+| Kalashnikov: 5.Nxc6 (Main line) | 0.05 | B32 Sicilian Defense: Löwenthal Variation |
+| Kalashnikov: 5.Nb3 (Main line) | 0.42 | B33 Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation |
+| Löwenthal: 6.Nd6+ (Main line) | 0.50 | B32 Sicilian Defense: Löwenthal Variation |
+| Sveshnikov: 8.Bxf6 (Main line) | -0.02 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation |
+| Sveshnikov: 7.Nd5 (Main line) | -0.43 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Sveshnikov: 6.Nf3 (Main line) | 0.15 | B33 Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation |
+| Sveshnikov: 6.Nf5 (Main line) | -0.28 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Sveshnikov: 8...Be7 (Main line) | 1.78 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Sveshnikov: 8...Be7 (9...Be6) | 0.64 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Sveshnikov, Bird Variation: 8...Be6 (Main line) | 0.94 | B33 Sicilian Defense: Lasker-Pelikan Variation, Bird Variation |
+| Kalashnikov: 6.c4 (Main line) | -0.63 | B32 Sicilian Defense: Kalashnikov Variation |
+| Trap: 9...Qxf6? and 10.Nd5 (Main line) | 1.51 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation |
+| Trap: 7...h6? and 8.Bxf6 (Main line) | 4.10 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 7...h6? and 8.Bxf6 (8...Qxf6) | 5.01 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 9...a6? and 10.Qa4 (Main line) | 100.00 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 9...a6? and 10.Qa4 (10...axb5) | 2.01 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap: 6...Be7? and 7.Nd6+ (Main line) | 1.67 | B33 Sicilian Defense: Lasker-Pelikan Variation |
+| Trap to avoid: 14...axb5? and 15.Bxb5+ (Main line) | -0.16 | B33 Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation |
+
 ## Ruy Lopez — both sides (`ruy-lopez`)
 
 62 chapters, 91 drillable lines (basic 10, traps 10, advanced 71), 805 learner moves.
@@ -2225,6 +2290,23 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 6 | Four Knights: the pin on c3 | Black | 7...Nxe4 | 1 | 8.Bxd8 (6 half-moves) | ok |
 | 7 | Kan: the pawn fork | Black | 10...d4 | 1 | none | ok |
 | 8 | Four Knights: the knight check on d6 | White | 7.Nd6+ | 1 | 7...Bxd6 (2 half-moves) | ok |
+
+## Puzzles: Sicilian Sveshnikov and Kalashnikov (`content/sicilian-sveshnikov-kalashnikov-puzzles.pgn`)
+
+8 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Sveshnikov: the fork on c7 | White | 9.Nc7+ | 1 | 9...Kd8 (2 half-moves) | ok |
+| 2 | Sveshnikov: two knights against c7 | White | 10.Nbc7+ | 1 | 10...Kf8 (2 half-moves) | ok |
+| 3 | Sveshnikov: the pawn on e5 | White | 9.Qxe5+ | 1 | 9...Ne6 (2 half-moves) | ok |
+| 4 | Sveshnikov: the loose bishop on f5 | White | 10.Qxf5 | 1 | none | ok |
+| 5 | Sveshnikov: the rook takes b2 | Black | 10...Rxb2 | 1 | 11.Rxb2 (4 half-moves) | ok |
+| 6 | Bird Variation: the queen takes b2 | Black | 14...Qxb2 | 1 | 15.Kf2 (2 half-moves) | ok |
+| 7 | Sveshnikov: mate on g2 | Black | 16...Qxg2# | 1 | none | ok |
+| 8 | Sveshnikov: the queen backs up the knight | White | 10.Qa4 | 1 | 10...Bd7 (2 half-moves) | ok |
 
 ## Puzzles: Ruy Lopez (`content/ruy-lopez-puzzles.pgn`)
 
