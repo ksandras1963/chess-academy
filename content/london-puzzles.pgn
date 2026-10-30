@@ -31,11 +31,11 @@
 [End "10...g5"]
 [Hint "Your f6 knight is pinned to the queen. How can you chase the bishop away?"]
 
-1. d4 Nf6 2. Bf4 g6 3. e3 Bg7 4. Nf3 O-O 5. Bd3 d6 6. c3 Nc6 7. Nbd2 e5 8. Bg5 h6 9. Bh4 Qe7 10. O-O? g5! {[%cal Gg5h4] Hits the bishop and breaks the pin. Now ...e4 threatens to fork the knight on f3 and the bishop on d3.}
-(10... e4? {Too early: the f6 knight is still pinned.} 11. Nxe4 g5 12. Nxf6+ Qxf6 13. Bg3 Ne7 {White has won a pawn, and your kingside is loose. Stockfish: +3.1, winning for White.})
-11. Nxg5 {White's best: a knight for two pawns.}
-(11. Bg3? e4! 12. Nxg5 exd3 {You have won a piece for a pawn. Stockfish: −4.6, winning for Black.})
-11... hxg5 12. Bxg5 d5! {[%cal Gd5e4] Takes e4 away from White. You have a knight for two pawns. Stockfish: −1.5, clearly better for Black.}
+1. d4 Nf6 2. Bf4 g6 3. e3 Bg7 4. Nf3 O-O 5. Bd3 d6 6. c3 Nc6 7. Nbd2 e5 8. Bg5 h6 9. Bh4 Qe7 10. h3? g5! {[%cal Gg5h4] Hits the bishop and breaks the pin. Now ...e4 threatens to fork the knight on f3 and the bishop on d3.}
+(10... e4? {Too early: the f6 knight is still pinned.} 11. Nxe4 g5 12. Nxf6+ Qxf6 13. Bg3 {White has won a pawn, and your kingside is loose. Stockfish: +2.1, winning for White.})
+11. dxe5
+(11. Bg3? e4! {[%cal Ge4d3,Ge4f3] The fork.} 12. h4 exd3 {You have won the bishop on d3. Stockfish: −2.7, winning for Black.})
+11... dxe5 12. Nxg5 {White gives a knight for two pawns, because 12.Bg3 runs into ...e4.} hxg5 13. Bxg5 Qe6 {The queen steps out of the pin. You have a knight for two pawns. Stockfish: −1.6, clearly better for Black.}
 *
 
 [Puzzle "The Greek gift with Ne4"]
