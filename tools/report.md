@@ -2333,7 +2333,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 |---|---|---|---|---|---|---|
 | 1 | The ...e4 fork | Black | 10...e4 | 1 | 11.dxc5 (4 half-moves) | ok |
 | 2 | Take the bishop first | Black | 8...exf4 | 1 | 9.dxc6 (4 half-moves) | ok |
-| 3 | Break the pin | Black | 10...g5 | 1 | 11.Nxg5 (4 half-moves) | ok |
+| 3 | Break the pin | Black | 10...g5 | 1 | 11.dxe5 (6 half-moves) | ok |
 | 4 | The Greek gift with Ne4 | White | 13.Bxh7+ | 3 | 15...g6 (8 half-moves) | ok |
 | 5 | The Greek gift with Qh4 | White | 14.Bxh7+ | 3 | 16...Rd8 (6 half-moves) | ok |
 | 6 | Save the rook | White | 9.Qb1 | 1 | 9...Qxc3 (4 half-moves) | ok |
