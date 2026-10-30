@@ -182,7 +182,7 @@
 {Almost one Black player in four answers 3.Bf4 with 3...e6. Jump into b5 at once: the knight and the f4 bishop both hit c7. Six Black players in ten guard c7 with 4...Na6. Play e3, and when ...c6 drives the knight back to c3, Black's knight on a6 is still far from the center. Against 4...Bd6 and 4...Bb4+, see Advanced variations.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 e6
 4. Nb5 {[%cal Gb5c7,Gf4c7] Threatens Nxc7+, forking king and rook.} Na6 {Guards c7, but the knight stands on the edge of the board.}
-5. e3 {[%cal Gf1a6] Opens the f1 bishop's diagonal, which runs to a6.} c6 {[%cal Gc6b5] Seven Black players in ten kick the knight. Against 5...Be7 or 5...Bd7, see Advanced variations.}
+5. e3 {[%cal Gf1a6] Opens the f1 bishop's diagonal, which runs to a6.} c6 {[%cal Gc6b5] Seven Black players in ten kick the knight. Against 5...Be7 or 5...Bd7, keep developing with Nf3 or c3.}
 6. Nc3 {The knight comes back. It has moved three times, but Black's knight on a6 needs two more moves to reach the center.} Nc7 {[%cal Gc7e6,Gc7b5] The most common move, in almost four games in ten. Against 6...Bd6 or 6...Bb4, take on a6 (see Knight to b5: other fifth and sixth moves).}
 7. Bd3 {[%cal Gd3h7] The bishop aims at h7. Next come Nf3 and castling. Stockfish: +0.2, equal.} *
 
@@ -369,8 +369,6 @@
 6. b4 {Three White players in ten.}
 (6. e3 {One in five.} O-O 7. Nf3 {Stockfish: +0.1, equal.})
 (6. Qa4 {One in ten. The queen hits the bishop on a5.} Nc6 {[%cal Gc6a5] The knight guards the bishop. Black scores 61% from here at this level. Stockfish: −0.5, slightly better for Black.})
-(6. Nf3 {One in twelve.} O-O 7. e3 {Stockfish: +0.1, equal.})
-(6. a4 a6 7. Na3 {Two White players in ten retreat at once.} c5 {[%cal Gc5d4] Stockfish: −0.2, equal.})
 6... Bb6 {[%cal Gb6f2] The bishop drops back while White's a-pawn is still on a2.}
 7. a4 {[%cal Ga4a5] Nine White players in ten. White threatens a5, trapping the bishop.} a5! {[%cal Ga5b4] Stops a5 for good and hits b4. Black scores 70% from here at this level.}
 (7... a6? {More than half of Black players. It looks natural, but the knight on b5 covers a7.} 8. a5 {[%cal Ga5b6,Gb5a7] Hits the bishop: on a7 the knight would take it. Stockfish: +1.0, clearly better for White.})
@@ -384,9 +382,8 @@
 [Opening "Rapport-Jobava System"]
 [ECO "D01"]
 
-{After 4.Nb5, three Black players in ten offer to trade the f4 bishop with 4...Bd6. Take the bishop with the knight: White gets the bishop pair, and Black's doubled d-pawns hem in Black's own pieces. One Black player in twenty checks with 4...Bb4+, the Black repertoire's move in this course (see Check on b4: 4.Nb5 Bb4+).}
+{After 4.Nb5, three Black players in ten offer to trade the f4 bishop with 4...Bd6. Take the bishop with the knight: White gets the bishop pair, and Black's doubled d-pawns hem in Black's own pieces. One Black player in twenty checks with 4...Bb4+, the Black repertoire's move in this course: answer 5.c3, and after 5...Ba5 6.a4 a6, drop the knight back to a3 (see Check on b4: 4.Nb5 Bb4+).}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 e6 4. Nb5 Bd6 {[%cal Gd6f4]}
-(4... Bb4+ 5. c3 Ba5 6. a4 {[%cal Ga4a5] Threatens to trap the bishop with a5 if it goes to b6.} a6 7. Na3 {The knight retreats. Stockfish: −0.3, slightly better for Black.})
 5. Nxd6+ {Take the bishop. White gets the bishop pair.} cxd6 6. e3 O-O {Against 6...Nc6, almost as common, play 7.Nf3 just the same.}
 7. Nf3 {[%cal Gf1d3,Gc2c3] Next come Bd3, c3 and castling. Stockfish: +0.3, slightly better for White.} *
 
@@ -400,10 +397,7 @@
 
 {After 4.Nb5 Na6 5.e3 c6 6.Nc3, about four Black players in ten develop the f8 bishop before bringing the knight back with ...Nc7. Then the knight on a6 has only the b7 pawn to guard it. Take it: Bxa6 bxa6 leaves Black with doubled a-pawns for the rest of the game. Against 5...Be7 or 5...Bd7, keep developing with Nf3 or c3.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 e6 4. Nb5 Na6 5. e3 c6
-(5... Be7 {One Black player in eleven.} 6. Nf3 O-O 7. h4 {[%cal Gh4h5] The h-pawn heads for h5. Stockfish: 0.0, equal.})
-(5... Bd7 {One in twelve.} 6. c3 {[%cal Gc3b5] The knight on b5 has a safe retreat now. Stockfish: +0.3, slightly better for White.})
 6. Nc3 Bd6 {About one Black player in four.}
-(6... Bb4 {One in six.} 7. Bxa6 {Takes the knight.} bxa6 8. Nf3 {[%csl Ya6,Ya7] Black's a-pawns are doubled. Stockfish: +0.3, slightly better for White.})
 7. Bxa6 {Takes the knight before it can go back.} bxa6 8. Na4 {[%cal Ga4c5] The knight heads for c5, the hole in front of the c6 pawn. Stockfish: +0.6, slightly better for White.} *
 
 [Chapter "White's other fourth moves"]
@@ -418,8 +412,6 @@
 1. d4 d5 2. Nc3 Nf6 3. Bf4 e6
 4. a3 {One White player in eleven.}
 (4. f3 c5 {[%cal Gc5d4] Hits d4. Stockfish: −0.9, slightly better for Black.})
-(4. Qd2 c5 {Stockfish: −0.4, slightly better for Black.})
-(4. Qd3 c5 {Stockfish: −0.5, slightly better for Black.})
 4... c5 {[%cal Gc5d4] Hits d4.}
 5. e3 {Two White players in three.} a6 {[%cal Gb7b5] Prepares ...b5 and keeps White's knight off b5. Stockfish: −0.2, equal.} *
 
@@ -434,7 +426,6 @@
 {After 3...a6 4.e3, Black's moves other than 4...Bf5 call for the same London setup: Bd3, Nf3 and castling. Against 4...e6 5.Bd3 c5, take on c5 and develop. Against 4...Nc6, develop the same way, and chase ...Bg4 with f3 and g4. Against 4...c5, take on c5 and prepare b4 to hold the pawn.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 a6 4. e3 e6 {Almost three Black players in ten.}
 (4... Nc6 {One Black player in seven.} 5. Bd3 e6 6. Nf3 {[%cal Ge1g1] Castle next. Against 5...Bg4, play 6.f3 and chase the bishop with g4. Stockfish: +0.3, slightly better for White.})
-(4... c5 {One in ten.} 5. dxc5 {Takes the pawn.} Nc6 {Three Black players in four.} 6. a3 {[%cal Gb2b4] Prepares b4, which holds the c5 pawn. Stockfish: +0.4, slightly better for White.})
 5. Bd3 c5 {[%cal Gc5d4] Almost four in ten hit the center.}
 6. dxc5 {Six White players in ten take. White gives up the center for quick development.} Bxc5 7. Nf3 {Castling and e4 come next. Stockfish: −0.1, equal.} *
 
@@ -448,8 +439,6 @@
 {About one Black player in eleven hits d4 at once with 3...c5. Play 4.e3, and keep the knight ready for b5. Against 4...cxd4, take back with the e-pawn: the e-file opens, and the f4 bishop stays active. Against 4...e6, jump to b5 at once. Against 4...Nc6?, see Trap: 4...Nc6? and Nb5!.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 c5
 4. e3 cxd4 {One Black player in five.}
-(4... a6 {One in five.} 5. dxc5 {Takes the pawn.} e6 6. Na4 {[%cal Ga4c5] Holds the pawn on c5 for now. Stockfish: +0.3, slightly better for White.})
-(4... e6 {One in ten.} 5. Nb5 {[%cal Gb5c7,Gf4c7] Threatens Nc7+.} Na6 6. c3 {[%cal Gc3b5] Gives the knight a safe retreat. Stockfish: +0.5, slightly better for White.})
 5. exd4 {[%cal Ge1e8] The e-file opens.} a6 {Four Black players in ten. It takes b5 away from White's knight.}
 6. Nf3 Nc6 7. Ne5 {[%cal Ge5c6] Hits the knight on c6. Stockfish: +0.1, equal.} *
 
@@ -463,8 +452,6 @@
 
 {After 3...c6 4.e3, Black's main alternatives to 4...Bf5 each have a clear answer. Against 4...e6, develop with Bd3 and Nf3. Against 4...Bg4, chase the bishop with f3, g4 and h4 (see Key ideas: Plans against the bishop on f5). Against 4...g6, push the h-pawn.}
 1. d4 d5 2. Nc3 Nf6 3. Bf4 c6 4. e3 e6 {One Black player in six.}
-(4... Bg4 {One in nine.} 5. f3 {[%cal Gf3g4] Gains time on the bishop.} Bh5 6. g4 Bg6 7. h4 {[%cal Gh4h5] Threatens h5, which would trap the bishop. Stockfish: +0.8, slightly better for White.})
-(4... g6 {One in nine.} 5. h4 {[%cal Gh4h5] The Jobava answer to a fianchetto: the h-pawn heads for h5.} Bg7 6. Nf3 {Develops, ready for h5 or Ne5. Stockfish: +0.1, equal.})
 5. Bd3 Bd6 {Half of Black players offer the trade.}
 6. Nf3 {[%cal Gf4d6] If Black takes on f4, take back with the e-pawn: it controls e5, and the e-file opens for your rook. Stockfish: +0.2, equal.} *
 
@@ -479,7 +466,6 @@
 1. d4 d5 2. Nc3 Nf6 3. Bf4 Nc6
 4. Nb5 {[%cal Gb5c7,Gf4c7] Threatens Nxc7+.} e5 {Hits the bishop and opens the center.}
 5. dxe5 {[%cal Ge5f6] Takes the pawn and hits the knight on f6.} Nh5 {Six Black players in ten. The knight attacks the bishop on f4.}
-(5... a6 {The best defense.} 6. Nc3 {The knight goes back. The pawn on e5 still hits the knight on f6.} Nh5 7. Nxd5 {White is a pawn up. Stockfish: +0.6, slightly better for White.})
 6. e3 {Lets the bishop be taken.} Nxf4 7. exf4 {White is a pawn up, and the doubled f-pawns guard e5. Stockfish: +0.9, slightly better for White.} *
 
 [Chapter "Fianchetto: 3...g6"]
@@ -493,7 +479,6 @@
 1. d4 d5 2. Nc3 Nf6 3. Bf4 g6
 4. e3 Bg7 {Eight Black players in ten.}
 5. h4 {[%cal Gh4h5] The h-pawn heads for h5.} O-O
-(5... c6 6. Nf3 {[%cal Gh4h5] Develops, ready for h5. Stockfish: +0.1, equal.})
 6. h5 {[%cal Gh5g6] Hits g6. If Black takes on h5, the h-file opens.} c5 {[%cal Gc5d4] Black hits back in the center.}
 7. hxg6 hxg6 {[%cal Gh1h8] The h-file is open for White's rook. Stockfish: +0.3, slightly better for White.} *
 
@@ -520,8 +505,6 @@
 {About one Black player in five answers 2.Nc3 with 2...e6, keeping the knight on g8 for now. Play 3.Bf4 all the same. After 3...Nf6 you are in Knight to b5: 3...e6 4.Nb5, and after 3...a6 4.e3 Nf6 in Guarding b5: 3...a6. Against an early ...Bd6, play e3 and let Black take on f4: the pawn that takes back controls e5. Against an early ...Bb4, guard c3 with the queen.}
 1. d4 d5 2. Nc3 e6
 3. Bf4 Bd6 {One Black player in six offers the trade of bishops at once.}
-(3... Bb4 {One in thirteen.} 4. Qd3 {[%cal Gd3c3] Guards the knight, so the pin does nothing, and prepares a3 or e4. Stockfish: +0.2, equal.})
-(3... c5 {One in six.} 4. e3 {After 4...Nf6, the position is the same as after 3...c5 4.e3 e6 in Hitting d4: 3...c5.} Nf6 5. Nb5 {[%cal Gb5c7,Gf4c7] Threatens Nc7+. Stockfish: +0.4, slightly better for White.})
 4. e3 {[%cal Gf4d6] Lets Black take on f4.} Bxf4 {Two Black players in three take at once. After 4...Nf6, the position is the same as after 3...e6 4.e3 Bd6: develop with Bd3 and Nf3.}
 5. exf4 {[%cal Ge1e8,Gf4e5] The pawn on f4 controls e5, and the e-file opens for a rook.} Nf6 {More than half of Black players.}
 6. Nf3 {[%cal Gf3e5] The knight heads for e5. Bd3 and castling come next. Stockfish: +0.3, slightly better for White.} *
