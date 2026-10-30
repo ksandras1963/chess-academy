@@ -129,6 +129,8 @@ export async function homeView(root, ctx) {
         const page = ch.headers.Page && (cat.surveys || []).find(x => x.id === ch.headers.Page)
         return `${ch.headers.Course || ""} ${(page && page.course) || ""}`.split(/\s+/).filter(Boolean)
     }
+    // A [Page] chapter goes by its page's name: "Other Indian Defenses" on the 1.d4 page is "Indian Defenses" here.
+    const cardName = ch => (ch.headers.Page && ((cat.surveys || []).find(x => x.id === ch.headers.Page) || {}).name) || ch.title
 
     const list = h("ul", { class: "index" }, firsts.map((s, i) => {
         const chapters = overviews[i] ? overviews[i].chapters : []
@@ -137,7 +139,7 @@ export async function homeView(root, ctx) {
         const inPage = new Set(chapters.filter(ch => ch.headers.Page).flatMap(courseIds))
         const listed = chapters.filter(ch => ch.headers.Page || !courseIds(ch).length || !courseIds(ch).every(id => inPage.has(id)))
         const names = listed.map((ch, k) => [k ? " · " : "",
-            h("span", { class: courseIds(ch).some(id => openingIds.has(id)) ? "fm-taught" : null }, shortName(ch.title))])
+            h("span", { class: courseIds(ch).some(id => openingIds.has(id)) ? "fm-taught" : null }, shortName(cardName(ch)))])
         return h("li", { class: "opening first-move" },
             h("div", { class: "op-head" }, h("h2", {}, s.name), h("span", { class: "eco", title: "ECO codes" }, s.eco)),
             names.length ? h("p", { class: "fm-names" }, names) : h("p", { class: "op-summary" }, s.subtitle),

@@ -78,7 +78,7 @@ function courseOps(cat, ids) {
 
 /**
  * A chapter's openings: its [Course], and for a [Page] chapter also the "course" of the page it opens.
- * The Indian Defenses chapter on the 1.d4 page has no [Course] (the King's Indian has its own card),
+ * The Other Indian Defenses chapter on the 1.d4 page has no [Course] (the King's Indian and Nimzo-Indian have their own cards),
  * but its page lists the King's Indian, Nimzo-Indian and Grünfeld courses.
  */
 function chapterOps(cat, ch) {
@@ -157,7 +157,7 @@ function courseLinks(cat, s, ch, lessons, spelled = new Set()) {
     const family = chapterOps(cat, ch)
     if (ch.headers.Page && family.length > 1 && family.some(isBuilt)) {
         return h("a", { class: "course-link", href: `#/survey/${ch.headers.Page}`, title: "Its courses are listed on its page" },
-            h("span", { class: "side-chip both", "aria-hidden": "true" }), `${familyName(ch)} Course`)
+            h("span", { class: "side-chip both", "aria-hidden": "true" }), `${familyName(cat, ch)} Course`)
     }
     const built = ops.flatMap(op => op.courses.filter(m => m.available))
     if (!built.length) {
@@ -182,7 +182,7 @@ function courseBox(cat, s, hasLessons) {
     const ops = [...new Set(courseOps(cat, ids))].filter(op => !inFamily.has(op) && isBuilt(op))
     const built = op => op.courses.filter(m => m.available)
     const groups = [
-        ...families.map(ch => [{ key: ch.headers.Page, href: `#/survey/${ch.headers.Page}`, text: `${familyName(ch)} Course`, side: "both", tip: "Its courses are listed on its page" }]),
+        ...families.map(ch => [{ key: ch.headers.Page, href: `#/survey/${ch.headers.Page}`, text: `${familyName(cat, ch)} Course`, side: "both", tip: "Its courses are listed on its page" }]),
         ...ops.map(op => built(op).map(m => ({ key: m.id, href: `#/course/${m.id}`, text: courseTitle(op, m), side: m.side, tip: m.repertoire }))),
     ]
     // Courses not written yet: the page's own ("The Nimzo-Indian Defense and Grünfeld Defense courses are
@@ -196,7 +196,7 @@ function courseBox(cat, s, hasLessons) {
     const coming = [
         ...families.map(ch => {
             const all = chapterOps(cat, ch), later = all.filter(op => !isBuilt(op)), ready = all.filter(isBuilt)
-            return later.length ? ` On the ${familyName(ch)} page, ${ready.length ? `${courseNames(ready)} ready; ` : ""}${courseNames(later)} coming soon.` : ""
+            return later.length ? ` On the ${familyName(cat, ch)} page, ${ready.length ? `${courseNames(ready)} ready; ` : ""}${courseNames(later)} coming soon.` : ""
         }),
         soon.length ? ` ${upper(courseNames(soon))} coming soon.` : ""]
     return h("section", { class: "course-box" },
@@ -224,8 +224,8 @@ function plannedBox(ops) {
             h("span", { class: `side-chip ${it.side}`, "aria-hidden": "true" }), it.text)))))
 }
 
-/** A family's link names it without the moves in its card title: "Sicilian Defense (1...c5)" gives "Sicilian Defense". */
-const familyName = ch => ch.title.replace(/\s*\([^)]*\)\s*$/, "")
+/** A family's link names it by its page, without the moves: "Sicilian Defense", and "Indian Defenses" for the "Other Indian Defenses" card. */
+const familyName = (cat, ch) => (((cat.surveys || []).find(x => x.id === ch.headers.Page) || {}).name || ch.title).replace(/\s*\([^)]*\)\s*$/, "")
 
 /**
  * The box's rows when the page lists them in courses.json ("boxRows": rows of course ids and
