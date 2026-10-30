@@ -714,13 +714,98 @@
         {
             "id": "sicilian-dragon",
             "name": "Sicilian Dragon",
-            "eco": "B70",
-            "moves": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6",
-            "summary": "Black puts the king's bishop on the long diagonal, aimed at White's queenside. With the Accelerated and Hyperaccelerated Dragon.",
+            "eco": "B20",
+            "moves": "1. e4 c5",
+            "games": "Sicilian",
+            "puzzles": "content/sicilian-dragon-puzzles.pgn",
+            "summary": "Black puts the king's bishop on the long diagonal, aimed at White's queenside: the Dragon, the Accelerated Dragon and the Hyperaccelerated Dragon.",
             "courses": [
                 {
                     "id": "sicilian-dragon",
-                    "side": "both"
+                    "side": "both",
+                    "file": "content/sicilian-dragon.pgn",
+                    "repertoire": "As White: the Yugoslav Attack against the Dragon, the Maróczy Bind against the Accelerated Dragon, and the queen recapture against the Hyperaccelerated Dragon. As Black: the Dragon, with the central pawn break against early queenside castling, and the Accelerated and Hyperaccelerated move orders.",
+                    "summary": "Three move orders, one idea: Black fianchettoes the king's bishop on g7. In the Dragon, Black moves the d-pawn one square and brings out the king's knight before the fianchetto, so White can castle long and storm the kingside in the Yugoslav Attack. In the Accelerated Dragon, Black brings out the queen's knight and fianchettoes before moving the d-pawn; the pawn can then reach d5 in one move, which spoils the Yugoslav Attack, and White's best answer is the Maróczy Bind, with pawns on c4 and e4. In the Hyperaccelerated Dragon, Black fianchettoes on move 2: most games turn into the Accelerated Dragon, and White's one try of its own is to take back on d4 with the queen. The name comes from Fyodor Dus-Chotimirsky, to whom the pawn shape looked like the Draco constellation.",
+                    "why": {
+                        "text": "As White, the Dragon gives you a clear plan: castle on the queenside, push the kingside pawns and trade off Black's best bishop. Against the Accelerated Dragon, the Maróczy Bind gives you a lasting edge in space at almost no risk. Club players often go wrong against both, and the traps in this course punish the most common mistakes.\n\nAs Black, the Dragon is one of the sharpest ways to play for a win against the king's pawn: the bishop on g7 and the open c-file give real counterattacking chances. Stjepan Tomić calls it \"probably one of the best ways for black to fight for an advantage against e4 players\". The Accelerated and Hyperaccelerated move orders avoid the Yugoslav Attack, at the price of allowing the Maróczy Bind."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Yugoslav Attack, 9.O-O-O: 9...d5",
+                                "4% as Black",
+                                "White: Castle long and attack the king with the kingside pawns.\nBlack: Strike in the center at once and counterattack on the queenside."
+                            ],
+                            [
+                                "Yugoslav Attack: 9.Bc4",
+                                "4% as White",
+                                null
+                            ],
+                            [
+                                "Dragon Variation: 6.Bc4",
+                                "5% as Black",
+                                "White: Castle short and use the bishop against f7.\nBlack: Develop as usual and press on the c-file."
+                            ],
+                            [
+                                "Classical Variation: 6.Be2",
+                                "3% as Black",
+                                "White: Castle short and play slowly in the center.\nBlack: Win the bishop pair and play on the queenside."
+                            ],
+                            [
+                                "Levenfish Variation: 6.f4",
+                                "1% as Black",
+                                "White: Push the e-pawn to chase Black's knight.\nBlack: Stop the e-pawn and build a strong pawn center."
+                            ],
+                            [
+                                "Accelerated Dragon, Maróczy Bind: 5.c4",
+                                "9% as White\n3% as Black",
+                                "White: Hold the center with pawns and keep Black cramped.\nBlack: Trade a pair of knights and stay solid; don't wait passively."
+                            ],
+                            [
+                                "Hyperaccelerated Dragon: 4.Qxd4",
+                                "4% as White\n6% as Black",
+                                "White: Gain time on Black's pieces and push the e-pawn.\nBlack: Develop with gain of time and don't move the f6 knight too early."
+                            ]
+                        ],
+                        "note": "How often: the share of your Sicilian games that reach the line, from the side you play in it, counting every move order. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced: the Topalov Variation, the Fianchetto, and the Accelerated and Hyperaccelerated Dragon's other lines."
+                    }
+                }
+            ],
+            "furtherStudy": [
+                {
+                    "title": "Sicilian Dragon (part 1), Yugoslav Attack | Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=Q4_OTquKti0"
+                },
+                {
+                    "title": "Sicilian Dragon (part 2), Levenfish, Fianchetto, Classical | Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=Up_bhR0McTQ"
+                },
+                {
+                    "title": "Accelerated Dragon · Basics, Strategy, Theory, Maroczy Bind and all the sidelines",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=9uBJtJY96Pw"
+                },
+                {
+                    "title": "Hyperaccelerated Dragon · Basics, Strategy, Theory, Transpositions",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=TfEVReirrtI"
+                },
+                {
+                    "title": "How to play the Sicilian Dragon variation?",
+                    "by": "IM Asaf Givon",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=am6LTtJqntw"
                 }
             ]
         },

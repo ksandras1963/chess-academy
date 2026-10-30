@@ -881,6 +881,81 @@ None.
 | Trap: 9...O-O? and e5 (10...dxe5) | 4.19 | B21 Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation |
 | Trap: 6...Nf6? and Bxf7+ (Main line) | 6.06 | B21 Sicilian Defense: Smith-Morra Gambit Accepted |
 | Trap: 6...Nf6? and Bxf7+ (7...dxe5) | 0.70 | B21 Sicilian Defense: Smith-Morra Gambit Accepted |
+## Sicilian Dragon — both sides (`sicilian-dragon`)
+
+37 chapters, 31 drillable lines (basic 9, traps 14, advanced 8), 363 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| Yugoslav Attack, 9.O-O-O: 9...d5 | 9...d5 | Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line | B76 | ok |
+| Yugoslav Attack: 9.Bc4 | 9.Bc4 | Sicilian Defense: Dragon Variation, Yugoslav Attack, Old Line | B78 | ok |
+| Dragon Variation: 6.Bc4 | 6.Bc4 | Sicilian Defense: Dragon Variation | B70 | ok |
+| Classical Variation: 6.Be2 | 6.Be2 | Sicilian Defense: Dragon Variation, Classical Variation, Battery Variation | B73 | ok |
+| Levenfish Variation: 6.f4 | 6.f4 | Sicilian Defense: Dragon Variation, Levenfish Variation | B71 | ok |
+| Accelerated Dragon, Maróczy Bind: 5.c4 | 5.c4 | Sicilian Defense: Accelerated Dragon, Maróczy Bind | B38 | ok |
+| Hyperaccelerated Dragon: 4.Qxd4 | 4.Qxd4 | Sicilian Defense: Hyperaccelerated Dragon | B27 | ok |
+| Yugoslav Attack, Topalov Variation: 11...Nxd4 | 11...Nxd4 | Sicilian Defense: Dragon Variation, Yugoslav Attack, Topalov Variation | B78 | ok |
+| Yugoslav Attack, 9.O-O-O d5: 12.Bd4 | 12.Bd4 | Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line | B76 | ok |
+| Fianchetto Variation: 6.g3 | 6.g3 | Sicilian Defense: Dragon Variation, Fianchetto Variation | B70 | ok |
+| Accelerated Dragon: 5.Nc3 | 5.Nc3 | Sicilian Defense: Accelerated Dragon, Modern Variation | B34 | ok |
+| Accelerated Dragon: 5.Nxc6 | 5.Nxc6 | Sicilian Defense: Accelerated Dragon, Exchange Variation | B34 | ok |
+| Hyperaccelerated Dragon: 3.c3 | 3.c3 | Sicilian Defense: Alapin Variation, Barmen Defense | B22 | ok |
+| Hyperaccelerated Dragon: 3.Bc4 | 3.Bc4 | Sicilian Defense: Hyperaccelerated Dragon | B27 | ok |
+| Trap: 6...Ng4? and Bb5+ | 7.Bb5+ | Sicilian Defense: Dragon Variation | B72 | ok |
+| Trap: the c-file and ...Nxd4 | 11...Nxd4 | Sicilian Defense: Dragon Variation, Yugoslav Attack, Old Line | B78 | ok |
+| Trap: 14.Qxa8? and ...Bf5 | 14...Bf5 | Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line | B76 | ok |
+| Trap: 14.Bxf8? and ...Qxf8 | 14...Qxf8 | Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line | B76 | ok |
+| Trap: 6...Bg7? and e5 in the Levenfish | 9.Bb5+ | Sicilian Defense: Dragon Variation, Levenfish Variation | B71 | ok |
+| Trap: 7.Qd2?! and ...Ng4 | 7...Ng4 | Sicilian Defense: Accelerated Dragon, Modern Variation | B34 | ok |
+| Trap: 15.Bxc5? and ...dxc5 | 15...dxc5 | Sicilian Defense: Accelerated Dragon, Maróczy Bind | B38 | ok |
+| Trap: 6...Bg7? and e5 in the Hyperaccelerated | 7.e5 | Sicilian Defense: Hyperaccelerated Dragon | B27 | ok |
+| Trap: 8...dxe3?? and Bxf7+ | 9.Bxf7+ | Sicilian Defense: Alapin Variation, Barmen Defense | B22 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| Yugoslav Attack, 9.O-O-O: 9...d5 (Main line) | 0.46 | B76 Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line |
+| Yugoslav Attack: 9.Bc4 (Main line) | 1.27 | B78 Sicilian Defense: Dragon Variation, Yugoslav Attack, Old Line |
+| Dragon Variation: 6.Bc4 (Main line) | -0.26 | B70 Sicilian Defense: Dragon Variation |
+| Classical Variation: 6.Be2 (Main line) | -0.03 | B73 Sicilian Defense: Dragon Variation, Classical Variation, Battery Variation |
+| Levenfish Variation: 6.f4 (Main line) | 0.57 | B71 Sicilian Defense: Dragon Variation, Levenfish Variation |
+| Accelerated Dragon, Maróczy Bind: 5.c4 (Maróczy Bind, as White) | 0.64 | B38 Sicilian Defense: Accelerated Dragon, Maróczy Bind |
+| Accelerated Dragon, Maróczy Bind: 5.c4 (Maróczy Bind, as Black) | -0.64 | B38 Sicilian Defense: Accelerated Dragon, Maróczy Bind |
+| Hyperaccelerated Dragon: 4.Qxd4 (Hyperaccelerated Dragon, as White) | 0.44 | B27 Sicilian Defense: Hyperaccelerated Dragon |
+| Hyperaccelerated Dragon: 4.Qxd4 (Hyperaccelerated Dragon, as Black) | -0.44 | B27 Sicilian Defense: Hyperaccelerated Dragon |
+| Yugoslav Attack, Topalov Variation: 11...Nxd4 (Topalov Variation, as White) | 0.05 | B78 Sicilian Defense: Dragon Variation, Yugoslav Attack, Topalov Variation |
+| Yugoslav Attack, Topalov Variation: 11...Nxd4 (Topalov Variation, as Black) | -0.05 | B78 Sicilian Defense: Dragon Variation, Yugoslav Attack, Topalov Variation |
+| Yugoslav Attack, 9.O-O-O d5: 12.Bd4 (Main line) | -0.82 | B76 Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line |
+| Fianchetto Variation: 6.g3 (Main line) | 0.02 | B70 Sicilian Defense: Dragon Variation, Fianchetto Variation |
+| Accelerated Dragon: 5.Nc3 (Main line) | 0.62 | B34 Sicilian Defense: Accelerated Dragon, Modern Variation |
+| Accelerated Dragon: 5.Nxc6 (Main line) | -0.10 | B34 Sicilian Defense: Accelerated Dragon, Exchange Variation |
+| Hyperaccelerated Dragon: 3.c3 (Main line) | -0.25 | B22 Sicilian Defense: Alapin Variation, Barmen Defense |
+| Hyperaccelerated Dragon: 3.Bc4 (Main line) | -0.21 | B27 Sicilian Defense: Hyperaccelerated Dragon |
+| Trap: 6...Ng4? and Bb5+ (Main line) | 5.25 | B72 Sicilian Defense: Dragon Variation |
+| Trap: 6...Ng4? and Bb5+ (7...Nd7) | 4.90 | B72 Sicilian Defense: Dragon Variation |
+| Trap: the c-file and ...Nxd4 (Main line) | 4.34 | B78 Sicilian Defense: Dragon Variation, Yugoslav Attack, Old Line |
+| Trap: the c-file and ...Nxd4 (12.Qxd4) | 3.43 | B78 Sicilian Defense: Dragon Variation, Yugoslav Attack, Old Line |
+| Trap: 14.Qxa8? and ...Bf5 (Main line) | 1.60 | B76 Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line |
+| Trap: 14.Bxf8? and ...Qxf8 (Main line) | 0.92 | B76 Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line |
+| Trap: 6...Bg7? and e5 in the Levenfish (Main line) | 100.00 | B71 Sicilian Defense: Dragon Variation, Levenfish Variation |
+| Trap: 6...Bg7? and e5 in the Levenfish (9...Bd7) | 3.69 | B71 Sicilian Defense: Dragon Variation, Levenfish Variation |
+| Trap: 7.Qd2?! and ...Ng4 (Main line) | 0.57 | B34 Sicilian Defense: Accelerated Dragon, Modern Variation |
+| Trap: 15.Bxc5? and ...dxc5 (Main line) | 2.30 | B38 Sicilian Defense: Accelerated Dragon, Maróczy Bind |
+| Trap: 6...Bg7? and e5 in the Hyperaccelerated (Main line) | 1.09 | B27 Sicilian Defense: Hyperaccelerated Dragon |
+| Trap: 6...Bg7? and e5 in the Hyperaccelerated (7...Ng4) | 3.93 | B27 Sicilian Defense: Hyperaccelerated Dragon |
+| Trap: 6...Bg7? and e5 in the Hyperaccelerated (7...Nh5) | 3.17 | B27 Sicilian Defense: Hyperaccelerated Dragon |
+| Trap: 8...dxe3?? and Bxf7+ (Main line) | 4.89 | B22 Sicilian Defense: Alapin Variation, Barmen Defense |
 ## Ruy Lopez — both sides (`ruy-lopez`)
 
 62 chapters, 91 drillable lines (basic 10, traps 10, advanced 71), 805 learner moves.
@@ -2026,6 +2101,24 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 12 | Delayed Alapin: the knight on e4 | White | 5.Qa4+ | 1 | 5...Nc6 (2 half-moves) | ok |
 | 13 | Smith-Morra: the bishop on f7 | White | 7.Bxf7+ | 2 | none | ok |
 | 14 | Wing Gambit: the check on e5 | Black | 5...Qe5+ | 1 | 6.Be2 (2 half-moves) | ok |
+## Puzzles: Sicilian Dragon (`content/sicilian-dragon-puzzles.pgn`)
+
+10 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | Dragon: the knight on g4 | White | 7.Bb5+ | 1 | 7...Bd7 (2 half-moves) | ok |
+| 2 | Yugoslav: the loose bishop on c4 | Black | 11...Nxd4 | 1 | 12.Bxd4 (2 half-moves) | ok |
+| 3 | Yugoslav: the poisoned rook | Black | 14...Bf5 | 1 | 15.Qxf8+ (3 half-moves) | ok |
+| 4 | Yugoslav: the knight jump to d5 | White | 12.Nd5 | 1 | 12...Qxd2 (4 half-moves) | ok |
+| 5 | Levenfish: the bishop check | White | 9.Bb5+ | 1 | 9...Kf8 (4 half-moves) | ok |
+| 6 | Levenfish: the knight on d5 | White | 9.Bb5+ | 1 | 9...Bd7 (2 half-moves) | ok |
+| 7 | Levenfish: the fork on f4 | Black | 8...Nxf4 | 1 | 9.Bxf4 (2 half-moves) | ok |
+| 8 | Hyperaccelerated: the knight with no square | White | 7.e5 | 1 | 7...Ng8 (2 half-moves) | ok |
+| 9 | Hyperaccelerated: the poisoned bishop | White | 9.Bxf7+ | 1 | 9...Kxf7 (2 half-moves) | ok |
+| 10 | Hyperaccelerated: take the bishop | Black | 6...axb5 | 1 | 7.exf6 (8 half-moves) | ok |
 ## Puzzles: Ruy Lopez (`content/ruy-lopez-puzzles.pgn`)
 
 11 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).

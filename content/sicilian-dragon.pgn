@@ -1,0 +1,433 @@
+[Chapter "Key ideas: The Yugoslav Attack"]
+[Side "white"]
+[Type "ideas"]
+
+{Against the Dragon, White castles on the queenside and storms Black's king with the kingside pawns. Black's fianchetto pawn is the target: White pushes the h-pawn to open the h-file and trades off the bishop on g7, Black's best defender. Stjepan Tomić: the Yugoslav is "more of a setup than a variation", and Dragon players meet it more than anything else.}
+*
+
+[Chapter "The f-pawn before the queen"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "6...Bg7"]
+
+{Once Black's bishop is on g7, a knight jump to g4 would hit White's bishop on e3, and a bishop check on b5 no longer stops it, because Black's king can step to f8. So White guards g4 with the f-pawn first. It also guards e4 and gets ready for g4 later.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 {[%cal Gf6g4,Gg4e3] The idea starts from this position.}
+7. f3 {[%csl Gg4,Ge4] Now ...Ng4 is impossible.} O-O 8. Qd2 Nc6 {Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "The bishop stops ...d5"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "8...Nc6"]
+
+{Black's best answer to a queenside castle is the pawn break in the center, ...d5, which opens lines against White's king. The bishop on c4 watches d5 and takes that break away. Stjepan Tomić advises White to play it "just not to give black the option of playing d5".}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 {[%cal Gd7d5] The idea starts from this position.}
+9. Bc4 {[%cal Gc4d5] The bishop covers d5.} Bd7 10. O-O-O {White castles only now, with ...d5 ruled out. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "Open the h-file, trade the bishop"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "11...Ne5"]
+
+{White's attack follows one recipe: the h-pawn runs to h5 to open the h-file, and the dark-squared bishop goes to h6 to trade off the bishop on g7. Without that bishop, Black's king has few defenders.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7 10. O-O-O Rc8 11. Bb3 Ne5 {[%cal Gh2h4,Ge3h6] The idea starts from this position.}
+12. h4 {The h-pawn goes forward.} h5 {Black stops it.} 13. Bh6 {[%cal Gh6g7] The queen and bishop line up to trade off the bishop on g7. Stockfish: +0.3, slightly better for White.} *
+
+[Chapter "Key ideas: The Maróczy Bind"]
+[Side "white"]
+[Type "ideas"]
+
+{Against the Accelerated Dragon, White doesn't need to attack. With pawns on c4 and e4, White holds the d5 square for good and squeezes Black. All four presenters call it White's best answer to the Accelerated Dragon.}
+*
+
+[Chapter "Pawns on c4 and e4"]
+[Type "concept"]
+[Idea "white"]
+[Diagram "4...g6"]
+
+{Black's knight is on c6, not f6, so White's e-pawn is not attacked, and the c-pawn can come to c4. The two pawns grip d5, so Black's freeing ...d5 never comes. Stjepan Tomić: "there's no point in not utilizing what you've been given for free."}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 {[%cal Gc2c4] The idea starts from this position.}
+5. c4 {[%csl Gc4,Ge4,Gd5] The Maróczy Bind.} Bg7 6. Be3 Nf6 7. Nc3 O-O 8. Be2 d6 9. O-O {White has more space, and Black has no pawn break. Stockfish: +0.7, slightly better for White.} *
+
+[Chapter "Key ideas: The Dragon"]
+[Side "black"]
+[Type "ideas"]
+
+{In the Dragon, Black fianchettoes the king's bishop, castles short and counterattacks on the queenside. The bishop on g7 is Black's best piece: it defends the king and aims at White's queenside. Stjepan Tomić calls the Dragon "probably one of the best ways for black to fight for an advantage against e4 players", but warns that one wasted move can lose.}
+*
+
+[Chapter "Counterattack on the queenside"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "11.Bb3"]
+
+{Black races White on the other wing. A rook on the half-open c-file, then the queenside pawns run at White's king and at the bishop on b3. Stjepan Tomić's favourite way: trade knights and push the b-pawn at once, "a rare case in the Dragon that black had started his attack before white."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7 10. O-O-O Rc8 11. Bb3 {[%cal Gb7b5,Ga7a5] The idea starts from this position.}
+11... Nxd4 12. Bxd4 b5 {[%cal Gb5b4,Gb4c3] The b-pawn heads for b4, to chase the knight from c3.} 13. h4 a5 {[%cal Ga5a4,Ga4b3] And the a-pawn heads for a4, to hit the bishop on b3. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "The d5 break against early castling"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "9.O-O-O"]
+
+{If White castles before guarding d5, Black strikes in the center at once. Stjepan Tomić: "If your opponent doesn't play Bc4, you most probably have time to play the move d5." The center opens while White's king is on the queenside, in front of Black's bishop.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. O-O-O {[%cal Gd6d5] The idea starts from this position.}
+9... d5 {[%cal Gg7b2] Black frees the game.} 10. exd5 Nxd5 {The bishop on g7 and the open lines point at White's king. Stockfish: +0.7, slightly better for White.} *
+
+[Chapter "Stop e5 in the Levenfish"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "6.f4"]
+
+{When White pushes the f-pawn to f4, the e-pawn threatens to push on to e5 and chase the knight. Black stops it with the queen's knight, which hits the knight on d4. Stjepan Tomić warns that the bishop move to g7 here is risky: see the traps.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. f4 {[%cal Ge4e5] The idea starts from this position.}
+6... Nc6 {[%cal Gc6d4] Hits the knight, so e5 can't come at once.} 7. Nxc6 bxc6 8. e5 Nd7 {The bishop on f8 still guards d6, so Black is fine. Stockfish: −0.3, slightly better for Black.} *
+
+[Chapter "Key ideas: The Accelerated and Hyperaccelerated Dragon"]
+[Side "black"]
+[Type "ideas"]
+
+{In these move orders Black fianchettoes before moving the d-pawn. The pawn stays on d7, so it can reach d5 in one move, and the Yugoslav Attack loses its sting. The price is that White can set up the Maróczy Bind, and Black must know how to live with it.}
+*
+
+[Chapter "The d-pawn reaches d5 in one move"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "8.Qd2"]
+
+{If White plays the Yugoslav set-up against the Accelerated Dragon, Black breaks in the center with a single pawn move. Stjepan Tomić: "black has successfully played d5 in a single move, absolutely destroying all of white's chances on the king's side."}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nc3 Bg7 6. Be3 Nf6 7. f3 O-O 8. Qd2 {[%cal Gd7d5] The idea starts from this position.}
+8... d5 {[%csl Gd5] One move, and Black has freed the game.} 9. Nxc6 bxc6 {Black's center pawns and the g7 bishop are ready for White's king. Stockfish: −0.5, slightly better for Black.} *
+
+[Chapter "Living with the Maróczy Bind"]
+[Type "concept"]
+[Idea "black"]
+[Diagram "12.f3"]
+
+{Against the Maróczy Bind, Black trades a pair of knights, puts the light-squared bishop on c6, gains queenside space with the a-pawn and brings the other knight to c5. Stjepan Tomić: "As soon as black achieves a5 and knight c5, I've never broken through this personally."}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4 Bg7 6. Be3 Nf6 7. Nc3 O-O 8. Be2 d6 9. O-O Bd7 10. Qd2 Nxd4 11. Bxd4 Bc6 12. f3 {[%cal Ga7a5,Gf6d7,Gd7c5] The idea starts from this position.}
+12... a5 13. b3 Nd7 14. Be3 Nc5 {[%csl Gc5] The knight on c5 can't be chased by a pawn, and Black holds the position. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "Yugoslav Attack, 9.O-O-O: 9...d5"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line"]
+[ECO "B76"]
+
+{Six White players in ten castle at once instead of playing the bishop to c4. Black answers with the central break ...d5. After the trades, White can win a pawn, but Black's two bishops and the open files against White's king are worth more. Stjepan Tomić: "I would always rather have black in this position regardless of having lost a pawn."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 {This is the Dragon Variation.}
+6. Be3 {This is the Yugoslav Attack, the most common move.} Bg7 7. f3 O-O 8. Qd2 Nc6
+9. O-O-O {White castles before guarding d5.} d5 {[%cal Gd5e4] Strikes in the center at once.}
+10. exd5 Nxd5 11. Nxc6 bxc6 12. Nxd5 {The most common move. Against 12.Bd4, see Advanced.} cxd5
+13. Qxd5 {White wins a pawn.} Qc7 {[%cal Gc7c2] Don't trade queens: the queen eyes c2, and the rook on a8 is poisoned (see the traps).}
+14. Qc5 Qb7 {[%cal Gb7b2] Black keeps the queens on and hits b2.}
+15. Bd4 {The most common move: White blocks the long diagonal.} Bf5 {[%cal Gf5c2] Both bishops aim at White's king. Black has full play for the pawn. Stockfish: −0.4, slightly better for Black.}
+*
+
+[Chapter "Yugoslav Attack: 9.Bc4"]
+[Side "white"]
+[Type "line"]
+[Opening "Sicilian Defense: Dragon Variation, Yugoslav Attack, Old Line"]
+[ECO "B78"]
+
+{The main line of the Yugoslav Attack. White guards d5 with the bishop, castles long and attacks on the kingside, while Black counterattacks on the c-file. Stjepan Tomić advises White to play 9.Bc4 rather than castle at once, "just not to give black the option of playing d5". Both sides race, and one wasted move can decide the game.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 {This is the Yugoslav Attack.} Bg7
+7. f3 {Stops ...Ng4, which would hit the e3 bishop.} O-O 8. Qd2 Nc6
+9. Bc4 {[%cal Gc4d5] Stops ...d5.} Bd7 {Half of Black players develop the bishop here.}
+10. O-O-O Rc8 {[%cal Gc8c4] The rook eyes the bishop on c4.}
+11. Bb3 {The bishop must leave the c-file at once: see the traps.} Ne5 {The most common move. Against 11...Nxd4, the Topalov Variation, see Advanced.}
+12. Kb1 {Takes the king off the c-file and out of checks.} Nc4 13. Bxc4 Rxc4
+14. g4 {[%cal Gg4g5] White's attack starts first: the g-pawn chases the f6 knight.} b5 {Black offers a pawn to open lines.}
+15. b3 {[%cal Gb3c4] Chases the rook first. Stjepan Tomić advises not grabbing the b5 pawn at once.} Rc8 {White has the faster attack. Stockfish: +1.4, clearly better for White.}
+*
+
+[Chapter "Dragon Variation: 6.Bc4"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Dragon Variation"]
+[ECO "B70"]
+
+{About one White player in six puts the bishop on c4 at once and castles short. Stjepan Tomić calls it "a great way to surprise black". Black uses the same moves as against the Yugoslav: bishop to d7, rook to c8, and pressure on the c-file.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Bc4 {The bishop aims at f7.} Bg7
+7. O-O {The most common move.} O-O 8. Be3 Nc6 9. h3 {Stops ...Ng4.} Bd7
+10. Qd2 Rc8 {[%cal Gc8c4] The rook eyes the bishop on c4.}
+11. Bb3 Na5 {[%cal Ga5b3] The knight goes after the bishop, White's best attacking piece. Stockfish: +0.1, equal.}
+*
+
+[Chapter "Classical Variation: 6.Be2"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Dragon Variation, Classical Variation, Battery Variation"]
+[ECO "B73"]
+
+{With the bishop on e2, White plans to castle short and play calmly. Stjepan Tomić: "less fun... there won't be as much fireworks". Against the queen on d2, he recommends the knight jump to g4: Black wins White's light-squared bishop and gets the bishop pair.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be2 {This is the Classical Variation.} Bg7
+7. Be3 {The most common move.} Nc6 8. O-O O-O 9. Qd2 Ng4 {[%cal Gg4e3] Hits the bishop on e3. Stjepan Tomić: don't take on d4, play ...Ng4.}
+10. Bxg4 {White keeps the dark-squared bishop.} Bxg4 {Black has the bishop pair.}
+11. f3 {The most common move.} Bd7 12. Rad1 Rc8 {[%cal Gc8c3] Black develops and plays on the c-file. Stockfish: +0.1, equal.}
+*
+
+[Chapter "Levenfish Variation: 6.f4"]
+[Side "black"]
+[Type "line"]
+[Opening "Sicilian Defense: Dragon Variation, Levenfish Variation"]
+[ECO "B71"]
+
+{White pushes the f-pawn to prepare e5. Black stops the push with the queen's knight and, in the main line, puts the king's bishop on e7, not g7. Stjepan Tomić: "your bishop is going to go to e7, which not many dragon players even imagine happening." Black gets a strong center and is fine.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. f4 {This is the Levenfish Variation. White prepares e5.} Nc6 {[%cal Gc6d4] Hits the knight. Not 6...Bg7?: see the traps.}
+7. Nxc6 {White trades so that e5 can come.} bxc6 8. e5 Nd7 {The bishop on f8 still guards d6.}
+9. exd6 exd6 10. Be3 Be7 {The bishop goes to e7 and guards d6.}
+11. Qd2 O-O 12. O-O-O d5 {[%csl Gc6,Gd5] Black has a strong center and no problems. Stockfish: −0.5, slightly better for Black.}
+*
+
+[Chapter "Accelerated Dragon, Maróczy Bind: 5.c4"]
+[Side "both"]
+[Type "line"]
+[Opening "Sicilian Defense: Accelerated Dragon, Maróczy Bind"]
+[ECO "B38"]
+
+{In the Accelerated Dragon, Black plays the knight to c6 and fianchettoes before moving the d-pawn. White's best answer, say all four presenters, is the Maróczy Bind: pawns on c4 and e4 that hold d5. Black's answer is to trade a pair of knights, put the bishop on c6 and the other knight on c5. Stjepan Tomić: "if you don't break the bind, it's a two-result game", and in practice it is usually drawn.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 {This is the Accelerated Dragon.}
+5. c4 {[%csl Gc4,Ge4] This is the Maróczy Bind.} Bg7 6. Be3 Nf6 7. Nc3 O-O 8. Be2 d6 9. O-O Bd7
+10. Qd2 Nxd4 {Trading knights gives Black's pieces more room.} 11. Bxd4 Bc6 {[%cal Gc6e4] The bishop hits e4.}
+12. f3 a5 {[%cal Ga5a4] Gains space on the queenside.} 13. b3 {Stops ...a4.} Nd7 {[%cal Gd7c5] The knight heads for c5 and offers a trade of dark-squared bishops.}
+14. Be3 {White keeps the bishop.} Nc5 {[%csl Gc5] A knight that no pawn can chase.}
+15. Rab1 {White prepares a3 and b4. Not 15.Bxc5?: see the traps. White has more space; Black is solid. Stockfish: +0.5, slightly better for White.}
+*
+
+[Chapter "Hyperaccelerated Dragon: 4.Qxd4"]
+[Side "both"]
+[Type "line"]
+[Opening "Sicilian Defense: Hyperaccelerated Dragon"]
+[ECO "B27"]
+
+{In the Hyperaccelerated Dragon, Black fianchettoes on move 2. If White takes back on d4 with the knight, the game usually becomes the Accelerated Dragon. Taking with the queen is the one line of its own: the queen hits the rook on h8. Stjepan Tomić: "tactically, the move Qxd4 introduces a lot of ways for black to lose the game"; he would take White.}
+1. e4 c5 2. Nf3 g6 {This is the Hyperaccelerated Dragon.} 3. d4 cxd4
+4. Qxd4 {[%cal Gd4h8] The queen hits the rook.} Nf6 {The only good move.}
+5. Nc3 {Stjepan Tomić's choice.} Nc6 {Gains time on the queen.}
+6. Qa4 {[%cal Ga4e8] The queen pins the d-pawn and watches g4.} d6 {Not 6...Bg7?, which loses a piece: see the traps.}
+7. e5 dxe5 8. Nxe5 Bd7 {[%cal Gd7a4] Threatens ...Nxe5 with a discovered attack on the queen.}
+9. Nxd7 Qxd7 10. Be3 Bg7 11. Rd1 Qc8 12. Be2 O-O 13. O-O {White's queenside pawns are a little stronger; Black is safe. Stockfish: +0.5, slightly better for White.}
+*
+
+[Chapter "Yugoslav Attack, Topalov Variation: 11...Nxd4"]
+[Side "both"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Dragon Variation, Yugoslav Attack, Topalov Variation"]
+[ECO "B78"]
+
+{Instead of the knight jump to e5, Black trades knights and throws the b-pawn forward at once. Stjepan Tomić calls it "a great surprise weapon for players with black": "a rare case in the Dragon that black had started his attack before white." The play is sharp on both wings.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7 10. O-O-O Rc8 11. Bb3
+11... Nxd4 {This is the Topalov Variation.} 12. Bxd4 b5 {Eight Black players in ten push the b-pawn at once.}
+13. h4 {White races too.} a5 {[%cal Ga5a4] Threatens ...a4, trapping the bishop.}
+14. h5 a4 15. Bxf6 {An in-between move: White trades before saving the bishop.} exf6 {Stjepan Tomić: take back with the e-pawn, to bring more defenders to the king.}
+16. Bd5 f5 {[%cal Gg7b2] The bishop on g7 is free again. Stockfish: +0.3, slightly better for White.}
+*
+
+[Chapter "Yugoslav Attack, 9.O-O-O d5: 12.Bd4"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line"]
+[ECO "B76"]
+
+{A third of White players trade bishops on d4 instead of winning the pawn on d5. Black plays ...e5 and develops the light-squared bishop to e6. IM Asaf Givon recommends this line for Black.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. O-O-O d5 10. exd5 Nxd5 11. Nxc6 bxc6
+12. Bd4 {Tries to trade Black's best bishop.} e5 {Gains time on the bishop.}
+13. Bc5 Be6 {[%cal Gf8c5] Black doesn't need to save the rook: see the traps for 14.Bxf8?.}
+14. Ne4 {The most common move.} Re8 {[%csl Gc6,Ge5] Black has a strong center and active pieces; White keeps a small edge. Stockfish: +0.7, slightly better for White.}
+*
+
+[Chapter "Fianchetto Variation: 6.g3"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Dragon Variation, Fianchetto Variation"]
+[ECO "B70"]
+
+{White fianchettoes too and plays on the queenside. Stjepan Tomić's main line: Black prepares ...b5 with the rook on b8 and the a-pawn, and the g7 bishop presses White's queenside. Neither side has much, and Black is comfortable.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. g3 Bg7 7. Bg2 O-O 8. O-O Nc6
+9. Nde2 {The knight avoids the trade and supports the center.} Rb8 {[%cal Gb7b5] Prepares ...b5.}
+10. a4 a6 11. Nd5 b5 12. axb5 axb5 {[%cal Gb8b2] Black has play on the b-file and the long diagonal. Stockfish: −0.1, equal.}
+*
+
+[Chapter "Accelerated Dragon: 5.Nc3"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Accelerated Dragon, Modern Variation"]
+[ECO "B34"]
+
+{Almost half of White players answer the Accelerated Dragon with the knight to c3, often aiming for a Yugoslav set-up. But with the d-pawn still on d7, Black breaks with ...d5 in one move against the f-pawn and queen set-up. Against the bishop to c4 instead, Black castles and plays ...d6, reaching the main-line Dragon.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nc3 Bg7 6. Be3 Nf6
+7. f3 {The most common move. Against 7.Qd2?, see the traps.} O-O 8. Qd2 d5 {[%cal Gd5e4] One move, and Black has freed the game.}
+9. Nxc6 {The most common move.} bxc6 10. O-O-O Qc7 {[%cal Gc7c2] The queen eyes White's king.}
+11. exd5 Nxd5 {Black's pieces are active and White's king is exposed. Stockfish: −0.8, slightly better for Black.}
+*
+
+[Chapter "Accelerated Dragon: 5.Nxc6"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Accelerated Dragon, Exchange Variation"]
+[ECO "B34"]
+
+{White trades knights at once. Take back toward the center with the b-pawn: Black gets more center pawns and the half-open b-file. Stjepan Tomić: after the trade "you have given black a positional advantage... any endgame is going to be favorable for black". White tries to break up Black's pawns with the queen and the e-pawn.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nxc6 bxc6 {Toward the center.}
+6. Qd4 {[%cal Gd4h8] The most common move: the queen hits the rook.} Nf6 7. e5 Nd5 8. e6 {Hits d7 and f7.} f6 {The main move.}
+9. exd7+ Bxd7 10. Bc4 e5 {[%csl Gc6,Ge5] Black has a big center and a safe king. Stockfish: 0.0, equal.}
+*
+
+[Chapter "Hyperaccelerated Dragon: 3.c3"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Alapin Variation, Barmen Defense"]
+[ECO "B22"]
+
+{One White player in six answers the Hyperaccelerated Dragon with c3, an Alapin. Stjepan Tomić: "drop your hopes of playing the dragon... play d5 on move 3." When White's bishop comes to e3, take on d4 at once, because the c5 pawn hangs.}
+1. e4 c5 2. Nf3 g6 3. c3 d5 {Hits e4 at once. Against 4.e5, bring the bishop out to g4 before playing ...e6.}
+4. exd5 Qxd5 5. d4 Bg7 6. Be3 {The most common move.} cxd4 {Stjepan Tomić: "if white goes Be3 at any point, you have to trade."}
+7. cxd4 Nf6 8. Nc3 Qa5 {[%cal Gg7d4] The isolated pawn on d4 is Black's target. Stockfish: +0.2, equal.}
+*
+
+[Chapter "Hyperaccelerated Dragon: 3.Bc4"]
+[Side "black"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Sicilian Defense: Hyperaccelerated Dragon"]
+[ECO "B27"]
+
+{One White player in six puts the bishop on c4. Stjepan Tomić: "Bc4 is really not a good move... black has an easy way to equalize." Black fianchettoes, and if White prepares d4 with c3, Black blunts the bishop with the e-pawn and hits the center with the d-pawn.}
+1. e4 c5 2. Nf3 g6 3. Bc4 Bg7 4. O-O Nc6 5. c3 {Prepares d4.} e6 {[%cal Ge6d5] Blunts the bishop and prepares ...d5.}
+6. d4 cxd4 7. cxd4 d5 {[%cal Gd5c4] Black hits the bishop and the center. Stockfish: +0.2, equal.}
+*
+
+[Chapter "Trap: 6...Ng4? and Bb5+"]
+[Side "white"]
+[Type "trap"]
+[Diagram "7.Bb5+"]
+[Opening "Sicilian Defense: Dragon Variation"]
+[ECO "B72"]
+
+{Before the bishop is on g7, the knight jump to g4 loses a piece. The check on b5 can only be blocked with a piece that then can't help the knight. IM Asaf Givon: "black has no good way to block this check."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Ng4? {Hits the bishop on e3.}
+7. Bb5+! {[%cal Gb5e8] Check.} Bd7? {The bishop on d7 is now pinned and can't defend g4.}
+(7... Nd7? 8. Qxg4 {The knight blocks the bishop on c8, so g4 falls. Stockfish: +5.1, winning for White.})
+8. Qxg4 {White has won a piece. Stockfish: +5.1, winning for White.}
+*
+
+[Chapter "Trap: the c-file and ...Nxd4"]
+[Side "black"]
+[Type "trap"]
+[Diagram "11...Nxd4"]
+[Opening "Sicilian Defense: Dragon Variation, Yugoslav Attack, Old Line"]
+[ECO "B78"]
+
+{Stjepan Tomić shows the trick: against the rook on c8, White's bishop must leave c4 at once. If it stays, Black trades on d4 and the rook takes it.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7 10. O-O-O Rc8 11. h4? {Natural, but the bishop is loose.}
+11... Nxd4! {Removes the bishop's defender.} 12. Bxd4 {White takes back.} (12. Qxd4 Ng4! {[%cal Gg4e3,Gg7d4] Hits the bishop on e3 and uncovers the g7 bishop on the queen. Stockfish: −3.6, winning for Black.})
+12... Rxc4 {Black has won a piece. Stockfish: −4.4, winning for Black.}
+*
+
+[Chapter "Trap: 14.Qxa8? and ...Bf5"]
+[Side "black"]
+[Type "trap"]
+[Diagram "14...Bf5"]
+[Opening "Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line"]
+[ECO "B76"]
+
+{In the main line against 9.O-O-O, four White players in ten take the rook on a8. Black's bishop then hits the queen and the c2 square at once, with mate on c2 threatened. White has to give the queen back for the second rook.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. O-O-O d5 10. exd5 Nxd5 11. Nxc6 bxc6 12. Nxd5 cxd5 13. Qxd5 Qc7
+14. Qxa8? {Grabs the rook.} Bf5! {[%cal Gf5c2,Gc7c2,Gf8a8] Threatens ...Qxc2 mate, and the rook on f8 now hits the queen.}
+15. Qxf8+ {White's best: take the other rook.} Kxf8 16. Bd3 {Black's queen and bishops are stronger than White's two rooks. Stockfish: −1.7, clearly better for Black.}
+*
+
+[Chapter "Trap: 14.Bxf8? and ...Qxf8"]
+[Side "black"]
+[Type "trap"]
+[Diagram "14...Qxf8"]
+[Opening "Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line"]
+[ECO "B76"]
+
+{In the 12.Bd4 line, the rook on f8 is offered. One White player in five takes it. Black then gets the dark squares and a direct attack on White's king. IM Asaf Givon: "A lot of people might be tempted to take the rook on f8."}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. O-O-O d5 10. exd5 Nxd5 11. Nxc6 bxc6 12. Bd4 e5 13. Bc5 Be6
+14. Bxf8? {Takes the rook.} Qxf8 {[%cal Gg7h6,Gh6d2] Threatens ...Bh6, pinning the queen to the king.}
+15. Nxd5 cxd5 {White's dark squares are bare, and Black's pieces pour in. Stockfish: −1.2, clearly better for Black.}
+*
+
+[Chapter "Trap: 6...Bg7? and e5 in the Levenfish"]
+[Side "white"]
+[Type "trap"]
+[Diagram "9.Bb5+"]
+[Opening "Sicilian Defense: Dragon Variation, Levenfish Variation"]
+[ECO "B71"]
+
+{GM Igor Smirnov's "evergreen trap": six Black players in ten play the natural bishop move, and after the pawn push to e5 the most common replies lose. The check on b5 can't be met well: the blocks are pinned or overloaded, and after the king move a knight check on e6 hits the queen.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. f4 Bg7? 7. e5! {[%cal Ge5f6] Chases the knight.} dxe5 8. fxe5 Ng4 {The knight hits e5.}
+9. Bb5+! {[%cal Gb5e8] Check.} Kf8? {Saves the knight, but the king is on the f-file.}
+(9... Bd7? 10. Qxg4 {The bishop on d7 is pinned, so the knight falls. Stockfish: +3.6, winning for White.})
+10. Ne6+! {[%cal Gd1d8] Check, and the queen on d1 hits the queen on d8.} Bxe6?? 11. Qxd8# {Mate.}
+*
+
+[Chapter "Trap: 7.Qd2?! and ...Ng4"]
+[Side "black"]
+[Type "trap"]
+[Diagram "7...Ng4"]
+[Opening "Sicilian Defense: Accelerated Dragon, Modern Variation"]
+[ECO "B34"]
+
+{Against the Accelerated Dragon, the Yugoslav set-up doesn't work. With Black's d-pawn on d7, there is no bishop check on b5, so the knight jump to g4 wins White's bishop pair at least. Stjepan Tomić: "there's simply no bishop b5 check."}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nc3 Bg7 6. Be3 Nf6 7. Qd2?! {Natural, but too early.}
+7... Ng4! {[%cal Gg4e3] Hits the bishop, which must guard the knight on d4.} 8. Nxc6 bxc6 9. Bd4? {Offers a trade of bishops.} Bh6! {[%cal Gh6d2] Pins the queen.}
+10. f4 e5! {[%cal Ge5d4,Gh6f4] Hits the bishop, and the pawn on f4 is pinned. Stockfish: −0.7, slightly better for Black.}
+*
+
+[Chapter "Trap: 15.Bxc5? and ...dxc5"]
+[Side "black"]
+[Type "trap"]
+[Diagram "15...dxc5"]
+[Opening "Sicilian Defense: Accelerated Dragon, Maróczy Bind"]
+[ECO "B38"]
+
+{In the Maróczy Bind, the knight on c5 looks annoying, but White must not take it. After Black takes back with the d-pawn, Black has a bind of his own on d4, and White can never cover that square. Stjepan Tomić: "This position is winning for black, believe it or not."}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4 Bg7 6. Be3 Nf6 7. Nc3 O-O 8. Be2 d6 9. O-O Bd7 10. Qd2 Nxd4 11. Bxd4 Bc6 12. f3 a5 13. b3 Nd7 14. Be3 Nc5
+15. Bxc5? {Gives up the good bishop.} dxc5! {[%csl Gd4] Black takes back toward the center and owns d4. The bishop on g7 and a knight on d4 are White's problem now. Stockfish: −2.4, winning for Black.}
+*
+
+[Chapter "Trap: 6...Bg7? and e5 in the Hyperaccelerated"]
+[Side "white"]
+[Type "trap"]
+[Diagram "7.e5"]
+[Opening "Sicilian Defense: Hyperaccelerated Dragon"]
+[ECO "B27"]
+
+{In the queen line of the Hyperaccelerated Dragon, more than half of Black players develop the bishop on move 6. But with the d-pawn pinned by the queen on a4, the e-pawn push leaves the knight on f6 with no good square: it must go back home or be lost. Stjepan Tomić: "Bg7 is unplayable."}
+1. e4 c5 2. Nf3 g6 3. d4 cxd4 4. Qxd4 Nf6 5. Nc3 Nc6 6. Qa4 Bg7? {Natural, but it loses.}
+7. e5! {[%cal Ge5f6] Chases the knight.} Ng8 {Three Black players in four retreat. Stjepan Tomić: "if you have to go Ng8, that's no good."}
+(7... Ng4? 8. Qxg4 {The queen guards g4, so the knight falls. Stockfish: +4.0, winning for White.})
+(7... Nh5? 8. g4 {[%cal Gg4h5] The knight is trapped. Stockfish: +3.3, winning for White.})
+8. Bf4 {[%cal Gf4e5] White develops with a big lead and keeps the pawn on e5. Stockfish: +1.1, clearly better for White.}
+*
+
+[Chapter "Trap: 8...dxe3?? and Bxf7+"]
+[Side "white"]
+[Type "trap"]
+[Diagram "9.Bxf7+"]
+[Opening "Sicilian Defense: Alapin Variation, Barmen Defense"]
+[ECO "B22"]
+
+{In the Hyperaccelerated Dragon against c3, White's bishop comes to e3 and seems to hang. Stjepan Tomić: "this is now immediately losing for black... the bishop can't be taken." The bishop sacrifice on f7 and a knight check on g5 win Black's queen.}
+1. e4 c5 2. Nf3 g6 3. c3 d5 4. exd5 Qxd5 5. d4 Bg7 6. Na3 cxd4 7. Bc4 Qe4+ 8. Be3 dxe3?? {Takes the bishop.}
+9. Bxf7+! {[%cal Gf7e8] Drags the king to f7.} Kxf7 10. Ng5+ {[%cal Gg5e4] Check, and the knight hits the queen. Stockfish: +4.7, winning for White.}
+*
+
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. e4 c5 2. Nf3 d6 {}
+(2... Nc6 3. d4 cxd4 4. Nxd4 g6 {Accelerated Dragon} 5. c4 {[%course both] Maróczy Bind} (5. Nc3 {}) (5. Nxc6 {}))
+(2... g6 {Hyperaccelerated Dragon} 3. d4 (3. c3 {}) (3. Bc4 {}) cxd4 4. Qxd4 {[%course both]})
+3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 {Dragon Variation}
+6. Be3 {Yugoslav Attack} (6. Bc4 {[%course black]}) (6. Be2 {[%course black] Classical Variation}) (6. f4 {[%course black] Levenfish Variation}) (6. g3 {Fianchetto Variation})
+6... Bg7 7. f3 O-O 8. Qd2 Nc6 9. O-O-O {[%course black]} (9. Bc4 {[%course white]}) *
