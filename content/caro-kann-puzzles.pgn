@@ -60,7 +60,7 @@
 
 1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. f3 exf3 5. Nxf3 Bg4 6. Bc4 e6! {[%cal Gc4f7] [%csl Ge6] Blocks the bishop's diagonal to f7. Now Black can develop the kingside in peace.}
 (6... Nf6? {Natural, but it walks into a trick.} 7. Bxf7+! Kxf7 8. Ne5+ Kg8 9. Nxg4 {The knight check forks the king and the bishop on g4. White has won back the pawn, and Black's king can no longer castle. Stockfish: +1.8, clearly better for White. And if 7.Ne5 instead, 7...Bxd1?? allows 8.Bxf7 mate.})
-(6... Bxf3?! {Gives up the bishop pair and the edge.} 7. Qxf3 e6 8. Be3 {White's bishops and quick development make up for the pawn. Stockfish: +0.1, equal.})
+(6... Bxf3!? {Playable: it also avoids the trap, but gives up the bishop pair and Black's edge.} 7. Qxf3 e6 8. Be3 {White's bishops and quick development make up for the pawn. Stockfish: +0.1, equal.})
 7. O-O Be7 8. h3 Bh5 {Black is a pawn up with a solid position. Stockfish: −1.0, clearly better for Black.}
 *
 
@@ -85,7 +85,7 @@
 
 1. e4 c6 2. d4 d5 3. f3 dxe4 4. fxe4 e5 5. dxe5? Qh4+! {[%cal Gh4e1,Gh4e4] Check, and the queen eyes the loose pawn on e4.}
 (5... Qxd1+? {Trades queens and lets White off the hook.} 6. Kxd1 Be6 7. Be3 {White is a pawn up for now and Black has no attack. Stockfish: +0.4, slightly better for White.})
-(5... Bb4+?! {Also gives check, but 6.c3 blocks it and the attack fades.} 6. c3 Qh4+ 7. Kd2 {Stockfish: +0.1, equal.})
+(5... Bb4+!? {Playable: also a check, but 6.c3 blocks it and the attack fades.} 6. c3 Qh4+ 7. Kd2 {Stockfish: +0.1, equal.})
 6. Kd2 {The best defense.}
 (6. g3? Qxe4+ {Forks the king and the rook on h1.} 7. Qe2 Qxh1 {Black is a rook up. Stockfish: −4.4, winning for Black.})
 (6. Ke2? Qxe4+ 7. Be3 Bc5 {Black's pieces swarm around the exposed king. Stockfish: −2.9, winning for Black.})
@@ -145,7 +145,8 @@
 [Hint "f7 is defended only by the king. Add an attacker with a threat."]
 
 1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6?! 6. h4 h6 7. Ne5 Bh7? 8. Qh5! {[%cal Gh5f7,Ge5f7] Threatens Qxf7 mate.}
-(8. Bc4 {Good, but slower.} 8... e6 9. Qe2 Qe7 10. d4 {Stockfish: +0.9, slightly better for White.})
+(8. Qf3!? {Playable: it also threatens Qxf7 mate, but Black defends with ...Nf6 and White's edge is smaller.} 8... Nf6 9. Qb3 Qd5 10. Qxb7 Qxe5+ 11. Be2 e6 {Stockfish: +0.8, slightly better for White.})
+(8. Bc4!? {Playable: good, but slower.} 8... e6 9. Qe2 Qe7 10. d4 {Stockfish: +0.9, slightly better for White.})
 (8. d4?! 8... Nd7 9. Bd2 {The chance has gone. Stockfish: +0.1, equal.})
 8... g6 {Black's best defense.}
 (8... Qd5? 9. Bc4 {Hits the queen and adds a third attacker on f7. Stockfish: +5.4, winning for White.})

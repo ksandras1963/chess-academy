@@ -67,7 +67,7 @@
 [Hint "Your knight on f6 is pinned. Can you drive the bishop away first?"]
 
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Bg5 c5 5. d5 d6 6. e4 Bxc3+ 7. bxc3 h6 8. Bh4? g5! {[%cal Gg5h4] Breaks the pin, so the f6 knight is free.}
-(8... Qe7?! {Too slow: White guards e4 with Bd3.} 9. Bd3 Nbd7 10. dxe6 Qxe6 11. Nh3 {Stockfish: −0.2, equal.})
+(8... Qe7!? {Playable, but slower: White guards e4 with Bd3.} 9. Bd3 Nbd7 10. dxe6 Qxe6 11. Nh3 {Stockfish: −0.2, equal.})
 9. Bg3 Nxe4! {[%hint The knight on c3 is gone. What guards e4 now?] Takes the pawn and hits g3 and c3.}
 10. Bd3 Nxg3 11. hxg3 Qe7 {Black is a pawn up, and White's pawns on c3 and c4 are weak. Stockfish: −1.1, clearly better for Black.}
 *
