@@ -1626,10 +1626,79 @@
             "name": "Grünfeld Defense",
             "eco": "D80",
             "moves": "1. d4 Nf6 2. c4 g6 3. Nc3 d5",
+            "summary": "Black lets White build a big pawn center, then attacks it with the g7 bishop, the c-pawn and the knights.",
+            "puzzles": "content/grunfeld-puzzles.pgn",
+            "furtherStudy": [
+                {
+                    "title": "Introduction to the Grünfeld Defense",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=NnkMyb1ThXc"
+                },
+                {
+                    "title": "Exchange Variation of the Grünfeld Defense",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=C1EbPsdB4FM"
+                },
+                {
+                    "title": "Grünfeld Repertoire for Black",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=WX6RVHYn4cc"
+                },
+                {
+                    "title": "Petrosian System of the Grünfeld Defense",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=P9rlsTqReYI"
+                }
+            ],
             "courses": [
                 {
                     "id": "grunfeld",
-                    "side": "both"
+                    "side": "both",
+                    "file": "content/grunfeld.pgn",
+                    "repertoire": "As White: the Classical Exchange, with the bishop on c4 and the knight on e2. As Black: Stjepan Tomić's repertoire against each of White's main systems.",
+                    "summary": "Black lets White build a big pawn center, then attacks it with pieces and pawns.",
+                    "why": {
+                        "text": "As Black, the Grünfeld gives an open, active game against 1.d4. Black lets White build a big pawn center, then attacks it, mostly with pieces. The games are sharp, Black has chances to win, and club players as White often go wrong early.\n\nAs White, the Classical Exchange takes the big center at once and follows one clear plan: develop the bishop to c4 and the knight to e2, castle, and hold the center. With the knight on e2, Black's bishop can't pin it, so the center is easier to hold than in the other Exchange lines."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Classical Exchange, main line: 14.d5",
+                                "45% as White",
+                                "White: Hold the big center, castle, then give up a rook to attack the king.\nBlack: Pile up on the center pawn and guard the king once the rook is won."
+                            ],
+                            [
+                                "Classical Exchange: 7.Bc4",
+                                "11% as Black",
+                                "White: Hold the big center and keep the king safe.\nBlack: Pressure the center, develop the queen's bishop and use the weak squares on the queenside."
+                            ],
+                            [
+                                "Modern Exchange: 7.Nf3",
+                                "12% as Black",
+                                "White: Guard the center pawn and develop.\nBlack: Attack the center pawn, trade queens and push the queenside pawns."
+                            ],
+                            [
+                                "Closed System: 4.e3",
+                                "13% as Black",
+                                "White: Develop calmly behind a solid center.\nBlack: Strike at the center with a pawn, then attack White's lone center pawn."
+                            ],
+                            [
+                                "Stockholm Variation: 4.Bg5",
+                                "11% as Black",
+                                "White: Trade knights and win back Black's advanced pawn.\nBlack: Keep the advanced pawn, attack the center and chase White's bishop."
+                            ]
+                        ],
+                        "note": "How often: the share of your Grünfeld games that reach the line, from the side you play in it, counting all its move orders. As White, it is the share that reach the main position at move 10. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199, October 2026. Rarer lines are in Advanced."
+                    }
                 }
             ]
         }

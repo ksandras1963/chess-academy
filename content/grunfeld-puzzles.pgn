@@ -1,0 +1,118 @@
+[Puzzle "Fork on c2"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "7...Nxd4"]
+[End "7...Nxd4"]
+[Hint "White's queen has just taken a pawn far from home. Which white pawn is left without a guard?"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Qb3 dxc4 5. Qxc4 Be6 6. Qb5+ Nc6 7. Qxb7? Nxd4! {[%cal Gd4c2,Gd8d1] The knight threatens ...Nc2+, forking the king and the rook on a1, and the d-file is now open for Black's queen.}
+8. Bd2 {Blocks the d-file.}
+(8. Rb1?? {Saves the rook, but the king has no squares.} Nc2# {Checkmate: the queen on d8 covers d1 and d2.})
+8... Nc2+ 9. Kd1 Nxa1 {Black has won a rook. Stockfish: −5.5, winning for Black.}
+*
+
+[Puzzle "The bishop behind the knight"]
+[Type "puzzle"]
+[Theme "Discovered attack"]
+[Solve "9...Ne3"]
+[End "9...Ne3"]
+[Hint "Your bishop on e6 and White's queen are on the same diagonal. What stands between them?"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Qb3 dxc4 5. Qxc4 Be6 6. Qb5+ Nc6 7. Nf3 Nd5 8. e4 a6 9. Qb3 Ne3! {[%cal Ge6b3,Ge3f1,Ge3d1] The knight leaves the diagonal, so the bishop now attacks the queen. On e3, the knight also hits f1, d1 and g2.}
+10. Nd5 {Blocks the bishop's diagonal.}
+(10. fxe3 {Takes the knight, but the queen falls.} Bxb3 11. axb3 {Black has won the queen for a knight and a bishop. Stockfish: −3.5, winning for Black.})
+10... Nxd5 11. Bc4 Na5 12. Qa4+ c6 13. exd5 b5 {Black's pawns chase White's pieces, and Black is a piece up. Stockfish: −1.4, clearly better for Black.}
+*
+
+[Puzzle "Pin the queen"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "12...Bc3"]
+[End "12...Bc3"]
+[Hint "White's queen and king are on the same diagonal."]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Be2 Qa5 9. Qd2 Nc6 10. Rb1 cxd4 11. cxd4 O-O 12. d5? Bc3! {[%cal Gc3d2,Gd2e1] The queen on d2 is pinned to the king, and the bishop attacks it.}
+13. O-O Bxd2 14. Bxd2 Qxa2 {Black has won the queen for a bishop. Stockfish: −4.0, winning for Black.}
+*
+
+[Puzzle "Two knights, one pawn"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "6...Nxg5"]
+[End "7...e6"]
+[Hint "Your knight on e4 is attacked by nothing yet. Can it take something before White's knights get away?"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4 6. Nxd5? Nxg5! {Takes the bishop first.}
+7. Nxg5 e6! {[%hint Look at White's two knights. Can one pawn move attack both?] [%cal Ge6d5,Gd8g5] The pawn hits the knight on d5, and the queen now sees the knight on g5.}
+8. Nxc7+ Qxc7 9. Qd2 {Black is a piece for two pawns up. Stockfish: −3.5, winning for Black.}
+*
+
+[Puzzle "Rook lift and queen trap"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "11.Qc2"]
+[End "11.Qc2"]
+[Hint "Black's queen has few squares left. Bring your queen into the game, and look at the c-file."]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Rb1 Qa5 9. Rb5 Qxc3+? 10. Bd2 Qa3 11. Qc2! {[%cal Gb5b3,Gc2c8] Two threats: Rb3 traps the queen, and if the c-file opens, Qc8 is mate.}
+(11. Bc4? {Develops, but gives Black time.} O-O 12. O-O {White is only slightly better. Stockfish: +0.4, slightly better for White.})
+11... c4 {Black's best: the pawn blocks the c-file.}
+(11... cxd4?? 12. Qc8# {Checkmate: the c-file was open.})
+(11... O-O 12. Rb3 Qa4 13. Bb5 {The queen has no safe square. Stockfish: +4.6, winning for White.})
+12. Bxc4 Nc6 13. O-O {White has won back the pawn and leads in development. Stockfish: +1.7, clearly better for White.}
+*
+
+[Puzzle "Hit the rook"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "10.Bd5"]
+[End "10.Bd5"]
+[Hint "Your bishop on c4 is attacked. Find a square where it attacks something too."]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Qa5 9. O-O b5? 10. Bd5! {[%cal Gd5a8] The bishop escapes and hits the rook on a8. 10...Nc6 doesn't help: 11.Bxc6+ is check.}
+10... b4 11. cxb4 Qxb4 12. Bd2 Qa3 13. Bxa8 {White has won the exchange. Stockfish: +5.4, winning for White.}
+*
+
+[Puzzle "Trap the bishop"]
+[Type "puzzle"]
+[Theme "Trap a piece"]
+[Solve "8...Qa5+"]
+[End "8...Qa5+"]
+[Hint "White's bishop on g5 has few squares. A check lets you trade queens; then your pawns can chase the bishop."]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Nxe4 dxe4 6. g3 Bg7 7. e3 c5 8. Bg2? Qa5+! {[%cal Ga5d2] Forces the queens off.}
+9. Qd2 Qxd2+ 10. Kxd2 f6 {[%cal Gf6g5] Hits the bishop.} 11. Bf4 e5 {[%cal Ge5f4] Hits it again.} 12. dxe5 fxe5 13. Bg5 h6 {The bishop is trapped. Stockfish: −2.7, winning for Black.}
+*
+
+[Puzzle "Check and take"]
+[Type "puzzle"]
+[Theme "Punish the mistake"]
+[Solve "11.Nxd5+"]
+[End "11.Nxd5+"]
+[Hint "Black's king is on e7. Which black pawn is left without a guard?"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4 6. cxd5 Nxg5 7. Nxg5 e6 8. Qd2 exd5 9. Qe3+ Qe7? 10. Qxe7+ Kxe7 11. Nxd5+! {[%cal Gd5c7] Wins a pawn with check, and the knight also hits c7.}
+11... Kd6 12. Nf4 {White is a pawn up. Stockfish: +1.9, clearly better for White.}
+*
+
+[Puzzle "The knight in the corner"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "12...Bxg5"]
+[End "12...Bxg5"]
+[Hint "Both white knights are in your half of the board. Which one can you take?"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4 6. cxd5 Nxg5 7. Nxg5 e6 8. Qd2 exd5 9. Qe3+ Kf8 10. Qf4 Qf6 11. Qxf6 Bxf6 12. Nxd5? Bxg5! {Wins a piece. White's knight can take two pawns and the rook, but then it is stuck on a8.}
+13. Nxc7 Nc6 14. Nxa8 Nxd4 {[%cal Gd4c2] Next, ...Nc2+ forks the king and the rook, and the knight on a8 can't get out. Stockfish: −0.7, slightly better for Black.}
+*
+
+[Puzzle "Rook sacrifice on a1"]
+[Type "puzzle"]
+[Theme "Checkmate"]
+[Solve "17...Ra1+"]
+[End "17...Ra1+"]
+[Hint "White's king has few pawns around it. A rook check opens the a-file for your queen."]
+
+1. d4 Nf6 2. c4 g6 3. f3 d5 4. cxd5 Nxd5 5. e4 Nb6 6. Nc3 Bg7 7. Be3 O-O 8. Qd2 Nc6 9. O-O-O f5 10. e5 Nb4 11. Nh3 Be6 12. Kb1 Qd7 13. Nf4 Bf7 14. h4 Rfd8 15. a3 a5 16. axb4? axb4 17. Nce2 Ra1+! {[%cal Ga1b1] The rook gives itself up to drag the king into the corner.}
+18. Kxa1 Qa4+ 19. Kb1 Qa2+ {The bishop on f7 guards a2.} 20. Kc1 Qa1+ 21. Kc2 Bb3+ 22. Kxb3 Qa4# {Checkmate.}
+*

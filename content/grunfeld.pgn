@@ -1,0 +1,606 @@
+[Chapter "Key ideas: The Grünfeld in brief"]
+[Side "both"]
+[Type "ideas"]
+
+{Black lets White build a big pawn center, then attacks it with pieces and pawns. Almost every line is a fight over the d4 pawn: if White's center holds, it can roll forward; if it breaks, Black's pieces take over. Each board below shows one idea.}
+*
+
+[Chapter "...d5 stops e4"]
+[Type "concept"]
+[Idea "black"]
+[Side "black"]
+[Diagram "3...d5"]
+
+{In the King's Indian, Black lets White play e4 at once. In the Grünfeld, Black's third move, 3...d5, controls e4 and hits the c4 pawn. If White wants the big center, White must first trade on d5.}
+1. d4 Nf6 2. c4 g6 3. Nc3 {[%cal Ge2e4] The idea starts from this position. White wants e4 next.}
+3... d5 {[%cal Gd5e4,Gf6e4] [%csl Ye4] The pawn and the knight both guard e4.}
+4. e4? {Played in about one game in a hundred, and it shows why.} Nxe4 5. Nxe4 dxe4 {Black has won a pawn. Stockfish: −1.2, clearly better for Black.} *
+
+[Chapter "White's big center"]
+[Type "concept"]
+[Idea "white"]
+[Side "white"]
+[Diagram "6.bxc3"]
+
+{Exchange Variation: 4.cxd5. White trades on d5 and pushes e4, which chases Black's knight. After the knights are traded on c3, White has pawns on c3, d4 and e4. They control the center, and White's pieces develop behind them.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 {The idea starts from this position.} Nxd5
+5. e4 {[%cal Ge4d5] The pawn hits the knight, which has no good square in the center.} Nxc3
+6. bxc3 {[%csl Yc3,Yd4,Ye4] Three pawns in the center. Later, d5 or e5 can push Black's pieces back.} Bg7 {[%cal Gg7d4] Black's bishop already aims at d4. Stockfish: +0.4, slightly better for White.} *
+
+[Chapter "...c5, ...Nc6 and ...Bg4 hit d4"]
+[Type "concept"]
+[Idea "black"]
+[Side "black"]
+[Diagram "8...Nc6"]
+
+{Modern Exchange: 7.Nf3. Black attacks d4 with the c-pawn, the knight, the g7 bishop and the queen. When White guards it with Be3, ...Bg4 hits the knight on f3, one of its guards. White has to push e5, which leaves weak light squares behind it.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 {The idea starts from this position.}
+7. Nf3 c5 8. Be2 Nc6 {[%cal Gc5d4,Gc6d4,Gg7d4,Gd8d4] Four black pieces hit d4.}
+9. Be3 {Guards d4 a third time.} Bg4 {[%cal Gg4f3] Hits the knight that guards d4.}
+10. e5 {[%csl Yd5,Yf5] Gives d4 more room, but the light squares in front of White's pawns are weak.} cxd4 11. cxd4 O-O {Black plays ...Qd7 and ...Rd8 next. Stockfish: +0.2, equal.} *
+
+[Chapter "Ne2, not Nf3"]
+[Type "concept"]
+[Idea "white"]
+[Side "white"]
+[Diagram "11.f3"]
+
+{Classical Exchange: 7.Bc4. White puts the bishop on c4 first, so the knight can go to e2. There it guards d4 and can't be pinned: if Black plays ...Bg4, f3 chases the bishop away.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7
+7. Bc4 {The idea starts from this position. The bishop clears f1, so the knight can come out to e2.} c5
+8. Ne2 {[%cal Ge2d4] The knight guards d4, and the f-pawn stays free.} Nc6 9. Be3 O-O 10. O-O Bg4 {[%cal Gg4e2] Hits the knight, as against Nf3.}
+11. f3 {[%cal Gf3g4] Chases the bishop away, and the knight still guards d4. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "Key ideas: Pawns and squares"]
+[Side "both"]
+[Type "ideas"]
+
+{After Black takes on d4 and White takes back with the c-pawn, the same pawns come up in most lines. White has the center pawns, Black the extra pawn on the queenside, and both sides fight over the c4 square.}
+*
+
+[Chapter "White's d-pawn"]
+[Type "concept"]
+[Idea "white"]
+[Side "white"]
+[Diagram "13.d5"]
+
+{Modern Exchange: 7.Nf3. Once the pawns are traded on d4, White's d-pawn has no black c-pawn in front of it. Pushed with gain of time, it takes squares from Black's pieces, and it may become a passed pawn. Many games are won by this pawn.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Be3 Qa5 9. Qd2 Nc6 10. Rc1 cxd4 11. cxd4 Qxd2+ 12. Kxd2 {The idea starts from this position.} O-O
+13. d5 {[%cal Gd5d6,Gd5c6] Hits the knight and gains space. Supported by e4, the pawn eyes d6 and d7.} Rd8 {[%cal Gd8d5] Black blockades the pawn with pieces. Stockfish: +0.1, equal.} *
+
+[Chapter "Black's queenside majority"]
+[Type "concept"]
+[Idea "black"]
+[Side "black"]
+[Diagram "12...b6"]
+
+{Modern Exchange: 8.Rb1. After the trades on d4, Black has two pawns on the queenside against White's one. In an endgame, Black pushes them to make a passed pawn, while White pushes the center pawns. So trades, including the queens, often help Black.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Rb1 O-O 9. Be2 cxd4 10. cxd4 {The idea starts from this position.}
+10... Qa5+ {Checks and attacks the a2 pawn.} 11. Qd2 Qxd2+ 12. Bxd2 b6 {[%cal Ga7a5,Gb6b5] [%csl Ya7,Yb6] Two black pawns against one. Black develops with ...Bb7 and ...Nc6, then pushes them. Stockfish: +0.1, equal.} *
+
+[Chapter "The c4 square"]
+[Type "concept"]
+[Idea "black"]
+[Side "black"]
+[Diagram "13...Be6"]
+
+{Classical Exchange: 10...Bg4. White can never guard c4 with a pawn, since the b-pawn went to c3. Black's knight goes c6–a5–c4, and the bishop on e6 supports it. A natural queen move lets Black take the square for good.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O Bg4 11. f3 Na5 12. Bd3 cxd4 13. cxd4 Be6 {[%cal Ga5c4,Ge6c4] [%csl Yc4] The idea starts from this position. Two black pieces aim at c4.}
+14. Qa4? {Played in a quarter of club games, but it lets Black take c4.} a6! {[%cal Gb7b5] Next, ...b5 drives the queen away and covers c4.}
+15. Rac1 b5 16. Qc2 Nc4 {[%cal Gc4e3] The knight sits on c4, where no pawn can chase it, and hits the bishop on e3. Stockfish: −0.8, slightly better for Black.} *
+
+[Chapter "Key ideas: Tactics to know"]
+[Side "both"]
+[Type "ideas"]
+
+{The same few tactics decide many Grünfeld games. Most come from the g7 bishop's long diagonal and the pressure on c3 and d4.}
+*
+
+[Chapter "d5? and ...Bxc3+"]
+[Type "concept"]
+[Idea "black"]
+[Side "black"]
+[Diagram "9.d5"]
+
+{Modern Exchange: 7.Nf3. While White's king is on e1 and the c3 pawn is loose, White can't push d5 or take on c5. The g7 bishop takes on c3 with check and then hits the rook on a1.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Be2 Nc6 {The idea starts from this position. The knight is attacked by nothing yet, but d4 is attacked four times.}
+9. d5? {Hits the knight, but opens the long diagonal.} Bxc3+ {[%cal Gc3a1] Check, and the rook on a1 is attacked.} 10. Bd2 Bxa1 11. Qxa1 {Black has won the exchange, a rook for a bishop. Stockfish: −0.1, equal.} *
+
+[Chapter "...Qa5 pins the c3 pawn"]
+[Type "concept"]
+[Idea "black"]
+[Side "black"]
+[Diagram "8...Qa5"]
+
+{Exchange: 7.Be3. With White's queen on d2, the queen on a5 pins the c3 pawn. If the pawn ever leaves c3, or White takes on c5 or pushes d5, ...Bxc3 wins White's queen.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Be3 c5 8. Qd2 {The idea starts from this position.} Qa5 {[%cal Ga5c3,Gc3d2] The c3 pawn is pinned to the queen.}
+9. dxc5? {Natural, but it opens the diagonal.} Bxc3 {[%cal Gc3d2,Ga5c3] Wins the queen: it is attacked by the bishop, and ...Qxc3+ follows if it takes. Stockfish: −5.8, winning for Black.} *
+
+[Chapter "Rc1 guards the c4 bishop"]
+[Type "concept"]
+[Idea "white"]
+[Side "white"]
+[Diagram "11.Rc1"]
+
+{Classical Exchange: 10...Qc7. Black's queen on c7 lines up with the bishop on c4. If the pawns are traded on d4, the c-file opens and the bishop is attacked. Rc1 guards it in advance.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O Qc7 {[%cal Gc7c4] The idea starts from this position.}
+11. Rc1 {[%cal Gc1c4] Now ...cxd4 cxd4 leaves the bishop guarded.} Rd8 12. Bf4 {[%cal Gf4c7] Hits the queen with gain of time. Stockfish: +0.5, slightly better for White.} *
+
+[Chapter "Bxf7+ wins a pawn"]
+[Type "concept"]
+[Idea "white"]
+[Side "white"]
+[Diagram "12.Bxf7+"]
+
+{Classical Exchange: 10...Bg4. When Black plays ...Na5 to hit the c4 bishop, the bishop can take on f7 with check. After the trades on f1, White is a pawn up. Black gets active pieces in return, so the game stays balanced.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O Bg4 11. f3 Na5 {[%cal Ga5c4] The idea starts from this position.}
+12. Bxf7+! {[%cal Gc4f7] Takes a pawn with check.} Rxf7 13. fxg4 Rxf1+ 14. Kxf1 {Take back with the king: 14.Qxf1? Nc4 hits the bishop on e3. White is a pawn up. Stockfish: +0.4, slightly better for White.} *
+
+[Chapter "Classical Exchange, main line: 14.d5"]
+[Side "white"]
+[Diagram "10.O-O"]
+[Type "line"]
+[Opening "Grünfeld Defense: Exchange Variation, Sokolsky Variation"]
+[ECO "D89"]
+
+{Classical Exchange: 7.Bc4. White develops with Bc4, Ne2, Be3 and castling, and keeps the big center. Black hits d4 with ...c5, ...Nc6 and ...Bg4. In the main line, White gives up the a1 rook for Black's strong bishop and plays on the dark squares around Black's king.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5
+4. cxd5 {The Exchange Variation. White trades on d5 to play e4 next.} Nxd5 {Almost every Black player takes back with the knight.}
+5. e4 {Chases the knight from the center.} Nxc3 {Black trades: on b6 or f6 the knight would be out of play. See Advanced for both.}
+6. bxc3 {[%csl Yc3,Yd4,Ye4] The pawn takes back toward the center.} Bg7 {[%cal Gg7d4] The bishop aims at d4 and, behind it, the rook on a1. One Black player in ten plays 6...c5 first; then 7.Bc4 Bg7 8.Ne2 is the same.}
+7. Bc4 {This is the Classical Variation. The bishop eyes f7 and clears f1, so the knight can go to e2.} c5 {[%cal Gc5d4] Hits d4 at once.}
+(7... O-O {Three Black players in ten castle first.} 8. Ne2 c5 9. O-O {After 7...c5 8.Ne2 O-O, play 9.O-O just the same.} Nc6
+(9... cxd4 {One Black player in five takes first.} 10. cxd4 Nc6 11. Be3 Bg4 12. f3 Na5 13. Bd3 Be6 {The main line's position at move 13.})
+10. Be3 {The main line's position at move 10.})
+8. Ne2 {[%cal Ge2d4] Guards d4. On e2, the knight can't be pinned by ...Bg4.} Nc6 {A third attack on d4.}
+9. Be3 {[%cal Ge3d4] Guards d4 again. Against 9...cxd4 or 9...Qa5, see Advanced.} O-O
+10. O-O {Your king is safe, and the rooks can come to c1 and d1. Against 10...Qc7, see Advanced. Against 10...b6, see Classical Exchange: 7.Bc4, the course's line for Black.} Bg4 {[%cal Gg4e2] One Black player in four hits the knight.}
+(10... cxd4 {One Black player in four takes on d4 first.} 11. cxd4 {[%csl Yd4,Ye4] Take back toward the center.} Bg4 12. f3 Na5 13. Bd3 Be6 {The main line's position at move 13.})
+11. f3 {[%cal Gf3g4] Chases the bishop. The knight on e2 still guards d4.} Na5 {[%cal Ga5c4] Leaves the bishop hanging and hits the bishop on c4. Against 11...Bd7 and 11...cxd4, see Advanced.}
+12. Bd3 {Keeps the bishop on the board. 12.Bxf7+, shown in Key ideas, is also good.} cxd4 13. cxd4 Be6 {[%cal Ge6c4,Ga5c4] Two black pieces aim at c4, and White can't guard it with a pawn.}
+14. d5 {This is the main line. The pawn hits the bishop, and White gives up the a1 rook. Not 14.Qa4?, which lets Black take c4 with ...a6 and ...b5 (see Key ideas).} Bxa1 {Black takes the exchange.}
+15. Qxa1 f6 {[%csl Yf6,Ye5] Shuts the long diagonal and guards e5. Without the g7 bishop, Black's dark squares are weak. After 15...Bd7, play 16.Bh6 just the same.}
+16. Qd4 {[%cal Gd4a7,Gd5e6] Hits a7, and now dxe6 is a threat: with the queen on d4, the d-file is closed, so ...Qxd3 is no longer possible.} Bf7
+17. Bh6 {[%cal Gh6f8] Hits the rook.} Re8 18. Bb5 {[%cal Gb5e8] Hits the rook again.} e5 {Black's only good move: the rook gets e7, and the pawn guards the dark squares.}
+19. Qf2 {The queen steps back. Next, f4 opens the f-file against Black's king.} Re7 20. f4 {White is the exchange down, but Black has no dark-squared bishop to guard the king, and the f-file is about to open. Stockfish: 0.0, equal.} *
+
+[Chapter "Classical Exchange: 7.Bc4"]
+[Side "black"]
+[Diagram "7.Bc4"]
+[Type "line"]
+[Opening "Grünfeld Defense: Exchange Variation, Classical Variation"]
+[ECO "D86"]
+
+{Classical Exchange: 7.Bc4. White plays Bc4 and Ne2, so the knight can't be pinned. Black hits d4 with ...c5 and ...Nc6 and castles, then plays ...b6 and ...Bb7, Stjepan's choice and Stockfish's. The bishop on b7 hits e4, a rook goes to c8, and the knight heads for a5 and c4.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7
+7. Bc4 {This is the Classical Variation. Three White players in ten play it.} c5 {[%cal Gc5d4] Strike at d4 before castling.}
+8. Ne2 {Seven White players in ten put the knight here, where ...Bg4 can be met by f3.} Nc6 9. Be3 O-O 10. O-O
+b6 {[%cal Gc8b7] Prepares ...Bb7. One Black player in eleven plays it, and it is Stockfish's first choice. The pawn on b6 also guards c5, so the knight can go to a5.}
+11. Rc1 {Guards c3 and lines up on the c-file. Against 11.dxc5, see Advanced.} Bb7 {[%cal Gb7e4] The bishop hits e4, so White may have to play f3.}
+12. Qd2 Rc8 {[%cal Gc8c3] The rook joins the fight on the c-file.}
+13. Rfd1 e6 {[%cal Ge6d5] Takes d5 away from White's pawn, so d5 can't come with a gain of time.}
+14. f3 cxd4 15. cxd4 Na5 {[%cal Ga5c4] The knight heads for c4. If the pawns stay on d4 and e4, Black's two queenside pawns make a passed pawn in the endgame. Stockfish: +0.1, equal.} *
+
+[Chapter "Modern Exchange: 7.Nf3"]
+[Side "black"]
+[Diagram "7.Nf3"]
+[Type "line"]
+[Opening "Grünfeld Defense: Exchange Variation, Modern Exchange Variation"]
+[ECO "D85"]
+
+{Modern Exchange: 7.Nf3. The knight guards d4, but ...Bg4 can pin it. Against 8.Be3, the most common move in club games, Black pins the c3 pawn with ...Qa5 and trades queens. In the endgame, Black's pieces attack d4, and Black's queenside pawns are ready to advance.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 {Chases the knight.} Nxc3 {Trade, and White's pawn takes back toward the center.}
+6. bxc3 Bg7 {[%cal Gg7d4] The bishop aims at d4.}
+7. Nf3 {This is the Modern Exchange. One White player in three plays it. 4.Nf3 Bg7 5.cxd5 Nxd5 6.e4 Nxc3 7.bxc3 reaches the same position.} c5 {[%cal Gc5d4] Strike at d4 at once.}
+8. Be3 {Guards d4; the most common move. Against 8.Rb1, 8.Bb5+ and 8.Be2, see Advanced and Traps.} Qa5 {[%cal Ga5c3] Attacks c3. If White plays Qd2 and the pawn ever leaves c3, ...Bxc3 wins the queen.}
+9. Qd2 {Six White players in ten guard c3 with the queen.} Nc6 {[%cal Gc6d4] Adds a fourth attacker to d4.}
+10. Be2 {The most common move. Against 10.Rc1, play 10...cxd4 11.cxd4 Qxd2+ 12.Kxd2 O-O.} O-O {Castle first, and wait for White to commit.}
+11. Rc1 {Guards c3 again.} cxd4 12. cxd4 Qxd2+ {Trade queens: White's king can't castle, and Black's pieces are free to attack d4.}
+13. Kxd2 Rd8 {[%cal Gd8d4,Gg7d4,Gc6d4] Three black pieces hit d4, and the rook lines up with White's king. Stockfish: 0.0, equal.} *
+
+[Chapter "Closed System: 4.e3"]
+[Side "black"]
+[Diagram "4.e3"]
+[Type "line"]
+[Opening "Grünfeld Defense: Three Knights Variation, Burille Variation"]
+[ECO "D94"]
+
+{Closed System: 4.e3. White props up d4 with the e-pawn and develops calmly, without the big center. With White's bishop shut in on c1, Stjepan plays ...c5. After the trades on d4, White has an isolated d-pawn, and Black's pieces gather in front of it.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5
+4. e3 {More than one White player in ten plays this. 4.Nf3 Bg7 5.e3 O-O comes to the same.} Bg7 5. Nf3 O-O
+6. Be2 {The most common move. Against 6.Bd3 and 6.cxd5, see Advanced.} c5 {[%cal Gc5d4] White's bishop is still on c1, so Black hits the center with the c-pawn.}
+7. O-O cxd4 8. exd4 Nc6 {[%cal Gc6d4] [%csl Yd4] White's d-pawn has no pawn beside it: an isolated pawn.}
+9. h3 {Stops ...Bg4. Against 9.c5, 9...Ne4 hits c3.} dxc4 {Trades the last center pawn, so d4 stands alone.}
+10. Bxc4 Na5 {[%cal Ga5c4] Hits the bishop with gain of time.} 11. Bd3 Be6 {[%cal Ge6d5] [%csl Yd5] Black's pieces watch d5, the square in front of the pawn.}
+12. Re1 Qd6 {[%cal Gd6d4,Gf8d8] The queen joins, and a rook comes to d8 next. Stockfish: −0.1, equal.} *
+
+[Chapter "Stockholm Variation: 4.Bg5"]
+[Side "black"]
+[Diagram "4.Bg5"]
+[Type "line"]
+[Opening "Grünfeld Defense: Stockholm Variation"]
+[ECO "D80"]
+
+{Stockholm Variation: 4.Bg5. White threatens to take on f6 and win the d5 pawn. 4...Ne4 hits the bishop, and three White players in four trade knights. Black's pawn on e4 then cramps White's kingside, and Black hits d4 with ...Bg7 and ...c5. Watch for ...h6 and ...g5, which chase White's bishop.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5
+4. Bg5 {[%cal Gg5f6] One White player in ten plays this.} Ne4 {[%cal Ge4g5,Ge4c3] Hits the bishop and the knight. Against 5.Bh4 and 5.Bf4, see Advanced.}
+5. Nxe4 dxe4 {[%csl Ye4] The pawn on e4 takes d3 and f3 from White's pieces.}
+6. e3 Bg7 {[%cal Gg7d4] Seven Black players in ten.}
+7. Ne2 {The knight heads for c3 to win the e4 pawn.} c5 {[%cal Gc5d4] Strike at d4 before White's pieces arrive.}
+8. Qd2 h6 {[%cal Gh6g5] Asks the bishop to decide.} 9. Bf4 g5 {Chases the bishop again.}
+10. Bxb8 Rxb8 {Black has the two bishops, and White's queenside pieces are slow. Stockfish: +0.2, equal.} *
+
+[Chapter "Classical Exchange, 10...Qc7: 11.Rc1"]
+[Side "white"]
+[Diagram "10...Qc7"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation, Classical Variation"]
+[ECO "D86"]
+
+{About one Black player in seven puts the queen on c7 and a rook on d8, to pile up on d4 and on the c-file. Guard the c4 bishop with Rc1, then chase the queen with Bf4. If Black trades on d4 too early, the c-file is yours.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O
+Qc7 {[%cal Gc7c4] The queen lines up with the bishop on c4.}
+11. Rc1 {[%cal Gc1c4] Guards the bishop in advance: after ...cxd4 cxd4 the c-file opens.} Rd8 {[%cal Gd8d4] Six Black players in ten add the rook. Against 11...b6, play 12.Qd2 and Rfd1.}
+12. Bf4 {[%cal Gf4c7] Hits the queen with gain of time, the presenters' choice.} e5 {[%cal Ge5f4] Half of Black players hit the bishop.}
+(12... Qd7 {[%cal Gd7d4] The queen goes to the d-file, as in the presenters' line.} 13. d5 Na5 14. Bd3 {[%cal Ge4e5] White has a big center, and e5 and d6 are coming. Stockfish: +0.5, slightly better for White.})
+13. Bg5 {[%cal Gg5d8] Hits the rook.} Rd6 14. f4 {[%cal Gf4e5] White opens the f-file toward Black's king. Stockfish: +0.7, slightly better for White.} *
+
+[Chapter "Classical Exchange, 10...Bg4: 11...Bd7"]
+[Side "white"]
+[Diagram "11.f3"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation, Classical Variation"]
+[ECO "D86"]
+
+{After 10...Bg4 11.f3, two Black players in ten retreat with 11...Bd7 instead of 11...Na5. Hit b7 with Rb1, and push d5 when Black takes on d4.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O Bg4
+11. f3 Bd7 {The bishop steps back to guard b7 and c6. After 11...cxd4 12.cxd4 Na5 13.Bd3 Be6, play 14.d5, as in the main line.}
+12. Rb1 {[%cal Gb1b7] The rook hits b7 and keeps Black's queenside busy.} cxd4 13. cxd4 a6
+14. d5 {[%cal Gd5c6] Gains space with gain of time on the knight.} Ne5 15. Bb3 {The bishop stays on the a2–g8 diagonal, aiming at Black's king. Stockfish: +0.2, equal.} *
+
+[Chapter "Classical Exchange: 9...cxd4"]
+[Side "white"]
+[Diagram "9...cxd4"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation, Classical Variation"]
+[ECO "D86"]
+
+{Before castling, one Black player in five takes on d4. After 10.cxd4 Qa5+, offer the queen trade with 11.Qd2. In the endgame your king is safe in the center, and your rooks take the d- and c-files.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3
+cxd4 {Opens the c-file before castling.}
+10. cxd4 Qa5+ {Four Black players in ten give this check. After 10...O-O 11.O-O Bg4 12.f3 Na5 13.Bd3 Be6, push 14.d5 as in the main line.}
+11. Qd2 {Offers the queen trade. 11.Bd2 lets Black repeat moves with ...Qd8 and ...Qa5+.} Qxd2+ 12. Kxd2 O-O
+13. Rhd1 {[%cal Gd1d8] The rook takes the d-file, behind the d-pawn.} Na5 14. Bd3 {Your king guards the center pawns, and d5 is coming. Stockfish: +0.1, equal.} *
+
+[Chapter "Classical Exchange, 10...b6: 11.dxc5"]
+[Side "black"]
+[Diagram "11.dxc5"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation, Classical Variation"]
+[ECO "D86"]
+
+{One White player in five takes on c5 against 10...b6. Stjepan isn't afraid of it: take back with the b-pawn, and Black's pieces become very active. After 12.Bxc5 Qc7, both white bishops are loose, and 13.Bd4? loses a piece.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O b6
+11. dxc5 {Wins a pawn for the moment.}
+(11. Qd2 Bb7 12. Rac1 Rc8 {The main line's position after 12...Rc8. Stockfish: +0.4, slightly better for White.})
+11... bxc5 {[%cal Gb8b1] Opens the b-file.}
+12. Bxc5 {Takes the pawn. If White trades queens first with 12.Qxd8 Rxd8 13.Bxc5, play 13...Bb7, hitting e4.}
+12... Qc7 {[%cal Gc7c5,Gc7c4] Hits the bishop on c5, and the one on c4 behind it.}
+13. Bd5 {The best move: the bishop on c4 gets out of the way and hits the knight.}
+(13. Bd4? Nxd4! {[%cal Gc7c4] If White takes back on d4, the queen takes the bishop on c4.} 14. cxd4 Qxc4 {Black has won a piece for a pawn. Stockfish: −4.7, winning for Black.})
+13... Ba6 {[%cal Ga6e2] The bishop joins the attack and hits the knight on e2.} 14. Re1 Ne5 {[%cal Ge5d3,Ge5c4] Black has all the pieces out for the pawn. Stockfish: 0.0, equal.} *
+
+[Chapter "Exchange: 5...Nb6, 5...Nf6 and 6...c5"]
+[Side "white"]
+[Diagram "5...Nb6"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation"]
+[ECO "D85"]
+
+{Three in a hundred Black players move the knight back after 5.e4. Both presenters call this a mistake: the knight is out of play, and White keeps the big center without a c3 pawn. Develop and take more space. 6...c5 is no problem: Bc4 and Ne2 reach the usual positions.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4
+Nb6 {On b6 the knight does nothing for the center.}
+(5... Nf6 6. Nf3 Bg7 7. Bc4 O-O 8. e5 {[%cal Ge5f6] Chases the knight again. Stockfish: +1.2, clearly better for White.})
+(5... Nxc3 6. bxc3 c5 7. Bc4 Bg7 8. Ne2 Nc6 9. Be3 O-O 10. O-O {The main line's position at move 10. Stockfish: +0.3, slightly better for White.})
+6. h3 {[%cal Gh3g4] Keeps ...Bg4 and ...Ng4 out.} Bg7 7. Nf3 Nc6 8. Be3 {[%csl Yd4,Ye4] White has the whole center and a lead in development. Stockfish: +1.2, clearly better for White.} *
+
+[Chapter "Exchange: 7.Be3"]
+[Side "black"]
+[Diagram "7.Be3"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation"]
+[ECO "D85"]
+
+{Exchange: 7.Be3. One White player in ten develops the bishop first, then guards c3 with Qd2 and Rc1. Stjepan calls it White's best try after Bc4 and Nf3. Black plays ...c5 and ...Qa5 as usual, then trades on d4 and trades queens.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7
+7. Be3 c5 8. Qd2 {Guards c3.} Qa5 {[%cal Ga5c3,Gc3d2] Pins the c3 pawn to the queen (see Key ideas).}
+9. Rc1 {Guards c3 again. 9.Nf3 Nc6 reaches Modern Exchange: 7.Nf3.} cxd4 10. cxd4 Qxd2+ 11. Kxd2 O-O
+12. Nf3 Rd8 {[%cal Gd8d4,Gg7d4] The rook and bishop hit d4, and White's king stands on the d-file. Stockfish: +0.2, equal.} *
+
+[Chapter "Exchange: 5.Bd2"]
+[Side "black"]
+[Diagram "5.Bd2"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation"]
+[ECO "D85"]
+
+{Exchange: 5.Bd2. White wants to take back on c3 with the bishop and keep the pawns whole. So Black doesn't trade: after 6.e4, the knight goes back to b6. Svidler and Stjepan both cover this line. Black castles and hits d4 with ...Bg4 and ...Nc6.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5
+5. Bd2 {If Black takes on c3, the bishop takes back.} Bg7 6. e4 Nb6 {[%cal Gb6c4] The knight eyes c4.}
+7. Be3 {[%cal Ge3d4] Guards d4.} O-O 8. Nf3 Bg4 {[%cal Gg4f3] Hits the knight that guards d4. Next ...Nc6. Stockfish: +0.1, equal.} *
+
+[Chapter "Exchange: 7.Qa4+ and 7.Bb5+"]
+[Side "black"]
+[Diagram "7.Qa4+"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation"]
+[ECO "D85"]
+
+{Two checks are rare but tricky. Against 7.Qa4+, Stjepan blocks with 7...Nd7, and the knight later jumps to c5 with gain of time. Against 7.Bb5+, 7...c6 is enough: Black still plays ...c5 next.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7
+7. Qa4+ {Gets in the way of ...Nc6.}
+(7. Bb5+ c6 8. Ba4 O-O 9. Ne2 c5 {[%cal Gc5d4] Now ...c5 comes anyway.} 10. O-O Nc6 {Black's usual plan against d4. Stockfish: +0.3, slightly better for White.})
+7... Nd7 {[%cal Gd7c5] The knight heads for c5.}
+8. Nf3 O-O 9. Be2 c5 10. O-O cxd4 11. cxd4
+Nc5! {[%cal Gc5a4,Gc5e4] Hits the queen and the e4 pawn. If 12.dxc5, then 12...Bxa1 wins the exchange.}
+12. dxc5 Bxa1 13. e5 {[%cal Ge5a1] Shuts the bishop in on a1.} Qc7 {[%cal Gc7e5] Hits e5, so the bishop can get out.}
+14. Qf4 Bc3 {The bishop escapes. Black has the exchange for a pawn. Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "Modern Exchange: 8.Bb5+"]
+[Side "black"]
+[Diagram "8.Bb5+"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation, Modern Exchange Variation"]
+[ECO "D85"]
+
+{Modern Exchange: 8.Bb5+. One White player in six checks. Block with the knight, which still hits d4. 9.d5 doesn't win it (see Traps). After 9.O-O, take on d4, castle and pin the f3 knight with ...Bg4. White often gives up the bishop on c6, and the queens come off.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5
+8. Bb5+ Nc6 {[%cal Gc6d4] Blocks and still hits d4.}
+9. O-O {Half of White players castle. Against 9.Bxc6+, take back with the b-pawn: 9...bxc6, and Black's bishops are strong.} cxd4 10. cxd4 O-O
+11. Be3 Bg4 {[%cal Gg4f3] Hits the knight that guards d4.} 12. Bxc6 bxc6 13. Rc1 Qa5 {[%cal Ga5a2,Ga5d2] Hits a2 and eyes d2.}
+14. Qd2 Qxd2 15. Nxd2 Rfd8 {[%cal Gd8d4] The rook adds pressure on d4. Black's bishops make up for the c6 pawn. Stockfish: 0.0, equal.} *
+
+[Chapter "Modern Exchange: 8.Rb1"]
+[Side "black"]
+[Diagram "8.Rb1"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation, Modern Exchange Variation"]
+[ECO "D85"]
+
+{Modern Exchange: 8.Rb1. The rook hits b7, so Black's c8 bishop is tied down. Stjepan calls it the line to know by heart: Black grabs the a2 pawn with ...Qa5+ and ...Qxa2, and White gets a lead in development for it. Black's plan is to trade pieces and push the a-pawn.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5
+8. Rb1 {[%cal Gb1b7] About one White player in twelve plays this in club games; at master level it is the main line.} O-O 9. Be2 cxd4 10. cxd4
+Qa5+ {[%cal Ga5e1,Ga5a2] Check, and the a2 pawn is attacked.}
+11. Bd2 {Blocks the check and gives up a2.}
+(11. Qd2 {Keeps the pawn but allows the queen trade.} Qxd2+ 12. Bxd2 b6 {[%csl Ya7,Yb6] Two black pawns against one on the queenside: Black's plan is to push them. Stockfish: +0.1, equal.})
+11... Qxa2 {Black is a pawn up, with two queenside pawns against none.}
+12. O-O Bg4 {[%cal Gg4f3] Hits the knight that guards d4.}
+13. Bg5 h6 {Don't fear 14.Bxe7: 14...Re8 wins the e4 pawn back.} 14. Be3 Nc6
+15. d5 Bxf3 16. Bxf3 Ne5 {[%cal Ge5f3] The knight blocks the e-pawn and hits the bishop.}
+17. Rxb7 a5 {[%cal Ga5a1] Give back the b-pawn and run with the a-pawn: ...a4, ...a3 and ...a2. White must spend pieces to stop it. Stockfish: 0.0, equal.} *
+
+[Chapter "Modern Exchange: 8.Be2"]
+[Side "black"]
+[Diagram "8.Be2"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Exchange Variation, Modern Exchange Variation"]
+[ECO "D85"]
+
+{Modern Exchange: 8.Be2. A calm developing move. Black hits d4 four times with ...Nc6, and after 9.Be3, ...Bg4 hits the knight that guards it. White's best is to push e5, which leaves weak light squares. If White castles instead, Black wins the d4 pawn (see Traps).}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5
+8. Be2 Nc6 {[%cal Gc5d4,Gc6d4,Gg7d4,Gd8d4] Four attacks on d4. 9.d5? Bxc3+ wins the exchange (see Key ideas).}
+9. Be3 Bg4 {[%cal Gg4f3]} 10. e5 {[%csl Yd5,Yf5] Keeps d4, but the squares in front of the pawns are weak.} cxd4 11. cxd4 O-O 12. O-O
+Qc7 {[%cal Gc7e5,Gf8d8] The queen hits e5, and a rook comes to d8 next. Black's pieces have the light squares. Stockfish: +0.3, slightly better for White.} *
+
+[Chapter "Brinckmann Attack: 4.Bf4"]
+[Side "black"]
+[Diagram "4.Bf4"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Brinckmann Attack"]
+[ECO "D82"]
+
+{Brinckmann Attack: 4.Bf4. White develops the bishop and props up d4 with e3, for a calm game. Stjepan answers with the solid ...c6 and castles. Take on c4 only once White's f1 bishop has moved, so it has to move again.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5
+4. Bf4 Bg7 5. e3 c6 {[%cal Gc6d5] Holds d5, as in the Slav.} 6. Nf3 O-O
+7. Be2 {The most common move. 7.Bd3 dxc4 8.Bxc4 comes to the same.}
+(7. h3 {Stops ...Nh5 and ...Bg4.} Nbd7 8. cxd5 Nxd5 9. Nxd5 cxd5 10. Bd3 Qa5+ 11. Qd2 Qxd2+ 12. Kxd2 f6 {[%cal Ge7e5] Next, ...e5 frees Black's game. Stockfish: +0.3, slightly better for White.})
+7... dxc4 {Now the bishop has to move a second time.}
+8. Bxc4 Nbd7 9. O-O Nb6 10. Bb3 Nbd5 {[%cal Gd5f4,Gd5c3] The knight hits f4 and c3. Black plans ...c5 next. Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "Petrosian System: 5.Bg5"]
+[Side "black"]
+[Diagram "5.Bg5"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Three Knights Variation, Petrosian System"]
+[ECO "D91"]
+
+{Petrosian System: 4.Nf3 Bg7 5.Bg5. Stjepan answers with 5...Ne4, "the best move". After 6.cxd5, Black takes the bishop and plays ...e6, hitting the g5 knight and the d5 pawn. In the main line, Black's king walks to g7 and Black keeps the two bishops.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7
+5. Bg5 Ne4 {[%cal Ge4g5] Hits the bishop. Against 6.Nxe4 and 6.Nxd5, see Traps.}
+6. cxd5 {The main move.}
+(6. Bh4 Nxc3 7. bxc3 dxc4 8. Qa4+ Qd7 9. Qxc4 b6 {[%cal Gc8a6] Not for ...Bb7: the bishop goes to a6 to trade White's good bishop.} 10. e3 Ba6 {Stockfish: 0.0, equal.})
+(6. Bf4 Nxc3 7. bxc3 c5 {[%cal Gc5d4] Black hits d4 as usual. Stockfish: +0.2, equal.})
+6... Nxg5 7. Nxg5 e6 {[%cal Gd8g5,Ge6d5] Hits the knight on g5 and the d5 pawn.}
+8. Qd2 {Guards the knight. 8.dxe6? Qxg5 wins a piece.}
+(8. Nf3 exd5 9. e3 O-O 10. Be2 c6 {A calm position: White may push the b-pawn to attack Black's queenside pawns. Stockfish: −0.2, equal.})
+8... exd5 9. Qe3+ Kf8 {The only move. 9...Qe7? 10.Qxe7+ Kxe7 11.Nxd5+ wins a pawn.}
+10. Qf4 {[%cal Gf4f7,Gg5f7] Threatens Qxf7 mate.} Bf6 {[%cal Gf6g5] Shuts the f-file and hits the knight.}
+11. h4 h6 12. Nf3 Kg7 {The king is safe on g7, and Black has the two bishops. Stockfish: 0.0, equal.} *
+
+[Chapter "Closed System: 6.cxd5"]
+[Side "black"]
+[Diagram "6.cxd5"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Three Knights Variation, Burille Variation"]
+[ECO "D94"]
+
+{Closed System: 4.e3. If White takes on d5 at move 6, Stjepan takes back with the knight and drops it to b6 against Bc4. Then ...c5 hits the center, and after the trades, Black's knight heads for c4 via a5.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. e3 Bg7 5. Nf3 O-O
+6. cxd5 {Against 6.Bd3, play 6...c5 7.O-O cxd4 8.exd4 Nc6, as in the main line.} Nxd5 7. Bc4 Nb6 {[%cal Gb6c4] Hits the bishop.}
+8. Bb3 c5 {[%cal Gc5d4] Hits the center.} 9. O-O cxd4 10. exd4 Nc6 {[%cal Gc6d4]}
+11. d5 Na5 12. Re1 Bg4 {[%cal Gg4f3,Ga5b3] Black's pieces are active, and the d5 pawn is far from its friends. Stockfish: +0.3, slightly better for White.} *
+
+[Chapter "Stockholm Variation: 5.Bh4 and 5.Bf4"]
+[Side "black"]
+[Diagram "5.Bh4"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Stockholm Variation"]
+[ECO "D80"]
+
+{Stockholm Variation: 4.Bg5. If White keeps the bishop, Black trades knights and takes on c4. Stjepan keeps the extra pawn with ...Be6. White gets a solid center and play against Black's queenside, but Black is a pawn up.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4
+5. Bh4 {Keeps the bishop.} (5. Bf4 Nxc3 6. bxc3 c5 {[%cal Gc5d4]} 7. e3 Bg7 8. Nf3 cxd4 9. cxd4 Nc6 {Black hits d4 with every piece, as in the Exchange. Stockfish: +0.2, equal.})
+5... Nxc3 6. bxc3 dxc4 {[%csl Yc4] Takes a pawn.}
+7. e3 Be6 {[%cal Ge6c4] Holds the c4 pawn.}
+8. Be2 Nd7 9. Nf3 Bg7 10. O-O c5 {[%cal Gc5d4] Black hits d4, still a pawn up. Stockfish: +0.1, equal.} *
+
+[Chapter "Russian System: 5.Qb3"]
+[Side "black"]
+[Diagram "5.Qb3"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Russian Variation, Byrne Variation"]
+[ECO "D97"]
+
+{Russian System: 4.Nf3 Bg7 5.Qb3. The queen hits d5, and after ...dxc4 Qxc4, White pushes e4 for a big center. Black is ahead in development. In his repertoire, Stjepan plays 7...Nc6, so the knight can jump to a5 with gain of time on the queen. Then ...Bg4 and ...c6 attack the center.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7
+5. Qb3 {[%cal Gb3d5,Gb3b7] Hits d5.} dxc4 6. Qxc4 O-O 7. e4 Nc6 {[%cal Gc6a5]}
+8. Be2 {8.d5 Na5 9.Qb4 c6 hits the pawn at once.} Bg4 {[%cal Gg4f3] Hits the knight that guards d4.}
+9. d5 Na5 {[%cal Ga5c4] Hits the queen.} 10. Qb4 Bxf3 11. Bxf3 c6 {[%cal Gc6d5] Attacks the d5 pawn; the a5 knight is guarded.}
+12. O-O Qb6 {Offers a queen trade, which would leave White's center weak.} 13. Qa4 Nd7 {[%cal Gd7c5,Gd7e5] The knight heads for c5 or e5. Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "Accelerated Russian: 4.Qb3"]
+[Side "black"]
+[Diagram "4.Qb3"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Grünfeld Defense: Russian Variation, Accelerated Variation"]
+[ECO "D81"]
+
+{Accelerated Russian: 4.Qb3. White plays the queen out before Nf3. Black takes on c4 and plays 6...a6, which Stjepan finds safer here. Against 7.Bf4 he gives the c7 pawn for quick development and pressure on e4.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5
+4. Qb3 dxc4 5. Qxc4 Bg7 6. e4 a6 {[%cal Gb7b5] Prepares ...b5 with gain of time on the queen.}
+7. Bf4 {[%cal Gf4c7] Hits c7.} b5 {Give the pawn: Black's bishop gets to b7 with gain of time.}
+8. Qxc7 Qxc7 9. Bxc7 Bb7 {[%cal Gb7e4] The bishop hits e4. Black has quick development for the pawn. Stockfish: +0.7, slightly better for White.} *
+
+[Chapter "Neo-Grünfeld: 3.g3"]
+[Side "black"]
+[Diagram "3.g3"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Neo-Grünfeld Defense: with g3"]
+[ECO "D70"]
+
+{Neo-Grünfeld: 3.g3. White fianchettoes the bishop instead of playing Nc3. After the trade on d5 and e4, Stjepan drops the knight to b6 and hits d4 with ...c5. In the main line, White is left with an isolated pawn on d5, which gets weaker with every trade.}
+1. d4 Nf6 2. c4 g6
+3. g3 d5 {3...Bg7 4.Bg2 d5 comes to the same.}
+4. cxd5 Nxd5 5. Bg2 Bg7 {[%cal Gg7d4]}
+6. e4 {Chases the knight: the most testing move.}
+(6. Nf3 Nb6 7. Nc3 Nc6 8. e3 O-O 9. O-O Re8 {[%cal Ge7e5] Next ...e5. Stockfish: +0.2, equal.})
+6... Nb6 {Stjepan: against an equal opponent, play ...Nb6.}
+7. Ne2 c5 {[%cal Gc5d4] Undermine the center at once.}
+8. d5 {8.dxc5? Qxd1+ 9.Kxd1 leaves White's king in the center and opens Black's bishop.} e6 9. O-O O-O
+10. Nec3 Na6 11. a4 exd5 12. exd5 Nc4 13. Nd2 Nxd2 14. Bxd2 Bf5 {[%csl Yd5] White's d-pawn stands alone, and trades will make it weaker. Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "f3 Anti-Grünfeld: 3.f3"]
+[Side "black"]
+[Diagram "3.f3"]
+[Type "line"]
+[Level "advanced"]
+[Opening "Neo-Grünfeld Defense: Goglidze Attack"]
+[ECO "D70"]
+
+{f3 Anti-Grünfeld: 3.f3. White prepares e4 before playing Nc3, so Black's knight can't trade itself on c3. Stjepan calls it "very uncomfortable" for Black. White castles queenside and storms with h4–h5; Black's play comes on the queenside and the d-file.}
+1. d4 Nf6 2. c4 g6
+3. f3 {Prepares e4. 3...Bg7 4.e4 d6 is a Sämisch King's Indian instead.} d5
+4. cxd5 Nxd5 5. e4 Nb6 {With no knight on c3, there is nothing to trade. The knight's best square is b6.}
+6. Nc3 Bg7 7. Be3 O-O 8. Qd2 Nc6 {[%cal Gc6d4]}
+9. O-O-O {Kings on opposite sides: White will push the h-pawn.} Qd6 {Stjepan's main line. The queen faces White's on the d-file.}
+10. Kb1 Rd8 11. Nb5 Qd7 12. d5 a6 {Chases the knight.}
+13. Nc3 Qe8 {[%cal Gd8d2] Steps off the d-file: now 14.dxc6? Rxd2 wins the queen.}
+14. Qc1 Na5 {[%cal Ga5c4] Heads for c4.} 15. h4 e6 {[%cal Ge6d5] Strikes at the center. Both kings are under fire. Stockfish: +0.6, slightly better for White.} *
+
+[Chapter "Trap, Petrosian: 6.Nxe4? dxe4"]
+[Side "black"]
+[Diagram "6.Nxe4"]
+[Type "trap"]
+[Opening "Grünfeld Defense: Three Knights Variation, Petrosian System"]
+[ECO "D91"]
+
+{Petrosian System: 5...Ne4. Almost one White player in five trades knights on e4. But after 6...dxe4 the knight on f3 is attacked, and wherever it goes, it stops guarding d4. Taking on d5 instead loses a piece.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4
+6. Nxe4?
+(6. Nxd5? Nxg5 7. Nxg5 e6 {[%cal Ge6d5,Gd8g5] Both white knights are attacked, and one of them is lost. Stockfish: −3.4, winning for Black.})
+6... dxe4 {[%cal Ge4f3,Gg7d4,Gd8d4] Hits the knight, and d4 is attacked twice.}
+7. Nd2 {Half of White players retreat here.}
+(7. Ne5? {Three White players in ten.} f6 {[%cal Gf6e5,Gf6g5] Hits the knight and the bishop: one of them is lost. Stockfish: −4.1, winning for Black.})
+7... Qxd4 {Black is a pawn up, and the queen hits b2 and f2. Stockfish: −1.9, clearly better for Black.} *
+
+[Chapter "Trap, Modern Exchange: 10.O-O? Bxf3"]
+[Side "black"]
+[Diagram "10.O-O"]
+[Type "trap"]
+[Opening "Grünfeld Defense: Exchange Variation, Modern Exchange Variation"]
+[ECO "D85"]
+
+{Modern Exchange: 8.Be2. After 9...Bg4, White has to push e5. Three White players in ten castle instead, and then the knight on f3, one of d4's guards, is taken. Black wins the d4 pawn.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Be2 Nc6 9. Be3 Bg4
+10. O-O? Bxf3 {[%cal Gg7d4,Gc6d4,Gd8d4] Removes a guard of d4.} 11. Bxf3 cxd4 12. cxd4 Bxd4 {[%cal Gd4a1] The bishop takes the pawn and hits the rook.}
+13. Bxd4 Qxd4 {Black is a pawn up, and the queens are coming off. Stockfish: −0.3, slightly better for Black.} *
+
+[Chapter "Trap, Modern Exchange: 9.d5? Qa5!"]
+[Side "black"]
+[Diagram "9.d5"]
+[Type "trap"]
+[Opening "Grünfeld Defense: Exchange Variation, Modern Exchange Variation"]
+[ECO "D85"]
+
+{Modern Exchange: 8.Bb5+. After 8...Nc6 the knight is pinned, and one White player in seven tries 9.d5 to win it. But 9...Qa5! hits the bishop on b5 and the c3 pawn. If White takes the knight, Black takes the bishop.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Bb5+ Nc6
+9. d5? {Attacks the pinned knight.} Qa5! {[%cal Ga5b5,Ga5c3] Hits the bishop and the c3 pawn.}
+10. dxc6?? {One White player in seven takes the knight.}
+(10. Rb1 {The best defense: the rook guards the bishop.} a6 11. Bxc6+ bxc6 12. O-O O-O {Black has the two bishops in an open position. Stockfish: +0.3, slightly better for White.})
+10... Qxb5 {Black has won a piece for a pawn. Stockfish: −2.2, winning for Black.} *
+
+[Chapter "Trap, Stockholm: 8.Bg2? Qa5+"]
+[Side "black"]
+[Diagram "8.Bg2"]
+[Type "trap"]
+[Opening "Grünfeld Defense: Stockholm Variation"]
+[ECO "D80"]
+
+{Stockholm Variation: 5.Nxe4. If White fianchettoes and lets the queens come off, White's bishop on g5 runs out of squares. ...Qa5+ trades queens, and then ...f6 and ...e5 trap the bishop.}
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Nxe4 dxe4 6. g3 Bg7 7. e3 c5
+8. Bg2? {Hits the e4 pawn, but leaves the bishop on g5 short of squares.} Qa5+! 9. Qd2 Qxd2+ 10. Kxd2 f6 {[%cal Gf6g5] Hits the bishop.}
+11. Bf4 e5 {[%cal Ge5f4] Hits it again.} 12. dxe5 fxe5 13. Bg5 h6 {The bishop is trapped and lost. Stockfish: −2.6, winning for Black.} *
+
+[Chapter "Map of the variations"]
+[Type "map"]
+
+1. d4 Nf6 2. c4 g6 {}
+3. Nc3 (3. f3 d5 {[%order 2] f3 Anti-Grünfeld}) (3. g3 d5 {[%order 3] Neo-Grünfeld})
+3... d5 {[%order 1] Grünfeld Defense}
+4. cxd5
+(4. Nf3 Bg7 {[%order 2] Three Knights} 5. Bg5 {[%order 1] Petrosian System} (5. Qb3 {[%order 2] Russian System}))
+(4. e3 Bg7 5. Nf3 O-O 6. Be2 c5 {[%course black] [%order 3] Closed System})
+(4. Bg5 Ne4 5. Nxe4 dxe4 {[%course black] [%order 4] Stockholm Variation})
+(4. Bf4 Bg7 5. e3 c6 {[%order 5] Brinckmann Attack})
+(4. Qb3 {[%order 6] Accelerated Russian})
+4... Nxd5 5. e4 Nxc3 6. bxc3 Bg7 {[%order 1] Exchange Variation}
+7. Bc4 (7. Nf3 c5 8. Be3 {[%course black] [%order 2] Modern Exchange})
+7... c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O {[%course both] [%order 1] Classical Exchange} *
