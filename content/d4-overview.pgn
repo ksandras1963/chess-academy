@@ -59,7 +59,23 @@ Black: Let White have the center, fianchetto your bishop and castle. Then strike
 3. Nc3 Bg7 {This is the King's Indian Defense. The bishop will press on the long diagonal.}
 4. e4 {White takes the whole center.} d6 {Stops e5 and prepares ...e5 or ...c5.} *
 
-[Chapter "Indian Defenses"]
+[Chapter "Nimzo-Indian Defense"]
+[Map "Nimzo-Indian"]
+[MapReply "Indian Defenses"]
+[Course "nimzo-indian"]
+[Group "1...Nf6: the Indian Defenses"]
+[Opening "Nimzo-Indian Defense"]
+[ECO "E20"]
+[Diagram "4...O-O"]
+
+{White: 4.Qc2 lets you take back on c3 with the queen, so you avoid doubled pawns; then a3 wins the bishop pair and e4 takes the center. Or play 4.e3 and develop quickly with Bd3, Nf3 and castling.
+
+Black: Pin the c3 knight so White can't play e4. Give up the bishop for the knight when it doubles White's c-pawns or costs White time. Strike back with ...c5 or ...d5.}
+1. d4 Nf6 2. c4 e6 {Prepares ...d5 or ...Bb4.}
+3. Nc3 {Prepares e4.} Bb4 {This is the Nimzo-Indian Defense. The pinned knight can't support e4.}
+4. Qc2 {The Classical Variation. If Black takes on c3, the queen takes back and White's pawns stay whole.} O-O {Black castles and keeps ...d5, ...c5 and ...Bxc3 in reserve.} *
+
+[Chapter "Other Indian Defenses"]
 [Map "Other Indian Defenses"]
 [MapReply "Indian Defenses"]
 [Group "1...Nf6: the Indian Defenses"]
@@ -68,7 +84,7 @@ Black: Let White have the center, fianchetto your bishop and castle. Then strike
 [Diagram "2.c4"]
 [Page "indian"]
 
-{Black develops the knight first and keeps the choice of setup open: the King's Indian, Nimzo-Indian, Queen's Indian, Grünfeld or Benoni.}
+{Black develops the knight first and keeps the choice of setup open. The other choices are the Grünfeld, the Queen's Indian and the Benoni; the Indian Defenses page shows them beside the King's Indian and the Nimzo-Indian.}
 1. d4 Nf6 {Black stops e4 and waits to choose a setup.} 2. c4 {The most common reply. White takes more of the center.} *
 
 [Chapter "Uncommon replies to 1.d4"]
