@@ -667,18 +667,6 @@ The common 10.Qc2? loses to 10...Nxe4! (see the trap chapter). 10.Nd2 is solid: 
 9. Nd2 {Protects c4.} c5 10. Qc2 Rb8 11. b3 b5 {Black strikes at c4 to open lines on the queenside.}
 12. Bb2 {White develops. The fight is about the b-file and the c4 pawn (Stockfish +0.5, slightly better for White).} *
 
-[Chapter "Fianchetto, Yugoslav: 6...c5"]
-[Side "both"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Exchange Line"]
-[ECO "E65"]
-
-{Black hits d4 with ...c5. After 8.d5 Na5 9.Nd2 a6 10.Qc2 Rb8 11.b3 b5 the game reaches the same position as Fianchetto, Panno, so this chapter shows 8.dxc5.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 d6 5. g3 O-O
-6. Bg2 c5 {This is the Yugoslav.}
-7. O-O Nc6 8. dxc5 {The Exchange Line: a symmetrical pawn structure.} dxc5
-9. Be3 Be6 {[%cal Ge6c4] Hits c4 (Stockfish +0.2, equal).} *
-
 [Chapter "Averbakh, Semi-Averbakh: 6.Be3"]
 [Side "both"]
 [Type "line"]
@@ -737,21 +725,6 @@ The common 10.Qc2? loses to 10...Nxe4! (see the trap chapter). 10.Nd2 is solid: 
 10. O-O-O {White castles long and gets ready for g4 and h4.} a4 {[%cal Ga4a3] Black's queenside pawns go after White's king.}
 11. g4 c6 {[%cal Gb7b5] Opens the c-file and prepares ...b5 (Stockfish +0.4, slightly better for White).} *
 
-[Chapter "Mar del Plata, Bayonet Attack: 9...a5"]
-[Side "both"]
-[Type "line"]
-[Level "advanced"]
-[Opening "King's Indian Defense: Orthodox Variation, Bayonet Attack"]
-[ECO "E97"]
-[Diagram "9...a5"]
-
-{Black's other main answers to the Bayonet. The plans stay the same: c5 and play on the queenside for you, ...f5 for Black.}
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. b4
-a5 {[%cal Ga5b4] Opens the a-file before White plays c5.}
-(9... Nd7 10. a4 f5 11. Ng5 {[%cal Gg5e6] The same idea: the knight eyes e6.} Nf6 12. f3 {You hold e4 and keep the queenside play (Stockfish +0.7, slightly better for White).})
-10. bxa5 Rxa5 11. a4 {[%cal Gc1a3] Holds the a-pawn; Ba3 and Nb5 can follow.} Nd7
-12. Nd2 f5 13. Nb3 Ra8 14. f3 {The knight on b3 supports a5 and c5 (Stockfish +0.6, slightly better for White).} *
-
 [Chapter "Mar del Plata, Modern System: 9.Nd2"]
 [Side "both"]
 [Level "advanced"]
@@ -789,7 +762,6 @@ a5 {[%cal Ga5b4] Opens the a-file before White plays c5.}
 4. e4
 (4. Nf3 d6 5. g3 O-O 6. Bg2 {[%order 1] Fianchetto} Nc6
 (6... Nbd7 {[%course both] [%order 1] Classical})
-(6... c5 {[%order 3] Yugoslav})
 7. O-O a6 {[%order 2] Panno})
 4... d6
 5. Nf3
