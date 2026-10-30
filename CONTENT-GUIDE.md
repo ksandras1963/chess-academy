@@ -10,7 +10,7 @@ The Queen's Gambit and King's Indian course pages are short, in this order: a se
 
 Kumar's rules for every opening. The King's Indian follows them.
 
-1. **The page order.** An opening's Introduction page shows, in this order: a short text of two or three sentences, the course links (the yellow box), the map of the variations, then a table of the variations that says what happens in each and how often it is played (a "How often" column, with a note on how it is measured). A course page keeps the same order for its text, map and table (see above).
+1. **The page order.** An opening's Introduction page shows, in this order: a short text of two or three sentences, the course links (the yellow box), the map of the variations, then a table of the variations that says what happens in each and how often it is played (a "How often" column, with a note on how it is measured). The Sicilian Introduction has no table, by Kumar's choice: its five courses each have one. A course page keeps the same order for its text, map and table (see above).
 2. **Name first, then the move.** Whenever a line is meant, give its name and then the move: "Mar del Plata, Bayonet Attack: 9.b4", "Classical, Open Center: 7...exd4". Chapter titles, notes and table rows use the same pattern.
 3. **Less text.** A note can run up to five sentences when needed; keep it shorter when it can be. In Kumar's words: "Can be longer sentences - up to 5, if needed." Use the table and the map instead of long paragraphs.
 4. **Names.** The Lichess name is the official one (the `Opening` header). Use a descriptive name ("Open Center") where Lichess has none.
