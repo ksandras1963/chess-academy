@@ -373,7 +373,8 @@
         },
         {
             "id": "slav",
-            "name": "Slav Defense",
+            "name": "Queen's Gambit: Slav Defense",
+            "games": "Slav",
             "eco": "D10",
             "moves": "1. d4 d5 2. c4 c6",
             "summary": "Black guards d5 with the c-pawn, so the light-squared bishop can still come out before ...e6. Solid, with a few exact lines to know.",
@@ -545,7 +546,8 @@
         },
         {
             "id": "tarrasch",
-            "name": "Tarrasch Defense",
+            "name": "Queen's Gambit: Tarrasch Defense",
+            "games": "Tarrasch",
             "eco": "D32",
             "moves": "1. d4 d5 2. c4 e6 3. Nc3 c5",
             "summary": "Black strikes at d4 with 3...c5 and accepts an isolated d-pawn in return for quick, active development.",
@@ -1954,7 +1956,7 @@
                         "The most played and the most solid. The center often stays closed, so both sides follow long-term plans, such as White's minority attack. 3...c5, the Tarrasch, is the active version: Black takes an isolated d-pawn for active pieces."
                     ],
                     [
-                        "2...c6 (Slav Defense)",
+                        "2...c6 (Queen's Gambit: Slav Defense)",
                         "26%",
                         "Just as solid, and the c8 bishop can still come out. Some lines are sharp, because Black takes on c4 and holds the pawn with ...b5. With ...e6 as well, it becomes the Semi-Slav."
                     ],

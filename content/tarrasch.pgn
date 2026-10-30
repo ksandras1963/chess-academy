@@ -388,7 +388,7 @@ Next, against 8.e3, 8...c4 gains space on the queenside (Stockfish −0.2, equal
 [Chapter "Map of the variations"]
 [Type "map"]
 
-1. d4 d5 2. c4 e6 3. Nc3 c5 {Tarrasch Defense}
+1. d4 d5 2. c4 e6 3. Nc3 c5 {Queen's Gambit: Tarrasch Defense}
 4. cxd5 (4. e3 Nc6 {[%course black] Symmetrical Variation}) (4. dxc5 d4 {[%course black]})
 4... exd5 {} (4... cxd4 {Schara Gambit})
 5. Nf3 (5. dxc5 d4 {[%course black]})

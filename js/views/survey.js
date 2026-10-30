@@ -127,9 +127,10 @@ async function lessonLinks(cat, ch) {
     return Object.keys(out).length ? out : null
 }
 
-/** "Slav" for the card "Slav Defense", "Declined" for "Queen's Gambit Declined": a variation's short name. */
+/** "Slav" for the card "Queen's Gambit: Slav Defense", "Declined" for "Queen's Gambit Declined": a variation's short name. */
 function variationName(op, ch) {
-    const title = op && ch.title.startsWith(`${op.name} `) ? ch.title.slice(op.name.length + 1) : ch.title
+    const prefix = op && [`${op.name}: `, `${op.name} `].find(p => ch.title.startsWith(p))
+    const title = prefix ? ch.title.slice(prefix.length) : ch.title
     return title.replace(/ (Defense|Defence|Countergambit|Gambit|Variation)$/, "")
 }
 
