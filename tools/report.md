@@ -956,6 +956,65 @@ None.
 | Trap: 6...Bg7? and e5 in the Hyperaccelerated (7...Ng4) | 3.93 | B27 Sicilian Defense: Hyperaccelerated Dragon |
 | Trap: 6...Bg7? and e5 in the Hyperaccelerated (7...Nh5) | 3.17 | B27 Sicilian Defense: Hyperaccelerated Dragon |
 | Trap: 8...dxe3?? and Bxf7+ (Main line) | 4.89 | B22 Sicilian Defense: Alapin Variation, Barmen Defense |
+## Sicilian Najdorf — both sides (`sicilian-najdorf`)
+
+24 chapters, 21 drillable lines (basic 7, traps 9, advanced 5), 276 learner moves.
+
+### Opening names and course-page diagrams
+
+| Chapter | Diagram | Opening header | ECO | Check |
+|---|---|---|---|---|
+| English Attack: 6...e5 | 6...e5 | Sicilian Defense: Najdorf Variation, English Attack | B90 | ok |
+| English Attack: 6...e6 | 6...e6 | Sicilian Defense: Scheveningen Variation, English Attack, with f3 | B90 | ok |
+| 6.Bg5 Main Line: 7...Be7 | 7...Be7 | Sicilian Defense: Najdorf Variation, Main Line | B99 | ok |
+| Fischer–Sozin Attack: 6.Bc4 | 6.Bc4 | Sicilian Defense: Najdorf Variation, Lipnitsky Attack | B90 | ok |
+| Opočenský Variation: 6.Be2 | 6.Be2 | Sicilian Defense: Najdorf Variation, Opocensky Variation, Traditional Line | B92 | ok |
+| Najdorf with 6.Bd3 | 6.Bd3 | Sicilian Defense: Najdorf Variation, Yates Variation | B90 | ok |
+| English Attack: 7.Nf3 | 7.Nf3 | Sicilian Defense: Najdorf Variation, English Attack | B90 | ok |
+| English Attack: 6...Ng4 | 6...Ng4 | Sicilian Defense: Najdorf Variation, English Attack, Anti-English | B90 | ok |
+| Scheveningen, Keres Attack: 6.g4 | 6.g4 | Sicilian Defense: Scheveningen Variation, Keres Attack | B81 | ok |
+| Scheveningen, Classical: 6.Be2 | 6.Be2 | Sicilian Defense: Scheveningen Variation, Classical Variation | B83 | ok |
+| Trap: 16.fxe6?! and ...axb3 | 16...axb3 | Sicilian Defense: Najdorf Variation, English Attack | B90 | ok |
+| Trap: 13...Nfxe4! in the Fischer–Sozin | 13...Nfxe4 | Sicilian Defense: Najdorf Variation, Lipnitsky Attack | B90 | ok |
+| Trap: ...b4 and ...Nxe4? in the Fischer–Sozin | 10.Re1 | Sicilian Defense: Sozin Attack, Flank Variation | B87 | ok |
+| Trap: 13.Na4? and ...Qxc2 | 13...Qxc2 | Sicilian Defense: Najdorf Variation, Opocensky Variation, Traditional Line | B92 | ok |
+| Trap: 11.Bg2! and the knight on d4 | 11.Bg2 | Sicilian Defense: Scheveningen Variation, Keres Attack | B81 | ok |
+| Trap: 7...g5? in the Keres Attack | 9.Rxh8 | Sicilian Defense: Scheveningen Variation, Keres Attack | B81 | ok |
+
+### Learner moves flagged (> 0.60 pawns worse than engine best, depth 18)
+
+None.
+
+### Opponent moves that lose > 1.50 pawns but are not marked ?, ?? or ?!
+
+None.
+
+### Line ends (evaluation from the learner's side; Lichess name of the deepest named position)
+
+| Line | Eval | Deepest named position |
+|---|---|---|
+| English Attack: 6...e5 (English Attack, as White) | 0.27 | B90 Sicilian Defense: Najdorf Variation, English Attack |
+| English Attack: 6...e5 (English Attack, as Black) | -0.27 | B90 Sicilian Defense: Najdorf Variation, English Attack |
+| English Attack: 6...e6 (Main line) | 1.13 | B90 Sicilian Defense: Scheveningen Variation, English Attack, with f3 |
+| 6.Bg5 Main Line: 7...Be7 (Main line) | -0.59 | B99 Sicilian Defense: Najdorf Variation, Main Line |
+| Fischer–Sozin Attack: 6.Bc4 (Main line) | -0.10 | B90 Sicilian Defense: Najdorf Variation, Lipnitsky Attack |
+| Opočenský Variation: 6.Be2 (Main line) | -0.02 | B92 Sicilian Defense: Najdorf Variation, Opocensky Variation, Traditional Line |
+| Najdorf with 6.Bd3 (Main line) | 0.00 | B90 Sicilian Defense: Najdorf Variation, Yates Variation |
+| English Attack: 7.Nf3 (Main line) | -0.17 | B90 Sicilian Defense: Najdorf Variation, English Attack |
+| English Attack: 6...Ng4 (Main line) | 0.29 | B90 Sicilian Defense: Najdorf Variation, English Attack, Anti-English |
+| Scheveningen, Keres Attack: 6.g4 (Keres Attack, as White) | 0.73 | B81 Sicilian Defense: Scheveningen Variation, Keres Attack |
+| Scheveningen, Keres Attack: 6.g4 (Keres Attack, as Black) | -0.73 | B81 Sicilian Defense: Scheveningen Variation, Keres Attack |
+| Scheveningen, Classical: 6.Be2 (Main line) | 0.32 | B83 Sicilian Defense: Scheveningen Variation, Classical Variation |
+| Trap: 16.fxe6?! and ...axb3 (Main line) | 6.16 | B90 Sicilian Defense: Najdorf Variation, English Attack |
+| Trap: 16.fxe6?! and ...axb3 (17.cxb3) | -0.33 | B90 Sicilian Defense: Najdorf Variation, English Attack |
+| Trap: 13...Nfxe4! in the Fischer–Sozin (Main line) | 1.95 | B90 Sicilian Defense: Najdorf Variation, Lipnitsky Attack |
+| Trap: 13...Nfxe4! in the Fischer–Sozin (15.Nxe6) | 0.00 | B90 Sicilian Defense: Najdorf Variation, Lipnitsky Attack |
+| Trap: ...b4 and ...Nxe4? in the Fischer–Sozin (Main line) | 1.88 | B87 Sicilian Defense: Sozin Attack, Flank Variation |
+| Trap: 13.Na4? and ...Qxc2 (Main line) | 2.30 | B92 Sicilian Defense: Najdorf Variation, Opocensky Variation, Traditional Line |
+| Trap: 11.Bg2! and the knight on d4 (Main line) | 5.65 | B81 Sicilian Defense: Scheveningen Variation, Keres Attack |
+| Trap: 11.Bg2! and the knight on d4 (11...Qxd4) | 5.56 | B81 Sicilian Defense: Scheveningen Variation, Keres Attack |
+| Trap: 7...g5? in the Keres Attack (Main line) | 7.80 | B81 Sicilian Defense: Scheveningen Variation, Keres Attack |
+
 ## Ruy Lopez — both sides (`ruy-lopez`)
 
 62 chapters, 91 drillable lines (basic 10, traps 10, advanced 71), 805 learner moves.
@@ -2061,6 +2120,23 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 8 | Hyperaccelerated: the knight with no square | White | 7.e5 | 1 | 7...Ng8 (2 half-moves) | ok |
 | 9 | Hyperaccelerated: the poisoned bishop | White | 9.Bxf7+ | 1 | 9...Kxf7 (2 half-moves) | ok |
 | 10 | Hyperaccelerated: take the bishop | Black | 6...axb5 | 1 | 7.exf6 (8 half-moves) | ok |
+## Puzzles: Sicilian Najdorf (`content/sicilian-najdorf-puzzles.pgn`)
+
+8 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
+
+Follow-up moves (after the `End` move) are shown for stepping through and are not checked here.
+
+| # | Puzzle | To move | First move | Solver moves | Follow-up | Check |
+|---|---|---|---|---|---|---|
+| 1 | 6.Bg5: the long diagonal | White | 10.e5 | 1 | 10...Nd5 (6 half-moves) | ok |
+| 2 | 6.Bg5 and Bc4: the sacrifice on e6 | White | 9.Bxe6 | 1 | 9...fxe6 (6 half-moves) | ok |
+| 3 | 6.Bg5 e5: the trade on d5 | Black | 8...Nxd5 | 1 | 9.Qxd5 (2 half-moves) | ok |
+| 4 | 6.Bc4 e5: two pieces against f7 | White | 8.Ng5 | 1 | 8...Be6 (4 half-moves) | ok |
+| 5 | 6.Bc4 e5: the bishop check | White | 8.Bxf7+ | 1 | 8...Kxf7 (6 half-moves) | ok |
+| 6 | Scheveningen: the loose queen | Black | 8...Nxd4 | 1 | 9.Qd3 (2 half-moves) | ok |
+| 7 | 6.Bg5 with Bd3: the pin on the diagonal | Black | 9...Qb6 | 1 | 10.Ne2 (8 half-moves) | ok |
+| 8 | 6.Be3 e5: the open diagonal to a8 | White | 9.Bd5 | 1 | 9...Nxd5 (4 half-moves) | ok |
+
 ## Puzzles: Ruy Lopez (`content/ruy-lopez-puzzles.pgn`)
 
 11 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
