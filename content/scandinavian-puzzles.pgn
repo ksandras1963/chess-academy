@@ -71,7 +71,7 @@
 [Hint "White's king is still on e1, with the bishop on e2 in front of it."]
 
 1. e4 d5 2. exd5 Nf6 3. Nc3 Nxd5 4. Nxd5 Qxd5 5. d4 Nc6 6. Nf3 Bg4 7. Be2 O-O-O 8. c3 e5 9. dxe5? Qe4! {[%cal Ge4e2,Gg4f3] Pins the bishop on e2 to the king and threatens ...Bxf3.}
-(9... Qxd1+?! {Trades queens, and Black is only slightly better.} 10. Bxd1 Nxe5 11. Be2 Bxf3 12. gxf3 {Stockfish: −0.6, slightly better for Black.})
+(9... Qxd1+!? {Playable: it wins the pawn back, but after the queen trade Black is only slightly better.} 10. Bxd1 Nxe5 11. Be2 Bxf3 12. gxf3 {Stockfish: −0.6, slightly better for Black. 9...Qe4 keeps a bigger edge.})
 10. Bd2 Nxe5 {[%cal Ge5f3,Gd8d2] Black wins the pawn back, and every Black piece joins the attack. Stockfish: −3.6, winning for Black.}
 *
 
