@@ -157,7 +157,7 @@ function courseLinks(cat, s, ch, lessons, spelled = new Set()) {
     const family = chapterOps(cat, ch)
     if (ch.headers.Page && family.length > 1 && family.some(isBuilt)) {
         return h("a", { class: "course-link", href: `#/survey/${ch.headers.Page}`, title: "Its courses are listed on its page" },
-            h("span", { class: "side-chip both", "aria-hidden": "true" }), `${ch.title} Course`)
+            h("span", { class: "side-chip both", "aria-hidden": "true" }), `${familyName(ch)} Course`)
     }
     const built = ops.flatMap(op => op.courses.filter(m => m.available))
     if (!built.length) {
@@ -182,8 +182,8 @@ function courseBox(cat, s, hasLessons) {
     const ops = [...new Set(courseOps(cat, ids))].filter(op => !inFamily.has(op) && isBuilt(op))
     const built = op => op.courses.filter(m => m.available)
     const groups = [
-        ...families.map(ch => [{ href: `#/survey/${ch.headers.Page}`, text: `${ch.title} Course`, side: "both", tip: "Its courses are listed on its page" }]),
-        ...ops.map(op => built(op).map(m => ({ href: `#/course/${m.id}`, text: courseTitle(op, m), side: m.side, tip: m.repertoire }))),
+        ...families.map(ch => [{ key: ch.headers.Page, href: `#/survey/${ch.headers.Page}`, text: `${familyName(ch)} Course`, side: "both", tip: "Its courses are listed on its page" }]),
+        ...ops.map(op => built(op).map(m => ({ key: m.id, href: `#/course/${m.id}`, text: courseTitle(op, m), side: m.side, tip: m.repertoire }))),
     ]
     // Courses not written yet: the page's own ("The Nimzo-Indian Defense and Grünfeld Defense courses are
     // coming soon."), and a family's, named with its page ("On the Indian Defenses page, ...").
@@ -196,7 +196,7 @@ function courseBox(cat, s, hasLessons) {
     const coming = [
         ...families.map(ch => {
             const all = chapterOps(cat, ch), later = all.filter(op => !isBuilt(op)), ready = all.filter(isBuilt)
-            return later.length ? ` On the ${ch.title} page, ${ready.length ? `${courseNames(ready)} ready; ` : ""}${courseNames(later)} coming soon.` : ""
+            return later.length ? ` On the ${familyName(ch)} page, ${ready.length ? `${courseNames(ready)} ready; ` : ""}${courseNames(later)} coming soon.` : ""
         }),
         soon.length ? ` ${upper(courseNames(soon))} coming soon.` : ""]
     return h("section", { class: "course-box" },
@@ -207,7 +207,7 @@ function courseBox(cat, s, hasLessons) {
             bothSides ? (groups.flat().length > 1 ? " Each course teaches both sides, with a drill for each." : " The course teaches both sides, with a drill for each.") : "",
             ...coming,
             hasLessons ? " The links under each variation below open only the lesson on that variation." : ""].join("")),
-        boxRows(groups).map(row => h("div", { class: "course-box-links" }, row.map(it => h("a", { class: "btn course-box-link", href: it.href, title: it.tip },
+        (s.boxRows ? listedRows(s.boxRows, groups) : boxRows(groups)).map(row => h("div", { class: "course-box-links" }, row.map(it => h("a", { class: "btn course-box-link", href: it.href, title: it.tip },
             h("span", { class: `side-chip ${it.side}`, "aria-hidden": "true" }), it.text, h("span", { "aria-hidden": "true" }, "›"))))))
 }
 
@@ -222,6 +222,21 @@ function plannedBox(ops) {
         h("p", {}, `${ops.length > 1 ? "These courses" : "This course"} will teach the opening from both sides, with a drill for each. ${ops.length > 1 ? "They are" : "It is"} coming soon.`),
         boxRows([items]).map(row => h("div", { class: "course-box-links" }, row.map(it => h("span", { class: "btn course-box-link is-soon", title: "Coming soon" },
             h("span", { class: `side-chip ${it.side}`, "aria-hidden": "true" }), it.text)))))
+}
+
+/** A family's link names it without the moves in its card title: "Sicilian Defense (1...c5)" gives "Sicilian Defense". */
+const familyName = ch => ch.title.replace(/\s*\([^)]*\)\s*$/, "")
+
+/**
+ * The box's rows when the page lists them in courses.json ("boxRows": rows of course ids and
+ * [Page] ids, as on the 1.e4 page). Links it doesn't list follow in the usual rows.
+ */
+function listedRows(keys, groups) {
+    const byKey = new Map(groups.flat().map(it => [it.key, it]))
+    const rows = keys.map(row => row.map(k => byKey.get(k)).filter(Boolean)).filter(row => row.length)
+    const listed = new Set(keys.flat())
+    const rest = groups.map(g => g.filter(it => !listed.has(it.key))).filter(g => g.length)
+    return [...rows, ...boxRows(rest)]
 }
 
 /**

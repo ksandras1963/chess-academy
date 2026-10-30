@@ -1586,7 +1586,19 @@
                 ],
                 "note": "Share: how often each reply follows 1.e4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
             },
-            "summary": "Under each board, press ▶︎ Watch the moves to step through the first four moves. The Ruy Lopez, Italian, French, Caro-Kann and Scandinavian link to their courses in this app. Rarer openings, such as the Pirc and the King's Gambit, have a page of their own, linked at the bottom."
+            "summary": "Under each board, press ▶︎ Watch the moves to step through the first four moves. The Ruy Lopez, Italian, Sicilian, French, Caro-Kann and Scandinavian link to their courses in this app. Rarer openings, such as the Pirc and the King's Gambit, have a page of their own, linked at the bottom.",
+            "boxRows": [
+                [
+                    "ruy-lopez",
+                    "italian",
+                    "sicilian"
+                ],
+                [
+                    "french",
+                    "caro-kann",
+                    "scandinavian"
+                ]
+            ]
         },
         {
             "id": "e4-uncommon",
