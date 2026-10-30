@@ -154,14 +154,16 @@
 6... Kd7 {Black's best, but the king is stuck in the middle.} 7. Ng5 {[%cal Gg5f7] The other knight joins in, aiming at f7. Stockfish: +2.0, winning for White.}
 *
 
-[Puzzle "The knight jump to e5"]
+[Puzzle "Ng5 and the fork on f7"]
 [Type "puzzle"]
 [Theme "Punish the mistake"]
-[Solve "7.Nce5"]
-[End "7.Nce5"]
-[Hint "Your bishop wants to give check on b5. Which knight jump makes every block of that check lose a piece?"]
+[Solve "8.Ng5"]
+[End "8.Ng5"]
+[Hint "Black's ...a6 stopped Bb5+. Only the king guards f7, and your knight on e5 already hits it. What can join in?"]
 
-1. d4 Nf6 2. Nf3 e6 3. Bf4 c5 4. e3 b6 5. Nbd2 Bb7 6. Nc4 d5? 7. Nce5! {[%cal Ge5d7,Ge5f7,Gf1b5] Eyes d7 and f7, and Bb5+ comes next: a knight on d7 would be taken.}
-(7. Ncd2? {Retreats, and the chance is gone.} 7... Bd6 {Stockfish: 0.0, equal.})
-7... Bd6 {Black's best try.} 8. Bb5+ Ke7 {Every block loses a piece, so the king has to move.} 9. c3 {Black can no longer castle. Stockfish: +0.8, slightly better for White.}
+1. d4 Nf6 2. Nf3 e6 3. Bf4 c5 4. e3 b6 5. Nbd2 Bb7 6. Nc4 d5 7. Nce5 a6? 8. Ng5! {[%cal Gg5f7,Ge5f7] Both knights hit f7, and only the king guards it. A knight on f7 would fork queen and rook.}
+(8. Bd3? {Develops, but the chance is gone.} 8... Nc6 9. c3 Bd6 {Stockfish: +0.5, slightly better for White.})
+8... Rg8 {Black's best try: the rook steps out of the fork.}
+(8... cxd4 9. exd4 Ne4 10. Ngxf7 {[%cal Gf7d8,Gf7h8] The fork: queen and rook are both hit. Stockfish: +3.2, winning for White.})
+9. Nexf7 Qd7 10. Ne5 {[%cal Ge5d7] White is a pawn up and hits the queen again. Black's rook has left h8, so Black can't castle kingside. Stockfish: +2.9, winning for White.}
 *
