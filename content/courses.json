@@ -631,7 +631,7 @@
                     "id": "anti-sicilian",
                     "side": "both",
                     "file": "content/anti-sicilian.pgn",
-                    "repertoire": "As White: the Grand Prix, the Closed Sicilian, the Alapin and the Smith-Morra Gambit. As Black: the e-pawn and d-pawn against the early bishop, a fianchetto against the Grand Prix and the Closed Sicilian, an early d-pawn strike against the Alapin, and a safe set-up against the Smith-Morra.",
+                    "repertoire": "",
                     "summary": "Why the name: the main line of the Sicilian is the Open Sicilian, in which White develops the king's knight, opens the center with the d-pawn and takes back on d4 with the knight. Black's best-known systems, such as the Najdorf and the Dragon, all come from it. An anti-Sicilian is any other White system: it avoids the Open Sicilian, and with it the long, well-studied lines that Sicilian players prepare. This course teaches the ones club players meet most often.",
                     "why": {
                         "text": "As White, an anti-Sicilian lets you choose the battlefield. The Alapin and the Smith-Morra Gambit fight for the center at once, the Grand Prix aims straight at Black's king, and the Closed Sicilian keeps the center shut for a slow kingside attack. Each has one set of plans that you use in almost every game, so there is far less to learn than in the Open Sicilian, and Black's natural moves often run into traps.\n\nAs Black, about two of every three Sicilian games against club players are anti-Sicilians. This course answers White's most common second moves, and Advanced adds the Rossolimo and the Moscow, which come after the knight move. Each answer is simple, safe and quick to learn, and against the weakest of them, the early bishop to c4, Black is equal at once."
@@ -724,8 +724,8 @@
                     "id": "sicilian-dragon",
                     "side": "both",
                     "file": "content/sicilian-dragon.pgn",
-                    "repertoire": "As White: the Yugoslav Attack against the Dragon, the Maróczy Bind against the Accelerated Dragon, and the queen recapture against the Hyperaccelerated Dragon. As Black: the Dragon, with the central pawn break against early queenside castling, and the Accelerated and Hyperaccelerated move orders.",
-                    "summary": "Three move orders, one idea: Black fianchettoes the king's bishop on g7. In the Dragon, Black moves the d-pawn one square and brings out the king's knight before the fianchetto, so White can castle long and storm the kingside in the Yugoslav Attack. In the Accelerated Dragon, Black brings out the queen's knight and fianchettoes before moving the d-pawn; the pawn can then reach d5 in one move, which spoils the Yugoslav Attack, and White's best answer is the Maróczy Bind, with pawns on c4 and e4. In the Hyperaccelerated Dragon, Black fianchettoes on move 2: most games turn into the Accelerated Dragon, and White's one try of its own is to take back on d4 with the queen. The name comes from Fyodor Dus-Chotimirsky, to whom the pawn shape looked like the Draco constellation.",
+                    "repertoire": "The Dragon, the Accelerated Dragon and the Hyperaccelerated Dragon, from both sides.",
+                    "summary": "The name comes from Fyodor Dus-Chotimirsky, to whom the pawn shape looked like the Draco constellation. Henry Bird played it in London tournaments in the 1880s, and White's sharpest answer, the Yugoslav Attack, is named after the Yugoslav players who made it famous in the 1950s and 1960s. Garry Kasparov and Magnus Carlsen have both played the Dragon.",
                     "why": {
                         "text": "As White, the Dragon gives you a clear plan: castle on the queenside, push the kingside pawns and trade off Black's best bishop. Against the Accelerated Dragon, the Maróczy Bind gives you a lasting edge in space at almost no risk. Club players often go wrong against both, and the traps in this course punish the most common mistakes.\n\nAs Black, the Dragon is one of the sharpest ways to play for a win against the king's pawn: the bishop on g7 and the open c-file give real counterattacking chances. Stjepan Tomić calls it \"probably one of the best ways for black to fight for an advantage against e4 players\". The Accelerated and Hyperaccelerated move orders avoid the Yugoslav Attack, at the price of allowing the Maróczy Bind."
                     },
@@ -812,15 +812,89 @@
         {
             "id": "sicilian-najdorf",
             "name": "Sicilian Najdorf",
-            "eco": "B90",
-            "moves": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6",
-            "summary": "Black's most popular Open Sicilian: a quiet pawn move that keeps White's pieces off b5 and prepares play in the center and on the queenside. With the Classical and Scheveningen Variations.",
+            "eco": "B20",
+            "moves": "1. e4 c5",
+            "games": "Sicilian",
+            "summary": "Black plays the a-pawn one square to keep White's pieces off b5, then fights for the center and counterattacks on the queenside. With the Scheveningen.",
             "courses": [
                 {
                     "id": "sicilian-najdorf",
-                    "side": "both"
+                    "side": "both",
+                    "file": "content/sicilian-najdorf.pgn",
+                    "repertoire": "The Najdorf, with the Scheveningen, from both sides.",
+                    "summary": "Named after Miguel Najdorf, the Polish-Argentine grandmaster. Bobby Fischer played it throughout his career, and Garry Kasparov after him.",
+                    "why": {
+                        "text": "As White, the English Attack gives you one clear plan against the Najdorf, as the Yugoslav Attack does against the Dragon: castle on the queenside and storm the kingside with the pawns.\n\nAs Black, the Najdorf is flexible: against each White set-up you choose where the e-pawn goes, then counterattack on the queenside. It is sharp and full of theory, so this course keeps to the main ideas and the lines club players meet most. Stjepan Tomić's advice holds for both sides: \"You have to be quick, and if you play this position too slow, you are basically going to lose.\""
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "English Attack: 6...e5",
+                                "8% as White\n5% as Black",
+                                "White: Castle long and storm the kingside with the pawns.\nBlack: Castle short and race on the queenside with the a-pawn and b-pawn."
+                            ],
+                            [
+                                "English Attack: 6...e6",
+                                "4% as White",
+                                null
+                            ],
+                            [
+                                "6.Bg5 Main Line: 7...Be7",
+                                "3% as Black",
+                                "White: Castle long and push the kingside pawns.\nBlack: Develop solidly, then counterattack with the b-pawn."
+                            ],
+                            [
+                                "Fischer–Sozin Attack: 6.Bc4",
+                                "4% as Black",
+                                "White: Aim the bishop at Black's kingside and bring the queen over to attack.\nBlack: Block the bishop with the e-pawn and gain space on the queenside."
+                            ],
+                            [
+                                "Opočenský Variation: 6.Be2",
+                                "4% as Black",
+                                "White: Castle short and fight calmly for the center.\nBlack: Develop quickly and break in the center with the d-pawn."
+                            ],
+                            [
+                                "Najdorf with 6.Bd3",
+                                "2% as Black",
+                                "White: Castle short and build up slowly.\nBlack: Claim the center with the e-pawn and develop freely."
+                            ]
+                        ],
+                        "note": "How often: the share of your Sicilian games that reach the line, from the side you play in it, counting every move order. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced: the English Attack's other replies and the Scheveningen."
+                    }
                 }
-            ]
+            ],
+            "furtherStudy": [
+                {
+                    "title": "The Najdorf (part 1) ⎸Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=BPg1bSeJYNg"
+                },
+                {
+                    "title": "The Najdorf (part 2) ⎸Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=Ls5I8pC26Zc"
+                },
+                {
+                    "title": "Najdorf Repertoire for Black (All 12 variations)",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=FaLg1iNGpFw"
+                },
+                {
+                    "title": "Scheveningen Variation | Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=8G9jKtm8Sds"
+                }
+            ],
+            "puzzles": "content/sicilian-najdorf-puzzles.pgn"
         },
         {
             "id": "sicilian-taimanov-kan",
