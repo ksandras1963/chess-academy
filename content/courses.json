@@ -991,13 +991,92 @@
         {
             "id": "sicilian-sveshnikov-kalashnikov",
             "name": "Sicilian Sveshnikov and Kalashnikov",
-            "eco": "B32",
-            "moves": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4",
+            "eco": "B20",
+            "moves": "1. e4 c5",
+            "games": "Sicilian",
             "summary": "Black pushes the e-pawn two squares to chase White's knight, accepting a hole in the center in return for active pieces.",
+            "puzzles": "content/sicilian-sveshnikov-kalashnikov-puzzles.pgn",
             "courses": [
                 {
                     "id": "sicilian-sveshnikov-kalashnikov",
-                    "side": "both"
+                    "side": "both",
+                    "file": "content/sicilian-sveshnikov-kalashnikov.pgn",
+                    "repertoire": "The Sveshnikov and the Kalashnikov, from both sides.",
+                    "summary": "The Sveshnikov used to be called the Lasker-Pelikan, after Emanuel Lasker, who played it early in the 20th century, and Jorge Pelikan, who played it in the 1950s. Evgeny Sveshnikov made it popular in the 1970s.",
+                    "why": {
+                        "text": "As White, both openings leave a hole in Black's center, and White's plan is always the same: trade off its defenders and put a knight there. One Black player in five also chases the knight from b5 too early, and a knight check punishes it.\n\nAs Black, you get quick development and active pieces in return for that hole. Stjepan Tomić calls the Sveshnikov \"really straightforward and easy to learn. Much easier than, let's say, the Najdorf, because most lines are forcing\". Of the Kalashnikov move order he says \"most players with white don't know that much theory in this line\"."
+                    },
+                    "table": {
+                        "columns": [
+                            "Variation",
+                            "How often",
+                            "What to do"
+                        ],
+                        "rows": [
+                            [
+                                "Sveshnikov Main Line: 9.Nd5",
+                                "2% as White\n4% as Black",
+                                "White: Trade off Black's defenders and plant a knight in the hole in Black's center.\nBlack: Castle, then attack White's center with the f-pawn."
+                            ],
+                            [
+                                "Sveshnikov: 6.Nxc6",
+                                "3% as Black",
+                                "White: Trade knights early and develop quickly.\nBlack: Take back toward the center, pin White's knight and push the d-pawn."
+                            ],
+                            [
+                                "Kalashnikov: 5.Nxc6",
+                                "7% as Black",
+                                null
+                            ],
+                            [
+                                "Sveshnikov: 6.Nb3",
+                                "3% as Black",
+                                "White: Retreat the knight and develop calmly.\nBlack: Pin White's knight and strike in the center at once."
+                            ],
+                            [
+                                "Kalashnikov: 5.Nb3",
+                                "4% as Black",
+                                null
+                            ],
+                            [
+                                "Kalashnikov Main Line: 8.Nd5",
+                                "2% as White\n6% as Black",
+                                "White: Put a knight in the hole in Black's center and gain space with the pawns.\nBlack: Chase White's knights with the pawns and trade off the strong one."
+                            ],
+                            [
+                                "Löwenthal: 6.Nd6+",
+                                "2% as White",
+                                "White: Check with the knight and win the bishop pair.\nBlack: Trade queens and catch up in development."
+                            ]
+                        ],
+                        "note": "How often: the share of your Sicilian games that reach the line, from the side you play in it, counting every move order. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced."
+                    }
+                }
+            ],
+            "furtherStudy": [
+                {
+                    "title": "Sveshnikov Variation | Sicilian Defense Theory",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=vM5KUWXPkbo"
+                },
+                {
+                    "title": "A Simple Sicilian Defense Repertoire for Black",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=DxHul74NsDY"
+                },
+                {
+                    "title": "Sicilian Defense (introduction, ideas & variations) ⎸Chess Openings",
+                    "by": "Stjepan Tomić, Hanging Pawns",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=impkeLfyyVM"
+                },
+                {
+                    "title": "Sicilian Defense ALL Variations Explained [Chess Opening Crash Course]",
+                    "by": "GM Igor Smirnov, Remote Chess Academy",
+                    "kind": "Video",
+                    "url": "https://www.youtube.com/watch?v=MYGSzNKnlK4"
                 }
             ]
         },
@@ -1586,7 +1665,19 @@
                 ],
                 "note": "Share: how often each reply follows 1.e4 in rated rapid and classical Lichess games between players averaging 1800 to 2199."
             },
-            "summary": "Under each board, press ▶︎ Watch the moves to step through the first four moves. The Ruy Lopez, Italian, French, Caro-Kann and Scandinavian link to their courses in this app. Rarer openings, such as the Pirc and the King's Gambit, have a page of their own, linked at the bottom."
+            "summary": "Under each board, press ▶︎ Watch the moves to step through the first four moves. The Ruy Lopez, Italian, Sicilian, French, Caro-Kann and Scandinavian link to their courses in this app. Rarer openings, such as the Pirc and the King's Gambit, have a page of their own, linked at the bottom.",
+            "boxRows": [
+                [
+                    "ruy-lopez",
+                    "italian",
+                    "sicilian"
+                ],
+                [
+                    "french",
+                    "caro-kann",
+                    "scandinavian"
+                ]
+            ]
         },
         {
             "id": "e4-uncommon",

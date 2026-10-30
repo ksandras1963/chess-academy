@@ -1,0 +1,85 @@
+[Puzzle "Sveshnikov: the fork on c7"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "9.Nc7+"]
+[End "9.Nc7+"]
+[Hint "Black took back on f6 with the queen. Your knight on b5 can jump in with check."]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Bxf6 Qxf6? 9. Nc7+! {[%cal Gc7e8,Gc7a8] Forks the king and the rook.}
+9... Kd8 10. Nxa8 {White has won the rook. Stockfish: +5.9, winning for White.}
+*
+
+[Puzzle "Sveshnikov: two knights against c7"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "10.Nbc7+"]
+[End "10.Nbc7+"]
+[Hint "Black's a-pawn hits your knight on b5, but the c7 square has only the queen to guard it. Which knight checks there?"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 Be7 8. Bxf6 gxf6 9. Nd5 a6? 10. Nbc7+! {[%cal Gc7e8,Gc7a8] Check, and the rook on a8 is attacked.}
+10... Kf8 (10... Kd7 11. Qg4+ f5 12. Qxf5# {Mate.}) 11. Nxa8 {White has won the rook. Stockfish: +5.7, winning for White.}
+*
+
+[Puzzle "Sveshnikov: the pawn on e5"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "9.Qxe5+"]
+[End "9.Qxe5+"]
+[Hint "Black's knight has jumped to d4. What is left guarding the pawn on e5?"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 Bb4 7. Nd6+ Bxd6 8. Qxd6 Nd4? 9. Qxe5+! {[%cal Ge5e8,Ge5d4] Check, and the queen hits the knight on d4.}
+9... Ne6 10. Qd6 {White has won a pawn, and Black's king is stuck in the center. Stockfish: +3.9, winning for White.}
+*
+
+[Puzzle "Sveshnikov: the loose bishop on f5"]
+[Type "puzzle"]
+[Theme "Win a piece"]
+[Solve "10.Qxf5"]
+[End "10.Qxf5"]
+[Hint "Black's e-pawn attacks your queen. Before you move it away, look at the bishop on f5."]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nf5 d5 7. exd5 Bxf5 8. dxc6 bxc6 9. Qf3 e4? 10. Qxf5 {The queen escapes by taking the bishop. White has won a piece. Stockfish: +4.8, winning for White.}
+*
+
+[Puzzle "Sveshnikov: the rook takes b2"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "10...Rxb2"]
+[End "10...Rxb2"]
+[Hint "White's knight on c3 is pinned by your queen. Look at the pawn on b2."]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nxc6 bxc6 7. Bg5 Rb8 8. Rb1 h6 9. Bh4 Qa5 10. Bxf6? Rxb2! {[%cal Gb2b1] The rook takes the pawn.}
+11. Rxb2 Qxc3+ {[%cal Gc3b2] Check, and the queen hits the rook on b2.} 12. Qd2 Qxb2 {Black has won material. Stockfish: −5.7, winning for Black.}
+*
+
+[Puzzle "Bird Variation: the queen takes b2"]
+[Type "puzzle"]
+[Theme "Win material"]
+[Solve "14...Qxb2"]
+[End "14...Qxb2"]
+[Hint "White's queen has left d1, and White hasn't castled. Look at the pawn on b2."]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 Be6 9. Nc4 Rc8 10. Bxf6 gxf6 11. Ne3 Bh6 12. Bd3 Bxe3 13. fxe3 Qb6 14. Qf3? Qxb2! {[%cal Gb2a1,Gb2c3] The queen hits the rook on a1 and the knight on c3.}
+15. Kf2 Qxc3 {Black has won a piece. Stockfish: −5.8, winning for Black.}
+*
+
+[Puzzle "Sveshnikov: mate on g2"]
+[Type "puzzle"]
+[Theme "Checkmate"]
+[Solve "16...Qxg2#"]
+[End "16...Qxg2#"]
+[Hint "White just castled. Look at your queen and bishop on the long diagonal."]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Nd5 Be7 10. Bxf6 Bxf6 11. c3 Bb7 12. Nc2 Ne7 13. Nxf6+ gxf6 14. Bd3 d5 15. exd5 Qxd5 16. O-O?? Qxg2# {[%cal Gb7g2] The bishop on b7 backs up the queen: mate.}
+*
+
+[Puzzle "Sveshnikov: the queen backs up the knight"]
+[Type "puzzle"]
+[Theme "Checkmate"]
+[Solve "10.Qa4"]
+[End "10.Qa4"]
+[Hint "Black's a-pawn hits your knight on b5. Which queen move keeps the knight there, and what can it take?"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Nd5 Nxd5 8. exd5 Ne7 9. c4 a6? 10. Qa4! {[%cal Ga4b5,Gb5d6] Backs up the knight, which threatens d6.}
+10... Bd7?? (10... axb5 11. Qxa8 {White has won the rook. Stockfish: +2.3, winning for White.}) 11. Nxd6# {Mate: the knight on e7 blocks the bishop's defence of d6.}
+*
