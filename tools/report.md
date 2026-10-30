@@ -2192,6 +2192,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 8 | Hyperaccelerated: the knight with no square | White | 7.e5 | 1 | 7...Ng8 (2 half-moves) | ok |
 | 9 | Hyperaccelerated: the poisoned bishop | White | 9.Bxf7+ | 1 | 9...Kxf7 (2 half-moves) | ok |
 | 10 | Hyperaccelerated: take the bishop | Black | 6...axb5 | 1 | 7.exf6 (8 half-moves) | ok |
+
 ## Puzzles: Sicilian Najdorf (`content/sicilian-najdorf-puzzles.pgn`)
 
 8 puzzles. Each solver move must be Stockfish's choice and beat every move that isn't accepted by at least 0.70 pawns (depth 18).
@@ -2244,7 +2245,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 8 | Knight and f2 at once | Black | 6...Qd4 | 1 | 7.Qe2 (2 half-moves) | ok |
 | 9 | The Mortimer Trap | Black | 5...c6 | 1 | 6.Ba4 (4 half-moves) | ok |
 | 10 | The Fishing Pole | Black | 7...Qh4 | 1 | 8.f4 (6 half-moves) | ok |
-| 11 | Hit the bishop with the pawn | White | 5.d4 | 1 | 5...exd4 (12 half-moves) | ok |
+| 11 | The pinned knight on c6 | White | 6.d5 | 1 | 6...Ne7 (4 half-moves) | ok |
 
 ## Puzzles: Scandinavian Defense (`content/scandinavian-puzzles.pgn`)
 
