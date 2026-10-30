@@ -1790,7 +1790,7 @@ None.
 
 ## Nimzo-Indian Defense — both sides (`nimzo-indian`)
 
-47 chapters, 71 drillable lines (basic 10, traps 9, advanced 52), 713 learner moves.
+47 chapters, 63 drillable lines (basic 10, traps 9, advanced 44), 639 learner moves.
 
 ### Opening names and course-page diagrams
 
@@ -1804,7 +1804,7 @@ None.
 | Rubinstein, St. Petersburg Variation: 4...b6 | 4...b6 | Nimzo-Indian Defense: St. Petersburg Variation | E43 | ok |
 | Leningrad Variation: 4...c5 | 4...c5 | Nimzo-Indian Defense: Leningrad Variation | E30 | ok |
 | Bd2 Variation: 4...c5 | 4...c5 | Nimzo-Indian Defense | E20 | ok |
-| Three Knights Variation: 4...O-O | 4...O-O | Nimzo-Indian Defense: Three Knights Variation | E21 | ok |
+| Three Knights Variation: 4...b6 | 4...b6 | Nimzo-Indian Defense: Three Knights Variation | E21 | ok |
 | Classical, Keres Defense: 6...d5 and 6...Ne4 | 6...d5 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
 | Classical: White's fifth moves | 5.Nf3 | Nimzo-Indian Defense: Classical Variation | E32 | ok |
 | Classical, Berlin Variation: 5...O-O, 5...Nc6 and 5...Na6 | 5...O-O | Nimzo-Indian Defense: Classical Variation, Berlin Variation, Pirc Variation | E39 | ok |
@@ -1815,8 +1815,8 @@ None.
 | Rubinstein, Normal Variation: 5...c5 and 5...b6 | 5...c5 | Nimzo-Indian Defense: Normal Variation | E47 | ok |
 | Rubinstein: White's fifth moves | 5.Nf3 | Nimzo-Indian Defense: Normal Variation, Ragozin Variation | E51 | ok |
 | Rubinstein, Gligorić System: 9...b6 | 4...O-O | Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation | E54 | ok |
-| Rubinstein, Gligorić System: 7...Nc6, 8...Nc6 and 9...Nc6 | 7...Nc6 | Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense | E56 | ok |
-| Leningrad: White's fifth moves | 5.a3 | Nimzo-Indian Defense: Leningrad Variation | E30 | ok |
+| Rubinstein, Gligorić System: 7...Nc6 | 7...Nc6 | Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense | E56 | ok |
+| Leningrad: White's fifth moves | 5.Nf3 | Nimzo-Indian Defense: Leningrad Variation | E30 | ok |
 | Bd2 Variation: White's fifth moves | 5.a3 | Nimzo-Indian Defense | E20 | ok |
 | Three Knights: White's fifth moves | 5.e3 | Nimzo-Indian Defense: Three Knights Variation | E21 | ok |
 | Sämisch Variation: 5...c5 | 5...c5 | Nimzo-Indian Defense: Sämisch Variation | E24 | ok |
@@ -1849,7 +1849,7 @@ None.
 | Rubinstein, St. Petersburg Variation: 4...b6 (Main line) | 0.70 | E43 Nimzo-Indian Defense: St. Petersburg Variation |
 | Leningrad Variation: 4...c5 (Main line) | 0.36 | E30 Nimzo-Indian Defense: Leningrad Variation |
 | Bd2 Variation: 4...c5 (Main line) | 0.00 | E20 Nimzo-Indian Defense |
-| Three Knights Variation: 4...O-O (Main line) | -0.12 | E21 Nimzo-Indian Defense: Three Knights Variation |
+| Three Knights Variation: 4...b6 (Main line) | 0.00 | E13 Queen's Indian Defense: Kasparov Variation |
 | Classical, Keres Defense: 6...d5 and 6...Ne4 (Main line) | 0.67 | E32 Nimzo-Indian Defense: Classical Variation |
 | Classical, Keres Defense: 6...d5 and 6...Ne4 (7...dxc4) | 0.00 | E32 Nimzo-Indian Defense: Classical Variation |
 | Classical, Keres Defense: 6...d5 and 6...Ne4 (6...Ne4) | 0.75 | E32 Nimzo-Indian Defense: Classical Variation |
@@ -1878,28 +1878,20 @@ None.
 | Rubinstein: White's fifth moves (6.Bd2) | 0.00 | E51 Nimzo-Indian Defense: Normal Variation, Ragozin Variation |
 | Rubinstein: White's fifth moves (5.Ne2) | -0.10 | E46 Nimzo-Indian Defense: Reshevsky Variation |
 | Rubinstein, Gligorić System: 9...b6 (Main line) | -0.12 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
-| Rubinstein, Gligorić System: 7...Nc6, 8...Nc6 and 9...Nc6 (Main line) | 0.35 | E56 Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense |
-| Rubinstein, Gligorić System: 7...Nc6, 8...Nc6 and 9...Nc6 (7...dxc4) | 0.06 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
-| Rubinstein, Gligorić System: 7...Nc6, 8...Nc6 and 9...Nc6 (7...dxc4 … 8...cxd4) | 0.32 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
-| Leningrad: White's fifth moves (Main line) | 2.22 | E30 Nimzo-Indian Defense: Leningrad Variation |
-| Leningrad: White's fifth moves (5.Nf3) | 1.69 | E30 Nimzo-Indian Defense: Leningrad Variation |
+| Rubinstein, Gligorić System: 7...Nc6 (Main line) | 0.35 | E56 Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense |
+| Leningrad: White's fifth moves (Main line) | 1.69 | E30 Nimzo-Indian Defense: Leningrad Variation |
 | Leningrad: White's fifth moves (5.dxc5) | 0.34 | E30 Nimzo-Indian Defense: Leningrad Variation |
-| Leningrad: White's fifth moves (5.Bxf6) | 0.39 | E30 Nimzo-Indian Defense: Leningrad Variation |
 | Bd2 Variation: White's fifth moves (Main line) | -0.03 | E20 Nimzo-Indian Defense |
 | Bd2 Variation: White's fifth moves (5.dxc5) | 0.10 | E20 Nimzo-Indian Defense |
-| Bd2 Variation: White's fifth moves (5.d5) | 0.00 | E20 Nimzo-Indian Defense |
-| Bd2 Variation: White's fifth moves (5.Nf3) | 0.07 | E20 Nimzo-Indian Defense |
-| Three Knights: White's fifth moves (Main line) | -0.14 | E54 Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation |
-| Three Knights: White's fifth moves (5.Qc2) | 0.94 | E21 Nimzo-Indian Defense: Three Knights Variation |
-| Three Knights: White's fifth moves (5.a3) | 0.29 | E21 Nimzo-Indian Defense: Three Knights Variation |
-| Three Knights: White's fifth moves (5.g3) | 0.02 | E21 Nimzo-Indian Defense: Three Knights Variation |
+| Three Knights: White's fifth moves (Main line) | -0.26 | E43 Nimzo-Indian Defense: St. Petersburg Variation |
+| Three Knights: White's fifth moves (5.Qc2) | -0.27 | E21 Nimzo-Indian Defense: Three Knights Variation |
 | Sämisch Variation: 5...c5 (Main line) | 0.48 | E24 Nimzo-Indian Defense: Sämisch Variation |
 | Sämisch: White's sixth moves (Main line) | 0.30 | E26 Nimzo-Indian Defense: Sämisch Variation, O'Kelly Variation |
 | Sämisch: White's sixth moves (6.Bg5) | 0.09 | E24 Nimzo-Indian Defense: Sämisch Variation |
 | Sämisch: White's sixth moves (6.d5) | 1.09 | E24 Nimzo-Indian Defense: Sämisch Variation |
 | Sämisch: White's sixth moves (6.Qc2) | 0.45 | E24 Nimzo-Indian Defense: Sämisch Variation |
 | Sämisch: White's sixth moves (6.f3) | 0.19 | E24 Nimzo-Indian Defense: Sämisch Variation |
-| Kmoch Variation: 4.f3 (Main line) | -0.07 | E20 Nimzo-Indian Defense: Kmoch Variation |
+| Kmoch Variation: 4.f3 (Main line) | -0.32 | E25 Nimzo-Indian Defense: Sämisch Variation, Keres Variation |
 | Kmoch Variation: 4.f3 (5.cxd5) | 1.89 | E20 Nimzo-Indian Defense: Kmoch Variation |
 | Spielmann Variation: 4.Qb3 (Main line) | 0.20 | E23 Nimzo-Indian Defense: Spielmann Variation, Carlsbad Variation |
 | Trap, Leningrad: 5.e3? Qa5! (Main line) | 1.04 | E30 Nimzo-Indian Defense: Leningrad Variation |
