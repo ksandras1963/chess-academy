@@ -85,6 +85,7 @@
 [Hint "Black's d-pawn is pinned by your queen. Where can the knight on f6 go if you chase it?"]
 
 1. e4 c5 2. Nf3 g6 3. d4 cxd4 4. Qxd4 Nf6 5. Nc3 Nc6 6. Qa4 Bg7? 7. e5! {[%cal Ge5f6] Chases the knight.}
+(7. Bb5!? {Playable: it pins the knight on c6 first, but Black gets time for ...d6.} 7... d6 8. e5 Ng4 9. exd6 Qxd6 10. O-O O-O 11. Bf4 {Stockfish: +0.3, slightly better for White. 7.e5 at once keeps a bigger edge.})
 7... Ng8 {The knight has to go home.} (7... Ng4 8. Qxg4 {Stockfish: +4.0, winning for White.}) (7... Nh5 8. g4 {[%cal Gg4h5] The knight is trapped. Stockfish: +3.3, winning for White.})
 8. Bf4 {White has a big lead in development. Stockfish: +1.0, clearly better for White.}
 *
