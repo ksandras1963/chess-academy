@@ -13,6 +13,7 @@ When Kumar gives a rule for every course, in any session, add it to this file in
 
 - Every course is for players rated under 2000. In Kumar's words: "General rule for all courses: this must be for those < 2000. No need to go into uncommon variations even in Advanced. Primarily rely on the variations discussed on videos and transcripts."
 - So Advanced holds the common side lines that the presenters' videos discuss, not every line the database or the engine offers. A line no presenter discusses goes in only when club players meet it often. The map shows only the variations the course teaches. On the first Anti-Sicilian map, which showed every side line, Kumar wrote: "This is way too much for < 2000 player."
+- Anything removed from a course is also removed from its map, on the course page and on the Introduction page. In Kumar's words: "General rule: Anything removed form course also is removed from Map".
 
 ## Introduction page (an opening's overview page), in this order
 
