@@ -181,9 +181,9 @@ Black: Develop with ...Qc7, ...Nf6, ...b5 or ...b6 and ...Bb7, and wait for the 
 [Lines "Accelerated Dragon | Maróczy Bind | Hyperaccelerated Dragon"]
 [Course "sicilian-dragon"]
 
-{Black fianchettoes before playing ...d6, so that ...d5 can come in one move. White's sharpest attack against the Dragon works less well here, but White can play c4 to stop ...d5: the Maróczy Bind. The Hyperaccelerated Dragon, with ...g6 on move 2, often reaches the same position.
+{Black fianchettoes before playing ...d6, so that ...d5 can come in one move. White's sharpest attack against the Dragon works less well here, but White can stop ...d5 by playing c4 on move 5, before the knight goes to c3: the Maróczy Bind. The Hyperaccelerated Dragon, with ...g6 on move 2, often reaches the same position.
 
-White: Play c4 (the Maróczy Bind) to keep a firm grip on d5, or develop with Nc3, Be3 and Bc4, and castle.
+White: Choose on move 5. Play c4 at once (the Maróczy Bind) to keep a firm grip on d5; once the knight is on c3, the c-pawn can no longer go to c4. Or develop with Nc3, Be3 and Bc4, and castle.
 
 Black: Develop with ...Bg7, ...Nf6 and castling, and aim for ...d5 in one go. Against the Maróczy Bind, be patient: trade pieces and look for the breaks ...b5 or ...f5.}
 1. e4 c5 2. Nf3 Nc6 (2... g6 {This is the Hyperaccelerated Dragon.} 3. d4 cxd4 4. Nxd4 Nc6 {The same position as the Accelerated Dragon.})
