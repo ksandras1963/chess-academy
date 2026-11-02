@@ -69,7 +69,7 @@
 [Theme "Win a piece"]
 [Solve "10...d4"]
 [End "10...d4"]
-[Hint "White's knight on c3 is pinned, and the bishop on e3 is in front of it. Which pawn can hit both?"]
+[Hint "White's knight on c3 is pinned, and the bishop on e3 stands two squares away on the same rank. Which pawn can hit both?"]
 
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Qc7 6. Be3 Bb4 7. Qd2 Nf6 8. f3 d5 9. Bd3? e5 10. Nde2 d4! {[%cal Gd4c3,Gd4e3] The pawn forks the bishop and the pinned knight. Black wins a piece. Stockfish: −2.6, winning for Black.}
 *
@@ -79,7 +79,7 @@
 [Theme "Punish the mistake"]
 [Solve "7.Nd6+"]
 [End "7.Nd6+"]
-[Hint "Black's a-pawn chases your knight, but the d6 square is no longer guarded. Where can the knight go with check?"]
+[Hint "Black's a-pawn chases your knight, but Black has not guarded d6 with the d-pawn. Where can the knight go with check?"]
 
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Ndb5 a6? 7. Nd6+! {[%cal Gd6e8] Check.}
 7... Bxd6 8. Qxd6 {[%csl Gd6] White has the bishop pair, and the queen on d6 cramps Black's game. Stockfish: +1.1, clearly better for White.}
