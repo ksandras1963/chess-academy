@@ -5,7 +5,7 @@
 [End "7.Bb5+"]
 [Hint "Black's knight hits your bishop on e3. Can you check first, so that the knight loses its defender?"]
 
-1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Ng4? 7. Bb5+! {[%cal Gb5e8] Every block leaves the knight on g4 without help.}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Ng4? 7. Bb5+! {[%cal Gb5e8] Every block loses material.}
 7... Bd7 {The bishop is now pinned.} (7... Nd7 8. Qxg4 {The knight on d7 blocks the c8 bishop. Stockfish: +5.0, winning for White.}) 8. Qxg4 {White has won a piece. Stockfish: +5.3, winning for White.}
 *
 
@@ -28,7 +28,7 @@
 [Hint "White's queen took your rook. Find a move that threatens mate and hits the queen at the same time."]
 
 1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. O-O-O d5 10. exd5 Nxd5 11. Nxc6 bxc6 12. Nxd5 cxd5 13. Qxd5 Qc7 14. Qxa8? Bf5! {[%cal Gc7c2,Gf8a8] Threatens ...Qxc2 mate, and the rook on f8 now hits the queen.}
-15. Qxf8+ Kxf8 16. Bd3 {Black's queen and bishops are stronger than White's rooks. Stockfish: −1.7, clearly better for Black.}
+15. Qxf8+ Kxf8 16. Bd3 {Black's queen is worth more than White's two rooks here. Stockfish: −1.7, clearly better for Black.}
 *
 
 [Puzzle "Yugoslav: the knight jump to d5"]
@@ -47,7 +47,7 @@
 [Theme "Attack the king"]
 [Solve "9.Bb5+"]
 [End "9.Bb5+"]
-[Hint "Black's knight on g4 is loose, and Black's king is still in the center. Look for a check."]
+[Hint "Black's knight on g4 is guarded only by the bishop on c8, and Black's king is still in the center. Look for a check."]
 
 1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. f4 Bg7 7. e5 dxe5 8. fxe5 Ng4 9. Bb5+! {[%cal Gb5e8] GM Igor Smirnov's evergreen trap.}
 9... Kf8 {Saves the knight, but walks into a discovered attack.} (9... Bd7 10. Qxg4 {The bishop on d7 is pinned. Stockfish: +3.7, winning for White.})
@@ -82,10 +82,10 @@
 [Theme "Punish the mistake"]
 [Solve "7.e5"]
 [End "7.e5"]
-[Hint "Black's d-pawn is pinned by your queen. Where can the knight on f6 go if you chase it?"]
+[Hint "Black's d-pawn is still on d7, so it can't take on e5. Where can the knight on f6 go if you chase it?"]
 
 1. e4 c5 2. Nf3 g6 3. d4 cxd4 4. Qxd4 Nf6 5. Nc3 Nc6 6. Qa4 Bg7? 7. e5! {[%cal Ge5f6] Chases the knight.}
-(7. Bb5!? {Playable: it pins the knight on c6 first, but Black gets time for ...d6.} 7... d6 8. e5 Ng4 9. exd6 Qxd6 10. O-O O-O 11. Bf4 {Stockfish: +0.3, slightly better for White. 7.e5 at once keeps a bigger edge.})
+(7. Bb5!? {Playable: it hits the knight on c6 first, but Black gets time for ...d6.} 7... d6 8. e5 Ng4 9. exd6 Qxd6 10. O-O O-O 11. Bf4 {Stockfish: +0.3, slightly better for White. 7.e5 at once keeps a bigger edge.})
 7... Ng8 {The knight has to go home.} (7... Ng4 8. Qxg4 {Stockfish: +4.0, winning for White.}) (7... Nh5 8. g4 {[%cal Gg4h5] The knight is trapped. Stockfish: +3.3, winning for White.})
 8. Bf4 {White has a big lead in development. Stockfish: +1.0, clearly better for White.}
 *

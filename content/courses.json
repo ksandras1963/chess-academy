@@ -744,7 +744,7 @@
                             [
                                 "Yugoslav Attack: 9.Bc4",
                                 "4% as White",
-                                null
+                                "White: Castle long and attack the king with the kingside pawns.\nBlack: Press on the c-file and counterattack on the queenside."
                             ],
                             [
                                 "Dragon Variation: 6.Bc4",
@@ -769,7 +769,7 @@
                             [
                                 "Hyperaccelerated Dragon: 4.Qxd4",
                                 "4% as White\n6% as Black",
-                                "White: Gain time on Black's pieces and push the e-pawn.\nBlack: Develop with gain of time and don't move the f6 knight too early."
+                                "White: Gain time on Black's pieces and push the e-pawn.\nBlack: Gain time on the queen, and stop White's e-pawn push before developing the bishop."
                             ]
                         ],
                         "note": "How often: the share of your Sicilian games that reach the line, from the side you play in it, counting every move order. Source: Lichess rated rapid and classical games between players averaging 1800 to 2199. Rarer lines are in Advanced: the Topalov Variation, the Fianchetto, and the Accelerated and Hyperaccelerated Dragon's other lines."
