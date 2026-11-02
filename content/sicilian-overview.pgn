@@ -40,9 +40,9 @@ Black: Blunt the bishop with ...e6, then take the center with ...d5, or chase th
 
 {White plays the c-pawn to c3, so that a pawn, not the knight, can take back on d4. The game is calmer than in the Open Sicilian, and Black's main systems never come up. White often plays the same pawn move one move later, after 2.Nf3.
 
-White: Push d4 next and build a full pawn center. After ...d5, take on d5, then play d4, Nf3 and Be2 or Bd3, and castle. After ...Nf6, push e5 to chase the knight, then play d4.
+White: Aim for a full pawn center with d4. Black usually hits e4 first: against ...d5, take on d5 and then play d4; against ...Nf6, push e5 to chase the knight and then play d4. Develop the kingside pieces and castle.
 
-Black: Hit e4 at once with ...d5 or ...Nf6, before White can support d4. After ...Qxd5, develop with ...Nf6, ...e6 and ...Nc6; without a knight on c3, White can't easily chase the queen.}
+Black: Hit e4 at once with ...d5 or ...Nf6, before White can play d4. After the queen takes back on d5, develop with ...Nf6, ...e6 and ...Nc6: the queen is safe in the center, because the pawn on c3 keeps White's knight off c3.}
 1. e4 c5 2. c3 {This is the Alapin Variation. The pawn prepares d4.} d5 {Hits e4 at once, before White can play d4.}
 (2... Nf6 {Hits e4 with the knight.} 3. e5 Nd5 {The knight is safe in the center.} 4. d4 cxd4 5. Nf3 {White develops before taking back on d4.})
 3. exd5 Qxd5 {The queen takes back. With no knight on c3, White can't gain time on it.}
