@@ -2,7 +2,7 @@
 [Side "white"]
 [Type "ideas"]
 
-{Both openings push Black's e-pawn two squares, which leaves a hole on d5 that no Black pawn can ever cover. White's plan is simple: take off the pieces that guard d5 and put a knight there. A knight on b5 also eyes the d6 square, and if Black is careless it checks there.}
+{Both openings push Black's e-pawn two squares, which leaves a hole on d5 that Black's c- and e-pawns can no longer cover. White's plan is simple: take off the pieces that guard d5 and put a knight there. A knight on b5 also eyes the d6 square, and if Black is careless it checks there.}
 *
 
 [Chapter "The hole on d5"]
@@ -21,7 +21,7 @@
 
 {The knight on a3 looks out of play, but it comes back through c2 and e3. From e3 it guards d5 and f5, ready to replace the other knight on d5. Stjepan Tomić calls the knight move to c2 "the thematic maneuver".}
 1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Nd5 Be7 10. Bxf6 Bxf6 11. c3 O-O {The idea starts from this position.}
-12. Nc2 {[%cal Gc2e3,Ge3d5]} Bg5 13. a4 bxa4 14. Rxa4 a5 15. Bc4 {[%cal Gc4d5] A second guard of d5.} Rb8 16. b3 Kh8 17. Nce3 {[%csl Gd5,Gf5] The knight now guards d5 and f5. Stockfish: +0.3, slightly better for White.} *
+12. Nc2 {[%cal Gc2e3,Ge3d5]} Bg5 13. a4 bxa4 14. Rxa4 a5 15. Bc4 {[%cal Gc4d5] Another guard of d5.} Rb8 16. b3 Kh8 17. Nce3 {[%csl Gd5,Gf5] The knight now guards d5 and f5. Stockfish: +0.3, slightly better for White.} *
 
 [Chapter "The check on d6"]
 [Type "concept"]
@@ -55,7 +55,7 @@
 
 {Black's counterplay is the push of the f-pawn against White's center. First the king steps into the corner and the g-pawn supports the push; pushing at once runs into the bishop on c4. Stjepan Tomić: Black is "playing for a King's Indian type of position, pushing through on the kingside".}
 1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Nd5 Be7 10. Bxf6 Bxf6 11. c3 O-O 12. Nc2 Bg5 13. a4 bxa4 14. Rxa4 a5 15. Bc4 Rb8 16. b3 Kh8 {[%cal Gg8h8] The idea starts from this position.}
-17. Nce3 g6 {[%cal Gg6f5]} 18. O-O f5 {[%cal Gf5e4] The push hits e4 and opens the f-file. Stockfish: +0.4, slightly better for White.} *
+17. Nce3 g6 {[%cal Gg6f5]} 18. O-O f5 {[%cal Gf5e4] The push hits e4 and prepares to open the f-file for the rook. Stockfish: +0.4, slightly better for White.} *
 
 [Chapter "The trade on d5"]
 [Type "concept"]
@@ -86,7 +86,7 @@
 6. Ndb5 {[%cal Gb5d6] Half of White players choose this: the knight eyes d6.} d6 {[%csl Gd6] Guards d6: the only good move.} 7. Bg5 {The bishop pins the knight that guards d5.} a6 8. Na3 b5 {[%cal Gb5b4] Black gains space.}
 9. Nd5 {Eight White players in ten put the knight on d5.} Be7 10. Bxf6 Bxf6 11. c3 {[%csl Gb4,Gd4] Keeps Black's pieces off b4 and d4.} O-O
 12. Nc2 {"The thematic maneuver": the knight heads for e3.} Bg5 {The bishop moves to "a more active diagonal", out of reach of the knight on d5.}
-13. a4 {Pressure on Black's queenside.} bxa4 {Stjepan Tomić: "always take".} 14. Rxa4 a5 15. Bc4 {[%cal Gc4d5] A second guard of d5.} Rb8 16. b3 Kh8 {"Getting away from the diagonal, and preparing to play f5."}
+13. a4 {Pressure on Black's queenside.} bxa4 {Stjepan Tomić: "always take".} 14. Rxa4 a5 15. Bc4 {[%cal Gc4d5] Another guard of d5.} Rb8 16. b3 Kh8 {"Getting away from the diagonal, and preparing to play f5."}
 17. Nce3 g6 18. O-O f5 {[%cal Gf5e4] The push.} 19. Qd3 {Guards e4: White doesn't take on f5, which would free Black's bishop.} Be6 20. Rd1 Qd7 {Stjepan Tomić: "The position is completely equal." Stockfish: +0.3, slightly better for White.}
 *
 
@@ -246,9 +246,9 @@
 [Opening "Sicilian Defense: Lasker-Pelikan Variation"]
 [ECO "B33"]
 
-{A third of Black players chase the knight on b5 with the a-pawn. But the queen comes to a4 and backs it up, and the pawn on d6 has no defender: the bishop on f8 is blocked by the knight on e7.}
-1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Nd5 Nxd5 8. exd5 Ne7 9. c4 a6? 10. Qa4! {[%cal Ga4b5,Gb5d6] Backs up the knight, which threatens d6.}
-10... Bd7?? (10... axb5 11. Qxa8 {White has won the rook. Stockfish: +2.3, winning for White.}) 11. Nxd6# {Mate.}
+{A third of Black players chase the knight on b5 with the a-pawn. But the queen comes to a4 and backs it up: if Black takes the knight, the queen takes the rook on a8. And White now threatens mate: when the knight moves to c7 or takes on d6, the queen on a4 gives check too.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Nd5 Nxd5 8. exd5 Ne7 9. c4 a6? 10. Qa4! {[%cal Ga4e8,Gb5d6] Backs up the knight. Any knight move now also uncovers a check from the queen: Nc7 or Nxd6 would be mate.}
+10... Bd7?? (10... axb5 11. Qxa8 {White has won the rook. Stockfish: +2.3, winning for White.}) 11. Nxd6# {Mate: the bishop on d7 cuts the queen off from d6, and the knight on e7 blocks the bishop on f8.}
 *
 
 [Chapter "Trap: 6...Be7? and 7.Nd6+"]

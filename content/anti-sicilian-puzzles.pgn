@@ -59,7 +59,7 @@
 [Type "puzzle"]
 [Theme "Checkmate in 1"]
 [Solve "6...Nf3#"]
-[Hint "White's last pawn move stopped guarding a square next to the king. Can your knight check from there?"]
+[Hint "White's last pawn move stopped guarding a square from which your knight can give check. Which one?"]
 
 1. e4 c5 2. Nc3 Nc6 3. Nge2 g6 4. d3 Bg7 5. Be3 Nd4 6. g3?? Nf3# {Mate: the g-pawn no longer guards f3, and White's own pieces block the king.}
 *
@@ -123,7 +123,7 @@
 
 1. e4 c5 2. c3 e6 3. d4 cxd4 4. cxd4 d5 5. e5 Nc6 6. Nf3 Bb4+ 7. Nc3 Nge7 8. Bd3 O-O? 9. Bxh7+! {The bishop sacrifice on h7.} Kxh7
 10. Ng5+! {[%hint The king is out in the open. Check it again.] [%cal Gd1h5] The queen comes to h5 next.} Kg6
-(10... Kg8 11. Qh5 {[%cal Gh5h7] Qh7 mate is threatened, and Black can only delay it. Stockfish: +5.4, winning for White.})
+(10... Kg8 11. Qh5 {[%cal Gh5h7] Qh7 mate is threatened, and Black can stop it only by giving up a lot of material. Stockfish: +5.4, winning for White.})
 11. h4 {[%cal Gh4h5] The h-pawn joins in with h5+, and the king has no shelter. Stockfish: +4.5, winning for White.}
 *
 
@@ -153,7 +153,7 @@
 [Theme "Win a rook"]
 [Solve "5...Qe5+"]
 [End "5...Qe5+"]
-[Hint "White's pawn left a3, so the rook on a1 is loose. Can your queen give check and hit it?"]
+[Hint "White's b-pawn has left b2, so the long diagonal to the rook on a1 is open. Can your queen give check and hit it?"]
 
 1. e4 c5 2. b4 cxb4 3. a3 d5 4. exd5 Qxd5 5. axb4?? Qe5+! {[%cal Ge5e1,Ge5a1] Check, and the queen hits the rook on a1.}
 6. Be2 Qxa1 {Black has won a rook. Stockfish: −3.9, winning for Black.}

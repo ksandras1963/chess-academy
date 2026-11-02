@@ -28,7 +28,7 @@
 [Idea "white"]
 [Diagram "6.Ndb5"]
 
-{In the Four Knights, the knight jumps to b5 and eyes the d6 square. Black has to guard it with the d-pawn, and then push the e-pawn a second time. The game becomes a main line of the Sveshnikov, with White's knight heading for d5.}
+{In the Four Knights, the knight jumps to b5 and eyes the d6 square. Black usually guards it with the d-pawn, and then pushes the e-pawn a second time. The game becomes a main line of the Sveshnikov, with White's knight heading for d5.}
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Ndb5 {[%cal Gb5d6] The idea starts from this position.}
 6... d6 7. Bf4 {[%cal Gf4d6,Gb5d6] Two pieces hit d6.} e5 8. Bg5 a6 9. Na3 b5 10. Nd5 {[%csl Gd5] The knight lands on d5, the hole in Black's position. Stockfish: +0.3, slightly better for White.} *
 
@@ -44,7 +44,7 @@
 [Idea "black"]
 [Diagram "5...Qc7"]
 
-{The queen watches the e5 square and the half-open c-file. With e5 covered, White's e-pawn can't chase the knight on f6: if it moves forward, Black takes it.}
+{The queen watches the e5 square. With e5 covered, White's e-pawn can't chase the knight on f6: if it moves forward, Black takes it.}
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 {[%csl Ge5] The idea starts from this position.}
 6. Be3 a6 {[%csl Gb5] Keeps the knights off b5.} 7. Qd2 Nf6 8. e5?! Nxe5 {The e-pawn push just loses a pawn. Stockfish: −1.7, clearly better for Black.} *
 
@@ -82,12 +82,12 @@
 [ECO "B48"]
 
 {The main line of the Taimanov. White attacks as in the English Attack: queen to d2, castle long, then the f-pawn and g-pawn. Black pins the knight from b4 and races on the queenside. Stjepan Tomić: treat it "as though it were a weird Dragon Sicilian, maybe a Dragon-Najdorf combination".}
-1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 {This is the Taimanov Variation.} 5. Nc3 Qc7 {[%csl Ge5] The queen watches e5 and the c-file.}
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 {This is the Taimanov Variation.} 5. Nc3 Qc7 {[%csl Ge5] The queen watches e5.}
 6. Be3 {Four White players in ten choose this bishop move.} a6 {[%csl Gb5] Eight Black players in ten stop Nb5 first.}
 7. Qd2 Nf6 8. O-O-O {White castles long: the attack comes soon.} Bb4 {[%cal Gb4c3] Stjepan Tomić: the bishop on b4 is "one of the biggest advantages of the Taimanov".}
 9. f3 {[%csl Ge4] Guards e4 and prepares g4.} Ne5 {"This is the most active move": the knight eyes c4.}
 10. Nb3 {Stjepan Tomić calls this "the best move": White ignores the jump to c4.} b5 {[%cal Gb5b4] Black races on the queenside.}
-11. Qe1 {[%cal Ge1c3] The queen steps off the pin, so the bishop can come to d2.} Be7 {Black gets ready to push the b-pawn. Stockfish: +0.5, slightly better for White.}
+11. Qe1 {[%cal Ge3d2] The queen makes room on d2, so the bishop can drop back there and block the pin. For now the knight on c3 is still pinned to the queen.} Be7 {Black gets ready to push the b-pawn. Stockfish: +0.5, slightly better for White.}
 *
 
 [Chapter "Taimanov: 5.Nxc6"]
@@ -159,7 +159,7 @@
 [Opening "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation"]
 [ECO "B33"]
 
-{When Black brings out both knights, White's knight jumps to b5 and aims at d6. Black must guard it with the d-pawn and then push the e-pawn again, and the game turns into the main line of the Sveshnikov.}
+{When Black brings out both knights, White's knight jumps to b5 and aims at d6. Black usually guards it with the d-pawn and then pushes the e-pawn again, and the game turns into the main line of the Sveshnikov.}
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 {This is the Four Knights Variation.} 6. Ndb5 {[%cal Gb5d6] Eyes d6.}
 6... d6 7. Bf4 {[%cal Gf4d6] The bishop adds pressure on d6.} e5 {Nearly every Black player pushes the e-pawn again.}
 8. Bg5 a6 9. Na3 b5 10. Nd5 {[%csl Gd5] The knight lands on d5, the hole in Black's position. Stockfish: +0.3, slightly better for White.}
@@ -231,7 +231,7 @@
 
 {Black pins the knight at once. White pushes the e-pawn, and after the trade on c3 the queen goes to g4 to hit g7. Stjepan Tomić likes this for Black: Black often gives up the exchange, "but don't despair".}
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Bb4 {This is the Pin Variation.} 6. e5 Nd5 7. Bd2 Nxc3 8. bxc3 Be7
-9. Qg4 {[%cal Gg4g7] Hits g7.} g6 (9... O-O 10. Bh6 {[%cal Gh6f8] Hits the rook.} g6 11. Qg3 {Black has to give up the exchange. Stockfish: +1.6, clearly better for White.}) 10. Qg3 {Stockfish: +0.7, slightly better for White.}
+9. Qg4 {[%cal Gg4g7] Hits g7.} g6 (9... O-O 10. Bh6 {[%cal Gg4g7,Gh6g7] Threatens Qxg7 mate. After ...g6 blocks it, the bishop hits the rook on f8.} g6 11. Qg3 {Black has to give up the exchange. Stockfish: +1.6, clearly better for White.}) 10. Qg3 {Stockfish: +0.7, slightly better for White.}
 *
 
 [Chapter "Trap: 9.Bd3? and ...e5 in the Kan"]

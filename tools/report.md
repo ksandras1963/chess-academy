@@ -2344,7 +2344,7 @@ Follow-up moves (after the `End` move) are shown for stepping through and are no
 | 3 | 6.Bg5 e5: the trade on d5 | Black | 8...Nxd5 | 1 | 9.Qxd5 (2 half-moves) | ok |
 | 4 | 6.Bc4 e5: two pieces against f7 | White | 8.Ng5 | 1 | 8...Be6 (4 half-moves) | ok |
 | 5 | 6.Bc4 e5: the bishop check | White | 8.Bxf7+ | 1 | 8...Kxf7 (6 half-moves) | ok |
-| 6 | Scheveningen: the loose queen | Black | 8...Nxd4 | 1 | 9.Qd3 (2 half-moves) | ok |
+| 6 | Scheveningen: the loose knight on d4 | Black | 8...Nxd4 | 1 | 9.Qd3 (2 half-moves) | ok |
 | 7 | 6.Bg5 with Bd3: the pin on the diagonal | Black | 9...Qb6 | 1 | 10.Ne2 (8 half-moves) | ok |
 | 8 | 6.Be3 e5: the open diagonal to a8 | White | 9.Bd5 | 1 | 9...Nxd5 (4 half-moves) | ok |
 

@@ -40,9 +40,9 @@ Black: Blunt the bishop with ...e6, then take the center with ...d5, or chase th
 
 {White plays the c-pawn to c3, so that a pawn, not the knight, can take back on d4. The game is calmer than in the Open Sicilian, and Black's main systems never come up. White often plays the same pawn move one move later, after 2.Nf3.
 
-White: Push d4 next and build a full pawn center. After ...d5, take on d5, then play d4, Nf3 and Be2 or Bd3, and castle. After ...Nf6, push e5 to chase the knight, then play d4.
+White: Aim for a full pawn center with d4. Black usually hits e4 first: against ...d5, take on d5 and then play d4; against ...Nf6, push e5 to chase the knight and then play d4. Develop the kingside pieces and castle.
 
-Black: Hit e4 at once with ...d5 or ...Nf6, before White can support d4. After ...Qxd5, develop with ...Nf6, ...e6 and ...Nc6; without a knight on c3, White can't easily chase the queen.}
+Black: Hit e4 at once with ...d5 or ...Nf6, before White can play d4. After the queen takes back on d5, develop with ...Nf6, ...e6 and ...Nc6: the queen is safe in the center, because the pawn on c3 keeps White's knight off c3.}
 1. e4 c5 2. c3 {This is the Alapin Variation. The pawn prepares d4.} d5 {Hits e4 at once, before White can play d4.}
 (2... Nf6 {Hits e4 with the knight.} 3. e5 Nd5 {The knight is safe in the center.} 4. d4 cxd4 5. Nf3 {White develops before taking back on d4.})
 3. exd5 Qxd5 {The queen takes back. With no knight on c3, White can't gain time on it.}
@@ -103,12 +103,12 @@ Black: Copy the fianchetto with ...g6 and ...Bg7, then play on the queenside wit
 [Diagram "4...Bg7"]
 [Course "anti-sicilian"]
 
-{White pins the c6 knight instead of opening the center. White often gives up the bishop for the knight to double Black's pawns, then plays a slow game.
+{White's bishop attacks the c6 knight instead of opening the center. White often gives up the bishop for the knight to double Black's pawns, then plays a slow game.
 
 White: Castle, then play Re1 and c3 to prepare d4, or take on c6 and play d3 and h3 for a slow game against the doubled pawns.
 
-Black: Fianchetto with ...g6 and ...Bg7, or play ...e6 and ...Nge7, so that a piece can take back on c6. If White gives up the bishop, use your two bishops and open the position.}
-1. e4 c5 2. Nf3 Nc6 3. Bb5 {This is the Rossolimo Attack (in full, the Nyezhmetdinov-Rossolimo Attack). The bishop pins the knight on c6.} g6 {The most common reply. Black prepares ...Bg7.}
+Black: Fianchetto with ...g6 and ...Bg7, or play ...e6 and ...Nge7, so that the knight can take back on c6. If White gives up the bishop, use your two bishops and open the position.}
+1. e4 c5 2. Nf3 Nc6 3. Bb5 {This is the Rossolimo Attack (in full, the Nyezhmetdinov-Rossolimo Attack). The bishop attacks the knight on c6, ready to take it and double Black's pawns.} g6 {The most common reply. Black prepares ...Bg7.}
 4. O-O Bg7 {White plays Re1 and c3 next, or takes on c6.} *
 
 [Chapter "Moscow Variation"]
@@ -151,11 +151,11 @@ Black: Play ...e5 or ...e6, then ...b5, ...Bb7 and ...Nbd7, and counterattack on
 
 {Black plays ...e6 and ...Nc6 and keeps the other pieces flexible: the queen often goes to c7, the bishop to e7 or b4. With ...Nf6, it becomes the Four Knights Variation.
 
-White: Develop with Nc3 and Be3 or Be2, castle, and often play f4, or Qd2 or Qf3 with long castling. Keep Black's pieces out of d4 and b4.
+White: Develop with Nc3 and Be3 or Be2, castle, and often play f4, or Qd2 or Qf3 with long castling. Watch for ...Bb4, which pins the knight on c3.
 
 Black: Play ...Qc7, ...a6, ...Nf6 and ...b5, and press on the d4 knight. Break with ...d5 when it is safe.}
 1. e4 c5 2. Nf3 e6 {Opens the f8 bishop's diagonal and prepares ...d5.} 3. d4 cxd4 4. Nxd4 Nc6 {This is the Taimanov Variation.}
-5. Nc3 Qc7 {The queen watches e5 and the c-file.} (5... Nf6 {This is the Four Knights Variation.} 6. Ndb5 Bb4 {The bishop pins the c3 knight.})
+5. Nc3 Qc7 {The queen watches e5.} (5... Nf6 {This is the Four Knights Variation.} 6. Ndb5 Bb4 {The bishop pins the c3 knight.})
 6. Be3 a6 {Keeps White's knights off b5.} *
 
 [Chapter "Kan Variation"]
@@ -167,7 +167,7 @@ Black: Play ...Qc7, ...a6, ...Nf6 and ...b5, and press on the d4 knight. Break w
 
 {Black plays ...e6 and ...a6 and keeps the knights at home for now: the most flexible Sicilian. It often becomes a Hedgehog, with Black's pawns on a6, b6, d6 and e6.
 
-White: Develop with Nc3 and Bd3, castle, and gain space. The c-pawn to c4 gives a Maróczy setup that cramps Black.
+White: Develop with Nc3 and Bd3, castle, and gain space. Or push the c-pawn to c4 before the knight goes to c3: a Maróczy setup that cramps Black.
 
 Black: Develop with ...Qc7, ...Nf6, ...b5 or ...b6 and ...Bb7, and wait for the right moment to break with ...d5 or ...b5.}
 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 {This is the Kan Variation. The pawn keeps White's pieces off b5.}
@@ -181,9 +181,9 @@ Black: Develop with ...Qc7, ...Nf6, ...b5 or ...b6 and ...Bb7, and wait for the 
 [Lines "Accelerated Dragon | Maróczy Bind | Hyperaccelerated Dragon"]
 [Course "sicilian-dragon"]
 
-{Black fianchettoes before playing ...d6, so that ...d5 can come in one move. White's sharpest attack against the Dragon works less well here, but White can play c4 to stop ...d5: the Maróczy Bind. The Hyperaccelerated Dragon, with ...g6 on move 2, often reaches the same position.
+{Black fianchettoes before playing ...d6, so that ...d5 can come in one move. White's sharpest attack against the Dragon works less well here, but White can stop ...d5 by playing c4 on move 5, before the knight goes to c3: the Maróczy Bind. The Hyperaccelerated Dragon, with ...g6 on move 2, often reaches the same position.
 
-White: Play c4 (the Maróczy Bind) to keep a firm grip on d5, or develop with Nc3, Be3 and Bc4, and castle.
+White: Choose on move 5. Play c4 at once (the Maróczy Bind) to keep a firm grip on d5; once the knight is on c3, the c-pawn can no longer go to c4. Or develop with Nc3, Be3 and Bc4, and castle.
 
 Black: Develop with ...Bg7, ...Nf6 and castling, and aim for ...d5 in one go. Against the Maróczy Bind, be patient: trade pieces and look for the breaks ...b5 or ...f5.}
 1. e4 c5 2. Nf3 Nc6 (2... g6 {This is the Hyperaccelerated Dragon.} 3. d4 cxd4 4. Nxd4 Nc6 {The same position as the Accelerated Dragon.})
@@ -222,7 +222,7 @@ White: Against the Classical, pin with Bg5, play Qd2 and castle long: the Richte
 Black: Develop with ...e6, ...Be7 and castling, then play ...a6 and ...b5 on the queenside. Free the game with ...d5 when it works.}
 1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 {This is the Classical Variation.}
 (5... e6 {This is the Scheveningen Variation. The d- and e-pawns form a small center.} 6. g4 {This is the Keres Attack.} h6 {Slows down g4–g5.})
-6. Bg5 {This is the Richter-Rauzer Attack. The bishop pins the knight.} e6 7. Qd2 {White will castle long.} *
+6. Bg5 {This is the Richter-Rauzer Attack. The bishop eyes the f6 knight; after ...e6, it pins the knight to the queen.} e6 7. Qd2 {White will castle long.} *
 
 [Chapter "Sveshnikov Variation"]
 [Group "The Open Sicilian: White plays 2.Nf3 and 3.d4"]
@@ -235,7 +235,7 @@ Black: Develop with ...e6, ...Be7 and castling, then play ...a6 and ...b5 on the
 
 White: Fight for the d5 square: Bg5 and Bxf6 remove a defender, then the knights come to d5.
 
-Black: Chase the knights with ...a6 and ...b5. If White takes on f6, take back with the g-pawn, then attack with ...f5 and the two bishops.}
+Black: Chase the knights with ...a6 and ...b5. If White takes on f6 before your bishop reaches e7, take back with the g-pawn, then attack with ...f5 and the two bishops. With the bishop on e7, take back with the bishop.}
 1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 {This is the Lasker-Pelikan Variation. The knight on d4 must move.}
 6. Ndb5 {The knight heads for d6.} d6 {Keeps the knight out of d6.} 7. Bg5 a6 8. Na3 b5 {This is the Sveshnikov Variation. Black gains space and keeps the a3 knight out of play.} *
 

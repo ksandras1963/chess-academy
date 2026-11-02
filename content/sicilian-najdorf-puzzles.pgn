@@ -6,7 +6,7 @@
 [Hint "Black pushed the b-pawn before playing ...Qc7. If your e-pawn moves, what can your queen on f3 see?"]
 
 1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7 8. Qf3 Nbd7 9. O-O-O b5? 10. e5! {[%cal Gf3a8,Ge5f6] The e-pawn hits the knight on f6, and the queen now sees the rook on a8. This is why Black plays ...Qc7 first in the course line.}
-10... Nd5 {Six Black players in ten jump to d5.} (10... dxe5 11. fxe5 {[%cal Ge5f6,Gf3a8] Both threats are still there. Stockfish: +4.4, winning for White.}) 11. Bxe7 Nxe7 12. exd6 {[%cal Gd6e7,Gf3a8] The pawn hits the knight, and the queen still hits the rook.} Rb8 13. dxe7 {White has won a piece and a pawn. Stockfish: +5.8, winning for White.}
+10... Nd5 {Six Black players in ten jump to d5.} (10... dxe5 11. fxe5 {[%cal Ge5f6,Gf3a8] Both threats are still there. Stockfish: +4.4, winning for White.}) 11. Bxe7 Nxe7 12. exd6 {[%cal Gd6e7,Gf3a8] The pawn hits the knight, and the queen still hits the rook.} Rb8 13. dxe7 {White has won a piece. Stockfish: +5.8, winning for White.}
 *
 
 [Puzzle "6.Bg5 and Bc4: the sacrifice on e6"]
@@ -14,7 +14,7 @@
 [Theme "Attack the king"]
 [Solve "9.Bxe6"]
 [End "9.Bxe6"]
-[Hint "Black's knight on d7 has taken a square from the queen. Look at the pawn on e6 and the pawn on g7."]
+[Hint "Black's knight on d7 blocks the bishop on c8, so only the f-pawn guards e6. Look at the pawn on e6 and the pawn on g7."]
 
 1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. Bc4 Be7 8. O-O Nbd7? 9. Bxe6! {[%cal Gd4e6] The knight on d4 backs up the bishop.}
 9... fxe6 {Three Black players in four take the bishop.} (9... O-O 10. Bb3 {Black is just a pawn down. Stockfish: +2.0, winning for White.}) 10. Nxe6 {[%cal Ge6d8,Ge6g7] The knight hits the queen and the pawn on g7.} Qa5 11. Nxg7+ Kf7 12. Nf5 {White has three pawns for the bishop, and Black's king is out in the open. Stockfish: +2.3, winning for White.}
@@ -39,7 +39,7 @@
 [Hint "Black's last move did nothing for the pawn on f7. Which two of your pieces can aim at it?"]
 
 1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4 e5 7. Nf3 Nc6? 8. Ng5! {[%cal Gc4f7,Gg5f7] The bishop and the knight both hit f7.}
-8... Be6 {Half of Black players block with the bishop.} (8... d5 9. Nxd5 {[%cal Gc4f7,Gg5f7] The knight takes the pawn, and f7 is still under attack. Stockfish: +2.6, winning for White.}) 9. Nxe6 fxe6 10. Bxe6 {White has won a pawn, and the bishop stops Black from castling short. Stockfish: +2.8, winning for White.}
+8... Be6 {Half of Black players block with the bishop.} (8... d5 9. Nxd5 {[%cal Gg5f7] The knight takes the pawn. The knight on g5 still hits f7, and if the knight on d5 moves, the bishop hits it too. Stockfish: +2.6, winning for White.}) 9. Nxe6 fxe6 10. Bxe6 {White has won a pawn, and the bishop stops Black from castling short. Stockfish: +2.8, winning for White.}
 *
 
 [Puzzle "6.Bc4 e5: the bishop check"]
@@ -53,7 +53,7 @@
 8... Kxf7 9. Nxe5+ {[%cal Ge5g4] Check, and the knight hits the bishop on g4.} Ke8 (9... dxe5 10. Qxd8 {The d-file opened: White wins the queen. Stockfish: +5.0, winning for White.}) 10. Nxg4 Nxg4 11. Qxg4 {White has won two pawns, and Black's king is stuck in the center. Stockfish: +4.9, winning for White.}
 *
 
-[Puzzle "Scheveningen: the loose queen"]
+[Puzzle "Scheveningen: the loose knight on d4"]
 [Type "puzzle"]
 [Theme "Win a piece"]
 [Solve "8...Nxd4"]

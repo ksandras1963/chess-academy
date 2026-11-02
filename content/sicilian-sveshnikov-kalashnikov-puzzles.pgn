@@ -80,6 +80,6 @@
 [End "10.Qa4"]
 [Hint "Black's a-pawn hits your knight on b5. Which queen move keeps the knight there, and what can it take?"]
 
-1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Nd5 Nxd5 8. exd5 Ne7 9. c4 a6? 10. Qa4! {[%cal Ga4b5,Gb5d6] Backs up the knight, which threatens d6.}
-10... Bd7?? (10... axb5 11. Qxa8 {White has won the rook. Stockfish: +2.3, winning for White.}) 11. Nxd6# {Mate: the knight on e7 blocks the bishop's defence of d6.}
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Nd5 Nxd5 8. exd5 Ne7 9. c4 a6? 10. Qa4! {[%cal Ga4e8,Gb5d6] Backs up the knight. Any knight move now also uncovers a check from the queen: Nc7 or Nxd6 would be mate.}
+10... Bd7?? (10... axb5 11. Qxa8 {White has won the rook. Stockfish: +2.3, winning for White.}) 11. Nxd6# {Mate: the bishop on d7 cuts the queen off from d6, and the knight on e7 blocks the bishop on f8.}
 *
